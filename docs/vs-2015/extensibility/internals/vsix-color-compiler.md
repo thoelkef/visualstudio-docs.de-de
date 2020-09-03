@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546743"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
@@ -61,7 +61,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 |-|-|  
 |Hell|{de3dbbcd-f642-433c-8353-8f1df4370aba}|  
 |Dunkel|{1endd0138-47ce-435e-84ef-9ec1f 439b749}|  
-|Blue|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
+|Blau|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
 |Hoher Kontrast|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
   
  **Kategorie**  

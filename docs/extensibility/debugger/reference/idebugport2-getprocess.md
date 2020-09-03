@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess | Microsoft Docs
+title: 'IDebugPort2:: GetProcess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4496187fd2e8f86a64e85afc8a4cb00eb589696a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725258"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
@@ -43,10 +43,10 @@ int GetProcess( 
 
 ## <a name="parameters"></a>Parameter
 `ProcessId`\
-[in] Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Prozessbezeichner angibt.
+in Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die den Prozess Bezeichner angibt.
 
 `ppProcess`\
-[out] Gibt ein [IDebugProcess2-Objekt](../../../extensibility/debugger/reference/idebugprocess2.md) zurück, das den Prozess darstellt.
+vorgenommen Gibt ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt zurück, das den Prozess darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

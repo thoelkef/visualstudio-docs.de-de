@@ -1,5 +1,5 @@
 ---
-title: '&lt;value &gt; (JavaScript) | Microsoft-Dokumentation'
+title: '&lt;Wert &gt; (JavaScript) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aefe710cc730d5624abc01bbdfc54d9961788787
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656397"
 ---
-# <a name="ltvaluegt-javascript"></a>&lt;value &gt; (JavaScript)
+# <a name="ltvaluegt-javascript"></a>&lt;Wert &gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gibt Dokumentationsinformationen für `get`- und `set`-Funktionen für ECMAScript 3-Eigenschaften an.
@@ -48,7 +48,7 @@ Gibt Dokumentationsinformationen für `get`- und `set`-Funktionen für ECMAScrip
 
   `domElement` ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob die dokumentierte Eigenschaft ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass die Eigenschaft ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense die dokumentierte Eigenschaft bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.
 
-  `mayBeNull` ist optional. Gibt an, ob die dokumentierte Eigenschaft auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass die Eigenschaft auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
+  `mayBeNull` ist optional. Gibt an, ob die dokumentierte Eigenschaft auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass die Eigenschaft auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Standardwert: `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
 
   `elementType` ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.
 
@@ -56,14 +56,14 @@ Gibt Dokumentationsinformationen für `get`- und `set`-Funktionen für ECMAScrip
 
   `elementDomElement` ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.
 
-  `elementMayBeNull` ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
+  `elementMayBeNull` ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Standardwert: `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
 
-  `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über die Eigenschaft. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Element [\<loc>](../ide/loc-javascript.md) angegeben wird.
+  `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über die Eigenschaft. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im-Element angegeben ist [\<loc>](../ide/loc-javascript.md) .
 
   `description` ist optional. Eine Beschreibung der Eigenschaft.
 
-## <a name="remarks"></a>Anmerkungen
- ECMAScript 5-Eigenschaften verwenden das [\<summary >](../ide/summary-javascript.md) -Element.
+## <a name="remarks"></a>Bemerkungen
+ ECMAScript 5-Eigenschaften verwenden das- [\<summary>](../ide/summary-javascript.md) Element.
 
  Verwenden Sie das `<value>`-Element direkt vor der `get`- oder `set`-Funktion.
 
@@ -78,5 +78,5 @@ function Sys$CancelEventArgs$get_cancel() {
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)

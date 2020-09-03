@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295923"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -25,7 +25,7 @@ ms.locfileid: "74295923"
 
 Die neueste Dokumentation zu Visual Studio finden Sie im [Administrator Handbuch für Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
-Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](https://visualstudio.microsoft.com/vs/older-downloads/)erfüllt. Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit der Option „/layout“ ausführen (wie auf der Seite [Erstellen einer Offlineinstallation von Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) beschrieben) und sie dann vom lokalen Computer auf die Netzwerkfreigabe kopieren. Wenn Sie ein ISO-Abbild verwenden, können Sie die ISO-Datei einbinden und freigeben oder das ISO-Image in eine Netzwerkfreigabe kopieren.  
+Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](https://visualstudio.microsoft.com/vs/older-downloads/)erfüllt. Sie können eine Netzwerkfreigabe erstellen, indem Sie die Installationsdatei mit dem Schalter/Layout ausführen (wie auf der Seite [Erstellen einer Offline Installation von Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) beschrieben) und Sie dann vom lokalen Computer auf die Netzwerkfreigabe kopieren. Wenn Sie ein ISO-Abbild verwenden, können Sie die ISO-Datei einbinden und freigeben oder das ISO-Image in eine Netzwerkfreigabe kopieren.  
   
  Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort "merken". Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio 2015-Clients in Ihrer Organisation entspricht.  
   
@@ -40,12 +40,12 @@ Sie können Visual Studio 2015 in einem Netzwerk bereitstellen, solange jeder Zi
 ## <a name="error-return-codes"></a>Fehlerrückgabecodes  
  In der folgenden Tabelle sind wichtige Fehlercodes aufgeführt. Sie können mithilfe dieser Fehlercodes innerhalb Ihrer Automatisierung entscheiden, ob ein Neustart erforderlich ist und ob die Installation erfolgreich war. Wenn Sie einen Fehlercode erhalten, sehen Sie sich die Schritte zur Problembehandlung auf der Seite [Installieren von Visual Studio](../install/install-visual-studio-2015.md) an.  
   
-|Setup-Status|Neustart nicht erforderlich|Neustart erforderlich|Beschreibung|  
+|Setup-Status|Neustart nicht erforderlich|Neustart erforderlich|BESCHREIBUNG|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Erfolgreich|0x00000000 [0]|0x00000bc2 [3010]|Erfolgreiche Installation.|  
-|Block|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Wenn als einziger Block "Reboot Pending" gemeldet wird, ist der zurückgegebene Wert "Incomplete-Reboot Required" (0x80048bc7).|  
+|Blockieren|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Wenn als einziger Block "Reboot Pending" gemeldet wird, ist der zurückgegebene Wert "Incomplete-Reboot Required" (0x80048bc7).|  
 |Abbrechen|0x00000642 [1602]|0x80048642 [-2147187134]|Wenn der Reboot-Wert zurückgegeben wird, ist der Rückgabecode "1602".|  
-|Unvollständig-Neustart erforderlich|N/V|0x80048bc7 [-2147185721]|Vor dem Fortsetzen der Installation muss der Computer neu gestartet werden.|  
+|Unvollständig-Neustart erforderlich|Nicht zutreffend|0x80048bc7 [-2147185721]|Vor dem Fortsetzen der Installation muss der Computer neu gestartet werden.|  
 |Fehler|0x00000643 [1603]|0x80048643 [-2147187133]|Wenn der Reboot-Wert zurückgegeben wird, ist der Rückgabecode "1603".|  
   
 ## <a name="interactive-administrator-installer"></a>Interaktiver Installer für den Administrator  
@@ -67,10 +67,10 @@ Standardmäßig ermöglicht die Visual Studio-Installation Kundenfeedback. Sie k
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Thema|Beschreibung|  
+|Thema|BESCHREIBUNG|  
 |-----------|-----------------|  
-|[Gewusst wie: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie bestimmte Konfigurationen der aktuellen Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]installiert werden.|  
-|[Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Hier wird beschrieben, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus installiert wird.|  
+|[Gewusst wie: Installieren eines bestimmten Releases von Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Beschreibt, wie bestimmte Konfigurationen der aktuellen Version von installiert werden  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Beschreibt, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus installiert wird.|  
 |[Gewusst wie: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Hier wird beschrieben, wie Product Keys beim Bereitstellen auf mehreren Computern angewendet werden.|  
 |[Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md)|Bietet Informationen zum Verwalten von lokalen Hilfe Installationen für Netzwerkumgebungen, die entweder über einen Internetzugang verfügen oder über keinen Zugriff verfügen.|  
-|[Installieren von Visual Studio](../install/install-visual-studio-2015.md)|Enthält Anweisungen und Links zu Themen, in denen die Installation von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]beschrieben wird.|
+|[Installieren von Visual Studio](../install/install-visual-studio-2015.md)|Enthält Anweisungen und Links zu Themen, in denen die Installation von beschrieben wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

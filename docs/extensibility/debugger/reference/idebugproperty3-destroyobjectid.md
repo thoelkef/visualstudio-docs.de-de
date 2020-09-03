@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Microsoft Docs
+title: IDebugProperty3::D estroyobjectid | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721201"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Zerstört die eindeutige ID, die dieser Eigenschaft zugeordnet ist, was darauf hinweist, dass der Aufrufer diese Eigenschaft nicht mehr aus allen anderen Eigenschaften eindeutig identifizieren möchte.
+Zerstört die eindeutige ID, die dieser Eigenschaft zugeordnet ist, und gibt an, dass der Aufrufer nicht mehr interessiert ist, diese Eigenschaft eindeutig aus allen anderen Eigenschaften zu identifizieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,9 +41,9 @@ int DestroyObjectID();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn das Debugmodul keine eindeutigen IDs für eine Eigenschaft unterstützen muss (da es sie `E_NOTIMPL` bereits intern eindeutig nachverfolgt), kann es einfach für diese Methode zurückkehren.
+ Wenn die Debug-Engine eindeutige IDs für eine Eigenschaft nicht unterstützen muss (weil Sie diese bereits eindeutig nachverfolgt), kann Sie einfach `E_NOTIMPL` für diese Methode zurückgeben.
 
- Eindeutige IDs werden mit einem Aufruf der [CreateObjectID-Methode](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) erstellt, wenn der Aufrufer sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird.
+ Eindeutige IDs werden mit einem Aufruf der Methode " [kreateobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) " erstellt, wenn der Aufrufer sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

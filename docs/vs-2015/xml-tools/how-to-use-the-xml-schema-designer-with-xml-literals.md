@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656291"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Gewusst wie: Verwenden des XML-Schema-Designers mit XML-Literalen
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Schema in einem Visual Basic-Projekt angezeigt wird.
@@ -25,7 +25,7 @@ In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Sch
 
 1. Starten Sie Visual Studio 2010.
 
-2. Wählen Sie im Menü **Datei** die Option **neu**aus, und wählen Sie dann **Projekt**aus. Das Dialogfeld **Neues Projekt** wird angezeigt. Wählen Sie für **Projekttypen**die Option **andere Sprachen aus,** und klicken Sie dann auf **Visual Basic**. Wählen Sie für **Vorlagen**die Option Konsolenanwendung aus. Geben Sie dann `XMLLiterals` in das Feld **Name** und einen Projekt Speicherort im Feld **Speicherort** ein. Klicken Sie auf **OK**.
+2. Wählen Sie im Menü **Datei** die Option **Neu** und dann **Projekt** aus. Das Dialogfeld **Neues Projekt** wird angezeigt. Wählen Sie für **Projekttypen**die Option **andere Sprachen aus,** und klicken Sie dann auf **Visual Basic**. Wählen Sie für **Vorlagen**die Option Konsolenanwendung aus. Geben Sie dann `XMLLiterals` in das Feld " **Name** " und einen Projekt Speicherort im Feld **Speicherort** ein. Klicken Sie auf **OK**.
 
      Das neue Projekt wird erstellt. Das Projekt "XMLLiterals" enthält eine Visual Basic-Quelldatei "Module1.vb".
 
@@ -35,7 +35,7 @@ In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Sch
 
 2. Speichern Sie die Datei unter dem Namen "PurchaseOrderSchema.xsd" an einem beliebigen Speicherort.
 
-3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Vorhandenes Element...** aus. Das Dialogfeld **addebug-Element** wird angezeigt. Navigieren Sie zur Datei "PurchaseOrderSchema. xsd", wählen Sie Sie aus, und klicken Sie dann auf **Hinzufügen**.
+3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Vorhandenes Element...** aus. Das Dialogfeld **Vorhandenes Element hinzufügen** wird angezeigt. Navigieren Sie zur Datei PurchaseOrderSchema.xsd, wählen Sie sie aus, und klicken Sie dann auf **Hinzufügen**.
 
      Das Projekt "XMLLiterals" enthält jetzt zwei Dateien: "Module1.vb" und "PurchaseOrderSchema.xsd".
 
@@ -70,6 +70,6 @@ In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Sch
     End Module
     ```
 
-2. Klicken Sie mit der rechten Maustaste auf einen beliebigen XML-Knoten in einem XML-Literaltyp oder auf einen XML-Namespace Import, und wählen Sie **im**
+2. Klicken Sie mit der rechten Maustaste auf einen XML-Knoten in einem XML-Literal oder einem XML-Namespaceimport, und wählen Sie **In XML-Schema-Explorer anzeigen** aus.
 
      Der XML-Schema-Explorer wird neben einer Visual Basic-Datei angezeigt, die das mit dem XML-Schemaset verknüpfte XML-Literal enthält.

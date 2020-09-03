@@ -10,37 +10,37 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c28842a92ab598ff196e80fc96678c256e4db8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656145"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und Gruppieren (XML-Schema-Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Thema werden die Optionen beschrieben, die über das Menü **Sortieren, Filtern und Gruppieren von Optionen** auf der Symbolleiste des XML-Schema-Explorers verfügbar sind.
+In diesem Thema werden die Optionen beschrieben, die im Menü mit den **Filter-, Sortierungs- und Gruppierungsoptionen** auf der Symbolleiste des XML-Schema-Explorers verfügbar sind.
 
 ## <a name="filter-options"></a>Filteroptionen
- Die folgenden Filteroptionen sind verfügbar. Standardmäßig sind die Optionen **Namespaces anzeigen** und **Schema Dateien anzeigen** ausgewählt.
+ Die folgenden Filteroptionen sind verfügbar. Standardmäßig sind die Optionen **Namespaces anzeigen** und **Schemadateien anzeigen** aktiviert.
 
 - **Namespaces anzeigen**.
 
-- **Schema Dateien anzeigen**.
+- **Schemadateien anzeigen**.
 
-- **Compositors anzeigen (Sequence/Choice/all)** .
+- **Compositors anzeigen (sequence/choice/all)** .
 
 ## <a name="sorting-options"></a>Sortierungsoptionen
- Die folgenden Sortierungsoptionen sind verfügbar. Der Standardwert ist **nach Typ sortieren**. Die "Sortieren nach"-Optionen gelten nicht für Dateien und Namespaces.
+ Die folgenden Sortierungsoptionen sind verfügbar. Die Standardeinstellung ist **Nach Typ sortieren**. Die "Sortieren nach"-Optionen gelten nicht für Dateien und Namespaces.
 
 - **Nach Typ sortieren**.
 
 - **Nach Namen sortieren**.
 
-- **Dokument Reihenfolge**.
+- **Dokumentreihenfolge**.
 
 ### <a name="sort-by-type"></a>Nach Typ sortieren
- Wenn die Option **nach Typ sortieren** ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert. Knoten sind innerhalb jeder Gruppe alphabetisch sortiert.
+ Wenn die Option **Nach Typ sortieren** aktiviert ist, werden globale Knoten in der folgenden Reihenfolge sortiert. Knoten sind innerhalb jeder Gruppe alphabetisch sortiert.
 
 1. `import`-Knoten
 
@@ -61,9 +61,9 @@ In diesem Thema werden die Optionen beschrieben, die über das Menü **Sortieren
 9. `group`-Knoten
 
 ### <a name="sort-by-name"></a>Nach Namen sortieren
- Wenn die Option **nach Name sortieren** ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert:
+ Wenn die Option **Nach Namen sortieren** aktiviert ist, werden globale Knoten in der folgenden Reihenfolge sortiert:
 
-1. `import`-Knoten (in alphabetischer Reihenfolge der Namespaces)
+1. `import`-Knoten (in alphabetischer Reihenfolge von Namespaces).
 
 2. `include`-Knoten (in alphabetischer Reihenfolge der `schemaLocation`-Attribute)
 
@@ -72,7 +72,7 @@ In diesem Thema werden die Optionen beschrieben, die über das Menü **Sortieren
 4. Andere globale Knoten in alphabetischer Reihenfolge
 
 ### <a name="document-order"></a>Dokumentreihenfolge
- Die Option **Dokument Reihenfolge** ist verfügbar, wenn die Option **Schema Dateien anzeigen** ausgewählt ist. Wenn die **Dokument Reihenfolge** ausgewählt ist, werden globale Knoten in der Reihenfolge angezeigt, in der Sie in der Schema Datei angezeigt werden.
+ Die Option **Nach Dokumentreihenfolge sortieren** ist verfügbar, wenn die Option **Schemadateien anzeigen** aktiviert ist. Wenn **Nach Dokumentreihenfolge sortieren** aktiviert ist, werden globale Knoten in der Reihenfolge angezeigt, in der sie in der Schemadatei vorkommen.
 
 ## <a name="persisting-sortfilter-options"></a>Speichern von Sortierungs-/Filteroptionen
  Die Sortierungs-, Filter- und Gruppierungsoptionen werden in der Registrierung für jeden Benutzer gespeichert, unabhängig davon, welche Projektmappe oder welche Dateien beim Ändern der Einstellungen geöffnet waren.

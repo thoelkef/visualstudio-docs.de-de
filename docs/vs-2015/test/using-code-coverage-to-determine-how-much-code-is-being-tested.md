@@ -11,13 +11,13 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851239"
 ---
-# <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Codeabdeckung
+# <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen bzw. diesen "abdecken".
@@ -26,9 +26,9 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 
  Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
- ![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Voraussetzungen**
+ **Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 
 1. Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.
 
-2. Wählen Sie ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-showcoloringicon")**Code Coverage-Färbung anzeigen**, um anzuzeigen, welche Zeilen ausgeführt wurden.
+2. Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![Code Coverage-Färbung anzeigen Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-showcoloringicon")**Code Coverage-Färbung anzeigen**aus.
 
      Um die Farben zu ändern oder den Text fett formatiert anzuzeigen, wählen Sie **Extras**, **Optionen**, **Umgebung**, **Schriftarten und Farben** und **Einstellungen anzeigen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.
 
@@ -50,7 +50,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 >   Wenn Sie mit nicht verwaltetem (systemeigenen) Code arbeiten, verwenden Sie einen Debugbuild.
 >   - Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.
 >
->   Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md). . Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
+>   Wenn Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter Problembehandlung bei der [Code Abdeckung](../test/troubleshooting-code-coverage.md). . Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
 
 ## <a name="reporting-in-blocks-or-lines"></a>Berichterstellung in Blöcken oder in Zeilen
  Die Codeabdeckung wird in *Blöcken* gezählt. Ein Block ist ein Stück Code mit genau einem Einstiegs- und Endpunkt.  Wenn die Ablaufsteuerung des Programms einen Block während eines Testlaufs durchläuft, wird dieser Block als abgedeckt gezählt. Wie oft der Block verwendet wird, hat keinen Einfluss auf das Ergebnis.
@@ -81,7 +81,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 
  Bei einem Test mit der Eingabe "2 " stellen Sie beispielsweise fest, dass 50 % einer bestimmten Funktion abgedeckt werden. Wenn Sie den Test ein zweites Mal mit der Eingabe "– 2 " ausführen, sehen Sie in der Ansicht der Abdeckungsfärbung, dass die anderen 50 % der Funktion abgedeckt werden. Führen Sie nun die Ergebnisse aus den zwei Testläufen zusammen. Die Berichtsansicht und die Ansicht der Abdeckungsfärbung zeigen nun an, dass 100 % der Funktion ausgeführt wurden.
 
- Klicken Sie hierzu auf ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png "CodeCoverage-mergeicon")**Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
+ Verwenden Sie dazu ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Code Coverage“](../test/media/codecoverage-mergeicon.png "CodeCoverage-mergeicon")**Code Coverage-Ergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.
 
  Speichern Sie die Ergebnisse eines Zusammenführungsvorgangs mithilfe der Option **Export Code Coverage Results** (Codeabdeckungsergebnisse exportieren).
 
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Verwenden Sie folgende Makros:
 
- `ExcludeFromCodeCoverage(` *exclusionname* `, L"` *FunctionName* -`");`
+ `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *exclusionname* `, L"` *sourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName* ist ein eindeutiger Name.
 
@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.
 
-   - <em>Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File</em>* * (Typ der Laufzeiteinstellungsdatei) vorhanden.
+   - <em>Es ist jedoch kein Feld mit dem Namen **Typ der Lauf Zeit Einstellungsdatei</em>vorhanden*. *
 
       Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.
 
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      Wählen Sie im Windows-Menü **Start** nacheinander **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio-Tools** und **Developer-Eingabeaufforderung** aus.
 
-2. Run:
+2. Führen Sie Folgendes aus:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Anleitung
+### <a name="guidance"></a>Anleitungen
  [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md) [Problembehandlung Code Coverage](../test/troubleshooting-code-coverage.md) [Unit Test Your Code](../test/unit-test-your-code.md)

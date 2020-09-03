@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850566"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
@@ -93,5 +93,5 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
 
 3. Wählen Sie das Verzeichnis mit der Projektmappe aus, und drücken Sie ENTF.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md) [NIB Gewusst wie: Erstellen von Projektmappen mit mehreren Projekten](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

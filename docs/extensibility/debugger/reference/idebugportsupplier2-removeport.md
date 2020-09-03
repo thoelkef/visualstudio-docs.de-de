@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::RemovePort | Microsoft Docs
+title: 'IDebugPortSupplier2:: RemovePort | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a9a23301395fe875efe66936d737d9b2bad0accb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724533"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
@@ -41,13 +41,13 @@ int RemovePort( 
 
 ## <a name="parameters"></a>Parameter
 `pPort`\
-[in] Ein [IDebugPort2-Objekt,](../../../extensibility/debugger/reference/idebugport2.md) das den zu entfernenden Port darstellt.
+in Ein [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) -Objekt, das den zu entfernenden Port darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode entfernt den Port aus der internen Liste der aktiven Ports des Portlieferanten.
+ Mit dieser Methode wird der Port aus der internen Liste aktiver Ports des Port Anbieters entfernt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

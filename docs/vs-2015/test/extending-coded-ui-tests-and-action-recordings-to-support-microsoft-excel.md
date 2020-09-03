@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851768"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
@@ -20,7 +20,7 @@ ms.locfileid: "75851768"
 
 Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unterstützen nicht jede mögliche Benutzeroberfläche. Es kann vorkommen, dass die zu testende Benutzeroberfläche nicht unterstützt wird. Es ist z. B. nicht möglich, direkt einen Test der codierten UI oder eine Aktionsaufzeichnung für ein [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]-Arbeitsblatt zu erstellen. Die Erweiterbarkeit des Frameworks für Tests der codierten UI bietet Ihnen jedoch die Möglichkeit, eine eigene Erweiterung des Frameworks zu erstellen, die die spezifische Benutzeroberfläche unterstützt. Im folgenden Thema wird ein Beispiel vorgestellt, in dem das Framework erweitert wird, um die Erstellung von Tests der codierten UI und Aktionsaufzeichnungen für [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] zu unterstützen. Weitere Informationen zu den unterstützten Plattformen finden Sie unter [Unterstützte Konfigurationen und Plattformen für Tests der codierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Voraussetzungen**
+ **Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -70,12 +70,12 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
 ### <a name="testing-excel-with-the-sampletestproject"></a>Testen von Excel mit "SampleTestProject"
  Sie können den Test im bereitgestellten Testprojekt ausführen, in dem eine bestimmte Excel-Version verwendet wird, über die Sie möglicherweise nicht verfügen, oder ein eigenes Testprojekt erstellen und einen eigenen Test aufzeichnen. Weitere Informationen finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

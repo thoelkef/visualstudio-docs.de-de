@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851311"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Arbeiten mit Visual C++-Code (Klassen-Designer)
@@ -41,14 +41,14 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 
 - Struktur
 
-- Enum
+- Enumeration
 
 - Makro (zeigt die Ansicht des Makros nach der Verarbeitung an)
 
-- TypeDef
+- Typedef
 
 > [!NOTE]
-> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML Class Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-class-diagrams-reference.md).
+> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Behandlung von Problemen bei der Typauflösung und Anzeige
 
@@ -63,7 +63,7 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 ### <a name="type-resolution-issues"></a>Probleme bei der Typauflösung
  Klassen-Designer kann aus den folgenden Gründen Typen möglicherweise nicht auflösen:
 
-- Der Typ ist in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Der Typ ist in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Der Typ ist nicht im richtigen Bereich, sodass Klassen-Designer ihn nicht finden kann. Stellen Sie sicher, dass dem Code nicht eine Anweisung `using`, `imports`, oder `#include` fehlt. Stellen Sie außerdem sicher, dass Sie den Typ (oder einen zugehörigen Typ) nicht aus dem Namespace verschoben haben, in dem er sich ursprünglich befand.
 
@@ -71,20 +71,20 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 
 - Der Typ befindet sich in einer Bibliothek, auf die mit einer #import-Direktive verwiesen wird. Eine mögliche Problemumgehung besteht darin, den generierten Code (die TLH-Datei) manuell zu einer #include-Anweisung in der Headerdatei hinzufügen.
 
-  Der Fehler, der am ehesten für eine Typauflösung angezeigt wird, ist **Für mindestens eine Form im Klassendiagramm \<element>** wurde kein Code gefunden. Diese Fehlermeldung besagt nicht notwendigerweise, dass der Code fehlerhaft ist. Es gibt nur an, dass Klassen-Designer den Code nicht anzeigen kann. Versuchen Sie folgende Maßnahmen:
+  Der Fehler, der bei einem Typauflösungs Problem höchstwahrscheinlich angezeigt wird, ist, **dass der Code für mindestens eine Form im Klassendiagramm ' \<element> ' nicht gefunden**wurde. Diese Fehlermeldung besagt nicht notwendigerweise, dass der Code fehlerhaft ist. Es gibt nur an, dass Klassen-Designer den Code nicht anzeigen kann. Versuchen Sie folgende Maßnahmen:
 
 - Stellen Sie sicher, dass der Typ vorhanden ist. Stellen Sie sicher, dass Sie den Quellcode nicht versehentlich auskommentiert oder gelöscht haben.
 
 - Stellen Sie sicher, dass Klassen-Designer den von Ihnen eingegebenen Typ unterstützt. Siehe [Einschränkungen für C++-Codeelemente](#limitations).
 
-- Versuchen Sie, den Typ aufzulösen. Der Typ befindet sich möglicherweise in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Versuchen Sie, den Typ aufzulösen. Der Typ befindet sich möglicherweise in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Stellen Sie sicher, dass sich der Typ im richtigen Bereich befindet, sodass Klassen-Designer ihn finden kann. Stellen Sie sicher, dass dem Code nicht eine Anweisung `using`, `imports`, oder `#include` fehlt. Stellen Sie außerdem sicher, dass Sie den Typ (oder einen zugehörigen Typ) nicht aus dem Namespace verschoben haben, in dem er sich ursprünglich befand.
 
 ### <a name="troubleshooting-other-error-messages"></a>Problembehandlung bei anderen Fehlermeldungen
  Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
-## <a name="limitations"></a> Einschränkungen für C++-Codeelemente
+## <a name="limitations-for-c-code-elements"></a><a name="limitations"></a> Einschränkungen für C++-Codeelemente
 
 - Wenn ein Visual C++-Projekt geladen ist, funktioniert Klassen-Designer in einem schreibgeschützten Modus. Sie können das Klassendiagramm ändern, aber keine Änderungen am Klassendiagramm im Quellcode speichern.
 
@@ -106,5 +106,5 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 
 - Klassen-Designer kann keine Typen anzeigen, die "void" sind oder von einem void-Typ abgeleitet sind.
 
-## <a name="see-also"></a>Siehe auch
- [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md) [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Weitere Informationen zu Klassen-Designer Fehlern](../ide/additional-information-about-class-designer-errors.md) [visuelle C++ Klassen in Klassen-Designer](../ide/visual-cpp-classes-in-class-designer.md) visuellen [ C++ Strukturen](../ide/visual-cpp-structures-in-class-designer.md) in Klassen-Designer visuellen [ C++ Enumerationen in Klassen-Designer](../ide/visual-cpp-enumerations-in-class-designer.md) [Visual C++ Typedefs in Klassen-Designer](../ide/visual-cpp-typedefs-in-class-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md) [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md) arbeiten [mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Weitere Informationen zu Klassen-Designer Fehlern](../ide/additional-information-about-class-designer-errors.md) [Visual C++ Klassen in Klassen-Designer](../ide/visual-cpp-classes-in-class-designer.md) Visual C++ [Strukturen in](../ide/visual-cpp-structures-in-class-designer.md) [Klassen-Designer Visual C++](../ide/visual-cpp-enumerations-in-class-designer.md) von [Typedefs in](../ide/visual-cpp-typedefs-in-class-designer.md) Klassen-Designer

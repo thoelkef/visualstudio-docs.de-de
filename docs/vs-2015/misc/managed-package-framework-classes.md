@@ -13,10 +13,10 @@ ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
 ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297704"
 ---
 # <a name="managed-package-framework-classes"></a>Managed Package Framework-Klassen
@@ -28,7 +28,7 @@ Die MPF-Klassen (Managed Package Framework) können dazu verwendet werden, mit v
 ## <a name="mpf-namespaces"></a>MPF-Namespaces  
  In der folgenden Tabelle sind die MPF-Namespaces aufgelistet, die vom [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]bereitgestellt werden.  
   
-|Namespace|Inhalt|  
+|Namespace|Inhalte|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|Enthält Klassen für die Behandlung von COM-Fehlern, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Konstanten und Win32-Fenstern.|  
 |<xref:Microsoft.VisualStudio.Package>|Beinhaltet Wrapper für verwalteten Code für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projekte, Editoren und MSBuild.|  
@@ -38,7 +38,7 @@ Die MPF-Klassen (Managed Package Framework) können dazu verwendet werden, mit v
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|Enthält [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDom-Designer-Erweiterungen.|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Unterstützt Projektuntertypen (werden auch als „Konfigurationen“ bezeichnet).|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPackages und das Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Verwenden von Visual Studio-Interop](../extensibility/internals/using-visual-studio-interop-assemblies.md) -Assemblys   
+ [Verwenden von Visual Studio-Interopassemblys](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackages und das Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)

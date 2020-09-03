@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest | Microsoft Docs
+title: 'IDebugPort2:: getportrequest | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48d39ea10e8425d5449444514489ac4b73c0a3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725334"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Ruft die Beschreibung eines Ports ab, der zuvor zum Erstellen des Ports verwendet wurde (sofern verfügbar).
+Ruft die Beschreibung eines Ports ab, der zuvor zum Erstellen des Ports verwendet wurde (falls verfügbar).
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetPortRequest( 
 
 ## <a name="parameters"></a>Parameter
 `ppRequest`\
-[out] Gibt ein [IDebugPortRequest2-Objekt](../../../extensibility/debugger/reference/idebugportrequest2.md) zurück, das die Anforderung darstellt, die zum Erstellen des Ports verwendet wurde.
+vorgenommen Gibt ein [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) -Objekt zurück, das die Anforderung darstellt, die zum Erstellen des Ports verwendet wurde.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  Gibt `E_PORT_NO_REQUEST` zurück, wenn ein Port nicht mit einer [IDebugPortRequest2-Portanforderung](../../../extensibility/debugger/reference/idebugportrequest2.md) erstellt wurde.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  Gibt zurück, `E_PORT_NO_REQUEST` Wenn ein Port nicht mithilfe einer [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) -Port Anforderung erstellt wurde.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

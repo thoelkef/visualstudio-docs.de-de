@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c6dcd6da21d83203f2e22472aaeb226f65e8475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191539"
 ---
 # <a name="instruction-pointers-ips-view"></a>Anweisungszeigeransicht
@@ -36,7 +36,7 @@ In der Ansicht des Anweisungszeiger können Sie die bestimmten Anweisungen sehen
   
  Die Zeilenansicht identifiziert für .NET-Arbeitsspeicherdaten die Anweisungen, die Arbeitsspeicher zuweisen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Anweisungszeigeransicht - .NET-Speichersamplingdaten im Profiler](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Anweisungs Zeiger Ansicht (IPS)](../profiling/instruction-pointers-ips-view-sampling-data.md)   
+ [Anweisungs Zeiger Ansicht-Sampling](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-contention-data.md)

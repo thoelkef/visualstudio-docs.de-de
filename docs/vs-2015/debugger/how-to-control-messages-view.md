@@ -13,23 +13,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66e7b546b507f1f96dbd4aa4a62b4db501eff2fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185164"
 ---
 # <a name="how-to-control-messages-view"></a>Vorgehensweise: Steuern der Meldungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit Spy++, haben Sie erhebliche Kontrolle für den Inhalt von einem [Meldungsansicht](../debugger/messages-view.md) Fenster. Sie können [starten und Beenden von](../debugger/how-to-start-and-stop-the-message-log-display.md) Anzeigen von Nachrichten an einem beliebigen Zeitpunkt, und Sie können angeben:  
+Mit Spy++ können Sie den Inhalt eines Fensters [Meldungsansicht](../debugger/messages-view.md) umfassend steuern. Sie können das Anzeigen der Meldungen jederzeit [starten und beenden](../debugger/how-to-start-and-stop-the-message-log-display.md), und Sie können Folgendes angeben:  
   
-- Welche Nachrichtentypen, die Sie anzeigen möchten.  
+- Welche Meldungstypen angezeigt werden sollen.  
   
-- Windows, die Sie überwachen möchten.  
+- Welche Fenster überwacht werden sollen.  
   
-- Das Anzeigeformat für Nachricht Zeilen.  
+- Das Anzeigeformat für Meldungszeilen.  
   
-  Diese Einstellungen sind verfügbar, aus der [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md), und sie gelten nur für den aktiven [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Wählen Sie zum Öffnen dieses Dialogfelds **Protokollmeldungen** aus der **Spy** Menü.  
+  Diese Einstellungen sind im [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md) verfügbar und gelten nur für das aktive Fenster [Meldungsansicht](../debugger/messages-view.md). Um dieses Dialogfeld zu öffnen, wählen Sie im Menü **Spy** die Option **Protokollmeldungen** aus.  
   
-  Drei im Registerkartenformat mit Optionen sind verfügbar. Weitere Informationen finden Sie unter [Windows-Registerkarte, die im Dialogfeld "Optionen" Nachricht](../debugger/windows-tab-message-options-dialog-box.md), [Registerkarte "Meldungen", Dialogfeld Optionen](../debugger/messages-tab-message-options-dialog-box.md), und [Registerkarte "Ausgabe", Dialogfeld Optionen](../debugger/output-tab-message-options-dialog-box.md).
+  Es sind drei Bereiche mit Meldungsoptionen im Registerkartenformat verfügbar. Weitere Informationen finden Sie unter [Registerkarte „Fenster“, Dialogfeld „Meldungsoptionen“](../debugger/windows-tab-message-options-dialog-box.md), [Registerkarte „Meldungen“, Dialogfeld „Meldungsoptionen“](../debugger/messages-tab-message-options-dialog-box.md) und [Registerkarte „Ausgabe“, Dialogfeld „Meldungsoptionen“](../debugger/output-tab-message-options-dialog-box.md).

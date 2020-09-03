@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f53a426c21f967d82562f24ec07c6eb3edfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656183"
 ---
 # <a name="sample-xsd-files"></a>XSD-Beispieldateien
@@ -26,8 +26,8 @@ Die folgenden Beispieldateien werden in der Dokumentation zum XSD-Schema-Designe
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Topic|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
 |[XSD-Beispieldatei: Bestellungsschema](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Ein XSD-Dokument, das ein typisches Auftragsschema enthält|
-|[XSD-Beispieldatei: Einfaches Schema](../xml-tools/sample-xsd-file-simple-schema.md)|Ein XSD-Dokument, das ein einfaches Schema enthält|
+|[XSD-Beispieldatei: einfaches Schema](../xml-tools/sample-xsd-file-simple-schema.md)|Ein XSD-Dokument, das ein einfaches Schema enthält|
 |[XSD-Beispieldatei: Beziehungen](../xml-tools/sample-xsd-file-relationships.md)|Ein XSD-Dokument, das ein Schema mit Beziehungen enthält|

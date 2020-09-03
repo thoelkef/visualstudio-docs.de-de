@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533834"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -47,7 +47,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/noclr**|Dies ist optional. Es werden keine CLR-Daten gesammelt.<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.<br /><br /> Optimierung, es werden keine verwalteten Symbole aufgelöst.|  
 |**/listapps**|Listet Namen installierter Apps und PackageFullNames auf.|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Nur Windows 8-Desktop Anwendungen und Windows Server 2012-Anwendungen  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Nur Windows 8-Desktop Anwendungen und Windows Server 2012-Anwendungen  
  Diese Optionen funktionieren nicht mit Windows Store-Apps.  
   
 |Option|Beschreibung|  
@@ -56,7 +56,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/args:{ExecutableArguments}**|Gibt Befehlszeilenargumente an, um das **/launch**-Ziel zu erreichen.|  
 |**/console**|Führt das **/launch**-Ziel in einem neuen Befehlsfenster aus.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Alle Anwendungen  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> Alle Anwendungen  
  Diese Option gilt für jede Windows 8- oder Windows Server 2012-Anwendung.  
   
 |Option|Beschreibung|  

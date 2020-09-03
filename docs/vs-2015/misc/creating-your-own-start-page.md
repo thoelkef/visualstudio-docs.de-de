@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850981"
 ---
 # <a name="creating-your-own-start-page"></a>Erstellen einer eigenen Startseite
@@ -99,6 +99,6 @@ Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für 
   
    Sie können Ihre benutzerdefinierte Start Seite freigeben, indem Sie die vsix-Datei aus dem Verzeichnis "bin\debug" auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Website oder eine andere Website oder eine Intranetfreigabe hochladen. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Anpassen der Start Seite](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

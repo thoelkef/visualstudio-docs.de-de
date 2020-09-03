@@ -7,10 +7,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea5695c41b19cbd77c56a63f22b52fca5ee6f1eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295433"
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
@@ -20,7 +20,7 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
  ![VSIX-Farb-Editor-Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX-Farb-Editor-Hero")  
   
- **Paket Definitions Dateien**  
+ **Paketdefinitionsdateien**  
   
  Paket Definitions Dateien (. pkgdef) sind die Dateien, die Designs definieren. Die Farben selbst werden in Design Color. XML-Dateien gespeichert, die in eine pkgdef-Datei kompiliert werden. Die pkgdef-Dateien werden an von Visual Studio durch suchbare Speicherorte bereitgestellt, zur Laufzeit verarbeitet und zusammengeführt, um Designs zu definieren.  
   
@@ -55,7 +55,7 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
    **Schritt 1: bestimmen Sie die Kategorien-und Tokennamen für die neuen farbtoken.**  
   
-   Das bevorzugte Benennungs Schema für ein vscolor ist **[Category] [UI Type] [State]** . Verwenden Sie das Wort "Color" nicht in vscolor-Namen, da es redundant ist.  
+   Das bevorzugte Benennungs Schema für ein vscolor ist **[Category] [UI Type] [State]**. Verwenden Sie das Wort "Color" nicht in vscolor-Namen, da es redundant ist.  
   
    Kategorienamen stellen logische Gruppierungen bereit und sollten so eng wie möglich definiert werden. Der Name eines einzelnen Tool Fensters könnte z. b. ein Kategoriename sein, aber der Name einer gesamten Geschäftseinheit oder eines gesamten Projektteams ist nicht. Das Gruppieren von Einträgen in Kategorien trägt dazu bei, Verwirrung zwischen Farben mit demselben Namen zu verhindern.  
   
@@ -67,7 +67,7 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
 - Aktiv  
   
-- Inactive  
+- Inaktiv  
   
 - MouseOver  
   
@@ -75,25 +75,25 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
 - Ausgewählt  
   
-- Mit Fokus  
+- Focused  
   
   Beispiele für einige Tokennamen für Teile eines Listenelement-Steuer Elements:  
   
 - ListItem  
   
-- ListItemBorder  
+- Listitemborder  
   
-- ListItemMouseOver  
+- Listitemmouseover  
   
-- ListItemMouseOverBorder  
+- Listitemmouseoverborder  
   
 - Listitemselected  
   
-- ListItemSelectedBorder  
+- Listitemselectedborder  
   
-- ListItemDisabled  
+- Listitemdeaktiviert  
   
-- ListItemDisabledBorder  
+- Listitemdisabledborder  
   
   **Schritt 2: Wählen Sie die Farbtöne aus, die das UI-Element für jedes Design und die System Farbe für hoher Kontrast verwendet.**  
   
@@ -103,25 +103,25 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
   Starten Sie den Farb-Editor, und öffnen oder erstellen Sie eine neue benutzerdefinierte Design Colors. XML-Datei. Klicken Sie im Menü auf **> neue Farbe bearbeiten** . Dadurch wird ein Dialogfeld zum Angeben der Kategorie und mindestens ein Name für Farbeinträge innerhalb dieser Kategorie geöffnet:  
   
-  ![VSIX-Farb-Editor neue Farbe](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX-Farb-Editor – Neue Farbe")  
+  ![VSIX-Farb-Editor – Neue Farbe](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX-Farb-Editor – Neue Farbe")  
   
   Wählen Sie eine vorhandene Kategorie aus, oder wählen Sie **neue Kategorie** aus, um eine neue Kategorie zu erstellen. Ein weiteres Dialogfeld wird geöffnet, in dem Sie einen neuen Kategorien Amen erstellen:  
   
-  ![VSIX-Farb-Editor neue Kategorie](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX-Farb-Editor – Neue Kategorie")  
+  ![VSIX-Farb-Editor – Neue Kategorie](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX-Farb-Editor – Neue Kategorie")  
   
   Die neue Kategorie wird dann im Dropdown Menü **neue Farb** Kategorie verfügbar. Nachdem Sie eine Kategorie ausgewählt haben, geben Sie für jedes neue farbtoken einen Namen pro Zeile ein, und wählen Sie "erstellen", wenn Sie fertig sind:  
   
-  ![VSIX-Farb-Editor neue Farbe gefüllt](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX-Farb-Editor – Neue Farbe gefüllt")  
+  ![VSIX-Farb-Editor – Neue Farbe gefüllt](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX-Farb-Editor – Neue Farbe gefüllt")  
   
   Die Farbwerte werden in den Hintergrund-/vordergrundpaaren angezeigt, wobei "None" angibt, dass die Farbe nicht definiert wurde. Hinweis: Wenn eine Farbe kein textpaar mit Textfarbe/Hintergrundfarbe hat, muss nur der Hintergrund definiert werden.  
   
-  ![Farbwerte für den VSIX-Farb-Editor](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX-Farb-Editor-Farbwerte")  
+  ![VSIX-Farb-Editor-Farbwerte](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX-Farb-Editor-Farbwerte")  
   
   Wählen Sie zum Bearbeiten eines farbtokens einen Farb Eintrag für das Design (Spalte) dieses Tokens aus. Fügen Sie den Farbwert hinzu, indem Sie entweder einen hexadezimalen Farbwert in ein acht stelliges ARGB-Format eingeben, einen System Farbnamen in die Zelle eingeben oder das Dropdown Menü verwenden, um die gewünschte Farbe über eine Gruppe von Farb Schiebereglern oder eine Liste von Systemfarben auszuwählen.  
   
-  ![VSIX-Farb-Editor-Bearbeitungs Farbe](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX-Farb-Editor Farbe bearbeiten")  
+  ![VSIX-Farb-Editor Farbe bearbeiten](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX-Farb-Editor Farbe bearbeiten")  
   
-  ![VSIX-Farb-Editor-Hintergrund](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX-Farb-Editor – Hintergrund")  
+  ![VSIX-Farb-Editor – Hintergrund](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX-Farb-Editor – Hintergrund")  
   
   Geben Sie für Komponenten, die keinen Text anzeigen müssen, nur einen Farbwert ein: die Hintergrundfarbe. Geben Sie andernfalls Werte für Hintergrund-und Textfarbe ein, getrennt durch einen Schrägstrich.  
   
@@ -135,11 +135,11 @@ Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte F
   
   ![VSIX-Farb-Editor pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX-Farb-Editor pkgdef")  
   
-  Wählen Sie im Visual Studio-Erweiterungs Farb-Editor Datei > Anzeigen von Ressourcen Code aus, um Code anzuzeigen, der für den Zugriff auf die benutzerdefinierten Farben in der WPF-basierten Benutzeroberfläche verwendet wird.  
+  Wählen Sie im Visual Studio-Erweiterungs Farb-Editor Datei > anzeigen von Ressourcen Code aus, um Code anzuzeigen, der für den Zugriff auf die benutzerdefinierten Farben in der WPF-basierten Benutzeroberfläche verwendet wird.  
   
-  ![VSIX-Farb-Editor-Ressourcen Code-Viewer](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX-Farb-Editor-Ressourcencode-Viewer")  
+  ![VSIX-Farb-Editor-Ressourcencode-Viewer](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX-Farb-Editor-Ressourcencode-Viewer")  
   
-  Fügen Sie diesen Code in eine statische Klasse im Projekt ein. Ein Verweis auf **Microsoft. VisualStudio. Shell.\<vsversion > 0. dll** muss dem Projekt hinzugefügt werden, um den **themeresourcekey** -Typ zu verwenden.  
+  Fügen Sie diesen Code in eine statische Klasse im Projekt ein. Ein Verweis auf **Microsoft. VisualStudio. Shell. \<VSVersion>.0.dll** muss dem Projekt hinzugefügt werden, um den **themeresourcekey** -Typ zu verwenden.  
   
 ```csharp  
 namespace MyCustomColors  
@@ -183,11 +183,11 @@ namespace MyCustomColors
   
  Der Farb-Editor kann temporär Farb Token auf die ausgelaufenden Instanzen von Visual Studio anwenden, um Live Änderungen an Farben anzuzeigen, ohne das Erweiterungspaket neu zu erstellen. Klicken Sie hierzu auf die Schaltfläche "dieses Design zum Ausführen von Visual Studio-Fenstern anwenden" in der Kopfzeile der einzelnen Design Spalten. Dieses temporäre Design wird entfernt, wenn der VSIX-Farb-Editor geschlossen wird.  
   
- ![VSIX-Farb-Editor anwenden](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX-Farb-Editor – Übernehmen")  
+ ![VSIX-Farb-Editor – Übernehmen](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX-Farb-Editor – Übernehmen")  
   
  Um die Änderungen dauerhaft zu machen, erstellen Sie die Visual Studio-Erweiterung neu, und stellen Sie Sie erneut bereit, nachdem Sie der pkgdef-Datei die neuen Farben hinzugefügt und den Code geschrieben haben, der diese Farben verwendet. Durch das erneute Erstellen der Visual Studio-Erweiterung werden die Registrierungs Werte für die neuen Farben in den restlichen Themen zusammengeführt. Starten Sie Visual Studio erneut, zeigen Sie die Benutzeroberfläche an, und überprüfen Sie, ob die neuen Farben erwartungsgemäß angezeigt werden.  
   
-## <a name="notes"></a>Hinweise  
+## <a name="notes"></a>Notizen  
  Dieses Tool dient zum Erstellen benutzerdefinierter Farben für die bereits vorhandenen Visual Studio-Designs oder zum Bearbeiten der Farben eines benutzerdefinierten Visual Studio-Designs. Um benutzerdefinierte Visual Studio-Designs zu erstellen, laden Sie die [Visual Studio Color Theme Editor-Erweiterung](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) aus dem Visual Studio Extensions Gallery herunter.  
   
 ## <a name="sample-output"></a>Beispielausgabe  
@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **C#Wrapper für Ressourcen Schlüssel**  
+ **C#-Ressourcen Schlüssel-Wrapper**  
   
  Die vom Tool generierten Farb Ressourcen Schlüssel ähneln den folgenden:  
   

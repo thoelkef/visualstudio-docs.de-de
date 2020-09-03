@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortid | Microsoft Docs
+title: 'IDebugPort2:: getportid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 97b0134b083b3f9b4697ce26bc4bd57c0b455a63
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725418"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
-Ruft den Portbezeichner ab.
+Ruft den Port Bezeichner ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetPortId( 
 
 ## <a name="parameters"></a>Parameter
 `pguidPort`\
-[out] Gibt die GUID zurück, die den Port identifiziert.
+vorgenommen Gibt die GUID zurück, die den Port identifiziert.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

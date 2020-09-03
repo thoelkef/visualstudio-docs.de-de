@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
+title: 'IDebugProperty3:: getcustomviewerlist | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721158"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Ruft eine Liste der benutzerdefinierten Viewer ab, die dieser Eigenschaft zugeordnet sind.
+Ruft eine Liste von benutzerdefinierten Viewern ab, die dieser Eigenschaft zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parameter
 `celtSkip`\
-[in] Die Anzahl der Zuüberspringenden Zuschauer.
+in Die Anzahl der zu über springenden Viewer.
 
 `celtRequested`\
-[in] Die Anzahl der abzurufenden Viewer (gibt `rgViewers` auch die Größe des Arrays an).
+in Die Anzahl der abzurufenden Viewer (gibt auch die Größe des `rgViewers` Arrays an).
 
 `rgViewers`\
-[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen auszufüllen.
+[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen, die ausgefüllt werden sollen.
 
 `pceltFetched`\
-[out] Die tatsächliche Anzahl der zurückgegebenen Zuschauer.
+vorgenommen Die tatsächliche Anzahl der zurückgegebenen Viewer.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Um Typvisualisierungen zu unterstützen, leitet diese Methode den Aufruf an die [GetCustomViewerList-Methode](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) weiter. Wenn der Ausdrucksauswertungsor auch benutzerdefinierte Viewer für den Typ dieser Eigenschaft unterstützt, kann diese Methode die entsprechenden benutzerdefinierten Viewer an die Liste anhängen.
+Zur Unterstützung von typvisualisierungen leitet diese Methode den Aufrufen an die [getcustomviewerlist](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) -Methode weiter. Wenn die Ausdrucks Auswertung auch benutzerdefinierte Viewer für diesen Eigenschaftentyp unterstützt, kann diese Methode die entsprechenden benutzerdefinierten Viewer an die Liste anfügen.
 
-Weitere Informationen zu den Unterschieden zwischen Typvisualisierern und benutzerdefinierten Viewern finden Sie unter [Typvisualisierung und benutzerdefinierter Viewer.](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+Ausführliche Informationen zu den Unterschieden zwischen typvisualisierungen und benutzerdefinierten Viewern finden Sie unter [typschnell Ansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) .
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CProperty-Objekt** implementiert wird, das die [IDebugProperty3-Schnittstelle](../../../extensibility/debugger/reference/idebugproperty3.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cproperty** -Objekt implementiert wird, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)

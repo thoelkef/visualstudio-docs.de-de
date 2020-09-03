@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription | Microsoft Docs
+title: 'IDebugPortSupplierDescription2:: GetDescription | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e99b55b89ef921c42fab582f65788923aa15c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724368"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Ruft die Beschreibungs- und Beschreibungsmetadaten für den Portanbieter ab.
+Ruft die Beschreibungs-und Beschreibungs Metadaten für den Port Lieferanten ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ public int GetDescription(
 
 ## <a name="parameters"></a>Parameter
 `pdwFlags`\
-[out] Metadatenflags für die Beschreibung.
+vorgenommen Metadatenflags für die Beschreibung.
 
 `pbstrText`\
-[out] Beschreibung des Hafenlieferanten.
+vorgenommen Die Beschreibung des Port Anbieters.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

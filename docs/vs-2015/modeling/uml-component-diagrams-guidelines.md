@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297162"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-Komponentendiagramme: Richtlinien
@@ -41,7 +41,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
   Sie können ein Komponentendiagramm verwenden, um den Entwurf unabhängig von der verwendeten Sprache oder Plattform darzustellen.
 
-## <a name="OtherDiagrams"></a>Beziehung zu anderen Diagrammen
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Beziehung zu anderen Diagrammen
  Sie können ein Komponentendiagramm in Verbindung mit anderen Diagrammen verwenden.
 
 |Anderes Diagramm|Unterstützt Sie beim Diskutieren und Kommunizieren dieser Aspekte des Entwurfs.|
@@ -51,7 +51,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 |Aktivitätsdiagramme|: Die interne Verarbeitung, die von einer Komponente als Reaktion auf eingehende Nachrichten ausgeführt wird.<br /><br /> Weitere Informationen finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md).|
 |Ebenendiagramme|-Logische Architektur Ebenen für Ihre Komponenten.<br /><br /> Weitere Informationen finden Sie unter [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Grundlegende Schritte zum Zeichnen von Komponenten Diagrammen
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Grundlegende Schritte zum Zeichnen von Komponenten Diagrammen
  Referenzinformationen zu den Elementen in Komponenten Diagrammen finden Sie unter [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md).
 
  Weitere Informationen zur Verwendung von Komponenten Diagrammen während des Entwurfsprozesses finden Sie unter Modellieren der [Architektur Ihrer APP](../modeling/model-your-app-s-architecture.md).
@@ -82,7 +82,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
 1. Klicken Sie in der Toolbox auf **Komponente** und dann auf einen leeren Teil des Diagramms.
 
-     \- oder –
+     \- oder -
 
      Kopieren Sie eine vorhandene Komponente, und fügen Sie diese ein.
 
@@ -146,7 +146,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
 - Suchen Sie im **UML-Modell-Explorer** die-Schnittstelle, und ziehen Sie Sie von dort auf die-Komponente.
 
-     \- oder -
+     - oder -
 
 - Kopieren Sie einen Verweis auf eine Schnittstelle aus einem Diagramm, und fügen Sie ihn ein.
 
@@ -161,8 +161,8 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
     3. Wenn Sie eine erforderliche Schnittstelle erstellen möchten, klicken Sie auf das Aktions-Tag, und klicken Sie dann **auf in erforderliche Schnittstelle konvertieren**.
 
-## <a name="Parts"></a>Die internen Teile einer Komponente werden angezeigt.
- ![Komponenten Diagramm mit internen teilen](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Die internen Teile einer Komponente werden angezeigt.
+ ![Komponentendiagramm mit internen Teilen](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Sie können Teile (3) in einer Komponente (1) platzieren, um anzuzeigen, wie diese aus kleineren Komponenten zusammengesetzt ist, die miteinander interagieren.
 
@@ -172,7 +172,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
  `+ partName : TypeName`
 
- In der übergeordneten Komponente zeigt jeder Teil die angebotenen und erforderlichen Schnittstellen an, die für seinen Typ (4, 5) definiert sind. Die Vorgänge und Dienste, die für einen Teil erforderlich sind, können von einem anderen Teil bereitgestellt werden. Sie können teilassemblyconnectors verwenden, um anzuzeigen, wie Teile miteinander verbunden sind (6).
+ In der übergeordneten Komponente zeigt jeder Teil die angebotenen und erforderlichen Schnittstellen an, die für seinen Typ (4, 5) definiert sind. Die Vorgänge und Dienste, die für einen Teil erforderlich sind, können von einem anderen Teil bereitgestellt werden. Sie können teilassemblyconnectors verwenden, um anzuzeigen, wie Teile miteinander verbunden sind (6). **Part Assembly**
 
  Sie können auch anzeigen, dass eine Schnittstelle der übergeordneten Komponente von einem ihrer Teile angeboten wird oder dafür erforderlich ist. Sie können einen Port des übergeordneten Elements mit einem Port eines internen Teils verbinden, indem Sie eine **Delegierungs** Beziehung (9) verwenden. Die zwei Ports müssen vom gleichen Typ sein (angeboten oder erforderlich), und ihre Schnittstellentypen müssen kompatibel sein.
 
@@ -188,13 +188,13 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
          Im **UML-Modell-Explorer**wird eine neue-Komponente erstellt. Dies ist der Typ des neuen Teils.
 
-         \- oder –
+         \- oder -
 
          Ziehen Sie eine vorhandene Komponente aus dem UML-Modell-Explorer auf die übergeordnete Komponente.
 
          Ein neuer Teil (3) wird in der übergeordneten Komponente angezeigt. Der Typ ist die Komponente, die Sie aus dem UML-Modell-Explorer gezogen haben.
 
-         \- oder –
+         \- oder -
 
          Klicken Sie mit der rechten Maustaste auf eine Komponente, entweder in einem Diagramm oder im UML-Modell-Explorer, und klicken Sie dann auf **Kopieren**.
 
@@ -206,7 +206,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
     3. Sie können dem neuen Teil angebotene und erforderliche Schnittstellen (4, 5) hinzufügen. Klicken Sie auf die **bereitgestellte Schnittstelle** oder das **erforderliche Schnittstellen** Tool, und klicken Sie dann auf den Teil.
 
-         \- oder –
+         \- oder -
 
          Ziehen Sie eine vorhandene Schnittstelle aus dem **UML-Modell-Explorer** auf den Teil.
 
@@ -255,7 +255,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
      Sie können darin jetzt Teile hinzufügen.
 
-## <a name="Designing"></a>Entwerfen der Komponente
+## <a name="designing-the-component"></a><a name="Designing"></a> Entwerfen der Komponente
 
 ### <a name="describing-how-the-parts-collaborate"></a>Beschreiben der Zusammenarbeit der Teile
  Sie können ein Sequenzdiagramm zeichnen, um darzustellen, wie die Teile als Reaktion auf eine Meldung zusammenarbeiten, die bei der übergeordneten Komponente eingeht.
@@ -270,7 +270,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
 - Falls die Arbeitsschritte sehr stark verteilt sind und viele Interaktionen stattfinden, kann dies die Leistung und die Verständlichkeit des Systems beeinträchtigen.
 
-  ![Sequenzdiagramm, das zusammen arbeitende Teile anzeigt](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Sequenzdiagramm mit zusammenarbeitenden Teilen](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>So zeichnen Sie ein Sequenzdiagramm, das die Zusammenarbeit zwischen Teilen veranschaulicht
 
@@ -318,7 +318,7 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 ### <a name="general-dependencies-between-components"></a>Allgemeine Abhängigkeiten zwischen Komponenten
  Mit einem Komponentendiagramm können Sie auch nur die Hauptbestandteile des Entwurfs und deren Abhängigkeiten anzeigen.
 
- ![Eine Abhängigkeit zwischen Komponenten](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![Abhängigkeit zwischen Komponenten](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
  Verwenden Sie das **Abhängigkeits** Tool, um eine Abhängigkeit zu zeichnen. Dies gibt an, dass der Entwurf einer Komponente von einer anderen Komponente abhängt.
 
@@ -332,5 +332,5 @@ In Visual Studio können Sie ein *Komponenten Diagramm* zeichnen, um die Struktu
 
   Sie können den Namen des Abhängigkeitspfeils verwenden, um eine bestimmte Art der Verwendung anzugeben. Um den Namen festzulegen, klicken Sie mit der rechten Maustaste auf den Pfeil, klicken Sie dann auf **Eigenschaften**, und legen Sie im Eigenschaften Fenster das Feld **Name** fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Entwerfen der physischen Struktur mithilfe von Komponenten Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

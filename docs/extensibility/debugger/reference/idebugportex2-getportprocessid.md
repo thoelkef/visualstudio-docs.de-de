@@ -1,5 +1,5 @@
 ---
-title: IDebugPortex2::GetPortProcessId | Microsoft Docs
+title: 'IDebugPortEx2:: getportprocessid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae974461e312c68e6fcc14150a08879ac7709950
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725134"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
@@ -41,13 +41,13 @@ int GetPortProcessId ( 
 
 ## <a name="parameters"></a>Parameter
 `pdwProcessId`\
-[out] Gibt die physische Prozess-ID des Ports selbst zurück.
+vorgenommen Gibt die physische Prozess-ID des Ports selbst zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- In der Win32-Laufzeit ruft diese Methode z. `GetCurrentProcessId` B. in der Regel die Win32-Funktion auf, um die physische Prozess-ID abzuruft.
+ Im Win32-Lauf Zeit Modul ruft diese Methode beispielsweise in der Regel die Win32-Funktion `GetCurrentProcessId` auf, um die physische Prozess-ID zu erhalten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

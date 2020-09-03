@@ -1,5 +1,5 @@
 ---
-title: Ausdrucksauswertung (Visual Studio Debugging SDK) | Microsoft Docs
+title: Ausdrucks Auswertung (Visual Studio-debuggingsdk) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,31 +12,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738714"
 ---
-# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Ausdrucksauswertung (Visual Studio Debugging SDK)
-Während des Unterbrechungsmodus muss die IDE einfache Ausdrücke auswerten, die mehrere Programmvariablen betreffen. Um die Auswertung durchzuführen, muss das Debugmodul (DE) einen Ausdruck analysieren und auswerten, der in eines der Fenster der IDE eingegeben wurde.
+# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Ausdrucks Auswertung (Visual Studio-debuggingsdk)
+Während des Break-Modus muss die IDE einfache Ausdrücke mit mehreren Programmvariablen auswerten. Um die Auswertung durchzuführen, muss die Debug-Engine (de) einen Ausdruck analysieren und auswerten, der in einem der Fenster der IDE eingegeben wurde.
 
- Ausdrücke werden mit der [IDebugExpressionContext2::ParseText-Methode](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) erstellt und durch die resultierende [IDebugExpression2-Schnittstelle](../../extensibility/debugger/reference/idebugexpression2.md) dargestellt.
+ Ausdrücke werden mit der [IDebugExpressionContext2::P Ardie Text](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) -Methode erstellt und durch die resultierende [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle dargestellt.
 
- Die **IDebugExpression2-Schnittstelle** wird von der DE implementiert und ruft ihre **EvalAsync-Methode** auf, um eine [IDebugProperty2-Schnittstelle](../../extensibility/debugger/reference/idebugproperty2.md) an die IDE zurückzugeben, um die Ergebnisse der Ausdrucksauswertung in der IDE anzuzeigen. [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) gibt eine Struktur zurück, die verwendet wird, um den Wert eines Ausdrucks in ein **Watch-Fenster** oder in das **Locals-Fenster** zu setzen.
+ Die **IDebugExpression2** -Schnittstelle wird von de implementiert und ruft die **evalasync** -Methode auf, um eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle an die IDE zurückzugeben, um die Ergebnisse der Ausdrucks Auswertung in der IDE anzuzeigen. [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) gibt eine-Struktur zurück, die verwendet wird, um den Wert eines Ausdrucks in einem **Überwachungs** **Fenster oder im Fenster** "lokal" zu platzieren.
 
- Das Debugpaket oder der Sitzungsdebug-Manager (SDM) ruft [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) oder [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) auf, um eine [IDebugProperty2-Schnittstelle](../../extensibility/debugger/reference/idebugproperty2.md) abzuerhalten, die das Ergebnis der Auswertung darstellt. `IDebugProperty2`hat Methoden, die den Namen, den Typ und den Wert des Ausdrucks zurückgeben. Diese Informationen werden in verschiedenen Debuggerfenstern angezeigt.
+ Das Debug-Paket oder der Session Debug Manager (SDM) ruft [IDebugExpression2:: evaluateasync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) oder [evaluatesync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) auf, um eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle zu erhalten, die das Ergebnis der Auswertung darstellt. `IDebugProperty2` verfügt über Methoden, die den Namen, den Typ und den Wert des Ausdrucks zurückgeben. Diese Informationen werden in verschiedenen Debuggerfenstern angezeigt.
 
-## <a name="using-expression-evaluation"></a>Verwenden der Ausdrucksauswertung
- Um die Ausdrucksauswertung zu verwenden, müssen Sie die [IDebugExpressionContext2::ParseText-Methode](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) und alle Methoden der [IDebugExpression2-Schnittstelle](../../extensibility/debugger/reference/idebugexpression2.md) implementieren, wie in der folgenden Tabelle dargestellt.
+## <a name="using-expression-evaluation"></a>Verwenden der Ausdrucks Auswertung
+ Zum Verwenden der Ausdrucks Auswertung müssen Sie die [IDebugExpressionContext2::P arltext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) -Methode und alle Methoden der [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle implementieren, wie in der folgenden Tabelle gezeigt.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Wertet einen Ausdruck asynchron aus.|
-|[Abbrechen](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone Ausdrucksauswertung.|
+|[Abbruch](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone Ausdrucks Auswertung.|
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Wertet einen Ausdruck synchron aus.|
 
- Für die synchrone und asynchrone Auswertung ist die [IDebugProperty2::GetPropertyInfo-Methode](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) implementiert. Die Asynchrone Ausdrucksauswertung erfordert die Implementierung von [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
+ Die synchrone und asynchrone Auswertung erfordert die Implementierung der [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) -Methode. Bei der asynchronen Ausdrucks Auswertung ist die Implementierung von [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)erforderlich.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Ausführungskontrolle und Zustandsbewertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [Ausführungs Steuerung und Zustands Auswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

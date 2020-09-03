@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297656"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
@@ -64,9 +64,9 @@ In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studi
   
 3. Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .  
   
-4. Halten Sie den Debugger an. Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **Alle unterbrechen** , oder drücken Sie **STRG+ALT+PAUSE**.  
+4. Halten Sie den Debugger an. Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **Alle unterbrechen** aus, oder drücken Sie einfach **Strg + Alt + Pause**.  
   
-5. Erstellen Sie einen Thread-Dump. Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**.  
+5. Erstellen Sie einen Thread-Dump. Geben Sie in der Befehlsfenster den folgenden Befehl ein, und drücken **Sie die Eingabe**Taste.  
   
    ```powershell  
    Debug.ListCallStack /AllThreads /ShowExternalCode  

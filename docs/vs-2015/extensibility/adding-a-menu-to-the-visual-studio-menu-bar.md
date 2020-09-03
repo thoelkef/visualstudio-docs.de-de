@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Menüs zur Menüleiste Menüpunkt | Microsoft-Dokumentation
+title: Hinzufügen eines Menüs zur Menüleiste | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,45 +12,45 @@ caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184929"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Visual Studio-Menüleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten Entwicklungsumgebung (IDE) von Visual Studio-Menüleiste hinzugefügt wird. Die IDE-Menüleiste enthält Menükategorien wie z. B. **Datei**, **bearbeiten**, **Ansicht**, **Fenster**, und **Hilfe** .
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein Menü zur Menüleiste der integrierten Entwicklungsumgebung (IDE) von Visual Studio hinzufügen. Die IDE-Menüleiste enthält Menü Kategorien wie z. b. **Datei**, **Bearbeiten**, **Ansicht**, **Fenster**und **Hilfe**.
 
- Hinzufügen eines neuen Menüs zur Menüleiste Visual Studio, berücksichtigen Sie, ob Ihre Befehle in einem vorhandenen Menü eingefügt werden soll. Weitere Informationen zur Platzierung der Befehl finden Sie unter [Menüs und Befehle für Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
+ Bevor Sie der Visual Studio-Menüleiste ein neues Menü hinzufügen, sollten Sie überprüfen, ob die Befehle in einem vorhandenen Menü platziert werden sollen. Weitere Informationen zur Befehls Platzierung finden Sie unter [Menüs und Befehle für Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
- Menüs werden in der VSCT-Datei des Projekts deklariert. Weitere Informationen zu Menüs und VSCT-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
+ Menüs werden in der vsct-Datei des Projekts deklariert. Weitere Informationen zu Menüs und vsct-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
- Diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü mit dem Namen erstellen **TestMenu** , das einen Befehl enthält.
+ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü mit dem Namen **testmenu** erstellen, das einen Befehl enthält.
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Voraussetzungen
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Erstellen eines VSIX-Projekts mit einer benutzerdefinierten Befehls-Elementvorlage
+## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Erstellen eines VSIX-Projekts, das über eine benutzerdefinierte Befehls Element Vorlage verfügt
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TopLevelMenu`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-**  / **Erweiterbarkeit**.  Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TopLevelMenu` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** " unter **Visual c#**-  /  **Erweiterbarkeit**.  Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **TestCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **TestCommand.cs**.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Hinzufügen/Neues Element**aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in **TestCommand.cs**.
 
-## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Erstellen eines Menüs in der IDE-Menüleiste
+## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Erstellen eines Menüs auf der IDE-Menüleiste
 
-#### <a name="to-create-a-menu"></a>Zum Erstellen eines Menüs
+#### <a name="to-create-a-menu"></a>So erstellen Sie ein Menü
 
-1. In **Projektmappen-Explorer**, TestCommandPackage.vsct zu öffnen.
+1. Öffnen Sie in **Projektmappen-Explorer**die Datei "testcommandpackage. vsct".
 
-     Am Ende der Datei, besteht eine \<Symbole > Knoten, der mehrere enthält \<GuidSymbol > Knoten. Fügen Sie ein neues Symbol, klicken Sie im Knoten mit dem Namen GuidTestCommandPackageCmdSet wie folgt:
+     Am Ende der Datei befindet sich ein \<Symbols> Knoten, der mehrere \<GuidSymbol> Knoten enthält. Fügen Sie im Knoten guidtestcommandpackagecmdset wie folgt ein neues Symbol hinzu:
 
     ```xml
     <IDSymbol name="TopLevelMenu" value="0x1021"/>
     ```
 
-2. Erstellen Sie eine leere \<Menüs > Knoten in der \<Befehle > Knoten direkt vor \<Gruppen >. In der \<Menüs > Knoten Hinzufügen einer \<Menü > Knoten wie folgt:
+2. Erstellen Sie \<Menus> direkt zuvor einen leeren Knoten im \<Commands> Knoten \<Groups> . \<Menus>Fügen Sie im-Knoten \<Menu> wie folgt einen-Knoten hinzu:
 
     ```xml
     <Menus>
@@ -65,13 +65,13 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
     </Menus>
     ```
 
-     Die `guid` und `id` Werte des Menüs Geben Sie den Befehlssatz, und bestimmte Menü in den Befehlssatz.
+     Der `guid` -Wert und der- `id` Wert des Menüs geben den Befehlssatz und das jeweilige Menü im Befehlssatz an.
 
-     Die `guid` und `id` Werte des übergeordneten Elements positionieren Sie im Menü auf der Teil der Visual Studio-Menüleiste, die die Tools und Add-Ins Menüs enthält.
+     Die `guid` -und-Werte der über `id` geordneten positionieren das Menü im-Abschnitt der Visual Studio-Menüleiste, die die Menüs Tools und Add-Ins enthält.
 
-     Der Wert des der `CommandName` Zeichenfolge gibt an, dass der Text im Menüelement angezeigt wird.
+     Der Wert der `CommandName` Zeichenfolge gibt an, dass der Text im Menü Element angezeigt werden soll.
 
-3. In der \<Gruppen > im Abschnitt, finden Sie die \<Gruppe >, und ändern Sie die \<übergeordneten >-Elements auf das Menü zeigen wir gerade hinzugefügt haben:
+3. Suchen Sie im \<Groups> \<Group> -Abschnitt nach, und ändern Sie das-Element so, dass \<Parent> es auf das soeben hinzugefügte Menü verweist:
 
     ```csharp
     <Groups>
@@ -81,19 +81,19 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
         </Groups>
     ```
 
-     Dadurch wird den Teil von Gruppe für das neue Menü.
+     Dadurch wird der Gruppen Teil des neuen Menüs.
 
-4. Suchen der `Buttons` Abschnitt. Beachten Sie, dass die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Paket-Vorlage wurde generiert eine `Button` -Element, das das übergeordnete Element festgelegt wurde `MyMenuGroup`. Mit diesem Befehl wird daher in Ihrem Menü angezeigt.
+4. Suchen Sie nach dem Abschnitt `Buttons`. Beachten Sie, dass die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket Vorlage ein-Element generiert hat `Button` , dessen übergeordnetes Element auf festgelegt ist `MyMenuGroup` . Daher wird dieser Befehl im Menü angezeigt.
 
-## <a name="building-and-testing-the-extension"></a>Erstellen und testen die Erweiterung
+## <a name="building-and-testing-the-extension"></a>Entwickeln und Testen der Erweiterung
 
-1. Erstellen Sie das Projekt, und starten Sie das Debugging. Eine Instanz der experimentellen Instanz sollten angezeigt werden.
+1. Erstellen Sie das Projekt, und starten Sie das Debugging. Eine Instanz der experimentellen Instanz sollte angezeigt werden.
 
-2. Die Menüleiste in der experimentellen Instanz sollte enthalten eine **TestMenu** Menü.
+2. Die Menüleiste in der experimentellen Instanz sollte ein **testmenu** -Menü enthalten.
 
-3. Auf der **TestMenu** Menü klicken Sie auf **Test-Invoke-Command**.
+3. Klicken Sie im Menü **Testmenü** auf **Test Befehl aufrufen**.
 
-     Ein Meldungsfeld angezeigt werden soll, und die Meldung "Paket in TopLevelMenu.TestCommand.MenuItemCallback() TestCommand" angezeigt. Dies gibt an, dass der neue Befehl funktioniert.
+     Es sollte ein Meldungs Feld angezeigt werden, in dem die Meldung "TestCommand-Paket in toplevelmenu. TestCommand. MenuItemCallBack ()" angezeigt wird. Dies gibt an, dass der neue Befehl funktioniert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520834"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
@@ -62,7 +62,7 @@ Wenn Sie eine Vorlage in der Anwendung verwenden, ist es einfacher, die endgült
     > [!NOTE]
     > Der Vorlagen Dateiname wird im generierten Code als Klassenname verwendet. Daher sollten keine Leerzeichen oder Interpunktions Zeichen vorhanden sein.
 
-4. Wählen Sie **Hinzufügen**.
+4. Wählen Sie **Hinzufügen** aus.
 
     Eine neue Datei mit der Erweiterung **. tt**wird erstellt. Die **benutzerdefinierte Tool** -Eigenschaft ist auf **texttemplatingfilepreprocessor**festgelegt. Sie enthält die folgenden Zeilen:
 
@@ -433,7 +433,7 @@ Entwurfszeit Vorlagen: Wenn Sie eine Vorlage verwenden möchten, um Code zu gene
 
 Lauf Zeit Vorlagen können in jeder Anwendung verwendet werden, in der die Vorlagen und deren Inhalt zur Kompilierzeit bestimmt werden. Wenn Sie jedoch eine Visual Studio-Erweiterung schreiben möchten, die Text aus Vorlagen generiert, die zur Laufzeit geändert werden, finden Sie weitere Informationen unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

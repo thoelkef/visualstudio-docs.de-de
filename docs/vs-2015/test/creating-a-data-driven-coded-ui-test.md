@@ -11,10 +11,10 @@ caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851853"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests der programmierten UI
@@ -22,7 +22,7 @@ ms.locfileid: "75851853"
 
 Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Parameterwerten mehrfach ausführen. Datengesteuerte Tests für die codierte UI stellen dafür eine bequeme Möglichkeit dar. Sie definieren Parameterwerte in einer Datenquelle. Jede Zeile in der Datenquelle ist eine Iteration des Tests der codierten UI. Das Gesamtergebnis des Tests basiert auf dem Ergebnis für alle Iterationen. Wenn beispielsweise eine Testiteration fehlschlägt, ist das Gesamttestergebnis ein Fehler.
 
- **Voraussetzungen**
+ **Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -31,21 +31,21 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
 #### <a name="step-1---create-a-coded-ui-test"></a>Schritt 1: Erstellen Sie einen Test für die codierte UI
 
-1. Erstellen Sie ein Projekt.
+1. Erstellt ein Projekt.
 
      ![Erstellen eines Coded UI-Testprojekts](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. Wählen Sie das Aufzeichnen der Aktionen aus.
 
-     ![Aufzeichnen der Aktionen](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Wählen Sie die Aktionen aufzuzeichnen](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. Öffnen Sie die Rechner-Anwendung und starten Sie die Testaufzeichnung.
 
-     ![Aktionen aufzeichnen](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Aufzeichnungsaktionen](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Fügen Sie 1 plus 2 hinzu, halten Sie die Aufzeichnung an und generieren Sie die Testmethode. Später werden wir die Werte dieser Benutzereingaben mit Werten aus einer Datendatei ersetzen.
 
-     ![Testmethode generieren](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generieren der Testmethode](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      Schließen Sie den Test-Generator. Die Methode wird dem Test hinzugefügt:
 
@@ -61,21 +61,21 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
 5. Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: STRG + R, T).
 
-     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des Test-Explorers angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **TEST** die Option **Windows** **Test-Explorer** aus.
+     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des Test-Explorers angezeigt. Um das Fenster Test-Explorer zu öffnen, wählen Sie im Menü **Test** die Option **Fenster** aus, und wählen Sie dann **Test-Explorer**aus.
 
 6. Da eine Datenquelle auch zur Assertion von Parameterwerten verwendet werden kann, die vom Test zur Überprüfung erwarteter Werte verwendet wird, fügen wir eine Assertion hinzu, um zu überprüfen, dass die Summe der beiden Zahlen korrekt ist. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, wählen Sie **Code für den Coded UI-Test generieren** und anschließend **Coded UI-Test-Generator verwenden** aus.
 
      Ordnen Sie das Text-Steuerelement im Rechner zu, der die Summe anzeigt.
 
-     ![Zuordnen des Steuer Elements für Benutzeroberflächen Text](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Ordnen Sie das Benutzeroberflächen-Textsteuerelement zu](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. Fügen Sie eine Assertion hinzu, die überprüft, ob der Wert der Summe korrekt ist. Wählen Sie die Eigenschaft **DisplayText**, die den Wert **3** hat, und wählen Sie anschließend **Assertion hinzufügen** aus. Verwenden Sie den Vergleichsoperator **AreEqual**, und stellen Sie sicher, dass der Vergleichswert **3** ist.
 
-     ![Konfigurieren der-Assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+     ![Konfigurieren der Assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
 8. Nach dem Konfigurieren der Assertion generieren Sie erneut Code aus dem Generator. Dies erstellt eine neue Methode für die Validierung.
 
-     ![Generieren der Assert-Methode](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Erstellen der Assertionsmethode](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      Da die Methode `ValidateSum` die Ergebnisse der Methode `AddNumbers` überprüft, verschieben Sie es an das Ende des Codeblocks.
 
@@ -98,11 +98,11 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
 1. Fügen Sie dem DataDrivenSample-Projekt eine Textdatei mit dem Namen `data.csv` hinzu.
 
-     ![Fügen Sie dem Projekt eine Datei mit Komma getrennten Werten hinzu.](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Fügen Sie dem Projekt eine CSV-Datei hinzu](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. Füllen Sie die .csv-Datei mit den folgenden Daten aus:
 
-    |Num1|Num2|Summe|
+    |Num1|Num2|SUM|
     |----------|----------|---------|
     |3|4|7|
     |5|6|11|
@@ -112,7 +112,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
      ![Füllt die auf. CSV-Datei mit Daten](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
-3. Es ist wichtig,dass die .csv-Datei mit der richtigen Codierung gespeichert wird. Wählen Sie im Menü **DATEI** die Option **Erweiterte Speicheroptionen** und als Kodierung **Unicode (UTF-8 ohne Signatur) - Codepage 65001** aus.
+3. Es ist wichtig,dass die .csv-Datei mit der richtigen Codierung gespeichert wird. Wählen Sie im Menü **Datei** die **Option Erweiterte Speicheroptionen** aus, und wählen Sie **Unicode (UTF-8 ohne Signatur) – Codepage 65001** als Codierung aus.
 
 4. Die .csv-Datei muss in das Ausgabeverzeichnis kopiert werden oder der Test kann nicht ausgeführt werden. Verwenden Sie das Fenster "Eigenschaften", um ihn zu kopieren.
 
@@ -185,15 +185,15 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
     - Öffnen Sie die UIMap.uitest-Datei.
 
-         ![Öffnen des Editors für Tests der programmierten UI](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Öffnen Sie den codierten Benutzeroberflächen-Test-Editor](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - Wählen Sie die UI-Aktion aus und beobachten Sie die entsprechende Zuordnung des UI-Steuerelements. Beachten Sie die Zuordnung des Codes, wie z. B. `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Verwenden des Editors für Tests der programmierten UI, um Code zu unterstützen](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Verwenden Sie den codierten Benutzeroberflächen-Test-Editor zur Unterstützung mit Code](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - Öffnen Sie im Eigenschaftenfenster die Auswahl **Sucheigenschaften**. Der Wert der Sucheigenschaften **Name** ist der Wert, der im Code unter Verwendung der Datenquelle manipuliert wird. Angenommen, den `SearchProperties` werden die Werte in der ersten Spalte jeder Datenzeile zugewiesen: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();` Bei den drei Iterationen dieses Tests ändert sich der Wert **Name** für die Sucheigenschaft auf 3, dann auf 5 und zuletzt auf 6.
 
-         ![Verwenden der Such Eigenschaften zur Unterstützung der Codierung](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Verwenden der Sucheigenschaften zur Unterstützung der Programmierung](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. Speichern Sie die Projektmappe.
 
@@ -203,13 +203,13 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
 
     Der Testlauf über die drei Iterationen sollte unter Verwendung der Werte in der CSV-Datei angezeigt werden. Die Validierung sollte auch funktionieren und der Test sollte im Test-Explorer als erfolgreich angezeigt werden.
 
-   **Empfehlungen**
+   **Leitfaden**
 
-   Weitere Informationen finden Sie unter [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 2: Komponententests: Interne Tests)](https://msdn.microsoft.com/library/jj159340.aspx) und [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisierte Systemtests)](https://msdn.microsoft.com/library/jj159335.aspx)
+   Weitere Informationen finden Sie unter [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests: Testen des inneren](https://msdn.microsoft.com/library/jj159340.aspx) und [Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisieren von System Tests](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="q--a"></a>Fragen und Antworten
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Was bedeuten die Attribute für Datenquellen für andere Datenquellentypen wie SQL Express oder XML?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Was bedeuten die Attribute für Datenquellen für andere Datenquellentypen wie SQL Express oder XML?
  Sie können die Beispiel-Datenquellenzeichenfolgen in der folgenden Tabelle verwenden, indem Sie diese in Ihren Code kopieren und die erforderlichen Anpassungen vornehmen.
 
  **Arten von Datenquellen und Attribute**
@@ -246,15 +246,15 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>F: Warum kann ich den Code in der Datei "UIMap.Designer" nicht ändern?
- **A**: Alle Codeänderungen, die Sie an der Datei „UIMapDesigner.cs“ vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Coded UI-Test-Generator generieren. In diesem Beispiel und in den meisten Fällen können die Änderungen am Code, die benötigt werden, um einen Test mit Verwendung einer Datenquelle freizugeben, zu einer Quelldatei für den Test verwendet werden (das ist CodedUITest1.cs).
+ **A:** Alle Codeänderungen, die Sie an der Datei UIMapDesigner.cs vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für programmierte UI generieren. In diesem Beispiel und in den meisten Fällen können die Änderungen am Code, die benötigt werden, um einen Test mit Verwendung einer Datenquelle freizugeben, zu einer Quelldatei für den Test verwendet werden (das ist CodedUITest1.cs).
 
  Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

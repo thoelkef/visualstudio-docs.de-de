@@ -13,18 +13,18 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850348"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen isolierten Shellanwendung
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte shelllösung erstellen, die Hilfe zum Tool Fenster anpassen und ein Setup Programm erstellen, mit dem die isolierte Shell installiert wird.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Zum Bereitstellen der isolierten Shell müssen Sie auch das verteilbare Visual Studio Shell-Paket (isoliert) verwenden.  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Erstellen einer isolierten shelllösung  
@@ -44,7 +44,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 2. Erweitern Sie im Fenster **Neues Projekt** den Eintrag **andere Projekttypen** , und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie die Vorlage **Visual Studio Shell isoliertes** Projekt aus.  
   
-3. Benennen Sie das Projekt `MyVSShellStub`, und geben Sie einen Speicherort an. Stellen Sie sicher, dass Projektmappenverzeichnis **Erstellen** aktiviert ist, und klicken Sie dann auf **OK**.  
+3. Benennen Sie das Projekt `MyVSShellStub` und geben Sie einen Speicherort an. Stellen Sie sicher, dass Projektmappenverzeichnis **Erstellen** aktiviert ist, und klicken Sie dann auf **OK**.  
   
      Die neue Projekt Mappe wird in **Projektmappen-Explorer**angezeigt.  
   
@@ -59,7 +59,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 1. Öffnen Sie im Projekt myvsshellstub den Befehl \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Ändern Sie den Wert des `AppName` Elements in **"appname" = "Fabrikam Music Editor"** .  
+2. Ändern `AppName` Sie den Wert des Elements in **"appname" = "Fabrikam Music Editor"** .  
   
 3. Zum Ändern des Anwendungs Symbols kopieren Sie ein anderes Symbol in das Verzeichnis "\myvsshellstub\meinvsshellstub\meinvsshellstub\". Benennen Sie die vorhandene Datei "ApplicationIcon. ico" in ApplicationIcon1. ico um. Benennen Sie die neue Datei in "ApplicationIcon. ico" um.  
   
@@ -70,7 +70,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>So passen Sie die Standard Startseite des Webbrowsers an  
   
-1. Ändern Sie in der Datei myvsshellstub. Application. pkgdef den Wert des `DefaultHomePage` Elements in "<https://www.microsoft.com>".  
+1. Ändern Sie in der Datei myvsshellstub. Application. pkgdef den `DefaultHomePage` Elementwert in " <https://www.microsoft.com> ".  
   
 2. Erstellen Sie das Projekt myvsshellstub neu.  
   
@@ -79,7 +79,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
 4. Klicken Sie in der **Ansicht bzw. in anderen Fenstern**auf **Webbrowser**. Im **Webbrowser** Fenster wird die Microsoft Corporation-Startseite angezeigt.  
   
 ## <a name="removing-the-print-command"></a>Entfernen des Print-Befehls  
- Die vsct-Datei in einem Projekt für eine isolierte Shell-Benutzeroberfläche besteht aus einer Reihe von Deklarationen der Form `<Define name=No_`*Element*`>`, wobei *Element* eines der Standardmenüs und-Befehle von Visual Studio ist.  
+ Die vsct-Datei in einem Projekt für eine isolierte Shell-Benutzeroberfläche besteht aus einem Satz von Deklarationen des Formular `<Define name=No_` *Elements* `>` , wobei *Element* eines der Standardmenüs und-Befehle von Visual Studio ist.  
   
  Wenn eine Deklaration nicht kommentiert ist, wird das Menü oder der Befehl von der isolierten Shell ausgeschlossen. Wenn eine Deklaration hingegen kommentiert wird, ist das Menü oder der Befehl in der isolierten Shell enthalten.  
   
@@ -115,7 +115,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 2. Entfernen Sie die Auskommentierung der folgenden Zeile:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \packages \\ {87569308-4813-40A0-9cd0-d7a30838ca3f}]  
   
 3. Erstellen Sie die Projekt Mappe neu, und starten Sie das Debugging der isolierten Shell Öffnen Sie eine XML-Datei, z. b. \meinvsshellstub\meinvsshellstub\meinvsshellstus\meinvsshellstubui.vsct. Vergewissern Sie sich, dass die XML-Schlüsselwörter in der Datei nicht farbig sind und dass bei der Eingabe von "<" in einer Zeile keine XML-Quick Infos angezeigt werden.  
   
@@ -126,7 +126,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 1. Der Name des Unternehmens, die Copyright Informationen, die Produktversion und die Produktbeschreibung finden Sie im Projekt "myvsshellstub. aboutboxpackage" in der Datei "\Properties\AssemblyInfo.cs". Öffnen Sie diese Datei.  
   
-2. Ändern Sie den `AssemblyCompany` Wert in **Fabrikam**, die Werte für `AssemblyProduct` und `AssemblyTitle` in den **Fabrikam Music Editor**und den Wert `AssemblyCopyright` in **Copyright © Fabrikam 2015**:  
+2. Ändern Sie den `AssemblyCompany` Wert in **Fabrikam**, `AssemblyProduct` die `AssemblyTitle` Werte und in **Fabrikam Music Editor**, und `AssemblyCopyright` legen Sie den Wert **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,7 +139,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. Um eine Beschreibung des Produkts hinzuzufügen, ändern Sie den `AssemblyDescription` Wert in **die Beschreibung des Fabrikam Music-Editors**:  
+3. Um eine Beschreibung des Produkts hinzuzufügen, ändern Sie den `AssemblyDescription` Wert in **die Beschreibung von Fabrikam Music Editor.**  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
@@ -147,7 +147,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 4. Starten Sie das Debugging, und öffnen Sie in der Anwendung für isolierte Shell das Feld **Hilfe/** Info. Die geänderten Zeichen folgen sollten angezeigt werden. Der Titel des Felds Hilfe/Info ist mit dem `AssemblyTitle` Wert in AssemblyInfo.cs identisch.  
   
-5. Die Eigenschaften des Felds " **Hilfe/** Info" selbst finden Sie in der Datei "myvsshellstub. aboutboxpackage\aboutbox.XAML". Um die Breite des Felds Hilfe/Info zu ändern, wechseln Sie zum `AboutDialogStyle` Block, und legen Sie die `Width`-Eigenschaft auf 200 fest:  
+5. Die Eigenschaften des Felds " **Hilfe/** Info" selbst finden Sie in der Datei "myvsshellstub. aboutboxpackage\aboutbox.XAML". Wenn Sie die Breite des Felds "Hilfe/Info" ändern möchten, wechseln Sie zum- `AboutDialogStyle` Block, und legen Sie die- `Width` Eigenschaft auf 200 fest:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -178,7 +178,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, und klicken Sie dann auf **Neues Projekt hinzufügen**.  
   
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus. Benennen Sie das neue Projekt `MySetup` und klicken Sie dann auf **OK**.  
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus. Benennen Sie das neue Projekt, `MySetup` und klicken Sie dann auf **OK**.  
   
 3. Wenn InstallShield Limited Edition bereits installiert ist, fahren Sie mit dem nächsten Schritt fort.  
   
@@ -206,15 +206,15 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll. Manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. Myvsshellstub. pkgdef  
   
-    5. MyVSShellStub.pkgundef  
+    5. Myvsshellstub. pkgundef  
   
-    6. MyVSShellStub.winprf  
+    6. Myvsshellstub. winprf  
   
-    7. Splash. bmp  
+    7. Splash.bmp  
   
 5. Klicken Sie auf die Schaltfläche **Projekt Ausgaben hinzufügen** , und fügen Sie **myvsshellstub/Primary Output**hinzu. Klicken Sie auf **OK**.  
   
@@ -226,9 +226,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 9. Klicken Sie auf die Schaltfläche **Dateien hinzufügen** , und fügen Sie im Ordner \myvsshellstub\release\extensions\application\ die folgenden Dateien hinzu:  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - Myvsshellstub. aboutboxpackage. pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - Myvsshellstub. Application. pkgdef  
   
 10. Klicken Sie im linken Bereich mit der rechten Maustaste auf den Knoten **Fabrikam Music Editor [INSTALLDIR]** , und fügen Sie einen neuen Ordner mit dem Namen **1033**hinzu.  
   
@@ -254,9 +254,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine isolierte she
   
 21. Erstellen Sie die Lösung für isolierte Shell neu, um das Setup Projekt zu erstellen.  
   
-     Sie finden die Datei "Setup. exe" im folgenden Ordner:  
+     Sie finden die setup.exe Datei im folgenden Ordner:  
   
      \Meinvsshellstub\mysetup\mysetup\express \singleimage\diskimages\disk1  
   
 ## <a name="testing-the-installation-program"></a>Testen des Installationsprogramms  
- Zum Testen des Setups kopieren Sie die Datei "Setup. exe" auf einen anderen Computer, und führen Sie die ausführbare Setup Datei aus. Sie sollten in der Lage sein, die isolierte Shellanwendung auszuführen.
+ Um das Setup zu testen, kopieren Sie die setup.exe Datei auf einen anderen Computer, und führen Sie die ausführbare Setup Datei aus. Sie sollten in der Lage sein, die isolierte Shellanwendung auszuführen.

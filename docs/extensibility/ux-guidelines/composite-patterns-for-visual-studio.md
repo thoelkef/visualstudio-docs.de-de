@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114075"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
@@ -28,7 +28,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 - [Fingereingabe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Datenvisualisierung
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Datenvisualisierung
 
 ### <a name="overview"></a>Übersicht
  Diagramme sind eine visuelle Methode zum Aggregieren und Visualisieren von Daten, um die Entscheidungsfindung zu verbessern. Sie können Benutzer bei vielen Daten unterstützen, aber es kann nur wenig gemeint sein, was zu tun hat und was eine Aktion erfordern könnte.
@@ -68,7 +68,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 ### <a name="other-charting-considerations"></a>Weitere Überlegungen zu Diagramm
 
-#### <a name="color"></a>Farbe
+#### <a name="color"></a>„Color“ (Farbe)
  Es gibt eine bestimmte Palette von Diagramm Farben, die für die Verwendung in Visual Studio definiert sind. Die Palette ist für die Haupttypen der Farbblindheit zugänglich, und die Farben können auch dann unterschieden werden, wenn Sie als sehr schmale Farb Scheiben verwendet werden. Sie können diese Farben in beliebiger Kombination für beliebige Diagramm-oder Diagrammtypen in der Benutzeroberfläche verwenden. Sie müssen nicht alle sieben Farben verwenden, wenn Sie nicht die vielen unterschiedlichen Farben benötigen. Diese Farben wurden nicht für die Verwendung mit beliebigen Vordergrund Elementen entworfen. Platzieren Sie Text oder Symbole nicht oberhalb dieser Farben. Diese Farbtöne sollten hart codiert und für die Benutzeranpassung unter Extras **> Optionen** verfügbar gemacht werden (siehe verfügbar machen [von Farben für Endbenutzer](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Swatch|Hex|RGB|
@@ -81,7 +81,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 |![Farbmuster 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121.215.242|
 |![Farbmuster B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181.181.181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>On-Object-Benutzeroberfläche und Peer
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> On-Object-Benutzeroberfläche und Peer
  In diesem Abschnitt erhalten Sie einen Kontext für peeking, auch bekannt als Code Peek-Sicht, eine Art von Benutzeroberfläche, die für Visual Studio eindeutig ist.
 
 ### <a name="overview"></a>Übersicht
@@ -247,7 +247,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 - Zeigen Sie **niemals** Inhalt auf dem Mauszeiger an, der bearbeitbar oder Benutzerinteraktion ist. Dieses Verhalten kann die Benutzer beeinträchtigen, wenn Sie versuchen, den Cursor über den Detail Inhalt zu bewegen, da das Standardverhalten für eine QuickInfo sofort geschlossen werden soll, wenn sich der Cursor nicht mehr über dem Master Inhalt befindet, der ihn erzeugt hat.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Auswahl Modelle
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Auswahl Modelle
 
 ### <a name="overview"></a>Übersicht
  Ein Auswahl Modell ist der Mechanismus, der verwendet wird, um Vorgänge für ein oder mehrere Objekte anzuzeigen und zu bestätigen, die in der Benutzeroberfläche von Interesse sind. In diesem Thema werden die Interaktionsmuster der Auswahl in Visual Studio-Dokument-Editoren erläutert: Text-Editoren, Entwurfs Oberflächen und Modellierungs Oberflächen.
@@ -272,7 +272,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 - Region
 
-#### <a name="scope"></a>Bereich
+#### <a name="scope"></a>`Scope`
  Die wichtigste Komponente der Auswahl ist die Sicherstellung, dass der Benutzer weiß, in welchem Fenster Sie arbeiten (Aktivierung) und wo sich der Fokus befindet (Auswahl). Visual Studio erweitert die Fenster Verwaltungsfunktionen in Windows, das Aktivierungs Schema ist jedoch identisch: bei der Interaktion mit einem Fenster wird der Fokus auf das Fenster erweitert. Visual Studio verfügt über zwei Indikatoren für die Aktivierung: einen für Dokument Fenster und einen für Tool Fenster.
 
  Für Dokument Fenster wird das aktive Fenster durch eine Registerkarte des Dokument Fensters angezeigt, die sich im Vordergrund befindet und seine Hintergrundfarbe ändert:
@@ -390,10 +390,10 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
  **Primäre Auswahl mit zwei sekundären Auswahlen**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Darstellung der grafischen Objektauswahl
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der grafischen Objektauswahl
  Die Auswahl Handles sind Quadrate, die in einem rechteckigen Muster um das umgebende Feld des Objekts gezeichnet werden. Das folgende Diagramm zeigt Beispiele für die verschiedenen Zustände, die ein grafisches Objekt mit handle, Größenanpassung und direkt Bearbeitung aufweisen kann. Die Größe der Handles sollte mithilfe der **GetSystemMetrics** -API an die Fensterrahmen-und Edge-Metriken gebunden werden.
 
-| Status | Darstellung | Visuelle Details |
+| State | Darstellung | Visuelle Details |
 |-------------------------|---------------| - |
 | **Nicht markiert** | Standard | ![Status der Standardschaltfläche](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Primäre Auswahl** | Geändert | ![Primäre Auswahl mit Handles zum Ändern der Größe](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -471,7 +471,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 - Mit der F2-Taste wird die direkte Bearbeitung für die aktuell ausgewählte Zelle aktiviert.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Persistenz und Speichern von Einstellungen
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Persistenz und Speichern von Einstellungen
 
 ### <a name="overview"></a>Übersicht
  Obwohl jede Softwarekomponente in Visual Studio in der Regel für den eigenen Zustand und die Persistenz verantwortlich ist, speichert Visual Studio automatisch Einstellungen in einigen Fällen, z. b. mit Fenstergrößen und Positionen. Die folgende Tabelle ist eine Kombination aus automatisch gespeicherten Einstellungen und Einstellungen, für die ein expliziter Benutzer oder eine programmierte Aktion erforderlich ist.
@@ -482,7 +482,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 |Dialog|Der Speicherort des Dialog Felds, wenn es verschoben wurde.<br /><br /> Die Ansicht, die der Benutzer zuletzt im Dialogfeld verwendet hat.|Beim Schließen des Dialog Felds<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Im Arbeitsspeicher<br /><br /> Registrierung in **HKEY_CURRENT_USER**|
 |Fenster|Größe und Position des Fensters|Wenn das Fenster geschlossen wird<br /><br /> Wenn sich der Visual Studio-Modus ändert<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Die **Benutzer Optionsdatei (. suo)** für das Projekt<br /><br /> Benutzerdefinierte Optionsdatei für Fenster Einstellungen|
 |Dokument|Die aktuelle Auswahl im Dokument.<br /><br /> Die Ansicht des Dokuments.<br /><br /> Die letzten Orte, die der Benutzer besucht hat.|Wenn das Dokument gespeichert wird|Die **Benutzer Optionsdatei (. suo)** für das Projekt|
-|Project|Verweise auf Dateien<br /><br /> Verweise auf Verzeichnisse auf dem Datenträger<br /><br /> Verweise auf andere Software<br /><br /> Komponenten<br /><br /> Zustandsinformationen zum Projekt selbst|Beim Speichern des Projekts|Die Projektdatei.|
+|Projekt|Verweise auf Dateien<br /><br /> Verweise auf Verzeichnisse auf dem Datenträger<br /><br /> Verweise auf andere Software<br /><br /> Komponenten<br /><br /> Zustandsinformationen zum Projekt selbst|Beim Speichern des Projekts|Die Projektdatei.|
 |Lösung|Verweise auf Projekte<br /><br /> Verweise auf Dateien|Beim Speichern des Projekts oder der Projekt Mappe|Die Projektmappendatei **(. sln)**|
 |Einstellungen in den **Tools > Optionen**|Tastatur Anpassungen<br /><br /> Anpassen von Symbolleisten<br /><br /> Farbschemas|Wenn das Dialogfeld " **Tools > Optionen** " geschlossen wird<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Registrierung in **HKEY_CURRENT_USER**|
 
@@ -506,7 +506,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 #### <a name="profile-specific-layouts"></a>Profil spezifische Layouts
  Jedes Profil umfasst Tool Fensterlayouts, die auf eine Weise organisiert werden, die bestimmten Entwickler-Personas vertraut ist (Visual C++ Entwickler die **Projektmappen-Explorer** auf der linken Seite der IDE sehen, während c#-Entwickler erwarten, dass die **Projektmappen-Explorer** auf der rechten Seite angezeigt wird. Profil spezifische Fensterlayouts werden geladen, wenn der Benutzer beim Start ein Profil auswählt. Ein Paket Autor sollte das Fenster Layout ermitteln, das sich am besten für die Benutzerfreundlichkeit eignet. dabei ist zu beachten, dass Änderungen, die der Benutzer an der Fenster Konfiguration vornimmt, dann persistent gespeichert werden.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Fingereingabe
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Fingereingabe
  Benutzer verwenden zunehmend Microsoft-Entwicklungsprodukte auf Touchscreen-Geräten. Es gibt jedoch Barrieren, die die Verwendung von Entwicklungs Tools auf Touchscreen-Geräten erschweren. Benutzer erwarten, dass unsere Produkte eine zuverlässige und präzise Berührungs Funktion bereitstellen. Die Zielsetzung dieser Richtlinien besteht darin, Entscheidungen darüber zu informieren, welche Berührungs Funktionen integriert werden müssen, und um eine konsistente Berührungs Funktion in Visual Studio und zugehörigen Produkten zu fördern.
 
 ### <a name="levels-of-experience"></a>Erfahrungsebenen

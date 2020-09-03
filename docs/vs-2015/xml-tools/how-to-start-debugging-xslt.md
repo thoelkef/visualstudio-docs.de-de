@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von XSLT starten | Microsoft-Dokumentation'
+title: 'Gewusst wie: Starten des Debuggens von XSLT | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656329"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Vorgehensweise: Starten des Debuggens von XSLT
+# <a name="how-to-start-debugging-xslt"></a>Gewusst wie: Starten des Debuggens von XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem XSLT-Debugger können XSLT-Stylesheets oder XSLT-Anwendungen debuggt werden. Beim Debuggen können Sie den Code zeilenweise ausführen, wobei Sie in einen Codeausdruck springen, einen Codeausdruck überspringen oder einen Codeausdruck wieder verlassen können, d. h., Sie haben die Möglichkeit, diesen Ausdruck bis zum Rücksprung auszuführen. Die bei der schrittweisen Codeausführung verwendeten Befehle im XSLT-Debugger sind mit denen in anderen Debuggern in Visual Studio identisch. Wenn Sie das Debuggen starten, öffnet der XSLT-Debugger Fenster, in denen das Eingabedokument und die XSLT-Ausgabe angezeigt werden.
@@ -37,7 +37,7 @@ Mit dem XSLT-Debugger können XSLT-Stylesheets oder XSLT-Anwendungen debuggt wer
 2. Wählen Sie im **XML** -Menü **XSL debuggen** aus.
 
 ## <a name="xslt-from-other-languages"></a>XSLT aus anderen Sprachen
- Auch beim Debuggen einer Anwendung können Sie XSLT schrittweise ausführen. Wenn Sie die Taste F11<xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> bei einem -Aufruf drücken, führt der Debugger den XSLT-Code schrittweise aus.
+ Auch beim Debuggen einer Anwendung können Sie XSLT schrittweise ausführen. Wenn Sie die Taste F11 bei einem -Aufruf drücken, führt der Debugger den XSLT-Code schrittweise aus.
 
 > [!NOTE]
 > Die schrittweise Ausführung von XSLT aus der <xref:System.Xml.Xsl.XslTransform>-Klasse wird nicht unterstützt. Die <xref:System.Xml.Xsl.XslCompiledTransform>-Klasse ist der einzige XSLT-Prozessor, der beim Debuggen die schrittweise Ausführung von XSLT unterstützt.
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) [Code Sprung Übersicht](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+## <a name="see-also"></a>Weitere Informationen
+ Exemplarische Vorgehensweise [: Debuggen einer XSLT-Stylesheet](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) - [Code Sprung Übersicht](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

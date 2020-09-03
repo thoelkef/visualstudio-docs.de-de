@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5c4d5fc73660c97bcb69957a93d2ff08f64e31c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655459"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
@@ -50,7 +50,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
 
 - Ändern von Code zum Zurücksenden der aktualisierten Daten des Datasets an die Datenbank.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -83,7 +83,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         Oder
 
     - Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
 
@@ -98,7 +98,7 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
      **NorthwindDataSet** wird dem Projekt hinzugefügt. Die Tabellen werden im Fenster **Datenquellen** angezeigt.
 
 ## <a name="set-the-controls-to-be-created"></a>Festlegen der zu erstellenden Steuerelemente
- In dieser exemplarischen Vorgehensweise befinden sich die Daten in der `Customers` Tabelle in einem **Detail** Layout, in dem die Daten in einzelnen Steuerelementen angezeigt werden. Die Daten aus der `Orders` Tabelle befinden sich in einem **Raster** Layout, das in einem <xref:System.Windows.Forms.DataGridView> Steuerelement angezeigt wird.
+ In dieser exemplarischen Vorgehensweise befinden sich die Daten in der `Customers` Tabelle in einem **Detail** Layout, in dem die Daten in einzelnen Steuerelementen angezeigt werden. Die Daten aus der `Orders` Tabelle befinden sich in einem **Raster** Layout, das in einem-Steuerelement angezeigt wird <xref:System.Windows.Forms.DataGridView> .
 
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>So legen Sie den Ablagetyp für die Elemente im Datenquellenfenster fest
 
@@ -120,17 +120,17 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
     > [!NOTE]
     > Der verknüpfte Knoten **Orders** befindet sich unter der Spalte **Fax** und ist ein untergeordneter Knoten des Knotens **Customers**.
 
-     Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein OrdersTableAdapter und <xref:System.Windows.Forms.BindingSource> werden in der Komponenten Leiste angezeigt.
+     Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein OrdersTableAdapter- <xref:System.Windows.Forms.BindingSource> Element, das in der Komponenten Leiste angezeigt wird.
 
 ## <a name="addcode-to-update-the-database"></a>Addcode zum Aktualisieren der Datenbank
- Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters **Customers** und **Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die Schaltfläche **Speichern** des <xref:System.Windows.Forms.BindingNavigator> dem Code des Formulars hinzugefügt, um Updates an die Datenbank zu senden. Diese Prozedur ändert den Code, um Updates in der richtigen Reihenfolge zu senden. Dadurch ist es nicht mehr möglich, referenzielle Integritäts Fehler zu erhöhen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
+ Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der TableAdapters **Customers** und **Orders** aufrufen. Standardmäßig wird ein Ereignishandler für die Schaltfläche **Speichern** der dem <xref:System.Windows.Forms.BindingNavigator> Code des Formulars hinzugefügt, um Updates an die Datenbank zu senden. Diese Prozedur ändert den Code, um Updates in der richtigen Reihenfolge zu senden. Dadurch ist es nicht mehr möglich, referenzielle Integritäts Fehler zu erhöhen. Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try-Catch-Block umschlossen wird. Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.
 
 > [!NOTE]
 > Aus Gründen der Übersichtlichkeit wird in dieser exemplarischen Vorgehensweise keine Transaktion verwendet. Wenn Sie jedoch zwei oder mehr verknüpfte Tabellen aktualisieren, schließen Sie die gesamte Aktualisierungs Logik in eine Transaktion ein. Eine Transaktion ist ein Prozess, mit dem sichergestellt wird, dass alle zugehörigen Änderungen an einer Datenbank erfolgreich sind, bevor für Änderungen ein Commit ausgeführt wird. Weitere Informationen finden Sie unter [Transaktionen und](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)Parallelität.
 
 #### <a name="to-add-update-logic-to-the-application"></a>So fügen Sie der Anwendung Aktualisierungslogik hinzu
 
-1. Wählen Sie auf der <xref:System.Windows.Forms.BindingNavigator> die Schaltfläche **Speichern** aus. Dadurch wird der Code-Editor für den `bindingNavigatorSaveItem_Click`-Ereignishandler geöffnet.
+1. Klicken Sie auf die Schaltfläche **Speichern** <xref:System.Windows.Forms.BindingNavigator> . Dadurch wird der Code-Editor für den- `bindingNavigatorSaveItem_Click` Ereignishandler geöffnet.
 
 2. Ändern Sie den Code im Ereignishandler, sodass die `Update`-Methoden der verknüpften TableAdapters aufgerufen werden. Mit folgendem Code werden zunächst drei temporäre Datentabellen zum Speichern der aktualisierten Informationen für jeden <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> und <xref:System.Data.DataRowState>) erstellt. Updates werden dann in der richtigen Reihenfolge ausgeführt. Der Code sollte wie folgt aussehen:
 
@@ -156,5 +156,5 @@ Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen vo
 
 - Bearbeiten der Datenquelle zum Hinzufügen oder Entfernen von Datenbankobjekten. Weitere Informationen finden Sie unter Gewusst [wie: Bearbeiten eines Datasets](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

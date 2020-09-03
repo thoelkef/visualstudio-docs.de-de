@@ -12,10 +12,10 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850597"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
@@ -58,12 +58,12 @@ Wenn Sie noch nie eine Visual Studio-Erweiterung geschrieben haben, haben Sie wa
 
 - [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a>Welche Projektvorlagen werden vom VSSDK bereitgestellt?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Welche Projektvorlagen werden vom VSSDK bereitgestellt?
  Die zwei Haupttypen von Erweiterungen sind VSPackages und MEF-Erweiterungen. Im Allgemeinen werden VSPackage-Erweiterungen für Erweiterungen verwendet, die Befehle, Tool Fenster und Projekte verwenden oder erweitern. MEF-Erweiterungen werden zum Erweitern oder Anpassen des Visual Studio-Editors verwendet.
 
- Für visuelle C# und Visual Basic Erweiterungen bietet das VSSDK eine leere VSIX-Projektvorlage, die Sie in Verbindung mit den neuen Element Vorlagen, die Menübefehle, Tool Fenster und Editor Erweiterungen erstellen, verwenden können. Weitere Informationen finden Sie unter [What es New in the Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Sie können diese Vorlage auch verwenden, um Projektvorlagen, Code Ausschnitte und andere Artefakte für die Verteilung an andere Benutzer zu verpacken.
+ Für Visual c#-und Visual Basic Erweiterungen bietet das VSSDK eine leere VSIX-Projektvorlage, die Sie in Verbindung mit den neuen Element Vorlagen, die Menübefehle, Tool Fenster und Editor Erweiterungen erstellen, verwenden können. Weitere Informationen finden Sie unter [What es New in the Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Sie können diese Vorlage auch verwenden, um Projektvorlagen, Code Ausschnitte und andere Artefakte für die Verteilung an andere Benutzer zu verpacken.
 
- Für C++stellt der VSPackage-Assistent den Code zum Hinzufügen von Menübefehlen, Tool Fenstern und benutzerdefinierten Editoren bereit.
+ Für C++ stellt der VSPackage-Assistent den Code zum Hinzufügen von Menübefehlen, Tool Fenstern und benutzerdefinierten Editoren bereit.
 
  Die Vorlage für isolierte Shell wird verwendet, um eine Erweiterung in einer Version der Visual Studio-Shell zu verpacken, die Sie als eigenständig verteilen und verteilen können. In den folgenden Themen erfahren Sie, wie Sie mit den einzelnen Erweiterungs Arten beginnen:
 

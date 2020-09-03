@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520859"
 ---
 # <a name="properties-of-port-shapes"></a>Eigenschaften von Anschlussformen
@@ -39,12 +39,12 @@ Mithilfe von Port Formen können Sie Domänen Klassen im generierten Designer da
 |Benutzerdefinierte Attribute|Wird verwendet, um der Quell Code Klasse Attribute hinzuzufügen, die aus dieser Form generiert werden.|\<none>|
 |Generiert doppelte abgeleitete|Gibt `True` an, dass sowohl eine Basisklasse als auch eine partielle Klasse (zur Unterstützung der Anpassung durch über schreibungen) generiert werden. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)|False|
 |Hat benutzerdefinierten Konstruktor|Gibt `True` an, dass ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt wird. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die vom Anschluss ( `none` `abstract` oder) generiert wird `sealed` .|Keine|
+|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die vom Anschluss ( `none` `abstract` oder) generiert wird `sealed` .|none|
 |Basisport|Die Basisklasse dieser Form.|(none)|
 |Name|Der Name dieser Form.|Aktueller Name|
 |Namespace|Der Namespace, der mit dieser Form verbunden ist.|Aktueller Namespace|
-|QuickInfo-Typ|Wie die QuickInfo definiert wird (Fixed, Variable oder None). Wenn Sie festgelegt ist, wird der Wert der `Fixed Tooltip Text` Eigenschaft als QuickInfo verwendet. wenn die Variable ist, wird die QuickInfo in benutzerdefiniertem Code definiert.|Keine|
-|Hinweise|Informelle Notizen, die dieser Form zugeordnet sind.|\<none>|
+|QuickInfo-Typ|Wie die QuickInfo definiert wird (Fixed, Variable oder None). Wenn Sie festgelegt ist, wird der Wert der `Fixed Tooltip Text` Eigenschaft als QuickInfo verwendet. wenn die Variable ist, wird die QuickInfo in benutzerdefiniertem Code definiert.|none|
+|Notizen|Informelle Notizen, die dieser Form zugeordnet sind.|\<none>|
 |Anfängliche Höhe|Die Anfangshöhe dieser Form in Zoll.|1|
 |Anfängliche Breite|Die ursprüngliche Breite dieser Form in Zoll.|1.5|
 |Verfügbar gemachte Füllfarbe als Eigenschaft<br /><br /> Offen gelegter Füllverlaufs Modus<br /><br /> Verfügbar gemachte Umriss Farbe als Eigenschaft<br /><br /> Darstellung des Gliederungs Bindestrich Stils als Eigenschaft<br /><br /> Verfügbar gemachte Gliederungs Stärke als Eigenschaft<br /><br /> Macht Textfarbe verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Definition, und **Klicken Sie auf**verfügbar machen|False|

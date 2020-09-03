@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185290"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird für das Projekt oder Element an, bei der Erstellung.  
+Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder Element generiert, wenn es erstellt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<DefaultName >  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,19 +54,19 @@ Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird fü
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Dieser Text gibt den Standardnamen des Projekts oder Elements.  
+ Dieser Text gibt den Standardnamen des Projekts oder Elements an.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  `DefaultName` ist ein optionales Element.  
   
- Für Projekte gibt dieses Element den Namen des Verzeichnisses, in dem das Projekt auf dem Datenträger gespeichert. Für Elemente gibt er den Dateinamen der Quelldatei an.  
+ Bei-Projekten gibt dieses Element den Namen des Verzeichnisses an, in dem das Projekt auf dem Datenträger gespeichert wird. Für-Elemente wird der Dateiname der Quelldatei angegeben.  
   
- Wenn Sie ein Projekt oder Element erstellen, können Sie ändern, den Standardwert mit der **Name** Option in entweder die **neues Projekt** im Dialogfeld oder **neues Element hinzufügen** Das Dialogfeld.  
+ Wenn Sie ein Projekt oder Element erstellen, können Sie den Standardnamen mithilfe der Option **Name** ändern. diese Option ist entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld **Neues Element hinzufügen** verfügbar.  
   
- Wenn Sie nicht, dass das Projektsystem, um den Standardnamen für das Projekt oder Element zu generieren möchten, legen Sie die [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) Element `False`.  
+ Wenn Sie nicht möchten, dass das Projekt System den Standardnamen für das Projekt oder Element generiert, legen Sie das [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) -Element auf fest `False` .  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt die Metadaten für die standard-Elementvorlage für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Klasse.  
+ Im folgenden Beispiel werden die Metadaten für die Standardelement Vorlage für eine- [!INCLUDE[csprcs](../includes/csprcs-md.md)] Klasse veranschaulicht.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -84,6 +84,6 @@ Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird fü
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
