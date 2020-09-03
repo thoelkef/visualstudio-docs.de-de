@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0cbd93f2d32c06ba52b2c47c1af8f326948609a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843927"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Übersicht über WPF-Datenbindung mit LINQ to XML
@@ -88,5 +88,5 @@ Dieses Thema enthält eine Einführung in die Funktionen zur dynamischen Datenbi
 
  Zur Implementierung der dynamischen WPF-Bindung werden die dynamischen Eigenschaften zusammen mit den vom <xref:System.Windows.Data>-Namespace bereitgestellten Funktionen, insbesondere der <xref:System.Windows.Data.Binding>-Klasse, verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML dynamischen Eigenschaften](../designers/linq-to-xml-dynamic-properties.md) [XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) - [Datenbindung (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [mithilfe von Workflow Markup](https://msdn2.microsoft.com/library/ms735921(vs.90).aspx)

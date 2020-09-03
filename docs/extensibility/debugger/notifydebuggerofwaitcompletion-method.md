@@ -1,5 +1,5 @@
 ---
-title: NotifyDebuggerOfWaitCompletion-Methode | Microsoft Docs
+title: Notifydebuggerofwaitcompletion-Methode | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738332"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion-Methode
-Platzhaltermethode, die vom Debugger als Haltepunktziel verwendet wird. Diese Methode darf nicht inline oder optimiert werden.
+# <a name="notifydebuggerofwaitcompletion-method"></a>Notifydebuggerofwaitcompletion-Methode
+Die Platzhalter Methode, die vom Debugger als Haltepunkt Ziel verwendet wird. Diese Methode darf nicht Inline oder optimiert sein.
 
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Baugruppe:** mscorlib (in *mscorlib.dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,9 +31,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>Bemerkungen
- Alle Join-Vorgänge mit einer Aufgabe sollten diese Methode aufrufen, wenn ihr Debuggerbenachrichtigungsbit festgelegt ist.
+ Alle joinvorgänge mit einer Aufgabe sollten diese Methode abrufen, wenn Ihr Debugger-Benachrichtigungs Bit festgelegt ist.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
