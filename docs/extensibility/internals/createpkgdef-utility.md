@@ -1,5 +1,5 @@
 ---
-title: CreatePkgDef-Dienstprogramm | Microsoft Docs
+title: Dienstprogramm "|" | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709164"
 ---
-# <a name="createpkgdef-utility"></a>Dienstprogramm CreatePkgDef
-Nimmt eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter und erstellt eine *.pkgdef-Datei,* um die *DLL-Datei* zu begleiten. Die *.pkgdef-Datei* enthält alle Informationen, die andernfalls in die Systemregistrierung geschrieben würden, wenn die Erweiterung installiert wird.
+# <a name="createpkgdef-utility"></a>Das Dienstprogramm "| atepkgdef"
+Nimmt eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter an und erstellt eine *pkgdef* -Datei für die *dll* -Datei. Die *pkgdef* -Datei enthält alle Informationen, die andernfalls bei der Installation der Erweiterung in die Systemregistrierung geschrieben werden.
 
 > [!NOTE]
-> Die meisten Projektvorlagen, die im Visual Studio SDK enthalten sind, erstellen *automatisch .pkgdef-Dateien* als Teil des Buildprozesses. Dieses Dokument ist für diejenigen gedacht, die Pakete manuell erstellen oder vorhandene Pakete konvertieren möchten, um *.pkgdef-Bereitstellung* zu verwenden.
+> Die meisten Projektvorlagen, die im Visual Studio SDK enthalten sind, erstellen automatisch *pkgdef* -Dateien als Teil des Buildprozesses. Dieses Dokument richtet sich an Benutzer, die Pakete manuell erstellen möchten, oder Konvertieren vorhandener Pakete, um die *pkgdef*  -Bereitstellung zu verwenden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,54 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Argumente
-**/out=&lt;Dateiname&gt;**\
-Erforderlich. Legt den Namen der *.pkgdef-Ausgabedatei* auf FileName &lt;&gt;fest.
+**/Out = &lt; Dateiname&gt;**\
+Erforderlich. Legt den Namen der *pkgdef* -Ausgabedatei auf &lt; filename fest &gt; .
 
-**/codebase**\
-Optional. Erzwingt die Registrierung beim **CodeBase-Dienstprogramm.**
+**/CodeBase**\
+Optional. Erzwingt die Registrierung mit dem **CodeBase** -Hilfsprogramm.
 
 **/Assembly**\
-Erzwingt die **Assembly** Registrierung beim Assembly-Dienstprogramm.
+Erzwingt **die Registrierung** mit dem Assemblydienstprogramm.
 
-**&lt;Assemblypath&gt;**\
-Der Pfad der *DLL-Datei,* aus der Sie die *.pkgdef*generieren möchten.
+**&lt;AssemblyPath&gt;**\
+Der Pfad der *dll* -Datei, aus der die *pkgdef*-Datei generiert werden soll.
 
 ## <a name="remarks"></a>Bemerkungen
-Die Erweiterungsbereitstellung mithilfe von *.pkgdef-Dateien* ersetzt die Registrierungsanforderungen früherer Versionen von Visual Studio.
+Die Erweiterungs Bereitstellung mithilfe von *pkgdef* -Dateien ersetzt die Registrierungsanforderungen früherer Versionen von Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-Die *.pkgdef-Dateien* müssen an einem der folgenden Speicherorte installiert werden:
+Die *pkgdef* -Dateien müssen an einem der folgenden Speicherorte installiert werden:
 
-- *%localappdata%-Microsoft-Visual Studio-16,0-Erweiterungen\\*
+- *%LocalAppData%\microsoft\visual studio\16.0\Extensions\\*
 
-- *%vsinstalldir%-Common7-IDE-Erweiterungen\\*
+- *%VSInstallDir%\common7\ide\Extensions\\*
 
-Wenn der Installationsordner *%localappdata%-Microsoft-Visual Studio-16.0-Erweiterungen\\*ist, wird die Erweiterung von Visual Studio erkannt, ist jedoch standardmäßig deaktiviert. Der Benutzer kann die Erweiterung mithilfe von **Erweiterungen verwalten**aktivieren.
+Wenn der Installationsordner *%LocalAppData%\microsoft\visual studio\16.0\Extensions \\ *ist, wird die Erweiterung von Visual Studio erkannt, ist aber standardmäßig deaktiviert. Der Benutzer kann die Erweiterung mithilfe von " **Erweiterungen verwalten**" aktivieren.
 
-Wenn der Installationsordner *%vsinstalldir%-Common7-IDE-Extensions\\*ist, ist die Erweiterung standardmäßig aktiviert.
+Wenn der Installationsordner *%VSInstallDir%\common7\ide\Extensions \\ *lautet, ist die Erweiterung standardmäßig aktiviert.
 
 > [!NOTE]
-> Das Tool **Erweiterungen verwalten** kann nicht für den Zugriff auf eine Erweiterung verwendet werden, es sei denn, es wird als Teil eines VSIX-Pakets installiert.
+> Das Tool zum **Verwalten von Erweiterungen** kann nur verwendet werden, um auf eine Erweiterung zuzugreifen, wenn es als Teil eines VSIX-Pakets installiert ist.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Die *.pkgdef-Dateien* müssen an einem der folgenden Speicherorte installiert werden:
+Die *pkgdef* -Dateien müssen an einem der folgenden Speicherorte installiert werden:
 
-- *%localappdata%-Microsoft-Visual Studio-15,0-Erweiterungen\\*
+- *%LocalAppData%\microsoft\visual studio\15.0\Extensions\\*
 
-- *%vsinstalldir%-Common7-IDE-Erweiterungen\\*
+- *%VSInstallDir%\common7\ide\Extensions\\*
 
-Wenn der Installationsordner *%localappdata%-Microsoft-Visual Studio-Erweiterungen\\*ist, wird die Erweiterung von Visual Studio erkannt, aber standardmäßig deaktiviert. Der Benutzer kann die Erweiterung mithilfe von **Erweiterungen und Updates**aktivieren.
+Wenn der Installationsordner *%LocalAppData%\microsoft\visual studio\15.0\Extensions \\ *ist, wird die Erweiterung von Visual Studio erkannt, ist aber standardmäßig deaktiviert. Der Benutzer kann die Erweiterung mithilfe von **Erweiterungen und Updates**aktivieren.
 
-Wenn der Installationsordner *%vsinstalldir%-Common7-IDE-Extensions\\*ist, ist die Erweiterung standardmäßig aktiviert.
+Wenn der Installationsordner *%VSInstallDir%\common7\ide\Extensions \\ *lautet, ist die Erweiterung standardmäßig aktiviert.
 
 > [!NOTE]
-> Das Tool **"Erweiterungen und Updates"** kann nur für den Zugriff auf eine Erweiterung verwendet werden, wenn sie als Teil eines VSIX-Pakets installiert ist.
+> Das Tool " **Erweiterungen und Updates** " kann nur verwendet werden, um auf eine Erweiterung zuzugreifen, wenn Sie als Teil eines VSIX-Pakets installiert ist.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Weitere Informationen
-- [CreateExpInstance-Dienstprogramm](../../extensibility/internals/createexpinstance-utility.md)
+- [Das Hilfsprogramm "| ateexpinstance](../../extensibility/internals/createexpinstance-utility.md)

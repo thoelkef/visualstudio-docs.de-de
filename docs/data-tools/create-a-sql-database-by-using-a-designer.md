@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282721"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Create a database and add tables in Visual Studio (Erstellen einer Datenbank und Hinzufügen von Tabellen in Visual Studio)
@@ -107,7 +107,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
    CREATE TABLE [dbo].[Customers]
    ```
 
-   Die Ausgabe sollte folgendermaßen aussehen:
+   Die Ausgabe sollte in etwa wie folgt aussehen:
 
    ![Tabellen-Designer](../data-tools/media/table-designer.png)
 
@@ -185,6 +185,6 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
 7. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Daten in Visual Studio](accessing-data-in-visual-studio.md)

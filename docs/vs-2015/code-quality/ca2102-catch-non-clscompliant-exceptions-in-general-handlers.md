@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521302"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen.
@@ -28,7 +28,7 @@ ms.locfileid: "85521302"
 |-|-|
 |TypName|' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '|
 |CheckId|CA2102|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -39,7 +39,7 @@ ms.locfileid: "85521302"
 
 - C#: `catch {}`
 
-- C++: `catch(...) {}` oder`catch(Object^) {}`
+- C++: `catch(...) {}` oder `catch(Object^) {}`
 
   Eine nicht behandelte nicht CLS-kompatible Ausnahme wird zu einem Sicherheitsproblem, wenn zuvor zulässige Berechtigungen im catch-Block entfernt wurden. Da nicht CLS-kompatible Ausnahmen nicht abgefangen werden, könnte eine böswillige Methode, die eine nicht CLS-kompatible Ausnahme auslöst, mit erhöhten Berechtigungen ausgeführt werden.
 

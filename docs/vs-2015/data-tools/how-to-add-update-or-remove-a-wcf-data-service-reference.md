@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89a667e3254be8161d4defb54d524756a5eb02fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670006"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um in der aktuellen Projekt Mappe, lokal, in einem lokalen Netzwerk oder im Internet nach [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] zu suchen.
+Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] . Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in der aktuellen Projekt Mappe lokal, in einem lokalen Netzwerk oder im Internet zu suchen.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -48,11 +48,11 @@ Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere
 
 3. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
-4. Geben Sie im Feld **Namespace** den Namespace ein, den Sie für den Verweis verwenden möchten.
+4. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-5. Klicken Sie auf **OK** , um den Verweis auf das Projekt hinzuzufügen.
+5. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
-     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei "App. config" hinzugefügt.
+     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der app.config Datei hinzugefügt.
 
 #### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>So fügen Sie einen Verweis auf einen Dienst in der aktuellen Projekt Mappe hinzu
 
@@ -66,11 +66,11 @@ Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere
 
 3. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
-4. Geben Sie im Feld **Namespace** den Namespace ein, den Sie für den Verweis verwenden möchten.
+4. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-5. Klicken Sie auf **OK** , um den Verweis auf das Projekt hinzuzufügen.
+5. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
-     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei "App. config" hinzugefügt.
+     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der app.config Datei hinzugefügt.
 
 ## <a name="updating-a-service-reference"></a>Aktualisieren eines Dienst Verweises
  Die Entity Data Model für eine [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] wird manchmal geändert. In diesem Fall muss der Dienst Verweis aktualisiert werden.
@@ -88,10 +88,10 @@ Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere
 
 - Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienst Verweis, und klicken Sie dann auf **Löschen**.
 
-     Der Dienst Client wird aus der Projekt Mappe entfernt, und die Metadaten, die den Dienst beschreiben, werden aus der Datei "App. config" entfernt.
+     Der Dienst Client wird aus der Projekt Mappe entfernt, und die Metadaten, die den Dienst beschreiben, werden aus der app.config Datei entfernt.
 
     > [!NOTE]
     > Jeglicher Code, der auf den Dienst Verweis verweist, muss manuell entfernt werden.
 
-## <a name="see-also"></a>Siehe auch
- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Erweitern des Objektmodells des Basisprojekts | Microsoft Docs
+title: Erweitern des Objektmodells des Basis Projekts | Microsoft-Dokumentation
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 33186cd477ade7f562f6191393dabe8e94f4f194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708398"
 ---
-# <a name="extend-the-object-model-of-the-base-project"></a>Erweitern des Objektmodells des Basisprojekts
+# <a name="extend-the-object-model-of-the-base-project"></a>Erweitern des Objektmodells des Basis Projekts
 
-Ein Projektuntertyp kann das Automatisierungsobjektmodell des Basisprojekts an den folgenden Stellen erweitern:
+Mit einem Projekt Untertyp kann das Automatisierungs Objektmodell des Basis Projekts an den folgenden Stellen erweitert werden:
 
-- Project.Extender("\<ProjectSubtypeName>"): Dadurch kann ein Projektuntertyp ein <xref:EnvDTE.Project> Objekt mit benutzerdefinierten Methoden aus dem Objekt anbieten. Ein Projektuntertyp kann Automation Extender `Project` verwenden, um das Objekt verfügbar zu machen. Die <xref:EnvDTE80.IInternalExtenderProvider> schnittstelle, die auf dem Hauptprojekt-Subtype-Aggregator implementiert ist, sollte sein Objekt für das `VSHPROPID_ExtObjectCATID` von <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (entsprechend einem `itemid` Wert von [VSITEMID) anbieten. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project. Extender (" \<ProjectSubtypeName> "): Dies ermöglicht einem Projekt Untertyp das anbieten eines Objekts mit benutzerdefinierten Methoden aus dem- <xref:EnvDTE.Project> Objekt. Ein Projekt Untertyp kann Automatisierungs Erweiterungen verwenden, um das Objekt verfügbar zu machen `Project` . Die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Untertyp Aggregator implementiert ist, muss das-Objekt für den `VSHPROPID_ExtObjectCATID` von <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (entsprechend einem `itemid` Wert von [vsitemid) anbieten. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
 
-- ProjectItem.Extender("\<ProjectSubtypeName>"): Dadurch kann ein Projektuntertyp ein Objekt <xref:EnvDTE.ProjectItem> mit benutzerdefinierten Methoden aus einem bestimmten Objekt innerhalb des Projekts anbieten. Ein Projektuntertyp kann Automatisierungs-Extender verwenden, um dieses Objekt verfügbar zu machen. Die <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Subtype-Aggregator <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> implementiert ist, <xref:Microsoft.VisualStudio.VSConstants.VSITEMID>muss sein Objekt für die `VSHPROPID_ExtObjectCATID` von (entsprechend einer gewünschten) CATID anbieten.
+- ProjectItem. Extender (" \<ProjectSubtypeName> "): Dies ermöglicht einem Projekt Untertyp das anbieten eines Objekts mit benutzerdefinierten Methoden aus einem bestimmten <xref:EnvDTE.ProjectItem> Objekt innerhalb des Projekts. Ein Projekt Untertyp kann Automatisierungs Erweiterungen verwenden, um dieses Objekt verfügbar zu machen. Die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Untertyp Aggregator implementiert ist, muss das-Objekt für den `VSHPROPID_ExtObjectCATID` von <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (entsprechend einer gewünschten <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> ) CATID anbieten.
 
-- Project.Properties: Diese Auflistung macht die konfigurationsunabhängigen `Project` Eigenschaften des Objekts verfügbar. Weitere Informationen zu `Project`-Eigenschaften finden Sie unter <xref:EnvDTE.Project.Properties%2A>. Ein Projektuntertyp kann Automation Extender verwenden, um seine Eigenschaften zu dieser Auflistung hinzuzufügen. Die <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Subtype-Aggregator implementiert ist, muss sein Objekt für das `VSHPROPID_BrowseObjectCATID` von <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (entsprechend einem `itemid` Wert von [VSITEMID) anbieten. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project. Properties: Diese Auflistung macht die Konfigurations unabhängigen Eigenschaften des- `Project` Objekts verfügbar. Weitere Informationen zu `Project`-Eigenschaften finden Sie unter <xref:EnvDTE.Project.Properties%2A>. Ein Projekt Untertyp kann mithilfe von Automatisierungsextendern seine Eigenschaften zu dieser Auflistung hinzufügen. Die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Untertyp Aggregator implementiert ist, muss das-Objekt für den `VSHPROPID_BrowseObjectCATID` von <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (entsprechend einem `itemid` Wert von [vsitemid) anbieten. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
 
-- Configuration.Properties: Diese Auflistung macht die konfigurationsabhängigen Eigenschaften des Projekts für eine bestimmte Konfiguration verfügbar (z. B. Debug). Weitere Informationen finden Sie unter <xref:EnvDTE.Configuration>. Ein Projektuntertyp kann Automation Extender verwenden, um seine Eigenschaften zu dieser Auflistung hinzuzufügen. Die <xref:EnvDTE80.IInternalExtenderProvider> schnittstelle, die auf dem Hauptprojekt-Subtype-Aggregator implementiert ist, bietet ihr Objekt für die CATID `VSHPROPID_CfgBrowseObjectCATID` (entsprechend einem `itemid` Wert von [VSITEMID). Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> Schnittstelle wird verwendet, um ein Konfigurationssuchobjekt von einem anderen zu unterscheiden.
+- Configuration. Properties: diese Sammlung macht die Konfigurations abhängigen Eigenschaften des Projekts für eine bestimmte Konfiguration verfügbar (z. b. Debug). Weitere Informationen finden Sie unter <xref:EnvDTE.Configuration>. Ein Projekt Untertyp kann mithilfe von Automatisierungsextendern seine Eigenschaften zu dieser Auflistung hinzufügen. Die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Untertyp Aggregator implementiert ist, stellt das-Objekt für die CATID `VSHPROPID_CfgBrowseObjectCATID` (entsprechend einem `itemid` Wert von [vsitemid) zur Auswahl. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> Schnittstelle wird verwendet, um ein Konfigurations Such Objekt von einem anderen zu unterscheiden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

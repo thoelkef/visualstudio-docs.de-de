@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Microsoft-Dokumentation
+title: 'IDebugProgram2:: getdisassemblystream | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f918b9895975554534ef1702334d7a006112f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202729"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Disassembly-Datenstrom für dieses Programm oder einen Teil dieser Anwendung ab.  
+Ruft den disassemblystream für dieses Programm oder einen Teil dieses Programms ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,21 +44,21 @@ int GetDisassemblyStream( 
   
 #### <a name="parameters"></a>Parameter  
  `dwScope`  
- [in] Gibt einen Wert aus der [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) Enumeration, die im Rahmen der Disassembly-Datenstrom definiert.  
+ in Gibt einen Wert aus der [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) Enumeration an, die den Gültigkeitsbereich des disassemblydatenstroms definiert.  
   
  `pCodeContext`  
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das die Position des, wo Sie den Disassembly-Stream darstellt.  
+ in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das die Position angibt, an der der disassemblystream gestartet werden soll.  
   
  `ppDisassemblyStream`  
- [out] Gibt eine [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) -Objekt, das den Disassembly-Stream darstellt.  
+ vorgenommen Gibt ein [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) -Objekt zurück, das den disassemblystream darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_DISASM_NOTSUPPORTED` Wenn Disassembly für diese bestimmte Architektur nicht unterstützt wird.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_DISASM_NOTSUPPORTED` Wenn Disassembly für diese bestimmte Architektur nicht unterstützt wird.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn die `dwScopes` Parameter hat den `DSS_HUGE` flag von der [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) -Enumeration festgelegt, und klicken Sie dann die Disassembly wird erwartet, dass eine große Anzahl von Disassembly-Anweisungen, z. B. für eine gesamte Datei zurückgegeben oder das Modul. Wenn die `DSS_HUGE` Flag nicht festgelegt, und klicken Sie dann die Disassembly wird erwartet, dass auf eine kleine Region beschränkt werden in der Regel, die einer einzelnen Funktion.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der- `dwScopes` Parameter das- `DSS_HUGE` Flag des [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumerationssatzes aufweist, wird erwartet, dass die DISASSEMBLY eine große Anzahl von disassemblyanweisungen zurückgibt, z. b. für eine gesamte Datei oder ein gesamtes Modul. Wenn das `DSS_HUGE` Flag nicht festgelegt ist, wird erwartet, dass die Disassembly auf einen kleinen Bereich beschränkt ist, in der Regel auf eine einzelne Funktion.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519859"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Verwaltete Referenz (Office-Entwicklung in Visual Studio)
@@ -70,7 +70,7 @@ ms.locfileid: "85519859"
 
  Enthält MSBuild-Aufgabenklassen, die zum Erstellen von Office-Projekten verwendet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](visual-studio-tools-for-office-runtime-overview.md)
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](office-development-samples-and-walkthroughs.md)

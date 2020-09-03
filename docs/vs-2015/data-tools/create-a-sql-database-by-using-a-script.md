@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670090"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Erstellen einer SQL-­Datenbank mithilfe eines Skripts
@@ -34,16 +34,16 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio, um eine kle
 
 - [Bereitstellen der Datenbank](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Um diese exemplarische Vorgehensweise abzuschließen, muss SQL Server Express localdb oder eine andere SQL-Datenbank installiert sein.
 
-## <a name="CreateScript"></a>Erstellen eines Skripts, das ein Datenbankschema enthält
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> Erstellen eines Skripts, das ein Datenbankschema enthält
 
-#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>So erstellen Sie ein Skript, aus dem Sie ein Schema importieren können
+#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>So erstellen Sie ein Skript, aus dem ein Schema importiert werden kann
 
-1. Wählen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in der Menüleiste **Datei**  > **neue**  > **Datei**aus.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Wählen Sie in in der Menüleiste **Datei**  >  **neue**  >  **Datei**aus.
 
-     Das Dialogfeld **neue Datei** wird angezeigt.
+     Das Dialogfeld **Neue Datei** wird angezeigt.
 
 2. Wählen Sie in der Liste **Kategorien** die Option **Allgemein**aus.
 
@@ -213,21 +213,21 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio, um eine kle
     GO
     ```
 
-5. Wählen Sie in der Menüleiste **Datei**  > **Speichern SqlQuery_1. SQL als**aus.
+5. Wählen Sie in der Menüleiste **Datei**  >  **SqlQuery_1. SQL speichern**unter aus.
 
      Das Dialogfeld **Datei speichern** unter wird angezeigt.
 
-6. Geben Sie im Feld **Dateiname** `SampleImportScript.sql` ein, notieren Sie den Speicherort der Datei, und klicken Sie dann auf die Schaltfläche **Speichern** .
+6. Geben Sie im Feld **Dateiname** den Speicherort ein, an dem `SampleImportScript.sql` Sie die Datei speichern möchten, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
-7. Wählen Sie in der Menüleiste **Datei**  >  Projekt Mappe**Schließen**aus.
+7. Wählen Sie in der Menüleiste **Datei**  >  **Schließen**Projekt Mappe aus.
 
      Erstellen Sie dann ein Datenbankprojekt und importieren das Schema von dem erstellten Skript.
 
-## <a name="CreateProject"></a>Erstellen eines Datenbankprojekts und Importieren eines Schemas
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> Erstellen eines Datenbankprojekts und Importieren eines Schemas
 
 #### <a name="to-create-a-database-project"></a>So erstellen Sie ein Datenbankprojekt
 
-1. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -236,19 +236,19 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio, um eine kle
     > [!NOTE]
     > Der Knoten **andere Sprachen** wird nicht in allen Installationen von Visual Studio angezeigt.
 
-3. Geben Sie im Feld **Name** `Small Database` ein.
+3. Geben Sie im Feld **Name den Namen** ein `Small Database` .
 
 4. Aktivieren Sie das Kontrollkästchen **Projektmappenverzeichnis erstellen** , wenn es nicht bereits ausgewählt ist.
 
 5. Deaktivieren Sie das Kontrollkästchen **zur Quell Code Verwaltung hinzufügen** , wenn es nicht bereits deaktiviert ist, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     Das Datenbankprojekt wird erstellt und in **Projektmappen-Explorer**angezeigt.
+     Das Datenbankprojekt wird erstellt und im **Projektmappen-Explorer**angezeigt.
 
      Importieren Sie anschließend das Datenbankschema von dem Skript.
 
 #### <a name="to-import-a-database-schema-from-a-script"></a>So importieren Sie ein Datenbankschema aus einem Skript
 
-1. Wählen Sie in der Menüleiste **Projekt**  >   > **Skript** **importieren** aus.
+1. Wählen Sie in der Menüleiste **Projekt**  >  **Import**  >  **Skript**aus.
 
 2. Überprüfen Sie auf der **Willkommens** Seite den Text, und wählen Sie dann die Schaltfläche **weiter** aus.
 
@@ -270,5 +270,5 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio, um eine kle
 
      Jetzt enthält die Datenbank nur Systemobjekte wie Tabellen und gespeicherte Prozeduren. Nachdem Sie die Datenbank bereitgestellt haben, enthält sie die Benutzertabellen und die gespeicherten Prozeduren, die die Skripts definieren.
 
-## <a name="DeployDatabase"></a>Bereitstellen der Datenbank
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> Bereitstellen der Datenbank
  Wenn Sie die Taste **F5** drücken, müssen Sie die Datenbank standardmäßig in einer localdb-Datenbank bereitstellen (oder veröffentlichen). Sie können die Datenbank an einem anderen Speicherort bereitstellen, indem Sie die Eigenschaften Seite für das Projekt öffnen, die Registerkarte **Debuggen** auswählen und dann die Verbindungs Zeichenfolge ändern.

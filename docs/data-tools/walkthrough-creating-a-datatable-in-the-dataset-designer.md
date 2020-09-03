@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586002"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen einer Datentabelle in der DataSet-Designer
@@ -27,7 +27,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -37,7 +37,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Hinzufügen eines neuen Datasets zur Anwendung
 
-1. Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
+1. Wählen Sie im Menü **Projekt** den Eintrag **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -53,13 +53,13 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
      Eine Tabelle mit dem Namen **DataTable1** wird dem DataSet hinzugefügt.
 
-2. Klicken Sie auf die Titelleiste von **DataTable1** , und benennen Sie Sie `Music`um.
+2. Klicken Sie auf die Titelleiste von **DataTable1** , und benennen Sie Sie um `Music` .
 
 ## <a name="add-columns-to-the-datatable"></a>Hinzufügen von Spalten zur Datentabelle
 
 1. Klicken Sie mit der rechten Maustaste auf die Tabelle **Music** . Zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Spalte**.
 
-2. Benennen Sie die Spalte `SongID`.
+2. Benennen Sie die Spalte `SongID` .
 
 3. Legen Sie im Fenster **Eigenschaften** die Eigenschaft <xref:System.Data.DataColumn.DataType%2A> auf <xref:System.Int16?displayProperty=fullName>fest.
 
@@ -81,8 +81,8 @@ Um den Primärschlüssel festzulegen, klicken Sie mit der rechten Maustaste auf 
 
 Um das Projekt **DataTableWalkthrough** zu speichern, wählen Sie im Menü **Datei** die Option **Alle speichern**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Überprüfen von Daten](../data-tools/validate-data-in-datasets.md)
+- [Validieren von Daten](../data-tools/validate-data-in-datasets.md)

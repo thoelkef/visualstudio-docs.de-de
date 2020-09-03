@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670065"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
@@ -38,7 +38,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
  In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
 
-- Erstellen eines neuen Windows Forms-Anwendungs Projekts.
+- Erstellen eines neuen Projekts vom Typ Windows Forms-Anwendung.
 
 - Erstellen und Konfigurieren der Datenquelle in der Anwendung mit dem Assistenten zum Konfigurieren von **Datenquellen** .
 
@@ -52,7 +52,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
 - Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -77,7 +77,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
 1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
@@ -97,7 +97,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
      **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.
 
-## <a name="create-the-form"></a>Formular erstellen
+## <a name="create-the-form"></a> Erstellen eines Formulars
  Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem Fenster **Datenquellen** auf das Formular ziehen.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular
@@ -115,7 +115,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
 1. Wählen Sie das Steuerelement <xref:System.Windows.Forms.DataGridView> aus. Wählen Sie anschließend im Menü **Daten** die Option **Abfrage hinzufügen** aus.
 
-2. Geben Sie im Dialogfeld **Suchkriterien** -Generator im Bereich **neuer Abfrage Name** `FillByCity` ein.
+2. Geben Sie `FillByCity` den Bereich **neuer Abfrage Name** im Dialogfeld **Suchkriterien** -Generator ein.
 
 3. Fügen Sie der Abfrage im Bereich **Abfragetext** die Zeichenfolge `WHERE City = @City` hinzu.
 
@@ -128,7 +128,7 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
      `WHERE City = @City`
 
     > [!NOTE]
-    > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?`.
+    > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zum Angeben von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?` .
 
 4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.
 
@@ -152,5 +152,5 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
 - Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
