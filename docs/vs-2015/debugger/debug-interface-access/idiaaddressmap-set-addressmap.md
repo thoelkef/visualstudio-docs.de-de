@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Set_addressmap | Microsoft-Dokumentation'
+title: 'IDiaAddressMap:: set_addressMap | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 693ecf6e8fd4f0b55936bde371b7baa6975b8f2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198649"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Stellt eine Adresszuordnung zum Unterstützen von Bild Layout Übersetzungen bereit.  
+Stellt eine Adress Zuordnung zur Unterstützung von Bild layoutübersetzungen bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,22 +37,22 @@ HRESULT set_addressMap ( 
   
 #### <a name="parameters"></a>Parameter  
  `cbData`  
- [in] Die Anzahl der Elemente in der `data` Parameter.  
+ in Die Anzahl der Elemente im- `data` Parameter.  
   
  `data[]`  
- [in] Ein Array von [DiaAddressMapEntry-Struktur](../../debugger/debug-interface-access/diaaddressmapentry.md) Strukturen, die die Übersetzung-Zuordnung zu definieren.  
+ in Ein Array von [DiaAddressMapEntry-Struktur](../../debugger/debug-interface-access/diaaddressmapentry.md) Strukturen, die die Übersetzungs Zuordnung definieren.  
   
  `imagetoSymbols`  
- [in] `TRUE` Wenn die `data` Parameter definiert das Layout für das neue in das ursprüngliche Layout eine Zuordnung (wie durch die Debugsymbole beschrieben). `FALSE` Wenn `data` ist eine Zuordnung für das neue Image-Layout das ursprüngliche Layout entnommen.  
+ [in] `TRUE` , wenn der- `data` Parameter eine Zuordnung vom neuen Bild Layout zum ursprünglichen Layout definiert (wie von den Debugsymbolen beschrieben). `FALSE` Wenn `data` eine Zuordnung zum neuen Bild Layout ist, das aus dem ursprünglichen Layout entnommen wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- In der Regel ruft der DIA Adresse Übersetzung Maps über die Programmdatenbankdatei (.pdb) ab. Wenn diese Werte fehlen, sind die [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) Methode zweimal aufgerufen wird einmal mit der `imagetoSymbols` Parametersatz zu `TRUE` und einmal mit der `imagetoSymbols` Parametersatz zu `FALSE`. Adressübersetzung der Zuordnung können nicht aktiviert werden, mithilfe der [idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) Methode, wenn beide Übersetzung Maps bereitgestellt werden.  
+## <a name="remarks"></a>Bemerkungen  
+ In der Regel ruft der Dia Adress Übersetzungs Zuordnungen aus der Programm Datenbankdatei (. pdb) ab. Wenn diese Werte fehlen, wird die [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) -Methode zweimal aufgerufen, wobei der `imagetoSymbols` -Parameter auf `TRUE` und einmal mit dem- `imagetoSymbols` Parameter auf festgelegt ist `FALSE` . Adress Zuordnungs Übersetzungen können nicht mithilfe der Methode [IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) aktiviert werden, es sei denn, beide Übersetzungs Zuordnungen werden bereitgestellt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [DiaAddressMapEntry-Struktur](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

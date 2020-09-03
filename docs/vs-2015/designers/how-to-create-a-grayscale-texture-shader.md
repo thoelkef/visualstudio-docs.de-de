@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664509"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Gewusst wie: Erstellen eines Graustufentextur-Shaders
@@ -28,7 +28,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>So erstellen Sie einen Graustufentextur-Shader
 
-1. Erstellen Sie einen Basistextur-Shader wie es unter [Vorgehensweise: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md) beschrieben wird.
+1. Erstellen Sie einen grundlegenden Textur-Shader, wie in Vorgehens [Weise: Erstellen eines grundlegenden Textur-Shaders](../designers/how-to-create-a-basic-texture-shader.md)beschrieben.
 
 2. Trennen Sie das Terminal **RGB** des Knotens **Textursample** vom Terminal **RGB** des Knotens **Endgültige Farbe**. Klicken Sie im Modus **Auswählen** auf das Terminal **RGB** des Knotens **Textursample** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 
@@ -41,14 +41,14 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 
 5. Verbinden Sie den berechneten Graustufenwert mit der endgültige Farbe. Verschieben Sie das Terminal **Ausgabe** des Knotens **Entsättigen** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.
 
-   In der folgenden Abbildung wird das fertige Shaderdiagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.
+   In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.
 
 > [!NOTE]
 > In dieser Abbildung wird eine Ebene als Vorschauform verwendet, und eine Textur wurde angegeben, um den Effekt des Shaders besser zu veranschaulichen.
 
- ![Shader-Diagramm und eine Vorschau seiner Auswirkung](../designers/media/digit-grayscale-effect.png "Ziffer-Graustufen Effekt")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-grayscale-effect.png "Ziffer-Graustufen Effekt")
 
- Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Shader-Designer](../designers/shader-designer.md).
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Vorschau von Shadern im Shader-Designer finden Sie unter [Shader-Designer](../designers/shader-designer.md) .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Anwenden eines Shaders auf ein 3D-Modell Gewusst](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [wie: Exportieren eines](../designers/how-to-export-a-shader.md) Shaders Bild- [Editors](../designers/image-editor.md) [Shader](../designers/shader-designer.md) -Designer- [Knoten](../designers/shader-designer-nodes.md)

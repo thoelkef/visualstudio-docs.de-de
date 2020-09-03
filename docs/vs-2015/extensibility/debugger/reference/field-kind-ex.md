@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198753"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Listet weitere Arten von Feldern, die eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten kann. Diese Enumeration erweitert die [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Enumeration.  
+Listet zusätzliche Arten von Feldern auf, die ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten kann. Diese Enumeration erweitert die [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,21 +45,21 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Member  
  FIELD_KIND_EX_NONE  
- Feld enthält keinen erweiterten Typ.  
+ Das Feld enthält keinen erweiterten Typ.  
   
  FIELD_TYPE_EX_METHODVAR  
- Feld enthält die Variable einer Methode.  
+ Das Feld enthält eine Methoden Variable.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Feld enthält eine Klassenvariable.  
+ Das Feld enthält eine Klassen Variable.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Sh.h  
+ Header: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

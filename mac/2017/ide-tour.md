@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984981"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 für Mac: Überblick
@@ -106,7 +106,7 @@ Der Debugger enthält umfangreiche Schnellansichten für besondere Typen wie Zei
 
 Weitere Informationen zu den Datenschnellansichten des Debuggers finden Sie im Artikel [Datenvisualisierungen](/visualstudio/mac/data-visualizations).
 
-## <a name="version-control"></a>Versionskontrolle
+## <a name="version-control"></a>Quellcodeverwaltung
 
 Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversion integriert werden. Projekte unter Quellcodeverwaltung werden mit dem Branch bezeichnet, der neben dem Namen der Projektmappe angezeigt wird:
 
@@ -122,6 +122,6 @@ Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finde
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-IDE (unter Windows)](/visualstudio/ide/visual-studio-ide)

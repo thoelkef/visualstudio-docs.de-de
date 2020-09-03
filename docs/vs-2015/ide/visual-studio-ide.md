@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534315"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio-IDE
@@ -85,7 +85,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
  Eine *Projektvorlage* ist eine Sammlung von vorgegebenen Codedateien und Konfigurationseinstellungen, die Sie schnell einrichten können, um eine bestimmte Art von Anwendung zu erstellen. Visual Studio enthält viele Projektvorlagen. Wenn keine der Standardvorlagen für Sie geeignet ist, können Sie eine eigene erstellen. Nachdem Sie ein Projekt mit einer Vorlage erstellt haben, können Sie darin Ihren eigenen Code schreiben, sprich entweder in den bereitgestellten Dateien oder in neuen, von Ihnen hinzugefügten Dateien. Weitere Informationen finden Sie unter [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md). Die folgende Abbildung zeigt das Dialogfeld "Neues Projekt" mit den Projektvorlagen, die für ASP.NET-Anwendungen verfügbar sind.
 
- ![Visual Studio, Dialogfeld „Neues Projekt“](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Visual Studio Dialog Feld "Neues Projekt"](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>Entwerfen der Benutzeroberfläche
  Ein Designer ist ein intuitives Tool, das es Ihnen ermöglicht, eine Benutzeroberfläche zu erstellen, ohne Code schreiben zu müssen. Sie können Steuerelemente der Benutzeroberfläche, z. B. Listenfelder, Kalender und Schaltflächen aus dem Fenster [Toolbox](../ide/reference/toolbox.md) auf eine Entwurfsoberfläche ziehen, die das Fenster oder Dialogfeld darstellt. Sie können die Größe der Elemente ändern oder sie neu anordnen, ohne Code zu schreiben. Es gibt Designer für jeden Projekttyp, der eine Benutzeroberfläche umfasst.
@@ -94,7 +94,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
  ![Zeichenfläche](../ide/media/b5-artboard.png "b5_artboard")
 
-|Bild|Beschreibung|
+|Bild|BESCHREIBUNG|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Designansicht** : Zeigt den visuellen Entwurf des Dokuments an. In dieser Ansicht können Sie Objekte auf der Entwurfsoberfläche zeichnen oder ändern.|
 |![](../designers/media/b1-2.png "B1_2")|**Breadcrumb** : Schalten Sie schnell zwischen dem Vorlagenbearbeitungsmodus, Stilbearbeitungsmodus und Bearbeitungsbereich für ein ausgewähltes Objekt um.|
@@ -175,7 +175,7 @@ Die Ausgabe des Builds, einschließlich der Fehler-oder Erfolgsmeldungen, wird i
 
  Der SQL Server-Objekt-Explorer in Visual Studio bietet eine Ansicht Ihrer Datenbankobjekte ähnlich der in SQL Server Management Studio. Mit dem Objekt-Explorer von SQL Server können Sie leichte Verwaltungs- und Designarbeiten für Datenbanken durchführen, darunter Bearbeiten von Tabellendaten, Vergleichen von Schemas und Ausführen von Abfragen mithilfe von Kontextmenüs direkt aus dem Objekt-Explorer von SQL Server. SSDT enthalten auch spezielle Projekttypen und Tools zum Entwickeln von SQL Server 2012 Analysis Services-, Reporting Services- und Integration Services Business Intelligence-Lösungen (BI, ehemals Business Intelligence Development Studio).
 
- ![SQL Server-Objekt-Explorer](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
+ ![SQL Server-Objekt-Explorer](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
 
 ## <a name="deploying-your-finished-application"></a>Bereitstellen der fertigen Anwendung
  Wenn Ihre Anwendung für die Bereitstellung beim Kunden bereit ist, bietet Visual Studio die dazu benötigten Tools, unabhängig davon, ob Sie sie im Windows Store, auf einer Sharepoint-Website oder mit InstallShield- oder Windows Installer-Technologien bereitstellen möchten. Sie können auf alle Tools über die IDE zugreifen. Weitere Informationen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
@@ -203,7 +203,7 @@ Die Ausgabe des Builds, einschließlich der Fehler-oder Erfolgsmeldungen, wird i
 - [Entwerfen von Benutzeroberflächen](../designers/designing-user-interfaces.md)
 - [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
-- [Deploying Applications, Services, and Components (Bereitstellen von Anwendungen, Diensten und Komponenten)](../deployment/deploying-applications-services-and-components.md)
+- [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md)
 - [Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)
 - [Sicherheit](../ide/security-in-visual-studio.md)
 - [Visual Studio-Beispiele](../ide/visual-studio-samples.md)

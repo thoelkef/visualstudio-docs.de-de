@@ -32,10 +32,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534133"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
@@ -59,7 +59,7 @@ Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereigniss
 
   Sie können angeben, welche Ereignisse automatische Formatierung verursachen.
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |-|-|
 |**Bei Vervollständigung des Endtags oder eines einfachen Tags**|Automatische Formatierung tritt auf, wenn Sie einen Endtag oder ein einfaches Tag eingegeben haben. Ein einfaches Tag verfügt über keine Attribute, z.B. `<Button />`.|
 |**Bei Vervollständigung des Starttags**|Automatische Formatierung tritt auf, wenn Sie einen Starttag eingegeben haben.|
@@ -70,7 +70,7 @@ Diese Einstellung gibt an, ob Attributwerte in einfache oder doppelte Anführung
 
 Nachdem Sie diese Option festgelegt haben, sind nur Attribute betroffen, die später entweder mithilfe des Designers oder manuell in die XAML-Ansicht hinzugefügt werden.
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |-|-|
 |**Doppelte Anführungszeichen (")**|Attributwerte werden in doppelte Anführungszeichen eingeschlossen.<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**Einfache Anführungszeichen (')**|Attributwerte werden in einfache Anführungszeichen eingeschlossen.<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,7 +78,7 @@ Nachdem Sie diese Option festgelegt haben, sind nur Attribute betroffen, die sp�
 ## <a name="tag-wrapping"></a>Tagumbrüche
 Sie können eine Zeilenlänge für Tagumbrüche angeben. Wenn Tagumbrüche aktiviert sind, wird jedes XAML, das später mithilfe des Designers hinzugefügt wird, entsprechend umgebrochen.
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |-|-|
 |**Tags bei Überschreitung der angegebenen Länge umbrechen**|Gibt an, ob Zeilen bei der durch **Länge** angegebenen Zeilenlänge umgebrochen werden.|
 |**Länge**|Die Anzahl der Zeichen, die eine Zeile enthalten kann. Falls erforderlich, könnten einige XAML-Zeilen die angegebene Zeilenlänge überschreiten.|
@@ -86,7 +86,7 @@ Sie können eine Zeilenlänge für Tagumbrüche angeben. Wenn Tagumbrüche aktiv
 ## <a name="attribute-spacing"></a>Attributabstand
 Mit dieser Einstellung können Sie steuern, wie Attribute im XAML-Dokument angeordnet sind
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |-|-|
 |**Neue Zeilen und Leerzeichen zwischen Attributen beibehalten**|Neue Zeilen und Leerzeichen zwischen Attributen sind von der automatischen Formatierung nicht betroffen.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**Ein Leerzeichen zwischen Attributen einfügen**|Attribute umfassen eine Zeile mit durch ein Leerzeichen getrennten benachbarten Attributen. Die Einstellungen für Tagumbrüche werden angewendet.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -115,14 +115,14 @@ Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen
 ## <a name="default-view"></a>Standardansicht
 Mit dieser Einstellung wird gesteuert, ob die Entwurfsansicht angezeigt wird, wenn XAML-Dokumente geladen werden.
 
-|Name|Beschreibung|
+|name|BESCHREIBUNG|
 |-|-|
 |**Dokumente in der vollständigen XAML-Ansicht immer öffnen**|Gibt an, ob XAML-Dokumente nur in der XAML-Ansicht angezeigt werden, ohne Designansicht. Nützlich für das Laden großer Dokumente.|
 
 ## <a name="toolbox"></a>Werkzeugkasten
 Verwenden Sie diese Einstellung, um anzugeben, ob Benutzer Steuerelemente und benutzerdefinierte Steuerelemente in der Toolbox angezeigt werden.
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |-|-|
 |**Toolboxelemente automatisch ausfüllen**|Gibt an, ob Benutzersteuerelemente und benutzerdefinierte Steuerelemente in der aktuellen Projektmappe automatisch in der Toolbox angezeigt werden.|
 

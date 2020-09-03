@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534237"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
@@ -26,7 +26,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 
  **Inhalt**
 
-- [Erstellen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
+- [Build](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
 - [Bearbeiten](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
 
@@ -34,17 +34,17 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 
 - [Tools](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
 
-- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+- [Fenster](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
 
 - [Debuggen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
 
-- [File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+- [Datei](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
 
-- [Umgestalten](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
+- [Refactor](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
 
 - [Anschauung](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Erstellen
+## <a name="build"></a><a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Build.Compile|STRG+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Global]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Gen
+## <a name="debug"></a><a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |Edit.WordDeleteToEnd|STRG+ENTF [Text-Editor]|
 |Edit.WordDeleteToStart|STRG+RÜCKTASTE [Text-Editor]|
 
-## <a name="file"></a><a name="bkmk_file"></a>Datei
+## <a name="file"></a><a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -147,19 +147,19 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |Project.AddExistingItem|UMSCHALT+ALT+A [Global]|
 |Project.AddNewItem|STRG+UMSCHALT+A [Global]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Umgestalten
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Refactor
 
-|Get-Help|Tastenkombination [Kontext]|
+|Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|STRG+R, STRG+M [Global]|
 
 ## <a name="tools"></a><a name="bkmk_tools"></a> Tools
 
-|Get-Help|Tastenkombination [Kontext]|
+|Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|STRG+ALT+P [Global]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Anschauung
+## <a name="view"></a><a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ iew.TfsTeamExplorer|STRG+\\, STRG+M [Global]|
 |View.ViewCode|EINGABETASTE [Klassendiagramm]<br /><br /> oder F7 [Einstellungs-Designer]|
 |View.ViewDesigner|UMSCHALT+F7 [HTML-Editor-Quellansicht]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Ster
+## <a name="window"></a><a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|

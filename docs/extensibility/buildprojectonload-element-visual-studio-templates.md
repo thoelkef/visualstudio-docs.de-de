@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Buildprojectonload-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739950"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload-Element (Visual Studio-Vorlagen)
-Erstellt nur neue Projekte, während Sie sie erstellen und einer Projektmappe hinzufügen. Die gesamte Lösung ist nicht erstellt.
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Buildprojectonload-Element (Visual Studio-Vorlagen)
+Erstellt nur neue Projekte, die Sie erstellen und zu einer Projekt Mappe hinzufügen. Die gesamte Lösung wird nicht erstellt.
 
-Elementhierarchie:
+Element Hierarchie:
 
 ```xml
 <VSTemplate>
@@ -37,27 +37,27 @@ Elementhierarchie:
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|`TemplateData`|Kategorisiert die Vorlage und definiert, wie sie sowohl im **Dialogfeld Neues Projekt** als auch im Dialogfeld **Neues Element hinzufügen** angezeigt wird.|
+|`TemplateData`|Kategorisiert die Vorlage und definiert, wie Sie in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss `true` `false` entweder oder angegeben werden, ob nur das neue Projekt erstellt werden soll, wenn es aus der Vorlage erstellt wird.
+ Der Text muss entweder `true` oder sein `false` , um anzugeben, ob nur das neue Projekt erstellt werden soll, wenn es aus der Vorlage erstellt wird.
 
 ## <a name="remarks"></a>Bemerkungen
- `BuildProjectOnLoad` ist ein optionales Element. Der Standardwert ist `false`.
+ `BuildProjectOnLoad` ist ein optionales Element. Standardwert: `false`.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für eine Visual C-Vorlage veranschaulicht.
+ Im folgenden Beispiel werden die Metadaten für eine Visual c#-Vorlage veranschaulicht.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,8 +84,8 @@ Elementhierarchie:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [BuildOnLoad-Attribut und -Element](buildonload-visual-studio-templates.md)
+- [BuildOnLoad-Attribut und-Element](buildonload-visual-studio-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

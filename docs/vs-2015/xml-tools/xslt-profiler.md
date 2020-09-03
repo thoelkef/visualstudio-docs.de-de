@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406735"
 ---
 # <a name="xslt-profiler"></a>XSLT-Profiler
@@ -30,5 +30,5 @@ Der XSLT-Profiler ist ein Leistungsanalyse-Profilertool, das Ihnen hilft, XSLT-D
 > [!NOTE]
 > Einige Bildschirme sehen in Visual Studio 2010 möglicherweise anders aus als in diesen Dokumenten, da einige visuelle Elemente gegenüber Visual Studio 2008 geändert wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)

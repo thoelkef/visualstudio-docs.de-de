@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 038b3e7db7f1e3b79ee3e41b6e256216a39b91bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664557"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Gewusst wie: Erstellen eines Lambert-Shaders
@@ -51,15 +51,15 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 > [!NOTE]
 > Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders angegeben, um den Effekt des Shaders in dieser Abbildung besser veranschaulichen. Ein Spiel oder eine Anwendung kann diesen Parameter verwenden, um für jedes Objekt einen eindeutigen Farbwert bereitzustellen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
- ![Das Shader-Diagramm und eine Vorschau seines Effekts.](../designers/media/digit-lambert-effect-graph.png "Ziffern-Lambert-Effect-Graph")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lambert-effect-graph.png "Ziffern-Lambert-Effect-Graph")
 
- Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zum Anzeigen einer Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt Vorschau von Shadern im [Shader-Designer](../designers/shader-designer.md).
 
  In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf ein 3D-Modell angewandt wurde.
 
- ![Lambert-Beleuchtung, die auf ein Modell angewendet wird.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-result")
+ ![Lambert-Beleuchtung in einem Modell](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-result")
 
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter Gewusst [wie: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell Gewusst](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md) Gewusst [wie: Erstellen eines einfachen Phong-Shader](../designers/how-to-create-a-basic-phong-shader.md) -Shader- [Designer](../designers/shader-designer.md) - [Knotens](../designers/shader-designer-nodes.md)

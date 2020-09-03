@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534848"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
@@ -60,7 +60,7 @@ ms.locfileid: "85534848"
 
 - UInt
 
-- Ganze Zahl
+- Integer
 
 - UInteger
 
@@ -84,7 +84,7 @@ ms.locfileid: "85534848"
 
 - Obj
 
-- Boolesch
+- Boolean
 
 - Char
 
@@ -126,7 +126,7 @@ ms.locfileid: "85534848"
 
 - Decimal
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  **Wenn für einen Parameter ausgelöst:**
