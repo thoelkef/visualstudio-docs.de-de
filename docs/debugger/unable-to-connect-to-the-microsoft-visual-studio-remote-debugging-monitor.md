@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81397375"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
@@ -152,7 +152,7 @@ Mit einer der folgenden Möglichkeiten können Sie dieses Problem beheben:
     > [!NOTE]
     > Wenn Sie den Remotedebugger auf einem Remoteserver ausführen, klicken Sie mit der rechten Maustaste auf die Remotedebugger-App, und wählen Sie **Als Administrator ausführen** aus (Sie können den Remotedebugger auch als Dienst ausführen). Wenn Sie ihn nicht auf einem Remoteserver ausführen, starten Sie ihn einfach normal.
 
-- Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<Benutzername>** starten: `msvsmon /allow <username@computer>`.
+- Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<username>** starten: `msvsmon /allow <username@computer>`.
 
 - Alternativ können Sie allen Benutzern das Remotedebuggen gestatten. Öffnen Sie im Remotedebuggerfenster das Dialogfeld **Extras > Optionen**. Bei der Auswahl von   **Keine Authentifizierung**können Sie **Allen Benutzern das Debugging ermöglichen**aktivieren. Sie sollten diese Option jedoch nur ausprobieren, wenn die anderen Optionen fehlschlagen oder wenn Sie sich in einem privaten Netzwerk befinden.
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404282"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten als DataTips im Code-Editor
@@ -75,7 +75,7 @@ Wenn Sie alle DataTips schließen möchten, wählen Sie im Menü **Debuggen** di
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Schließen aller DataTips für eine bestimmte Datei
 
-Wenn Sie alle DataTips für eine bestimmte Datei schließen möchten, wählen Sie im Menü **Debuggen** die Option **Alle an \<Dateiname> angehefteten DataTips löschen** aus.
+Wenn Sie alle DataTips für eine bestimmte Datei schließen möchten, wählen Sie im Menü **Debuggen** die Option **Alle an \<Filename>angehefteten DataTips löschen** aus.
 
 ## <a name="expand-and-edit-information"></a>Erweitern und Bearbeiten von Informationen
 Mithilfe von DataTips können Sie ein Array, eine Struktur oder ein Objekt erweitern, um deren Member anzuzeigen. Sie können mit einem DataTip auch den Wert einer Variablen bearbeiten.

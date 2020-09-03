@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744976"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
@@ -116,7 +116,7 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 1. Überprüfen Sie die Buildergebnisse im **Ausgabenfenster**, und wählen Sie **Build** in der Liste **Ausgabe anzeigen von** aus.
 ::: moniker-end
 
-Die JavaScript-Projektvorlage „Vue.js“ (und ältere Versionen der TypeScript-Vorlage) verwenden das npm-Skript `build`, indem sie ein Postbuildereignis konfigurieren. Wenn Sie diese Einstellung ändern möchten, öffnen Sie die Projektdatei ( *\<Projektname\>.njsproj*) über den Windows-Explorer, und suchen Sie nach der folgenden Codezeile:
+Die JavaScript-Projektvorlage „Vue.js“ (und ältere Versionen der TypeScript-Vorlage) verwenden das npm-Skript `build`, indem sie ein Postbuildereignis konfigurieren. Wenn Sie diese Einstellung ändern möchten, öffnen Sie die Projektdatei ( *\<projectname\>.njsproj*) über den Windows-Explorer, und suchen Sie nach der folgenden Codezeile:
 
 ```xml
 <PostBuildEvent>npm run build</PostBuildEvent>

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595812"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -94,7 +94,7 @@ Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **S
 
 ### <a name="icon"></a>Symbol
 
-Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie **\<Browse...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Assemblyinformationen
 

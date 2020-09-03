@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585729"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Tipps zu Tastenkombinationen in Visual Studio
@@ -106,7 +106,7 @@ Eine vollständige Liste von Tastenkombinationen für Befehle finden Sie unter [
 |Hinzufügen von Schaltflächen|Auswählen der Symbolleistenschaltfläche „Überlauf“|
 |Suchen des Kombinationsfelds auf der Standardsymbolleiste|**STRG**+**D**|
 |Suchen des Textfeld-Befehlsmodus|Geben Sie Folgendes ein: **>**|
-|Erstellen eines neuen Alias|Geben Sie **Alias \<Neuer Alias> \<Befehl>** in das **Befehlsfenster** ein.|
+|Erstellen eines neuen Alias|Geben Sie **alias \<new alias> \<command>** im **Befehlsfenster** ein.|
 
 ## <a name="debugging"></a>Debugging
 

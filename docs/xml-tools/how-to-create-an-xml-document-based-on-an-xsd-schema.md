@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a190790b915ac8dd011bc9843fe8abdf2d7381ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249581"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88893358"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
@@ -43,7 +43,7 @@ Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, w
 
 1. Führen Sie die unter [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md) aufgeführten Schritte durch.
 
-2. Wählen Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) das globale Element `PurchaseOrder` aus, und halten Sie die Taste gedrückt (oder klicken Sie mit der rechten Maustaste), und wählen Sie dann  **Beispiel-XML generieren** aus.
+2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) mit der rechten Maustaste auf das globale Element `PurchaseOrder`, und wählen Sie dann **Beispiel-XML generieren** aus.
 
      Die Datei „PurchaseOrder.*xml*“ wird mit dem folgenden Beispiel-XML-Inhalt generiert und im XML-Editor geöffnet:
 

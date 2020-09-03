@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594408"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Verwalten von Erweiterungen für Visual Studio
@@ -106,7 +106,7 @@ Wenn Sie die Verwendung einer Erweiterung beenden möchten, können Sie diese de
 
 ## <a name="per-user-and-administrative-extensions"></a>Erweiterungen pro Benutzer und Verwaltungserweiterungen
 
-Die meisten Erweiterungen sind Pro-Benutzer-Erweiterungen und werden im Ordner *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio-Version>\>\Extensions\\* installiert. Bei einigen Erweiterungen handelt es sich um Verwaltungserweiterungen, und diese werden im Ordner *\<Visual Studio-Installationsordner>\Common7\IDE\Extensions\\* installiert.
+Die meisten Erweiterungen sind Pro-Benutzer-Erweiterungen und werden im Ordner *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio-Version>\>\Extensions\\* installiert. Bei einigen Erweiterungen handelt es sich um Verwaltungserweiterungen, und diese werden im Ordner *\<Visual Studio installation folder>\Common7\IDE\Extensions\\* installiert.
 
 Um das System vor Erweiterungen zu schützen, in denen möglicherweise Fehler oder bösartiger Code enthalten ist, können Sie das Laden von Erweiterungen pro Benutzer dahingehend einschränken, dass sie nur geladen werden, wenn Visual Studio mit normalen Benutzerberechtigungen ausgeführt wird. Das bedeutet, dass Pro-Benutzer-Erweiterungen deaktiviert sind, wenn Visual Studio mit erhöhten Rechten ausgeführt wird.
 

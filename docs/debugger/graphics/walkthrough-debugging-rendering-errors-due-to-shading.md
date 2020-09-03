@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849341"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
@@ -31,7 +31,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
  In diesem Szenario haben Sie kürzlich Ihrer App ein Objekt hinzugefügt. Außerdem haben Sie neue Vertex- und Pixel-Shader hinzugefügt, um das Objekt zu transformieren und ihm eine besondere Darstellung zu verschaffen. Wenn Sie die App während eines Tests ausführen, wird das Objekt vollständig schwarz gerendert. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, um die App zu debuggen. Das Problem sieht in der App wie in dieser Abbildung aus:
 
- ![Objekt wird mit falschen Farben gerendert.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
+ ![Das Objekt wird mit falschen Farben gerendert.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
 ## <a name="investigation"></a>Untersuchung
  Mithilfe der Grafikdiagnosetools können Sie das Grafikprotokolldokument laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.
@@ -42,7 +42,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 2. Wählen Sie in der **Frameliste** einen Frame aus, in dem das Objekt nicht richtig dargestellt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht das Grafikprotokoll-Dokumentfenster wie in der folgenden Abbildung aus:
 
-    ![Grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
+    ![Das Dokument mit dem Diagrammprotokoll in Visual Studio](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
    Nachdem Sie einen Frame ausgewählt haben, der das Problem veranschaulicht, können Sie das Fenster **Grafikpixelverlauf** verwenden, um das Problem zu diagnostizieren. Im Fenster **Grafikpixelverlauf** werden die Grundtypen, die möglicherweise Auswirkungen auf ein bestimmtes Pixel hatten, deren Shader sowie deren Auswirkungen auf das Renderziel gezeigt (in zeitlicher Reihenfolge).
 
@@ -52,11 +52,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 2. Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie im Grafikprotokolldokumentfenster eines der Pixel des Objekts aus, das die falsche Farbe hat:
 
-    ![Wenn Sie ein Pixel auswählen, werden Informationen zu dessen Verlauf angezeigt.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
+    ![Beim Auswählen eines Pixels werden Informationen zu seinem Verlauf angezeigt.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
 
     Das Fenster **Grafikpixelverlauf** wird entsprechend dem ausgewählten Pixel aktualisiert. In diesem Szenario sieht das Fenster **Grafikpixelverlauf** wie folgt aus:
 
-    ![Pixelverlauf mit einem DrawIndexed-Ereignis](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
+    ![Der Pixelverlauf zeigt ein DrawIndexed-Ereignis.](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
 
     Sie sehen, dass das Ergebnis des Pixel-Shaders vollständig deckendes Schwarz ist (0, 0, 0, 1) und dass die **Ausgabezusammenführung** diesen Pixel-Shader mit der **vorherigen** Farbe des Pixels so kombiniert, dass das **Ergebnis** ebenfalls vollständig deckend schwarz ist.
 
@@ -70,7 +70,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 3. Setzen Sie den Mauszeiger auf `input.color`. Sie sehen, dass der Wert vollständig deckendem Schwarz entspricht (0, 0, 0, 1).
 
-    ![Member „color“ von „input“ ist „Schwarz“.](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
+    !["color"-Member von "input" ist "Schwarz".](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
 
     In diesem Szenario ergibt die Untersuchung, dass die falsche Farbe wahrscheinlich das Ergebnis eines Vertexshaders ist, der dem Pixelshader nicht die richtigen Farbinformationen zur Verarbeitung bereitstellt.
 
@@ -84,7 +84,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 3. Vergewissern Sie sich, dass der color-Member nie aus der Eingabestruktur (input) kopiert wird. Da der Wert von `output.color` unmittelbar vor der Rückgabe der `output`-Struktur auf vollständig deckendes Schwarz festgelegt wird, sollten Sie sich vergewissern, dass der Wert von `output` in keiner vorherigen Zeile korrekt initialisiert wurde. Durchlaufen Sie den der Vertexshadercode bis zu der Zeile, in der `output.color` auf Schwarz festgelegt wird. Beobachten Sie dabei den Wert von `output.color`. Sie stellen fest, dass der Wert von `output.color` nicht initialisiert wird, bis er auf Schwarz festgelegt wird. Dadurch wird bestätigt, dass die Codezeile, in der `output.color` auf Schwarz festgelegt wird, nicht gelöscht, sondern geändert werden sollte.
 
-    ![Wert von „output.color“ ist „Schwarz“.](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")
+    ![Der Wert von "output.color" ist "Schwarz".](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")
 
    Nachdem Sie festgestellt haben, dass die Ursache des Renderproblems darin besteht, dass der Vertexshader dem Pixelshader einen falschen Farbwert bereitstellt, können Sie das Problem beheben. In diesem Szenario können Sie das Problem beheben, indem Sie den folgenden Code im Vertexshader ändern
 
@@ -100,8 +100,8 @@ output.color = input.color;
 
  In diesem Code wird die Vertexfarbe aus den Scheitelpunkten des Objekts lediglich unverändert durchgereicht. In komplexeren Vertexshadern könnte die Farbe geändert werden, bevor sie weitergereicht wird. Der korrigierte Vertexshadercode sollte im Wesentlichen so aussehen:
 
- ![Korrigierter Vertex-Shader-Code](media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")
+ ![Der korrigierte Vertex-Shader-Code.](media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")
 
  Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist.
 
- ![Objekt wird mit richtigen Farben gerendert.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![Das Objekt wird mit den richtigen Farben gerendert.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

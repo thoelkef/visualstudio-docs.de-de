@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633355"
 ---
 # <a name="msbuild-targets-files"></a>TARGETS-Dateien von MSBuild
@@ -29,7 +29,7 @@ MSBuild umfasst mehrere *TARGETS*-Dateien, die Elemente, Eigenschaften, Ziele un
 
  Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Beispielweise importiert ein mit Visual Studio erstelltes C#-Projekt die Datei *Microsoft.CSharp.targets*, die wiederum *Microsoft.Common.targets* importiert. Das C#-Projekt selbst definiert die jeweiligen Elemente und Eigenschaften dieses Projekts. Die standardmäßigen Buildregeln für ein C#-Projekt werden jedoch in den importierten *TARGETS*-Dateien definiert.
 
- Der `$(MSBuildToolsPath)`-Wert gibt den Pfad dieser allgemeinen *TARGETS*-Dateien an. Handelt es sich um die `ToolsVersion` 4.0, befinden sich die Dateien im folgenden Speicherort: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
+ Der `$(MSBuildToolsPath)`-Wert gibt den Pfad dieser allgemeinen *TARGETS*-Dateien an. Für `ToolsVersion` 4.0 befinden die Dateien sich an folgendem Speicherort: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
 > Informationen zum Erstellen eigener Ziele finden Sie unter [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele). Wie Sie mithilfe des `Import`-Elements eine Projektdatei in eine andere Projektdatei einfügen können, wird unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md) und [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md) erklärt.

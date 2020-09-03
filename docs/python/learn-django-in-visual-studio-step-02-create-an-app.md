@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300888"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314172"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -111,7 +111,7 @@ Da Sie Änderungen an Ihrem Code vorgenommen und erfolgreich getestet haben, ist
 
     ![Schaltfläche für Änderungen der Quellcodeverwaltung in der Statusleiste von Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. Geben Sie in **Team Explorer** eine Commit-Nachricht wie „Erste Django-App erstellen“ ein, und wählen Sie **Alle committen** aus. Wenn das Commit abgeschlossen ist, sehen Sie die Nachricht **Commit\<Hash> lokal erstellt. Synchronisieren, um Änderungen auf den Server zu übertragen.** Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
+1. Geben Sie in **Team Explorer** eine Commit-Nachricht wie „Erste Django-App erstellen“ ein, und wählen Sie **Alle committen** aus. Nachdem der Commit abgeschlossen ist, wird die Meldung „**Commit \<hash> lokal erstellt“ angezeigt. Synchronisieren, um Änderungen auf den Server zu übertragen.** Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
 
     ![Commits per Push an den Remotecomputer in Team Explorer übertragen](media/django/step02-source-control-push-to-remote.png)
 

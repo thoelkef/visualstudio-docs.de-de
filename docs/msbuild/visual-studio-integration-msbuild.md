@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631197"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
@@ -151,7 +151,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      Das Projekt ist als **(nicht verfügbar)** gekennzeichnet.
 
-2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.
+2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Project File> bearbeiten** aus.
 
      Die Projektdatei wird im XML-Editor von Visual Studio geöffnet.
 
@@ -161,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung
 
- Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über MSBuild-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter *\<Visual Studio-Installationsverzeichnis>\Xml\Schemas\1033\MSBuild* befindet.
+ Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über MSBuild-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild* befindet.
 
  Die grundlegenden MSBuild-Typen werden in *Microsoft.Build.Core.xsd* definiert, die von Visual Studio verwendeten allgemeinen Typen werden in *Microsoft.Build.CommonTypes.xsd* definiert. Zum Anpassen der Schemas für die Bereitstellung von IntelliSense und zur Validierung benutzerdefinierter Elementtypnamen, Eigenschaften und Aufgaben können Sie entweder *Microsoft.Build.xsd* bearbeiten oder ein benutzerdefiniertes Schema erstellen, das das CommonTypes-Schema oder Core-Schema enthält. Beim Erstellen eines benutzerdefinierten Schemas müssen Sie den XML-Editor so einrichten, dass das **Eigenschaftenfenster** verwendet wird.
 

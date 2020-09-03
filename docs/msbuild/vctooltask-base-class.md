@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591670"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask-Basisklasse
@@ -28,7 +28,7 @@ In der folgenden Tabelle werden die Parameter der **VCToolTask**-Basisklasse bes
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|**ActiveToolSwitchesValues**|Optionaler Parameter **Dictionary\<string, ToolSwitch>**|
+|**ActiveToolSwitchesValues**|Optionaler **Dictionary\<string, ToolSwitch>** -Parameter.|
 |**AdditionalOptions**|Optionaler **string**-Parameter|
 |**EffectiveWorkingDirectory**|Optionaler **string**-Parameter|
 |**EnableErrorListRegex**|Optionaler **bool**-Parameter.<br/><br/>Der Standardwert ist `true`.|

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845850"
 ---
 # <a name="messages-view"></a>Meldungsansicht
@@ -24,7 +24,7 @@ Jedes Fenster verfügt über einen zugehörigen Meldungsdatenstrom. In einem Mel
 
  Die folgende Abbildung zeigt ein typisches Meldungsansichtsfenster. Beachten Sie, dass die erste Spalte das Fensterhandle und die zweite Spalte einen Meldungscode (erläutert unter [Meldungscodes](../debugger/message-codes.md)) enthält. Rechts befinden sich die decodierten Meldungsparameter und die Rückgabewerte.
 
- ![Spy&#43;&#43;-Meldungsansicht](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Spy++-Meldungsansicht
+ ![Spy&#43;&#43;-Nachrichtenansicht](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Spy++-Nachrichtenansicht
 
 ## <a name="procedures"></a>Verfahren
 

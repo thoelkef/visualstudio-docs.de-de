@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929937"
 ---
 # <a name="threads-view"></a>Threadansicht
@@ -28,7 +28,7 @@ Bei der Threadansicht handelt es sich um eine flache Aufführung aller Threads, 
 
 1. Klicken Sie im Menü **Spy** auf die Option **Threads**.
 
-   ![Spy&#43;&#43; Threadansicht](../debugger/media/spy--_threads.png "Spy++_Threads") Spy++ Threadansicht
+   ![Spy&#43;&#43; Threadansicht](../debugger/media/spy--_threads.png "Spy++_Threads") Spy++-Threadansicht
 
    In der Abbildung oben sehen Sie die Threadansicht.
 

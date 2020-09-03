@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596748"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Arbeiten mit C++-Code im Klassen-Designer
@@ -74,7 +74,7 @@ Der **Klassen-Designer** kann Typen aus folgenden Gründen möglicherweise nicht
 
 - Stellen Sie sicher, dass der **Klassen-Designer** den von Ihnen eingegebenen Typ unterstützt. Siehe [Einschränkungen für C++-Codeelemente](#limitations-for-c-code-elements).
 
-Der Fehler, der am ehesten für eine Typauflösung angezeigt wird, ist **Für mindestens eine Form im Klassendiagramm \<element>** wurde kein Code gefunden. Diese Fehlermeldung besagt nicht notwendigerweise, dass der Code fehlerhaft ist. Es gibt nur an, dass Klassen-Designer den Code nicht anzeigen kann. Versuchen Sie folgende Maßnahmen:
+Der Fehler, der am ehesten für eine Typauflösung angezeigt wird, ist **Für mindestens eine Form im Klassendiagramm „\<element>“ wurde kein Code gefunden**. Diese Fehlermeldung besagt nicht notwendigerweise, dass der Code fehlerhaft ist. Es gibt nur an, dass Klassen-Designer den Code nicht anzeigen kann. Versuchen Sie folgende Maßnahmen:
 
 - Stellen Sie sicher, dass der Typ vorhanden ist. Stellen Sie sicher, dass Sie den Quellcode nicht versehentlich auskommentiert oder gelöscht haben.
 

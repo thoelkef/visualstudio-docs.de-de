@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301164"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315069"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debuggen von DLLs in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -66,7 +66,7 @@ Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG](/cpp/build/reference/ass
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Festlegen von C/C++-DLL-Dateispeicherorten
 
-Zum Debuggen einer externen DLL muss ein aufrufendes Projekt in der Lage sein, die DLL, ihre [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien zu finden, die die DLL benötigt. Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese Dateien in den *\<Projektordner>\Debug*-Ausgabeordner zu kopieren, oder Sie können die Dateien manuell dorthin kopieren.
+Zum Debuggen einer externen DLL muss ein aufrufendes Projekt in der Lage sein, die DLL, ihre [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien zu finden, die die DLL benötigt. Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese Dateien in den *\<project folder>\Debug*-Ausgabeordner zu kopieren, oder Sie können die Dateien manuell dorthin kopieren.
 
 Für C/C++-Projekte können Sie Header- und LIB-Dateispeicherorte in den Projekteigenschaftenseiten festlegen, anstatt sie in den Ausgabeordner zu kopieren.
 
@@ -90,7 +90,7 @@ Weitere Informationen zu C++-Projekteinstellungen finden Sie unter [Referenz zur
 
 Stellen Sie sicher, dass Sie eine Debugversion der DLL erstellen, bevor Sie mit dem Debuggen beginnen. Zum Debuggen einer DLL muss eine aufrufende App in der Lage sein, ihre [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien zu finden, die die DLL benötigt.
 
-Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese DLL-Dateien in den *\<Ordner des aufrufenden Projekts>\Debug*-Ausgabeordner zu kopieren, oder Sie können die Dateien manuell dorthin kopieren.
+Sie können eine benutzerdefinierte Buildaufgabe erstellen, um diese DLL-Dateien in den *\<calling project folder>\Debug*-Ausgabeordner zu kopieren, oder Sie können die Dateien manuell dorthin kopieren.
 
 Stellen Sie sicher, dass die DLL am richtigen Speicherort aufgerufen wird. Dies mag offensichtlich erscheinen, aber wenn eine aufrufenden App eine andere Kopie der DLL findet und lädt, wird der Debugger nie die von Ihnen festgelegten Haltepunkte erreichen.
 

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300876"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313743"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -98,7 +98,7 @@ Da Sie Änderungen an Ihrem Code vorgenommen und erfolgreich getestet haben, ist
 
     ![Schaltfläche für Änderungen der Quellcodeverwaltung in der Statusleiste von Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. Geben Sie im **Team Explorer** beispielsweise die Commitnachricht „Codeumgestaltung“ ein, und klicken Sie anschließend auf **Commit All** (Alle committen). Wenn das Commit abgeschlossen ist, sehen Sie die Nachricht **Commit\<Hash> lokal erstellt. Synchronisieren, um Änderungen auf den Server zu übertragen.** Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
+1. Geben Sie im **Team Explorer** beispielsweise die Commitnachricht „Codeumgestaltung“ ein, und klicken Sie anschließend auf **Commit All** (Alle committen). Nachdem der Commit abgeschlossen ist, wird die Meldung „**Commit \<hash> lokal erstellt“ angezeigt. Synchronisieren, um Änderungen auf den Server zu übertragen.** Wenn Sie die Änderungen per Push in Ihr Remoterepository übertragen möchten, wählen Sie **Synchronisieren** und anschließend **Push** unter **Ausgehende Commits** aus. Sie können auch mehrere lokale Commits vor dem Pushvorgang auf Remotecomputer sammeln.
 
     ![Commits per Push an den Remotecomputer in Team Explorer übertragen](media/flask/step02-source-control-push-to-remote.png)
 

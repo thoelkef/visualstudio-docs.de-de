@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630651"
 ---
 # <a name="xdcmake-task"></a>XDCMake-Aufgabe
@@ -43,9 +43,9 @@ Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kom
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |**AdditionalDocumentFile**|Optionaler **String[]** -Parameter.<br /><br /> Gibt eine oder mehrere weitere *XDC*-Dateien zum Zusammenführen an.<br /><br /> Weitere Informationen finden Sie unter der Beschreibung **Zusätzliche Dokumentdateien** unter [Eigenschaftenseiten für das XML-Dokument-Generator-Tool](/cpp/build/reference/xml-document-generator-tool-property-pages). Sehen Sie sich auch die **/old**- und **/FS**-Befehlszeilenoptionen für *xdcmake.exe* an.|
-|**AdditionalOptions**|Optionaler **String** -Parameter.<br /><br /> Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XDCMake**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter [XDCMake-Verweis](/cpp/build/reference/xdcmake-reference), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](/cpp/build/reference/xml-document-generator-tool-property-pages) und unter der Befehlszeilenhilfe ( **/?** ) für *xdcmake.exe*.|
+|**AdditionalOptions**|Optionaler **String** -Parameter.<br /><br /> Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XDCMake**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter [XDCMake-Verweis](/cpp/build/reference/xdcmake-reference), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](/cpp/build/reference/xml-document-generator-tool-property-pages) und unter der Befehlszeilenhilfe ( **/?** ) für *xdcmake.exe*.|
 |**DocumentLibraryDependencies**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn `true` und das aktuelle Projekt über eine Abhängigkeit in einem statischen Bibliotheksprojekt ( *.lib*) in der Projektmappe verfügen, werden die *XDC*-Dateien für das Bibliotheksprojekt in der *XML*-Dateiausgabe für das aktuelle Projekt eingefügt.<br /><br /> Weitere Informationen finden Sie in der Beschreibung **Dokumentbibliothekabhängigkeiten** unter [Eigenschaftenseiten für das Tool XML-Dokument-Generator](/cpp/build/reference/xml-document-generator-tool-property-pages).|
-|**OutputFile**|Optionaler **String** -Parameter.<br /><br /> Überschreibt den Standardnamen der Ausgabedatei. Der Standardname wird aus dem Namen der ersten *XDC*-Datei abgeleitet, die verarbeitet wird.<br /><br /> Weitere Informationen finden Sie unter **/out:\<filename>** -Option in [XDCMake-Verweis](/cpp/build/reference/xdcmake-reference). Siehe Sie sich auch die **/old**- und **/Fo**-Befehlszeilenoptionen für *xdcmake.exe* an.|
+|**OutputFile**|Optionaler **String** -Parameter.<br /><br /> Überschreibt den Standardnamen der Ausgabedatei. Der Standardname wird aus dem Namen der ersten *XDC*-Datei abgeleitet, die verarbeitet wird.<br /><br /> Weitere Informationen finden Sie unter der **/out:\<filename>** -Option im [XDCMake-Verweis](/cpp/build/reference/xdcmake-reference). Siehe Sie sich auch die **/old**- und **/Fo**-Befehlszeilenoptionen für *xdcmake.exe* an.|
 |**Projektname**|Optionaler **String** -Parameter.<br /><br /> Der Name des aktuellen Projekts.|
 |**SlashOld**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn `true`, werden zusätzliche *xdcmake.exe*-Optionen aktiviert.<br /><br /> Weitere Informationen finden Sie unter der **/old**-Befehlszeilenoption für *xdcmake.exe*.|
 |**Sources**|Erforderlicher `ITaskItem[]`-Parameter.<br /><br /> Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.|

@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183796"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symboldateien (PDB-Dateien) und Quelldateien im Visual Studio Debugger (C#, C++, Visual Basic, F#)
@@ -182,19 +182,19 @@ Erstellen Sie die App mit **/debug**, um eine *PDB*-Datei zu erstellen. Sie kön
 
 ### <a name="cc-options"></a>C/C++-Optionen
 
-- *VC\<x>.pdb*- und *\<project>.pdb*-Dateien
+- *VC\<x>.pdb*- und *\<project>PDB*-Dateien
 
-  Eine *PDB*-Datei für C/C++ wird erstellt, wenn Sie [/ZI oder /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) für den Build verwenden. In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wird die vom Compiler erstellte *PDB*-Datei durch die Option [/Fd](/cpp/build/reference/fd-program-database-file-name) benannt. Wenn Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt mithilfe der IDE erstellen, wird durch die Option **/Fd** eine *PDB*-Datei mit dem Namen *\<project.pdb* erstellt.
+  Eine *PDB*-Datei für C/C++ wird erstellt, wenn Sie [/ZI oder /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) für den Build verwenden. In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wird die vom Compiler erstellte *PDB*-Datei durch die Option [/Fd](/cpp/build/reference/fd-program-database-file-name) benannt. Wenn Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt mithilfe der IDE erstellen, wird durch die Option **/Fd** eine *PDB*-Datei mit dem Namen *\<project>.pdb* erstellt.
 
   Wird Sie die C/C++-Anwendung mithilfe eines Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd**angegeben, erstellt der Compiler zwei *PDB*-Dateien:
 
-  - *VC\<x.pdb*, wobei *\<x>* die Version des Microsoft C++-Compilers darstellt, beispielsweise *VC11.pdb*.
+  - *VC\<x>.pdb*, wobei *\<x>* die Version des Microsoft C++-Compilers darstellt, beispielsweise *VC11.pdb*.
 
-    In der Datei *VC\<x>.pdb* werden alle Debuginformationen für die einzelnen Objektdateien gespeichert. Sie wird im selben Verzeichnis wie das Makefile des Projekts gespeichert. Wenn eine Objektdatei erstellt wird, mergt der C/C++-Compiler Debuginformationen in *VC\<x>.pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien, z. B. *\<windows.h>* enthält, werden die Typdefinitionen aus diesen Headerdateien nur ein Mal anstatt in jeder einzelnen Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
+    In der Datei *VC\<x>-pdb* werden alle Debuginformationen für die einzelnen Objektdateien gespeichert. Sie wird im selben Verzeichnis wie das Makefile des Projekts gespeichert. Wenn eine Objektdatei erstellt wird, mergt der C/C++-Compiler Debuginformationen in *VC\<x>.pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien, z. B. *\<windows.h>* enthält, werden die Typdefinitionen aus diesen Headerdateien nur ein Mal anstatt in jeder einzelnen Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
 
   - *\<project>.pdb*
 
-    Die Datei *\<project>.pdb* speichert alle Debuginformationen für die *EXE*-Datei des Projekts und befindet sich im Unterverzeichnis *\debug*. Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern alle Debuginformationen, einschließlich der Funktionsprototypen.
+    Die Datei *\<project>.pdb* speichert alle Debuginformationen für die *EXE*-Datei des Projekts und befindet sich im Unterverzeichnis *\debug*. Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern die vollständigen Debuginformationen (einschließlich der Funktionsprototypen).
 
   Sowohl die Datei *VC\<x>.pdb* als auch die Datei *\<project>.pdb* ermöglicht inkrementelle Aktualisierungen. Der Linker bettet den Pfad zu den *PDB*-Dateien in die erstellte *EXE*- bzw. *DLL*-Datei ein.
 
@@ -245,7 +245,7 @@ Wenn dies geschieht, wird im Debugger die Seite **Keine Symbole geladen** oder *
 **So verwenden Sie die Seite „Keine Symbole geladen“, um fehlende Symbole zu suchen und zu laden:**
 
 - Um den Suchpfad zu ändern, wählen Sie einen nicht ausgewählten Pfad aus, oder wählen Sie **Neuer Pfad** oder **Neuer VSTS-Pfad** aus, und geben Sie einen neuen Pfad ein, oder wählen Sie ihn aus. Wählen Sie **Laden** aus, um die Pfade erneut zu suchen und die Symboldatei zu laden, sofern sie gefunden wurde.
-- Wählen Sie **Nach \<Name_der_ausführbaren_Datei> suchen** aus, um alle Symboloptionen zu überschreiben und einen Wiederholungsversuch für die Suchpfade auszuführen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der **Datei-Explorer** wird geöffnet, damit Sie die Symboldatei manuell auswählen können.
+- Wählen Sie **Nach \<executable-name> suchen** aus, um alle Symboloptionen zu überschreiben und einen Wiederholungsversuch für die Suchpfade auszuführen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der **Datei-Explorer** wird geöffnet, damit Sie die Symboldatei manuell auswählen können.
 - Um die Seite **Optionen** > **Debuggen** > **Symbole** zu öffnen, wählen Sie **Symboleinstellungen ändern** aus.
 - Um die Disassemblierung einmalig in einem neuen Fenster anzuzeigen, wählen Sie **Disassemblierung anzeigen** aus, oder wählen Sie das **Dialogfeld „Optionen“** aus, um die Option festzulegen, die Disassemblierung immer anzuzeigen, wenn Quell- oder Symboldateien nicht gefunden wurden.
 - Um die durchsuchten Speicherorte und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900857"
 ---
 # <a name="windows-view"></a>Fensteransicht
@@ -24,7 +24,7 @@ Wenn Sie Spy + + zum ersten Mal öffnen, wird in der Fensteransicht eine Struktu
 
  Die folgende Abbildung zeigt eine typische Spy++-Fensteransicht, bei der der oberste Knoten erweitert ist.
 
- ![Spy&#43;&#43;-Fensteransicht](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++-Fensteransicht
+ ![Spy&#43;&#43;-Windows-Ansicht](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++-Windows-Ansicht
 
  Das aktuelle Desktopfenster befindet sich ganz oben in der Struktur. Alle anderen Fenster sind untergeordnete Fenster des Desktops und werden entsprechend der Standardfensterhierarchie aufgelistet, wobei gleichgeordnete Fenster in der Z-Reihenfolge sortiert sind. Sie können jeden übergeordneten Knoten der Struktur erweitern oder reduzieren, indem Sie neben dem Knoten auf das Symbol „+“ oder „-“ klicken.
 

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588589"
 ---
 # <a name="encodings-and-line-endings"></a>Codierungen und Zeilenenden
@@ -51,7 +51,7 @@ Klicken Sie auf **Datei** > **Erweiterte Speicheroptionen**. Über das sich öff
 > [!NOTE]
 > Wenn **Erweiterte Speicheroptionen** im **Dateimenü** nicht angezeigt wird, können Sie dies hinzufügen. Klicken Sie auf **Extras** > **Anpassen** und anschließend auf die Registerkarte **Befehle**. Klicken Sie in der Dropdownliste der **Menüleiste** auf **Datei** und dann auf **Befehl hinzufügen**. Klicken Sie unter **Kategorien** im Dialogfeld **Befehl hinzufügen** auf **Datei**, und klicken Sie dann in der Liste **Befehle** auf **Erweiterte Speicheroptionen**. Klicken Sie auf **OK** und auf **Nach unten verschieben**, um den Befehl an eine beliebige Stelle im Menü zu verschieben. Klicken Sie auf **Schließen**, um das Dialogfeld **Anpassen** zu schließen. Weitere Informationen finden Sie unter [Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternativ können Sie über **Datei** >  **\<Datei\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den Dropdownlistenpfeil neben der Schaltfläche **Speichern**, und klicken Sie auf **Mit Codierung speichern**.
+> Alternativ können Sie über **Datei** >  **\<file\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den Dropdownlistenpfeil neben der Schaltfläche **Speichern**, und klicken Sie auf **Mit Codierung speichern**.
 
 ## <a name="see-also"></a>Siehe auch
 
