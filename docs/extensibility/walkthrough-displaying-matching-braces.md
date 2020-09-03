@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904843"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: anzeigen passender geschweifter Klammern
@@ -122,5 +122,5 @@ Implementieren Sie sprachbasierte Funktionen, wie z. b. die Klammer Zuordnung, i
 
 4. Wenn Sie die Einfügemarke vor einer öffnenden geschweifter Klammer positionieren, sollten diese geschweifter Klammer und die entsprechende schließende geschweifter Klammer hervorgehoben werden. Wenn Sie den Cursor direkt nach der schließenden geschweifter Klammer positionieren, sollten diese geschweifter Klammer und die entsprechende öffnende geschweifter Klammer hervorgehoben werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

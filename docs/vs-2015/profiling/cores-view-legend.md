@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161304"
 ---
 # <a name="cores-view-legend"></a>Legende der Kernansicht
@@ -38,5 +38,5 @@ Die Legende der Kernansicht identifiziert jeden Thread durch Farbe und Namen. Si
 |Gesamte Kontextwechsel|Die Gesamtzahl der Kontextwechsel für einen angegebenen Thread während des Samplingzeitraums. Jede Kontextänderung eines Threads (z.B. von der Ausführung zur Synchronisierung) entspricht einem Kontextwechsel.|  
 |Prozentualer Anteil der Kontextwechsel, die durch Kerne verlaufen|Dieser Anteil wird als Prozentsatz ausgedrückt und entsteht dadurch, dass die Anzahl der kernübergreifenden Kontextwechsel durch die Gesamtzahl der Kontextwechsel dividiert wird. Je höher der Prozentsatz, desto stärker wirkt sich der Aufwand der kernübergreifenden Kontextwechsel auf die Leistung dieses speziellen Threads aus.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Kernansicht](../profiling/cores-view.md)

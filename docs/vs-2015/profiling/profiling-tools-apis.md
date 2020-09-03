@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871597"
 ---
 # <a name="profiling-tools-apis"></a>APIs für Profilerstellungstools
@@ -22,7 +22,7 @@ ms.locfileid: "68871597"
 Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools eingeben, um die Datensammlung während einer Profilerstellung zu steuern. In diesem Abschnitt werden die Methoden der APIs sowie die Vorgehensweise für deren Verwendung beschrieben.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)\
+ [Visual Studio Profiler-API-Referenz (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)\
  Beschreibt die Methoden der C++-Profilerstellungstools
 
  [Profiler](/previous-versions/ms242704(v=vs.140))\
@@ -34,5 +34,5 @@ Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../in
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)

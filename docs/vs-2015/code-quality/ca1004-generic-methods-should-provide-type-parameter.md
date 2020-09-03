@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e7a96c95313ffee82448e3485c90868c8103814a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539801"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

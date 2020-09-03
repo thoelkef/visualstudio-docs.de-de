@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d495d0bf12c900d34a04a84e950b002494b7b5c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660395"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Beispielprojekt zum Erstellen von Komponententests
@@ -23,9 +23,9 @@ ms.locfileid: "72660395"
 
 Dieser Beispielcode wird zur Verwendung in den folgenden exemplarischen Vorgehensweisen bereitgestellt:
 
-- [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.
+- Exemplarische Vorgehensweise [: Erstellen und Ausführen von Komponenten Tests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.
 
-- [Exemplarische Vorgehensweise: Ausführen von Tests und Anzeigen der Codeabdeckung](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Code Coverage-Daten anzeigen, die den Anteil des Projektcodes zeigen, der getestet wird.
+- Exemplarische Vorgehensweise [: Ausführen von Tests und Anzeigen Code Coverage](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Code Coverage-Daten anzeigen, die den Anteil des Projektcodes zeigen, der getestet wird.
 
 - [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). In dieser exemplarischen Vorgehensweise verwenden Sie das Befehlszeilenhilfsprogramm MSTest.exe, um Tests auszuführen und Ergebnisse anzuzeigen.
 
@@ -131,5 +131,5 @@ namespace BankAccountNS
 ## <a name="working-with-the-code"></a>Arbeiten mit dem Code
  Um mit diesem Code zu arbeiten, müssen Sie dafür zuerst in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Projekt erstellen. Führen Sie die Schritte im Abschnitt „Vorbereiten der exemplarischen Vorgehensweise“ unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Exemplarische Vorgehensweise [: Erstellen und Ausführen von Komponenten Tests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) Exemplarische Vorgehensweise [: Ausführen von Tests und Anzeigen Code Coverage](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8) Exemplarische Vorgehensweise: [Verwenden des Befehlszeilen-Testprogramms](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545703"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Übermäßige Klassenkopplungen vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Kategorie|Microsoft. Wartbarkeit|
+|Category|Microsoft. Wartbarkeit|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f66587f462e1bbfb60704c5c75dc2299cb9ce36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160974"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle Listet eine Liste der Module an.  
+Diese Schnittstelle zählt eine Liste von Modulen auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,35 +31,35 @@ IEnumDebugModules2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um eine Liste der für ein Programm geladenen Module darstellt.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Liste von Modulen darzustellen, die für ein Programm geladen werden.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Visual Studio-Aufrufe [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) dieser Schnittstelle abgerufen.  
+ Visual Studio ruft [enummodule](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) auf, um diese Schnittstelle zu erhalten.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugModules2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugModules2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Ruft eine angegebene Anzahl von Modulen in einer Enumerationsfolge ab.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Überspringt eine angegebene Anzahl von Modulen in einer Enumerationsfolge.|  
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Ruft eine angegebene Anzahl von Modulen in einer enumerationssequenz ab.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Überspringt eine angegebene Anzahl von Modulen in einer enumerationssequenz.|  
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Ruft die Anzahl der Module ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Visual Studio verwendet diese Schnittstelle in erster Linie zum Aktualisieren der **Module** Fenster.  
+## <a name="remarks"></a>Bemerkungen  
+ Visual Studio verwendet diese Schnittstelle hauptsächlich, um das Fenster **Module** zu aktualisieren.  
   
- Für die Zwecke des Debuggens in Visual Studio, ein Programm ist eine logische Sequenz von Code-Anweisungen, die modulgrenzen, daher überschreiten, können die Notwendigkeit, eine Liste von Modulen für eine einzelne [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle. Das erste Modul in der Liste enthält in der Regel den ersten Einstiegspunkt für das zugeordnete Programm.  
+ Zum Zwecke des Debuggens in Visual Studio ist ein Programm eine logische Sequenz von Code Anweisungen, die Modul Grenzen überschreiten können. Daher ist eine Liste von Modulen für eine einzelne [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle erforderlich. Das erste Modul in der Liste enthält normalerweise den ersten Einstiegspunkt für das zugehörige Programm.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange | Microsoft-Dokumentation
+title: 'IDebugDocumentContext2:: GetSourceRange | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bcec6af2b8e7b1acfdc9c3cf38cb18654be78c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145001"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Quelle des Bereichs dieses Kontexts Dokument ab.  
+Ruft den Quell Code Bereich dieses Dokument Kontexts ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,20 +42,20 @@ int GetSourceRange( 
   
 #### <a name="parameters"></a>Parameter  
  `pBegPosition`  
- [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit die Position gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
+ [in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Anfangs Position ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.  
   
  `pEndPosition`  
- [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
+ [in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein Quellbereich wird der gesamte Bereich der Quellcode, aus der aktuellen Anweisung zurück, nachdem die vorherige Anweisung einfach, die Code beigetragen haben. Der Quellbereich wird normalerweise verwendet, für das Kombinieren von quellanweisungen, einschließlich der Kommentare, durch Code im Disassemblyfenster.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Quellbereich ist der gesamte Bereich des Quellcodes, von der aktuellen Anweisung bis zum direkt nach der vorhergehenden Anweisung, die Code bereitgestellt hat. Der Quellbereich wird in der Regel zum Mischen von Quell Anweisungen, einschließlich Kommentaren, mit Code im Fenster Disassembly verwendet.  
   
- Um den Bereich nur Code enthaltenen Anweisungen in diesem Dokumentenkontext abzurufen, rufen die [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) Methode.  
+ Um den Bereich nur für die Code Anweisungen zu erhalten, die in diesem Dokument Kontext enthalten sind, müssen Sie die [getstatuementrange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) -Methode aufrufen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
+ [Getstatuementrange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

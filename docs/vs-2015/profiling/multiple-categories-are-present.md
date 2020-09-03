@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156115"
 ---
 # <a name="multiple-categories-are-present"></a>Es sind mehrere Kategorien vorhanden
@@ -25,11 +25,11 @@ ms.locfileid: "68156115"
 
 Es wurde ein Abschnitt ausgewählt, der mehr als eine Art der Aktivität für einen bestimmten Zeitraum enthält. Beachten Sie, dass zwei Farbbalken angezeigt werden, einer vertikal auf den anderen gestapelt. Diese Farben stellen nur die beiden häufigsten Aktivitäten im angegebenen Zeitraum dar. Die Häufigkeit dieser zwei Aktivitäten wird relativ zueinander als Drittel oder Hälften des vertikalen Balkens angezeigt. Um weitere Details anzuzeigen, vergrößern Sie diesen Abschnitt der Threadansicht.  
   
-## <a name="see-also"></a>Siehe auch  
- [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md)   
- [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)   
- [Speicherverwaltungszeit](../profiling/memory-management-time.md)   
- [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausführungszeit (Thread Ansicht)](../profiling/execution-time-threads-view.md)   
+ [E/a-Zeit (Thread Ansicht)](../profiling/i-o-time-threads-view.md)   
+ [Speicher Verwaltungszeit](../profiling/memory-management-time.md)   
+ [Zeitpunkt der vorzeitigen Entfernung](../profiling/preemption-time.md)   
  [Standbyzeit](../profiling/sleep-time.md)   
- [Synchronisierungszeit](../profiling/synchronization-time.md)   
+ [Synchronisierungs Zeit](../profiling/synchronization-time.md)   
  [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md)

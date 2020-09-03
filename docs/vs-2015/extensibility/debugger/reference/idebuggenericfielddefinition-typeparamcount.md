@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount | Microsoft-Dokumentation
+title: 'Idebuggenericfielddefinition:: typeparamcount | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6459b7b6d1297085b7311e8e7ae20dbfa9c0f366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180877"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Anzahl von Typparametern, die dem generischen Feld zugeordnet sind.  
+Ruft die Anzahl der Typparameter ab, die dem generischen Feld zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ int TypeParamCount(
   
 #### <a name="parameters"></a>Parameter  
  `pcParams`  
- [in, out] Die Anzahl von Typparametern.  
+ [in, out] Anzahl der Typparameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn Liste\<T >, diese Methode gibt 1 zurück, und, falls Liste\<T1, T2 >, diese Methode gibt 2 zurück. Diese Methode gibt 0 zurück, wenn keine Typparameter vorhanden sind.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn List \<T> , gibt diese Methode 1 zurück, und wenn List \<T1,T2> , gibt diese Methode 2 zurück. Diese Methode gibt 0 zurück, wenn keine Typparameter vorhanden sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

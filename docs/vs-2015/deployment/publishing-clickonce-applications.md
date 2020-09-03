@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 209aac56f4648554ce619cbe31cef19a8ab1fed7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531793"
 ---
 # <a name="publishing-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
@@ -51,7 +51,7 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclic
 ## <a name="publish-page"></a>Seite "Veröffentlichen"  
  Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet. In der folgenden Tabelle sind Themen aufgeführt.  
   
-|Titel|BESCHREIBUNG|  
+|Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Gewusst wie: Angeben des Orts, an dem Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Beschreibt, wie Sie festlegen, wo Visual Studio die Anwendungsdateien und -manifeste ablegt.|  
 |[Vorgehensweise: Angeben des Speicher Orts für die Installation durch Endbenutzer](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Beschreibt, wie Sie den Speicherort festlegen, auf den Benutzer zugreifen, um die Anwendung herunterzuladen und zu installieren.|  
@@ -64,7 +64,7 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclic
 ### <a name="application-files-dialog-box"></a>Dialogfeld "Anwendungsdateien"  
  In diesem Dialogfeld können Sie angeben, wie die Dateien im Projekt zur Veröffentlichung, Aktualisierung und zum dynamischen Download kategorisiert werden. Es enthält ein Raster der Projektdateien, die standardmäßig nicht ausgeschlossen sind bzw. die über eine Downloadgruppe verfügen.  
   
- Informationen zum Ausschließen von Dateien, zum Markieren von Dateien als Datendateien oder erforderliche Komponenten und zum Erstellen von Dateigruppen für die bedingte Installation in der Benutzeroberfläche von Visual Studio finden Sie unter Gewusst [wie: Angeben der von ClickOnce veröffentlichten Dateien](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Sie können Datendateien auch mit Mage.exe kennzeichnen. Weitere Informationen finden Sie unter [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Informationen zum Ausschließen von Dateien, zum Markieren von Dateien als Datendateien oder erforderliche Komponenten und zum Erstellen von Dateigruppen für die bedingte Installation in der Benutzeroberfläche von Visual Studio finden Sie unter Gewusst [wie: Angeben der von ClickOnce veröffentlichten Dateien](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Sie können Datendateien auch mit Mage.exe kennzeichnen. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 ### <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"  
  In diesem Dialogfeld wird festgelegt, welche erforderlichen Komponenten installiert werden und wie die Installation ausgeführt wird. Weitere Informationen finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) und [Voraussetzungen (Dialog Feld](../ide/reference/prerequisites-dialog-box.md)).  
@@ -75,7 +75,7 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclic
 ### <a name="publish-options-dialog-box"></a>Dialogfeld "Veröffentlichungsoptionen"  
  Im Dialogfeld Veröffentlichungsoptionen werden die Bereitstellungsoptionen einer Anwendung angegeben.  
   
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-|-|  
 |[Vorgehensweise: Ändern der Veröffentlichungs Sprache für eine ClickOnce-Anwendung](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Beschreibt, wie Sie eine Sprache und eine Kultur angeben, die mit der lokalisierten Version übereinstimmen.|  
 |[Gewusst wie: Angeben eines Startmenü namens für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Beschreibt, wie Sie den Anzeigenamen für eine ClickOnce-Anwendung ändern.|  
@@ -87,7 +87,7 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclic
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|BESCHREIBUNG|  
+|Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Gewusst wie: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Beschreibt, wie Sie einer ClickOnce-Anwendung die Unterstützung für Dateierweiterungen hinzufügen.|  
 |[Gewusst wie: Abrufen von Abfrage Zeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Veranschaulicht, wie die Parameter aus der URL abgerufen werden, mit denen eine ClickOnce-Anwendung ausgeführt wird.|  

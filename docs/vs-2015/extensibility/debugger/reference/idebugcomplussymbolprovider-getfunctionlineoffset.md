@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft-Dokumentation
+title: 'Idebugcomplussymbolprovider:: getfunctionlineoffset | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b141d7014850076b039afafc1d4637f95360f12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194712"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Adresse in einer Funktion, die den Offset der angegebenen Zeile darstellt.  
+Ruft die Adresse innerhalb einer Funktion ab, die den angegebenen Zeilen Offset darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,19 +43,19 @@ int GetFunctionLineOffset(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Die Adresse, die Funktion darstellt.  
+ in Adresse, die die Funktion darstellt.  
   
  `dwLine`  
- [in] Die Zeile offset vom Beginn der Funktion.  
+ in Zeilen Offset vom Anfang der Funktion.  
   
  `ppNewAddress`  
- [out] Neue Adresse, die Zeile offset vom Beginn der Funktion darstellt.  
+ vorgenommen Neue Adresse, die den Zeilen Offset vom Anfang der Funktion darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
@@ -102,5 +102,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

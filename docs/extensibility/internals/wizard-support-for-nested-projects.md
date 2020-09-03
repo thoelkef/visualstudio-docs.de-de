@@ -1,5 +1,5 @@
 ---
-title: Wizard-Support für verschachtelte Projekte | Microsoft Docs
+title: Assistenten Unterstützung für in der Liste eingefügte Projekte | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703196"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Assistentenunterstützung für geschachtelte Projekte
-Die IDE führt zwei Assistenten aus, die das übergeordnete Projekt für verschachtelte Projekte implementieren kann: den Assistenten für **neues Projekt** und den Assistenten zum Hinzufügen von **Element.**
+Die IDE führt zwei Assistenten aus, die das übergeordnete Projekt für die untergeordneten Projekte implementieren kann: den Assistenten für **neue** Projekte und den Assistenten zum **Hinzufügen** von Elementen.
 
- Wenn ein Benutzer den Assistenten für **neues Projekt** startet, indem er im Menü Datei auf Neues Projekt hinzufügen und auf **Neues Projekt** klicken oder mit der rechten **Maustaste** auf **Neues Projekt** im Projektmappen-Explorer klicken, führt die IDE den Befehl **"Projekt hinzufügen"** aus, und die Implementierung des Befehls **"Projekt"** durch das übergeordnete Projekt gibt entweder eine Vorlagenprojektdatei oder eine Assistentendatei (.vsz) mit einer Reihe von Kontextparametern zurück. **AddProject**
+ Wenn ein Benutzer den Assistenten für **neue Projekte** startet, klicken **Sie auf Projekt hinzufügen** , und klicken Sie im Menü Datei auf **Neues Projekt** , oder klicken **Sie auf Hinzufügen** , und klicken Sie mit der rechten Maustaste auf **Neues Projekt** in Projektmappen-Explorer. die IDE **AddProject** führt den **AddProject** -Befehl aus, und die Implementierung des übergeordneten Projekts gibt entweder eine Vorlagen Projektdatei oder eine Assistenten Datei (. vsz)
 
- Ebenso gibt die Implementierung von **AddItem-Assistenten** in einem übergeordneten Projekt eine .vsz-Datei zurück, die einen anderen Satz von Kontextparametern enthält.
+ Entsprechend gibt die Implementierung der **AddItem** -Assistenten eines übergeordneten Projekts eine VSZ-Datei zurück, die über einen anderen Satz von Kontext Parametern verfügt.
 
- Weitere Informationen zu Assistenten finden Sie unter [Assistent (. Vsz) Datei](../../extensibility/internals/wizard-dot-vsz-file.md), [Kontextparameter](../../extensibility/internals/context-parameters.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
+ Weitere Informationen zu Assistenten finden Sie unter [Assistent (. VSZ-Datei](../../extensibility/internals/wizard-dot-vsz-file.md), [Kontext Parameter](../../extensibility/internals/context-parameters.md) und das [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589668"
 ---
 # <a name="define-shapes-and-connectors"></a>Definieren von Formen und Connectors
 
 Es gibt mehrere grundlegende Formtypen, die Sie zum Anzeigen von Informationen in einem Diagramm in einer domänenspezifischen Sprache (DSL) verwenden können.
 
-## <a name="shapeTypes"></a>Grundlegende Arten von Formen und Connectors
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Grundlegende Arten von Formen und Connectors
 
 Ein DSL-Diagramm zeigt eine Auflistung von *Formen* , die durch Linien oder *Connectors*miteinander verknüpft sind. Normalerweise gilt Folgendes (wenn auch nicht immer):
 

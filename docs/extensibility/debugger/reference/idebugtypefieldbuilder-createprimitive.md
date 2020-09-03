@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePrimitive | Microsoft Docs
+title: 'Idebugtypefieldbuilder:: up-primitiv | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c620bc91d034e5021bab1bbc16467336cd0592e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718419"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
-Erstellt ein Objekt, das einen primitiven Typ darstellt.
+Erstellt ein-Objekt, das einen primitiven Typ darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,10 +42,10 @@ int CreatePrimitive (
 
 ## <a name="parameters"></a>Parameter
 `dwElementType`\
-[in] Wert aus der [CorElementType-Enumeration,](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) die den primitiven Typ darstellt.
+in Der Wert aus der [CorElementType-Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , der den primitiven Typ darstellt.
 
 `pTypeField`\
-[out] Gibt die IDebugField-Schnittstelle für den neuen Typ zurück.
+vorgenommen Gibt die idebugfield-Schnittstelle für den neuen Typ zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

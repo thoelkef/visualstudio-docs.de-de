@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dfaf19e358d96b7737b06880d6fa4581b5c54f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659371"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
@@ -58,7 +58,7 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
 
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>So deaktivieren oder deinstallieren Sie eine Visual Studio-Erweiterung
 
-1. Klicken Sie im **Menü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]** Extras auf **Erweiterungen und Updates**.
+1. Klicken Sie im Menü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Extras** auf **Erweiterungen und Updates**.
 
 2. Klicken Sie neben der Erweiterung auf **Deaktivieren** , um die Erweiterung vorübergehend zu deaktivieren. Sie können Sie später erneut aktivieren, indem Sie zum Fenster **Erweiterungen und Updates** zurückkehren.
 
@@ -66,7 +66,7 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
 
      Klicken Sie auf **deinstallieren** , um die Erweiterung zu entfernen.
 
-3. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.
+3. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren von Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md) [Erstellen von Modellen für Ihre APP verwenden von](../modeling/create-models-for-your-app.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660686"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Empfohlene Vorgehensweisen für Tests der programmierten UI
@@ -33,7 +33,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
 
 - Ändern Sie die `UIMap.designer.cs`-Datei nicht direkt. Andernfalls werden die an der Datei vorgenommenen Änderungen überschrieben.
 
-- Erstellen Sie den Test als Sequenz aufgezeichneter Methoden. Weitere Informationen über die Aufzeichnung einer Methode finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+- Erstellen Sie den Test als Sequenz aufgezeichneter Methoden. Weitere Informationen zum Aufzeichnen einer Methode finden Sie unter Erstellen von [Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)der programmierten UI.
 
 - Jede aufgezeichnete Methode sollte auf eine einzelne Seite, ein einzelnes Formular oder Dialogfeld einwirken. Erstellen Sie eine neue Testmethode für jede neue Seite, jedes neue Formular oder Dialogfeld.
 
@@ -45,17 +45,17 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
 
 - Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.
 
-- Erstellen Sie eine separate [UIMap](/previous-versions/dd580454(v=vs.140))-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Erstellen Sie eine separate [UIMap](/previous-versions/dd580454(v=vs.140))-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testen einer großen Anwendung mit mehreren UI](../test/testing-a-large-application-with-multiple-ui-maps.md)-Zuordnungen.
 
 - Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Dadurch wird die Aussagekraft und die Benutzerfreundlichkeit der automatisch generierten Steuerelementnamen erhöht.
 
-- Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse, der in der `UIMap.cs`-Datei enthalten ist. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
+- Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse, der sich in der `UIMap.cs` Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
 
 - Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der `UIMap.Designer.cs`-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
 
   Tests der codierten UI werden automatisch an zahlreiche Änderungen in der Benutzeroberfläche angepasst. Wenn z. B. ein Benutzeroberflächenelement Position oder Farbe geändert hat, wird beim Test der programmierten UI in den meisten Fällen dennoch das richtige Element gefunden.
 
-  Während eines Testlaufs werden die UI-Steuerelemente vom Testframework mithilfe eines Satzes von Sucheigenschaften gesucht, die für jede Steuerelementklasse in den Definitionen angewendet werden, die durch den **Test-Generator der programmierten UI** in der `UIMap.Designer.cs`-Datei erstellt werden. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der codierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, findet ein intelligenter Vergleichsalgorithmus der Tests der codierten UI anhand von Heuristik Steuerelemente und Fenster in der Benutzeroberfläche. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
+  Während eines Testlaufs werden die UI-Steuerelemente vom Testframework mithilfe eines Satzes von Sucheigenschaften gesucht, die für jede Steuerelementklasse in den Definitionen angewendet werden, die durch den **Test-Generator der programmierten UI** in der `UIMap.Designer.cs`-Datei erstellt werden. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der programmierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, findet ein intelligenter Vergleichsalgorithmus der Tests der codierten UI anhand von Heuristik Steuerelemente und Fenster in der Benutzeroberfläche. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
 
 ## <a name="what-to-do-if-your-user-interface-changes"></a>Vorgehensweise bei geänderter Benutzeroberfläche
  Benutzeroberflächen werden während der Entwicklung häufig geändert. Nachfolgend finden Sie einige Möglichkeiten, um die Auswirkungen dieser Änderungen zu reduzieren:
@@ -70,7 +70,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
 
   - Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.
 
-  Weitere Informationen über das Aufzeichnen von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).
+  Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden [Sie unter Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Vorgehensweise, wenn ein Hintergrundprozess abgeschlossen werden muss, bevor der Test fortgesetzt werden kann
  Möglicherweise müssen Sie warten, bis ein Prozess beendet wird, bevor Sie mit der nächsten Benutzeroberflächen-Aktion fortfahren können. Hierzu können Sie wie im folgenden Beispiel <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> verwenden, um zu warten, bevor der Test fortgesetzt wird.
@@ -86,11 +86,11 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktions Aufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547978"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
@@ -55,7 +55,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definieren eines benutzerdefinierten Konfigurations Abschnitts
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> Definieren eines benutzerdefinierten Konfigurations Abschnitts
  Sehen Sie sich die Datei „app.config“ an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>So fügen Sie der Datei „app.config“ den benutzerdefinierten Konfigurationsabschnitt hinzu

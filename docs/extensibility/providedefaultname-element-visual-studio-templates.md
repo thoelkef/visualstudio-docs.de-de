@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProvideDefaultName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701716"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
-Gibt an, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ob das Projektsystem im Dialogfeld **Neues Element hinzufügen** oder Neues **Projekt** einen Standardnamen für die Vorlage generiert.
+Gibt an, ob das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt System im Dialogfeld **Neues Element** oder **Neues Projekt** hinzufügen einen Standardnamen für die Vorlage generiert.
 
- \<VSTemplate \<> TemplateData> \<ProvideDefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,31 +36,31 @@ Gibt an, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ob das Projek
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss `true` `false`entweder oder sein, was angibt, ob ein Standardname für die Vorlage im Dialogfeld **Neues Element** hinzufügen oder **Neues Projekt** generiert werden soll.
+ Der Text muss entweder `true` oder sein `false` , um anzugeben, ob im Dialogfeld **Neues Element hinzufügen** oder **Neues Projekt** ein Standardname für die Vorlage generiert werden soll.
 
 ## <a name="remarks"></a>Bemerkungen
- `ProvideDefaultName` ist ein optionales Element. Der Standardwert ist `true`.
+ `ProvideDefaultName` ist ein optionales Element. Standardwert: `true`.
 
- Wenn `ProvideDefaultName` das `false`Element ist , enthalten die **Namensfelder** der Dialogfelder `<Enter_name>`Neues Element **hinzufügen** und Neues **Projekt** den Wert .
+ Wenn das `ProvideDefaultName` -Element ist `false` , enthalten die Felder " **Name** " in den Dialogfeldern **Neues Element hinzufügen** und **Neues Projekt** den Wert `<Enter_name>` .
 
- Verwenden Sie das [DefaultName-Element,](../extensibility/defaultname-element-visual-studio-templates.md) um den Standardnamen des Projekts oder Elements in den Dialogfeldern **Neues Element hinzufügen** und Neues **Projekt** anzugeben. Wenn der Wert `ProvideDefaultName` des `true`Elements ist `DefaultName` , wird das Dialogfeld aus dem Element für Projekte mit dem Namen der Vorlage, d. h. dem Wert aus dem [Name-Element,](../extensibility/name-element-visual-studio-templates.md) ausgegeugnet.
+ Verwenden Sie das [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) -Element, um den Standardnamen des Projekts oder Elements in den Dialogfeldern **Neues Element hinzufügen** und **Neues Projekt** anzugeben. Wenn der Wert des- `ProvideDefaultName` Elements ist `true` , füllt das- `DefaultName` Element für Projekte das Dialogfeld mit dem Namen der Vorlage, d. h. dem Wert aus dem [Name](../extensibility/name-element-visual-studio-templates.md) -Element, auf.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel `ProvideDefaultName` wird `false`das Element auf festgelegt.
+ Im folgenden Codebeispiel wird das- `ProvideDefaultName` Element auf festgelegt `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -77,6 +78,6 @@ Gibt an, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ob das Projek
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

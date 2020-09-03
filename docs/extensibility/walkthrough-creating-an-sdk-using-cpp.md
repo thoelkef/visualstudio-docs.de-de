@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905015"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von C++
@@ -27,7 +27,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 ## <a name="prerequisites"></a>Voraussetzungen
  Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>So erstellen Sie Native und Windows-Runtime-Bibliotheken
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> So erstellen Sie Native und Windows-Runtime-Bibliotheken
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
@@ -55,7 +55,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
 9. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>So erstellen Sie das nativemathvsix-Erweiterungsprojekt
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> So erstellen Sie das nativemathvsix-Erweiterungsprojekt
 
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann **Add**  >  **Neues Projekt**hinzufügen aus.
 
@@ -137,7 +137,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
 18. Wählen Sie die Schaltfläche **Installieren** aus, warten Sie, bis die Installation abgeschlossen ist, und öffnen Sie dann Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>So erstellen Sie eine Beispiel-APP, die die Klassenbibliothek verwendet
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> So erstellen Sie eine Beispiel-APP, die die Klassenbibliothek verwendet
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 

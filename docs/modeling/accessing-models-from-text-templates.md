@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531468"
 ---
 # <a name="access-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - Obwohl die Sprache, in der die Code Fragmente geschrieben werden, c# ist, können Sie Text beliebiger Art generieren. Sie können den Code auch in schreiben, indem Sie die-Eigenschaft der- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `language="VB"` `template` Direktive hinzufügen.
 
-- Um die Vorlage zu debuggen, fügen Sie `debug="true"` der- `template` Anweisung hinzu. Die Vorlage wird in einer anderen Instanz von Visual Studio geöffnet, wenn eine Ausnahme auftritt. Wenn Sie den Debugger an einem bestimmten Punkt im Code unterbrechen möchten, fügen Sie die Anweisung ein.`System.Diagnostics.Debugger.Break();`
+- Um die Vorlage zu debuggen, fügen Sie `debug="true"` der- `template` Anweisung hinzu. Die Vorlage wird in einer anderen Instanz von Visual Studio geöffnet, wenn eine Ausnahme auftritt. Wenn Sie den Debugger an einem bestimmten Punkt im Code unterbrechen möchten, fügen Sie die Anweisung ein. `System.Diagnostics.Debugger.Break();`
 
    Weitere Informationen finden Sie unter [Debuggen einer T4-Text Vorlage](../modeling/debugging-a-t4-text-template.md).
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    Wenn ein Fehler gefunden wird, wird dieser im Fenster Fehler angezeigt, und die Ergebnisdatei enthält eine Fehlermeldung.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>Zugreifen auf mehrere Modelle aus einer Textvorlage
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage
 
 > [!NOTE]
 > Mit dieser Methode können Sie mehrere Modelle in derselben Vorlage lesen, aber ModelBus-Verweise werden nicht unterstützt. Informationen zum Lesen von Modellen, die durch ModelBus-Verweise miteinander verknüpft sind, finden Sie unter [Verwenden von Visual Studio ModelBus in einer Text Vorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`Ruft `LoopTemplate.t4` auf und teilt dann die resultierende Datei in ihre Segmente auf. Beachten Sie, dass diese Vorlage keine Modellierungs Vorlage sein muss, da Sie das Modell nicht liest.
+ `LoopSplitter.tt` Ruft `LoopTemplate.t4` auf und teilt dann die resultierende Datei in ihre Segmente auf. Beachten Sie, dass diese Vorlage keine Modellierungs Vorlage sein muss, da Sie das Modell nicht liest.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

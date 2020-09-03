@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531403"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder für Verkettungen verwenden
@@ -30,8 +30,8 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0001: Verwenden v
 |-|-|  
 |Regel-ID|DA0001|  
 |Kategorie|.NET Framework-Verwendung|  
-|Profilerstellungsmethoden|Stichproben<br /><br /> Instrumentierung|  
-|`Message`|Verwenden Sie für Verkettungen ggf. StringBuilder.|  
+|Profilerstellungsmethoden|Sampling<br /><br /> Instrumentation|  
+|Meldung|Verwenden Sie für Verkettungen ggf. StringBuilder.|  
 |Nachrichtentyp|Warnung|  
   
 ## <a name="cause"></a>Ursache  

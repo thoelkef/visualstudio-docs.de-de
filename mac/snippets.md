@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68787690"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
@@ -86,6 +86,6 @@ Es gibt zwei reservierte Schlüsselwörter, die Sie in einem Ausschnitt verwende
 
 Der `for`-Ausschnitt im vorherigen Abschnitt ist ein Beispiel für diese beiden reservierten Schlüsselwörter.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codeausschnitte (Visual Studio unter Windows)](/visualstudio/ide/code-snippets)

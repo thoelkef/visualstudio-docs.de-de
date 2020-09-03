@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
+title: 'Idebugsymbolproviderdirect:: getcurrentmodulesstate | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719086"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Ruft Informationen über die Symbolgruppe ab, der der Symbolanbieter angehört.
+Ruft Informationen über die Symbolgruppe ab, in der der Symbol Anbieter ein Member ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Parameter
 `pState`\
-[out] Der Status der Symbolanbietergruppe.
+vorgenommen Der Status der Symbol Anbieter Gruppe.
 
 `count`\
-[out] Anzahl der Module in der Gruppe.
+vorgenommen Anzahl der Module in der Gruppe.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Status wird geändert, wenn ein Modul der Symbolgruppe hinzugefügt oder daraus entfernt wird. Daher kann diese Methode verwendet werden, um zu erkennen, ob eine Symbolgruppe geändert wurde.
+ Der Status wird geändert, wenn ein Modul der Symbolgruppe hinzugefügt oder daraus entfernt wird. Daher kann diese Methode verwendet werden, um zu ermitteln, ob eine Symbolgruppe geändert wurde.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

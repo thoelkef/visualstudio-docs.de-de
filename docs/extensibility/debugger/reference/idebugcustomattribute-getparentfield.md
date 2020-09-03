@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetparentField | Microsoft Docs
+title: 'Idebugcustomattribute:: gettientfield | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fae84a4d02438335aea00c50dd9b89520d08bae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732700"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Ruft das Feld ab, dem das benutzerdefinierte Attribut zugeordnet ist.
+Ruft das Feld ab, an das das benutzerdefinierte Attribut angefügt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetParentField(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt das [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück, das das Feld darstellt, dem das benutzerdefinierte Attribut zugeordnet ist.
+vorgenommen Gibt das [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt zurück, das das Feld darstellt, an das das benutzerdefinierte Attribut angefügt ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie die [GetKind-Methode](../../../extensibility/debugger/reference/idebugfield-getkind.md) für das zurückgegebene [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) auf, um zu bestimmen, um welche Art von Feld das übergeordnete Feld ist.
+ Aufrufen der [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) -Methode für das zurückgegebene [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, um zu bestimmen, welche Art von Feld das übergeordnete Element ist.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

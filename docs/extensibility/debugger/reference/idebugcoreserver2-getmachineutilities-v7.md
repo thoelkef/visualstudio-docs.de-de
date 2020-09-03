@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Microsoft Docs
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733149"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Diese Methode ruft die Computerdienstprogramme für einen Server ab.
+Diese Methode ruft die Computer Dienstprogramme für einen Server ab.
 
 > [!NOTE]
-> Diese Methode ist veraltet:[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] nicht `E_NOTIMPL` verwenden (wird immer zurückgegeben, wenn diese Methode aufgerufen wird). Es wird aus historischen Gründen beibehalten.
+> Diese Methode ist veraltet: Verwenden Sie nicht ( [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] gibt immer zurück, `E_NOTIMPL` Wenn diese Methode aufgerufen wird). Sie wird aus historischen Gründen beibehalten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
 
 ## <a name="parameters"></a>Parameter
 `ppUtil`\
-[out] Gibt `IDebugMDMUtil2_V7` eine Schnittstelle zurück, die die Informationen zu den Computerdienstprogrammen darstellt.
+vorgenommen Gibt eine `IDebugMDMUtil2_V7` Schnittstelle zurück, die die Informationen zu den Computer Dienstprogrammen darstellt
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt `E_NOTIMPL`immer zurück, was darauf hinweist, dass die Methode nicht implementiert ist.
+ Gibt immer zurück `E_NOTIMPL` , was darauf hinweist, dass die Methode nicht implementiert ist.
 
 ## <a name="remarks"></a>Bemerkungen
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]gibt `E_NOTIMPL` immer zurück, wenn diese Methode aufgerufen wird.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] gibt immer zurück, `E_NOTIMPL` Wenn diese Methode aufgerufen wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

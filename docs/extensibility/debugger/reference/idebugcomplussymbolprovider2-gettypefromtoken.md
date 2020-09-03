@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: gettypeer fromtoken | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2d7d809281ce1ad6e71a3c4afe666c486c53077
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733445"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
@@ -46,22 +46,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>Parameter
 `appDomain`\
-[in] Bezeichner der Anwendungsdomäne.
+in Der Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner des Moduls.
+in Eindeutiger Bezeichner des Moduls.
 
 `tdToken`\
-[in] Token des abzurufenden Typs.
+in Das Token des abzurufenden Typs.
 
 `ppField`\
-[out] Gibt den Typ zurück, der durch [iDebugField](../../../extensibility/debugger/reference/idebugfield.md)dargestellt wird.
+vorgenommen Gibt den Typ zurück, der durch das [idebugfield](../../../extensibility/debugger/reference/idebugfield.md)dargestellt wird.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider2-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(

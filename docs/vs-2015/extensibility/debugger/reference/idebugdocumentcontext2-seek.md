@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft-Dokumentation
+title: 'IDebugDocumentContext2:: Seek | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a17a845275a39954a42839d54af14e37fe0bd06c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144982"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Verschiebt den Dokumentenkontext durch eine angegebene Anzahl von Anweisungen oder Zeilen an.  
+Verschiebt den Dokument Kontext um eine angegebene Anzahl von Anweisungen oder Zeilen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,13 +42,13 @@ int Seek( 
   
 #### <a name="parameters"></a>Parameter  
  `nCount`  
- [in] Die Anzahl der Anweisungen oder Zeilen, je nach Dokumentenkontext verschieben.  
+ in Die Anzahl der Anweisungen oder Zeilen, die je nach Dokument Kontext vorwärts verschoben werden.  
   
  `ppDocContext`  
- [out] Gibt eine neue [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt mit der die neue Position.  
+ vorgenommen Gibt ein neues [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -Objekt mit der neuen Position zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

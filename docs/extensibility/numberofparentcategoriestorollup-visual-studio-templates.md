@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp-Element (Vorlagen)
+title: Numofparser categoriestorollup-Element (Vorlagen)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702361"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp-Element (Visual Studio-Vorlagen)
-Gibt die Anzahl der übergeordneten Kategorien an, die die Vorlage im Dialogfeld **Neues Projekt** anzeigen.
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Numofparser categoriestorollup-Element (Visual Studio-Vorlagen)
+Gibt die Anzahl der übergeordneten Kategorien an, in denen die Vorlage im Dialogfeld **Neues Projekt** angezeigt wird.
 
- \<VSTemplate \<> TemplateData> \<NumberOfParentCategoriesToRollup>
+ \<VSTemplate> \<TemplateData>
+ \<NumberOfParentCategoriesToRollUp>
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,27 +39,27 @@ Gibt die Anzahl der übergeordneten Kategorien an, die die Vorlage im Dialogfeld
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
- Ein `integer` Wert ist erforderlich.
+ Ein- `integer` Wert ist erforderlich.
 
- Dieser Wert gibt die Anzahl der übergeordneten Kategorien an, die die Vorlage im Dialogfeld **Neues Projekt** anzeigen.
+ Dieser Wert gibt die Anzahl der übergeordneten Kategorien an, in denen die Vorlage im Dialogfeld **Neues Projekt** angezeigt wird.
 
 ## <a name="remarks"></a>Bemerkungen
  `NumberOfParentCategoriesToRollUp` ist ein optionales Element.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel werden [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Metadaten für eine Windows-Anwendung veranschaulicht. Wenn eine Vorlage mit diesen Metadaten zwei Ordnerebenen unterhalb des Knotens der obersten Ebene [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] platziert wird, wird die Vorlage im Dialogfeld **"Neues Projekt"** im Knoten der obersten Ebene angezeigt. Wenn `NumberOfParentCategoriesToRollUp` der nicht festgelegt ist, wird die Vorlage nur in dem Knoten angezeigt, in dem sie sich physisch befindet.
+ In diesem Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung veranschaulicht. Wenn eine Vorlage mit diesen Metadaten zwei Ordner Ebenen unter dem Knoten der obersten Ebene platziert [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , wird die Vorlage im Dialogfeld **Neues Projekt** im Knoten der obersten Ebene angezeigt. Wenn `NumberOfParentCategoriesToRollUp` nicht festgelegt ist, wird die Vorlage nur in dem Knoten angezeigt, in dem Sie sich physisch befindet.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,6 +86,6 @@ Gibt die Anzahl der übergeordneten Kategorien an, die die Vorlage im Dialogfeld
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

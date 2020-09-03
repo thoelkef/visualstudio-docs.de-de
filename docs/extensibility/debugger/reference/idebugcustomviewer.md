@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer | Microsoft Docs
+title: Idebugcustomviewer | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732414"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
-Diese Schnittstelle ermöglicht es einem Ausdrucksevaluator (EE), den Wert einer Eigenschaft in jedem erforderlichen Format anzuzeigen.
+Diese Schnittstelle ermöglicht es einer Ausdrucks Auswertung (EE), den Wert einer Eigenschaft in einem beliebigen Format anzuzeigen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,34 +31,34 @@ IDebugCustomViewer : IUknown
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
 Ein EE implementiert diese Schnittstelle, um den Wert einer Eigenschaft in einem benutzerdefinierten Format anzuzeigen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
-Ein Aufruf der `CoCreateInstance` COM-Funktion instanziiert diese Schnittstelle. Die `CLSID` übergebene datei `CoCreateInstance` wird aus der Registrierung abgerufen. Ein Aufruf von [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) ruft den Speicherort in der Registrierung ab. Weitere Informationen finden Sie unter Hinweise sowie im Beispiel.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+Ein Aufrufder com- `CoCreateInstance` Funktion instanziiert diese Schnittstelle. Die `CLSID` an übergebenen `CoCreateInstance` wird aus der Registrierung abgerufen. Durch einen get-Befehl von [getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) wird der Speicherort in der Registrierung abgerufen. Ausführliche Informationen und das Beispiel finden Sie in den hinweisen.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
 Diese Schnittstelle implementiert die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Tut alles, was erforderlich ist, um einen bestimmten Wert anzuzeigen.|
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Gibt an, was erforderlich ist, um einen bestimmten Wert anzuzeigen.|
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Schnittstelle wird verwendet, wenn der Wert einer Eigenschaft nicht auf normale Weise angezeigt werden kann, z. B. mit einer Datentabelle oder einem anderen komplexen Eigenschaftstyp. Ein benutzerdefinierter Viewer, `IDebugCustomViewer` wie er von der Schnittstelle dargestellt wird, unterscheidet sich von einer Typvisualisierung, bei der es sich um ein externes Programm zum Anzeigen von Daten eines bestimmten Typs unabhängig vom EE handelt. Der EE implementiert einen benutzerdefinierten Viewer, der für diesen EE spezifisch ist. Ein Benutzer wählt aus, welcher Visualisierungstyp verwendet werden soll, sei es eine Typvisualisierung oder ein benutzerdefinierter Viewer. Weitere Informationen zu diesem Prozess finden Sie unter [Visualisieren und Anzeigen von Daten.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+Diese Schnittstelle wird verwendet, wenn der Wert einer Eigenschaft nicht auf normale Weise angezeigt werden kann, z. –. mit einer Datentabelle oder einem anderen komplexen Eigenschaftentyp. Ein benutzerdefinierter Viewer, der durch die-Schnittstelle dargestellt wird, `IDebugCustomViewer` unterscheidet sich von einer typschnellansicht, bei der es sich um ein externes Programm zum Anzeigen von Daten eines bestimmten Typs handelt, unabhängig von der EE. Der EE implementiert einen benutzerdefinierten Viewer, der für diesen EE spezifisch ist. Ein Benutzer wählt den Typ der Schnellansicht aus, der verwendet werden soll, oder es handelt sich um eine typschnell Ansicht oder einen benutzerdefinierten Viewer. Ausführliche Informationen zu diesem Prozess finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
-Ein benutzerdefinierter Viewer wird auf die gleiche Weise wie ein EE registriert und erfordert daher eine Sprach-GUID und eine Hersteller-GUID. Die genaue Metrik (oder der Name des Registrierungseintrags) ist nur dem EE bekannt. Diese Metrik wird in der [DEBUG_CUSTOM_VIEWER-Struktur](../../../extensibility/debugger/reference/debug-custom-viewer.md) zurückgegeben, die wiederum durch einen Aufruf von [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)zurückgegeben wird. Der in der Metrik `CLSID` gespeicherte Wert ist `CoCreateInstance` der, der an die Com-Funktion übergeben wird (siehe Beispiel).
+Ein benutzerdefinierter Viewer wird auf die gleiche Weise wie ein EE registriert und erfordert daher eine sprach-GUID und eine Anbieter-GUID. Die genaue Metrik (oder der Registrierungs Eintrags Name) ist nur dem EE bekannt. Diese Metrik wird in der [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Struktur zurückgegeben, die wiederum durch einen get-Befehl von " [getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)" zurückgegeben wird. Der in der Metrik gespeicherte Wert ist der `CLSID` , der an die com- `CoCreateInstance` Funktion (siehe Beispiel) übermittelt wird.
 
-Die [SDK-Hilfsfunktion "Debugging"](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetEEMetric`kann zum Registrieren eines benutzerdefinierten Viewers verwendet werden. Die Registrierungsschlüssel, die ein benutzerdefinierter Viewer benötigt, finden Sie im Registrierungsabschnitt `Debugging SDK Helpers` "Expression Evaluators" von. Beachten Sie, dass ein benutzerdefinierter Viewer nur eine Metrik benötigt (die vom EE-Implementierer definiert wird), während ein Ausdrucksauswertungswert mehrere vordefinierte Metriken erfordert.
+Die [SDK-Hilfsprogramme für die Debugfunktion](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetEEMetric` können zum Registrieren eines benutzerdefinierten Viewers verwendet werden. Informationen `Debugging SDK Helpers` zu den spezifischen Registrierungs Schlüsseln, die von einem benutzerdefinierten Viewer benötigt werden, finden Sie im Abschnitt "Ausdrucks Auswertung" unter. Beachten Sie, dass ein benutzerdefinierter Viewer nur eine Metrik benötigt (die vom Implementierer definiert wird), während eine Ausdrucks Auswertung mehrere vordefinierte Metriken erfordert.
 
-Normalerweise bietet ein benutzerdefinierter Viewer eine schreibgeschützte Ansicht der Daten, da die [IDebugProperty3-Schnittstelle,](../../../extensibility/debugger/reference/idebugproperty3.md) die [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) bereitstellt, keine Methoden zum Ändern des Eigenschaftswerts außer als Zeichenfolge enthält. Um das Ändern beliebiger Datenblöcke zu unterstützen, implementiert der EE eine `IDebugProperty3` benutzerdefinierte Schnittstelle für dasselbe Objekt, das die Schnittstelle implementiert. Diese benutzerdefinierte Schnittstelle würde dann die Methoden bereitstellen, die zum Ändern eines beliebigen Datenblocks erforderlich sind.
+Normalerweise stellt ein benutzerdefinierter Viewer eine schreibgeschützte Ansicht der Daten bereit, da die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle, die für [displayvalue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) bereitgestellt wird, keine Methoden zum Ändern des Eigenschafts Werts enthält, außer als Zeichenfolge. Um das ändern beliebiger Datenblöcke zu unterstützen, implementiert der EE eine benutzerdefinierte Schnittstelle für das gleiche Objekt, das die- `IDebugProperty3` Schnittstelle implementiert. Diese benutzerdefinierte Schnittstelle stellt dann die Methoden bereit, die erforderlich sind, um einen beliebigen Datenblock zu ändern.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Beispiel
-In diesem Beispiel wird gezeigt, wie Sie den ersten benutzerdefinierten Viewer aus einer Eigenschaft abrufen, wenn diese Eigenschaft über benutzerdefinierte Viewer verfügt.
+Dieses Beispiel zeigt, wie Sie den ersten benutzerdefinierten Viewer aus einer Eigenschaft erhalten, wenn diese Eigenschaft über benutzerdefinierte Viewer verfügt.
 
 ```cpp
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)

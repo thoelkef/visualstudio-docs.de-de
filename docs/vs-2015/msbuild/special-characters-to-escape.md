@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161352"
 ---
 # <a name="special-characters-to-escape"></a>Sonderzeichen mit Escapezeichen
@@ -40,11 +40,11 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
 |@|At-Zeichen, für Verweise auf Elementlisten verwendet.|  
 |(|Öffnende runde Klammer, in Listen verwendet.|  
 |)|Schließende runde Klammer, in Listen verwendet.|  
-|`|Apostroph (oder Teilstrich), in Bedingungen und anderen Ausdrücken verwendet.|  
+|`|Apostroph, in Bedingungen und anderen Ausdrücken verwendet.|  
 |;|Semikolon, ein Listentrennzeichen.|  
 |?|Fragezeichen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|  
 |*|Sternchen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Escapesonderzeichen Sie in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Escapezeichen für Sonderzeichen in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Microsoft Docs
+title: Eventattribute | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737058"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
-Gibt die Ereignisattribute an.
+Gibt die Ereignis Attribute an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,39 +54,39 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>Felder
 `EVENT_ASYNCHRONOUS`\
-Gibt an, dass das Ereignis asynchron ist und keine Antwort auf das Ereignis erforderlich ist.
+Gibt an, dass das Ereignis asynchron ist und keine Antwort auf das Ereignis benötigt wird.
 
 `EVENT_SYNCHRONOUS`\
-Gibt an, dass das Ereignis synchron ist. Antwort über [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+Gibt an, dass das Ereignis synchron ist. Antworten mithilfe von [continuefromsynchronoutsvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
 `EVENT_STOPPING`\
-Gibt an, dass es sich um ein Beenden-Ereignis handelt. Muss mit einem `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS`oder kombiniert werden.
+Gibt an, dass dies ein anhalteereignis ist. Muss mit oder kombiniert werden `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS` .
 
 `EVENT_ASYNC_STOP`\
-Gibt ein asynchrones Stoppereignis an. Ein solches Ereignis gibt es derzeit nicht. Dieses Flag ist nur ein Platzhalter.
+Gibt ein asynchrones anhalteereignis an. Zurzeit ist kein derartiges Ereignis vorhanden. Dieses Flag ist nur ein Platzhalter.
 
 `EVENT_SYNC_STOP`\
-Gibt ein synchrones Stoppereignis `EVENT_SYNCHRONOUS` (eine Kombination aus und `EVENT_STOPPING`) an. Dieser Wert wird von einem Debugmodul (DE) verwendet, wenn es ein Stoppereignis sendet. Die Antwort erfolgt über einen Aufruf von [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)oder [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+Gibt ein synchrones anhalteereignis an (eine Kombination aus `EVENT_SYNCHRONOUS` und `EVENT_STOPPING` ). Dieser Wert wird von einer Debug-Engine (de) verwendet, wenn ein anhalteereignis gesendet wird. Die Antwort wird durch einen aufzurufenden [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)-, [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)-oder [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)-Befehl gemacht.
 
 `EVENT_IMMEDIATE`\
-Gibt ein Ereignis an, das sofort und synchron an die IDE gesendet wird. Dieses Flag wird mit `EVENT_ASYNCHRONOUS`anderen `EVENT_SYNCHRONOUS`Flags `EVENT_SYNC_STOP` wie , oder zur Angabe des Ereignistyps und der Tatsache, dass der Antwortmechanismus (falls vorhanden) bekannt ist, kombiniert.
+Gibt ein Ereignis an, das sofort und synchron an die IDE gesendet wird. Dieses Flag wird mit anderen Flags wie `EVENT_ASYNCHRONOUS` , oder kombiniert, `EVENT_SYNCHRONOUS` `EVENT_SYNC_STOP` um den Ereignistyp anzugeben, und die Tatsache, dass der Antwortmechanismus (sofern vorhanden) bekannt ist.
 
 `EVENT_EXPRESSION_EVALUATION`\
-Das Ereignis ist ein Ergebnis der Ausdrucksauswertung.
+Das Ereignis ist das Ergebnis der Ausdrucks Auswertung.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Werte werden `dwAttrib` im Parameter der [Event-Methode](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) übergeben.
+Diese Werte werden im- `dwAttrib` Parameter der [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode übergeben.
 
-Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
+Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

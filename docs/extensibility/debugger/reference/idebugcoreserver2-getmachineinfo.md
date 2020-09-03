@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Microsoft Docs
+title: 'IDebugCoreServer2:: getmachineingefo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733167"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
-Ruft eine Beschreibung des Computers ab, auf dem der Kernserver ausgeführt wird.
+Ruft eine Beschreibung des Computers ab, auf dem der Core-Server ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,11 +43,11 @@ int GetMachineInfo( 
 
 ## <a name="parameters"></a>Parameter
 `Fields`\
-[in] Eine Kombination von Flags aus der MACHINE_INFO_FIELDS-Enumeration, die angeben, welche [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) `pMachineInfo` Felder ausgefüllt werden sollen.
+in Eine Kombination von Flags aus der [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) Enumeration, die angeben, welche Felder von `pMachineInfo` ausgefüllt werden sollen.
 
  `pMachineInfo`\
 
- [in, out] Eine [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) Struktur, die mit einer Beschreibung der Maschine ausgefüllt wird.
+ [in, out] Eine [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) -Struktur, die mit einer Beschreibung des Computers ausgefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

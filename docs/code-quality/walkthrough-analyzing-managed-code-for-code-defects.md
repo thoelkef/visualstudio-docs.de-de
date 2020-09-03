@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535700"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden der statischen Code Analyse zum Ermitteln von Code Fehlern
@@ -93,25 +93,25 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Verwenden Sie die folgenden Tipps, um die Warnungen zu beheben:
 
-   [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014.md): Fügen Sie den Code `[assembly: CLSCompliant(true)]` am Ende der AssemblyInfo.cs-Datei hinzu.
+   [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014.md): Fügen Sie den Code am `[assembly: CLSCompliant(true)]` Ende der AssemblyInfo.cs-Datei hinzu.
 
-   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo (String s) : base(s) { }` der Klasse `demo` hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo (String s) : base(s) { }` der Klasse hinzu `demo` .
 
-   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo (String s, Exception e) : base(s, e) { }` der Klasse `demo` hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo (String s, Exception e) : base(s, e) { }` der Klasse hinzu `demo` .
 
-   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` der Klassen-Demo hinzu. Sie müssen auch eine `using`-Anweisung für <xref:System.Runtime.Serialization?displayProperty=fullName> hinzufügen.
+   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` der Klassen-Demo hinzu. Außerdem müssen Sie eine- `using` Anweisung für hinzufügen <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo () : base() { }` der Klasse `demo` hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032.md): Fügen Sie den Konstruktor `public demo () : base() { }` der Klasse hinzu `demo` .
 
-   [CA1709:](../code-quality/ca1709.md)Bezeichner müssen ordnungsgemäß geschrieben werden: Ändern Sie die Schreibweise des Namespace `testCode` in `TestCode`.
+   [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709.md): Ändern Sie die Schreibweise des Namespace `testCode` in `TestCode` .
 
-   [CA1709:](../code-quality/ca1709.md)Bezeichner müssen ordnungsgemäß geschrieben werden: Ändern Sie den Namen des Members in `Demo`.
+   [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709.md): Ändern Sie den Namen des Members in `Demo` .
 
-   [CA1709:](../code-quality/ca1709.md)Bezeichner müssen ordnungsgemäß geschrieben werden: Ändern Sie den Namen des Members in `Item`.
+   [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709.md): Ändern Sie den Namen des Members in `Item` .
 
-   [CA1710: Bezeichner sollten ein korrektes Suffix aufweisen](../code-quality/ca1710.md): Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException`.
+   [CA1710: Bezeichner sollten ein korrektes Suffix aufweisen](../code-quality/ca1710.md): Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException` .
 
-   [CA2237: Markieren von iserialisierbaren Typen mit SerializableAttribute](../code-quality/ca2237.md): Fügen Sie der Klasse `demo` das `[Serializable ()]` Attribut hinzu.
+   [CA2237: Markieren von iserialisierbaren Typen mit SerializableAttribute](../code-quality/ca2237.md): Fügen Sie der Klasse das- `[Serializable ()]` Attribut hinzu `demo` .
 
    [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210.md): Signieren von "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen:
 
@@ -123,9 +123,9 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
    1. Aktivieren Sie das Kontrollkästchen **Assembly signieren** .
 
-   1. Wählen Sie in der Liste **Schlüsseldatei für Zeichen folgen Name auswählen** **\<new->** aus.
+   1. Wählen Sie in der Liste **Schlüsseldatei für Zeichen folgen Name** auswählen den Wert aus **\<New>** .
 
-      Das Dialogfeld Schlüssel für einen **starken Namen erstellen** wird angezeigt.
+      Das Dialogfeld **Schlüssel mit starkem Namen erstellen** wird geöffnet.
 
    1. Geben Sie für **Schlüssel Dateiname den Namen** **TestKey**ein.
 
@@ -164,12 +164,12 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
     1. Wählen Sie im **Fehlerliste**die Warnung aus.
 
-    1. Klicken Sie im Kontextmenü (Kontextmenü) auf  > **in Unterdrückungs Datei**unter **drücken**.
+    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option **Suppress**  >  **in Unterdrückungs Datei**unterdrücken aus.
 
 1. Erstellen Sie das Projekt neu.
 
      Das Projekt wird ohne Warnungen oder Fehler erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Code Analyse für verwalteten Code](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545690"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
@@ -30,7 +30,7 @@ Abhängig vom Befehl benötigt der Befehls Handler möglicherweise die Auswahl i
 
 1. Die- <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse definiert die folgenden Member, die verwendet werden können, um auf die aktuelle Auswahl zuzugreifen.
 
-    |Member|Beschreibung|
+    |Member|BESCHREIBUNG|
     |-|-|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>-Methode|Gibt zurück, wenn eines der `true` im Modell-Designer ausgewählten Elemente eine Depot-Form ist, andernfalls `false` .|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>-Methode|Gibt zurück `true` , wenn das Diagramm im Modell-Designer ausgewählt ist, andernfalls `false` .|
@@ -209,7 +209,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>
 - <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>

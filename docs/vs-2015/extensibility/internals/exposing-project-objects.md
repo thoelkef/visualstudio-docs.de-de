@@ -1,5 +1,5 @@
 ---
-title: Verfügbarmachen von Projektobjekten | Microsoft-Dokumentation
+title: Verfügbar machen von Projekt Objekten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196645"
 ---
 # <a name="exposing-project-objects"></a>Verfügbarmachen von Projektobjekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Benutzerdefinierte Projekttypen können Automatisierungsobjekte bereitstellen, um den Zugriff auf das Projekt mithilfe der Automatisierungsschnittstellen zu ermöglichen. Jeder Projekttyp wird erwartet, dass den Standard bereitstellt <xref:EnvDTE.Project> Automatisierungsobjekt, das aus zugegriffen werden kann <xref:EnvDTE.Solution>, enthält eine Auflistung aller Projekte, die in der IDE geöffnet sind. Jedes Element im Projekt von verfügbar gemacht werden soll eine <xref:EnvDTE.ProjectItem> mit zugegriffene Objekt <xref:EnvDTE.Project.ProjectItems>. Zusätzlich zu diesen Objekten Automation standard-können Projekte auch projektspezifische Automatisierungsobjekte zu bieten.  
+Benutzerdefinierte Projekttypen können Automatisierungs Objekte bereitstellen, um den Zugriff auf das Projekt mithilfe von Automatisierungs Schnittstellen zuzulassen. Jeder Projekttyp soll das standardmäßige <xref:EnvDTE.Project> Automatisierungs Objekt bereitstellen, auf das von zugegriffen wird <xref:EnvDTE.Solution> , das eine Auflistung aller Projekte enthält, die in der IDE geöffnet sind. Es wird erwartet, dass jedes Element im Projekt durch ein-Objekt verfügbar gemacht wird, auf das <xref:EnvDTE.ProjectItem> mit zugegriffen wird <xref:EnvDTE.Project.ProjectItems> . Zusätzlich zu diesen Standard Automatisierungs Objekten können Projekte auch projektspezifische Automatisierungs Objekte anbieten.  
   
- Sie können benutzerdefinierte auf Stammebene Automatisierungsobjekte erstellen, die Sie zugreifen können, spät gebundene von der Stamm DTE-Objekt unter Verwendung `DTE.<customeObjectName>` oder `DTE.GetObject(“<customObjectName>”)`. Visual C++ erstellt z. B. C++ projektspezifische projektauflistung namens "VCProjects", die Sie mithilfe des DTE zugreifen können. VCProjects oder DTE. GetObject("VCProjects"). Sie können auch eine Project.Object, erstellen, der für den Projekttyp, eine Project.CodeModel, eindeutig ist, die die für die am stärksten abgeleiteten Objekt ProjectItem, die ProjectItem.Object und eine Projektmodells verfügbar macht, abgefragt werden können.  
+ Sie können benutzerdefinierte Automatisierungs Objekte auf Stamm Ebene erstellen, auf die Sie mithilfe von oder über das Stamm-DTE-Objekt mit der spät Bindung zugreifen können `DTE.<customeObjectName>` `DTE.GetObject(“<customObjectName>”)` . Visual C++ erstellt beispielsweise eine C++-projektspezifische Projekt Auflistung mit dem Namen "vcprojects", auf die Sie mit DTE zugreifen können. Vcprojects oder DTE. GetObject ("vcprojects"). Sie können auch ein Project. Object-Objekt erstellen, das für den Projekttyp eindeutig ist, ein Project. CodeModel-Objekt, das für das am meisten abgeleitete Objekt abgefragt werden kann. dabei handelt es sich um ein ProjectItem-Objekt, das ProjectItem. Object und ProjectItem. FileCodeModel verfügbar macht.  
   
- Es ist eine allgemeine Konvention für Projekte, um eine benutzerdefinierte, projektspezifische Projektsammlung verfügbar zu machen. Z. B. [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] erstellt eine bestimmte C++-projektauflistung, die Sie zugreifen können mithilfe von `DTE.VCProjects` oder `DTE.GetObject("VCProjects")`. Sie können auch erstellen eine `Project.Object`, für den Projekttyp, eindeutig ist eine `Project.CodeModel`, die abgefragt werden kann, für das Objekt am stärksten abgeleiteten eine `ProjectItem`, verfügbar macht `ProjectItem.Object`, und eine `ProjectItem.FileCodeModel`.  
+ Es ist eine gängige Konvention für-Projekte, eine benutzerdefinierte projektspezifische Projekt Auflistung verfügbar zu machen. Erstellt beispielsweise [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] eine C++ spezifische Projekt Auflistung, auf die Sie dann mithilfe von `DTE.VCProjects` oder zugreifen können `DTE.GetObject("VCProjects")` . Sie können auch ein- `Project.Object` Objekt erstellen, das für den Projekttyp eindeutig ist, ein `Project.CodeModel` -Objekt, das für das am meisten abgeleitete Objekt, ein-Objekt, das verfügbar macht, `ProjectItem` `ProjectItem.Object` und ein-Objekt abgefragt werden kann `ProjectItem.FileCodeModel` .  
   
-### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Um ein VSPackage-Objekt für ein Projekt beitragen.  
+### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>So tragen Sie ein VSPackage-spezifisches Objekt für ein Projekt an  
   
-1. Fügen Sie die entsprechenden Schlüssel, der PKGDEF-Datei Ihres VSPackage hinzu.  
+1. Fügen Sie der pkgdef-Datei des VSPackage die entsprechenden Schlüssel hinzu.  
   
-     Hier sind z. B. die PKGDEF-Einstellungen für die Sprache C++-Projekt:  
+     Hier sind z. b. die pkgdef-Einstellungen für das Sprachprojekt C++:  
   
     ```  
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
@@ -40,7 +40,7 @@ Benutzerdefinierte Projekttypen können Automatisierungsobjekte bereitstellen, u
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2. Implementieren Sie den Code in die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> -Methode, wie im folgenden Beispiel gezeigt.  
+2. Implementieren Sie den Code in der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode, wie im folgenden Beispiel gezeigt.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -70,7 +70,7 @@ Benutzerdefinierte Projekttypen können Automatisierungsobjekte bereitstellen, u
     }   
     ```  
   
-     Im Code `g_wszAutomationProjects` ist der Name der Projektsammlung. Die `GetAutomationProjects` Methode erstellt ein Objekt, implementiert die `Projects` -Schnittstelle und gibt eine `IDispatch` Zeiger auf das aufrufende Objekt, wie im folgenden Codebeispiel gezeigt.  
+     Im Code `g_wszAutomationProjects` ist der Name der Projekt Auflistung. Die `GetAutomationProjects` -Methode erstellt ein Objekt, das die `Projects` -Schnittstelle implementiert und einen `IDispatch` Zeiger auf das aufrufende Objekt zurückgibt, wie im folgenden Codebeispiel gezeigt.  
   
     ```cpp  
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
@@ -88,9 +88,9 @@ Benutzerdefinierte Projekttypen können Automatisierungsobjekte bereitstellen, u
     }  
     ```  
   
-     Sie sollten einen eindeutigen Namen für das Automatisierungsobjekt auswählen. Konflikte bei Befehlsnamen sind unvorhersehbar und Konflikte verursachen, ein in Konflikt stehende Objektname nach dem Zufallsprinzip ausgelöst wird, wenn es sich bei verschiedenen Projekttypen den gleichen Namen verwenden. Sie sollten den Namen Ihres Unternehmens oder der Product Name den Namen das Automatisierungsobjekt Aspekts eindeutigen einschließen.  
+     Wählen Sie einen eindeutigen Namen für das Automatisierungs Objekt aus. Namenskonflikte sind unvorhersehbar, und Konflikte bewirken, dass ein in Konflikt stehender Objektname willkürlich ausgelöst wird, wenn mehrere Projekttypen denselben Namen verwenden. Sie sollten Ihren Firmennamen oder einen eindeutigen Aspekt des Produkt namens in den Namen des Automatisierungs Objekts einschließen.  
   
-     Die benutzerdefinierte `Projects` -Objekt ist ein der Einfachheit halber-Einstiegspunkt für den verbleibenden Teil Ihrer Projektautomatisierungsmodell. Ihr Projektobjekt ist auch über die <xref:EnvDTE.Solution> Projektsammlung. Nachdem Sie die entsprechenden Einträge von Code und die Registrierung erstellt haben, die Kunden mit bereitstellen `Projects` Auflistung Objekte, die Ihre Implementierung muss verbleibende Standardobjekte für das Modell angeben. Weitere Informationen finden Sie unter [Projekt Modellierung](../../extensibility/internals/project-modeling.md).  
+     Das benutzerdefinierte `Projects` Sammlungsobjekt ist ein praktischer Einstiegspunkt für den verbleibenden Teil Ihres Projekt Automatisierungs Modells. Auf das Projekt Objekt kann auch über die Projekt Auflistung zugegriffen werden <xref:EnvDTE.Solution> . Nachdem Sie den entsprechenden Code und die Registrierungseinträge erstellt haben, die Consumern Auflistungs Objekte bereitstellen `Projects` , muss die Implementierung verbleibende Standardobjekte für das Projekt Modell bereitstellen. Weitere Informationen finden Sie unter [Projekt Modellierung](../../extensibility/internals/project-modeling.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

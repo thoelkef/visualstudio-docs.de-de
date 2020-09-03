@@ -1,5 +1,5 @@
 ---
-title: SortOrder-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Sortor der-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 825ec785a83cae0aaa8a31ae1375e956228b634e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205511"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt einen Wert an, die zum Anordnen von gegenüber anderen Vorlagen in der gleichen Kategorie, der Vorlage verwendet wird, entsprechend der Anzeige in einem der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
+Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in derselben Kategorie anzuordnen, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<SortOrder >  
+ \<SortOrder>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,17 +53,17 @@ Gibt einen Wert an, die zum Anordnen von gegenüber anderen Vorlagen in der glei
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Ein `integer` , das den Sortierreihenfolgenwert darstellt.  
+ Ein `integer` , das den Sortierreihen folgen Wert darstellt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  `SortOrder` ist ein optionales Element. Der Standardwert ist 100, und alle Werte müssen ein Vielfaches von 10 sein.  
   
- Die `SortOrder` Element wird für benutzerdefinierte Vorlagen ignoriert. Alle Benutzer erstellte Vorlagen sind alphabetisch sortiert.  
+ Das- `SortOrder` Element wird für vom Benutzer erstellte Vorlagen ignoriert. Alle vom Benutzer erstellten Vorlagen sind alphabetisch sortiert.  
   
- Vorlagen mit niedrigen Sortierwerte angezeigt werden, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld vor dem Vorlagen, die hohe Sortierwerte enthalten.  
+ Vorlagen mit niedrigen Sortierreihenfolge-Werten werden im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** vor Vorlagen mit Werten für hohe Sortierreihenfolge angezeigt.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt die Metadaten für die Standard [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Klassenvorlage.  
+ Im folgenden Beispiel werden die Metadaten für eine Standard [!INCLUDE[csprcs](../includes/csprcs-md.md)] Klassen Vorlage veranschaulicht.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -82,8 +82,8 @@ Gibt einen Wert an, die zum Anordnen von gegenüber anderen Vorlagen in der glei
 </VSTemplate>  
 ```  
   
- In diesem Beispiel die `SortOrder` Element ist relativ hoch. Ist es wahrscheinlich, dass andere [!INCLUDE[csprcs](../includes/csprcs-md.md)] Elementvorlagen müssen eine `SortOrder` Werts kleiner als `290` und wird angezeigt, bevor Sie diese Vorlage in der **neues Element** Dialogfeld.  
+ In diesem Beispiel ist das- `SortOrder` Element relativ hoch. Es ist wahrscheinlich, dass andere [!INCLUDE[csprcs](../includes/csprcs-md.md)] Element Vorlagen einen `SortOrder` niedrigeren Wert als aufweisen `290` und vor dieser Vorlage im Dialogfeld **Neues Element** angezeigt werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

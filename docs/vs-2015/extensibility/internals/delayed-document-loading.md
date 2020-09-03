@@ -9,27 +9,25 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196862"
 ---
 # <a name="delayed-document-loading"></a>Verzögertes Laden von Dokumenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn ein Benutzer mit Visual Studio-Projektmappe erneut öffnet, werden die meisten der zugehörigen Dokumente nicht sofort geladen werden. Die dokumentfensterrahmen wird in einem Zustand ausstehende Initialisierung erstellt, und ein Platzhalterdokument (einen Stub-Frame bezeichnet) befindet sich in der ausführen-Dokumenten-Tabelle (RDT).  
+Wenn ein Benutzer eine Visual Studio-Projekt Mappe erneut öffnet, werden die meisten zugeordneten Dokumente nicht sofort geladen. Der Dokument Fensterrahmen wird mit dem Status "ausstehende Initialisierung" erstellt, und ein Platzhalter Dokument (als Stub-Frame bezeichnet) wird in der ausgelaufenden dokumententabelle (RDT) platziert.  
   
- Die Erweiterung möglicherweise Projektdokumente unnötigerweise geladen werden, durch Abfragen von Elementen in den Dokumenten, bevor sie geladen werden. Dies kann Gesamtspeicherbedarf für Visual Studio erhöhen.  
+ Die Erweiterung kann bewirken, dass Projektdokumente unnötig geladen werden, indem Sie Elemente in den Dokumenten Abfragen, bevor Sie geladen werden. Dadurch kann der Gesamt Speicherbedarf für Visual Studio erhöht werden.  
   
 ## <a name="document-loading"></a>Laden von Dokumenten  
- Dokument mit den Stub-Frames und sind vollständig initialisiert, wenn der Benutzer das Dokument, z. B. greift auf durch Auswählen der Registerkarte des Fensterrahmens. Das Dokument kann auch von einer Erweiterung initialisiert werden, die die Daten eines Dokuments, entweder durch den Zugriff auf den RDT direkt, um die Daten zu erhalten oder den Zugriff auf den RDT indirekt selbst eines der folgenden Aufrufe anfordert:  
+ Der Stub-Frame und das Dokument werden vollständig initialisiert, wenn der Benutzer auf das Dokument zugreift, z. b. durch Auswählen der Registerkarte des Fensterrahmens. Das Dokument kann auch durch eine Erweiterung initialisiert werden, die die Daten des Dokuments anfordert, indem Sie entweder direkt auf den RDT zugreifen, um die Dokument Daten abzurufen, oder indirekt auf den RDT zugreifen, indem Sie einen der folgenden Aufrufe durchführen:  
   
-- Anzeigen des fensterframes-Methode: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>.  
+- Die Fenster Frame Show-Methode: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> .  
   
-- Der Fensterrahmen GetProperty-Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> auf einem der folgenden Eigenschaften:  
-  
-  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+- Die GetProperty-Methode für den Fensterrahmen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> einer der folgenden Eigenschaften:  
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
@@ -41,27 +39,29 @@ Wenn ein Benutzer mit Visual Studio-Projektmappe erneut öffnet, werden die meis
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  Wenn Ihre Erweiterung verwalteten Code verwendet wird, sollten Sie nicht aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> es sei denn, Sie sicher, dass das Dokument ist nicht im Zustand "ausstehender-Initialization" oder das Dokument vollständig initialisiert werden soll... Dies ist, da diese Methode immer die Doc gibt-Datenobjekt, wodurch bei Bedarf erstellt. Stattdessen müssen Sie eine der Methoden für die IVsRunningDocumentTable4-Schnittstelle aufrufen.  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  Wenn Ihre Erweiterung C++ verwendet wird, können Sie übergeben `null` für die Parameter, die Sie nicht möchten.  
+  Wenn die Erweiterung verwalteten Code verwendet, sollten Sie nicht aufzurufen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> es sei denn, Sie sind sicher, dass sich das Dokument nicht im Status der ausstehenden Initialisierung befindet oder ob das Dokument vollständig initialisiert werden soll. Dies liegt daran, dass diese Methode immer das doc-Datenobjekt zurückgibt und es bei Bedarf erstellt. Stattdessen sollten Sie eine der-Methoden in der IVsRunningDocumentTable4-Schnittstelle abrufen.  
   
-  Sie können unnötige Dokument laden vermeiden, indem Sie eine der folgenden Methoden aufrufen, bevor Sie die relevanten Eigenschaften anfordern: Bevor Sie andere Eigenschaften anfordern.  
+  Wenn die Erweiterung C++ verwendet, können Sie `null` für die Parameter übergeben, die Sie nicht möchten.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+  Sie können unnötige Laden von Dokumenten vermeiden, indem Sie eine der folgenden Methoden aufrufen, bevor Sie nach den relevanten Eigenschaften Fragen: bevor Sie weitere Eigenschaften anfordern.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> Diese Methode gibt eine <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> -Objekt, das einen Wert für enthält <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> , wenn das Dokument noch nicht initialisiert wurde.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Verwenden von <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6> .  
   
-  Sie können feststellen, wenn ein Dokument geladen wurde, indem Sie abonnieren das RDT-Ereignis, das ausgelöst wird, wenn ein Dokument vollständig initialisiert wurde. Es gibt zwei Möglichkeiten:  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Diese Methode gibt ein- <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Objekt zurück, das einen Wert für enthält, <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Wenn das Dokument noch nicht initialisiert wurde.  
   
-- Wenn die Ereignissenke implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>, können Sie abonnieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>,  
+  Sie können herausfinden, wann ein Dokument geladen wurde, indem Sie das RDT-Ereignis abonnieren, das ausgelöst wird, wenn ein Dokument vollständig initialisiert wurde. Es gibt zwei Möglichkeiten:  
   
-- Andernfalls können Sie abonnieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
+- Wenn die Ereignis Senke implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2> , können Sie abonnieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A> .  
   
-  Im folgenden wird ein Szenario mit hypothetischen Dokument Zugriff. Ein Visual Studio Extension einige Informationen über geöffnete Dokumente angezeigt werden soll, z. B. die Bearbeitung gesperrt werden Anzahl und etwas über die Dokumentdaten. Es listet die Dokumente in der RDT mithilfe <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, ruft dann <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> für jedes Dokument, um die Sperre "Bearbeiten" die Daten für Count "und" Dokument abzurufen. Wenn das Dokument im Zustand "ausstehender-Initialization" ist, bewirkt, dass die Dokumentendaten anfordern unnötigerweise initialisiert werden.  
+- Andernfalls können Sie abonnieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A> .  
   
-  Eine effizientere Möglichkeit dafür ist Verwendung <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> , rufen die Sperrenanzahl bearbeiten, und klicken Sie dann mithilfe <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> zu bestimmen, ob das Dokument initialisiert wurde. Wenn die Flags nicht einbeziehen <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, das Dokument wurde bereits initialisiert, und die Dokumentdaten mit anfordern <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> bewirkt nicht, dass unnötige Initialisierungen. Wenn die Flags umfassen <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, die Erweiterung sollten die Daten anfordert, bis das Dokument initialisiert ist. Dies kann im Ereignishandler OnAfterAttributeChange(Ex) erkannt werden.  
+  Im folgenden finden Sie ein hypothetisches Dokument Zugriffs Szenario. Eine Visual Studio-Erweiterung möchte einige Informationen zu geöffneten Dokumenten anzeigen, beispielsweise die Anzahl der Bearbeitungs Sperren und etwas über die Dokument Daten. Die Dokumente werden im RDT mithilfe <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> von aufgelistet. Anschließend wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> für jedes Dokument aufgerufen, um die Anzahl der Bearbeitungs Sperren und die Dokument Daten abzurufen. Wenn sich das Dokument im Zustand "ausstehende Initialisierung" befindet, bewirkt das Anfordern der Dokument Daten, dass es unnötig initialisiert wird.  
   
-## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testen die Erweiterungen, um festzustellen, ob die Initialisierung zu erzwingen  
- Es gibt keinen sichtbaren Hinweis an, ob ein Dokument initialisiert wurde, damit es kann schwierig sein, herauszufinden, ob die Erweiterung Initialisierung erzwungen wird. Sie können einen Registrierungsschlüssel, die Überprüfung erleichtert, festlegen, da sie den Titel jedes Dokuments bewirkt, die für den Text nicht vollständig initialisiert ist `[Stub]` im Titel.  
+  Eine effizientere Methode hierfür ist <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> die Verwendung von zum Ermitteln der Anzahl der Bearbeitungs Sperren und die anschließende Verwendung <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> von, um zu bestimmen, ob das Dokument initialisiert wurde. Wenn die Flags nicht enthalten <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> , wurde das Dokument bereits initialisiert, und das Anfordern der Dokument Daten mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> verursacht keine unnötige Initialisierung. Wenn die Flags einschließen <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> , sollte die Erweiterung die Dokument Daten erst anfordern, wenn das Dokument initialisiert wird. Dies kann im Ereignishandler onafterattributechange (ex) erkannt werden.  
   
- In **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** legen **StubTabTitleFormatString** zu  **{0} [Stub]** .
+## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testen von Erweiterungen, um festzustellen, ob Sie die Initialisierung erzwingen  
+ Es gibt keinen sichtbaren Hinweis, der angibt, ob ein Dokument initialisiert wurde. Daher kann es schwierig sein, herauszufinden, ob die Erweiterung die Initialisierung erzwingt. Sie können einen Registrierungsschlüssel festlegen, der die Überprüfung vereinfacht, da der Titel jedes Dokuments, das nicht vollständig initialisiert ist, den Text `[Stub]` im Titel enthält.  
+  
+ Legen Sie in **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload]** **stubtabtitleformatstring** auf ** {0} [Stub]** fest.

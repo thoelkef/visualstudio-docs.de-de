@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetDocument | Microsoft-Dokumentation
+title: 'IDebugDocumentPosition2:: GetDocument | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 095e41bd9131e13a8e76e2b325ad9b256eb04d87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145021"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft das Containerdokument ab.  
+Ruft das enthaltende Dokument ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,11 +40,11 @@ int GetDocument( 
   
 #### <a name="parameters"></a>Parameter  
  `ppDoc`  
- [out] Gibt eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Objekt, das Dokument mit dieser Position darstellt.  
+ vorgenommen Gibt ein [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Objekt zurück, das das Dokument darstellt, das diese Position enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

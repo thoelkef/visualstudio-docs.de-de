@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: 'IDebugCoreServer3:: kreateingestanceinzuserver | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733019"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Erstellt eine Instanz eines Debugmoduls auf dem Server.
+Erstellt eine Instanz einer Debug-Engine auf dem Server.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,19 +49,19 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Parameter
 `szDll`\
-[in] Pfad zur DLL, die die im `clsidObject` Parameter angegebene CLSID implementiert. Wenn dies der Der Grund ist, `NULL`wird die Funktion von `CoCreateInstance` COM aufgerufen.
+in Der Pfad zur dll, die die im-Parameter angegebene CLSID implementiert `clsidObject` . Wenn dieser Wert ist `NULL` , wird die com- `CoCreateInstance` Funktion aufgerufen.
 
 `wLangId`\
-[in] Gebietsschema des Debugmoduls. Dies kann 0 sein, wenn die [SetLocale-Methode](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) nicht aufgerufen werden soll.
+in Das Gebiets Schema der Debug-Engine. Dies kann 0 sein, wenn die [setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) -Methode nicht aufgerufen werden soll.
 
 `clsidObject`\
-[in] CLSID des zu erstellenden Debugmoduls.
+in Die CLSID der zu erstellenden Debug-Engine.
 
 `riid`\
-[in] Schnittstellen-ID der spezifischen Schnittstelle, die vom Klassenobjekt abgerufen werden soll.
+in Die Schnittstellen-ID der spezifischen Schnittstelle, die aus dem Klassenobjekt abgerufen werden soll.
 
 `ppvObject`\
-[out] `IUnknown` Schnittstelle aus dem instanziierten Objekt. Cast oder marshallieren Sie dieses Objekt auf die gewünschte Schnittstelle.
+[out] `IUnknown` Schnittstelle aus dem instanziierten Objekt. Wandelt oder marshallt dieses Objekt in die gewünschte Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

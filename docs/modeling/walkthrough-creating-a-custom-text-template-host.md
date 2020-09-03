@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532222"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
@@ -718,7 +718,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten 
 
 5. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-6. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+6. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="test-the-custom-host"></a>Testen des benutzerdefinierten Hosts
 

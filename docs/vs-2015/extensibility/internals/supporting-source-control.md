@@ -1,5 +1,5 @@
 ---
-title: Unterstützung des Datenquellen-Steuerelement | Microsoft-Dokumentation
+title: Unterstützen der Quell Code Verwaltung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,49 +11,49 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d1166197a5c79dcb0d1ddf4018227914346a6172
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156076"
 ---
 # <a name="supporting-source-control"></a>Unterstützen der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt die Datei auschecken, Eincheckvorgänge und andere Quellcodeverwaltungsvorgänge für Ihr Projekt oder den Editor. Als ein Quellcode-Verwaltungsclient [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dient zur Interaktion mit einem Quellcodeverwaltungspaket [!INCLUDE[vsvss](../../includes/vsvss-md.md)], die bereitstellt, Archivierung, versionsverwaltung und Kontrolle-Funktionen für eine dynamisch definierte Gruppe von Dateien.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt Datei Checkouts, Check-ins und andere Quell Code Verwaltungsvorgänge für Ihr Projekt oder Ihren Editor. Als Quell Code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Verwaltungs Client ist für die Interaktion mit einem Quell Code Verwaltungspaket wie konzipiert, [!INCLUDE[vsvss](../../includes/vsvss-md.md)] das Archivierungs-, Versions-und Steuerungsfunktionen für einen dynamisch definierten Satz von Dateien bereitstellt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Modell für Quellcodeverwaltungspakete](../../extensibility/internals/model-for-source-control-packages.md)  
- Beschreibt die Schnittstellen, die ein Projekttyp implementieren muss zur Unterstützung des Datenquellen-Steuerelement.  
+ Beschreibt die Schnittstellen, die ein Projekttyp implementieren muss, um die Quell Code Verwaltung  
   
  [Entwurfsentscheidungen](../../extensibility/internals/source-control-design-decisions.md)  
- Stellt Fragen, deren Antworten zu ändern, wie Sie einen Projekttyp implementieren.  
+ Stellt Fragen bereit, mit deren Antworten die Implementierung eines Projekt Typs geändert wird.  
   
  [Konfigurationsdetails](../../extensibility/internals/source-control-configuration-details.md)  
- Beschreibt, wie das Datenquellen-Steuerelement unterstützt die Implementierung eines Projekttyps ändert.  
+ Beschreibt, wie die unterstützende Quell Code Verwaltung die Implementierung eines Projekt Typs ändert.  
   
  [Zusätzliche Richtlinien für Projekte und Editoren](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- Beschreibt bewährte Methoden für Projekttypen und Editoren.  
+ Erläutert bewährte Methoden für Projekttypen und Editoren.  
   
  [Runtime-Details](../../extensibility/internals/source-control-runtime-details.md)  
- Beschreibt, wie ein Projekt zu registrieren, wenn ein Benutzer ein Quellcodeverwaltungssystem hinzugefügt.  
+ Beschreibt, wie ein Projekt registriert wird, wenn ein Benutzer es einem Quell Code Verwaltungssystem hinzufügt.  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Gibt an, dem umgebungs-oder Quellcodeverwaltungspaket, die eine Datei im Arbeitsspeicher geändert oder gespeichert werden.  
+ Teilt dem Umgebungs- oder Quellcodeverwaltungspaket mit, dass eine Datei im Begriff ist, im Arbeitsspeicher geändert zu werden, oder gespeichert zu werden.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Können Projekte und Hierarchien, registrieren sich mit der quellcodeverwaltung und Abrufen von Informationen zu den Status der quellcodeverwaltung.  
+ Ermöglicht Projekten und Hierarchien das Registrieren mit der Quell Code Verwaltung und das Abrufen von Informationen über den Status der Quell Code Verwaltung.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- In einem Projektsystem, geben Sie die quellcodeverwaltung für Projektdateien und Projektelemente implementiert.  
+ In einem Projektsystem implementiert, um die Quellcodeverwaltung für Projektdateien und Projektelemente bereitzustellen.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Von Projekten verwendet, um die Umgebung für die Berechtigung zum Hinzufügen, entfernen oder Umbenennen einer Datei oder eines Verzeichnisses in einer Projektmappe abzufragen.  
+ Wird von Projekten verwendet, um die Umgebung nach Berechtigungen für das Hinzufügen, Entfernen oder Unbenennen einer Datei oder eines Verzeichnisses in einer Projektmappe abzufragen.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
  Benachrichtigt Clients über Änderungen, die an Projektdateien oder-Verzeichnissen vorgenommen wurden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- Bietet eine Übersicht über Projekte als die grundlegenden Bausteine von der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE). Links werden zu weiteren Themen bereitgestellt, die erläutern, wie Projekte zu erstellen und Kompilieren von Code steuern.
+ Bietet eine Übersicht über Projekte als grundlegende Bausteine der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE). Links werden für weitere Themen bereitgestellt, in denen erläutert wird, wie Projekte das Erstellen und Kompilieren von Code steuern.

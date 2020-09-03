@@ -16,10 +16,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660532"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
@@ -39,7 +39,7 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
 
   - [Angeben des DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)
 
-  - [Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
+  - [Verwenden von "TestContext. DataRow" für den Zugriff auf die Daten](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
 
 - [Ausführen des Tests und Anzeigen der Ergebnisse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)
 
@@ -53,7 +53,7 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
 
 4. Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.
 
-## <a name="BKMK_The_method_under_test"></a> Die zu testende Methode
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a> Die zu testende Methode
  Nehmen wir zum Beispiel an, dass wir folgendes erstellt haben:
 
 1. Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> Erstellen einer Datenquelle
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> Erstellen einer Datenquelle
  Zu Testen der Methode `AddIntegers` wird eine Datenquelle erstellt, die einen Wertebereich für die Parameter und der Summe angibt, der zurückgegeben werden soll. In diesem Beispiel wird eine Datenbank „Sql.Compact“ mit dem Namen `MathsData` und eine Tabelle mit dem Namen `AddIntegersData` erstellt, die die folgenden Spaltennamen und -werte enthält
 
-|FirstNumber|SecondNumber|Summe|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a>Hinzufügen eines TestContext zu einer Testklasse
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a>Hinzufügen eines TestContext zu einer Testklasse
  Das Komponententestframework erstellt ein Objekt `TestContext`, um die Informationen der Datenquelle für einen datengesteuerten Test zu speichern. Das Framework legt anschließend dieses Objekt als Wert für die Eigenschaft `TestContext` fest, die wir erstellen.
 
 ```
@@ -105,7 +105,7 @@ public TestContext TestContext
 
  In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
 
-## <a name="BKMK_Writing_the_test_method"></a> Schreiben der Testmethode
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> Schreiben der Testmethode
  Die Testmethode für `AddIntegers` ist recht einfach. Für jede Zeile in der Datenquelle,wird `AddIntegers` mit den Spaltenwerten von **FirstNumber** und **SecondNumber** als Parameter abgerufen, und es wird der Rückgabewert mit dem Spaltenwert **Summe** verglichen:
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Beachten Sie, dass die Methode `Assert` eine Mitteilung enthält, die die Werter einer fehlerhaften Iteration `x` und `y` anzeigt. Die bestätigen Werte `expected` und `actual` sind bereits standardmäßig in den Details eines fehlgeschlagenen Tests enthalten.
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute
  Das Attribut `DataSource` gibt die Verbindungszeichenfolge für die Datenquelle den Tabellennamen an, die Sie in der Testmethode verwenden. Die genaue Information in der Verbindungszeichenfolge ist unterschiedlich, je nachdem welche Datenquelle Sie verwenden. In diesem Beispiel wurde eine Datenbank „SqlServerCe“ verwendet.
 
 ```
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen
  Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein Objekt <xref:System.Data.DataRow>. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, müssen sie in den entsprechenden Typ konvertiert werden:
 
 ```
@@ -173,8 +173,8 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a> Ausführen des Tests und Anzeigen der Ergebnisse
- Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster „Test-Explorer“ in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** sowie **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen von** auswählen, um eine Teilmenge der Tests auszuführen.
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> Ausführen des Tests und Anzeigen der Ergebnisse
+ Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster Test-Explorer in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen Ihrer Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** und **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen von** auswählen, um eine Teilmenge der Tests auszuführen.
 
  Während Ihr Test ausgeführt wird, wird die Testergebnisleiste im oberen Bereich des Explorers animiert. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich waren, oder rot, wenn einer der Tests fehlgeschlagen ist. Im Detailbereich unten im Fenster des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen.
 
@@ -182,7 +182,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
  Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wird die Ergebnisleiste grün, und die Testmethode wird in die Gruppe **Bestandene Tests** verschoben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>

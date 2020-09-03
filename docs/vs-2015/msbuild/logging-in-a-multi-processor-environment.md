@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205971"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Um Ereignisse in einer Weiterleitungsprotokollierung weiterzuleiten, rufen Sie die <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A>-Methode der <xref:Microsoft.Build.Framework.IEventRedirector>-Schnittstelle auf. Übergeben Sie entsprechende <xref:Microsoft.Build.Framework.BuildEventArgs> oder eine Ableitung als Parameter.  
   
- Weitere Informationen finden Sie unter [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md).  
+ Weitere Informationen finden Sie unter [Erstellen von Weiterleitungs Protokollierungen](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Anfügen einer verteilten Protokollierung  
  Verwenden Sie zum Anfügen einer verteilten Protokollierung in einem Befehlszeilenbuild den `/distributedlogger`-Schalter (abgekürzt `/dl`). Das Format zum Angeben der Namen von Protokollierungstypen und -klassen ist mit denen für den `/logger`-Schalter identisch, mit der Ausnahme, dass eine verteilte Protokollierung aus zwei Protokollierungsklassen besteht: eine Weiterleitungsprotokollierung und eine zentrale Protokollierung. Nachfolgend ist ein Beispiel für eine verteilte Protokollierung aufgeführt:  
@@ -73,6 +73,6 @@ Culture=neutral
   
  Ein Sternchen (*) trennt die beiden Protokollierungsnamen im `/dl`-Schalter.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Buildprotokollierungen](../msbuild/build-loggers.md)   
- [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)
+ [Erstellen von Weiterleitungs Protokollierungen](../msbuild/creating-forwarding-loggers.md)

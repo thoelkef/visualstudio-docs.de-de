@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659607"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Unittests von Visual C#-Code in einer Store-App
@@ -34,34 +34,34 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 >
 >   Weitere Informationen finden Sie unter [Überprüfen von Code mithilfe von Komponententests](https://msdn.microsoft.com/library/dd264975.aspx) in der MSDN Library.
 
-## <a name="BKMK_In_this_topic"></a> In diesem Thema
- [Erstellen der Projektmappe und des Komponententestprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> In diesem Thema
+ [Erstellen der Projekt Mappe und des Komponenten Testprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Überprüfen, ob die Tests im Test-Explorer ausgeführt werden](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Hinzufügen der Klasse „Rooter“ zu dem Projekt „Mathematik“](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
+ [Hinzufügen der Klasse "Rooter" zu dem Projekt "Mathematik"](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
- [Verknüpfen des Testprojekts mit dem App-Projekt](#BKMK_Couple_the_test_project_to_the_app_project)
+ [Verknüpfen Sie das Testprojekt mit dem App-Projekt.](#BKMK_Couple_the_test_project_to_the_app_project)
 
- [Tests iterativ steigern und erfolgreich abschließen](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [Führen Sie die Tests iterativ aus, und führen Sie Sie aus.](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [Debuggen eines fehlgeschlagenen Tests](#BKMK_Debug_a_failing_test)
+ [Debuggen eines fehlerhaften Tests](#BKMK_Debug_a_failing_test)
 
  [Umgestaltung des Codes](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
 1. Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#** , und wählen Sie **Windows Store** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Store** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.
 
 3. Nennen Sie das Projekt `Maths`, und stellen Sie sicher, dass **Projektmappenverzeichnis erstellen** ausgewählt ist.
 
 4. Wählen Sie im Projektmappen-Explorer den Projektmappenname aus. Wählen Sie anschließend aus dem Kontextmenü **Hinzufügen** und dann **Neues Projekt** aus.
 
-5. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#** , und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.
+5. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.
 
-     ![Erstellen des Komponenten Testprojekts](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
+     ![Komponententestprojekt erstellen](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
 
 6. Öffnen Sie UnitTest1.cs im Visual Studio-Editor.
 
@@ -87,7 +87,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     ```
 
-     Hinweis:
+     Beachten Sie dabei Folgendes:
 
     1. Jeder Test wird durch die `[TestMethod]`-Verwendung definiert. Eine Testmethode muss den Wert "void" zurückgeben und darf keine Parameter haben.
 
@@ -97,7 +97,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     3. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) in der MSDN Library.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
 
 1. Fügen Sie einen Testcode in `TestMethod1` der Datei **UnitTest1.cs** hinzu.
 
@@ -115,11 +115,11 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
 2. Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
 
-     Das Testprojekt wird erstellt und ausgeführt. Das Test-Explorer-Fenster wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
+     Das Testprojekt wird erstellt und ausgeführt. Das Fenster Test-Explorer wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
 
      ![Test-Explorer](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Hinzufügen der Klasse „Rooter“ zu dem Projekt „Mathematik“
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Hinzufügen der Klasse „Rooter“ zu dem Projekt „Mathematik“
 
 1. Wählen Sie im Projektmappen-Explorer den Projektname **Mathematik**. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Klasse** aus.
 
@@ -145,7 +145,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
 4. Die `SqareRoot`-Methode ist nur eine minimale Implementierung, die gerade ausreicht, um die Grundstruktur des Testsetups zu testen.
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Verknüpfen des Testprojekts mit dem App-Projekt
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Verknüpfen des Testprojekts mit dem App-Projekt
 
 1. Fügen Sie dem RooterTests-Projekt einen Verweis auf die Mathematik-App hinzu.
 
@@ -153,7 +153,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
    2. Erweitern Sie im Dialogfeld **Verweis hinzufügen - RooterTests** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **Mathematik** aus.
 
-        ![Fügen Sie einen Verweis auf das Projekt "Mathematik" hinzu.](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
+        ![Einen Verweis zum Projekt "Maths" hinzufügen](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
 
 2. Fügen Sie der Datei "UnitTest1.cs" eine using-Anweisung hinzu:
 
@@ -165,7 +165,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
        using Maths;
        ```
 
-3. Fügen Sie einen Test hinzu, der die Funktion "Rooter" verwendet. Fügen Sie **unittest1.cpp** den folgenden Code hinzu:
+3. Fügen Sie einen Test hinzu, der die Funktion "Rooter" verwendet. Fügen Sie **UnitTest1. cpp**den folgenden Code hinzu:
 
    ```csharp
    [TestMethod]
@@ -184,13 +184,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     Der neue Test wird im Test-Explorer im Knoten **Nicht ausgeführte Tests** angezeigt.
 
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
-    ![Grundlegender Test erfolgreich](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![Einfacher Test bestanden](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
 1. Fügen Sie einen neuen Test hinzu:
 
@@ -215,11 +215,11 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     >
     >  Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
 3. Der Test schlägt fehl.
 
-     ![RangeTest schlägt fehl](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Fehler beim RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Überprüfen Sie unmittelbar nach dem Schreiben eines Tests, dass er fehlschlägt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
@@ -242,14 +242,14 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     ```
 
-5. Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+5. Erstellen Sie die Projekt Mappe, und wählen Sie dann im Test-Explorer **alle ausführen**aus.
 
      Alle drei Tests sind jetzt erfolgreich.
 
 > [!TIP]
 > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test zu **UnitTest1.cpp** hinzu:
 
@@ -284,11 +284,11 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
    ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
     Der Test schlägt fehl. Wählen Sie den Testnamen im Test-Explorer aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
 
-    ![Fehler bei negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Fehler bei NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
@@ -310,13 +310,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
        ```
 
-   1. Wählen Sie im Test-Explorer **Alle ausführen** aus, um die korrigierte Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
+   1. Wählen Sie im Test-Explorer die Option **alle ausführen** aus, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
 
    Alle Tests sind nun erfolgreich.
 
-   ![Alle Tests bestanden](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![Alle Tests erfolgreich](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> Umgestalten des Codes
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> Umgestalten des Codes
  **Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:**
 
 1. Ändern Sie die Ergebnisimplementierung.

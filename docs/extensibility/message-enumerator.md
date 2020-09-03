@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenenumerator | Microsoft Docs
+title: Nachrichtenenumerator | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702508"
 ---
 # <a name="message-enumerator"></a>Nachrichtenenumerator
-Die folgenden Flags werden `TEXTOUTPROC` für die Funktion verwendet, bei der es sich um eine Rückruffunktion handelt, die die IDE beim Aufrufen des [SccOpenProject](../extensibility/sccopenproject-function.md) bereitstellt (Details zur Rückruffunktion finden Sie unter [LPTEXTOUTPROC).](../extensibility/lptextoutproc.md)
+Die folgenden Flags werden für die- `TEXTOUTPROC` Funktion verwendet, bei der es sich um eine Rückruffunktion handelt, die die IDE beim Aufrufen von [sccopenproject](../extensibility/sccopenproject-function.md) bereitstellt (Weitere Informationen zur Rückruffunktion finden Sie unter [lptextoutproc](../extensibility/lptextoutproc.md) ).
 
- Wenn die IDE aufgefordert wird, den Vorgang abzubrechen, erhält sie möglicherweise eine der Abbruchnachrichten. In diesem Fall wird `SCC_MSG_STARTCANCEL` die Schaltfläche Abbrechen im Quellcodeverwaltungs-Plug-In verwendet, um die IDE aufzufordern, die Schaltfläche **Abbrechen** anzuzeigen. Danach können alle normalen Nachrichten gesendet werden. Wenn einer dieser `SCC_MSG_RTN_CANCEL`Ergebnisse zurückkehrt, beendet das Plug-In den Vorgang und gibt zurück. Das Plug-In `SCC_MSG_DOCANCEL` fragt auch regelmäßig ab, um festzustellen, ob der Benutzer den Vorgang abgebrochen hat. Wenn alle Vorgänge ausgeführt sind oder der Benutzer abgebrochen `SCC_MSG_STOPCANCEL`hat, sendet das Plug-In . Die `SCC_MSG_INFO`Typen , SCC_MSG_WARNING und SCC_MSG_ERROR werden für Nachrichten verwendet, die in der Bildlaufliste der Nachrichten angezeigt werden. `SCC_MSG_STATUS`ist ein spezieller Typ, der angibt, dass der Text in einer Statusleiste oder einem temporären Anzeigebereich angezeigt werden soll. Sie bleibt nicht dauerhaft in der Liste.
+ Wenn die IDE aufgefordert wird, den Prozess abzubrechen, erhält Sie möglicherweise eine der Abbruch Nachrichten. In diesem Fall verwendet das Quellcodeverwaltungs-Plug-in `SCC_MSG_STARTCANCEL` , um die IDE zum Anzeigen der Schaltfläche **Abbrechen** aufzufordern. Danach können alle normalen Nachrichten gesendet werden. Wenn eine dieser zurückgibt `SCC_MSG_RTN_CANCEL` , beendet das Plug-in den Vorgang und gibt zurück. Das Plug-in fragt auch `SCC_MSG_DOCANCEL` regelmäßig ab, ob der Benutzer den Vorgang abgebrochen hat. Wenn alle Vorgänge abgeschlossen sind, oder wenn der Benutzer abgebrochen wurde, sendet das Plug-in `SCC_MSG_STOPCANCEL` . Die `SCC_MSG_INFO` Typen, SCC_MSG_WARNING und SCC_MSG_ERROR werden für Nachrichten verwendet, die in der scrollliste der Nachrichten angezeigt werden. `SCC_MSG_STATUS` ein spezieller Typ, der angibt, dass der Text in einer Statusleiste oder einem temporären Anzeigebereich angezeigt werden soll. Er bleibt nicht dauerhaft in der Liste.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,24 +40,24 @@ enum { 
 ```
 
 ## <a name="members"></a>Member
- SCC_MSG_RTN_CANCEL Zurück vom Rückruf, um den Abbruch anzuzeigen.
+ SCC_MSG_RTN_CANCEL Rückgabe von Callback, um den Abbruch anzugeben.
 
- SCC_MSG_RTN_OK Return from callback fort.
+ SCC_MSG_RTN_OK vom Rückruf zurück, um den Vorgang fortzusetzen.
 
- SCC_MSG_INFO Nachricht ist informational.
+ SCC_MSG_INFO Meldung dient nur zu Informationszwecken.
 
- SCC_MSG_WARNING Nachricht ist eine Warnung.
+ SCC_MSG_WARNING Meldung ist eine Warnung.
 
  SCC_MSG_ERROR Meldung ist ein Fehler.
 
- SCC_MSG_STATUS Nachricht ist für die Statusleiste gedacht.
+ SCC_MSG_STATUS Nachricht ist für die Status Leiste vorgesehen.
 
- SCC_MSG_DOCANCEL Kein Text; IDE `SCC_MSG_RTN_OK` gibt `SCC_MSG_RTN_CANCEL`zurück oder .
+ SCC_MSG_DOCANCEL keinen Text; IDE gibt `SCC_MSG_RTN_OK` oder zurück `SCC_MSG_RTN_CANCEL` .
 
- SCC_MSG_STARTCANCEL Startet eine Abbruchschleife.
+ SCC_MSG_STARTCANCEL startet eine Abbruch Schleife.
 
- SCC_MSG_STOPCANCEL Stoppt die Abbruchschleife.
+ SCC_MSG_STOPCANCEL beendet die Cancel-Schleife.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
+- [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

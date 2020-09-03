@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
+title: 'Idebugsymbolprovider:: getaddressesfromposition | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719403"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-Diese Methode ordnet eine Dokumentposition einem Array von Debugadressen zu.
+Mit dieser Methode wird eine Dokument Position einem Array von debugadressen zugeordnet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ int GetAddressesFromPosition( 
 
 ## <a name="parameters"></a>Parameter
 `pDocPos`\
-[in] Die Dokumentposition.
+in Die Position des Dokuments.
 
 `fStatmentOnly`\
-[in] Wenn TRUE, beschränkt die Debugadressen auf eine einzelne Anweisung.
+in Wenn true, werden die debugadressen auf eine einzige Anweisung beschränkt.
 
 `ppEnumBegAddresses`\
-[out] Gibt einen Enumerator für die Startdebugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
+vorgenommen Gibt einen Enumerator für die Start-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
 
 `ppEnumEndAddresses`\
-[out] Gibt einen [IEnumDebugAddresses-Enumerator](../../../extensibility/debugger/reference/ienumdebugaddresses.md) für die endgebenden Debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
+vorgenommen Gibt einen [ienumdebugadressen](../../../extensibility/debugger/reference/ienumdebugaddresses.md) -Enumerator für die End-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Eine Dokumentposition gibt in der Regel einen Bereich von Quellzeilen an. Diese Methode stellt die Start- und Enddebugadressen bereit, die diesen Zeilen zugeordnet sind. Einige Sprachen erlauben Anweisungen, die sich über mehrere Zeilen erstrecken, oder Zeilen, die mehr als eine Anweisung enthalten. Diese Methode stellt ein Flag bereit, um die Debugadressen auf eine einzelne Anweisung zu beschränken.
+ Eine Dokument Position gibt in der Regel einen Bereich von Quellzeilen an. Diese Methode stellt die mit diesen Zeilen verknüpften Start-und End-debugadressen bereit. Einige Sprachen lassen Anweisungen zu, die mehrere Zeilen umfassen, oder Zeilen, die mehr als eine Anweisung enthalten. Diese Methode stellt ein Flag bereit, um die debugadressen auf eine einzelne Anweisung zu beschränken.
 
- Es ist möglich, dass eine einzelne Anweisung über mehrere Debugadressen verfügt, wie im Fall von Vorlagen.
+ Es ist möglich, dass eine einzelne Anweisung mehrere debugadressen hat, wie im Fall von Vorlagen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -225,17 +225,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587042"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Problembehandlung bei Datenzugriffs Fehlern in den Foren
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Im folgenden finden Sie einige datenbezogene Foren, die auf MSDN verfügbar sind:
 
-- [Windows Forms-Datensteuerelemente und -Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms von Daten Steuerelementen und Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [ADO.NET DataSet-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -243,7 +243,7 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 - [WCF Data Services-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Forum zum SQL Server-Datenzugriff](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [SQL Server Datenzugriffs Forum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [LINQ to SQL-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
@@ -251,6 +251,6 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter Problembehandlung [beim Herstellen einer Verbindung mit der SQL Server Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

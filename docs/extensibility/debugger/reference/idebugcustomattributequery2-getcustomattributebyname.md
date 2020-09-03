@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2:: GetCustomAttributeByName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 47471f2743e705b06fb9a1bda6752b24a7836d1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732560"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Ruft die benutzerdefinierten Attributbytes ab, die den Namen des benutzerdefinierten Attributs erhalten.
+Ruft die benutzerdefinierten Attribute Bytes ab, wenn der Name des benutzerdefinierten Attributs angegeben ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,23 +45,23 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>Parameter
 `pszCustomAttributeName`\
-[in] Eine Zeichenfolge, die den Namen des benutzerdefinierten Attributs enthält, nach dem gesucht werden soll.
+in Eine Zeichenfolge mit dem Namen des benutzerdefinierten Attributs, nach dem gesucht werden soll.
 
 `ppBlob`\
-[in, out] Ein Array, das mit den benutzerdefinierten Attributbytes ausgefüllt wird.
+[in, out] Ein Array, das mit den benutzerdefinierten Attribut Bytes gefüllt ist.
 
 `pdwLen`\
-[in, out] Gibt die maximale Anzahl von Bytes `ppBlob` an, die im Array zurückgegeben werden sollen, und gibt die Anzahl der Bytes zurück, die tatsächlich in das Array geschrieben wurden.
+[in, out] Gibt die maximale Anzahl von Bytes an, die im Array zurückgegeben werden sollen, `ppBlob` und gibt die Anzahl der Bytes zurück, die tatsächlich in das Array geschrieben wurden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn das benutzerdefinierte Attribut nicht vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben oder S_FALSE zurückgegeben, wenn das benutzerdefinierte Attribut nicht vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Legen `ppBlob` Sie den Parameter auf einen Nullwert fest, um die Anzahl der verfügbaren Attribute bytes zurückzugeben. Weisen Sie dann ein Array zu, und übergeben Sie dieses Array für den `ppBlob` Parameter.
+ Legen Sie den- `ppBlob` Parameter auf einen NULL-Wert fest, um die Anzahl der verfügbaren Bytes zurückzugeben. Weisen Sie dann ein Array zu, und übergeben Sie das Array für den `ppBlob` Parameter.
 
- Die Attributbytes stellen die Rohdaten des benutzerdefinierten Attributs dar.
+ Die Attribut Bytes stellen die Rohdaten des benutzerdefinierten Attributs dar.
 
- Wenn `ppBlob` die `pdwLen` und-Parameter auf einen NULL-Wert festgelegt sind, kann diese Methode verwendet werden, um zu bestimmen, ob das benutzerdefinierte Attribut nur vorhanden ist. Eine einfachere Alternative ist jedoch der Aufruf der [IsCustomAttributeDefined-Methode.](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
+ Wenn der `ppBlob` -Parameter und der- `pdwLen` Parameter auf einen NULL-Wert festgelegt sind, kann mit dieser Methode ermittelt werden, ob das benutzerdefinierte Attribut nur vorhanden ist. Eine einfachere Alternative besteht jedoch darin, die [iscustomattributedefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) -Methode aufzurufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

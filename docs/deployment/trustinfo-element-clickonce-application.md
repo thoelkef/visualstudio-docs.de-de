@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184431"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
@@ -87,7 +87,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.
 
 ## <a name="ipermission"></a>IPermission
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das- `IPermission` Element identifiziert vollständig eine Berechtigungs Klasse in der .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
+ Optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das- `IPermission` Element identifiziert vollständig eine Berechtigungs Klasse in der .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
 
 - `class`
 
@@ -117,14 +117,14 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      In diesem Beispiel schränkt die Deklaration für <xref:System.Security.Permissions.EnvironmentPermission> die Anwendung auf das ausschließliche Lesen der Umgebungsvariablen USERNAME ein, während die Deklaration für <xref:System.Security.Permissions.FileDialogPermission> der Anwendung die uneingeschränkte Verwendung aller <xref:System.Windows.Forms.FileDialog> -Klassen erlaubt.
 
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
- Dies ist optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
+ Optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
 
 - `permissionSetReference`
 
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der die Standardberechtigung bildet. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
- Dies ist optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
+ Optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
 
 - `Name`
 
@@ -135,10 +135,10 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der für diese Assembly erforderlich ist. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält das `requestedExecutionLevel` -Element. Dieses Element weist keine Attribute auf.
+ Optional. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält das `requestedExecutionLevel` -Element. Dieses Element weist keine Attribute auf.
 
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel
- Dies ist optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.
+ Optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.
 
 - `Level`
 
@@ -154,9 +154,9 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 
 - `uiAccess`
 
-   Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.
+   Optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.
 
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.
@@ -267,6 +267,6 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 </trustInfo>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

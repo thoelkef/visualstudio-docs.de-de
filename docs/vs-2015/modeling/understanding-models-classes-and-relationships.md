@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659556"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
@@ -26,7 +26,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
  In diesem Thema werden die zentralen Funktionen der DSL-Definition erläutert.
 
 ## <a name="the-dsl-definition"></a>Die DSL-Definition
- Wenn Sie `Dsl\DslDefinition.dsl` öffnen, ähnelt das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Fenster der folgenden Abbildung.
+ Wenn Sie öffnen `Dsl\DslDefinition.dsl` , [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ähnelt das Fenster der folgenden Abbildung.
 
  ![DSL-Designer](../modeling/media/dsl-designer.png "dsl_designer")
 
@@ -48,13 +48,13 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Diese Abbildung zeigt ein Modell, das vom Benutzer einer Musikbibliothek-DSL erstellt wurde. Musikalben werden durch Felder dargestellt, die Listen von Liedern enthalten. Künstler werden durch Runde in-Kurven-Felder dargestellt und sind mit den Alben verbunden, zu denen Sie beigetragen haben.
 
- ![Instanzmodell der generierten DSL](../modeling/media/music-instance.png "Music_Instance")
+ ![Instanzmodell für generierte DSL](../modeling/media/music-instance.png "Music_Instance")
 
  Die DSL-Definition trennt zwei Aspekte. Die Darstellung der Modellelemente im Modell Diagramm wird mithilfe von Form Klassen und Verbindungs Klassen definiert. Die im Modell enthaltenen Informationen werden mithilfe von Domänen Klassen und Domänen Beziehungen definiert.
 
  Die folgende Abbildung zeigt die Domänen Klassen und Beziehungen in der DSL-Definition der Musikbibliothek.
 
- ![Einbetten und Verweis Beziehungen](../modeling/media/music-classes.png "Music_Classes")
+ ![Einbetten von und Verweisen auf Beziehungen](../modeling/media/music-classes.png "Music_Classes")
 
  Die Abbildung zeigt vier Domänen Klassen: Musik, Album, Artist und Song. Die Domänen Klassen definieren Domänen Eigenschaften, z. b. Name, Titel usw. Im instanzmodell werden die Werte einiger dieser Eigenschaften im Diagramm angezeigt.
 
@@ -107,7 +107,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 ### <a name="the-explorer-displays-the-embedding-tree"></a>Der Explorer zeigt den Einbettungs Baum an.
  Die DSL-Definition erstellt außerdem einen Explorer, den Benutzer neben Ihrem Modell Diagramm sehen.
 
- ![Generierter Explorer von DSL](../modeling/media/music-explorer.png "Music_Explorer")
+ ![Generierter Explorer für DSL](../modeling/media/music-explorer.png "Music_Explorer")
 
  Im Explorer werden alle Elemente im Modell angezeigt, auch diejenigen, für die Sie keine Formen definiert haben. Es zeigt Elemente und Einbettungs Beziehungen, aber keine Verweis Beziehungen.
 
@@ -125,18 +125,18 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  In der folgenden Abbildung ist die Linie zwischen der Domänen Klasse **Verleger** und der **publishercatalog** -Domänen Beziehung die Quell Rolle. Die Linie zwischen der Domänen Beziehung und der Domänen Klasse des **Albums** ist die Zielrolle.
 
- ![Rollen und Eigenschaften.](../modeling/media/propertycode.png "Propertycode")
+ ![Rollen und Eigenschaften](../modeling/media/propertycode.png "Propertycode")
 
  Die einer Beziehung zugeordneten Namen sind besonders wichtig, wenn Sie Programmcode schreiben, der das Modell durchläuft. Wenn Sie z. b. die DSL-Projekt Mappe erstellen, verfügt der generierte Klassen Herausgeber über einen Eigenschaften Katalog, der eine Auflistung von Alben ist. Das Klassen Album verfügt über einen Eigenschaften Herausgeber, bei dem es sich um eine einzelne Instanz der Klasse Publisher handelt.
 
  Wenn Sie in einer DSL-Definition eine Beziehung erstellen, werden den Eigenschafts-und Beziehungs Namen Standardwerte zugewiesen. Sie können Sie jedoch ändern.
 
 ## <a name="multiplicities"></a>Multiplizitäten
- Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0.. \*) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
+ Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0.. \* ) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
 
- Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der `Multiplicity`-Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
+ Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der- `Multiplicity` Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
 
-|Multiplizitätstyp|Beschreibung|
+|Multiplizitätstyp|BESCHREIBUNG|
 |-----------------------|-----------------|
 |0.. * (null bis viele)|Jede Instanz der Domänen Klasse kann über mehrere Instanzen der Beziehung oder keine Instanzen der Beziehung verfügen.|
 |0.. 1 (null bis eins)|Jede Instanz der Domänen Klasse kann nicht mehr als eine Instanz der Beziehung oder keine Instanzen der Beziehung aufweisen.|
@@ -152,5 +152,5 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Eine abgeleitete Beziehung spezialisiert ihre Basis Beziehung. Die Domänen Klassen, mit denen Sie verknüpft ist, sollten von oder den gleichen Klassen abgeleitet werden, die durch die Basis Beziehung verknüpft sind. Wenn eine Verknüpfung der abgeleiteten Beziehung in einem Modell erstellt wird, handelt es sich um eine Instanz der abgeleiteten und der Basis Beziehungen. Sie können im Programmcode zum umgekehrten Ende der Verknüpfung navigieren, indem Sie die Eigenschaften verwenden, die entweder von der Basis oder von der abgeleiteten Klasse generiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Domänen Beziehungen in der generierten API](../misc/domain-relationships-in-the-generated-api.md) [DSL-Tools Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

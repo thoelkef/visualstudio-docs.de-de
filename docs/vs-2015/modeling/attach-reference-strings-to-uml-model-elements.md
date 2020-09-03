@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672795"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Anfügen von Referenzzeichenfolgen an UML-Modellelemente
@@ -40,7 +40,7 @@ Sie können Code schreiben, um beliebige Zeichenfolgen an Modellelemente anzufü
 |`element.GetReferences(name)`|Gibt alle `IReference`-Objekte zurück, die mit `element` verknüpft sind und den angegebenen `name` aufweisen.|
 |`element.DeleteAllReferences(name)`|Gibt alle `IReference`-Objekte zurück, die mit dem Element verknüpft sind und den angegebenen Namen aufweisen.|
 |`reference.Delete()`|Löscht dieses `IReference`.|
-|`ReferenceConstants.WorkItem`|Der zum Benennen von Arbeitsaufgabenverweisen verwendete Wert.|
+|`ReferenceConstants.WorkItem`|Der zum Benennen von Arbeitselementeverweisen verwendete Wert.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren eines Link Handlers für Arbeitselemente](../modeling/define-a-work-item-link-handler.md) [definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)

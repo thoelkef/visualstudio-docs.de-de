@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
+title: 'Idebugsymbolprovider:: gettypeer byname | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719186"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
@@ -45,19 +45,19 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Parameter
 `pszClassName`\
-[in] Der Symbolname.
+in Der Symbol Name.
 
 `nameMatch`\
-[in] Wählt den Typ der Übereinstimmung aus, z. B. groß, wenn die Groß-/Kleinschreibung beachtet wird. Ein Wert [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) aus der NAME_MATCH-Enumeration.
+in Wählt den Typ der Übereinstimmung aus, z. b. Groß-/Kleinschreibung. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
 
 `ppField`\
-[out] Gibt den Symboltyp als [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück.
+vorgenommen Gibt den Symboltyp als [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode ist eine generische Version von [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
+ Bei dieser Methode handelt es sich um eine generische Version von [getclasstypeer byname](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

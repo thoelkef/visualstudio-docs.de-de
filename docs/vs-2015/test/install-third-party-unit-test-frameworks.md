@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660514"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installieren von Frameworks für Komponententests von Drittanbietern
@@ -20,7 +20,7 @@ ms.locfileid: "72660514"
 
 Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponententests ausgeführt werden, für den eine Adapterschnittstelle für den Explorer entwickelt wurde. Das Installationsprogramm des Frameworks installiert die Binarys und fügt Visual Studio-Projektvorlagen für die von ihm unterstützten Sprachen hinzu. Wenn Sie ein Projekt mit der Vorlage erstellen, wird das Framework beim Test-Explorer registriert. Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen. Der Test-Explorer kann sie alle ausführen.
 
- **Voraussetzungen**
+ **Anforderungen**
 
 - Visual Studio Enterprise, Visual Studio Professional
 
@@ -52,11 +52,11 @@ Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponentente
 
 4. Öffnen Sie [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-5. Wählen Sie **Durchsuchen** aus.
+5. Wählen Sie **Durchsuchen**.
 
 6. Erweitern Sie in der Liste **Kategorie** den Knoten **Tools**, und wählen Sie dann **Test** aus.
 
 7. Wählen Sie in der Ergebnisliste ein Framework aus, um in Visual Studio Gallery zu der Seite für das Tool zu gelangen.
 
-## <a name="see-also"></a>Siehe auch
- [Komponententest für Code](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Komponententests für Ihren Code](../test/unit-test-your-code.md)

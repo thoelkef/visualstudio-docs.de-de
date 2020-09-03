@@ -17,20 +17,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f01495e4238461d0b1dfe5a13a208b528df1581f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540295"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -39,7 +39,7 @@ ms.locfileid: "85540295"
 ## <a name="rule-description"></a>Beschreibung der Regel
  In den meisten Programmiersprachen gibt es keine Standard Implementierung des Gleichheits Operators (= =) für Werttypen. Wenn Ihre Programmiersprache Operator Überladungen unterstützt, sollten Sie die Implementierung des Gleichheits Operators in Erwägung gezogen. Das Verhalten sollte mit dem von identisch sein <xref:System.Object.Equals%2A> .
 
- Der Standard Gleichheits Operator kann nicht in einer überladenen Implementierung des Gleichheits Operators verwendet werden. Dies führt zu einem Stapelüberlauf. Um den Gleichheits Operator zu implementieren, verwenden Sie die Object. gleich-Methode in der Implementierung. Zum Beispiel:
+ Der Standard Gleichheits Operator kann nicht in einer überladenen Implementierung des Gleichheits Operators verwendet werden. Dies führt zu einem Stapelüberlauf. Um den Gleichheits Operator zu implementieren, verwenden Sie die Object. gleich-Methode in der Implementierung. Beispiel:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset | Microsoft-Dokumentation
+title: 'IDebugFunctionPosition2:: gezu ffset | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ecff2d4bc287cb4ece9989dc3ed371c7786264e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180923"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
@@ -40,11 +40,11 @@ int GetOffset(
   
 #### <a name="parameters"></a>Parameter  
  `pPosition`  
- [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Position der Funktion in einem Dokument gefüllt ist.  
+ [in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Position der Funktion in einem Dokument ausgefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178926"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Anzeigen von Daten im Debugger
@@ -39,9 +39,9 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger bietet eine Vielzahl 
  DataTips sind mit die nützlichsten Werkzeuge zum Anzeigen von Informationen über Variablen und Objekte während des Debuggens. Wenn sich der Debugger im Unterbrechungsmodus befindet, können Sie den Wert einer Variablen innerhalb des aktuellen Gültigkeitsbereichs anzeigen, indem Sie den Mauszeiger in einem Quellcodefenster über der Variablen platzieren. Weitere Informationen finden Sie unter [Anzeigen von Datenwerten als Datentipps](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  
   
 ## <a name="visualizers"></a>Schnellansichten  
- Schnellansichten sind eine neue Komponente von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger, mit der Inhalte von Objekten oder Variablen in übersichtlicher Weise angezeigt werden können. Mit HTML-Schnellansichten lässt sich beispielsweise eine HTML-Zeichenfolge so anzeigen, wie sie ein Browser interpretieren und anzeigen würde. Schnellansichten sind über DataTips erreichbar, die Fenster **Überwachung** , **Auto** , **Lokal** oder das Dialogfeld **Schnellüberwachung** . Weitere Informationen finden Sie unter [Create Custom Visualizers (Erstellen benutzerdefinierter Schnellansichten)](../debugger/create-custom-visualizers-of-data.md).  
+ Schnellansichten sind eine neue Komponente von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger, mit der Inhalte von Objekten oder Variablen in übersichtlicher Weise angezeigt werden können. Mit HTML-Schnellansichten lässt sich beispielsweise eine HTML-Zeichenfolge so anzeigen, wie sie ein Browser interpretieren und anzeigen würde. Schnellansichten sind über DataTips erreichbar, die Fenster **Überwachung** , **Auto** , **Lokal** oder das Dialogfeld **Schnellüberwachung** . Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Visualisierungen](../debugger/create-custom-visualizers-of-data.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Grundlagen](../debugger/debugger-basics.md)   
  [Befehlsfenster](../ide/reference/command-window.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)

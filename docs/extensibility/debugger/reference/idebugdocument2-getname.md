@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: 'IDebugDocument2:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731970"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-Ruft den Namen des Dokuments in einem von mehreren Formularen ab.
+Ruft den Namen des Dokuments in einer von mehreren Formularen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetName( 
 
 ## <a name="parameters"></a>Parameter
 `gnType`\
-[in] Ein Wert [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) aus der GETNAME_TYPE-Enumeration, der den zurückzugebenden Namentyp bestimmt.
+in Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der den Typ des zurück zugebende namens bestimmt.
 
 `pbstrFileName`\
-[out] Gibt eine Zeichenfolge zurück, die den Dokumentnamen enthält.
+vorgenommen Gibt eine Zeichenfolge zurück, die den Dokumentnamen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode kann z. B. den Namen des Dokuments als Titel oder als Dateinamen oder sogar als Teil eines Dateinamens zurückgeben.
+ Diese Methode kann z. b. den Namen des Dokuments als Titel oder als Dateinamen oder sogar als Teil eines Datei namens zurückgeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

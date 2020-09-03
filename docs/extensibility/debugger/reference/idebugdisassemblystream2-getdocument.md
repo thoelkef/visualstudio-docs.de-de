@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: GetDocument | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732186"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
@@ -43,16 +43,16 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Parameter
 `bstrDocumentUrl`\
-[in] Die Dokument-URL.
+in Die Dokument-URL.
 
 `ppDocument`\
-[out] Gibt ein [IDebugDocument2-Objekt](../../../extensibility/debugger/reference/idebugdocument2.md) zurück, das das Dokument darstellt.
+vorgenommen Gibt ein [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Objekt zurück, das das Dokument darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird von Debugmodulen implementiert, die Textdokumente enthalten, die nicht in einer tatsächlichen Datei gespeichert sind.
+ Diese Methode wird von Debug-engines implementiert, die über Textdokumente verfügen, die nicht in einer tatsächlichen Datei gespeichert sind.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

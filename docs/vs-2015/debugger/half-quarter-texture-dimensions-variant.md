@@ -1,5 +1,5 @@
 ---
-title: Halb-/ Viertel-Textur Dimensionen Variante | Microsoft-Dokumentation
+title: Halb-/Viertel-Texturdimensionsvariante | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161154"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Halb-/Viertel-Texturdimensionsvariante
@@ -46,6 +46,6 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
 ## <a name="example"></a>Beispiel  
  Diese Variante ändert die Größe von Texturen vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.  
   
-## <a name="see-also"></a>Siehe auch  
- [Mipmap-Generierungsvariante](../debugger/mip-map-generation-variant.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [MIP-Map-Generierungs Variante](../debugger/mip-map-generation-variant.md)   
  [BC-Texturkomprimierungsvariante](../debugger/bc-texture-compression-variant.md)

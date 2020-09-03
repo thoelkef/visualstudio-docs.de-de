@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPortSupplier | Microsoft Docs
+title: 'IDebugCoreServer2:: getportsupplier | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a33fafae142ef0628130d48a9a84d10b408924c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733076"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
-Ruft einen bestimmten Portlieferanten ab.
+Ruft einen bestimmten Port Lieferanten ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int GetPortSupplier( 
 
 ## <a name="parameters"></a>Parameter
 `guidPortSupplier`\
-[in] GUID des abrufbaren Portlieferanten.
+in GUID des abzurufenden Port Anbieters.
 
 `ppPortSupplier`\
-[out] Gibt ein [IDebugPortSupplier2-Objekt](../../../extensibility/debugger/reference/idebugportsupplier2.md) zurück, das den gewünschten Portlieferanten darstellt.
+vorgenommen Gibt ein [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) -Objekt zurück, das den gewünschten Port Lieferanten darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

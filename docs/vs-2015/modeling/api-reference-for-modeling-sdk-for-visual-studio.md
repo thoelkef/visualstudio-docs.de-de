@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 65f8703597d6297afde6e2685594784fdd1d755c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672843"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
@@ -42,9 +42,9 @@ Das Visual Studio-SDK für Visualisierung und Modellierung bietet die Plattform,
 |[Microsoft. VisualStudio. Modeling. Integration](/previous-versions/ee904412(v=vs.140))|Die ModelBus-API, mit der Sie unterschiedliche Modelle integrieren können.|
 |[Microsoft. VisualStudio. Modeling. Integration. Picker](/previous-versions/ee904394(v=vs.140))|Das Dialogfeld, in dem Benutzer zu Modellen und Elementen navigieren können, um ModelBus-Verweise zu erstellen.|
 |`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Der Auswahl Dienst.|
-|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|ModelBus-Adapter Framework für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|ModelBus-Adapter Framework für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |[Microsoft. VisualStudio. Modeling. Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|Das Auswahl Dialogfeld, in dem Benutzer zu Modellen und Elementen navigieren können, um ModelBus-Verweise zu erstellen.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Die Schnittstelle zwischen DSLs und [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Die Schnittstelle zwischen DSLs und [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Ermöglicht das Definieren von Kontextmenü Befehlen (Kontextmenü).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Ermöglicht das Definieren von Validierungs Einschränkungen.|
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft-Dokumentation
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetResult | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73227762270fe4e22e6edc2643ede2d1e7a9bd70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148721"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft das Ergebnis der Auswertung des Ausdrucks ab.  
+Ruft das Ergebnis der Ausdrucks Auswertung ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int GetResult( 
   
 #### <a name="parameters"></a>Parameter  
  `ppResult`  
- [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das das Ergebnis der Auswertung des Ausdrucks darstellt.  
+ vorgenommen Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das das Ergebnis der Ausdrucks Auswertung darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Das zurückgegebene [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt enthält den Wert des ausgewerteten Ausdrucks. Beachten Sie, dass dieser Wert kann einen komplexen Wert wie z. B. ein Array sein, aber das Endergebnis muss einen numerischen oder string-Wert, der dem Benutzer angezeigt wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Das zurückgegebene [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt enthält den Wert des ausgewerteten Ausdrucks. Beachten Sie, dass es sich bei diesem Wert um einen komplexen Wert, z. b. ein Array, handeln kann, das Endergebnis jedoch ein numerischer Wert oder ein Zeichen folgen Wert sein muss  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

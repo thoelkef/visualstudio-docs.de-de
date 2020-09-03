@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281083"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
@@ -64,7 +64,7 @@ Wenn Ihre Anwendung ein typisiertes DataSet verwendet, können Sie stark typisie
 
 ## <a name="data-update-events"></a>Daten Aktualisierungs Ereignisse
 
-|Ereignis|Beschreibung|
+|Ereignis|BESCHREIBUNG|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte wird geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen neuen Wert.|
 |<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen Wert an Sie.|
@@ -207,7 +207,7 @@ Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spalteninde
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Vorgehensweise: Überprüfen von Daten im Windows Forms DataGridView-Steuerelement](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)

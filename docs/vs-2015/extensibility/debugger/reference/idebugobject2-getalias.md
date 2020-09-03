@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias | Microsoft-Dokumentation
+title: 'IDebugObject2:: getalias | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b05d416da41265f6727df843b1b686fcfe5107f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194615"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Alias, der dieses Objekt zugeordnete ab, sofern vorhanden.  
+Ruft den Alias ab, der diesem-Objekt zugeordnet ist, sofern vorhanden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int GetAlias(
   
 #### <a name="parameters"></a>Parameter  
  `ppAlias`  
- [out] Gibt eine [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) Objekt, das den Alias für dieses Objekt darstellt, andernfalls einen null-Wert.  
+ vorgenommen Gibt ein [idebugalias](../../../extensibility/debugger/reference/idebugalias.md) -Objekt zurück, das den Alias für dieses Objekt darstellt. Andernfalls wird ein NULL-Wert zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Erstellt ein Alias für ein Objekt durch einen Aufruf der [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Alias für ein Objekt wird mit einem Aufrufen der Methode " [kreatealias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) " erstellt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

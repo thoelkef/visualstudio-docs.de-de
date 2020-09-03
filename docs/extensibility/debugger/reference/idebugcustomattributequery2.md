@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2 | Microsoft Docs
+title: IDebugCustomAttributeQuery2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732490"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
-Bestimmt das Vorhandensein eines benutzerdefinierten Attributs für dieses Feld und gibt, falls vorhanden, die Attributinformationen zurück.
+Bestimmt, ob ein benutzerdefiniertes Attribut für dieses Feld vorhanden ist, und gibt, sofern vorhanden, die Attributinformationen zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,32 +30,32 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Symbolanbieter implementiert diese Schnittstelle für dasselbe Objekt, das [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) implementiert, um benutzerdefinierte Attribute zu unterstützen.
+ Ein Symbol Anbieter implementiert diese Schnittstelle für das gleiche Objekt, das [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) implementiert, um benutzerdefinierte Attribute zu unterstützen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Verwenden Sie [QueryInterface,](/cpp/atl/queryinterface) um diese Schnittstelle von der [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) abzufragen.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Verwenden Sie [QueryInterface](/cpp/atl/queryinterface) , um diese Schnittstelle von der [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle abzurufen.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der **IDebugCustomAttributeQuery-Schnittstelle.**
+ In der folgenden Tabelle werden die Methoden der **idebugcustomattributequery** -Schnittstelle angezeigt.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Bestimmt, ob ein benutzerdefiniertes Attribut nach Namen vorhanden ist.|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Bestimmt, ob ein benutzerdefiniertes Attribut anhand des Namens vorhanden ist.|
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Ruft die Attributinformationen für das angegebene benutzerdefinierte Attribut ab.|
 
- Zusätzlich zu den **IDebugCustomAttributeQuery-Methoden** `IDebugCustomAttributeQuery2` implementiert die folgende Methode:
+ Zusätzlich zu den **idebugcustomattributequery** -Methoden `IDebugCustomAttributeQuery2` implementiert die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Ruft einen Enumerator für alle benutzerdefinierten Attribute ab, die diesem Feld zugeordnet sind.|
+|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Ruft einen Enumerator für alle benutzerdefinierten Attribute ab, die an dieses Feld angefügt sind.|
 
 ## <a name="remarks"></a>Bemerkungen
- Die [IEnumDebugCustomAttributes-Methode](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) kann einen Enumerator für alle benutzerdefinierten Attribute zurückgeben, die für dieses Feld definiert sind.
+ Die [ienumdebugcustomattribute](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) -Methode kann einen Enumerator für alle für dieses Feld definierten benutzerdefinierten Attribute zurückgeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

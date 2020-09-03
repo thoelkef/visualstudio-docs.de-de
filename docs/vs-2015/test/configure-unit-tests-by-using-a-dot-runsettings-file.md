@@ -9,10 +9,10 @@ caps.latest.revision: 28
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9779dd685ad662cd0761dc85be58d0dbb3ccf0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660653"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer .runsettings-Datei
@@ -39,11 +39,11 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
 
 3. Klicken Sie im Menü **Test** auf **Testeinstellungen**und dann **Datei für Testeinstellungen auswählen**.
 
-   Sie können mehr als eine \*.runsettings-Datei in der Projektmappe erstellen und im Menü **Testeinstellungen** festlegen, dass die Dateien zu unterschiedlichen Zeitpunkten aktiviert oder deaktiviert werden.
+   Sie können mehr als eine \*RUNSETTINGS-Datei in der Projektmappe erstellen und im Menü **Testeinstellungen** festlegen, dass die Dateien zu unterschiedlichen Zeitpunkten aktiviert oder deaktiviert werden.
 
-   ![Aktivieren einer Test Lauf Einstellungsdatei](../test/media/runsettings-1.png "RunSettings-1")
+   ![Aktivieren einer Datei für Testlaufeinstellungen](../test/media/runsettings-1.png "RunSettings-1")
 
-## <a name="example"></a>Kopieren dieser RUNSETTINGS-Beispieldatei
+## <a name="copy-this-example-runsettings-file"></a><a name="example"></a>Kopieren dieser RUNSETTINGS-Beispieldatei
  Im Folgenden finden Sie eine typische *.runsettings-Datei. Jedes Element der Datei ist optional, weil jeder Wert über einen Standardwert verfügt.
 
 ```xml
@@ -123,7 +123,7 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
 
 ### <a name="test-run-configuration"></a>Testlaufkonfiguration
 
-|Knoten|Default|Werte|
+|Knoten|Standard|Werte|
 |----------|-------------|------------|
 |`ResultsDirectory`||Das Verzeichnis, in dem die Testergebnisse gespeichert werden.|
 |`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Dadurch wird angegeben, welche Version des Komponententest-Frameworks verwendet wird, um die Tests zu ermitteln und auszuführen. Diese kann sich von der Version der .NET-Plattform unterscheiden, die Sie in den Buildeigenschaften des Komponententestprojekts angeben.|
@@ -149,9 +149,9 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
 ### <a name="mstest-run-settings"></a>MSTest-Testlaufeinstellungen
  Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die über das `[TestMethod]` -Attribut verfügen.
 
-|Konfiguration|Default|Werte|
+|Konfiguration|Standard|Werte|
 |-------------------|-------------|------------|
-|ForcedLegacyMode|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf `true` fest, um den älteren Testadapter zu verwenden.<br /><br /> Beispielsweise können Sie diesen verwenden, wenn Sie eine app.config-Datei für einen Komponententest angegeben haben.<br /><br /> Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
+|ForcedLegacyMode|false|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf `true` fest, um den älteren Testadapter zu verwenden.<br /><br /> Beispielsweise können Sie diesen verwenden, wenn Sie eine app.config-Datei für einen Komponententest angegeben haben.<br /><br /> Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
 |IgnoreTestImpact|False|Die Testauswirkungensfunktion priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder von Microsoft Test-Manager ausgeführt werden. Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [How to: Collect Data to Check Which Tests Should be Run After Code Changes (Vorgehensweise: Sammeln von Daten, um zu überprüfen, welche Tests nach Codeänderungen ausgeführt werden sollen](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
 |SettingsFile||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Außerdem können Sie eine Testeinstellungsdatei im Menü **Test**über die Optionen **Testeinstellungen**und dann **Datei für Testeinstellungen auswählen**angeben.<br /><br /> Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
 |KeepExecutorAliveAfterLegacyRun|False|Nachdem ein Testlauf abgeschlossen ist, wird MSTest beendet. Jeder Prozess, der als Teil des Tests gestartet wird, wird dann ebenfalls abgebrochen. Wenn der Test-Executor aktiv bleiben soll, legen Sie diese Konfiguration auf "true" fest.<br /><br /> Beispielsweise können Sie mit dieser Konfiguration erreichen, dass der Browser zwischen Tests der codierten UI aktiv bleibt.|
@@ -159,8 +159,8 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
 |CaptureTraceOutput|true|Mithilfe von Trace.WriteLine können Sie über Ihre Testmethode in die Debugablaufverfolgung schreiben. Mit dieser Konfiguration können Sie diese Debugablaufverfolgungen deaktivieren.|
 |DeleteDeploymentDirectoryAfterTestRunIsComplete|true|Sie können das Bereitstellungsverzeichnis nach einem Testlauf beibehalten, indem Sie diesen Wert auf "false" festlegen.|
 |MapInconclusiveToFailed|False|Wenn ein Test einen nicht eindeutigen Status zurückgibt, wird er normalerweise dem Status "Übersprungen" im Test-Explorer zugeordnet. Wenn nicht eindeutige Tests als "Fehlgeschlagen" angezeigt werden sollen, verwenden Sie diese Konfiguration.|
-|InProcMode|False|Wenn die Tests im selben Prozess wie der MSTest-Adapter ausgeführt werden sollen, legen Sie diesen Wert auf "true" fest. Diese Einstellung führt zu einer geringen Leistungssteigerung. Wenn ein Test allerdings mit einer Ausnahme beendet wird, werden die anderen Tests nicht fortgesetzt.|
+|InProcMode|false|Wenn die Tests im selben Prozess wie der MSTest-Adapter ausgeführt werden sollen, legen Sie diesen Wert auf "true" fest. Diese Einstellung führt zu einer geringen Leistungssteigerung. Wenn ein Test allerdings mit einer Ausnahme beendet wird, werden die anderen Tests nicht fortgesetzt.|
 |AssemblyResolution|False|Sie können Pfade zu weiteren Assemblys angeben, wenn Komponententests gefunden und ausgeführt werden.  Verwenden Sie z. B. diese Pfade für Abhängigkeitsassemblys, die sich nicht im selben Verzeichnis wie die Testassembly befinden.  Um einen Pfad anzugeben, verwenden Sie ein „Directory Path“-Element.  Pfade können Umgebungsvariablen enthalten.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md) [Angeben von Test Einstellungen für Visual Studio-Tests](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

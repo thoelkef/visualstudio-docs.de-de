@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587081"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden des Fensters "Code Metrikergebnisse"
@@ -30,9 +30,9 @@ Das Fenster **Code Metrikergebnisse** wird automatisch angezeigt, wenn Sie Code 
 
 Sie können das Fenster Code Metrikergebnisse mithilfe einer der folgenden Menü Sequenzen anzeigen:
 
-- Wählen Sie im Menü **analysieren** die Option **Windows** > **Codemetrikergebnisse**aus.
+- Wählen Sie im Menü **analysieren** die Option **Windows**-  >  **Codemetrikergebnisse**aus.
 
-- Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Codemetrikergebnisse**aus.
+- Wählen Sie im Menü **Ansicht** die Option **andere**Ergebnisse der Windows-  >  **Codemetriken**aus.
 
 Das Fenster **Code Metrikergebnisse** wird geöffnet, auch wenn es keine Ergebnisse enthält.
 
@@ -106,7 +106,7 @@ Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitse
 
 4. Klicken Sie im Menü **Datei** auf **Alle speichern** , um das Arbeits Element zu speichern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
 - [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

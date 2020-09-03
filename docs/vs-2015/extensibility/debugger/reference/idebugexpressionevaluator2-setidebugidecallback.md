@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft-Dokumentation
+title: 'IDebugExpressionEvaluator2:: abrufungsdebugidecallback | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de8f67f8ba501a9c97ad1fd1d0de58711ae0c52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149020"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ermöglicht eine Debug-Engine einen Rückruf an der ausdrucksauswertung während der Initialisierung zu übergeben.  
+Ermöglicht es einer Debug-Engine, während der Initialisierung einen Rückruf an die Ausdrucks Auswertung zu übergeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,10 +39,10 @@ int SetIDebugIDECallback (
   
 #### <a name="parameters"></a>Parameter  
  `pCallback`  
- [in] Eine Schnittstelle für den Rückruf.  
+ in Die Schnittstelle für den Rückruf.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

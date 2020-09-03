@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs
+title: IDebugCoreServer3::D iagno-webdebug Fehler Error | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732951"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Versuche, zu ermitteln, warum eine automatische Anfügefunktion fehlgeschlagen ist.
+Versucht zu bestimmen, warum ein Automatisches Anfügen fehlgeschlagen ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>Parameter
 `pszUrl`\
-[in] Derzeit nicht verwendet; sollte immer auf einen Nullwert festgelegt werden.
+in Derzeit nicht verwendet; sollte immer auf einen NULL-Wert festgelegt werden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Im Folgenden sind andere typische Rückgabecodes:
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Im folgenden sind andere typische Rückgabecodes aufgeführt:
 
 |Code|BESCHREIBUNG|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Es kann nicht ermittelt werden, warum der Remoteserver das Debuggen nicht gestartet hat.|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Das Debuggen auf dem Remoteserver kann nicht ausgeführt werden, möglicherweise aufgrund unzureichender Berechtigungen oder weil das DEBUG-Verb nicht aktiviert ist.|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Es kann nicht bestimmt werden, warum der Remote Server das Debugging nicht starten konnte.|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Kann nicht auf einem Remote Server debuggt werden, möglicherweise aufgrund unzureichender Berechtigungen oder weil das DEBUG-Verb nicht aktiviert ist.|
 |`E_WEBDBG_DEBUG_VERB_BLOCKED`|Der Webserver wurde gesperrt und blockiert das DEBUG-Verb, das zum Aktivieren des Debuggens erforderlich ist.|
 
 ## <a name="see-also"></a>Weitere Informationen

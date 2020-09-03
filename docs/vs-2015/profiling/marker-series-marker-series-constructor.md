@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b42058e0501612acbf454df725a9f1631489d26e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155287"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series-Konstruktor
+# <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series-Konstruktor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Initialisiert eine neue Instanz der `marker_series`-Klasse.  
@@ -48,10 +48,10 @@ marker_series(
  `_ProviderGuid`  
  Die GUID des Anbieters der Reihe  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [marker_series-Klasse](../profiling/marker-series-class.md)

@@ -1,5 +1,5 @@
 ---
-title: SccCloseProject-Funktion | Microsoft-Dokumentation
+title: Scccloseproject-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d2364215f528f16d05ecf0c53b152f7334f4b4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156139"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion schließt ein Projekt, das das Ende einer bestimmten Sitzung markiert.  
+Diese Funktion schließt ein Projekt und markiert das Ende einer bestimmten Sitzung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,23 +33,23 @@ SCCRTN SccCloseProject (
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
 |SCC_OK|Das Projekt wurde erfolgreich geschlossen.|  
-|SCC_E_PROJNOTOPEN|Es ist kein Projekt geöffnet.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
+|SCC_E_PROJNOTOPEN|Zurzeit ist kein Projekt geöffnet.|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|  
   
-## <a name="remarks"></a>Hinweise  
- Die [SccOpenProject](../extensibility/sccopenproject-function.md) wird immer aufgerufen, bevor diese Funktion. Ein Aufruf dieser Funktion wird anschließend durch einen Aufruf an die `SccOpenProject` Funktion oder die [SccUninitialize](../extensibility/sccuninitialize-function.md), die beendet die Verbindung mit dem Quellcodeverwaltungssystem vollständig.  
+## <a name="remarks"></a>Bemerkungen  
+ Das [sccopenproject](../extensibility/sccopenproject-function.md) wird immer vor dieser Funktion aufgerufen. Auf einen aufzurufenden Befehl folgt entweder die- `SccOpenProject` Funktion oder die [sccuninitialize](../extensibility/sccuninitialize-function.md)-Funktion, die die Verbindung mit dem Quell Code Verwaltungssystem vollständig beendet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [SccOpenProject](../extensibility/sccopenproject-function.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
+ [Sccopumproject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

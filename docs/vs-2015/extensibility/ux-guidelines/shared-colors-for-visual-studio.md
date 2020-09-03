@@ -9,13 +9,13 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154643"
 ---
-# <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
+# <a name="shared-colors-for-visual-studio"></a>Freigegebene Farben für Visual Studio
 
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
@@ -27,20 +27,20 @@ Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:
 
 - **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Das Kombinationsfeld und die Animation erfüllen unterschiedliche Funktionen, und wenn sich die dem Kombinationsfeld zugeordnete Farbe ändert, eignet sie sich möglicherweise nicht mehr für Ihr Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.
 
-- **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination aus.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, sollte diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt wird, nicht verwendet werden. Andere Kombinationen aus Text- und Hintergrundfarbe können dazu führen, dass die Benutzeroberfläche unlesbar wird.
+- **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, sollte diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt wird, nicht verwendet werden. Andere Kombinationen aus Text- und Hintergrundfarbe können dazu führen, dass die Benutzeroberfläche unlesbar wird.
 
-- **Verwenden Sie steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände einiger Visual Studio-Steuerelemente sind keine separaten Rahmen- und Hintergrundfarben verfügbar. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
+- **Verwenden Sie Steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände einiger Visual Studio-Steuerelemente sind keine separaten Rahmen- und Hintergrundfarben verfügbar. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
 
 > [!IMPORTANT]
-> Verwenden Sie keine Token gefunden, die in den Kategorien "Startseite" oder "Cider".
+> Verwenden Sie keine Token, die in den Kategorien "Start Seite" oder "Cider" gefunden werden.
 
 ## <a name="command-structures"></a>Befehlsstrukturen
 
-### <a name="BKMK_CommandMenus"></a> Menüs
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Kreiert
 
-Menüs können an mehreren Stellen in Visual Studio auftreten: der Hauptmenüleiste, eingebettet in Dokument-oder Toolfenster oder beim Rechtsklicken an verschiedenen Stellen der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.
+Menüs können an mehreren Stellen in Visual Studio vorkommen: in der Hauptmenüleiste, eingebettet in Dokument-oder Tool Fenster, oder wenn Sie mit der rechten Maustaste an verschiedenen Positionen in der gesamten IDE klicken. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.
 
-![(Rote Linie) der Menüs](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
+![Menü (rote Linie)](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
 
 Empfohlen...
 - für die Erstellung eines benutzerdefinierten Menüs
@@ -54,7 +54,7 @@ als ausschließliche Hintergrundfarbe. Verwenden Sie immer die angegebene Kombin
 
 Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie einer optionalen Glyphe, die normalerweise für Menüs in einer Befehlsleiste verwendet wird.
 
-![Menütitel (rote Linie,)](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
+![Menütitel (rote Linie)](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
 
 Empfohlen...
 für die Erstellung eines benutzerdefinierten Menütitels
@@ -64,13 +64,13 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Standard für Menütitel](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")
 
@@ -78,7 +78,7 @@ Nicht empfohlen...
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Text)
 
@@ -94,15 +94,15 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Menütitel, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")
 
@@ -136,7 +136,7 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Menütitel, aufgerufen](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")
 
@@ -152,7 +152,7 @@ Nicht empfohlen...
 
   `Environment.CommandBarTextActive`
 
-  ![Menütitel mit Glyphe, gedrückt](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")
+  ![Menütitel mit Glyphe, aufgerufen](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")
 
   **Menütitel mit Glyphe**
 
@@ -166,13 +166,13 @@ Nicht empfohlen...
 
   Nur linke, obere und rechte Seite
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Menütitel mit Standardglyphe in deaktiviertem Zustand](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")
 
@@ -180,7 +180,7 @@ Nicht empfohlen...
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Text)
 
@@ -192,13 +192,13 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
 #### <a name="menu"></a>Menü
 
 Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, einem Kontrollkästchen oder einer Untermenü-Glyphe. Hintergrund- und Textfarbe ändern sich, wenn Sie darauf zeigen. Dieses Farbtoken ist eine Kombination aus Hintergrund-/Vordergrundfarbe.
 
-![(Rote Linie) der Menüelemente](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
+![Menüelemente (rote Linie)](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
 
 Empfohlen...
 für alle Dropdownlisten, die von einer Menü- oder Befehlsleiste geöffnet werden.
@@ -208,13 +208,13 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Menüstandard](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")
 
@@ -246,13 +246,13 @@ Nicht empfohlen...
 
   `Environment.CommandBarMenuSeparator`
 
-  Schatten
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  ![Im Menü](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")
+  ![Menü, aktiviert](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")
 
-  **Aktiviert**
+  **Überprüft**
 
   Häkchen
 
@@ -262,9 +262,9 @@ Nicht empfohlen...
 
   `Environment.CommandBarSelectedIcon`
 
-  ![Ausgewählte Menü](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")
+  ![Menü, ausgewählt](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")
 
-  **ausgewählt**
+  **Ausgewählt**
 
   Symbolhintergrund
 
@@ -274,17 +274,17 @@ Nicht empfohlen...
 
   `Environment.CommandBarSelectedBorder`
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Zeigen Sie die im Menü](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
+  ![Menü, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
 
-  **Menüelement**
+  **Menü Element**
 
   Hintergrund
 
@@ -298,9 +298,9 @@ Nicht empfohlen...
 
   `Environment.CommandBarMenuMouseOverSubmenuGlyph`
 
-  ![Menü "Wenn darauf gezeigt wird überprüft,](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")
+  ![Menü, wenn darauf gezeigt wird (aktiviert)](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")
 
-  **Aktiviert**
+  **Überprüft**
 
   Häkchen
 
@@ -310,9 +310,9 @@ Nicht empfohlen...
 
   `Environment.CommandBarHoverOverSelectedIcon`
 
-  ![Menü zeigen Sie ausgewählte](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")
+  ![Menü, wenn darauf gezeigt wird (ausgewählt)](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")
 
-  **ausgewählt**
+  **Ausgewählt**
 
   Symbolhintergrund
 
@@ -322,13 +322,13 @@ Nicht empfohlen...
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Menü, deaktiviert](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")
 
@@ -344,7 +344,7 @@ Nicht empfohlen...
 
   ![Menü, deaktiviert (geprüft)](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")
 
-  Aktiviert
+  Überprüft
 
   Häkchen
 
@@ -360,9 +360,9 @@ Die Befehlsleiste kann an mehreren Stellen in der Visual Studio-IDE vorkommen, v
 
 Generell sollte die von der Visual Studio-Umgebung bereitgestellte Befehlsleisten-Standardimplementierung verwendet werden. Der Standardmechanismus stellt sicher, dass alle visuellen Details ordnungsgemäß angezeigt werden und sich interaktive Elemente konsistent mit anderen Steuerelementen der Visual Studio-Befehlsleiste verhalten. Wenn Sie jedoch eine eigene Befehlsleiste erstellen müssen, ist darauf zu achten, sie anhand der folgenden Tokennamen passend zu gestalten.
 
-![(Rote Linie) der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
+![Befehlszeile (rote Linie)](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
 
-![(Rote Linie) der Schaltfläche "Überlauf"](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+![Schaltfläche "Überlauf" (rote Linie)](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
 
 Empfohlen...
 für Positionen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standardimplementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann.
@@ -376,7 +376,7 @@ Nicht empfohlen...
 
 Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Steuerelemente und kann eine beliebige Anzahl von Schaltflächen, unterteilten Schaltflächen, Dropdownmenüs, Kombinationsfeldern oder Menüs enthalten. Die Farben dieser Steuerelemente lassen sich anhand separater Tokennamen unterscheiden und werden an anderer Stelle in dieser Anleitung einzeln erörtert. Eine Trennlinie wird verwendet, um eine Befehlsleistengruppe in verwandte Untergruppen aufzuteilen.
 
-![Befehlszeilengruppe (rote Linie,)](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
+![Befehlszeilengruppe (rote Linie)](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
 
 Empfohlen...
 für Positionen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standardimplementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann.
@@ -386,11 +386,11 @@ Nicht empfohlen...
 
 - für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden
 
-  **Standard** (kein weiterer Zustand)
+  **Standard** (keine anderen Zustände)
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Hintergrund
 
@@ -414,9 +414,9 @@ Nicht empfohlen...
 
 #### <a name="command-icons"></a>Befehlssymbole
 
-![Befehlssymbol](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
+![Rote Linie – Befehlssymbol](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
 
-![Befehlssymbol](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
+![Rote Linie – Befehlssymbol](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
 
 Empfohlen...
 für alle Schaltflächen, die auf einer Befehlsleiste platziert werden.
@@ -426,17 +426,17 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Standardmäßiges Befehlssymbol Befehl](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")
+  ![Standardmäßiges Befehlssymbol](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")
 
-  **Default**
+  **Standard**
 
   Hintergrund
 
@@ -448,11 +448,11 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
-  ![Standardmäßiges Befehlssymbol ausgewählt Befehl](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")
+  ![Standardmäßiges Befehlssymbol ausgewählt](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")
 
-  **ausgewählt**
+  **Ausgewählt**
 
   Hintergrund
 
@@ -472,9 +472,9 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Zeigen Sie das Symbol der Befehl](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")
+  ![Befehlssymbol, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")
 
   **Standard, wenn darauf gezeigt wird**
 
@@ -492,7 +492,7 @@ Nicht empfohlen...
 
   `Environment.CommandBarBorder`
 
-  ![Symbol gezeigt wird, die ausgewählten Befehl](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")
+  ![Befehlssymbol, wenn darauf gezeigt wird (ausgewählt)](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")
 
   **Ausgewählt, wenn darauf gezeigt wird**
 
@@ -514,7 +514,7 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Befehlssymbol, aufgerufen](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")
 
@@ -534,13 +534,13 @@ Nicht empfohlen...
 
   `Environment.CommandBarBorder`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Befehlssymbol, deaktiviert](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")
 
@@ -556,14 +556,14 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
-#### <a name="BKMK_CommandComboBox"></a> Kombinationsfeld
+#### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Kombinations Feld
 
 > [!IMPORTANT]
 > Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)beschriebenen Farbtoken.
 
-![Kombinationsfeld (rote Linie,)](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Kombinationsfeld (rote Linie)](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
 Empfohlen...
 - für die Erstellung benutzerdefinierter Kombinationsfelder
@@ -575,13 +575,13 @@ Empfohlen...
 
 - wenn Sie Zugriff auf ein formatiertes Kombinationsfeld haben
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Kombinationsfeld (Eingabefeld)](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")
 
@@ -603,9 +603,9 @@ Empfohlen...
 
   Kein Trennzeichen
 
-  ![Kombinationsfeld-Dropdown&#45;gedrückt](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")
+  ![Kombinations Feld, Dropdown&#45;Schaltfläche](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -615,9 +615,9 @@ Empfohlen...
 
   `Environment.ComboBoxGlyph`
 
-  ![Das Kombinationsfeld&#47;löschen&#45;-Liste](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")
+  ![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")
 
-  **Dropdown-Liste**
+  **Dropdown Liste**
 
   Hintergrund
 
@@ -633,15 +633,15 @@ Empfohlen...
 
   `Environment.ComboBoxPopupBorder`
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Kombinationsfeld (Eingabefeld) bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")
+  ![Kombinationsfeld (Eingabefeld), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")
 
   **Eingabefeld**
 
@@ -663,9 +663,9 @@ Empfohlen...
 
   `Environment.ComboBoxMouseOverSeparator`
 
-  ![Das Kombinationsfeld&#47;löschen&#45;gedrückt, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")
+  ![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -675,9 +675,9 @@ Empfohlen...
 
   `Environment.ComboBoxMouseOverGlyph`
 
-  ![Das Kombinationsfeld&#47;löschen&#45;-Liste bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")
+  ![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")
 
-  **Dropdown-Liste**
+  **Dropdown Liste**
 
   Hintergrund (Menüelement)
 
@@ -691,13 +691,13 @@ Empfohlen...
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Komponente
 
   Element
 
-  Tokenname: Color.Category
+  Tokenname: Color.category
 
   ![Kombinationsfeld (Eingabefeld) mit Fokus](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")
 
@@ -719,9 +719,9 @@ Empfohlen...
 
   `Environment.ComboBoxFocusedButtonSeparator`
 
-  ![Das Kombinationsfeld&#47;löschen&#45;ab-Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")
+  ![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -737,9 +737,9 @@ Empfohlen...
 
   Element
 
-  Tokenname: Color.Category
+  Tokenname: Color.category
 
-  ![Kombinationsfeld (Eingabefeld) gedrückt](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")
+  ![Kombinationsfeld (Eingabefeld) im gedrückten Zustand](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")
 
   **Eingabefeld**
 
@@ -759,9 +759,9 @@ Empfohlen...
 
   `Environment.ComboBoxMouseDownSeparator`
 
-  ![Das Kombinationsfeld&#47;löschen&#45;ab-Schaltfläche gedrückt](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")
+  ![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "gedrückt"](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -771,9 +771,9 @@ Empfohlen...
 
   `Environment.ComboBoxMouseDownGlyph`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
-  ![Kombinationsfeld (Eingabefeld) deaktiviert](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")
+  ![Kombinationsfeld (Eingabefeld), deaktiviert](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")
 
   **Eingabefeld**
 
@@ -793,24 +793,24 @@ Empfohlen...
 
   Kein Trennzeichen
 
-  ![Das Kombinationsfeld&#47;löschen&#45;gedrückt deaktiviert](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")
+  ![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "deaktiviert"](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Glyphe)
 
   `Environment.ComboBoxDisabledGlyph`
 
-#### <a name="BKMK_CommandDropDown"></a> Dropdown-Liste
+#### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Dropdown
 
 > [!IMPORTANT]
 > Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)beschriebenen Farbtoken.
 
-![Drop&#45;nach unten (rote Linie)](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
+![Dropdown&#45;rote Linie ablegen](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
 
 Empfohlen...
 für die Erstellung benutzerdefinierter Dropdownlisten-Steuerelemente
@@ -820,15 +820,15 @@ Nicht empfohlen...
 
 - für Kombinationsfelder oder unterteilte Schaltflächen
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten Auswahlfeld](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")
+  ![Dropdown&#45;Dropdown-Auswahlfeld](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")
 
   **Auswahlfeld**
 
@@ -848,21 +848,21 @@ Nicht empfohlen...
 
   Kein Trennzeichen
 
-  ![Drop&#45;gedrückt](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")
+  ![Dropdown&#45;Schaltfläche](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Glyphe)
 
   `Environment.DropDownGlyph`
 
-  ![Drop&#45;-Liste](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")
+  ![Dropdown&#45;Dropdown Liste](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")
 
-  **Dropdown-Liste**
+  **Dropdown Liste**
 
   Hintergrund
 
@@ -878,19 +878,19 @@ Nicht empfohlen...
 
   `Environment.DropDownPopupBorder`
 
-  Schatten
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten Auswahlfeld bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")
+  ![Dropdown&#45;Auswahlfeld bei Hover](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")
 
   **Auswahlfeld**
 
@@ -912,9 +912,9 @@ Nicht empfohlen...
 
   `Environment.DropDownButtonMouseOverSeparator`
 
-  ![Drop&#45;gedrückt, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")
+  ![Dropdown&#45;Schaltfläche beim Hover](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -924,9 +924,9 @@ Nicht empfohlen...
 
   `Environment.DropDownMouseOverGlyph`
 
-  ![Drop&#45;-Liste bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")
+  ![Dropdown Liste&#45;auf den Mauszeiger](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")
 
-  **Dropdown-Liste**
+  **Dropdown Liste**
 
   Hintergrund (Menüelement)
 
@@ -946,9 +946,9 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")
+  ![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")
 
   **Auswahlfeld**
 
@@ -968,9 +968,9 @@ Nicht empfohlen...
 
   `Environment.DropDownButtonMouseDownSeparator`
 
-  ![Drop&#45;ab-Schaltfläche gedrückt](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")
+  ![Schaltfläche "Drop&#45;Down" gedrückt](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -980,15 +980,15 @@ Nicht empfohlen...
 
   `Environment.DropDownMouseDownGlyph`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten Auswahlfeld deaktiviert](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")
+  ![Dropdown&#45;Auswahlfeld deaktiviert](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")
 
   Hintergrund
 
@@ -1006,21 +1006,21 @@ Nicht empfohlen...
 
   Kein Trennzeichen
 
-  ![Drop&#45;gedrückt deaktiviert](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")
+  ![Dropdown&#45;Schaltfläche "deaktiviert"](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")
 
   Hintergrund
 
-  N/V
+  –
 
   Vordergrund (Glyphe)
 
   `Environment.DropDownDisabledGlyph`
 
-#### <a name="split-button"></a>Trennschaltfläche
+#### <a name="split-button"></a>Unterteilte Schaltfläche
 
 Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdownlisten für unterteilte Schaltflächen sind Implementierungen der Befehlsleiste [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
-![Trennschaltfläche (rote Linie,)](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
+![Trennschaltfläche (rote Linie)](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
 
 Empfohlen...
 für die Erstellung einer benutzerdefinierten unterteilten Schaltfläche
@@ -1030,13 +1030,13 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Unterteilte Schaltfläche](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")
 
@@ -1044,7 +1044,7 @@ Nicht empfohlen...
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Text)
 
@@ -1056,21 +1056,21 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
   Trennzeichen
 
-  N/V
+  –
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Unterteilte Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")
+  ![Unterteilte Schaltfläche bei Hover](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")
 
   **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**
 
@@ -1102,9 +1102,9 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Unterteilte Schaltfläche gedrückt](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")
+  ![Geteilte Schaltfläche gedrückt](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")
 
   **Unterteilte Schaltfläche (gedrückt)**
 
@@ -1128,23 +1128,23 @@ Nicht empfohlen...
 
   Trennzeichen
 
-  N/V
+  –
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Unterteilte Schaltfläche, deaktiviert](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")
+  ![Trenn Schaltfläche deaktiviert](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")
 
   **Unterteilte Schaltfläche (deaktiviert)**
 
   Hintergrund
 
-  N/V
+  –
 
   Vordergrund (Text)
 
@@ -1156,16 +1156,16 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
   Trennzeichen
 
-  N/V
+  –
 
 #### <a name="more-options-and-overflow-buttons"></a>Schaltflächen "Weitere Optionen" und "Überlauf"
  Die Schaltfläche "Weitere Optionen" wird verwendet, wenn eine Befehlsleistengruppe angepasst werden kann, indem verwandte Befehlsleistenschaltflächen hinzugefügt oder entfernt werden. Die Schaltfläche "Überlauf" wird angezeigt, wenn eine Befehlsleiste aus Platzgründen in horizontaler Richtung abgeschnitten ist. Beim Klicken auf die Schaltfläche wird ein Menü mit den nicht angezeigten Befehlsleisten-Schaltflächen eingeblendet. Die Farben dieser beiden Schaltflächen werden über dieselbe Gruppe von Tokennamen gesteuert.
 
- ![Weitere Optionen (rote Linie,)](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303-058_MoreOptionsRedline")
+ ![Weitere Optionen (rote Linie)](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303-058_MoreOptionsRedline")
 
  Empfohlen...
 für die benutzerdefinierten Schaltflächen "Weitere Optionen" oder "Überlauf"
@@ -1173,13 +1173,13 @@ für die benutzerdefinierten Schaltflächen "Weitere Optionen" oder "Überlauf"
  Nicht empfohlen...
 für Schaltflächen mit einer von den Schaltflächen "Weitere Optionen" oder "Überlauf" abweichenden Funktionalität
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Weitere Optionen](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")
 
@@ -1197,19 +1197,19 @@ für Schaltflächen mit einer von den Schaltflächen "Weitere Optionen" oder "Ü
 
  `Environment.CommandBarOptionsGlyph`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Weitere Optionen bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")
+ !["Weitere Optionen", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")
 
  **Weitere Optionen**
 
- ![Bei einer mauszeigerbewegung über Overflow](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")
+ !["Überlauf", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")
 
  **Überlauf**
 
@@ -1229,13 +1229,13 @@ für Schaltflächen mit einer von den Schaltflächen "Weitere Optionen" oder "Ü
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Weitere Optionen gedrückt](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")
+ !["Weitere Optionen", aufgerufen](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")
 
  **Weitere Optionen**
 
- ![Überlauf gedrückt](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")
+ !["Überlauf", aufgerufen](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")
 
  **Überlauf**
 
@@ -1257,7 +1257,7 @@ für Schaltflächen mit einer von den Schaltflächen "Weitere Optionen" oder "Ü
 ### <a name="document-window-frame"></a>Dokumentfensterrahmen
  Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als separates Fenster vorkommen. Ein unverankertes Dokumentfenster, das sich außerhalb der IDE befindet, ist dennoch in einen Dokumentursprung eingebettet und verfügt über Hintergrund-, Rahmen-, Text- und Registerkartenfarben, die sich von den Farben der in der IDE angedockten Fenster nicht unterscheiden. Das Dokument ist jedoch von einem Rahmen umgeben, der über eigene Hintergrund-, Rahmen- und Textfarben verfügt. Wenn Toolfenster im Dokumentursprung angedockt sind, erben die enthaltenen Registerkarten ihr Verhalten und ihre Farbe von den Tokennamen des Dokumentfensters.
 
- ![Angedocktes Dokumentfenster (rote Linie,)](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")
+ ![Angedocktes Dokumentfenster (rote Linie)](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")
 
  **Angedocktes Dokumentfenster**
 
@@ -1271,13 +1271,13 @@ für alle Benutzeroberflächenelemente, die Sie auf das Dokumentfenster abstimme
  Nicht empfohlen...
 für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  Dokument: angedockt oder unverankert
 
@@ -1345,13 +1345,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Auf transparent festgelegt
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Rahmen mit Fokus, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")
 
@@ -1391,7 +1391,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Rahmen mit Fokus, aufgerufen](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")
 
@@ -1412,7 +1412,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 ### <a name="document-tabs"></a>Dokumentregisterkarten
  Dokumentregisterkarten befinden sich im Registerkartenkanal und zeigen an, welche Dokumente gerade geöffnet sind und welches das aktuell ausgewählte oder aktive Dokument ist. Toolfenster können ebenfalls im Dokument-Registerkartenkanal angedockt sein, wenn sie vom Benutzer dort platziert werden. In diesem Fall verwenden sie die gleichen Registerkartenfarben wie die Dokumentfenster. Wenn Sie Benutzeroberflächen erstellen, die grundsätzlich auf die Farben des Dokumentfensters abgestimmt sein sollen (einschließlich Designaktualisierungen oder bei Installation neuer Designs), verweisen Sie auf diese Farbtoken.
 
- ![(Rote Linie) der Registerkarte "Dokument"](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303-072_DocumentTabRedline")
+ ![Registerkarte "Dokument" (rote Linie)](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303-072_DocumentTabRedline")
 
  Empfohlen...
 für jede Benutzeroberfläche, die auf Dokumentregisterkarten abgestimmt sein soll, und wenn Designaktualisierungen oder neue Designfarben automatisch ausgewählt werden sollen.
@@ -1425,9 +1425,9 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
 - Die ausgewählte Registerkarte stellt das Dokument dar, das aktuell im Dokumentursprung angezeigt wird. Eine ausgewählte Registerkarte verfügt über einen Dokumentrahmen, der sich über den oberen Rand des Dokumentursprungs erstreckt.
 
-- Hintergrundregisterkarten sind Dokumentregisterkarten, die nicht der aktuell ausgewählten Registerkarte entsprechen. Sobald auf die Registerkarte geklickt wird, wird sie zur ausgewählten Registerkarte, die alle Hintergrund-, Rahmen- und Textfarben von den Tokennamen übernimmt.
+- Hintergrund Registerkarten sind Dokument Registerkarten, die nicht die derzeit ausgewählte Registerkarte sind. Nachdem Sie darauf geklickt haben, werden Sie zur ausgewählten Registerkarte und erhalten alle Hintergrund-, Rahmen-und Textfarben von den Tokennamen.
 
-  ![(Rote Linie) der Registerkarte "Dokument öffnen"](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")
+  ![Registerkarte "Dokument öffnen" (rote Linie)](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")
 
   Empfohlen...
   für die Erstellung benutzerdefinierter Dokumentregisterkarten
@@ -1438,13 +1438,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen
 
 #### <a name="selected-tab"></a>Ausgewählte Registerkarte
- **Mit Fokus**
+ **Im Vordergrund**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Ausgewählte Registerkarte mit Fokus](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")
 
@@ -1476,7 +1476,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Ausgewählte Registerkarte ohne Fokus](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")
 
@@ -1503,9 +1503,9 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
  `Environment.FileTabInactiveDocumentBorderBackground`
 
 #### <a name="background-tab"></a>Hintergrundregisterkarte
- **Default**
+ **Standard**
 
- ![Registerkarte "Hintergrund"](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")
+ ![Hintergrundregisterkarte](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")
 
  **Hintergrundregisterkarte, Standard**
 
@@ -1523,11 +1523,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Auf dieselbe Farbe wie der Hintergrund festgelegt
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
- ![Registerkarte "Hintergrundvorschau"](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")
+ ![Hintergrundregisterkarte, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")
 
- **Registerkarte "Hintergrund", wenn darauf gezeigt wird**
+ **Hintergrundregisterkarte, wenn darauf gezeigt wird**
 
  Hintergrund
 
@@ -1549,7 +1549,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
 Die Vorschauregisterkarte wird auf der rechten Seite des Dokument-Registerkartenkanals angezeigt, wenn der Benutzer auf ein Element im Toolfenster des Projektmappen-Explorers klickt. Sie fungiert als Dokumentvorschau und gibt dem Benutzer die Möglichkeit, das Dokument auf der linken Seite des Dokument-Registerkartenkanals geöffnet zu lassen. Es kann jeweils nur eine Vorschauregisterkarte geöffnet sein. Vorschauregisterkarten können (wie geöffnete Registerkarten) sowohl im Hintergrund geöffnet als auch ausgewählt sein und im aktiven Zustand mit oder ohne Fokus verfügbar sein.
 
-![(Rote Linie) der Registerkarte "Vorschau"](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
+![Registerkarte "Vorschau" (rote Linie)](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
 
 Empfohlen...
 wenn Sie eine vorläufige Vorschau erstellen und Elemente mit der Farbe der aktuellen Vorschauregisterkarte übereinstimmen sollen.
@@ -1559,15 +1559,15 @@ Nicht empfohlen...
 
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen
 
-  **Ausgewählte vorschauregisterkarte: Mit Fokus**
+  **Ausgewählte Vorschauregisterkarte: mit Fokus**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Vorschauregisterkarte mit Fokus](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")
+  ![Registerkarte "Vorschau" mit Fokus](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")
 
   **Vorschauregisterkarte mit Fokus**
 
@@ -1589,17 +1589,17 @@ Nicht empfohlen...
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
-  **Ausgewählte vorschauregisterkarte: Ohne Fokus**
+  **Ausgewählte Vorschauregisterkarte: ohne Fokus**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Registerkarte "Vorschau" ohne Fokus](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")
 
-  **Vorschauregisterkarte**
+  **Vorschauregisterkarte ohne Fokus**
 
   Hintergrund
 
@@ -1617,17 +1617,17 @@ Nicht empfohlen...
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Registerkarte "Vorschau" Hintergrund: Standardwert**
+  **Hintergrund-/Vorschauregisterkarte: Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Hintergrund-Registerkarte "Vorschau"](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")
+  ![Registerkarte "Hintergrund"](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")
 
-  **Vorschau-/ Hintergrundregisterkarte**
+  **Vorschau-/Hintergrundregisterkarte**
 
   Hintergrund
 
@@ -1643,17 +1643,17 @@ Nicht empfohlen...
 
   Auf dieselbe Farbe wie der Hintergrund festgelegt
 
-  **Registerkarte "Vorschau" Hintergrund: Wenn darauf gezeigt wird**
+  **Hintergrund-/Vorschauregisterkarte: Hoverzustand**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Registerkarte "Vorschau Hintergrundvorschau"](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")
+  ![Registerkarte "Hintergrundvorschau", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")
 
-  **Vorschau-/ Hintergrundregisterkarte wenn darauf gezeigt wird**
+  **Vorschau-/Hintergrundregisterkarte, wenn darauf gezeigt wird**
 
   Hintergrund
 
@@ -1673,7 +1673,7 @@ Nicht empfohlen...
 
 Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dokumentüberlauf-Dropdownmenü, das mithilfe der **CommandBarMenu** -Farben (siehe [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)) gesteuert wird, zeigt eine Liste aller geöffneten Dokumente (sichtbar und unsichtbar) an. Die Überlauf-Glyphe ändert sich abhängig davon, ob alle geöffneten Dokumente im Registerkartenkanal angezeigt werden.
 
-![(Rote Linie) der Überlauf](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+!["Überlauf" (rote Linie)](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
 
 Empfohlen...
 für die Erstellung einer benutzerdefinierten Dokumentüberlauf-Schaltfläche
@@ -1683,15 +1683,15 @@ Nicht empfohlen...
 
 - für Überlaufschaltflächen auf der Befehlsleiste
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
+  ![Überlauf](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
 
   **Dokumentüberlauf-Schaltfläche**
 
@@ -1705,19 +1705,19 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Bei einer mauszeigerbewegung über Overflow](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")
+  !["Überlauf", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")
 
-  **Dokumentüberlauf-Schaltfläche wenn darauf gezeigt wird**
+  **Dokumentüberlauf-Schaltfläche, wenn darauf gezeigt wird**
 
   Hintergrund
 
@@ -1737,11 +1737,11 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Überlauf gedrückt](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")
+  !["Überlauf", aufgerufen](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")
 
-  **Gedrückte dokumentüberlauf-Schaltfläche**
+  **Gedrückte Dokumentüberlauf-Schaltfläche**
 
   Hintergrund
 
@@ -1758,7 +1758,7 @@ Nicht empfohlen...
 ## <a name="tool-windows"></a>Toolfenster
  Toolfenster müssen nicht repliziert werden, weil sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Toolfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.
 
- ![Toolfenster (rote Linie,)](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303-087_ToolWindowRedline")
+ ![Toolfenster (rote Linie)](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303-087_ToolWindowRedline")
 
  Empfohlen...
 für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf die Toolfenster abstimmen möchten.
@@ -1769,7 +1769,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 ### <a name="tool-window-frame"></a>Toolfensterrahmen
  Toolfenster in Visual Studio werden für viele verschiedene Aufgaben verwendet und können einen von mehreren unterschiedlichen Zuständen annehmen. Wenn ein Toolfenster geöffnet ist, kann es einer der vier Seiten des Dokumentbereichs zugeordnet werden. Toolfenster können auch unverankert sein und sich außerhalb der IDE befinden. In diesem Fall können sie an einer beliebigen Stelle auf dem Benutzerbildschirm positioniert werden. Unverankerte Fenster nehmen immer die höchste Position in der IDE ein. Schließlich können Toolfenster wie Dokumentfenster angedockt und als Registerkarte im Dokumentursprung angezeigt werden. Toolfenster, die als Dokumentfenster angedockt wurden, erhalten ihre Farbe teilweise über die Tokennamen des Dokumentfensters.
 
- ![(Rote Linie) der Toolfensterrahmen](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")
+ ![Toolfenster, Rahmen (rote Linie)](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")
 
  Empfohlen...
 für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf die Toolfenster abstimmen möchten.
@@ -1783,9 +1783,9 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Toolfenster angedockt](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")
+ ![Toolfenster, angedockt](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")
 
  Hintergrund
 
@@ -1795,13 +1795,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  `Environment.ToolWindowBorder`
 
- **Gleitkommawert: mit Fokus**
+ **Unverankert: mit Fokus**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Toolfenster mit Fokus](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")
 
@@ -1813,13 +1813,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  `Environment.MainWindowActiveDefaultBorder`
 
- **Gleitkommawert: ohne Fokus**
+ **Unverankert: ohne Fokus**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Toolfenster ohne Fokus](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")
 
@@ -1834,7 +1834,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 ### <a name="tool-window-title-bar"></a>Titelleiste des Toolfensters
  Der Rahmen der Titelleiste ist kein echter Rahmen, sondern ein dicker Strich am oberen Rand der Titelleiste. Er verfügt über keinen Tokennamen für den Zustand "Ohne Fokus".
 
- ![(Rote Linie) der Titelleiste des Toolfensters](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")
+ ![Toolfenster, Titelleiste (rote Linie)](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")
 
  Empfohlen...
 für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf die Toolfenster abstimmen möchten.
@@ -1842,13 +1842,13 @@ für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf die Toolfenster
  Nicht empfohlen...
 für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen
 
- **Mit Fokus**
+ **Im Vordergrund**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Titelleiste mit Fokus](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")
 
@@ -1880,7 +1880,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Titelleiste ohne Fokus](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")
 
@@ -1898,7 +1898,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Rahmen
 
- N/V
+ –
 
  Ziehpunkt
 
@@ -1906,7 +1906,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
 #### <a name="title-bar-buttons"></a>Titelleisten-Schaltflächen
 
-![Titelleistenschaltfläche (rote Linie,)](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
+![Titelleistenschaltfläche (rote Linie)](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
 
 Empfohlen...
 für Schaltflächen auf der Benutzeroberfläche, die Farbtoken aus den Toolfenster-Titelleisten verwenden.
@@ -1916,21 +1916,21 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Titelleiste mit Fokus Schaltfläche](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")
+  ![Titelleistenschaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Hintergrund
 
-  N/V
+  –
 
   Vordergrund (Glyphe)
 
@@ -1938,15 +1938,15 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
-  ![Titelleiste ohne Fokus Schaltfläche](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")
+  ![Titelleistenschaltfläche ohne Fokus](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")
 
   **Ohne Fokus**
 
   Hintergrund
 
-  N/V
+  –
 
   Vordergrund (Glyphe)
 
@@ -1954,19 +1954,19 @@ Nicht empfohlen...
 
   Rahmen
 
-  N/V
+  –
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Hintergrund
 
@@ -1980,7 +1980,7 @@ Nicht empfohlen...
 
   `Environment.ToolWindowButtonHoverActiveBorder`
 
-  ![Titelleiste ohne Fokus, wenn darauf gezeigt wird Schaltfläche](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")
+  ![Titelleistenschaltfläche ohne Fokus, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")
 
   **Ohne Fokus**
 
@@ -2002,11 +2002,11 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Titelleiste auf die Schaltfläche mit Fokus, aufgerufen](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")
+  ![Titelleistenschaltfläche mit Fokus, aufgerufen](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Hintergrund
 
@@ -2020,7 +2020,7 @@ Nicht empfohlen...
 
   `Environment.ToolWindowButtonDownBorder`
 
-  ![Titelleiste ohne Fokus und gedrückten zu Schaltfläche](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")
+  ![Titelleistenschaltfläche ohne Fokus, aufgerufen](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")
 
   **Ohne Fokus**
 
@@ -2037,7 +2037,7 @@ Nicht empfohlen...
   `Environment.ToolWindowButtonDownBorder`
 
 ### <a name="tool-window-tabs"></a>Toolfenster-Registerkarten
- ![(Rote Linie) der Toolfenster-Registerkarte](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")
+ ![Registerkarte "Toolfenster" (rote Linie)](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")
 
  Empfohlen...
 für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf die Toolfenster abstimmen möchten.
@@ -2051,11 +2051,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Der Toolfenster-Registerkarte mit Fokus](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")
+ ![Registerkarte "Toolfenster" mit Fokus](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")
 
- **Ausgewählte, fokussierte Toolfenster-Registerkarte**
+ **Ausgewählt, Toolfenster-Registerkarte mit Fokus**
 
  Hintergrund
 
@@ -2075,11 +2075,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Toolfenster-Registerkarte ohne Fokus](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")
+ ![Registerkarte "Toolfenster" ohne Fokus](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")
 
- **Ausgewählte, ohne Fokus Toolfenster-Registerkarte**
+ **Ausgewählt, Toolfenster-Registerkarte ohne Fokus**
 
  Hintergrund
 
@@ -2095,15 +2095,15 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Auf dieselbe Farbe wie der Hintergrund festgelegt
 
- **Registerkarte "Hintergrund"**
+ **Hintergrundregisterkarte**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Hintergrund der Toolfenster-Registerkarte](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
+ ![Toolfenster, Registerkarte "Hintergrund"](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
 
  **Hintergrundregisterkarte im Toolfenster**
 
@@ -2129,11 +2129,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Tool-Fenster Registerkarte "Hintergrundvorschau"](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")
+ ![Toolfenster, Registerkarte "Hintergrund", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")
 
- **Hintergrundregisterkarte im Toolfenster wenn darauf gezeigt wird**
+ **Hintergrundregisterkarte im Toolfenster, wenn darauf gezeigt wird**
 
  Hintergrund
 
@@ -2156,7 +2156,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
  Auf dieselbe Farbe wie der Hintergrund festgelegt
 
 ### <a name="auto-hide-tabs"></a>Automatisch ausgeblendete Registerkarten
- ![Automatische&#45;(rote Linie) der ausblenden](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")
+ ![Automatisch&#45;rote Linie ausblenden](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")
 
  Empfohlen...
 für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf automatisch ausgeblendete Toolfenster-Registerkarten abstimmen möchten.
@@ -2164,15 +2164,15 @@ für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf automatisch aus
  Nicht empfohlen...
 für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Automatische&#45;Registerkarte ausblenden](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")
+ ![Registerkarte "automatisch&#45;ausblenden"](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")
 
  **Automatisch ausgeblendete Registerkarte, Standard**
 
@@ -2190,15 +2190,15 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
  `Environment.AutoHideTabBorder`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Automatische&#45;blenden Sie die Registerkarte "Hintergrundvorschau"](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")
+ ![Registerkarte "automatisch&#45;ausblenden" bei Hover](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")
 
  **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**
 
@@ -2232,7 +2232,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
 - "Deaktiviert" bedeutet, dass die Suchfunktion für den aktuellen Kontext deaktiviert ist.
 
-  ![Suchfeld (rote Linie,)](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")
+  ![Suchfeld (rote Linie)](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")
 
   Empfohlen...
   für das Entwerfen eines benutzerdefinierten Suchfelds
@@ -2242,15 +2242,15 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
 - für Elemente, die nicht generell auf die Suchfeld-Benutzeroberfläche abgestimmt sein sollen
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Schwerpunkt sucheingabefeld](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
+  ![Suche (Eingabefeld) mit Fokus](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
 
   **Eingabefeld**
 
@@ -2272,11 +2272,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   ![Suche (Aktionsschaltfläche) mit Fokus](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")
 
-  **Schaltfläche "Aktion"**
+  **Aktions Schaltfläche**
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Glyphe "Suchen")
 
@@ -2292,11 +2292,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Rahmen
 
-  N/V
+  –
 
-  ![Suche&#45;ab-Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")
+  ![Dropdown&#45;Dropdown Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -2316,9 +2316,9 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Sucheingabefeld ohne Fokus](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")
+  ![Suche (Eingabefeld) ohne Fokus](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")
 
   **Aktives Eingabefeld**
 
@@ -2338,7 +2338,7 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   `SearchControl.DropDownSeparator`
 
-  ![Sucheingabefeld ohne Fokus und inaktiv](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")
+  ![Suche (Eingabefeld) ohne Fokus und inaktiv](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")
 
   **Inaktives Eingabefeld**
 
@@ -2360,11 +2360,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   ![Suche (Aktionsschaltfläche) ohne Fokus](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")
 
-  **Schaltfläche "Aktion"**
+  **Aktions Schaltfläche**
 
   Hintergrund
 
-  N/V
+  –
 
   Vordergrund (Glyphe "Suchen")
 
@@ -2380,11 +2380,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Rahmen
 
-  N/V
+  –
 
-  ![Suche&#45;ohne Fokus gedrückt](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")
+  ![Suche&#45;Dropdown Schaltfläche ohne Fokus](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -2404,11 +2404,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Suche (Aktionsschaltfläche) gedrückt](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
+  ![Suche (Aktionsschaltfläche), aufgerufen](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
-  **Schaltfläche "Aktion"**
+  **Aktions Schaltfläche**
 
   Hintergrund
 
@@ -2422,9 +2422,9 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   `SearchControl.ActionButtonMouseDownBorder`
 
-  ![Suche&#45;ab-Schaltfläche gedrückt](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
+  ![Dropdown&#45;Schaltfläche "Durchsuchen" gedrückt](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
@@ -2444,11 +2444,11 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Eingabefeld durch hervorheben](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")
+  ![Suche (Eingabefeld), hervorgehoben](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")
 
-  **Eingabefeld mit hervorgehobenem text**
+  **Eingabefeld mit hervorgehobenem Text**
 
   Hintergrund
 
@@ -2460,21 +2460,21 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Rahmen
 
-  None
+  Keine
 
   Trennzeichen
 
   `SearchControl.FocusedDropDownSeparator`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Sucheingabefeld deaktiviert](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
+  ![Suche (Eingabefeld), deaktiviert](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
 
   **Eingabefeld**
 
@@ -2494,13 +2494,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   `SearchControl.DropDownSeparator`
 
-  ![Suche (Aktionsschaltfläche) deaktiviert](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")
+  ![Suche (Aktionsschaltfläche), deaktiviert](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")
 
-  **Schaltfläche "Aktion"**
+  **Aktions Schaltfläche**
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Glyphe)
 
@@ -2508,15 +2508,15 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Rahmen
 
-  None
+  Keine
 
-  ![Suche&#45;gedrückt deaktiviert](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")
+  ![Dropdown&#45;Dropdown Schaltfläche deaktiviert](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")
 
-  **Dropdown-Schaltfläche**
+  **Dropdownschaltfläche**
 
   Hintergrund
 
-  None
+  Keine
 
   Vordergrund (Glyphe)
 
@@ -2524,13 +2524,13 @@ für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht au
 
   Rahmen
 
-  None
+  Keine
 
 #### <a name="search-drop-down-lists"></a>Dropdownlisten im Suchfeld
 
 Das Dropdownmenü im Suchfeld kann etwas komplexer sein als andere Dropdownmenüs in Visual Studio. Die Bereiche "Empfohlene Suchbegriffe" und "Suchoptionen" können alleine oder zusammen im Menü erscheinen, und jedem Bereich kann eine eigene Farbe zugeordnet sein. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.
 
-![Suche&#45;nach unten (rote Linie)](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
+![Dropdown&#45;nach unten Redline](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
 
 Empfohlen...
 - für die Erstellung einer benutzerdefinierten Dropdownliste im Suchfeld
@@ -2546,7 +2546,7 @@ Empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Rahmen
 
@@ -2556,21 +2556,21 @@ Empfohlen...
 
   `SearchControl.PopupSectionHeaderSeparator`
 
-  Schatten
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Suchvorschlag](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")
 
-  **Vorschläge für Suchen**
+  **Empfohlene Suchbegriffe**
 
   Hintergrund
 
@@ -2614,17 +2614,17 @@ Empfohlen...
 
   `SearchControl.PopupSectionHeaderText`
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Bei einer mauszeigerbewegung über suchvorschlag](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")
+  !["Suchvorschlag", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")
 
-  **Vorschläge für Suchen**
+  **Empfohlene Suchbegriffe**
 
   Hintergrund
 
@@ -2640,11 +2640,11 @@ Empfohlen...
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  ![Search-Kontrollkästchen, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")
+  ![Kontrollkästchen "Suche", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")
 
   **Empfohlene Suchbegriffe (Kontrollkästchen)**
 
-  ![Bei einer mauszeigerbewegung über die Suchoptionen](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")
+  !["Suchoptionen", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")
 
   **Suchoptionen**
 
@@ -2672,13 +2672,13 @@ Empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Suchvorschlag gedrückt](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")
+  !["Suchvorschlag" im gedrückten Zustand](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")
 
   **Empfohlene Suchbegriffe (Kontrollkästchen)**
 
-  ![Suchoptionen gedrückt](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")
+  !["Suchoptionen" im gedrückten Zustand](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")
 
   **Suchoptionen**
 
@@ -2706,10 +2706,10 @@ Empfohlen...
 
   `SearchControl.PopupButtonMouseDownText`
 
-### <a name="hyperlink"></a>Link
+### <a name="hyperlink"></a>Hyperlink
  Der Link ist ein Steuerelement, das keine Kombination aus Vordergrund-/Hintergrundfarbe darstellt. Sie verwenden grundsätzlich die Vordergrund-Linkfarbe, die auf dunklem, grauen und weißem Hintergrund ordnungsgemäß angezeigt wird. Wenn Sie nicht das Farbtoken für das Linksteuerelement verwenden, sehen Sie für den "gedrückten" Zustand die Standardsystemfarbe, die rot blinkend dargestellt wird. Das ist das Signal, dass das Steuerelement nicht das richtige Farbtoken für die Umgebung verwendet.
 
- ![Hyperlink (rote Linie,)](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")
+ ![Hyperlink (rote Linie)](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")
 
  Empfohlen...
 für die Erstellung eines benutzerdefinierten Links
@@ -2717,13 +2717,13 @@ für die Erstellung eines benutzerdefinierten Links
  Nicht empfohlen...
 für Elemente, die keinen Link darstellen
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Hyperlink, Standard](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")
 
@@ -2731,15 +2731,15 @@ für Elemente, die keinen Link darstellen
 
  `Environment.PanelHyperlink`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Link bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")
+ ![Hyperlink, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")
 
  Vordergrund (Text)
 
@@ -2751,21 +2751,21 @@ für Elemente, die keinen Link darstellen
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Link – gedrückt](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")
+ ![Hyperlink, aufgerufen](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")
 
  Vordergrund (Text)
 
  `Environment.PanelHyperlinkPressed`
 
- **Disabled** (deaktiviert)
+ **Disabled**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Hyperlink, deaktiviert](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")
 
@@ -2776,7 +2776,7 @@ für Elemente, die keinen Link darstellen
 ### <a name="infobar"></a>Infoleiste
  Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Kontext bereitzustellen. Sie erscheinen immer im oberen Bereich eines Dokument- oder Toolfensters.
 
- ![Infoleiste (rote Linie,)](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")
+ ![Infoleiste (rote Linie)](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")
 
  Empfohlen...
 für die Erstellung einer benutzerdefinierten Infoleiste
@@ -2788,9 +2788,9 @@ für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Infoleiste h
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
+ ![Infoleiste](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
  **Infoleiste**
 
@@ -2807,26 +2807,26 @@ für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Infoleiste h
  `Environment.ToolWindowBorder`
 
 ### <a name="scroll-bar"></a>Bildlaufleiste
- Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Möglicherweise möchten jedoch, dass Sie für die Farben, die in Bildlaufleisten verwendet werden, sodass Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent nutzen möchten.
+ Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Sie können jedoch entscheiden, dass Sie die in Scrollleisten verwendeten Farben nutzen möchten, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent erscheint.
 
- ![(Rote Linie) der Bildlaufleiste](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")
+ ![Bildlaufleiste (rote Linie)](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")
 
  Empfohlen...
 für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlaufleisten abgestimmt sein soll.
 
- Nicht empfohlen... für alle Daten möchten nicht immer die Bildlaufleisten-Benutzeroberfläche abgestimmt.
+ Nicht verwenden... für alles, was Sie nicht immer mit der Bild Lauf Leiste-Benutzeroberfläche vergleichen möchten.
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Bildlaufleiste](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")
 
- **Bildlaufleiste**
+ **Bild Lauf Leiste**
 
  Bildlaufleiste
 
@@ -2836,7 +2836,7 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  `Environment.ScrollBarThumbBackground`
 
- ![Bildlaufleiste Pfeil](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")
+ ![Bildlaufleiste, Pfeil](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")
 
  **Bildlaufpfeil**
 
@@ -2850,17 +2850,17 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  `Environment.ScrollBarArrowGlyph`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Bildlaufleiste, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")
 
- **Bildlaufleiste**
+ **Bild Lauf Leiste**
 
  Bildlaufleiste
 
@@ -2870,7 +2870,7 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  `Environment.ScrollBarThumbMouseOverBackground`
 
- ![Bildlaufleisten-Taste bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")
+ ![Bildlaufleiste (Pfeil), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")
 
  **Bildlaufpfeil**
 
@@ -2890,11 +2890,11 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Bildlaufleiste geklickt](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
+ ![Bildlaufleiste, aufgerufen](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
 
- **Bildlaufleiste**
+ **Bild Lauf Leiste**
 
  Bildlaufleiste
 
@@ -2904,7 +2904,7 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  `Environment.ScrollBarThumbPressedBackground`
 
- ![Bildlaufleisten-Taste gedrückt](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")
+ ![Bildlaufleiste (Pfeil), aufgerufen](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")
 
  **Bildlaufpfeil**
 
@@ -2918,11 +2918,11 @@ für die Erstellung einer Benutzeroberfläche, die auf die Visual Studio-Bildlau
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-### <a name="BKMK_TreeView"></a> Strukturansicht
+### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Strukturansicht
 
 Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der TreeView-Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.
 
-![(Rote Linie) der Strukturansicht](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+![Strukturansicht (rote Linie)](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
 
 Empfohlen...
 für alle Projekte zur Implementierung einer hierarchischen Organisationsstruktur
@@ -2932,13 +2932,13 @@ Nicht empfohlen...
 
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Strukturansicht](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")
 
@@ -2956,17 +2956,17 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Bei einer mauszeigerbewegung über die Strukturansicht](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")
+  ![Strukturansicht, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")
 
   Hintergrund
 
@@ -2982,17 +2982,17 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
-  **Ziehen Sie auf**
+  **Drüber ziehen (DragOver)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Struktur anzeigen "DragOver"](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")
+  ![Strukturansicht, wenn Element darüber gezogen wird](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")
 
   Hintergrund
 
@@ -3008,19 +3008,19 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
-  **ausgewählt**
+  **Ausgewählt**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Strukturansicht mit Fokus](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Hintergrund
 
@@ -3056,19 +3056,19 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
-  **Ausgewähltes Element zeigen**
+  **Auf ausgewähltes Element zeigen**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   ![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Hintergrund
 
@@ -3086,7 +3086,7 @@ Nicht empfohlen...
 
   Keiner`TreeView.FocusVisualBorder`
 
-  ![Strukturansicht ohne Fokus bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")
+  ![Strukturansicht ohne Fokus, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")
 
   **Ohne Fokus**
 
@@ -3104,10 +3104,10 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
 ### <a name="button-controls"></a>Schaltflächen-Steuerelemente
- ![(Rote Linie) der Schaltflächen-Steuerelement](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")
+ ![Button-Steuerelement (rote Linie)](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")
 
  Empfohlen...
 für Schaltflächen im Dokument, die Sie in Visual Studio-Designs (Hell, Dunkel, Blau oder kontrastreiches Systemdesign) integrieren möchten.
@@ -3115,15 +3115,15 @@ für Schaltflächen im Dokument, die Sie in Visual Studio-Designs (Hell, Dunkel,
  Nicht empfohlen...
 für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt werden, der nicht Bestandteil eines Visual Studio-Designs ist
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Button](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
+ ![Schaltfläche](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
 
  Schaltfläche
 
@@ -3133,15 +3133,15 @@ für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt wer
 
  `CommonControls.ButtonBorder`
 
- **Disabled** (deaktiviert)
+ **Disabled**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Schaltfläche deaktiviert](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")
+ ![Schaltfläche, deaktiviert](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")
 
  Schaltfläche
 
@@ -3151,15 +3151,15 @@ für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt wer
 
  `CommonControls.ButtonBorderDisabled`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Schaltfläche ", wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")
+ ![Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")
 
  Schaltfläche
 
@@ -3175,9 +3175,9 @@ für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt wer
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Gedrückte Taste](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
+ ![Schaltfläche, aufgerufen](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
 
  Schaltfläche
 
@@ -3187,13 +3187,13 @@ für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt wer
 
  `CommonControls.ButtonBorderPressed`
 
- **Mit Fokus**
+ **Im Vordergrund**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")
 
@@ -3206,7 +3206,7 @@ für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt wer
  `CommonControls.ButtonBorderFocused`
 
 ### <a name="check-box-controls"></a>Kontrollkästchen-Steuerelemente
- ![Aktivieren Sie das Kontrollkästchen (rote Linie,)](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303-161_CheckboxRedline")
+ ![Kontrollkästchen (rote Linie)](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303-161_CheckboxRedline")
 
  Empfohlen...
 für Kontrollkästchen-Steuerelemente im Dokumentursprung
@@ -3214,15 +3214,15 @@ für Kontrollkästchen-Steuerelemente im Dokumentursprung
  Nicht empfohlen...
 für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Aktivieren Sie das Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
+ ![Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
 
  Hintergrund
 
@@ -3240,15 +3240,15 @@ für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
  `CommonControls.CheckBoxGlyph`
 
- **Disabled** (deaktiviert)
+ **Disabled**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Aktivieren Sie das Kontrollkästchen deaktiviert](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")
+ ![Kontrollkästchen, deaktiviert](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")
 
  Hintergrund
 
@@ -3266,15 +3266,15 @@ für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Das Kontrollkästchen, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")
+ ![Kontrollkästchen, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")
 
  Hintergrund
 
@@ -3298,9 +3298,9 @@ für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Aktivieren Sie das Kontrollkästchen geklickt](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")
+ ![Kontrollkästchen, aufgerufen](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")
 
  Hintergrund
 
@@ -3318,13 +3318,13 @@ für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
  `CommonControls.CheckBoxGlyphPressed`
 
- **Mit Fokus**
+ **Im Vordergrund**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Kontrollkästchen mit Fokus](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")
 
@@ -3346,7 +3346,7 @@ für Benutzeroberflächenelemente, die kein Kontrollkästchen-Steuerelement sind
 
 ### <a name="drop-boxcombo-box-controls"></a>Dropdownlisten-/Kombinationsfeld-Steuerelement
 
-![Drop&#45;unten&#47;(rote Linie) der im Kombinationsfeld](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
+![Dropdown&#45;&#47;Kombinations Feld (rote Linie)](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
 Empfohlen...
 für Dropdownlisten und Kombinationsfelder, die Teil des Dokumentursprungs sind.
@@ -3356,15 +3356,15 @@ Nicht empfohlen...
 
 - für eine [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste
 
-  **Default**
+  **Standard**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;Kombinationsfeld](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
+  ![Dropdown&#45;&#47;Kombinations Feld](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
 
   Hintergrund
 
@@ -3390,15 +3390,15 @@ Nicht empfohlen...
 
   `CommonControls.ComboBoxGlyphBackground`
 
-  **Disabled** (deaktiviert)
+  **Disabled**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;Kombinationsfeld, deaktiviert](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")
+  ![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")
 
   Hintergrund
 
@@ -3424,15 +3424,15 @@ Nicht empfohlen...
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **Wenn darauf gezeigt wird**
+  **Darauf zeigen (Hover)**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;im Kombinationsfeld, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")
+  ![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")
 
   Hintergrund
 
@@ -3464,9 +3464,9 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;gedrückten Kombinationsfelds](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
+  ![Dropdown&#45;&#47;Kombinations Feld gedrückt](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
 
   Hintergrund
 
@@ -3492,15 +3492,15 @@ Nicht empfohlen...
 
   `CommonControls.ComboBoxGlyphBackgroundPressed`
 
-  **Mit Fokus**
+  **Im Vordergrund**
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;Kombinationsfeld mit Fokus](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
+  ![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
 
   Hintergrund
 
@@ -3532,17 +3532,17 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
-  ![Drop&#45;unten&#47;Combo Box Texteingabe](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
+  ![Dropdown&#45;&#47;-Kombinations Feld-Texteingabe](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
 
-  Hervorheben
+  Markierung
 
   `CommonControls.ComboBoxTextInputSelection`
 
   **Gedrückt – Listenelementansicht**
 
-  ![Drop&#45;unten&#47;Combo Box-Listenansicht](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")
+  ![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")
 
   Hintergrund
 
@@ -3581,7 +3581,7 @@ Nicht empfohlen...
 ### <a name="tabular-data-grid-controls"></a>Tabellendaten-Steuerelemente (Raster)
  Tabellendaten-Steuerelemente, die auch als Rastersteuerelemente bezeichnet werden. Dies sind gebräuchliche Steuerelemente in Visual Studio, die werden verwendet, um große Datenmengen in mehreren Spalten darzustellen. Standardmäßige Tabellendaten-Steuerelemente sind in Visual Studio an mehreren Orten zu finden: z. a. in Fehlerlisten-Toolfenstern, IntelliTrace-Berichte und Speicherheapansichten. Verwenden Sie immer die standardmäßig bereitgestellten Tabellendaten-Steuerelemente. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die standardmäßigen Tabellendaten-Steuerelemente. Verwenden Sie in dieser Situation die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Tabellendaten-Steuerelementen in Visual Studio konsistent ist.
 
- ![Tabellendaten &#40;Rastersteuerelement&#41; (rote Linie)](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")
+ ![Tabellendaten &#40;Raster Steuerelement&#41; Redline](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")
 
  Empfohlen...
 für Tabellen- oder Rastersteuerelemente
@@ -3589,16 +3589,16 @@ für Tabellen- oder Rastersteuerelemente
  Nicht empfohlen...
 für Benutzeroberflächenelemente, die kein Tabellen- oder Rastersteuerelement sind
 
-#### <a name="column-headers"></a>Spaltenheader
+#### <a name="column-headers"></a>Spaltenüberschriften
  Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionalen Glyphe zusammen, die normalerweise verwendet wird, wenn ein Raster nach dieser Spalte sortiert wird.
 
- Status
+ State
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- Default
+ Standard
 
  Hintergrund
 
@@ -3655,13 +3655,13 @@ für Benutzeroberflächenelemente, die kein Tabellen- oder Rastersteuerelement s
 #### <a name="list-view-items"></a>Listenansichtselemente
  Listenansichtselemente bestehen aus einem Hintergrund und dem Inhalt. Der Inhalt kann Text, ein Symbol oder beides sein.
 
- Status
+ State
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- Default
+ Standard
 
  Hintergrund
 
@@ -3673,7 +3673,7 @@ für Benutzeroberflächenelemente, die kein Tabellen- oder Rastersteuerelement s
 
  Rahmen
 
- None
+ Keine
 
  Ausgewählt (aktiv)
 
@@ -3687,7 +3687,7 @@ für Benutzeroberflächenelemente, die kein Tabellen- oder Rastersteuerelement s
 
  Rahmen
 
- None
+ Keine
 
  Ausgewählt (inaktiv)
 
@@ -3701,13 +3701,13 @@ für Benutzeroberflächenelemente, die kein Tabellen- oder Rastersteuerelement s
 
  Rahmen
 
- None
+ Keine
 
 ## <a name="manifest-designer"></a>Manifest-Designer
 
 Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8- und Windows Phone 8-Projekten zu vereinfachen. Obwohl es kein gemeinsames Framework gibt, kann es von Vorteil sein, das Entwurfslayout und die Farben von Ausrichtungs-/Navigationsregisterkarten und Gesamtstruktur aufeinander abzustimmen. Weitere Informationen zu Layoutdetails finden Sie unter [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-![(Rote Linie) der Manifest-Designer](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
+![Manifest-Designer (rote Linie)](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
 
 Empfohlen...
 - für Designer, die Ähnlichkeit mit dem Manifest-Designer haben.
@@ -3719,13 +3719,13 @@ Nicht empfohlen...
 
 - für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind
 
-  Zustand
+  State
 
   Komponente
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Standard (ausgewählt)
 
@@ -3737,7 +3737,7 @@ Nicht empfohlen...
 
   Rahmen
 
-  None
+  Keine
 
   Beschreibungsbereich
 
@@ -3773,7 +3773,7 @@ Nicht empfohlen...
 
   `ManifestDesigner.Tab.Mouseover`
 
-## <a name="tagging"></a>Tagging
+## <a name="tagging"></a>Kennzeichnung (Tagging)
  Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsselwörter für Nachverfolgungszwecke deklarieren kann. Projektleiter und Entwickler können beispielsweise Team Foundation Server (TFS) verwenden, um Arbeitselemente zu kennzeichnen. Die folgenden Tabellen enthalten Farbnamen sowohl für das Tag selbst als auch für die Glyphe "Schließsymbol", die im Zustand "Darauf zeigen" und "Ausgewählt" angezeigt wird.
 
  ![Tagging (rote Linie)](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
@@ -3789,11 +3789,11 @@ für andere Arten von Benutzeroberflächenelementen
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Tag](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")
 
- **Default**
+ **Standard**
 
  Hintergrund
 
@@ -3803,9 +3803,9 @@ für andere Arten von Benutzeroberflächenelementen
 
  `Tag.Background`
 
- ![Markieren Sie bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")
+ ![Tag, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Hintergrund
 
@@ -3829,7 +3829,7 @@ für andere Arten von Benutzeroberflächenelementen
 
  ![Tag, ausgewählt](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")
 
- **ausgewählt**
+ **Ausgewählt**
 
  Hintergrund
 
@@ -3840,13 +3840,13 @@ für andere Arten von Benutzeroberflächenelementen
  `Tag.SelectedBackgroundText`
 
 ### <a name="glyph-close-icon"></a>Glyphe (Schließsymbol)
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Tag &#40;Glyphe&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
 
@@ -3854,23 +3854,23 @@ für andere Arten von Benutzeroberflächenelementen
 
  Hintergrund
 
- N/V
+ –
 
  Vordergrund (Glyphe)
 
  `Tag.TagHoverGlyph`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Tag &#40;Glyphe&#41; bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")
+ ![Markierung &#40;Glyphe&#41; bei Hover](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")
 
- **Wenn darauf gezeigt wird (Tag, Standard)**
+ **Darauf zeigen (Tag, Standard)**
 
  Hintergrund
 
@@ -3890,7 +3890,7 @@ für andere Arten von Benutzeroberflächenelementen
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Tag &#40;Glyphe&#41; gedrückt](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")
 
@@ -3914,7 +3914,7 @@ für andere Arten von Benutzeroberflächenelementen
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Tag, ausgewählt](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")
 
@@ -3922,21 +3922,21 @@ für andere Arten von Benutzeroberflächenelementen
 
  Hintergrund
 
- N/V
+ –
 
  Vordergrund (Glyphe)
 
  `Tag.TagSelectedGlyph`
 
- **Tag ausgewählt/Glyphe, Hoverzustand**
+ **Tag, ausgewählt/Glyphe, Hoverzustand**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Tag, ausgewählt werden, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")
+ ![Tag (ausgewählt), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")
 
  **Hoverzustand (Tag, ausgewählt)**
 
@@ -3952,15 +3952,15 @@ für andere Arten von Benutzeroberflächenelementen
 
  `Tag.TagSelectedGlyphHoverBorder`
 
- **Tag-ausgewählt/Glyphe, die gedrückt**
+ **Tag, ausgewählt/Glyphe, gedrückt**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Tag, ausgewählt gedrückt](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")
+ ![Tag (ausgewählt), aufgerufen](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")
 
  **Gedrückt (Tag, ausgewählt)**
 
@@ -3982,7 +3982,7 @@ für andere Arten von Benutzeroberflächenelementen
 
 Der Umgebungshintergrund setzt sich aus zwei Ebenen zusammen. Die untere Ebene ist eine Volltonfarbe, die die gesamte IDE abdeckt. Die obere Ebene befindet sich unterhalb der Befehlsablage und zwischen den automatisch ausgeblendeten Kanälen des Toolfensters am linken und rechten Rand der IDE. Ab Visual Studio 2013 werden die obere und untere Hintergrundebene im dunklen und hellen Design auf dieselbe Farbe festgelegt.
 
-![Shell-Hintergrund (rote Linie,)](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
+![Shell-Hintergrund (rote Linie)](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
 
 Empfohlen...
 für Bereiche, die an den Hintergrund der Visual Studio-Umgebung angepasst werden sollen.
@@ -3996,7 +3996,7 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Untere Ebene
 
@@ -4008,13 +4008,13 @@ Nicht empfohlen...
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Obere Ebene
 
   Hintergrund
 
-  *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*
+  *Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps*
 
   `Environment.EnvironmentBackgroundGradientBegin`
 
@@ -4028,12 +4028,12 @@ Nicht empfohlen...
 
 Für die Hintergründe der Befehlsablage werden zwei Sätze von Tokennamen verwendet: einer für die Position der Menüleiste und der andere für die Position der Befehlsleisten. Eine einzelne Befehlszeilengruppe verfügt über eigene Hintergrund-Farbwerte, die im Abschnitt "Befehlsleiste" ausführlicher erörtert werden. Menü- und Befehlsleistentext wird in den entsprechenden Abschnitten zur Menü- und Befehlsleiste erörtert.
 
-![(Rote Linie) der Befehlsablage](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
+![Befehlsleiste (rote Linie)](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
 
 Empfohlen...
 - für Bereiche, in denen Menüs oder Symbolleisten platziert werden.
 
-- mit dem richtigen Hintergrund /? Vordergrundfarbe.
+- mit der richtigen Kombination aus hintergrundtokenname im Vordergrund.
 
 Nicht empfohlen...
 für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen
@@ -4042,13 +4042,13 @@ für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen
 
   Element
 
-  Tokenname: Category.Color
+  Tokenname: Category.color
 
   Menüleiste
 
   Hintergrund
 
-  *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*
+  *Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps*
 
   `Environment.CommandShelfHighlightGradientBegin`
 
@@ -4060,7 +4060,7 @@ für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen
 
   Hintergrund
 
-  *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*
+  *Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps*
 
   `Environment.CommandShelfBackgroundGradientBegin`
 
@@ -4071,7 +4071,7 @@ für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen
 ## <a name="toolbox"></a>Werkzeugkasten
  Der Werkzeugkasten ist eines der allgemeinen Toolfenster, die am häufigsten in Visual Studio verwendet werden. Es handelt sich um ein Struktursteuerelement, auf das ein bestimmtes Design und ein bestimmter Stil angewendet wurde.
 
- ![(Rote Linie) der Toolbox](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")
+ ![Toolbox (rote Linie)](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")
 
  Empfohlen...
 für den Entwurf eines Toolfensters, das immer mit dem Shell-Werkzeugkasten konsistent sein soll.
@@ -4079,13 +4079,13 @@ für den Entwurf eines Toolfensters, das immer mit dem Shell-Werkzeugkasten kons
  Nicht empfohlen...
 für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche haben, oder wenn Sie nicht sicher sind, ob Ihre Benutzeroberfläche bei Änderung der Farben des Shell-Werkzeugkastens Probleme verursacht
 
- **Default**
+ **Standard**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
  ![Toolbox, übergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")
 
@@ -4093,13 +4093,13 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  ![Toolbox, untergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")
 
- **Untergeordneten Knoten**
+ **Untergeordneter Knoten**
 
  Hintergrund
 
  `Environment.ToolboxContent`
 
- Kopfzeilen
+ Überschriften
 
  `Environment.ToolWindowBackground`
 
@@ -4107,7 +4107,7 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  Rahmen
 
- None
+ Keine
 
  Vordergrund (Glyphe)
 
@@ -4117,17 +4117,17 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  `Environment.ToolboxContent`
 
- **Wenn darauf gezeigt wird**
+ **Darauf zeigen (Hover)**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Toolbox, untergeordneter Knoten bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")
+ ![Toolbox (untergeordneter Knoten), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")
 
- **Werkzeugkasten, zeigen auf untergeordneten Knoten**
+ **Werkzeugkasten, Zeigen auf untergeordneten Knoten**
 
  Hintergrund
 
@@ -4137,7 +4137,7 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  Rahmen
 
- None
+ Keine
 
  Vordergrund (Text)
 
@@ -4145,19 +4145,19 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  Nur einzelne Elemente
 
- **ausgewählt**
+ **Ausgewählt**
 
  Komponente
 
  Element
 
- Tokenname: Category.Color
+ Tokenname: Category.color
 
- ![Toolbox, übergeordneter Knoten mit Fokus](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")
+ ![Werkzeugkasten (übergeordneter Knoten) mit Fokus](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")
 
  **Übergeordneter Knoten mit Fokus**
 
- ![Toolbox, untergeordneter Knoten mit Fokus](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")
+ ![Toolbox (untergeordneter Knoten) mit Fokus](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")
 
  **Untergeordneter Knoten mit Fokus**
 
@@ -4185,7 +4185,7 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
- ![Toolbox übergeordneter Knoten ohne Fokus](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")
+ ![Toolbox (übergeordneter Knoten) ohne Fokus](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")
 
  **Übergeordneter Knoten ohne Fokus**
 
@@ -4201,7 +4201,7 @@ für Elemente, die keine Ähnlichkeit mit der Werkzeugkasten-Benutzeroberfläche
 
  Rahmen
 
- None
+ Keine
 
  Vordergrund (Glyphe)
 

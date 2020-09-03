@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadEigenschaften | Microsoft Docs
+title: 'IDebugThread2:: getthreadproperties | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718692"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der THREADPROPERTY_FIELDS-Enumeration, die bestimmt, welche [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) `ptp` Felder ausgefüllt werden sollen.
+in Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) Enumeration, die bestimmt, welche Felder von `ptp` ausgefüllt werden sollen.
 
 `ptp`\
-[in, out] Eine [THREADPROPERTIES-Struktur,](../../../extensibility/debugger/reference/threadproperties.md) die mit den Eigenschaften des Threads ausgefüllt wird.
+[in, out] Eine [Thread Properties](../../../extensibility/debugger/reference/threadproperties.md) -Struktur, die mit den Eigenschaften des Threads ausgefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Die von dieser Methode zurückgegebenen Informationen werden in der Regel im **Debugfenster Threads** angezeigt.
+Die von dieser Methode zurückgegebenen Informationen werden in der Regel im Fenster **Threads** Debuggen angezeigt.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CProgram` Methode für ein einfaches Objekt implementiert wird, das die [IDebugThread2-Schnittstelle](../../../extensibility/debugger/reference/idebugthread2.md) implementiert.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CProgram` Objekt implementiert wird, das die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Schnittstelle implementiert.
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,

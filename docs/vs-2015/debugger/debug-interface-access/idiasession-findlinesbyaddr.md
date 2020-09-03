@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbyaddr | Microsoft-Dokumentation'
+title: 'IDiaSession:: findLinesByAddr | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4658075c61a06c3616a4d9a42e9d3e37c0166e98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165537"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ab, die Zeilen in einer angegebenen Kompiliereinheit, die eine bestimmten Adresse enthalten.  
+Ruft die Zeilen in einer angegebenen Kompilierungen ab, die eine angegebene Adresse enthalten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,22 +38,22 @@ HRESULT findLinesByAddr ( 
   
 #### <a name="parameters"></a>Parameter  
  `seg`  
- [in] Gibt die Komponente im Abschnitt die jeweilige Adresse an.  
+ in Gibt die Abschnitts Komponente der jeweiligen Adresse an.  
   
  `offset`  
- [in] Gibt den Offset Komponente die jeweilige Adresse.  
+ in Gibt die Offset-Komponente der jeweiligen Adresse an.  
   
  `length`  
- [in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.  
+ in Gibt die Anzahl der Bytes für den Adressbereich an, die mit dieser Abfrage abgedeckt werden.  
   
  `ppResult`  
- [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.  
+ vorgenommen Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt zurück, das eine Liste aller Zeilennummern enthält, die den angegebenen Adressbereich abdecken.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine Funktion, die alle Zeilennummern enthalten, die in einer Funktion, die mit der Adresse der Funktion und die Länge abgerufen werden.  
+ Dieses Beispiel zeigt eine Funktion, die alle in einer Funktion enthaltenen Zeilennummern mithilfe der Adresse und Länge der Funktion abruft.  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  
@@ -74,7 +74,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

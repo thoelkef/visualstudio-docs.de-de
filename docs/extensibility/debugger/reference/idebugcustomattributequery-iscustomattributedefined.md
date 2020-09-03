@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
+title: 'Idebugcustomattributequery:: iscustomattributedefined | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732630"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parameter
 `pszCustomAttributeName`\
-[in] Name des benutzerdefinierten Attributs.
+in Der Name des benutzerdefinierten Attributs.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn das benutzerdefinierte Attribut `S_OK`definiert ist, gibt zurück ; Andernfalls kehrt `S_FALSE`zurück .
+Wenn das benutzerdefinierte Attribut definiert ist, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben `S_FALSE` .
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugClassFieldSymbol-Objekt** implementiert wird, das die [IDebugCustomAttributeQuery-Schnittstelle](../../../extensibility/debugger/reference/idebugcustomattributequery.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugclassfieldsymbol** -Objekt implementiert wird, das die [idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(

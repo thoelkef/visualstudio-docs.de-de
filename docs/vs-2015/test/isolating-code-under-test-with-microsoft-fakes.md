@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660480"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch *Stubs* oder *Shims* ersetzen. Dabei handelt es sich um kurze Codes, die von den Tests kontrolliert werden. Wenn Sie den Code für die Tests isolieren, wissen Sie beim Fehlschlagen des Tests, dass die Ursache im isolierten Code und nicht an anderer Stelle liegt. Mit Stubs und Shims können Sie den Code auch dann testen, wenn andere Teile der Anwendung noch nicht funktionieren.
+Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch *Stupf* oder *Shims*ersetzen. Dabei handelt es sich um kurze Codes, die von den Tests kontrolliert werden. Wenn Sie den Code für die Tests isolieren, wissen Sie beim Fehlschlagen des Tests, dass die Ursache im isolierten Code und nicht an anderer Stelle liegt. Mit Stubs und Shims können Sie den Code auch dann testen, wenn andere Teile der Anwendung noch nicht funktionieren.
 
  Es gibt zwei Arten von Fakes:
 
@@ -28,7 +28,7 @@ Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile 
 
   ![Fakes ersetzen andere Komponenten](../test/media/fakes-2.png "Fakes-2")
 
-  **Voraussetzungen**
+  **Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -39,7 +39,7 @@ Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile 
 
  Weitere Überlegungen:
 
- **Leistung:** Shims werden langsamer ausgeführt, da der Code zur Laufzeit neu geschrieben wird. Die Leistung von Stubs wird nicht auf diese Weise beeinträchtigt. Sie sind so schnell, wie es bei virtuellen Methoden möglich ist.
+ **Leistung** Shims werden langsamer ausgeführt, da der Code zur Laufzeit neu geschrieben wird. Die Leistung von Stubs wird nicht auf diese Weise beeinträchtigt. Sie sind so schnell, wie es bei virtuellen Methoden möglich ist.
 
  **Statische Methoden, versiegelte Typen:** Sie können Stubs nur verwenden, um Schnittstellen zu implementieren. Daher können Stubtypen für folgende Methoden nicht verwendet werden: statische Methoden, nicht virtuelle Methoden, versiegelte virtuelle Methoden, Methoden in versiegelten Typen usw.
 
@@ -51,7 +51,7 @@ Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile 
 
  Im Allgemeinen empfiehlt es sich, Stubtypen zu verwenden, um eine Isolierung von den Abhängigkeiten in der Codebase zu erzielen. Sie erreichen dies, indem Sie die Komponenten hinter den Schnittstellen ausblenden. Shimtypen können verwendet werden, um eine Isolierung von Drittanbieterkomponenten zu erzielen, die keine testfähige API bereitstellen.
 
-## <a name="stubs"></a> Erste Schritte mit Stubs
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> Erste Schritte mit Stubs
  Eine ausführlichere Beschreibung finden Sie unter [Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
 1. **Einfügen von Schnittstellen**
@@ -141,11 +141,11 @@ Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile 
 
     ```
 
-     Das Besondere hierbei ist die `StubIStockFeed`-Klasse. Der Microsoft Fakes-Mechanismus generiert für jede Schnittstelle in der Assembly, auf die verwiesen wird, eine Stubklasse. Der Name der Stubklasse wird vom Namen der Schnittstelle abgeleitet, wobei "`Fakes.Stub`" als Präfix und die Parametertyp Namen angehängt werden.
+     Das Besondere hierbei ist die `StubIStockFeed`-Klasse. Der Microsoft Fakes-Mechanismus generiert für jede Schnittstelle in der Assembly, auf die verwiesen wird, eine Stubklasse. Der Name der Stubklasse wird vom Namen der Schnittstelle abgeleitet, wobei " `Fakes.Stub` " als Präfix und die Parametertyp Namen angehängt werden.
 
      Stubs werden auch für die Getter und Setter von Eigenschaften, für Ereignisse sowie für generische Methoden generiert. Weitere Informationen finden Sie unter [Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="shims"></a> Erste Schritte mit Shims
+## <a name="getting-started-with-shims"></a><a name="shims"></a> Erste Schritte mit Shims
  (Eine ausführlichere Beschreibung finden Sie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
  Angenommen, die Komponente enthält Aufrufe von `DateTime.Now`:

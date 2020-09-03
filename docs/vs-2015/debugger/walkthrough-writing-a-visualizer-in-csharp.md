@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in c# | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67890467"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#\#
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C\#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -37,11 +37,11 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 #### <a name="to-create-a-class-library-project"></a>So erstellen Sie ein Klassenbibliotheksprojekt
 
-1. Auf der **Datei** Menü wählen **neu** , und klicken Sie dann auf **neues Projekt**.
+1. Wählen Sie im Menü **Datei** die Option **neu** aus, und klicken Sie dann auf **Neues Projekt**.
 
-2. In der **neues Projekt** Dialogfeld **Projekttyp**Option **Visual C#-** .
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Projekttyp**s die Option **Visual c#** aus.
 
-3. In der **Vorlagen** wählen **Klassenbibliothek**.
+3. Wählen Sie im Feld **Vorlagen** die Option **Klassenbibliothek**aus.
 
 4. Geben Sie im Feld **Name** einen entsprechenden Namen für die Klassenbibliothek ein, zum Beispiel „MyFirstVisualizer“.
 
@@ -166,7 +166,7 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 1. Wählen Sie im Menü **Datei** die Option **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
-2. In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** wählen **Konsolenanwendung**.
+2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** im Feld **Vorlagen** die Option **Konsolenanwendung**aus.
 
 3. Geben Sie im Feld **Name** einen aussagekräftigen Namen für die Konsolenanwendung ein, z.B. `MyTestConsole`.
 
@@ -235,9 +235,9 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 1. Wählen Sie im Menü **Datei** die Option **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
-2. In der **neues Projekt hinzufügen** Dialogfeld **Projekttyp**Option **Visual C#-** .
+2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** unter **Projekttyp**s die Option **Visual c#** aus.
 
-3. In der **Vorlagen** wählen **Klassenbibliothek**.
+3. Wählen Sie im Feld **Vorlagen** die Option **Klassenbibliothek**aus.
 
 4. Geben Sie im Feld **Name** für die Klassenbibliothek einen entsprechenden Namen ein, zum Beispiel „MySecondVisualizer“.
 
@@ -251,7 +251,7 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 2. Wählen Sie im Kontextmenü die Option **Hinzufügen** aus, und klicken Sie danach auf **Neues Element**.
 
-3. In der **neues Element hinzufügen** Dialogfeld **Vorlagen**, **Visual Studio installierte Vorlagen**Option **Debuggerschnellansicht**.
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Vorlagen**, von **Visual Studio installierte Vorlagen**die Option **Debugger**-Schnellansicht aus.
 
 4. Geben Sie im Feld **Name** einen passenden Namen ein, zum Beispiel „SecondVisualizer.cs“.
 
@@ -259,8 +259,8 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
    Das ist auch schon alles! Sehen Sie sich die Datei SecondVisualizer.cs und den Code an, den die Vorlage hinzugefügt hat. Experimentieren Sie ruhig mit dem Code. Mit den erlernten Grundlagen können Sie in Zukunft komplexere und nützlichere Schnellansichten nach Ihren eigenen Vorstellungen erstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)
-- [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
+- [How to: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

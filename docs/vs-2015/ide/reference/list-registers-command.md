@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659497"
 ---
 # <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
@@ -36,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Schalter
- /Display [{`register`&#124; `registerGroup`}...] Zeigt die Werte der angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Beispiel:
+ /Display [{ `register`&#124;`registerGroup` }...] Zeigt die Werte des angegebenen oder des an `register` `registerGroup` . Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Beispiel:
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,11 +46,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List zeigt alle Register Gruppen in der Liste an.
 
- /Watch [{`register`&#124; `registerGroup`}...] Fügt der Liste einen oder mehrere `register`-oder `registerGroup` Werte hinzu.
+ /Watch [{ `register`&#124;`registerGroup` }...] Fügt der Liste einen oder mehrere- `register` oder- `registerGroup` Werte hinzu.
 
- /Unwatch [{`register`&#124; `registerGroup`}...] Entfernt einen oder mehrere `register`-oder `registerGroup` Werte aus der Liste.
+ /Unwatch [{ `register`&#124;`registerGroup` }...] Entfernt einen oder mehrere- `register` oder- `registerGroup` Werte aus der Liste.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Der Alias `r` kann anstelle von `Debug.ListRegisters` verwendet werden.
 
 ## <a name="example"></a>Beispiel
@@ -60,5 +60,5 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Grundlagen zum Debuggen](../../debugger/debugging-basics-registers-window.md) von [Visual Studio-Befehlen](../../ide/reference/visual-studio-commands.md) : Register Fenster Gewusst [wie: Verwenden des Register Fensters](../../debugger/how-to-use-the-registers-window.md)

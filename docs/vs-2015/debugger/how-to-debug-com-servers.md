@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von COM-Servern | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen von com-Servern | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205416"
 ---
-# <a name="how-to-debug-com-servers"></a>Vorgehensweise: Debuggen von COM-Servern
+# <a name="how-to-debug-com-servers"></a>Gewusst wie: Debuggen von COM-Servern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Debuggen von COM-Serveranwendungen wirft einige spezifische Probleme auf, die nicht immer einfach zu lösen sind.  
@@ -45,8 +45,8 @@ Das Debuggen von COM-Serveranwendungen wirft einige spezifische Probleme auf, di
   
 3. Starten Sie die Containeranwendung.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)   
- [Vorgehensweise: RPC-Debuggen von COM-Clients und -Servern](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [COM-und ActiveX-Debugging](../debugger/com-and-activex-debugging.md)   
+ [Gewusst wie: Debuggen von com-Clients und-Servern mithilfe von RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [COM-Server-und Container Debugging](../debugger/com-server-and-container-debugging.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

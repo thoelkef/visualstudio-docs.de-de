@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154817"
 ---
 # <a name="msbuild-tasks"></a>MSBuild-Aufgaben
@@ -62,13 +62,13 @@ Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von A
 ```  
   
 ## <a name="included-tasks"></a>Verfügbare Aufgaben  
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bietet zahlreiche Aufgaben wie z.B. [Copy](../msbuild/copy-task.md) zum Kopieren von Dateien, [MakeDir](../msbuild/makedir-task.md) zum Erstellen von Verzeichnissen und [Csc](../msbuild/csc-task.md) zum Kompilieren von [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Quellcodedateien. Eine Liste mit allen verfügbaren Aufgaben sowie Informationen zu ihrer jeweiligen Verwendung finden Sie unter [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz).  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bietet zahlreiche Aufgaben wie z.B. [Copy](../msbuild/copy-task.md) zum Kopieren von Dateien, [MakeDir](../msbuild/makedir-task.md) zum Erstellen von Verzeichnissen und [Csc](../msbuild/csc-task.md) zum Kompilieren von [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Quellcodedateien. Eine umfassende Liste der verfügbaren Aufgaben und Verwendungs Informationen finden Sie unter [Task Reference](../msbuild/msbuild-task-reference.md)(Aufgaben Referenz).  
   
 ## <a name="overridden-tasks"></a>Überschriebene Aufgaben  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sucht in mehreren Speicherorten nach Aufgaben. Beim ersten Speicherort handelt es sich um Dateien mit der Erweiterung .OverrideTasks, die in den .NET Framework-Verzeichnissen gespeichert sind. Aufgaben in diesen Dateien überschreiben alle anderen Aufgaben mit denselben Namen, einschließlich Aufgaben in der Projektdatei. Beim zweiten Speicherort handelt es sich um Dateien mit der Erweiterung .Tasks, die in den .NET Framework-Verzeichnissen gespeichert sind. Wird die Aufgabe in keinem dieser beiden Speicherorte gefunden, so wird die Aufgabe in der Projektdatei verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+## <a name="see-also"></a>Weitere Informationen  
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
- [Task Writing](../msbuild/task-writing.md)  (Schreiben von Aufgaben)  
- [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (MSBuild-Inlineaufgaben)
+ [Schreiben von Aufgaben](../msbuild/task-writing.md)   
+ [Inline Aufgaben](../msbuild/msbuild-inline-tasks.md)

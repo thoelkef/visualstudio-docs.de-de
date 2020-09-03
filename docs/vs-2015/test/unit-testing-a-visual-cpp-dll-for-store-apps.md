@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d5f86eb40e1401f98a4c66d0b971fb006762cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659696"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Unittests bei einer Visual C++-DLL für Store-Apps
@@ -25,42 +25,42 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
  In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).
 
-## <a name="BKMK_In_this_topic"></a> In diesem Thema
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> In diesem Thema
  Dieses Thema führt Sie durch die folgenden Aufgaben:
 
- [Erstellen der Projektmappe und des Komponententestprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)
+ [Erstellen der Projekt Mappe und des Komponenten Testprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Überprüfen, ob die Tests im Test-Explorer ausgeführt werden](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Hinzufügen des DLL-Projekts zur Projektmappe](#BKMK_Add_the_DLL_project_to_the_solution)
+ [Hinzufügen des DLL-Projekts zur Projekt Mappe](#BKMK_Add_the_DLL_project_to_the_solution)
 
- [Verknüpfen des Testprojekts mit dem DLL-Projekt](#BKMK_Couple_the_test_project_to_the_dll_project)
+ [Verknüpfen Sie das Testprojekt mit dem DLL-Projekt.](#BKMK_Couple_the_test_project_to_the_dll_project)
 
- [Tests iterativ steigern und erfolgreich abschließen](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [Führen Sie die Tests iterativ aus, und führen Sie Sie aus.](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [Debuggen eines fehlgeschlagenen Tests](#BKMK_Debug_a_failing_test)
+ [Debuggen eines fehlerhaften Tests](#BKMK_Debug_a_failing_test)
 
  [Umgestalten des Codes, ohne Tests zu ändern](#BKMK_Refactor_the_code_without_changing_tests)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
 1. Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert**, erweitern Sie **Visual C++** , und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.
+2. Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert**, erweitern Sie **Visual C++**, und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.
 
-     ![Erstellen einer C&#43; &#43; -Komponenten Test Bibliothek](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
+     ![Erstellen einer C-&#43;&#43; Komponenten Test Bibliothek](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
 
 3. Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
 
-     ![Projekt Mappe und Projektname und Speicherort angeben](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Name und Speicherort für Projektmappe und Projekt angeben](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
 
 4. Öffnen Sie im neuen Projekt **unittest1.cpp**.
 
-     ![UnitTest1. cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
 
      Hinweis:
 
-    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}`verwendet wird.
+    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}` verwendet wird.
 
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.
 
@@ -68,7 +68,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in der MSDN Library.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
 
 1. Fügen Sie den Testcode ein:
 
@@ -83,15 +83,15 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
 2. Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
 
-     Das Testprojekt wird erstellt und ausgeführt. Das Test-Explorer-Fenster wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
+     Das Testprojekt wird erstellt und ausgeführt. Das Fenster Test-Explorer wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich "Zusammenfassung" werden weitere Informationen über den ausgewählten Test angezeigt.
 
      ![Test-Explorer](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
+## <a name="add-the-dll-project-to-the-solution"></a><a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
 1. Wählen Sie im Projektmappen-Explorer den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
 
-     ![Erstellen des Projekts "rooterlib"](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![RooterLib-Projekt erstellen](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
 
 2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **DLL (Windows Store-Apps)** aus.
 
@@ -123,13 +123,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
 4. Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
 
-    1. Wählen Sie im Projektmappen-Explorer das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
+    1. Wählen Sie in Projektmappen-Explorer das Projekt **rooterlib** aus, und klicken Sie dann im Kontextmenü auf **Eigenschaften** .
 
          ![Präprozessorsymboldefinition hinzufügen](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
 
-    2. Erweitern Sie im Dialogfeld „Eigenschaftenseite“ für RooterLib die Option **Konfigurationseigenschaften** und dann **C++** , und wählen Sie **Präprozessor**.
+    2. Erweitern Sie im Dialogfeld RooterLib Property Page (RooterLib-Eigenschaftenseite) die Option **Konfigurationseigenschaften** und anschließend **C++** , und wählen Sie **Präprozessor** aus.
 
-    3. Wählen Sie **\<<Bearbeiten...>** in der Liste **Präprozessordefinitionen** aus, und fügen Sie dann dem Dialogfeld „Präprozessordefinitionen“ `ROOTERLIB_EXPORTS` hinzu.
+    3. Wählen Sie **\<Edit...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld Präprozessordefinitionen hinzu.
 
 5. Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie **RooterLib.cpp** und fügen Sie den folgenden Code hinzu:
 
@@ -147,15 +147,15 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     ```
 
-## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Verknüpfen Sie das Testprojekt mit dem DLL-Projekt.
 
 1. Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
 
-   1. Wählen Sie im Projektmappen-Explorer das Projekt **RooterLibTests** aus, und wählen Sie dann im Kontextmenü die Option **Verweise** aus.
+   1. Wählen Sie in Projektmappen-Explorer das Projekt **rooterlibtests** aus, und klicken Sie dann im Kontextmenü auf **Verweise...** .
 
-   2. Erweitern Sie im Dialogfeld „Projekteigenschaften“ von RooterLib die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise**.
+   2. Erweitern Sie im Dialogfeld RooterLib Project Properties (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
 
-   3. Wählen Sie **Neuen Verweis hinzufügen**.
+   3. Wählen Sie **neuen Verweis hinzufügen...** aus.
 
    4. Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
 
@@ -194,13 +194,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     Der neue Test wird im Test-Explorer im Knoten **Nicht ausgeführte Tests** angezeigt.
 
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
-    ![Grundlegender Test erfolgreich](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![Einfacher Test bestanden](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
 1. Fügen Sie einen neuen Test hinzu:
 
@@ -224,11 +224,11 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     >
     >  Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
 3. Der Test schlägt fehl.
 
-     ![RangeTest schlägt fehl](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Fehler beim RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
@@ -254,14 +254,14 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
     ```
 
-5. Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+5. Erstellen Sie die Projekt Mappe, und wählen Sie dann im Test-Explorer **alle ausführen**aus.
 
      Beide Tests sind erfolgreich.
 
 > [!TIP]
 > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test zu **unittest1.cpp** hinzu:
 
@@ -295,11 +295,11 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
    ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
     Der Test schlägt fehl. Wählen Sie den Testnamen im Test-Explorer aus. Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
 
-    ![Fehler bei negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Fehler bei NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
@@ -325,13 +325,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 
        ```
 
-   1. Wählen Sie im Test-Explorer **Alle ausführen** aus, um die korrigierte Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
+   1. Wählen Sie im Test-Explorer die Option **alle ausführen** aus, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
 
    Alle Tests sind nun erfolgreich.
 
-   ![Alle Tests bestanden](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![Alle Tests erfolgreich](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
+## <a name="refactor-the-code-without-changing-tests"></a><a name="BKMK_Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
 
 1. Vereinfachen Sie die zentrale Berechnung in der `SquareRoot`-Funktion:
 

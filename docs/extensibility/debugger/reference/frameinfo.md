@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Microsoft Docs
+title: FrameInfo | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736784"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-Beschreibt einen Stapelrahmen.
+Beschreibt einen Stapel Rahmen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -65,51 +65,51 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Member
 `m_dwValidFields`\
-Eine Kombination von [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Flags aus der FRAMEINFO_FLAGS-Enumeration, die angibt, welche Felder ausgefüllt werden.
+Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
 `m_bstrFuncName`\
-Der dem Stapelrahmen zugeordnete Funktionsname.
+Der dem Stapel Rahmen zugeordnete Funktionsname.
 
 `m_bstrReturnType`\
-Der dem Stapelrahmen zugeordnete Rückgabetyp.
+Der Rückgabetyp, der dem Stapel Rahmen zugeordnet ist.
 
 `m_bstrArgs`\
-Die Argumente für die Funktion, die dem Stapelrahmen zugeordnet ist.
+Die Argumente für die Funktion, die dem Stapel Rahmen zugeordnet ist.
 
 `m_bstrLanguage`\
 Die Sprache, in der die Funktion implementiert wird.
 
 `m_bstrModule`\
-Der Modulname, der dem Stapelrahmen zugeordnet ist.
+Der Modulname, der dem Stapel Rahmen zugeordnet ist.
 
 `m_addrMin`\
-Die minimale physische Stapeladresse.
+Die minimale physische Stapel Adresse.
 
 `m_addrMAX`\
-Die maximale physische Stapeladresse.
+Die maximale physische Stapel Adresse.
 
 `m_pFrame`\
-Das [IDebugStackFrame2-Objekt,](../../../extensibility/debugger/reference/idebugstackframe2.md) das diesen Stapelrahmen darstellt.
+Das [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Objekt, das diesen Stapel Rahmen darstellt.
 
 `m_pModule`\
-Das [IDebugModule2-Objekt,](../../../extensibility/debugger/reference/idebugmodule2.md) das das Modul darstellt, das diesen Stapelrahmen enthält.
+Das [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das das Modul darstellt, das diesen Stapel Rahmen enthält.
 
 `m_fHasDebugInfo`\
-Ungleich Null`TRUE`( ), wenn Debuginformationen im angegebenen Frame vorhanden sind.
+Ungleich NULL ( `TRUE` ), wenn im angegebenen Frame Debuginformationen vorhanden sind.
 
 `m_fStaleCode`\
-Nicht-Null`TRUE`( ), wenn der Stapelrahmen Code zugeordnet ist, der nicht mehr gültig ist.
+Ungleich NULL ( `TRUE` ), wenn der Stapel Rahmen Code zugeordnet ist, der nicht mehr gültig ist.
 
 `m_fAnnotatedFrame`\
-Nicht-Null`TRUE`( ), wenn der Stapelrahmen vom Sitzungsdebug-Manager (SDM) mit Anmerkungen benotet wird.
+Ungleich NULL ( `TRUE` ), wenn der Stapel Rahmen vom Sitzungs-Debug-Manager (SDM) kommentiert wird.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) übergeben, die ausgefüllt werden soll. Diese Struktur ist auch in einer Liste enthalten, die in der [IEnumDebugFrameInfo2-Schnittstelle](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) enthalten ist, die wiederum von einem Aufruf an die [EnumFrameInfo-Methode](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) zurückgegeben wird.
+Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) -Methode, die ausgefüllt werden soll, übermittelt. Diese Struktur ist auch in einer Liste enthalten, die in der [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle enthalten ist, die wiederum von einem Rückruf der [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

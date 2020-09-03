@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205638"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference-Aufgabe
@@ -36,7 +36,7 @@ Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.Resolve
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|Erforderliche [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]`-Parameter.<br /><br /> Ruft die Suchpfade zum Auflösen von Assemblyidentitäten systemeigener Verweise ab oder legt sie fest.|  
+|`AdditionalSearchPaths`|Erforderlich [Zeichenfolge] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]`-Parameter.<br /><br /> Ruft die Suchpfade zum Auflösen von Assemblyidentitäten systemeigener Verweise ab oder legt sie fest.|  
 |`ContainedComComponents`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die COM-Komponenten der systemeigenen Assembly ab oder legt sie fest.|  
 |`ContainedLooseEtcFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die im systemeigenen Manifest aufgelisteten losen ETC-Dateien ab oder legt sie fest.|  
 |`ContainedLooseTlbFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die ungebundenen TLB-Dateien der systemeigenen Assembly ab oder legt sie fest.|  
@@ -46,8 +46,8 @@ Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.Resolve
 |`NativeReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Ruft die systemeigenen Win32-Assemblyverweise ab oder legt diese fest.|  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erfüllen](../msbuild/msbuild-tasks.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

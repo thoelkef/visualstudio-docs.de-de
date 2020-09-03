@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Dokumenteigenschaften in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Benutzerdefinierte Dokumenteigenschaften in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,27 +13,27 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2062932f5c9b0c1d51b0503742f7387b7da3dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196905"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Benutzerdefinierte Dokumenteigenschaften in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dokumenteigenschaften können angezeigt werden, der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Eigenschaften** Fenster. Programmiersprachen haben in der Regel keine einzelnen Dateien zugeordnete Eigenschaften. Allerdings unterstützt XML-Dokumenteigenschaften, die die Codierung, Schema und Stylesheet betreffen.  
+Dokumenteigenschaften können im [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Eigenschaften** Fenster angezeigt werden. Programmiersprachen sind im Allgemeinen keine Eigenschaften zugeordnet, die einzelnen Quelldateien zugeordnet sind. XML unterstützt jedoch Dokumenteigenschaften, die die Codierung, das Schema und das Stylesheet beeinflussen.  
   
-## <a name="discussion"></a>Diskussion  
- Wenn Ihre Sprache benutzerdefinierte Dokumenteigenschaften benötigt, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.DocumentProperties> Klasse und implementieren Sie die erforderlichen Eigenschaften für die abgeleitete Klasse.  
+## <a name="discussion"></a>Diskussion (Discussion)  
+ Wenn Ihre Sprache benutzerdefinierte Dokumenteigenschaften benötigt, müssen Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.DocumentProperties> -Klasse ableiten und die erforderlichen Eigenschaften für die abgeleitete Klasse implementieren.  
   
- Darüber hinaus werden die Dokumenteigenschaften in der Regel in der Quelldatei selbst gespeichert. Dies erfordert, dass den Sprachdienst, zum Analysieren von Informationen über die Eigenschaft aus der Quelldatei anzuzeigenden der **Eigenschaften** Fenster und die Quelldatei zu aktualisieren, wenn eine Änderung, um die Dokumenteigenschaften in vorgenommen wird die  **Eigenschaften** Fenster.  
+ Außerdem werden Dokumenteigenschaften in der Regel in der Quelldatei gespeichert. Dies erfordert, dass der Sprachdienst die Eigenschaften Informationen aus der Quelldatei analysiert, die im **Eigenschaften** Fenster angezeigt werden sollen, und die Quelldatei aktualisieren, wenn an den Dokumenteigenschaften im **Eigenschaften** Fenster eine Änderung vorgenommen wird.  
   
 ## <a name="customizing-the-documentproperties-class"></a>Anpassen der DocumentProperties-Klasse  
- Zur Unterstützung von benutzerdefinierten Dokumenteigenschaften, leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.DocumentProperties> -Klasse und das Hinzufügen beliebig viele Eigenschaften, die Sie benötigen. Sie sollten auch angeben, Benutzerattribute, die zum Organisieren von in die **Eigenschaften** Fenster angezeigt. Wenn eine Eigenschaft verfügt nur über eine `get` Accessor wird angezeigt, als schreibgeschützt in der **Eigenschaften** Fenster. Wenn eine Eigenschaft, die beides aufweist `get` und `set` -Accessor angeben, die Eigenschaft auch aktualisiert werden der **Eigenschaften** Fenster.  
+ Um benutzerdefinierte Dokumenteigenschaften zu unterstützen, müssen Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.DocumentProperties> -Klasse ableiten und beliebig viele Eigenschaften hinzufügen. Sie sollten auch Benutzerattribute angeben, um Sie im **Eigenschaften** Fenster anzuzeigen. Wenn eine Eigenschaft nur über einen- `get` Accessor verfügt, wird Sie im **Eigenschaften** Fenster als schreibgeschützt angezeigt. Wenn eine Eigenschaft über `get` -und- `set` Accessoren verfügt, kann die-Eigenschaft auch im **Eigenschaften** Fenster aktualisiert werden.  
   
 ### <a name="example"></a>Beispiel  
- Hier ist eine Beispielklasse, die von abgeleiteten <xref:Microsoft.VisualStudio.Package.DocumentProperties>, dabei werden zwei Eigenschaften, Dateiname und die Beschreibung angezeigt. Wenn eine Eigenschaft aktualisiert wird, eine benutzerdefinierte Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse wird aufgerufen, um die Eigenschaft in der Quelldatei zu schreiben.  
+ Im folgenden finden Sie eine Beispiel Klasse, die von abgeleitet wird <xref:Microsoft.VisualStudio.Package.DocumentProperties> und zwei Eigenschaften, filename und Description, anzeigt. Wenn eine-Eigenschaft aktualisiert wird, wird eine benutzerdefinierte-Methode für die- <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse aufgerufen, um die-Eigenschaft in die Quelldatei zu schreiben.  
   
 ```csharp  
 using System.ComponentModel;  
@@ -122,8 +122,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-the-custom-documentproperties-class"></a>Instanziieren die benutzerdefinierte DocumentProperties-Klasse  
- Um die benutzerdefinierten Eigenschaften Dokumentklasse zu instanziieren, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> -Methode in Ihrer Version von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse die Rückgabe einer einzelnen Instanz von Ihr <xref:Microsoft.VisualStudio.Package.DocumentProperties> Klasse.  
+## <a name="instantiating-the-custom-documentproperties-class"></a>Instanziieren der benutzerdefinierten DocumentProperties-Klasse  
+ Um die benutzerdefinierte Dokumenteigenschaften Klasse zu instanziieren, müssen Sie die- <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> Methode in Ihrer Version der- <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse überschreiben, um eine einzelne Instanz der-Klasse zurückzugeben <xref:Microsoft.VisualStudio.Package.DocumentProperties> .  
   
 ### <a name="example"></a>Beispiel  
   
@@ -150,19 +150,19 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="properties-in-the-source-file"></a>Eigenschaften in der Quelldatei  
- Da die Dokumenteigenschaften für die Quelldatei in der Regel spezifisch sind, werden die Werte in der Quelldatei selbst gespeichert. Dies erfordert die Unterstützung durch die Sprachenparser oder den Scanner, um diese Eigenschaften zu definieren. Beispielsweise werden die Eigenschaften eines XML-Dokuments für den Stammknoten gespeichert. Die Werte für den Stammknoten werden geändert, wenn die **Eigenschaften** Werte geändert werden, und der Stammknoten wird im Editor aktualisiert.  
+ Da Dokumenteigenschaften in der Regel für die Quelldatei spezifisch sind, werden die Werte in der Quelldatei selbst gespeichert. Dies erfordert die Unterstützung durch den sprach Parser oder Scanner, um diese Eigenschaften zu definieren. Beispielsweise werden die Eigenschaften eines XML-Dokuments auf dem Stamm Knoten gespeichert. Die Werte auf dem Stamm Knoten werden geändert, wenn die **Eigenschaften** Fenster Werte geändert werden und der Stamm Knoten im Editor aktualisiert wird.  
   
 ### <a name="example"></a>Beispiel  
- In diesem Beispiel werden die Eigenschaften "Filename" und "Description" in den ersten beiden Zeilen der Quelldatei, als in einem besonderen Kommentar-Header eingebettet gespeichert:  
+ In diesem Beispiel werden die Eigenschaften "filename" und "Description" in den ersten beiden Zeilen der Quelldatei gespeichert, die in einen speziellen Kommentar Header eingebettet sind:  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- Dieses Beispiel zeigt die beiden Methoden zum Abrufen und die Dokumenteigenschaften aus der Quelldatei sowie die ersten beiden Zeilen festlegen, wie die Eigenschaften aktualisiert werden, wenn der Benutzer die Quelldatei direkt bearbeitet werden. Die `SetPropertyValue` -Methode in dem Beispiel, das hier ist identisch, die eine aus aufgerufen der `TestDocumentProperties` -Klasse wie im Abschnitt "Anpassen der DocumentProperties-Klasse" dargestellt.  
+ Dieses Beispiel zeigt die zwei Methoden, die erforderlich sind, um die Dokumenteigenschaften aus den ersten beiden Zeilen der Quelldatei zu erhalten und festzulegen. Außerdem wird erläutert, wie die Eigenschaften aktualisiert werden, wenn der Benutzer die Quelldatei direkt ändert. Die- `SetPropertyValue` Methode im hier gezeigten Beispiel ist dieselbe, die von der-Klasse aufgerufen wird, `TestDocumentProperties` wie im Abschnitt "Anpassen der DocumentProperties-Klasse" gezeigt.  
   
- Dieses Beispiel verwendet die Überprüfung, um den Typ des Tokens in den ersten beiden Zeilen zu bestimmen. In diesem Beispiel ist nur zur Veranschaulichung. Ein üblicher Ansatz für dieses Problem ist beim Analysieren der Quelldatei in die eine Analysestruktur bezeichnet wird, von denen jeder Knoten der Struktur Informationen über ein bestimmtes Token enthält. Der Stammknoten enthält die Dokumenteigenschaften.  
+ In diesem Beispiel wird der Scanner verwendet, um den Typ der Token in den ersten beiden Zeilen zu bestimmen. Dieses Beispiel dient nur zu Illustrations Zwecken. Ein typischer Ansatz für diese Situation besteht darin, die Quelldatei in eine Analyse Struktur zu analysieren, in der jeder Knoten der Strukturinformationen zu einem bestimmten Token enthält. Der Stamm Knoten enthält die Dokumenteigenschaften.  
   
 ```csharp  
 using System.ComponentModel;  
@@ -399,5 +399,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)

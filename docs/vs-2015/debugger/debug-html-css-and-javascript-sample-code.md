@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Beispielcode für HTML, CSS und JavaScript | Microsoft-Dokumentation
+title: HTML-, CSS-und JavaScript-Beispielcode Debuggen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161468"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Debuggen von Beispielcode für HTML, CSS und JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
+ Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
   
 ## <a name="sample-code"></a>Beispielcode  
- Der folgende HTML-Code wird im \<body>-Tag im Schnellstart verwendet.  
+ Der folgende HTML-Code wird im- \<body> Tag im Schnellstart verwendet.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -104,5 +104,5 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 })();  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

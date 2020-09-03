@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 325bbecf3a34a00664a9f63cdbf995bd14138d7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194880"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Positioniert den Enumerator durch eine Suche über die virtuelle Adresse (VA).  
+Positioniert den Enumerator, indem eine Suche nach einer virtuellen Adresse (VA) durchgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,14 +36,14 @@ HRESULT symbolByVA ( 
   
 #### <a name="parameters"></a>Parameter  
  virtualAddress  
- [in] Virtuelle Adresse.  
+ in Virtuelle Adresse.  
   
  ppsymbol  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das Symbol gefunden darstellt.  
+ vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das gefundene Symbol darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn das Symbol nicht gefunden werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn das Symbol nicht gefunden wurde. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

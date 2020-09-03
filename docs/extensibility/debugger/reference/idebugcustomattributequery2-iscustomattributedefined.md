@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2:: iscustomattributedefined | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732535"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Bestimmt, ob ein benutzerdefiniertes Attribut nach Namen vorhanden ist.
+Bestimmt, ob ein benutzerdefiniertes Attribut anhand des Namens vorhanden ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parameter
 `pszCustomAttributeName`\
-[in] Eine Zeichenfolge, die den Namen des zu suchenden benutzerdefinierten Attributs enthält.
+in Eine Zeichenfolge mit dem Namen des zu suchenden benutzerdefinierten Attributs.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt S_OK zurück, wenn das benutzerdefinierte Attribut für dieses Feld definiert ist, andernfalls wird S_FALSE zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Um die Attributbytes zu erhalten, die dem benutzerdefinierten Attribut zugeordnet sind, rufen Sie die [GetCustomAttributeByName-Methode](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) auf.
+ Rufen Sie die [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) -Methode auf, um die dem benutzerdefinierten Attribut zugeordneten Attribut Bytes zu erhalten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

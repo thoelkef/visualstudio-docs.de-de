@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371897"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
@@ -67,6 +67,6 @@ Verwenden Sie in der Liste **diesen Regelsatz ausführen** eine der folgenden Me
 
 Weitere Informationen zum Erstellen und Implementieren eines benutzerdefinierten Eincheck Richtlinien-Regelsatzes finden Sie unter [Implementieren von benutzerdefinierten Eincheck Richtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType | Microsoft-Dokumentation
+title: 'Idebugbinder:: resolvedynamictype | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3be2234121fe76702dbfa5784bf20c1558cadce3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205823"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode gibt den genauen Typ einer Variablen.  
+Diese Methode gibt den genauen Typ einer Variablen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,15 +42,15 @@ int ResolveDynamicType(
   
 #### <a name="parameters"></a>Parameter  
  `pDynamic`  
- [in] Ein [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) einen Typ einer Variablen darstellt.  
+ in Ein [idebugdynamicfield](../../../extensibility/debugger/reference/idebugdynamicfield.md) , das den Typ einer Variablen darstellt.  
   
  `ppResolved`  
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bietet spezifische Informationen über den Typ der Variablen.  
+ vorgenommen Gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) zurück, das spezifische Informationen zum Typ der Variablen bereit gibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+ [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

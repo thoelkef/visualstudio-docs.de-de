@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+title: 'Idebugsymbolprovider:: getnamespacesusedataddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719210"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Diese Methode erstellt einen Enumerator für Namespaces, die der Debugadresse zugeordnet sind.
+Diese Methode erstellt einen Enumerator für Namespaces, die der Debug-Adresse zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Die Debugadresse.
+in Die debugadresse.
 
 `ppEnum`\
-[out] Gibt einen [IEnumDebugFields-Enumerator](../../../extensibility/debugger/reference/ienumdebugfields.md) für die Namespaces zurück.
+vorgenommen Gibt einen [ienumentbugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Enumerator für die Namespaces zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Möglicherweise sind einer bestimmten Debugadresse mehrere Namespaces zugeordnet, z. `using` B. verschachtelte Namespaces oder mehrere Anweisungen.
+ Einer bestimmten debugadresse können mehrere Namespaces zugeordnet sein, z. b. schsted Namespaces oder mehrere `using` Anweisungen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

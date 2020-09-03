@@ -11,20 +11,20 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162118"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
+Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Beschreibung >  
+ \<Description>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,10 +43,10 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|  
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|  
+|`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|  
+|`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -60,10 +60,10 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.  
   
- Der Text stellt eine Beschreibung der Vorlage bereit.  
+ Der Text enthält eine Beschreibung der Vorlage.  
   
-## <a name="remarks"></a>Hinweise  
- `Description` ist ein erforderliches untergeordnetes Element des `TemplateData`-Elements.  
+## <a name="remarks"></a>Bemerkungen  
+ `Description` ist ein erforderliches untergeordnetes Element des- `TemplateData` Elements.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Anwendung veranschaulicht.  
@@ -92,6 +92,6 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

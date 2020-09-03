@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149267"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
@@ -45,18 +45,18 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 |Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name der Ressource oder der Funktion.|  
-|**Exklusive blockierte Zeit %**|– Für eine Ressource, die gesamte Zeit, in der der Zugriff auf die Ressource blockiert wurde und ein Thread warten musste.<br />– Für eine Funktion, die Zeit, die diese Instanzen der Funktion für den Zugang auf die übergeordnete Ressource blockiert waren, während die Funktion Code im Funktionstext ausführte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|  
+|**Exklusive blockierte Zeit**|– Für eine Ressource, die gesamte Zeit, in der der Zugriff auf die Ressource blockiert wurde und ein Thread warten musste.<br />– Für eine Funktion, die Zeit, die diese Instanzen der Funktion für den Zugang auf die übergeordnete Ressource blockiert waren, während die Funktion Code im Funktionstext ausführte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|  
 |**Exklusive blockierte Zeit %**|– Für eine Ressource, der Prozentsatz der gesamten blockierten Zeit in den Profilerstellungsdaten, die für diese Ressource blockiert war<br />– Für eine Funktion, der Prozentsatz der gesamten blockierten Zeit in den Profilerstellungsdaten, die exklusiv für diese Funktionsinstanzen blockiert war|  
 |**Exklusive Konflikte**|– Für eine Ressource, die Gesamtzahl der Fälle, in denen der Zugriff auf die Ressource blockiert war und einen Thread warten musste.<br />– Für eine Funktion, die Anzahl der Fälle, in denen der Zugriff diese Instanzen der Funktion auf die übergeordnete Ressource blockiert war, während die Funktion Code im Funktionstext ausführte. Dies umfasst nicht die blockierten Ereignisse für Funktionen, die von dieser Funktion aufgerufen wurden.|  
 |**Exklusive Konflikte %**|– Für eine Ressource, der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die für den Zugriff auf diese Ressource Konfliktereignisse waren.<br />– Für eine Ressource, der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die für den Zugriff auf diese Funktionsinstanzen für die übergeordnete Ressource exklusive Konfliktereignisse waren.|  
 |**Inklusive blockierte Zeit**|– Für eine Ressource, die gesamte Zeit, in der der Zugriff auf die Ressource blockiert wurde und ein Thread warten musste.<br />– Für eine Funktion, die Zeit, in der der Zugang dieser Instanzen der Funktion oder jede Funktion, die von den Instanzen aufgerufen wurde, auf die übergeordnete Ressource blockiert wurde, als die Funktion Code im Funktionstext ausführte.|  
 |**Inklusive blockierte Zeit %**|– Für eine Ressource, der Prozentsatz der gesamten blockierten Zeit in den Profilerstellungsdaten, die für diese Ressource blockiert war<br />– Für eine Ressource, der Prozentsatz der gesamten blockierten Zeit in der Profilerstellung, die für die Instanzen dieser Funktion blockiert wurde.|  
-|**Inklusive Konflikte %**|– Für eine Ressource, die Gesamtzahl der Fälle, in denen der Zugriff auf die Ressource blockiert war und einen Thread warten musste.<br />– Für eine Funktion, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf die Instanzen der Funktion für die übergeordnete Ressource inklusive Konfliktereignisse waren.|  
-|**Inklusive Konflikte %**|– Für eine Ressource, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf diese Ressource Konfliktereignisse waren.<br />– Für eine Funktion, die Anzahl der Fälle, in denen der Zugriff dieser Instanzen der Funktion auf die übergeordnete Ressource blockiert war, während die Funktion Code im Funktionstext ausführte. Dies umfasst nicht die blockierten Ereignisse für Funktionen, die von dieser Funktion aufgerufen wurden.|  
-|**Level**|Die Tiefe dieser Funktion in der Aufrufstruktur. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
+|**Inklusive Konflikte**|– Für eine Ressource, die Gesamtzahl der Fälle, in denen der Zugriff auf die Ressource blockiert war und einen Thread warten musste.<br />– Für eine Funktion, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf die Instanzen der Funktion für die übergeordnete Ressource inklusive Konfliktereignisse waren.|  
+|**Inklusive Konflikte %**|– Für eine Ressource, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf diese Ressource Konfliktereignisse waren.<br />– Für eine Funktion, die Anzahl der Fälle, in denen der Zugriff diese Instanzen der Funktion auf die übergeordnete Ressource blockiert war, während die Funktion Code im Funktionstext ausführte. Dies umfasst nicht die blockierten Ereignisse für Funktionen, die von dieser Funktion aufgerufen wurden.|  
+|**Ebene**|Die Tiefe dieser Funktion in der Aufrufstruktur. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|  
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|  
 |**Prozess-ID**|Der Prozess-ID (PID) des Prozesses, in dem die Funktion ausgeführt wurde.|  
-|**Prozessname**|Der Prozessname.|  
+|**Prozessname**|Der Name des Prozesses.|  
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|

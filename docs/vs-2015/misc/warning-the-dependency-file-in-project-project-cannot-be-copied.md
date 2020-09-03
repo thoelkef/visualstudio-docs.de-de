@@ -1,5 +1,5 @@
 ---
-title: '&#39;Warnung: die Abhängigkeits&#39; Datei in &#39;Project&#39; Project kann nicht in das Lauf Verzeichnis kopiert werden, da Sie die &#39;Verweis Datei überschreiben würde. &#39; | Microsoft-Dokumentation'
+title: 'Warnung: die Abhängigkeits &#39;Datei&#39; in Project &#39;Project&#39; kann nicht in das Lauf Verzeichnis kopiert werden, da Sie den Verweis &#39;Datei überschreiben würde. &#39; | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672816"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>&#39;Warnung: die Abhängigkeits&#39; Datei in &#39;Project&#39; Project kann nicht in das Lauf Verzeichnis kopiert werden, da Sie die &#39;Verweis Datei überschreiben würde.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Warnung: die Abhängigkeits &#39;Datei&#39; in Project &#39;Project&#39; kann nicht in das Lauf Verzeichnis kopiert werden, da Sie den Verweis &#39;Datei überschreiben würde. &#39;
 Es liegt ein Konflikt zwischen Abhängigkeiten vor: Mehrere unterschiedliche Assemblydateien mit demselben Dateinamen sollen in das Verzeichnis „bin“ für die auszuführende Anwendung kopiert werden. Das Ausführungsverzeichnis kann den Konflikt lösen, da es sich bei einer der Abhängigkeiten um einen Primärverweis handelt.
 
  Durch Doppelklicken auf dieses Aufgabenlistenelement gelangen Sie zu dem den Konflikt auslösenden Primärverweisknoten.
@@ -33,5 +33,5 @@ Es liegt ein Konflikt zwischen Abhängigkeiten vor: Mehrere unterschiedliche Ass
 
 - Kopieren Sie eine (oder keine) Assemblydatei in das Bin-Verzeichnis, indem Sie die Assemblydateien im globalen Assemblycache ablegen. Der globale Assemblycache löst Konflikte aufgrund von Dateinamen. Es werden keine lokalen Kopien der Assemblydatei angelegt, da die Common Language Runtime weiß, wie sie Assemblys im globalen Assemblycache finden kann. Weitere Informationen finden Sie unter [Working with Assemblies and the Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) und [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md) [globalen Assemblycache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) Gewusst [wie: Erstellen und Entfernen von Projekt Abhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

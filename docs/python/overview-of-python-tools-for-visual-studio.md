@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300864"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315264"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141893"
 ---
 # <a name="functions-view---contention-data"></a>Funktionsansicht – Konfliktdaten
@@ -25,7 +25,7 @@ Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profil
   
  In der folgenden Tabelle werden die Werte erklärt, die in der Funktionsansicht einer Profilerstellungsdatendatei angezeigt werden, die anhand der Parallelitätsmethode erstellt wurde.  
   
-|Spalte|BESCHREIBUNG|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit %**|Der Zeitraum, in dem diese Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|  
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit in der Profilerstellung, für die nur diese Funktion blockiert wurde.|  
@@ -44,10 +44,10 @@ Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profil
 |**Prozessname**|Der Prozessname.|  
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Funktionsansicht](../profiling/functions-view.md)   
- [Funktionsansicht - Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Funktionsansicht - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Funktions Ansicht](../profiling/functions-view.md)   
+ [Funktions Ansicht-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Funktions Ansicht-Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Funktions Ansicht](../profiling/functions-view-instrumentation-data.md)   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)

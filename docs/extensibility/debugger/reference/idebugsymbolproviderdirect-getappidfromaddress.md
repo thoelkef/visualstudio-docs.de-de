@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs
+title: 'Idebugsymbolproviderdirect:: getappidfromaddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719161"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-Ruft den Anwendungsdomänenbezeichner mit der Debugadresse ab.
+Ruft den Anwendungs Domänen Bezeichner anhand der debugadresse ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,10 +42,10 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Debugadresse, die durch die [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
+in Debug-Adresse, die durch die [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle dargestellt wird.
 
 `pAppID`\
-[out] Bezeichner der Anwendungsdomäne.
+vorgenommen Der Bezeichner der Anwendungsdomäne.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

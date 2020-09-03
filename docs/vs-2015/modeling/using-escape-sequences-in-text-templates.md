@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a45aa36ddce57141a7e1e851f7f0766b77015ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659423"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Verwenden von Escapesequenzen in Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Escapesequenzen in Textvorlagen verwenden, um Textvorlagen Tags zu C# generieren, und (nur im Code), um Steuerzeichen und Anführungszeichen zu versehen.
+Mithilfe von Escapesequenzen in Textvorlagen können Sie Textvorlagen Tags generieren und (nur in c#-Code) Steuerzeichen und Anführungszeichen mit Escapezeichen versehen.
 
  Um öffnende und schließende Tags für einen standardmäßigen Codeblock in der Ausgabedatei zu drucken, versehen Sie die Tags wie folgt:
 
@@ -33,11 +33,11 @@ Sie können Escapesequenzen in Textvorlagen verwenden, um Textvorlagen Tags zu C
 
  Wenn ein TextBlock Zeichen folgen enthält, die zum Escapezeichen von Textvorlagen Tags verwendet werden, können Sie die folgenden Escapesequenzen verwenden:
 
-- Wenn einem Text Template-Tag eine gerade Anzahl von Escapezeichen (\\) vorangestellt ist, enthält der Vorlagen Parser die Hälfte der Escapezeichen und schließt die Sequenz als Textvorlagen-Tag ein. Wenn die Textvorlage beispielsweise vier Escapezeichen enthält, werden in der generierten Datei zwei "\\"-Zeichen angezeigt.
+- Wenn einem Text Template-Tag eine gerade Anzahl von Escapezeichen () vorangestellt ist, \\ enthält der Vorlagen Parser die Hälfte der Escapezeichen und schließt die Sequenz als Textvorlagen-Tag ein. Wenn die Textvorlage beispielsweise vier Escapezeichen enthält, werden \\ in der generierten Datei zwei ""-Zeichen angezeigt.
 
-- Wenn dem Text Template-Tag eine ungerade Anzahl von Escapezeichen (\\) vorangestellt ist, enthält der Vorlagen Parser die Hälfte der "\\"-Zeichen sowie das Tag selbst (\< # oder # >). Das-Tag wird nicht als Textvorlagen-Tag betrachtet.
+- Wenn dem Text Template-Tag eine ungerade Anzahl von Escapezeichen () vorangestellt ist \\ , enthält der Vorlagen Parser die Hälfte der " \\ "-Zeichen sowie das Tag selbst ( \<# or #> ). Das-Tag wird nicht als Textvorlagen-Tag betrachtet.
 
-- Wenn ein Escapezeichen (\\) an einer anderen Stelle in einer anderen Sequenz als ein Escapezeichen für ein Steuerzeichen oder C# ein Anführungszeichen (nur in) angezeigt wird, wird das Zeichen direkt ausgegeben.
+- Wenn ein \\ Escapezeichen () an einer anderen Stelle in einer anderen Sequenz als dem Escapezeichen für ein Steuerzeichen oder ein Anführungszeichen (nur in c#) angezeigt wird, wird das Zeichen direkt ausgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

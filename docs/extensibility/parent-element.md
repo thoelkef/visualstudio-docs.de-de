@@ -1,5 +1,5 @@
 ---
-title: Übergeordnetes Element | Microsoft Docs
+title: Übergeordnetes Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702220"
 ---
 # <a name="parent-element"></a>Übergeordnetes Element
-Das übergeordnete Element einer Schaltfläche oder eines Kombinationsfelds darf nur eine Gruppe sein. Das übergeordnete Element eines Menüs oder einer Gruppe kann ein anderes Menü oder eine andere Gruppe sein. In einem [CommandPlacement-Element](../extensibility/commandplacement-element.md)ist dieses Element erforderlich. in allen anderen Instanzen ist es optional. Wenn dieses Element weggelassen `Group_Undefined:0` wird, wird das übergeordnete Element von impliziert.
+Das übergeordnete Element einer Schaltfläche oder eines Kombinations Felds darf nur eine Gruppe sein. Das übergeordnete Element eines Menüs oder einer Gruppe kann ein beliebiges anderes Menü oder eine andere Gruppe sein. In einem [commandplacement-Element](../extensibility/commandplacement-element.md)ist dieses Element erforderlich. in allen anderen Instanzen ist es optional. Wenn dieses Element weggelassen wird, wird das übergeordnete Element von `Group_Undefined:0` impliziert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,22 +32,22 @@ Das übergeordnete Element einer Schaltfläche oder eines Kombinationsfelds darf
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|guid|Erforderlich. GUID des GUID/ID-Befehlsbezeichners.|
-|id|Erforderlich. ID des GUID/ID-Befehlsbezeichners.|
+|guid|Erforderlich. GUID des Befehls Bezeichners GUID/ID.|
+|id|Erforderlich. ID des Befehls Bezeichners GUID/ID.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, die ein VSPackage für die integrierte Entwicklungsumgebung (IDE) bereitstellt. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfelder.|
-|[Buttons-Element](../extensibility/buttons-element.md)|[Gruppen-Schaltflächenelementelemente.](../extensibility/button-element.md)|
-|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|
-|[Gruppenelement](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
+|[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, die ein VSPackage für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellt. Beispielsweise Menü Elemente, Menüs, Symbolleisten und Kombinations Felder.|
+|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert [Schaltflächen Element](../extensibility/button-element.md) -Elemente.|
+|[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
+|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.|
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

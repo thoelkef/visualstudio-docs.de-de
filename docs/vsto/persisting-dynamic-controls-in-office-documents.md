@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71256007"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Beibehalten dynamischer Steuerelemente in Office-Dokumenten
@@ -51,7 +51,7 @@ Die folgende Tabelle enthält die systemeigenen Office-Objekte, die in einem Dok
 
 Wenn ein Benutzer ein Dokument öffnet, können anstelle von vorhandenen systemeigenen Steuerelementen dynamische Hoststeuerelemente neu erstellt werden. Durch diese Erstellung von Hoststeuerelementen beim Öffnen eines Dokuments wird das Verhalten simuliert, das der Benutzer möglicherweise erwartet.
 
-Verwenden Sie zum erneuten Erstellen eines Host Steuer Elements für Word oder <xref:Microsoft.Office.Tools.Excel.NamedRange> eines <xref:Microsoft.Office.Tools.Excel.ListObject> -oder-Host Steuer Elements für `Add`Excel eine \< *Steuerelement Klasse*> <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> - <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> Methode eines-Objekts oder eines-Objekts. Verwenden Sie eine Methode, die einen Parameter für das systemeigene Office-Objekt hat.
+Wenn Sie ein Host Steuerelement für Word oder ein- <xref:Microsoft.Office.Tools.Excel.NamedRange> oder- <xref:Microsoft.Office.Tools.Excel.ListObject> Host Steuerelement für Excel neu erstellen möchten, verwenden Sie eine- `Add` \<*control class*> Methode eines- <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> Objekts oder eines- <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> Objekts. Verwenden Sie eine Methode, die einen Parameter für das systemeigene Office-Objekt hat.
 
 Wenn Sie z. B. ein <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> -Hoststeuerelement aus einem vorhandenen systemeigenen <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> erstellen möchten, wenn das Dokument geöffnet wird, verwenden Sie die <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> -Methode, und übergeben Sie das vorhandene <xref:Microsoft.Office.Interop.Excel.ListObject>. Im folgenden Codebeispiel wird dies für ein Projekt auf Dokumentebene für Excel veranschaulicht. Der Code erstellt ein dynamisches <xref:Microsoft.Office.Tools.Excel.ListObject> neu, das auf einem vorhandenen <xref:Microsoft.Office.Interop.Excel.ListObject> namens `MyListObject` in der `Sheet1` -Klasse basiert.
 
@@ -60,9 +60,9 @@ Wenn Sie z. B. ein <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty
 
 ### <a name="re-create-chart"></a>Diagramm neu erstellen
 
-Zum erneuten Erstellen <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> eines-Host Steuer Elements müssen Sie zunächst <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>das systemeigene löschen und <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> dann mithilfe der <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> -Methode neu erstellen. Es gibt keine `Add` \< *Steuerelement Klasse*>-Methode, mit der Sie eine <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> neue auf der Grundlage <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>eines vorhandenen erstellen können.
+Zum erneuten Erstellen eines- <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> Host Steuer Elements müssen Sie zunächst das systemeigene löschen <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> und dann <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> mithilfe der-Methode neu erstellen <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> . Es gibt keine- `Add` \<*control class*> Methode, mit der Sie eine neue auf <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> der Grundlage eines vorhandenen erstellen können <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> .
 
-Wenn Sie die <xref:Microsoft.Office.Interop.Excel.Chart>systemeigene nicht zuerst löschen, erstellen Sie ein zweites, doppeltes Diagramm, wenn Sie das <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>neu erstellen.
+Wenn Sie die systemeigene nicht zuerst löschen <xref:Microsoft.Office.Interop.Excel.Chart> , erstellen Sie ein zweites, doppeltes Diagramm, wenn Sie das neu erstellen <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> .
 
 ## <a name="persist-windows-forms-controls-in-documents"></a>Beibehalten von Windows Forms Steuerelementen in Dokumenten
 
@@ -78,9 +78,9 @@ Gelöschte Windows Forms-Steuerelemente können neu erstellt werden, wenn der Be
 
 1. Informationen zu Größe, Position und Zustand der Steuerelemente müssen beim Speichern oder Schließen des Dokuments gespeichert werden. Bei einer Anpassung auf Dokument Ebene können Sie die Daten im Daten Cache des Dokuments speichern. In einem VSTO-Add-in können Sie die Daten in einem benutzerdefinierten XML-Abschnitt im Dokument speichern.
 
-2. Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. Bei Projekten auf Dokumentebene können Sie dieses Verhalten im `Sheet`*n*`_Startup` - oder `ThisDocument_Startup` -Ereignishandler veranlassen. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
+2. Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. In Projekten auf Dokument Ebene können Sie dies in den n- `Sheet` *n* `_Startup` oder- `ThisDocument_Startup` Ereignis Handlern tun. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
 
-### <a name="removingActiveX"></a>Entfernen von ActiveX-Wrappern in einem Add-in
+### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Entfernen von ActiveX-Wrappern in einem Add-in
 
 Wenn Sie Dokumenten dynamische Windows Forms Steuerelemente mithilfe eines VSTO-Add-Ins hinzufügen, können Sie verhindern, dass die ActiveX-Wrapper für die Steuerelemente im Dokument angezeigt werden, wenn es das nächste Mal geöffnet wird.
 
@@ -95,9 +95,9 @@ Das folgende Codebeispiel veranschaulicht, wie die `GetVstoObject`-Methode beim 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-Obwohl die `GetVstoObject`-Methode primär zum Generieren eines neuen Hostelements zur Laufzeit verwendet wird, werden mit ihr beim ersten Aufruf für ein bestimmtes Dokument auch alle ActiveX-Wrapper aus dem Dokument entfernt. Weitere Informationen zur Verwendung der `GetVstoObject` -Methode finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+Obwohl die- `GetVstoObject` Methode in erster Linie zum Generieren eines neuen Host Elements zur Laufzeit verwendet wird, löscht diese Methode auch alle ActiveX-Wrapper aus dem Dokument, wenn Sie zum ersten Mal für ein bestimmtes Dokument aufgerufen wird. Weitere Informationen zur Verwendung der- `GetVstoObject` Methode finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Wenn Ihr VSTO-Add-in dynamische Steuerelemente erstellt, wenn das Dokument geöffnet wird, ruft das VSTO-Add- `GetVstoObject` in die-Methode bereits als Teil des Prozesses auf, um die Steuerelemente zu erstellen. Es ist nicht erforderlich, einen separaten Aufruf der `GetVstoObject`-Methode hinzuzufügen, um in diesem Szenario ActiveX-Wrapper zu entfernen.
+Wenn Ihr VSTO-Add-in dynamische Steuerelemente erstellt, wenn das Dokument geöffnet wird, ruft das VSTO-Add-in die- `GetVstoObject` Methode bereits als Teil des Prozesses auf, um die Steuerelemente zu erstellen. Es ist nicht erforderlich, einen separaten Aufruf der `GetVstoObject`-Methode hinzuzufügen, um in diesem Szenario ActiveX-Wrapper zu entfernen.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Entfernen der dynamischen Steuerelemente vor dem Schließen des Dokuments
 

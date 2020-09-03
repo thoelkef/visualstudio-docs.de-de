@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: 'IDebugStackFrame2:: getphysicalstackrange | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719669"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Ruft eine maschinenabhängige Darstellung des Bereichs physischer Adressen ab, die einem Stapelrahmen zugeordnet sind.
+Ruft eine Computer abhängige Darstellung des Bereichs physischer Adressen ab, der einem Stapel Rahmen zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>Parameter
 `paddrMin`\
-[out] Gibt die niedrigste physische Adresse zurück, die diesem Stapelrahmen zugeordnet ist.
+vorgenommen Gibt die niedrigste physische Adresse zurück, die diesem Stapel Rahmen zugeordnet ist.
 
 `paddrMax`\
-[out] Gibt die höchste physische Adresse zurück, die diesem Stapelrahmen zugeordnet ist.
+vorgenommen Gibt die höchste physische Adresse zurück, die diesem Stapel Rahmen zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die von dieser Methode zurückgegebenen Informationen werden vom Sitzungsdebug-Manager (SDM) zum Sortieren von Stackframes verwendet.
+ Die von dieser Methode zurückgegebenen Informationen werden vom Sitzungs-Debug-Manager (SDM) zum Sortieren von Stapel Rahmen verwendet.
 
- Es wird davon ausgegangen, dass die Aufrufliste nach unten wächst, d. h., dass neue Stapelrahmen an immer niedrigeren Speicheradressen hinzugefügt werden. Eine Laufzeitarchitektur muss physische Stapelbereiche bereitstellen, die dieser Annahme entsprechen.
+ Es wird davon ausgegangen, dass die aufrufsstapel nach unten wächst, d. h., dass neue Stapel Rahmen bei immer niedrigeren Speicheradressen hinzugefügt werden. Eine Lauf Zeit Architektur muss physische Stapel Bereiche bereitstellen, die dieser Annahme entsprechen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

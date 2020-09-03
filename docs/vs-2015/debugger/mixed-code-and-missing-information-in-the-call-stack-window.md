@@ -1,5 +1,5 @@
 ---
-title: Gemischter Code und fehlende Daten im Aufruflistenfenster | Microsoft-Dokumentation
+title: Gemischter Code und fehlende Informationen im Fenster „Aufrufliste“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3995e14379fa4bd3ebd5cc276613c288b4437d35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193281"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Gemischter Code und fehlende Daten im Fenster "Aufrufliste"
@@ -45,5 +45,5 @@ Da es zwischen den Aufruflisten von verwaltetem Code und systemeigenen Code Unte
   
   Beide Fälle treten relativ selten ein. In den meisten Fällen, in denen verwalteter Code durch systemeigenen Code aufgerufen wird, werden die Aufruflisten richtig angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md)

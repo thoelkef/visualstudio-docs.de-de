@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cc6a0ff332fd6feac72ce4abf38b5319e63c913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161014"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle listet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen.  
+Diese Schnittstelle listet [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,33 +31,33 @@ IEnumDebugFrameInfo2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um eine Liste von Strukturen zu bereitstellen, die die aktuelle Aufrufliste beschreibt.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Liste von Strukturen bereitzustellen, die die aktuelle-aufrufsliste beschreibt.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Visual Studio-Aufrufe [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) um diese Schnittstelle immer einen Haltepunkt zu erhalten, Ausnahme oder ein Stillstand auftritt in einem Programm im Debugmodus befindlichen.  
+ Visual Studio ruft [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) auf, um diese Schnittstelle zu erhalten, wenn ein Breakpoint, eine Ausnahme oder ein Halt in einem Programm auftritt, das gerade deentschlgt wird.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugFrameInfo2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugFrameInfo2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Ruft eine angegebene Anzahl von [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen in einer Enumerationsfolge.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Überspringt eine angegebene Anzahl von [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen in einer Enumerationsfolge.|  
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Ruft eine angegebene Anzahl von [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen in einer enumerationssequenz ab.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Überspringt eine angegebene Anzahl von [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen in einer enumerationssequenz.|  
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Ruft die Anzahl der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen in einem Enumerator.|  
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Ruft die Anzahl der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen in einem Enumerator ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Visual Studio ruft diese Schnittstelle als ersten Schritt zur Behandlung von einen Haltepunkt, Ausnahme oder benutzergeneriertem Pause gedebuggten Programm ab. Die Liste der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen darstellt, die aktuelle Aufrufliste, rufen Sie mit dem aktuellen Funktionsaufruf am Anfang der Liste und die älteste Funktion am Ende der Liste. Jede `FRAMEINFO` stellt einen Stapelrahmen, der ein Kontext, in dem Ausdrücke ausgewertet werden, und lokale Variablen betrachtet, dar.  
+## <a name="remarks"></a>Bemerkungen  
+ Visual Studio ruft diese Schnittstelle als ersten Schritt ab, um einen Haltepunkt, eine Ausnahme oder eine vom benutzergenerierte Pause für das Programm zu behandeln, das gerade deentschlgt wird. Die Liste der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen stellt die aktuelle Aufrufliste mit dem aktuellen Funktions aufrufam Anfang der Liste und dem ältesten Funktions aufrufam Ende der Liste dar. Jede `FRAMEINFO` stellt einen Stapel Rahmen dar, einen Kontext, in dem Ausdrücke ausgewertet und lokale Variablen angesehen werden können.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

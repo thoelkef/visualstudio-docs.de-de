@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663029"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Visual Basic-spezifisches IntelliSense
@@ -51,5 +51,5 @@ Der Quellcode-Editor von Visual Basic stellt die folgenden IntelliSense-Features
 
   Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von IntelliSense](../ide/using-intellisense.md)

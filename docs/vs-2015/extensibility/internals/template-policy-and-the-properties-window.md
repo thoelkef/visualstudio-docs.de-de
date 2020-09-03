@@ -1,5 +1,5 @@
 ---
-title: Vorlagenrichtlinie und das Fenster "Eigenschaften" | Microsoft-Dokumentation
+title: Vorlagen Richtlinie und Eigenschaften Fenster | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c67150c5a71a3d70df85669319795a405c60f4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156021"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Vorlagenrichtlinie und das Eigenschaftenfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn ein Projekt in einem Enterprise-Vorlagen-Projekt enthalten ist, kann diese Enterprise-Vorlagenprojekt Richtlinie erzwingen. Richtlinie wird ein einschränkende System, das verwendet werden kann, legen Sie Standardwerte für Eigenschaften, Eigenschaften ausblenden, Hinzufügen von Eigenschaften und so weiter.  
+Wenn ein Projekt in einem Enterprise-Vorlagen Projekt enthalten ist, kann dieses Enterprise-Vorlagen Projekt Richtlinien erzwingen. Die Vorlagen Richtlinie wird zu einem Einschränkungs System, das zum Festlegen von Standardwerten für Eigenschaften, zum Ausblenden von Eigenschaften, zum Hinzufügen von Eigenschaften usw. verwendet werden kann.  
   
- Mit der Richtlinie zum Steuern der Anzeige von Informationen in den **Eigenschaften** Fenster unterscheidet sich von der Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> Eigenschaften des Objekts auf der Komponentenebene, verarbeitet, während der Richtlinie verwendet werden kann, um Objekteigenschaften Ebene der Projektmappe oder das Projekt zu beschränken. Mit anderen Worten,  
+ Die Verwendung der Vorlagen Richtlinie zum Steuern der Anzeige von Informationen im **Eigenschaften** Fenster unterscheidet sich von der Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> behandelt Objekteigenschaften auf Komponentenebene, während Vorlagen Richtlinien verwendet werden können, um Objekteigenschaften auf Projektmappen-oder Projektebene einzuschränken. Mit anderen Worten,  
   
-- Implementieren Sie die Methoden auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> um zu bestimmen, was in angezeigt wird der **Eigenschaften** Fenster für bestimmte Objekte  
+- Implementieren Sie die Methoden auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> , um zu bestimmen, was im **Eigenschaften** Fenster für bestimmte Objekte angezeigt wird.  
   
-- Richtlinie der Ebene der Projektmappen- und Projektdateien verwenden, um zu bestimmen, was in angezeigt wird der **Eigenschaften** Fenster für die zuvor angegebenen Objekte  
+- Verwenden Sie die Vorlagen Richtlinie auf Projektmappen-und Projektebene, um zu bestimmen, was im **Eigenschaften** Fenster für zuvor angegebene Objekte angezeigt wird.  
   
-  Verwendung der Richtlinie um selektiv bestimmte Eigenschaften im beschränken die **Eigenschaften** anzeigen, wenn ein Projektelement eines angegebenen Typs ausgewählt ist **Projektmappen-Explorer** kann vorteilhaft sein, alle Mitglieder der das Entwicklungsteam an einem Projekt arbeiten. Z. B. können mit der Richtlinie an, Sie alle Verbindungszeichenfolgen-Informationen in einer Datenbank für Ihre Entwickler einrichten und Aktivieren des Schreibschutzes für der Verbindungszeichenfolge. Auf diese Weise können Sie angeben, dass eine einfache Möglichkeit, sicherzustellen, dass jeder Entwickler über den richtigen Pfad für den Datenzugriff verwendet.  
+  Die Verwendung der Vorlagen Richtlinie, um bestimmte Eigenschaften im **Eigenschaften** Fenster selektiv einzuschränken, wenn ein Projekt Element eines bestimmten Typs in **Projektmappen-Explorer** ausgewählt ist, kann für alle Mitglieder des Entwicklungsteams, die an einem Projekt arbeiten, von Vorteil sein. Beispielsweise können Sie mithilfe der Vorlagen Richtlinie alle Verbindungs Zeichenfolgen-Informationen in einer Datenbank für Ihre Entwickler einrichten und die Verbindungs Zeichenfolge als schreibgeschützt festlegen. Auf diese Weise können Sie eine einfache Möglichkeit bereitstellen, um sicherzustellen, dass jeder Entwickler den richtigen Pfad für den Datenzugriff verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

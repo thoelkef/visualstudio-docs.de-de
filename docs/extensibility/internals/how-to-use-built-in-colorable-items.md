@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905223"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Gewusst wie: Verwenden integrierter, Färb baren Elemente
@@ -32,7 +32,7 @@ Vor der Verwendung der integrierten färb baren Elemente müssen Sie zunächst e
    > [!NOTE]
    > Legen Sie diesen Registrierungs Eintrag nicht fest, wenn Sie benutzerdefinierte Elemente bereitstellen. Weitere Informationen finden Sie unter [benutzerdefinierte Kolon-Elemente](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Syntax Farbgebung in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementieren von Syntax Farben](../../extensibility/internals/implementing-syntax-coloring.md)

@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Microsoft-Dokumentation
+title: 'Ieedatastorage:: GetData | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a58f644a71601b16317c4fe63271f4f816da77d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149298"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.  
+Ruft die angegebene Anzahl von Bytes aus dem-Objekt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,20 +44,20 @@ int GetData(
   
 #### <a name="parameters"></a>Parameter  
  `dataSize`  
- [in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).  
+ in Die Anzahl der abzurufenden bytes (das `data` Array muss mindestens diese Anzahl von Bytes enthalten).  
   
  `sizeGotten`  
- [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.  
+ vorgenommen Gibt die Anzahl der tatsächlich abgerufenen Bytes zurück.  
   
  `data`  
- [in, out] Ein Array mit den angeforderten Daten gefüllt werden soll.  
+ [in, out] Das Array, das mit den angeforderten Daten aufgefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die empfohlene Verwendung dieser Methode ist die Datenbytes in ein lokales Array, abrufen, da es keine Möglichkeit, zu der Bytes während des Abfrageprozesses überspringen. In diesem Fall ist der Parameter `dataSize` zurückgegeben werden soll der Wert durch die [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die empfohlene Verwendung dieser Methode besteht darin, alle Daten Bytes in ein lokales Array abzurufen, da es keine Möglichkeit gibt, die Bytes im Abruf Vorgang zu überspringen. In diesem Fall sollte der-Parameter `dataSize` der Wert sein, der von der [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) -Methode zurückgegeben wird.  
   
-## <a name="see-also"></a>Siehe auch  
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660846"
 ---
 # <a name="command-window"></a>Befehlsfenster
@@ -93,7 +93,7 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- In diesem Beispiel ist
+ In diesem Beispiel
 
 - `Edit.ReplaceInFiles` der Befehl,
 
@@ -113,7 +113,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.
 
 ## <a name="escape-characters"></a>Escapezeichen
- Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
+ Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
 
 ```
 >Edit.Find ^^t /regex
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen
- Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"** .
+ Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md) [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

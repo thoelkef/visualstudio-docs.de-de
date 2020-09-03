@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9a66ff327659ab44958c412f6f5b1f4a6390de39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205038"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Definiert die Metadaten, die über eines portanbieters abgerufen werden kann.  
+Definiert die Metadaten, die über einen Port Lieferanten abgerufen werden können.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,18 +41,18 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
   
 ## <a name="terms"></a>Begriffe  
  PSDFLAG_SHOW_WARNING_ICON  
- Wenn ausgewählt, wird das Symbol "Warnung" in der Benutzeroberfläche angezeigt werden.  
+ Wenn diese Option ausgewählt ist, wird das Warnsymbol in der Benutzeroberfläche angezeigt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Enumeration wird zurückgegeben, durch die [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Enumeration wird von der [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

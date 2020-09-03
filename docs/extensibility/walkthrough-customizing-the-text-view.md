@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904933"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Exemplarische Vorgehensweise: Anpassen der Textansicht
@@ -54,9 +54,9 @@ Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in 
 
 3. Deklarieren Sie eine Klasse mit dem Namen `TestViewCreationListener` , die von erbt <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Exportieren Sie diese Klasse mit den folgenden Attributen:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, um den Inhaltstyp anzugeben, für den dieser Listener gilt.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> , um den Inhaltstyp anzugeben, für den dieser Listener gilt.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>zum Angeben der Rolle dieses Listener.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> zum Angeben der Rolle dieses Listener.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
@@ -91,5 +91,5 @@ Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in 
 
 5. Aktivieren Sie sichtbare Leerzeichen. (Zeigen Sie im Menü **Bearbeiten** auf **erweitert** , und klicken Sie dann auf **Leerraum anzeigen**). Geben Sie einige Registerkarten in den Text ein. Rote Pfeile, die die Registerkarten darstellen, sollten angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

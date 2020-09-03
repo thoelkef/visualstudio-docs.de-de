@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156641"
 ---
 # <a name="how-to-clean-a-build"></a>Gewusst wie: Bereinigen eines Builds
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie unter [Task Reference (Aufgabenverweis)](../msbuild/msbuild-task-reference.md).  
+Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgaben Bibliothek finden Sie unter [Aufgaben Referenz](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
  Standardmäßig wird die erstellte EXE-Datei beim Kompilieren eines Projekts im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.  
@@ -46,18 +46,18 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Entfernen eines Verzeichnisses und aller enthaltenen Dateien  
   
-- Verwenden Sie die `RemoveDir`-Aufgabe, um das Verzeichnis zu entfernen. Beispiel:  
+- Verwenden Sie die `RemoveDir`-Aufgabe, um das Verzeichnis zu entfernen. Zum Beispiel:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.  
   
- `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **/target**, um ein anderes Ziel anzugeben. Beispiel:  
+ `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehls Zeilenschalter **/target** , um ein anderes Ziel anzugeben. Beispiel:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- Der Schalter **/target** kann auf **/t** verkürzt werden und mehrere Ziele angeben. Geben Sie beispielsweise Folgendes ein, um das Ziel `Clean` und dann das Ziel `Compile` zu verwenden:  
+ Der **/target** -Schalter kann auf **/t** verkürzt werden und kann mehr als ein Ziel angeben. Geben Sie beispielsweise Folgendes ein, um das Ziel `Clean` und dann das Ziel `Compile` zu verwenden:  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -101,9 +101,9 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Exec Task (Exec-Aufgabe)](../msbuild/exec-task.md)   
- [MakeDir Task (MakeDir-Aufgabe)](../msbuild/makedir-task.md)   
- [RemoveDir Task (RemoveDir-Aufgabe)](../msbuild/removedir-task.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Exec-Aufgabe](../msbuild/exec-task.md)   
+ [MakeDir-Aufgabe](../msbuild/makedir-task.md)   
+ [RemoveDir-Aufgabe](../msbuild/removedir-task.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
  [Ziele](../msbuild/msbuild-targets.md)

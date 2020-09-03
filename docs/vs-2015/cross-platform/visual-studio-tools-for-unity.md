@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155265"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
@@ -24,7 +24,7 @@ In diesem Abschnitt erfahren Sie mehr über Visual Studio-Tools für Unity, ein
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity  
  **Unity** ist eine Spiele-Engine und eine Entwicklungsumgebung zum Herstellen plattformübergreifender Spiele. Die Unity-Engine wird auf mehr als einem Dutzend Plattformen ausgeführt – von leistungsstarken PCs über Spielekonsolen und touchfähige Tablet-PCs und Mobiltelefone bis zum Web. Der Unity-Editor bietet eine entwicklerfreundliche Oberfläche zum Erstellen anspruchsvoller Spielwelten. Aufgrund seines Funktionsumfangs, der Benutzerfreundlichkeit und Reichweite ist Unity bei heutigen Spieleentwicklern sehr beliebt.  
   
- Der Unity-Editor eignet sich hervorragend für das Zusammensetzen Ihres Spiels, bietet aber keine Möglichkeit, Code zu schreiben. Mit **Visual Studio-Tools für Unity** können Sie die vertrauten Codebearbeitungs-, Debugging- und Produktivitätsfunktionen von Visual Studio nutzen, um Editor- und Spielskripts für Ihr Unity-Projekt mithilfe von C# zu erstellen. Darüber hinaus können Sie die leistungsstarken Debuggingfunktionen von Visual Studio einsetzen.  
+ Der Unity-Editor eignet sich hervorragend für das Zusammensetzen Ihres Spiels, bietet aber keine Möglichkeit, Code zu schreiben. Mit **Visual Studio-Tools für Unity**können Sie die vertrauten codebearbeitungs-, Debugging-und Produktivitäts Features von Visual Studio verwenden, um Editor-und Spiel Skripts für Ihr Unity-Projekt mit c# zu erstellen, und Sie können Sie mit den leistungsstarken Debuggingfunktionen von Visual Studio debuggen.  
   
  Doch Visual Studio-Tools für Unity hat noch mehr zu bieten, nämlich eine umfassende Integration in den Unity-Editor, sodass Sie für das Erledigen einfacher Aufgaben weniger Zeit für das Hin- und Herwechseln benötigen. Hinzu kommen Unity-spezifische Produktivitätsverbesserungen und ein einfacher Zugriff auf die Unity-Dokumentation.  
   

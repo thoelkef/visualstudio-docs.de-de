@@ -1,5 +1,5 @@
 ---
-title: IDebugthread2::CansetNextStatement | Microsoft Docs
+title: 'IDebugThread2:: cansetnextstatement | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718861"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Legt fest, ob der aktuelle Anweisungszeiger auf den angegebenen Stapelrahmen festgelegt werden kann.
+Bestimmt, ob der aktuelle Anweisungs Zeiger auf den angegebenen Stapel Rahmen festgelegt werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Parameter
 `pStackFrame`\
-Reserviert für die zukünftige Verwendung; auf einen NULL-Wert festgelegt. Wenn es sich um einen NULL-Wert handelt, verwenden Sie den aktuellen Stapelrahmen.
+Für zukünftige Verwendung reserviert. Legen Sie auf einen NULL-Wert fest. Wenn dies ein NULL-Wert ist, verwenden Sie den aktuellen Stapel Rahmen.
 
 `pCodeContext`\
-[in] Ein [IDebugCodeContext2-Objekt,](../../../extensibility/debugger/reference/idebugcodecontext2.md) das den auszuführenden Codespeicherort und seinen Kontext beschreibt.
+in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den Code Speicherort beschreibt, der ausgeführt werden soll, und seinen Kontext.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn diese `S_OK`Methode zurückkehrt, ruft die [SetNextStatement-Methode](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) auf, um die nächste Anweisung tatsächlich festzulegen.
+ Wenn diese Methode zurückgibt `S_OK` , wird die [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) -Methode aufgerufen, um die nächste Anweisung tatsächlich festzulegen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

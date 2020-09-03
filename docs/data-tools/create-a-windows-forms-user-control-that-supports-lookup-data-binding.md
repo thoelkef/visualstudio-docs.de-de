@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586795"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt
@@ -36,11 +36,11 @@ Beim Erstellen von Steuerelementen, die in Datenbindungsszenarios verwendet werd
 |Implementieren Sie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, wie das <xref:System.Windows.Forms.DataGridView>-Steuerelement. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das eine komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementieren Sie <xref:System.ComponentModel.LookupBindingPropertiesAttribute> für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft darstellen müssen, wie das <xref:System.Windows.Forms.ComboBox>-Steuerelement. (Dieser Prozess wird in dieser exemplarischen Vorgehensweise beschrieben.)|
 
-In dieser exemplarischen Vorgehensweise wird ein Nachschlagesteuerelement erstellt, das an Daten aus zwei Tabellen gebunden ist. In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet. Das Nachschlage Steuerelement wird an das Feld `CustomerID` aus der `Orders` Tabelle gebunden. Dieser Wert wird verwendet, um die `CompanyName` aus der `Customers` Tabelle zu suchen.
+In dieser exemplarischen Vorgehensweise wird ein Nachschlagesteuerelement erstellt, das an Daten aus zwei Tabellen gebunden ist. In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet. Das Nachschlage Steuerelement wird an das `CustomerID` Feld aus der `Orders` Tabelle gebunden. Dieser Wert wird verwendet, um die `CompanyName` Tabelle aus der `Customers` Tabelle zu suchen.
 
 In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
-- Erstellen Sie eine neue **Windows Forms-Anwendung**.
+- Erstellen Sie eine neue **Windows Forms Anwendung**.
 
 - Ihrem Projekt ein neues **Benutzersteuerelement** hinzufügen.
 
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 - Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -78,7 +78,7 @@ Der erste Schritt besteht darin, ein **Windows Forms Anwendungs** Projekt zu ers
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -92,13 +92,13 @@ In dieser exemplarischen Vorgehensweise wird aus einem **Benutzersteuerelement**
 
 1. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
-2. Geben Sie `LookupBox` in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
+2. Geben `LookupBox` Sie in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
 
      Das **LookupBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
 ## <a name="design-the-lookupbox-control"></a>Entwerfen des LookupBox-Steuer Elements
 
-Um das LookupBox-Steuerelement zu entwerfen, ziehen Sie eine <xref:System.Windows.Forms.ComboBox> aus der **Toolbox** auf die Entwurfs Oberfläche des Benutzer Steuer Elements.
+Um das LookupBox-Steuerelement zu entwerfen, ziehen Sie ein <xref:System.Windows.Forms.ComboBox> aus der **Toolbox** auf die Entwurfs Oberfläche des Benutzer Steuer Elements.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Hinzufügen des erforderlichen Daten Bindungs Attributs
 
@@ -119,7 +119,7 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
 1. Um das Fenster **Datenquellen** zu öffnen, klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
@@ -137,7 +137,7 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
 8. Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig stellen**.
 
-     Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im **Datenquellenfenster** angezeigt.
+     Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die `Customers` Tabellen und werden `Orders` im Fenster **Datenquellen** angezeigt.
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Festlegen der Spalte "CustomerID" der Tabelle "Orders" auf die Verwendung des LookupBox-Steuer Elements
 
@@ -163,7 +163,7 @@ Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Form
 
 Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf **Form1** ziehen.
 
-Wenn Sie Daten gebundene Steuerelemente auf dem Windows Form erstellen möchten, ziehen Sie den Knoten **Orders** aus dem **Datenquellen** Fenster auf das Windows Form, und überprüfen Sie, ob das **LookupBox** -Steuerelement zum Anzeigen der Daten in der `CustomerID` Spalte verwendet wird.
+Wenn Sie Daten gebundene Steuerelemente auf dem Windows Form erstellen möchten, ziehen Sie den Knoten **Orders** aus dem **Datenquellen** Fenster auf das Windows Form, und überprüfen Sie, ob das **LookupBox** -Steuerelement zum Anzeigen der Daten in der Spalte verwendet wird `CustomerID` .
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Binden Sie das Steuerelement, um CompanyName aus der Tabelle Customers zu suchen.
 
@@ -177,6 +177,6 @@ Damit wird die Datenbindung so eingerichtet, dass der Wert für `CompanyName` au
 
 - Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`-Steuerelement der Wert von `CompanyName` angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

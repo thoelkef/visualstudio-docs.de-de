@@ -1,5 +1,5 @@
 ---
-title: IDebugthread2::SetNextStatement | Microsoft Docs
+title: 'IDebugThread2:: SetNextStatement | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718649"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Legt den aktuellen Anweisungszeiger auf den angegebenen Codekontext fest.
+Legt den aktuellen Anweisungs Zeiger auf den angegebenen Code Kontext fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,22 +43,22 @@ int SetNextStatement ( 
 
 ## <a name="parameters"></a>Parameter
 `pStackFrame`\
-Reserviert für die zukünftige Verwendung; auf einen NULL-Wert festgelegt.
+Für zukünftige Verwendung reserviert. Legen Sie auf einen NULL-Wert fest.
 
 `pCodeContext`\
-[in] Ein [IDebugCodeContext2-Objekt,](../../../extensibility/debugger/reference/idebugcodecontext2.md) das den auszuführenden Codespeicherort und seinen Kontext beschreibt.
+in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den Code Speicherort beschreibt, der ausgeführt werden soll, und seinen Kontext.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt andere mögliche Werte.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle werden andere mögliche Werte angezeigt.
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Die nächste Anweisung kann sich nicht tiefer in einem Stapelrahmen auf dem Frame-Stack befinden.|
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Die nächste Anweisung ist keinem Frame im Stapel zugeordnet.|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Einige Debugmodule können die nächste Anweisung nicht nach einer Ausnahme festlegen.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Die nächste Anweisung darf sich nicht in einem Stapel Rahmen befinden, der tiefer auf dem Frame Stapel liegt.|
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Die Next-Anweisung ist keinem Frame im Stapel zugeordnet.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Einige Debug-engines können die nächste Anweisung nach einer Ausnahme nicht festlegen.|
 
 ## <a name="remarks"></a>Bemerkungen
- Der Anweisungszeiger gibt die nächste auszuführende Anweisung oder Anweisung an. Diese Methode wird verwendet, um eine Quellcodezeile erneut auszuprobieren oder die Ausführung z. B. in einer anderen Funktion fortzusetzen.
+ Der Anweisungs Zeiger gibt die nächste auszuführende Anweisung oder Anweisung an. Diese Methode wird verwendet, um eine Zeile des Quellcodes zu wiederholen oder um die Fortsetzung der Ausführung in einer anderen Funktion zu erzwingen (z. b.).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

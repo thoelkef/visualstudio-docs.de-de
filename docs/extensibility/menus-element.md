@@ -1,5 +1,5 @@
 ---
-title: Menüs Element | Microsoft Docs
+title: Menüs-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702591"
 ---
-# <a name="menus-element"></a>Menus-Element
-Definiert alle Menüs und Symbolleisten, die ein VSPackage implementiert.
+# <a name="menus-element"></a>Menüs-Element
+Definiert alle Menüs und Symbolleisten, die von einem VSPackage implementiert werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,20 +37,20 @@ Definiert alle Menüs und Symbolleisten, die ein VSPackage implementiert.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs und Symbolleisten, die ein VSPackage implementiert.|
-|[Menüelement](../extensibility/menu-element.md)|Stellt ein einzelnes Menü oder eine Symbolleiste dar.|
+|[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs und Symbolleisten, die von einem VSPackage implementiert werden.|
+|[Menu-Element](../extensibility/menu-element.md)|Stellt ein einzelnes Menü oder eine Symbolleiste dar.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Befehlselement](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen im VSPackage dar.|
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung der Befehle im VSPackage dar.|
 
 ## <a name="example"></a>Beispiel
 
@@ -78,5 +78,5 @@ Definiert alle Menüs und Symbolleisten, die ein VSPackage implementiert.
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

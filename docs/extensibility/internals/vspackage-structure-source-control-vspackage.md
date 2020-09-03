@@ -1,5 +1,5 @@
 ---
-title: VSPackage-Struktur (Quellcodeverwaltung VSPackage) | Microsoft Docs
+title: VSPackage-Struktur (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703812"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quellcodeverwaltungs-VSPackage)
 
-Das Source Control Package SDK enthält Richtlinien zum Erstellen eines VSPackage, mit dem ein Quellcodeverwaltungsimplementierer seine Quellcodeverwaltungsfunktionalität in die Visual Studio-Umgebung integrieren kann. Ein VSPackage ist eine COM-Komponente, die in der Regel bei Bedarf von der integrierten Visual Studio-Entwicklungsumgebung (IDE) basierend auf den Diensten geladen wird, die vom Paket in seinen Registrierungseinträgen angekündigt werden. Jedes VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>muss implementieren. Ein VSPackage nutzt in der Regel Dienste, die von der Visual Studio-IDE angeboten werden, und bietet einige eigene Dienste an.
+Das Quell Code Verwaltungspaket-SDK enthält Richtlinien für das Erstellen eines VSPackages, das es einem Quellcodeverwaltungs-Implementierer ermöglicht, seine Funktionen der Quell Code Verwaltung in die Visual Studio-Umgebung zu integrieren. Ein VSPackage ist eine COM-Komponente, die in der Regel von der integrierten Entwicklungsumgebung (IDE) von Visual Studio nach Bedarf geladen wird, basierend auf den Diensten, die vom Paket in den zugehörigen Registrierungs Einträgen angekündigt werden. Jedes VSPackage muss implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> . Ein VSPackage nutzt normalerweise Dienste, die von der Visual Studio-IDE angeboten werden, und stellt einige Dienste bereit.
 
-Ein VSPackage deklariert seine Menüelemente und richtet über die .vsct-Datei einen Standardelementstatus ein. Die Visual Studio-IDE zeigt die Menüelemente in diesem Zustand an, bis das VSPackage geladen wird. Anschließend wird die VsPackage-Implementierung <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> der Methode aufgerufen, um Menüelemente zu aktivieren oder zu deaktivieren.
+Ein VSPackage deklariert seine Menü Elemente und legt einen Standardelement Zustand über die vsct-Datei fest. Die Visual Studio-IDE zeigt die Menü Elemente in diesem Zustand an, bis das VSPackage geladen wurde. Anschließend wird die VSPackage-Implementierung der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aufgerufen, um Menü Elemente zu aktivieren oder zu deaktivieren.
 
-## <a name="source-control-package-characteristics"></a>Eigenschaften des Quellcodeverwaltungspakets
+## <a name="source-control-package-characteristics"></a>Merkmale der Quell Code Verwaltungs Pakete
 
-Ein Quellcodeverwaltungs-VSPackage ist tief in Visual Studio integriert. Die VSPackage-Semantik umfasst:
+Ein VSPackage für die Quell Code Verwaltung ist tief in Visual Studio integriert. Die VSPackage-Semantik umfasst Folgendes:
 
-- Schnittstelle, die als VSPackage (die `IVsPackage` Schnittstelle) implementiert werden soll
+- Schnittstelle, die durch das VSPackage implementiert werden soll (die- `IVsPackage` Schnittstelle)
 
-- UI Command-Implementierung (.vsct-Datei <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> und Implementierung der Schnittstelle)
+- Implementierung von UI-Befehlen (vsct-Datei und Implementierung der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)
 
-- Registrierung des VSPackage bei Visual Studio.
+- Die Registrierung des VSPackage bei Visual Studio.
 
-Das Quellcodeverwaltungs-VSPackage muss mit diesen anderen Visual Studio-Entitäten kommunizieren:
+Das VSPackage der Quell Code Verwaltung muss mit diesen anderen Visual Studio-Entitäten kommunizieren:
 
 - Projekte
 
@@ -44,9 +44,9 @@ Das Quellcodeverwaltungs-VSPackage muss mit diesen anderen Visual Studio-Entitä
 
 - Windows
 
-- Die laufende Dokumenttabelle
+- Die laufende Dokument Tabelle
 
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio-Umgebungsdienste, die möglicherweise verwendet werden
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Möglicherweise genutzte Visual Studio-Umgebungs Dienste
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 
@@ -54,7 +54,7 @@ Das Quellcodeverwaltungs-VSPackage muss mit diesen anderen Visual Studio-Entitä
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-SVsRegisterScciProvider-Dienst
+Svsregisterscciprovider-Dienst
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 
@@ -62,15 +62,15 @@ SVsRegisterScciProvider-Dienst
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
 
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP-Schnittstellen implementiert und aufgerufen
+### <a name="vsip-interfaces-implemented-and-called"></a>Implementierte und aufgerufene VSIP-Schnittstellen
 
-Ein Quellcodeverwaltungspaket ist ein VSPackage und kann daher direkt mit anderen VSPackages interagieren, die bei Visual Studio registriert sind. Um die volle Bandbreite der Quellcodeverwaltungsfunktionalität bereitzustellen, kann ein Quellcodeverwaltungs-VSPackage Schnittstellen von Projekten oder der Shell behandeln.
+Ein Quell Code Verwaltungspaket ist ein VSPackage und kann daher direkt mit anderen VSPackages interagieren, die in Visual Studio registriert sind. Um die vollständige Palette der Funktionen der Quell Code Verwaltung bereitzustellen, kann ein Quellcodeverwaltungs-VSPackage mit Schnittstellen arbeiten, die von Projekten oder der Shell bereitgestellt werden.
 
-Jedes Projekt in Visual <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> Studio muss implementiert werden, um als Projekt innerhalb der Visual Studio-IDE erkannt zu werden. Diese Schnittstelle ist jedoch nicht speziell genug für die Quellcodeverwaltung. Projekte, von denen erwartet wird, dass sie unter Quellcodeverwaltung stehen, implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Diese Schnittstelle wird vom Quellcodeverwaltungssteuerelement VSPackage verwendet, um ein Projekt nach seinem Inhalt abzufragen und es Glyphen und Bindungsinformationen bereitzustellen (die Informationen, die zum Herstellen einer Verbindung zwischen dem Serverspeicherort und dem Datenträgerspeicherort eines Projekts erforderlich sind, das unter Quellcodeverwaltung steht).
+Jedes Projekt in Visual Studio muss implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> , um als Projekt in der Visual Studio-IDE erkannt zu werden. Diese Schnittstelle ist jedoch nicht für die Quell Code Verwaltung spezialisiert. Projekte, die unter Quell Code Verwaltung erwartet werden, implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> . Diese Schnittstelle wird von der Quellcodeverwaltungs-VSPackage verwendet, um ein Projekt nach seinem Inhalt abzufragen und um ihm Symbole und Bindungs Informationen (die Informationen, die zum Herstellen einer Verbindung zwischen dem Serverstandort und dem Speicherort eines Projekts, das der Quell Code Verwaltung unterliegt) bereitzustellen.
 
-Die Quellcodeverwaltung VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>implementiert , was es Projekten wiederum ermöglicht, sich selbst für die Quellcodeverwaltung zu registrieren und ihre Status-Glyphen abzurufen.
+Das VSPackage der Quell Code Verwaltung implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> , das wiederum es Projekten ermöglicht, sich selbst für die Quell Code Verwaltung zu registrieren und deren Statussymbole abzurufen.
 
-Eine vollständige Liste der Schnittstellen, die ein Quellcodeverwaltungs-VSPackage berücksichtigen muss, finden Sie unter [Verwandte Dienste und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
+Eine vollständige Liste der Schnittstellen, die von einem Quellcodeverwaltungs-VSPackage berücksichtigt werden müssen, finden Sie unter [verwandte Dienste und Schnittstellen](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 

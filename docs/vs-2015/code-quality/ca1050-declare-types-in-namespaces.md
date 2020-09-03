@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539593"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

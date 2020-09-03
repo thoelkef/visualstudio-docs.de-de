@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551876"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektur von Office-Projektmappen in Visual Studio
@@ -33,7 +33,7 @@ ms.locfileid: "69551876"
 
 Beschreibt die Funktionsweise von Anpassungen Dokumentebene und deren unterschiedliche Wahrnehmung durch den Entwickler und den Endbenutzer.
 
-[Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 
 Beschreibt die Komponenten von VSTO-Add-Ins und wie sie von Anwendungen geladen werden.
 
@@ -51,11 +51,11 @@ Erläutert die Funktionsweise von benutzerdefinierten Dokumenteigenschaften in A
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Bietet eine Einführung in die Verwendung von Microsoft Office als Plattform zur Entwicklung von Unternehmenslösungen.
 
-[Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Enthält Links zu Informationen zum Konfigurieren eines Entwicklungscomputers zum Erstellen von Office-Lösungen, den ersten Schritten beim Erstellen von Office-Lösungen und zu Änderungen im Vergleich zu früheren Versionen der Office-Entwicklertools n Visual Studio.
 
@@ -63,6 +63,6 @@ Enthält Links zu Informationen zum Konfigurieren eines Entwicklungscomputers zu
 
 Enthält Links zu Informationen zum Erstellen von Office-Lösungen.
 
-[Allgemeine Referenz &#40;zur Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Allgemeine Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Enthält Links zu Informationen über Benutzeroberflächenelemente in Office-Projekten, Anwendungs- und Bereitstellungsmanifesten für Office-Projekte und APIs in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

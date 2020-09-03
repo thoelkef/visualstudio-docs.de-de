@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft-Dokumentation
+title: 'IDebugBoundBreakpoint2:: Abbild Anzahl | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 292e36878594841f200f744f2809256b05e84d94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156190"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Legt die Trefferanzahl für den gebundenen Haltepunkt fest.  
+Legt die Treffer Anzahl für den gebundenen Haltepunkt fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,16 +41,16 @@ int SetHitCount( 
   
 #### <a name="parameters"></a>Parameter  
  `dwHitCount`  
- [in] Die Trefferanzahl festgelegt.  
+ in Die festzulegende Treffer Anzahl.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück `E_BP_DELETED` , wenn der Zustand des gebundenen Haltepunkt Objekts auf festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## <a name="remarks"></a>Hinweise  
- Die Trefferanzahl ist die Anzahl wie oft dieser Haltepunkt bei der aktuellen Ausführung der Sitzung ausgelöst wurde.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Treffer Anzahl gibt an, wie oft dieser Haltepunkt während der aktuellen Sitzung der Sitzung ausgelöst wurde.  
   
- Diese Methode wird von der Debug-Engine aktualisiert die aktuelle Trefferanzahl an diesem Haltepunkt in der Regel aufgerufen werden.  
+ Diese Methode wird in der Regel von der Debug-Engine aufgerufen, um die aktuelle Treffer Anzahl an diesem Breakpoint zu aktualisieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

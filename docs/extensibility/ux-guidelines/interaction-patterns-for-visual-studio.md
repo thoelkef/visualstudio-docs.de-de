@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184405"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Interaktionsmuster für Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "84184405"
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio-Client Mustertypen
 
-|Mustertyp|Beschreibung|Beispiele|
+|Mustertyp|BESCHREIBUNG|Beispiele|
 |------------------|-----------------|--------------|
 |**Muster auf Anwendungsebene**|Allgemeine Muster für die Anwendung, bestimmen oder Anzeigen des Anwendungs Kontexts sowie zusammengesetzte und Steuerelement Muster darin|-Tool Fenster<br />-Dokument Fenster|
 |**Zusammengesetzte Muster**|Allgemeine Muster, die sich über Anwendungs Muster erstrecken können, oder ein bekanntes Muster, das aus mehreren Steuerelementen in einer unterschiedlichen Konfiguration besteht|-Ansicht wechseln<br />-List Builder<br />-Anzeigen von Daten<br />-Benachrichtigungen<br />-Validierung<br />-Auswahl Modelle|
@@ -46,7 +46,7 @@ ms.locfileid: "84184405"
 
   - [Dialoge](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
-  - [Kte](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
+  - [Projekte](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
 ## <a name="common-control-patterns"></a>Allgemeine Steuerelement Muster
  Steuerelement Muster sind hauptsächlich die Art und Weise, wie sich die einzelnen Steuerelemente Verhalten. Dies ist ein Bereich, in dem die Konsistenz am kritischsten ist.

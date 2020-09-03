@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: 8c7d502924175632bdabddc234af6ea18d2352ac
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950237"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Erstellen und Bereinigen von Projekten und Projektmappen
@@ -45,6 +45,6 @@ Klicken Sie auf das rote Quadrat im Statusbereich, um einen Build zu beenden:
 
 ![Klicken auf das rote Quadrat, um den Build zu beenden](media/compiling-and-building-image3.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Bereinigen von Projekten und Projektmappen (Visual Studio unter Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

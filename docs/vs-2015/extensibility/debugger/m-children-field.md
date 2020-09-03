@@ -1,5 +1,5 @@
 ---
-title: M_children-Feld | Microsoft-Dokumentation
+title: m_children Feld | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149063"
 ---
-# <a name="mchildren-field"></a>m_children-Feld
+# <a name="m_children-field"></a>m_children-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die Liste der untergeordneten Aufgaben, die mit dieser Aufgabe registriert sind.  
+Die Liste der untergeordneten Aufgaben, die bei dieser Aufgabe registriert sind.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,10 +34,10 @@ Die Liste der untergeordneten Aufgaben, die mit dieser Aufgabe registriert sind.
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
 ```  
   
-## <a name="remarks"></a>Hinweise  
- Während die Aufgabe ausgeführt wird, sollten nur der Thread, der die Aufgabe ausgeführt wird. dieses Array zugreifen.  
+## <a name="remarks"></a>Bemerkungen  
+ Während die Aufgabe ausgeführt wird, sollte nur der Thread, der die Aufgabe ausführt, auf dieses Array zugreifen.  
   
- Wenn die Aufgabe abgeschlossen ist, können andere Threads dieses Feld zugreifen, solange sie nicht etwas hinzugefügt oder daraus nichts entfernen.  
+ Wenn die Aufgabe abgeschlossen ist, können andere Threads auf dieses Feld zugreifen, solange Sie nichts hinzufügen oder aus ihr entfernen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [ContingentProperties-Klasse](../../extensibility/debugger/contingentproperties-class-internal-members.md)

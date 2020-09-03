@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72306258"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -29,7 +29,7 @@ A. Nein.
 
 **F. Kann ich Visual Studio-Erweiterungen mit RTVS verwenden?**
 
-A. Unbedingt. Die folgenden Erweiterungen beispielsweise sind bei Benutzern sehr beliebt, die mit R arbeiten.
+A. Natürlich. Die folgenden Erweiterungen beispielsweise sind bei Benutzern sehr beliebt, die mit R arbeiten.
 
 - [VsVim für Vim-Schlüsselbindungen](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 - [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
@@ -79,19 +79,19 @@ A. Ja, Sie können jedes Quellcodeverwaltungssystem verwenden, das in Visual Stu
 
 **F. Wie lauten die empfohlenen *GITIGNORE*-Einstellungen für ein RTVS-Projekt?**
 
-A. GitHub verwaltet ein Masterrepository mit empfohlenen *GITIGNORE*-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. GitHub verwaltet ein Masterrepository mit empfohlenen *GITIGNORE*-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore).
 
 ## <a name="remote-services"></a>Remotedienste
 
-F. **Was sind Remotedienste in Visual Studio?**
+Q. **Was sind Remotedienste in Visual Studio?**
 
 A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Siehe [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
-F. **Kann RTVS eine Verbindung mit Microsoft Machine Learning Server herstellen?**
+Q. **Kann RTVS eine Verbindung mit Microsoft Machine Learning Server herstellen?**
 
 A. Nein, da es sich bei ML Server um eine andere Technologie handelt, die einen anderen Mechanismus als den für RTVS erforderlichen bereitstellt.
 
-F. **Kann RTVS eine Verbindung zu einer VM herstellen, die mithilfe des Images einer Data Science-VM in Azure erstellt wurde?**
+Q. **Kann RTVS eine Verbindung zu einer VM herstellen, die mithilfe des Images einer Data Science-VM in Azure erstellt wurde?**
 
 A. Ja, das Image [DataScience-VM – Windows 2016](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) ist in Remote R Services für Visual Studio vorinstalliert.
 
@@ -99,7 +99,7 @@ A. Ja, das Image [DataScience-VM – Windows 2016](https://azure.microsoft.com/s
 
 Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Siehe [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
-F. **Was ist eine Remotesitzung?**
+Q. **Was ist eine Remotesitzung?**
 
 A. Informationen dazu finden Sie im Artikel [Execute on remote server (Ausführen auf einem Remoteserver)](/machine-learning-server/r/how-to-execute-code-remotely) in der Machine Learning Server-Dokumentation.
 
@@ -111,6 +111,6 @@ A. RStudio ist eine fantastische, ausgereifte IDE für R, die bereits seit viele
 
 **F. Kann ich zu RTVS beitragen?**
 
-A. Auf jeden Fall! Der Quellcode befindet sich auf [GitHub](https://github.com/microsoft/RTVS). Unter „Issues“ können Sie Bugs melden und bereits vorhandene Dateien kommentieren.
+A. Auf jeden Fall. Der Quellcode befindet sich auf [GitHub](https://github.com/microsoft/RTVS). Unter „Issues“ können Sie Bugs melden und bereits vorhandene Dateien kommentieren.
 
 Wir freuen uns auch, wenn Sie zur Dokumentation beitragen&mdash;wählen Sie einfach den Befehl **Edit** (Bearbeiten) rechts oben auf jeder Seite in GitHub. Kommentare zu den Dokumenten sind ebenfalls gern gesehen – diese können Sie unten auf jeder Seite einfügen.

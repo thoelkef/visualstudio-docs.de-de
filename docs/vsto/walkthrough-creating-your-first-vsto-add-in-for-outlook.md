@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook'
+title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook'
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69547973"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook
-  Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über &#40;die Entwicklung von Office&#41;](../vsto/office-solutions-development-overview-vsto.md)-Projektmappen VSTO.
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook
+  Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -41,8 +41,8 @@ ms.locfileid: "69547973"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -66,12 +66,12 @@ ms.locfileid: "69547973"
 
 7. Klicken Sie auf **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstOutlookAddIn** -Projekt und öffnet die Codedatei **ThisAddIn** im Editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstOutlookAddIn** -Projekt und öffnet die Codedatei " **ThisAddIn** " im Editor.
 
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Schreiben von Code, der jeder neuen e-Mail-Nachricht Text hinzufügt
  Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Outlook-Objektmodell, um jeder neuen E-Mail Text hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:
 
-- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Outlook-Objektmodell. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Outlook-Objektmodell. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der- `ThisAddIn` Klasse wird in einer ausgeblendeten Codedatei definiert, die nicht geändert werden sollte.
 
 - Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Outlook geladen oder entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
@@ -82,7 +82,7 @@ ms.locfileid: "69547973"
     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]
 
-2. Ersetzen Sie die `ThisAddIn_Startup` -Methode durch folgenden Code: Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an.
+2. Ersetzen Sie die `ThisAddIn_Startup`-Methode durch den folgenden Code. Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an.
 
     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]
@@ -107,7 +107,7 @@ ms.locfileid: "69547973"
 
 1. Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.
 
-     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Outlook das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)den Buildprozess für Office-Lösungen.
+     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Outlook das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über den Buildprozess für Office-Lösungen](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md).
 
 2. Erstellen Sie in Outlook eine neue E-Mail.
 
@@ -137,7 +137,7 @@ ms.locfileid: "69547973"
 
 - Bereitstellen von VSTO-Add-Ins für Outlook. Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Outlook-Lösungen](../vsto/outlook-solutions.md)
 - [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)

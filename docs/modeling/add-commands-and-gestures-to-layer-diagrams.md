@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531390"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
@@ -83,7 +83,7 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
     3. Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
 
-    4. Speichern Sie die Datei .
+    4. Speichern Sie die Datei.
 
 5. Kehren Sie zum Befehls-oder gestenhandlerprojekt zurück, und fügen Sie die folgenden Projekt Verweise hinzu:
 
@@ -246,7 +246,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
      **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.
 
-- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Beispiel:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

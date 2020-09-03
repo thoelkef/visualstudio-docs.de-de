@@ -1,5 +1,5 @@
 ---
-title: Erreichen eines Haltepunkts | Microsoft-Dokumentation
+title: Erreichen eines halte Punkts | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ddf7fd92ac0b2f745f9e73170de22e9724dad76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152698"
 ---
 # <a name="hitting-a-breakpoint"></a>Erreichen eines Haltepunkts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Im folgenden wird den Prozess, wenn die Debug-Engine (DE) einen Haltepunkt erreicht, bei der Ausführung oder schrittweise beschrieben:  
+Im folgenden wird der Prozess beschrieben, wenn die Debug-Engine (de) einen Haltepunkt beim Ausführen oder Ausführen eines Schrittes erreicht:  
   
-## <a name="troubleshooting-a-hit-breakpoint"></a>Problembehandlung für einen Haltepunkt drücken  
+## <a name="troubleshooting-a-hit-breakpoint"></a>Problembehandlung eines Treffer halte Punkts  
   
-1. Der DE sendet eine [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) Schnittstelle als eine **EVENT_SYNC_STOP**.  
+1. Der de sendet eine [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) -Schnittstelle als **EVENT_SYNC_STOP**.  
   
-2. Ruft die Sitzungs-Debug-Manager (SDM) [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) um den Haltepunkt zu erhalten, das ermittelt wurde.  
+2. Der Session Debug Manager (SDM) ruft [IDebugBreakpointEvent2::: enumbreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den Treffer Haltepunkt zu erhalten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586847"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt
@@ -51,7 +51,7 @@ In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 - Fügen Sie das neue Steuerelement hinzu, indem Sie es vom Fenster **Datenquellen** auf **Form1** ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -71,7 +71,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 ## <a name="create-a-windows-forms-app-project"></a>Erstellen eines Windows Forms-App-Projekts
 
-Der erste Schritt besteht im Erstellen eines **Windows Forms-App** -Projekts C# für oder Visual Basic. Geben Sie dem Projekt den Namen **ComplexControlWalkthrough**.
+Der erste Schritt besteht im Erstellen eines **Windows Forms-App** -Projekts für c# oder Visual Basic. Geben Sie dem Projekt den Namen **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt
 
@@ -85,7 +85,7 @@ Da in dieser exemplarischen Vorgehensweise ein komplexes, Daten bindbares Steuer
 
 ## <a name="design-the-complexdatagridview-control"></a>Entwerfen des ComplexDataGridView-Steuer Elements
 
-Um dem Benutzer Steuerelement eine <xref:System.Windows.Forms.DataGridView> hinzuzufügen, ziehen Sie eine <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf die Entwurfs Oberfläche des Benutzer Steuer Elements.
+Um dem Benutzer Steuerelement ein hinzuzufügen <xref:System.Windows.Forms.DataGridView> , ziehen Sie ein <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf die Entwurfs Oberfläche des Benutzer Steuer Elements.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Hinzufügen des erforderlichen Daten Bindungs Attributs
 
@@ -106,7 +106,7 @@ Verwenden Sie den Assistenten zum **Konfigurieren von Datenquellen** , um eine D
 
 1. Um das Fenster **Datenquellen** zu öffnen, klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
@@ -124,11 +124,11 @@ Verwenden Sie den Assistenten zum **Konfigurieren von Datenquellen** , um eine D
 
 8. Wählen Sie die `Customers`-Tabelle aus, und klicken Sie anschließend auf **Fertig stellen**.
 
-   Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die Tabelle `Customers` wird im **Datenquellenfenster** angezeigt.
+   Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die `Customers` Tabelle wird im **Datenquellen** Fenster angezeigt.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Festlegen der Tabelle "Customers" für die Verwendung des ComplexDataGridView-Steuer Elements
 
-Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll:
+Im **Datenquellen** Fenster können Sie das Steuerelement festlegen, das vor dem Ziehen von Elementen auf das Formular erstellt werden soll:
 
 1. Öffnen Sie **Form1** im Designer.
 
@@ -156,8 +156,8 @@ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung
 
 - Erstellen von Steuerelementen, die Nachschlageszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das die Datenbindung für die Suche unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/index)
+- [Windows Forms Steuerelemente](/dotnet/framework/winforms/controls/index)

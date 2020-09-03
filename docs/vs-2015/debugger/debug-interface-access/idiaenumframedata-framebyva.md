@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0560965858bd6d9ee823a6056332bdd9a7b654a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146503"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt einen Frame virtuelle Adresse (VA) zurück.  
+Gibt einen Frame nach der virtuellen Adresse (VA) zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,14 +36,14 @@ HRESULT frameByVA( 
   
 #### <a name="parameters"></a>Parameter  
  virtualAddress  
- [in] VA des Frames von Interesse sind.  
+ in VA des interessanten Frames.  
   
- Rahmen  
- [out] Gibt eine [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt, das den Rahmen darstellt, die die angegebene Adresse enthält.  
+ frame  
+ vorgenommen Gibt ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt zurück, das den Frame darstellt, der die angegebene Adresse enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn keine Frame Daten mit der angegebenen Adresse übereinstimmen. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

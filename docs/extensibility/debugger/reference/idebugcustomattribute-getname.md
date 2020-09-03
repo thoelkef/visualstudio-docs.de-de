@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: 'Idebugcustomattribute:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732772"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -41,13 +41,13 @@ int GetName(
 
 ## <a name="parameters"></a>Parameter
 `bstrName`\
-[out] Gibt eine Zeichenfolge zurück, die den Namen des benutzerdefinierten Attributs enthält.
+vorgenommen Gibt eine Zeichenfolge zurück, die den Namen des benutzerdefinierten Attributs enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der von dieser Methode zurückgegebene Name entspricht dem Namen der Klasse, die zum Deklarieren des Attributs verwendet wird. Dies entspricht möglicherweise nicht genau dem Namen der benutzerdefinierten Attributklasse selbst, da das Suffix "Attribut" von einem benutzerdefinierten Attributnamen gelöscht werden kann, wenn es in einer Deklaration verwendet wird.
+ Der von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse, die verwendet wird, um das Attribut zu deklarieren. Dies entspricht möglicherweise nicht exakt dem Namen der benutzerdefinierten Attribut Klasse, da c# es zulässt, dass das Suffix "Attribute" aus einem benutzerdefinierten Attributnamen gelöscht wird, wenn es in einer Deklaration verwendet wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

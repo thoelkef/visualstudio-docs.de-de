@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673118"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
@@ -31,10 +31,10 @@ Der Code, mit dem ein Dataset definiert wird, wird jedes Mal generiert, wenn Än
 Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code eine separate Klassendatei in jedem Projekt angelegt. Das ursprüngliche Projekt hat einen *DataSetName mit Dateiname*. Designer. vb (oder *DataSetName*. Designer.cs), die den `TableAdapter` Code enthält. Das Projekt, das in der **DataSet-Projekt** Eigenschaft festgelegt ist, hat eine Datei mit dem Namen *DataSetName*. DataSet. Designer. vb (oder *DataSetName*. DataSet.Designer.cs). Diese Datei enthält den DataSet-Code.
 
 > [!NOTE]
-> Wenn Sie Datasets und `TableAdapter`s trennen (durch Festlegen der **DataSet-Projekt** Eigenschaft), werden vorhandene partielle DataSet-Klassen im Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
+> Beim Trennen von Datasets und `TableAdapter` s (durch Festlegen der **DataSet-Projekt** Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
 
 > [!NOTE]
-> Wenn Validierungscode hinzugefügt werden muss, stellt der DataSet-Designer Funktionen zum Erstellen <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> Ereignis Handlers bereit. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-DataSet](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Wenn Validierungscode hinzugefügt werden muss, stellt der DataSet-Designer Funktionen zum Erstellen von <xref:System.Data.DataTable.ColumnChanging> -und- <xref:System.Data.DataTable.RowChanging> Ereignis Handlern bereit. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-DataSet](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 
@@ -65,9 +65,9 @@ Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code
     }
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Gewusst wie: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
 - [Übersicht über TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)

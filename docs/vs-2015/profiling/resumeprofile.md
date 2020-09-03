@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 289aff1025570d0840eb4f0815b88d9023033a7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149255"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Enumeratoren können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:  
   
-|Enumerator|BESCHREIBUNG|  
+|Enumerator|Beschreibung|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Die Einstellung globaler Ebene wirkt sich auf alle Prozesse und Threads bei der Profilerstellung aus.|  
 |PROFILE_PROCESSLEVEL|Die Einstellung auf die Prozessebene wirkt sich auf alle Threads aus, die Teil des angegebenen Prozesses sind.|  
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
  Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:  
   
-|Enumerator|BESCHREIBUNG|  
+|Enumerator|Beschreibung|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Die Profilerstellungselement-ID ist nicht vorhanden.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Die angegebene Profilerstellungsebene ist nicht vorhanden.|  
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|Der Funktionsaufruf der Profilerstellung, die Profilerstellungsebene oder eine Kombination aus dem Aufruf und der Ebene sind noch nicht implementiert.|  
 |PROFILE_OK|Der Aufruf war erfolgreich.|  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Bemerkungen  
  Der Anfangswert des Suspend/Resume-Zählers ist 0. Jeder Aufruf von SuspendProfile addiert 1 zur der Suspend/Resume-Anzahl. Für jeden Aufruf von ResumeProfile wird 1 subtrahiert.  
   
  Wenn die Suspend/Resume-Anzahl größer als 0 ist, ist der Suspend/Resume-Status für die Ebene OFF. Wenn die Anzahl kleiner oder gleich 0 ist, ist der Status von Suspend/Resume ON.  
@@ -105,5 +105,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Visual Studio Profiler-API-Referenz (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

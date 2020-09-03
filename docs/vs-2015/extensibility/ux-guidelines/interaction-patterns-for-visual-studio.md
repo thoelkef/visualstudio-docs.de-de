@@ -9,51 +9,51 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f570d665ddbc97ccddf058e1bb424c62e23912cb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825282"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Interaktionsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ## <a name="overview"></a>Übersicht
- Ein Entwurfsmuster, ist im Allgemeinen den Kern eines Entwurfs, die in bestimmten Situationen zum Lösen von Problemen mit ähnlichen Sätzen von Einschränkungen angewendet werden können. Feature und System-Designer verwenden Sie diese Entwurfsmuster als Ausgangspunkt, die dann an ihre spezifische Situation angepasst werden können.
+ Ein Entwurfsmuster ist im Allgemeinen der Kern eines Entwurfs, der in bestimmten Situationen angewendet werden kann, um Probleme mit ähnlichen Sätzen von Einschränkungen zu lösen. Funktions-und System-Designer verwenden diese Entwurfsmuster als Ausgangspunkte, die dann an ihre jeweilige Situation angepasst werden können.
 
- Visual Studio verfügt über eine Bibliothek mit häufige Interaktionsmuster von, die beim Erstellen von neuer Funktionen berücksichtigt werden sollten. Es gibt zwei Core-Kontexte für unsere Entwurfsmuster: Visual Studio-Clients (Devenv) und Visual Studio Online. Bei bestimmten Problemen entwerfen ein allgegenwärtig Muster vorliegt, die in allen Fällen gut funktioniert. In vielen Fällen kann jedoch die Lösung für die Benutzeroberfläche unterscheiden, die in einem Browser und, die auf eine Client-Anwendung gehostet wird präsentiert wird.
+ Visual Studio verfügt über eine Bibliothek mit allgemeinen Interaktionsmustern, die beim Aufbau neuer Features berücksichtigt werden sollten. Es gibt zwei Kern Kontexte für unsere Entwurfsmuster: Visual Studio Client (Debug) und Visual Studio Online. Für einige Entwurfs Probleme gibt es ein allgegenwärtiges Muster, das in allen Situationen gut funktioniert. In vielen Fällen kann die Lösung jedoch für die Benutzeroberfläche, die in einem Browser angezeigt wird und die in einer Client Anwendung gehostet wird, unterschiedlich sein.
 
-### <a name="visual-studio-client-pattern-types"></a>Visual Studio-Client-Mustertypen
+### <a name="visual-studio-client-pattern-types"></a>Visual Studio-Client Mustertypen
 
 |Mustertyp|Beschreibung|Beispiele|
 |------------------|-----------------|--------------|
-|**Anwendungsebene-Muster**|Allgemeine Muster für die Anwendung bestimmen oder Anwendungskontext angezeigt und enthält, die Zusammensetzung und Steuerelementmuster, die darin enthaltenen|-Toolfenster<br />-Dokumentfenster|
-|**Zusammengesetzte Muster**|Allgemeine Muster, die über Anwendungsmuster hinweg erstrecken oder einem erkannten Muster setzt sich aus mehreren Steuerelementen in einer Konfiguration mit distinct|-Ansicht wechseln<br />-List-Generatoren<br />– Anzeigen von Daten<br />-Benachrichtigungen<br />-Überprüfung<br />-Auswahl Modelle|
-|**Steuerelementmuster**|Einzelheiten dazu, wie Low-Level-Steuerelemente werden Verhalten erwartet|-Strukturansichten<br />-Bearbeitung in einem Grid-Steuerelement|
+|**Muster auf Anwendungsebene**|Allgemeine Muster für die Anwendung, bestimmen oder Anzeigen des Anwendungs Kontexts sowie zusammengesetzte und Steuerelement Muster darin|-Tool Fenster<br />-Dokument Fenster|
+|**Zusammengesetzte Muster**|Allgemeine Muster, die sich über Anwendungs Muster erstrecken können, oder ein bekanntes Muster, das aus mehreren Steuerelementen in einer unterschiedlichen Konfiguration besteht|-Ansicht wechseln<br />-List Builder<br />-Anzeigen von Daten<br />-Benachrichtigungen<br />-Validierung<br />-Auswahl Modelle|
+|**Steuerelement Muster**|Besonderheiten bei der Erwartungs gemäße Verhalten von Steuerelementen auf niedriger Ebene|-Struktur Ansichten<br />-Bearbeiten in einem Raster Steuerelement|
 
 ## <a name="application-patterns"></a>Anwendungsmuster
- Auf einer hohen Ebene besteht aus Visual Studio-Benutzeroberfläche, Windows, Dialogfelder, Befehle und Symbolleisten in einer einzigen IDE. Die Visual Studio-Hierarchie bestimmt Kontext und Laufwerken-Menüs. Der wichtige Integrationspunkte in der Benutzeroberfläche der IDE werden Dokumentfenster, Toolfenster, Projekte, die Befehlsstruktur, die Text-Editor, der Toolbox, die Fenster "Eigenschaften" und Tools > Optionen.
+ Auf hoher Ebene besteht die Visual Studio-Schnittstelle aus mehreren Fenstern, Dialogfeldern, Befehlen und Symbolleisten innerhalb einer einzelnen IDE. Die Visual Studio-Hierarchie legt Kontext-und Laufwerks Menüs fest. Die wichtigsten Integrationspunkte in der Benutzeroberfläche der IDE sind Dokument Fenster, Tool Fenster, Projekte, Befehlsstruktur, Text-Editor, Toolbox, Eigenschaftenfenster und Tools > Optionen.
 
- Es gibt grundlegende Verwendungsmuster für jede der in der Benutzeroberfläche der IDE die wichtige Integrationspunkte:
+ Es gibt grundlegende Verwendungs Muster für jeden der wichtigsten Integrationspunkte in der Benutzeroberfläche der IDE:
 
 - [Menüs und Befehle für Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)
 
 - [Anwendungsmuster für Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 
-  - [Fenster-Interaktionen](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
+  - [Fenster Interaktionen](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
   - [Toolfenster](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
-  - [Dokument-Editor-Konventionen](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
+  - [Konventionen für Dokument-Editor](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
-  - [Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
+  - [Dialoge](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
   - [Projekte](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
-## <a name="common-control-patterns"></a>Allgemeine Steuerelementmuster
- Steuerelementmuster sind vor allem an, zu den Steuerelementen wie erwartet Verhalten. Dies ist ein Bereich, in denen Konsistenz wichtigsten ist.
+## <a name="common-control-patterns"></a>Allgemeine Steuerelement Muster
+ Steuerelement Muster sind hauptsächlich die Art und Weise, wie sich die einzelnen Steuerelemente Verhalten. Dies ist ein Bereich, in dem die Konsistenz am kritischsten ist.
 
- Am häufigsten verwendeten Steuerelemente in Visual Studio sollte es sich um die Desktop-Windows-Richtlinien einhalten. Unsere Richtlinien beziehen sich ausschließlich auf Bereiche, in denen wir häufig verwendete Konventionen mit Visual Studio-spezifischer Aktivitäten oder stellen Sie in denen wir die Richtlinien vollständig ersetzen zum Anpassen von Visual Studio, um die Anforderungen unserer Benutzer anspruchsvolle erweitern müssen.
+ Die meisten allgemeinen Steuerelemente in Visual Studio sollten den Windows-Richtlinien für den Desktop entsprechen. Unsere Richtlinien umfassen nur Bereiche, in denen wir allgemeine Konventionen mit Visual Studio-spezifischen Interaktionen erweitern müssen, oder stellen, an denen wir die Richtlinien vollständig ersetzen, um Visual Studio so anzupassen, dass die Anforderungen unserer ausgereiften Benutzer erfüllt werden.
 
 - [Allgemeine Steuerelementmuster für Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
@@ -61,19 +61,19 @@ ms.locfileid: "67825282"
 
   - [Textsteuerelemente](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-  - [Schaltflächen und Links](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+  - [Schaltflächen und Hyperlinks](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
 ## <a name="composite-patterns"></a>Zusammengesetzte Muster
- Es gibt eine Reihe von Möglichkeiten, die Benutzer erwarten, um Aufgaben auszuführen. Nach Möglichkeit sollten Funktionen entworfen werden, verwenden Sie diese Muster sowohl für die Interaktion und den visuellen Entwurf.
+ Es gibt eine Reihe von Methoden, die Benutzer für die Ausführung von Aufgaben erwarten. Wenn möglich, sollten Features so entworfen werden, dass diese Muster sowohl für die Interaktion als auch für den visuellen Entwurf verwendet werden.
 
- Es gibt viele zusammengesetzte Muster in Visual Studio, einige der wichtigsten im Hinblick auf die Konsistenz sind:
+ Obwohl in Visual Studio viele zusammengesetzte Muster vorhanden sind, sind einige der wichtigsten in Bezug auf die Konsistenz:
 
 - [Zusammengesetzte Muster für Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-  - [Objektgebundenen Benutzeroberfläche und einsehen](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [On-Object-Benutzeroberfläche und Peer](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
-  - [Auswahlmodelle](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+  - [Auswahl Modelle](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-  - [Persistenz und Einstellungen werden gespeichert.](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+  - [Persistenz und Speichern von Einstellungen](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
-  - [Touch-Punkts](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+  - [Fingereingabe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)

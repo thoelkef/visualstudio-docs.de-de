@@ -1,5 +1,5 @@
 ---
-title: Compiland | Microsoft-Dokumentation
+title: Kompilieren | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,32 +15,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 579ac6a70b379364870425e78cee41ac0840a214
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163999"
 ---
 # <a name="compiland"></a>Compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Es gibt ein `SymTagCompiland` symbol für jede Kompiliereinheit zur .exe-Datei verknüpft. Kompiliereinheit Informationen Symbole mit aufgeteilt ist eine `SymTagCompiland` -Tag, das abgerufen werden kann, ohne zusätzliche Compiland-Symbole werden geladen und Symbole mit einer `SymTagCompilandDetails` -Tag, das möglicherweise zusätzliche Symbole werden geladen.  
+Es gibt ein `SymTagCompiland` Symbol für jede Kompilierungen, die mit der exe-Datei verknüpft ist. Compiland-Informationen werden zwischen Symbolen mit einem- `SymTagCompiland` Tag aufgeteilt, das abgerufen werden kann, ohne dass zusätzliche Kompilierungen und Symbole geladen werden, sowie von Symbolen mit einem- `SymTagCompilandDetails` Tag, die möglicherweise zusätzliche Symbole laden müssen.  
   
 ## <a name="properties"></a>Eigenschaften  
- Die folgende Tabelle zeigt die Eigenschaften, die für diesen Symboltyp gültig sind.  
+ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für diesen Symboltyp gültig sind.  
   
 |Eigenschaft|Datentyp|Beschreibung|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Wenn bei der Kompilierung bearbeiten und Fortfahren aktiviert wurde.|  
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol für die .exe-Datei.|  
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Die ID des lexikalischen übergeordneten Symbols.|  
-|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Der Name der Bibliothek oder Objektdatei-Datei, in dem Objekt geladen wurde.|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Der Dateiname der Kompiliereinheit der Objektdatei.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` , wenn Bearbeiten und fortfahren bei der Kompilierung aktiviert wurde.|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Das Symbol für die exe-Datei.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID des übergeordneten lexikalischen Symbols.|  
+|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Der Name der Bibliothek oder Objektdatei, aus der das Objekt geladen wurde.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Der Dateiname der Objektdatei der Kompilierungen.|  
 |[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|Der Name der Quelldatei.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCompiland` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCompiland` (einen der [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationswerte) zurück.|  
   
-## <a name="see-also"></a>Siehe auch  
- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
- [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Compilanddetails](../../debugger/debug-interface-access/compilanddetails.md)   
+ [Compilandenv](../../debugger/debug-interface-access/compilandenv.md)   
  [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

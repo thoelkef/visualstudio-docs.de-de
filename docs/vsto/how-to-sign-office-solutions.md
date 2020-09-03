@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545755"
 ---
 # <a name="how-to-sign-office-solutions"></a>Gewusst wie: Signieren von Office-Lösungen
@@ -37,7 +37,7 @@ ms.locfileid: "85545755"
 
 1. Klicken Sie im Menü **Projekt** auf**Eigenschaften**von _SolutionName_.
 
-2. Klicken Sie auf die Registerkarte **Signierung**.
+2. Klicken Sie auf die Registerkarte **Signierung** .
 
 3. Wählen Sie **ClickOnce-Manifeste signieren**aus.
 
@@ -45,8 +45,8 @@ ms.locfileid: "85545755"
 
 5. Um sicherzustellen, dass das richtige Zertifikat verwendet wird, klicken Sie auf **Weitere Details** , um die Zertifikat Informationen anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 - [Gewähren von Vertrauenswürdigkeit für Office-Lösungen](../vsto/granting-trust-to-office-solutions.md)
-- [Signierungs Seite, Projekt-Designer](../ide/reference/signing-page-project-designer.md)
+- [Seite "Signierung", Projekt-Designer](../ide/reference/signing-page-project-designer.md)

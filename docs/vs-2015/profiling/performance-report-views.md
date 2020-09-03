@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161985"
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
@@ -29,23 +29,23 @@ Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten d
  [Allgemeine Datenansichten](../profiling/common-data-views.md)  
  Referenzinformationen über die Ansichten und Berichte von Profilerstellungs-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
   
- [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Samplingmethode generiert wurden.  
   
- [Datenansichten der Instrumentierungsmethoden](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentierungs Methoden-Datenansichten](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Instrumentierungsmethode generiert werden.  
   
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
+ [.NET-Arbeitsspeicher Datenansichten](../profiling/dotnet-memory-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die .NET-Speicherdaten enthalten.  
   
- [Ansichten für Ressourcenkonfliktdaten](../profiling/resource-contention-data-views.md)  
+ [Datenansichten von Ressourcenkonflikten](../profiling/resource-contention-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Parallelitätsmethode generiert wurden.  
   
  [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)  
- Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.  
+ Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten  
   
  [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)  
  Referenzinformationen zur Interaktionsansicht und dem Bericht der Profilerstellungs-Datendateien, die Ebeneninteraktionsdaten enthalten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von übergeordneten Containerordnern für Projektmappen | Microsoft-Dokumentation
+title: Erstellen von übergeordneten Container Ordnern für Projektmappen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196928"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Containerordnern für Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angegeben. Diese einzelne Stamm ist eine Super Unified-Stamm (SUR) aufgerufen.  
+In der Quellcodeverwaltungs-Plug-in-API-Version 1,2 kann ein Benutzer ein einzelnes Quell Code Verwaltungs Ziel für alle Webprojekte in der Projekt Mappe angeben. Dieser einzelne Stamm wird als Super Unified root (sur) bezeichnet.  
   
- In der Quelle-Plug-in-API Version 1.1 Wenn der Benutzer eine Projektmappe zur quellcodeverwaltung hinzugefügt wurde der Benutzer aufgefordert, geben Sie ein Steuerelement-Quelle für jedes Webprojekt.  
+ Wenn der Benutzer in der Quellcodeverwaltungs-Plug-in-API Version 1,1 eine Projekt Mappe mit mehreren Projekten zur Quell Code Verwaltung hinzugefügt hat, wurde der Benutzer aufgefordert, ein Quell Code Verwaltungs Ziel für jedes Webprojekt anzugeben.  
   
-## <a name="new-capability-flags"></a>Neue Funktionsflags  
+## <a name="new-capability-flags"></a>Neue funktionsflags  
  `SCC_CAP_CREATESUBPROJECT`  
   
  `SCC_CAP_GETPARENTPROJECT`  
@@ -35,36 +35,36 @@ Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten 
   
  [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
- Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE fast immer einen SUR-Ordner erstellt, wenn eine Projektmappe zur quellcodeverwaltung hinzufügen. Insbesondere erfolgt dies in den folgenden Fällen:  
+ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE erstellt beim Hinzufügen einer Projekt Mappe zur Quell Code Verwaltung fast immer einen sur-Ordner. Dies geschieht insbesondere in den folgenden Fällen:  
   
-- Das Projekt ist eine Dateifreigabe Webprojekt.  
+- Das Projekt ist ein Dateifreigabe-Webprojekt.  
   
-- Es gibt unterschiedliche Laufwerke für das Projekt und die Projektmappendatei.  
+- Es gibt verschiedene Laufwerke für das Projekt und die Projektmappendatei.  
   
-- Es gibt andere Freigaben für das Projekt und die Projektmappendatei.  
+- Es gibt verschiedene Freigaben für das Projekt und die Projektmappendatei.  
   
-- Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.  
+- Projekte wurden separat hinzugefügt (in einer Lösung für die Quell Code Verwaltung).  
   
-  In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Es wird empfohlen, dass der Name des Ordners "sur" mit dem Projektmappennamen ohne Erweiterung identisch ist. In der folgenden Tabelle wird das Verhalten in den beiden Versionen zusammengefasst.  
   
-|Feature|tSource-Steuerelement-Plug-in-API-Version 1.1|Datenquellen Sie-Steuerelement-Plug-in API-Version 1.2|  
+|Funktion|TSource-Steuerelement-Plug-in-API, Version 1,1|Quellcodeverwaltungs-Plug-in-API, Version 1,2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
-|Hinzufügen der Lösung zum SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Projekt der quellcodeverwaltung unterliegende Projektmappe hinzufügen|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Note:**  Visual Studio wird davon ausgegangen, dass eine Projektmappe direkt untergeordnetes Element von der (Süd).|  
+|Lösung zu SCC hinzufügen|Sccinitialize ()<br /><br /> Sccgetprojpath ()<br /><br /> Sccgetprojpath ()<br /><br /> Sccopumproject ()|Sccinitialize ()<br /><br /> Sccgetprojpath ()<br /><br /> Scckreatesubproject ()<br /><br /> Scckreatesubproject ()<br /><br /> Sccopumproject ()|  
+|Projekt der Projekt Mappe zur Quell Code Verwaltung hinzufügen|Sccgetprojpath ()<br /><br /> OpenProject ()|Sccgetparametprojectpath ()<br /><br /> Sccoperproject () **Hinweis:**  Visual Studio geht davon aus, dass eine Projekt Mappe ein direktes untergeordnetes Element der sur ist.|  
   
 ## <a name="examples"></a>Beispiele  
- Die folgende Tabelle enthält zwei Beispiele. In beiden Fällen die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer zur Eingabe aufgefordert, einen Zielspeicherort für die Projektmappe unter quellcodeverwaltung, bis die *User_choice* als Ziel angegeben ist. Wenn die User_choice angegeben wird, werden die Projektmappe und zwei Projekte hinzugefügt, ohne Aufforderung des Benutzers für Datenquellen-Steuerelement-Ziele.  
+ In der folgenden Tabelle sind zwei Beispiele aufgeführt. In beiden Fällen wird der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer zur Eingabe eines Zielspeicher Orts für die Lösung unter Quell Code Verwaltung aufgefordert, bis die  *user_choice* als Ziel angegeben wird. Wenn die user_choice angegeben wird, werden die Projekt Mappe und zwei Projekte hinzugefügt, ohne dass der Benutzer zur Eingabe von Quell Code Verwaltungs Zielen aufgefordert wird.  
   
-|Projektmappe enthält|Auf Datenträger|Datenbank-Standardstruktur|  
+|Projekt Mappe enthält|Auf Speicherorten|Daten Bank Standardstruktur|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*User_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*User_choice*  /sln1/win1|  
+|sln1. sln<br /><br /> Web1<br /><br /> Web2|C:\solutions\sln1<br /><br /> C:\inetpub\wwwroot\web1<br /><br /> \\\server\wwwroot $ \web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*/C/web1<br /><br /> $/*user_choice*/web2|  
+|sln1. sln<br /><br /> Web1<br /><br /> Win1|C:\solutions\sln1<br /><br /> D:\inetpub\wwwroot\web1<br /><br /> C:\solutions\sln1\win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*/D/web1<br /><br /> $/*user_choice*/sln1/win1|  
   
- Die SUR-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang wurde abgebrochen oder aufgrund eines Fehlers fehlschlägt. Sie werden nicht automatisch in "Abbrechen" oder fehlerbedingungen entfernt.  
+ Der Ordner "sur" und die Unterordner werden unabhängig davon erstellt, ob der Vorgang aufgrund eines Fehlers abgebrochen wurde oder fehlschlägt. Sie werden nicht automatisch in Abbruch-oder Fehlerzuständen entfernt.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] standardmäßig auf Version 1.1-Verhalten, wenn das Quellcodeverwaltungs-Plug-in nicht zurückgibt `SCC_CAP_CREATESUBPROJECT` und `SCC_CAP_GETPARENTPROJECT` funktionsflags. Darüber hinaus Benutzern [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , um die Version 1.1-Verhalten wiederherzustellen, durch den Wert des folgenden Schlüssels auf DWORD: 00000001 festlegen können:  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]hat standardmäßig das Verhalten von Version 1,1, wenn das Quellcodeverwaltungs-Plug-in keine `SCC_CAP_CREATESUBPROJECT` -und-funktionsflags zurückgibt `SCC_CAP_GETPARENTPROJECT` Außerdem können Benutzer von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auswählen, das Verhalten von Version 1,1 wiederherzustellen, indem Sie den Wert des folgenden Schlüssels auf DWORD festlegen: 00000001:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
+ [HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] "Donotkreatesolutionrootfolderinsourcecontrol" = DWORD: 00000001  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

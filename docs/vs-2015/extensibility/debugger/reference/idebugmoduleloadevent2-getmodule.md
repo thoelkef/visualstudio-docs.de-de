@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Microsoft-Dokumentation
+title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0083946051fe78fc1bd19ea877475465e0b6477f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163421"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft das Modul, das gerade geladen oder entladen wird.  
+Ruft das Modul ab, das geladen oder entladen wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,17 +44,17 @@ int GetModule( 
   
 #### <a name="parameters"></a>Parameter  
  `pModule`  
- [out] Gibt eine [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das das Modul darstellt, die geladen oder entladen wird.  
+ vorgenommen Gibt ein [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt zurück, das das Modul darstellt, das geladen oder entladen wird.  
   
  `pbstrDebugMessage`  
- [in, out] Gibt eine optionale Nachricht, die dieses Ereignis beschreibt. Wenn dieser Parameter ein null-Wert ist, wird keine Meldung angefordert.  
+ [in, out] Gibt eine optionale Meldung zurück, die dieses Ereignis beschreibt. Wenn dieser Parameter ein NULL-Wert ist, wird keine Meldung angefordert.  
   
  `pbLoad`  
- [in, out] Ungleich Null (`TRUE`) Wenn das Modul geladen und 0 (null) ist (`FALSE`), wenn das Modul entladen wird. Wenn dieser Parameter ein null-Wert ist, wird kein Status angefordert.  
+ [in, out] Ungleich NULL ( `TRUE` ), wenn das Modul geladen wird, und 0 (NULL `FALSE` ) (), wenn das Modul entladen wird. Wenn dieser Parameter ein NULL-Wert ist, wird kein Status angefordert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659468"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualisieren eines UML-Modells aus einem Hintergrundthread
@@ -32,7 +32,7 @@ Gelegentlich kann es nützlich sein, Änderungen an einem Modell in einem Hinter
 
 #### <a name="to-run-the-example"></a>So führen Sie das Beispiel aus
 
-1. Erstellen Sie einen Befehls Handler in C# einem Projekt, wie in [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)beschrieben.
+1. Erstellen Sie einen Befehls Handler in einem c#-Projekt, wie in [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)beschrieben.
 
 2. Stellen Sie sicher, dass das Projekt Verweise auf die folgenden Assemblys enthält:
 
@@ -187,5 +187,5 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  Mithilfe von `uiThreadHolder.Invoke()` können Sie Vorgänge im UI-Thread ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren eines Gesten Handlers in einem Modellierungs Diagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

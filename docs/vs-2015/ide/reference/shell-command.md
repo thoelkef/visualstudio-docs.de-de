@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663539"
 ---
 # <a name="shell-command"></a>Befehl "Shell"
@@ -49,7 +49,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  /OutputWindow [oder]/Output [oder]/Out [oder]/o optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.
 
  Der vordefinierte Alias `Shell` kann anstelle von `Tools.Shell` verwendet werden.
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Befehlsfenster](../../ide/reference/command-window.md) für [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Ausgabefenster](../../ide/reference/output-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

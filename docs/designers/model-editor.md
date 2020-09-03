@@ -152,7 +152,7 @@ Es kann hilfreich sein, eine 3D-Szene von einer bekannten Position aus und in ei
 
 Zum besseren Verständnis eines 3D-Objekts oder einer 3D-Szene können Sie zusätzliche Geometriedetails wie die vertexspezifische oder flächenspezifische Normale oder Pivotpunkte der aktuellen Auswahl und weitere Details anzeigen. Wählen Sie in der Symbolleiste **Modell-Editor** die Option **Skripts** > **Ansicht** aus, und wählen Sie die gewünschte Option aus, um diese zu aktivieren oder zu deaktivieren.
 
-### Erstellen und Importieren von 3D-Objekten <a name="Adding3DObjects"></a>
+### <a name="create-and-import-3d-objects"></a>Erstellen und Importieren von 3D-Objekten <a name="Adding3DObjects"></a>
 
 Wählen Sie in der **Toolbox** die gewünschte Form aus, und verschieben Sie sie dann auf die Entwurfsoberfläche, um der Szene eine vordefinierte 3D-Form hinzuzufügen. Neue Formen werden am Ursprung der Szene positioniert. Der Modell-Editor stellt sieben Formen bereit: **Kegel**, **Würfel**, **Zylinder**, **Scheibe**, **Ebene**, **Kugel** und **Teekanne**.
 
@@ -197,7 +197,7 @@ Ein Beispiel für die Verwendung des Pivotpunkts finden Sie unter [Vorgehensweis
 
 Die Tools „Übersetzung“ und „Drehung“ lassen sich im lokalen Koordinatensystem (oder im *lokalen Bezugsrahmen*) des Objekts oder im Koordinatensystem der Welt (oder im *Weltbezugsrahmen*) umsetzen. Der Weltverweisrahmen ist von der Drehung des Objekts unabhängig. Die Standardeinstellung ist der lokale Modus. Klicken Sie zum Aktivieren (oder Deaktivieren) des Weltmodus auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf die Schaltfläche **WorldLocal**.
 
-### Ändern von Objekten <a name="ModifyingObjects"></a>
+### <a name="modify-objects"></a>Ändern von Objekten <a name="ModifyingObjects"></a>
 
 Sie können die Form eines 3D-Objekts ändern, indem Sie die Schnittpunkte, Ränder und Flächen verschieben oder löschen. Standardmäßig ist der Modell-Editor auf den *Objektmodus* eingestellt, damit Sie komplette Objekte auswählen und transformieren können. Wählen Sie Punkte, Ränder oder Flächen mithilfe des entsprechenden Auswahlmodus aus. Klicken Sie auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Selection modes** (Auswahlmodi), und wählen Sie dann den gewünschten Modus aus.
 

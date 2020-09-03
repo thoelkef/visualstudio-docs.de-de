@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Microsoft-Dokumentation
+title: 'IDebugBinder3:: getmemoryobject | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0019b1691cb36b9d23be546cdfdb0e061779647d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193023"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft ein Arbeitsspeicher-Objekt, das den Speicher darstellt, dem an dieses Objekt gebunden ist.  
+Diese Methode ruft ein Speicher Objekt ab, das den Speicher darstellt, an den dieses Objekt gebunden ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,18 +44,18 @@ int GetMemoryObject(
   
 #### <a name="parameters"></a>Parameter  
  `pField`  
- [in] Gibt an, welches Feld zum Abrufen des Speicherobjekts für.  
+ in Gibt an, für welches Feld das Speicher Objekt zu erhalten ist.  
   
  `uConstant`  
- [in] Stellt eine Speicheradresse oder den Wert für einen konstanten Wert dar.  
+ in Stellt eine Speicheradresse oder einen Wert für einen konstanten Wert dar.  
   
  `ppObject`  
- [out] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Arbeitsspeicher, der an dieses Objekt gebunden ist darstellt.  
+ vorgenommen Ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das den Speicher darstellt, an den dieses Objekt gebunden ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
+ [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

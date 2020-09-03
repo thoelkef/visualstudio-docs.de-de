@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 449c6c1ecdb0644b9b52b6ec12ce867dc34d66c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156106"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis der temporären Dateien des Benutzers gespeichert wird.  
@@ -33,7 +33,7 @@ Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis de
 ## <a name="remarks"></a>Hinweise  
  Abhängig von den Berechtigungen des Benutzers kann die Grafikprotokolldatei möglicherweise nicht an einem beliebigen Speicherort gespeichert werden. Es wird empfohlen, Grafikprotokolle vorzugsweise im Verzeichnis der temporären Dateien des Benutzers oder an einem anderen, als funktionierend bekannten Speicherort zu speichern, wenn Sie unsicher sind, ob in den Speicherort, den Sie auswählen würden, vom Benutzer geschrieben werden kann.  
   
- Um zu verhindern, dass die grafikprotokolldatei an das Verzeichnis der temporären Dateien gespeichert werden, müssen Sie definiert `DONT_SAVE_VSGLOG_TO_TEMP` bevor Sie einfügen `vsgcapture.h`.  
+ Um zu verhindern, dass die Grafikprotokolldatei im Verzeichnis der temporären Dateien gespeichert wird, müssen Sie `DONT_SAVE_VSGLOG_TO_TEMP` definieren, bevor Sie `vsgcapture.h` einschließen.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie Sie die Grafikprotokolldatei in einem absoluten Pfad auf dem Hostcomputer speichern können.  
@@ -47,5 +47,5 @@ Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis de
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)

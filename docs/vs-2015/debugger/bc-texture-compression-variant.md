@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161704"
 ---
 # <a name="bc-texture-compression-variant"></a>BC-Texturkomprimierungsvariante
@@ -63,5 +63,5 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
 ## <a name="example"></a>Beispiel  
  Diese Variante blockkomprimiert Texturen zur Laufzeit vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die unkomprimierten Texturen mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann, da die Blockkomprimierung zur Kodierung beträchtliche Computerressourcen erfordert. Wir empfehlen, Ihre Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu komprimieren. Diese Ansätze reduzieren die Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehre Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md)

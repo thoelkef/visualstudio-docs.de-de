@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162258"
 ---
 # <a name="reference-programmatic-capture"></a>Verweis (Programmgesteuerte Aufzeichnung)
@@ -25,13 +25,13 @@ Die Grafikdiagnose unterstützt die programmgesteuerte Kontrolle über ihre Erfa
   
 ### <a name="classes"></a>Klassen  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[VsgDbg-Klasse](../debugger/vsgdbg-class.md)|Stellt die Schnittstelle dar, durch die die In-App-Komponente der Grafikdiagnose programmgesteuert kontrolliert wird.|  
   
 ### <a name="preprocessor-symbols"></a>Präprozessorsymbole  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)|Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis der temporären Dateien des Benutzers gespeichert wird.|  
 |[VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)|Definiert den Standarddateinamen der Grafikprotokolldatei.|  

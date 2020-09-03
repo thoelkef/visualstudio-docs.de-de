@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
+title: 'IDebugCoreServer3:: queryislocal | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2e06cae53251be02ee63650ce7723e5915565be4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732823"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt `S_OK` zurück, um anzugeben, dass der Server lokal ist. Gibt `S_FALSE` zurück, wenn der Server von einer Instanz von msvsmon.exe ausgeführt wird, die normalerweise für Remotedebugging verwendet wird.
+ Gibt zurück `S_OK` , um anzugeben, dass der Server lokal ist. Gibt zurück `S_FALSE` , wenn der Server von einer Instanz von msvsmon.exe ausgeführt wird, die in der Regel für das Remote Debuggen verwendet wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

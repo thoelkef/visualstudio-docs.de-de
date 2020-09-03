@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft-Dokumentation
+title: 'IDebugObject2:: kreatealias | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 070340d72006f4b81ac306dcf05d721105bb875a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194638"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt eine eindeutige ID oder den Alias für dieses Objekt aus, oder gibt einen vorhandenen Alias.  
+Erstellt eine eindeutige ID oder einen Alias für dieses Objekt oder gibt einen vorhandenen Alias zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int CreateAlias(
   
 #### <a name="parameters"></a>Parameter  
  `ppAlias`  
- [out] Der Alias (oder vorhanden).  
+ vorgenommen Der neue (oder vorhandene) Alias.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein Alias ist eine Bezeichnung, die ein bestimmtes Objekt darstellt, während das Objekt im Arbeitsspeicher befindet.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Alias ist eine Bezeichnung, die ein bestimmtes Objekt darstellt, während sich das Objekt im Arbeitsspeicher befindet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

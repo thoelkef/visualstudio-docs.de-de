@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2442bf4cc31eeb51332aa28325924e18ccb1ffb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660726"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analysieren von Codeabdeckung in Buildüberprüfungstests
@@ -28,7 +28,7 @@ Die Code Coverage-Analyse in Microsoft Visual Studio zeigt Ihnen, wie viel Ihres
 
     Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.
 
-   - <em>Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File</em>* * (Typ der Laufzeiteinstellungsdatei) vorhanden.
+   - <em>Es ist jedoch kein Feld mit dem Namen **Typ der Lauf Zeit Einstellungsdatei</em>vorhanden*. *
 
       Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.
 
@@ -36,5 +36,5 @@ Die Code Coverage-Analyse in Microsoft Visual Studio zeigt Ihnen, wie viel Ihres
 
    Nach Ausführung des Builds werden die Code Coverage-Ergebnisse in der Buildzusammenfassung angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

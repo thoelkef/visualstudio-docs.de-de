@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154234"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>API-Referenz für IntelliTrace-Erweiterbarkeit
@@ -32,5 +32,5 @@ Anhand der Informationen dieses Abschnitts können Sie die IntelliTrace-Erweiter
  [IntelliTrace](../debugger/intellitrace.md)  
  Stellt Informationen bereit, wie Sie mit IntelliTrace debuggen können.  
   
- [MSDN-Codegalerie](https://code.msdn.microsoft.com/)  
+ [MSDN-Codekatalog](https://code.msdn.microsoft.com/)  
  Hostet eine Beispielanwendung, die anzeigt, wie die IntelliTrace-Erweiterbarkeit verwendet wird.

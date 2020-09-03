@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154756"
 ---
 # <a name="launch"></a>Starten
@@ -36,17 +36,17 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Gültige Optionen  
  Die folgenden VSPerfCmd-Optionen können mit der Option **Launch** in derselben Befehlszeile kombiniert werden.  
   
- **Start:** `Method`  
+ **Start:**`Method`  
  Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
- **GlobalOn** und **GlobalOff**  
- Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), aber nicht die Profilerstellungssitzung  
+ **Globalon** und **globaloff**  
+ Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), die Profilerstellungssitzung jedoch nicht  
   
- **ProcessOn:** `PID` und **ProcessOff**:`PID`  
+ **ProcessOn:** `PID` und **PROCESSOFF**:`PID`  
  Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)  
   
  **TargetCLR**  
- Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird für die zuerst geladene Version ein Profil erstellt.  
+ Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird ein Profil für die zuerst geladene Version erstellt.  
   
 ## <a name="exclusive-options"></a>Ausschließliche Optionen  
  Die folgende Option kann nur mit der Option **Launch** (Start) verwendet werden.  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Konsole**  
  Startet die angegebene Befehlszeilen-Anwendung in einem neuen Fenster  
   
- **Args:** `ArgList`  
+ **Args:**`ArgList`  
  Gibt eine Liste von Argumenten an, die an die Anwendung übergeben werden sollen  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Samplingoptionen  
  Eine der folgenden Optionen für Samplingintervalle kann in der **Launch**-Befehlszeile angegeben werden. Das Standardsamplingintervall sind 10.000.000 Prozessortaktzyklen.  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**|**lifetime**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**Allocation**&#124;**Lifetime**]  
  Gibt die Anzahl und den Typ des Samplingintervalls an  
   
 - **Timer**: Sampelt alle nicht angehaltenen `Cycles`-Prozessortaktzyklen. Wenn `Cycles` nicht angegeben ist, wird ein Intervall von 10.000.000 festgelegt.  
@@ -84,8 +84,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

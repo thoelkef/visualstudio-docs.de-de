@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+title: 'IDebugDocumentContext2:: getstatuementrange | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731768"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Ruft den Dateianweisungsbereich des Dokumentkontexts ab.
+Ruft den Bereich der Datei Anweisung des Dokument Kontexts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,21 +43,21 @@ int GetStatementRange(
 
 ## <a name="parameters"></a>Parameter
 `pBegPosition`\
-[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Startposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Anfangs Position ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 `pEndPosition`\
-[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Endposition ausgefüllt wird. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
+[in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Ein Anweisungsbereich ist der Bereich der Zeilen, die den Code beigetragen haben, auf den sich dieser Dokumentkontext bezieht.
+Ein Anweisungs Bereich ist der Bereich der Zeilen, der den Code bereitgestellt hat, auf den sich dieser Dokument Kontext bezieht.
 
-Um den Quellcodebereich (einschließlich Kommentare) in diesem Dokumentkontext abzurufen, rufen Sie die [GetSourceRange-Methode](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) auf.
+Um den Bereich des Quellcodes (einschließlich der Kommentare) in diesem Dokument Kontext abzurufen, rufen Sie die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) -Methode auf.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CDebugContext` Methode für ein einfaches Objekt implementiert wird, das die [IDebugDocumentContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) verfügbar macht. In diesem Beispiel wird die Endposition nur dann ausgefüllt, wenn die Anfangsposition kein Nullwert ist.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CDebugContext` , das die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -Schnittstelle verfügbar macht. In diesem Beispiel wird nur dann die Endposition ausgefüllt, wenn die Anfangsposition kein NULL-Wert ist.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

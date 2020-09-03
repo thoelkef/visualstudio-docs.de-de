@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft-Dokumentation
+title: 'Idebugfunctionobject:: erkreateprimitiveobject | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3531483c113c37587b253bed90a9985541b2e526
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179442"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt ein Datenobjekt mit primitiven, z. B. einer einfachen ganzen Zahl.  
+Erstellt ein Primitives Datenobjekt, z. b. eine einfache Ganzzahl.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int CreatePrimitiveObject(
   
 #### <a name="parameters"></a>Parameter  
  `ot`  
- [in] Ein Wert aus der [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Enumeration, die den Typ des primitiven Erstellung darstellt.  
+ in Ein Wert aus der [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Enumeration, die den Typ des zu erstellenden primitiven darstellt.  
   
  `ppObject`  
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , das das neu erstellte Objekt darstellt.  
+ vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte-Objekt darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Rufen Sie diese Methode zum Erstellen eines Objekts, das ein Primitiv-Objekt, die einen Parameter an die Funktion der darstellt durch dargestellt wird, wird die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle. Wenn die Zeichenfolge des Ausdrucks "myString(5)" ist, würde z. B. diese Methode verwendet werden, erstellen Sie ein Objekt, das die ganze Zahl 5 darstellt.  
+## <a name="remarks"></a>Bemerkungen  
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das ein Primitives Objekt darstellt, das ein Parameter für die Funktion ist, die durch die [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle dargestellt wird. Wenn die Ausdrucks Zeichenfolge z. b. "myString (5)" lautet, wird diese Methode verwendet, um ein Objekt zu erstellen, das die Ganzzahl 5 darstellt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

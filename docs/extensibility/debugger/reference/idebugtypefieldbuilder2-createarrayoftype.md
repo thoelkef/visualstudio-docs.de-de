@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+title: 'IDebugTypeFieldBuilder2:: kreatearrayoftype | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3d7a229ea92b57252a9f01976e7b5c80348bd314
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718311"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
@@ -44,13 +44,13 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>Parameter
 `pTypeField`\
-[in] Typ der Elemente, die das Array enthält.
+in Typ der Elemente, die das Array enthalten soll.
 
 `rank`\
-[in] Anzahl der Elemente im Array.
+in Anzahl der Elemente im Array.
 
 `pArrayOfTypeField`\
-[out] Gibt die [IDebugField-Objekte](../../../extensibility/debugger/reference/idebugfield.md) zurück, die das neue Array darstellen.
+vorgenommen Gibt die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekte zurück, die das neue Array darstellen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

@@ -1,5 +1,5 @@
 ---
-title: Tabelle-Grafikobjekt | Microsoft-Dokumentation
+title: Grafikobjekttabelle | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161167"
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
@@ -27,7 +27,7 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
   
  Dies ist die Objekttabelle:  
   
- ![Direct3D-Objekte, die erstellt wurden, indem eine App](../debugger/media/gfx-diag-demo-object-table-orientation.png "Gfx_diag_demo_object_table_orientation")  
+ ![Direct3D-Objekte, die von einer App erstellt wurden.](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>Die Grafikobjekttabelle verstehen  
  Mit der Objekttabelle können Sie Direct3D-Objekte analysieren, die das Rendern eines bestimmten Frames unterstützen. Sie können ein Renderingproblem auf ein bestimmtes Objekt zurückführen, indem Sie die Eigenschaften und Daten untersuchen. (Mit anderen Grafikdiagnosetools können Sie früher in der Diagnose die Liste der Objekte einschränken, die möglicherweise nicht Ihren Erwartungen entsprechen.) Wenn Sie das problemauslösende Objekt gefunden haben, können Sie eine typspezifische Visualisierung verwenden, um das Objekt zu untersuchen. So können Sie beispielsweise die Bildbearbeitung einsetzen, um Texturen anzusehen, oder die *Puffer-Schnellansicht* verwenden, um Pufferinhalte anzuzeigen.  
@@ -41,9 +41,9 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
 |------------|-----------------|  
 |**Bezeichner**|Die Objekt-ID.|  
 |**Name**|Anwendungsspezifische Informationen, die für das Objekt mit der Direct3D-Funktion `SetPrivateData` festgelegt wurden (normalerweise zur Bereitstellung zusätzlicher Informationen über das Objekt).|  
-|**Typ**|Der Objekttyp.|  
+|**Type**|Der Objekttyp.|  
 |**Active**|Zeigt "*" für ein Objekt an, das während des aufgezeichneten Frames auf D3D10Device oder D3D11DeviceContext festgelegt wurde.<br /><br /> Dies entspricht den Objekten, die in grauer Schrift angezeigt werden, stellt aber einen Spalteneintrag bereit, mit dem Sie die Objekttabelle sortieren können.|  
-|**Größe**|Die Größe des Objekts in Bytes.|  
+|**Size**|Die Größe des Objekts in Bytes.|  
 |**Format**|Das Format des Objekts. Beispielsweise das Format eines Texturobjekts oder das Shadermodell eines Shaderobjekts.|  
 |**Width**|Die Breite eines Texturobjekts. Gilt nicht für andere Objekttypen.|  
 |**Height**|Die Höhe eines Texturobjekts. Gilt nicht für andere Objekttypen.|  
@@ -57,7 +57,7 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
   
  Hier ist der Textur-Viewer mit dem Inhalt der Pipelinestufe „Ausgabemerge“.  
   
- ![Die texturvorschau mit Anzeige des ausgabemerge](../debugger/media/gfx-diag-texture-preview.png "Gfx_diag_texture_preview")  
+ ![Die Texturvorschau mit Anzeige des Ausgabemergers](../debugger/media/gfx-diag-texture-preview.png "gfx_diag_texture_preview")  
   
 ### <a name="d3d12-command-list"></a>D3D12-Befehlsliste  
  In Direct3D 12 ist eine Befehlsliste ein Objekt, von dem Befehle in einer Befehlszuweisung aufgezeichnet werden, damit sie an die GPU als eine einzelne Anforderung gesendet werden können. Befehlslisten führen in der Regel eine Reihe von Statuseinstellungen aus, zeichnen, deaktivieren und kopieren Befehle. Sie sind besonders wichtig, da sie die bevorzugte Methode für das Rendern in Direct3D 12 sind und zwischen den Frames zur Leistungsoptimierung erneut verwendet werden können. Details zur Befehlsliste werden mit Informationen zu den einzelnen Pipelinestufen auf einer eigenen Registerkarte in einem neuen Dokumentfenster angezeigt.  
@@ -110,6 +110,6 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
 |**uint64**|Ein 64-Bit-Ganzzahlwert ohne Vorzeichen. Identisch mit **u8byte**.|  
 |**bool**|Ein boolescher Wert (`true` oder `false`) Jeder boolesche Wert wird durch einen 32-Bit-Wert dargestellt.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md)   
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus](../debugger/walkthrough-missing-objects-due-to-device-state.md)

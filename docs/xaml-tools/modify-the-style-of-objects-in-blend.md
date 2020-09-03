@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921124"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Ändern des Stils von Objekten in Blend für Visual Studio

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 743543e03806a842eabc2bbfc69011d63b1264d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660969"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoWiederherstellen, Umgebung, Dialogfeld "Optionen"
@@ -34,9 +34,9 @@ Verwenden Sie diese Seite des Dialogfelds „Optionen“, um anzugeben, ob Datei
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
- **AutoWiederherstellen-Informationen speichern alle \<n> Minuten:** Verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Bei zuvor gespeicherten Dateien wird eine Kopie der Datei in \\...\Eigene Dokumente\Visual Studio\<*version*>\Sicherungsdateien\\<*projektname*> gespeichert. Wenn es sich um eine neue Datei handelt und diese noch nicht manuell gespeichert wurde, wird die Datei automatisch mit einem zufällig generierten Dateinamen gespeichert.
+ **AutoRecover-Informationen alle \<n> Minuten speichern** verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Bei zuvor gespeicherten Dateien wird eine Kopie der Datei unter \\ . ..\Eigene Dateien\Visual Studio \<*version*> \backup Files \\ < *ProjectName*> gespeichert. Wenn es sich um eine neue Datei handelt und diese noch nicht manuell gespeichert wurde, wird die Datei automatisch mit einem zufällig generierten Dateinamen gespeichert.
 
- **Informationen für AutoWiederherstellen beibehalten für \<n> Tage:** Verwenden Sie diese Option, um anzugeben, wie lange Visual Studio Dateien für die automatische Wiederherstellung beibehält.
+ **AutoRecover-Informationen für \<n> Tage beibehalten** verwenden Sie diese Option, um anzugeben, wie lange Visual Studio Dateien für die AutoRecovery-Speicherung beibehält.
 
-## <a name="see-also"></a>Siehe auch
- [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialog Feld "Optionen"](../../ide/reference/options-dialog-box-visual-studio.md)

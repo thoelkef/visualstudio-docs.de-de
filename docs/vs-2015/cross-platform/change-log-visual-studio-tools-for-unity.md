@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825974"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
@@ -119,7 +119,7 @@ Veröffentlichung: 08.09.2015
 
 - Es wird keine Fehlermeldung mehr angezeigt, wenn Intellisense-XML-Dateien von Visual Studio gesperrt werden.
 
-- Verarbeiten bedingter <\<When Changed>>-Haltepunkte, wenn das bedingte Argument kein boolescher Wert ist.
+- Verarbeiten bedingter <\<When Changed>>-Breakpoints, wenn das bedingte Argument kein boolescher Wert ist.
 
 - Korrektur der Verweise auf Assemblys von UnityEngine und UnityEditor für Windows Store-Apps.
 

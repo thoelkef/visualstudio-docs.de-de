@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551846"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Lösungen
@@ -79,7 +79,7 @@ ms.locfileid: "69551846"
   Outlook benötigt diese Informationen zum Laden der Formularbereiche.
 
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird
- Sie können aus Ihrem Projekt „Erstellen von Office-Projektmappen“ auf Assemblys verweisen (einschließlich Klassenbibliotheksprojekte). Jede referenzierte Assembly enthält eine Eigenschaft namens **Lokale Kopie**. **Lokale Kopie** gibt an, ob die Assembly in das Ausgabeverzeichnis kopiert wird. In der Standardeinstellung ist die Eigenschaft auf **true**festgelegt. Jede referenzierte Assembly, bei der **Lokale Kopie** auf **true** festgelegt ist, wird in das Ausgabeverzeichnis kopiert.
+ Sie können aus Ihrem Projekt „Erstellen von Office-Projektmappen“ auf Assemblys verweisen (einschließlich Klassenbibliotheksprojekte). Jede referenzierte Assembly enthält eine Eigenschaft namens **Lokale Kopie**. **Lokale Kopie** gibt an, ob die Assembly in das Ausgabeverzeichnis kopiert wird. Standardmäßig ist der Wert auf **true**festgelegt. Jede referenzierte Assembly, bei der **Lokale Kopie** auf **true** festgelegt ist, wird in das Ausgabeverzeichnis kopiert.
 
 ## <a name="security-during-the-build-process"></a>Sicherheit während des Buildprozesses
  Visual Studio konfiguriert automatisch die Sicherheitseinstellungen auf dem Entwicklungscomputer, um während des Buildprozesses der Projektmappe Vertrauenswürdigkeit zu gewähren. Dadurch kann die Projektmappe beim Debuggen ausgeführt werden.
@@ -96,7 +96,7 @@ ms.locfileid: "69551846"
 ## <a name="change-the-platform-target"></a>Ändern der Zielplattform
  Standardmäßig ist die Zielplattform für Office-Projekte **Beliebige CPU**. In der Regel sollten Sie diese Einstellung nicht ändern. Office-Projektmappen, die mit der Zielplattformeinstellung **Beliebige CPU** erstellt werden, werden in 32-Bit- und 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt.
 
- Sie sollten die Zielplattform nur auf x64 festlegen, wenn Sie eine Projektmappe erstellen, die nur in 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt wird, und die Projektmappe systemeigene 64-Bit-APIs aufruft. Weitere Informationen zum Ändern der Platt Form Zieleinstellung finden [Sie unter Gewusst wie: Konfigurieren von Projekten für Ziel](../ide/how-to-configure-projects-to-target-platforms.md)Plattformen.
+ Sie sollten die Zielplattform nur auf x64 festlegen, wenn Sie eine Projektmappe erstellen, die nur in 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt wird, und die Projektmappe systemeigene 64-Bit-APIs aufruft. Weitere Informationen zum Ändern der Zielplattform finden Sie unter Gewusst [wie: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).
 
  Wenn Sie für die Zielplattform x64 festlegen, kann die Projektmappe nicht in 32-Bit-Versionen von Windows oder Office ausgeführt werden. Die x64-Zielplattform erfordert, dass die Projektmappe in einem 64-Bit-Prozess ausgeführt wird.
 
@@ -105,9 +105,9 @@ ms.locfileid: "69551846"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Debugging von Office-Projekten](../vsto/debugging-office-projects.md)|Beschreibt Probleme beim Debuggen von Office-Projekten.|
-|[Exemplarische Vorgehensweise: Erstellen Sie Ihre erste Anpassung auf Dokument Ebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|
-|[Vorgehensweise: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in, das hart oder weich deaktiviert wurde, erneut aktiviert wird.|
+|[Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|
+|[Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in, das hart oder weich deaktiviert wurde, erneut aktiviert wird.|
 |[Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|

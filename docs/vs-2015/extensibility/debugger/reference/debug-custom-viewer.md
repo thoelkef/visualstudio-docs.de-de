@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10e0811044d7169eaf46f48f53389fa7b3076ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179168"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Eine Struktur, die einen benutzerdefinierten Viewer identifiziert, oder geben Sie die Schnellansicht.  
+Eine-Struktur, die einen benutzerdefinierten Viewer oder eine typschnell Ansicht identifiziert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,34 +50,34 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>Member  
  dwID  
- Eine ID, mehrere Viewer oder Schnellansichten, die von einer Implementierung zu unterscheiden `GUID`.  
+ Eine ID zur Unterscheidung mehrerer Viewer oder schnell Ansichten, die von einem solchen implementiert werden `GUID` .  
   
- bstrMenuName  
- Der Text, der im Dropdown-Menü angezeigt wird.  
+ bstraumenuname  
+ Der Text, der im Dropdown Menü angezeigt wird.  
   
  bstrDescription  
- Eine Beschreibung der benutzerdefinierten Viewer oder typschnellansicht (muss ein null-Wert sein, wenn nicht verwendet).  
+ Eine Beschreibung des benutzerdefinierten Viewers oder der typschnell Ansicht (muss ein NULL-Wert sein, wenn er nicht verwendet wird).  
   
- guidLang  
- Sprache für die ausdrucksauswertung bereitstellt.  
+ guidlang  
+ Sprache der Ausdrucks Auswertung für die Bereitstellung.  
   
- guidVendor  
- Hersteller, der die ausdrucksauswertung bereitstellt.  
+ guidvendor  
+ Hersteller der Bereitstellung der Ausdrucks Auswertung.  
   
- bstrMetric  
- Metrik unter dem die benutzerdefinierten Viewer oder typschnellansicht `CLSID` wird gespeichert.  
+ bstraumetric  
+ Die Metrik, unter der der benutzerdefinierte Viewer oder die typschnell Ansicht `CLSID` gespeichert wird.  
   
-## <a name="remarks"></a>Hinweise  
- Eine Liste dieser Struktur wird zurückgegeben, durch einen Aufruf der [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Methode (und durch Erweiterung, die [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) Methode).  
+## <a name="remarks"></a>Bemerkungen  
+ Eine Liste dieser Struktur wird durch einen Aufrufen der [getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) -Methode zurückgegeben (und durch Erweiterung die [getcustomviewerlist](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) -Methode).  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
+ [Getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

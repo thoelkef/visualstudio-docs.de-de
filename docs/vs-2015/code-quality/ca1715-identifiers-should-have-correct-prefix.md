@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545599"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.
@@ -27,11 +27,11 @@ ms.locfileid: "85545599"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner sollten ein korrektes Präfix aufweisen](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Unterbrechen: beim Auslösen für Schnittstellen.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
 
 ## <a name="cause"></a>Ursache

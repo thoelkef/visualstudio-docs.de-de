@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetExpressionContext | Microsoft Docs
+title: 'IDebugStackFrame2:: getexpressioncontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719742"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
-Ruft einen Auswertungskontext für die Ausdrucksauswertung im aktuellen Kontext eines Stapelrahmens und Threads ab.
+Ruft einen Auswertungs Kontext für die Ausdrucks Auswertung innerhalb des aktuellen Kontexts eines Stapel Rahmens und Threads ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetExpressionContext ( 
 
 ## <a name="parameters"></a>Parameter
 `ppExprCxt`\
-[out] Gibt ein [IDebugExpressionContext2-Objekt](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) zurück, das einen Kontext für die Ausdrucksauswertung darstellt.
+vorgenommen Gibt ein [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Objekt zurück, das einen Kontext für die Ausdrucks Auswertung darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Im Allgemeinen kann ein Ausdrucksauswertungskontext als Einsenderaum für die Ausdrucksauswertung betrachtet werden. Rufen Sie die [ParseText-Methode](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) auf, um einen Ausdruck zu analysieren, und rufen Sie dann die resultierenden [EvaluateSync-](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync-Methoden](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um den analysierten Ausdruck auszuwerten.
+ Im Allgemeinen kann ein Ausdrucks Auswertungs Kontext als Bereich zum Durchführen der Ausdrucks Auswertung betrachtet werden. Aufrufen der [Methode "](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Methode", um einen Ausdruck zu analysieren und dann die resultierenden [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) -oder [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) -Methoden aufzurufen, um den analysierten Ausdruck auszuwerten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

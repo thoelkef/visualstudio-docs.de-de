@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a42ec6a762655589bfd589ae9dc0354e3a7d1cb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659301"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell-Bereitstellung
@@ -25,7 +25,7 @@ Mithilfe einer isolierten Shell können Sie feststellen, welche Visual Studio-Fu
 
 1. Öffnen Sie im **dslpackage** -Projekt **Source.Extension.tt**.
 
-2. Klicken Sie unter `<SupportedProducts>` einfügen:
+2. Unter `<SupportedProducts>` einfügen:
 
     ```
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>

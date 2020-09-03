@@ -23,22 +23,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196420"
 ---
 # <a name="debugging-native-code"></a>Debuggen von systemeigenem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [Debuggerwegweiser](../debugger/debugger-basics.md).  
+In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Die Funktionsweise der Verwendung des Visual Studio-Debuggers finden Sie unter Übersicht über den [Debugger](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md)  
+ [How to: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md)  
  Enthält Tipps zum Debuggen optimierten Codes, im Einzelnen werden das Debuggen einer nicht optimierten Version eines Programms beschrieben, Standardoptimierungseinstellungen für Debug- und Releasekonfigurationen und das Auffinden von Fehlern, die nur in optimiertem Code vorkommen (Aktivieren der Optimierung in einer Debugbuildkonfiguration).  
   
- [DebugBreak und __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
+ [DebugBreak und "_debugbreak"](../debugger/debugbreak-and-debugbreak.md)  
  Hier finden Sie eine Beschreibung der Win32-Funktion `DebugBreak` sowie einen Link zum betreffenden Referenzthema im Plattform-SDK. Dort wird auch die systeminterne Funktion `__debugbreak` beschrieben.  
   
  [C/C++-Assertionen](../debugger/c-cpp-assertions.md)  
@@ -59,7 +59,7 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)  
  Bietet Informationen zum Debuggen von COM- und ActiveX-Anwendungen, einschließlich der Tools, die für das Debuggen von COM und ActiveX verwendet werden können.  
   
- [Vorgehensweise: Debuggen von nativem DLLs](../debugger/how-to-debug-native-dlls.md)  
+ [Gewusst wie: Debuggen von systemeigenen DLLs](../debugger/how-to-debug-native-dlls.md)  
  Erläutert das Einrichten des Debuggens für DLLs aus systemeigenem Code.  
   
  [Vorgehensweise: Debuggen von eingefügtem Code](../debugger/how-to-debug-injected-code.md)  
@@ -75,6 +75,6 @@ In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für s
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von nativem Code, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

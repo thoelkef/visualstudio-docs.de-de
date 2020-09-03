@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft-Dokumentation
+title: 'IDebugDocumentChecksum2:: getchecksumandalgorithmid | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156488"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Prüfsumme und Algorithmus Dokumentbezeichner erhalten die maximale Anzahl von Bytes, die ab.  
+Ruft die Prüfsumme des Dokuments und den Algorithmusbezeichner anhand der maximalen Anzahl von Bytes ab, die verwendet werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Eindeutiger Bezeichner für den Prüfsummenalgorithmus.  
+ vorgenommen Eindeutiger Bezeichner für den Prüfsummen Algorithmus.  
   
  `cMaxBytes`  
- [in] Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden.  
+ in Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden sollen.  
   
  `pChecksum`  
- [out] Der Wert der Prüfsumme.  
+ vorgenommen Der Wert der Prüfsumme.  
   
  `pcNumBytes`  
- [out] Tatsächliche Anzahl von Bytes, die für die Prüfsumme verwendet.  
+ vorgenommen Die tatsächliche Anzahl der Bytes, die für die Prüfsumme verwendet werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird diese Methode, um die Prüfsumme und den Algorithmus für ein Dokument abzurufen.  
+ Im folgenden Beispiel wird diese Methode verwendet, um die Prüfsumme und den Algorithmus für ein Dokument zu erhalten.  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
@@ -125,5 +125,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugWindowsComputerPort2 | Microsoft Docs
+title: IDebugWindowsComputerPort2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718228"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Ermöglicht abfragen nach Informationen über den Zielcomputer.
+Ermöglicht das Abfragen von Informationen über den Bereitstellungs Zielcomputer.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,18 +27,18 @@ IDebugWindowsComputerPort2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird von Portobjekten des Sitzungsdebug-Managers implementiert.
+ Diese Schnittstelle wird von Port Objekten des sitzungsdebug-Managers implementiert.
 
 ## <a name="methods"></a>Methoden
- Die folgende Tabelle zeigt `IDebugWindowsComputerPort2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugWindowsComputerPort2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Ruft Informationen über den Computer ab, auf dem der Debugger ausgeführt wird.|
+|[Getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Ruft Informationen über den Computer ab, auf dem der Debugger ausgeführt wird.|
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: Msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

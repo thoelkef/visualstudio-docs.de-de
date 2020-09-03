@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: PromptForSaveOnCreation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701777"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation-Element (Visual Studio-Vorlagen)
 
-Gibt an, ob der Benutzer beim Erstellen eines Projekts über das Dialogfeld **Neues Projekt** zur Eingabe eines Projektspeicherorts aufgefordert wird. Wenn dieses Element `true`auf festgelegt ist, wird der Benutzer zur Eingabe eines Speicherorts aufgefordert. Wenn `false`, werden sie nicht aufgefordert (d. h. ein temporäres Projekt wird erstellt).
+Gibt an, ob der Benutzer beim Erstellen eines Projekts aufgefordert wird, einen Speicherort **für das Projekt** zu speichern. Wenn dieses Element auf festgelegt ist `true` , wird der Benutzer zur Eingabe eines Speicher Orts aufgefordert. Wenn `false` , dann werden Sie nicht aufgefordert (das heißt, es wird ein temporäres Projekt erstellt).
 
 ```xml
 \<VSTemplate>
@@ -41,16 +41,16 @@ Gibt an, ob der Benutzer beim Erstellen eines Projekts über das Dialogfeld **Ne
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
@@ -58,7 +58,7 @@ Gibt an, ob der Benutzer beim Erstellen eines Projekts über das Dialogfeld **Ne
  Der Text muss entweder `true` oder `false` lauten. `true` gibt an, dass der Benutzer bei Erstellung eines neuen Projekts zur Angabe eines Speicherorts aufgefordert wird.
 
 ## <a name="remarks"></a>Bemerkungen
- `PromptForSaveOnCreation` ist ein optionales Element. Der Standardwert ist `false`.
+ `PromptForSaveOnCreation` ist ein optionales Element. Standardwert: `false`.
 
  Temporäre Projekte sind Projekte, die Sie erstellen und ändern können, ohne den Inhalt des Projekts auf einem Datenträger zu speichern.
 
@@ -90,7 +90,7 @@ Gibt an, ob der Benutzer beim Erstellen eines Projekts über das Dialogfeld **Ne
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

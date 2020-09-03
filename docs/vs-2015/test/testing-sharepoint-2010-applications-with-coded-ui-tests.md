@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586978"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI
@@ -27,7 +27,7 @@ Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwend
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Was sollte ich sonst noch über Tests der codierten UI wissen?
  Weitere Informationen zu den Vorteilen der Verwendung von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md) und [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests](https://msdn.microsoft.com/library/jj159335.aspx).
 
- **Hinweise**
+ **Notizen**
 
 - ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI-Tests für SharePoint-Anwendungen werden nur mit SharePoint 2010 unterstützt.
 
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Wenn Sie Aktionen in einer nicht leeren Zelle aufzeichnen, wird die Aufzeichnung etwas komplizierter, da im Augenblick, wenn Sie einer Zelle Text hinzufügen, ein neues \<div>-Steuerelement als untergeordnetes Element der Zelle hinzugefügt wird. Das neue \<div>-Steuerelement enthält den von Ihnen soeben eingegebenen Text. Die Aufzeichnung muss die Aktionen im neuen \<div>-Steuerelement aufzeichnen. Es ist jedoch dazu nicht in der Lage, da das neue \<div>-Steuerelement erst vorhanden ist, nachdem der Test eingegeben wurde. Sie müssen die folgenden Codeänderungen manuell vornehmen, um dieses Problem zu beheben.
+ Wenn Sie Aktionen in einer nicht leeren Zelle aufzeichnen, wird die Aufzeichnung etwas komplizierter, da der Moment, in dem Sie einer Zelle Text hinzufügen, ein neues Steuerelement als untergeordnetes Element \<div> der Zelle hinzugefügt wird. Das neue \<div> Steuerelement enthält den Text, den Sie soeben eingegeben haben. Der Recorder muss Aktionen für das neue Steuerelement aufzeichnen \<div> . Dies kann jedoch nicht der Fall sein, da das neue \<div> Steuerelement erst vorhanden ist, nachdem der Test eingegeben wurde. Sie müssen die folgenden Codeänderungen manuell vornehmen, um dieses Problem zu beheben.
 
 1. Wechseln Sie zur Initialisierung der Zelle, und legen Sie `RowIndex` und `ColumnIndex` als primäre Eigenschaften fest:
 

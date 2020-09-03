@@ -1,5 +1,5 @@
 ---
-title: IDebugthread2::SetThreadName | Microsoft Docs
+title: 'IDebugThread2:: SetThreadName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718661"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
@@ -41,13 +41,13 @@ int SetThreadName ( 
 
 ## <a name="parameters"></a>Parameter
 `pszName`\
-[in] Der Name des Threads.
+in Der Name des Threads.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Um den Threadnamen abzurufen, rufen Sie die [GetName-Methode](../../../extensibility/debugger/reference/idebugthread2-getname.md) auf.
+ Um den Thread Namen abzurufen, müssen Sie die [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) -Methode aufrufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2:: enumcustomattribute | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732587"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Ruft einen Enumerator für alle benutzerdefinierten Attribute ab, die diesem Feld zugeordnet sind.
+Ruft einen Enumerator für alle benutzerdefinierten Attribute ab, die an dieses Feld angefügt sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt ein [IEnumDebugCustomAttributes-Objekt](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) zurück, das die Liste der benutzerdefinierten Attribute darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, wenn keine benutzerdefinierten Attribute vorhanden sind.
+vorgenommen Gibt ein [ienumentbugcustomattribute](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) -Objekt zurück, das die Liste der benutzerdefinierten Attribute darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, wenn keine benutzerdefinierten Attribute vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn in diesem Feld keine benutzerdefinierten Attribute vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK oder S_FALSE zurückgegeben, wenn für dieses Feld keine benutzerdefinierten Attribute vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Feld kann mehrere benutzerdefinierte Attribute aufweisen.
+ Ein Feld kann über mehrere benutzerdefinierte Attribute verfügen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

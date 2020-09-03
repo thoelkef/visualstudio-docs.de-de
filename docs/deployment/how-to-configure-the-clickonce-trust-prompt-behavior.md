@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382548"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit
@@ -38,7 +38,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
  In der folgenden Tabelle wird das Standardverhalten für jede Zone angezeigt. Die Spalte Anwendungen bezieht sich auf Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen, WPF-Browser Anwendungen und Konsolen Anwendungen.
 
-|Zone|Anwendungen|Office-Projektmappen|
+|Zone|Applications|Office-Projektmappen|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -67,7 +67,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -126,7 +126,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -183,7 +183,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -222,7 +222,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)

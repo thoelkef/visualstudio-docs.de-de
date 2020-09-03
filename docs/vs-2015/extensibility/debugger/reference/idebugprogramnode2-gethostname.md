@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostName | Microsoft-Dokumentation
+title: 'IDebugProgramNode2:: GetHostName | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9f5768ae1df2a94d2ecc0eeb7e15123fca28ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148590"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen der Hostprozess für die Anwendung ab.  
+Ruft den Namen des Prozesses ab, von dem das Programm gehostet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int GetHostName ( 
   
 #### <a name="parameters"></a>Parameter  
  `dwHostNameType`  
- [in] Ein Wert aus der [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) -Enumeration, der den Typ der zur Rückgabe angibt.  
+ in Ein Wert aus der [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) Enumeration, der den Typ des zurück zugebende namens angibt.  
   
  `pbstrHostName`  
- [out] Gibt den Namen des Hostprozesses.  
+ vorgenommen Gibt den Namen des Hostingprozesses zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CProgram` -Objekt, das macht die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle. In diesem Beispiel ignoriert die `dwHostNameType` Parameter und gibt nur den Namen des Programms aus der Basisname der Pfad des Moduls.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CProgram` , das die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Schnittstelle verfügbar macht. In diesem Beispiel wird der `dwHostNameType` -Parameter ignoriert, und es wird nur der Name des Programms zurückgegeben, der aus dem Basis Namen des Dateipfads des Moduls entnommen wurde.  
   
 ```cpp#  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    
@@ -95,7 +95,7 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 }    
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

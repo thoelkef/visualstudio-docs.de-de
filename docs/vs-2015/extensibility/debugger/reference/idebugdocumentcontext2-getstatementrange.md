@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumentcontext2:: | Microsoft-Dokumentation'
+title: 'IDebugDocumentContext2:: getstatuementrange | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68411ac4ded03c83ad0ad1e414107e6591f4e975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145061"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Datei-Anweisung den Dokumentenkontext Bereich ab.  
+Ruft den Bereich der Datei Anweisung des Dokument Kontexts ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,21 +42,21 @@ int GetStatementRange( 
   
 #### <a name="parameters"></a>Parameter  
  `pBegPosition`  
- [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit die Position gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
+ [in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Anfangs Position ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.  
   
  `pEndPosition`  
- [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition gefüllt wird. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
+ [in, out] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition ausgefüllt ist. Legen Sie dieses Argument auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Eine Anweisung reicht von Bereich der Zeilen, die den Code beigetragen haben, auf dem diese Dokumentkontext verweist.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Anweisungs Bereich ist der Bereich der Zeilen, der den Code bereitgestellt hat, auf den sich dieser Dokument Kontext bezieht.  
   
- Um den Bereich der Source-Code (einschließlich Kommentare) in diesem Dokumentenkontext abzurufen, rufen die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) Methode.  
+ Um den Bereich des Quellcodes (einschließlich der Kommentare) in diesem Dokument Kontext abzurufen, rufen Sie die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) -Methode auf.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CDebugContext` -Objekt, das macht die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. In diesem Beispiel füllt die Endposition nur dann, wenn die Anfangsposition kein null-Wert ist.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CDebugContext` , das die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -Schnittstelle verfügbar macht. In diesem Beispiel wird nur dann die Endposition ausgefüllt, wenn die Anfangsposition kein NULL-Wert ist.  
   
 ```cpp#  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  
@@ -87,7 +87,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }    
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

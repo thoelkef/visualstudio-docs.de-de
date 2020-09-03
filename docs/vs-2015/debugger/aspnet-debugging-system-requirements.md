@@ -1,5 +1,5 @@
 ---
-title: 'ASP.NET-Debugging: Systemanforderungen für | Microsoft-Dokumentation'
+title: 'ASP.NET-Debugging: Systemanforderungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826261"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET-Debugging: Systemanforderungen
@@ -51,6 +51,6 @@ In diesem Thema werden die Software- und Sicherheitsanforderungen für die folge
 > [!CAUTION]
 > Bevor Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern, dass er unter einem anderen Konto ausgeführt wird, sollten Sie mögliche Konsequenzen für den Fall bedenken, dass der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess beim Ausführen unter diesem Konto von Hackern angegriffen wird. Die ASPNET- und NETZWERKDIENST-Benutzerkonten werden mit minimalen Berechtigungen ausgeführt, was mögliche Schäden bei einem Hackerangriff auf den Prozess minimiert. Wenn Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern müssen, dass er unter einem Konto mit weiter reichenden Berechtigungen ausgeführt wird, kann der Schaden größer sein.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugging von ASP.net-und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [How to: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

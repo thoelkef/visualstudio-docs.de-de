@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531637"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -41,19 +41,19 @@ ms.locfileid: "85531637"
 
  Das **appAddin** -Element verfügt über die folgenden Attribute.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |**application**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Einer der folgenden Werte ist möglich: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|
-|**LoadBehavior**|Dies ist optional. Standardmäßig wird **LoadBehavior** aktiviert, indem dieser Wert auf festgelegt wird. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle mit dem Namen LoadBehavior-Werte in [Registrierungs Einträgen für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**LoadBehavior**|Optional. Standardmäßig wird **LoadBehavior** aktiviert, indem dieser Wert auf festgelegt wird. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle mit dem Namen LoadBehavior-Werte in [Registrierungs Einträgen für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  Das **appAddin** -Element verfügt über die folgenden untergeordneten Elemente.
 
 ### <a name="friendlyname"></a>friendlyName
- Dies ist optional. Das **FriendlyName** -Element wird in [&#60;FriendlyName&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)erläutert.
+ Optional. Das **FriendlyName** -Element wird in [&#60;FriendlyName&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)erläutert.
 
 ### <a name="description"></a>description
- Dies ist optional. Das **Description** -Element wird in [&#60;Description&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)erläutert.
+ Optional. Das **Description** -Element wird in [&#60;Description&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)erläutert.
 
 ### <a name="formregions"></a>formRegions
  Nur für Outlook-VSTO-Add-Ins erforderlich, die Formularbereiche enthalten. Das **FormRegions** -Element wird in [&#60;FormRegions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)erläutert.

@@ -1,5 +1,5 @@
 ---
-title: IDebugthread2::GetLogicalThread | Microsoft Docs
+title: 'IDebugThread2:: getlogicalthread | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718837"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Debugmodule implementieren diese Methode nicht.
+Diese Methode wird von Debug-engines nicht implementiert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>Parameter
 `pStackFrame`\
-[in] Ein [IDebugStackFrame2-Objekt,](../../../extensibility/debugger/reference/idebugstackframe2.md) das den Stapelrahmen darstellt.
+in Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Objekt, das den Stapel Rahmen darstellt.
 
 `ppLogicalThread`\
-[out] Gibt `IDebugLogicalThread2` eine Schnittstelle zurück, die den zugeordneten logischen Thread darstellt. Eine Debugmodulimplementierung sollte diesen Wert auf null festlegen.
+vorgenommen Gibt eine- `IDebugLogicalThread2` Schnittstelle zurück, die den zugeordneten logischen Thread darstellt. Eine Debug-Engine-Implementierung sollte diese auf einen NULL-Wert festlegen.
 
 ## <a name="return-value"></a>Rückgabewert
- Debugmodulimplementierungen geben `E_NOTIMPL`immer zurück.
+ Debug-Engine-Implementierungen geben immer zurück `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

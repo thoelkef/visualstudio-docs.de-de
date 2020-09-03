@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950594"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Herstellen einer Verbindung mit der Team Foundation-Versionskontrolle
@@ -31,7 +31,7 @@ Visual Studio für Mac bietet volle Unterstützung für Git-Repositorys, erforde
 
 Der Rest dieses Artikels führt Sie durch die oben aufgeführten Optionen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 * Visual Studio Community, Professional oder Enterprise für Mac 7.8 und höher
 * Azure DevOps Services, Team Foundation Server 2013 und höher oder Azure DevOps Server 2018 und höher
@@ -197,7 +197,7 @@ Mit dem Quellcode-Explorer können Sie durch alle zugeordneten Projekte sowie di
 - Ein- und Auschecken von Dateien
 - Sperren und Entsperren von Dateien
 - Hinzufügen, Löschen und Umbenennen von Dateien
-- Verlauf anzeigen
+- Anzeigen des Verlaufs
 - Änderungen vergleichen.
 
 Viele dieser Aktionen sind über Kontextaktionen für das Projekt verfügbar:
@@ -238,7 +238,7 @@ Nachdem Sie Ihren Arbeitsbereich eingerichtet haben, können Sie ihn ändern ode
 Mithilfe der folgenden Optionen können Sie sich bei einem Server authentifizieren:
 
 - OAuth
-- Standard
+- Basic
 - Ntlm
 
 Wenn Sie die Standardauthentifizierung verwenden möchten, müssen Sie **Alternative authentication credentials** (Alternative Anmeldeinformationen für die Authentifizierung) in Azure DevOps Services aktivieren, indem Sie folgende Schritte ausführen:

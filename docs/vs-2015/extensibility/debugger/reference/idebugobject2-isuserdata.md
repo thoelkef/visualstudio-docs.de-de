@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft-Dokumentation
+title: 'IDebugObject2:: isuserdata | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd595ce041ae1968e085e3b63b49d308cfd14452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194579"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt, ob das Objekt mit Daten des Benutzers darstellt.  
+Bestimmt, ob das-Objekt Benutzerdaten darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>Parameter  
  `pfUser`  
- [out] Ungleich NULL zurückgibt (`TRUE`) NULL, wenn das Objekt auf Benutzerdaten; darstellt (`FALSE`), wenn dies nicht der Fall.  
+ vorgenommen Gibt einen Wert ungleich 0 (null) zurück ( `TRUE` ), wenn das-Objekt Benutzerdaten darstellt, andernfalls NULL ( `FALSE` ).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Benutzerdaten sind ein Objekt, das Teil eines Moduls, das als JustMyCode (eine konfigurierbare Option, die ein Modul als Benutzercode und daher in eine stapelüberwachung sichtbar markiert) festgelegt ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Bei Benutzerdaten handelt es sich um ein beliebiges Objekt, das Teil eines als JustMyCode bezeichneten Moduls ist (eine vom benutzerkonfigurierbare Option, die ein Modul als Benutzercode markiert und daher in einer Stapel Überwachung sichtbar ist).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

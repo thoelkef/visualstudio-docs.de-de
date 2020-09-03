@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306938"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315108"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -32,7 +32,7 @@ Sämtliche Dateien in einem Projekt von Visual Studio verfügen über einen Buil
 
 Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sind die folgenden:
 
-|Buildvorgang | Projekttypen | Beschreibung |
+|Buildvorgang | Projekttypen | BESCHREIBUNG |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML*. |
@@ -44,7 +44,7 @@ Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sin
 | **Embedded Resource** | .NET | Die Datei wird an den Compiler als Ressource übergeben, die in die Assembly eingebettet wird. Rufen Sie <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> zum Lesen der Datei aus der Assembly auf.|
 | **EntityDeploy** | .NET | EDMX-Dateien von ‚Entity Framework (EF), die die Bereitstellung von EF-Artefakten angeben. |
 | **Fakes** | .NET | Wird für das Microsoft Fakes-Testframework verwendet. Weitere Informationen finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
-| **Keine** | any | Die Datei ist in keiner Weise Teil des Builds. Dieser Wert kann für Dokumentationsdateien wie Infodateien verwendet werden.|
+| **None** | any | Die Datei ist in keiner Weise Teil des Builds. Dieser Wert kann für Dokumentationsdateien wie Infodateien verwendet werden.|
 | **Seite** | WPF | Kompilieren Sie eine XAML-Datei in eine binäre BAML-Datei zum schnelleren Laden zur Laufzeit. |
 | **Ressource** | WPF | Gibt an, dass die Datei in eine Ressourcendatei des Assemblymanifests mit der Erweiterung *.g.resources* eingebettet wird. |
 | **Shadow** | .NET | Wird für eine Accessordatei verwendet, die eine Liste der erstellten Assemblydateinamen enthält (eine pro Zeile). Generieren Sie für jede Assembly in der Liste öffentliche Klassen mit den Namen `ClassName_Accessor`, die den Originalen entsprechen, aber mit öffentlichen Methoden anstelle von privaten Methoden. Wir für Komponententests verwendet. |

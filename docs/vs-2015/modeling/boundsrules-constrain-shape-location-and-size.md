@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672726"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules schränken Position und Größe von Formen ein
@@ -25,7 +25,7 @@ Eine Begrenzungs *Regel* ist eine Klasse, die Grenzwerte für die Größe und Po
 
  Im folgenden Beispiel wird eine rechteckige Form als Balken mit fester Größe (horizontal oder vertikal) eingeschränkt. Wenn der Benutzer die Ecken oder Seiten zieht, wird der Umriss zwischen den beiden zulässigen Konfigurationen von Height und Width gedreht.
 
- Die Begrenzungen-Regel ist eine Klasse, die von <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> abgeleitet ist. Eine Instanz der Regel wird in der Form erstellt:
+ Die Begrenzungen-Regel ist eine von abgeleitete Klasse <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . Eine Instanz der Regel wird in der Form erstellt:
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -67,5 +67,5 @@ public class BarBoundsRule: BoundsRules
 
  Beachten Sie, dass der Speicherort und die Größe bei Bedarf eingeschränkt werden können.
 
-## <a name="see-also"></a>Siehe auch
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Antworten auf und Weitergeben von Änderungen](../modeling/responding-to-and-propagating-changes.md)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)

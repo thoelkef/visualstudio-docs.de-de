@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660441"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testen von Apps von Windows UWP- und 8.1-Store-Apps mit Tests der programmierten UI
@@ -32,11 +32,11 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
 
 2. Erstellen Sie mit einer Visual C#- oder Visual Basic-Vorlage ein neues Projekt für eine leere XAML-basierte Windows Store-App.
 
-     ![Erstellen einer leeren Windows Store- &#40;app (XAML)&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Erstellen einer leeren Windows Store-App &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. Öffnen Sie im Projektmappen-Explorer die Datei "MainPage.xaml". Ziehen Sie aus der Toolbox ein Schaltflächen- und ein Textfeldsteuerelement auf die Entwurfsoberfläche.
 
-     ![Entwerfen der Windows Store-App](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
+     ![Windows Store-App entwerfen](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
 
 4. Doppelklicken Sie auf das Schaltflächensteuerelement, und fügen Sie dann den folgenden Code hinzu:
 
@@ -66,27 +66,27 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
 
 1. Erstellen Sie einen neues Projekt mit einem Test der programmierten UI in der Windows Store-App.
 
-    ![Neues Coded UI-Tett &#40;-Projekt Windows Store-Apps&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Neues Coded UI-Tett-Projekt &#40;Windows Store-Apps&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. Wählen Sie mithilfe des Fadenkreuztools aus, dass Sie die UI-Zuordnung bearbeiten möchten.
 
-    ![UI-Zuordnung bearbeiten oder Assertionen hinzufügen](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
+    ![Option zum Bearbeiten der UI-Zuordnung und Hinzufügen von Assertionen auswählen](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
 
 3. Wählen Sie im Test-Generator für programmierte UI mit dem Fadenkreuztool die App-Kachel aus, klicken Sie mit der rechten Maustaste auf **AutomationId** , und wählen Sie **Wert in Zwischenablage kopieren**aus. Der Wert in der Zwischenablage wird später beim Schreiben der Aktion zum Starten der App zu Testzwecken verwendet.
 
-    ![AutomationId in Zwischenablage kopieren](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
+    ![AutomationId in die Zwischenablage kopieren](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
 
 4. Wählen Sie in der ausgeführten Windows Store-App mit dem Fadenkreuztool das Schaltflächen- und das Textfeldsteuerelement aus. Wählen Sie nach dem Hinzufügen jedes Steuerelements auf der Symbolleiste des Test-Generators für programmierte UI die Schaltfläche **Steuerelement zu UI-Steuerelementzuordnung hinzufügen** aus.
 
-    ![Steuerelement zur UI-Zuordnung hinzufügen](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
+    ![UI-Zuordnung ein Steuerelement hinzufügen](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
 
 5. Wählen Sie auf der Symbolleiste des Test-Generators für programmierte UI die Schaltfläche **Code generieren** und dann **Generieren** aus, um Code für Änderungen an der UI-Steuerelementzuordnung zu erstellen.
 
-    ![Generieren von Code für die UI-Zuordnung](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
+    ![Code für die UI-Zuordnung generieren](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
 
 6. Wählen Sie die Schaltfläche aus, um im Textfeld einen Wert festzulegen.
 
-    ![Klicken Sie auf das Schaltflächen-Steuerelement](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
+    ![Zum Festlegen des Werts im Textfeld auf das Schaltflächen-Steuerelement klicken](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
 
 7. Wählen Sie das Textfeldsteuerelement mit dem Fadenkreuztool aus, und wählen Sie dann die **Text** -Eigenschaft aus.
 
@@ -94,13 +94,13 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
 
 8. Fügen Sie eine Assertion hinzu. Diese wird beim Test verwendet, um die Richtigkeit des Werts sicherzustellen.
 
-    ![Wählen Sie "Textfeld&#45;" mit "Kreuz" und "Assert"](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![Wählen Sie "Textfeld" mit "Cross&#45;Hair" und "Assert](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. Generieren Sie Code für die Assertion, und fügen Sie diesen hinzu.
 
-     ![Generieren von Code für die Text Feld-Assertion](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
+     ![Code für die Textfeld-Assertion generieren](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      Öffnen Sie im Projektmappen-Explorer die Datei "UIMap.Designer.cs", um den hinzugefügten Code für die Assert-Methode und die Steuerelemente anzuzeigen.
 
@@ -282,15 +282,15 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
 
 12. Erstellen Sie den Test, und führen Sie diesen anschließend mit dem Test-Explorer aus.
 
-     ![Ausführen des Tests der programmierten UI im Test-Explorer](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
+     ![Tests der programmierten UI vom Test-Explorer ausführen](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
 
      Die Windows Store-App wird gestartet, die Aktion für das Tippen auf die Schaltfläche wird abgeschlossen, und die Text-Eigenschaft des Textfelds wird mithilfe der Assert-Methode mit einem Wert versehen und überprüft.
 
-     ![Coded UI-Test wird ausgeführt](../test/media/cuit-windowsstoreapp-running.png "CUIT_WindowsStoreApp_Running")
+     ![Test der programmierten UI wird ausgeführt](../test/media/cuit-windowsstoreapp-running.png "CUIT_WindowsStoreApp_Running")
 
      Nach Abschluss des Tests wird im Test-Explorer das erfolgreiche Ergebnis angezeigt.
 
-     ![Bestandene Test anzeigen im Test-Explorer](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
+     ![Der erfolgreiche Test wird im Test-Explorer angezeigt](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
 ## <a name="q--a"></a>Fragen und Antworten
 
@@ -319,7 +319,7 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
 
 - **F: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?**
 
-   **A**: Alle Codeänderungen, die Sie an der Datei "UIMapDesigner.cs" vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für programmierte UI generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
+   **A**: alle Codeänderungen, die Sie in der UIMapDesigner.cs-Datei vornehmen, werden jedes Mal überschrieben, wenn Sie Code mithilfe des UIMap-Coded UI-Test-Generators generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md) [Festlegen einer eindeutigen Automatisierungs Eigenschaft für Windows Store-Steuerelemente für Tests](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

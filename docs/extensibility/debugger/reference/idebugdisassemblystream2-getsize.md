@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 75fa12b1e9e70601626667dd3707f1e230f5de0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732111"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-Ruft die Größe in den Anweisungen dieses Demontagestreams ab.
+Ruft die Größe in den Anweisungen dieses disassemblystreams ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetSize( 
 
 ## <a name="parameters"></a>Parameter
 `pnSize`\
-[out] Gibt die Größe in Anweisungen zurück.
+vorgenommen Gibt die Größe in den Anweisungen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der von dieser Methode zurückgegebene Wert kann verwendet werden, um ein Array von [DisassemblyData-Strukturen](../../../extensibility/debugger/reference/disassemblydata.md) zuzuweisen, das dann an die [Read-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) übergeben wird.
+ Der von dieser Methode zurückgegebene Wert kann verwendet werden, um ein Array von [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Strukturen zuzuordnen, die dann an die [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) -Methode übergeben werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

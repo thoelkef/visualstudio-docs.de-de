@@ -9,10 +9,10 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd212eb304e6cba022b067b8b432cf00fc3f87ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660538"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
@@ -58,17 +58,17 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
 
 3. Geben Sie im Textfeld **Name** einen Namen für das Projekt ein, und klicken Sie anschließend auf **OK**.
 
-4. Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual Basic-Testprojekts aus.
+4. Wählen Sie in Projektmappen-Explorer im Kontextmenü des neuen Visual Basic Testprojekts die Option **Eigenschaften** aus.
 
      Die Eigenschaften für Ihr Visual Basic-Testprojekt werden angezeigt.
 
-5. Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.
+5. Wählen Sie auf der Registerkarte **Kompilieren** **Erweiterte Kompilierungsoptionen** aus, wie in der folgenden Abbildung dargestellt.
 
      ![Erweiterte Kompilierungsoptionen](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
 
 6. Verwenden Sie die Dropdownliste **Zielframework (alle Konfigurationen)** , um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern, wie es im Beispiel B der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.
 
-     ![Dropdown&#45;Liste für das Ziel Framework](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Dropdown&#45;Dropdown Liste für Ziel Framework](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual C#-Komponententestprojekte
 
@@ -76,17 +76,17 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-2. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#** . Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
+2. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
 
 3. Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C#-Testprojekt ein, und klicken Sie anschließend auf **OK**.
 
-4. Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.
+4. Wählen Sie in Projektmappen-Explorer im Kontextmenü des neuen Visual c#-Testprojekts die Option **Eigenschaften** aus.
 
      Die Eigenschaften für Ihr Visual C#-Testprojekt werden angezeigt.
 
 5. Klicken Sie zum Ändern des Zielframeworks in der Registerkarte **Anwendung** auf **Zielframework** und wählen Sie anschließend von der Dropdownliste **.NET Framework 3.5** oder eine spätere Version aus, wie es in der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.
 
-     ![Dropdown&#45;Liste für das Ziel Framework](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Dropdown&#45;Dropdown Liste für Ziel Framework](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für C++/CLI-Komponententestprojekte
 
@@ -97,13 +97,13 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
     > [!WARNING]
     > Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen. Sie müssen Service Pack 1 von [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] und [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] installieren, um z.B. auf .NET Framework 3.5 abzuleiten.
 
-2. Klicken Sie unter **Installierte Vorlagen**auf **Visual C ++** . Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
+2. Klicken Sie unter **Installierte Vorlagen**auf **Visual C ++**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
 
 3. Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C++-Testprojekt ein, und klicken Sie anschließend auf **OK**.
 
-4. Wählen Sie im Projektmappen-Explorer **Projekt entladen** von dem neuen Visual C++-Testprojekt.
+4. Wählen Sie in Projektmappen-Explorer **Projekt** aus dem neuen Visual C++ Testprojekt entladen aus.
 
-5. Wählen Sie im Projektmappen-Explorer das entladene Visual C++-Testprojekt, und wählen Sie anschließend **\<Projektname> .vcxproj bearbeiten**.
+5. Wählen Sie in Projektmappen-Explorer das Projekt entladen Visual C++ Test aus, und wählen Sie dann **Bearbeiten \<project name> . vcxproj**aus.
 
      Die VCXPROJ-Datei wird im Editor geöffnet.
 
@@ -123,7 +123,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
 
 7. Speichern und schließen Sie die VCXPROJ-Datei.
 
-8. Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.
+8. Wählen Sie in Projektmappen-Explorer im Kontextmenü des neuen Visual C++ Testprojekts die Option **Projekt erneut laden** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen und Ausführen von Komponenten Tests für vorhandenen Code erstellen von](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [SharePoint-Lösungen erstellen](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [und Debuggen von SharePoint-Lösungen](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Erweiterte Compilereinstellungen (Dialog Feld) Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

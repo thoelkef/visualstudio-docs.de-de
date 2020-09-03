@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Side-by-Side-Dateizuordnungen | Microsoft Docs
+title: Verwalten paralleler Dateizuordnungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702764"
 ---
-# <a name="manage-side-by-side-file-associations"></a>Verwalten von seitenebenigen Dateizuordnungen
+# <a name="manage-side-by-side-file-associations"></a>Parallele Dateizuordnungen verwalten
 
-Wenn Ihr VSPackage Dateizuordnungen bereitstellt, müssen Sie entscheiden, wie nebeneinander Installationen behandelt werden sollen, bei denen eine bestimmte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Öffnen einer Datei aufgerufen werden soll. Inkompatible Dateiformate verschlimmern das Problem.
+Wenn das VSPackage Dateizuordnungen bereitstellt, müssen Sie entscheiden, wie parallele Installationen behandelt werden sollen, bei denen eine bestimmte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aufgerufen werden muss, um eine Datei zu öffnen. Das Problem wurde mit inkompatiblen Dateiformaten zusammengesetzt.
 
-Benutzer erwarten, dass eine neue Version eines Produkts mit früheren Versionen kompatibel ist, sodass vorhandene Dateien in einer neuen Version geladen werden können, ohne Daten zu verlieren. Idealerweise kann Ihr VSPackage die Dateiformate früherer Versionen sowohl laden als auch speichern. Wenn dies nicht zutrifft, sollten Sie anbieten, das Dateiformat auf die neue Version Ihres VSPackage zu aktualisieren. Der Nachteil dieses Ansatzes ist, dass die aktualisierte Datei in der früheren Version nicht geöffnet werden kann.
+Benutzer erwarten, dass eine neue Version eines Produkts mit früheren Versionen kompatibel ist, damit vorhandene Dateien in eine neue Version geladen werden können, ohne dass Daten verloren gehen. Im Idealfall kann das VSPackage die Dateiformate früherer Versionen laden und speichern. Wenn dies nicht zutrifft, sollten Sie ein Upgrade des Datei Formats auf die neue Version des VSPackage anbieten. Der Nachteil dieses Ansatzes besteht darin, dass die aktualisierte Datei in der früheren Version nicht geöffnet werden kann.
 
-Um dieses Problem zu vermeiden, können Sie Erweiterungen ändern, wenn Dateiformate inkompatibel werden. Beispielsweise könnte Version 1 Ihres VSPackage die Erweiterung *.mypkg10*und Version 2 die Erweiterung *.mypkg20*verwenden. Dieser Unterschied identifiziert das VSPackage, das eine bestimmte Datei öffnet. Wenn Sie neuere VSPackages zur Liste der Programme hinzufügen, die einer alten Erweiterung zugeordnet sind, können Benutzer mit der rechten Maustaste auf die Datei klicken und sie in einem neueren VSPackage öffnen. An diesem Punkt kann Ihr VSPackage anbieten, die Datei auf das neue Format zu aktualisieren oder die Datei zu öffnen und die Kompatibilität mit früheren Versionen des VSPackage beizubehalten.
+Um dieses Problem zu vermeiden, können Sie Erweiterungen ändern, wenn Dateiformate inkompatibel werden. Beispielsweise könnte Version 1 des VSPackage die Erweiterung, *. mypkg10*, verwenden, und Version 2 kann die Erweiterung *. mypkg20*verwenden. Dieser Unterschied identifiziert das VSPackage, das eine bestimmte Datei öffnet. Wenn Sie der Liste der Programme, die einer alten Erweiterung zugeordnet sind, neuere VSPackages hinzufügen, können Benutzer mit der rechten Maustaste auf die Datei klicken und Sie in einem neueren VSPackage öffnen. Zu diesem Zeitpunkt kann das VSPackage anbieten, die Datei auf das neue Format zu aktualisieren oder die Datei zu öffnen und die Kompatibilität mit früheren Versionen des VSPackage aufrechtzuerhalten.
 
 > [!NOTE]
-> Sie können diese Ansätze kombinieren. Sie können z. B. Abwärtskompatibilität bieten, indem Sie eine ältere Datei laden und anbieten, das Dateiformat zu aktualisieren, wenn der Benutzer es speichert.
+> Sie können diese Ansätze kombinieren. Sie können z. b. eine Abwärtskompatibilität bereitstellen, indem Sie eine ältere Datei laden und das Dateiformat aktualisieren, wenn der Benutzer Sie speichert.
 
-## <a name="face-the-problem"></a>Stellen Sie sich dem Problem
+## <a name="face-the-problem"></a>Dem Problem begegnen
 
-Wenn mehrere nebeneinander vsPackages die gleiche Erweiterung verwenden sollen, müssen Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] die Version auswählen, die der Erweiterung zugeordnet ist. Hier sind zwei Alternativen:
+Wenn Sie möchten, dass mehrere parallele VSPackages dieselbe Erweiterung verwenden, müssen Sie die Version von auswählen, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] der Erweiterung zugeordnet ist. Hier sind zwei Alternativen:
 
-- Öffnen Sie die Datei [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in der neuesten Version der auf dem Computer eines Benutzers installierten Version.
+- Öffnen Sie die Datei in der neuesten Version von, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf dem Computer des Benutzers installiert ist.
 
-   Bei diesem Ansatz ist Ihr Installationsprogramm dafür [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verantwortlich, die neueste Version und die für die Dateizuordnung geschriebene Version zu bestimmen und in den Registrierungseintrag einzubeziehen. In einem Windows Installer-Paket können Sie benutzerdefinierte Aktionen zum [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Festlegen einer Eigenschaft einschließen, die die neueste Version von angibt.
+   Bei diesem Ansatz ist das Installationsprogramm für die Bestimmung der aktuellen Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und das Einschließen des Registrierungs Eintrags, der für die Datei Zuordnung geschrieben wurde, verantwortlich. In einem Windows Installer-Paket können Sie benutzerdefinierte Aktionen einschließen, um eine Eigenschaft festzulegen, die die neueste Version von angibt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
   > [!NOTE]
-  > In diesem Zusammenhang bedeutet "neueste" "neueste unterstützte Version". Diese Installationseinträge erkennen nicht automatisch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]eine nachfolgende Version von . Einträge in [Detecting System Requirements](../extensibility/internals/detecting-system-requirements.md) und in [Commands That Must Be Run After Installation](../extensibility/internals/commands-that-must-be-run-after-installation.md) sind [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ähnlich denen, die hier vorgestellt werden, und müssen zusätzliche Versionen von unterstützen.
+  > In diesem Kontext bedeutet "Latest" "Latest" (neueste unterstützte Version). Diese Installer-Einträge erkennen nicht automatisch eine nachfolgende Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Einträge zum [Erkennen von System Anforderungen](../extensibility/internals/detecting-system-requirements.md) und in [Befehlen, die nach der Installation ausgeführt werden müssen](../extensibility/internals/commands-that-must-be-run-after-installation.md) , ähneln den hier vorgestellten und sind für die Unterstützung zusätzlicher Versionen von erforderlich [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-   Die folgenden Zeilen in der Tabelle CustomAction legen fest, dass die DEVENV_EXE_LATEST Eigenschaft eine Eigenschaft ist, die von den Tabellen AppSearch und RegLocator festgelegt wird, die in [Befehlen beschrieben werden und nach](../extensibility/internals/commands-that-must-be-run-after-installation.md)der Installation ausgeführt werden müssen. Zeilen in der Tabelle InstallExecuteSequence planen die benutzerdefinierten Aktionen früh in der Ausführungssequenz. Die Werte in der Spalte Bedingung machen die Logik:
+   In den folgenden Zeilen in der Tabelle "CustomAction" wird die DEVENV_EXE_LATEST-Eigenschaft auf eine Eigenschaft festgelegt, die von den Tabellen "AppSearch" und "reglocator", die in Befehlen erläutert werden [, die nach der Installation](../extensibility/internals/commands-that-must-be-run-after-installation.md) Zeilen in der InstallExecuteSequence-Tabelle planen die benutzerdefinierten Aktionen frühzeitig in der Ausführungssequenz. Werte in der Spalte Bedingung machen die Logik funktionsfähig:
 
-  - Visual Studio .NET 2002 ist die neueste Version, wenn es sich um die einzige aktuelle Version handelt.
+  - Visual Studio .NET 2002 ist die neueste Version, wenn dies die einzige aktuelle Version ist.
 
-  - Visual Studio .NET 2003 ist die neueste [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Version nur, wenn sie vorhanden ist und nicht vorhanden ist.
+  - Visual Studio .NET 2003 ist die neueste Version nur, wenn Sie vorhanden und [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht vorhanden ist.
 
-  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ist die neueste Version, wenn es die einzige aktuelle Version ist.
+  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist die neueste Version, wenn Sie die einzige vorhandene Version ist.
 
     Das Ergebnis ist, dass DEVENV_EXE_LATEST den Pfad der neuesten Version von devenv.exe enthält.
 
@@ -61,31 +61,31 @@ Wenn mehrere nebeneinander vsPackages die gleiche Erweiterung verwenden sollen, 
 
   |Aktion|Bedingung|Sequenz|
   |------------|---------------|--------------|
-  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 UND NICHT (DEVENV_EXE_2003 ODER DEVENV_EXE_2005)|410|
-  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 UND NICHT DEVENV_EXE_2005|420|
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 und nicht (DEVENV_EXE_2003 oder DEVENV_EXE_2005)|410|
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 und nicht DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Sie können die DEVENV_EXE_LATEST-Eigenschaft in der Registrierungstabelle des Windows Installer-Pakets verwenden, um den Standardwert **des HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand-Schlüssels** [DEVENV_EXE_LATEST] "%1" zu schreiben.
+   Mit der DEVENV_EXE_LATEST-Eigenschaft in der Registrierungs Tabelle des Windows Installer Pakets können Sie den Standardwert des **HKEY_CLASSES_ROOT*ProgID*shellopencommand** , [DEVENV_EXE_LATEST] "%1", schreiben.
 
-- Führen Sie ein freigegebenes Launcher-Programm aus, das die beste Auswahl aus verfügbaren VSPackage-Versionen treffen kann.
+- Führen Sie ein frei gegebenes Start Programm Programm aus, das von verfügbaren VSPackage-Versionen die beste Wahl treffen kann.
 
-   Die Entwickler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] von wählte diesen Ansatz, um die komplexen Anforderungen der verschiedenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Formate von Lösungen und Projekten zu behandeln, die aus vielen Versionen von resultieren. Bei diesem Ansatz registrieren Sie ein Launcherprogramm als Erweiterungshandler. Der Launcher untersucht die Datei und [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entscheidet, welche Version von und Ihr VSPackage diese bestimmte Datei verarbeiten kann. Wenn ein Benutzer beispielsweise eine Datei öffnet, die zuletzt von einer bestimmten Version Ihres VSPackage gespeichert wurde, kann der Launcher dieses VSPackage in der entsprechenden Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]starten. Darüber hinaus könnte ein Benutzer den Launcher so konfigurieren, dass immer die neueste Version gestartet wird. Ein Launcher kann einen Benutzer auch auffordern, das Format der Datei zu aktualisieren. Wenn das Format der Datei eine Versionsnummer enthält, kann der Launcher einen Benutzer informieren, wenn das Dateiformat aus einer Version stammt, die später als eine oder mehrere der installierten VSPackages ist.
+   Die Entwickler von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben diese Herangehensweise gewählt, um die komplexen Anforderungen der verschiedenen Formate von Projektmappen und Projekten zu bewältigen, die aus vielen Versionen von resultieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Bei dieser Vorgehensweise registrieren Sie ein Start Programm Programm als Erweiterungs Handler. Das Start Programm untersucht die Datei und entscheidet, welche Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und das VSPackage diese bestimmte Datei verarbeiten kann. Wenn ein Benutzer beispielsweise eine Datei öffnet, die zuletzt von einer bestimmten Version des VSPackages gespeichert wurde, kann das Start Programm dieses VSPackage in der entsprechenden Version von Starten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Außerdem kann ein Benutzer das Start Programm so konfigurieren, dass immer die neueste Version gestartet wird. Ein Start Programm könnte auch einen Benutzer auffordern, das Format der Datei zu aktualisieren. Wenn das Format der Datei eine Versionsnummer enthält, könnte das Start Programm einen Benutzer darüber informieren, ob das Dateiformat eine Version ist, die höher als mindestens ein installiertes VSPackages ist.
 
-   Der Launcher sollte sich in einer Windows Installer-Komponente befindet, die für alle Versionen Ihres VSPackage freigegeben ist. Dieser Prozess stellt sicher, dass die neueste Version immer installiert ist und nicht entfernt wird, bis alle Versionen Ihres VSPackage deinstalliert wurden. Auf diese Weise bleiben die Dateizuordnungen und andere Registrierungseinträge der Launcher-Komponente erhalten, auch wenn eine Version des VSPackage deinstalliert wird.
+   Das Start Programm sollte sich in einer Windows Installer Komponente befinden, die für alle Versionen des VSPackage freigegeben ist. Dadurch wird sichergestellt, dass die neueste Version immer installiert ist und erst entfernt wird, wenn alle Versionen des VSPackage deinstalliert wurden. Auf diese Weise werden die Dateizuordnungen und andere Registrierungseinträge der Start Programm Komponente auch dann beibehalten, wenn eine Version des VSPackages deinstalliert wird.
 
-## <a name="uninstall-and-file-associations"></a>Deinstallieren und Dateizuordnungen
+## <a name="uninstall-and-file-associations"></a>Deinstallation und Dateizuordnungen
 
-Durch die Deinstallation eines VSPackage, das Registrierungseinträge für Dateizuordnungen schreibt, werden die Dateizuordnungen entfernt. Daher hat die Erweiterung keine zugeordneten Programme. Windows Installer "stellt" die Registrierungseinträge nicht wieder her, die bei der Installation des VSPackage hinzugefügt wurden. Hier sind einige Möglichkeiten, die Dateizuordnungen eines Benutzers zu beheben:
+Wenn Sie ein VSPackage deinstallieren, das Registrierungseinträge für Dateizuordnungen schreibt, werden die Dateizuordnungen entfernt. Daher sind der Erweiterung keine Programme zugeordnet. Die Registrierungseinträge, die beim Installieren des VSPackages hinzugefügt wurden, werden von Windows Installer nicht "wieder hergestellt". Es folgen einige Möglichkeiten, die Dateizuordnungen eines Benutzers zu beheben:
 
-- Verwenden Sie eine freigegebene Launcherkomponente wie zuvor beschrieben.
+- Verwenden Sie wie zuvor beschrieben eine freigegebene Start Programm Komponente.
 
-- Weisen Sie den Benutzer an, eine Reparatur der Version des VSPackage auszuführen, die der Benutzer für die Dateizuordnung besitzen möchte.
+- Weisen Sie den Benutzer an, eine Reparatur der Version des VSPackage auszuführen, der der Benutzer die Datei Zuordnung zuordnen möchte.
 
-- Stellen Sie ein separates ausführbares Programm bereit, das die entsprechenden Registrierungseinträge neu schreibt.
+- Stellen Sie ein separates ausführbares Programm bereit, mit dem die entsprechenden Registrierungseinträge neu geschrieben werden.
 
-- Stellen Sie eine Seite oder ein Dialogfeld mit Konfigurationsoptionen bereit, mit dem Benutzer Dateizuordnungen auswählen und verlorene Zuordnungen zurückfordern können. Weisen Sie die Benutzer an, sie nach der Deinstallation auszuführen.
+- Geben Sie eine Konfigurations Optionsseite oder ein Dialogfeld an, mit dem Benutzerdatei Zuordnungen auswählen und verlorene Zuordnungen freigeben können. Weisen Sie die Benutzer an, Sie nach der deinstalstallation auszuführen.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Registrieren von Dateinamenerweiterungen für side-by-side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Register verbs für Dateinamenerweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)
+- [Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Registrieren von Verben für Dateinamen Erweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)

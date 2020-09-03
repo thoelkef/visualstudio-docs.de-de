@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904996"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen
 Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine Reihe von Aktionen anzuzeigen, z. b. Fehlerbehebungen für Probleme, die von den integrierten Code Analysemodulen oder der Code Umgestaltung identifiziert werden.
 
- In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter:
+ In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter
 
 - [Gewusst wie: Schreiben einer c#-Diagnose und-Code Korrektur](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
 

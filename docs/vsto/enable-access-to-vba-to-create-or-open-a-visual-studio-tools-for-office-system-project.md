@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551540"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Aktivieren des Zugriffs auf VBA zum Erstellen oder Öffnen einer Visual Studio-Tools für das Microsoft Office System Projekt
@@ -63,7 +63,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>So aktivieren oder deaktivieren Sie den Zugriff auf Visual Basic Projekte mit dem 2007 Microsoft Office System
 
-1. Zeigen Sie im Menü Extras in Word oder Excel auf **Makro**, und klicken Sie dann auf **Sicherheit**.
+1. Zeigen Sie **im Menü Extras** in Word oder Excel auf **Makro**, und klicken Sie dann auf **Sicherheit**.
 
 2. Klicken Sie im Dialogfeld **Sicherheit** auf die Registerkarte **Vertrauenswürdige Herausgeber** .
 
@@ -87,7 +87,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>So legen Sie die Office-Makro Sicherheitsstufe mit dem 2007-Microsoft Office System fest
 
-1. Zeigen Sie im Menü Extras in Word oder Excel auf **Makro**, und klicken Sie dann auf **Sicherheit**.
+1. Zeigen Sie **im Menü Extras** in Word oder Excel auf **Makro**, und klicken Sie dann auf **Sicherheit**.
 
 2. Wählen Sie auf der Registerkarte **Sicherheitsstufe** die gewünschte Einstellung aus.
 
@@ -99,7 +99,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 2. Wählen Sie in der Liste **Zurzeit installierte Programme** die Option Office aus.
 
-3. Klicken Sie auf **ändern**.
+3. Klicken Sie auf **Ändern**.
 
 4. Wählen Sie **Features hinzufügen oder entfernen**aus, und klicken Sie dann auf **weiter**.
 
@@ -119,11 +119,11 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 2. Wählen Sie in der Liste der **derzeit installierten Programme** Ihre Office-Version aus.
 
-3. Klicken Sie auf **ändern**.
+3. Klicken Sie auf **Ändern**.
 
 4. Wählen Sie **neu installieren oder reparieren**aus, und klicken Sie dann auf **weiter**.
 
 5. Wählen Sie **Fehler in meiner Office-Installation erkennen und reparieren aus**, und klicken Sie dann auf **Installieren**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

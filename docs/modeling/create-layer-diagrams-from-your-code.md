@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545729"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
-Erstellen Sie ein *Abhängigkeits Diagramm* in Visual Studio, um die allgemeine logische Architektur des Software Systems visuell darzustellen. Überprüfen Sie den Code mit einem Abhängigkeits Diagramm, um sicherzustellen, dass der Code mit dem Entwurf konsistent bleibt. Sie können Abhängigkeits Diagramme für Visual c#-und Visual Basic-Projekte erstellen. Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
+Erstellen Sie ein *Abhängigkeits Diagramm* in Visual Studio, um die allgemeine logische Architektur des Software Systems visuell darzustellen. Überprüfen Sie den Code mit einem Abhängigkeits Diagramm, um sicherzustellen, dass der Code mit dem Entwurf konsistent bleibt. Sie können Abhängigkeits Diagramme für Visual c#-und Visual Basic-Projekte erstellen. Welche Visual Studio-Editionen dieses Feature unterstützen, erfahren Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Erstellen eines Abhängigkeits Diagramms](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -29,7 +29,7 @@ Mit einem Abhängigkeits Diagramm können Sie Visual Studio-Projektmappenelement
 
 [Video: Überprüfen der Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Erstellen eines Abhängigkeits Diagramms
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> Erstellen eines Abhängigkeits Diagramms
 
 Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Projekt Mappe über ein Modellierungsprojekt verfügt.
 
@@ -78,7 +78,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 ![Abhängigkeits Diagramm, das aus einer Code map generiert wurde](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>Erstellen von Ebenen aus Artefakten
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Erstellen von Ebenen aus Artefakten
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.
 
  Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie "Layer 1" und "Layer 2" angezeigt werden, jedoch nicht berücksichtigt.
@@ -91,8 +91,8 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Artefakte gleichzeitig in das Abhängigkeits Diagramm.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|
 |Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** Taste gedrückt, während Sie alle Artefakte gleichzeitig in das Abhängigkeits Diagramm ziehen. **Hinweis:**  Wenn Sie mithilfe der **UMSCHALT** Taste einen Bereich von Elementen auswählen, geben Sie den Schlüssel nach dem Auswählen der Artefakte frei. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|
 |Hinzufügen eines Artefakts zu einer Ebene|Ziehen Sie das Artefakt auf die Ebene.|
-|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **Abhängigkeits Diagramm** , und ziehen Sie dann eine **Ebene** in das Abhängigkeits Diagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Abhängigkeits Diagramm, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
-|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
+|Erstellen einer neuen, nicht verknüpften Ebene|Erweitern Sie in der **Toolbox**den Abschnitt **Abhängigkeits Diagramm** , und ziehen Sie dann eine **Ebene** in das Abhängigkeits Diagramm.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie das **Zeiger** Werkzeug aus, oder drücken Sie die **ESC** -Taste.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Abhängigkeits Diagramm, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
+|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, und wählen Sie **Hinzufügen**und dann **Ebene**aus.|
 |Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Wählen Sie die Ebenen aus, öffnen Sie das Kontextmenü für Ihre Auswahl, und wählen Sie dann **Gruppe**aus.|
 |Ändern der Farbe einer Ebene|Legen Sie die **Color** -Eigenschaft auf die gewünschte Farbe fest.|
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon (**;**).|
@@ -107,7 +107,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 - Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Verwalten von Links zwischen Ebenen und Artefakten
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Verwalten von Links zwischen Ebenen und Artefakten
 
 1. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Verknüpfungen anzeigen**aus.
 
@@ -118,12 +118,12 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 |**An**|**Im Ebenen-Explorer**|
 |-|-|
 |Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Löschen**aus.|
-|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
+|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Ausschneiden**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Kopieren des Links von einer Ebene auf eine andere Ebene|1. Öffnen Sie das Kontextmenü für den artefaktlink, und wählen Sie dann **Kopieren**aus.<br />2. Öffnen Sie im Abhängigkeits Diagramm das Kontextmenü für die Ebene, und wählen Sie dann **Einfügen**aus.|
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|
 |Überprüfen Sie, ob ein verknüpftes Element die Validierung für das Abhängigkeits Diagramm unterstützt|Sehen Sie sich die Spalte **unterstützt die Validierung** für den artefaktlink an.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Vorhandene Abhängigkeiten umkehren
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Vorhandene Abhängigkeiten umkehren
  Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Bei vorhandenen Abhängigkeiten von Artefakten, die mit Ebenen des Diagramms verknüpft sind, ist eine Rückentwicklung möglich.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
   In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf anzuzeigen
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Bearbeiten von Ebenen und Abhängigkeiten, um den beabsichtigten Entwurf anzuzeigen
  Bearbeiten Sie das Abhängigkeits Diagramm, um die Änderungen zu beschreiben, die Sie an Ihrem System oder der vorgesehenen Architektur vornehmen möchten:
 
 |**An**|**Auszuführende Schritte**|
@@ -144,10 +144,10 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon (**;**).|
 |Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in die Eigenschaft **erforderliche Namespaces** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon (**;**).|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Ändern, wie Elemente im Diagramm angezeigt werden
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Ändern, wie Elemente im Diagramm angezeigt werden
  Sie können die Größe, Form, Farbe und Position von Ebenen oder die Farbe von Abhängigkeiten ändern, indem Sie ihre Eigenschaften bearbeiten.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Erkennen von Mustern und Abhängigkeiten auf einem Code Map
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Erkennen von Mustern und Abhängigkeiten auf einem Code Map
  Beim Erstellen von Abhängigkeits Diagrammen können Sie auch **Code Maps**erstellen. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:
 
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
@@ -156,7 +156,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Überprüfen der Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

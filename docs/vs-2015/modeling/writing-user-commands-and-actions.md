@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663000"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
@@ -37,5 +37,5 @@ Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Bef
 
 - [Anpassen von Elementtools](../modeling/customizing-element-tools.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)

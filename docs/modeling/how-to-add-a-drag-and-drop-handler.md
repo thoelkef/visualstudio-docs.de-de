@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545664"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
@@ -50,7 +50,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn er `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als festgelegt wurde `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn er `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als festgelegt wurde `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-Diese Methode wird aufgerufen, wenn der Benutzer auf die Form oder das Diagramm doppelklickt.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Diese Methode wird aufgerufen, wenn der Benutzer auf die Form oder das Diagramm doppelklickt.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Abfangen eines Klick auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ Wenn der Benutzer ein Element auf Ihr Diagramm oder von einem Teil des Diagramm 
 
 Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen verfügbar sein können, indem Sie den Code im Debuggingmodus ausführen und einen Haltepunkt beim Beginn von `OnDragOver()` oder `CanDragDrop()` festlegen. Prüfen Sie die Werte des `DiagramDragEventArgs`-Parameters. Die Informationen werden in zwei Formen bereitgestellt:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`: Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
+- <xref:System.Windows.Forms.IDataObject>  `Data` : Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
 
   - diagrammventargs. Data. getdataformats ()-listet die Formate auf, in denen Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
 
-  - `diagramEventArgs.Data.GetData(format)`-Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:
+  - `diagramEventArgs.Data.GetData(format)` -Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
 
      Um UML-Formen zu akzeptieren, bestimmen Sie die GUIDs der UML-Form Klassen nach Experiment. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
 
-`DiagramDragEventArgs`verfügt auch über Eigenschaften, die die aktuelle Mauszeigerposition angeben und angeben, ob der Benutzer die STRG-Taste, die Alt-Taste oder die UMSCHALTTASTE drückt.
+`DiagramDragEventArgs` verfügt auch über Eigenschaften, die die aktuelle Mauszeigerposition angeben und angeben, ob der Benutzer die STRG-Taste, die Alt-Taste oder die UMSCHALTTASTE drückt.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Abrufen des Originals eines gezogenen Elements
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)
 - [Bereitstellen von domänenspezifischen Sprachlösungen](msi-and-vsix-deployment-of-a-dsl.md)

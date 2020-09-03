@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField | Microsoft Docs
+title: Idebugcontainerfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733216"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
@@ -29,13 +29,13 @@ IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Symbolanbieter implementiert diese Schnittstelle für dasselbe Objekt, das die [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) implementiert. Diese Schnittstelle ist auch die Basisklasse für alle Schnittstellen, die Container darstellen.
+ Ein Symbol Anbieter implementiert diese Schnittstelle für das gleiche Objekt, das die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle implementiert. Diese Schnittstelle ist auch die Basisklasse für alle Schnittstellen, die Container darstellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Viele Methoden auf vielen Schnittstellen geben diese Schnittstelle zurück. Da es sich um eine Basisklasse für alle Container handelt, können mithilfe von [QueryInterface](/cpp/atl/queryinterface)speziellere Schnittstellen über diese Schnittstelle abgerufen werden. Zu diesen Schnittstellen gehören [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)und [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Viele Methoden für viele Schnittstellen geben diese Schnittstelle zurück. Da es sich um eine Basisklasse für alle Container handelt, können durch die Verwendung von [QueryInterface](/cpp/atl/queryinterface)weitere spezialisierte Schnittstellen von dieser Schnittstelle abgerufen werden. Zu diesen Schnittstellen gehören [idebugarrayfield](../../../extensibility/debugger/reference/idebugarrayfield.md), [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md), [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)und [idebugpropertyfield](../../../extensibility/debugger/reference/idebugpropertyfield.md).
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden auf der [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) implementiert diese Schnittstelle die folgende Methode:
+ Zusätzlich zu den Methoden für die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle implementiert diese Schnittstelle die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
@@ -44,10 +44,10 @@ IDebugContainerField : IDebugField
 ## <a name="remarks"></a>Bemerkungen
  Arrays (Container für Variablen), Klassen (Container für Methoden und Variablen) und Methoden (Container für Parameter und lokale Variablen) sind Beispiele für Container.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

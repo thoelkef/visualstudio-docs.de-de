@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161248"
 ---
 # <a name="graphics-log-document"></a>Grafikprotokolldokument
@@ -27,7 +27,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
   
  So sieht ein Grafikprotokolldokument in der Grafikanalyse aus:  
   
- ![Diagrammprotokoll mit zwei erfasste Rahmen. ](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "Gfx_diag_demo_graphics_log_orientation")  
+ ![Grafikprotokoll mit zwei erfassten Frames](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
   
 ## <a name="understanding-graphics-log-documents"></a>Grundlegendes zu Grafikprotokolldokumenten  
  Wenn Sie das Grafikprotokolldokument mithilfe der Grafikanalyse überprüfen, können Sie die erfassten Auswirkungen von Direct3D-Ereignissen auf das Renderziel visuell darstellen. Sie können Bereiche des Renderziels festlegen, die unerwartete Ausgabe enthalten. Wenn Sie ein Pixel im betroffenen Bereich auswählen, können Sie dieses, seine Shader, die Direct3D-Ereignisse, die Auswirkungen auf das Pixel hatten, die Anwendungsaufrufliste, die zu diesen Ereignissen führte, sowie die DirectX-Objekte, die diese Ereignisse unterstützen, mit der Grafikdiagnose überprüfen. Sie können diese Informationen verwenden, um Renderingprobleme im Spiel oder in der App zu bestimmen.  
@@ -45,7 +45,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 ## <a name="playback-machine"></a>Wiedergabecomputer  
  In der rechten oberen Ecke der **Frameliste** wird auch der **Wiedergabecomputer** angezeigt. Der Wiedergabecomputer ist ein Computer oder ein Gerät, das Grafikereignisse aus einer Grafikprotokolldatei während einer späteren Grafikdiagnosesitzung wiedergibt. Wenn Sie ein anderes Gerät als Ihren Entwicklungscomputer zur Wiedergabe der aufgezeichneten Ereignisse verwenden, können Sie die Ausführungsumgebung genauer reproduzieren, in der das Problem aufgetreten ist – Sie können beispielsweise einen Computer mit anderer Grafikhardware oder anderen Treibern als Ihr Entwicklungscomputer oder andere Arten von Geräten verwenden, z. B. ein ARM-basiertes Windows RT-Tablet oder ein Gerät mit Windows Phone.  
   
- Weitere Informationen zur Vorgehensweise beim Angeben eines wiedergabecomputers finden Sie unter [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Informationen zur Festlegung eines Wiedergabecomputers finden Sie unter [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="graphics-log-summary-information"></a>Kurzinformationen zum Grafikprotokoll  
  Wenn das aktive Dokument eine Graphikprotokolldatei ist, werden im Fenster **Eigenschaften** Informationen zur Umgebung angezeigt, in der die Grafikdiagnose-Erfassungssitzung gehostet wird. Es werden verschiedene Kategorien von Informationen angezeigt.  
@@ -66,7 +66,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
  **Anzeigeinformationen**  
  Führt Informationen über die Grafikkarte auf, die während der Erfassungssitzung verwendet wurde.  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|BESCHREIBUNG|  
 |--------------|-----------------|  
 |**Beschreibung**|Die Zeichenfolge für die Grafikkartenbeschreibung.|  
 |**Anzeigespeicher**|Der Speicherplatz, der auf der Grafikkarte installiert ist.|  
@@ -79,7 +79,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
-|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis**:  In früheren Erfassungen wird die Eigenschaft nicht verwendet.|  
+|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis**:  In früheren Erfassungen wird diese Eigenschaft nicht verwendet.|  
   
  **Modulinformationen**  
  Führt den Namen und die Version der Dynamic Link Librarys (DLL) auf, die während der Erfassungssitzung durch die App geladen wurden.  
@@ -112,8 +112,8 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |--------------|-----------------|  
 |**Erstellt von**|Der Name der App, die das Grafikprotokolldokument erstellt hat. Wenn die Erfassungssitzung z. B. von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] initiiert wurde (manuelle Erfassung) ist der Wert dieser Eigenschaft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |**Startzeit der Sitzung**|Das Datum und die Uhrzeit, zu der die Erfassungssitzung begann.|  
-|**Größe**|Die Größe des Grafikprotokolldokuments.|  
+|**Size**|Die Größe des Grafikprotokolldokuments.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Exemplarische Vorgehensweise: fehlende Objekte aufgrund von Vertex-Schattierung](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

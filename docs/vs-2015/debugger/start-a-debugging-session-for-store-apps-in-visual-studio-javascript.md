@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 634051d47b3462e2462c5592448b20f70d09ae71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531936"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Starten einer Debugsitzung für Store-Apps in Visual Studio (JavaScript)
@@ -67,7 +67,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 - [Fügen Sie den Debugger an.](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>Die einfache Methode zum Starten des Debuggens
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> Die einfache Methode zum Starten des Debuggens
  ![Gilt nur für Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
 1. Öffnen Sie in Visual Studio die Anwendungsprojektmappe.
@@ -83,13 +83,13 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> Konfigurieren der Debugsitzung
  Da das Skript nicht kompiliert wird, sind die Einstellungen der Buildkonfiguration und -plattform nicht anwendbar. Wenn Sie ein C++ oder eine verwaltete Komponente Debuggen, legen Sie die **Konfiguration** auf **Debug** fest, und wählen Sie im **Konfigurations** Dialogfeld Ihre Zielplattform aus.
 
-### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Öffnen Sie die Eigenschaften Seite Debuggen für das Projekt.
+### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Öffnen Sie die Eigenschaften Seite Debuggen für das Projekt.
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus. Wählen Sie im Kontextmenü **Eigenschaften**aus.
 
 2. Erweitern Sie den Knoten **Konfigurations Eigenschaften** , und wählen Sie dann **Debugging** aus.
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>Buildkonfigurationsoptionen auswählen
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> Buildkonfigurationsoptionen auswählen
 
 1. Wählen Sie in der Liste **Konfiguration** den Eintrag **Debuggen** oder **Aktive Konfiguration**aus.
 
@@ -102,7 +102,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Wählen Sie für eine Windows Store-App eine dieser Optionen in der Liste **Zielgerät** aus:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |-|-|
 |**Lokaler Computer**|Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer. Siehe [Ausführen von Windows Store-Apps auf dem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md).|
 |**Simulator**|Debuggen Sie die Anwendung im Visual Studio-Simulator für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps. Der Simulator ist ein Desktopfenster mit dem Sie Gerätefunktionen wie z. B. die Fingereingabe und Gerätedrehung debuggen können, die nicht auf dem lokalen Computer verfügbar sind. Weitere Informationen finden Sie [unter Ausführen von Windows Store-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -128,7 +128,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Wählen Sie einen dieser **Debugger** in der Liste Debuggertyp aus:
 
-|Typ|Beschreibung|
+|type|BESCHREIBUNG|
 |-|-|
 |**Nur Skript**|Für das Debuggen des JavaScript-Codes der Anwendung. Verwalteter und systemeigener Code werden ignoriert.|
 |**Nur systemeigen**|Für das Debuggen des systemeigenen C/C++-Codes der Anwendung. Verwalteter und JavaScript-Code werden ignoriert.|
@@ -136,7 +136,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |**Nur verwaltet**|Für das Debuggen des verwalteten Codes der Anwendung. JavaScript- und systemeigener C/C++-Code werden ignoriert.|
 |**Gemischt (verwaltet und systemeigen)**|Für das Debuggen des systemeigenen C/C++- und des verwalteten Codes der Anwendung. JavaScript-Code wird ignoriert.|
 
-### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a>Optionale Verzögertes Starten der app in der Debugsitzung
+### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> Optionale Verzögertes Starten der app in der Debugsitzung
  In der Standardeinstellung wird die Anwendung in Visual Studio sofort gestartet, wenn Sie das Debuggen starten. Sie können zudem eine Debugsitzung starten, den Start der App jedoch verzögern. Die App wird im Debugger gestartet, wenn sie über das Startmenü oder durch einen Aktivierungsvertrag bzw. durch einen anderen Prozess oder eine andere Methode gestartet wird. Mit einem verzögerten Start können Sie auch Hintergrundereignisse in der App debuggen, die auftreten sollen, wenn die App nicht ausgeführt wird.
 
  Sie geben an, ob der Start der app in der Liste **Anwendung starten** auf der Eigenschaften Seite **Debuggen** des App-Projekts verzögert werden soll. Wählen Sie eine der Optionen aus:
@@ -152,12 +152,12 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Wenn Sie die Netzwerk Loopback Ausnahme entfernen möchten, wählen Sie auf der Eigenschaften Seite **Debuggen** in der Liste **Netzwerk Loopback zulassen** die Option **Nein** aus.
 
-## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a>Starten der Debugsitzung
+## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> Starten der Debugsitzung
 
 ### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> Debuggen starten (F5)
  Wenn Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen (Tastatur: F5), startet Visual Studio die APP mit dem angefügten Debugger. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Starten des Debuggens (F5), verzögertes Starten der APP
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Starten des Debuggens (F5), verzögertes Starten der APP
  Sie können die App so einrichten, dass sie im Debugmodus ausgeführt wird, aber mit einer anderen Methode als dem Debugger gestartet werden kann. Beispielsweise, um den über das Startmenü ausgeführten Start der App zu debuggen, oder um einen Hintergrundprozess aus der App zu debuggen, ohne sie zu starten. Um den App-Start zu verzögern, gehen Sie folgendermaßen vor:
 
 1. Wählen Sie auf der Seite **Debuggen** der APP-Projekteigenschaften in der Liste **Anwendung starten** die Option **Nein** aus.
@@ -194,7 +194,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. Wählen Sie die Debug-Engine aus der Liste **Diesen Codetyp debuggen** .
 
-5. (Optional). Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
+5. (Optional) Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
 
    Wenn Sie auf **Starten**&gt; klicken, wird die App gestartet oder festgelegt, dass sie im Debugmodus ausgeführt werden soll.
 
@@ -223,12 +223,12 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. Geben Sie an der PowerShell-Eingabeaufforderung `Enable-AppxDebug` *PackageFullName* ein, wobei *PackageFullName* der PackageFullName-Bezeichner der App ist.
 
-### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>Debugger anfügen
+### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> Debugger anfügen
 
 > [!TIP]
 > JavaScript-Apps werden in einer Instanz des wwahost.exe-Prozesses ausgeführt. Wenn andere JavaScript-Apps ausgeführt werden, während Sie an die App anfügen, müssen Sie die numerische Prozess-ID (PID) des wwahost.exe-Prozesses kennen, in dem die App ausgeführt wird. 
 >
-> Die einfachste Möglichkeit in dieser Situation besteht darin, alle anderen JavaScript-Apps zu schließen. Andernfalls können Sie vor dem Starten der App den Windows Task-Manager öffnen und sich die IDs der wwahost.exe-Prozesse notieren. Wenn Sie den Prozess zum Anfügen im Dialogfeld **Verfügbare Prozesse** angeben, erhält die wwahost.exe der App eine andere ID als die, die Sie notiert haben.
+> Die einfachste Möglichkeit in dieser Situation besteht darin, alle anderen JavaScript-Apps zu schließen. Andernfalls können Sie vor dem Starten der App den Windows Task-Manager öffnen und sich die IDs der wwahost.exe-Prozesse notieren. Wenn Sie den Prozess zum Anfügen im Dialogfeld **Verfügbare Prozesse**  angeben, erhält die wwahost.exe der App eine andere ID als die, die Sie notiert haben.
 
  So fügen Sie den Debugger an
 
@@ -252,7 +252,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    - Wählen Sie **Diese Codetypen debuggen** und anschließend mindestens einen Typ aus der Liste aus.
 
-4. Wählen Sie in der Liste **Verfügbare Prozesse** den entsprechenden **wwahost.exe** Prozess aus. Verwenden Sie die Spalte **Titel** , um Ihre APP zu identifizieren.
+4. Wählen Sie in der Liste **Verfügbare Prozesse**  den entsprechenden **wwahost.exe** Prozess aus. Verwenden Sie die Spalte **Titel** , um Ihre APP zu identifizieren.
 
 5. Wählen Sie **Anfügen**aus.
 

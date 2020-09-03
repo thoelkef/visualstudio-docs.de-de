@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660870"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
@@ -51,5 +51,5 @@ Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Too
 
  Verwendungs Regeln aktiviert oder deaktiviert die Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Code Analyse für Warnungen für verwalteten Code Warnungen](../../code-quality/code-analysis-for-managed-code-warnings.md) [Code Analyse für verwalteten Code Übersicht](../../code-quality/code-analysis-for-managed-code-overview.md) Exemplarische Vorgehensweise [: Analysieren von verwaltetem Code auf Code Fehler](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

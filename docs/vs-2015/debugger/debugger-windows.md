@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545625"
 ---
 # <a name="debugger-windows"></a>Debuggerfenster
@@ -21,7 +21,7 @@ ms.locfileid: "85545625"
 
 Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Zum Anzeigen einer Liste von Debuggerfenstern legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn Sie den Breakpoint erreichen und die Ausführung beendet wird, klicken Sie auf **Debuggen/Fenster**.  
   
-|**Window**|**Hotkey**|**Siehe Thema**|  
+|**Fenster**|**Hotkey**|**Siehe Thema**|  
 |-|-|-|  
 |Haltepunkte|STRG+ALT+B|[Verwenden von Haltepunkten](../debugger/using-breakpoints.md)|  
 |Ausnahmeeinstellungen|STRG+ALT+E|[Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)|  
@@ -32,7 +32,7 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Parallele Überwachung|STRG+UMSCHALT+D, (1, 2, 3, 4)|[Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)|  
 |Überwachen|STRG+ALT+W, (1, 2, 3, 4)|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|  
 |Schnellüberwachung|UMSCHALT+F9|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|  
-|Automatisch|STRG+ALT+V, A|[Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|STRG+ALT+V, A|[Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Locals|STRG+ALT+V, L|[Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Direkt|STRG+ALT+I|[Direktfenster](../ide/reference/immediate-window.md)|  
 |Python Debug Interactive|UMSCHALT+ALT+I|[Erste Schritte mit PTVS: Interaktives Python](../python/getting-started-with-ptvs-interactive-python.md)|  

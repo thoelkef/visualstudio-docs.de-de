@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3dfc40b8489e774572b5ac157ebdaec9c71ad5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659230"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Arbeiten mit domänenspezifischen Sprachlösungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine domänenspezifische Sprache (DSL) wird mithilfe einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung erstellt. In diesem Abschnitt erfahren Sie, wie Sie die Lösung einrichten und anpassen.
+Eine domänenspezifische Sprache (DSL) wird mithilfe einer- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung erstellt. In diesem Abschnitt erfahren Sie, wie Sie die Lösung einrichten und anpassen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Informationen zu domänenspezifischen Sprachen](../modeling/about-domain-specific-languages.md) Erläutert, wie Sie DSLs entwickeln und wie Sie angewendet werden.

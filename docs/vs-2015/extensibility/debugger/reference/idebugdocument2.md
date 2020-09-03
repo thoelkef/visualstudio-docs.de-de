@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2cd6afb417de4d8a362916f91593d0d0e67d307c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156499"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt ein Quelldokument.  
+Diese Schnittstelle stellt ein Quelldokument dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,31 +31,31 @@ IDebugDocument2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] in der Regel implementiert diese Schnittstelle. Eine Debug-Engine (DE) kann auch diese Schnittstelle implementieren, muss er den Quellcode angeben und die Quelle ist nicht auf dem Datenträger vorhanden.  In solchen Fällen auch die DE implementieren würde [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) und [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) Schnittstellen sowie einige zusätzlichen Methoden für die [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) und [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) Schnittstellen.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Implementiert in der Regel diese Schnittstelle. Eine Debug-Engine (de) kann diese Schnittstelle auch implementieren, wenn Sie den Quellcode bereitstellen muss und die Quelle auf dem Datenträger nicht vorhanden ist.  In solchen Fällen würde de de auch [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -und [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) -Schnittstellen sowie einige zusätzliche Methoden für die [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) -und [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) -Schnittstellen implementieren.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Methoden für die `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, und `IDebugActivateDocumentEvent2` Schnittstellen zurückgeben, die diese Schnittstelle.  
+ Methoden in den `IDebugDocumentContext2` `IDebugDisassemblyStream2` `IDebugDocumentPosition2` Schnittstellen,, und `IDebugActivateDocumentEvent2` geben diese Schnittstelle zurück.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugDocument2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugDocument2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Ruft den Namen des Dokuments in einem von mehreren Formaten.|  
-|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Ruft die Klassen-ID des Dokuments ab.|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Ruft den Namen des Dokuments in einer von mehreren Formularen ab.|  
+|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Ruft den Klassen Bezeichner des Dokuments ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird implementiert, nur, wenn die DE des Quellcodes bereitstellt. Z. B. beim Debuggen von Skripts auf einer HTML-Seite, die DE stellt den Quellcode, da die Quelle heruntergeladen wird, oder dynamisch generiert und als Datei auf einem Datenträger nicht vorhanden. Beim Debuggen von herkömmlichen Sprachen wie C++, muss diese Schnittstelle nicht implementiert werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Schnittstelle wird nur implementiert, wenn die de den Quellcode bereitstellt. Wenn Sie z. b. das Skript auf einer HTML-Seite Debuggen, stellt das de den Quellcode bereit, da die Quelle heruntergeladen oder dynamisch generiert wird und nicht als Datenträger Datei vorhanden ist. Beim Debuggen von herkömmlichen Sprachen, wie z. b. C++, muss diese Schnittstelle nicht implementiert werden.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ispositionindocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)   

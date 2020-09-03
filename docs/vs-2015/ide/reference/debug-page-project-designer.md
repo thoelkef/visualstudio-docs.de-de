@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 006662d7c07ba0498fff4617eca3fdc7c631d37b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660788"
 ---
 # <a name="debug-page-project-designer"></a>Seite "Debuggen", Projekt-Designer
@@ -39,7 +39,7 @@ ms.locfileid: "72660788"
  **Plattform**: gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Die Optionen sind **Beliebige CPU** (Standardeinstellung), **x64** oder **x86**. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 ## <a name="start-action"></a>Startvorgang
- Der **Startvorgang** gibt an, welches Element beim Debuggen der Anwendung gestartet wird: das Projekt, ein benutzerdefiniertes Programm, eine URL oder keines. Diese Option ist standardmäßig auf **Projekt starten** festgelegt. Die Einstellung **Startaktion** auf der Seite **Debuggen** bestimmt den Wert der `StartAction`-Eigenschaft.
+ **Start Aktion** zeigt das Element an, das beim dedebugging der Anwendung gestartet werden soll: das Projekt, ein benutzerdefiniertes Programm, eine URL oder nichts. Diese Option ist standardmäßig auf **Projekt starten** festgelegt. Die Einstellung **Startaktion** auf der Seite **Debuggen** bestimmt den Wert der `StartAction`-Eigenschaft.
 
  **Projekt starten** Wählen Sie diese Option aus, um anzugeben, dass die ausführbare Datei (für Windows-Anwendung und Konsolen Anwendungsprojekte) beim debuggten der Anwendung gestartet werden soll. Diese Option ist standardmäßig ausgewählt.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72660788"
 
  **Remote Computer verwenden** Aktivieren Sie dieses Kontrollkästchen, und geben Sie den Pfad zum Remote Computer in das Textfeld ein, um die Anwendung auf einem Remote Computer zu debuggen.
 
-## <a name="enable-debuggers"></a>Buggers aktivieren
+## <a name="enable-debuggers"></a>Debugger aktivieren
  **Debugging von nicht verwaltetem Code aktivieren** Diese Option gibt an, ob das Debuggen von nativem Code unterstützt Aktivieren Sie dieses Kontrollkästchen, wenn Sie COM-Objekte aufrufen, oder wenn Sie ein benutzerdefiniertes Programm starten, das Ihr Projekt aufruft und in nativem Code geschrieben ist, und Sie den nativen Code debuggen müssen. Deaktivieren Sie dieses Kontrollkästchen, um das Debuggen von unverwaltetem Code zu deaktivieren. Dieses Kontrollkästchen ist standardmäßig deaktiviert.
 
  **Aktivieren SQL Server Debuggens** Aktivieren bzw. deaktivieren Sie dieses Kontrollkästchen, um das Debuggen von SQL-Prozeduren aus der Visual Basic Anwendung zu aktivieren Dieses Kontrollkästchen ist standardmäßig deaktiviert.
@@ -63,5 +63,5 @@ ms.locfileid: "72660788"
 
  Sie müssen diese Option und **Diese Anwendung mit dem ausgewählten Berechtigungssatz debuggen** im Dialogfeld [Erweiterte Sicherheitseinstellungen](../../ide/reference/advanced-security-settings-dialog-box.md) aktivieren, um in einer Sicherheitszone zu debuggen.
 
-## <a name="see-also"></a>Siehe auch
- [Debuggen in Visual Studio](../../debugger/debugging-in-visual-studio.md) [- C# Projekteinstellungen für Debugkonfigurationen](../../debugger/project-settings-for-csharp-debug-configurations.md) [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md) [Verwalten von Debugeigenschaften](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) Gewusst [wie: Debuggen einer ClickOnce-Anwendung mit Eingeschränkte Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) Gewusst [wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Debuggen in Visual Studio-](../../debugger/debugging-in-visual-studio.md) [Projekteinstellungen für c#-Debugkonfigurationen](../../debugger/project-settings-for-csharp-debug-configurations.md) [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md) [Verwalten von Debugeigenschaften](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) Gewusst [wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) Gewusst [wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)

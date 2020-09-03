@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f7ecca8c28ff355952907f1f0c49485117a25456
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281200"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualisieren von Daten mit einem TableAdapter
@@ -51,6 +51,6 @@ Ruft die- `Update` Methode eines TableAdapter auf. Übergeben Sie den Namen der 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

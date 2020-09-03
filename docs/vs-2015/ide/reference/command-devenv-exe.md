@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660856"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -33,7 +33,7 @@ devenv /command CommandName
 ## <a name="arguments"></a>Argumente
  `CommandName` ist erforderlich. Der vollständige Name eines [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehls oder dessen Aliasname in doppelten Anführungszeichen. Weitere Informationen zur Syntax von Befehlen und Alias finden Sie unter [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Nachdem der Startvorgang abgeschlossen wurde, wird der genannte Befehl in der IDE ausgeführt. Bei Verwendung dieses Schalters wird in der IDE beim Start nicht die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Startseite angezeigt.
 
  Wenn ein Befehl mittels eines Add-Ins verfügbar gemacht wird, können Sie das Add-In mithilfe dieses Schalters von der Befehlszeile aus starten. Weitere Informationen finden Sie unter [Vorgehensweise: Steuern von Add-Ins mit dem Add-In-Manager](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
@@ -45,5 +45,5 @@ devenv /command CommandName
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Debug- [Befehlszeilen](../../ide/reference/devenv-command-line-switches.md) Optionen für [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

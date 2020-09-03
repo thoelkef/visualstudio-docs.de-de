@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205710"
 ---
-# <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Sitzung
+# <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Profilerstellungssitzung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mehrere Leistungssitzungen im **Leistungs-Explorer** öffnen und anschließend eine der sichtbaren Leistungssitzungen als aktuelle Sitzung festlegen.  
@@ -41,8 +41,8 @@ Sie können mehrere Leistungssitzungen im **Leistungs-Explorer** öffnen und ans
   
      Der Sitzungsname wird in Fettdruck angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)   
- [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)   
- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Leistungs-Explorer Fenster](../profiling/performance-explorer-window.md)   
+ [Leistungs Sitzungs Eigenschaften](../profiling/performance-session-properties.md)   
+ [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)

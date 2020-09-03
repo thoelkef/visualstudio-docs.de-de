@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2 | Microsoft Docs
+title: IDebugThread2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718593"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
@@ -29,47 +29,47 @@ IDebugThread2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle, um einen Ausführungsthread in einem einzigen Programm darzustellen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um einen Ausführungs Thread in einem einzelnen Programm darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Rufen Sie [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) auf, um diese Schnittstelle abzurufen, die den aktuell aktiven Thread darstellt.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Rufen Sie [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) auf, um diese Schnittstelle abzurufen, die den momentan aktiven Thread darstellt.
 
- Diese Schnittstelle wird auch zum Erstellen einer Haltepunktanforderung verwendet (siehe [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)).
+ Diese Schnittstelle wird auch zum Erstellen einer breakpointanforderung verwendet (siehe [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)).
 
- Diese Schnittstelle wird auch zurückgegeben, wenn ein gebundener oder Fehlerhaltepunkt aufgelöst wird (siehe [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) und [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)).
+ Diese Schnittstelle wird auch zurückgegeben, wenn ein gebundener oder fehlerender Haltepunkt aufgelöst wird (siehe [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) und [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)).
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugThread2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugThread2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Ruft eine Liste der Stapelrahmen für diesen Thread ab.|
+|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Ruft eine Liste der Stapel Rahmen für diesen Thread ab.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Ruft den Namen des Threads ab.|
 |[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Legt den Namen des Threads fest.|
 |[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Ruft das Programm ab, in dem ein Thread ausgeführt wird.|
-|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Legt fest, ob die nächste Anweisung auf den angegebenen Stapelrahmen und Codekontext festgelegt werden kann.|
-|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Legt die nächste Anweisung für den angegebenen Stapelrahmen und Codekontext fest.|
-|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Ruft den Systemthreadbezeichner ab.|
+|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Bestimmt, ob die nächste Anweisung auf den angegebenen Stapel Rahmen und Code Kontext festgelegt werden kann.|
+|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Legt die nächste Anweisung auf den angegebenen Stapel Rahmen und Code Kontext fest.|
+|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Ruft den System Thread Bezeichner ab.|
 |[Angehalten](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Hält einen Thread an.|
 |[Fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Setzt einen Thread fort.|
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Ruft Eigenschaften ab, die einen Thread beschreiben.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Ruft den logischen Thread ab, der diesem physischen Thread zugeordnet ist.|
 
 ## <a name="remarks"></a>Bemerkungen
- Da ein einzelner physischer Thread in mehreren `IDebugThread2` Programmen ausgeführt werden kann, kann mehr als ein Von mehr als einem Programm denselben physischen Thread darstellen.
+ Da ein einzelner physischer Thread in mehreren Programmen ausgeführt werden kann, kann mehr als ein `IDebugThread2` Programm aus mehreren Programmen denselben physischen Thread darstellen.
 
- Wenn ein Haltepunkt oder eine Ausnahme auftritt, wird ein Ereignis durch Aufrufen von [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)gesendet. Eines der Argumente für diese `IDebugThread2` Methode ist eine Schnittstelle, die den aktuellen Thread darstellt. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) wird verwendet, um die [IDebugStackFrame2-Schnittstelle](../../../extensibility/debugger/reference/idebugstackframe2.md) für den aktuellen Stapelrahmen abzuerhalten.
+ Wenn ein Breakpoint oder eine Ausnahme auftritt, wird vom aufrufenden [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)ein Ereignis gesendet. Eines der Argumente für diese Methode ist eine `IDebugThread2` Schnittstelle, die den aktuellen Thread darstellt. [Enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) wird zum Abrufen der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle für den aktuellen Stapel Rahmen verwendet.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

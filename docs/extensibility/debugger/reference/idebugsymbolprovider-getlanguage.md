@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: 'Idebugsymbolprovider:: GetLanguage | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719238"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Diese Methode ruft die Sprache ab, die zum Kompilieren des Codes an der Debugadresse verwendet wurde.
+Diese Methode ruft die Sprache ab, die zum Kompilieren des Codes an der debugadresse verwendet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,19 +45,19 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Ein Adressobjekt, das durch eine [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
+in Ein Adress Objekt, das durch eine [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle dargestellt wird.
 
 `pguidLanguage`\
-[out] Gibt `GUID` eine zurück, die die Sprache angibt.
+vorgenommen Gibt einen zurück `GUID` , der die Sprache angibt.
 
 `pguidLanguageVendor`\
-[out] Gibt `GUID` eine zurück, die den Sprachanbieter angibt.
+vorgenommen Gibt einen zurück `GUID` , der den Anbieter der Sprache angibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Das Debugmodul ruft diese Methode auf, um die Informationen abzuerhalten, die es benötigt, um den richtigen Ausdrucksevaluator auszuwählen.
+ Die Debug-Engine ruft diese Methode auf, um die Informationen zu erhalten, die Sie benötigen, um die richtige Ausdrucks Auswertung auszuwählen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

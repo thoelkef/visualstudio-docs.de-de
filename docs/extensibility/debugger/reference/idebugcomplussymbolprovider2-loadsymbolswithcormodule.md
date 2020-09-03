@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: loadsymbolswithcormodule | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef4750de223b133e30e620f5dc0eec526e98526d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733315"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Lädt Debugsymbole, die das **ICorDebugModule-Objekt** erhalten.
+Lädt Debugsymbole, wenn das **ICorDebugModule** -Objekt angegeben ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -52,31 +52,31 @@ int LoadSymbolsWithCorModule(
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Bezeichner der Anwendungsdomäne.
+in Der Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner des Moduls.
+in Eindeutiger Bezeichner des Moduls.
 
 `baseAddress`\
-[in] Basisspeicheradresse.
+in Basis Speicheradresse.
 
 `pUnkMetadataImport`\
-[in] Objekt, das die Debugsymbolmetadaten enthält.
+in -Objekt, das die debugsymbolmetadaten enthält.
 
 `pUnkCorDebugModule`\
-[in] Objekt, das die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)implementiert.
+in Objekt, das die [ICorDebug Module-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)implementiert.
 
 `bstrModuleName`\
-[in] Name des Moduls.
+in Der Name des Moduls.
 
 `bstrSymSearchPath`\
-[in] Pfad, um nach der Symboldatei zu suchen.
+in Der Pfad für die Suche nach der Symbol Datei.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider2-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(
