@@ -1,5 +1,5 @@
 ---
-title: Verzeichnisstatuscode-Enumerator | Microsoft Docs
+title: Verzeichnis Status Code-Enumerator | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712157"
 ---
-# <a name="directory-status-code-enumerator"></a>Verzeichnisstatuscode-Enumerator
-Der `SccDirStatus` Enumerator enthält benannte Konstantewerte, die den Status eines Verzeichnisses im Quellcodeverwaltungssystem angeben. Diese Enumeration wird von Der [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)verwendet. Dies wurde in Version 1.2 der Quellcodeverwaltungs-Plug-In-API eingeführt.
+# <a name="directory-status-code-enumerator"></a>Verzeichnis Statuscode-Enumerator
+Der `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses im Quell Code Verwaltungssystem angeben. Diese Enumeration wird von [sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)verwendet. Dies wurde in Version 1,2 der Quellcodeverwaltungs-Plug-in-API eingeführt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,14 +33,14 @@ enum SccDirStatus {
 ```
 
 ## <a name="members"></a>Member
- SCC_DIRSTATUS_INVALID Status konnte nicht abgerufen werden; sich nicht darauf verlassen.
+ SCC_DIRSTATUS_INVALID Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.
 
- SCC_DIRSTATUS_NOTCONTROLLED Verzeichnis wird nicht unter Quellcodeverwaltung.
+ SCC_DIRSTATUS_NOTCONTROLLED Verzeichnis befindet sich nicht unter Quell Code Verwaltung.
 
- SCC_DIRSTATUS_CONTROLLED Verzeichnis befindet sich unter Quellcodeverwaltung.
+ SCC_DIRSTATUS_CONTROLLED Verzeichnis befindet sich unter Quell Code Verwaltung.
 
- SCC_DIRSTATUS_EMPTYPROJ diesem Verzeichnis entsprechenden Projekt ist leer.
+ SCC_DIRSTATUS_EMPTYPROJ Projekt, das diesem Verzeichnis entspricht, ist leer.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>Siehe auch
+- [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

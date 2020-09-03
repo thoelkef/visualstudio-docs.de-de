@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651110"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Im Dialogfeld **Dienst Verweis konfigurieren** können Sie das Verhalten von [!INCLUDE[vsindigo](../includes/vsindigo-md.md)]-Diensten konfigurieren.
+Im Dialogfeld **Dienst Verweis konfigurieren** können Sie das Verhalten von- [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Diensten konfigurieren.
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -83,5 +83,5 @@ Im Dialogfeld **Dienst Verweis konfigurieren** können Sie das Verhalten von [!I
 > [!NOTE]
 > Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienst Verweis konfigurieren** im Dialog **Feld Dienstverweis hinzufügen**angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Hinzufügen, aktualisieren oder Entfernen eines Dienst Verweises](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9) Gewusst [wie: Hinzufügen eines Verweises auf einen Webdienst](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168) [Windows Communication Foundation Services und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

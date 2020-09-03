@@ -1,5 +1,5 @@
 ---
-title: IDE-Konstanten | Microsoft Docs
+title: IDE-Konstanten | Microsoft-Dokumentation
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,80 +17,80 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710504"
 ---
 # <a name="ide-constants"></a>IDE-Konstanten
 
-Die <xref:Microsoft.VisualStudio.VSConstants> Klasse stellt Konstanten bereit, die für die integrierte Entwicklungsumgebung (IDE) spezifisch sind und zuvor nur in Headerdateien definiert wurden.
+Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse stellt Konstanten bereit, die für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) spezifisch sind und zuvor nur in Header Dateien definiert wurden.
 
-## <a name="logical-and-physical-views"></a>Logische und physische Ansichten
+## <a name="logical-and-physical-views"></a>Logische und physische Sichten
 
-|Wert|BESCHREIBUNG|
+|value|BESCHREIBUNG|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler sollten diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode übergeben, um das Dialogfeld **Öffnen mit** abzurufen, in diesem Fall für mögliche Codeansichten.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler übergeben diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode, um das Dialogfeld <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> **Öffnen** mit abzurufen, in diesem Fall mit möglichen Debugansichten gefüllt, die derselben Ansicht wie <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>zugeordnet sind.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler übergeben diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode, um das Dialogfeld **Öffnen mit** abzurufen, in diesem Fall an Formular-Designeransichten **anzuzeigen.**|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler übergeben diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode, um das Dialogfeld **Öffnen mit** abzurufen, in diesem Fall die Standard-/Primäransicht der Editorfactory.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler übergeben diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode, um das Dialogfeld **Öffnen** mit abzurufen, in diesem Für eine Dokument- oder Datentexteditoransicht.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` Handler übergeben diesen Wert <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> an die Methode, die den Benutzer auffordert, auszuwählen, welche benutzerdefinierte Ansicht verwendet werden soll.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler sollten diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode übergeben, um das Dialogfeld **Öffnen mit** zu erhalten, in diesem Fall bei möglichen Code Ansichten.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um das Dialogfeld **Öffnen mit aufzurufen** , in diesem Fall mit möglichen <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> debugansichten aufgefüllt, die derselben Ansicht wie zugeordnet werden <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um das Dialogfeld **Öffnen mit** zu erhalten, in diesem Fall zum **Anzeigen von Formular** -Designer-Ansichten.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um das Dialogfeld **Öffnen mit** zu erhalten, in diesem Fall die standardmäßige/primäre Ansicht der Editorfactory.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um das Dialogfeld **Öffnen mit** zu erhalten, in dem für eine Dokument-oder Datentext-Editor-Ansicht.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, die den Benutzer auffordert, die zu verwendende benutzerdefinierte Ansicht auszuwählen.|
 
-## <a name="editor-factory-flags"></a>Editor Factory Flags
+## <a name="editor-factory-flags"></a>Editorfactory-Flags
 
-|Wert|BESCHREIBUNG|
+|value|BESCHREIBUNG|
 |-----------|-----------------|
-|[Cef. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Ein veraltetes Flag, das bitweise <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> als erster Parameter der Methode kombiniert wurde.|
-|[Cef. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Kombiniert bitweise als erster <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>Parameter der ,-Methode, bedeutet dies, dass die Editorfactory die erforderlichen Korrekturen durchführen sollte.|
-|[Cef. Openfile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Dieses Flag wird als erster <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Parameter der Methode bitweise kombiniert und schließt sich CEF gegenseitig [aus. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[Cef. Leise](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Als erster Parameter der Methode <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> bitweise kombiniert, bedeutet dies, dass die Editorfactory den Editor erstellen sollte, ohne eine Benutzeroberfläche anzuzeigen.|
+|[CEF. Clonefile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Ein veraltetes Flag, das bitweise als erster Parameter der- <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode kombiniert ist.|
+|[CEF. Openasnew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Kombinierter bitweiser als erster Parameter der <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode, gibt an, dass die Editorfactory erforderliche Korrekturen durchführen soll.|
+|[CEF. OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Kombinierter bitweiser als erster Parameter der- <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode. dieses Flag schließt [CEF aus. "Clonefile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)".|
+|[CEF. Me](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Kombinierter bitweiser als erster Parameter der- <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode. Dies gibt an, dass die Editorfactory den Editor ohne Anzeige einer Benutzeroberfläche (UI) erstellen soll.|
 
 ## <a name="visual-studio-errors"></a>Visual Studio-Fehler
 
-|Wert|BESCHREIBUNG|
+|value|BESCHREIBUNG|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Eine Konstante, die von Schnittstellen zu asynchronem Verhalten zurückgegeben wird, wenn das betreffende Objekt bereits ausgelastet ist|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ein Fehler HRESULT, der für Visual Studio für "Inkompatible Dokumentdaten" spezifisch ist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Paket nicht geladen" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und angibt, dass das Projekt bereits vorhanden ist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Projektkonfiguration fehlgeschlagen" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Projekt nicht geladen" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Lösung bereits geöffnet" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Lösung nicht geöffnet" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Wird von Buildschnittstellen zurückgegeben, die Parameter zum <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> Angeben eines Arrays von der Schnittstelle haben, aber die Implementierung kann die Methode nur auf alle Ausgaben anwenden.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|Die <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode gibt diesen Wert zurück, wenn das Dokument ein Format hat, das im Editor nicht geöffnet werden kann.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Ein HRESULT-Wert, der angibt, dass der Benutzer in einem Visual Studio-Assistenten auf die Schaltfläche "Zurück" drückt.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Eine Konstante, die von Schnittstellen zum asynchronen Verhalten zurückgegeben wird, wenn das betreffende Objekt bereits ausgelastet ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ein HRESULT-Fehler, der in Visual Studio für "inkompatible Dokument Daten" spezifisch ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist, und der angibt, dass das Paket nicht geladen wurde.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist und angibt, dass das "Projekt bereits vorhanden" ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist, und der angibt, dass die Projekt Konfiguration fehlgeschlagen ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist, und der angibt, dass das Projekt nicht geladen wurde.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist, und der angibt, dass die Projekt Mappe bereits geöffnet ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist, und der angibt, dass die Projekt Mappe nicht geöffnet ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Wird von Build-Schnittstellen zurückgegeben, die über Parameter zum Angeben eines Arrays aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> Schnittstelle verfügen, aber die Implementierung kann die Methode nur auf alle Ausgaben anwenden.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|Die- <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode gibt diesen Wert zurück, wenn das Dokument ein Format hat, das im Editor nicht geöffnet werden kann.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Ein HRESULT-Wert, der angibt, dass der Benutzer in einem Visual Studio-Assistenten auf die Schaltfläche "zurück" klickt.|
 
 ## <a name="visual-studio-constants"></a>Visual Studio-Konstanten
 
-|Wert|BESCHREIBUNG|
+|value|BESCHREIBUNG|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ein Fehler HRESULT, der für Visual Studio spezifisch ist und auf "Projekt weitergeleitet" hinweist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Eine Konstante, die für Visual Studio für einen "Toolbox-Marker" spezifisch ist.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Eine Konstante, die für Visual Studio spezifisch <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> ist, um eine Benachrichtigung über die Methode zu senden, die den Beginn der Modalität angibt.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Eine Konstante, die für Visual Studio spezifisch <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> ist, um eine Benachrichtigung über die Methode zu senden, die das Ende der Modalität angibt.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Eine Konstante, die für Visual Studio spezifisch <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> ist, um eine Benachrichtigung über die Methode zu senden, die angibt, dass sich die Befehlsleistenmetriken geändert haben.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Eine für Visual Studio spezifische Konstante, die angibt, dass kein Cookie festgelegt wurde.|
-|[Vsitemid. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Ein Visual Studio-Elementbezeichner, der das Fehlen eines Projektelements darstellt. Dieser Wert wird verwendet, wenn keine aktuelle Auswahl vorhanden ist.|
-|[Vsitemid. wurzel](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Ein Visual Studio-Elementbezeichner, der den Stamm einer Projekthierarchie darstellt und zum Identifizieren der gesamten Hierarchie im Gegensatz zu einem einzelnen Element verwendet wird.|
-|[Vsitemid. Auswahl](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Ein Visual Studio-Elementbezeichner, der das aktuell ausgewählte Element oder die aktuell ausgewählten Elemente darstellt, die den Stamm der Hierarchie enthalten können.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist und "Projekt weitergeleitet" anzeigt.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Eine-Konstante, die für Visual Studio für einen "Toolbox Marker" spezifisch ist.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Eine-Konstante, die für Visual Studio spezifisch ist, um eine Benachrichtigungs Meldung über die-Methode zu senden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> , die den Anfang der Modalität angibt.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Eine-Konstante, die für Visual Studio spezifisch ist, um eine Benachrichtigungs Meldung über die-Methode zu senden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> , die das Ende der Modalität angibt.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Eine-Konstante, die für Visual Studio spezifisch ist, um eine Benachrichtigungs Meldung über die-Methode zu senden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> , die angibt, dass sich die Metriken der Befehlsleiste|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Eine-Konstante, die für Visual Studio spezifisch ist und angibt, dass ein Cookie nicht festgelegt wurde.|
+|[VSITEMID. Trägers](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Ein Visual Studio-Element Bezeichner, der das Fehlen eines Projekt Elements darstellt. Dieser Wert wird verwendet, wenn keine aktuelle Auswahl vorliegt.|
+|[VSITEMID. Fasst](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Ein Visual Studio-Element Bezeichner, der den Stamm einer Projekt Hierarchie darstellt und verwendet wird, um die gesamte Hierarchie zu identifizieren, im Gegensatz zu einem einzelnen Element.|
+|[VSITEMID. End](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Ein Visual Studio-Element Bezeichner, der das aktuell ausgewählte Element bzw. die Elemente darstellt, die den Stamm der Hierarchie enthalten können.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
- Beschreibt, welche Komponente der IDE gerade <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> ausgewählt wurde, z. B. in einem Aufruf.
+ Beschreibt, welche Komponente der IDE soeben in einem-Beispiel ausgewählt wurde <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> .
 
 |Konstante|Wert|
 |--------------|-----------|
-|[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
-|[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
-|[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
-|[SelectionElement.UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
-|[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
-|[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
+|[SelectionElement.Documentframe](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
+|[Selectionelement. propertybrowsersid](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
+|[Selectionelement. StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
+|[Selectionelement. UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
+|[Selectionelement. userContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
+|[Selectionelement. WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
 
 ## <a name="vsselelemid"></a>VSSELELEMID
- Konstanten, die verwendet werden, um einen neuen Auswahlstatus anzugeben.
+ Konstanten, die zum Angeben eines neuen Auswahl Zustands verwendet werden.
 
 |Konstante|Wert|
 |--------------|-----------|
@@ -103,7 +103,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse stellt Konstanten bereit, d
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|5|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1|
 
-## <a name="component-selector-dialog-constants"></a>Komponentenauswahl-Dialogkonstanten
+## <a name="component-selector-dialog-constants"></a>Komponentenauswahl-Dialog Konstanten
 
 |Konstante|Wert|
 |--------------|-----------|
@@ -118,4 +118,4 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse stellt Konstanten bereit, d
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [IDE-definierte Befehle zum Erweitern von Projektsystemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [IDE-definierte Befehle zum Erweitern von Projekt Systemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

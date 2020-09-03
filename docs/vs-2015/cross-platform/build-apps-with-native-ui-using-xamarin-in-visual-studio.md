@@ -9,10 +9,10 @@ caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918343"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit nativer Benutzeroberfläche über Xamarin in Visual Studio
@@ -20,11 +20,11 @@ ms.locfileid: "75918343"
 
 Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-and-install.md) und [Überprüfen Ihrer Xamarin-Umgebung](../cross-platform/verify-your-xamarin-environment.md) ausgeführt haben, zeigt Ihnen diese exemplarische Vorgehensweise das Erstellen einer einfachen (unten gezeigten) Xamarin-App mit nativen Benutzeroberflächenebenen. Bei nativen Benutzeroberflächen befindet sich der freigegebene Code in einer portablen Klassenbibliothek (PCL), und die einzelnen Plattformprojekte enthalten die UI-Definitionen.
 
- ![Xamarin-app unter Android und Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Plattformübergreifendes xamarin-Build 1")
+ ![Xamarin-App unter Android und Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Plattformübergreifendes xamarin-Build 1")
 
  Zum Erstellen müssen Sie die folgenden Schritte ausführen:
 
-- [Einrichten der Projektmappe](#solution)
+- [Einrichten der Lösung](#solution)
 
 - [Schreiben von freigegebenem Datendienstcode](#dataservice)
 
@@ -54,28 +54,28 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 >   - [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
 >   - [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-## <a name="solution"></a> Einrichten Ihrer Projektmappe
+## <a name="set-up-your-solution"></a><a name="solution"></a> Einrichten Ihrer Projektmappe
  Mit diesen Schritten erstellen Sie eine Xamarin-Projektmappe mit nativer Benutzeroberfläche, die eine PCL für freigegebenen Code und zwei zusätzliche NuGet-Pakete enthält.
 
-1. Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)** , und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.
+1. Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)**, und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.
 
-    Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie unter [Setup and install](../cross-platform/setup-and-install.md)beschrieben.
+    Wenn dies nicht der Fall ist, müssen Sie möglicherweise xamarin installieren oder das Visual Studio 2015-Feature aktivieren. Weitere Informationen finden Sie unter [Setup und Installation](../cross-platform/setup-and-install.md).
 
 2. Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Reihe einzelner Projekte:
 
-   - **WeatherApp (Portable)** : die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.
+   - **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.
 
    - **WeatherApp.Droid**: das Projekt, das den systemeigenen Android-Code enthält. Dieses wird als Standardstartprojekt festgelegt.
 
    - **WeatherApp.iOS**: das Projekt, das den systemeigenen iOS-Code enthält.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)** : das Projekt, das den nativen Phone-Code enthält.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**: das Projekt, das den nativen Phone-Code enthält.
 
      Innerhalb eines jeden nativen Projekts haben Sie Zugriff auf den nativen Designer für die entsprechende Plattform und können so plattformspezifische Bildschirme implementieren.
 
 3. Fügen Sie das NuGet-Paket **Newtonsoft.Json** zum PCL-Projekt hinzu, das Sie zum Verarbeiten der von einem Wetterdatendienst abgerufenen Informationen verwenden:
 
-   - Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.
+   - Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'**, und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.
 
         Wählen Sie im NuGet-Fenster die Registerkarte **Durchsuchen** aus, und suchen Sie nach **Newtonsoft**.
 
@@ -87,18 +87,18 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
    - Klicken Sie auf **Installieren**.
 
-   - ![Suchen und Installieren des nuget-Pakets "newtonsoft. JSON"](../cross-platform/media/crossplat-xamarin-formsguide-5.png "Crossplat xamarin formsguide 5")
+   - ![Suchen und Installieren des Newtonsoft.Jsfür das nuget-Paket](../cross-platform/media/crossplat-xamarin-formsguide-5.png "Crossplat xamarin formsguide 5")
 
 4. Wiederholen Sie Schritt 3, um das **Microsoft.Net.Http**-Paket zu suchen und zu installieren.
 
 5. Erstellen Sie die Projektmappe, und vergewissern Sie sich, dass keine Buildfehler aufgetreten sind.
 
-## <a name="dataservice"></a> Schreiben von freigegebenem Datendienstcode
- Im Projekt **WeatherApp (Portable)** schreiben Sie Code für die portable Klassenbibliothek (portable class library; PCL), die plattformübergreifend verwendet wird. In App-Paketen, die von iOS-, Android- und Windows Phone-Projekten erstellt werden, ist die PCL automatisch enthalten.
+## <a name="write-shared-data-service-code"></a><a name="dataservice"></a> Schreiben von frei gegebenem Datendienst Code
+ Im Projekt **weatherapp (Portable)** schreiben Sie Code für die portable Klassenbibliothek (Portable Class Library, PCL), die auf allen Plattformen gemeinsam genutzt wird. In App-Paketen, die von iOS-, Android- und Windows Phone-Projekten erstellt werden, ist die PCL automatisch enthalten.
 
  Mit den folgenden Schritten fügen Sie nun Code zu der PCL hinzu, um auf Daten dieses Wetterdiensts zuzugreifen und diese zu speichern:
 
-1. Registrieren Sie sich unter [http://openweathermap.org/appid](https://openweathermap.org/appid) für einen kostenlosen API-Schlüssel, um dieses Beispiel auszuführen.
+1. Um dieses Beispiel ausführen zu können, müssen Sie sich zuerst für einen kostenlosen API-Schlüssel unter Anmelden [http://openweathermap.org/appid](https://openweathermap.org/appid) .
 
 2. Klicken Sie mit der rechten Maustaste auf das **WeatherApp**-Projekt, und wählen Sie **Hinzufügen > Klasse…** aus. Geben Sie der Datei im Dialogfeld **Neues Element hinzufügen** den Namen **Weather.cs**. Sie nutzen diese Klasse später, um Daten aus dem Wetterdatendienst zu speichern.
 
@@ -222,7 +222,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 10. Erstellen Sie das PCL-Projekt **WeatherApp** , um sicherzustellen, dass der Code korrekt ist.
 
-## <a name="Android"></a> Entwickeln der Benutzeroberfläche für Android
+## <a name="design-ui-for-android"></a><a name="Android"></a> Entwerfen der Benutzeroberfläche für Android
  Wir entwickeln nun die Benutzeroberfläche, verbinden diese mit dem freigegebenen Code und führen dann die App aus.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Entwickeln des Erscheinungsbilds und Verhaltens der App
@@ -247,18 +247,18 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 7. Legen Sie im Fenster **Eigenschaften** die folgenden Eigenschaften fest. (Hinweis: Es kann helfen, die Liste mithilfe der Sortierschaltfläche in der Symbolleiste des Fensters „Eigenschaften“ alphabetisch zu sortieren):
 
-    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
+    |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Text**|**Search by Zip Code**|
-    |**ID**|`@+id/ZipCodeSearchLabel`|
+    |**text**|**Search by Zip Code**|
+    |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
-    |**textColor**|`@android:color/white`|
+    |**TextColor**|`@android:color/white`|
     |**textStyle**|`bold`|
 
     > [!TIP]
     > Beachten Sie, dass viele Eigenschaften nicht über eine Dropdownliste mit Werten verfügen, die Sie auswählen können.  Es kann schwierig sein, zu raten, welcher Zeichenfolgenwert für eine bestimmte Eigenschaft verwendet werden soll. Vorschläge können Sie möglicherweise erhalten, indem Sie auf der Seite der Klasse [R.attr](https://developer.android.com/reference/android/R.attr.html) nach dem Namen einer Eigenschaft suchen.
     >
-    >  Eine schnelle Websuche führt Sie außerdem meist zu einer Seite auf [http://stackoverflow.com/](https://stackoverflow.com/), wo Sie sich mit anderen austauschen können, die bereits die gleiche Eigenschaft verwendet haben.
+    >  Eine schnelle Websuche führt außerdem häufig zu einer Seite, auf [http://stackoverflow.com/](https://stackoverflow.com/) der andere die gleiche Eigenschaft verwendet haben.
 
      Wenn Sie zur Ansicht **Quelle** wechseln, sollten Sie den folgenden Code für dieses Element als Referenz sehen:
 
@@ -279,10 +279,10 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 9. Legen Sie im **Eigenschaftsfenster** diese Eigenschaften fest:
 
-    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
+    |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Text**|**Zip Code**|
-    |**ID**|`@+id/ZipCodeLabel`|
+    |**text**|**PLZ**|
+    |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -301,9 +301,9 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 10. Ziehen Sie aus der **Toolbox** ein **Number**-Steuerelement auf **RelativeLayout**, und positionieren Sie es unter der Beschriftung **Zip Code**. Legen Sie dann die folgenden Eigenschaften fest:
 
-    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
+    |Eigenschaft|Wert|
     |--------------|-----------|
-    |**ID**|`@+id/zipCodeEntry`|
+    |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,10 +324,10 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 11. Ziehen Sie aus der **Toolbox** eine **Schaltfläche** auf das Steuerelement **RelativeLayout**, und positionieren Sie sie rechts neben dem Steuerelement „zipCodeEntry“. Legen Sie dann diese Eigenschaften fest:
 
-    |Die Eigenschaften-|{2&gt;Wert&lt;2}|
+    |Eigenschaft|Wert|
     |--------------|-----------|
-    |**ID**|`@+id/weatherBtn`|
-    |**Text**|**Get Weather**|
+    |**id**|`@+id/weatherBtn`|
+    |**text**|**Get Weather**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -450,7 +450,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 13. Speichern Sie die Datei, und wechseln Sie zur Ansicht **Design**. Die Benutzeroberfläche sollte folgendermaßen aussehen:
 
-     ![UI für Android-App](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Benutzeroberfläche für Android-App](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. Öffnen Sie **MainActivity.cs**, und löschen Sie die Zeilen in der *OnCreate*-Methode, die auf die zuvor entfernte Standardschaltfläche verweisen. Wenn Sie fertig sind, sollte der Code folgendermaßen aussehen:
 
@@ -525,7 +525,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 > [!TIP]
 > Den vollständigen Quellcode für dieses Projekt finden Sie im [Repository „mobile-samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="Windows"></a> Entwickeln der Benutzeroberfläche für Windows Phone
+## <a name="design-ui-for-windows-phone"></a><a name="Windows"></a> Entwerfen der Benutzeroberfläche für Windows Phone
  Wir entwickeln nun die Benutzeroberfläche für Windows Phone, verbinden sie mit Ihrem freigegebenen Code und führen dann die App aus.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Entwickeln des Erscheinungsbilds und Verhaltens der App
@@ -579,7 +579,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
  Die Benutzeroberfläche sollte in der Entwurfsansicht folgendermaßen aussehen:
 
- ![Windows Phone App-Benutzeroberfläche](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Windows Phone-App-Benutzeroberfläche](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>Verwenden des freigegebenen Codes
 
@@ -626,12 +626,12 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 3. Geben Sie im Windows Phone-Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld ein (zum Beispiel: 60601), und drücken Sie **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
 
-     ![Windows-Version der laufenden app](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![Windows-Version der ausgeführten App](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > Den vollständigen Quellcode für dieses Projekt finden Sie im [Repository „mobile-samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="next"></a> Nächste Schritte
+## <a name="next-steps"></a><a name="next"></a> Nächste Schritte
  **Hinzufügen einer Benutzeroberfläche für iOS zum Projekt**
 
  Erweitern Sie dieses Beispiel, indem Sie eine native Benutzeroberfläche für iOS hinzufügen. Hierzu müssen Sie über Ihr lokales Netzwerk eine Verbindung zu einem Mac herstellen, auf dem Xcode und Xamarin installiert sind. Anschließend können Sie den iOS-Designer direkt in Visual Studio verwenden. Weitere Informationen finden Sie im [Repository „mobile-samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -642,5 +642,5 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
  Freigegebener Code in einer PCL ist plattformneutral, da die PCL einmal kompiliert und in alle plattformspezifischen App-Pakete aufgenommen wird. Wenn Sie freigegebenen Code schreiben möchten, der eine bedingte Kompilierung verwendet, um plattformspezifischen Code zu isolieren, können Sie ein *freigegebenes* Projekt verwenden. Weitere Informationen finden Sie unter [Code Sharing Options (Codefreigabeoptionen)](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
-## <a name="see-also"></a>Siehe auch
- [Xamarin-Entwickler Website](/xamarin/) [Windows dev Center](https://dev.windows.com/en-us) [SWIFT C# und kurz Referenz Poster](https://aka.ms/scposter)
+## <a name="see-also"></a>Weitere Informationen
+ [Xamarin-Entwickler Website](/xamarin/) [Windows dev Center](https://dev.windows.com/en-us) [SWIFT und c# kurz Referenz Poster](https://aka.ms/scposter)

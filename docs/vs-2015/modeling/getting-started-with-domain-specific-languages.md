@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543194"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
@@ -94,7 +94,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
 - **Dslpackage-Projekt** Dieses Projekt enthält Code, mit dem Instanzen der DSL in geöffnet und bearbeitet werden können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Ausführen der DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Ausführen der DSL
  Sie können die DSL-Lösung ausführen, sobald Sie Sie erstellt haben. Später können Sie die DSL-Definition schrittweise ändern, indem Sie die Lösung nach jeder Änderung erneut ausführen.
 
 #### <a name="to-experiment-with-the-dsl"></a>So experimentieren Sie mit der DSL
@@ -383,7 +383,7 @@ In diesem Thema werden die grundlegenden Konzepte zum Definieren und Verwenden e
 
  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Alte experimentelle DSLs entfernen
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Alte experimentelle DSLs entfernen
  Wenn Sie experimentelle DSLs erstellt haben, die Sie nicht mehr benötigen, können Sie Sie von Ihrem Computer entfernen, indem Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz zurücksetzen.
 
  Hierdurch werden alle experimentellen DSLs und anderen experimentellen Erweiterungen von Ihrem Computer entfernt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Dabei handelt es sich um Erweiterungen, die im Debugmodus ausgeführt wurden.

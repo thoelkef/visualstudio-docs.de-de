@@ -12,10 +12,10 @@ caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944265"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Anwendung der isolierten Shell
@@ -31,10 +31,10 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
   Der gesamte Beispielcode in diesem Dokument stammt aus dem [shellbereitstellungsbeispiel](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7), das Sie aus der Code Galerie auf der MSDN-Website herunterladen können. Das Beispiel zeigt die Ergebnisse der Ausführung der einzelnen Schritte.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
  Um die in diesem Thema beschriebenen Verfahren auszuführen, müssen die folgenden Tools auf dem Computer installiert sein.  
   
-- Visual Studio SDK  
+- Das Visual Studio SDK  
   
 - Die [Windows Installer XML-Toolsetversion](https://documentation.help/WiX-Toolset/index.html/) 3,6  
   
@@ -47,7 +47,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
 1. Bearbeiten Sie jede vsixmanifest-Datei in der Projekt Mappe.  
   
-     Fügen Sie im `Identifier`-Element ein `InstalledByMSI`-Element und ein `SystemComponent`-Element hinzu, und legen Sie dann deren Werte auf `true`fest.  
+     `Identifier`Fügen Sie im-Element ein `InstalledByMSI` -Element und ein- `SystemComponent` Element hinzu, und legen Sie dann deren Werte auf fest `true` .  
   
      Diese Elemente verhindern, dass der VSIX-Installer versucht, die Komponenten zu installieren, und der Benutzer wird daran gehindert, Sie mithilfe des Dialog Felds **Erweiterungen und Updates** zu deinstallieren.  
   
@@ -61,7 +61,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
  Erstellen Sie dann Registrierungseinträge, sowohl in der reg-Datei für die Projekt Mappe als auch in der Datei "ApplicationRegistry. wxs".  
   
 ### <a name="detection-blocks"></a>Erkennungs Blöcke  
- Ein Erkennungs Block besteht aus einem `Property`-Element, das eine erforderliche Voraussetzung angibt, und ein `Condition` Element, das eine Meldung angibt, die zurückgegeben werden soll, wenn die Voraussetzung auf dem Computer nicht vorhanden ist. Beispielsweise ist für Ihre Shellanwendung die weitervertreibbare Microsoft Visual Studio Shell erforderlich, und der Erkennungs Block ähnelt dem folgenden Markup.  
+ Ein Erkennungs Block besteht aus einem `Property` -Element, das eine erforderliche Voraussetzung angibt, und einem- `Condition` Element, das eine zurück zugebende Meldung angibt, wenn die erforderliche Komponente nicht auf dem Computer vorhanden ist. Beispielsweise ist für Ihre Shellanwendung die weitervertreibbare Microsoft Visual Studio Shell erforderlich, und der Erkennungs Block ähnelt dem folgenden Markup.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -85,7 +85,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>So legen Sie das Layout von Shellkomponenten fest  
   
-1. Erstellen Sie eine Hierarchie von `Directory` Elementen, die alle Verzeichnisse darstellt, die im Dateisystem auf dem Zielcomputer erstellt werden sollen, wie im folgenden Beispiel gezeigt.  
+1. Erstellen Sie eine Hierarchie von Elementen, die `Directory` alle Verzeichnisse darstellt, die im Dateisystem auf dem Zielcomputer erstellt werden sollen, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,7 +103,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
     </Directory>  
     ```  
   
-     Auf diese Verzeichnisse wird `Id` verwiesen, wenn Dateien angegeben werden, die installiert werden müssen.  
+     Auf diese Verzeichnisse wird von verwiesen, `Id` Wenn Dateien angegeben werden, die installiert werden müssen.  
   
 2. Identifizieren Sie die Komponenten, die für die Shell und die Shellanwendung erforderlich sind, wie im folgenden Beispiel gezeigt.  
   
@@ -123,7 +123,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
     </Feature>  
     ```  
   
-    1. Das `ComponentRef`-Element verweist auf eine andere wxs-Datei, mit der die von der aktuellen Komponente benötigten Dateien identifiziert werden. Beispielsweise hat generalprofile die folgende Definition in helpabout. wxs.  
+    1. Das- `ComponentRef` Element verweist auf eine andere wxs-Datei, mit der die von der aktuellen Komponente benötigten Dateien identifiziert werden. Beispielsweise hat generalprofile die folgende Definition in helpabout. wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
         </Fragment>  
         ```  
   
-         Das `DirectoryRef` Element gibt an, wo sich diese Dateien auf dem Computer des Benutzers befinden. Das `Directory`-Element gibt an, dass es in einem Unterverzeichnis installiert wird, und jedes `File` Element stellt eine Datei dar, die erstellt wurde oder als Teil der Projekt Mappe vorhanden ist, und gibt an, wo diese Datei beim Erstellen der MSI-Datei gefunden werden kann.  
+         Das- `DirectoryRef` Element gibt an, wo sich diese Dateien auf dem Computer des Benutzers befinden. Das `Directory` -Element gibt an, dass es in einem Unterverzeichnis installiert wird, und jedes `File` -Element stellt eine Datei dar, die erstellt wurde oder als Teil der Projekt Mappe vorhanden ist, und gibt an, wo diese Datei beim Erstellen der MSI-Datei gefunden werden kann.  
   
-    2. Das `ComponentGroupRef`-Element verweist auf eine Gruppe anderer Komponenten (oder Komponenten und Komponenten Gruppen). Beispielsweise wird `ComponentGroupRef` unter ApplicationGroup in "Application. wxs" wie folgt definiert.  
+    2. Das- `ComponentGroupRef` Element verweist auf eine Gruppe anderer Komponenten (oder Komponenten und Komponenten Gruppen). Beispiels `ComponentGroupRef` Weise wird unter "ApplicationGroup" in "Application. wxs" wie folgt definiert.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -178,10 +178,10 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
     |*ProjectName*. reg|Applicationregisty. wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE-Objekt"|\<RegistryKey ID = ' dteclsidregkey ' root = ' HKCR ' Key = ' $ (var. Dteclsidregkey) ' Action = ' "|" kreateandremuveonuninstall "><br /><br /> \<REGISTRYVALUE Type = ' String ' Name = ' @ ' value = ' $ (var. ShortProductName) DTE-Objekt '/><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. Dteclsidregkey) \LocalServer32 ' Action = ' kreateandremuveonuninstall ' ><br /><br /> \<REGISTRYVALUE Type = ' String ' Name = ' @ ' value = ' [INSTALLDIR] $ (var). ShortProductName). exe '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE-Objekt"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @ = "$RootFolder $\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
-     In diesem Beispiel wird var. dteclsidregkey in den Registrierungsschlüssel in der obersten Zeile aufgelöst. "Var. ShortProductName" wird in "`PhotoStudio`" aufgelöst.  
+     In diesem Beispiel wird var. dteclsidregkey in den Registrierungsschlüssel in der obersten Zeile aufgelöst. Var. ShortProductName wird in aufgelöst `PhotoStudio` .  
   
 ## <a name="creating-a-setup-bootstrapper"></a>Erstellen eines Setup-Boots Trappers  
  Die abgeschlossene MSI-Installation wird nur dann installiert, wenn alle erforderlichen Komponenten zuerst installiert werden. Um die Benutzerfreundlichkeit zu vereinfachen, erstellen Sie ein Setup Programm, das alle Voraussetzungen sammelt und installiert, bevor die Anwendung installiert wird. Führen Sie die folgenden Aktionen aus, um eine erfolgreiche Installation zu gewährleisten:  
@@ -197,7 +197,7 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
 - Führen Sie die MSI aus.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Erzwingen der Installation durch den Administrator  
- Dieses Verfahren ist erforderlich, damit das Setup Programm auf erforderliche Verzeichnisse wie z. b. "\Programme\\" zugreifen kann.  
+ Dieses Verfahren ist erforderlich, damit das Setup Programm auf erforderliche Verzeichnisse wie "\Program Files" zugreifen kann \\ .  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>So erzwingen Sie die Installation durch den Administrator  
   
@@ -215,9 +215,9 @@ Zum Installieren einer Shell-App müssen Sie die folgenden Schritte ausführen.
   
  Hklm\software\microsoft\appenv\14.0\shellfolder gibt den Speicherort an, an dem die Visual Studio-Shell installiert wurde, und Sie können dort nach Dateien suchen.  
   
- Ein Beispiel zum Erkennen einer Shellinstallation finden Sie in der `GetProductDirFromReg`-Funktion von Utilities. cpp im Beispiel zur shellbereitstellung.  
+ Ein Beispiel zum Erkennen einer Shellinstallation finden Sie im Beispiel zur `GetProductDirFromReg` Shell-Bereitstellung unter der Funktion von Utilities. cpp.  
   
- Wenn mindestens eine der Visual Studio-Shells, die das Paket erfordert, nicht auf dem Computer installiert ist, müssen Sie Sie der Liste der zu installierenden Komponenten hinzufügen. Ein Beispiel finden Sie in der `ComponentsPage::OnInitDialog`-Funktion von "componentspage. cpp" im shellbereitstellungsbeispiel.  
+ Wenn mindestens eine der Visual Studio-Shells, die das Paket erfordert, nicht auf dem Computer installiert ist, müssen Sie Sie der Liste der zu installierenden Komponenten hinzufügen. Ein Beispiel finden Sie unter der `ComponentsPage::OnInitDialog` Funktion von "componentspage. cpp" im shellbereitstellungsbeispiel.  
   
 ### <a name="running-the-shell-installers"></a>Ausführen der Shell-Installationsprogramme  
  Um die Shell-Installationsprogramme auszuführen, müssen Sie die setzungen von Visual Studio Shell mithilfe der korrekten Befehlszeilenargumente abrufen. Sie müssen mindestens die Befehlszeilenargumente **/norestart/q** verwenden und auf den Rückgabecode achten, um zu bestimmen, was als Nächstes geschehen soll. Im folgenden Beispiel wird die verteilbare Shell (isoliert) ausgeführt.  
@@ -235,9 +235,9 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ```  
   
 ### <a name="deciphering-return-values"></a>Entschlüsseln von Rückgabe Werten  
- Bei einigen Betriebssystemen ist für die Installation von Visual Studio Shell (isoliert) ein Neustart erforderlich. Diese Bedingung kann durch den Rückgabecode des Aufruf`ExecCmd`bestimmt werden.  
+ Bei einigen Betriebssystemen ist für die Installation von Visual Studio Shell (isoliert) ein Neustart erforderlich. Diese Bedingung kann durch den Rückgabecode des Aufrufes bestimmt werden `ExecCmd` .  
   
-|Rückgabewert|Beschreibung|  
+|Rückgabewert|BESCHREIBUNG|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Die Installation wurde abgeschlossen. Sie können nun Ihre Anwendung installieren.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Die Installation wurde abgeschlossen. Nachdem der Computer neu gestartet wurde, können Sie die Anwendung installieren.|  
@@ -351,7 +351,7 @@ CString GetSetupPath()
 ```  
   
 ### <a name="running-the-application-msi"></a>Ausführen der MSI für die Anwendung  
- Nachdem der Visual Studio Shell-Installer ERROR_SUCCESS zurückgegeben hat, können Sie die MSI-Datei für Ihre Anwendung ausführen. Da das Setup Programm die Benutzeroberfläche bereitstellt, starten Sie die MSI im stillen Modus ( **/q**) und mit der Protokollierung ( **/L**), wie im folgenden Beispiel gezeigt.  
+ Nachdem der Visual Studio Shell-Installer ERROR_SUCCESS zurückgegeben hat, können Sie die MSI-Datei für Ihre Anwendung ausführen. Da das Setup Programm die Benutzeroberfläche bereitstellt, starten Sie die MSI im stillen Modus (**/q**) und mit der Protokollierung (**/L**), wie im folgenden Beispiel gezeigt.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

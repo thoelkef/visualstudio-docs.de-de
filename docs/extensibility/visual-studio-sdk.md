@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173564"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -85,7 +85,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
 - [Editor-und Sprachdienst Erweiterungen](../extensibility/editor-and-language-service-extensions.md)
 - [Erweitern von Projekten](../extensibility/extending-projects.md)
 - [Erweitern von Benutzereinstellungen und-Optionen](../extensibility/extending-user-settings-and-options.md)
-- [Erstellen von benutzerdefinierten Projekt-und Element Vorlagen](../extensibility/creating-custom-project-and-item-templates.md)
+- [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](../extensibility/creating-custom-project-and-item-templates.md)
 - [Erweitern von Eigenschaften und des Eigenschaften Fensters](../extensibility/extending-properties-and-the-property-window.md)
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +14,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713980"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-Definiert die Metadaten, die über einen Portlieferanten abgerufen werden können.
+Definiert die Metadaten, die über einen Port Lieferanten abgerufen werden können.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Felder
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-Wenn diese Option aktiviert ist, wird das Warnsymbol in der Benutzeroberfläche angezeigt.
+Wenn diese Option ausgewählt ist, wird das Warnsymbol in der Benutzeroberfläche angezeigt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Enumeration wird von der [GetDescription-Methode](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) zurückgegeben.
+Diese Enumeration wird von der [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
-Kopfzeile: Msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

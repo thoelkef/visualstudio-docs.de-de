@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
+title: Intellisenabhostflags | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710274"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
@@ -40,14 +40,14 @@ enum IntellisenseHostFlags
 
 |Member|BESCHREIBUNG|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|Der Kontextpuffer ist schreibgeschützt.|
-|`IHF_NOSEPARATESUBJECT`|Kein Betrefftext. Kontextpuffer enthält IntelliSense-Target `!IHF_READONLYCONTEXT`(implies ).|
-|`IHF_SINGLELINESUBJECT`|Betrefftext ist nicht mehrzeiligenfähig.|
-|`IHF_FORCECOMMITTOCONTEXT`|Identisch mit `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|Die Bearbeitung (im Betreff oder Kontext) sollte im Übertypmodus erfolgen.|
+|`IHF_READONLYCONTEXT`|Der Kontext Puffer ist schreibgeschützt.|
+|`IHF_NOSEPARATESUBJECT`|Kein Betrefftext. Der Kontext Puffer enthält IntelliSense-Target (impliziert `!IHF_READONLYCONTEXT` ).|
+|`IHF_SINGLELINESUBJECT`|Der Betrefftext ist nicht mehrzeilige Werte.|
+|`IHF_FORCECOMMITTOCONTEXT`|Wie in `CanCommitIntoReadOnlyBuffer`.|
+|`IHF_OVERTYPE`|Die Bearbeitung (im Betreff oder Kontext) sollte im über Schreib-Modus erfolgen.|
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- SingleFileeditor.idl
+## <a name="requirements"></a>Anforderungen
+ Singlefileeditor. idl
 
 ## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

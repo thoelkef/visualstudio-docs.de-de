@@ -1,5 +1,5 @@
 ---
-title: Wenn ein Haltepunkt bindet oder ungebunden wird | Microsoft Docs
+title: Wenn ein Breakpoint gebunden wird oder ungebunden wird | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712335"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Wenn ein Haltepunkt bindet oder ungebunden wird
-Wenn ein Haltepunkt zum Zeitpunkt eines Aufrufs an die [IDebugPendingBreakpoint2::CanBind-Methode](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) nicht gebunden werden kann, unterscheiden sich die Bindungszeit und die Erstellungszeit des Haltepunkts.
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Wenn ein Breakpoint gebunden wird oder die Bindung aufgehoben wird
+Wenn ein Breakpoint nicht gebunden werden kann, wenn ein Aufruf an die [IDebugPendingBreakpoint2:: canbind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) -Methode erfolgt, unterscheiden sich die Bindungs Zeit und die Erstellungszeit des Breakpoints.
 
-## <a name="methods-called"></a>Methoden, die als
- Der Sitzungsdebug-Manager (SDM) ruft die folgenden Methoden auf:
+## <a name="methods-called"></a>Aufgerufene Methoden
+ Der Sitzungs-Debug-Manager (SDM) Ruft die folgenden Methoden auf:
 
-1. [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Die DE gibt einen [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)zurück.
+1. [IDebugEngine2:: kreateperdingbreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). DE gibt ein [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)-Wert zurück.
 
-2. [IDebugPendingBreakpoint2::Aktivieren](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
+2. [IDebugPendingBreakpoint2:: enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
 
-3. [IDebugPendingBreakpoint2::Virtualisieren](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
+3. [IDebugPendingBreakpoint2:: Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
 
-4. Die [IDebugPendingBreakpoint2::Bind-Methode](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) und gibt S_OK zurück. Die DE sendet ein [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) oder [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
+4. Die [IDebugPendingBreakpoint2:: Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) -Methode und gibt S_OK zurück. Der de sendet eine [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) oder [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
 
-5. [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) und [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints-Methoden](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) zum Überprüfen und Abrufen der gebundenen Haltepunkte.
+5. [IDebugBreakpointBoundEvent2:: getpdingbreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) -und [IDebugBreakpointBoundEvent2:: enumboundbreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) -Methoden, um zu überprüfen und die gebundenen Haltepunkte zu erhalten.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+- [Aufrufen von Debugger-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545079"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
@@ -132,17 +132,17 @@ Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer-In
 
  Der Text (ohne Kopf-und Fußzeile) des Themas enthält Seiten Verknüpfungen, einen Hinweis Bereich, einen Reduzierungs Bereich, einen Code Ausschnitt und einen Abschnitt mit sprach spezifischem Text.  Informationen zu den Bereichen des dargestellten Themas finden Sie im Abschnitt Branding.
 
-1. Hinzufügen eines Thementitel Tags:`<div class="title">Contoso Topic 4</div>`
+1. Hinzufügen eines Thementitel Tags:  `<div class="title">Contoso Topic 4</div>`
 
-2. Hinweis Abschnitt hinzufügen:`<div class="alert"> add your table tag and text </div>`
+2. Hinweis Abschnitt hinzufügen: `<div class="alert"> add your table tag and text </div>`
 
-3. Fügen Sie einen redusible-Bereich hinzu:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Fügen Sie einen redusible-Bereich hinzu:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Fügen Sie einen Code Ausschnitt hinzu:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Fügen Sie einen Code Ausschnitt hinzu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Code sprachspezifischer Text hinzufügen: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` beachten Sie, dass Sie mit devlangnu = andere Sprachen eingeben können. Devlangnu = "Fortran" zeigt z. b. Fortran an, wenn der Code Ausschnitt displaylanguage = Fortran
+5. Code sprachspezifischer Text hinzufügen:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` beachten Sie, dass Sie mit devlangnu = andere Sprachen eingeben können. Devlangnu = "Fortran" zeigt z. b. Fortran an, wenn der Code Ausschnitt displaylanguage = Fortran
 
-6. Seiten Verknüpfungen hinzufügen:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Seiten Verknüpfungen hinzufügen: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Hinweis: bei einer nicht unterstützten neuen "Anzeige Sprache" (z. b. F #, COBOL, Fortran) ist die Farbgebung von Code im Code Ausschnitt Monochrom.
@@ -350,7 +350,7 @@ some F# code
 
   In der folgenden Tabelle ist jede Zeichenfolge, die zwischen eckigen Klammern steht, ein Platzhalter, der durch einen anerkannten Wert ersetzt werden muss. In \<meta name="Microsoft.Help.Locale" content="[language code]" /> muss "[Sprachcode]" z. b. durch einen Wert wie "en-US" ersetzt werden.
 
-|Property (HTML-Darstellung)|Beschreibung|
+|Property (HTML-Darstellung)|BESCHREIBUNG|
 |--------------------------------------|-----------------|
 |\< meta name="Microsoft.Help.Locale" content="[language-code]" />|Legt ein Gebiets Schema für dieses Thema fest. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden, und es muss über alle anderen Microsoft-Hilfe Tags eingefügt werden. Wenn dieses Tag nicht verwendet wird, wird der Textkörper des Themas mithilfe der Wörter Trennung indiziert, die dem Gebiets Schema des Produkts zugeordnet ist, sofern angegeben. Andernfalls wird die Wörter Trennung "en-US" verwendet. Dieses Tag entspricht der ISOC RFC 4646. Um sicherzustellen, dass die Microsoft-Hilfe ordnungsgemäß funktioniert, verwenden Sie diese Eigenschaft anstelle des allgemeinen sprach Attributs.|
 |\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Legt ein Gebiets Schema für dieses Thema fest, wenn auch andere Gebiets Schemas verwendet werden. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden. Verwenden Sie dieses Tag, wenn der Katalog Inhalte in mehr als einer Sprache enthält. Mehrere Themen in einem Katalog können dieselbe ID aufweisen, aber jeder muss eine eindeutige topiclocale angeben. Das Thema, das ein topiclocale angibt, das mit dem Gebiets Schema des Katalogs übereinstimmt, ist das Thema, das im Inhaltsverzeichnis angezeigt wird. Allerdings werden alle Sprachversionen des Themas in den Suchergebnissen angezeigt.|
@@ -540,7 +540,7 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
 |Festlegen und erhalten von Cookie-Werten|GetCookie, setcookie||
 |Vererbte Member|changemembership-Bezeichnung|Vererbten Member erweitern/reduzieren|
 |Wenn selfbranding = false|onLoad|Lesen Sie die Abfrage Zeichenfolge, um zu prüfen, ob Sie eine Druck Anforderung ist.  Legen Sie alle CodeSnippets fest, um die Benutzer bevorzugte Registerkarte zu fokussieren.  Wenn es sich um eine Druck Anforderung handelt, legen Sie isprinterfriendly auf true fest. Überprüfen Sie den Modus für hohe Kontraste.|
-|Code Ausschnitt|addspecifictextlanguagetagset||
+|Beispiele|addspecifictextlanguagetagset||
 ||getindexfromdevlang||
 ||Changetab||
 ||setcodesnippetlang||
@@ -569,25 +569,25 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
 
  Das Branding-Paket enthält eine Reihe von htm-Dateien, die Szenarien für die Kommunikation von Schlüsselinformationen zur Unterstützung von Inhalts Benutzern unterstützen, z. b. eine Startseite, die einen Abschnitt enthält, in dem beschrieben wird, welche Inhalts Sätze installiert werden, und Seiten, die dem Benutzer mitteilen, wenn Themen in der lokalen Diese HTM-Dateien können pro Produkt geändert werden.  ISO-Shell-Anbieter können das standardmäßige brandingpaket übernehmen und das Verhalten und den Inhalt dieser Seiten ändern, um Ihre Anforderungen zu erfassen.  Diese Dateien verweisen auf das jeweilige brandingpaket, damit die brandingtags den entsprechenden Inhalt aus der branding.xml Datei erhalten.
 
-|**File**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
+|**Datei**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
 |-|-|-|
 |homepage.htm|Dies ist eine Seite, auf der der aktuell installierte Inhalt und jede andere Meldung angezeigt wird, die dem Benutzer für seinen Inhalt zur Verfügung steht.  Diese Datei enthält das zusätzliche Meta-Daten Attribut "Microsoft.Help.ID" Content = "-1", mit dem dieser Inhalt am oberen Rand des lokalen Inhalts Inhaltsverzeichnis platziert wird.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, Tag\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, Tag\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Überschriften Abschnitt Branding.xml Tag \<HomePageInstalledBooks> , die von der Anwendung generierten Daten, \<HomePageNoBooksInstalled> Wenn keine Bücher installiert werden.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, Tag \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, Tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Überschriften Abschnitt Branding.xml Tag \<HomePageInstalledBooks> , die von der Anwendung generierten Daten,  \<HomePageNoBooksInstalled> Wenn keine Bücher installiert werden.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Überschriften Abschnitt Branding.xml-Tags \<HomePageHelpSettings> , Abschnitts Text \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Wenn ein Thema in der lokalen Gruppe vorhanden ist, kann jedoch aus irgendeinem Grund nicht angezeigt werden (beschädigter Inhalt).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, Tag\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, Tag\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, Tag \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, Tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Wenn ein Thema nicht im lokalen Inhalts Satz gefunden wird oder online verfügbar ist||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, Tag\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, Tag\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, Tag\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, Tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, Tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, Tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|Wenn kein lokaler Inhalt für das Produkt installiert ist.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, Tag\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, Tag\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, Tag\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, Tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, Tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, Tag \<ContentNotInstalledText>|
 
  **CSS-Dateien**
 
@@ -603,7 +603,7 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
 
   Visual Studio-Inhalt zeigt ein Visual Studio-Logo und andere Grafiken an.  Die komplette Liste der Grafikdateien im Visual Studio Help Viewer-Branding-Paket ist unten dargestellt.
 
-|**File**|**Verwenden Sie**|**Beispiele**|
+|**Datei**|**Verwenden Sie**|**Beispiele**|
 |-|-|-|
 |clear.gif|Wird zum Rendering des redusible-Bereichs verwendet.||
 |footer_slice.gif|Footer-Präsentation||
@@ -700,7 +700,7 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
  Wenn Sie die oben beschriebenen Schritte verwenden und erweitern, kann VSPs ihre Inhalts Sätze für den Visual Studio Help Viewer bereitstellen.
 
 ### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Hinzufügen von Hilfe zur Visual Studio Shell (integriert und isoliert)
- **Einführung**
+ **Introduction (Einführung)**
 
  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie Hilfe Inhalte in eine Visual Studio Shell-Anwendung integrieren und dann bereitstellen.
 
@@ -747,9 +747,9 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
 
   So erstellen Sie eine isolierte Shellerweiterung:
 
-1. Wählen Sie in Visual Studio **unter Datei**die Option **Neues Projekt**aus, wählen Sie unter **andere Projekttypen** die Option **Erweiterbarkeit**aus, und wählen Sie dann die Option **Visual Studio Shell isoliert**aus. Benennen Sie das Projekt `ContosoHelpShell` ), um ein Erweiterbarkeits Projekt zu erstellen, das auf der Vorlage für isolierte Shell von Visual Studio basiert.
+1. Wählen Sie in Visual Studio **unter Datei**die Option **Neues Projekt**aus, wählen Sie unter **andere Projekttypen** die Option **Erweiterbarkeit**aus, und wählen Sie dann die Option  **Visual Studio Shell isoliert**aus. Benennen Sie das Projekt `ContosoHelpShell` ), um ein Erweiterbarkeits Projekt zu erstellen, das auf der Vorlage für isolierte Shell von Visual Studio basiert.
 
-2. Öffnen Sie in Projektmappen-Explorer im Projekt contosohelpshellui im Ordner Ressourcen Dateien die Datei "ApplicationCommands. vsct". Stellen Sie sicher, dass diese Zeile auskommentiert ist (suchen Sie nach "No_Help"):`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. Öffnen Sie in Projektmappen-Explorer im Projekt contosohelpshellui im Ordner Ressourcen Dateien die Datei "ApplicationCommands. vsct". Stellen Sie sicher, dass diese Zeile auskommentiert ist (suchen Sie nach "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. Drücken Sie F5, um das **Debuggen**zu kompilieren und auszuführen. Wählen Sie in der experimentellen Instanz der isolierten Shell-IDE das Menü **Hilfe** aus. Stellen Sie sicher, dass die Befehle Hilfe **anzeigen**, **Hilfe Inhalt hinzufügen und entfernen**und **Hilfe Einstellung festlegen** angezeigt werden.
 
@@ -814,7 +814,7 @@ Feature: **Startseiten-Steuer** Element Verwendung: Text, der die Anzeige des In
 
      C:programdatamikrosofthelplibrary2catalogsvisualstudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Integrierte Shell:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Integrierte Shell:
 
      C:programdatamikrosofthelplibrary2catalogsvisualstudio12de-US
 

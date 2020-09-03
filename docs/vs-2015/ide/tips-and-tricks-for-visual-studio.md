@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542986"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Tipps und Tricks für Visual Studio
@@ -36,9 +36,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 - [Debuggen](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
-- [Anwendungslebenszyklusverwaltung](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Application Lifecycle Management](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a>Fensterverwaltung
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> Fensterverwaltung
 
 |Befehl|Verknüpfung|
 |-|-|
@@ -59,7 +59,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Starten einer neuen Instanz|WINDOWS-TASTE+UMSCHALT+N|
 |Wechseln zwischen Fenstern|WINDOWS-TASTE+N|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Visual Studio-Suche
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Visual Studio-Suche
 
 |Befehl|Verknüpfung|
 |-|-|
@@ -77,14 +77,14 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Schnellsuche nach nächstem Ergebnis|EINGABETASTE|
 |Schnellsuche nach vorherigem Ergebnis|UMSCHALT+EINGABE|
 |Schnellsuche zur Erweiterung des Dropdowns|ALT+NACH-UNTEN|
-|Schließen der Suche|ESC|
+|Schließen der Suche|Esc|
 |Schnellersetzung|STRG+H|
 |Schnellersetzung für "Nächstes ersetzen"|ALT+R|
 |Schnellersetzung für "Alle ersetzen"|Alt+A|
 |Suchen in Dateien|STRG+UMSCHALT+F|
 |In Dateien ersetzen|STRG+UMSCHALT+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Code-Editor
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Code-Editor
 
 |Befehl|Verknüpfung|
 |-|-|
@@ -103,13 +103,13 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Blockauswahl|ALT-TASTE gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN|
 |Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB|
 |Peek-Definition|Alt+F12|
-|Schließen des Peek-Definitionsfensters|ESC|
+|Schließen des Peek-Definitionsfensters|Esc|
 |Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1|
 |Zwischen mehreren Fenstern der "Peek-Definition" navigieren|STRG+ALT+- und STRG+ALT+=|
 |Navigieren zwischen mehreren Peek-Ergebnissen|F8 und UMSCHALT+F8|
 |Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Symbolleisten
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Symbolleisten
 
 |Befehl|Verknüpfung|
 |-|-|
@@ -137,7 +137,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Löschen des Direktfenster-Puffers|>cls|
 |Direktfenster-Druckwert|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Application Lifecycle Management
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Application Lifecycle Management
 
 Siehe dazu [Tastenkombinationen: Visual Studio Online, TFS-Webportal und Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

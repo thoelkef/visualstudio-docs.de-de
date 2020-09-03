@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5830bb71f66b27acf2ba63133a130c2ea24a9c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670766"
 ---
 # <a name="how-to-search-for-topics"></a>Gewusst wie: Suchen nach Themen
@@ -42,5 +42,5 @@ Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort en
 
 4. Um sich ein Thema anzeigen zu lassen, klicken Sie in der Ergebnisliste auf den Titel.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Tipps für die voll Text Suche](../ide/full-text-search-tips.md) [logische Operatoren in Such Ausdrücken](../ide/logical-operators-in-search-expressions.md) [Erweiterte Such Operatoren in Such Ausdrücken](../ide/advanced-search-operators-in-search-expressions.md) Gewusst [wie: Anpassen von Suchergebnissen](../ide/how-to-customize-search-results.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e6d90e882e40bff84898efdd20579abbfd4d309
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664148"
 ---
 # <a name="parameter-nodes"></a>Parameterknoten
@@ -23,7 +23,7 @@ Im Shader-Designer stellen die Parameterknoten Eingaben für den Shader dar, die
 
 ## <a name="parameter-node-reference"></a>Parameterknotenverweis
 
-|Knoten|Details|Eigenschaften|
+|Node|Details|Eigenschaften|
 |----------|-------------|----------------|
 |**World-Position (Kamera)**|Die Position der Kamera im Raum.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Die Kameraposition.|Keiner|
 |**Lichtrichtung**|Der Vektor, der die Richtung von Licht aus einer Lichtquelle im Tangentialraum definiert.<br /><br /> Damit können Sie Licht- und Glanzlichteinwirkungen im Tangentialraum berechnen.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Der Vektor vom aktuellen Pixel bis zu einer Lichtquelle.|Keiner|

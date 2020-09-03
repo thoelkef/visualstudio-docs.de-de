@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542544"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
@@ -41,7 +41,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
 6. Erstellen Sie das Projekt.
 
-7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei bereitstellen `DslDefinition.dsl` . Sie finden die kompilierte Assembly in einem Ordner unter`Dsl\bin\*`
+7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei bereitstellen `DslDefinition.dsl` . Sie finden die kompilierte Assembly in einem Ordner unter `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 

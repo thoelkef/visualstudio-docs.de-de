@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545235"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -46,8 +46,8 @@ ms.locfileid: "85545235"
 
 ## <a name="example-of-a-violation"></a>Beispiel für eine Verletzung
 
-### <a name="description"></a>Beschreibung
- Eine Methode im folgenden Beispiel bearbeitet eine Ganzzahl, die gegen diese Regel verstößt. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]erfordert, dass die Option zum **Entfernen** ganz Zahl Überlauf deaktiviert wird, damit diese ausgelöst wird.
+### <a name="description"></a>BESCHREIBUNG
+ Eine Methode im folgenden Beispiel bearbeitet eine Ganzzahl, die gegen diese Regel verstößt. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] erfordert, dass die Option zum **Entfernen** ganz Zahl Überlauf deaktiviert wird, damit diese ausgelöst wird.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
@@ -85,7 +85,7 @@ End Sub
 
 ## <a name="fix-with-input-parameter-validation"></a>Behebung mit der Überprüfung von Eingabe Parametern
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem der Wert der Eingabe überprüft wird.
 
 ### <a name="code"></a>Code
@@ -94,7 +94,7 @@ End Sub
 
 ## <a name="fix-with-a-checked-block"></a>Korrektur mit einem aktivierten Block
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird der vorherige Verstoß behoben, indem der-Vorgang in einen aktivierten-Block umwickelt wird. Wenn der Vorgang einen Überlauf verursacht, wird eine ausgelöst <xref:System.OverflowException?displayProperty=fullName> .
 
  Beachten Sie, dass aktivierte Blöcke in nicht unterstützt werden [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .

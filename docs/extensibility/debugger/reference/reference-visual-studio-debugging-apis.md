@@ -1,5 +1,5 @@
 ---
-title: Referenz (Visual Studio Debugging-APIs) | Microsoft Docs
+title: Referenz (Visual Studio-debuggingapis) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,27 +13,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713641"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referenz (Visual Studio-Debugging-APIs)
 
-Die Visual Studio-Debugging-SDK-Referenzen beschreiben das grundlegende Modell für die Laufzeitarchitektur und -funktionalität des Debuggers und seiner Komponenten. Die Dokumentation macht so wenige Annahmen wie möglich über die komponenten und Schnittstellen, die sie beschreibt, abgesehen von dem Verhalten, das sie durch die Schnittstellen definiert.
+Die Visual Studio-Debug SDK-Verweise gliedern das grundlegende Modell für die Lauf Zeit Architektur und-Funktionalität des Debuggers und seiner Komponenten. In der Dokumentation werden so wenige Annahmen wie möglich zu den von Ihnen beschriebenen Komponenten und Schnittstellen unterscheiden, abgesehen vom Verhalten, das durch die Schnittstellen definiert wird.
 
-Das Ziel des Referenzabschnitts besteht darin, eine möglichst unterschiedliche Anzahl von Sprachen, Laufzeiten und Betriebssystemen zu unterstützen.
+Das Ziel des Referenz Abschnitts besteht darin, Unterstützung für eine Reihe von Sprachen, Laufzeiten und Betriebssystemen wie möglich bereitzustellen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
-Enthält Dokumentation für schnittstellen, enumeratoren und Strukturen der Visual Studio-Debugging-API.
+Enthält Dokumentation für die Schnittstellen, Enumeratoren und Strukturen der Debugging-API von Visual Studio.
 
 [Glossar](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 
-Stellt eine Liste der debuggingbezogenen Begriffe und deren Definitionen bereit.
+Stellt eine Liste der debugbezogenen Begriffe und ihrer Definitionen bereit.
 
 ## <a name="see-also"></a>Weitere Informationen
 

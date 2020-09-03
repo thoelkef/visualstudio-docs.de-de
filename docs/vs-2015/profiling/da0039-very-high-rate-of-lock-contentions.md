@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ae2b836549918fa1179e4e70d51d760efbe2c35
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544923"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Sehr hohes Maß an Sperrkonflikten.
@@ -30,7 +30,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0039: sehr hohes 
 |Regel-ID|DA0039|  
 |Kategorie|.NET Framework-Verwendung|  
 |Profilerstellungsmethoden|Sampling<br /><br /> Instrumentierung<br /><br /> .NET-Arbeitsspeicher|  
-|`Message`|Ein sehr hohes Maß an .NET-Sperrkonflikten wurde festgestellt. Untersuchen Sie die Ursache für diesen Sperrkonflikt durch Ausführen eines Nebenläufigkeitsprofils.|  
+|Meldung|Ein sehr hohes Maß an .NET-Sperrkonflikten wurde festgestellt. Untersuchen Sie die Ursache für diesen Sperrkonflikt durch Ausführen eines Nebenläufigkeitsprofils.|  
 |Regeltyp|Warnung|  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 25 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -50,7 +50,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0039: sehr hohes 
  Diese Regel wird ausgelöst, wenn die während der Profilerstellung ermittelten Werte auf ein sehr hohes Maß an Sperrkonflikten hindeuten. Durch Sperrkonflikte verzögert sich die Ausführung von Threads, von denen auf die Sperre gewartet wird. Es empfiehlt sich, selbst eine recht geringe Anzahl von Sperrkonflikten in Komponenten- oder Auslastungstests zu untersuchen, die auf weniger leistungsfähiger Hardware ausgeführt werden.  
   
 > [!NOTE]
-> Wenn das Maß an gemeldeten Sperrkonflikten in den Profilerstellungsdaten hoch, jedoch nicht übermäßig hoch ist, wird statt dieser Warnmeldung die Informationsmeldung [DA0038: Hohes Maß an Sperrkonflikten](../profiling/da0038-high-rate-of-lock-contentions.md) ausgelöst.  
+> Wenn die Rate der gemeldeten Sperr Konflikte in den Profil Erstellungs Daten signifikant ist, aber nicht übermäßig hoch ist, wird anstelle dieser Warnmeldung die Informations Meldung [DA0038: hohe Rate der Sperr](../profiling/da0038-high-rate-of-lock-contentions.md) Konflikte ausgelöst.  
   
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren.  Suchen Sie die Spalte **NET CLR-Sperren und Threads\Konfliktrate/s**. Überprüfen Sie, ob Sperrkonflikte in bestimmten Phasen der Programmausführung besonders häufig auftreten.  

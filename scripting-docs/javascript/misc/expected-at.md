@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814823"
 ---
 # <a name="expected-"></a>" \@ " Erwartet
@@ -33,6 +33,6 @@ Sie haben versucht, eine Variable zu erstellen, die mit der-Anweisung mit beding
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [@setAn](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set An](../../javascript/reference/at-set-statement-javascript.md)   
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

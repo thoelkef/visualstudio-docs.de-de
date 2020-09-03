@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535056"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Attribute mit AttributeUsageAttribute markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -47,7 +47,7 @@ ms.locfileid: "85535056"
  Sie sollten einen Verstoß gegen diese Regel beheben, anstatt die Meldung auszuschließen. Auch wenn das Attribut erbt <xref:System.AttributeUsageAttribute> , sollte das-Attribut vorhanden sein, um die Code Verwaltung zu vereinfachen.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden zwei Attribute definiert. `BadCodeMaintainerAttribute`lässt die Anweisung falsch <xref:System.AttributeUsageAttribute> `GoodCodeMaintainerAttribute` aus und implementiert das-Attribut, das weiter oben in diesem Abschnitt beschrieben wird. Beachten Sie, dass die-Eigenschaft für `DeveloperName` die Entwurfs Regel [CA1019: Accessoren für Attribut Argumente definiert](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) werden muss und aus Gründen der Vollständigkeit eingeschlossen ist.
+ Im folgenden Beispiel werden zwei Attribute definiert. `BadCodeMaintainerAttribute` lässt die Anweisung falsch <xref:System.AttributeUsageAttribute> `GoodCodeMaintainerAttribute` aus und implementiert das-Attribut, das weiter oben in diesem Abschnitt beschrieben wird. Beachten Sie, dass die-Eigenschaft für `DeveloperName` die Entwurfs Regel [CA1019: Accessoren für Attribut Argumente definiert](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) werden muss und aus Gründen der Vollständigkeit eingeschlossen ist.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]

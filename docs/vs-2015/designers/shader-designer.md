@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36737b767757215010e9716663d5807091d3503b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664158"
 ---
 # <a name="shader-designer"></a>Shader-Designer
@@ -34,7 +34,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |Directed Graph Shader Language|.dgsl|Anzeigen, Bearbeiten|
 |HLSL-Shader (Quellcode)|.hlsl|Exportieren|
 |HLSL-Shader (Bytecode)|.cso|Exportieren|
-|C++-Header (HLSL-Bytecode-Array)|H|Exportieren|
+|C++-Header (HLSL-Bytecode-Array)|.h|Exportieren|
 
 ## <a name="getting-started"></a>Erste Schritte
  In diesem Abschnitt wird beschrieben, wie Sie Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt einen DGSL-Shader hinzufügen. Außerdem erhalten Sie grundlegende Informationen über die ersten Schritte.
@@ -62,11 +62,11 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
  So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
- ![Die modale Symbolleiste des Shader-Designers.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")
+ ![Modale Shader-Designer-Symbolleiste](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")
 
  In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|
 |**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|
@@ -79,9 +79,9 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |**Vorschau mit Kegel**|Wenn diese aktiviert ist, wird ein Modell eines Kegels für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
 |**Vorschau mit Teekanne**|Wenn diese aktiviert ist, wird ein Modell einer Teekanne für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
 |**Vorschau mit Ebene**|Wenn diese aktiviert ist, wird ein Modell einer Ebene für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
-|**Werkzeugpalette**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
+|**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shader finden Sie unter Gewusst [wie: Exportieren eines](../designers/how-to-export-a-shader.md)Shaders.<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
 
 > [!TIP]
 > Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.
@@ -91,7 +91,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Ausführen von grundlegenden Vorgängen im Modus „Auswählen“
 
-- Gehen Sie dabei folgendermaßen vor:
+- Gehen Sie dazu wie folgt vor:
 
   - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.
 
@@ -115,7 +115,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
 - Auf der **Shader-Designer-Modi**-Symbolleiste wählen Sie die gewünschte Form aus.
 
-#### <a name="WWS_MaterialParameters"></a> Texturen und Materialparameter
+#### <a name="textures-and-material-parameters"></a><a name="WWS_MaterialParameters"></a> Texturen und Materialparameter
  Viele Shader greifen auf Texturen und Materialeigenschaften zurück, um ein einheitliches Aussehen für jede Art von Objekt in Ihrer App zu erstellen. Um anzuzeigen, wie der Shader in Ihrer App aussieht, können Sie die Texturen und Materialeigenschaften, die zum Rendern der Vorschau verwendet werden, so einstellen, dass sie mit den Texturen und Parametern übereinstimmen, die Sie möglicherweise in Ihrer App verwenden.
 
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>So binden Sie eine andere Textur an ein Texturregister oder bearbeiten andere Materialparameter
@@ -128,12 +128,12 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
 |Parameter|Eigenschaften|
 |---------------|----------------|
-|**Textur 1** – **Textur 8**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
-|**Material (Umgebung)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
+|**Textur 1** – **Textur 8**|**Access**:                             **Public** , damit die Eigenschaft vom Modell-Editor festgelegt werden kann. andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
+|**Material (Umgebung)**|**Access**:                             **Public** , damit die Eigenschaft vom Modell-Editor festgelegt werden kann. andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
 |**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|
-|**Material (Selbstleuchtend)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
-|**Material (Glanz)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
-|**Material (Glanzkraft)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
+|**Material (Selbstleuchtend)**|**Access**:                              **Public** , damit die Eigenschaft vom Modell-Editor festgelegt werden kann. andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
+|**Material (Glanz)**|**Access**:                              **Public** , damit die Eigenschaft vom Modell-Editor festgelegt werden kann. andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
+|**Material (Glanzkraft)**|**Access**:                             **Public** , damit die Eigenschaft vom Modell-Editor festgelegt werden kann. andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
 
 #### <a name="time-based-effects"></a>Zeitbasierte Effekte
  Einige Shader verfügen über eine zeitbasierte Komponente, die den Effekt animiert. Um anzuzeigen, wie der Effekt in Aktion aussieht, muss die Vorschau mehrmals pro Sekunde aktualisiert werden. Standardmäßig wird die Vorschau nur aktualisiert, wenn der Shader geändert wird. Um dieses Verhalten zu ändern, sodass Sie zeitbasierte Effekte anzeigen können, müssen Sie das Echtzeit-Rendering aktivieren.
@@ -154,16 +154,16 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
  Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Dateierweiterung „.hlsl“ verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Dateierweiterung „.cso“ verfügt, oder in eine C++-Headerdatei (.h), die den Shader-Bytecode in ein Array codiert.
 
- Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).
+ Weitere Informationen zum Exportieren von Shader finden Sie unter Gewusst [wie: Exportieren eines](../designers/how-to-export-a-shader.md)Shaders.
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
-|Befehl|Tastenkombinationen|
+|Get-Help|Tastenkombinationen|
 |-------------|------------------------|
-|In den Modus **Auswählen** wechseln|STRG+G, STRG+Q<br /><br /> S|
+|In den Modus **Auswählen** wechseln|STRG+G, STRG+Q<br /><br /> E|
 |In den Modus **Zoom** wechseln|STRG+G, STRG+Z<br /><br /> Z|
 |In den Modus **Schwenken** wechseln|STRG+G, STRG+P<br /><br /> K|
-|Alles auswählen|STRG + A|
+|Alle auswählen|STRG+A|
 |Die aktuelle Auswahl löschen|Löschen|
 |Brechen Sie die aktuelle Auswahl ab.|Escape|
 |Vergrößern|STRG+Mausrad vorwärts<br /><br /> Pluszeichen (+)|
@@ -183,8 +183,8 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
-|[Image Editor](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|
+|[Arbeiten mit 3D-Assets für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
+|[Bild-Editor](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|

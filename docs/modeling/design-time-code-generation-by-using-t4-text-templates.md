@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535992"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426771"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 
@@ -248,7 +248,7 @@ Verwenden Sie `this.Host.ResolvePath()`, um eine Datei aus einem Ort zu laden, d
 Anschließend können Sie z. B. Folgendes schreiben:
 
 ```csharp
-<# string fileName = this.Host.ResolvePath("filename.txt");
+<# string filename = this.Host.ResolvePath("filename.txt");
   string [] properties = File.ReadLines(filename);
 #>
 ...
@@ -257,7 +257,7 @@ Anschließend können Sie z. B. Folgendes schreiben:
 ```
 
 ```vb
-<# Dim fileName = Me.Host.ResolvePath("propertyList.txt")
+<# Dim filename = Me.Host.ResolvePath("propertyList.txt")
    Dim properties = File.ReadLines(filename)
 #>
 ...
@@ -366,7 +366,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
 
     Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.
 
-6. Speichern Sie die Datei.
+6. Speichern Sie die Datei .
 
     Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Beispielsweise **wäre die Eigenschaft** Buildvorgang einer CS-Datei " **Compile**".
 

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544845"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: verfügbar machen von Code für VBA in einem Visual Basic Projekt
@@ -36,7 +36,7 @@ ms.locfileid: "85544845"
 
 - [Verfügbar machen von Code, der nicht in einer Host Element Klasse ist](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Verfügbar machen von Code in einer Host Element Klasse
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Verfügbar machen von Code in einer Host Element Klasse
  Um VBA-Code zum Aufrufen von Visual Basic Code in einer Host Element Klasse zu aktivieren, legen Sie die **enablevbacallzer** -Eigenschaft des Host Elements auf **true**fest.
 
  Eine exemplarische Vorgehensweise, in der veranschaulicht wird, wie eine Methode einer Host Element Klasse verfügbar gemacht wird, und Sie dann über VBA aufgerufen wird, finden Sie unter Exemplarische Vorgehensweise [: Abrufen von Code aus VBA in einem Visual Basic Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
@@ -71,7 +71,7 @@ ms.locfileid: "85544845"
 
 6. Erstellen Sie das Projekt.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Verfügbar machen von Code, der nicht in einer Host Element Klasse ist
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Verfügbar machen von Code, der nicht in einer Host Element Klasse ist
  Damit VBA-Code Visual Basic Code aufruft, der sich nicht in einer Host Element Klasse befindet, ändern Sie den Code so, dass er für VBA sichtbar ist.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>So machen Sie Code, der nicht in einer Host Element Klasse für VBA verfügbar ist

@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 16f675cb62c0c3fd5f3aba7ba6190427fe101353
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814801"
 ---
 # <a name="unterminated-comment"></a>Nicht abgeschlossener Kommentar
-Sie haben einen mehrzeiligen Kommentar Block gestartet, ihn aber nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit der Kombination "/*" und enden mit der umgekehrten \* Kombination "/". Hier ein Beispiel:  
+Sie haben einen mehrzeiligen Kommentar Block gestartet, ihn aber nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit der Kombination "/*" und enden mit der umgekehrten \* Kombination "/". Es folgt ein Beispiel:  
   
 ```JavaScript  
 /* This is a comment  

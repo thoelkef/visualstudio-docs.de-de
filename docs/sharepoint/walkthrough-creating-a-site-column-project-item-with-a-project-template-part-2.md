@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016406"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2
@@ -86,7 +87,7 @@ ms.locfileid: "86016406"
 
 5. Wählen Sie in der Liste der Projektvorlagen **WPF-Benutzer Steuerelement Bibliothek**aus, benennen Sie das Projekt **projecttemplatewizard**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das Projekt **projecttemplatewizard** hinzu und öffnet die Standarddatei UserControl1. XAML.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **projecttemplatewizard** hinzu und öffnet die Standarddatei UserControl1. XAML.
 
 6. Löschen Sie die Datei UserControl1.xaml aus dem Projekt.
 
@@ -96,11 +97,11 @@ ms.locfileid: "86016406"
 
 2. Wählen Sie oben im Dialogfeld **Neues Projekt hinzufügen** **.NET Framework 3,5** in der Liste der .NET Framework Versionen aus.
 
-3. Erweitern Sie den Knoten **Visual c#** oder den Knoten **Visual Basic** , und wählen Sie dann den Knoten **Windows** aus.
+3. Erweitern Sie den Knoten **Visual c#** oder den Knoten  **Visual Basic** , und wählen Sie dann den Knoten **Windows** aus.
 
 4. Wählen Sie die Projektvorlage **Klassenbibliothek** aus, benennen Sie das Projekt **SharePointCommands**, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das Projekt **SharePointCommands** hinzu und öffnet die standardmäßige Class1-Codedatei.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **SharePointCommands** hinzu und öffnet die standardmäßige Class1-Codedatei.
 
 5. Löschen Sie die Class1-Codedatei aus dem Projekt.
 
@@ -165,13 +166,13 @@ ms.locfileid: "86016406"
 
 1. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten **SharePointCommands** aus.
 
-2. Wählen Sie in der Menüleiste **Projekt**und dann **Vorhandenes Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste **Projekt**und dann  **Vorhandenes Element hinzufügen**aus.
 
 3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zu dem Ordner, der die Code Dateien für das Projekt projecttemplatewizard enthält, und wählen Sie dann die Codedatei **CommandIds** aus.
 
 4. Wählen Sie den Pfeil neben der Schaltfläche **Hinzufügen** aus, und wählen Sie dann im angezeigten Menü die Option **als Link hinzufügen** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]die Codedatei wird dem Projekt **SharePointCommands** als Link hinzugefügt. Die Codedatei befindet sich im Projekt " **projecttemplatewizard** ", aber der Code in der Datei wird ebenfalls im Projekt " **SharePointCommands** " kompiliert.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Codedatei wird dem Projekt **SharePointCommands** als Link hinzugefügt. Die Codedatei befindet sich im Projekt " **projecttemplatewizard** ", aber der Code in der Datei wird ebenfalls im Projekt " **SharePointCommands** " kompiliert.
 
 5. Fügen Sie im Projekt **SharePointCommands** eine weitere Codedatei mit dem Namen Befehle hinzu.
 

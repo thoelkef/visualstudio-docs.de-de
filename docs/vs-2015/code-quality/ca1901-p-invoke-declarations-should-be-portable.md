@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545261"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarationen von P/Invoke müssen portabel sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Kategorie|Microsoft. Portabilität|
+|Category|Microsoft. Portabilität|
 |Unterbrechende Änderung|Unterbrechung: Wenn P/aufrufen außerhalb der Assembly sichtbar ist. Nicht unterbrechend: Wenn der P/Aufruf außerhalb der Assembly nicht sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

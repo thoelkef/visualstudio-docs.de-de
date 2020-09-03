@@ -9,20 +9,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545170"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Unsichere DTD-Verarbeitung.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -35,13 +35,13 @@ ms.locfileid: "85545170"
 
 - Die <xref:System.Xml.XmlNode.InnerXml%2A> -Eigenschaft in XML wird festgelegt.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>die Eigenschaft ist auf "analysieren" festgelegt.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> die Eigenschaft ist auf "analysieren" festgelegt.
 
 - Die Verarbeitung einer nicht vertrauenswürdigen Eingabe erfolgt mit <xref:System.Xml.XmlResolver> anstelle von <xref:System.Xml.XmlSecureResolver> .
 
 - Der XmlReader.<xref:System.Xml.XmlReader.Create%2A> die Methode wird mit einer unsicheren <xref:System.Xml.XmlReaderSettings> Instanz oder ohne Instanz aufgerufen.
 
-- <xref:System.Xml.XmlReader>wird mit unsicheren Standardeinstellungen oder-Werten erstellt.
+- <xref:System.Xml.XmlReader> wird mit unsicheren Standardeinstellungen oder-Werten erstellt.
 
   In jedem dieser Fälle ist das Ergebnis identisch: Der Inhalt aus dem Dateisystem oder von Netzwerkfreigaben auf dem Computer, auf dem der XML-Code verarbeitet wird, wird dem Angreifer offengelegt und kann dann als DoS-Vektor verwendet werden.
 

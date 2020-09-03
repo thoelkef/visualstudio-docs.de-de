@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS | Microsoft Docs
+title: MODULE_INFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714230"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
@@ -42,18 +42,18 @@ public enum enum_MODULE_INFO_FLAGS {
 
 ## <a name="fields"></a>Felder
  `MIF_SYMBOLS_LOADED`\
- Mindestens ein Satz von Symbolen wurde vom Modul geladen (sonst wurden keine Symbole geladen).
+ Mindestens ein Satz von Symbolen wurde vom Modul geladen (andernfalls wurden keine Symbole geladen).
 
 ## <a name="remarks"></a>Bemerkungen
- Dieser Wert wird von der [GetSymbolSearchInfo-Methode](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) zurückgegeben.
+ Dieser Wert wird von der [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

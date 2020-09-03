@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476813"
 ---
 # <a name="limitations-on-script-debugging"></a>Einschränkungen beim Skriptdebugging
@@ -35,7 +35,7 @@ ms.locfileid: "77476813"
   
 - Haltepunkte müssen innerhalb von `<script>`-Blöcken festgelegt werden. Haltepunkte in eingebetteten Skripts oder `<% %>`-Blöcken können nicht zugeordnet werden.  
   
-- Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispiel: `http://microsoft.com/default.apsx`. Die breakpointzuordnung kann keine Umleitung von einer Adresse wie `http://microsoft.com` zur Standardseite erkennen.  
+- Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispiel: `http://microsoft.com/default.apsx`. Die breakpointzuordnung kann eine Umleitung von einer Adresse, wie z `http://microsoft.com` . b. zur Standardseite, nicht erkennen.  
   
 - Der Haltepunkt muss in der Seite festgelegt werden, die in der Browser-URL angegeben ist, und nicht in einer ASPX-Steuerelementdatei (ascx), Masterseite oder einer anderen auf dieser Seite enthaltenen Datei. Haltepunkte in eingeschlossenen Seiten können nicht zugeordnet werden.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "77476813"
 - Bei Haltepunkten in `<script id="">`-Blöcken wird das `id`-Attribut bei der Zuordnung von Haltepunkten ignoriert.  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Zuordnung von Haltepunkten und doppelte Zeilen  
- Um die entsprechende Stelle in serverseitigen und clientseitigen Skripts zu finden, wird der Code durch den Algorithmus für die Zuordnung von Haltepunkten zeilenweise überprüft. Beim Algorithmus wird davon ausgegangen, dass jede Zeile einmal vorkommt. Wenn mindestens zwei Zeilen denselben Code enthalten und Sie einen Haltepunkt für eine dieser doppelten Zeilen festlegen, wird vom Algorithmus für die Zuordnung von Haltepunkten möglicherweise die falsche Entsprechung in der clientseitigen Datei ausgewählt. Um das zu verhindern, fügen Sie der Zeile mit dem festgelegten Haltepunkt einen Kommentar hinzu. Beispiel:   
+ Um die entsprechende Stelle in serverseitigen und clientseitigen Skripts zu finden, wird der Code durch den Algorithmus für die Zuordnung von Haltepunkten zeilenweise überprüft. Beim Algorithmus wird davon ausgegangen, dass jede Zeile einmal vorkommt. Wenn mindestens zwei Zeilen denselben Code enthalten und Sie einen Haltepunkt für eine dieser doppelten Zeilen festlegen, wird vom Algorithmus für die Zuordnung von Haltepunkten möglicherweise die falsche Entsprechung in der clientseitigen Datei ausgewählt. Um das zu verhindern, fügen Sie der Zeile mit dem festgelegten Haltepunkt einen Kommentar hinzu. Beispiel:  
   
 ```  
 i++ ;  

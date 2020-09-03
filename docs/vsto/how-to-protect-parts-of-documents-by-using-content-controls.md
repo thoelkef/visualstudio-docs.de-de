@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541348"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen
@@ -34,7 +34,7 @@ ms.locfileid: "85541348"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Schützen eines Inhalts Steuer Elements
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Schützen eines Inhalts Steuer Elements
  Sie können verhindern, dass Benutzer ein Inhaltssteuerelement bearbeiten oder löschen, indem Sie Eigenschaften des Steuerelements in einem Projekt auf Dokumentebene zur Entwurfszeit oder zur Laufzeit festlegen.
 
  Sie können auch Inhaltssteuerelemente schützen, die Sie einem Dokument zur Laufzeit hinzufügen, indem Sie ein VSTO-Add-In-Projekt verwenden. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
@@ -102,7 +102,7 @@ ms.locfileid: "85541348"
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [ContentControl-Elemente](../vsto/content-controls.md)
 - [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)

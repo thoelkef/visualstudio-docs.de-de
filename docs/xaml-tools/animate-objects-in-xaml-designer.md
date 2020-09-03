@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328502"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animieren von Objekten im XAML-Designer
@@ -46,6 +46,6 @@ Die folgenden Abbildungen zeigen ein Storyboard mit dem Namen **Storyboard1**. D
 
 Experimentieren Sie mit anderen Änderungen am Rechteck zu unterschiedlichen Zeitpunkten. Beispielsweise können Sie im Eigenschaftenfenster die Füllfarbe ändern oder die Ausrichtung umkehren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

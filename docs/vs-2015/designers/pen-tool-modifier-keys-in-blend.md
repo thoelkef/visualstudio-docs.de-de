@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664177"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Stifttool-Zusatztasten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie einen Pfad ändern können, während Sie ihn mit dem ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")Stift Werkzeug erstellen. Sie können mit dem Tool **Stift** auch Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen, oder zwei vorhandene Pfade verbinden.
+In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie einen Pfad bearbeiten können, während Sie ihn mit dem Tool **Stift **![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") erstellen. Sie können mit dem Tool **Stift** auch Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen, oder zwei vorhandene Pfade verbinden.
 
-|Aktion|Vorgehensweise|Zeiger|
+|Aufgabe|Aktion|Zeiger|
 |-----------------------|-------------|-------------|
 |Einen Punkt erstellen, um ein gerades Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen.|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Stiftzeiger|
 |Einen Punkt erstellen, um ein gekrümmtes Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen, und ziehen Sie anschließend, um die Tangentensteuerpunkte anzupassen, bevor Sie die Maustaste loslassen.|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Stiftzeiger|
@@ -37,5 +37,5 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie ein
 |Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift**, klicken Sie auf einen Endpunkt einer der Pfade, und ziehen Sie anschließend einen Endpunkt des anderen Pfads|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> Stiftzeiger zum Verbinden|
 |Erstellt einen neuen Pfad.|Halten Sie STRG gedrückt, und klicken Sie außerhalb des vorigen Pfads, damit diesem keine Punkte mehr hinzugefügt werden, und klicken oder ziehen Sie dort, wo der neue Pfad beginnen soll|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> Stiftzeiger zum Starten|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Tastenkombinationen und Modifizierertasten Zeichen Flächen-](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md) [Modifizierertasten](../designers/artboard-modifier-keys-in-blend.md) [Direktauswahl toolmodifizierertasten](../designers/direct-selection-tool-modifier-keys-in-blend.md) [Zeichnen von Formen und Pfaden](../designers/draw-shapes-and-paths.md)

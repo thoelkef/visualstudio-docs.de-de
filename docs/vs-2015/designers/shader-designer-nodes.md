@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7526da10262003c9d086fdf1d74d065aac2d406
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664128"
 ---
 # <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
@@ -44,11 +44,11 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Konstante Knoten](../designers/constant-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Literalwerte und interpolierte Informationen zu Vertexzuständen in Shader-Berechnungen darzustellen. Vertexzustände werden interpoliert und unterscheiden sich daher in jedem Pixel: Jede Pixel-Shader-Instanz empfängt eine andere Version der Konstanten.|
-|[Parameterknoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie zur Darstellung der Kameraposition, Materialeigenschaften, Lichtparameter, Zeit und andere Informationen zum App-Status in Shader-Berechnungen verwenden können.|
-|[Texturknoten](../designers/texture-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um verschiedene Texturtypen und Geometrien abzufragen und Texturkoordinaten auf gewöhnliche Weise zu erzeugen oder zu transformieren.|
-|[Berechnungsknoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|
+|[Parameter Knoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie zur Darstellung der Kameraposition, Materialeigenschaften, Lichtparameter, Zeit und andere Informationen zum App-Status in Shader-Berechnungen verwenden können.|
+|[Textur Knoten](../designers/texture-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um verschiedene Texturtypen und Geometrien abzufragen und Texturkoordinaten auf gewöhnliche Weise zu erzeugen oder zu transformieren.|
+|[Mathematische Knoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|
 |[Hilfsprogrammknoten](../designers/utility-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um allgemeine Lichtberechnungen und andere allgemeine Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|
-|[Filtern von Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|
+|[Filter Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|

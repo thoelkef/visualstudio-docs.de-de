@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918580"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Klicken Sie im Menü **Datei** auf **neu** , und klicken Sie dann auf **Projekt**.
 
 2. Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.
 
@@ -97,15 +97,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Eine XML-Datei hinzufügen
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und dann auf **Neues Element**.
 
-2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****XML-Datei** aus den **Vorlagen** aus.
 
 3. Fügen Sie der Datei Ihren Beispielinhalt hinzu.
 
 4. In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu
  Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Beispiel:
@@ -139,7 +139,7 @@ namespace MyProject
 
 1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
 
-2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****Textvorlage** aus den **Vorlagen** aus.
 
    > [!NOTE]
    > Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.
@@ -402,7 +402,7 @@ namespace MyProject
 
  Wenn die Beispiel-XML-Datei geändert wurde, können Sie die Klassen neu generieren, indem Sie in der Symbolleiste des Projektmappen-Explorer auf **Alle Vorlagen transformieren** klicken.
 
-## <a name="conclusion"></a>Schlussfolgerung
+## <a name="conclusion"></a>Zusammenfassung
  In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:
 
 - *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>Problembehandlung bei der Textvorlage
  Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Code Generierung zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

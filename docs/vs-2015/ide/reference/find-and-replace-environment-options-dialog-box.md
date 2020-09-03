@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c17b25d8a837f751b8bd8ec108c0b821d58c6df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657696"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
@@ -51,5 +51,5 @@ Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder un
 
  **Suchtext automatisch aus Editor übernehmen:** Verwenden Sie diese Option, um den Text auf beiden Seiten der Einfügemarke des Editors in das Feld **Suchen nach** einzufügen, wenn Sie eine Ansicht des Fensters **Suchen und Ersetzen** im Menü **Bearbeiten** auswählen. Deaktivieren Sie diese Option, um das letzte Suchmuster aus der vorherigen Suche als Zeichenfolge für das Feld **Suchen nach** zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)

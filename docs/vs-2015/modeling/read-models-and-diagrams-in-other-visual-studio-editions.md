@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6a7c944eb3d5378ad0fc1542b90ad182f7eb976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671280"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
@@ -26,7 +26,7 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
  Welche Versionen von Visual Studio die Modell Erstellung unterstützen, erfahren Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Erhalten von Zugriff auf ein Modell und Diagramme
- Um ein UML-Diagramm oder ein ebenendiagramm zu lesen, müssen Sie zunächst Visual Studio verwenden, um das Modellierungsprojekt zu öffnen, und dann das Diagramm darin öffnen.
+ Um ein UML-Diagramm oder ein Ebenendiagramm zu lesen, müssen Sie zunächst mithilfe von Visual Studio das Modellierungsprojekt öffnen und dann das Diagramm in diesem öffnen.
 
  Wenn Sie ein UML-Diagramm oder ein Ebenendiagramm lesen möchten, benötigen Sie daher auch Zugriff auf das Modellierungsprojekt, in dem es erstellt wurde. Dafür können Sie entweder aus [!INCLUDE[esprscc](../includes/esprscc-md.md)] auf das Projekt zugreifen oder eine Kopie der Projektdateien abrufen.
 
@@ -38,7 +38,7 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
 - Die beiden Diagramm Dateien für das Diagramm, das Sie lesen möchten, z. b. " **mydiagram. classdiagram" und "mydiagram. classdiagram. Layout**".
 
     > [!NOTE]
-    > Für ebenendiagramme sollten Sie auch über die Datei mit dem Namen " _mydiagram_ **. layerdiagram. supausdrücke**" verfügen.
+    > Für ebenendiagramme sollten Sie auch über die Datei mit dem Namen " _mydiagram_**. layerdiagram. supausdrücke**" verfügen.
 
 - Die Modellierungsprojekt Datei (**MyModel. modelproj**)
 
@@ -55,9 +55,9 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
 
   Sie können diese Änderungen speichern. Wenn Sie die Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens die aktualisierten **Layoutdateien** senden.
 
-## <a name="RelatedTopics"></a> Verwandte Themen
+## <a name="related-topics"></a><a name="RelatedTopics"></a> Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)|Ein Ebenendiagramm stellt die Struktur einer vorhandenen oder vorgeschlagenen Architektur dar. Wenn Code geschrieben wird, kann er automatisch anhand eines Ebenendiagramms überprüft werden.|
 |[UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)|Ein Aktivitätsdiagramm stellt einen Arbeitsfluss in einem Geschäftsprozess oder in Software dar.|
@@ -66,5 +66,5 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
 |[UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)|Ein Sequenzdiagramm zeigt Interaktionen zwischen Elementen in einem Softwareentwurf.|
 |[UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)|Ein Anwendungsfalldiagramm zeigt die Benutzer eines Systems und die Aktivitäten, die sie ausführen können, um bestimmte Ziele zu erreichen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)

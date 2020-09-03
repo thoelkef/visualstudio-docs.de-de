@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ece4788a277bfc4d16568d4014f9eae2ed4de33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545274"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Werttypfelder sollten portabel sein.
@@ -27,11 +27,11 @@ ms.locfileid: "85545274"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1900: Werttyp Felder sollten portabel sein](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Kategorie|Microsoft. Portabilität|
+|Category|Microsoft. Portabilität|
 |Unterbrechende Änderung|Unterbrechung: Wenn das Feld außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend: Wenn das Feld außerhalb der Assembly nicht sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

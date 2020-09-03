@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114593"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
@@ -25,21 +25,21 @@ Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind
 
 ### <a name="to-define-a-store-event"></a>So definieren Sie ein Store-Ereignis
 
-1. Wählen Sie den Ereignistyp aus, den Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht einem Ereignistyp. Die am häufigsten verwendeten Ereignis Typen sind:
+1. Wählen Sie den Ereignistyp aus, den Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften von <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Jede Eigenschaft entspricht einem Ereignistyp. Die am häufigsten verwendeten Ereignis Typen sind:
 
-    - `ElementAdded` ausgelöst, wenn ein Modellelement, eine Beziehungs Verknüpfung, eine Form oder ein Connector erstellt wird.
+    - `ElementAdded` : wird ausgelöst, wenn ein Modellelement, beziehungslink, eine Form oder ein Connector erstellt wird.
 
     - Elementpropertychanged: wird ausgelöst, wenn der Wert einer `Normal` Domänen Eigenschaft geändert wird. Das-Ereignis wird nur ausgelöst, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speicher Eigenschaften angewendet werden.
 
-         Sie kann nicht auf die Rollen Eigenschaften angewendet werden, die Beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded`, um die Domänen Beziehung zu überwachen.
+         Sie kann nicht auf die Rollen Eigenschaften angewendet werden, die Beziehungslinks entsprechen. Verwenden Sie stattdessen, `ElementAdded` um die Domänen Beziehung zu überwachen.
 
-    - `ElementDeleted` ausgelöst, nachdem ein Modellelement, eine Beziehung, eine Form oder ein Connector gelöscht wurde. Sie können weiterhin auf die Eigenschaftswerte des Elements zugreifen, aber es sind keine Beziehungen zu anderen Elementen vorhanden.
+    - `ElementDeleted` -ausgelöst, nachdem ein Modellelement, eine Beziehung, eine Form oder ein Connector gelöscht wurde. Sie können weiterhin auf die Eigenschaftswerte des Elements zugreifen, aber es sind keine Beziehungen zu anderen Elementen vorhanden.
 
 2. Fügen Sie eine partielle Klassendefinition für _yourdsl_**docdata** in einer separaten Codedatei im **dslpackage** -Projekt hinzu.
 
-3. Schreiben Sie den Code des Ereignisses als Methode, wie im folgenden Beispiel gezeigt. Sie kann `static`werden, es sei denn, Sie möchten auf `DocData`zugreifen.
+3. Schreiben Sie den Code des Ereignisses als Methode, wie im folgenden Beispiel gezeigt. Dies ist möglich `static` , es sei denn, Sie möchten auf zugreifen `DocData` .
 
-4. Überschreiben Sie `OnDocumentLoaded()`, um den Handler zu registrieren. Wenn Sie mehr als einen Handler haben, können Sie alle am gleichen Ort registrieren.
+4. `OnDocumentLoaded()`Überschreiben, um den Handler zu registrieren. Wenn Sie mehr als einen Handler haben, können Sie alle am gleichen Ort registrieren.
 
 Der Speicherort des Registrierungscodes ist nicht kritisch. `DocView.LoadView()` ist ein alternativer Speicherort.
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Verwenden Sie Ereignisse, um nicht wiederholbare Anpassungen im Speicher vorzunehmen.
 
-Store-Ereignisse werden normalerweise nicht für die Weitergabe von Änderungen im Speicher verwendet, da der Ereignishandler ausgeführt wird, nachdem ein Commit für die Transaktion ausgeführt wurde. Stattdessen verwenden Sie eine Speicher Regel. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
+Store-Ereignisse werden normalerweise nicht für die Weitergabe von Änderungen im Speicher verwendet, da der Ereignishandler ausgeführt wird, nachdem ein Commit für die Transaktion ausgeführt wurde. Stattdessen verwenden Sie eine Speicher Regel. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
 
 Sie können jedoch einen Ereignishandler verwenden, um zusätzliche Updates für den Speicher vorzunehmen, wenn Sie möchten, dass der Benutzer die zusätzlichen Updates getrennt vom ursprünglichen Ereignis rückgängig machen kann. Nehmen wir beispielsweise an, dass Kleinbuchstaben die übliche Konvention für Albumtitel sind. Sie könnten einen Store-Ereignishandler schreiben, der den Titel in einen Kleinbuchstaben korrigiert, nachdem der Benutzer ihn in Großbuchstaben eingegeben hat. Der Benutzer kann jedoch den Befehl "Rückgängig" verwenden, um die Korrektur abzubrechen und die Großbuchstaben wiederherzustellen. Eine zweite Rückgängig-Aktion entfernt die Änderung des Benutzers.
 
@@ -160,9 +160,9 @@ private static void AlbumTitleAdjuster(object sender,
 
 Wenn Sie ein Ereignis schreiben, das den Speicher aktualisiert:
 
-- Verwenden Sie `store.InUndoRedoOrRollback`, um zu verhindern, dass Änderungen an Modellelementen in rückgängig gemacht werden Der Transaktions-Manager legt alle Elemente im Speicher auf den ursprünglichen Zustand zurück.
+- Verwenden `store.InUndoRedoOrRollback` Sie, um zu vermeiden, dass Änderungen an den Modellelementen in rückgängig Der Transaktions-Manager legt alle Elemente im Speicher auf den ursprünglichen Zustand zurück.
 
-- Verwenden Sie `store.InSerializationTransaction`, um Änderungen vorzunehmen, während das Modell aus einer Datei geladen wird.
+- Verwenden `store.InSerializationTransaction` Sie, um Änderungen vorzunehmen, während das Modell aus einer Datei geladen wird.
 
 - Die Änderungen führen dazu, dass weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine Endlosschleife vermeiden.
 
@@ -170,19 +170,19 @@ Wenn Sie ein Ereignis schreiben, das den Speicher aktualisiert:
 
 Jeder Ereignistyp entspricht einer Sammlung in "Store. eventmanagerdirectory". Sie können Ereignishandler jederzeit hinzufügen oder entfernen, aber es ist üblich, Sie hinzuzufügen, wenn das Dokument geladen wird.
 
-|Eigenschaften Name `EventManagerDirectory`|Wird ausgeführt, wenn|
+|`EventManagerDirectory` Eigenschaftsname|Wird ausgeführt, wenn|
 |-|-|
 |Element hinzugefügt|Eine Instanz einer Domänen Klasse, einer Domänen Beziehung, einer Form, eines Connector oder eines Diagramms wird erstellt.|
-|ElementDeleted|Ein Modellelement wurde aus dem Element Verzeichnis des Stores entfernt und ist nicht mehr die Quelle oder das Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, sondern wird bei einem späteren Rückgängigmachen beibehalten.|
-|ElementEventsBegun|Wird am Ende einer äußeren Transaktion aufgerufen.|
+|Element Deleted|Ein Modellelement wurde aus dem Element Verzeichnis des Stores entfernt und ist nicht mehr die Quelle oder das Ziel einer Beziehung. Das Element wird nicht tatsächlich aus dem Arbeitsspeicher gelöscht, sondern wird bei einem späteren Rückgängigmachen beibehalten.|
+|Elementeventsbegonnene|Wird am Ende einer äußeren Transaktion aufgerufen.|
 |Elementeventsended|Wird aufgerufen, wenn alle anderen Ereignisse verarbeitet wurden.|
-|ElementMoved|Ein Modellelement wurde von einer Speicher Partition in eine andere verschoben.<br /><br /> Dies steht nicht im Zusammenhang mit dem Speicherort einer Form im Diagramm.|
-|ElementPropertyChanged|Der Wert einer Domänen Eigenschaft hat sich geändert. Diese wird nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
-|RolePlayerChanged|Eine der beiden Rollen (enden) einer Beziehung verweist auf ein neues Element.|
-|RolePlayerOrderChanged|In einer Rolle mit einer Multiplizität größer als 1 hat sich die Sequenz der Links geändert.|
+|Element verschoben|Ein Modellelement wurde von einer Speicher Partition in eine andere verschoben.<br /><br /> Dies steht nicht im Zusammenhang mit dem Speicherort einer Form im Diagramm.|
+|Elementpropertychanged|Der Wert einer Domänen Eigenschaft hat sich geändert. Diese wird nur ausgeführt, wenn die alten und neuen Werte ungleich sind.|
+|Roleplayerchanged|Eine der beiden Rollen (enden) einer Beziehung verweist auf ein neues Element.|
+|Roleplayerorderchanged|In einer Rolle mit einer Multiplizität größer als 1 hat sich die Sequenz der Links geändert.|
 |Transaktionat||
-|TransactionCommitted||
-|TransactionRolledBack||
+|Transaktioncommit||
+|Transaktionrolledback||
 
 ## <a name="see-also"></a>Siehe auch
 

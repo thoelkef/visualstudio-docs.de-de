@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851625"
 ---
 # <a name="signing-in-to-visual-studio"></a>Anmelden bei Visual Studio
@@ -27,7 +27,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 - **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
-- **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, z. b. Tastenbindungen, Fenster Layout und Farbschema, werden sofort übernommen, wenn Sie sich auf einem Gerät bei Visual Studio anmelden. Weitere Informationen finden Sie [unter synchronisierte Einstellungen in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Entsperrt Visual Studio Express Edition dauerhaft** – Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es findet keine Begrenzung auf den Testzeitraum von 30 Tagen statt.
 
@@ -35,18 +35,18 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 - **Verlängert den Visual Studio-Testzeitraum** – Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.
 
-- **Entsperrt Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder VSO-Abonnement verknüpft ist**. Siehe [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Entsperrt Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder VSO-Abonnement verknüpft ist**. Weitere Informationen finden [Sie unter Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Stellt eine automatische Verbindung zu Diensten wie Azure und Visual Studio Team Services in der IDE her** , ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
  Wenn Sie Visual Studio erstmals starten, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
- Wählen Sie anschließend die gewünschten Einstellungen für die Benutzeroberfläche und das Farbschema in Visual Studio aus. Visual Studio speichert diese Einstellungen und synchronisiert sie über alle Visual Studio-Umgebungen hinweg, an denen Sie sich angemeldet haben. Eine Liste der synchronisierten Einstellungen finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). Sie können die Einstellungen später im Visual Studio-Menü unter **Extras &#124; Optionen** immer noch ändern.
+ Wählen Sie anschließend die gewünschten Einstellungen für die Benutzeroberfläche und das Farbschema in Visual Studio aus. Visual Studio speichert diese Einstellungen und synchronisiert sie über alle Visual Studio-Umgebungen hinweg, an denen Sie sich angemeldet haben. Eine Liste der synchronisierten Einstellungen finden Sie unter [synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). Sie können die Einstellungen später im Visual Studio-Menü unter **Extras &#124; Optionen** immer noch ändern.
 
  Nach Angabe der Einstellungen wird Visual Studio gestartet. Sie sind nun registriert und können beginnen. Um sicherzustellen, dass Sie angemeldet sind, suchen Sie in der rechten oberen Ecke der Visual Studio-Umgebung nach Ihrem Namen.
 
- ![Currentlly angemeldeter Benutzer](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Aktuell angemeldeter Benutzer](../ide/media/vs2015-username.png "VS2015_UserName")
 
  Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual Studio starten. Alle Änderungen an den synchronisierten Einstellungen werden automatisch übernommen. Wählen Sie zum Abmelden den Pfeil nach unten neben Ihrem Profilnamen in der Visual Studio-Umgebung, wählen Sie den Befehl **Kontoeinstellungen** , und wählen Sie dann den Link **Abmelden** . Für eine erneute Anmeldung wählen Sie den Befehl **Anmelden** in der rechten oberen Ecke der Visual Studio-Umgebung.
 

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d738cf15ebe734cb74e553f38f6eb26af17e8cfd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542310"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: ObsoleteAttribute-Meldung bereitstellen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
@@ -36,7 +36,7 @@ ms.locfileid: "85542310"
  Ein Typ oder Member wird mit einem- <xref:System.ObsoleteAttribute?displayProperty=fullName> Attribut gekennzeichnet, dessen-Eigenschaft nicht <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> angegeben ist.
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- <xref:System.ObsoleteAttribute>wird verwendet, um veraltete Bibliothekstypen und Member zu markieren. Bibliotheks Consumer sollten die Verwendung eines beliebigen Typs oder Members vermeiden, der als veraltet markiert ist. Dies liegt daran, dass Sie möglicherweise nicht unterstützt wird und schließlich aus späteren Versionen der Bibliothek entfernt wird. Wenn ein Typ oder Member, der mit markiert <xref:System.ObsoleteAttribute> ist, kompiliert wird, wird die- <xref:System.ObsoleteAttribute.Message%2A> Eigenschaft des-Attributs angezeigt. Auf diese Weise erhält der Benutzer Informationen zum veralteten Typ oder Member. Diese Informationen umfassen im Allgemeinen, wie lange der veraltete Typ oder Member von den Bibliotheks-Designern unterstützt wird, und die bevorzugte Ersetzung für die Verwendung von.
+ <xref:System.ObsoleteAttribute> wird verwendet, um veraltete Bibliothekstypen und Member zu markieren. Bibliotheks Consumer sollten die Verwendung eines beliebigen Typs oder Members vermeiden, der als veraltet markiert ist. Dies liegt daran, dass Sie möglicherweise nicht unterstützt wird und schließlich aus späteren Versionen der Bibliothek entfernt wird. Wenn ein Typ oder Member, der mit markiert <xref:System.ObsoleteAttribute> ist, kompiliert wird, wird die- <xref:System.ObsoleteAttribute.Message%2A> Eigenschaft des-Attributs angezeigt. Auf diese Weise erhält der Benutzer Informationen zum veralteten Typ oder Member. Diese Informationen umfassen im Allgemeinen, wie lange der veraltete Typ oder Member von den Bibliotheks-Designern unterstützt wird, und die bevorzugte Ersetzung für die Verwendung von.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, fügen Sie dem `message` Konstruktor den Parameter hinzu <xref:System.ObsoleteAttribute> .

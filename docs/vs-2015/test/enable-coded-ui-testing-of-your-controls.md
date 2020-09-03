@@ -9,13 +9,13 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851805"
 ---
-# <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der codierten UI Ihrer Steuerelemente
+# <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für das Framework für den Test der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Sie können zunächst mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung beginnen. Darauf aufbauend können Sie dem Test-Generator für codierte UI ermöglichen, die benutzerdefinierten Eigenschaften des Steuerelements zu erkennen, und benutzerdefinierte Klassen bereitstellen, um mit generiertem Code auf diese Eigenschaften zuzugreifen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.
@@ -28,23 +28,23 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 
 3. [Codegenerierung durch Implementierung einer Klasse zum Zugriff auf benutzerdefinierte Eigenschaften unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)
 
-4. [Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
+4. [Unterstützen Intent-fähiger Aktionen durch Implementieren eines Aktions Filters](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![&#95;Vollständig](../test/media/cuit-full.png "CUIT_Full")
+   ![Cuit-&#95;voll](../test/media/cuit-full.png "CUIT_Full")
 
-## <a name="recordandplayback"></a> Datensatz-, Wiedergabe -und Eigenschaftvalidierung durch Implementierung der Barrierefreiheit unterstützen
+## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a><a name="recordandplayback"></a> Unterstützung von Aufzeichnung und Wiedergabe und Eigenschafts Validierung durch Implementieren von Barrierefreiheit
  Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator für codierte UI Aktionen wie Mausklicks anhand der Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Mausklicks vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn sich das Steuerelement beim Wiedergeben des Tests an einer anderen Stelle auf dem Bildschirm befindet, kann der generierte Code die entsprechende Aktion für das Steuerelement nicht ausführen. Dies kann zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in anderen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.
 
- ![Cuit&#95;-recordnosupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
+ ![Cuit-&#95;recordnosupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  Wenn Sie jedoch Barrierefreiheit implementieren, wird diese vom Test-Generator der programmierten UI im Rahmen der Testaufzeichnung und Codegenerierung für das Erfassen der Informationen zum Steuerelement verwendet. Bei der anschließenden Ausführung des Tests erfolgt die Wiedergabe der entsprechenden Ereignisse durch den generierten Code auf dem Steuerelement, auch wenn sich dieses an einer anderen Stelle der Benutzeroberfläche befindet. Testautors können mithilfe der grundlegenden Eigenschaften des Steuerelements auch Asserts erstellen.
 
- ![Cuit&#95;-Datensatz](../test/media/cuit-record.png "CUIT_Record")
+ ![Cuit-&#95;Datensatz](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>So unterstützen Sie Aufzeichnung und Wiedergabe, Eigenschaftvalidierung und Navigation für ein Windows Forms-Steuerelement
  Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.
 
- ![Cuit&#95;-Zugriff](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![Cuit-&#95;verfügbar](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
 
@@ -80,13 +80,13 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 > [!NOTE]
 > Dieses Thema beginnt mit dem Barrierefreiheitsbeispiel für das <xref:System.Windows.Forms.AccessibleObject> in dieser Prozedur. Darauf aufbauend werden anschließend die restlichen Prozeduren erläutert. Zum Erstellen einer funktionierenden Version des Barrierefreiheitsbeispiels entwickeln Sie eine Konsolenanwendung und ersetzen dann den Code in "Program.cs" durch den Beispielcode. Sie müssen Verweise auf Barrierefreiheit, System.Drawing und System.Windows.Forms hinzufügen. Sie sollten für die Barrierefreiheit **Interoptypen einbetten** zu **FALSE** ändern, um eine Buildwarnungen zu vermeiden. Sie können den Ausgabetyp des Projekts von **Konsolenanwendung** in **Windows-Anwendung** ändern, damit beim Ausführen der Anwendung kein Konsolenfenster angezeigt wird.
 
-## <a name="customproprties"></a> Benutzerdefinierte Eigenschaftenvalidierung durch Implementierung eines Eigenschaftenanbieters unterstützen
+## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a><a name="customproprties"></a> Unterstützen der Überprüfung benutzerdefinierter Eigenschaften durch Implementieren eines Eigenschaften Anbieters
  Sobald Sie grundlegende Unterstützung für Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung implementiert haben, können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der codierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können.
 
- ![Cuit&#95;-Kunden Eigenschaften](../test/media/cuit-customprops.png "CUIT_CustomProps")
+ ![Cuit-&#95;Custom-Eigenschaften](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>So unterstützen Sie die Validierung benutzerdefinierter Eigenschaften
- ![Cuit&#95;-Eigenschaften](../test/media/cuit-props.png "CUIT_Props")
+ ![Cuit-&#95;Eigenschaften](../test/media/cuit-props.png "CUIT_Props")
 
 1. Überschreiben Sie die zugreifbare <xref:System.Windows.Forms.AccessibleObject.Description%2A>-Eigenschaft des Kurvenlegendenobjekts, um Werte von Rich-Eigenschaften aus der Beschreibungszeichenfolge zu übergeben (durch Semikolons (;) von der Hauptbeschreibung und voneinander getrennt, wenn mehrere Eigenschaften implementiert werden).
 
@@ -326,7 +326,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 > [!NOTE]
 > Dieses Erweiterungspaket wird auf jedes Steuerelement vom Typ "Text" angewendet. Mehrere Steuerelemente des gleichen Typs müssen separat getestet werden, und Sie müssen die beim Aufzeichnen der Tests bereitzustellenden Erweiterungspakete verwalten.
 
-## <a name="codegeneration"></a> Codegenerierung durch Implementierung einer Klasse zum Zugriff auf benutzerdefinierte Eigenschaften unterstützen
+## <a name="support-code-generation-by-implementing-a-class-to-access-custom-properties"></a><a name="codegeneration"></a> Unterstützen der Code Generierung durch Implementierung einer Klasse für den Zugriff auf benutzerdefinierte Eigenschaften
  Wenn der Test-Generator für codierte UI aus einer Sitzungsaufzeichnung Code generiert, wird für den Zugriff auf die Steuerelemente die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>-Klasse verwendet.
 
 ```csharp
@@ -344,7 +344,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ```
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>So fügen Sie eine spezialisierte Klasse zum Zugriff auf das Steuerelement hinzu
- ![Cuit&#95;-CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")
+ ![Cuit-&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")
 
 1. Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> abgeleitete Klasse, und fügen in der Sucheigenschaftenauflistung des Konstruktors den Typ des Steuerelements hinzu.
 
@@ -406,11 +406,11 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-## <a name="intentawareactions"></a> Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen
+## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a><a name="intentawareactions"></a> Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen
  Beim Aufzeichnen eines Tests in Visual Studio werden alle Maus- und Tastaturereignisse erfasst. In einigen Fällen kann jedoch der Zweck der durch die Reihe von Maus- und Tastaturereignissen bewirkten Aktion verloren gehen. Wenn das Steuerelement beispielsweise AutoVervollständigen unterstützt, kann bei der Wiedergabe des Tests in einer anderen Umgebung der gleiche Satz von Maus- und Tastaturereignissen einen abweichenden Wert ergeben. Sie können ein Aktionsfilter-Plug-In hinzufügen, von dem die Reihe der Tastatur- und Mausereignisse durch eine einzelne Aktion ersetzt wird. Dadurch können Sie die zur Auswahl eines Werts führende Reihe von Tastatur- und Mausereignissen durch eine einzelne Aktion zum Festlegen des Wert ersetzen. Auf diese Weise können die aufgrund von AutoVervollständigen in verschiedenen Umgebungen auftretenden Unterschiede bei Tests der codierten UI vermieden werden.
 
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen
- ![Cuit&#95;-Aktionen](../test/media/cuit-actions.png "CUIT_Actions")
+ ![Cuit-&#95;Aktionen](../test/media/cuit-actions.png "CUIT_Actions")
 
 1. Implementieren Sie eine Aktionsfilter Klasse, die von [UITestAction Filter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))abgeleitet wird und die Eigenschaften [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [aktiviert](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) und [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110))außer Kraft setzt.
 
@@ -509,7 +509,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-4. Erstellen Sie die Binärdateien, und kopieren Sie sie nach "%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages".
+4. Erstellen Sie die Binärdateien, und kopieren Sie sie nach „%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages“.
 
 > [!NOTE]
 > Der Aktionsfilter ist nicht von der Implementierung der Barrierefreiheit oder vom Eigenschaftenanbieter abhängig.
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>So debuggen Sie den Eigenschaftenanbieter oder Aktionsfilter
 
-1. Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die DLL- und PDB-Dateien nach "%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages".
+1. Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die DLL- und PDB-Dateien nach „%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages“.
 
 2. Führen Sie die Anwendung aus (nicht im Debugger.)
 
@@ -535,10 +535,10 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
-### <a name="guidance"></a>Anleitung
+### <a name="guidance"></a>Anleitungen
  [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+- [Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)

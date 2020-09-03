@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535719"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
@@ -26,7 +26,7 @@ Wenn Sie die Code Analyse für Projekte mit verwaltetem Code in, oder konfigurie
 ## <a name="available-rule-sets"></a>Verfügbare Regelsätze
  In der folgenden Tabelle sind die Standardregelsätze aufgeführt:
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |[Regelsatz für alle Regeln](../code-quality/all-rules-rule-set.md)|Dieser Regelsatz enthält alle Regeln. Das Ausführen dieses Regelsatzes führt möglicherweise zu einer hohen Anzahl gemeldeter Warnungen. Verwenden Sie diesen Regelsatz, um einen Überblick über alle Probleme in Ihrem Code zu erhalten. Dies kann Ihnen bei der Entscheidung behilflich sein, welche der spezifischeren Regelsätze für Ihre Projekte am besten geeignet sind.|
 |[Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|Diese Regeln zielen auf logische Fehler und häufige Irrtümer bei der Verwendung von Framework-APIs ab. Binden Sie diesen Regelsatz zur Erweiterung der Liste von Warnungen mit ein, die von den empfohlenen Mindestregeln gemeldet werden.|

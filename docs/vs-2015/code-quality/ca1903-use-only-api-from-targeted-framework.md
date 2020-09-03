@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545248"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden.
@@ -27,11 +27,11 @@ ms.locfileid: "85545248"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: nur API aus Ziel Framework verwenden](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Kategorie|Microsoft. Portabilität|
+|Category|Microsoft. Portabilität|
 |Unterbrechende Änderung|Unterbrechen: Wenn Sie für die Signatur eines extern sichtbaren Members oder Typs ausgelöst werden.<br /><br /> Nicht unterbrechend: beim Auslösen im Text einer Methode.|
 
 ## <a name="cause"></a>Ursache
@@ -42,13 +42,13 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: nur API aus
 
  **Ziel Framework-und Service Pack-Abhängigkeiten**
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |Wenn das Ziel Framework|Ausgelöst bei der Verwendung von Membern, die in eingeführt wurden|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|Nicht zutreffend|
+|.NET Framework 4|–|
 
  Informationen zum Ändern des Ziel-Frameworks eines Projekts finden Sie unter [Ausrichten einer bestimmten .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).
 

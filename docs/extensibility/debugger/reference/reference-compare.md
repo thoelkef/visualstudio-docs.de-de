@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Microsoft Docs
+title: REFERENCE_COMPARE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713729"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
-Gibt den Typ des Vergleichs für Referenzen an.
+Gibt den Typ des Vergleichs für Verweise an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,24 +46,24 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Felder
  `REF_COMPARE_EQUAL`\
- Gibt einen Vergleich mit gleicher Gleichheit an.
+ Gibt einen Gleichheits Vergleich an.
 
  `REF_COMPARE_LESS_THAN`\
- Gibt einen Weniger-als-Vergleich an.
+ Gibt einen kleiner-als-Vergleich an.
 
  `REF_COMPARE_GREATER_THAN`\
- Gibt einen Vergleich größer als an.
+ Gibt einen größer-als-Vergleich an.
 
 ## <a name="remarks"></a>Bemerkungen
- Übergeben als Argument [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) an die Compare-Methode.
+ Als Argument an die [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) -Methode übergebenen.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Vergleichen](../../../extensibility/debugger/reference/idebugreference2-compare.md)

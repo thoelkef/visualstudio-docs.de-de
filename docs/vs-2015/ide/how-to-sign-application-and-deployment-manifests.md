@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7924201f4cf58e1066434707a8453b0fe1913bc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670723"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Gewusst wie: Signieren von Anwendungs- und Bereitstellungsmanifesten
@@ -30,11 +30,11 @@ ms.locfileid: "72670723"
 
 Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möchten, müssen Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen/privaten Schlüsselpaar und unter Verwendung von Authenticode signiert werden. Sie können die Manifeste mit einem Zertifikat aus dem Windows-Zertifikatspeicher oder einer Schlüsseldatei signieren.
 
- Weitere Informationen über die ClickOnce-Bereitstellung finden Sie unter [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md).
+ Weitere Informationen zur ClickOnce-Bereitstellung finden Sie unter [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md).
 
  Das Signieren der ClickOnce-Manifeste ist für EXE-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt "Generieren von unsignierten Manifesten" in diesem Dokument.
 
- Weitere Informationen zum Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
+ Weitere Informationen zum Erstellen von Schlüsseldateien finden [Sie unter Gewusst wie: Erstellen eines öffentlichen/privaten Schlüssel Paars](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange). Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
@@ -48,7 +48,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
      Das Dialogfeld **Zertifikat auswählen** wird mit dem Inhalt des Windows-Zertifikatspeichers angezeigt.
 
     > [!TIP]
-    > Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Zertifikate** klicken, um weitere Hilfeinformationen anzuzeigen.
+    > Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Zertifikate** klicken, um weitere Hilfe Informationen anzuzeigen.
 
 3. Wählen Sie das Zertifikat aus, mit dem Sie die Manifeste signieren möchten.
 
@@ -62,7 +62,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
      Das Dialogfeld **Datei auswählen** wird angezeigt.
 
-3. Suchen Sie im Dialogfeld **Datei auswählen** den Speicherort der zu verwendenden Schlüsseldatei (PFX-Datei), und klicken Sie dann auf **Öffnen**.
+3. Navigieren Sie im **Dialogfeld Datei auswählen** zum Speicherort der Schlüsseldatei (. pfx), die Sie verwenden möchten, und klicken Sie dann auf **Öffnen**.
 
     > [!NOTE]
     > Diese Option kann nur bei Dateien mit der Erweiterung .pfx verwendet werden. Speichern Sie Schlüsseldateien oder Zertifikate in einem anderen Format im Windows-Zertifikatspeicher, und wählen Sie das Zertifikat aus, das im vorhergehenden Verfahren beschrieben wurde. Zu den Funktionen des ausgewählten Zertifikats sollten auch Codesignaturen gehören.
@@ -93,7 +93,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
 2. Deaktivieren Sie auf der Seite **Signierung** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
 
-3. Setzen Sie die Veröffentlichungsversion zurück, damit nur eine Version der Anwendung verfügbar ist. Standardmäßig wird die Revisionsnummer der Veröffentlichungsversion von Visual Studio bei jedem Veröffentlichen einer Anwendung automatisch erhöht. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Setzen Sie die Veröffentlichungsversion zurück, damit nur eine Version der Anwendung verfügbar ist. Standardmäßig wird die Revisionsnummer der Veröffentlichungsversion von Visual Studio bei jedem Veröffentlichen einer Anwendung automatisch erhöht. Weitere Informationen finden Sie unter Gewusst [wie: Festlegen der ClickOnce-Veröffentlichungs Version](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Veröffentlichen Sie die Anwendung.
 
@@ -108,5 +108,5 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
 3. Veröffentlichen Sie die Anwendung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Assemblys mit [starkem Namen](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) Gewusst [wie: Erstellen einer öffentlichen/privaten Schlüsselpaar](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114) - [Signierungs Seite, Projekt-Designer](../ide/reference/signing-page-project-designer.md) [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)

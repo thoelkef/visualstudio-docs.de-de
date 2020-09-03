@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545560"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Debuggen von Windows Store-Apps und universellen Windows-Apps
@@ -32,7 +32,7 @@ Der Visual Studio-Debugger bietet umfassende Unterstützung zum Debuggen von Win
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|Titel|Beschreibung|  
+|Titel|BESCHREIBUNG|  
 |-|-|  
 |[Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Führen Sie Store-Apps auf einem lokalen Computer, in einem App-Simulator oder -Emulator oder auf einem Remotegerät aus.|  
 |[Debuggen von Apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Suchen Sie über den Visual Studio-Debugger nach Fehlern in Ihren Store-Apps, und korrigieren Sie diese.|  

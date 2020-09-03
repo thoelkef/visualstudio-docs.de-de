@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542206"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
@@ -37,7 +37,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 
 - [Erstellen eines clippingpfads](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Zeichnen einer Form
+## <a name="draw-a-shape"></a><a name="Shape"></a> Zeichnen einer Form
  Formen finden Sie im Bereich **Objekte** .
 
  ![Formenkategorie im Objektbereich](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -46,7 +46,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="draw-a-path"></a><a name="Path"></a>Zeichnen eines Pfads
+## <a name="draw-a-path"></a><a name="Path"></a> Zeichnen eines Pfads
  Ein Pfad besteht aus einer Reihe von miteinander verbundenen Linien und Kurven. Verwenden Sie einen Pfad, um interessante Formen zu erstellen, die nicht im Bereich **Objekte** verfügbar sind.
 
  Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Bereich **Tools** .
@@ -89,32 +89,32 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 ### <a name="remove-a-point-in-a-path"></a>Entfernen eines Punkts in einem Pfad
  Verwenden Sie das Tool **Auswahl**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")oder den **Stift**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54").
 
- Verwenden Sie das **Auswahl** Werkzeug ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") , um den Pfad auszuwählen. Verwenden Sie dann das **Stift** Werkzeug, ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") um auf den Punkt zu klicken, den Sie entfernen möchten.
+ Verwenden Sie das **Auswahl** Werkzeug  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") , um den Pfad auszuwählen. Verwenden Sie dann das **Stift** Werkzeug, ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") um auf den Punkt zu klicken, den Sie entfernen möchten.
 
 ### <a name="add-a-point-to-a-path"></a>Hinzufügen eines Punkts zu einem Pfad
  Verwenden Sie das Tool **Auswahl**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")oder den **Stift**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54").
 
- Verwenden Sie das **Auswahl** Werkzeug ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") , um den Pfad auszuwählen. Verwenden Sie **Pen** den Stift ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") , um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
+ Verwenden Sie das **Auswahl** Werkzeug  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") , um den Pfad auszuwählen. Verwenden Sie **Pen** den Stift ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") , um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Konvertieren einer Form in einen Pfad
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Konvertieren einer Form in einen Pfad
  Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad.
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Arbeiten mit Pfaden: Konvertieren von Formen in einen Pfad](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
 
-## <a name="combine-paths"></a><a name="Combine"></a>Kombinieren von Pfaden
+## <a name="combine-paths"></a><a name="Combine"></a> Kombinieren von Pfaden
  Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
-|Bild|Beschreibung|Bild|Beschreibung|
+|Bild|BESCHREIBUNG|Bild|BESCHREIBUNG|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|Zwei Formen vor dem Vereinen|![](../designers/media/b1-4.png "B1_4")|Intersect|
+|![](../designers/media/b1-1.png "B1_1")|Zwei Formen vor dem Vereinen|![](../designers/media/b1-4.png "B1_4")|Überschneiden|
 |![](../designers/media/b1-2.png "B1_2")|Vereinigen|![](../designers/media/b1-5.png "B1_5")|Überlappung ausschließen|
 |![](../designers/media/b1-3.png "B1_3")|Dividieren|![](../designers/media/b1-6.png "B1_6")|Subtrahieren|
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Erstellen eines zusammengesetzten Pfads
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Erstellen eines zusammengesetzten Pfads
  Wenn Sie einen zusammengesetzten Pfad erstellen, werden sich überschneidende Pfadsegmente vom Ergebnis subtrahiert. Der resultierende Pfad übernimmt die visuellen Eigenschaften des untersten Pfads.
 
  Sie können einen zusammengesetzten Pfad nach der Erstellung jederzeit teilen.
@@ -123,7 +123,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Arbeiten mit Pfaden: Erstellen eines zusammengesetzten Pfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q)
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Erstellen eines clippingpfads
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Erstellen eines clippingpfads
  Freistellungspfade sind Pfade oder Formen, die auf ein anderes Objekt angewendet werden. Die Teile des maskierten Objekts, die außerhalb des Freistellungspfads liegen, werden ausgeblendet.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

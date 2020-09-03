@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 51512c80c96ef82835ce38c36e3643261ba84231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671741"
 ---
 # <a name="step-5-add-label-references"></a>Schritt 5: Hinzufügen von Bezeichnungsverweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Programm muss nachverfolgen, welches Bezeichnungsfeld der Spieler wählt. Bisher zeigt das Programm alle Bezeichnungsfelder an, die der Spieler ausgewählt hat. Wir werden das ändern. Nachdem das erste Bezeichnungsfeld gewählt wurde, sollte das Programm das Symbol im Bezeichnungsfeld anzeigen. Nachdem das zweite Bezeichnungsfeld ausgewählt ist, sollte das Programm beide Symbole für eine kurze Zeit anzeigen und dann beide wieder ausblenden. Das Programm verfolgt nun mithilfe von *Verweisvariablen*, welches Bezeichnungsfeld zuerst und welches danach gewählt wird.
+Das Programm muss nachverfolgen, welches Bezeichnungsfeld der Spieler wählt. Bisher zeigt das Programm alle Bezeichnungsfelder an, die der Spieler ausgewählt hat. Wir werden das ändern. Nachdem das erste Bezeichnungsfeld gewählt wurde, sollte das Programm das Symbol im Bezeichnungsfeld anzeigen. Nachdem das zweite Bezeichnungsfeld ausgewählt ist, sollte das Programm beide Symbole für eine kurze Zeit anzeigen und dann beide wieder ausblenden. Das Programm verfolgt nun mithilfe von *Verweis Variablen*, welches Bezeichnungsfeld zuerst ausgewählt und welches als zweites ausgewählt wird.
 
 ### <a name="to-add-label-references"></a>So fügen Sie Bezeichnungsverweise hinzu
 
@@ -47,6 +47,6 @@ Das Programm muss nachverfolgen, welches Bezeichnungsfeld der Spieler wählt. Bi
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 6: Hinzufügen eines Timers](../ide/step-6-add-a-timer.md).
+- Um zum nächsten Schritt des Tutorials zu wechseln, klicken [Sie auf Schritt 6: Hinzufügen eines Timers](../ide/step-6-add-a-timer.md).
 
-- Informationen darüber, wie Sie zum vorherigen Tutorial-Schritt zurückkehren, finden Sie unter [Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, [Klicken Sie auf Schritt 4: Hinzufügen eines Click-Ereignis Handlers zu jeder Bezeichnung](../ide/step-4-add-a-click-event-handler-to-each-label.md).

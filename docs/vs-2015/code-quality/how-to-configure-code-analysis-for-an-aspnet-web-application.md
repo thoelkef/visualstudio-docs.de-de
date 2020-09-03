@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657465"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] können Sie eine Liste der Code Analyse- *Regelsätze* auswählen, die auf [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webanwendung angewendet werden sollen. Der Standard Regelsatz sind die empfohlenen Microsoft Mininimum-Regeln. Sie können einen anderen Regelsatz auswählen, der auf die Website angewendet werden soll.
+In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] können Sie aus einer Liste von Code Analyse- *Regelsätzen* auswählen, die auf die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webanwendung angewendet werden sollen. Der Standard Regelsatz sind die empfohlenen Microsoft Mininimum-Regeln. Sie können einen anderen Regelsatz auswählen, der auf die Website angewendet werden soll.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>So konfigurieren Sie einen Regelsatz für ein ASP.NET-Seitenframeworkprojekt
 
@@ -43,6 +43,6 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort
 
     - Wählen Sie den Regelsatz aus, den Sie verwenden möchten.
 
-    - Wählen Sie **\<Browse >** aus, um einen vorhandenen benutzerdefinierten Regelsatz anzugeben, der nicht in der Liste enthalten ist.
+    - Wählen Sie **\<Browse>** diese Option, um einen vorhandenen benutzerdefinierten Regelsatz anzugeben, der nicht in der Liste enthalten ist.
 
     - Definieren Sie einen benutzerdefinierten Regelsatz. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).
