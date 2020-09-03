@@ -1,69 +1,67 @@
 ---
-title: IDebugFunctionObject::Evaluate | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: 'Idebugfunctionobject:: evaluieren | Microsoft-Dokumentation'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::Evaluate
 helpviewer_keywords:
 - IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: e19baa193bb015056b9e5abde4c7a274f635c0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179423"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Ruft die Funktion und der resultierende Wert als Objekt zurückgegeben.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```cpp
-HRESULT Evaluate( 
-   IDebugObject** ppParams,
-   DWORD          dwParams,
-   DWORD          dwTimeout,
-   IDebugObject** ppResult
-);
-```
-
-```csharp
-int Evaluate(
-   IDebugObject[]   ppParams,
-   IntPtr           dwParams,
-   uint             dwTimeout,
-   out IDebugObject ppResult
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `ppParams`
-
- [in] Ein Array von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekte, die die Eingabeparameter darstellen. Dieser Parameter erstellt wurde, mit einem der `Create` Methoden in der [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.
-
- `dwParams`
-
- [in] Die Anzahl von Parametern in der `ppParams` Array.
-
- `dwTimeout`
-
- [in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.
-
- `ppResult`
-
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Wert der Funktion als ein Objekt.
-
-## <a name="return-value"></a>Rückgabewert
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
-
-## <a name="remarks"></a>Hinweise
- Diese Methode richtet ein und führt einen Aufruf an die Funktion, dargestellt durch die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Objekt.
-
-## <a name="see-also"></a>Siehe auch
-- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+Ruft die-Funktion auf und gibt den resultierenden Wert als-Objekt zurück.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT Evaluate(   
+   IDebugObject** ppParams,  
+   DWORD          dwParams,  
+   DWORD          dwTimeout,  
+   IDebugObject** ppResult  
+);  
+```  
+  
+```csharp  
+int Evaluate(  
+   IDebugObject[]   ppParams,   
+   IntPtr           dwParams,   
+   uint             dwTimeout,   
+   out IDebugObject ppResult  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `ppParams`  
+ in Ein Array von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekten, die die Eingabeparameter darstellen. Jeder dieser Parameter wurde mit einer der- `Create` Methoden in der [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle erstellt.  
+  
+ `dwParams`  
+ in Die Anzahl der Parameter im `ppParams` Array.  
+  
+ `dwTimeout`  
+ in Gibt die maximale Zeit in Millisekunden an, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.  
+  
+ `ppResult`  
+ vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das den Wert der Funktion als Objekt darstellt.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
+  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode richtet einen Aufruf der Funktion ein, die vom [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Objekt dargestellt wird, und führt Sie aus.  
+  
+## <a name="see-also"></a>Weitere Informationen  
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

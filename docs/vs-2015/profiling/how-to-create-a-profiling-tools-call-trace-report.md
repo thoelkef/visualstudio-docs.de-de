@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547991"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Gewusst wie: Erstellen eines Aufrufablaufverfolgungsberichts für Profilerstellungstools
@@ -35,7 +35,7 @@ Im *Aufrufablaufverfolgungsbericht* für die [!INCLUDE[vsprvs](../includes/vsprv
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
-    |Command-Element|BESCHREIBUNG|
+    |Command-Element|Beschreibung|
     |-|-|  
     |*ToolsPath*|Der Pfad für die Befehlszeilentools der Profilerstellungstools. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
     |*VSPFile*|Die Profilerstellungs-Datendatei (.vsp oder .vsps). Es werden vollständige und partielle Pfade angenommen.|  
@@ -43,4 +43,4 @@ Im *Aufrufablaufverfolgungsbericht* für die [!INCLUDE[vsprvs](../includes/vsprv
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Gewusst wie: Erfassen von Daten der Ereignis Ablauf Verfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)
+ [Profilerstellungstools-APIs](../profiling/profiling-tools-apis.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658012"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Zusatztasten der Zeichenflächen in Blend
@@ -21,7 +21,7 @@ ms.locfileid: "72658012"
 
 Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können daher nicht über die [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Benutzeroberfläche ermittelt werden. In der folgenden Tabelle werden Tastenkombinationen aufgeführt, die eine Aktion ändern wie z. B. die Anpassung der Größe eines Objekts.
 
-|Aktion|Vorgehensweise|
+|Aufgabe|Aktion|
 |-----------------------|-------------|
 |Wählen Sie vorübergehend das **Auswahl**tool aus, solange ein anderes Tool ausgewählt ist (dadurch verringern Sie die Anzahl der Klicks im Bereich **Tools**, indem Sie zwischen dem **Auswahl**tool und anderen Tools wechseln)|STRG-TASTE gedrückt halten|
 |Ausgewählte Objekte bewegen, während das **Auswahl**tool ausgewählt ist|Drücken Sie die Pfeiltasten|
@@ -42,5 +42,5 @@ Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können dah
 |Schaltet zwischen geöffneten Dokumenten um|Drücken Sie STRG+TAB|
 |Öffnen Sie den Bereich **Objekte**|Drücken Sie STRG+PUNKT|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Tasten [Kombinationen](../designers/keyboard-shortcuts-in-blend.md) [Stift Werkzeug Modifizierertasten](../designers/pen-tool-modifier-keys-in-blend.md) [Direktauswahl toolmodifizierertasten](../designers/direct-selection-tool-modifier-keys-in-blend.md)

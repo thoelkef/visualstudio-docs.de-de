@@ -1,5 +1,5 @@
 ---
-title: VSIX Farbeditor | Microsoft Docs
+title: VSIX-Farb-Editor | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -9,61 +9,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa3ed1f1a2a761a6602ac891eb78b5a5436abf92
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704042"
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
-Das Visual Studio-Erweiterungsfarbeditor-Tool kann benutzerdefinierte Farben für Visual Studio erstellen und bearbeiten. Das Tool kann auch Designressourcenschlüssel generieren, sodass die Farben im Code verwendet werden können. Dieses Tool ist nützlich zum Erstellen von Farben für eine Visual Studio-Erweiterung, die Dies unterstützt. Dieses Tool kann .pkgdef- und .xml-Dateien öffnen. Visual Studio-Designs (.vstheme-Dateien) können mit dem Visual Studio-Erweiterungsfarb-Editor verwendet werden, indem Sie die Dateierweiterung in .xml ändern. Darüber hinaus können .vstheme-Dateien in eine aktuelle XML-Datei importiert werden.
+Mit dem Visual Studio-Erweiterungs Farb-Editor-Tool können benutzerdefinierte Farben für Visual Studio erstellt und bearbeitet werden. Das Tool kann auch Design-Ressourcen Schlüssel generieren, damit die Farben im Code verwendet werden können. Dieses Tool ist nützlich, um Farben für eine Visual Studio-Erweiterung zu erstellen, die Designs unterstützt. Mit diesem Tool können pkgdef-und XML-Dateien geöffnet werden. Visual Studio-Themen (vstheme-Dateien) können mit dem Erweiterungs Farb-Editor von Visual Studio verwendet werden, indem die Dateierweiterung in. xml geändert wird. Darüber hinaus können vstheme-Dateien in eine aktuelle XML-Datei importiert werden.
 
  ![VSIX-Farb-Editor-Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX-Farb-Editor-Hero")
 
  **Paketdefinitionsdateien**
 
- Paketdefinitionsdateien (.pkgdef) sind die Dateien, die Designs definieren. Die Farben selbst werden in Theme Color .xml Dateien gespeichert, die in eine .pkgdef Datei kompiliert werden. Die .pkgdef-Dateien werden an durchsuchbaren Visual Studio-Speicherorten bereitgestellt, zur Laufzeit verarbeitet und zusammengeführt, um Designs zu definieren.
+ Paket Definitions Dateien (. pkgdef) sind die Dateien, die Designs definieren. Die Farben selbst werden in Design Color. XML-Dateien gespeichert, die in eine pkgdef-Datei kompiliert werden. Die pkgdef-Dateien werden an von Visual Studio durch suchbare Speicherorte bereitgestellt, zur Laufzeit verarbeitet und zusammengeführt, um Designs zu definieren.
 
  **Farbtoken**
 
- Ein Farbtoken besteht aus vier Elementen:
+ Ein farbtoken besteht aus vier Elementen:
 
-- **Kategoriename:** Eine logische Gruppierung für einen Satz von Farben. Verwenden Sie einen vorhandenen Kategorienamen, wenn bereits Farben vorhanden sind, die für das gewünschte UI-Element oder eine Gruppe von UI-Elementen spezifisch sind.
+- **Kategoriename:** Eine logische Gruppierung für einen Satz von Farben. Verwenden Sie einen vorhandenen Kategorienamen, wenn bereits Farben vorhanden sind, die für das gewünschte Benutzeroberflächen Element oder eine Gruppe von Benutzeroberflächen Elementen spezifisch sind.
 
-- **Tokenname:** Ein beschreibender Name für die Farbtoken- und Tokensätze. Sets enthalten Hintergrund- und Vordergrundtokennamen (Text) sowie alle ihre Zustände, und diese sollten benannt werden, damit die Paare und die Zustände, auf die sie angewendet werden, leicht identifiziert werden können.
+- **Tokenname:** Ein beschreibender Name für das farbtoken und die tokensätze. Zu den Sätzen gehören Hintergrund-und Vordergrund (Text)-Tokennamen sowie alle zugehörigen Zustände. diese müssen benannt werden, damit die Paare und die Zustände, für die Sie gelten, leicht identifiziert werden können.
 
-- **Farbwerte (oder Farbtöne):** Benötigt für jedes farbige Thema. Erstellen Sie immer Hintergrund- und Textfarbwerte in Paaren. Farben werden für Hintergrund/Vordergrund gepaart, sodass die Textfarbe (Vordergrundfarbe) immer vor der Hintergrundfarbe lesbar ist, auf der sie gezeichnet wird. Diese Farben sind verknüpft und werden zusammen in der Benutzeroberfläche verwendet. Wenn der Hintergrund nicht für die Verwendung mit Text vorgesehen ist, definieren Sie keine Vordergrundfarbe.
+- **Farbwerte (oder Farben):** Für jedes farbige Design erforderlich. Erstellen Sie immer Hintergrund-und textfarbwerte in Paaren. Farben werden für Hintergrund/Vordergrund kombiniert, sodass die Textfarbe (Vordergrund) immer für die Hintergrundfarbe lesbar ist, in der Sie gezeichnet wird. Diese Farben sind verknüpft und werden zusammen in der Benutzeroberfläche verwendet. Wenn der Hintergrund nicht für die Verwendung mit Text vorgesehen ist, definieren Sie keine Vordergrundfarbe.
 
-- **Systemfarbname:** Für den Einsatz in kontrastreichen Displays.
+- **System Farbname:** Zur Verwendung in hoch Kontrast anzeigen.
 
-## <a name="how-to-use-the-tool"></a>Verwendung des Tools
- So viel wie möglich und gegebenenfalls vorhandene Visual Studio-Farben sollten wiederverwendet werden, anstatt neue zu erstellen. Für Fälle, in denen keine geeigneten Farben definiert sind, sollten jedoch benutzerdefinierte Farben erstellt werden, um eine Erweiterungs-Theming kompatibel zu halten.
+## <a name="how-to-use-the-tool"></a>Verwenden des Tools
+ So weit wie möglich und gegebenenfalls sollten vorhandene Visual Studio-Farben wieder verwendet werden, anstatt neue zu erstellen. In Fällen, in denen keine passenden Farben definiert sind, sollten jedoch benutzerdefinierte Farben erstellt werden, um die Kompatibilität der Erweiterungs Themen zu gewährleisten.
 
- **Erstellen neuer Farbtoken**
+ **Erstellen neuer farbtoken**
 
- Gehen Sie folgendzulande vor, um benutzerdefinierte Farben mit dem Visual Studio-Erweiterungsfarb-Editor zu erstellen:
+ Führen Sie die folgenden Schritte aus, um benutzerdefinierte Farben mit dem Erweiterungs Farb-Editor von Visual Studio zu erstellen:
 
-1. Bestimmen Sie die Kategorie- und Tokennamen für die neuen Farbtoken.
+1. Bestimmen Sie die Kategorien-und Tokennamen für die neuen farbtoken.
 
-2. Wählen Sie die Farbtöne aus, die das UI-Element für jedes Design verwendet, und die Systemfarbe für hohen Kontrast.
+2. Wählen Sie die Farbtöne aus, die das UI-Element für jedes Design und die System Farbe für hoher Kontrast verwenden soll.
 
-3. Verwenden Sie den Farbeditor, um neue Farbtoken zu erstellen.
+3. Verwenden Sie den Farb-Editor, um neue farbtoken zu erstellen.
 
 4. Verwenden Sie die Farben in einer Visual Studio-Erweiterung.
 
 5. Testen Sie die Änderungen in Visual Studio.
 
-   **Schritt 1: Bestimmen Sie die Kategorie- und Tokennamen für die neuen Farbtoken.**
+   **Schritt 1: bestimmen Sie die Kategorien-und Tokennamen für die neuen farbtoken.**
 
-   Das bevorzugte Benennungsschema für eine VSColor ist **[Kategorie] [UI-Typ] [Status]**. Verwenden Sie das Wort "farbe" nicht in VSColor-Namen, da es redundant ist.
+   Das bevorzugte Benennungs Schema für ein vscolor ist **[Category] [UI Type] [State]**. Verwenden Sie das Wort "Color" nicht in vscolor-Namen, da es redundant ist.
 
-   Kategorienamen stellen logische Gruppierungen bereit und sollten so eng wie möglich definiert werden. Der Name eines einzelnen Werkzeugfensters kann z. B. ein Kategoriename sein, der Name einer gesamten Unternehmenseinheit oder eines Projektteams jedoch nicht. Das Gruppieren von Einträgen in Kategorien hilft, Verwechslungen zwischen Farben mit demselben Namen zu vermeiden.
+   Kategorienamen stellen logische Gruppierungen bereit und sollten so eng wie möglich definiert werden. Der Name eines einzelnen Tool Fensters könnte z. b. ein Kategoriename sein, aber der Name einer gesamten Geschäftseinheit oder eines gesamten Projektteams ist nicht. Das Gruppieren von Einträgen in Kategorien trägt dazu bei, Verwirrung zwischen Farben mit demselben Namen zu verhindern.
 
-   Ein Tokenname muss eindeutig den Elementtyp und die Situationen oder den "Status" angeben, auf die die Farbe angewendet wird. Beispielsweise könnte der **[UI-Typ]** eines aktiven Datentipps den Namen **"DataTip**" und der **[Status]** **"Aktiv"** heißen, was zu einem Farbnamen von "**DataTipActive"** führt. Da Datentipps Text enthalten, müssen sowohl eine Vordergrund- als auch eine Hintergrundfarbe definiert werden. Durch die Verwendung einer Hintergrund-/Vordergrundpaarung erstellt der Farbeditor automatisch die Farben "**DataTipActive**" für den Hintergrund und "**DataTipActiveText**" für den Vordergrund.
+   Ein Tokenname muss eindeutig den Elementtyp und die Situationen oder "State" angeben, für die die Farbe angewendet wird. Beispielsweise könnte der **[UI-Typ]** eines aktiven Datentyps "**DataTip**" genannt werden, und **[State]** kann als "**Active**" bezeichnet werden, was den Farbnamen "**datatipactive**" ergibt. Da Daten Tipps über Text verfügen, müssen sowohl eine Vordergrund-als auch eine Hintergrundfarbe definiert werden. Durch die Verwendung einer Hintergrund-/vordergrundkopplung erstellt der Farb-Editor automatisch die Farben "**datatipactive**" für den Hintergrund und "**datatipactivetext**" für den Vordergrund.
 
-   Wenn das Element der Benutzeroberfläche nur einen Zustand hat, kann der **[Status]-Teil** des Namens weggelassen werden. Wenn z. B. ein Suchfeld einen Rahmen hat und keine Zustandsänderung vorliegt, die sich auf die Farbe des Rahmens auswirken würde, kann der Name für das Farbtoken des Rahmens einfach als **"SearchBoxBorder"** bezeichnet werden.
+   Wenn die Benutzeroberfläche nur einen Status aufweist, kann der **[State]** -Teil des Namens ausgelassen werden. Wenn ein Suchfeld z. b. einen Rahmen hat und keine Zustandsänderung vorliegt, die die Farbe des Rahmens beeinflussen würde, kann der Name für das farbtoken des Rahmens einfach als "**searchboxborder**" bezeichnet werden.
 
-   Einige gängige Statusnamen sind:
+   Einige allgemeine Zustands Namen umfassen Folgendes:
 
 - Aktiv
 
@@ -71,75 +71,75 @@ Das Visual Studio-Erweiterungsfarbeditor-Tool kann benutzerdefinierte Farben fü
 
 - MouseOver
 
-- Mousedown
+- MouseDown
 
-- Aktiviert
+- Ausgewählt
 
-- Mit Fokus
+- Focused
 
-  Beispiele für einige Tokennamen für Teile eines Listenelementsteuerelements:
+  Beispiele für einige Tokennamen für Teile eines Listenelement-Steuer Elements:
 
 - ListItem
 
-- ListItemBorder
+- Listitemborder
 
-- ListItemMouseOver
+- Listitemmouseover
 
-- ListItemMouseOverBorder
+- Listitemmouseoverborder
 
-- ListItemSelected
+- Listitemselected
 
-- ListItemSelectedBorder
+- Listitemselectedborder
 
-- ListItemDisabled
+- Listitemdeaktiviert
 
-- ListItemDisabledBorder
+- Listitemdisabledborder
 
-  **Schritt 2: Wählen Sie die Farbtöne aus, die das UI-Element für jedes Design verwendet, und die Systemfarbe für hohen Kontrast.**
+  **Schritt 2: Wählen Sie die Farbtöne aus, die das UI-Element für jedes Design und die System Farbe für hoher Kontrast verwendet.**
 
-  Wenn Sie benutzerdefinierte Farben für die Benutzeroberfläche auswählen, wählen Sie ein ähnliches vorhandenes UI-Element aus, und verwenden Sie dessen Farben als Basis. Die Farben für in-the-box UI-Elemente wurden überprüft und getestet, so dass sie angemessen aussehen und sich in allen Designs korrekt verhalten.
+  Wenn Sie benutzerdefinierte Farben für die Benutzeroberfläche auswählen, wählen Sie ein ähnliches vorhandenes Benutzeroberflächen Element aus, und verwenden Sie seine Farben als Basis. Die Farben für die eingebundenen Benutzeroberflächen Elemente wurden überprüft und getestet, sodass Sie in allen Designs ordnungsgemäß Aussehen und ordnungsgemäß Verhalten.
 
-  **Schritt 3: Verwenden Sie den Farbeditor, um neue Farbtoken zu erstellen.**
+  **Schritt 3: Verwenden Sie den Farb-Editor, um neue farbtoken zu erstellen.**
 
-  Starten Sie den Farbeditor und öffnen oder erstellen Sie eine neue benutzerdefinierte Designfarben .xml-Datei. Wählen Sie **> Neue Farbe** bearbeiten aus dem Menü aus. Dadurch wird ein Dialogfeld zum Angeben der Kategorie und eines oder mehrere Namen für Farbeinträge innerhalb dieser Kategorie geöffnet:
+  Starten Sie den Farb-Editor, und öffnen oder erstellen Sie eine neue benutzerdefinierte Design Colors. XML-Datei. Klicken Sie im Menü auf **> neue Farbe bearbeiten** . Dadurch wird ein Dialogfeld zum Angeben der Kategorie und mindestens ein Name für Farbeinträge innerhalb dieser Kategorie geöffnet:
 
   ![VSIX-Farb-Editor – Neue Farbe](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX-Farb-Editor – Neue Farbe")
 
-  Wählen Sie eine vorhandene Kategorie aus, oder wählen Sie **Neue Kategorie** aus, um eine neue Kategorie zu erstellen. Ein weiteres Dialogfeld wird geöffnet, in dem ein neuer Kategoriename erstellt wird:
+  Wählen Sie eine vorhandene Kategorie aus, oder wählen Sie **neue Kategorie** aus, um eine neue Kategorie zu erstellen. Ein weiteres Dialogfeld wird geöffnet, in dem Sie einen neuen Kategorien Amen erstellen:
 
   ![VSIX-Farb-Editor – Neue Kategorie](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX-Farb-Editor – Neue Kategorie")
 
-  Die neue Kategorie wird dann im Dropdown-Menü **"Neue Farbe"** verfügbar. Nachdem Sie eine Kategorie ausgewählt haben, geben Sie für jedes neue Farbtoken einen Namen pro Zeile ein, und wählen Sie "Erstellen", wenn Sie fertig sind:
+  Die neue Kategorie wird dann im Dropdown Menü **neue Farb** Kategorie verfügbar. Nachdem Sie eine Kategorie ausgewählt haben, geben Sie für jedes neue farbtoken einen Namen pro Zeile ein, und wählen Sie "erstellen", wenn Sie fertig sind:
 
   ![VSIX-Farb-Editor – Neue Farbe gefüllt](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX-Farb-Editor – Neue Farbe gefüllt")
 
-  Die Farbwerte werden in Hintergrund-/Vordergrundpaaren angezeigt, wobei "Keine" angibt, dass die Farbe nicht definiert wurde. Hinweis: Wenn eine Farbe kein Textfarb-/Hintergrundfarbpaar hat, muss nur der Hintergrund definiert werden.
+  Die Farbwerte werden in den Hintergrund-/vordergrundpaaren angezeigt, wobei "None" angibt, dass die Farbe nicht definiert wurde. Hinweis: Wenn eine Farbe kein textpaar mit Textfarbe/Hintergrundfarbe hat, muss nur der Hintergrund definiert werden.
 
   ![VSIX-Farb-Editor-Farbwerte](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX-Farb-Editor-Farbwerte")
 
-  Um ein Farbtoken zu bearbeiten, wählen Sie einen Farbeintrag für das Design (Spalte) dieses Tokens aus. Fügen Sie den Farbwert hinzu, indem Sie entweder einen Hex-Farbwert im 8-stelligen ARGB-Format eingeben, einen Systemfarbnamen in die Zelle eingeben oder das Dropdown-Menü verwenden, um die gewünschte Farbe über eine Reihe von Farbschiebereglern oder eine Liste von Systemfarben auszuwählen.
+  Wählen Sie zum Bearbeiten eines farbtokens einen Farb Eintrag für das Design (Spalte) dieses Tokens aus. Fügen Sie den Farbwert hinzu, indem Sie entweder einen hexadezimalen Farbwert in ein acht stelliges ARGB-Format eingeben, einen System Farbnamen in die Zelle eingeben oder das Dropdown Menü verwenden, um die gewünschte Farbe über eine Gruppe von Farb Schiebereglern oder eine Liste von Systemfarben auszuwählen.
 
   ![VSIX-Farb-Editor Farbe bearbeiten](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX-Farb-Editor Farbe bearbeiten")
 
   ![VSIX-Farb-Editor – Hintergrund](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX-Farb-Editor – Hintergrund")
 
-  Geben Sie für Komponenten, die keinen Text anzeigen müssen, nur einen Farbwert ein: die Hintergrundfarbe. Geben Sie andernfalls Werte für Hintergrund- und Textfarbe ein, die durch einen Schrägstrich getrennt sind.
+  Geben Sie für Komponenten, die keinen Text anzeigen müssen, nur einen Farbwert ein: die Hintergrundfarbe. Geben Sie andernfalls Werte für Hintergrund-und Textfarbe ein, getrennt durch einen Schrägstrich.
 
-  Geben Sie bei der Eingabe von Werten für hohen Kontrast gültige Windows-Systemfarbnamen ein. Geben Sie keine hartcodierten ARGB-Werte ein. Sie können eine Liste gültiger Systemfarbnamen anzeigen, indem Sie in den Dropdown-Menüs "Hintergrund: System" oder "Vordergrund: System" auswählen. Verwenden Sie beim Erstellen von Elementen mit Textkomponenten das richtige Hintergrund-/Textsystemfarbpaar, oder der Text ist möglicherweise nicht lesbar.
+  Geben Sie bei der Eingabe von Werten für hoher Kontrast gültige Namen für die Windows-System Farbe ein. Geben Sie keine hart codierten ARGB-Werte ein. Sie können eine Liste gültiger System Farbnamen anzeigen, indem Sie in den Dropdown Menüs Farbwert "Background: System" oder "Vordergrund: System" auswählen. Wenn Sie Elemente mit Textkomponenten erstellen, verwenden Sie das richtige Hintergrund-/textsystemfarbpaar, oder der Text kann nicht gelesen werden.
 
-  Wenn Sie die Erstellung, Einstellung und Bearbeitung der Farbtoken abgeschlossen haben, speichern Sie sie im gewünschten .xml- oder .pkgdef-Format. Farbtoken mit weder Hintergrund noch Vordergrundsatz werden als leere Farben im XML-Format gespeichert, aber im .pkgdef-Format verworfen. Ein Dialogfeld warnt Sie vor einem möglichen Farbverlust, wenn Sie versuchen, leere Farben in einer Pkgdef-Datei zu speichern.
+  Wenn Sie das Erstellen, festlegen und Bearbeiten der farbtoken abgeschlossen haben, speichern Sie Sie im gewünschten XML-oder pkgdef-Format. Farb Token, die weder einen Hintergrund noch einen Vordergrund Satz aufweisen, werden als leere Farben im XML-Format gespeichert, aber im pkgdef-Format verworfen. In einem Dialogfeld werden Sie vor möglichen Farb Verlusten gewarnt, wenn Sie versuchen, leere Farben in einer pkgdef-Datei zu speichern.
 
   **Schritt 4: Verwenden Sie die Farben in einer Visual Studio-Erweiterung.**
 
-  Nachdem Sie die neuen Farbtoken definiert haben, fügen Sie die .pkgdef in die Projektdatei ein, wobei "Build Action" auf "Inhalt" und "In VSIX einschließen" auf "True" gesetzt ist.
+  Nachdem Sie die neuen farbtoken definiert haben, fügen Sie die pkgdef-Datei in die Projektdatei ein, für die "Buildaktion" auf "Content" und "include in VSIX" auf "true" festgelegt ist.
 
   ![VSIX-Farb-Editor pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX-Farb-Editor pkgdef")
 
-  Wählen Sie im Visual Studio-Erweiterungsfarb-Editor Datei > Ansichtsressourcencode aus, um Code anzuzeigen, der für den Zugriff auf die benutzerdefinierten Farben in der WPF-basierten Benutzeroberfläche verwendet wird.
+  Wählen Sie im Visual Studio-Erweiterungs Farb-Editor Datei > anzeigen von Ressourcen Code aus, um Code anzuzeigen, der für den Zugriff auf die benutzerdefinierten Farben in der WPF-basierten Benutzeroberfläche verwendet wird.
 
   ![VSIX-Farb-Editor-Ressourcencode-Viewer](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX-Farb-Editor-Ressourcencode-Viewer")
 
-  Fügen Sie diesen Code in eine statische Klasse in das Projekt ein. Ein Verweis auf **Microsoft.VisualStudio.Shell.\< VSVersion>.0.dll** muss dem Projekt hinzugefügt werden, um den **Typ ThemeResourceKey** zu verwenden.
+  Fügen Sie diesen Code in eine statische Klasse im Projekt ein. Ein Verweis auf **Microsoft. VisualStudio. Shell. \<VSVersion>.0.dll** muss dem Projekt hinzugefügt werden, um den **themeresourcekey** -Typ zu verwenden.
 
 ```csharp
 namespace MyCustomColors
@@ -163,7 +163,7 @@ namespace MyCustomColors
 }
 ```
 
- Dies ermöglicht den Zugriff auf die Farben im XAML-Code und ermöglicht es der Benutzeroberfläche, auf Designänderungen zu reagieren.
+ Dadurch wird der Zugriff auf die Farben in XAML-Code ermöglicht, und die Benutzeroberfläche kann auf Designänderungen reagieren.
 
 ```xaml
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"
@@ -181,19 +181,19 @@ namespace MyCustomColors
 
  **Schritt 5: Testen Sie die Änderungen in Visual Studio.**
 
- Der Farbeditor kann vorübergehend Farbtoken auf die ausgeführten Instanzen von Visual Studio anwenden, um Live-Änderungen an Farben anzuzeigen, ohne das Erweiterungspaket neu zu erstellen. Klicken Sie dazu auf die Schaltfläche "Anwenden dieses Themas auf das Ausführen von Visual Studio-Fenstern" in der Kopfzeile jeder Designspalte. Dieses temporäre Design wird verschwinden, wenn der VSIX-Farbeditor geschlossen wird.
+ Der Farb-Editor kann temporär Farb Token auf die ausgelaufenden Instanzen von Visual Studio anwenden, um Live Änderungen an Farben anzuzeigen, ohne das Erweiterungspaket neu zu erstellen. Klicken Sie hierzu auf die Schaltfläche "dieses Design zum Ausführen von Visual Studio-Fenstern anwenden" in der Kopfzeile der einzelnen Design Spalten. Dieses temporäre Design wird entfernt, wenn der VSIX-Farb-Editor geschlossen wird.
 
  ![VSIX-Farb-Editor – Übernehmen](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX-Farb-Editor – Übernehmen")
 
- Um die Änderungen dauerhaft zu machen, erstellen Sie die Visual Studio-Erweiterung neu und stellen Sie sie erneut bereit, nachdem Sie die neuen Farben zur .pkgdef-Datei hinzugefügt und den Code geschrieben haben, der diese Farben verwendet. Durch das Erneute Erstellen der Visual Studio-Erweiterung werden die Registrierungswerte für die neuen Farben mit den übrigen Designs zusammengeführt. Starten Sie dann Visual Studio neu, zeigen Sie die Benutzeroberfläche an, und stellen Sie sicher, dass die neuen Farben wie erwartet angezeigt werden.
+ Um die Änderungen dauerhaft zu machen, erstellen Sie die Visual Studio-Erweiterung neu, und stellen Sie Sie erneut bereit, nachdem Sie der pkgdef-Datei die neuen Farben hinzugefügt und den Code geschrieben haben, der diese Farben verwendet. Durch das erneute Erstellen der Visual Studio-Erweiterung werden die Registrierungs Werte für die neuen Farben in den restlichen Themen zusammengeführt. Starten Sie Visual Studio erneut, zeigen Sie die Benutzeroberfläche an, und überprüfen Sie, ob die neuen Farben erwartungsgemäß angezeigt werden.
 
 ## <a name="notes"></a>Notizen
- Dieses Tool dient zum Erstellen benutzerdefinierter Farben für die bereits vorhandenen Visual Studio-Designs oder zum Bearbeiten der Farben eines benutzerdefinierten Visual Studio-Designs. Um vollständige benutzerdefinierte Visual Studio-Designs zu erstellen, laden Sie die [Erweiterung Visual Studio Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) aus der Visual Studio Extensions Gallery herunter.
+ Dieses Tool dient zum Erstellen benutzerdefinierter Farben für die bereits vorhandenen Visual Studio-Designs oder zum Bearbeiten der Farben eines benutzerdefinierten Visual Studio-Designs. Um benutzerdefinierte Visual Studio-Designs zu erstellen, laden Sie die [Visual Studio Color Theme Editor-Erweiterung](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) aus dem Visual Studio Extensions Gallery herunter.
 
 ## <a name="sample-output"></a>Beispielausgabe
- **XML-Farbausgabe**
+ **Ausgabe der XML-Farbe**
 
- Die vom Tool generierte .xml-Datei ist wie folgt:
+ Die XML-Datei, die vom Tool generiert wird, ähnelt der folgenden:
 
 ```xml
 <Themes>
@@ -222,9 +222,9 @@ namespace MyCustomColors
 
 ```
 
- **PKGDEF Farbausgabe**
+ **Pkgdef-Farbausgabe**
 
- Die vom Tool generierte .pkgdef-Datei ist wie folgt:
+ Die pkgdef-Datei, die vom Tool generiert wird, ähnelt der folgenden:
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\CategoryName]
@@ -238,9 +238,9 @@ namespace MyCustomColors
 
 ```
 
- **Wrapper für Ressourcenschlüssel von Cé**
+ **C#-Ressourcen Schlüssel-Wrapper**
 
- Die vom Werkzeug generierten Farbressourcenschlüssel ähneln wie folgt:
+ Die vom Tool generierten Farb Ressourcen Schlüssel ähneln den folgenden:
 
 ```csharp
 namespace MyNamespace
@@ -267,9 +267,9 @@ namespace MyNamespace
 }
 ```
 
- **WPF-Ressourcenwörterbuch-Wrapper**
+ **WPF-Ressourcenverzeichnis Wrapper**
 
- Die vom Tool generierten Color **ResourceDictionary-Schlüssel** ähneln wie folgt:
+ Die vom Tool generierten Farben **ResourceDictionary** -Schlüssel ähneln den folgenden:
 
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

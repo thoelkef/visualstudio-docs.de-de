@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd4f0ef9fe4e9b8f284dd082ebadf27910806beb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672855"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>API-Referenz für T4-Textvorlagen
@@ -26,5 +26,5 @@ Mit der Textvorlagen-API können Sie die Transformation von [Textvorlagen](../mo
 |Namespace|Zweck|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.TextTemplating>|Enthält Klassen für die Textvorlagen-Transformationsfunktion. Die Textvorlagen-Transformations-Engineist in Visual Studio integriert und transformiert Textvorlagendateien in generierte Textausgabedateien.|
-|[Umbau](/previous-versions/ee844312(v=vs.140))|Stellt Texttransformationsfunktionen für UML-Modelle und domänenspezifische Sprachen bereit, z. B. Zugriff auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
+|[Modellierung](/previous-versions/ee844312(v=vs.140))|Stellt Texttransformationsfunktionen für UML-Modelle und domänenspezifische Sprachen bereit, z. B. Zugriff auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
 |<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Bietet Zugriff auf den Textvorlagendienst in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

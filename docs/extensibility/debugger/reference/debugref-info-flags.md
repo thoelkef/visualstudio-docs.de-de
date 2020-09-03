@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737392"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
-Gibt an, welche Informationen zu einem Debugreferenzobjekt abgerufen werden sollen.
+Gibt an, welche Informationen über ein debugverweisobjekt abgerufen werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,25 +58,25 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Felder
 `DEBUGREF_INFO_NAME`\
-Initialisieren/verwenden `bstrName` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `bstrName` Feld in der-Struktur.
 
 `DEBUGREF_INFO_TYPE`\
-Initialisieren/verwenden `bstrType` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `bstrType` Feld in der-Struktur.
 
 `DEBUGREF_INFO_VALUE`\
-Initialisieren/verwenden `bstrValue` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `bstrValue` Feld in der-Struktur.
 
 `DEBUGREF_INFO_ATTRIB`\
-Initialisieren/verwenden `dwAttrib` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `dwAttrib` Feld in der-Struktur.
 
 `DEBUGREF_INFO_REFTYPE`\
-Initialisieren/verwenden `dwRefType` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `dwRefType` Feld in der-Struktur.
 
 `DEBUGREF_INFO_REF`\
-Initialisieren/verwenden `pReference` Sie das Feld in der Struktur.
+Initialisieren/verwenden Sie das- `pReference` Feld in der-Struktur.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Das Wertfeld sollte den automatisch erweiterten Wert für diesen Objekttyp enthalten, sofern verfügbar.
+Das Wertfeld muss den automatisch erweiterten Wert für diesen Objekttyp enthalten, falls verfügbar.
 
 `DEBUGREF_INFO_NONE`\
 Gibt an, dass keine Flags festgelegt sind.
@@ -85,20 +85,20 @@ Gibt an, dass keine Flags festgelegt sind.
 Gibt eine Maske der Flags an.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Flags werden an die [EnumChildren-](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) und [GetReferenceInfo-Methoden](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) übergeben, um anzugeben, welche Felder der [DEBUG_REFERENCE_INFO-Struktur](../../../extensibility/debugger/reference/debug-reference-info.md) initialisiert werden sollen.
+Diese Flags werden an die [enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) -Methode und die [getreferencanfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) -Methode übergeben, um anzugeben, welche Felder der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur initialisiert werden sollen.
 
-Wird für `dwFields` das `DEBUG_REFERENCE_INFO` Element der Struktur verwendet, um anzugeben, welche Felder verwendet werden und gültig sind, wenn die Struktur zurückgegeben wird.
+Wird für den- `dwFields` Member der `DEBUG_REFERENCE_INFO` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind, wenn die-Struktur zurückgegeben wird.
 
-Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
+Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

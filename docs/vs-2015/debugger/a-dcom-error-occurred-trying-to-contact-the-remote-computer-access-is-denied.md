@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156528"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Beim Kontaktieren des Remotecomputers ist ein DCOM-Fehler aufgetreten. Der Zugriff wird verweigert.
@@ -33,11 +33,11 @@ ms.locfileid: "68156528"
 
 Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und dem Remotecomputer, wenn eine der folgenden Situationen vorliegt:  
   
-- Der Debugger ist auf **Systemeigenen Kompatibilitätsmodus verwenden** festgelegt, oder auf der Seite **Extras / Optionen / Debugging** ist **Verwalteter Kompatibilitätsmodus** aktiviert.  
+- Der Debugger ist auf den systemeigenen **Kompatibilitätsmodus** festgelegt, oder der **verwaltete Kompatibilitätsmodus** ist auf der Seite Extras **/Optionen/Debugging** aktiviert.  
   
 - Sie debuggen verwalteten C++-Code (C++/CLI).  
   
-- In Visual Studio 2013 ist auf der Seite **Extras / Optionen / Debugging** die Option **Systemeigenes Bearbeiten und Fortfahren aktivieren** aktiviert.  
+- Wenn in Visual Studio 2013 die Option System eigenes **Bearbeiten und Fortfahren aktivieren** auf der Seite Extras > Optionen > **Debugging** aktiviert ist.  
   
 - Einige Debuggingszenarien von Drittanbietern  
   
@@ -51,6 +51,6 @@ Remotedebugging verwendet DCOM für die Kommunikation zwischen dem lokalen und d
   
 - Wenn für das Remotedebugging die Eingabe von Anmeldeinformationen erforderlich ist, aktivieren Sie die Option zum Speichern der Anmeldeinformationen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Remote Debugging-Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590526"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
@@ -42,9 +42,9 @@ Um die Architektur eines Systems oder von vorhandenem Code visuell darzustellen,
 |Codezuordnungen<br /><br /> [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)|Abhängigkeiten und andere Beziehungen in vorhandenem Code|
 |Von Code generierte Klassendiagramme<br /><br /> [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Typen und ihre Beziehungen in .NET-Code|
 
-## <a name="related-tasks"></a>Verwandte Aufgaben
+## <a name="related-tasks"></a>Related Tasks
 
-|**Thema**|**Task**|
+|**Thema**|**Aufgabe**|
 |-|-|
 |[Visualisieren von Code](../modeling/visualize-code.md)|Erstellen Sie Code Maps und Abhängigkeits Diagramme, um den unbekannten Code besser zu verstehen.|
 |[Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)|Verwenden Sie Modelle, um die Anforderungen der Benutzer zu verdeutlichen und zu kommunizieren.|

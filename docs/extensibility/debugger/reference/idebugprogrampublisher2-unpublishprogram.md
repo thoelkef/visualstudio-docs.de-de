@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
+title: 'IDebugProgramPublisher2:: unpublishprogram | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721588"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Macht ein Programm nicht für das Debuggen verfügbar.
+Macht ein Programm zum dedebugging verfügbar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Parameter
 `pDebuggeeInterface`\
-[in] Eine `IUnknown` Schnittstelle zum Programm. Dies ist derselbe Wert, der der [PublishProgram-Methode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) zur Verfügung gestellt wird, und identifiziert das zu entfernende Programm eindeutig (d. h. es wird als Cookie verwendet).
+in Eine `IUnknown` Schnittstelle zum Programm. Dies ist der gleiche Wert, der für die [publishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) -Methode bereitgestellt wird, und das Programm, das entfernt wird, eindeutig identifiziert (d. h., es wird als Cookie verwendet).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Um ein Programm für die Debugmodule und den Sitzungsdebug-Manager verfügbar zu machen, verwenden Sie die [PublishProgram-Methode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+ Verwenden Sie die [publishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) -Methode, um ein Programm für die Debug-engines und den Sitzungs-Debug-Manager verfügbar zu machen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

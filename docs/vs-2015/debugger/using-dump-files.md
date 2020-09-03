@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387056"
 ---
 # <a name="using-dump-files"></a>Verwenden von Abbilddateien
@@ -50,14 +50,14 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
  [Suchen von Binär-, Symbol- (PDB-) und Quelldateien](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>Was ist eine Dumpdatei?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> Was ist eine Dumpdatei?  
  Eine *Dumpdatei* ist eine Momentaufnahme einer APP zu dem Zeitpunkt, an dem die Sicherung durchgeführt wird. Sie zeigt, welche Prozesse ausgeführt und welche Module geladen wurden. Wenn der Dump mit Heapinformationen gespeichert wurde, enthält die Dumpdatei eine Momentaufnahme des Inhalts im Speicher der Anwendung zu diesem Zeitpunkt. Das Öffnen einer Dumpdatei mit einem Heap in Visual Studio ist vergleichbar mit dem Anhalten an einem Haltepunkt in einer Debugsitzung. Obwohl die Ausführung nicht fortgesetzt werden kann, können Sie die Stapel-, Threads- und Variablenwerte der Anwendung zum Zeitpunkt des Auftretens des Dumps überprüfen.  
   
  Dumpdateien werden hauptsächlich für das Debuggen von Problemen auf Computern verwendet, auf die der Entwickler nicht zugreifen kann. Beispielsweise können Sie eine Dumpdatei auf dem Computer eines Kunden verwenden, wenn Sie den Absturz oder das nicht reagierende Programm des Kunden auf Ihrem Computer nicht reproduzieren können. Außerdem werden Dumps von Testern erstellt, um Abstürze oder nicht reagierende Programm Daten zu speichern, damit der Testcomputer für weitere Tests verwendet werden kann. Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder systemeigenen Code speichern. Der Debugger kann Dumpdateien laden, die von Visual Studio oder von anderen Programmen erstellt wurden, die Dateien im *Minidump* -Format speichern.  
   
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>Dumpdateien, mit oder ohne Heaps  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> Dumpdateien, mit oder ohne Heaps  
  Sie können Dumpdateien mit oder ohne Heapinformationen erstellen.  
   
 - **Dumpdateien mit Heaps** enthalten eine Momentaufnahme des Arbeitsspeichers der app. Dies umfasst die Werte der Variablen zum Zeitpunkt der Dumperstellung. Wenn Sie eine mit Heaps gespeicherte Dumpdatei laden, können die Symbole in Visual Studio geladen werden, auch wenn die Binärdateien der Anwendung nicht gefunden werden. Visual Studio speichert auch die Binärdateien der geladenen systemeigenen Module in der Dumpdatei, wodurch das Debugging wesentlich vereinfacht wird.  
@@ -107,7 +107,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
 4. Wechseln Sie zum Starten des Debuggens zum Abschnitt **Aktionen** , und wählen Sie entweder **Debuggen mit nur native** oder **Debuggen mit Mixed**aus.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Suchen von Binärdateien, Symbol Dateien (. pdb) und Quelldateien  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Suchen von Binärdateien, Symbol Dateien (. pdb) und Quelldateien  
  Um die vollständigen Funktionen von Visual Studio zum Debuggen von Dumpdateien zu nutzen, benötigen Sie Zugriff auf die folgenden Dateien:  
   
 - Die EXE-Datei, für die der Dump erstellt wurde, sowie andere Binärdateien (DLLs, usw.), die im Dumpprozess verwendet wurden.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
+title: 'IDebugProgramPublisher2:: setdebug-vorhanden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b551c644346b66d907fa4f75b11b24c8b9538e27
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721602"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Teilt dem Programmherausgeber mit, dass ein Debugger vorhanden ist und ausgeführt wird.
+Weist den Programm Verleger an, dass ein Debugger vorhanden ist und ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetDebuggerPresent(
 
 ## <a name="parameters"></a>Parameter
 `fDebuggerPresent`\
-[in] Nicht Null`TRUE`( ), wenn ein Debugger`FALSE`vorhanden ist, Null ( ), wenn dies nicht der Fall ist.
+in Ungleich NULL ( `TRUE` ), wenn ein Debugger vorhanden ist, andernfalls 0 (NULL `FALSE` ) (), wenn dies nicht der Fall ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Das Vorhandensein oder Fehlen eines Debuggers spiegelt sich in den Daten wider, die von der [GetProviderProcessData-Methode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) zurückgegeben werden: Der dort zurückgegebene Wert wird durch einen vorherigen Aufruf der `SetDebuggerPresent` Methode festgelegt oder gelöscht.
+ Das vorhanden sein oder Fehlen eines Debuggers wird in den Daten widergespiegelt, die von der [getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) -Methode zurückgegeben werden: der zurückgegebene Wert wird durch einen vorherigen-Aufrufsatz der-Methode festgelegt oder gelöscht `SetDebuggerPresent` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

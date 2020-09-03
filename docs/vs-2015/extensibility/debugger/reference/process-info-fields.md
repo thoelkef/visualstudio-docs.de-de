@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7700670774dcb38b054cf28275f64c0c3046f741
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205029"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Angegeben, welche Art von Informationen für einen Prozess abrufen.  
+Gibt an, welche Art von Informationen für einen Prozess abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -57,46 +57,46 @@ public enum enum_PROCESS_INFO_FIELDS { 
   
 ## <a name="members"></a>Member  
  PIF_FILE_NAME  
- Initialisieren und Verwenden der `bstrFileName` Feld der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur.  
+ Initialisieren Sie das- `bstrFileName` Feld der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur, und verwenden Sie es.  
   
  PIF_BASE_NAME  
- Initialisieren und Verwenden der `bstrBaseName` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrBaseName` `PROCESS_INFO` .  
   
  PIF_TITLE  
- Initialisieren und Verwenden der `bstrTitle` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrTitle` `PROCESS_INFO` .  
   
  PIF_PROCESS_ID  
- Initialisieren und Verwenden der `ProcessId` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `ProcessId` `PROCESS_INFO` .  
   
  PIF_SESSION_ID  
- Initialisieren und Verwenden der `dwSessionId` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `dwSessionId` `PROCESS_INFO` .  
   
  PIF_ATTACHED_SESSION_NAME  
- Initialisieren und Verwenden der `bstrAttachedSessionName` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrAttachedSessionName` `PROCESS_INFO` .  
   
  PIF_CREATION_TIME  
- Initialisieren und Verwenden der `CreationTime` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `CreationTime` `PROCESS_INFO` .  
   
  PIF_FLAGS  
- Initialisieren und Verwenden der `Flags` Feld der `PROCESS_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `Flags` `PROCESS_INFO` .  
   
  PIF_ALL  
- Füllt alle Felder ein.  
+ Füllt alle Felder aus.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) Methode an, welche Felder der der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) sind, dass die Struktur initialisiert werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird an die [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) -Methode übermittelt, um anzugeben, welche Felder der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur initialisiert werden sollen.  
   
- Auch in verwendet `Fields` Feld der `PROCESS_INFO` Struktur, um anzugeben, welche Felder verwendet und gültig sind.  
+ Wird auch im `Fields` Feld der `PROCESS_INFO` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.  
   
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

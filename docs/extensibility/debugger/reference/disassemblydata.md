@@ -1,5 +1,5 @@
 ---
-title: DemontageDaten | Microsoft Docs
+title: Disassemblydata | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737286"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
-Beschreibt eine Demontageanweisung für die anzuzeigende integrierte Entwicklungsumgebung (IDE).
+Beschreibt eine disassemblierungsanweisung für die integrierte Entwicklungsumgebung (IDE), die angezeigt werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -65,13 +65,13 @@ public struct DisassemblyData { 
 
 ## <a name="members"></a>Member
 `dwFields`\
-Die [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Konstante an, die angibt, welche Felder ausgefüllt werden.
+Die [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Konstante, die angibt, welche Felder ausgefüllt werden.
 
 `bstrAddress`\
 Die Adresse als Offset von einem Startpunkt (in der Regel der Anfang der zugeordneten Funktion).
 
 `bstrCodeBytes`\
-Die Codebytes für diese Anweisung.
+Die Code Bytes für diese Anweisung.
 
 `bstrOpcode`\
 Der Opcode für diese Anweisung.
@@ -80,41 +80,41 @@ Der Opcode für diese Anweisung.
 Die Operanden für diese Anweisung.
 
 `bstrSymbol`\
-Der Symbolname, falls vorhanden, ist der Adresse zugeordnet (öffentliches Symbol, Beschriftung usw.).
+Der Symbol Name (sofern vorhanden), der der Adresse (öffentliches Symbol, Bezeichnung usw.) zugeordnet ist.
 
 `uCodeLocationId`\
-Der Codepositionsbezeichner für diese zerlegte Zeile. Wenn die Codekontextadresse einer Zeile größer als die Codekontextadresse einer anderen Zeile ist, ist der disassemblierte Codespeicherortbezeichner der ersten Zeile auch größer als der Codespeicherortbezeichner der zweiten Zeile.
+Der Bezeichner des Code Speicher Orts für diese disassemblierte Zeile. Wenn die Code Kontext Adresse einer Zeile größer als die Code Kontext Adresse eines anderen ist, dann ist der disassemblierte Code Speicherort Bezeichner der ersten Zeile größer als der Bezeichner für den Code Speicherort der zweiten.
 
 `posBeg`\
-Die [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) die der Position in einem Dokument entspricht, in dem die Demontagedaten beginnen.
+Der [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , der der Position in einem Dokument entspricht, an dem die Disassemblydaten beginnen.
 
 `posEnd`\
-Die [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) die der Position in einem Dokument entspricht, an der die Demontagedaten enden.
+Der [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , der der Position in einem Dokument entspricht, an dem die Disassemblydaten enden.
 
 `bstrDocumentUrl`\
-Bei Textdokumenten, die als Dateinamen `bstrDocumentUrl` dargestellt werden können, wird das Feld mit dem `file://file name`Dateinamen ausgefüllt, in dem sich die Quelle befindet, und verwendet das Format .
+Bei Textdokumenten, die als Dateinamen dargestellt werden können, `bstrDocumentUrl` wird das Feld mit dem Dateinamen aufgefüllt, in dem die Quelle gefunden werden kann. dabei wird das Format verwendet `file://file name` .
 
-Für Textdokumente, die nicht als `bstrDocumentUrl` Dateinamen dargestellt werden können, ist ein eindeutiger Bezeichner für das Dokument, und das Debugmodul muss die [GetDocument-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) implementieren.
+Für Textdokumente, die nicht als Dateinamen dargestellt werden können, `bstrDocumentUrl` ist ein eindeutiger Bezeichner für das Dokument, und die Debug-Engine muss die [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) -Methode implementieren.
 
 Dieses Feld kann auch zusätzliche Informationen zu Prüfsummen enthalten. Einzelheiten finden Sie in den Hinweisen.
 
 `dwByteOffset`\
-Die Anzahl der Bytes, die die Anweisung vom Anfang der Codezeile entfernt hat.
+Die Anzahl der Bytes, die die Anweisung vom Anfang der Codezeile ist.
 
 `dwFlags`\
-Die [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Konstante an, die angibt, welche Flags aktiv sind.
+Die [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Konstante, die angibt, welche Flags aktiv sind.
 
 ## <a name="remarks"></a>Bemerkungen
-Jede `DisassemblyData` Struktur beschreibt eine Anweisung der Demontage. Ein Array dieser Strukturen wird von der [Read-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) zurückgegeben.
+Jede `DisassemblyData` Struktur beschreibt eine Anweisung der Disassembly. Ein Array dieser Strukturen wird von der [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) -Methode zurückgegeben.
 
-Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur wird nur für textbasierte Dokumente verwendet. Der Quellcodebereich für diese Anweisung wird nur für die erste Anweisung ausgefüllt, `dwByteOffset == 0`die aus einer Anweisung oder Zeile generiert wird, z. B. wenn .
+Die [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur wird nur für Text basierte Dokumente verwendet. Der Quell Code Bereich für diese Anweisung wird nur für die erste Anweisung ausgefüllt, die aus einer Anweisung oder Zeile generiert wird, z `dwByteOffset == 0` . b. wenn.
 
-Bei Dokumenten, die nicht textuell sind, kann ein Dokumentkontext `bstrDocumentUrl` aus dem Code abgerufen werden, und das Feld sollte ein Nullwert sein. Wenn `bstrDocumentUrl` das Feld mit `bstrDocumentUrl` dem Feld `DisassemblyData` im vorherigen Arrayelement `bstrDocumentUrl` identisch ist, legen Sie den Aufeinen auf null Wert fest.
+Bei nicht-Text-Dokumenten kann ein Dokument Kontext aus dem Code abgerufen werden, und das `bstrDocumentUrl` Feld muss ein NULL-Wert sein. Wenn das `bstrDocumentUrl` Feld `bstrDocumentUrl` mit dem Feld im vorherigen Array Element identisch ist `DisassemblyData` , legen `bstrDocumentUrl` Sie den auf einen NULL-Wert fest.
 
-Wenn `dwFlags` für das `DF_DOCUMENT_CHECKSUM` Feld das Flag festgelegt ist, folgen zusätzliche `bstrDocumentUrl` Prüfsummeninformationen der Zeichenfolge, auf die das Feld zeigt. Insbesondere folgt nach dem Null-Zeichenfolgen-Terminator eine GUID, die den Prüfsummenalgorithmus identifiziert, gefolgt von einem 4-Byte-Wert, der die Anzahl der Bytes in der Prüfsumme angibt und auf die wiederum die Prüfsummenbytes folgen. Im Beispiel in diesem Thema zum Codieren und [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]Decodieren dieses Felds in .
+Wenn `dwFlags` für das Feld das `DF_DOCUMENT_CHECKSUM` Flag festgelegt ist, folgen zusätzliche Prüfsummeninformationen der Zeichenfolge, auf die das `bstrDocumentUrl` Feld zeigt. Vor allem folgt nach dem NULL-Zeichen folgen Abschluss Zeichen eine GUID, die den Prüfsummen Algorithmus identifiziert, auf den wiederum ein 4-Byte-Wert folgt, der die Anzahl der Bytes in der Prüfsumme anzeigt, und dass wiederum die Prüfsummen Bytes befolgt werden. Weitere Informationen zum Codieren und Decodieren dieses Felds in finden Sie im Beispiel in diesem Thema [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
 ## <a name="example"></a>Beispiel
-Das `bstrDocumentUrl` Feld kann zusätzliche Informationen enthalten, `DF_DOCUMENT_CHECKSUM` die nicht eine Zeichenfolge sind, wenn das Flag festgelegt ist. Das Erstellen und Lesen dieser codierten Zeichenfolge [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]ist in einfach. In [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]aber ist es eine andere Sache. Für Neugierige zeigt das folgende Beispiel eine Möglichkeit zum Erstellen [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] der codierten Zeichenfolge aus und [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]eine Möglichkeit, die codierte Zeichenfolge in zu dekodieren.
+`bstrDocumentUrl`Wenn das- `DF_DOCUMENT_CHECKSUM` Flag festgelegt ist, kann das-Feld zusätzliche Informationen enthalten, die keine Zeichenfolge sind. Der Prozess zum Erstellen und Lesen dieser codierten Zeichenfolge ist in unkompliziert [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] . In [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] ist es jedoch eine andere Sache. Für diejenigen, die neugierig sind, zeigt das folgende Beispiel eine Möglichkeit, die codierte Zeichenfolge aus [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] und eine Möglichkeit zum Decodieren der codierten Zeichenfolge in zu erstellen [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
 ```csharp
 using System;
