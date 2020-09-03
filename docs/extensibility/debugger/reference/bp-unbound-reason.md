@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737770"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Gibt den Grund an, warum ein Haltepunkt ungebunden war.
+Gibt den Grund für die Bindung eines Breakpoints an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,24 +51,24 @@ public enum enum_BP_UNBOUND_REASON {
 Der Grund ist unbekannt.
 
 `BPUR_CODE_UNLOADED`\
-Der Code, der den Haltepunkt enthält, wurde entladen.
+Der Code, der den Breakpoint enthält, wurde entladen.
 
 `BPUR_BREAKPOINT_REBIND`\
-Der Haltepunkt wurde an einen anderen Ort zurückgebracht. Dies kann nach Bearbeitungs- und Fortsetzungsvorgängen geschehen, wenn der Haltepunkt verschoben wird oder wenn der Haltepunkt an eine Datei mit einem Pfad gebunden ist, der nicht mehr gültig ist.
+Der Breakpoint wurde an einen anderen Speicherort wieder gebunden. Dies kann nach dem Bearbeiten und Fortfahren erfolgen, wenn der Breakpoint verschoben wird, oder wenn der Breakpoint an eine Datei mit einem Pfad gebunden ist, der nicht mehr gültig ist.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Der Haltepunkt wird als fehlerhaft ermittelt, nachdem er gebunden wurde. Dies geschieht bei verwalteten Haltepunkten, deren Bedingungen nicht mehr gültig sind.
+Der Haltepunkt wird als fehlerhaft festgelegt, nachdem er gebunden wurde. Dies geschieht bei verwalteten Haltepunkten, deren Bedingungen nicht mehr gültig sind.
 
 ## <a name="remarks"></a>Bemerkungen
-Wird von der [GetReason-Methode](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) zurückgegeben.
+Wird von der [geverrat](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

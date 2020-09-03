@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Microsoft Docs
+title: BP_RESOLUTION_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737823"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-Beschreibt die gebundenen Haltepunktinformationen für einen Code-Breakpoint oder einen Datenhaltepunkt.
+Beschreibt die gebundenen Haltepunkt Informationen für einen Code-Haltepunkt oder einen Daten Breakpoint.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Member
 `dwFields`\
-Eine Auflistung von [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Flags aus der BPRESI_FIELDS-Enumerationen an, die angibt, welche Felder ausgefüllt werden.
+Eine Auflistung von Flags aus den [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Enumerationen, die angibt, welche Felder ausgefüllt werden.
 
 `bpResLocation`\
-Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Struktur, die die Position des Haltepunkts in Code oder Daten angibt.
+Die [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die die Position des Breakpoints im Code oder in den Daten angibt.
 
 `pProgram`\
-Das [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das die Anwendung darstellt, in der der Haltepunktfehler aufgetreten ist.
+Das [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das die Anwendung darstellt, in der der Breakpoint-Fehler aufgetreten ist.
 
 `pThread`\
-Das [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt, in dem die Anwendung ausgeführt wird, die den Haltepunktfehler enthält.
+Das [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem die Anwendung, die den Breakpoint-Fehler enthält, ausgeführt wird.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird von [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)zurückgegeben.
+Diese Struktur wird von [getresolutioninfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

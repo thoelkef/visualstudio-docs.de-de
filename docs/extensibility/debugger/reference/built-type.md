@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Microsoft Docs
+title: BUILT_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737699"
 ---
 # <a name="built_type"></a>BUILT_TYPE
-Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wird.
+Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,21 +45,21 @@ public struct BUILT_TYPE {
 
 ## <a name="members"></a>Member
 `ulAppDomainID`\
-ID der Anwendung, aus der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.
+Die ID der Anwendung, von der das Symbol stammt. Hiermit wird eine Instanz der Anwendung eindeutig identifiziert.
 
 `guidModule`\
-Die GUID des Moduls, das dieses Feld enthält.
+Der GUID des Moduls, das dieses Feld enthält.
 
 `pUnderlyingField`\
-Ein [IDebugField-Objekt,](../../../extensibility/debugger/reference/idebugfield.md) das das zugrunde liegende Feld identifiziert, das diesem erstellten Feld zugeordnet ist.
+Ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das das zugrunde liegende Feld identifiziert, das diesem erstellten Feld zugeordnet ist.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur angezeigt, wenn das `dwKind` Feld `TYPE_INFO` der Struktur auf `TYPE_KIND_BUILT` (ein Wert aus der [dwTYPE_KIND-Enumeration)](../../../extensibility/debugger/reference/dwtype-kind.md) festgelegt ist.
+Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) -Struktur angezeigt, wenn das- `dwKind` Feld der- `TYPE_INFO` Struktur auf festgelegt ist `TYPE_KIND_BUILT` (ein Wert aus der [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Enumeration).
 
 ## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: sh.h
+Header: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

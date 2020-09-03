@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d721ebc5849fc459d24173ad0500b4b1c12260f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182980"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt die Suchoptionen für Symbol und den Dateinamen an.  
+Gibt die Suchoptionen für Symbol-und Dateinamen an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,27 +45,27 @@ enum NameSearchOptions { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  `nsNone`  
  Es wurden keine Optionen angegeben.  
   
  `nsfCaseSensitive`  
- Wendet eine namensübereinstimmung der Groß-/Kleinschreibung an.  
+ Wendet eine namens Übereinstimmung nach Groß-/Kleinschreibung  
   
  `nsfCaseInsensitive`  
- Wendet eine namensübereinstimmung der Groß-/Kleinschreibung an.  
+ Wendet die Groß-/Kleinschreibung nicht an.  
   
  `nsfFNameExt`  
- Namen behandelt, als Pfade und eine namensübereinstimmung filename.ext gilt.  
+ Behandelt Namen als Pfade und wendet eine filename. ext-namens Übereinstimmung an.  
   
  `nsfRegularExpression`  
- Wendet die Groß-/Kleinschreibung namensübereinstimmung mithilfe von Sternchen (*) und Fragezeichen (?) als Platzhalter.  
+ Wendet eine namens Übereinstimmung unter Berücksichtigung der Groß-/Kleinschreibung mithilfe von Sternchen (*) und Fragezeichen (?) als Platzhalter an.  
   
  `nsfUndecoratedName`  
- Gilt nur für Symbole, die nicht ergänzten Form und ergänzte Namen haben.  
+ Gilt nur für Symbole mit nicht ergänzten und ergänzten Namen.  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte aus dieser Enumeration werden für die folgenden Methoden übergeben:  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte aus dieser Enumeration werden an die folgenden Methoden übermittelt:  
   
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -76,8 +76,8 @@ enum NameSearchOptions { 
 ## <a name="requirements"></a>Anforderungen  
  Header: dia2.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: FindFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
