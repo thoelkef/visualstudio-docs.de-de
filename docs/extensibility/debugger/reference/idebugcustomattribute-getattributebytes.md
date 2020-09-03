@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+title: 'Idebugcustomattribute:: getattributebytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732797"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Ruft die Attributinformationen als Bytes-Blob ab.
+Ruft die Attributinformationen als ein BLOB von Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parameter
 `ppBlob`\
-[in, out] Ein Array, das mit den Attributbytes ausgefüllt wird.
+[in, out] Ein Array, das mit dem Attribut Bytes gefüllt ist.
 
 `pdwLen`\
-[in, out] Gibt die maximale Anzahl von Bytes `ppBlob` an, die im Array zurückgegeben werden sollen, und gibt die Anzahl der Bytes zurück, die tatsächlich in das Array geschrieben wurden.
+[in, out] Gibt die maximale Anzahl von Bytes an, die im Array zurückgegeben werden sollen, `ppBlob` und gibt die Anzahl der Bytes zurück, die tatsächlich in das Array geschrieben wurden.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Legen `ppBlob` Sie den Parameter auf einen Nullwert fest, um die Anzahl der verfügbaren Attribute bytes zurückzugeben. Weisen Sie dann ein Array zu, und übergeben Sie dieses Array für den `ppBlob` Parameter.
+ Legen Sie den- `ppBlob` Parameter auf einen NULL-Wert fest, um die Anzahl der verfügbaren Bytes zurückzugeben. Weisen Sie dann ein Array zu, und übergeben Sie das Array für den `ppBlob` Parameter.
 
- Die Attributbytes stellen die Rohdaten des benutzerdefinierten Attributs dar.
+ Die Attribut Bytes stellen die Rohdaten des benutzerdefinierten Attributs dar.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

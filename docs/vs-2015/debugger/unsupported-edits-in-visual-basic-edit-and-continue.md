@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155431"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
@@ -31,24 +31,24 @@ ms.locfileid: "68155431"
   
  Wenn Sie eine nicht unterstützte Änderungen vornehmen möchten, müssen Sie das Debuggen unterbrechen, die Änderungen vornehmen und eine neue Debugsitzung starten.  
   
-### <a name="BKMK_MethodandPropertyBodyEdits"></a> Methode und Eigenschaftentext  
- **Nicht unterstützte Änderungen an statischen lokalen Variablen**: Hinzufügen oder Aktualisieren einer lokalen Variable oder eine statische lokale Variable entfernen, wenn das würde eines Kompilierungsfehler auf.  
+### <a name="method-and-property-body-edits"></a><a name="BKMK_MethodandPropertyBodyEdits"></a> Bearbeitung von Methoden-und Eigenschaften Text  
+ **Nicht unterstützte Änderungen an statischen lokalen Variablen**: das Hinzufügen oder Aktualisieren einer lokalen Variablen oder das Entfernen einer statischen lokalen Variablen, wenn dies zu einem Kompilierungsfehler führen würde.  
   
- **Nicht unterstützte Änderungen an Generika**: Änderungen an der generischen Methode selbst oder am Text von generischen Methoden werden nicht unterstützt. Die Instanziierung eines generischen Typs oder Aufrufe von vorhandenen generischen Methoden können hinzugefügt, gelöscht oder geändert werden.  
+ Nicht **unterstützte Änderungen an Generika**: Änderungen an der generischen Methode selbst oder an dem generischen Methoden Text werden nicht unterstützt. Die Instanziierung eines generischen Typs oder Aufrufe von vorhandenen generischen Methoden können hinzugefügt, gelöscht oder geändert werden.  
   
- **Andere nicht unterstützten Änderungen**  
+ **Andere nicht unterstützte Änderungen**  
   
 - Ändern der Aufrufanweisung für eine Methode in der Aufrufliste.  
   
 - Hinzufügen eines `Try...Catch`-Blocks, wenn der Anweisungszeiger im `Catch`-Block oder im `Finally`-Block endet.  
   
-- Entfernen einer `Try...Catch` Blocks, wenn der Anweisungszeiger sich in einer `Catch`Block oder der `Finally` Block.  
+- Entfernen eines- `Try...Catch` Blocks, wenn der Anweisungs Zeiger sich in einem-Block oder in einem- `Catch` Block befindet `Finally` .  
   
 - Hinzufügen eines `Using`-Blocks um den aktuellen Anweisungszeiger herum.  
   
 - Hinzufügen eines `SynchLock`-Blocks um den aktuellen Anweisungszeiger herum.  
   
-### <a name="BKMK_AttributeEdits"></a> Bearbeitungen von Attributen  
+### <a name="attribute-edits"></a><a name="BKMK_AttributeEdits"></a> Bearbeitbare Attribute  
  Von "Bearbeiten und Fortfahren" wird das Ändern von Attributen nicht unterstützt. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Definieren, Bearbeiten oder Löschen einer Attributklasse.  
@@ -57,7 +57,7 @@ ms.locfileid: "68155431"
   
 - Bearbeiten oder Entfernen eines vorhandenen Attributs.  
   
-### <a name="BKMK_ClassDeclarationEdits"></a> Bearbeitungen von Klassendeklarationen  
+### <a name="class-declaration-edits"></a><a name="BKMK_ClassDeclarationEdits"></a> Bearbeitbare Klassen Deklarationen  
  Die meisten Änderungen an Klassendeklarationen werden im Unterbrechungsmodus von "Bearbeiten und Fortfahren" nicht zugelassen. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Umbenennen, Löschen oder Ändern der Vererbung einer vorhandenen Klasse.  
@@ -70,7 +70,7 @@ ms.locfileid: "68155431"
   
 - Bearbeiten der Deklaration einer generischen Klasse.  
   
-### <a name="BKMK_ClassMemberDeclarationEdits"></a> Klassenmemberdeklarationen  
+### <a name="class-member-declaration-edits"></a><a name="BKMK_ClassMemberDeclarationEdits"></a> Bearbeitung von Klassenmember-Deklarationen  
  Änderungen an Memberdeklarationen mit "Bearbeiten und Fortsetzen" sind in den meisten Fällen unzulässig. Beispielsweise können Sie weder die Signatur noch die Zugriffsebene eines Members ändern. Zudem können Sie Member nicht vollständig entfernen, wenn dies zu einem Kompilierungsfehler führen würde. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Shadowing einer vorhandenen Membervariablen durch Deklaration einer globalen Variablen oder einer Membervariablen mit demselben Namen im umschließenden Block.  
@@ -103,16 +103,16 @@ ms.locfileid: "68155431"
   
 - Ändern eines öffentlichen Felds.  
   
-### <a name="BKMK_CompilerOptionEdits"></a> Bearbeitungen von Compileroptionen  
+### <a name="compiler-option-edits"></a><a name="BKMK_CompilerOptionEdits"></a> Edits der Compileroption  
  Bei der Verwendung von "Bearbeiten und Fortfahren" im Unterbrechungsmodus ist es unzulässig, die folgenden Compileroptionen zu ändern, hinzuzufügen oder zu entfernen:  
   
 - **Option Strict**  
   
-- **Option Explicit**  
+- **Option explizit**  
   
-- **Option Compare**  
+- **Option vergleichen**  
   
-### <a name="BKMK_ConstantsEdits"></a> Bearbeitungen von Konstanten  
+### <a name="constants-edits"></a><a name="BKMK_ConstantsEdits"></a> Bearbeitbare Konstanten  
  Im Modus "Bearbeiten und Fortfahren" sind Änderungen an Konstanten nur sehr eingeschränkt möglich. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Hinzufügen oder Aktualisieren einer konstanten Variable.  
@@ -121,14 +121,14 @@ ms.locfileid: "68155431"
   
 - Entfernen einer Konstante.  
   
-### <a name="BKMK_DelegateandEventDeclarationEdits"></a> Bearbeitungen von Delegat- und Ereignis-Deklaration  
+### <a name="delegate-and-event-declaration-edits"></a><a name="BKMK_DelegateandEventDeclarationEdits"></a> Bearbeitung von Delegaten und Ereignis Deklarationen  
  Einige Änderungen von Delegaten und Ereignissen werden im Unterbrechungsmodus von „Bearbeiten und Fortfahren“ nicht zugelassen. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Ändern oder Löschen einer Delegatdefinition.  
   
 - Löschen eines Ereignisses.  
   
-### <a name="BKMK_EnumerationEdits"></a> Bearbeitungen von Enumerationen  
+### <a name="enumeration-edits"></a><a name="BKMK_EnumerationEdits"></a> Enumerationedits  
  Änderungen an Enumerationen (`Enums`) werden vom "Bearbeiten und Fortfahren im Unterbrechungsmodus nicht unterstützt. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Ändern des zugrunde liegenden Typs einer `Enum`.  
@@ -137,17 +137,17 @@ ms.locfileid: "68155431"
   
 - Ändern des Zugriffsmodifizierers einer `Enum`.  
   
-### <a name="BKMK_ExternalDeclarationsEdits"></a> Bearbeitungen externer Deklarationen  
+### <a name="external-declarations-edits"></a><a name="BKMK_ExternalDeclarationsEdits"></a> Bearbeitung externer Deklarationen  
  Im Allgemeinen können Sie die Deklarationen externer Methoden im Modus "Bearbeiten und Fortfahren" nicht ändern. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Hinzufügen oder Entfernen einer externen Deklaration.  
   
 - Ändern der Signatur oder Marshallen von Attributen einer externen Deklaration.  
   
-### <a name="BKMK_ImportsEdits"></a> Bearbeitungen von Importen  
+### <a name="imports-edits"></a><a name="BKMK_ImportsEdits"></a> Bearbeitbare Importe  
  Mit "Bearbeiten und Fortfahren" können Sie im Unterbrechungsmodus keine `Imports`-Anweisungen hinzufügen, ändern oder entfernen.  
   
-### <a name="BKMK_InterfaceDefinitionEdits"></a> Bearbeitungen von Schnittstellendefinitionen  
+### <a name="interface-definition-edits"></a><a name="BKMK_InterfaceDefinitionEdits"></a> Edits der Schnittstellen Definition  
  Zwar dürfen Sie häufig Änderungen an Membern vornehmen, die Schnittstellen implementieren, allerdings sind im Modus "Bearbeiten und Fortfahren" im Allgemeinen keine Änderungen an den eigentlichen Schnittstellendefinitionen zulässig. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Hinzufügen, Ändern und Entfernen von Schnittstellenmembern.  
@@ -158,7 +158,7 @@ ms.locfileid: "68155431"
   
 - Ändern der Schnittstellenvererbungshierarchie.  
   
-### <a name="BKMK_ModuleDeclarationEdits"></a> Von Moduldeklarationen  
+### <a name="module-declaration-edits"></a><a name="BKMK_ModuleDeclarationEdits"></a> Edits der Modul Deklaration  
  Die meisten Änderungen an Moduldeklarationen sind nicht zulässig, solange "Bearbeiten und Fortfahren" aktiviert ist und Sie sich im Unterbrechungsmodus befinden. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Erstellen eines neuen Moduls.  
@@ -167,7 +167,7 @@ ms.locfileid: "68155431"
   
 - Ändern des Zugriffsmodifizierers für ein Modul.  
   
-### <a name="BKMK_ModuleMemberDeclarationEdits"></a> Modulmemberdeklarationen  
+### <a name="module-member-declaration-edits"></a><a name="BKMK_ModuleMemberDeclarationEdits"></a> Bearbeitung der Modulmember-Deklaration  
  Mithilfe von "Bearbeiten und Fortfahren" können Sie im Unterbrechungsmodus eine Reihe von Änderungen an Modulmembern, z. B. Eigenschaften, Methoden und Feldern, vornehmen. Einige Änderungen werden jedoch nicht unterstützt. Von „Bearbeiten und Fortfahren“ wird vor allem das Hinzufügen, Löschen oder Ändern des Typs oder der Signatur eines Members nicht unterstützt.  
   
  Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
@@ -186,11 +186,11 @@ ms.locfileid: "68155431"
   
 - Löschen oder Ändern des Typs eines vorhandenen Felds.  
   
-### <a name="BKMK_NestedTypeDeclarationEdits"></a> Deklarationsbearbeitungen des geschachtelten Typs  
+### <a name="nested-type-declaration-edits"></a><a name="BKMK_NestedTypeDeclarationEdits"></a> Bearbeitbare Änderungen an der Typdeklaration  
  Durch „Bearbeiten und Fortfahren“ wird das Verschieben eines geschachtelten Typs zu einem anderen Namespace oder Typ nicht unterstützt.  
   
-### <a name="BKMK_StructureDeclarationEdits"></a> Bearbeitungen von Strukturdeklarationen  
- Die meisten Änderungen an Strukturdeklarationen sind nicht zulässig, bearbeiten und fortfahren, während in **unterbrechen** Modus. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
+### <a name="structure-declaration-edits"></a><a name="BKMK_StructureDeclarationEdits"></a> Änderungen der Struktur Deklaration  
+ Die meisten Änderungen an den Struktur Deklarationen sind im Modus "Bearbeiten und Fortfahren" im **break** -Modus nicht zulässig. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Umbenennen bzw. Löschen einer vorhandenen Struktur.  
   
@@ -198,7 +198,7 @@ ms.locfileid: "68155431"
   
 - Ändern des Zugriffsmodifizierers für eine Struktur.  
   
-### <a name="BKMK_StructureMemberDeclarationEdits"></a> Strukturmemberdeklarationen  
+### <a name="structure-member-declaration-edits"></a><a name="BKMK_StructureMemberDeclarationEdits"></a> Bearbeitbare Änderungen der Strukturmember  
  Mithilfe von "Bearbeiten und Fortfahren" können Sie im Unterbrechungsmodus eine Reihe von Änderungen an Strukturmembern (Eigenschaften, Methoden und Feldern) vornehmen. Einige Änderungen werden jedoch nicht unterstützt, insbesondere Änderungen, die die Deklaration von Strukturmembern beeinflussen. Insbesondere werden von "Bearbeiten und Fortfahren" die folgenden Änderungen nicht unterstützt:  
   
 - Entfernen einer Eigenschaft oder Methode.  
@@ -211,12 +211,12 @@ ms.locfileid: "68155431"
   
 - Ändern, ob eine Eigenschaften- oder Methodendeklaration eine Schnittstelle implementiert oder nicht.  
   
-- Ändern der Zugriffsmodifizierer einer Eigenschaft oder Methode (z. B. `Public` zu **Private**).  
+- Ändern der Zugriffsmodifizierer einer Eigenschaft oder Methode (z `Public` . b. ändern in " **Privat**").  
   
 - Entfernen eines Felds.  
   
 - Ändern des Typs eines Felds.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und fortfahren](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Anwenden von Bearbeitungen im Break-Modus mit "Bearbeiten und Fortfahren"](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Bearbeiten und Fortfahren (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

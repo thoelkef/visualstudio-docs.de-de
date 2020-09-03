@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205872"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Es werden keine Threadaktivitäten angezeigt (Threadansicht)
@@ -35,5 +35,5 @@ In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbar
   
 - Stellen Sie sicher, dass die Rauschunterdrückung auf einen niedrigen Schwellenwert festgelegt ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826146"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
@@ -40,6 +40,6 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
 
   - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Gewusst wie: starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)

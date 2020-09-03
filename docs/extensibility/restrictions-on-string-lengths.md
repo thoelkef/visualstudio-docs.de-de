@@ -1,5 +1,5 @@
 ---
-title: Einschränkungen für Stringlängen | Microsoft Docs
+title: Einschränkungen für Zeichen folgen Längen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df6e068ba612d5e8876e4fa01fbc0751759d5a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701481"
 ---
-# <a name="restrictions-on-string-lengths"></a>Einschränkungen für Zeichenfolgenlängen
-Die Quellcodeverwaltungs-Plug-In-API begrenzt die Längen von Zeichenfolgen, die in verschiedenen Funktionen verwendet werden.
+# <a name="restrictions-on-string-lengths"></a>Einschränkungen für Zeichen folgen Längen
+Die Quellcodeverwaltungs-Plug-in-API beschränkt die Längen von Zeichen folgen, die in verschiedenen Funktionen verwendet werden.
 
-## <a name="string-length-values"></a>Stringlängenwerte
+## <a name="string-length-values"></a>Zeichen folgen Längenwerte
 
 |Konstante|Wert|
 |--------------|-----------|
@@ -30,7 +30,7 @@ Die Quellcodeverwaltungs-Plug-In-API begrenzt die Längen von Zeichenfolgen, die
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
-> Die Länge umfasst nicht `null`die beendende . Andere Konstanten mit dem Suffix "_SIZE" anstelle von "_LEN" enthalten Speicherplatz für die Beendigung `null`.
+> Die Länge schließt das abschließende nicht ein `null` . Andere Konstanten mit dem Suffix "_SIZE" anstelle von "_LEN" enthalten Platz für das abschließende `null` .
 
 |Konstante|Wert|
 |--------------|-----------|
@@ -40,4 +40,4 @@ Die Quellcodeverwaltungs-Plug-In-API begrenzt die Längen von Zeichenfolgen, die
 |SCC_PRJPATH_SIZE|301|
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
+- [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)

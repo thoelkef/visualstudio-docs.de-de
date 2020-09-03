@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545768"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys
@@ -38,7 +38,7 @@ ms.locfileid: "85545768"
 
 1. Öffnen Sie das Office-Projekt, und wählen Sie den Projektnamen in **Projektmappen-Explorer**aus.
 
-2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
+2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
 
 3. Wählen Sie auf der Registerkarte **Framework** die gewünschte Pia in der Liste **Komponenten Name** aus. Weitere Informationen zu den verfügbaren Microsoft Office primären Interop-Assemblys finden Sie unter Primäre Interopassemblys für [Office](../vsto/office-primary-interop-assemblies.md).
 

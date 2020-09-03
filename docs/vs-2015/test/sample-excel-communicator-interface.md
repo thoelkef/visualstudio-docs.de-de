@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e3a9bd037c8886743910af649bf831b11337598
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660489"
 ---
 # <a name="sample-excel-communicator-interface"></a>Beispiel für Excel-Communicator-Schnittstelle
@@ -34,5 +34,5 @@ Die beispielhafte `IExcelUICommunication`-Schnittstelle wird im `ExcelUICommunic
 
  Die `CodedUIExtensibilitySample`-Assembly wird im codierten UI-Testprozess von Visual Studio ausgeführt. Diese Assembly verfügt über die `Communicator`-Klasse, die einen .NET Remoting-Kanal öffnet und eine `Instance`-Eigenschaft zur Verfügung stellt, die die `IExcelUICommunication`-Schnittstelle verwendet, um das `UICommunicator`-Objekt in der `ExcelCodedUIAddinHelper`-Assembly zu verwenden, um Anforderungen und Informationsobjekte, wie z.B. ein `CellInformation`-Objekt zwischen den beiden Assemblys zu übergeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Erweitern von Tests der programmierten [UI und Aktions Aufzeichnungen zur Unterstützung des Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) - [Beispiel-Excel-Add-Ins für Tests](../test/sample-excel-add-in-for-coded-ui-testing.md) der programmierten UI [für Excel](../test/sample-coded-ui-test-extension-for-excel.md)

@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 903c9fef18990be0aee78309fcdfadb80a95f384
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194167"
 ---
 # <a name="objects"></a>erzwingen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die folgenden Referenzinformationen wird erläutert, Objekte, die zum Erstellen einer Instanz des Texteditors Core verwendet werden.  
+In den folgenden Referenzinformationen werden Objekte erläutert, die zum Erstellen einer Instanz des Core-Text-Editors verwendet werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [VSCodeWindow-Objekt](../extensibility/vscodewindow-object.md)  
- Beschreibt das Code-Fenster-Objekt, einem speziellen Dokumentfenster, die eine oder mehrere Textansichten einschließen kann.  
+ Beschreibt das Code Fenster Objekt, ein spezielles Dokument Fenster, das eine oder mehrere Text Ansichten umschließen kann.  
   
  [VSCodeWindowManager-Objekt](../extensibility/vscodewindowmanager-object.md)  
- Beschreibt, das Code-Fenster-Manager-Objekt, das vom Sprachdienst implementiert wird und ist verantwortlich für die Verwaltung von Zusatzelementen.  
+ Beschreibt das vom Sprachdienst implementierte Code Fenster-Manager-Objekt, das für die Verwaltung von Zusatzelementen zuständig ist.  
   
  [VSTextBuffer-Objekt](../extensibility/vstextbuffer-object.md)  
- Beschreibt das Textpufferobjekt, das einen Stream von Unicode-Text, der Daten für eine Datei darstellt.  
+ Beschreibt das Text Puffer Objekt, das einen Stream von Unicode-Text darstellt, die Daten für eine Datei.  
   
  [VSTextView-Objekt](../extensibility/vstextview-object.md)  
- Beschreibt die Textansicht, ein Fenster, das ermöglicht Benutzern das Anzeigen und Bearbeiten von Unicode-Text des Textpuffers.  
+ Beschreibt die Textansicht, ein Fenster, in dem Benutzer Unicode-Text des Text Puffers anzeigen und bearbeiten können.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md)  
- Zeigt eine Liste von Themen der Referenz.
+ Zeigt eine Liste der Referenz Themen an.

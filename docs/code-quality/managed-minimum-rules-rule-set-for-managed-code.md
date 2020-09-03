@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587354"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete Mindestregeln für verwalteten Code
@@ -24,4 +24,4 @@ Die verwalteten minimal Regeln konzentrieren sich auf die kritischsten Probleme 
 |[CA1001](../code-quality/ca1001.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
 |[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
 |[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231.md)|Gleichheits Operator beim Überschreiben von `ValueType.Equals`|
+|[CA2231](../code-quality/ca2231.md)|Gleichheits Operator beim Überschreiben `ValueType.Equals`|

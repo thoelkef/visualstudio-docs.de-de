@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826174"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
@@ -27,17 +27,17 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
  **In diesem Thema:**  
   
-- [Syntax einer Eigenschaftenfunktion](#BKMK_Syntax)  
+- [Syntax der Eigenschaften Funktion](#BKMK_Syntax)  
   
-  - [Zeichenfolgen-Eigenschaftenfunktionen](#BKMK_String)  
+  - [Zeichen folgen-Eigenschaften Funktionen](#BKMK_String)  
 
-  - [Statische Eigenschaftenfunktionen](#BKMK_Static)  
+  - [Statische Eigenschaften Funktionen](#BKMK_Static)  
 
   - [Aufrufen von Instanzmethoden für statische Eigenschaften](#BKMK_InstanceMethods)  
 
-  - [MSBuild-Eigenschaftenfunktionen](#BKMK_PropertyFunctions)  
+  - [MSBuild-Eigenschaften Funktionen](#BKMK_PropertyFunctions)  
   
-- [Geschachtelte Eigenschaftenfunktionen](#BKMK_Nested)  
+- [Eigenschaften von "netsted Property"](#BKMK_Nested)  
   
 - [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
@@ -51,7 +51,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
 - [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-## <a name="BKMK_Syntax"></a> Syntax einer Eigenschaftenfunktion  
+## <a name="property-function-syntax"></a><a name="BKMK_Syntax"></a> Syntax der Eigenschaften Funktion  
  Nachfolgend sehen Sie drei Arten von Eigenschaftenfunktionen; jede Funktion hat eine andere Syntax:  
   
 - Zeichenfolgen-(Instanz-)Eigenschaftenfunktionen  
@@ -60,13 +60,13 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
 - MSBuild-Eigenschaftenfunktionen  
   
-### <a name="BKMK_String"></a> Zeichenfolgen-Eigenschaftenfunktionen  
+### <a name="string-property-functions"></a><a name="BKMK_String"></a> Zeichen folgen-Eigenschaften Funktionen  
  Alle Buildeigenschaftswerte sind lediglich Zeichenfolgenwerte. Sie können Zeichenfolgen-(Instanz-)Methoden für beliebige Eigenschaftswerte verwenden. Sie können beispielsweise mithilfe des folgendes Codes den Laufwerksnamen (die ersten drei Buchstaben) aus einer Buildeigenschaft extrahieren, die einen vollständigen Pfad darstellt:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-### <a name="BKMK_Static"></a> Statische Eigenschaftenfunktionen  
- In Ihrem Buildskript können Sie auf die statischen Eigenschaften und Methoden vieler Systemklassen zugreifen. Um den Wert einer statischen Eigenschaft abzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse und *Property* der Name der Eigenschaft ist.  
+### <a name="static-property-functions"></a><a name="BKMK_Static"></a> Statische Eigenschaften Funktionen  
+ In Ihrem Buildskript können Sie auf die statischen Eigenschaften und Methoden vieler Systemklassen zugreifen. Um den Wert einer statischen Eigenschaft zu erhalten, verwenden Sie die folgende Syntax, wobei *Class* der Name der System Klasse und *Property* der Name der Eigenschaft ist.  
   
  `$([Class]::Property)`  
   
@@ -74,7 +74,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
  `<Today>$([System.DateTime]::Now)</Today>`  
   
- Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse, *Method* der Name der Methode und *(Parameter)* die Parameterliste für die Methode ist:  
+ Verwenden Sie zum Aufrufen einer statischen Methode die folgende Syntax, wobei *Class* der Name der System Klasse, *method* der Name der Methode und *(Parameters)* die Parameterliste für die Methode ist:  
   
  `$([Class]::Method(Parameters))`  
   
@@ -166,8 +166,8 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
 - System.IO.File::ReadAllText  
   
-### <a name="BKMK_InstanceMethods"></a> Aufrufen von Instanzmethoden für statische Eigenschaften  
- Wenn Sie auf eine statische Eigenschaft zugreifen, die eine Objektinstanz zurückgibt, können Sie die Instanzmethoden dieses Objekts aufrufen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Class* der Name der Systemklasse, *Property* der Name der Eigenschaft, *Method* der Name der Methode und *(Parameter)* die Parameterliste für die Methode ist:  
+### <a name="calling-instance-methods-on-static-properties"></a><a name="BKMK_InstanceMethods"></a> Aufrufen von Instanzmethoden für statische Eigenschaften  
+ Wenn Sie auf eine statische Eigenschaft zugreifen, die eine Objektinstanz zurückgibt, können Sie die Instanzmethoden dieses Objekts aufrufen. Verwenden Sie zum Aufrufen einer Instanzmethode die folgende Syntax, wobei *Class* der Name der System Klasse, *Property* der Name der Eigenschaft, *method* der Name der Methode und *(Parameters)* die Parameterliste für die Methode ist:  
   
  `$([Class]::Property.Method(Parameters))`  
   
@@ -177,8 +177,8 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-### <a name="BKMK_PropertyFunctions"></a> MSBuild-Eigenschaftenfunktionen  
- In Ihrem Build kann auf mehrere statische Methoden zugegriffen werden, um Unterstützung für arithmetische, bitweise logische und Escapezeichen bereitzustellen. Um eine statische Methode aufzurufen, verwenden Sie die folgende Syntax, wobei *Method* der Name der Methode und *Parameter* die Parameterliste für die Methode ist.  
+### <a name="msbuild-property-functions"></a><a name="BKMK_PropertyFunctions"></a> MSBuild-Eigenschaften Funktionen  
+ In Ihrem Build kann auf mehrere statische Methoden zugegriffen werden, um Unterstützung für arithmetische, bitweise logische und Escapezeichen bereitzustellen. Um auf diese Methoden zuzugreifen, verwenden Sie die folgende Syntax, wobei *method* der Name der Methode und *para* meters die Parameterliste für die Methode ist.  
   
  `$([MSBuild]::Method(Parameters))`  
   
@@ -188,7 +188,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
  Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:  
   
-|Funktionssignatur|BESCHREIBUNG|  
+|Funktionssignatur|Beschreibung|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Addiert zwei double-Werte.|  
 |long Add(long a, long b)|Addiert zwei long-Werte.|  
@@ -207,16 +207,16 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
 |int BitwiseXor(int first, int second)|Führt einen bitweisen `XOR`-Vorgang für das erste und zweite Element aus (first ^ second).|  
 |int BitwiseNot(int first)|Führt einen bitweisen `NOT`-Vorgang aus (~first).|  
   
-## <a name="BKMK_Nested"></a> Geschachtelte Eigenschaftenfunktionen  
+## <a name="nested-property-functions"></a><a name="BKMK_Nested"></a> Eigenschaften von "netsted Property"  
  Sie können Eigenschaftenfunktionen kombinieren, um komplexere Funktionen zu erstellen, wie das folgende Beispiel zeigt.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
  In diesem Beispiel wird der Wert <xref:System.IO.FileAttributes>`Archive`-Bit (32 oder 0) der Datei, die durch den Pfad `tempFile` angegeben wird, zurückgegeben. Beachten Sie, dass Enumerationsdatenwerte innerhalb von Eigenschaftenfunktionen nicht nach Name angezeigt werden können. Stattdessen muss der numerische Wert (32) verwendet werden.  
   
- Metadaten können auch in geschachtelten Eigenschaftenfunktionen angezeigt werden. Weitere Informationen finden Sie unter [Batching](../msbuild/msbuild-batching.md).  
+ Metadaten können auch in geschachtelten Eigenschaftenfunktionen angezeigt werden. Weitere Informationen finden Sie unter [MSBuild Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
   
-## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="msbuild-doestaskhostexist"></a><a name="BKMK_DoesTaskHostExist"></a> MSBuild doestaskhostexist  
  Die `DoesTaskHostExist`-Eigenschaftenfunktion in MSBuild gibt zurück, ob derzeit ein Aufgabenhost für die angegebenen Laufzeit- und Architekturwerte installiert wird.  
   
  Diese Eigenschaftenfunktion hat die folgende Syntax:  
@@ -225,7 +225,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="msbuild-getdirectorynameoffileabove"></a><a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild getdirectoriennameoffileabove  
  Die `GetDirectoryNameOfFileAbove`-Eigenschaftenfunktion in MSBuild sucht in den Verzeichnissen über dem aktuellen Verzeichnis im Pfad nach einer Datei.  
   
  Diese Eigenschaftenfunktion hat die folgende Syntax:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="msbuild-getregistryvalue"></a><a name="BKMK_GetRegistryValue"></a> MSBuild getregistryvalue  
  Die `GetRegistryValue`-Eigenschaftenfunktion in MSBuild gibt den Wert eines Registrierungsschlüssels zurück. Diese Funktion weist zwei Argumente auf, den Schlüsselnamen und den Wertnamen, und gibt den Wert aus der Registrierung zurück. Wenn Sie keinen Wertnamen angeben, wird der Standardwert zurückgegeben.  
   
  In den folgenden Beispielen wird veranschaulicht, wie diese Funktion verwendet wird:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="msbuild-getregistryvaluefromview"></a><a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  Die `GetRegistryValueFromView`-Eigenschaftenfunktion in MSBuild ruft Systemregistrierungsdaten anhand des Registrierungsschlüssels, des Werts und einer oder mehrerer geordneter Registrierungsansichten ab. Der Wert und der Schlüssel werden der Reihe nach in jeder Registrierungsansicht gesucht, bis sie gefunden wurden.  
   
  Die Syntax für diese Eigenschaftenfunktion ist wie folgt:  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  ruft die SLRuntimeInstallPath-Daten des ReferenceAssemblies-Schlüssels ab und such zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.  
   
-## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="msbuild-makerelative"></a><a name="BKMK_MakeRelative"></a> MSBuild-MakeRelative  
  Die `MakeRelative`-Eigenschaftenfunktion in MSBuild gibt den relativen Pfad des zweiten Pfads relativ zum ersten Pfad an. Jeder Pfad kann eine Datei oder ein Ordner sein.  
   
  Diese Eigenschaftenfunktion hat die folgende Syntax:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="msbuild-valueordefault"></a><a name="BKMK_ValueOrDefault"></a> MSBuild valueordefault  
  Die `ValueOrDefault`-Eigenschaftenfunktion in MSBuild gibt das erste Argumente zurück, sofern dieses nicht Null oder leer ist. Wenn das erste Argument Null oder leer ist, gibt die Funktion das zweite Argument zurück.  
   
  In dem folgenden Beispiel wird veranschaulicht, wie diese Funktion verwendet wird.  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 [MSBuild-Eigenschaften](msbuild-properties1.md)   
 [Übersicht über MSBuild](msbuild.md)

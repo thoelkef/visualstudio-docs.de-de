@@ -1,5 +1,5 @@
 ---
-title: "\"Auto\" und \"lokal\" Windows | Microsoft-Dokumentation"
+title: Auto-und lokale Fenster | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,28 +22,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161735"
 ---
 # <a name="autos-and-locals-windows"></a>Fenster „Auto“ und „Lokal“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Fenster **Auto** (beim Debuggen, **STRG + ALT + V, A**oder **Debuggen / Fenster / Auto**) und das Fenster **Lokal** (beim Debuggen, **STRG + ALT + V, L**, oder **Debuggen / Fenster / Lokal**) sind hilfreich, wenn Sie beim Debuggen Variablenwerte sehen möchten. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau angezeigt werden, unterscheidet sich in verschiedenen Sprachen. Sehen Sie, welche Variablen im Fenster "Auto" angezeigt werden? unten.  
+Das Fenster **Auto** (beim Debuggen, **STRG + ALT + V, A**oder **Debuggen / Fenster / Auto**) und das Fenster **Lokal** (beim Debuggen, **STRG + ALT + V, L**, oder **Debuggen / Fenster / Lokal**) sind hilfreich, wenn Sie beim Debuggen Variablenwerte sehen möchten. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau angezeigt werden, unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt What variables appear in the Autos Window? weiter unten.  
   
- Wenn Sie weitere Informationen zu den Grundlagen des Debuggens benötigen, lesen Sie [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
+ Weitere Informationen zum grundlegenden Debuggen finden Sie unter [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Betrachten von Objekten in den Fenstern „Auto“ und „Lokal“  
- Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Hier ist ein Beispiel für eine <xref:System.IO.FileStream> -Objekt in der **"lokal"** Fenster:  
+ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Dies ist ein Beispiel für ein <xref:System.IO.FileStream>-Objekt im Fenster **Lokale Variablen**:  
   
- !["Lokal"&#45;FileStream](../debugger/media/locals-filestream.png "\"lokal\" die FileStream-")  
+ ![Lokale&#45;FILESTREAM](../debugger/media/locals-filestream.png "Lokale Variablen, FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Welche Variablen werden im Fenster „Auto“ angezeigt?  
  Sie können das Fenster **Auto** für C#-, Visual Basic- und C++-Code verwenden. Das Fenster **Auto** unterstützt weder JavaScript noch F#-.  
   
- In C# und Visual Basic wird im Fenster **Auto** jede Variable angezeigt, die in der aktuellen oder vorherigen Zeile verwendet wird. Angenommen, Sie deklarieren vier Variablen und legen diese wie folgt fest:  
+ In c# und Visual Basic zeigt das Fenster Auto alle Variablen an **, die in** der aktuellen oder vorherigen Zeile verwendet werden. Angenommen, Sie deklarieren vier Variablen und legen diese wie folgt fest:  
   
 ```csharp  
 public static void Main()  
@@ -58,7 +58,7 @@ public static void Main()
   
  Wenn Sie einen Haltepunkt in der Zeile `c = 3`festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
   
- !["Auto"&#45;CSharp](../debugger/media/autos-csharp.png "Auto-CSharp")  
+ ![Auto&#45;CSharp](../debugger/media/autos-csharp.png "Auto, C#")  
   
  `c` hat den Wert 0, weil die Zeile `c = 3` noch nicht ausgeführt wurde.  
   
@@ -78,13 +78,13 @@ void main() {
   
  Wenn Sie einen Haltepunkt in der Zeile `e = 5;` festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
   
- !["Auto"&#45;Cplus](../debugger/media/autos-cplus.png "Auto-Cplus")  
+ ![Auto&#45;CPLUS](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Sie sehen, dass die Variable „e“ nicht initialisiert ist. Dies liegt daran, dass der Code in der Zeile `e = 5;` noch nicht ausgeführt wurde.  
   
  In bestimmten Fällen können Sie auch die Rückgabewerte von Funktionen und Methoden sehen. Weitere Informationen finden im folgenden Abschnitt [View return values of method calls](#bkmk_returnValue) .  
   
-## <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> View return values of method calls  
  In .NET- und C++-Code können Sie Rückgabewerte auswerten, wenn Sie einen Methodenaufruf als Prozedurschritt oder bis zum Rücksprung ausführen. Diese Funktion ist nützlich, wenn das Ergebnis eines Methodenaufrufs nicht in einer lokalen Variablen gespeichert wird, etwa wenn eine Methode als Parameter oder Rückgabewert einer anderen Methode verwendet wird.  
   
  Im folgenden C#-Code werden die Rückgabewerte von zwei Funktionen hinzugefügt:  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Legen Sie einen Haltepunkt in der Zeile int `x = sumVars(a, b) + subtractVars(c, d);` fest.  
   
- Starten Sie das Debuggen, und drücken Sie **F10 (Prozedurschritt)** , wenn die Ausführung am ersten Haltepunkt angehalten wird. Daraufhin sollte Folgendes im Fenster **Auto** zu sehen sein:  
+ Starten Sie das Debuggen, und drücken Sie **F10 (Prozedurschritt)**, wenn die Ausführung am ersten Haltepunkt angehalten wird. Daraufhin sollte Folgendes im Fenster **Auto** zu sehen sein:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
@@ -129,7 +129,7 @@ private static int subtractVars(int i, int j)
   
  Sie können Sie einen Ausdruck für einen Wert eingeben, etwa `a + b`. Der Debugger akzeptiert im die meisten gültigen Sprachausdrücke.  
   
- In nativem C++-Code müssen Sie möglicherweise den Kontext eines Variablennamens qualifizieren. Weitere Informationen finden Sie unter [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+ In nativem C++-Code müssen Sie möglicherweise den Kontext eines Variablennamens qualifizieren. Weitere Informationen finden Sie unter [context-Operator (C++)](../debugger/context-operator-cpp.md).  
   
  Allerdings sollten Sie Vorsicht walten lassen, wenn Sie Werte ändern. Mögliche Probleme:  
   
@@ -146,5 +146,5 @@ private static int subtractVars(int i, int j)
   
  Sie können den Kontext auch zu anderen Funktionsaufrufen, Threads oder Prozessen wechseln, indem Sie im Fenster **Aufrufliste** , **Threads** oder **Prozesse** auf das Element doppelklicken.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggerfenster](../debugger/debugger-windows.md)
