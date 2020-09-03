@@ -14,24 +14,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984464"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Sie können ein Modell für den Business Data Connectivity (BDC)-Dienst entwickeln, indem Sie einer Modelldatei Entitäten und Methoden hinzufügen. Eine Entität beschreibt eine Auflistung von Datenfeldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe aus, z. b. das Hinzufügen, löschen oder Aktualisieren von Daten, die von den Entitäten dargestellt Weitere Informationen finden Sie unter [integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
 
-## <a name="add-entities"></a>Entitäten hinzufügen
+## <a name="add-entities"></a>Hinzufügen von Entitäten
  Sie können eine Entität hinzufügen, indem Sie eine **Entität** aus der Visual Studio- **Toolbox** auf den BDC-Designer ziehen oder kopieren. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Definieren Sie die Felder der Entität in einer Klasse. Beispielsweise können Sie einer `Customer` Klasse ein Feld mit dem Namen `Address` hinzufügen. Sie können dem Projekt entweder eine neue Klasse hinzufügen oder eine vorhandene Klasse verwenden, die mit anderen Tools wie dem objektrelationaler Designer (O/R-Designer) erstellt wurde. Der Name der Entität und der Name der Klasse, die die Entität darstellt, müssen nicht abgeglichen werden. Sie verknüpfen die-Klasse mit der-Entität, wenn Sie die Methoden in Ihrem Modell definieren.
+ Definieren Sie die Felder der Entität in einer Klasse. Beispielsweise können Sie einer Klasse ein Feld mit dem Namen hinzufügen `Address` `Customer` . Sie können dem Projekt entweder eine neue Klasse hinzufügen oder eine vorhandene Klasse verwenden, die mit anderen Tools wie dem objektrelationaler Designer (O/R-Designer) erstellt wurde. Der Name der Entität und der Name der Klasse, die die Entität darstellt, müssen nicht abgeglichen werden. Sie verknüpfen die-Klasse mit der-Entität, wenn Sie die Methoden in Ihrem Modell definieren.
 
 ## <a name="add-methods"></a>Methoden hinzufügen
  Der BDC-Dienst ruft Methoden in Ihrem Modell auf, wenn Benutzerinformationen in einer Liste oder einem Webpart, die auf Ihrem Modell basiert, anzeigen, hinzufügen, aktualisieren oder löschen. Sie müssen dem Modell für jede Aufgabe, die der Benutzer ausführen kann, eine Methode hinzufügen. Erstellen Sie Methoden, indem Sie einen der fünf grundlegenden Methoden Typen aus dem Details-Fenster der **BDC-Methode** auswählen. In der folgenden Tabelle werden die fünf grundlegenden Methoden eines BDC-Modells beschrieben.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |Finder|Gibt eine Auflistung von Entitäts Instanzen zurück. Wird aufgerufen, wenn der Benutzer die Liste oder das WebPart öffnet. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md).|
 |Spezifischer Finder|Gibt eine bestimmte Entitäts Instanz zurück. Wird aufgerufen, wenn ein Benutzer die Details eines bestimmten Elements in einer Liste anzeigt. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md).|
@@ -42,7 +42,7 @@ ms.locfileid: "72984464"
 ## <a name="define-method-parameters"></a>Definieren von Methoden Parametern
  Wenn Sie eine Methode erstellen, fügt Visual Studio die Eingabe-und Ausgabeparameter hinzu, die für den Methodentyp geeignet sind. Diese Parameter sind nur Platzhalter. In den meisten Fällen müssen Sie die Parameter so ändern, dass Sie den richtigen Datentyp übergeben oder zurückgeben. Standardmäßig gibt eine Finder-Methode z. b. eine Zeichenfolge zurück. In den meisten Fällen möchten Sie den Rückgabe Parameter der Finder-Methode so ändern, dass er eine Auflistung von Entitäten zurückgibt. Dies können Sie erreichen, indem Sie den Typdeskriptor des Parameters ändern. Ein Typdeskriptor ist eine Auflistung von Attributen, die den Datentyp eines Parameters beschreibt. Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Visual Studio ermöglicht Ihnen das Kopieren von Typdeskriptoren zwischen Parametern im Modell. Beispielsweise können Sie einen Typdeskriptor mit dem Namen `CustomerTD` für den Rückgabe Parameter der `GetCustomer`-Methode definieren. Sie können den `CustomerTD` Typdeskriptor in den **BDC-Explorer**kopieren und dann den Typdeskriptor in den Eingabeparameter der `CreateCustomer`-Methode einfügen. Dies verhindert, dass Sie denselben Typdeskriptor mehrmals definieren müssen.
+ Visual Studio ermöglicht Ihnen das Kopieren von Typdeskriptoren zwischen Parametern im Modell. Beispielsweise können Sie einen Typdeskriptor `CustomerTD` mit dem Namen für den Rückgabe Parameter der `GetCustomer` Methode definieren. Sie können den `CustomerTD` Typdeskriptor in den **BDC-Explorer**kopieren und dann den Typdeskriptor in den Eingabeparameter der Methode einfügen `CreateCustomer` . Dies verhindert, dass Sie denselben Typdeskriptor mehrmals definieren müssen.
 
 ## <a name="method-instances"></a>Methoden Instanzen
  Wenn Sie eine Methode erstellen, fügt Visual Studio eine Standardmethoden Instanz hinzu. Eine Methoden Instanz ist ein Verweis auf eine Methode, zuzüglich der Standardwerte für die Parameter. Eine einzelne Methode kann über mehrere Methoden Instanzen verfügen. Jede Instanz ist eine Kombination aus der Methoden Signatur und einem Satz von Standardwerten. Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984464"
 ## <a name="validate-the-model"></a>Überprüfen des Modells
  Sie können das Modell während der Entwicklung überprüfen. Visual Studio identifiziert Probleme, die verhindern können, dass sich das Modell erwartungsgemäß verhält. Diese Probleme werden in der Visual Studio- **Fehlerliste**angezeigt.
 
- Sie können ein Modell validieren, indem Sie das Kontextmenü für den BDC-Designer öffnen und dann über **prüfen auswählen.** Wenn das Modell Fehler enthält, werden diese in der **Fehlerliste**angezeigt. Sie können den Cursor schnell in den Code verschieben, der einen Fehler enthält, indem Sie auf den Fehler in der Liste doppelklicken. Als Alternative können Sie die **F8** -Taste oder die **UMSCHALT** Taste+**F8** -Taste wiederholt auswählen, um die Fehler in der Liste vorwärts oder rückwärts zu durchlaufen.
+ Sie können ein Modell validieren, indem Sie das Kontextmenü für den BDC-Designer öffnen und dann über **prüfen auswählen.** Wenn das Modell Fehler enthält, werden diese in der **Fehlerliste**angezeigt. Sie können den Cursor schnell in den Code verschieben, der einen Fehler enthält, indem Sie auf den Fehler in der Liste doppelklicken. Als Alternative können Sie die Taste **F8** oder **Shift** + **F8** wiederholt auswählen, um die Fehler in der Liste vorwärts oder rückwärts zu durchlaufen.
 
  Validierungs Fehler können auftreten, wenn die Regeln des Modells auf irgendeine Weise verletzt werden. Wenn z. b. die **IsCollection** -Eigenschaft eines Typdeskriptors auf **true**festgelegt ist, aber keine untergeordneten Typdeskriptoren vorhanden sind, wird ein Validierungs Fehler angezeigt. Möglicherweise müssen Sie auf die Regeln eines BDC-Modells verweisen, um einige Fehler zu verstehen, die in der Visual Studio- **Fehlerliste**angezeigt werden. Weitere Informationen zu den Regeln eines BDC-Modells finden Sie unter [bdcmetadata-Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -89,7 +89,7 @@ ms.locfileid: "72984464"
 |----------|------------|
 |Zum Bereitstellen von Modellen für den BDC-Dienst.|Bearbeiten|
 |Zum Erstellen von Listen und Webparts mithilfe externer Inhaltstypen (Entitäten) in Ihrem Modell.|In Clients auswählbar|
-|Zum Erstellen, lesen, aktualisieren und Löschen von Entitäts Daten.|Ausführen|
+|Zum Erstellen, lesen, aktualisieren und Löschen von Entitäts Daten.|Execute|
 
  Weitere Informationen zu diesen Einstellungen finden Sie [unter Business Data Connectivity-Dienst Verwaltung](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 
@@ -111,7 +111,7 @@ ms.locfileid: "72984464"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)|Beschreibt die Tools, die Sie verwenden können, um ein Modell für den BDC visuell zu entwerfen.|
 |[Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)|Zeigt, wie dem Modell externe Inhaltstypen oder Entitäten hinzugefügt werden.|

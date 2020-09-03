@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach | Microsoft Docs
+title: 'IDebugProcess2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724197"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-Fügt den Sitzungsdebug-Manager (SDM) an den Prozess an.
+Fügt den Sitzungs-Debug-Manager (SDM) an den Prozess an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,30 +47,30 @@ int Attach( 
 
 ## <a name="parameters"></a>Parameter
 `pCallback`\
-[in] Ein [IDebugEventCallback2-Objekt,](../../../extensibility/debugger/reference/idebugeventcallback2.md) das für die Debugereignisbenachrichtigung verwendet wird.
+in Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das für die debugereignisbenachrichtigung verwendet wird.
 
 `rgguidSpecificEngines`\
-[in] Ein Array von GUIDs von Debugmodulen, die zum Debuggen von Programmen verwendet werden sollen, die im Prozess ausgeführt werden. Dieser Parameter kann ein NULL-Wert sein. Einzelheiten finden Sie in den Hinweisen.
+in Ein Array von GUIDs von Debug-engines, das zum Debuggen von Programmen verwendet werden soll, die im Prozess ausgeführt werden. Dieser Parameter kann ein NULL-Wert sein. Einzelheiten finden Sie in den Hinweisen.
 
 `celtSpecificEngines`\
-[in] Die Anzahl der Debugmodule im `rgguidSpecificEngines` Array `rghrEngineAttach` und die Größe des Arrays.
+in Die Anzahl der Debug-engines im `rgguidSpecificEngines` Array und die Größe des `rghrEngineAttach` Arrays.
 
 `rghrEngineAttach`\
-[in, out] Ein Array von HRESULT-Codes, die von den Debugmodulen zurückgegeben werden. Die Größe dieses Arrays `celtSpecificEngines` wird im Parameter angegeben. Jeder Code ist `S_OK` `S_ATTACH_DEFERRED`in der Regel entweder oder . Letzteres weist darauf hin, dass die DE derzeit an keine Programme angeschlossen ist.
+[in, out] Ein Array von HRESULT-Codes, die von den Debug-engines zurückgegeben werden. Die Größe dieses Arrays wird im-Parameter angegeben `celtSpecificEngines` . Jeder Code ist in der Regel entweder `S_OK` oder `S_ATTACH_DEFERRED` . Letztere gibt an, dass die de zurzeit an keine Programme angefügt ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt andere mögliche Werte.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle werden andere mögliche Werte angezeigt.
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Der angegebene Prozess ist bereits an den Debugger angefügt.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Während des Anfügevorgangs ist eine Sicherheitsverletzung aufgetreten.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Ein Desktopprozess kann nicht an den Debugger angefügt werden.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Während der Anfüge Prozedur ist ein Sicherheits Verstoß aufgetreten.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Ein Desktop Prozess kann nicht an den Debugger angefügt werden.|
 
 ## <a name="remarks"></a>Bemerkungen
- Das Anfügen an einen Prozess fügt das SDM an alle Programme an, die in diesem `rgguidSpecificEngines` Prozess ausgeführt werden und von den im Array angegebenen Debugmodulen (DE) gedebuggen werden können. Legen `rgguidSpecificEngines` Sie den Parameter auf `GUID_NULL` einen NULL-Wert fest oder fügen Sie ihn in das Array ein, um ihn an alle Programme im Prozess anzufügen.
+ Beim Anfügen an einen Prozess wird die SDM an alle Programme angehängt, die in diesem Prozess ausgeführt werden und von den im Array angegebenen Debug-engines (de) debuggt werden können `rgguidSpecificEngines` . Legen Sie den- `rgguidSpecificEngines` Parameter auf einen Nullwert fest, oder fügen Sie ihn `GUID_NULL` in das Array ein, um ihn an alle Programme im Prozess anzufügen
 
- Alle Debugereignisse, die im Prozess auftreten, werden an das angegebene [IDebugEventCallback2-Objekt](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet. Dieses `IDebugEventCallback2` Objekt wird bereitgestellt, wenn das SDM diese Methode aufruft.
+ Alle Debugereignisse, die im Prozess auftreten, werden an das angegebene [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt gesendet. Dieses `IDebugEventCallback2` Objekt wird bereitgestellt, wenn die SDM diese Methode aufruft.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

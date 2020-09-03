@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Microsoft Docs
+title: 'IDebugProcessEx2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723382"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Diese Methode informiert den Prozess, dass eine Sitzung den Prozess jetzt debuggen.
+Diese Methode informiert den Prozess, dass eine Sitzung jetzt den Prozess debuggt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int Attach(
 
 ## <a name="parameters"></a>Parameter
 `pSession`\
-[in] Ein Wert, der die Sitzung, die an diesen Prozess angefügt wird, eindeutig identifiziert.
+in Ein-Wert, der die Sitzung, die an diesen Prozess angehängt wird, eindeutig identifiziert.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die übergebene `pSession` Schnittstelle ist nur als Cookie zu behandeln, ein Wert, der den Sitzungsdebug-Manager eindeutig identifiziert, der an diesen Prozess angefügt wird. keine der Methoden auf der mitgelieferten Schnittstelle funktionsfähig sind.
+ Die übergebene Schnittstelle `pSession` muss nur als Cookie behandelt werden. dabei handelt es sich um einen Wert, der den Sitzungs-Debug-Manager eindeutig identifiziert, der an diesen Prozess angehängt wird. keine der Methoden der angegebenen Schnittstelle ist funktionsfähig.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876085"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch-Aktivitätsdesigner
@@ -52,14 +52,14 @@ Achten Sie darauf, den **PickBranch** -Designer auszuwählen. Wenn Sie eine der 
 
 In der folgenden Tabelle werden die nützlichsten <xref:System.Activities.Statements.PickBranch> Eigenschaften angezeigt, und es wird beschrieben, wie Sie in der Workflow-Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Der Anzeige Name, der im Header des **PickBranch** -Designers angezeigt wird. Der Standardwert lautet Branch.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|Jedes <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Trigger%2A>-Aktion, die <xref:System.Activities.Statements.PickBranch.Action%2A> aufrufen kann.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Jede <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Action%2A>, die ausgeführt wird, sobald sie ausgelöst wird.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|Falsch|Der Anzeige Name, der im Header des **PickBranch** -Designers angezeigt wird. Der Standardwert lautet Branch.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Richtig|Jedes <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Trigger%2A>-Aktion, die <xref:System.Activities.Statements.PickBranch.Action%2A> aufrufen kann.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|Falsch|Jede <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Action%2A>, die ausgeführt wird, sobald sie ausgelöst wird.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
+- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 - [Auswahlaktivität](/dotnet/framework/windows-workflow-foundation/pick-activity)
 - [Verwenden der Pick-Aktivität](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

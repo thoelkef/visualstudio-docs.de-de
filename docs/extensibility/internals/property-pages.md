@@ -1,5 +1,5 @@
 ---
-title: Eigenschaftenseiten | Microsoft Docs
+title: Eigenschaften Seiten | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,69 +13,69 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706054"
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
-Benutzer können projektkonfigurationsabhängige und -unabhängige Eigenschaften mithilfe von Eigenschaftenseiten anzeigen und ändern. Eine Schaltfläche **Eigenschaftenseiten** ist im **Eigenschaftenfenster** oder auf der Symbolleiste des Projektmappen-Explorers für Objekte aktiviert, die eine Eigenschaftenseitenansicht des ausgewählten Objekts bereitstellen. Eigenschaftenseiten werden von der Umgebung erstellt und sind für Lösungen und Projekte verfügbar. Sie können jedoch auch für Projektelemente verfügbar gemacht werden, die konfigurationsabhängige Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt andere Compiler-Switch-Einstellungen benötigen, um ordnungsgemäß zu erstellen.
+Mithilfe von Eigenschaften Seiten können Benutzer von der Projekt Konfiguration abhängige und unabhängige Eigenschaften anzeigen und ändern. Eine Schaltfläche für Eigenschaften **Seiten** ist im **Eigenschaften** Fenster oder auf Projektmappen-Explorer Symbolleiste für Objekte aktiviert, die eine Eigenschaften Seitenansicht des ausgewählten Objekts bereitstellen. Eigenschaften Seiten werden von der Umgebung erstellt und stehen für Projektmappen und Projekte zur Verfügung. Sie können jedoch auch für Projekt Elemente verfügbar gemacht werden, die Konfigurations abhängige Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt unterschiedliche compilerswitcheinstellungen zum ordnungsgemäßen erstellen benötigen.
 
-## <a name="using-property-pages"></a>Verwenden von Eigenschaftenseiten
- Wenn bereits eine Eigenschaftenseite angezeigt wird und sich die Auswahl ändert (z. B. von einer Projektmappe zu einem Projekt), ändern sich die auf den Seiten angezeigten Informationen, um die Eigenschaften für die neue Auswahl anzuzeigen. Wenn für das Objekt keine Eigenschaften vorhanden sind, die Eigenschaftenseiten unterstützen, ist die Eigenschaftenseite leer.
+## <a name="using-property-pages"></a>Verwenden von Eigenschaften Seiten
+ Wenn eine Eigenschaften Seite bereits angezeigt wird und sich die Auswahl ändert (z. b. von einer Projekt Mappe zu einem Projekt), werden die in den Seiten angezeigten Informationen geändert, um die Eigenschaften für die neue Auswahl anzuzeigen. Wenn keine Eigenschaften für das Objekt vorhanden sind, die Eigenschaften Seiten unterstützen, ist die Eigenschaften Seite leer.
 
- Wenn mehrere Objekte ausgewählt sind, zeigt die Eigenschaftenseite den Schnittpunkt der Eigenschaften für alle ausgewählten Elemente an. Wenn das ausgewählte Element keine konfigurationsabhängigen Eigenschaften enthält und auf die Schaltfläche **Eigenschaftenseiten** auf der Symbolleiste des Projektmappen-Explorers geklickt wird, ändern Sie den Fokus auf das Eigenschaftenfenster. Weitere Informationen zum Fenster Eigenschaften und zur Auswahl finden Sie unter [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md).
+ Wenn mehrere Objekte ausgewählt sind, wird auf der Eigenschaften Seite die Schnittmenge der Eigenschaften für alle ausgewählten Elemente angezeigt. Wenn das ausgewählte Element keine Konfigurations abhängigen Eigenschaften enthält und auf die Schaltfläche **Eigenschaften Seiten** auf der Projektmappen-Explorer Symbolleiste geklickt wird, konzentrieren Sie sich auf die Änderungen auf die Eigenschaftenfenster. Weitere Informationen zum Eigenschaftenfenster und zur Auswahl finden Sie unter [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md).
 
- Wenn Eigenschaften für mehrere Objekte angezeigt werden und Sie einen Wert auf einer Eigenschaftenseite ändern, werden alle Werte für die Objekte auf den neuen Wert festgelegt, auch wenn sie anfangs anders waren und die Seite leer war, als die Eigenschaften eines einzelnen Objekts angezeigt wurden.
+ Wenn Eigenschaften für mehrere Objekte angezeigt werden und Sie einen Wert auf einer Eigenschaften Seite ändern, werden alle Werte für die Objekte auf den neuen Wert festgelegt, auch wenn Sie anfänglich anders waren und die Seite leer war, als die Eigenschaften eines einzelnen Objekts angezeigt wurden.
 
- Es gibt zwei allgemeine Typen von **ProjectProperty** Pages-Dialogfeldern, die in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verfügbar sind. Im ersten, z. B. bei Visual Basic-Projekten werden die Eigenschaftenseiten in einem Feldformat angezeigt, wie im folgenden Screenshot gezeigt. Im zweiten Abschnitt, der weiter unten in diesem Abschnitt gezeigt wird, hostet die Eigenschaftenseite ein Eigenschaftenraster, das dem im Eigenschaftenfenster ähnelt.
+ Es gibt zwei allgemeine Typen von Dialogfeldern für **ProjectProperty-Seiten** , die in verfügbar sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Im ersten werden z. b. für Visual Basic Projekte die Eigenschaften Seiten in einem Feld Format angezeigt, wie im folgenden Screenshot gezeigt. In der zweiten, weiter unten in diesem Abschnitt gezeigten, hostet die Eigenschaften Seite ein Eigenschaften Raster ähnlich dem, das im Eigenschaften Fenster von gefunden wurde.
 
- ![Visual Basic-Eigenschaftenseiten](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages") Dialogfeld Projekteigenschaftsseiten mit Feldformat und Baumstruktur
+ ![Eigenschaften Seiten Visual Basic](../../extensibility/internals/media/vsvbproppages.gif "vsvbproppages") Projekteigenschaften Seiten (Dialogfeld) mit Feld Format und Baumstruktur
 
- Die Struktur strukturim Dialogfeld Eigenschaftenseiten <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>wird nicht mit erstellt. Die Umgebung, basierend auf dem Ebenennamen, der von der <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> und den <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> Schnittstellen an sie übergeben wird, erstellt sie.
+ Die Struktur im Dialogfeld Eigenschaften Seiten wird nicht mithilfe von erstellt <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . Die Umgebung wird auf der Grundlage des von der <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> -Schnittstelle und der-Schnittstelle an Sie weiter gegebenen levelnamens <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> erstellt.
 
- Auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Eigenschaftenseiten sind nur zwei Kategorien der obersten Ebene verfügbar:
+ Auf den Eigenschaften Seiten sind nur zwei Kategorien der obersten Ebene verfügbar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] :
 
-- Allgemeine Eigenschaften, die konfigurationsunabhängige Informationen für das ausgewählte Objekt oder die ausgewählten Objekte anzeigt. Wenn daher eine der Unterkategorien "Allgemeine Eigenschaften" ausgewählt ist, sind die Optionen Konfiguration, Plattform und Configuration Manager oben im Dialogfeld nicht verfügbar.
+- Allgemeine Eigenschaften, in denen Konfigurations unabhängige Informationen für die ausgewählten Objekte angezeigt werden. Wenn eine der allgemeinen Eigenschaften Unterkategorien ausgewählt ist, sind die Optionen Konfiguration, Plattform und Configuration Manager am oberen Rand des Dialog Felds nicht verfügbar.
 
-- Konfigurationseigenschaften, die konfigurationsabhängige Informationen zu Debugging-, Optimierungs- und Buildparametern für die Projektmappe oder das Projekt enthalten.
+- Konfigurations Eigenschaften, die Konfigurations abhängige Informationen im Zusammenhang mit Debuggen, Optimierung und buildparametern für die Projekt Mappe oder das Projekt enthalten.
 
-  Sie können keine zusätzlichen Kategorien der obersten Ebene erstellen, aber Sie können `IVsPropertyPage`in der Implementierung von die eine oder andere Nichtanzeige festlegen. Wenn Sie z. B. keine konfigurationsunabhängigen Eigenschaften für ein Objekt anzeigen können, können Sie die Kategorie "Allgemeine Eigenschaften" nicht anzeigen. Sie zeigen allgemeine `ISpecifyPropertyPages` Eigenschaften an, wenn sie aus dem Suchobjekt des Elements und den Konfigurationseigenschaften implementiert werden, wenn Sie im Konfigurationsobjekt implementieren `ISpecifyPropertyPages` (das Objekt, das , `IVsCfg` `IVsProjectCfg`und verwandte Schnittstellen implementiert).
+  Sie können keine zusätzlichen Kategorien der obersten Ebene erstellen, aber Sie können wählen, ob Sie in ihrer Implementierung von eine oder die andere anzeigen möchten `IVsPropertyPage` . Wenn Sie z. b. keine Konfigurations unabhängigen Eigenschaften haben, die für ein Objekt angezeigt werden sollen, können Sie auswählen, dass die Kategorie Allgemeine Eigenschaften nicht angezeigt werden soll. Wenn `ISpecifyPropertyPages` Sie `ISpecifyPropertyPages` im Konfigurationsobjekt implementieren (das Objekt `IVsCfg` , das, und verknüpfte Schnittstellen implementiert), werden allgemeine Eigenschaften angezeigt, wenn aus dem Browse-Objekt und den Konfigurations Eigenschaften des Elements implementiert wird `IVsProjectCfg` .
 
-  Jede Kategorie, die unter einer Kategorie der obersten Ebene angezeigt wird, stellt eine separate Eigenschaftenseite dar. Kategorie- und Unterkategorieeinträge, die im Dialogfeld `ISpecifyPropertyPages` `IVsPropertyPage`verfügbar sind, werden durch die Implementierung von und bestimmt.
+  Jede Kategorie, die unter einer Kategorie der obersten Ebene angezeigt wird, stellt eine separate Eigenschaften Seite dar. Kategorie-und unterkategorieeinträge, die im Dialogfeld verfügbar sind, werden durch ihre Implementierung von `ISpecifyPropertyPages` und bestimmt `IVsPropertyPage` .
 
-  `IDispatch`Objekte für Elemente im Auswahlcontainer, deren Eigenschaften `ISpecifyPropertyPages` auf Eigenschaftenseiten angezeigt werden sollen, implementieren, um eine Liste von Klassen-IDs aufzulisten. Die Klassen-IDs werden `ISpecifyPropertyPages` als Variablen an übergeben und zum Instanziieren der Eigenschaftenseiten verwendet. Die Liste der Klassen-IDs `IVsPropertyPage` wird auch übergeben, um die Baumstruktur auf der linken Seite des Dialogfelds zu erstellen. Die Eigenschaftenseiten geben dann `IDispatch` Informationen an `ISpecifyPropertyPages` das Objekt zurück, das die Informationen für jede Seite implementiert und ausfüllt.
+  `IDispatch` Objekte für Elemente im Auswahl Container, die auf Eigenschaften Seiten anzuzeigende Eigenschaften aufweisen, `ISpecifyPropertyPages` um eine Liste der Klassen-IDs aufzuzählen. Die Klassen-IDs werden als Variablen an `ISpecifyPropertyPages` und verwendet, um die Eigenschaften Seiten zu instanziieren. Die Liste der Klassen-IDs wird auch an weitergegeben `IVsPropertyPage` , um die Struktur auf der linken Seite des Dialog Felds zu erstellen. Die Eigenschaften Seiten übergeben dann Informationen an das `IDispatch` Objekt, das implementiert, `ISpecifyPropertyPages` und füllen die Informationen für jede Seite aus.
 
-  Die Eigenschaften des Suchobjekts `IDispatch` werden mithilfe jedes Objekts im Auswahlcontainer abgerufen.
+  Die Eigenschaften des Browse-Objekts werden mithilfe von `IDispatch` für jedes Objekt im Auswahl Container abgerufen.
 
-  Die `Help::DisplayTopicFromF1Keyword` Implementierung in Ihrem VSPackage bietet die Funktionalität für die Hilfeschaltfläche.
+  Die Implementierung `Help::DisplayTopicFromF1Keyword` von in Ihrem VSPackage stellt die Funktionalität für die Schaltfläche Hilfe bereit.
 
-  Weitere Informationen finden `IDispatch` `ISpecifyPropertyPages`Sie in der MSDN-Bibliothek.
+  Weitere Informationen finden Sie unter `IDispatch` und `ISpecifyPropertyPages` in der MSDN Library.
 
-  Der zweite Typ von Eigenschaftenseiten, die in den Beispielen angezeigt werden, hostet eine Form des Eigenschaftenrasters, wie im folgenden Screenshot gezeigt.
+  Der zweite Typ von Eigenschaften Seiten, die in den Beispielen angezeigt werden, hostet ein Formular des Eigenschaften Rasters, wie im folgenden Screenshot gezeigt.
 
-  ![VC-Eigenschaftenseiten](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages") Dialogfeld Eigenschaftenseiten mit Eigenschaftenraster
+  ![VC-Eigenschaften Seiten](../../extensibility/internals/media/vsvcproppages.gif "vsvcproppages") Eigenschaften Seiten (Dialogfeld) mit Eigenschaften Raster
 
-  Die Schnittstellen `IVSMDPropertyBrowser` `IVSMDPropertyGrid` und (deklariert in vsmanaged.h) werden verwendet, um das Eigenschaftenraster in einem Dialogfeld oder Fenster zu erstellen und aufzufüllen.
+  Die-Schnittstellen `IVSMDPropertyBrowser` und `IVSMDPropertyGrid` (deklariert in vsmanaged. h) werden verwendet, um das Eigenschaften Raster in einem Dialogfeld oder Fenster zu erstellen und aufzufüllen.
 
-  Die Architektur von Projekten hat sich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]gegenüber früheren Versionen von erheblich verändert. Insbesondere hat sich der Begriff, welches Projekt aktiv ist, geändert. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]gibt es kein Konzept für ein aktives Projekt. In früheren Entwicklungsumgebungen war das aktive Projekt das Projekt, auf das das Erstellen und Bereitstellen von Befehlen unabhängig vom Kontext standardmäßig eingestellt wurde. Nun wird die Lösung gesteuert und vermittelt, welche Build- und Bereitstellungsbefehle für welche Projekte gelten.
+  Die Architektur der Projekte hat sich stark von früheren Versionen von geändert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Insbesondere hat sich das Konzept geändert, in dem sich das Projekt befindet. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gibt es kein Konzept für ein aktives Projekt. In früheren Entwicklungsumgebungen war das aktive Projekt das Projekt, für das Build-und Bereitstellungs Befehle unabhängig vom Kontext standardmäßig auf festgestellt wurden. Nun steuert und bestimmt die Lösung, welche Build-und Bereitstellungs Befehle auf welche Projekte angewendet werden.
 
-  Was früher ein aktives Projekt war, wird nun auf eine von drei verschiedenen Arten erfasst:
+  Was zuvor ein aktives Projekt war, wird nun auf eine von drei unterschiedlichen Arten aufgezeichnet:
 
-- Das Startup-Projekt
+- Das Startprojekt
 
-   Sie können ein Projekt oder Projekte auf der Eigenschaftenseite der Projektmappe angeben, die gestartet wird, wenn der Benutzer F5 drückt oder im Menü Build ausführen auswählt. Dies funktioniert ähnlich wie das alte aktive Projekt in dem Sinne, dass sein Name im Projektmappen-Explorer mit fett formatierter Schrift angezeigt wird.
+   Sie können ein Projekt oder Projekte auf der Eigenschaften Seite der Projekt Mappe angeben, die gestartet wird, wenn der Benutzer F5 drückt oder im Menü Build die Option Ausführen auswählt. Dies funktioniert ähnlich wie das alte aktive Projekt in dem Sinne, dass sein Name in Projektmappen-Explorer mit fett formatierter Schriftart angezeigt wird.
 
-   Sie können das Startprojekt als Eigenschaft im `DTE.Solution.SolutionBuild.StartupProjects`Automatisierungsmodell abrufen, indem Sie aufrufen. In einem VSPackage rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> die oder die Methoden auf. `IVsSolutionBuildManager`ist als Service `QueryService` auf SID_SVsSolutionBuildManager verfügbar. Weitere Informationen finden Sie unter [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).
+   Sie können das Startprojekt als Eigenschaft im Automatisierungs Modell abrufen, indem Sie aufrufen `DTE.Solution.SolutionBuild.StartupProjects` . In einem VSPackage werden die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode aufgerufen. `IVsSolutionBuildManager` ist auf SID_SVsSolutionBuildManager als Dienst verfügbar `QueryService` . Weitere Informationen finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und Projektmappenkonfiguration. [Solution Configuration](../../extensibility/internals/solution-configuration.md)
 
-- Aktive Lösungsbuildkonfiguration
+- Konfiguration des aktiven Projektmappenbuilds
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verfügt über eine aktive Lösungskonfiguration, `DTE.Solution.SolutionBuild.ActiveConfiguration`die im Automatisierungsmodell durch Implementierung von verfügbar ist. Eine Projektmappenkonfiguration ist eine Sammlung, die eine Projektkonfiguration für jedes Projekt in der Projektmappe enthält (jedes Projekt kann mehrere Konfigurationen auf mehreren Plattformen mit unterschiedlichen Namen aufweisen). Weitere Informationen zu den Eigenschaftenseiten der Lösung finden Sie unter [Lösungskonfiguration](../../extensibility/internals/solution-configuration.md).
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verfügt über eine aktive Projektmappenkonfiguration, die im Automatisierungs Modell durch Implementieren von verfügbar ist `DTE.Solution.SolutionBuild.ActiveConfiguration` . Eine Projektmappenkonfiguration ist eine Sammlung, die eine Projekt Konfiguration für jedes Projekt in der Projekt Mappe enthält (jedes Projekt kann über mehrere Konfigurationen auf mehreren Plattformen mit unterschiedlichen Namen verfügen). Weitere Informationen zu den Eigenschaften Seiten der Projekt Mappe finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).
 
-- Derzeit ausgewähltes Projekt
+- Aktuell ausgewähltes Projekt
 
-   Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> Sie die Methode zum Abrufen der Projekthierarchie und des oder der ausgewählten Projektelemente. Von DTE verwenden Sie `SelectedItems.SelectedItem.Project` `SelectedItems.SelectedItem.ProjectItem` die und Methoden. In den Kerndokumenten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] befindet sich Beispielcode unter diesen Überschriften.
+   Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> Sie die-Methode, um die Projekt Hierarchie und das ausgewählte Projekt Element abzurufen. Aus DTE verwenden Sie die `SelectedItems.SelectedItem.Project` -Methode und die- `SelectedItems.SelectedItem.ProjectItem` Methode. Es gibt Beispielcode unter diesen Überschriften in den Kern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dokumenten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>

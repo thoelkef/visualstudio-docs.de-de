@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
+title: 'Idebugprocessqueryproperties:: queryproperty | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723295"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-Diese Methode fragt nach einem angegebenen Eigenschaftswert des Debugvorgangs.
+Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,7 +39,7 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Parameter
 `dwPropType`\
-[in] Definition der abgefragten Eigenschaft. Die Werte sind:
+in Definition der abgefragten Eigenschaft. Die Werte sind:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -54,7 +54,7 @@ int QueryProperty(
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird selten verwendet.
+ Diese Methode wird nur selten verwendet.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

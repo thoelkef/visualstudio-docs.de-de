@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981935"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Problembehandlung bei der SharePoint-Verpackung und-Bereitstellung
@@ -37,7 +37,7 @@ ms.locfileid: "72981935"
  Für die Diagnose zwischen Visual Studio, SharePoint und anderen Ebenen können Sie den Registrierungsschlüssel "EnableDiagnostics" verwenden und so die Stapelüberwachung anzeigen. Weitere Informationen finden Sie unter [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Projekt Ausgabe zum Lösungspaket hinzufügen
- Die Projektausgabe kann mithilfe des Paket-Designers einem Paket hinzugefügt werden. Vergewissern Sie sich jedoch beim Hinzufügen der Projektausgabe, dass die Plattform des Projekts der Plattform der SharePoint-Lösung entspricht. Es wird empfohlen, für die Assemblys, die Sie auf einem SharePoint-Server bereitstellen möchten, das **beliebige CPU** -Platt Form Ziel zu verwenden. Weitere Informationen finden Sie unter [Seite "Kompilierungs Seite &#40;"&#41; , Projekt-Designer Visual Basic](../ide/reference/compile-page-project-designer-visual-basic.md) und [ &#40;Dialog&#41;Feld "Erweiterte Compilereinstellungen" Visual Basic](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+ Die Projektausgabe kann mithilfe des Paket-Designers einem Paket hinzugefügt werden. Vergewissern Sie sich jedoch beim Hinzufügen der Projektausgabe, dass die Plattform des Projekts der Plattform der SharePoint-Lösung entspricht. Es wird empfohlen, für die Assemblys, die Sie auf einem SharePoint-Server bereitstellen möchten, das **beliebige CPU** -Platt Form Ziel zu verwenden. Weitere Informationen finden Sie unter [Seite "kompilieren", Projekt-Designer &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) und [Dialog Feld "Erweiterte Compilereinstellungen" &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Validierungs Warnungen und-Fehler
  Von den SharePoint-Entwicklungstools in Visual Studio werden Validierungsschritte ausgeführt, um die ordnungsgemäße Formatierung des Lösungspakets zu überprüfen. Sie können auch benutzerdefinierte Validierungsschritte für die Funktionen und die Pakete erstellen. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -47,11 +47,11 @@ ms.locfileid: "72981935"
 
  In der folgenden Tabelle werden die Einstellungen für die Eigenschaft **Bereitstellungs Konfliktlösung** veranschaulicht.
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|Automatische|Erkennt Konflikte und löst die Konflikte automatisch.|
-|Eingabeaufforderung|Erkennt Konflikte und meldet sie dem Entwickler vor dem Lösen der Konflikte.|
-|Keiner|Konflikte werden nicht erkannt.|
+|Automatic|Erkennt Konflikte und löst die Konflikte automatisch.|
+|Prompt|Erkennt Konflikte und meldet sie dem Entwickler vor dem Lösen der Konflikte.|
+|Keine|Konflikte werden nicht erkannt.|
 
 ## <a name="differences-between-f5-deployment"></a>Unterschiede zwischen F5-Bereitstellung
  Wenn Sie das SharePoint-Projekt mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Testen und Debuggen auf dem lokalen SharePoint-Server bereitstellen, werden von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] einige zusätzliche Schritte ausgeführt.
@@ -70,7 +70,7 @@ ms.locfileid: "72981935"
 ### <a name="error-message"></a>Fehlermeldung
  Keine
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
  Führen Sie die folgenden Schritte aus, um dieses Problem zu umgehen:
 
 1. Installieren Sie das Update KB967535 wie im Microsoft-Support Artikel [Korrektur: ein Hotfix ist verfügbar, um zwei Probleme in ASP.net auf IIS 7,0 für Windows Vista und Windows Server 2008 zu beheben](https://support.microsoft.com/help/967535).
@@ -87,7 +87,7 @@ ms.locfileid: "72981935"
 ### <a name="error-message"></a>Fehlermeldung
  Fehler im Bereitstellungsschritt "Lösung hinzufügen": Fehler beim Extrahieren der CAB-Datei in der Projektmappe.
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
  Um dieses Problem zu umgehen, entfernen Sie alle Klammern in den Namen von SharePoint-Projektelementen.
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Beim Bereitstellen eines visuellen Webparts auf einer Website in einer anderen Webanwendung tritt ein Fehler auf.
@@ -96,20 +96,20 @@ ms.locfileid: "72981935"
 ### <a name="error-message"></a>Fehlermeldung
  Fehler im Bereitstellungsschritt „Lösung hinzufügen“: Eine Funktion mit der ID [#] wurde in dieser Farm bereits installiert. Verwenden Sie das force-Attribut, um die Funktion explizit neu zu installieren.
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
  Dieser Fehler tritt aufgrund des Verfahrens auf, mit dem visuelle Webpartfunktionen in SharePoint zurückgenommen werden. Um das visuelle Webpart erfolgreich bereitzustellen, stellen Sie die Lösung erneut bereit, indem Sie die **F5** -Taste auswählen.
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Warnung wird beim Bereitstellen von eingefügten Benutzer Steuerelementen
- Diese Warnung wird ausgegeben, wenn Sie eine SharePoint-Lösung bereitstellen, die Benutzersteuerelemente geschachtelt hat, z. B. ein visuelles Webpart, das ein Benutzersteuerelement enthält, oder ein Benutzersteuerelement, das ein visuelles Webpart oder ein anderes Benutzersteuerelement enthält. Diese Warnung tritt auf, unabhängig davon, ob Sie einem Designer ein Steuerelement hinzufügen, indem Sie es aus der Toolbox ziehen oder indem Sie die @Register Direktive in der Quell Ansicht verwenden.
+ Diese Warnung wird ausgegeben, wenn Sie eine SharePoint-Lösung bereitstellen, die Benutzersteuerelemente geschachtelt hat, z. B. ein visuelles Webpart, das ein Benutzersteuerelement enthält, oder ein Benutzersteuerelement, das ein visuelles Webpart oder ein anderes Benutzersteuerelement enthält. Diese Warnung tritt auf, unabhängig davon, ob Sie einem Designer ein Steuerelement hinzufügen, indem Sie es aus der Toolbox ziehen oder die- @Register Direktive in der Quell Ansicht verwenden.
 
 ### <a name="error-message"></a>Fehlermeldung
  Warnung 1 Element ' [*Steuerelement Name*] ' ist kein bekanntes Element. Dies kann auftreten, wenn es einen Kompilierungsfehler in der Website gibt, oder die Datei "web.config" fehlt.
 
-### <a name="resolution"></a>Auflösung
- Wenn das [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Projekt System kein in einem Steuerelement ersteuertes Benutzer Steuerelement kennt, kann es IntelliSense nicht bereitstellen, und es wird die Warnung ausgegeben. Das Projekt System kennt ein geöffnetes Benutzer Steuerelement nicht, wenn das Projekt nicht erstellt wurde und der Designer nicht geschlossen und erneut geöffnet wird, oder wenn die Option zum automatischen zurückziehen aktiviert ist, was bewirkt, dass das Benutzer Steuerelement nach dem Debuggen von der SharePoint-Struktur zurückgezogen wird.
+### <a name="resolution"></a>Lösung
+ Wenn das [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projekt System kein in einem Steuerelement ersteuertes Benutzer Steuerelement kennt, kann es IntelliSense nicht bereitstellen, und es wird die Warnung ausgegeben. Das Projektsystem hat keine Kenntnis von einem geschachtelten Benutzersteuerelement, wenn das Projekt nicht erstellt wird und der Designer nicht geschlossen und erneut geöffnet wird, oder wenn die Option zum automatischen Zurückziehen aktiviert wird, was dazu führt, dass das Benutzersteuerelement nach Debugging von der SharePoint-Struktur zurückgenommen wird.
 
  Um diese Warnung zu entfernen, erstellen Sie entweder das Projekt und schließen und öffnen den Designer dann erneut, oder deaktivieren Sie für das Projekt die Option zum automatischen Zurückziehen. Deaktivieren Sie hierzu im Dialogfeld Projekteigenschaften auf der Registerkarte **SharePoint** das Kontrollkästchen **nach dem Debuggen automatisch zurückziehen** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

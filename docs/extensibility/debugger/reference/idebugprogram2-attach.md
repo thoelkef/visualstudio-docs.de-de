@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Anfügen | Microsoft Docs
+title: 'IDebugProgram2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723138"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Fügt an das Programm an.
+Wird an das Programm angefügt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,21 +41,21 @@ int Attach( 
 
 ## <a name="parameters"></a>Parameter
 `pCallback`\
-[in] Ein [IDebugEventCallback2-Objekt,](../../../extensibility/debugger/reference/idebugeventcallback2.md) das für die Debugereignisbenachrichtigung verwendet werden soll.
+in Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das für die Debug-Ereignis Benachrichtigung verwendet werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt einige mögliche Fehlercodes.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle sind einige mögliche Fehlercodes aufgeführt.
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Das angegebene Programm ist bereits an den Debugger angefügt.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Während des Anfügevorgangs ist eine Sicherheitsverletzung aufgetreten.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Ein Desktopprogramm kann nicht an den Debugger angefügt werden.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Während der Anfüge Prozedur ist ein Sicherheits Verstoß aufgetreten.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Ein Desktop Programm kann nicht an den Debugger angefügt werden.|
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Debugmodul (DE) ruft diese Methode nie auf, um sie an ein Programm anzuhängen. Wenn die DE im Adressraum des Programms ausgeführt wird, wird die [OnAttach-Methode](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) aufgerufen. Wenn die DE im SDM-Adressraum (SDM) des Sitzungsdebug-Managers ausgeführt wird, wird die [Attach-Methode](../../../extensibility/debugger/reference/idebugengine2-attach.md) aufgerufen.
+ Eine Debug-Engine (de) ruft diese Methode niemals auf, um Sie an ein Programm anzufügen. Wenn die de im Adressraum des Programms ausgeführt wird, wird die [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) -Methode aufgerufen. Wenn die de im Adressraum des Sitzungs-Debug-Managers (SDM) ausgeführt wird, wird die [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) -Methode aufgerufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)

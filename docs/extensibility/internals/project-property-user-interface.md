@@ -1,5 +1,5 @@
 ---
-title: Benutzeroberfläche für Projekteigenschaft | Microsoft Docs
+title: Benutzeroberfläche der Projekteigenschaften | Microsoft-Dokumentation
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,33 +13,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706400"
 ---
 # <a name="project-property-user-interface"></a>Benutzeroberfläche für Projekteigenschaften
 
-Ein Projektuntertyp kann die Elemente im Dialogfeld **Eigenschaftenseiten** des Projekts verwenden, wie sie vom Basisprojekt bereitgestellt werden, schreibgeschützte Steuerelemente und ganze Seiten wie angegeben ausblenden oder erstellen oder projektuntertypspezifische Seiten zum Dialogfeld **Eigenschaftenseiten** hinzufügen.
+Ein Projekt Untertyp kann die Elemente im Dialogfeld **Eigenschaften Seiten** des Projekts verwenden, da Sie vom Basisprojekt bereitgestellt werden, schreibgeschützte Steuerelemente und ganze Seiten als Bereitstellung ausblenden oder schreibgeschützte Steuerelemente und ganze Seiten als hinzufügen oder Projekt Untertyp spezifische Seiten zum Dialogfeld **Eigenschaften Seiten** hinzufügen.
 
-## <a name="extending-the-project-property-dialog-box"></a>Erweitern des Dialogfelds "Projekteigenschaft"
+## <a name="extending-the-project-property-dialog-box"></a>Erweitern der Projekt Eigenschaft (Dialog Feld)
 
-Ein Projektuntertyp implementiert Automatisierungs-Extender und Projektkonfigurationssuchobjekte. Diese Extender implementieren <xref:EnvDTE.IFilterProperties> die Schnittstelle, um bestimmte Eigenschaften ausgeblendet oder schreibgeschützt zu machen. Das Dialogfeld **Eigenschaftenseiten** des Basisprojekts, das vom Basisprojekt implementiert wird, berücksichtigt die Filterung, die von den Automation Extendern ausgeführt wird.
+Ein Projekt Untertyp implementiert Automatisierungsextenders und Projektkonfigurations-Such Objekte. Diese Extender implementieren die- <xref:EnvDTE.IFilterProperties> Schnittstelle, um bestimmte Eigenschaften als ausgeblendet oder schreibgeschützt zu gestalten. Im Dialogfeld **Eigenschaften Seiten** des Basis Projekts, das vom Basisprojekt implementiert wird, wird die von den Automatisierungsextendern ausgeführte Filterung berücksichtigt.
 
-Der Vorgang der Erweiterung eines **Dialogfelds "Projekteigenschaft"** wird unten beschrieben:
+Der Prozess der Erweiterung des Dialog Felds " **Projekteigenschaften** " wird im folgenden beschrieben:
 
-- Das Basisprojekt ruft die Extender aus dem Projektuntertyp ab, indem die Schnittstelle implementiert wird. <xref:EnvDTE80.IInternalExtenderProvider> Die Such-, Projektautomatisierungs- und Projektkonfigurationsobjekte des Basisprojekts implementieren diese Schnittstelle.
+- Das Basisprojekt Ruft die Extender aus dem Projekt Untertyp ab, indem die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle implementiert wird. Diese Schnittstelle wird durch die Such-, Projekt Automation-und Projektkonfigurations-Such Objekte des Basis Projekts implementiert.
 
-- Die Implementierung <xref:EnvDTE80.IInternalExtenderProvider> von für das Projekt suchobjekt und <xref:EnvDTE80.IInternalExtenderProvider> das Projektautomatisierungsobjekt delegiert an `QueryInterface` <xref:EnvDTE80.IInternalExtenderProvider> die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Implementierung des Projektsubtypaggregators (d. h. sie für das Projektobjekt).
+- Die Implementierung von <xref:EnvDTE80.IInternalExtenderProvider> für das Project Browse-Objekt und das Project Automation-Objekt Delegat zur <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des Projekt unter typaggregators (d. h `QueryInterface` ., für <xref:EnvDTE80.IInternalExtenderProvider> das <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Projekt Objekt).
 
-- Das Suchobjekt für die <xref:EnvDTE80.IInternalExtenderProvider> Basisprojektkonfiguration implementiert auch, um direkt im Automation Extender aus dem Projektsubtype-Konfigurationsobjekt zu verdrahten. Die Implementierung delegiert die Schnittstelle, <xref:EnvDTE80.IInternalExtenderProvider> die vom Projektsubtypaggregator implementiert wird.
+- Das Basisobjekt für die Projekt Konfigurations Suche implementiert auch <xref:EnvDTE80.IInternalExtenderProvider> , um den Automation-Extender direkt aus dem Konfigurationsobjekt des Projekt unter Typs zu übertragen. Die Implementierung delegiert an die <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die durch den Projekt Untertyp Aggregator implementiert wird.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, das vom Suchobjekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Projektkonfiguration implementiert wird, gibt das Objekt zurück.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>Gibt das-Objekt zurück, das vom Projekt Konfigurations Such Objekt implementiert wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> .
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, das auch vom Suchobjekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> Projektkonfiguration implementiert wird, gibt das Objekt zurück.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, auch vom Projekt Konfigurations Such Objekt implementiert, gibt das- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> Objekt zurück.
 
-- Ein Projektuntertyp kann die entsprechenden CATIDs für die verschiedenen erweiterbaren Objekte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> des Basisprojekts zur Laufzeit bestimmen, indem die folgenden Werte abgerufen werden:
+- Mit einem Projekt Untertyp können die entsprechenden CATIDs für die verschiedenen erweiterbaren Objekte des Basis Projekts zur Laufzeit ermittelt werden, indem die folgenden Werte abgerufen werden <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> :
 
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
@@ -47,17 +47,17 @@ Der Vorgang der Erweiterung eines **Dialogfelds "Projekteigenschaft"** wird unte
 
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
-Um die CATIDs für den Projektbereich zu bestimmen, ruft der Projektuntertyp die oben genannten Eigenschaften für [VSITEMID ab. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) aus `VSITEMID typedef`der . Ein Projektuntertyp kann auch **Property Pages** steuern, welche Eigenschaftenseiten-Dialogfeldseiten für das Projekt angezeigt werden, sowohl konfigurationsabhängig als auch konfigurationsunabhängig. Einige Projektuntertypen müssen möglicherweise integrierte Seiten entfernen und Projektuntertyp-spezifische Seiten hinzufügen. Um dies zu aktivieren, ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> das verwaltete Clientprojekt die Methode für die folgenden Eigenschaften auf:
+Zum Ermitteln der CATIDs für den Projektbereich ruft der Projekt Untertyp die oben genannten Eigenschaften für [vsitemid ab. Der Stamm aus der](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) `VSITEMID typedef` . Ein Projekt Untertyp kann auch steuern, welche **Eigenschaften Seiten** -Dialogfeld Seiten für das Projekt angezeigt werden, und zwar sowohl von der Konfiguration abhängig als auch von der Konfiguration unabhängig voneinander. Einige Projekt Untertypen müssen möglicherweise integrierte Seiten entfernen und Projekt Untertyp spezifische Seiten hinzufügen. Um dies zu ermöglichen, ruft das verwaltete Client Projekt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode für die folgenden Eigenschaften auf:
 
-- `VSHPROPID_PropertyPagesCLSIDList`— eine durch Semikolons getrennte Liste von CLSIDs konfigurationsunabhängiger Eigenschaftenseiten.
+- `VSHPROPID_PropertyPagesCLSIDList` – eine durch Semikolons getrennte Liste von CLSIDs von Konfigurations unabhängigen Eigenschaften Seiten.
 
-- `VSHPROPID_CfgPropertyPagesCLSIDList —`eine durch Semikolons getrennte Liste von CLSIDs von konfigurationsabhängigen Eigenschaftenseiten.
+- `VSHPROPID_CfgPropertyPagesCLSIDList —` eine durch Semikolons getrennte Liste von CLSIDs von Konfigurations abhängigen Eigenschaften Seiten.
 
-Da der Projektuntertyp <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> das Objekt aggregiert, kann er die Definition dieser Eigenschaften überschreiben, um zu steuern, welche **Eigenschaftenseiten-Dialogfelder** angezeigt werden. Der Projektuntertyp kann diese Eigenschaften aus dem inneren Basisprojekt abrufen und dann bei Bedarf CLSIDs hinzufügen oder entfernen.
+Da der Projekt Untertyp das Objekt aggregiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , kann es die Definition dieser Eigenschaften überschreiben, um zu steuern, welche Eigenschaften **Seiten** Dialogfelder angezeigt werden. Der Projekt Untertyp kann diese Eigenschaften aus dem inneren Basisprojekt abrufen und dann ggf. CLSIDs hinzufügen oder entfernen.
 
-Neue Eigenschaftenseiten, die von einem Projektuntertyp hinzugefügt werden, erhalten ein Projektkonfigurationssuchobjekt aus der Basisprojektimplementierung. Dieses Projektkonfigurationssuchobjekt unterstützt Automation Extender. Weitere Informationen zu AutomationExtendern finden Sie unter [Implementieren und Verwenden von Automation Extendern](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Die Eigenschaftenseiten, die vom <xref:EnvDTE.Project.Extender%2A> Projektsubtype-Aufruf implementiert werden, um ihr eigenes Projekt-Subtype-Konfigurationssuchobjekt abzurufen, das das Konfigurationssuchobjekt des Basisprojekts erweitert.
+Neue Eigenschaften Seiten, die durch einen Projekt Untertyp hinzugefügt wurden, werden einem Projekt Konfigurations Such Objekt aus der Basisprojekt Implementierung übergeben. Dieses Objekt zum Durchsuchen von Projekt Konfigurationen unterstützt Automatisierungs Erweiterungen. Weitere Informationen zu automationextenders finden Sie unter [implementieren und Verwenden von automatisierungsexextender](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Die Eigenschaften Seiten, die durch den Projekt Untertyp implementiert werden <xref:EnvDTE.Project.Extender%2A> , rufen Ihr eigenes Projekt Untertypen-Konfigurations Such Objekt ab, das das Konfigurations Such Objekt des Basis Projekts erweitert.
 
 ## <a name="see-also"></a>Weitere Informationen
 
 - <xref:EnvDTE.IFilterProperties>
-- [Dialogfeld Eigenschaftenseiten](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))
+- [Dialog Feld "Eigenschaften Seiten"](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

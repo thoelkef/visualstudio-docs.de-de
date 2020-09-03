@@ -1,5 +1,5 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
+title: 'Idebugprimitivetyetfield:: getprimitivetype | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a66c7c2e312795fa4303c8702e70cd509536de98
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724282"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
@@ -40,10 +40,10 @@ int GetPrimitiveType (
 
 ## <a name="parameters"></a>Parameter
 `pdwType`\
-[out] Wert aus der [CorElementType-Enumeration,](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) die den primitiven Typ darstellt.
+vorgenommen Der Wert aus der [CorElementType-Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , der den primitiven Typ darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls kehrt `S_FALSE`zurück .
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben `S_FALSE` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

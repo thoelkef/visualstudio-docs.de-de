@@ -1,5 +1,5 @@
 ---
-title: Projekttypentwurfsentscheidungen | Microsoft Docs
+title: Entwurfsentscheidungen für Projekttyp | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,49 +14,49 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706374"
 ---
 # <a name="project-type-design-decisions"></a>Entwurfsentscheidungen bei Projekttypen
-Bevor Sie einen neuen Projekttyp erstellen, müssen Sie mehrere Entwurfsentscheidungen für Ihren Projekttyp treffen. Sie müssen entscheiden, welche Elementtypen Ihre Projekte enthalten, wie Projektdateien beibehalten werden und welches Verpflichtungsmodell Sie verwenden.
+Bevor Sie einen neuen Projekttyp erstellen, müssen Sie für den Projekttyp einige Entwurfsentscheidungen treffen. Sie müssen entscheiden, welche Typen von Elementen in Ihren Projekten enthalten sein sollen, wie Projektdateien persistent gespeichert werden und welches Verpflichtungs Modell Sie verwenden werden.
 
 ## <a name="project-items"></a>-Projektelemente
- Wird Ihr Projekt Dateien oder abstrakte Objekte verwenden? Wenn Sie Dateien verwenden, handelt es sich dann um referenzbasierte oder verzeichnisbasierte Dateien? Werden die Dateien oder abstrakten Objekte lokal oder remote sein?
+ Werden in Ihrem Projektdateien oder abstrakte Objekte verwendet? Wenn Sie Dateien verwenden, handelt es sich um Verweis basierte oder Verzeichnis basierte Dateien? Werden die Dateien oder abstrakten Objekte lokal oder Remote sein?
 
- Bei den Elementen in einem Projekt kann es sich um Dateien oder um abstraktere Objekte wie Objekte in einem Datenbank-Repository oder Datenverbindungen über das Internet handelt. Wenn es sich bei den Elementen um Dateien handelt, kann es sich bei dem Projekt entweder um ein referenzbasiertes oder um ein verzeichnisbasiertes Projekt handelt.
+ Die Elemente in einem Projekt können Dateien sein, oder es kann sich um abstraktere Objekte handeln, z. b. Objekte in einem Datenbankrepository oder Datenverbindungen über das Internet. Wenn es sich bei den Elementen um Dateien handelt, kann das Projekt entweder ein Verweis basiertes oder ein Verzeichnis basiertes Projekt sein.
 
- In referenzbasierten Projekten können Elemente in mehr als einem Projekt angezeigt werden. Die tatsächliche Datei, die ein Element darstellt, befindet sich jedoch nur in einem Verzeichnis. In verzeichnisbasierten Projekten sind alle Projektelemente in der Verzeichnisstruktur vorhanden.
+ In Verweis basierten Projekten können Elemente in mehr als einem Projekt angezeigt werden. Die tatsächliche Datei, die ein Element darstellt, befindet sich jedoch nur in einem Verzeichnis. In Verzeichnis basierten Projekten sind alle Projekt Elemente in der Verzeichnisstruktur vorhanden.
 
- Lokale Elemente werden auf demselben Computer gespeichert, auf dem die Anwendung installiert ist. Remoteelemente können auf einem separaten Server in einem lokalen Netzwerk oder an anderer Stelle im Internet gespeichert werden.
+ Lokale Elemente werden auf demselben Computer gespeichert, auf dem die Anwendung installiert ist. Remote Elemente können auf einem separaten Server in einem lokalen Netzwerk oder an einer anderen Stelle im Internet gespeichert werden.
 
-## <a name="project-file-persistence"></a>Projektdateipersistenz
- Werden Daten in gängigen Flatfile-Systemen oder im strukturierten Speicher gespeichert? Werden Dateien mit einem Standardeditor oder einem projektspezifischen Editor geöffnet?
+## <a name="project-file-persistence"></a>Persistenz von Projektdateien
+ Werden Daten in gängigen Flatfile-Systemen oder in strukturiertem Speicher gespeichert? Werden Dateien mit einem Standard-Editor oder einem projektspezifischen Editor geöffnet?
 
- Um ihre Daten beizubehalten, speichern die meisten Anwendungen ihre Daten in einer Datei und lesen sie dann zurück, wenn ein Benutzer die Informationen überprüfen oder ändern muss.
+ Um Ihre Daten beizubehalten, speichern die meisten Anwendungen Ihre Daten in einer Datei und lesen Sie dann zurück, wenn ein Benutzer die Informationen überprüfen oder ändern muss.
 
- Strukturierter Speicher, auch zusammengesetzte Dateien genannt, wird normalerweise verwendet, wenn mehrere COM-Objekte (Component Object Model) ihre persistenten Daten in einer einzigen Datei speichern müssen. Mit strukturiertem Speicher können mehrere verschiedene Softwarekomponenten eine einzelne Festplattendatei gemeinsam nutzen.
+ Strukturierter Speicher, auch als Verbund Dateien bezeichnet, wird normalerweise verwendet, wenn mehrere Component Object Model (com)-Objekte ihre beibehaltenen Daten in einer einzigen Datei speichern müssen. Mit strukturiertem Speicher können mehrere verschiedene Softwarekomponenten eine einzelne Datenträger Datei gemeinsam verwenden.
 
- Sie haben mehrere Optionen, die Sie hinsichtlich der Persistenz für die Elemente in Ihrem Projekt berücksichtigen können. Sie können eine der folgenden Optionen ausführen:
+ Sie haben mehrere Optionen in Bezug auf die Persistenz für die Elemente in Ihrem Projekt. Sie können eine der folgenden Optionen ausführen:
 
-- Speichern Sie jede Datei einzeln, wenn sie geändert wurde.
+- Speichern Sie jede Datei einzeln, wenn Sie geändert wurde.
 
-- Erfassen Sie viele Transaktionen in einem einzigen **Speichervorgang.**
+- Erfassen Sie viele Transaktionen in einem einzelnen **Speicher** Vorgang.
 
-- Speichern Sie Dateien lokal, und veröffentlichen Sie sie dann auf einem Server, oder verwenden Sie einen anderen Ansatz zum Speichern von Projektelementen, wenn das Element eine Datenverbindung zu einem Remoteobjekt darstellt.
+- Speichern Sie Dateien lokal, und veröffentlichen Sie Sie auf einem Server, oder verwenden Sie einen anderen Ansatz zum Speichern von Projekt Elementen, wenn das Element eine Datenverbindung zu einem Remote Objekt darstellt.
 
-  Weitere Informationen zur Persistenz finden Sie unter [Projektpersistenz](../../extensibility/internals/project-persistence.md) und [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).
+  Weitere Informationen zur Persistenz finden Sie unter [Projekt Persistenz](../../extensibility/internals/project-persistence.md) und [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md).
 
-## <a name="project-commitment-model"></a>Projektverpflichtungsmodell
- Werden persistente Datenobjekte im Direktmodus oder im Transacted-Modus geöffnet?
+## <a name="project-commitment-model"></a>Projekt Verpflichtungs Modell
+ Werden persistente Datenobjekte im direkt Modus oder im Transaktionsmodus geöffnet?
 
- Wenn Datenobjekte im direkten Modus geöffnet werden, werden Änderungen, die an den Daten vorgenommen wurden, sofort übernommen oder wenn der Benutzer die Datei manuell speichert.
+ Wenn Datenobjekte im direkten Modus geöffnet werden, werden Änderungen, die an den Daten vorgenommen wurden, sofort eingefügt, oder wenn der Benutzer die Datei manuell speichert.
 
- Wenn Datenobjekte mithilfe des Transacted-Modus geöffnet werden, werden Änderungen an einem temporären Speicherort im Arbeitsspeicher gespeichert und erst dann festgeschrieben, wenn der Benutzer die Datei manuell speichert. Zu diesem Zeitpunkt müssen alle Änderungen zusammen erfolgen, oder es werden keine Änderungen vorgenommen.
+ Wenn Datenobjekte mit dem transaktiven Modus geöffnet werden, werden Änderungen an einem temporären Speicherort im Arbeitsspeicher gespeichert, und es wird erst dann ein Commit ausgeführt, wenn der Benutzer die Datei manuell speichert. Zu diesem Zeitpunkt müssen alle Änderungen gleichzeitig erfolgen, oder es werden keine Änderungen vorgenommen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Projektpersistenz](../../extensibility/internals/project-persistence.md)

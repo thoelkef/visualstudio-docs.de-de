@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach | Microsoft Docs
+title: IDebugProcess2::D Etach | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724125"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-Trennt den Debugger von diesem Prozess, indem alle Programme im Prozess detaching.
+Trennt den Debugger von diesem Prozess, indem alle Programme im Prozess getrennt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int Detach();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Alle Programme und der Prozess werden weiterhin ausgeführt, sind jedoch nicht mehr Teil der Debugsitzung. Nach Abschluss des Trennvorgangs werden keine Debugereignisse mehr für diesen Prozess (und seine Programme) gesendet.
+ Alle Programme und der Prozess werden weiterhin ausgeführt, sind jedoch nicht mehr Teil der Debugsitzung. Nachdem der Trennvorgang beendet wurde, werden keine weiteren Debugereignisse für diesen Prozess (und seine Programme) gesendet.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

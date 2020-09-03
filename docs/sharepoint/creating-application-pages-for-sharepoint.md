@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981102"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungs Seiten für SharePoint
@@ -41,16 +41,16 @@ ms.locfileid: "72981102"
 ## <a name="create-an-application-page"></a>Erstellen einer Anwendungsseite
  Fügen Sie ein **Anwendungs Seiten** Element einem SharePoint-Projekt hinzu, um eine Anwendungsseite zu erstellen. Wenn Sie eine Anwendungsseite erstellen, fügt Visual Studio Ihrem Projekt die folgenden Ordner hinzu:
 
-|Ordner|Beschreibung|
+|Ordner|BESCHREIBUNG|
 |------------|-----------------|
-|Layouts|Wird dem virtuellen Verzeichnis _layouts des SharePoint-Dateisystems zugeordnet.|
-|Unterordner "Layouts"|Enthält die Dateien, aus denen die Anwendungsseite besteht. Standardmäßig hat dieser Ordner denselben Namen wie Ihr Projekt. Sie können diesen Ordner jederzeit umbenennen. Wenn Sie das Projekt ausführen, stellt Visual Studio diesen Ordner im virtuellen Verzeichnis _layouts des SharePoint-Dateisystems bereit.|
+|Layouts|Wird dem _layouts virtuellen Verzeichnis des SharePoint-Dateisystems zugeordnet.|
+|Unterordner "Layouts"|Enthält die Dateien, aus denen die Anwendungsseite besteht. Standardmäßig hat dieser Ordner denselben Namen wie Ihr Projekt. Sie können diesen Ordner jederzeit umbenennen. Wenn Sie das Projekt ausführen, stellt Visual Studio diesen Ordner im _layouts virtuellen Verzeichnis des SharePoint-Dateisystems bereit.|
 
  Visual Studio fügt Ihrem Projekt die folgenden Dateien hinzu:
 
-|Datei|Beschreibung|
+|Datei|BESCHREIBUNG|
 |----------|-----------------|
-|ASP.net-Auslagerungs Datei ( *. aspx*)|Enthält XML-Markup, das die Seite definiert.|
+|ASP.net-Auslagerungs Datei (*. aspx*)|Enthält XML-Markup, das die Seite definiert.|
 |Codedatei der Anwendungsseite|Enthält Code hinter der Anwendungsseite. Fügen Sie dieser Datei Code hinzu, der Ereignisse behandelt.|
 |Codedatei des Anwendungs Seiten-Designers|Enthält Code, der vom Designer generiert wird. Bearbeiten Sie diese Datei nicht direkt.|
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981102"
 
  Sie können eine Anwendungsseite genauso Debuggen, wie Sie andere SharePoint-Projekt Elemente in Visual Studio debuggen. Wenn Sie den Visual Studio-Debugger starten, wird von Visual Studio die SharePoint-Website geöffnet.
 
- Um die Anwendungsseite anzuzeigen, müssen Sie manuell zum Speicherort der Anwendungsseite navigieren (z. b.: http://<em>Servername</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
+ Um die Anwendungsseite anzuzeigen, müssen Sie manuell zum Speicherort der Anwendungsseite navigieren (z. b.: http://<em>server_name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
  Weitere Informationen zum Debuggen von SharePoint-Projekten finden Sie unter Problembehandlung bei [SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Master Seite auswählen
  Standardmäßig verweist ein **Anwendungs Seiten** Element auf die Master Seite der Website, die Sie zum Debuggen des Projekts verwenden. Diese Seite heißt V4. Master, und Sie finden Sie im **Masterseiten** Katalog der SharePoint-Website.
 
- Sie können explizit ändern, welche Master Seite von der Anwendungsseite verwendet wird, indem Sie das `MasterPageFile`-Attribut des Anwendungs `Page`-Elements festlegen. (Beispiel: `MasterPageFile="~/_layouts/applicationv4.master"`). Tatsächlich müssen Sie dieses Attribut festlegen, wenn dynamische Masterseiten auf dem SharePoint-Server nicht aktiviert sind. Weitere Informationen zu Masterseiten in SharePoint finden Sie unter [Masterseiten](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
+ Sie können explizit ändern, welche Master Seite von der Anwendungsseite verwendet wird, indem Sie das- `MasterPageFile` Attribut des Application- `Page` Elements festlegen. (Beispiel: `MasterPageFile="~/_layouts/applicationv4.master"` ). Tatsächlich müssen Sie dieses Attribut festlegen, wenn dynamische Masterseiten auf dem SharePoint-Server nicht aktiviert sind. Weitere Informationen zu Masterseiten in SharePoint finden Sie unter [Masterseiten](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Ausführliche Informationen zur SharePoint Foundation-Entwicklung](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
-- [Übersicht über ASP.NET](/aspnet/overview)
+- [ASP.net Übersicht](/aspnet/overview)
 - [ASP.NET-Webseiten 2](/aspnet/web-pages/index)

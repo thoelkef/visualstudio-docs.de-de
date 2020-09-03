@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594005"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
@@ -58,7 +58,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
    2. Erweitern Sie im DSL-Explorer den Knoten **Editor** , und wählen Sie über **Prüfung**aus.
 
-   3. Legen Sie im Eigenschaftenfenster die Eigenschaften **verwendet** auf `true`fest. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
+   3. Legen Sie im Eigenschaftenfenster die Eigenschaften **verwendet**  auf fest `true` . Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
 
    4. Klicken Sie in der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  Beachten Sie die folgenden Punkte zu diesem Code:
 
-- Sie können Validierungsmethoden Domänenklassen oder -beziehungen hinzufügen. Der Code für diese Typen befindet sich in " **dsl\generated code\domain\*. cs**".
+- Sie können Validierungsmethoden Domänenklassen oder -beziehungen hinzufügen. Der Code für diese Typen befindet sich in " **dsl\generated code\domain \* . cs**".
 
 - Jede Validierungsmethode wird auf jede Instanz ihrer Klasse und deren Unterklassen angewendet. Bei einer Domänenbeziehung ist jede Instanz ein Link zwischen zwei Modellelementen.
 
@@ -139,12 +139,12 @@ public partial class ParentsHaveChildren
 
   Das Beispiel gilt für das folgende Domänenmodell. Die ParentsHaveChildren-Beziehung weist die Rollen "Child" und "Parent" auf.
 
-  ![DSL-Definitions &#45; Diagramm-Familienstruktur Modell](../modeling/media/familyt_person.png)
+  ![DSL-Definitions Diagramm &#45; Familienstruktur Modell](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Validierungskategorien
  Im Attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> geben Sie an, wann die Validierungsmethode ausgeführt werden soll.
 
-|Kategorie|Ausführung|
+|Category|Ausführung|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Wenn der Benutzer den Menübefehl "Überprüfen" aufruft.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Wenn die Modelldatei geöffnet wird.|
@@ -173,11 +173,11 @@ public partial class Person
         { ...
 ```
 
- **Aggregierten Validierungs Einschränkungen.** Definieren Sie zur Anwendung der Validierung in einer vorhersagbaren Reihenfolge eine Validierungsmethode für eine Besitzerklasse wie dem Stammelement Ihres Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.
+ **Aggregieren von Validierungseinschränkungen.**  Definieren Sie zur Anwendung der Validierung in einer vorhersagbaren Reihenfolge eine Validierungsmethode für eine Besitzerklasse wie dem Stammelement Ihres Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.
 
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.
 
- **Übergeben von Werten im Kontext Cache.** Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
+ **Übergeben von Werten in den Kontextcache.**  Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Wenn Sie als Multiplizität einer Rolle in einer Domänenbeziehung 1..* oder 1..1 festlegen, der Benutzer aber keinen Link mit dieser Beziehung erstellt, wird eine Validierungsfehlermeldung angezeigt.
 
- Wenn Ihre DSL beispielsweise die Klassen "Person" und "Town" und eine Beziehung "personlivesintown" mit der Beziehung **1..\\** * in der Rolle "Ort" aufweist, wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
+ Wenn Ihre DSL beispielsweise die Klassen Person und Town und eine Beziehung personlivesintown mit der Beziehung 1 hat **. \\ ** * in der Rolle "Ort" wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
 
 ## <a name="running-validation-from-program-code"></a>Ausführen der Validierung über den Programmcode
  Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn die Fehler im Fehler Fenster für den Benutzer angezeigt werden sollen, verwenden Sie den validationcontroller, der an die docdata Ihres Diagramms angehängt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:
@@ -295,7 +295,7 @@ namespace Company.FamilyTree
 
  Die Handler werden auch nach Vorgängen zum Rückgängigmachen oder Wiederholen aufgerufen, wenn die Vorgänge Auswirkungen auf die Links oder Elemente haben.
 
-## <a name="custom"></a>Benutzerdefinierte Validierungs Kategorien
+## <a name="custom-validation-categories"></a><a name="custom"></a> Benutzerdefinierte Validierungs Kategorien
  Neben den standardmäßigen Validierungskategorien wie "Menü" und "Öffnen" können Sie eigene Kategorien erstellen. Sie können diese Kategorien über Programmcode aufrufen. Sie können nicht direkt vom Benutzer aufgerufen werden.
 
  Ein typischer Einsatzbereich benutzerdefinierter Kategorien ist die Definition einer Kategorie, mit der getestet wird, ob das Modell die Vorbedingungen eines bestimmten Tools erfüllt.
@@ -322,19 +322,19 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives"></a>Alternativen zur Validierung
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternativen zur Validierung
  Validierungseinschränkungen geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Wenn Sie allerdings verhindern möchten, dass das Modell ungültig wird, können Sie andere Techniken einsetzen.
 
  Diese Techniken werden jedoch nicht empfohlen. Normalerweise ist es besser, den Benutzer entscheiden zu lassen, wie ein ungültiges Modell korrigiert wird.
 
- **Passen Sie die Änderung an, um das Modell auf Gültigkeit wiederherzustellen.** Beispiel: Wenn der Benutzer eine Eigenschaft oberhalb des zulässigen Maximums festlegt, könnten Sie die Eigenschaft auf den maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
+ **Passen Sie die Änderung an, um die Gültigkeit des Modells wiederherzustellen.**  Beispiel: Wenn der Benutzer eine Eigenschaft oberhalb des zulässigen Maximums festlegt, könnten Sie die Eigenschaft auf den maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Führen Sie ein Rollback der Transaktion aus, wenn eine ungültige Änderung versucht wird** Sie können für diesen Zweck auch eine Regel definieren, aber in einigen Fällen ist es möglich, einen Eigenschaftenhandler **onvaluechanging ()** zu überschreiben oder eine Methode zu überschreiben, z. b. `OnDeleted().`, einen Rollback für eine Transaktion auszuführen, `this.Store.TransactionManager.CurrentTransaction.Rollback().` Weitere Informationen finden Sie unter [Domänen Eigenschafts Wert-Änderungs Handler](../modeling/domain-property-value-change-handlers.md).
+ **Setzen Sie die Transaktion zurück, wenn eine ungültige Änderung vorgenommen wird.** Sie können für diesen Zweck auch eine Regel definieren, aber in einigen Fällen ist es möglich, einen Eigenschaftenhandler **onvaluechanging ()** zu überschreiben oder eine Methode zu überschreiben, z `OnDeleted().` . b. um ein Rollback für eine Transaktion auszuführen `this.Store.TransactionManager.CurrentTransaction.Rollback().` . Weitere Informationen finden Sie unter [Ändern von Domänen Eigenschafts Wert-Handlern](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Stellen Sie sicher, dass der Benutzer weiß, dass die Änderung angepasst oder zurückgesetzt wurde. Verwenden Sie beispielsweise `System.Windows.Forms.MessageBox.Show("message").`.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)

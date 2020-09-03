@@ -11,10 +11,10 @@ ms.author: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876072"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
@@ -33,12 +33,12 @@ Greifen Sie in der Kategorie **primitive** der **Toolbox**auf den **invokedelega
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.InvokeDelegate>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige können auf Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Standardwert lautet InvokeDelegate.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht unbedingt erforderlich ist, empfiehlt es sich, einen zu verwenden.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Der Name des <xref:System.Activities.ActivityDelegate>, der bei Ausführung der Aktivität aufgerufen werden soll. Diese Eigenschaft kann auf der Designer Oberfläche bearbeitet werden und ist obligatorisch.|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Die Argumentauflistung des aufgerufenen Delegaten. Bei den Schlüsseln handelt es sich um die Namen der Parameter Objekte in der <xref:System.Activities.ActivityDelegate> , und die Werte sind die Argumente, deren Ausdrücke ausgewertet und den entsprechenden Parameter Objekten zugewiesen werden. Um das Dialogfeld **delegatearguments** anzuzeigen, in dem Sie diese Eigenschaft festlegen können, klicken Sie im Feld **delegatearguments** des Eigenschaften Rasters auf die Schaltfläche mit den Auslassungs Punkten. Klicken Sie auf das Feld **Argument erstellen** , um die Argumente hinzuzufügen.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Standardwert lautet InvokeDelegate.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht unbedingt erforderlich ist, empfiehlt es sich, einen zu verwenden.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Richtig|Der Name des <xref:System.Activities.ActivityDelegate>, der bei Ausführung der Aktivität aufgerufen werden soll. Diese Eigenschaft kann auf der Designer Oberfläche bearbeitet werden und ist obligatorisch.|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|Falsch|Die Argumentauflistung des aufgerufenen Delegaten. Bei den Schlüsseln handelt es sich um die Namen der Parameter Objekte in der <xref:System.Activities.ActivityDelegate> , und die Werte sind die Argumente, deren Ausdrücke ausgewertet und den entsprechenden Parameter Objekten zugewiesen werden. Um das Dialogfeld **delegatearguments** anzuzeigen, in dem Sie diese Eigenschaft festlegen können, klicken Sie im Feld **delegatearguments** des Eigenschaften Rasters auf die Schaltfläche mit den Auslassungs Punkten. Klicken Sie auf das Feld **Argument erstellen** , um die Argumente hinzuzufügen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

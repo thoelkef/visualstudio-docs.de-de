@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c59dc8232713d4126b2c37693a1e241735eb163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606601"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow-Designer-Shellfunktionen
-Die [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Benutzeroberfläche besteht aus drei Hauptbereichen: der Designeroberfläche, der Breadcrumb-Leiste darüber und der Shell darunter. Die Breadcrumb-Leiste am oberen Fensterrand dient zur Anzeige der Vorgängerliste für die aktuelle Stammaktivität. [!INCLUDE[crdefault](../includes/crdefault-md.md)] Gewusst[wie: Verwenden der Breadcrumb-Navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). Die Designeroberfläche im mittleren Bereich dient zum Erstellen von Workflows. Die Shell am unteren Fensterrand enthält eine Reihe von Schaltflächen zum Verwalten der aktuellen Ansicht.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] besteht aus drei Hauptbereichen der Benutzeroberfläche: der Designer Oberfläche, der Breadcrumb-Leiste oberhalb und der darunter liegenden Shell. Die Breadcrumb-Leiste am oberen Fensterrand dient zur Anzeige der Vorgängerliste für die aktuelle Stammaktivität. [!INCLUDE[crdefault](../includes/crdefault-md.md)]Gewusst [wie: Verwenden der Breadcrumb-Navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md) Die Designeroberfläche im mittleren Bereich dient zum Erstellen von Workflows. Die Shell am unteren Fensterrand enthält eine Reihe von Schaltflächen zum Verwalten der aktuellen Ansicht.
 
 ## <a name="shell-features"></a>Shell-Funktionen
  Auf der rechten Seite der Shell-Leiste befinden sich Schaltflächen zum Vergrößern bzw. Verkleinern der Workflowgrafik, zum Anpassen des Workflowinhalts an die Bildschirmgröße und zum Einblenden bzw. Ausblenden der Übersichtskarte. Sie können die Workflowgrafik auch mit den Tastenkombinationen STRG++ und STRG+- vergrößern bzw. verkleinern.
