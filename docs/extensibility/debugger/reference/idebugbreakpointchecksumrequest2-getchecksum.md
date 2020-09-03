@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: GetCheckSum | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735174"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Ruft die Dokumentprüfsumme für eine Haltepunktanforderung ab, wenn der eindeutige Bezeichner des zu verwendenden Prüfsummenalgorithmus angegeben wird.
+Ruft die Prüfsumme des Dokuments für eine Haltepunkt Anforderung ab, wenn der eindeutige Bezeichner des zu verwendenden Prüfsummen Algorithmus angegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Parameter
 `guidAlgorithm`\
-[in] Eindeutiger Bezeichner des Prüfsummenalgorithmus.
+in Eindeutiger Bezeichner des Prüfsummen Algorithmus.
 
 `pChecksumData`\
-[out] Dokumentprüfsumme für die Haltepunktanforderung.
+vorgenommen Die Prüfsumme des Dokuments für die Haltepunkt Anforderung.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme eines Dokuments, das demnach gebunden werden soll, mit einer der Benutzeroberflächen übereinstimmt.
+Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme eines Dokuments, das gebunden werden soll, mit einem Wert aus der Benutzeroberfläche übereinstimmt.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

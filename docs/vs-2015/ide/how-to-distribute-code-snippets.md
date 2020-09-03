@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476986"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Gewusst wie: Verteilen von Codeausschnitten
@@ -58,11 +58,11 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
 
 #### <a name="setting-up-the-directory-structure"></a>Einrichten der Verzeichnisstruktur
 
-1. Wählen Sie im Projektmappen-Explorer den Projektknoten, und fügen Sie einen Ordner mit dem Namen hinzu, den der Ausschnitt im Codeausschnitt-Manager aufweisen soll. In diesem Fall sollte der Name **HelloWorldVB** sein.
+1. Wählen Sie im Projektmappen-Explorer den Projektknoten, und fügen Sie einen Ordner mit dem Namen hinzu, den der Ausschnitt im Codeausschnitt-Manager aufweisen soll. In diesem Fall sollte Sie " **HelloWorldVB**" lauten.
 
 2. Verschieben Sie die SNIPPET-Datei in den Ordner **HelloWorldVB**.
 
-3. Wählen Sie die .snippet-Datei im Projektmappen-Explorer aus, und stellen Sie sicher, dass im Fenster **Eigenschaften** für die Eigenschaft **Buildvorgang** die Einstellung **Inhalt** ausgewählt ist, für die Eigenschaft **In Ausgabeverzeichnis kopieren** die Einstellung **Immer kopieren** und für die Eigenschaft **Include in VSIX** die Einstellung **TRUE**.
+3. Wählen Sie im Projektmappen-Explorer die Ausschnitt Datei aus, **und vergewissern Sie** sich, dass im Fenster **Eigenschaften** die Option Buildvorgang auf **Inhalt**und in **Ausgabeverzeichnis kopieren** auf **immer kopieren**und **in VSIX einschließen** auf **true**festgelegt ist.
 
 #### <a name="adding-the-pkgdef-file"></a>Hinzufügen der PKGDEF-Datei 
 
@@ -80,9 +80,9 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
 
      Wenn Sie diesen Schlüssel untersuchen, sehen Sie, wie verschiedene Sprachen angegeben werden.
 
-3. Wählen Sie .pkgdef-Datei im Projektmappen-Explorer aus, und stellen Sie sicher, dass im Fenster **Eigenschaften** für die Eigenschaft **Buildvorgang** die Einstellung **Inhalt** ausgewählt ist, für die Eigenschaft **In Ausgabeverzeichnis kopieren** die Einstellung **Immer kopieren** und für die Eigenschaft **Include in VSIX** die Einstellung **TRUE**.
+3. Wählen Sie die pkgdef-Datei im Projektmappen-Explorer aus, und **Vergewissern Sie sich** , dass im Fenster **Eigenschaften** die Option Buildvorgang auf **Inhalt**und in **Ausgabeverzeichnis kopieren** auf **immer kopieren**und **in VSIX einschließen** auf **true**festgelegt ist.
 
-4. Fügen Sie die PKGDEF-Datei als Ressource im VSIX-Manifest hinzu. Wechseln Sie in der Datei „source.extension.vsixmanifest“ zur Registerkarte **Objekte**, und klicken Sie auf **Neu**.
+4. Fügen Sie die PKGDEF-Datei als Ressource im VSIX-Manifest hinzu. Wechseln Sie in der Datei source.extension.vsixmanifest zur Registerkarte **Objekte**, und klicken Sie auf **Neu**.
 
 5. Legen Sie im Dialogfeld **Neue Anlage hinzufügen** für **Typ** die Einstellung **Microsoft.VisualStudio.VsPackage** fest, für **Typ** die Einstellung **Datei im Dateisystem** und für **Pfad** die Einstellung **HelloWorldVB.pkgdef** (sollte in der Dropdownliste angezeigt werden).
 
@@ -92,7 +92,7 @@ Sie können Codeausschnitte einfach Ihren Freunden geben, und diese können die 
 
 2. Erstellen Sie das Projekt, und starten Sie das Debugging. Eine zweite Instanz von Visual Studio sollte angezeigt werden.
 
-3. Wechseln Sie in der experimentellen Instanz zu **Extras / Codeausschnitt-Manager**, und wählen Sie für **Sprache** die Einstellung **Basic**. "HelloWorldVB" sollte als einer der Ordner angezeigt werden, und wenn Sie den Ordner erweitern, sollten Sie den Ausschnitt "HelloWorldVB" sehen.
+3. Wechseln Sie in der experimentellen Instanz zu Extras **/Code** Ausschnitt-Manager, und legen Sie die **Sprache** auf **Basic**fest. "HelloWorldVB" sollte als einer der Ordner angezeigt werden, und wenn Sie den Ordner erweitern, sollten Sie den Ausschnitt "HelloWorldVB" sehen.
 
 4. Speichern Sie den Ausschnitt. Öffnen Sie in der experimentellen Instanz ein Visual Basic-Projekt, und öffnen Sie dann eine der Codedateien. Platzieren Sie den Cursor an einer beliebigen Stelle im Code, klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü den Befehl **Ausschnitt einfügen**.
 

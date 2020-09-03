@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Microsoft Docs
+title: BP_STATE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737796"
 ---
 # <a name="bp_state"></a>BP_STATE
-Gibt das Vorhandensein eines gebundenen Haltepunkts an und gibt auch an, ob er aktiviert ist.
+Gibt an, dass ein gebundener Haltepunkt vorhanden ist, und gibt außerdem an, ob er aktiviert ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,24 +51,24 @@ public enum enum_BP_STATE {
 Gibt an, dass kein Haltepunkt vorhanden ist.
 
 `BPS_DELETED`\
-Gibt an, dass der Haltepunkt gelöscht wurde.
+Gibt an, dass der Breakpoint gelöscht wurde.
 
 `BPS_DISABLED`\
-Gibt an, dass der Haltepunkt deaktiviert ist.
+Gibt an, dass der Breakpoint deaktiviert ist.
 
 `BPS_ENABLED`\
-Gibt an, dass der Haltepunkt aktiviert ist.
+Gibt an, dass der Breakpoint aktiviert ist.
 
 ## <a name="remarks"></a>Bemerkungen
-Von der [GetState-Methode](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) zurückgegeben.
+Wird von der [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

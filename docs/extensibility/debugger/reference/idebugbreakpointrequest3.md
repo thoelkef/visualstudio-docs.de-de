@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3 | Microsoft Docs
+title: IDebugBreakpointRequest3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734827"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
-Diese Schnittstelle stellt die Informationen dar, die zum Erstellen und Binden eines beliebigen Haltepunkts erforderlich sind. Es ist eine Erweiterung von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
+Diese Schnittstelle stellt die Informationen dar, die erforderlich sind, um beliebige Haltepunkt Typen zu erstellen und zu binden. Es handelt sich um eine Erweiterung von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Der Sitzungsdebug-Manager (SDM) implementiert diese Schnittstelle in der Regel.
+ Der Sitzungs-Debug-Manager (SDM) implementiert in der Regel diese Schnittstelle.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Das Debugmodul (DE) greift auf diese Schnittstelle zu, indem [QueryInterface](/cpp/atl/queryinterface) auf der IDebugBreakpointRequest2-Schnittstelle aufgerufen wird, die in einem Aufruf von [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)empfangen wurde.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Die Debug-Engine (de) greift durch Aufrufen von [QueryInterface](/cpp/atl/queryinterface) in der IDebugBreakpointRequest2-Schnittstelle auf diese Schnittstelle zu, die in einem Aufruf von [creatependingbreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)empfangen wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden, die von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)geerbt wurden, macht die `IDebugBreakpointRequest3` Schnittstelle die folgende Methode verfügbar.
+ Zusätzlich zu den von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)geerbten Methoden macht die- `IDebugBreakpointRequest3` Schnittstelle die folgende Methode verfügbar.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Ruft die Haltepunktanforderungsinformationen ab, die diese Haltepunktanforderung beschreiben.|
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Ruft die Haltepunkt-Anforderungs Informationen ab, die diese breakpointanforderung beschreiben.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle wird verwendet, um der DE über die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur zusätzliche Informationen zur Verfügung zu stellen. Zu diesen zusätzlichen Informationen gehören die Kreditoren-ID der DE (in Form einer GUID), der Name eines Ablaufverfolgungspunkts und der Name einer Haltepunkteinschränkung.
+ Diese Schnittstelle wird verwendet, um der de über die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur zusätzliche Informationen bereitzustellen. Diese zusätzlichen Informationen umfassen die Hersteller-ID (in Form einer GUID), den Namen eines Ablauf Verfolgungs Punkts und den Namen einer breakpointeinschränkung.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

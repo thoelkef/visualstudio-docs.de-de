@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567982"
 ---
 # <a name="output-window"></a>Ausgabefenster
@@ -73,10 +73,10 @@ In C++ können Sie benutzerdefinierte Buildschritte und Buildereignisse erstelle
 
 Wenn Sie den automatischen Bildlauf im **Ausgabefenster** verwenden und dann navigieren, indem Sie die Maus oder Pfeiltasten verwenden, wird der automatische Bildlauf beendet. Wenn Sie den automatischen Bildlauf fortsetzen möchten, drücken Sie **STRG**+**ENDE**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [How to: Steuern des Ausgabefensters](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Vorgehensweise: Steuern des Ausgabefensters](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)
 - [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md)
 - [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview)

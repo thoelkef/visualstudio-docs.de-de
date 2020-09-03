@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: 'IDebugBreakpointResolution2:: getresolutioninfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734773"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Ruft die Informationen zur Haltepunktauflösung ab, die diesen Haltepunkt beschreiben.
+Ruft die Informationen zur breakpointauflösung ab, die diesen Haltepunkt beschreiben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der BPRESI_FIELDS-Enumeration, die bestimmen, welche Felder des [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) `pBPResolutionInfo` Parameters ausgefüllt werden sollen.
+in Eine Kombination von Flags aus der [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Enumeration, die bestimmen, welche Felder des `pBPResolutionInfo` Parameters ausgefüllt werden sollen.
 
 `pBPResolutionInfo`\
-[out] Die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur, die mit Informationen zu diesem Haltepunkt ausgefüllt werden soll.
+vorgenommen Die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) -Struktur, die mit Informationen zu diesem Haltepunkt ausgefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird diese `CDebugBreakpointResolution` Methode für ein einfaches Objekt implementiert, das die [IDebugBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) verfügbar macht.
+ Im folgenden Beispiel wird diese Methode für ein einfaches- `CDebugBreakpointResolution` Objekt implementiert, das die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(

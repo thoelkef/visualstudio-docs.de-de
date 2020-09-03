@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2 | Microsoft Docs
+title: IDebugBreakpointEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f59bdef49f5c7b9c4dc345ba1862f3f08042428e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735016"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
-Das Debugmodul (DE) sendet diese Schnittstelle an den Session Debug Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.
+Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,22 +29,22 @@ IDebugBreakpointEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle als Teil ihrer Unterstützung für Haltepunkte. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
+ Die de implementiert diese Schnittstelle als Teil der Unterstützung von Breakpoints. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf demselben Objekt wie diese Schnittstelle implementiert werden (SDM verwendet [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die- `IDebugEvent2` Schnittstelle).
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, wenn mindestens ein Haltepunkt im Programm gefunden wird. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Das de-Objekt erstellt und sendet dieses Ereignis Objekt, wenn mindestens ein Breakpoint im Programm gefunden wird. Das Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von SDM beim Anfügen an das gedestete Programm bereitgestellt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugBreakpointEvent2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointEvent2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Erstellt einen Enumerator für alle Haltepunkte, die am aktuellen Codespeicherort ausgelöst wurden.|
+|[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Erstellt einen Enumerator für alle Breakpoints, die an der aktuellen Codeposition ausgelöst werden.|
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

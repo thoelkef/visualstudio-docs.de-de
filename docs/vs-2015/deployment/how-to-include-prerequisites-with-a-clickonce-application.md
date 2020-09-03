@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557672"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
@@ -24,7 +24,7 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
 > [!NOTE]
 > Informationen zum Hinzufügen eines Installationspakets für die .NET Framework finden Sie im [.NET Framework Bereitstellungs Handbuch für Entwickler](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
-## <a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu  
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu  
   
 1. Öffnen Sie im Datei-Explorer den Ordner **Pakete**.  
   
@@ -34,10 +34,10 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
   
 3. Öffnen Sie im Editor die Datei **Package.xml**.  
   
-4. Suchen Sie das **Name** -Element, das `http://go.microsoft.com/fwlink`enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
+4. Suchen Sie das **Name** -Element `http://go.microsoft.com/fwlink` , das enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
   
     > [!NOTE]
-    > Wenn kein **Name** -Element `http://go.microsoft.com/fwlink`enthält, öffnen Sie die **Product. XML** -Datei im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .  
+    > Wenn kein **Name** -Element enthält `http://go.microsoft.com/fwlink` , öffnen Sie die Datei **Product.xml** im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .  
   
     > [!IMPORTANT]
     > Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Name**-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.  

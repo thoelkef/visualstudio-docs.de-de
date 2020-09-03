@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904951"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von JavaScript
@@ -27,7 +27,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie Sie JavaScript verw
 ## <a name="prerequisites"></a>Voraussetzungen
  Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>So erstellen Sie das simplemathvsix-Erweiterungs-SDK-Projekt
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> So erstellen Sie das simplemathvsix-Erweiterungs-SDK-Projekt
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
@@ -138,7 +138,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie Sie JavaScript verw
 
 21. Starten Sie Visual Studio neu.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>So erstellen Sie eine Beispiel-APP, die das SDK verwendet
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> So erstellen Sie eine Beispiel-APP, die das SDK verwendet
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
@@ -313,5 +313,5 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie Sie JavaScript verw
 
 12. Geben Sie in der App-Benutzeroberfläche zwei Zahlen ein, wählen Sie einen Vorgang aus, und wählen Sie dann die **=** Schaltfläche aus. Das richtige Ergebnis wird angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)

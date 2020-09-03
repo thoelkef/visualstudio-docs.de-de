@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: Abbild Anzahl | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735416"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Legt die Trefferanzahl für den gebundenen Haltepunkt fest.
+Legt die Treffer Anzahl für den gebundenen Haltepunkt fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,15 +42,15 @@ int SetHitCount( 
 
 ## <a name="parameters"></a>Parameter
 `dwHitCount`\
-[in] Die zu setzende Trefferanzahl.
+in Die festzulegende Treffer Anzahl.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Status des `BPS_DELETED` gebundenen Haltepunktobjekts auf (Teil der BP_STATE-Enumeration) festgelegt ist. [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück `E_BP_DELETED` , wenn der Zustand des gebundenen Haltepunkt Objekts auf festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).
 
 ## <a name="remarks"></a>Bemerkungen
- Die Trefferanzahl gibt an, wie oft dieser Haltepunkt während des aktuellen Ablaufs der Sitzung ausgelöst wurde.
+ Die Treffer Anzahl gibt an, wie oft dieser Haltepunkt während der aktuellen Sitzung der Sitzung ausgelöst wurde.
 
- Diese Methode wird in der Regel vom Debugmodul aufgerufen, um die aktuelle Trefferanzahl auf diesem Haltepunkt zu aktualisieren.
+ Diese Methode wird in der Regel von der Debug-Engine aufgerufen, um die aktuelle Treffer Anzahl an diesem Breakpoint zu aktualisieren.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

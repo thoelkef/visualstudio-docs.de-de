@@ -1,5 +1,5 @@
 ---
-title: IDebugModOpt::GetModOpts | Microsoft Docs
+title: 'Idebugmodopt:: getmodopts | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ab870db3ae3517b60bebd4815e4530f6035b327
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727053"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-Ruft eine Liste optionaler Modifikatoren ab.
+Ruft eine Liste optionaler modifiziererer ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,13 +44,13 @@ int GetModOpts(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Anzahl der zurückzugebenden Elemente.
+in Anzahl der Elemente, die zurückgegeben werden sollen.
 
 `rgelt`\
-[out] Gibt ein Array zurück, das die Optionen enthält.
+vorgenommen Gibt ein Array zurück, das die Optionen enthält.
 
 `pceltFetched`\
-[in, out] Anzahl der im `rgelt` Array zurückgegebenen Elemente.
+[in, out] Anzahl der im Array zurückgegebenen Elemente `rgelt` .
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
