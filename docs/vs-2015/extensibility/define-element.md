@@ -1,5 +1,5 @@
 ---
-title: Definieren Sie Element | Microsoft-Dokumentation
+title: Define-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162158"
 ---
 # <a name="define-element"></a>Define-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribute ausgewertet werden. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md). Siehe auch die [Symbole Element](../extensibility/symbols-element.md).  
+Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingte Attribute ausgewertet werden. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md). Siehe auch das [Symbol Element](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,11 +34,11 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderlich. Der Name des Symbols:<br /><br /> Name = "Modus"|  
-|Wert|Erforderlich. Der Wert des Symbols:<br /><br /> value="Standard"|  
-|Bedingung|Dies ist optional. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|name|Erforderlich. Der Name des Symbols:<br /><br /> Name = "Mode"|  
+|value|Erforderlich. Der Wert des Symbols:<br /><br /> Value = "Standard"|  
+|Bedingung|Optional. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -47,7 +47,7 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle, die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen. Beispielsweise Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern.|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, die ein VSPackage für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellt. Beispielsweise Menü Elemente, Menüs, Symbolleisten und Kombinations Felder.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -56,5 +56,5 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
 <Define name="MODE" value="Standard"/>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

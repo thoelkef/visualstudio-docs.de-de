@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156416"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled-Methode
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled-Methode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bestimmt, ob eine Sitzung den Anbieter aktiviert hat  
@@ -44,10 +44,10 @@ bool is_enabled(
   
 ## <a name="return-value"></a>Rückgabewert  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [marker_series-Klasse](../profiling/marker-series-class.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281122"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
@@ -61,7 +61,7 @@ Berücksichtigen Sie die folgenden Kriterien, bevor Sie ein Upgrade für eine Da
 
 2. Geben Sie im Dialogfeld **Verbindung hinzufügen** die folgenden Informationen an:
 
-    - **Datenquelle**:`Microsoft SQL Server (SqlClient)`
+    - **Datenquelle**: `Microsoft SQL Server (SqlClient)`
 
     - **Servername**:
 
@@ -101,7 +101,7 @@ Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwe
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>So erstellen Sie SQL Server Express der Standarddatenbank-Engine
 
-1. Wählen **Sie in**der Menüleiste Extras  >  **Optionen**aus.
+1. Wählen Sie auf der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie im Dialogfeld **Optionen** die Optionen **Daten Bank Tools** , und wählen Sie dann **Datenverbindungen**aus.
 
@@ -111,6 +111,6 @@ Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwe
 
     SQL Server Express ist die Standarddatenbank-Engine für Ihre Anwendungen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Daten in Visual Studio](accessing-data-in-visual-studio.md)
