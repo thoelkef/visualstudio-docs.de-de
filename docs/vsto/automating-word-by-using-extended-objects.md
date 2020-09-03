@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255539"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatisieren von Word mithilfe von erweiterten Objekten
@@ -46,7 +46,7 @@ ms.locfileid: "71255539"
 
  Weitere Informationen zu den Hoststeuerelementen, die Sie in Word-Projekten verwenden können, finden Sie unter den folgenden Themen:
 
-- [Inhalts Steuerelemente](../vsto/content-controls.md)
+- [ContentControl-Elemente](../vsto/content-controls.md)
 
 - [Bookmark-Steuerelement](../vsto/bookmark-control.md)
 
@@ -55,13 +55,13 @@ ms.locfileid: "71255539"
 - [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Vorgehensweise: Word-Dokumenten Lesezeichen-Steuerelemente hinzufügen](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Vorgehensweise: XMLNode-Steuerelemente zu Word-Dokumenten hinzufügen](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
-- [Vorgehensweise: XMLNodes-Steuerelemente zu Word-Dokumenten hinzufügen](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
-- [Vorgehensweise: Ändern der Größe von Bookmark](../vsto/how-to-resize-bookmark-controls.md)
+- [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
+- [Gewusst wie: Ändern der Größe von Bookmark-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)
 - [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
-- [Exemplarische Vorgehensweise: Binden von Inhalts Steuerelementen an benutzerdefinierte XML-Elemente](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
+- [Exemplarische Vorgehensweise: Binden von Steuerelementen an benutzerdefinierte XML-Elemente](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 - [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Word-Lösungen](../vsto/word-solutions.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

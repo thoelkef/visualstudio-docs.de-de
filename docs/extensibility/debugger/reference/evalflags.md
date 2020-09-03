@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: Evalflags | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737111"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Gibt Flags an, die die Ausdruckauswertung steuern.
+Gibt Flags an, die die Ausdrucks Auswertung steuern.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,39 +54,39 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Felder
 `EVAL_RETURNVALUE`\
-Gibt an, dass der Rückgabewert, falls vorhanden, ausgewertet wird.
+Gibt an, dass der Rückgabewert (sofern vorhanden) ausgewertet werden soll.
 
 `EVAL_NOSIDEEFFECTS`\
-Gibt an, dass Nebenwirkungen nicht zugelassen werden.
+Gibt an, dass Nebeneffekte nicht zulässig sind.
 
 `EVAL_ALLOWBPS`\
-Gibt das Beenden von Haltepunkten an.
+Gibt an, dass Haltepunkte angehalten werden.
 
 `EVAL_ALLOWERRORREPORT`\
-Gibt die Fehlerberichterstattung an den Host an, um zugelassen zu werden. Hauptsächlich für die Ausdrucksauswertung im Skript in Internet Explorer verwendet.
+Gibt an, dass die Fehlerberichterstattung an den Host zulässig ist. Wird hauptsächlich für die Ausdrucks Auswertung in Skripts in Internet Explorer verwendet.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Erzwingt, dass Funktionen als Adressen ausgewertet werden, anstatt die Funktion aufzuberufen.
+Erzwingt, dass Funktionen als Adressen ausgewertet werden, anstatt die Funktion aufzurufen.
 
 `EVAL_NOFUNCEVAL`\
-Verhindert, dass die Funktion ausgewertet wird. Betrachten Sie beispielsweise `int` das Token `myExpression(int) + 10`im Ausdruck . Diese Funktion kann korrekt als Adresse ausgewertet werden, jedoch nicht als Wert.
+Verhindert, dass die Funktion ausgewertet wird. Sehen Sie sich beispielsweise das `int` Token im Ausdruck an `myExpression(int) + 10` . Diese Funktion kann ordnungsgemäß als Adresse ausgewertet werden, aber nicht als Wert.
 
 `EVAL_NOEVENTS`\
-Flag, um anzugeben, dass Ereignisse, die während der Ausdrucksauswertung auftreten, nicht an den Sitzungsdebug-Manager (SDM) oder an die IDE gesendet werden sollen.
+Flag, das anzeigt, dass Ereignisse, die während der Ausdrucks Auswertung auftreten, nicht an den Sitzungs-Debug-Manager (SDM) oder an die IDE gesendet werden sollen.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Flags werden als Argument an die [EvaluateAsync-](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [EvaluateSync-Methoden](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) übergeben.
+Diese Flags werden als Argument an die Methoden [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) übermittelt.
 
-Diese Flags können mit einem bitweisen ODER kombiniert werden.
+Diese Flags können mit einem bitweisen OR kombiniert werden.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

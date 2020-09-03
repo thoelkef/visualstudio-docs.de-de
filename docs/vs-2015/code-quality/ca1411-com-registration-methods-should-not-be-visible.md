@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f001a2bb4920ebfb3f5cff3745639bd346a0a920
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540140"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

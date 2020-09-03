@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Skip | Microsoft-Dokumentation'
+title: 'Idiaenumsectioncontrisb:: Skip | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55dd45244779ca341a4228adf3256d42616e66d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189949"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Überspringt eine angegebene Anzahl von Abschnitt Beiträge in einer Enumerationsfolge.  
+Überspringt eine angegebene Anzahl von Abschnitts Beiträgen in einer enumerationssequenz.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT Skip( 
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der im Abschnitt Beiträge in der Enumerationsfolge übersprungen.  
+ in Die Anzahl der Abschnitts Beiträge in der zu über springenden enumerationssequenz.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` treten keine weitere Beiträge von Abschnitt überspringen.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben, `S_FALSE` Wenn keine weiteren Abschnitts Beiträge zum Überspringen vorhanden sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

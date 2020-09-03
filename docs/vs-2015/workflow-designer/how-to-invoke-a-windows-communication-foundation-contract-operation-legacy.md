@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603706"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Vorgehensweise: Aufrufen eines Windows Communication Foundation-Vertragsvorgangs (Vorgängerversion)
@@ -41,11 +41,11 @@ In diesem Thema wird der Aufruf eines [!INCLUDE[indigo1](../includes/indigo1-md.
 
 1. Wählen Sie die <xref:System.Workflow.Activities.SendActivity>-Aktivität im Designer aus.
 
-2. Geben Sie im Bereich **Eigenschaften** einen Namen für die <xref:System.Workflow.Activities.ChannelToken> an. Dieser Name identifiziert das Kanaltoken eindeutig.
+2. Geben Sie im Bereich **Eigenschaften** einen Namen für das an <xref:System.Workflow.Activities.ChannelToken> . Dieser Name identifiziert das Kanaltoken eindeutig.
 
 3. Erweitern Sie den Kanaltokenknoten, und geben Sie einen Namen für den Clientendpunkt an, den Sie im <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>-Feld verwenden. Die Endpunktkonfiguration mit dem gleichen Namen in der Konfigurationsdatei wird zum Konfigurieren des Kanals verwendet.
 
 4. Erstellen Sie die Endpunktkonfiguration in der Konfigurationsdatei, wenn noch nicht vorhanden. Weitere Informationen zum Konfigurieren des Clients finden Sie unter [Übersicht](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)über den WCF-Client.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Dialog Feld "Vorgang auswählen" (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md) Gewusst [wie: Implementieren einer WCF-Vertrags Operation (Legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md)

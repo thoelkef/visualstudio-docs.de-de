@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15ac788bf81ce83c2658b8a88a68ac5281020373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205084"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Status eines ausstehenden Haltepunkts (einen Haltepunkt, die noch nicht gebunden ist).  
+Gibt den Status eines ausstehenden Breakpoints an (ein Haltepunkt, der noch nicht gebunden wurde).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,27 +47,27 @@ public enum enum_PENDING_BP_STATE { 
   
 ## <a name="members"></a>Member  
  PBPS_NONE  
- Platzhalter für 0 (null). Dieser Wert wird nie zurückgegeben.  
+ Platzhalter für 0 (null). Dieser Wert wird niemals zurückgegeben.  
   
  PBPS_DELETED  
- Gibt an, dass es sich bei der ausstehenden Haltepunkt gelöscht wurde.  
+ Gibt an, dass der ausstehende Breakpoint gelöscht wurde.  
   
  PBPS_DISABLED  
- Gibt an, dass der ausstehenden Haltepunkt deaktiviert ist.  
+ Gibt an, dass der ausstehende Breakpoint deaktiviert ist.  
   
  PBPS_ENABLED  
- Gibt an, dass es sich bei der ausstehenden Haltepunkt aktiviert ist.  
+ Gibt an, dass der ausstehende Breakpoint aktiviert ist.  
   
-## <a name="remarks"></a>Hinweise  
- Verwenden Sie als die `state` Mitglied der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Verwenden Sie als `state` Member der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Struktur.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

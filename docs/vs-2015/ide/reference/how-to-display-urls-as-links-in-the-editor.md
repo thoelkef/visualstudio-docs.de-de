@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602268"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
@@ -40,7 +40,7 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
 1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2. Klicken Sie auf den **Text-Editor**.
+2. Klicken Sie auf **Text-Editor**.
 
 3. Erweitern Sie zum Ändern der Option für nur eine Sprache den Ordner für diese Sprache, und wählen Sie **Allgemein** aus.
 
@@ -48,7 +48,7 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
      Erweitern Sie zum Ändern der Option für alle Sprachen den Ordner **Alle Sprachen**, und wählen Sie **Allgemein** aus.
 
-4. Wählen Sie unter **Anzeige** **Einfaches Klicken für URLs aktivieren** aus.
+4. Wählen Sie unter **Anzeige****Einfaches Klicken für URLs aktivieren** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Editor](../../ide/customizing-the-editor.md) -Dialog Felds " [Text-Editor-Optionen](../../ide/reference/text-editor-options-dialog-box.md) " Schreiben von [Code](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a58fc57ca840f064e7d32b830133f0d909af7585
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604766"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
@@ -50,7 +50,7 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
 
 - **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Code- und Text-Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
 
-- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: In der Entwurfsansicht oder in der Standardtext-Quellansicht.
+- **HTML-Editor** Wählen Sie diese Option aus, um Quelle im [HTML-Designer](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)anzuzeigen. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: In der Entwurfsansicht oder in der Standardtext-Quellansicht.
 
 - **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
 
@@ -59,5 +59,5 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
 > [!NOTE]
 > Verwenden Sie das Dialogfeld „Browserauswahl“, um den internen Webbrowser von Visual Studio, der eine Version von Internet Explorer ist,durch einen anderen, externen Webbrowser zu ersetzen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Dialogfeld "Umgebungsoptionen](../../ide/reference/environment-options-dialog-box.md) " [Allgemein, Umgebung, Dialogfeld "Optionen](../../ide/reference/general-environment-options-dialog-box.md) " HTML- [Designer](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

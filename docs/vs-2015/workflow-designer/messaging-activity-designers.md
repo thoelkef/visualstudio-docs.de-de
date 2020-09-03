@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6fb06bea4cebf2558990d23f7ece5b4f8db5b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658936"
 ---
 # <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
@@ -21,13 +21,13 @@ Messaging-Aktivitätsdesigner werden verwendet, um Messaging-Aktivitäten zu ers
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Messagingaktivität|Beschreibung|
+|Messagingaktivität|BESCHREIBUNG|
 |----------------------|-----------------|
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.CorrelationScope>-Aktivität, die die implizite Verwaltung von untergeordneten Messagingaktivitäten mit einem <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt bereitstellt.|
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität, die verwendet wird, um eine Korrelation zu initialisieren, ohne eine Nachricht zu senden oder zu empfangen.|
-|[Receive](../workflow-designer/receive-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.Receive>-Aktivität, die eine Nachricht von einem Dienst empfängt.|
+|[Medizinisch](../workflow-designer/receive-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.Receive>-Aktivität, die eine Nachricht von einem Dienst empfängt.|
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Erstellt innerhalb einer <xref:System.ServiceModel.Activities.Send>-Aktivität ein vorkonfiguriertes Paar von <xref:System.ServiceModel.Activities.ReceiveReply>-Aktivität und <xref:System.Activities.Statements.Sequence>-Aktivität.|
-|[Send](../workflow-designer/send-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.Send>-Aktivität, die eine Nachricht an einen Dienst sendet.|
+|[Senden](../workflow-designer/send-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.Send>-Aktivität, die eine Nachricht an einen Dienst sendet.|
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Erstellt innerhalb einer <xref:System.ServiceModel.Activities.Receive>-Aktivität ein vorkonfiguriertes Paar von <xref:System.ServiceModel.Activities.SendReply>-Aktivität und <xref:System.Activities.Statements.Sequence>-Aktivität.|
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Erstellt und konfiguriert eine <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität, welche den Transaktionsfluss in einen Workflow ermöglicht.|
 
@@ -57,11 +57,11 @@ Messaging-Aktivitätsdesigner werden verwendet, um Messaging-Aktivitäten zu ers
 
  [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
- [Primitive](../workflow-designer/primitives-activity-designers.md)
+ [Grundtypen](../workflow-designer/primitives-activity-designers.md)
 
  [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
- [Auflistung](../workflow-designer/collection-activity-designers.md)
+ [Sammlung](../workflow-designer/collection-activity-designers.md)
 
  [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
 

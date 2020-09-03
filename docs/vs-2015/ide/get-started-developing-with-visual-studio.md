@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1da2c07d5a412a7ac1865cfc2669e2f4ff992b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548069"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
@@ -33,23 +33,23 @@ Willkommen bei Visual Studio! Nach dem [Download](https://visualstudio.microsoft
 
 - **[Erstellen von plattformübergreifenden mobilen Apps in C# oder Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Finden Sie den Einstieg in Visual Studio und Tools für Xamarin, um mobile Apps zu erstellen, die von einer gemeinsamen Codebasis aus auf der Android-, der iOS- und der universellen Windows-Plattform ausgeführt werden können.
 
-     Beispiel laden: [taskyportable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (Native UI) oder [xamarin Forms TODO Sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) ( [frei](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) gegebene xamarin. Forms-Benutzeroberfläche) &#124; Lernprogramm ausführen &#124; [Dokumente durchsuchen](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [Video ansehen](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Beispiel laden: [taskyportable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (Native UI) oder  [xamarin Forms TODO Sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (   [frei](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) gegebene xamarin. Forms-Benutzeroberfläche) &#124; Lernprogramm ausführen &#124;                             [Dokumente durchsuchen](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Video ansehen](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Erstellen von plattformübergreifenden Apps und Bibliotheken in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Hier finden Sie den Einstieg in das Erstellen von C++-Apps und -Bibliotheken für die Android-, die iOS- und die universelle Windows-Plattform.
 
-     [Laden eines](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) Beispiels &#124; ausführen [eines Tutorials](https://msdn.microsoft.com/library/dn707595.aspx) &#124; [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/dn707591.aspx) &#124; [ansehen eines Videos](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
+     [Laden eines](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) Beispiels &#124; ausführen   [eines Tutorials](https://msdn.microsoft.com/library/dn707595.aspx) &#124;                             [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/dn707591.aspx) &#124;                                  [ansehen eines Videos](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
 - **[Erstellen von Spielen mit DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: Erstellen Sie mit DirectX Spiele für die universelle Windows-Plattform.
 
-     [Laden eines](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) Beispiels &#124; ausführen [eines Tutorials](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124; [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124; [ansehen eines Videos](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
+     [Laden eines](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) Beispiels &#124; ausführen                    [eines Tutorials](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124;                                [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124;                                   [ansehen eines Videos](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
 - **[Erstellen von Spielen mit Unity](../cross-platform/visual-studio-tools-for-unity.md)**: Erstellen Sie plattformübergreifende Spiele mit dem Unity-Framework.
 
-     [Laden eines](http://unity3d.com/learn/resources/downloads) Beispiels &#124; ausführen [eines Tutorials](https://learn.unity.com/projects) &#124; [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124; [ansehen eines Videos](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [Laden eines](http://unity3d.com/learn/resources/downloads) Beispiels &#124; ausführen                     [eines Tutorials](https://learn.unity.com/projects) &#124;                               [Durchsuchen der Dokumente](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [ansehen eines Videos](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[Erstellen von Apps für die universelle Windows-Plattform](https://dev.windows.com/windows-apps)** : Erstellen Sie Apps für die universelle Windows-Plattform (XBox, PCs, Tablets, Windows Phone, Surface Hub und Internet der Dinge).
 
-     [Laden eines](https://github.com/Microsoft/Windows-universal-samples) Beispiels &#124; ausführen [eines Tutorials](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124; [Durchsuchen der Dokumente](https://dev.windows.com) &#124; [ansehen eines Videos](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
+     [Laden eines](https://github.com/Microsoft/Windows-universal-samples) Beispiels &#124; ausführen                          [eines Tutorials](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124;                                [Durchsuchen der Dokumente](https://dev.windows.com) &#124;     [ansehen eines Videos](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
 - **[Erstellen von Desktopanwendungen](https://dev.windows.com/desktop)** : Erstellen Sie herkömmliche Desktopanwendungen für Windows-PCs.
 
@@ -57,7 +57,7 @@ Willkommen bei Visual Studio! Nach dem [Download](https://visualstudio.microsoft
 
 - **[Office-Anwendungen](https://msdn.microsoft.com/library/fp161347.aspx)** erstellen: Erstellen Sie Office-Anwendungen, mit denen Word, Excel, Outlook und PowerPoint mit Office 365-Diensten erweitert und angepasst werden.
 
-     [Laden eines](https://code.msdn.microsoft.com/office365/) Beispiels &#124; ausführen [eines Tutorials](https://developer.microsoft.com/graph) &#124; [Durchsuchen der Dokumente](https://msdn.microsoft.com/office/aa905340.aspx) &#124; [ansehen eines Videos](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
+     [Laden eines](https://code.msdn.microsoft.com/office365/) Beispiels &#124; ausführen                       [eines Tutorials](https://developer.microsoft.com/graph) &#124;                              [Durchsuchen der Dokumente](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [ansehen eines Videos](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Tour zu Visual Studio Team Services und Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Erfahren Sie mehr über Visual Studio Team Services und Team Foundation Server.
 
