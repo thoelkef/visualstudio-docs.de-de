@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses | Microsoft Docs
+title: Ienumdebug-Adressen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717585"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
-Diese Schnittstelle stellt eine Auflistung von Objekten dar, die die [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) implementieren.
+Diese Schnittstelle stellt eine Auflistung von Objekten dar, die die [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle implementieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IEnumDebugAdresses : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle wird vom Symbolanbieter implementiert, um Gruppen von Objekten bereitzustellen, die die [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) implementieren. Beachten Sie, dass dies keine Standard-COM-Enumeration aufgrund des Vorhandenseins der [GetCount-Methode](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) ist.
+ Diese Schnittstelle wird vom Symbol Anbieter implementiert, um Sätze von Objekten bereitzustellen, die die [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle implementieren. Beachten Sie, dass es sich hierbei nicht um eine com-Standard Enumeration handelt, da die [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) -Methode vorhanden ist.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Diese Schnittstelle wird von [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) und [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)zurückgegeben.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Schnittstelle wird von [getaddressesfromcontext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) und [getaddressesfromposition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)zurückgegeben.
 
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgenden Methoden.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Weiter](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Ruft den nächsten Satz von [IDebugAddress-Objekten](../../../extensibility/debugger/reference/idebugaddress.md) aus der Enumeration ab.|
-|[Überspringen](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Überspringt eine angegebene Anzahl von Einträgen.|
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Ruft den nächsten Satz von [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekten aus der-Enumeration ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Überspringt eine angegebene Anzahl von Einträgen.|
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Setzt die Enumeration auf den ersten Eintrag zurück.|
-|[Klon](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Ruft eine Kopie der aktuellen Enumeration ab.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Ruft die Anzahl der Einträge in der Enumeration ab.|
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Ruft eine Kopie der aktuellen Enumeration ab.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Ruft die Anzahl der Einträge in der-Enumeration ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle wird in der Regel vom Debugmodul verwendet, um die geeignete Adresse zu bestimmen, die dem Ausdrucksauswertungswert geber.
+ Diese Schnittstelle wird in der Regel von der Debug-Engine verwendet, um die geeignete Adresse zu ermitteln, die der Ausdrucks Auswertung zugewiesen werden soll.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

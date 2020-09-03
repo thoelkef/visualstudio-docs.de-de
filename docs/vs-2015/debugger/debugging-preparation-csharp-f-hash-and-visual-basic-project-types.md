@@ -1,5 +1,5 @@
 ---
-title: 'Vorbereitung des Debugvorgangs: C#, F#, und Visual Basic-Projekttypen | Microsoft-Dokumentation'
+title: 'Vorbereitung zum Debuggen: c#-, F #-und Visual Basic-Projekttypen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195317"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung des Debugvorgangs: C#-, F#- und Visual Basic-Projekttypen
@@ -35,7 +35,7 @@ ms.locfileid: "68195317"
 
 In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Projekttypen debuggen, die mithilfe der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen erstellt wurden.  
   
- Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
+ Beachten Sie, dass Projekttypen, die DLLs als Ausgabe erstellen, aufgrund ihrer gemeinsamen Features unter [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) behandelt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Empfohlene Eigenschafteneinstellungen](../debugger/managed-debugging-recommended-property-settings.md)  
@@ -57,5 +57,5 @@ In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)  
  Beschreibt allgemeine Debugprobleme und Techniken für Anwendungen, die in verwaltetem Code geschrieben wurden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggersicherheit](../debugger/debugger-security.md)

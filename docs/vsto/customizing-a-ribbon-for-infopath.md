@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255509"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Anpassen eines Menübands für InfoPath
@@ -29,7 +29,7 @@ ms.locfileid: "71255509"
 
 - Im Seitenansichtsfenster.
 
-  **Gilt für:** Die Informationen in diesem Thema betreffen VSTO-Add-in-Projekte für InfoPath 2010. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
+  **Betrifft:** Die Informationen in diesem Thema betreffen VSTO-Add-In-Projekte für InfoPath 2010. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
 
   Benutzer und Designer öffnen eine Formularvorlage im Entwurfsmodus, um die Darstellung und das Layout der Vorlage zu ändern. Benutzer öffnen Formulare, die auf einer Formularvorlage basieren, um Inhalte hinzuzufügen.
 

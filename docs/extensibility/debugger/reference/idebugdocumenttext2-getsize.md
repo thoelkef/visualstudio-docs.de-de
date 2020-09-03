@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Microsoft Docs
+title: 'IDebugDocumentText2:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731593"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-Ruft die Größe des Textes an dieser Position im Dokument ab.
+Ruft die Größe des Texts an dieser Position im Dokument ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,19 +43,19 @@ int GetSize( 
 
 ## <a name="parameters"></a>Parameter
 `pcNumLines`\
-[out] Gibt die Anzahl der Textzeilen zurück.
+vorgenommen Gibt die Anzahl von Textzeilen zurück.
 
 `pcNumChars`\
-[out] Gibt die Anzahl der Zeichen des Textes zurück.
+vorgenommen Gibt die Anzahl von Textzeichen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
 
- [Nur C++ Wenn ein bestimmter Wert nicht gewünscht ist, übergeben Sie einen NULL für den Parameter.
+ [Nur C++] Wenn ein bestimmter Wert nicht erwünscht ist, übergeben Sie einen NULL-Wert für den-Parameter.
 
- [Nur C-Code] Beide Parameter müssen angegeben werden.
+ [Nur c#] Beide Parameter müssen angegeben werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690584"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele für die Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   
@@ -45,7 +45,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 > [!TIP]
 > Ältere Versionen von Visual Studio unterstützen nicht den vollständigen Satz von Befehlen. Wenden Sie IntelliSense auf das Console-Objekt an, um schnell Informationen zu unterstützten Befehle zu erhalten.  
   
-|Befehl|Beschreibung|Beispiel|  
+|Befehl|BESCHREIBUNG|Beispiel|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Sendet eine Meldung, wenn `expression` als **false**ausgewertet wird.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Löscht Skriptcode und Meldungen aus dem Konsolenfenster, einschließlich Skriptfehlermeldungen. Löscht keinen Skriptcode, den Sie in die Konsoleneingabeaufforderung eingegeben haben.|`console.clear();`|  
@@ -71,7 +71,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ## <a name="miscellaneous-commands"></a>Verschiedene Befehle  
  Diese Befehle stehen auch im JavaScript-Konsolenfenster zur Verfügung (sie sind im Code nicht verfügbar).  
   
-|Befehl|Beschreibung|Beispiel|  
+|Befehl|BESCHREIBUNG|Beispiel|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Gibt das angegebene Element im Konsolenfenster zurück. `$0` gibt das Element zurück, das gegenwärtig in DOM Explorer ausgewählt ist. `$1` gibt das Element zurück, das zuvor in DOM Explorer ausgewählt wurde usw., bis zum vierten zuvor ausgewählten Element.|$3|  
 |`$(id)`|Gibt ein Element anhand der ID zurück. Dies ist ein Kurzbefehl für `document.getElementById(id)`, wobei `id` eine Zeichenfolge ist, die die Element-ID darstellt.|`$("contenthost")`|  
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster  
  Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)  
   
-## <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
  Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.  
   
 ```javascript  
@@ -137,6 +137,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

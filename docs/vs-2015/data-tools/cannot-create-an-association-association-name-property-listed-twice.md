@@ -1,5 +1,5 @@
 ---
-title: Eine Zuordnung kann nicht erstellt werden &lt;association Name &gt;-Eigenschaft zweimal aufgelistet | Microsoft-Dokumentation
+title: Ein Zuordnungs Name für die Zuordnung kann nicht erstellt werden &lt; &gt; -Eigenschaft wird zweimal aufgelistet Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e4a1d20b5c341c1643836ae30e5de6243f35454
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662559"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – Eigenschaft ist zweimal aufgelistet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden. Die folgende Eigenschaft ist mehrmals aufgelistet: \<Eigenschaftenname>.
+Eine Zuordnung kann nicht erstellt werden \<association name> . Dieselbe Eigenschaft ist mehrmals aufgelistet: \<property name> .
 
  Zuordnungen werden im Dialogfeld **Zuordnungs-Editor** von den ausgewählten **Zuordnungseigenschaften** definiert. Eigenschaften können für jede Klasse in der Zuordnung nur einmal aufgelistet werden.
 
@@ -35,5 +35,5 @@ Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden. Die folgende Eigensc
 
 - Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [LINQ to SQL Tools in Visual Studio](https://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186) Gewusst [wie: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL Klassen (o/R-Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) Exemplarische Vorgehensweise [: Erstellen von LINQ to SQL Klassen (o-r-Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

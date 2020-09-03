@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586629"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
@@ -67,4 +67,4 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
  Kolonnensperren treten auf, wenn zum Abrufen die First-In-First-Out-Reihenfolge verwendet wird und die Ankunftsrate bei der Sperre höher ist als die Abrufrate. Aufgrund des Zusammentreffens dieser beiden Bedingungen laufen nach und nach Anforderungen der Sperre auf. Eine Möglichkeit, dieses Problem zu beheben, besteht darin, „unfaire“ Sperren oder Sperren zu verwenden, die Zugriff auf den ersten Thread ermöglichen, um den entsprechenden entsperrten Zustand zu finden. Die obige Abbildung zeigt dieses Kolonnenverhalten. Zum Beheben dieses Problems verringern Sie die Konflikte um die Synchronisierungsobjekte, verwenden Sie zudem unfaire Sperren.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)
+ [Thread Ansicht](../profiling/threads-view-parallel-performance.md)

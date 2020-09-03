@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2 | Microsoft Docs
+title: IEnumCodePaths2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89c8cac9a7c2baa020002fe852330639d7081982
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717716"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
-Diese Schnittstelle stellt eine Liste von Codepfaden dar.
+Diese Schnittstelle stellt eine Liste von Codepfade dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IEnumCodePaths2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle, um eine Liste von Codepfaden darzustellen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Liste von Codepfade darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Rufen Sie [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) auf, um diese Schnittstelle zu erhalten.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Rufen Sie [enumcodepath](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IEnumCodePaths2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumCodePaths2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Weiter](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Ruft eine angegebene Anzahl von Codepfaden in einer Enumerationssequenz ab.|
-|[Überspringen](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Überspringt eine angegebene Anzahl von Codepfaden in einer Enumerationssequenz.|
+|[Nächste](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Ruft eine angegebene Anzahl von Codepfade in einer enumerationssequenz ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Überspringt eine angegebene Anzahl von Codepfade in einer enumerationssequenz.|
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Klon](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle Enumerator enthält.|
+|[Klonen](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Ruft die Anzahl der Codepfade in einem Enumerator ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Codepfad stellt einen Verzweigungspunkt oder Funktionsaufruf in einem Programm dar. Eine Liste von Codepfaden stellt den Pfad dar, den die Codeausführung durchlaufen hat.
+ Ein Codepfad stellt einen Verzweigungs Punkt oder Funktions aufrufin einem Programm dar. Eine Liste von Codepfade steht für den Pfad, über den die Codeausführung erfolgt ist.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

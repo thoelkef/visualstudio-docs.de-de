@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662679"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Unterstützung mit der Funktion „Generate From Usage“
@@ -67,17 +67,17 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../misc/generate-f
     > [!NOTE]
     > IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Um bei geöffnetem IntelliSense-Fenster zwischen Beendigungsmodus und Vorschlagsmodus zu wechseln, drücken Sie STRG+ALT+LEERTASTE. Weitere Informationen finden Sie unter [Using IntelliSense](../ide/using-intellisense.md) . Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
 
-3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie innerhalb dieser Methode eine neue Instanz einer Klasse namens `Automobile`, wie in den folgenden Abbildungen dargestellt. Eine wellenförmige Unterstreichung wird angezeigt, die auf einen Fehler während der Kompilierung hinweist, und unter dem Typnamen wird ein Smarttag angezeigt. Die genaue Position des Smarttags variiert abhängig davon, ob Sie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)] verwenden.
+3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie innerhalb dieser Methode eine neue Instanz einer Klasse namens `Automobile`, wie in den folgenden Abbildungen dargestellt. Eine wellenförmige Unterstreichung wird angezeigt, die auf einen Fehler während der Kompilierung hinweist, und unter dem Typnamen wird ein Smarttag angezeigt. Die genaue Position des Smarttags variiert abhängig davon, ob Sie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)]verwenden.
 
      ![Smarttag-Unterstreichung in Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![Smarttags in C&#35; unterstreichen](../ide/media/genclass-underline.png "GenClass_Underline") StörungenC#
+     ![Smarttag-Unterstreichung in C-&#35;](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. Halten Sie den Mauszeiger auf dem Smarttag, um eine Fehlermeldung anzuzeigen, die besagt, dass noch kein Typ mit dem Namen `Automobile` definiert wurde. Klicken Sie auf das Smarttag, oder drücken Sie STRG+. (STRG+Punkt), um das Kontextmenü "Aus Verwendung generieren" zu öffnen, wie in den folgenden Abbildungen dargestellt.
 
      ![Kontextmenü "Smarttag" in Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![Kontextmenü "Smarttag"&#35; in C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") StörungenC#
+     ![Kontextmenü "Smarttag" in C-&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. Sie haben nun zwei Möglichkeiten: Sie können auf **“Class Automobile“ generieren** klicken, um eine neue Datei im Testprojekt zu erstellen und diese mit einer leeren Klasse mit dem Namen `Automobile`aufzufüllen. Dies ist eine schnelle Möglichkeit, um eine neue Klasse in einer neuen Datei mit standardmäßigen Zugriffsmodifizierern im aktuellen Projekt zu erstellen. Sie können auch auf **Neuen Typ generieren** klicken, um das Dialogfeld **Neuen Typ generieren** zu öffnen. Dies bietet Optionen wie das Platzieren der Klasse in einer vorhandenen Datei und das Hinzufügen der Datei zu einem anderen Projekt.
 
@@ -106,7 +106,7 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../misc/generate-f
 
      ![Eigenschaften Kontextmenü in Visual Basic generieren](../ide/media/genpropertysmarttagvb.png "Genpropertysmarttagvb") Visual Basic
 
-     ![Kontextmenü "Eigenschaft generieren"&#35; in C](../ide/media/genpropertysmarttagcs.png "Genpropertysmarttagcs") StörungenC#
+     ![Kontextmenü "Eigenschaft generieren" in C-&#35;](../ide/media/genpropertysmarttagcs.png "Genpropertysmarttagcs") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>So finden Sie den Quellcode
 
@@ -175,5 +175,5 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../misc/generate-f
 
      ![Bestandene Test Ergebnisse](../ide/media/testspassed.png "Testspßte") Testergebnisse Fenster
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Generieren aus der Verwendung](../misc/generate-from-usage.md) [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md) [mithilfe von IntelliSense](../ide/using-intellisense.md) Komponenten [Test](../test/unit-test-your-code.md) Code

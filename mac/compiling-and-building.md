@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128421"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilieren und Generieren in Visual Studio für Mac
@@ -55,6 +55,6 @@ Mit Visual Studio für Mac können Sie auch:
     ![Hinzufügen benutzerdefinierter Befehle](media/compiling-and-building-image6.png)
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Kompilieren und Erstellen (Visual Studio unter Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)

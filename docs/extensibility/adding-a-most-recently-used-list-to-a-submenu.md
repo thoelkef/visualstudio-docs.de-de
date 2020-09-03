@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904208"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Hinzufügen einer zuletzt verwendeten Liste zu einem Untermenü
@@ -199,5 +199,5 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 
 4. Öffnen Sie das Untermenü erneut. Beachten Sie, dass **Element 3** nun am Anfang der Liste steht und die anderen Elemente eine Position nach unten verschoben wurden. Klicken Sie erneut auf **Element 3** , und beachten Sie, dass im Meldungs Feld weiterhin das **ausgewählte Element 3**angezeigt wird. Dadurch wird angegeben, dass der Text ordnungsgemäß an die neue Position mit der Befehls Bezeichnung verschoben wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Dynamisches Hinzufügen von Menü Elementen](../extensibility/dynamically-adding-menu-items.md)

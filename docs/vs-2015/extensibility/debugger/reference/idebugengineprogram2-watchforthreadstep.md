@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft-Dokumentation
+title: 'IDebugEngineProgram2:: watchan Step | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195651"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wird überwacht, ob für die Ausführung (oder beendet wird, für die Ausführung überwachen) an den angegebenen Thread ausgeführt.  
+Überwacht, dass die Ausführung im angegebenen Thread erfolgt (oder die Überwachung auf die Ausführung anhält).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,25 +46,25 @@ int WatchForThreadStep( 
   
 #### <a name="parameters"></a>Parameter  
  `pOriginatingProgram`  
- [in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung abgestuft wird darstellt.  
+ in Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das abgestufte Programm darstellt.  
   
  `dwTid`  
- [in] Gibt den Bezeichner des Threads zu überwachen.  
+ in Gibt den Bezeichner des zu überwachenden Threads an.  
   
  `fWatch`  
- [in] Ungleich 0 (`TRUE`) bedeutet, dass starten, Überwachen der Ausführung des Threads identifizierte `dwTid`ist, andernfalls 0 (null) (`FALSE`) bedeutet, dass beenden, Überwachen der Ausführung auf `dwTid`.  
+ in Ungleich 0 (NULL `TRUE` ) bedeutet, dass die Ausführung auf dem durch identifizierten Thread überwacht `dwTid` werden soll; andernfalls `FALSE` bedeutet NULL (), dass die Ausführung für nicht mehr überwacht werden kann `dwTid` .  
   
  `dwFrame`  
- [in] Gibt einen FrameIndex, der steuert, den Typ an. In diesem Wert ist 0 (null), der Typ ist "step into" und das Programm beendet werden soll, wenn der Thread identifizierte `dwTid` ausgeführt wird. Wenn `dwFrame` ungleich NULL ist, wird der Typ ist "step over" und das Programm beendet werden soll, nur, wenn der Thread durch identifiziert `dwTid` läuft in einem Rahmen, dessen Index gleich oder höher auf dem Stapel als ist `dwFrame`.  
+ in Gibt einen Frame Index an, der den Schritttyp steuert. Wenn dieser Wert 0 (null) ist, ist der Schritttyp "Einzelschritt", und das Programm sollte angehalten werden, wenn der von identifizierte Thread `dwTid` ausgeführt wird. Wenn ungleich `dwFrame` 0 (null) ist, ist der Schritttyp "Step over", und das Programm sollte nur beendet werden, wenn der von identifizierte Thread `dwTid` in einem Frame ausgeführt wird, dessen Index im Stapel gleich oder höher ist `dwFrame` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Sitzungs-Manager (SDM) ein Programm, das identifizierte Schritte der `pOriginatingProgram` Parameter, benachrichtigt er alle anderen angefügten Programme durch Aufrufen dieser Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Sitzungs-Debug-Manager (SDM) ein Programm durchführt, das durch den- `pOriginatingProgram` Parameter identifiziert wird, werden alle anderen angefügten Programme durch Aufrufen dieser Methode benachrichtigt.  
   
- Diese Methode ist nur auf demselben Thread schrittweise anwendbar.  
+ Diese Methode gilt nur für den Schritt des gleichen Threads.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

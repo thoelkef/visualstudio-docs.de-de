@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586902"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI
@@ -41,7 +41,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 6. Wählen Sie einen Ordner zum Speichern des Projekts aus. Geben Sie im Textfeld **Speicherort** den Namen des Ordners ein.
 
-7. Wählen Sie **OK** aus.
+7. Klicken Sie auf **OK**.
 
      Der WPF-Designer für Visual Studio wird geöffnet und zeigt das MainWindow-Element des Projekts an.
 
@@ -49,11 +49,11 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 9. Ziehen Sie unter dem Abschnitt **Alle WPF-Steuerelemente** ein **Button**-, ein **CheckBox**- und ein **ProgressBar**-Steuerelement auf das MainWindow-Element in der Entwurfsoberfläche.
 
-10. Wählen Sie das Button-Steuerelement aus. Ändern Sie im Fenster Eigenschaften den Wert für die Eigenschaft **Name** von \<Ohne Name> in „button1“. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
+10. Wählen Sie das Button-Steuerelement aus. Ändern Sie in der Eigenschaftenfenster den Wert für die **Name** -Eigenschaft von \<No Name> in button1. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
 
-11. Wählen Sie das ProgressBar-Steuerelement aus. Ändern Sie im Eigenschaftenfenster den Wert für die Eigenschaft **Name** von \<Ohne Namen> in „progressBar1“. Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
+11. Wählen Sie das ProgressBar-Steuerelement aus. Ändern Sie in der Eigenschaftenfenster den Wert für den Wert für die **Name** -Eigenschaft von \<No Name> in "progressBar1". Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
 
-12. Wählen Sie das Checkbox-Steuerelement aus. Ändern Sie im Fenster Eigenschaften den Wert für die Eigenschaft **Name** von \<Ohne Name> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
+12. Wählen Sie das Checkbox-Steuerelement aus. Ändern Sie in der Eigenschaftenfenster den Wert für die **Name** -Eigenschaft von \<No Name> in CheckBox1, und löschen Sie die **isaktivierte** -Eigenschaft.
 
      ![Einfache WPF-Anwendung](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -102,7 +102,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
     ```
 
-16. Speichern Sie die Datei .
+16. Speichern Sie die Datei.
 
 ### <a name="verify-the-wpf-application-runs-correctly"></a>Überprüfen der ordnungsgemäßen Ausführung der WPF-Anwendung
 
@@ -118,7 +118,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Erstellen und Ausführen eines Tests der codierten UI für "SimpleWPFApp"
 
-1. Suchen Sie die zuvor erstellte Anwendung "SimpleWPFApp". Standardmäßig befindet sich die Anwendung unter folgendem Pfad: C:\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Suchen Sie die zuvor erstellte Anwendung "SimpleWPFApp". Standardmäßig befindet sich die Anwendung unter c:\Users \\<username \> \Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. Erstellen Sie eine Desktopverknüpfung zur SimpleWPFApp-Anwendung. Klicken Sie mit der rechten Maustaste auf SimpleWPFApp.exe, und wählen Sie **Kopieren** aus. Klicken Sie auf dem Desktop mit der rechten Maustaste, und wählen Sie die Option **Verknüpfung einfügen** aus.
 
@@ -133,7 +133,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 5. Wählen Sie im mittleren Bereich die Vorlage **Testprojekt der programmierten UI** aus.
 
-6. Wählen Sie **OK** aus.
+6. Klicken Sie auf **OK**.
 
      In Projektmappen-Explorer wird das neue Testprojekt der programmierten UI mit der Bezeichnung **CodedUITestProject1** der Lösung hinzugefügt.
 
@@ -182,7 +182,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
 1. Wählen Sie im Menü **Test** die Option **Fenster** aus, und wählen Sie dann **Test-Explorer**aus.
 
-2. Wählen Sie im Menü **ERSTELLEN** die Option **Projektmappe erstellen**aus.
+2. Wählen Sie im Menü **Erstellen** die Option Projekt Mappe **Erstellen**aus.
 
 3. Suchen Sie in der Datei CodedUITest1.cs die **codeduitestmethod** -Methode, klicken Sie mit der rechten Maustaste, und wählen Sie **Tests ausführen**aus, oder führen Sie den Test im Test-Explorer aus.
 
@@ -219,7 +219,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
 
      Die Testmethode wird aus der UIMap.uitest-Datei entfernt und nicht mehr im Bereich der UI-Aktionen angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei "UIMap.cs" mit Projektmappen-Explorer.
 
-9. Wählen Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf der Symbolleiste **Speichern**aus.
+9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Wählen Sie auf der Symbolleiste **Speichern**aus.
 
      Die Aktualisierungen der Testmethode werden in der UIMap.Designer-Datei gespeichert.
 
