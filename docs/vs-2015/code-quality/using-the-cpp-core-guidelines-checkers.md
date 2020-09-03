@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173554"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
@@ -51,7 +51,7 @@ Die C++ Core Guidelines sind ein portabler Satz an Richtlinien, Regeln und bewä
   
    ![Eigenschaften Seite für die Einstellungen für die Code Analyse Erweiterungen](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Öffnen Sie das Dialogfeld **Eigenschaften Seiten** für das Projekt, um die C++ Core Check Regelsätze zu aktivieren oder zu deaktivieren. Erweitern Sie unter **Konfigurations Eigenschaften**die Option **Code Analyse**, **Erweiterungen**. Wählen Sie im Dropdown-Steuerelement neben **C++ Core Check aktivieren (freigegeben)** oder **C++ Core Check aktivieren (experimentell)** die Option **Ja** oder **Nein**aus. Wählen Sie **OK** oder **anwenden** aus, um die Änderungen zu speichern.  
+   Öffnen Sie das Dialogfeld **Eigenschaften Seiten** für das Projekt, um die C++ Core Check Regelsätze zu aktivieren oder zu deaktivieren. Erweitern Sie unter **Konfigurations Eigenschaften**die Option  **Code Analyse**, **Erweiterungen**. Wählen Sie im Dropdown-Steuerelement neben **C++ Core Check aktivieren (freigegeben)** oder **C++ Core Check aktivieren (experimentell)** die Option **Ja** oder **Nein**aus. Wählen Sie **OK** oder **anwenden** aus, um die Änderungen zu speichern.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Überprüfen von Typen, Begrenzungen und Lebens dauern  
  Das C++ Core Check-Paket enthält derzeit für die Profile für die [Typsicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), die [Sicherheits](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)Stufe und die [Lebensdauer Sicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -91,12 +91,12 @@ int main()
 **----**  
 **1> corecheckexample. cpp**  
 **1> corecheckexample. vcxproj-> c:\users\username\documents\visual Studio 2015 \ P**  
-**rojecung\corecheckexample\debug \ corecheckexample.exe**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1> corecheckexample. vcxproj-> c:\users\username\documents\visual Studio 2015 \ P**  
 **rojecz\corecheckexample\debug \ corecheckexample.pdb (vollständige PDB-Datei)**  
 **c:\users\username\documents\visual Studio 2015 \ project\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): Warnung C26494: die Variable ' arr ' ist nicht Initialisierer.**  
-**Ed. Initialisieren Sie immer ein-Objekt. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?Link**  
+**über. Initialisieren Sie immer ein-Objekt. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?Link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ project\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): Warnung C26485: Ausdruck ' arr ': kein Array für**  

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905878"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Beginnen Sie mit der VSIX-Projektvorlage
@@ -39,7 +39,7 @@ Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen 
 
 2. Erstellen Sie ein leeres VSIX-Projekt.
 
-     Klicken Sie auf **Datei** > **Neu** > **Projekt**. Geben Sie im Suchfeld "VSIX" ein, und wählen Sie entweder die **c#** -oder **Visual Basic** Version des **VSIX-Projekts**aus.
+     Wählen Sie **Datei** > **Neu** > **Projekt** aus. Geben Sie im Suchfeld "VSIX" ein, und wählen Sie entweder die **c#** -oder **Visual Basic** Version des **VSIX-Projekts**aus.
 
 3. Fügen Sie dem Projekt die *ZIP* -Datei hinzu. Legen Sie die Eigenschaft **in Ausgabeverzeichnis kopieren** auf fest `Copy Always` .
 

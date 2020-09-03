@@ -1,5 +1,5 @@
 ---
-title: Auswerten eines Überwachungsausdrucks | Microsoft Docs
+title: Auswerten eines Überwachungs Ausdrucks | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738854"
 ---
-# <a name="evaluate-a-watch-expression"></a>Auswerten eines Uhrausdrucks
+# <a name="evaluate-a-watch-expression"></a>Auswerten eines Überwachungs Ausdrucks
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Wenn Visual Studio bereit ist, den Wert eines Watch-Ausdrucks anzuzeigen, ruft es [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)auf, das wiederum [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)aufruft. Dieser Prozess erzeugt ein [IDebugProperty2-Objekt,](../../extensibility/debugger/reference/idebugproperty2.md) das den Wert und Typ des Ausdrucks enthält.
+Wenn Visual Studio bereit ist, den Wert eines Watch-Ausdrucks anzuzeigen, wird [evaluatesync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)aufgerufen, das wiederum [evaluatesync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)aufruft. Dieser Prozess erzeugt ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das den Wert und den Typ des Ausdrucks enthält.
 
-In dieser `IDebugParsedExpression::EvaluateSync`Implementierung von wird der Ausdruck analysiert und gleichzeitig ausgewertet. Diese Implementierung führt die folgenden Aufgaben aus:
+In dieser Implementierung von `IDebugParsedExpression::EvaluateSync` wird der Ausdruck analysiert und gleichzeitig ausgewertet. Diese Implementierung führt die folgenden Aufgaben aus:
 
-1. Analysiert und wertet den Ausdruck aus, um ein generisches Objekt zu erzeugen, das den Wert und seinen Typ enthält. In C- wird dies `object` als eine While in C++ dargestellt, dies wird als eine `VARIANT`dargestellt.
+1. Analysiert und wertet den Ausdruck aus, um ein generisches Objekt zu schaffen, das den Wert und dessen Typ enthält. In c# wird dies als `object` while in C++ dargestellt, das als dargestellt wird `VARIANT` .
 
-2. Instanziiert eine Klasse `CValueProperty` (in diesem Beispiel genannt), die die `IDebugProperty2` Schnittstelle implementiert und den zurückzugebenden Wert in der Klasse speichert.
+2. Instanziiert eine-Klasse ( `CValueProperty` in diesem Beispiel genannt), die die `IDebugProperty2` -Schnittstelle implementiert, und speichert in der-Klasse den Wert, der zurückgegeben werden soll.
 
-3. Gibt `IDebugProperty2` die Schnittstelle `CValueProperty` aus dem Objekt zurück.
+3. Gibt die- `IDebugProperty2` Schnittstelle aus dem- `CValueProperty` Objekt zurück.
 
 ## <a name="managed-code"></a>Verwalteter Code
-Dies ist eine `IDebugParsedExpression::EvaluateSync` Implementierung des in verwalteten Codes. Die Hilfsmethode `Tokenize` analysiert den Ausdruck in einer Analysestruktur. Die Hilfsfunktion `EvalToken` konvertiert das Token in einen Wert. Die Hilfsfunktion `FindTerm` durchläuft rekursiv die Analysestruktur, `EvalToken` ruft jeden Knoten auf, der einen Wert darstellt, und wendet alle Operationen (Addition oder Subtraktion) im Ausdruck an.
+Dies ist eine Implementierung von `IDebugParsedExpression::EvaluateSync` in verwaltetem Code. Die-Hilfsmethode `Tokenize` analysiert den Ausdruck in eine Analyse Struktur. Die-Hilfsfunktion `EvalToken` konvertiert das Token in einen-Wert. Die Hilfsfunktion durchläuft die Analyse Struktur `FindTerm` rekursiv und ruft `EvalToken` für jeden Knoten, der einen Wert darstellt, auf und wendet alle Vorgänge (Addition oder Subtraktion) im Ausdruck an.
 
 ```csharp
 namespace EEMC
@@ -80,7 +80,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Nicht verwalteter Code
-Dies ist eine `IDebugParsedExpression::EvaluateSync` Implementierung des nicht verwalteten Codes. Die Hilfsfunktion `Evaluate` analysiert und wertet den `VARIANT` Ausdruck aus und gibt einen Haltewert zurück. Die Hilfsfunktion `VariantValueToProperty` bündelt `VARIANT` die `CValueProperty` in einem Objekt.
+Dies ist eine Implementierung von `IDebugParsedExpression::EvaluateSync` in nicht verwaltetem Code. Die Hilfsfunktion `Evaluate` analysiert und wertet den Ausdruck aus und gibt einen zurück, `VARIANT` der den resultierenden Wert enthält. Die-Hilfsfunktion `VariantValueToProperty` bündelt das- `VARIANT` Objekt in ein- `CValueProperty` Objekt.
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -171,6 +171,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Auswerten eines Überwachungsfensterausdrucks](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Beispielimplementierung der Ausdrucksauswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+## <a name="see-also"></a>Siehe auch
+- [Auswerten eines Überwachungs Fenster Ausdrucks](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Beispiel Implementierung der Ausdrucks Auswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

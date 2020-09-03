@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567008"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Word
@@ -41,9 +41,9 @@ ms.locfileid: "74567008"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "74567008"
 
 6. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte**die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **firstdocumentcustomiprojektprojekt** und fügt dem Projekt das **firstdocumentcustomidokument** und die ThisDocument-Codedatei hinzu. Das **firstdocumentcustomizdokument** wird automatisch im Designer geöffnet.
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projekt **firstdocumentanpassung** und fügt dem Projekt das **firstdocumentanpassung** -Dokument und die ThisDocument-Codedatei hinzu. Das **firstdocumentcustomizdokument** wird automatisch im Designer geöffnet.
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>Das Dokument im Designer schließen und erneut öffnen
 
@@ -170,9 +170,9 @@ ms.locfileid: "74567008"
 
 - Bereitstellen von Anpassungen auf Dokument Ebene für Word: bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word-Lösungen](../vsto/word-solutions.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)

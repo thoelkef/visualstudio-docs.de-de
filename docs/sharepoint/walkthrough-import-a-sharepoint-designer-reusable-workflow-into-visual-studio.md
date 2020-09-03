@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015698"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio
@@ -185,7 +186,7 @@ ms.locfileid: "86015698"
 
      Dadurch wird die Liste sofort angezeigt, wenn Sie das Projekt Debuggen.
 
-11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu folgendermaßen vor:
+11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu wie folgt vor:
 
     1. Wählen Sie in **Projektmappen-Explorer**den Knoten **SPD_Workflow_TestFT** aus.
 

@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651062"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen einer SQL-­Datenbank mithilfe eines Designers
@@ -47,24 +47,24 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
 
 - [Auffüllen der Tabellen mit Daten](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Um diese exemplarische Vorgehensweise abzuschließen, stellen Sie sicher, dass Sie SQL Server Data Tools installiert haben. Im Menü **Ansicht** sollte **SQL Server-Objekt-Explorer**angezeigt werden. Wenn dies nicht der Fall ist, wechseln **Sie zu Software**, klicken Sie auf **Visual Studio 2015**, wählen Sie **ändern**aus, und aktivieren Sie das Kontrollkästchen neben **SQL Server Data Tools**.
 
-## <a name="BKMK_CreateNewSQLDB"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> Erstellen eines Projekts und einer lokalen Datenbankdatei
 
 #### <a name="to-create-a-project-and-a-database-file"></a>So erstellen Sie ein Projekt und eine Datenbankdatei
 
-1. Erstellen Sie ein Windows Forms Projekt mit dem Namen `SampleDatabaseWalkthrough`.
+1. Erstellen Sie ein Windows Forms Projekt mit dem Namen `SampleDatabaseWalkthrough` .
 
-2. Wählen Sie in der Menüleiste **Projekt**  > **Neues Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Neues Element hinzufügen**aus.
 
 3. Scrollen Sie in der Liste der Element Vorlagen nach unten, und wählen Sie **Dienst basierte Datenbank**aus.
 
-    ![Element Vorlagen (Dialogfeld)](../data-tools/media/raddata-vsitemtemplates.png "raddata-vsitemtemplates")
+    ![Dialogfeld "Elementvorlagen"](../data-tools/media/raddata-vsitemtemplates.png "raddata-vsitemtemplates")
 
 4. Nennen Sie die Datenbank **SampleDatabase**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-5. Wenn das **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es, indem Sie die Tasten UMSCHALT + ALT + D auswählen, oder wählen Sie in der Menüleiste **Ansicht**  > **anderen Windows**  > **Datenquellen**aus.
+5. Wenn das **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es, indem Sie die Tasten UMSCHALT + ALT + D auswählen, oder wählen Sie **View**in der Menüleiste  >  **andere Windows**-  >  **Datenquellen**anzeigen aus.
 
 6. Wählen Sie im Fenster **Datenquellen** den Link **neue Datenquelle hinzufügen** aus.
 
@@ -72,11 +72,11 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
 
    Wenn Sie das Eigenschaftenfenster für die Datenbank öffnen, können Sie ihre Verbindungszeichenfolge und den Speicherort der primären MDF-Datei anzeigen. Sie werden feststellen, dass sich die Datenbankdatei im Projektordner befindet.
 
-- Wählen Sie in Visual Studio **Ansicht**  > **SQL Server-Objekt-Explorer** aus, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie das Eigenschaften Fenster, indem Sie den Knoten **Datenverbindungen** erweitern, das Kontextmenü für SampleDatabase. mdf öffnen und dann **Eigenschaften**auswählen.
+- Wählen Sie in Visual Studio **Ansicht**  >  **SQL Server-Objekt-Explorer** aus, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie das Eigenschaften Fenster, indem Sie den Knoten **Datenverbindungen** erweitern, das Kontextmenü für SampleDatabase. mdf öffnen und dann **Eigenschaften**auswählen.
 
-- Wenn dieses Fenster nicht bereits geöffnet ist, können Sie alternativ  > **Server-Explorer** **anzeigen** auswählen. Öffnen Sie das Eigenschaften Fenster, indem Sie den Knoten **Datenverbindungen** erweitern. Öffnen Sie das Kontextmenü für SampleDatabase. mdf, und wählen Sie dann **Eigenschaften**aus.
+- Sie können auch **View**  >  **Server-Explorer**auswählen, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie das Eigenschaften Fenster, indem Sie den Knoten **Datenverbindungen** erweitern. Öffnen Sie das Kontextmenü für SampleDatabase. mdf, und wählen Sie dann **Eigenschaften**aus.
 
-## <a name="BKMK_CreateNewTbls"></a>Erstellen von Tabellen, Spalten, primär Schlüsseln und Fremdschlüsseln
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> Erstellen von Tabellen, Spalten, primär Schlüsseln und Fremdschlüsseln
  In diesem Abschnitt erstellen Sie einige Tabellen, einen Primärschlüssel in jeder Tabelle und einige wenige Zeilen mit Beispieldaten. In der folgenden exemplarischen Vorgehensweise erhalten Sie eine Vorstellung davon, wie diese Informationen möglicherweise in einer Anwendung angezeigt werden. Sie erstellen auch einen Fremdschlüssel, um ggf. anzugeben, wie Datensätze in einer Tabelle den Datensätzen in einer anderen Tabelle entsprechen.
 
 #### <a name="to-create-the-customers-table"></a>So erstellen Sie die Tabelle Customers
@@ -96,7 +96,7 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
     |`ContactName`|`nvarchar (50)`|True (ausgewählt)|
     |`Phone`|`nvarchar (24)`|True (ausgewählt)|
 
-4. Öffnen Sie das Kontextmenü für die Zeile `CustomerID`, und wählen Sie dann **Primärschlüssel festlegen**aus.
+4. Öffnen Sie das Kontextmenü für die `CustomerID` Zeile, und wählen Sie dann **Primärschlüssel festlegen**aus.
 
 5. Öffnen Sie das Kontextmenü für die Standardzeile, und wählen Sie dann **Löschen**aus.
 
@@ -106,7 +106,7 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
     CREATE TABLE [dbo].[Customers]
     ```
 
-     Folgendes sollte angezeigt werden:
+     Die Ausgabe sollte in etwa wie folgt aussehen:
 
      ![Tabellen-Designer](../data-tools/media/raddata-table-designer.png "raddata-Tabellen-Designer")
 
@@ -145,9 +145,9 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
 
 1. Öffnen Sie im Kontext Bereich auf der rechten Seite des Rasters das Kontextmenü für **Fremdschlüssel**, und wählen Sie dann **neuen Fremdschlüssel hinzufügen**aus, wie in der folgenden Abbildung dargestellt.
 
-     ![Hinzufügen eines fremd Schlüssels in Tabellen-Designer](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Hinzufügen eines Fremdschlüssels im Tabellen-Designer](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. Ersetzen Sie im angezeigten Textfeld **ToTable** durch `Customers`.
+2. Ersetzen Sie im angezeigten Textfeld **ToTable** durch `Customers` .
 
 3. Aktualisieren Sie im Bereich T-SQL die letzte Zeile, sodass Sie mit dem folgenden Beispiel übereinstimmt:
 
@@ -161,7 +161,7 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
 
      Ihre Änderungen werden in der lokalen Datenbankdatei gespeichert.
 
-## <a name="BKMK_Populating"></a>Auffüllen der Tabellen mit Daten
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> Auffüllen der Tabellen mit Daten
 
 #### <a name="to-populate-the-tables-with-data"></a>So füllen Sie die Tabellen mit Daten
 
@@ -182,9 +182,9 @@ Mithilfe von Visual Studio können Sie eine lokale Datenbankdatei in SQL Server 
     > [!IMPORTANT]
     > Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte "CustomerID" in der Tabelle "Customers" angegeben haben.
 
-7. Wählen Sie in der Menüleiste **Datei**  > **Alle speichern**aus.
+7. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern**.
 
-8. Wählen Sie in der Menüleiste **Datei**  >  Projekt Mappe**Schließen**aus.
+8. Wählen Sie in der Menüleiste **Datei**  >  **Schließen**Projekt Mappe aus.
 
     > [!NOTE]
     > Die empfohlene Vorgehensweise besteht darin, die soeben erstellte Datenbankdatei zu sichern, indem Sie sie kopieren und dann entweder die Kopie an einem anderen Speicherort einzufügen oder der Kopie einen anderen Namen zu geben.

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918249"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navigieren in Beziehungen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind. In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.
+Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind.  In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.
 
 ## <a name="traversing-relationships"></a>Durchlaufen von Beziehungen
 
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Auflisten von Beziehungen
- Alle Eigenschaften des UML-Modells, die mehrere Werte zurückgeben, entsprechen der IEnumerable-< >-Schnittstelle. Dies bedeutet, dass Sie [LINQ-Abfrage Ausdrücke](/dotnet/csharp/linq/index) und die Erweiterungs Methoden verwenden können, die im **System. Linq** -Namespace definiert sind.
+ Alle Eigenschaften des UML-Modells, die mehrere Werte zurückgeben, entsprechen der IEnumerable-<> -Schnittstelle. Dies bedeutet, dass Sie [LINQ-Abfrage Ausdrücke](/dotnet/csharp/linq/index) und die Erweiterungs Methoden verwenden können, die im **System. Linq** -Namespace definiert sind.
 
  Beispiel:
 
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md)

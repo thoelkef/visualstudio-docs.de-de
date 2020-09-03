@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 198497c0f609401639218a54321427e51eb682ff
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918900"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>Erstellen einer WPF-basierten domänenspezifischen Sprache
@@ -23,5 +23,5 @@ Sie können eine domänenspezifische Sprache erstellen, die über einen WPF-Desi
 
  Informationen und Beispiele zu dieser Funktion finden Sie im [Visual Studio-SDK für Visualisierung und Modellierung](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

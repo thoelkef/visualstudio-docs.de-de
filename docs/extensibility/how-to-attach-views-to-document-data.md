@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905901"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Gewusst wie: Anfügen von Sichten an Dokument Daten
@@ -42,6 +42,6 @@ Wenn Sie über eine neue Dokument Ansicht verfügen, können Sie Sie möglicherw
 ## <a name="robust-programming"></a>Stabile Programmierung
  Wenn Visual Studio Ihre Implementierung der Methode aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> , übergibt Sie einen Zeiger auf das vorhandene Dokument Datenobjekt im- `punkDocDataExisting` Parameter, sofern vorhanden. Überprüfen Sie das in zurückgegebene Dokument Datenobjekt `punkDocDataExisting` , um zu bestimmen, ob das Dokument Datenobjekt für Ihren Editor geeignet ist, wie im Hinweis in Schritt 4 des Verfahrens in diesem Thema beschrieben. Wenn dies der Fall ist, sollte die Editorfactory eine zweite Ansicht für die Daten bereitstellen, wie [unter unterstützen mehrerer Dokument Sichten](../extensibility/supporting-multiple-document-views.md)beschrieben. Wenn dies nicht der Fall ist, sollte eine entsprechende Fehlermeldung angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Unterstützung mehrerer Dokument Sichten](../extensibility/supporting-multiple-document-views.md)
 - [Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)
