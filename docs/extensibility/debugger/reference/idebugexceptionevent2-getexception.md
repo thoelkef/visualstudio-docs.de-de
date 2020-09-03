@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: 'IDebugExceptionEvent2:: GetException | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729862"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Ruft eine detaillierte Beschreibung der Ausnahme ab, die dieses Ereignis ausgelöst hat.
+Ruft eine ausführliche Beschreibung der Ausnahme ab, die dieses Ereignis ausgelöst hat.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Parameter
 `pExceptionInfo`\
-[in, out] Eine [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur, die mit der Beschreibung der Ausnahme ausgefüllt wird.
+[in, out] Eine [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) -Struktur, die mit der Beschreibung der Ausnahme ausgefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
 
- [Nur C++ Der Aufrufer ist dafür verantwortlich, alle Zeichenfolgen in der [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur freizugeben und das [IDebugProgram2-Objekt](../../../extensibility/debugger/reference/idebugprogram2.md) in der Struktur freizugeben.
+ [Nur C++] Der Aufrufer ist für das Freigeben von Zeichen folgen in der [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur und das Freigeben des [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekts in der Struktur verantwortlich.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

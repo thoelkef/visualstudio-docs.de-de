@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: abrufungsdebugidecallback | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 461c0ea446c1fefcc730a95eb856963e5b82cec5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729220"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
-Ermöglicht einem Debugmodul, während der Initialisierung einen Rückruf an den Ausdrucksevaluator zu übergeben.
+Ermöglicht es einer Debug-Engine, während der Initialisierung einen Rückruf an die Ausdrucks Auswertung zu übergeben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,7 +40,7 @@ int SetIDebugIDECallback (
 
 ## <a name="parameters"></a>Parameter
 `pCallback`\
-[in] Schnittstelle für den Rückruf.
+in Die Schnittstelle für den Rückruf.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
