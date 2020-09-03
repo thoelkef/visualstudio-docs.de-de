@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4346b0e7459ee3c78669ab9178555370ffac16d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545508"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
@@ -47,7 +47,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 ## <a name="report"></a>Bericht  
  Sie können auf Links in der Berichtsliste klicken, um verschiedene Ansichten zu öffnen und den Bericht zu vergleichen, speichern oder zu filtern. Sie finden die Liste rechts neben dem Zeitachsendiagramm.  
   
-|name|Beschreibung|  
+|Name|Beschreibung|  
 |-|-|  
 |**Gekürzte Aufrufstruktur anzeigen**|Zeigt die leistungsintensivsten Ausführungspfade in der Aufrufstrukturansicht an. Weitere Informationen finden Sie unter [View Tree View](../profiling/call-tree-view.md).|  
 |**Langsamste Zeile anzeigen**|Nicht verfügbar für Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Zeigt die leistungsintensivsten Quellcodezeilen in der Zeilenansicht an. Weitere Informationen finden Sie unter [Zeilen Ansicht](../profiling/lines-view.md).|  

@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Kontextoperator (C++)
                   href: context-operator-cpp.md
-                - name: 'Formatbezeichner in C#'
+                - name: Formatbezeichner in C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudovariablen
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Einstellungen von Eigenschaftenseiten für Webprojekte
               href: property-pages-settings-for-web-projects.md
-            - name: 'Projekteinstellungen für C#-Debugkonfigurationen'
+            - name: Projekteinstellungen für C#-Debugkonfigurationen
               href: project-settings-for-csharp-debug-configurations.md
             - name: "Projekteinstellungen für eine Visual\_Basic-Debugkonfiguration"
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Schnellansichtarchitektur
                   href: visualizer-architecture.md
-                - name: 'Schreiben einer Schnellansicht in C#'
+                - name: Schreiben einer Schnellansicht in C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Schreiben einer Schnellansicht in Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -210,7 +210,7 @@
               href: edit-and-continue-visual-csharp.md
             - name: 'Verwenden von „Bearbeiten und Fortfahren“ [C#]'
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'Unterstützte Codeänderungen (C#)'
+            - name: Unterstützte Codeänderungen (C#)
               href: supported-code-changes-csharp.md
         - name: "Bearbeiten und Fortfahren (Visual\_Basic)"
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
+        - name: Bearbeiten und Fortfahren wird für F# nicht unterstützt
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Verwenden von Abbilddateien
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Debuggen von XAML in Blend für Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Navigieren in einer Debugsitzung (Xaml und C#)'
+            - name: Navigieren in einer Debugsitzung (Xaml und C#)
               items:
-                - name: 'Navigieren in einer Debugsitzung (XAML und C#)'
+                - name: Navigieren in einer Debugsitzung (XAML und C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'Beispielcode für die Navigation im Debugger (Xaml und C#)'
+                - name: Beispielcode für die Navigation im Debugger (Xaml und C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Auslösen von Anhalten-, Fortsetzen- und Hintergrundereignissen (für Windows Store)'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: Anzeigen von WPF-Ablaufverfolgungsinformationen
               href: how-to-display-wpf-trace-information.md
-        - name: 'Debuggen von F#'
+        - name: Debuggen von F#
           href: debugging-f-hash.md
     - name: Debuggen von systemeigenem Code
       items:

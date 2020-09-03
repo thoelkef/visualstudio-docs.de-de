@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 78d950b777d866835ef516c4910180b21de295e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545001"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
@@ -86,7 +86,7 @@ In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Date
 ### <a name="net-languages"></a>.NET-Sprachen
  Alle .NET-Daten Zugriffe, einschließlich in .net Core, basieren auf ADO.net, einer Reihe von Klassen, die eine Schnittstelle für den Zugriff auf eine beliebige Art von Datenquelle definieren, sowohl relationale als auch nicht relationale. Visual Studio verfügt über mehrere Tools und Designer, die mit ADO.NET verwendet werden können, um eine Verbindung mit Datenbanken herzustellen, die Daten zu bearbeiten und die Daten dem Benutzer vorzustellen. In der Dokumentation in diesem Abschnitt wird beschrieben, wie diese Tools verwendet werden. Sie können auch direkt mit den ADO.NET-Befehls Objekten programmieren. Weitere Informationen zum direkten Aufrufen der ADO.NET-APIs finden Sie unter [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in der MSDN Library.
 
- Informationen zur Datenzugriffs Dokumentation, die sich speziell auf ASP.net bezieht, finden Sie unter [Arbeiten mit Daten](/aspnet/web-forms/overview/presenting-and-managing-data/) auf der ASP.NET-Website. Ein Tutorial zur Verwendung von Entity Framework mit ASP.NET MVC finden [Sie unter Getting Started with Entity Framework 6 Code First using MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Informationen zur Datenzugriffs Dokumentation, die sich speziell auf ASP.net bezieht, finden Sie unter  [Arbeiten mit Daten](/aspnet/web-forms/overview/presenting-and-managing-data/) auf der ASP.NET-Website. Ein Tutorial zur Verwendung von Entity Framework mit ASP.NET MVC finden [Sie unter Getting Started with Entity Framework 6 Code First using MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Universelle Windows-Plattform-Apps (UWP) in c# oder Visual Basic können mithilfe des Microsoft Azure SDK für .net auf Azure Storage und andere Azure-Dienste zugreifen. Die Windows. Web. HttpClient-Klasse ermöglicht die Kommunikation mit einem beliebigen Rest-Dienst. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit einem HTTP-Server mithilfe von Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -118,20 +118,20 @@ In Visual Studio können Sie Anwendungen erstellen, die eine Verbindung mit Date
 #### <a name="data-modeling"></a>Datenmodellierung
  Visual Studio stellt keine ORM-Ebene für C++ bereit.  [ODB](https://www.codesynthesis.com/products/odb/) ist eine beliebte Open Source-ORM für C++.
 
- Weitere Informationen zu Legacy-Visual C++ Datenzugriffs Technologien finden Sie unter [Datenzugriff](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Weitere Informationen zu Legacy-Visual C++ Datenzugriffs Technologien finden Sie unter  [Datenzugriff](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [JavaScript in Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) ist eine erstklassige Sprache zum Entwickeln von plattformübergreifenden apps, UWP-apps, Cloud Services, Websites und Web-Apps. Sie können Bower, Grunt, Gulp, NPM und nuget in Visual Studio verwenden, um Ihre bevorzugten JavaScript-Bibliotheken und-Daten Bankprodukte zu installieren. Stellen Sie eine Verbindung mit Azure Storage und Diensten her, indem Sie sdken von der [Azure-Website](https://azure.microsoft.com/)herunterladen  Edge.js ist eine Bibliothek, die serverseitiges JavaScript (Node.js) mit ADO.NET-Datenquellen verbindet.
 
 ### <a name="python"></a>Python
- Installieren Sie [python Tools für Visual Studio](http://microsoft.github.io/PTVS/) zusammen mit Ihrem bevorzugten python-Framework, um CPython-oder IronPython (.net)-Anwendungen zu erstellen.  Die python Tools für Visual Studio-Website enthält mehrere Tutorials zum Verbinden mit Daten, einschließlich [Django und SQL-Datenbank in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django und MySQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) und [Bottle und MongoDB in Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+ Installieren Sie  [python Tools für Visual Studio](http://microsoft.github.io/PTVS/) zusammen mit Ihrem bevorzugten python-Framework, um CPython-oder IronPython (.net)-Anwendungen zu erstellen.  Die python Tools für Visual Studio-Website enthält mehrere Tutorials zum Verbinden mit Daten, einschließlich [Django und SQL-Datenbank in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django und MySQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) und [Bottle und MongoDB in Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Installieren von Datenbanksystemen, Tools und Beispielen](../data-tools/installing-database-systems-tools-and-samples.md) Erläutert, wie Sie Daten Bankprodukte und die Visual Studio-Erweiterungen oder-Treiber, die diese unterstützen, abrufen und wie Sie Beispiel Datenbanken für experimentieren und Lernzwecke finden.
 
  [Visual Studio-Daten Tools für .net](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Beschreibt die Verwendung von Visual Studio Tool Fenstern zum Herstellen einer Verbindung mit Datenquellen, zum Erstellen von Datasets oder Entity Framework Modellen und zum Binden der Daten an Steuerelemente der Benutzeroberfläche.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Zugehörige Themen
  [Daten, Geräte und Analysen](https://msdn.microsoft.com/data-and-devices) Bietet eine Einführung in die Microsoft Intelligent Cloud, einschließlich der Cortana Analytics Suite und der Unterstützung für Internet der Dinge.
 
  [Microsoft Azure Storage](/azure/storage/) Beschreibt Azure Storage und das Erstellen von Anwendungen mithilfe von Azure-blobdateien,-Tabellen,-Warteschlangen und-Dateien.

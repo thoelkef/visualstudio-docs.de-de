@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545222"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
@@ -42,22 +42,22 @@ ms.locfileid: "85545222"
 
 |C#|Visual Basic|C++|Alternativer Name|
 |---------|------------------|-----------|--------------------|
-|+ (binär)|+|+ (binär)|Add|
-|+=|+=|+=|Add|
-|&|Und|&|BitwiseAnd|
+|+ (binär)|+|+ (binär)|Hinzufügen|
+|+=|+=|+=|Hinzufügen|
+|&|And|&|BitwiseAnd|
 |&=|Und =|&=|BitwiseAnd|
 |&#124;|oder|&#124;|BitwiseOr|
 |&#124;=|Oder =|&#124;=|BitwiseOr|
 |--|–|--|Dekrement|
 |/|/|/|Dividieren|
 |/=|/=|/=|Dividieren|
-|==|=|==|Equals|
+|==|=|==|gleich|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
 |>|>|>|Vergleich|
 |>=|>=|>=|Vergleich|
 |++|–|++|Increment|
-|<>|!=|Equals|
+|<>|!=|gleich|
 |<<|<<|<<|Linke UMSCHALTTASTE|
 |<<=|<<=|<<=|Linke UMSCHALTTASTE|
 |<|<|<|Vergleich|
@@ -74,10 +74,10 @@ ms.locfileid: "85545222"
 =|–|>>=|Lesefolge wechseln|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
 |-=|–|-=|Subtrahieren|
-|wahr|IsTrue|–|IsTrue (Eigenschaft)|
+|true|IsTrue|–|IsTrue (Eigenschaft)|
 | - (unär)   |–|-|Negate|
 |+ (unär)|–|+|Plus|
-|false|IsFalse|False|IsTrue (Eigenschaft)|
+|false|IsFalse|Falsch|IsTrue (Eigenschaft)|
 
  N/A = = kann nicht in der ausgewählten Sprache überladen werden.
 

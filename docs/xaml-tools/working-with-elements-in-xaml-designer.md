@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921094"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
@@ -107,7 +107,7 @@ Wenn Sie die Gruppierung von Elementen aufheben möchten, klicken Sie mit der re
 
 Sie können Standardwerte für bestimmte Layouteigenschaften eines Elements wiederherstellen, indem Sie die Befehlen zum Zurücksetzen von Layouts verwenden. Mit diesem Befehl können Sie den Rand, die Ausrichtung, die Breite, Höhe sowie Größe eines Elements zurücksetzen, entweder für jedes Element einzeln oder zusammen.
 
-Um das Element Layout zurückzusetzen, klicken Sie mit der rechten Maustaste auf das Element im Dokument Gliederungs Fenster oder auf der Zeichenfläche, und wählen Sie dann **Layout** > **Zurücksetzen** *propertyName*aus, wobei *propertyName* die Eigenschaft ist, die Sie zurücksetzen möchten (oder wählen Sie **Layout** > **Zurücksetzen alle** , um alle Layouteigenschaften für das Element zurückzusetzen)
+Um das Element Layout zurückzusetzen, klicken Sie mit der rechten Maustaste auf das Element im Dokument Gliederungs Fenster oder auf der Zeichenfläche, und wählen Sie dann **Layout**  >  **Zurücksetzen** *propertyName*aus, wobei *propertyName* die Eigenschaft ist, die Sie zurücksetzen möchten (oder wählen Sie **Layout**  >  **Zurücksetzen alle** , um alle Layouteigenschaften für das Element zurückzusetzen)
 
 ## <a name="see-also"></a>Weitere Informationen
 
