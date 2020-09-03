@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Microsoft Docs
+title: 'IDebugObject2:: geticorentbugvalue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726118"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-Ruft ein verwaltetes Codeobjekt ab, das den diesem Objekt zugeordneten Wert darstellt.
+Ruft ein verwaltetes Code Objekt ab, das den diesem-Objekt zugeordneten Wert darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Parameter
 `ppUnk`\
-[out] `IUnknown` Schnittstelle, die diesen Alias darstellt. Diese Schnittstelle kann für `ICorDebugValue` die Schnittstelle abgefragt werden.
+[out] `IUnknown` Schnittstelle, die diesen Alias darstellt. Diese Schnittstelle kann für die-Schnittstelle abgefragt werden `ICorDebugValue` .
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Das `ICorDebugValue` Objekt ist eine Common Language Runtime-Schnittstelle, die einen Wert darstellt.
+ Das- `ICorDebugValue` Objekt ist eine Common Language Runtime-Schnittstelle, die einen-Wert darstellt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

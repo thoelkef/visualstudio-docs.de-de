@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 17f0a540a436316d3a4fb3b71a2a51b1c5a90a6d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535069"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Assemblys mit ComVisibleAttribute markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache

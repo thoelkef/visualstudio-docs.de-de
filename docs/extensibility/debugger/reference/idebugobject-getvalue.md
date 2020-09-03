@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Microsoft Docs
+title: 'Idebugobject:: GetValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45d555cbea6bf8239ef4527ba982072e17532af4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726541"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Ruft den Wert des Objekts als eine fortlaufende Reihe von Bytes ab.
+Ruft den Wert des-Objekts als aufeinander folgende Reihe von Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetValue(
 
 ## <a name="parameters"></a>Parameter
 `pValue`\
-[in, out] Ein Array, das mit einer aufeinanderfolgenden Reihe von Bytes gefüllt wird, die den Wert des Objekts darstellen.
+[in, out] Ein Array, das mit einer aufeinanderfolgenden Reihe von Bytes gefüllt ist, die den Wert des-Objekts darstellen.
 
 `nSize`\
-[in] Die maximale Anzahl von Bytes, die abgerufen werden sollen.
+in Die maximale Anzahl der abzurufenden bytes.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie die Gesamtzahl der Wertbytes ab, die durch Aufrufen der [GetSize-Methode](../../../extensibility/debugger/reference/idebugobject-getsize.md) abgerufen werden können.
+ Rufen Sie die Gesamtzahl der Bytes ab, die durch Aufrufen der [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) -Methode abgerufen werden können.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

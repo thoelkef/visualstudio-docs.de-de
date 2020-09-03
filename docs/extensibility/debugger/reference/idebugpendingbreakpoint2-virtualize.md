@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualisieren | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: Virtualize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725654"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Schaltet den virtualisierten Zustand dieses ausstehenden Haltepunkts um. Wenn ein ausstehender Haltepunkt virtualisiert wird, versucht das Debugmodul, ihn jedes Mal zu binden, wenn neuer Code in das Programm geladen wird.
+Schaltet den virtualisierten Zustand dieses ausstehenden Breakpoints um. Wenn ein ausstehender Haltepunkt virtualisiert wird, versucht die Debug-Engine jedes Mal, wenn neuer Code in das Programm geladen wird, Sie zu binden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int Virtualize(
 
 ## <a name="parameters"></a>Parameter
 `fVirtualize`\
-[in] Legen Sie einen`TRUE`Wert ungleich Null ( ) fest, um den ausstehenden Haltepunkt zu virtualisieren, oder auf Null (`FALSE`), um die Virtualisierung zu deaktivieren.
+in Legen Sie auf ungleich NULL () fest, `TRUE` um den ausstehenden Breakpoint zu virtualisieren, oder auf NULL ( `FALSE` ), um die Virtualisierung zu deaktivieren.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_BP_DELETED` Wenn der Breakpoint gelöscht wurde.
 
 ## <a name="remarks"></a>Bemerkungen
-Ein virtualisierter Haltepunkt wird jedes Mal gebunden, wenn Code geladen wird.
+Jedes Mal, wenn Code geladen wird, wird ein virtualisierter Haltepunkt gebunden.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CPendingBreakpoint` , das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)

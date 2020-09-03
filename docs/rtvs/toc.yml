@@ -10,13 +10,13 @@
       href: installing-r-tools-for-visual-studio.md
     - name: Hilfe
       href: getting-started-help.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Erste Schritte mit R
       href: getting-started-with-r.md
 - name: Beispiele
   href: getting-started-samples.md
-- name: Gewusst-wie-Anleitungen
+- name: Anleitungen
   items:
     - name: R-Projekte
       items:
@@ -56,9 +56,9 @@
       href: variable-explorer.md
     - name: Debuggen
       href: debugging-r-in-visual-studio.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastatur
       href: options-for-r-tools-in-visual-studio.md
-    - name: Häufig gestellte Fragen (FAQs)
+    - name: Häufig gestellte Fragen
       href: faq.md

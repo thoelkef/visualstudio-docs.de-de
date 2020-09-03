@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField | Microsoft Docs
+title: Idebugpointerfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725596"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
@@ -29,25 +29,25 @@ IDebugPointerField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Der Symbolanbieter implementiert diese Schnittstelle, um einen Zeiger darzustellen.
+ Der Symbol Anbieter implementiert diese Schnittstelle, um einen Zeiger darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Verwenden Sie [QueryInterface,](/cpp/atl/queryinterface) um diese Schnittstelle von der `FIELD_TYPE_POINTER` [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) abzuholen, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zurückgibt.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Verwenden Sie [QueryInterface](/cpp/atl/queryinterface) , um diese Schnittstelle von der [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle abzurufen, wenn [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zurückgibt `FIELD_TYPE_POINTER` .
 
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden `IDebugField` `IDebugContainerField` auf der und Schnittstellen implementiert diese Schnittstelle die folgende Methode:
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
+ Zusätzlich zu den Methoden der `IDebugField` -Schnittstelle und der- `IDebugContainerField` Schnittstelle implementiert diese Schnittstelle die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das das Ziel des Zeigers beschreibt.|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt ein [idebugfeld](../../../extensibility/debugger/reference/idebugfield.md) zurück, das das Ziel des Zeigers beschreibt.|
 
 ## <a name="remarks"></a>Bemerkungen
- In C/C++ kann ein Zeiger ein Container sein, wenn er mit Arraynotation verwendet wird. Beispielsweise verfügt `char *pString`given `pString` über einen Zeiger `char`typ auf . `pString[3]`hat den Typ eines Containers, der `char` ein Zeiger darauf ist, der auf das vierte Element dieses Containers verweist.
+ In C/C++ kann ein Zeiger ein Container sein, wenn er mit der Array Notation verwendet wird. Hat z. b `char *pString` `pString` . einen Typ von Zeiger auf `char` . `pString[3]` weist den Typ eines Containers auf, bei dem es sich um einen Zeiger auf handelt, der auf `char` das vierte Element dieses Containers verweist.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

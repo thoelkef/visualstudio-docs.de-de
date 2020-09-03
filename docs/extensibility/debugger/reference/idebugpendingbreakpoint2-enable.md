@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Aktivieren | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: enable | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725888"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Schaltet den aktivierten Status des ausstehenden Haltepunkts um.
+Schaltet den aktivierten Zustand des ausstehenden Breakpoints um.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>Parameter
 `fEnable`\
-[in] Legen Sie einen`TRUE`Wert ungleich Null ( )`FALSE`fest, um einen ausstehenden Haltepunkt zu aktivieren, oder auf Null ( ) zum Deaktivieren.
+in Legen Sie auf ungleich NULL ( `TRUE` ) fest, um einen ausstehenden Haltepunkt zu aktivieren, oder auf NULL (), um ihn zu `FALSE` deaktivieren.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_BP_DELETED` Wenn der Breakpoint gelöscht wurde.
 
 ## <a name="remarks"></a>Bemerkungen
 Wenn ein ausstehender Haltepunkt aktiviert oder deaktiviert ist, werden alle von ihm gebundenen Haltepunkte auf denselben Zustand festgelegt.
 
-Diese Methode kann so oft wie nötig aufgerufen werden, auch wenn der Haltepunkt bereits aktiviert oder deaktiviert ist.
+Diese Methode kann so oft wie nötig aufgerufen werden, auch wenn der Breakpoint bereits aktiviert oder deaktiviert ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CPendingBreakpoint` , das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

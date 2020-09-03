@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535043"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|

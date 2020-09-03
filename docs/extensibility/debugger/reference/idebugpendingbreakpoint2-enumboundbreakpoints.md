@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: enumboundbreakpoints | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725868"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
-Zählt alle Haltepunkte auf, die von diesem ausstehenden Haltepunkt gebunden sind.
+Listet alle Haltepunkte auf, die von diesem ausstehenden Haltepunkt gebunden sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt ein [IEnumDebugBoundBreakpoints2-Objekt](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) zurück, das die gebundenen Haltepunkte aufzählt.
+vorgenommen Gibt ein [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) -Objekt zurück, das die gebundenen Breakpoints auflistet.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_BP_DELETED` Wenn der Breakpoint gelöscht wurde.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) verfügbar macht.
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CPendingBreakpoint` , das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

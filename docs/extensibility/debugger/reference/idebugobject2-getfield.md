@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
+title: 'IDebugObject2:: GetField | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726220"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Ruft den Typ dieses Objekts ab.
+Ruft den Typ dieses-Objekts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetField(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt ein [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück, wenn kein NULL-Wert.
+vorgenommen Gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt zurück, wenn kein NULL-Wert ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
  Ein Feld beschreibt den Typ des Objekts.

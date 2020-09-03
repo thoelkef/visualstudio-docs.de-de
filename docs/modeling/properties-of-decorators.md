@@ -23,7 +23,7 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 
 ## <a name="expandcollapse-decorator"></a>Decorator erweitern/reduzieren
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DisplayName|Der Name des Decorators, der im generierten Designer angezeigt wird.|Erweitern des aufklappen-Decorators|
 |Name|Der Name des Decorators.|ExpandCollapseDecorator|
@@ -36,7 +36,7 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 
 ## <a name="icon-decorator"></a>Symboldecorator
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DefaultIcon|Der Pfad der Symbol-oder Bilddatei, die angezeigt werden soll.|\<none>|
 |DisplayName|Der Name des Decorator-Designers, der im generierten Designer angezeigt werden soll.|Symboldecorator|
@@ -50,7 +50,7 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DefaultText|Der Standardtext, der angezeigt werden soll.|Bezeichnung|
 |DisplayName|Der Name des Decorator-Designers, der im generierten Designer angezeigt werden soll.|Bezeichnung|
@@ -64,6 +64,6 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 |Offsetfromshape|Der Offset des Decorator-Konstruktors von der Form relativ zu seiner Standardposition in Zoll. (Nur für Connectors.)|0|
 |Position|Die Standardposition des Decorator-Konstruktors.|TargetBottom|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

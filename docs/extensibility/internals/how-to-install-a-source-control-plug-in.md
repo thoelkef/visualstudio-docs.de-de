@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905367"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins
@@ -28,7 +28,7 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 3. Registrieren Sie die dll, indem Sie entsprechende Registrierungseinträge erstellen.
 
 ## <a name="integration-with-visual-studio"></a>Integration in Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt Quellcodeverwaltungs-Plug-ins, die der Quellcodeverwaltungs-Plug-in-API entsprechen.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt Quellcodeverwaltungs-Plug-ins, die der Quellcodeverwaltungs-Plug-in-API entsprechen.
 
 ### <a name="register-the-source-control-plug-in"></a>Quellcodeverwaltungs-Plug-in registrieren
  Bevor eine integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) in das Quell Code Verwaltungssystem aufgerufen werden kann, muss zuerst die Quellcodeverwaltungs-Plug-in-dll gefunden werden, die die API exportiert.
@@ -116,5 +116,5 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 
  Wenn beide Bedingungen erfüllt sind, können die neuen Funktionen, die in den Versionen 1,2 und 1,3 unterstützt werden, aufgerufen werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Einstieg in die Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

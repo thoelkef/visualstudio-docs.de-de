@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382652"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden
@@ -76,5 +76,5 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
    Verwenden Sie die- <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> Eigenschaft, um die APIs nur aufzurufen, <xref:System.Deployment.Application> Wenn die Anwendung bereitgestellt wird. die APIs sollten beim Debuggen in nicht aufgerufen werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Deployment.Application>

@@ -132,7 +132,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der- `Multiplicity` Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
 
-|Multiplizitätstyp|BESCHREIBUNG|
+|Multiplizitätstyp|Beschreibung|
 |-|-|
 |0.. * (null bis viele)|Jede Instanz der Domänen Klasse kann über mehrere Instanzen der Beziehung oder keine Instanzen der Beziehung verfügen.|
 |0.. 1 (null bis eins)|Jede Instanz der Domänen Klasse kann nicht mehr als eine Instanz der Beziehung oder keine Instanzen der Beziehung aufweisen.|
@@ -148,6 +148,6 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Eine abgeleitete Beziehung spezialisiert ihre Basis Beziehung. Die Domänen Klassen, mit denen Sie verknüpft ist, sollten von oder den gleichen Klassen abgeleitet werden, die durch die Basis Beziehung verknüpft sind. Wenn eine Verknüpfung der abgeleiteten Beziehung in einem Modell erstellt wird, handelt es sich um eine Instanz der abgeleiteten und der Basis Beziehungen. Sie können im Programmcode zum umgekehrten Ende der Verknüpfung navigieren, indem Sie die Eigenschaften verwenden, die entweder von der Basis oder von der abgeleiteten Klasse generiert werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

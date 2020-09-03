@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382587"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Vorgehensweise: Ändern der Sprache für die Veröffentlichung einer ClickOnce-Anwendung
@@ -44,7 +44,7 @@ Die- `Publish language` Eigenschaft kann im Dialogfeld **Veröffentlichungs Opti
 
 5. Wählen Sie im Dialogfeld **Veröffentlichungs Optionen** in der Dropdown Liste **Veröffentlichungs Sprache** eine Sprache und Kultur aus, und klicken Sie dann auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
-- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

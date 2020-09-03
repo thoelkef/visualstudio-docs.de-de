@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1495e8d532d5ed79bb98188543608c748b5b5038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664117"
 ---
 # <a name="texture-nodes"></a>Texturknoten
@@ -23,7 +23,7 @@ Im Shader Designer beproben Texturknoten verschiedene Texturtypen und Geometrien
 
 ## <a name="texture-node-reference"></a>Übersicht über Texturknoten
 
-|Knoten|Details|Eigenschaften|
+|Node|Details|Eigenschaften|
 |----------|-------------|----------------|
 |**Cubemap-Beispiel**|Entnimmt ein Farbsample aus einer Cubemap an den angegebenen Koordinaten.<br /><br /> Sie können mithilfe einer Cubemap Farbdetails für Reflexionseffekte bereitstellen oder Texturen auf ein kugelförmiges Objekt anwenden und dabei weniger Verzerrung als bei einer 2D-Textur erzielen.<br /><br /> **Eingabe:**<br /><br /> `UVW`: `float3`<br /> Ein Vektor, der die Position auf dem Texturcube, auf dem das Sample entnommen wurde. Das Sample wird am Schnittpunkt des Vektors mit dem Cube erfasst.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Farbbeispiel.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist.|
 |**Normalmap-Sample**|Entnimmt ein Normalsample von einer 2D-Normalmap an den angegebenen Koordinaten<br /><br /> Sie können mit einer Normalmap die Darstellung der zusätzlichen geometrischen Details auf der Oberfläche eines Objekts simulieren. Normalmap enthalten gepackte Daten die einen Einheitsvektor anstelle von Farbdaten darstellen<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten, an denen das Sample entnommen wird.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Normalsample|**Achsenanpassung**<br /> Der Faktor zum Anpassen der Händigkeit des Normalmap-Samples.<br /><br /> **Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist.|

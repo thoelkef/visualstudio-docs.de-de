@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize | Microsoft Docs
+title: 'Idebugobject:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726567"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
-Ruft die Größe des Objekts in Bytes ab.
+Ruft die Größe des-Objekts in Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>Parameter
 `pnSize`\
-[out] Gibt die Größe in Bytes zurück.
+vorgenommen Gibt die Größe in Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Verwenden Sie die [GetValue-Methode,](../../../extensibility/debugger/reference/idebugobject-getvalue.md) um den Wert als eine Sequenz von Bytes abzurufen.
+ Verwenden Sie die [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) -Methode, um den Wert als Byte Sequenz abzurufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
