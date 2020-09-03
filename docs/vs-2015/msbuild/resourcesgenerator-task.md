@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682138"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator-Aufgabe
@@ -35,8 +35,8 @@ Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindeste
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`OutputPath`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad des Ausgabeverzeichnisses an. Wenn der Pfad kein absoluter Pfad ist, wird er als relativer Pfad zum Stammverzeichnis des Projekts behandelt.|  
-|`OutputResourcesFile`|Erforderlicher **ITaskItem[]**-Ausgabeparameter.<br /><br /> Gibt Pfad und Namen der generierten RESOURCES-Datei an. Wenn der Pfad kein absoluter Pfad ist, wird die RESOURCES-Datei relativ zum Stammverzeichnis des Projekts generiert.|  
-|`ResourcesFiles`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt eine oder mehrere Ressourcen zum Einbetten in die generierte RESOURCES-Datei an.|  
+|`OutputResourcesFile`|Erforderlicher **ITaskItem[]** -Ausgabeparameter.<br /><br /> Gibt Pfad und Namen der generierten RESOURCES-Datei an. Wenn der Pfad kein absoluter Pfad ist, wird die RESOURCES-Datei relativ zum Stammverzeichnis des Projekts generiert.|  
+|`ResourcesFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt eine oder mehrere Ressourcen zum Einbetten in die generierte RESOURCES-Datei an.|  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird eine RESOURCES-Datei mit einer einzelnen BMP-Ressource generiert. Die BMP-Ressource wird in einem Verzeichnis generiert, das relativ zum Stammverzeichnis des Projekts ist.  
@@ -55,9 +55,9 @@ Der <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>-Task bettet mindeste
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Aufgaben Referenz](../msbuild/wpf-msbuild-task-reference.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)   
+ [Entwickeln einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

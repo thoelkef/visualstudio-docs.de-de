@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315004"
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
@@ -132,6 +132,6 @@ Klicken Sie auf **View > Editor Columns > 1 column** (Ansicht > Editor-Spalten >
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der Visual Studio-IDE (unter Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

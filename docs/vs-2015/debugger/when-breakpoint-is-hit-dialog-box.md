@@ -1,5 +1,5 @@
 ---
-title: Haltepunkt ist bei Treffer Dialogfeld | Microsoft-Dokumentation
+title: Dialogfeld „Beim Erreichen eines Haltepunktes“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149408"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Dialogfeld "Beim Erreichen eines Haltepunktes"
@@ -33,7 +33,7 @@ ms.locfileid: "68149408"
 
 In diesem Dialogfeld können Sie die Aktion anpassen, die beim Erreichen eines Haltepunkts ausgeführt wird.  
   
-## <a name="uielement-list"></a>Liste der Benutzeroberflächenelemente  
+## <a name="uielement-list"></a>UIElement-Liste  
  **Meldung drucken**  
  Druckt eine Meldung mithilfe der DebuggerDisplay-Syntax. Weitere Informationen finden Sie unter [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).  
   
@@ -42,6 +42,6 @@ In diesem Dialogfeld können Sie die Aktion anpassen, die beim Erreichen eines H
  **Ausführung fortsetzen**  
  Dieses Steuerelement ist nur aktiviert, wenn **Meldung drucken** ausgewählt ist. Durch Auswählen dieses Steuerelements können Sie einen Haltepunkt als Ablaufverfolgungspunkt verwenden, um die Programmausführung zu verfolgen, statt beim Erreichen des Haltepunkts zu unterbrechen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden von Breakpoints](../debugger/using-breakpoints.md)   
  [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)

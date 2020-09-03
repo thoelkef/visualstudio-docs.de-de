@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Microsoft-Dokumentation
+title: IDebugProperty3::D estroyobjectid | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a610cd5c947d77048e86b31c92298f6cc18607d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193425"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Zerstört die eindeutige ID dieser Eigenschaft zugeordnet, der angibt, dass der Aufrufer nicht mehr wichtig, um diese Eigenschaft über alle anderen Eigenschaften eindeutig zu identifizieren.  
+Zerstört die eindeutige ID, die dieser Eigenschaft zugeordnet ist, und gibt an, dass der Aufrufer nicht mehr interessiert ist, diese Eigenschaft eindeutig aus allen anderen Eigenschaften zu identifizieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn die Debug-Engine nicht eindeutige IDs für eine Eigenschaft zu unterstützen (da es bereits diese eindeutig intern nachverfolgt), wird einfach zurückgegeben kann `E_NOTIMPL` für diese Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn die Debug-Engine eindeutige IDs für eine Eigenschaft nicht unterstützen muss (weil Sie diese bereits eindeutig nachverfolgt), kann Sie einfach `E_NOTIMPL` für diese Methode zurückgeben.  
   
- Eindeutige IDs werden erstellt, durch einen Aufruf der [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) Methode, wenn der Aufrufer sicherstellen, dass diese Eigenschaft für alle anderen Eigenschaften eindeutig identifiziert wird.  
+ Eindeutige IDs werden mit einem Aufruf der Methode " [kreateobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) " erstellt, wenn der Aufrufer sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

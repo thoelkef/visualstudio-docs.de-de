@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675614"
 ---
 # <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
@@ -77,7 +77,7 @@ HINWEIS]
   
 8. Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.  
   
-9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` auf die **zusätzliche Optionen** Textfeld.  
+9. Wählen Sie den C/C++-Befehlszeilenknoten „Konfigurationseigenschaften“ der Eigenschaftenseite des Projekts aus, und fügen Sie `(`[/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)`)` dem Textfeld **Weitere Optionen** hinzu.  
   
     > [!WARNING]
     > Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.  
@@ -92,6 +92,6 @@ for (x=0; x<10; x++)
   
  Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Wenn Sie das Fenster **Disassemblierung** anzeigen, wird die [Schritteinheit](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) zur besseren Steuerung automatisch auf „Befehl“ festgelegt. Dies ist bei der schrittweisen Ausführung von optimiertem Code von Vorteil.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

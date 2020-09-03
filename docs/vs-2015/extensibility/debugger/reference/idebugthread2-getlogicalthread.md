@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Microsoft-Dokumentation
+title: 'IDebugThread2:: getlogicalthread | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153052"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Debug-Engines implementieren Sie diese Methode nicht.  
+Diese Methode wird von Debug-engines nicht implementiert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,13 +42,13 @@ int GetLogicalThread( 
   
 #### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- [in] Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das den Stapelrahmen darstellt.  
+ in Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Objekt, das den Stapel Rahmen darstellt.  
   
  `ppLogicalThread`  
- [out] Gibt eine `IDebugLogicalThread2` Schnittstelle, die den zugeordneten logischen Thread darstellt. Eine Implementierung der Debug-Engine sollte dies auf einen null-Wert festgelegt.  
+ vorgenommen Gibt eine- `IDebugLogicalThread2` Schnittstelle zurück, die den zugeordneten logischen Thread darstellt. Eine Debug-Engine-Implementierung sollte diese auf einen NULL-Wert festlegen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Debug-Engine-Implementierungen immer return `E_NOTIMPL`.  
+ Debug-Engine-Implementierungen geben immer zurück `E_NOTIMPL` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

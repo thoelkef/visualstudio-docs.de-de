@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 7ca84f1edfc3290fe53e00a5b7f8c85f07b0c66b
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624185"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-Clouddienst über Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-Clouddienst aus Visual Studio
 
 Um die Vorteile der Hostingdienste und der Skalierbarkeit von Azure zu nutzen, kann es ratsam sein, Ihre Webanwendung zu einem Azure-Clouddienst zu migrieren und dort bereitzustellen. Es sind nur geringfügige Änderungen erforderlich. Dieser Artikel behandelt nur die Bereitstellung in Clouddiensten; Informationen für App Service finden Sie unter [Bereitstellen von Web-Apps in Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Um die Vorteile der Hostingdienste und der Skalierbarkeit von Azure zu nutzen, k
 
 Alle auftretenden Warnungen oder Fehler geben Probleme an, die vor der Bereitstellung in Azure zu beheben sind, wie z.B. fehlende Assemblys.
 
-Wenn Sie Ihre Anwendung erstellen, lokal mit dem Serveremulator ausführen oder in Azure veröffentlichen, wird u. U. der folgende Fehler angezeigt: „Der angegebene Pfad oder Dateiname bzw. beide sind zu lang.“ Dieser Fehler gibt an, dass der vollqualifizierte Azure-Projektname länger als 146 Zeichen ist. Um das Problem zu beheben, verschieben Sie die Projektmappe in einen anderen Ordner mit kürzerem Pfad.
+Wenn Sie Ihre Anwendung erstellen, lokal mit dem Serveremulator ausführen oder unter Azure veröffentlichen, wird u.U. der folgende Fehler angezeigt: „Der angegebene Pfad oder Dateiname bzw. beide sind zu lang.“ Dieser Fehler gibt an, dass der vollqualifizierte Azure-Projektname länger als 146 Zeichen ist. Um das Problem zu beheben, verschieben Sie die Projektmappe in einen anderen Ordner mit kürzerem Pfad.
 
 Weitere Informationen dazu, wie Sie alle Warnungen wie Fehler behandeln, finden Sie unter [Konfigurieren eines Azure-Clouddienstprojekts mit Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -58,9 +58,9 @@ Wenn Sie über eine Verbindungszeichenfolge für Ihre Webanwendung verfügen, di
 
 1. Erstellen Sie die erforderlichen Clouddienst- und Speicherkonten im Azure-Abonnement wie in [Vorbereiten der Veröffentlichung und Bereitstellung einer Azure-Anwendung in Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md) beschrieben.
 1. Klicken Sie in Visual Studio mit der rechten Maustaste auf das Anwendungsprojekt, und wählen Sie **In Microsoft Azure veröffentlichen...** (anderer Befehl als „Veröffentlichen…“).
-1. Melden Sie sich im angezeigten Fenster **Azure-Anwendung veröffentlichen** mit dem Konto Ihres Azure-Abonnements an, und wählen Sie **Weiter >** .
+1. Melden Sie sich im angezeigten Fenster **Azure-Anwendung veröffentlichen** mit dem Konto Ihres Azure-Abonnements an, und wählen Sie **Weiter >**.
 1. Wählen Sie auf der Registerkarte **Einstellungen > Allgemeine Einstellungen** in der Dropdownliste **Clouddienst** den Zielclouddienst zusammen mit der gewünschten Umgebung und den gewünschten Konfigurationen aus.
-1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >** .
+1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >**.
 1. Legen Sie **Diagnose** fest, ob Informationen an Application Insights gesendet werden.
 1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen**, um die Bereitstellung zu starten.
 1. Visual Studio öffnet ein Aktivitätsprotokollfenster, in dem Sie den Fortschritt verfolgen können:
@@ -82,7 +82,7 @@ Die folgende Tabelle enthält Details zum Starten der Anwendung in Azure:
 | ASP.NET-Webanwendung<br/>(einschließlich MVC 2, MVC 3, MVC 4) | Wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. |
 | Leere ASP.NET-Webanwendung | Wenn in Ihrer Anwendung eine `.aspx`-Standardseite vorhanden ist, wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. Um zu einer anderen Seite zu navigieren, geben Sie eine URL im folgenden Format in einen Browser ein: `<deployment_url>/<page_name>.aspx` |
 | Silverlight-Anwendung<br/>Silverlight-Geschäftsanwendung<br/>Silverlight-Navigationsanwendung | Navigieren Sie zur speziellen Seite für Ihre Anwendung, indem Sie das folgende URL-Format verwenden: `<deployment_url>/<page_name>.aspx` |
-| WCF-Dienstanwendung<br/>WCF-Workflowdienstanwendung | Legen Sie die `.svc`-Datei als Startseite für Ihr WCF-Dienstprojekt fest. Navigieren Sie dann zu `<deployment_url>/<service_file>.svc`. |
+| WCF-Dienstanwendung<br/>Dienstanwendung für WCF-Workflows | Legen Sie die `.svc`-Datei als Startseite für Ihr WCF-Dienstprojekt fest. Navigieren Sie dann zu `<deployment_url>/<service_file>.svc`. |
 | ASP.NET Dynamic Entities<br/>ASP.NET Dynamic Data-LINQ to SQL | Aktualisieren Sie die Verbindungszeichenfolge wie im nächsten Abschnitt beschrieben. Navigieren Sie dann zu `<deployment_url>/<page_name>.aspx`. Für Linq to SQL müssen Sie eine Azure SQL-Datenbank verwenden. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aktualisieren einer Verbindungszeichenfolge für ASP.NET Dynamic Entities
@@ -119,10 +119,10 @@ Anwendungen, die migriert und in Clouddiensten veröffentlicht werden können, m
 | Silverlight | Silverlight-Geschäftsanwendung |
 | Silverlight | Silverlight-Navigationsanwendung |
 | WCF | WCF-Dienstanwendung |
-| WCF | WCF-Workflowdienstanwendung |
-| Workflow | WCF-Workflowdienstanwendung |
+| WCF | Dienstanwendung für WCF-Workflows |
+| Workflow | Dienstanwendung für WCF-Workflows |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Vorbereiten der Veröffentlichung und Bereitstellung einer Azure-Anwendung in Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
-- [Einrichten benannter Authentifizierungsanmeldeinformationen](vs-azure-tools-setting-up-named-authentication-credentials.md)
+- [Veröffentlichen und Bereitstellen einer Azure-Anwendung in Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
+- [Einrichten benannter Authentifizierungs Anmelde](vs-azure-tools-setting-up-named-authentication-credentials.md)Informationen.

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682363"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
@@ -56,7 +56,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. „\Eigene Dateien\“ oder „\Desktop\\“.  
   
-2. Geben Sie **md HelloWorld** ein, um den Unterordner „\HelloWorld\\“ zu erstellen.  
+2. Geben Sie **md HelloWorld** ein, um den Unterordner \HelloWorld\\ zu erstellen.  
   
 3. Geben Sie **cd HelloWorld** ein, um zum neuen Ordner zu wechseln.  
   
@@ -173,7 +173,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 #### <a name="to-build-the-application"></a>So erstellen Sie die Anwendung  
   
-1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /t:Build** ein.  
+1. Geben Sie an der Eingabeaufforderung **msbuild helloworld. csproj/t: Build**ein.  
   
      Damit wird das Build-Ziel der Helloworld-Projektdatei erstellt, da der Visual C#-Compiler aufgerufen wird, um die Anwendung Helloworld zu erstellen.  
   
@@ -184,7 +184,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 > [!NOTE]
 > Weitere Details zum Build werden angezeigt, wenn Sie den Ausführlichkeitsgrad erhöhen. Wenn Sie den Ausführlichkeitsgrad auf "Detailliert" festzulegen, geben Sie an der Eingabeaufforderung einen der beiden folgenden Befehle ein:  
 >   
-> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **MSBuild HelloWorld. csproj/t: Build/verbosity: ausführlich**  
   
 ## <a name="adding-build-properties"></a>Hinzufügen von Buildeigenschaften  
  Sie können der Projektdatei Buildeigenschaften hinzufügen, um den Build genauer steuern zu können. Fügen Sie jetzt die folgenden Eigenschaften hinzu:  
@@ -260,11 +260,11 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 #### <a name="to-test-the-build-properties"></a>So testen Sie die Buildeigenschaften  
   
-1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /t:Build** ein.  
+1. Geben Sie an der Eingabeaufforderung **msbuild helloworld. csproj/t: Build**ein.  
   
      Damit wird der Ordner \Bin\ erstellt und anschließend der Visual C#-Compiler aufgerufen, um die Anwendung MSBuildSample zu erstellen und im Ordner \Bin\ einzufügen.  
   
-2. Wenn Sie überprüfen möchten, ob der Ordner „\Bin\“ erstellt wurde und die Anwendung MSBuildSample enthält, geben Sie **dir Bin** ein.  
+2. Um zu überprüfen, ob der Ordner \bin\ erstellt wurde und die Anwendung MSBuildSample enthält, geben Sie **dir bin**ein.  
   
 3. Testen Sie die Anwendung, indem Sie **Bin\MSBuildSample** eingeben.  
   
@@ -335,31 +335,31 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 #### <a name="to-test-the-build-targets"></a>So testen Sie die Build-Ziele  
   
-1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj /p:AssemblyName=Greetings** ein.  
+1. Geben Sie an der Eingabeaufforderung **msbuild helloworld. csproj/p: AssemblyName = Greetings**ein.  
   
-     Da Sie das Ziel nicht explizit mit dem Schalter **/t** festgelegt haben, führt MSBuild das Build-Standardziel aus. Der Schalter **/p** überschreibt die Eigenschaft `AssemblyName` und gibt dieser den neuen Wert `Greetings`. Dies führt zum Erstellen der neuen Anwendung Greetings.exe im Ordner \Bin\.  
+     Da Sie den Schalter **/t** nicht verwendet haben, um das Ziel explizit festzulegen, führt MSBuild das standardbuildziel aus. Der **/p** -Schalter überschreibt die `AssemblyName` -Eigenschaft und gibt ihm den neuen Wert `Greetings` . Dies führt zum Erstellen der neuen Anwendung Greetings.exe im Ordner \Bin\.  
   
-2. Wenn Sie überprüfen möchten, ob der Ordner „\Bin\“ die Anwendung MSBuildSample und die neue Anwendung Greetings enthält, geben Sie **dir Bin** ein.  
+2. Um sicherzustellen, dass der Ordner \bin\ die Anwendung MSBuildSample und die neue Anwendung Greetings enthält, geben Sie **dir bin**ein.  
   
 3. Testen Sie die Anwendung Greetings, indem Sie **Bin\Greetings** eingeben.  
   
      Die Meldung **Hello, world!** sollte angezeigt werden.  
   
-4. Löschen Sie die Anwendung MSBuildSample, indem Sie **msbuild helloworld.csproj /t:clean** eingeben.  
+4. Löschen Sie die Anwendung MSBuildSample, indem Sie **msbuild helloworld. csproj/t: Clean**eingeben.  
   
      Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem `AssemblyName`-Standardeigenschaftswert `MSBuildSample` zu entfernen.  
   
-5. Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings** eingeben.  
+5. Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld. csproj/t: clean/p: AssemblyName = Greetings**eingeben.  
   
      Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName**-Eigenschaftswert `Greetings` zu entfernen.  
   
-6. Wenn Sie überprüfen möchten, ob der Ordner „\Bin\“ jetzt leer ist, geben Sie **dir Bin** ein.  
+6. Um zu überprüfen, ob der Ordner "\bin\" jetzt leer ist, geben Sie **dir bin**ein.  
   
 7. Typ **msbuild**.  
   
      Zwar ist keine Projektdatei angegeben, doch erstellt MSBuild die Datei helloworld.csproj, da der aktuelle Ordner nur eine Projektdatei enthält. Auf diese Weise wird die Anwendung MSBuildSample im Ordner \Bin\ erstellt.  
   
-     Wenn Sie überprüfen möchten, ob der Ordner „\Bin\“ die Anwendung MSBuildSample enthält, geben Sie **dir Bin** ein.  
+     Um zu überprüfen, ob der Ordner \bin\ die Anwendung MSBuildSample enthält, geben Sie **dir bin**ein.  
   
 ## <a name="building-incrementally"></a>Inkrementeller Build  
  Sie können MSBuild anweisen, ein Ziel nur zu erstellen, wenn die Quelldateien oder Zieldateien, von denen das Ziel abhängig ist, geändert wurden. MSBuild bestimmt anhand des Zeitstempels einer Datei, ob diese geändert wurde.  
@@ -383,17 +383,17 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
     </Target>  
     ```  
   
-2. Testen Sie das Build-Ziel, indem Sie an der Eingabeaufforderung **msbuild /v:d** eingeben.  
+2. Testen Sie das Build-Ziel, indem Sie **MSBuild/v: d** an der Eingabeaufforderung eingeben.  
   
      Vergessen Sie nicht, dass helloworld.csproj die Standardprojektdatei und Build das Standardziel darstellt.  
   
-     Mit dem Schalter **/v:d** wird eine ausführliche Beschreibung für den Buildprozess angegeben.  
+     Der Schalter **/v: d** gibt eine ausführliche Beschreibung für den Buildprozess an.  
   
      Die folgenden Zeilen sollten angezeigt werden:  
   
      **Das Ziel „Build“ wird übersprungen, da alle Ausgabedateien hinsichtlich der Eingabedateien aktuell sind.**  
   
-     **Eingabedateien: HelloWorld.cs**  
+     **en: HelloWorld.cs**  
   
      **Ausgabedateien: BinMSBuildSample.exe**  
   
@@ -477,9 +477,9 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 </Project>  
 ```  
   
-## <a name="whats-next"></a>Weitere Informationen  
+## <a name="whats-next"></a>Wie geht es weiter?  
  Visual Studio kann einen großen Teil der in dieser exemplarischen Vorgehensweise gezeigten Aktionen automatisch übernehmen. Informationen zum Erstellen und Bearbeiten sowie zum Build und zu Tests von MSBuild-Projektdateien in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
 [Übersicht über MSBuild](msbuild.md)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)

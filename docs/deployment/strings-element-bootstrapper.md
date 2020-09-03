@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zeichenfolgen&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;Strings- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747410"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; -Element (Bootstrapper)
-Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehlermeldungen für die Installation.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings- &gt; Element (Boots Trapper)
+Definiert lokalisierte Zeichen folgen für Produktnamen, Paketnamen und Installations Fehlermeldungen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,19 +40,19 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehle
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `Strings` Element ist ein untergeordnetes Element des der `Package` Element. Es besitzt keine Attribute.
+ Das- `Strings` Element ist ein untergeordnetes `Package` Element des-Elements. Sie besitzt keine Attribute.
 
-## <a name="string"></a>Zeichenfolge
- Die `String` Element ist ein untergeordnetes Element des der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.
+## <a name="string"></a>String
+ Das- `String` Element ist ein untergeordnetes `Strings` Element des-Elements. Ein- `Strings` Element kann ein oder mehrere- `String` Elemente aufweisen.
 
- `String` weist das folgende Attribut an.
+ `String` weist das folgende Attribut auf.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der Name der Zeichenfolge.|
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel gibt alle englischen Zeichenfolgen für den .NET Framework-Installer.
+ Im folgenden Codebeispiel werden alle englischen Zeichen folgen für den .NET Framework Installer angegeben.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehle
 </Strings>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [\<Package >-Element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Weitere Informationen
+- [\<Package> gewisses](../deployment/package-element-bootstrapper.md)

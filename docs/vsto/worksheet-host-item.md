@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254869"
 ---
 # <a name="worksheet-host-item"></a>Arbeitsblatt-Host Element
@@ -47,7 +47,7 @@ ms.locfileid: "71254869"
  In einem Projekt auf Dokumentebene können die Arbeitsblätter im Visual Studio-Designer umbenannt werden, wodurch jedoch nur der Anzeigename des Arbeitsblatts geändert wird. Der Name im Programm ist weiterhin der Standardname des Arbeitsblatts. Wenn Sie das Arbeitsblatt im Fenster **Eigenschaften** umbenennen, wird nur der Name im Programm geändert.
 
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Einschränkungen des Arbeitsblatt-Host Elements in Projekten auf Dokument Ebene
- In einem Projekt auf Dokumentebene können Sie zur Laufzeit keine neuen <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelemente erstellen. Wenn Sie zur Laufzeit ein neues Excel-Arbeitsblatt erstellen, hat es den Typ <xref:Microsoft.Office.Interop.Excel.Worksheet>. Da das Arbeitsblatt kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Dokumenten zur Laufzeit finden [Sie unter Gewusst wie: Programm gesteuertes Hinzufügen neuer Arbeitsblätter zu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)Arbeitsmappen.
+ In einem Projekt auf Dokumentebene können Sie zur Laufzeit keine neuen <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelemente erstellen. Wenn Sie zur Laufzeit ein neues Excel-Arbeitsblatt erstellen, hat es den Typ <xref:Microsoft.Office.Interop.Excel.Worksheet>. Da es kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Dokumenten zur Laufzeit finden Sie unter Gewusst [wie: Programm gesteuertes Hinzufügen neuer Arbeitsblätter zu Arbeits](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)Mappen.
 
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Grundlegendes zu Arbeitsblatt-Host Elementen in VSTO-Add-in-Projekten
  In Projekten auf Anwendungsebene können Sie für jedes Arbeitsblatt, das in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement erstellen. Sie können das <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement verwenden, um dem zugeordneten Arbeitsblatt Steuerelemente hinzuzufügen, oder um Ereignisse zu behandeln, die für <xref:Microsoft.Office.Interop.Excel.Worksheet> -Objekte nicht verfügbar sind.

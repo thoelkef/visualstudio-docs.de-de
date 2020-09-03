@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Festlegen von Debug-und Releasekonfigurationen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -36,13 +36,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703644"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen
+# <a name="how-to-set-debug-and-release-configurations"></a>Gewusst wie: Festlegen von Debug- und Releasekonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  
@@ -51,24 +51,24 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
   
  Die Releasekonfiguration des Programms enthält keine symbolischen Debuginformationen und wird vollständig optimiert. Debuginformationen können in PDB-Dateien generiert werden, je nachdem, welche Compileroptionen verwendet werden. PDB-Dateien zu erstellen kann sehr nützlich sein, wenn Sie später die Releaseversion debuggen müssen.  
   
- Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).  
+ Weitere Informationen zu Buildkonfigurationen finden Sie Untergrund Legendes zu [Buildkonfigurationen](../ide/understanding-build-configurations.md).  
   
- Sie können die Buildkonfiguration Ändern der **erstellen** im Menü auf der Symbolleiste oder in den Eigenschaftenseiten des Projekts. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen zum Ändern der Buildkonfiguration in Projekten mit verschiedenen Sprachen finden Sie im Abschnitt „Verwandte Themen“.  
+ Sie können die Buildkonfiguration über das Menü **Erstellen** , über die Symbolleiste oder auf den Eigenschaften Seiten des Projekts ändern. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen zum Ändern der Buildkonfiguration in Projekten mit verschiedenen Sprachen finden Sie im Abschnitt „Verwandte Themen“.  
   
 ### <a name="to-change-the-build-configuration"></a>So ändern Sie die Buildkonfiguration  
   
-1. Im Menü erstellen: Klicken Sie auf **Build / Konfigurations-Manager**, und wählen Sie dann **Debuggen** oder **Version**.  
+1. Klicken Sie im Menü Erstellen auf **Erstellen/Configuration Manager**, und wählen Sie dann **Debuggen** oder **Release**aus.  
   
-2. Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Listenfeld.  
+2. Wählen Sie auf der Symbolleiste im Listenfeld Projektmappenkonfigurationen entweder **Debuggen** oder **Solution Configurations** **Release** aus.  
   
      ![Symbolleisten-Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
-     Diese Symbolleiste ist in Express-Editionen nicht verfügbar. Können Sie die **erstellen Lösung F6** und **Debuggen F5 starten** Menüelemente, um die Konfiguration auszuwählen.  
+     Diese Symbolleiste ist in Express-Editionen nicht verfügbar. Sie können die Menü Elemente Projekt Mappe **Erstellen** und **Debuggen starten** verwenden, um die Konfiguration auszuwählen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Project Settings for a C++ Debug Configuration (Projekteinstellungen für eine C++-Debugkonfiguration)](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Einstellungen und-Vorbereitung](../debugger/debugger-settings-and-preparation.md)   
+ [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Projekteinstellungen für c#-Debugkonfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
  [Debug- und Release-Projektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

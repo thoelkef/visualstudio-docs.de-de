@@ -1,5 +1,5 @@
 ---
-title: Debuggen von clientseitigen Skripts | Microsoft-Dokumentation
+title: Client seitiges Skript Debuggen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702377"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
@@ -38,7 +38,7 @@ Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und B
 ## <a name="manually-or-automatically-attaching-to-script"></a>Manuelles oder automatisches Anhängen an Skripts  
  Um mit dem Debuggen von Skripts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]zu beginnen, muss der Debugger an das Skript anhängt werden, das Sie debuggen möchten. Dies kann manuell oder automatisch geschehen.  
   
- Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md).  
+ Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  Der Debugger wird automatisch an das Skript angehängt, wenn eine der folgenden Bedingungen zutrifft:  
   
@@ -62,9 +62,9 @@ Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und B
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)öffnen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Einschränkungen beim Skriptdebuggen](../debugger/limitations-on-script-debugging.md)   
- [Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
- [Direktfenster](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugging von ASP.net-und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Einschränkungen beim Skript Debugging](../debugger/limitations-on-script-debugging.md)   
+ [Variablen Fenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Direkt Fenster](../ide/reference/immediate-window.md)   
+ [Übersicht über Debugging und Ablauf Verfolgung von AJAX-Anwendungen](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

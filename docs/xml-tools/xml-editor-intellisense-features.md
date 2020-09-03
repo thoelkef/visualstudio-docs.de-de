@@ -107,7 +107,7 @@ Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
 ## <a name="modify-the-intellisense-options"></a>Ändern der IntelliSense-Optionen
 
-Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für **Extras** > **Optionen** geändert werden.
+Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für **Extras**> **Optionen** geändert werden.
 
 Der Abschnitt **Automatisch einfügen** auf der Seite **Verschiedenes** steuert das folgende Verhalten:
 

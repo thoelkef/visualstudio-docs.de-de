@@ -1,5 +1,5 @@
 ---
-title: '&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+title: '&lt;Abhängigkeits &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -28,16 +28,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199883"
 ---
-# <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung)
+# <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung erforderlich ist.  
+Identifiziert eine Plattform-oder Assemblyabhängigkeit, die für die Anwendung erforderlich ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -90,19 +90,19 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `dependency` Element ist erforderlich. Gibt es möglicherweise mehrere Instanzen von `dependency` im gleichen Anwendungsmanifest.  
+ Das `dependency`-Element ist erforderlich. Es können mehrere Instanzen von `dependency` im selben Anwendungs Manifest vorhanden sein.  
   
- Die `dependency` Element weist keine Attribute und enthält die folgenden untergeordneten Elemente.  
+ Das `dependency` -Element hat keine Attribute und enthält die folgenden untergeordneten Elemente.  
   
 ### <a name="dependentos"></a>dependentOS  
- Dies ist optional. Enthält die `osVersionInfo` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
+ Optional. Enthält das- `osVersionInfo` Element. Das `dependentOS` -Element und das- `dependentAssembly` Element schließen sich gegenseitig aus: eine oder die andere muss für ein-Element vorhanden sein `dependency` , aber nicht beides.  
   
- `dependentOS` unterstützt die folgenden Attribute an.  
+ `dependentOS` unterstützt die folgenden Attribute.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|`supportUrl`|Optional. Gibt eine Support-URL für die abhängige Plattform. Diese URL wird für den Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|  
-|`description`|Dies ist optional. Beschreibt das Betriebssystem beschrieben in Menschen lesbarem Format die `dependentOS` Element.|  
+|`supportUrl`|Optional. Gibt eine Support-URL für die abhängige Plattform an. Diese URL wird dem Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|  
+|`description`|Optional. Beschreibt in Menschen lesbarem Format das Betriebssystem, das durch das- `dependentOS` Element beschrieben wird.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentOS` -Elements und enthält das `os` -Element. Dieses Element weist keine Attribute auf.  
@@ -110,70 +110,70 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 ### <a name="os"></a>os  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `osVersionInfo` -Elements. Dieses Element weist folgende Attribute auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
 |`majorVersion`|Erforderlich. Gibt die Hauptversionsnummer des Betriebssystems an.|  
-|`minorVersion`|Erforderlich. Gibt die Nummer der Nebenversion des Betriebssystems an.|  
+|`minorVersion`|Erforderlich. Gibt die neben Versionsnummer des Betriebssystems an.|  
 |`buildNumber`|Erforderlich. Gibt die Buildnummer des Betriebssystems an.|  
-|`servicePackMajor`|Erforderlich. Gibt an, die wichtigsten Service Pack-Nummer des Betriebssystems.|  
-|`servicePackMinor`|Dies ist optional. Gibt die kleinere Service Pack-Nummer des Betriebssystems an.|  
-|`productType`|Dies ist optional. Gibt die Produkt-Typwert. Gültige Werte sind `server`, `workstation` und `domainController`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `workstation`.|  
-|`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|  
+|`servicePackMajor`|Erforderlich. Gibt die Service Pack Hauptnummer des Betriebssystems an.|  
+|`servicePackMinor`|Optional. Gibt die Service Pack neben Version des Betriebssystems an.|  
+|`productType`|Optional. Identifiziert den Wert des Produkttyps. Gültige Werte sind `server`, `workstation` und `domainController`. Für Windows 2000 Professional lautet der Wert dieses Attributs z `workstation` . b..|  
+|`suiteType`|Optional. Identifiziert eine auf dem System verfügbare Produktsuite oder den Konfigurationstyp des Systems. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional lautet der Wert dieses Attributs z `professional` . b..|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- Optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
+ Optional. Enthält das- `assemblyIdentity` Element. Das `dependentOS` -Element und das- `dependentAssembly` Element schließen sich gegenseitig aus: eine oder die andere muss für ein-Element vorhanden sein `dependency` , aber nicht beides.  
   
- `dependentAssembly` hat die folgenden Attribute an.  
+ `dependentAssembly` weist die folgenden Attribute auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|`dependencyType`|Erforderlich. Gibt den Typ der Abhängigkeit an. Gültige Werte sind `preprequisite` und `install`. Ein `install` Assembly installiert ist, als Teil der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Ein `prerequisite` Assembly muss im globalen Assemblycache (GAC) vor der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren kann.|  
-|`allowDelayedBinding`|Erforderlich. Gibt an, ob die Assembly zur Laufzeit programmgesteuert geladen werden kann.|  
-|`group`|Optional. Wenn die `dependencyType` -Attributsatz auf `install`, kennzeichnet eine benannte Gruppe von Assemblys, nur die Installation bei Bedarf. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und `dependencyType` -Attributsatz auf `prerequisite`, kennzeichnet die Assembly als Teil von .NET Framework. Der globale Assemblycache (GAC) wird nicht auf diese Assembly überprüft, bei der Installation auf [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] und höhere Versionen.|  
-|`codeBase`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Der Pfad der abhängigen Assembly. Entweder ein absoluter Pfad oder einen Pfad relativ zum des Manifests kann Basisklasse sein. Dieser Pfad muss ein gültiger URI in der Reihenfolge für das Assemblymanifest gültig ist.|  
-|`size`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Die Größe der abhängigen Assembly, in Bytes.|  
+|`dependencyType`|Erforderlich. Gibt den Typ der Abhängigkeit an. Gültige Werte sind `preprequisite` und `install`. Eine `install` Assembly wird als Teil der Anwendung installiert [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Eine `prerequisite` Assembly muss im globalen Assemblycache (GAC) vorhanden sein, bevor die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installiert werden kann.|  
+|`allowDelayedBinding`|Erforderlich. Gibt an, ob die Assembly zur Laufzeit Programm gesteuert geladen werden kann.|  
+|`group`|Optional. Wenn das- `dependencyType` Attribut auf festgelegt ist `install` , bestimmt eine benannte Gruppe von Assemblys, die nur bei Bedarf installiert werden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und das- `dependencyType` Attribut auf festgelegt ist `prerequisite` , legt die Assembly als Teil der .NET Framework fest. Der globale Assemblycache (GAC) wird bei der Installation von unter und höheren Versionen nicht für diese Assembly geprüft [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] .|  
+|`codeBase`|Erforderlich, wenn das- `dependencyType` Attribut auf festgelegt ist `install` . Der Pfad zur abhängigen Assembly. Kann entweder ein absoluter Pfad oder ein Pfad in Bezug auf die Codebasis des Manifests sein. Dieser Pfad muss ein gültiger URI sein, damit das Assemblymanifest gültig ist.|  
+|`size`|Erforderlich, wenn das- `dependencyType` Attribut auf festgelegt ist `install` . Die Größe der abhängigen Assembly in Bytes.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements und weist folgende Attribute auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
 |`name`|Erforderlich. Identifiziert den Namen der Anwendung.|  
 |`version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
-|`publicKeyToken`|Optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren des Katalogs muss mindestens 2048 Bits sein.|  
-|`processorArchitecture`|Optional. Gibt den Prozessor. Gültige Werte sind `x86` für 32-Bit-Windows und `I64` für 64-Bit-Windows.|  
-|`language`|Optional. Identifiziert den zweiteiligen Sprachcodes, z. B. EN-US, der Assembly an.|  
+|`publicKeyToken`|Optional. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des `SHA-1` Hashwerts des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss mindestens 2048 Bits aufweisen.|  
+|`processorArchitecture`|Optional. Gibt den Prozessor an. Gültige Werte sind `x86` 32-Bit-Windows und `I64` für 64-Bit-Windows.|  
+|`language`|Optional. Gibt die zwei teiligen Sprachcodes (z. b. en-US) der Assembly an.|  
   
-### <a name="hash"></a>Hashindizes  
- Die `hash` Element ist ein optionales untergeordnetes Element von der `assemblyIdentity` Element. Das `hash` -Element weist keine Attribute auf.  
+### <a name="hash"></a>hash  
+ Das- `hash` Element ist ein optionales untergeordnetes Element des- `assemblyIdentity` Elements. Das `hash` -Element weist keine Attribute auf.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als Sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurde. Wenn das `hash` Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt. Daher wird das Weglassen des- `hash` Elements nicht empfohlen.  
   
 ### <a name="dsigtransforms"></a>dsig:Transforms  
- Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
+ Das- `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:Transforms` -Element weist keine Attribute auf.  
   
 ### <a name="dsigtransform"></a>dsig:Transform  
- Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.  
+ Das- `dsig:Transform` Element ist ein erforderliches untergeordnetes Element des- `dsig:Transforms` Elements. Das `dsig:Transform` -Element weist folgende Attribute auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|`Algorithm`|Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wird `urn:schemas-microsoft-com:HashTransforms.Identity` .|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
+ Das- `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wird `http://www.w3.org/2000/09/xmldsig#sha1` .|  
   
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
+ Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
   
-## <a name="remarks"></a>Hinweise  
- Alle Assemblys, die von Ihrer Anwendung verwendeten setzt das Vorhandensein einer entsprechenden `dependency` Element. Abhängige Assemblys enthalten keine Assemblys, die als Testplattform-Assemblys im globalen Assemblycache vorinstalliert sein müssen.  
+## <a name="remarks"></a>Bemerkungen  
+ Alle von der Anwendung verwendeten Assemblys müssen über ein entsprechendes- `dependency` Element verfügen. Abhängige Assemblys enthalten keine Assemblys, die im globalen Assemblycache als Plattformassemblys vorinstalliert werden müssen.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, `dependency` Elemente in einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md) Thema.  
+ Das folgende Codebeispiel veranschaulicht `dependency` Elemente in einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungs Manifest. Dieses Codebeispiel ist Teil eines größeren Beispiels, das für das [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md) -Thema bereitgestellt wird.  
   
 ```  
 <dependency>  
@@ -219,6 +219,6 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 </dependency>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce Application Manifest (ClickOnce-Anwendungsmanifest)](../deployment/clickonce-application-manifest.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)   
  [\<dependency>-Element](../deployment/dependency-element-clickonce-deployment.md)

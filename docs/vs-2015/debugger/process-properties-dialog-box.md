@@ -1,5 +1,5 @@
 ---
-title: Verarbeiten Sie im Dialogfeld Eigenschaften von | Microsoft-Dokumentation
+title: Prozesseigenschaften (Dialogfeld) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,47 +13,47 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56e446f217f752b45b2d8d98bf1f147c04dab748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193274"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogfeld "Prozesseigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwenden Sie das Dialogfeld zu öffnen, um mehr zu einem bestimmten Prozess zu erfahren. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
+Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Prozess zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein Fenster [Prozessansicht](../debugger/processes-view.md). Wählen Sie einen beliebigen Prozessknoten in der Struktur aus, und wählend Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.  
   
- Unter Windows 98 und Windows 95 Betriebssystemen, nur eine geänderte Version des der **allgemeine** Registerkarte wird angezeigt.  
+ Unter den Betriebssystemen Windows 98 und Windows 95 wird nur eine modifizierte Version der Registerkarte **Allgemein** angezeigt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Registerkarte "Allgemein", Dialogfeld "Prozesseigenschaften"](../debugger/general-tab-thread-properties-dialog-box.md)  
- Verwenden Sie dieses Dialogfeld, um weitere Informationen zu den ausgewählten Prozess zu erhalten.  
+ In diesem Dialogfeld erfahren Sie mehr über den ausgewählten Prozess.  
   
  [Registerkarte "Arbeitsspeicher", Dialogfeld "Prozesseigenschaften"](../debugger/memory-tab-process-properties-dialog-box.md)  
  Verwenden Sie diese Registerkarte, um anzuzeigen, wie ein Prozess Arbeitsspeicher verwendet.  
   
  [Registerkarte "Auslagerungsdatei", Dialogfeld "Prozesseigenschaften"](../debugger/page-file-tab-process-properties-dialog-box.md)  
- Verwenden Sie diese Registerkarte, um die Auslagerungsdatei eines Prozesses zu untersuchen.  
+ Verwenden Sie diese Registerkarte, um die Auslagerungs Datei eines Prozesses zu untersuchen.  
   
  [Registerkarte "Speicherplatz", Dialogfeld "Prozesseigenschaften"](../debugger/space-tab-process-properties-dialog-box.md)  
- Verwenden Sie diese Registerkarte, um den Adressraum eines Prozesses zu untersuchen.  
+ Mithilfe dieser Registerkarte können Sie den Adressraum eines Prozesses überprüfen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Dialogfeld "Prozesssuche"](../debugger/process-search-dialog-box.md)  
- Verwendet, um den Knoten für einen bestimmten Prozess in der Prozessansicht suchen.  
+ Wird verwendet, um den Knoten für einen bestimmten Prozess in der Prozessansicht zu suchen.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.  
+ Enthält Abschnitte, in denen jedes Spy + +-Menü und Dialogfeld beschrieben werden.  
   
  [Suchen eines Prozesses in der Prozessansicht](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Erläutert, wie Sie einen bestimmten Prozess in der Prozessansicht.  
+ Erläutert das Auffinden eines bestimmten Prozesses in der Prozessansicht.  
   
  [Prozessansicht](../debugger/processes-view.md)  
- Zeigt eine Strukturansicht der aktiven Prozesse an.  
+ Zeigt eine Strukturansicht aktiver Prozesse an.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
+ Erläutert die Spy + +-Struktur Ansichten von Fenstern, Meldungen, Prozessen und Threads.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.
+ Stellt das Spy + +-Tool vor und erläutert, wie es verwendet werden kann.

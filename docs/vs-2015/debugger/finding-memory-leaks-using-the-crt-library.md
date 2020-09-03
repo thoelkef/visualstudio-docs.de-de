@@ -1,5 +1,5 @@
 ---
-title: Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
+title: Auffinden von Speicher Verlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682424"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
@@ -121,7 +121,7 @@ Object dump complete.
   
   Zwei weitere Speicherblocktypen werden nie in Arbeitsspeicherverlust-Berichten angezeigt. Ein *freier Block* ist ein Speicherblock, der freigegeben wurde. Dies bedeutet definitionsgemäß, dass kein Verlust vorliegt. Ein *ignorierter Block* ist ein Speicherblock, der von Ihnen explizit markiert wurde, damit er vom Arbeitsspeicherverlust-Bericht ausgeschlossen wird.  
   
-  Diese Methoden funktionieren für Speicher, der mithilfe der CRT-Standardfunktion `malloc` belegt wird. Wenn Ihr Programm Speicher mithilfe des C++ zuordnet `new` -Operator, allerdings können nur sehen Sie die Anzahl und die Zeilennummer, in denen die Implementierung der globalen `operator new` Aufrufe `_malloc_dbg` im Arbeitsspeicherverlust-Bericht. Da dieses Verhalten nicht sehr nützlich ist, können Sie ändern, um die Zeile zu melden, die die Zuordnung vorgenommen, mit der ein Makro, das wie folgt aussieht: 
+  Diese Methoden funktionieren für Speicher, der mithilfe der CRT-Standardfunktion `malloc` belegt wird. Wenn Ihr Programmspeicher mithilfe des C++-Operators zuordnet `new` , sehen Sie jedoch möglicherweise nur die Datei und die Zeilennummer, in der die Implementierung von globalen `operator new` aufrufen `_malloc_dbg` im Arbeits speicherungenügbericht vorhanden ist. Da dieses Verhalten nicht sehr hilfreich ist, können Sie es ändern, um die Zeile, die die Zuordnung hergestellt hat, mit einem Makro zu melden, das wie folgt aussieht: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-Nun können Sie ersetzen die `new` Operator mithilfe der `DBG_NEW` Makro in Ihrem Code. In Debugbuilds, verwendet es sich hierbei um eine Überladung der globalen `operator new` , akzeptiert zusätzliche Parameter für den Blocktyp, Datei und Zeilennummer. Diese Überladung der `new` Aufrufe `_malloc_dbg` , die zusätzliche Informationen zu erfassen. Bei Verwendung von `DBG_NEW`, der Speicherverlust Berichte zeigen die Anzahl von Dateinamen und Zeilennummern, in denen der kompromittierte Objekte reserviert wurden. In Verkaufsversionen, verwendet dieser den Standardwert `new`. (Es wird nicht empfohlen, Sie erstellen ein Präprozessormakro mit dem Namen `new`, oder andere Programmiersprachen-Schlüsselwort.) Hier ist ein Beispiel dieser Methode:  
+Nun können Sie den `new`-Operator ersetzen, indem Sie das `DBG_NEW`-Makro in Ihrem Code verwenden. In Debugbuilds wird eine Überladung von Global verwendet, `operator new` die zusätzliche Parameter für den Blocktyp, die Datei und die Zeilennummer erfordert. Diese Überladung von `new` aufrufen `_malloc_dbg` , um die zusätzlichen Informationen aufzuzeichnen. Wenn Sie verwenden `DBG_NEW` , werden in den Speicher Verlust Berichten der Dateiname und die Zeilennummer angezeigt, in der die kompromittierten Objekte zugeordnet wurden. In Einzelhandels Builds wird der Standardwert verwendet `new` . (Es wird nicht empfohlen, ein Präprozessormakro mit dem Namen `new` oder einem anderen sprach Schlüsselwort zu erstellen.) Im folgenden finden Sie ein Beispiel für die Vorgehensweise:  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-Wenn Sie diesen Code im Debugger in Visual Studio, den Aufruf ausführen `_CrtDumpMemoryLeaks` generiert einen Bericht in der **Ausgabe** Fenster, das etwa wie folgt aussieht:  
+Wenn Sie diesen Code im Debugger in Visual Studio ausführen, generiert der-Befehl `_CrtDumpMemoryLeaks` einen Bericht im **Ausgabe** Fenster, der in etwa wie folgt aussieht:  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Dadurch sehen Sie, dass die kompromittierte Zuordnung in Zeile 20 des debug_new.cpp war.  
+Dies weist darauf hin, dass die kompromittierte Zuordnung in Zeile 20 von DEBUG_NEW. cpp erfolgte.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Festlegen von Haltepunkten für eine Speicherbelegungsnummer  
  Die Speicherbelegungsnummer gibt Aufschluss darüber, wann ein Speicherblock mit Arbeitsspeicherverlust belegt wurde. Ein Block mit der Speicherbelegungsnummer 18 ist z. B. der 18. Speicherblock, der während der Ausführung der Anwendung belegt wurde. Im CRT-Bericht werden alle Speicherblockbelegungen während der Ausführung gezählt. Dies beinhaltet Speicherbelegungen von der CRT-Bibliothek und anderen Bibliotheken wie MFC. Daher ist ein Block mit der Speicherbelegungsnummer 18 möglicherweise nicht der 18. Speicherblock, der von Ihrem Code belegt wurde. In der Regel ist dies nicht der Fall.  
@@ -187,11 +187,11 @@ Dadurch sehen Sie, dass die kompromittierte Zuordnung in Zeile 20 des debug_new.
   
 2. Wenn die Anwendung am Haltepunkt unterbrochen wird, wird das **Überwachungsfenster** angezeigt.  
   
-3. In der **Watch** geben `_crtBreakAlloc` in die **Namen** Spalte.  
+3. Geben Sie im Fenster **Überwachung** in der Spalte **Name** `_crtBreakAlloc` ein.  
   
     Bei Verwendung der Multithread-DLL-Version der CRT-Bibliothek (/MD-Option) schließen Sie den Kontextoperator ein: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4. Drücken Sie die **EINGABETASTE**.  
+4. Drücken Sie **Return**.  
   
     Der Debugger wertet den Aufruf aus und gibt das Ergebnis in der Spalte **Wert** aus. Wenn Sie keine Haltepunkte für Speicherbelegungen festgelegt haben, lautet dieser Wert –1.  
   
@@ -199,7 +199,7 @@ Dadurch sehen Sie, dass die kompromittierte Zuordnung in Zeile 20 des debug_new.
   
    Nachdem Sie einen Haltepunkt für eine Speicherbelegungsnummer festgelegt haben, können Sie mit dem Debuggen fortfahren. Das Programm muss unter denselben Bedingungen wie zuvor ausgeführt werden, damit die Speicherbelegung in derselben Reihenfolge erfolgt. Wenn das Programm bei der angegebenen Speicherbelegung unterbrochen wird, können Sie im Fenster **Aufrufliste** und in anderen Debuggerfenstern überprüfen, unter welchen Bedingungen der Speicher belegt wurde. Anschließend können Sie die Ausführung fortsetzen, um zu beobachten, was mit dem Objekt geschieht, und festzustellen, warum es nicht ordnungsgemäß freigegeben wird.  
   
-   Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Using Breakpoints](../debugger/using-breakpoints.md).  
+   Das Festlegen eines Datenhaltepunkts für das Objekt kann auch hilfreich sein. Weitere Informationen finden Sie unter [Verwenden von Breakpoints](../debugger/using-breakpoints.md).  
   
    Sie können auch Speicherbelegungshaltepunkte im Code festlegen. Hierfür gibt es zwei Möglichkeiten:  
   
@@ -262,7 +262,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>Falsch positive Ergebnisse  
  In manchen Fällen kann `_CrtDumpMemoryLeaks` falsche Angaben zu Speicherverlusten machen. Dies kann bei Verwendung einer Bibliothek vorkommen, die interne Speicherbelegungen nicht als `_CRT_BLOCK`s oder `_CLIENT_BLOCK`s markiert, sondern als _NORMAL_BLOCKs. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. In früheren Versionen der Standardvorlagenbibliothek (vor Visual Studio .NET) wurden solche falsch positiven Ergebnisse von `_CrtDumpMemoryLeaks` ausgegeben, in neueren Versionen wurde dies jedoch behoben.  
   
-## <a name="see-also"></a>Siehe auch  
- [Details zum CRT-Debugbibliothek-Debugheap](../debugger/crt-debug-heap-details.md)   
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Details zum CRT-Debug-Heap](../debugger/crt-debug-heap-details.md)   
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

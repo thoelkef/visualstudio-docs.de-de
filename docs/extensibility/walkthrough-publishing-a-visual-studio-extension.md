@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904739"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung
@@ -68,7 +68,7 @@ In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung verwendet, di
 
 6. Wählen Sie den Verleger aus, den Sie zum Hochladen der Erweiterung verwenden möchten. Sie können den Verleger ändern, indem Sie auf die auf der linken Seite aufgeführten Verleger Namen klicken. Klicken Sie auf **neue Erweiterung** , und wählen Sie **Visual Studio**aus.
 
-7. In **1: Hochladen der Erweiterung**können Sie auswählen, dass Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *testpublish. vsix* hochgeladen. Ziehen Sie die Erweiterung per Drag & Drop, oder **Klicken Sie** auf den Link klicken, um die Datei zu suchen. Suchen Sie die Erweiterung im Ordner "\bin\release" des Projekts.  Klicken Sie auf **Continue**(Weiter).
+7. In **1: Hochladen der Erweiterung**können Sie auswählen, dass Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *testpublish. vsix* hochgeladen. Ziehen Sie die Erweiterung per Drag & Drop, oder **Klicken Sie** auf den Link klicken, um die Datei zu suchen. Suchen Sie die Erweiterung im Ordner "\bin\release" des Projekts.  Klicken Sie auf **Weiter**.
 
 8. In **2: Geben Sie Erweiterungs Details**an. einige Felder werden automatisch aus der Datei " *Source. Extension. vsixmanifest* " aus der Erweiterung aufgefüllt. Weitere Details finden Sie unten:
 
@@ -90,7 +90,7 @@ In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung verwendet, di
 
     * * * Die unterstützte Visual Studio-Edition ermöglicht Ihnen die Auswahl der Editionen von Visual Studio, in denen Ihre Erweiterung funktioniert. Die Erweiterung wird nur für diese Editionen installiert.
 
-    * **Typ**. Die gängigsten Typen von Erweiterungen sind **Tools**.
+    * **Art:** Die gängigsten Typen von Erweiterungen sind **Tools**.
 
     * **Kategorien**. Wählen Sie bis zu drei aus, die für Ihre Erweiterung am besten geeignet sind.
 
@@ -118,7 +118,7 @@ Marketplace unterstützt das erteilen zusätzlicher Benutzerberechtigungen für 
 
    ![Zusätzlichen Benutzer hinzufügen](media/add-users.png)
 
-3. Sie können dann die e-Mail-Adresse des Benutzers angeben, den Sie hinzufügen möchten, und unter **Rolle auswählen**die richtige Zugriffsebene erteilen.  Sie können zwischen folgenden Optionen wählen:
+3. Sie können dann die e-Mail-Adresse des Benutzers angeben, den Sie hinzufügen möchten, und unter **Rolle auswählen**die richtige Zugriffsebene erteilen.  Sie können eine der folgenden Optionen auswählen:
 
    * **Ersteller**: der Benutzer kann Erweiterungen veröffentlichen, aber keine von anderen Benutzern veröffentlichten Erweiterungen anzeigen oder verwalten.
 

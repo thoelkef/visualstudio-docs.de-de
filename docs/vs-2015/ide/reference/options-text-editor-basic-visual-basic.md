@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1edb7ceae1ba187b01b92d64ca33d41d83364e72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662373"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Optionen, Text-Editor, Standard (Visual Basic)
@@ -50,7 +50,7 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
 
   Gliederungs **Modus aktivieren** Wenn Sie im Code-Editor eine Datei öffnen, können Sie das Dokument im Gliederungs Modus anzeigen. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Ist diese Option ausgewählt, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.
 
-  **Automatisches Einfügen von Schnittstellen-und MustOverride-** Membern Wenn Sie einen Commit für eine `Implements`-Anweisung oder eine `Inherits`-Anweisung für eine Klasse durchgeführt haben, fügt der Text-Editor Prototypen für die Member ein, die implementiert bzw. überschrieben werden müssen.
+  **Automatisches Einfügen von Schnittstellen-und MustOverride-** Membern Wenn Sie einen Commit `Implements` für eine-Anweisung oder eine- `Inherits` Anweisung für eine Klasse durchsetzen, fügt der Text-Editor Prototypen für die Member ein, die implementiert bzw. überschrieben werden müssen.
 
   **Zeilen Trennzeichen für Prozedur anzeigen** Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den VB-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
 
@@ -62,7 +62,7 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
 
  **Vorschläge zur Fehlerkorrektur aktivieren** Der Text-Editor kann für häufige Fehler Lösungen vorschlagen und es Ihnen ermöglichen, die geeignete Korrektur auszuwählen, die dann auf den Code angewendet wird.
 
- **Hervorhebung von verweisen und Schlüsselwörtern aktivieren** Der Text-Editor kann alle Instanzen eines Symbols oder alle Schlüsselwörter in einer-Klausel, z. b. `If..Then`, `While...End While` oder `Try...Catch...Finally`, hervorheben. Sie können zwischen markierten Verweisen oder Schlüsselwörtern durch Drücken von STRG+UMSCHALT+NACH-UNTEN oder STRG+UMSCHALT+NACH-OBEN navigieren.
+ **Hervorhebung von verweisen und Schlüsselwörtern aktivieren** Mit dem Text-Editor können alle Instanzen eines Symbols oder alle Schlüsselwörter in einer-Klausel, z `If..Then` . b., oder, hervorgehoben werden `While...End While` `Try...Catch...Finally` . Sie können zwischen markierten Verweisen oder Schlüsselwörtern durch Drücken von STRG+UMSCHALT+NACH-UNTEN oder STRG+UMSCHALT+NACH-OBEN navigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Allgemein, Umgebung, Optionen (Dialog Feld](../../ide/reference/general-environment-options-dialog-box.md) ) [, Text-Editor, alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)

@@ -11,16 +11,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184434"
 ---
 # <a name="com-constants-in-managed-code"></a>COM-Konstanten in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Managed Package Framework (MPF) stellt einige standard-COM-Konstanten, die an verwalteten Code zur Verfügung. Diese Konstanten werden zur Referenz aufgeführt.  
+Das Managed Package Framework (MPF) stellt einige Standard-com-Konstanten für verwalteten Code zur Verfügung. Diese Konstanten sind unten aufgeführt.  
   
 ## <a name="boolean-hresult-values"></a>Boolesche HRESULT-Werte  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
@@ -91,7 +91,7 @@ Das Managed Package Framework (MPF) stellt einige standard-COM-Konstanten, die a
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## <a name="ole-dispatch-errors"></a>OLE-Dispatch-Fehler  
+## <a name="ole-dispatch-errors"></a>OLE-dispatchfehler  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -128,5 +128,5 @@ Das Managed Package Framework (MPF) stellt einige standard-COM-Konstanten, die a
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Fehlerbehandlung und Rückgabewerte](../extensibility/error-handling-and-return-values.md)

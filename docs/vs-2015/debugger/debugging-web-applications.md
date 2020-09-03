@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177499"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
@@ -32,8 +32,8 @@ ms.locfileid: "68177499"
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Debuggen von Webanwendungen](../debugger/how-to-debug-web-applications.md)  
- Beschreibt das Debuggen einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Projekt noch in Entwicklung.  
+ [Gewusst wie: Debuggen von Webanwendungen](../debugger/how-to-debug-web-applications.md)  
+ Beschreibt das Debuggen eines-Projekts, das sich [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] noch in der Entwicklung  
   
  [Debuggen bereitgestellter Webanwendungen](../debugger/debugging-deployed-web-applications.md)  
  Erläutert das Debuggen einer schon bereitgestellten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung.  
@@ -44,7 +44,7 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
  [Exemplarische Vorgehensweise: Debuggen eines Webformulars](../debugger/walkthrough-debugging-a-web-form.md)  
  Veranschaulicht das Debuggen einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung.  
   
- [Vorgehensweise: Debuggen von ASP.NET-Ausnahmen](../debugger/how-to-debug-aspnet-exceptions.md)  
+ [Gewusst wie: Debuggen von ASP.NET-Ausnahmen](../debugger/how-to-debug-aspnet-exceptions.md)  
  Erläutert das Behandeln von Ausnahmen, die beim Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Ausnahmen auftreten.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
@@ -54,8 +54,8 @@ In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen d
  [Debuggen bereitgestellter Webanwendungen](../debugger/debugging-deployed-web-applications.md)  
  Erläutert das Debuggen einer schon bereitgestellten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Webanwendungen und Skript Debuggen](../debugger/debugging-web-applications-and-script.md)   
+ [Debugger-Einstellungen und-Vorbereitung](../debugger/debugger-settings-and-preparation.md)   
+ [Debugger-Grundlagen](../debugger/debugger-basics.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

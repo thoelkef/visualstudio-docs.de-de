@@ -1,5 +1,5 @@
 ---
-title: '&lt;"PackageFiles"&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;PackageFiles- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747509"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;"PackageFiles"&gt; -Element (Bootstrapper)
-Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für die Installation ausgeführt wird, als Ergebnis des definieren die `Command` Element.
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles- &gt; Element (Boots Trapper)
+Das- `PackageFiles` Element enthält- `PackageFile` Elemente, die die Installationspakete definieren, die als Ergebnis des-Elements ausgeführt werden `Command` .
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,25 +44,25 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `PackageFiles` -Element hat das folgende Attribut.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|Dies ist optional. Wenn auf festgelegt `false`, das Installationsprogramm wird nur aus referenzierten Dateien herunterladen der `Command` Element. Wenn auf festgelegt `true`, werden alle Dateien heruntergeladen.<br /><br /> Wenn auf festgelegt `IfNotHomesite`, das Installationsprogramm wird dasselbe Verhalten wie `False` Wenn `ComponentsLocation` nastaven NA hodnotu `HomeSite`, und andernfalls verhält sich identisch wie `True`. Diese Einstellung kann hilfreich sein, damit Pakete, die selbst sind Bootstrapper, um ihr eigenes Verhalten in einem Szenario mit HomeSite auszuführen.<br /><br /> Die Standardeinstellung ist `true`.|
+|`CopyAllPackageFiles`|Optional. Wenn der Wert auf festgelegt `false` ist, lädt der Installer nur Dateien herunter, auf die vom-Element verwiesen wird `Command` Wenn diese Einstellung auf festgelegt `true` ist, werden alle Dateien heruntergeladen.<br /><br /> Wenn der Wert auf festgelegt `IfNotHomesite` ist, verhält sich das Installationsprogramm wie `False` , wenn `ComponentsLocation` auf festgelegt ist `HomeSite` , und andernfalls verhält sich wie if `True` . Diese Einstellung kann nützlich sein, um zu ermöglichen, dass Pakete, die selbst Bootstrapper sind, Ihr eigenes Verhalten in einem HomeSite-Szenario ausführen.<br /><br /> Der Standardwert lautet `true`.|
 
 ## <a name="packagefile"></a>PackageFile
- Die `PackageFile` Element ist ein untergeordnetes Element des der `PackageFiles` Element. Ein `PackageFiles` Element benötigen mindestens einen `PackageFile` Element.
+ Das- `PackageFile` Element ist ein untergeordnetes `PackageFiles` Element des-Elements. Ein- `PackageFiles` Element muss über mindestens ein- `PackageFile` Element verfügen.
 
- `PackageFile` hat die folgenden Attribute an.
+ `PackageFile` weist die folgenden Attribute auf.
 
-| Attribut | Beschreibung |
+| attribute | BESCHREIBUNG |
 |---------------| - |
-| `Name` | Erforderlich. Der Name der Paketdatei. Dies ist der Name, der die `Command` Element verweist, wenn sie die Bedingungen definiert, unter denen ein Paket installiert. Dieser Wert dient auch als Schlüssel für die `Strings` Tabelle, die den lokalisierten Namen abrufen, die tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Paket beschreiben. |
-| `HomeSite` | Dies ist optional. Der Speicherort des Pakets auf dem Remoteserver auf, wenn er nicht mit dem Installationsprogramm enthalten ist. |
-| `CopyOnBuild` | Dies ist optional. Gibt an, ob der Bootstrapper die Paketdatei auf den Datenträger zum Zeitpunkt der Erstellung kopieren soll. Der Standardwert ist "True". |
-| `PublicKey` | Der verschlüsselte öffentliche Schlüssel des Signaturgebers der Paket-Zertifikat. Erforderlich, wenn `HomeSite` wird verwendet, andernfalls optional. |
-| `Hash` | Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden. |
+| `Name` | Erforderlich. Der Name der Paketdatei. Dies ist der Name, auf den das `Command` Element verweist, wenn es die Bedingungen definiert, unter denen ein Paket installiert wird. Dieser Wert wird auch als Schlüssel in der Tabelle verwendet `Strings` , um den lokalisierten Namen abzurufen, den Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Beschreiben des Pakets verwenden. |
+| `HomeSite` | Optional. Der Speicherort des Pakets auf dem Remote Server, wenn es nicht im Installationsprogramm enthalten ist. |
+| `CopyOnBuild` | Optional. Gibt an, ob der Boots Trapper die Paketdatei zur Buildzeit auf den Datenträger kopieren soll. Der Standardwert ist "True". |
+| `PublicKey` | Der verschlüsselte öffentliche Schlüssel des Zertifikats Signatur Gebers des Pakets. Erforderlich `HomeSite` , wenn verwendet wird, andernfalls optional. |
+| `Hash` | Optional. Ein SHA1-Hash der Paketdatei. Hiermit wird die Integrität der Datei zur Installationszeit überprüft. Wenn der identische Hash nicht aus der Paketdatei berechnet werden kann, wird das Paket nicht installiert. |
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel wird definiert, Pakete für das verteilbare .NET Framework-Paket und seine Abhängigkeiten, z. B. den Windows Installer.
+ Im folgenden Codebeispiel werden Pakete für das .NET Framework verteilbaren Paket und seine Abhängigkeiten definiert, wie z. b. die Windows Installer.
 
 ```xml
 <PackageFiles>
@@ -73,7 +73,7 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [\<Produkt >-Element](../deployment/product-element-bootstrapper.md)
-- [\<Package >-Element](../deployment/package-element-bootstrapper.md)
-- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [\<Product> gewisses](../deployment/product-element-bootstrapper.md)
+- [\<Package> gewisses](../deployment/package-element-bootstrapper.md)
+- [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)

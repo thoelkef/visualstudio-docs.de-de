@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Sprachdienst und Erweiterungen des Editors | Microsoft-Dokumentation
+title: Einführung in Sprachdienst-und Editor Erweiterungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,82 +11,82 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703760"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Erweiterungen des Sprachdiensts und des Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung, Klammern, IntelliSense und Glühbirnen Ihrer eigenen Programmiersprache oder für beliebige Inhaltstypen hinzufügen. Sie können auch das Aussehen und Verhalten von Visual Studio-Editor, z. B. Text, die Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente anpassen. Sie können auch Ihren eigenen Typ des Inhalts definieren und geben Sie das Aussehen und Verhalten von der Textansichten in denen Ihre Inhalte angezeigt wird.  
+Sie können Editor-Erweiterungen verwenden, um Sprachdienst Funktionen wie Gliederung, übereinstimmende Klammern, IntelliSense und Glühbirnen ihrer eigenen Programmiersprache oder beliebigen Inhaltstyp hinzuzufügen. Sie können auch das Aussehen und Verhalten des Visual Studio-Editors anpassen, z. b. Text Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente. Sie können auch einen eigenen Inhaltstyp definieren und die Darstellung und das Verhalten der Text Ansichten angeben, in denen der Inhalt angezeigt wird.  
   
- Verwenden Sie zum Einstieg das Schreiben von Erweiterungen des Editors die Editor-Projektvorlagen, die als Teil der Visual Studio SDK installiert sind. Visual Studio SDK ist eine herunterladbare Reihe von Tools, die zum Entwickeln von Visual Studio-Erweiterungen mit VSPackages oder mit dem Managed Extensibility Framework (MEF) erleichtern.  
-  
-> [!NOTE]
-> Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
-  
- Es wird empfohlen, dass die folgenden Konzepte und Technologien erfahren, bevor Sie Ihre eigenen Erweiterungen des Editors schreiben.  
-  
-## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Die Windows Presentation Foundation (WPF) und Erweiterungen des Editors  
- Die Visual Studio-Editor-Benutzeroberfläche (UI) wird implementiert, mithilfe der Windows Presentation Foundation (WPF). Die WPF bietet eine umfassende visuelle Darstellung und ein konsistentes Programmiermodell, das die visuellen Aspekte des Codes von der Geschäftslogik trennt. Sie können viele WPF-Elemente und Funktionen verwenden, bei der Erstellung von Erweiterungen des Editors. Weitere Informationen finden Sie unter [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
-  
-## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Dem Managed Extensibility Framework (MEF) und Erweiterungen des Editors  
- Visual Studio-Editor verwendet das Managed Extensibility Framework (MEF) zum Verwalten von zugehörigen Komponenten und -Erweiterungen. Das MEF kann Entwickler weitere Erweiterungen für eine hostanwendung, z. B. Visual Studio auf einfache Weise erstellen. Dieses Framework definieren Sie eine Erweiterung gemäß einem MEF-Vertrag und exportieren Sie es als Teil einer MEF-Komponente. Die hostanwendung verwaltet die Komponenten, indem sie suchen, deren Registrierung und stellt sicher, dass sie auf den richtigen Kontext angewendet werden.  
+ Um mit dem Schreiben von Editor-Erweiterungen zu beginnen, verwenden Sie die Editor-Projektvorlagen, die im Rahmen des Visual Studio SDK installiert werden. Das Visual Studio SDK ist ein herunterladbarer Satz von Tools, die die Entwicklung von Visual Studio-Erweiterungen vereinfachen, entweder mithilfe von VSPackages oder mithilfe der Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
-> Weitere Informationen zu den MEF im Editor, finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Weitere Informationen zum Visual Studio SDK finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio-Editor-Erweiterungspunkte und -Erweiterungen  
- Editor-Erweiterungspunkte sind MEF-Komponenten, die Sie anpassen und erweitern können. In einigen Fällen erweitern Sie den Erweiterungspunkt durch Implementieren einer Schnittstelle und ihn zusammen mit den richtigen Metadaten zu exportieren. In anderen Fällen Sie nur eine Erweiterung zu deklarieren und exportieren Sie es als einen bestimmten Typ.  
+ Es wird empfohlen, dass Sie sich mit den folgenden Konzepten und Technologien vertraut machen, bevor Sie eigene Editor-Erweiterungen schreiben.  
   
- Im folgenden werden einige der grundlegenden Arten von Editor-Erweiterungen:  
+## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Die Windows Presentation Foundation (WPF)-und Editor-Erweiterungen  
+ Die Benutzeroberfläche des Visual Studio-Editors (User Interface, UI) wird mithilfe des Windows Presentation Foundation (WPF) implementiert. Das WPF bietet eine umfassende visuelle Darstellung und ein konsistentes Programmiermodell, das die visuellen Aspekte des Codes von der Geschäftslogik trennt. Sie können beim Erstellen von Editor-Erweiterungen viele WPF-Elemente und-Funktionen verwenden. Weitere Informationen finden Sie unter [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
-- Rändern und Bildlaufleisten  
+## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Die Erweiterungen des Managed Extensibility Framework (MEF) und des Editors  
+ Der Visual Studio-Editor verwendet die Managed Extensibility Framework (MEF), um seine Komponenten und Erweiterungen zu verwalten. Mit dem MEF können Entwickler auch Erweiterungen für eine Host Anwendung wie Visual Studio einfacher erstellen. In diesem Framework definieren Sie eine Erweiterung gemäß einem MEF-Vertrag und exportieren Sie als MEF-Komponenten Teil. Die Host Anwendung verwaltet die Komponenten Teile, indem Sie Sie findet, registriert und sicherstellt, dass Sie auf den richtigen Kontext angewendet werden.  
   
-- Tags  
+> [!NOTE]
+> Weitere Informationen zur MEF im Editor finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+  
+## <a name="visual-studio-editor-extension-points-and-extensions"></a>Erweiterungs Punkte und Erweiterungen von Visual Studio-Editor  
+ Editor-Erweiterungs Punkte sind MEF-Komponenten, die Sie anpassen und erweitern können. In einigen Fällen erweitern Sie den Erweiterungs Punkt, indem Sie eine Schnittstelle implementieren und Sie mit den richtigen Metadaten exportieren. In anderen Fällen deklarieren Sie einfach eine Erweiterung und exportieren Sie als einen bestimmten Typ.  
+  
+ Im folgenden sind einige der grundlegenden Arten von Editor Erweiterungen aufgeführt:  
+  
+- Ränder und Bild Lauf leisten  
+  
+- `Tags`  
   
 - Zusatzelemente  
   
-- Optionen  
+- Tastatur  
   
 - IntelliSense  
   
-  Weitere Informationen zum Editor Erweiterungspunkte, finden Sie unter [Sprachdienst und Erweiterungspunkte Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Weitere Informationen zu Editor-Erweiterungs Punkten finden Sie unter [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md).  
   
-## <a name="deploying-editor-extensions"></a>Bereitstellen von Editor-Erweiterungen  
- Stellen Sie in Visual Studio-Editor-Erweiterungen hinzufügen eine Metadatendatei namens "Source.Extension.vsixmanifest", um die Lösung, die beim Erstellen der Projektmappe, und klicken Sie dann in einem Ordner, der bekannt ist eine Kopie der Binärdateien und das Manifest hinzufügen, zu Visual Studio bereit. Die manifest-Datei definiert die grundlegenden Fakten über die Erweiterung (z. B. Name, Autor, Version und Typ des Inhalts). Weitere Informationen über die VSIX-manifest-Datei und zum Bereitstellen von Erweiterungen finden Sie unter [Auslieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
+## <a name="deploying-editor-extensions"></a>Bereitstellen von Editor Erweiterungen  
+ In Visual Studio stellen Sie Editor Erweiterungen bereit, indem Sie der Projekt Mappe eine Metadatendatei mit dem Namen Source. Extension. vsixmanifest hinzufügen, die Projekt Mappe aufbauen und dann eine Kopie der Binärdateien und des Manifests in einem Ordner hinzufügen, der Visual Studio bekannt ist. Die Manifest-Datei definiert die grundlegenden Fakten über die Erweiterung (z. b. Name, Autor, Version und Inhaltstyp). Weitere Informationen zur VSIX-Manifest-Datei und zum Bereitstellen von Erweiterungen finden Sie unter [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
   
- Wenn Sie eine Erweiterung auf einem Computer installieren, enthalten Sie die Binärdateien und das Manifest in einem Unterordner des Ordners, der in Visual Studio bekannt ist.  
+ Wenn Sie eine Erweiterung auf einem Computer installieren, schließen Sie die Binärdateien und das Manifest in einen Unterordner des Ordners ein, der Visual Studio bekannt ist.  
   
 > [!WARNING]
-> Sie müssen nicht die Details der Manifeste und Standorten für die Bereitstellung sorgen, wenn Sie eine der Vorlagen-Editor-Erweiterungen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was zu registrieren und Bereitstellen eine Erweiterung erforderlich ist.  
+> Sie müssen sich keine Gedanken über die Details von Manifesten und Bereitstellungs Standorten machen, wenn Sie eine der Editor-Erweiterbarkeits Vorlagen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was erforderlich ist, um eine Erweiterung zu registrieren und bereitzustellen.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ausführen von Erweiterungen in der experimentellen Instanz  
- Sie können Ihre funktionierende Version von Visual Studio isolieren, während der Entwicklung einer Erweiterungs durch die Bereitstellung im folgenden experimentellen Ordner (unter Windows Vista und Windows 7):  
+ Sie können Ihre funktionierende Version von Visual Studio isolieren, während Sie eine Erweiterung entwickeln, indem Sie Sie im folgenden experimentellen Ordner (unter Windows Vista und Windows 7) bereitstellen:  
   
- *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
+ *% LocalAppData%* \visualstudio\10.0exp\extensions \\ *Company* \\ *extensionID*  
   
- wo *%LocalAppData%* ist der Name des angemeldeten Benutzers *Unternehmen* ist der Name des Unternehmens, das die Erweiterung besitzt und *ExtensionID* ist die ID der Erweiterung.  
+ Wenn " *% LocalAppData%* " der Name des angemeldeten Benutzers ist, ist " *Company* " der Name des Unternehmens, das die Erweiterung besitzt, und " *extensionID* " ist die ID der Erweiterung.  
   
- Wenn Sie eine Erweiterung in der experimentellen Speicherort bereitstellen, erfolgt die Ausführung im Debugmodus befindet. Eine zweite Instanz von Visual Studio wird gestartet, und Sie heißt **Microsoft Visual Studio – experimentelle Instanz**.  
+ Wenn Sie eine Erweiterung am experimentellen Speicherort bereitstellen, wird Sie im Debugmodus ausgeführt. Eine zweite Instanz von Visual Studio wird gestartet, und Sie wird **Microsoft Visual Studio experimentelle Instanz**benannt.  
   
 ## <a name="managing-extensions"></a>Verwalten von Erweiterungen  
- Visual Studio-Erweiterungen finden Sie in **Erweiterungen und Updates** (auf der **Tools** Menü). Wenn Sie eine Erweiterung in der experimentellen Instanz testen, wird es aufgeführt **Erweiterungen und Updates** in der experimentellen Instanz jedoch nicht in der Entwicklungsinstanz aufgeführt.  
+ Erweiterungen für Visual Studio werden unter **Erweiterungen und Updates** ( **im Menü Extras** ) aufgelistet. Wenn Sie eine Erweiterung in der experimentellen Instanz testen, wird Sie in **Erweiterungen und Updates** in der experimentellen Instanz aufgeführt, ist aber nicht in der Entwicklungs Instanz aufgeführt.  
   
- Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
+ Weitere Informationen [finden Sie untersuchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
   
-## <a name="using-templates-to-create-editor-extensions"></a>Mithilfe von Vorlagen zum Erstellen von Editor-Erweiterungen  
- Sie können die Editorvorlagen verwenden, zum Erstellen von MEF-Erweiterungen, die Klassifizierungen, Zusatzelemente und Ränder anpassen. Es sind Vorlagen für c# und Visual Basic-Projekte. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+## <a name="using-templates-to-create-editor-extensions"></a>Verwenden von Vorlagen zum Erstellen von Editor-Erweiterungen  
+ Mithilfe von Editor-Vorlagen können Sie MEF-Erweiterungen erstellen, mit denen Klassifizierer, Zusatzelemente und Ränder angepasst werden. Es sind Vorlagen für c#-und Visual Basic-Projekte vorhanden. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
- Sie können auch die VSIX-Projektvorlage verwenden, zum Erstellen von Erweiterungen. Diese Vorlage enthält nur die Elemente, die erforderlich sind, um jede Art von Erweiterung bereitstellen und sind der Datei "Source.Extension.vsixmanifest", die erforderlichen Assemblyverweise und eine Projektdatei, die die Buildaufgaben, mit denen Sie bereitstellen können die die Erweiterung. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
+ Sie können auch die VSIX-Projektvorlage zum Erstellen von Erweiterungen verwenden. Mit dieser Vorlage werden nur die Elemente bereitgestellt, die zum Bereitstellen einer beliebigen Erweiterung erforderlich sind, sowie die Datei "Source. Extension. vsixmanifest", die erforderlichen Assemblyverweise und eine Projektdatei, die die Buildaufgaben enthält, die Ihnen die Bereitstellung der Erweiterung ermöglichen. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
   
- Sie können auch Editor MEF-Komponenten aus einer Erweiterung für Visual Studio-Paket erstellen. Finden Sie unter den folgenden exemplarischen Vorgehensweisen, Details:  
+ Sie können auch Editoren-MEF-Komponenten aus einer Visual Studio-Paket Erweiterung erstellen. Weitere Informationen finden Sie in den folgenden exemplarischen Vorgehensweisen:  
   
 - [Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
 - [Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)

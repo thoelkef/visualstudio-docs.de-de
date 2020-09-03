@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Suchfunktionen zu einem Toolfenster | Microsoft-Dokumentation
+title: Hinzufügen der Suche zu einem Tool Fenster | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,52 +11,52 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263580"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Hinzufügen von Suchfunktionen zu einem Toolfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können Sie die gleichen Suchfunktionen, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:  
+Wenn Sie ein Tool Fenster in ihrer Erweiterung erstellen oder aktualisieren, können Sie dieselbe Suchfunktion hinzufügen, die an anderer Stelle in Visual Studio angezeigt wird. Diese Funktion umfasst die folgenden Features:  
   
-- Ein Suchfeld, die immer in einem benutzerdefinierten Bereich der Symbolleiste befindet.  
+- Ein Suchfeld, das sich immer in einem benutzerdefinierten Bereich der Symbolleiste befindet.  
   
-- Eine Statusanzeige, die in das Suchfeld selbst überlagert wird.  
+- Eine Statusanzeige, die im Suchfeld selbst überlagert wird.  
   
-- Die Möglichkeit, Ergebnisse angezeigt werden, sobald Sie jedes Zeichen (Sofortsuche) eingeben, oder nur nach der Auswahl der EINGABETASTE (Suchen Sie nach Bedarf).  
+- Die Möglichkeit, Ergebnisse anzuzeigen, sobald Sie die einzelnen Zeichen eingeben (sofortige Suche) oder erst nach Auswahl der EINGABETASTE (nach Bedarf suchen).  
   
-- Eine Liste, die Begriffe anzeigt, für die Sie zuletzt gesucht haben.  
+- Eine Liste, die die Begriffe anzeigt, nach denen Sie zuletzt gesucht haben.  
   
-- Die Fähigkeit zum Suchen nach bestimmten Feldern oder Aspekte der Ziele für die Suche zu filtern.  
+- Die Möglichkeit zum Filtern von Such Vorgängen nach bestimmten Feldern oder Aspekten der Such Ziele.  
   
-  Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
+  In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufgaben ausführen:  
   
 1. Erstellen Sie ein VSPackage-Projekt.  
   
-2. Erstellen Sie ein Toolfenster, die ein Steuerelement mit einem schreibgeschützten Textfeld enthält.  
+2. Erstellen Sie ein Tool Fenster, das ein UserControl-Steuerelement mit einem schreibgeschützten Textfeld enthält.  
   
-3. Hinzufügen eines Suchfelds zum Toolfenster an.  
+3. Fügen Sie dem Tool Fenster ein Suchfeld hinzu.  
   
-4. Fügen Sie die Search-Implementierung.  
+4. Fügen Sie die Such Implementierung hinzu.  
   
-5. Aktivieren Sie die Sofortsuche und der Anzeige einer Statusanzeige dar.  
+5. Aktivieren Sie die sofortige Suche und die Anzeige einer Statusanzeige.  
   
-6. Hinzufügen einer **Groß-/Kleinschreibung** Option.  
+6. Fügen Sie eine Übereinstimmungs **Fall** Option hinzu.  
   
-7. Hinzufügen einer **suchen nur gerade Zeilen** Filter.  
+7. Fügen Sie einen Filter zum reinen **Suchen von Zeilen** hinzu.  
   
 ## <a name="to-create-a-vsix-project"></a>So erstellen Sie ein VSIX-Projekt  
   
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TestToolWindowSearch` mit einem Toolfenster mit dem Namen **TestSearch**. Wenn Sie hierzu Unterstützung benötigen, lesen Sie [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Erstellen Sie ein VSIX-Projekt `TestToolWindowSearch` mit dem Namen und einem Tool Fenster mit dem Namen **testsearch**. Wenn Sie hierzu Unterstützung benötigen, lesen Sie [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="to-create-a-tool-window"></a>Zum Erstellen eines Toolfensters  
+## <a name="to-create-a-tool-window"></a>So erstellen Sie ein Tool Fenster  
   
-1. In der `TestToolWindowSearch` Projekt, öffnen Sie die Datei TestSearchControl.xaml.  
+1. Öffnen Sie im `TestToolWindowSearch` Projekt die Datei "testsearchcontrol. XAML".  
   
-2. Ersetzen Sie die vorhandene `<StackPanel>` Block mit den folgenden Block an, das ein schreibgeschütztes hinzufügt <xref:System.Windows.Controls.TextBox> auf die <xref:System.Windows.Controls.UserControl> im Toolfenster.  
+2. Ersetzen Sie den vorhandenen- `<StackPanel>` Block durch den folgenden-Block, der <xref:System.Windows.Controls.TextBox> der <xref:System.Windows.Controls.UserControl> im Tool Fenster einen schreibgeschützten hinzufügt.  
   
     ```xaml  
     <StackPanel Orientation="Vertical">  
@@ -67,17 +67,17 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     </StackPanel>  
     ```  
   
-3. Fügen Sie in der Datei TestSearchControl.xaml.cs die folgenden using-Anweisung:  
+3. Fügen Sie in der Datei TestSearchControl.XAML.cs die folgende using-Anweisung hinzu:  
   
     ```csharp  
     using System.Text;  
     ```  
   
-4. Entfernen Sie die `button1_Click()` Methode.  
+4. Entfernen Sie die- `button1_Click()` Methode.  
   
-     In der **TestSearchControl** Klasse, fügen Sie den folgenden Code hinzu.  
+     Fügen Sie in der **testsearchcontrol** -Klasse den folgenden Code hinzu.  
   
-     Dieser Code Fügt eine öffentliche <xref:System.Windows.Controls.TextBox> Eigenschaft mit dem Namen **SearchResultsTextBox** und eine öffentliche Zeichenfolgeneigenschaft mit dem Namen **SearchContent**. Klicken Sie im Konstruktor SearchResultsTextBox festgelegt ist, in das Textfeld, und SearchContent wird initialisiert, um eine neue Zeile getrennte Reihe von Zeichenfolgen. Der Inhalt des Textfelds wird auch auf den Satz von Zeichenfolgen initialisiert.  
+     Dieser Code fügt eine öffentliche <xref:System.Windows.Controls.TextBox> Eigenschaft mit dem Namen **searchresultstextbox** und eine öffentliche Zeichen folgen Eigenschaft mit dem Namen **searchcontent**hinzu. Im Konstruktor ist searchresultstextbox auf das Textfeld festgelegt, und searchcontent wird mit einem durch Trennzeichen getrennten Satz von Zeichen folgen initialisiert. Der Inhalt des Textfelds wird auch mit dem Satz von Zeichen folgen initialisiert.  
   
     ```csharp  
     public partial class TestSearchControl : UserControl  
@@ -115,15 +115,15 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
   
 5. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.  
   
-6. Wählen Sie auf der Menüleiste **Ansicht**, **Other Windows**, **TestSearch**.  
+6. Wählen Sie in der Menüleiste **Ansicht**, **Weitere Fenster**, **Testsuche**aus.  
   
-     Das Toolfenster angezeigt wird, aber das Steuerelement für die Suche nicht noch angezeigt.  
+     Das Tool Fenster wird angezeigt, aber das Such Steuerelement wird noch nicht angezeigt.  
   
-## <a name="to-add-a-search-box-to-the-tool-window"></a>Das Fenster ein Suchfeld hinzu  
+## <a name="to-add-a-search-box-to-the-tool-window"></a>So fügen Sie dem Tool Fenster ein Suchfeld hinzu  
   
-1. Fügen Sie den folgenden Code hinzu, in der Datei TestSearch.cs der `TestSearch` Klasse. Der Code überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> Eigenschaft so, dass der Get-Accessor gibt `true`.  
+1. Fügen Sie der-Klasse in der Datei TestSearch.cs den folgenden Code hinzu `TestSearch` . Der Code überschreibt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> Eigenschaft, sodass der Get-Accessor zurückgibt `true` .  
   
-     Um die Suche zu aktivieren, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> Eigenschaft. Die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> -Klasse implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> und stellt eine Standardimplementierung, die Suche nicht ermöglicht.  
+     Um die Suche zu aktivieren, müssen Sie die-Eigenschaft überschreiben <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> . Die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> -Klasse implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> und stellt eine Standard Implementierung bereit, die die Suche nicht ermöglicht.  
   
     ```csharp  
     public override bool SearchEnabled  
@@ -132,16 +132,16 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-2. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+2. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.  
   
-3. Öffnen Sie in der experimentellen Instanz von Visual Studio **TestSearch**.  
+3. Öffnen Sie **testsearch**in der experimentellen Instanz von Visual Studio.  
   
-     Am oberen Rand des Toolfensters, ein Steuerelement für die Suche wird angezeigt, mit einem **Suche** Wasserzeichen und ein vergrößern Glass-Symbol. Suche funktioniert jedoch noch nicht, da der Suchprozess nicht implementiert wurde.  
+     Am oberen Rand des Tool Fensters wird ein Such Steuerelement mit einem **Such** Wasserzeichen und einem Lupensymbol angezeigt. Die Suche funktioniert jedoch noch nicht, da der Suchprozess nicht implementiert wurde.  
   
-## <a name="to-add-the-search-implementation"></a>Die suchimplementierung hinzufügen  
- Wenn Sie die Suche auf Aktivieren einer <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, wie im vorherigen Verfahren, das Fenster einen Search-Host erstellt. Dieser Host eingerichtet und verwaltet die Suche, die stets in einem Hintergrundthread auftreten. Da die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Klasse verwaltet die Erstellung von Search-Host und die Einstellung von der Suche, die Sie erstellen eine suchenaufgabe und geben Sie die Search-Methode. Die Suche erfolgt in einem Hintergrundthread und Aufrufe an das Tool Window-Steuerelement im UI-Thread auftreten. Aus diesem Grund müssen Sie verwenden die [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) Methode, um alle Aufrufe zu verwalten, die Sie im Zusammenhang mit dem Steuerelement vornehmen.  
+## <a name="to-add-the-search-implementation"></a>So fügen Sie die Such Implementierung hinzu  
+ Wenn Sie die Suche in einer aktivieren <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> , wie im vorherigen Verfahren, erstellt das Tool Fenster einen suchhost. Dieser Host richtet Suchprozesse ein und verwaltet diese, die immer in einem Hintergrund Thread auftreten. Da die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> -Klasse die Erstellung des suchhosts und die Einrichtung der Suche verwaltet, müssen Sie nur eine Suchaufgabe erstellen und die Search-Methode bereitstellen. Der Suchvorgang erfolgt in einem Hintergrund Thread, und Aufrufe des Tool Fenster-Steuer Elements treten im UI-Thread auf. Daher müssen Sie die Methode [threadhelper. aufrufen *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) verwenden, um alle Aufrufe zu verwalten, die Sie im Umgang mit dem Steuerelement vornehmen.  
   
-1. Fügen Sie die folgenden, in der Datei TestSearch.cs `using` Anweisungen:  
+1. Fügen Sie in der Datei TestSearch.cs die folgenden- `using` Anweisungen hinzu:  
   
     ```csharp  
     using System;  
@@ -156,15 +156,15 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-2. In der `TestSearch` -Klasse verwenden, fügen Sie den folgenden Code, in der folgenden Aktionen ausgeführt:  
+2. Fügen Sie in der- `TestSearch` Klasse den folgenden Code hinzu, der die folgenden Aktionen ausführt:  
   
-    - Überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> Methode zum Erstellen einer suchenaufgabe.  
+    - Überschreibt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> Methode, um eine Suchaufgabe zu erstellen.  
   
-    - Überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> Methode, um den Zustand des Textfelds wiederherzustellen. Diese Methode wird aufgerufen, wenn ein Benutzer abbricht, einer suchenaufgabe, und wenn ein Benutzer legt fest, oder hebt die Festlegung Optionen oder Filter. Beide <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> im UI-Thread aufgerufen werden. Aus diesem Grund müssen nicht im Textfeld von Zugriff auf die [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) Methode.  
+    - Überschreibt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> Methode, um den Zustand des Textfelds wiederherzustellen. Diese Methode wird aufgerufen, wenn ein Benutzer eine Suchaufgabe abbricht und wenn ein Benutzeroptionen oder Filter festlegt bzw. aufhebt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>Und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> werden im UI-Thread aufgerufen. Daher müssen Sie nicht über die [threadhelper. aufrufen *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) -Methode auf das Textfeld zugreifen.  
   
-    - Erstellt eine Klasse mit dem Namen `TestSearchTask` von erbt <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, die bietet einer Standardimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
+    - Erstellt eine Klasse mit dem Namen, die `TestSearchTask` von erbt <xref:Microsoft.VisualStudio.Shell.VsSearchTask> und eine Standard Implementierung von bereitstellt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask> .  
   
-         In `TestSearchTask`, der Konstruktor legt ein privates Feld, das im Toolfenster verweist. Um die Search-Methode bereitzustellen, die Sie überschreiben die <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> und <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStopSearch%2A> Methoden. Die <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> Methode ist, in dem Sie den Suchvorgang implementieren. Dieser Prozess umfasst die Suche, Anzeige der Suchergebnisse in das Textfeld und das Aufrufen der basisklassenimplementierung dieser Methode zum melden, dass die Suche abgeschlossen ist.  
+         In `TestSearchTask` legt der Konstruktor ein privates Feld fest, das auf das Tool Fenster verweist. Um die Suchmethode bereitzustellen, überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> -Methode und die-Methode <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStopSearch%2A> . Bei der- <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> Methode wird der Suchprozess implementiert. Dieser Prozess umfasst das Ausführen der Suche, das Anzeigen der Suchergebnisse im Textfeld und das Aufrufen der Basisklassen Implementierung dieser Methode, um zu melden, dass die Suche vollständig ist.  
   
     ```csharp  
     public override IVsSearchTask CreateSearch(uint dwCookie, IVsSearchQuery pSearchQuery, IVsSearchCallback pSearchCallback)  
@@ -261,18 +261,18 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-3. Testen Sie Ihre suchimplementierung, indem Sie die folgenden Schritte ausführen:  
+3. Testen Sie Ihre Such Implementierung, indem Sie die folgenden Schritte ausführen:  
   
-    1. Das Projekt neu, und starten Sie das Debuggen.  
+    1. Erstellen Sie das Projekt neu, und starten Sie das Debugging.  
   
-    2. Öffnen Sie in der experimentellen Instanz von Visual Studio das Fenster erneut, geben Sie Suchtext Sie im Suchfenster und drücken Sie die EINGABETASTE.  
+    2. Öffnen Sie in der experimentellen Instanz von Visual Studio erneut das Tool Fenster, geben Sie im Suchfenster den Suchtext ein, und drücken Sie die EINGABETASTE.  
   
-         Die richtigen Ergebnisse sollte angezeigt werden.  
+         Es sollten die richtigen Ergebnisse angezeigt werden.  
   
-## <a name="to-customize-the-search-behavior"></a>Das Suchverhalten anpassen  
- Ändern Sie die sucheinstellungen, können Sie eine Reihe von Änderungen vornehmen, wie das Nachschlagesteuerelement angezeigt wird und wie die Suche durchgeführt wird. Beispielsweise können Sie ändern das Wasserzeichen (der Standardtext, der in das Suchfeld angezeigt wird), die minimale und maximale Breite des Suchsteuerelements und angibt, ob eine Statusanzeige angezeigt. Sie können auch ändern, dass der Punkt, an die Suchergebnisse starten (bei Bedarf oder auf die Sofortsuche) angezeigt werden und angibt, ob eine Liste von Begriffen angezeigt, für die Sie zuletzt gesucht haben. Sie finden die vollständige Liste der Einstellungen in der <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> Klasse.  
+## <a name="to-customize-the-search-behavior"></a>So passen Sie das Suchverhalten an  
+ Durch Ändern der Sucheinstellungen können Sie eine Vielzahl von Änderungen an der Anzeige des Such Steuer Elements und der Art der Durchführung der Suche vornehmen. Beispielsweise können Sie das Wasserzeichen (den Standardtext im Suchfeld), die minimale und die maximale Breite des Such Steuer Elements ändern und festlegen, ob eine Statusanzeige angezeigt werden soll. Sie können auch den Punkt ändern, an dem die Suchergebnisse angezeigt werden (Bedarfs gesteuert oder sofort Suche) und eine Liste von Begriffen anzeigen, nach denen Sie zuletzt gesucht haben. Die komplette Liste der Einstellungen finden Sie in der- <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> Klasse.  
   
-1. Fügen Sie den folgenden Code hinzu, in der Datei TestSearch.cs der `TestSearch` Klasse. Dieser Code ermöglicht die Sofortsuche anstelle der Suche bei Bedarf (d. h., die der Benutzer keine Eingabe). Der Code überschreibt die `ProvideSearchSettings` -Methode in der die `TestSearch` -Klasse, die zum Ändern der Standardeinstellungen erforderlich ist.  
+1. Fügen Sie der-Klasse in der Datei TestSearch.cs den folgenden Code hinzu `TestSearch` . Dieser Code ermöglicht die sofortige Suche anstelle der bedarfsgesteuerten Suche (was bedeutet, dass der Benutzer nicht auf die EINGABETASTE klicken muss). Der Code überschreibt die- `ProvideSearchSettings` Methode in der- `TestSearch` Klasse, die erforderlich ist, um die Standardeinstellungen zu ändern.  
   
     ```csharp  
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
@@ -282,11 +282,11 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
             (uint)VSSEARCHSTARTTYPE.SST_INSTANT);}  
     ```  
   
-2. Testen Sie die neue Einstellung durch Neuerstellen der Projektmappe, und starten Sie den Debugger erneut.  
+2. Testen Sie die neue Einstellung, indem Sie die Projekt Mappe neu erstellen und den Debugger neu starten.  
   
-     Suchergebnisse werden jedes Mal, dass Sie ein Zeichen in das Suchfeld eingeben.  
+     Suchergebnisse werden jedes Mal angezeigt, wenn Sie ein Zeichen in das Suchfeld eingeben.  
   
-3. In der `ProvideSearchSettings` -Methode, fügen die folgende Zeile, die die Anzeige einer Statusanzeige ermöglicht.  
+3. Fügen Sie in der- `ProvideSearchSettings` Methode die folgende Zeile hinzu, die die Anzeige einer Statusanzeige ermöglicht.  
   
     ```csharp  
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
@@ -300,26 +300,26 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-     Für die Statusanzeige angezeigt werden muss der Status gemeldet werden. Um den Status zu melden, kommentieren Sie den folgenden Code in die `OnStartSearch` Methode der `TestSearchTask` Klasse:  
+     Damit die Statusanzeige angezeigt wird, muss der Fortschritt gemeldet werden. Um den Status zu melden, heben Sie die Auskommentierung des folgenden Codes in der- `OnStartSearch` Methode der- `TestSearchTask` Klasse auf:  
   
     ```csharp  
     SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
     ```  
   
-4. Zu einer Verlangsamung Verarbeitungsstatus kompakt, dass die Befehlsleiste sichtbar ist, heben Sie die auskommentierung der folgenden Zeile in der `OnStartSearch` Methode der `TestSearchTask` Klasse:  
+4. Um die Verarbeitung so zu verlangsamen, dass die Statusanzeige sichtbar ist, heben Sie die Auskommentierung der folgenden Zeile in der- `OnStartSearch` Methode der- `TestSearchTask` Klasse auf:  
   
     ```csharp  
     System.Threading.Thread.Sleep(100);  
     ```  
   
-5. Testen Sie die neuen Einstellungen durch Neuerstellen der Projektmappe und Debugb wird gestartet.  
+5. Testen Sie die neuen Einstellungen, indem Sie die Projekt Mappe neu erstellen und mit debugb beginnen.  
   
-     Die Statusanzeige wird im Suchfenster (als eine blaue Linie unterhalb des Suchfelds für Text) jedes Mal, dass Sie eine Suche durchführen.  
+     Die Statusanzeige wird bei jeder Durchführung der Suche im Suchfenster (als blaue Linie unter dem Suchtextfeld) angezeigt.  
   
-## <a name="to-enable-users-to-refine-their-searches"></a>So aktivieren Sie Benutzern die Suche zu verfeinern.  
- Sie können Benutzern die Suche mithilfe von Optionen wie z. B. optimieren **Groß-/Kleinschreibung** oder **Nur ganzes Wort suchen**. Optionen können Boolesch, sein, die angezeigt werden, als Sie die Kontrollkästchen oder Befehle, die als Schaltflächen angezeigt werden. In dieser exemplarischen Vorgehensweise erstellen Sie eine boolesche Option.  
+## <a name="to-enable-users-to-refine-their-searches"></a>So können Sie es Benutzern ermöglichen, Ihre Suchvorgänge zu verfeinern  
+ Sie können es Benutzern ermöglichen, Ihre Suchvorgänge mithilfe von **Optionen wie z** **. b** Optionen können ein boolescher Wert sein, der als Kontrollkästchen angezeigt wird, oder Befehle, die als Schaltflächen angezeigt werden. In dieser exemplarischen Vorgehensweise erstellen Sie eine boolesche Option.  
   
-1. Fügen Sie den folgenden Code hinzu, in der Datei TestSearch.cs der `TestSearch` Klasse. Der Code überschreibt die `SearchOptionsEnum` -Methode, die kann die suchimplementierung zu erkennen, ob eine gegebene Option aktiviert oder deaktiviert ist. Der Code in `SearchOptionsEnum` Fügt eine Option entsprechend der Fall, um eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> Enumerator. Die Möglichkeit, die Groß-und Kleinschreibung übereinstimmen, wird auch als zur Verfügung gestellt der `MatchCaseOption` Eigenschaft.  
+1. Fügen Sie der-Klasse in der Datei TestSearch.cs den folgenden Code hinzu `TestSearch` . Der Code überschreibt die- `SearchOptionsEnum` Methode, die es der Such Implementierung ermöglicht, zu erkennen, ob eine bestimmte Option aktiviert oder deaktiviert ist. Der Code in `SearchOptionsEnum` Fügt eine Option hinzu, um die Groß-/Kleinschreibung einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> Enumerator zuzuordnen. Die Option zum Vergleichen der Groß-/Kleinschreibung wird auch als-Eigenschaft zur Verfügung gestellt `MatchCaseOption` .  
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
@@ -353,7 +353,7 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-2. In der `TestSearchTask` -Klasse, heben Sie die auskommentierung MatchCase Zeile in der `OnStartSearch` Methode:  
+2. Entfernen Sie in der- `TestSearchTask` Klasse in der-Methode die Kommentar MatchCase-Zeile `OnStartSearch` :  
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
@@ -389,18 +389,18 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
   
 3. Testen Sie die Option:  
   
-    1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+    1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.  
   
-    2. Wählen Sie im Toolfenster den Pfeil nach unten auf der rechten Seite des Textfelds.  
+    2. Wählen Sie im Tool Fenster den Pfeil nach unten auf der rechten Seite des Textfelds aus.  
   
-         Die **Groß-/Kleinschreibung** Kontrollkästchen angezeigt wird.  
+         Das Kontrollkästchen Groß- **/Kleinschreibung** suchen wird angezeigt.  
   
-    3. Wählen Sie die **Groß-/Kleinschreibung** Kontrollkästchen, und führen Sie einige suchen.  
+    3. Aktivieren Sie das Kontrollkästchen **Groß-/Kleinschreibung** suchen, und führen Sie dann einige suchen aus  
   
-## <a name="to-add-a-search-filter"></a>Um einen Suchfilter hinzufügen  
- Sie können die Suchfilter hinzufügen, mit die Benutzer zu die Suchziele filtern können. Beispielsweise können Sie Dateien im Datei-Explorer filtern, indem Sie die Datumsangaben, die auf denen die zuletzt geändert wurden und die Dateinamenerweiterungen. In dieser exemplarischen Vorgehensweise fügen Sie einen Filter für nur gerade Zeilen. Wenn der Benutzer, dass der Filter wählt, wird die Suchabfrage von Search-Host die Zeichenfolgen, die Sie angeben, hinzugefügt. Sie können diese Zeichenfolgen in eine Suchmethode identifizieren und entsprechend zu die Suchziele filtern.  
+## <a name="to-add-a-search-filter"></a>So fügen Sie einen Suchfilter hinzu  
+ Sie können Suchfilter hinzufügen, die es Benutzern ermöglichen, den Satz von Suchzielen zu verfeinern. Sie können z. b. Dateien im Datei-Explorer nach den Datumsangaben filtern, an denen Sie zuletzt geändert wurden, und deren Dateinamen Erweiterungen. In dieser exemplarischen Vorgehensweise fügen Sie nur Zeilen einen Filter hinzu. Wenn der Benutzer diesen Filter auswählt, fügt der suchhost die von Ihnen angegebenen Zeichen folgen der Suchabfrage hinzu. Anschließend können Sie diese Zeichen folgen in der Suchmethode identifizieren und die Suchziele entsprechend filtern.  
   
-1. Fügen Sie den folgenden Code hinzu, in der Datei TestSearch.cs der `TestSearch` Klasse. Der Code implementiert `SearchFiltersEnum` durch Hinzufügen einer <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> festlegt, dass die Suchergebnisse zu filtern, sodass nur gerade Zeilen angezeigt werden.  
+1. Fügen Sie der-Klasse in der Datei TestSearch.cs den folgenden Code hinzu `TestSearch` . Der Code implementiert `SearchFiltersEnum` durch Hinzufügen eines <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> , das angibt, dass die Suchergebnisse so gefiltert werden, dass nur noch Zeilen angezeigt werden.  
   
     ```csharp  
     public override IVsEnumWindowSearchFilters SearchFiltersEnum  
@@ -415,9 +415,9 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
   
     ```  
   
-     Jetzt das Suchsteuerelement Suchfilter zeigt `Search even lines only`. Wenn der Benutzer wählt den Filter, die Zeichenfolge `lines:"even"` in das Suchfeld angezeigt wird. Andere Suchkriterien können zur gleichen Zeit wie die Filter angezeigt werden. Durchsuchen von Zeichenfolgen möglicherweise vor dem Filter, nach der Filter oder beides angezeigt werden.  
+     Das Such Steuerelement zeigt nun den Suchfilter an `Search even lines only` . Wenn der Benutzer den Filter auswählt, wird die Zeichenfolge `lines:"even"` im Suchfeld angezeigt. Andere Suchkriterien können zur gleichen Zeit wie der Filter angezeigt werden. Such Zeichenfolgen können vor dem Filter, nach dem Filter oder beidem angezeigt werden.  
   
-2. Fügen Sie die folgenden Methoden hinzu, in der Datei TestSearch.cs der `TestSearchTask` -Klasse, die in der `TestSearch` Klasse. Diese Methoden unterstützen die `OnStartSearch` -Methode, die Sie im nächsten Schritt ändern werden.  
+2. Fügen Sie in der Datei TestSearch.cs der-Klasse die folgenden Methoden hinzu `TestSearchTask` , die sich in der- `TestSearch` Klasse befinden. Diese Methoden unterstützen die- `OnStartSearch` Methode, die Sie im nächsten Schritt ändern.  
   
     ```csharp  
     private string RemoveFromString(string origString, string stringToRemove)  
@@ -445,7 +445,7 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-3. In der `TestSearchTask` -Klasse, aktualisieren Sie die `OnStartSearch` Methode durch den folgenden Code. Diese Änderung wird den Code zur Unterstützung des Filters aktualisiert.  
+3. Aktualisieren Sie die-Methode in der- `TestSearchTask` Klasse `OnStartSearch` mit dem folgenden Code. Diese Änderung aktualisiert den Code, um den Filter zu unterstützen.  
   
     ```csharp  
     protected override void OnStartSearch()  
@@ -524,32 +524,32 @@ Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können
     }  
     ```  
   
-4. Testen Sie Ihres Codes.  
+4. Testen Sie Ihren Code.  
   
-5. Erstellen Sie das Projekt, und starten Sie das Debugging. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie das Toolfenster, und wählen Sie dann auf den Pfeil nach unten auf dem Suchsteuerelement.  
+5. Erstellen Sie das Projekt, und starten Sie das Debugging. Öffnen Sie in der experimentellen Instanz von Visual Studio das Tool Fenster, und wählen Sie dann den Pfeil nach unten auf dem Steuerelement suchen aus.  
   
-     Die **Groß-/Kleinschreibung** Kontrollkästchen und die **suchen nur gerade Zeilen** Filter angezeigt.  
+     Das Kontrollkästchen Groß- **/Kleinschreibung** suchen und der Filter **nur Zeilen suchen** werden angezeigt.  
   
-6. Wählen Sie den Filter ein.  
+6. Wählen Sie den Filter aus.  
   
-     Enthält das Suchfeld **Zeilen: "noch"** , und die folgenden Ergebnisse angezeigt werden:  
+     Das Suchfeld enthält **Zeilen: "even"**, und die folgenden Ergebnisse werden angezeigt:  
   
-     gute 2  
+     2 gut  
   
-     4 gute  
+     4 gut  
   
-     6 goodbye  
+     6-Goodbye  
   
-7. Löschen Sie `lines:"even"` wählen Sie im Suchfeld die **Groß-/Kleinschreibung** aus, und geben Sie dann `g` in das Suchfeld.  
+7. Löschen `lines:"even"` Sie im Suchfeld das Kontrollkästchen Groß- **/Kleinschreibung** aktivieren, und geben Sie dann `g` in das Suchfeld ein.  
   
-     Die folgenden Ergebnisse angezeigt werden:  
+     Die folgenden Ergebnisse werden angezeigt:  
   
-     1 wechseln  
+     1 go  
   
-     gute 2  
+     2 gut  
   
-     5 goodbye  
+     5.  
   
-8. Wählen Sie das X auf der Seite rechts neben dem Suchfeld ein.  
+8. Wählen Sie das X auf der rechten Seite des Suchfelds aus.  
   
-     Die Suche wird gelöscht, und die ursprünglichen Inhalte angezeigt werden. Allerdings die **Groß-/Kleinschreibung** das Kontrollkästchen aktiviert ist.
+     Die Suche wird gelöscht, und der ursprüngliche Inhalt wird angezeigt. Das Kontrollkästchen **Groß-/Kleinschreibung** ist jedoch weiterhin aktiviert.

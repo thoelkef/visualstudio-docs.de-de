@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft-Dokumentation
+title: 'Idebugparser-dexpression:: evaluatesync | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6761cd5ec9df67d511ab905e173ac0f286c5ee7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194548"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode wertet den analysierten Ausdruck und wandelt optional das Ergebnis in einen anderen Datentyp.  
+Diese Methode wertet den analysierten Ausdruck aus und wandelt das Ergebnis optional in einen anderen Datentyp um.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,35 +52,35 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parameter  
  `dwEvalFlags`  
- [in] Eine Kombination von [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Konstanten, die steuern, wie der Ausdruck ausgewertet werden soll.  
+ in Eine Kombination aus [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Konstanten, die Steuern, wie der Ausdruck ausgewertet werden soll.  
   
  `dwTimeout`  
- [in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.  
+ in Gibt die maximale Zeit in Millisekunden an, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.  
   
  `pSymbolProvider`  
- [in] Die symbolanbieter, ausgedrückt als eine [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) Schnittstelle.  
+ in Der Symbol Anbieter, ausgedrückt als [idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) -Schnittstelle.  
   
  `pAddress`  
- [in] Der aktuelle Ausführungsort innerhalb einer Methode, ausgedrückt als eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ in Der aktuelle Ausführungs Speicherort innerhalb einer Methode, ausgedrückt als [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle.  
   
  `pBinder`  
- [in] Der Binder, ausgedrückt als eine [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Schnittstelle.  
+ in Der Binder, ausgedrückt als [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle.  
   
  `bstrResultType`  
- [in] Der Typ das Ergebnis sollte in umgewandelt werden. Dieses Argument kann ein null-Wert sein.  
+ in Der Typ, in den das Ergebnis umgewandelt werden soll. Dieses Argument kann ein NULL-Wert sein.  
   
  `ppResult`  
- [out] Gibt die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle, die die Ergebnisse der Auswertung darstellt.  
+ vorgenommen Gibt die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle zurück, die die Ergebnisse der Auswertung darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Kontexts für die ausdrucksauswertung wird angegeben, durch `pAddress`, wodurch es möglich, um zu bestimmen, die enthaltende Methode, und klicken Sie dann den Wert der Symbole im Ausdruck bestimmen Regeln verwenden die Sprache festlegen des Gültigkeitsbereichs.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Ausdrucks Auswertungs Kontext wird durch angegeben `pAddress` , wodurch es möglich ist, die enthaltende Methode zu bestimmen und dann die sprach Bereichs Regeln zu verwenden, um den Wert der Symbole im Ausdruck zu ermitteln.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+ [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)

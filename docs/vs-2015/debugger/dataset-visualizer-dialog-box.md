@@ -1,5 +1,5 @@
 ---
-title: DataSet-Schnellansicht (Dialogfeld) | Microsoft-Dokumentation
+title: Dialogfeld „Dataset-Schnellansicht“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697838"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset-Schnellansicht (Dialogfeld)
@@ -43,8 +43,8 @@ Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-
  Tabelle  
  Verwenden Sie dieses Dropdown-Listenfeld, um eine Tabelle innerhalb des Datasets auszuwählen, das Sie visuell darstellen möchten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
+ [Erstellen von benutzerdefinierten Visualisierungen](../debugger/create-custom-visualizers-of-data.md)   
+ [Variablen Fenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Anzeigen von Datenwerten als Datentipps](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

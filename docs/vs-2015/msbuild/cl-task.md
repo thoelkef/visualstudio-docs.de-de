@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698636"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
@@ -49,7 +49,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Optionaler String-Parameter.  
   
-   Eine Liste von Befehlszeilenoptionen. Beispielsweise „/*option1* /*option2* /*option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
+   Eine Liste von Befehlszeilenoptionen. Beispiel: "/*Option1*  / *Option2*  / *Option #*". Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
   
    Weitere Informationen finden Sie unter [Compileroptionen](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
@@ -79,15 +79,15 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NoListing** - *\<none>*  
+  - **Nolisting** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **Assemblycode**  -  **/FA**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **Assemblyandmachinecode**  -  **/FAC**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **Assemblyandsourcecode**  -  **/FAS**  
   
-  - **All** - **/FAcs**  
+  - **Alle**  -  **/FACS**  
   
     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -99,13 +99,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Default** -                          *\<none>*  
+  - **Vorgegebene** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **Stackframeruntimecheck**  -  **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **Uninitializedlocalusagecheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **Enablefastchecks**  -                           **/RTC1**  
   
     Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
@@ -147,11 +147,11 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  -  **/GD**  
   
-  - **FastCall** -                          **/Gr**  
+  - **Fastcallcenter**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **StdCall**  -                           **/Gz**  
   
     Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
@@ -163,11 +163,11 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Default** - *\<none>*  
+  - **Vorgegebene** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **Compileasc**  -  **/TC**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **Compileascpp**  -  **/Tp**  
   
     Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
@@ -179,17 +179,17 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **false** - *\<none>*  
+  - **Alarm** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **true**  -  **/CLR**  
   
-  - **Pure** - **/clr:pure**  
+  - **Rein**  -  **/clr: rein**  
   
-  - **Safe** - **/clr:safe**  
+  - **Sicher**  -  **/clr: sicher**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  -  **/clr: oldSyntax**  
   
-    Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Weitere Informationen finden Sie unter [/CLR (Common Language Runtime-Kompilierung)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -207,11 +207,11 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **OldStyle** - **/Z7**  
+  - **Oldstyle**  -  **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **Program Database**  -  **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **EDITANDCONTINUE**  -  **/Zi**  
   
     Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
@@ -239,9 +239,9 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **Streamingsimdextensions**  -  **/arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/arch: SSE2**  
   
     Weitere Informationen finden Sie unter [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
@@ -261,7 +261,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Weitere Informationen finden Sie unter [/analyze (Codeanalyse)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
-- **ErrorReporting**  
+- **ERRORREPORTING**  
   
    Optionaler String-Parameter.  
   
@@ -269,13 +269,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **None** - **/errorReport:none**  
+  - **Keine**  -  **/errorreport: keine**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **Eingabeaufforderung**  -  **/errorreport: Aufforderung**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **Warteschlange**  -  **/errorreport: Warteschlange**  
   
-  - **Send** - **/errorReport:send**  
+  - **Senden**  -  **/errorreport: senden**  
   
     Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
@@ -287,13 +287,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **false** - *\<none>*  
+  - **Alarm** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Async**  -  **/EHa**  
   
-  - **Sync** - **/EHsc**  
+  - **Synchronisieren**  -  **/EHsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **Synccthrow**  -  **/EHS**  
   
     Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
@@ -313,11 +313,11 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Neither** - *\<none>*  
+  - **Noch** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **Größe**  -  **/OS**  
   
-  - **Speed** - **/Ot**  
+  - **Geschwindigkeit**  -  **/OT**  
   
     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
@@ -337,11 +337,11 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Precise** - **/fp:precise**  
+  - **Präzise**  -  **/fp: präzise**  
   
-  - **Strict** - **/fp:strict**  
+  - **Streng**  -  **/fp: strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **Schnell**  -  **/fp: schnell**  
   
     Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
@@ -355,7 +355,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **ForcedIncludeFiles**  
   
-   Optionaler `String[]` -Parameter.  
+   Optionaler `String[]`-Parameter.  
   
    Weist den Präprozessor an, eine oder mehrere angegebene Headerdateien zu verarbeiten.  
   
@@ -363,7 +363,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **ForcedUsingFiles**  
   
-   Optionaler **String[]**-Parameter.  
+   Optionaler **String []** -Parameter.  
   
    Weist den Präprozessor an, eine oder mehrere angegebene **#using**-Datei zu verarbeiten.  
   
@@ -371,7 +371,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **FunctionLevelLinking**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird dem Compiler ermöglicht, einzelne Funktionen in Form von kompilierten Funktionen (COMDATs) zu kompilieren.  
   
@@ -379,7 +379,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **GenerateXMLDocumentationFiles**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine XDC-Datei erstellt.  
   
@@ -387,7 +387,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **IgnoreStandardIncludePath**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Hindert bei `true` den Compiler daran, in den Verzeichnissen, die in den Umgebungsvariablen PATH und INCLUDE angegeben sind, nach Includedateien zu suchen.  
   
@@ -395,25 +395,25 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **InlineFunctionExpansion**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Gibt die Ebene der Inlinefunktionserweiterung für den Build an.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Default** - *\<none>*  
+  - **Vorgegebene** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **Deaktiviert**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **Onlyexplitinline**  -  **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **Anypassend**  -  **/Ob2**  
   
     Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
 - **IntrinsicFunctions**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden einige Funktionsaufrufe durch systeminterne oder sonstige spezielle Formen der Funktion ersetzt, die dazu beitragen, dass die Arbeitsgeschwindigkeit der Anwendung erhöht wird.  
   
@@ -421,7 +421,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **MinimalRebuild**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Mindestneuerstellung aktiviert, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen enthalten (die in Headerdateien (H) gespeichert sind), neu kompiliert werden müssen.  
   
@@ -429,7 +429,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **MultiProcessorCompilation**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden mehrere Prozessoren für das Kompilieren verwendet. Dieser Parameter erstellt einen Prozess für jeden effektiven Prozessor auf dem Computer.  
   
@@ -437,21 +437,21 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **ObjectFileName**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Gibt einen Namen für die Objektdatei (OBJ) oder das Verzeichnis an, der anstelle des Standardwerts verwendet werden soll.  
   
-   Weitere Informationen finden Sie unter [/Fo (Name der Objektdatei)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Weitere Informationen finden Sie unter [/FO (Objekt Dateiname)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
-   Optionaler **String[]**-Parameter.  
+   Optionaler **String []** -Parameter.  
   
    Eine Liste von Objektdateien.  
   
 - **OmitDefaultLibName**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (OBJ) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der OBJ-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.  
   
@@ -459,7 +459,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **OmitFramePointers**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Erstellung von Framezeigern in der Anrufliste unterdrückt.  
   
@@ -467,49 +467,49 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **OpenMPSupport**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` verarbeitet der Compiler OpenMP-Klauseln und -Direktiven.  
   
    Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
-- **Optimization**  
+- **Optimierung**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Gibt die verschiedenen Codeoptimierungen für Geschwindigkeit und Größe an.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Disabled** - **/Od**  
+  - **Deaktiviert**  -  **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **Minspace**  -  **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **MAXSPEED**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **Vollständig**  -  **/Ox**  
   
-    Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Weitere Informationen finden Sie unter [/O Options (Code optimieren)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Erstellt oder verwendet eine vorkompilierte Headerdatei (PCH) während des Builds.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NotUsing** - *\<none>*  
+  - **Notusing** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **Erstellen**  -  Sie **/Yc**  
   
-  - **Use** - **/Yu**  
+  - **Verwenden**  -  Sie **/Yu**  
   
     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) und [/Yu (Vorkompilierte Headerdatei verwenden)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
   
 - **PrecompiledHeaderFile**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Gibt den Namen einer vorkompilierten Headerdatei an, die erstellt oder verwendet werden soll.  
   
@@ -517,7 +517,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **PrecompiledHeaderOutputFile**  
   
-   Optionaler **String**-Parameter.  
+   Optionaler **String** -Parameter.  
   
    Gibt einen Pfadnamen für einen vorkompilierten Header an, der anstelle des Standardpfadnamens verwendet wird.  
   
@@ -525,7 +525,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **PreprocessKeepComments**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden Kommentare bei der Vorverarbeitung beibehalten.  
   
@@ -533,21 +533,21 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **PreprocessorDefinitions**  
   
-   Optionaler `String[]` -Parameter.  
+   Optionaler `String[]`-Parameter.  
   
    Definiert ein Präprozessorsymbol für Ihre Quelldatei.  
   
-   Weitere Informationen finden Sie unter [/D (Preprocessor Definitions)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Weitere Informationen finden Sie unter [/D (Präprozessordefinitionen)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
-   Optionaler `ITaskItem[]` -Parameter.  
+   Optionaler `ITaskItem[]`-Parameter.  
   
-   Definiert ein Array von Präprozessorausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
+   Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
 - **PreprocessOutputPath**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.  
   
@@ -555,7 +555,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **PreprocessSuppressLineNumbers**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeiteten Dateien werden auf das Standardausgabegerät kopiert.  
   
@@ -563,7 +563,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **PreprocessToFile**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeitete Ausgabe wird in eine Datei geschrieben.  
   
@@ -577,7 +577,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **ProgramDataBaseFileName**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt einen Dateinamen für die Programmdatenbankdatei (PDB) an.  
   
@@ -585,25 +585,25 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **RuntimeLibrary**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Zeigt an, ob es sich bei einem Multithread-Modul um eine DLL handelt, und wählt Veröffentlichungs- oder Debugversionen der Laufzeitbibliothek aus.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **MultiThreaded** - **/MT**  
+  - **Multithread**  -  **/MT**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **Multithreadeddebug**  -  **/MTD**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **Multithreadeddll**  -  **/MD**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **Multithreadeddebug-dll**  -  **/MDD**  
   
     Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
 - **RuntimeTypeInfo**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird Code hinzugefügt, um C++-Objekttypen während der Laufzeit zu überprüfen (Laufzeit-Typeninformationen).  
   
@@ -611,7 +611,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **ShowIncludes**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` gibt der Compiler eine Liste der Includedateien aus.  
   
@@ -619,7 +619,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **SmallerTypeCheck**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird ein Laufzeitfehler gemeldet, wenn ein Wert einem kleineren Datentyp zugewiesen wird und dies einen Datenverlust verursacht.  
   
@@ -633,7 +633,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **StringPooling**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` kann der Compiler eine Kopie identischer Zeichenfolgen im Programmabbild erstellen.  
   
@@ -641,29 +641,29 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **StructMemberAlignment**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die Byte-Ausrichtung für alle Member in einer Struktur an.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Default** - **/Zp1**  
+  - **Standard**  -  **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1 Byte**  -  **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2 Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4 Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8 Bytes**  -  **/Zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16 Bytes**  -  **/Zp16**  
   
     Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
 - **SuppressStartupBanner**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
@@ -671,7 +671,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **TrackerLogDirectory**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt das Zwischenverzeichnis an, in dem die Nachverfolgungsprotokolle für diese Aufgabe gespeichert sind.  
   
@@ -679,15 +679,15 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **TreatSpecificWarningsAsErrors**  
   
-   Optionaler **String[]**-Parameter.  
+   Optionaler **String []** -Parameter.  
   
    Behandelt die angegebene Liste von Compilerwarnungen als Fehler.  
   
-   Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Weitere Informationen finden Sie unter der **/We** - `n` Option in [/w,/W0,/W1,/W2,/w3,/W4,/W1,/W2,/w3,/W4,/Wall,/WD,/We,/wo,/WV](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f),/WX,,,,, (Warnstufe).  
   
 - **TreatWarningAsError**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden alle Compilerwarnungen als Fehler behandelt.  
   
@@ -695,7 +695,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **TreatWChar_tAsBuiltInType**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird der `wchar_t`-Typ als nativer Typ behandelt.  
   
@@ -703,7 +703,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **UndefineAllPreprocessorDefinitions**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Definition der Microsoft-spezifischen Symbole aufgehoben, die der Compiler definiert.  
   
@@ -711,7 +711,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **UndefinePreprocessorDefinitions**  
   
-   Optionaler `String[]` -Parameter.  
+   Optionaler `String[]`-Parameter.  
   
    Gibt eine Liste mit einem oder mehreren Präprozessorsymbolen an, deren Definition aufgehoben werden soll.  
   
@@ -719,7 +719,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **UseFullPaths**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird der vollständige Pfad der Quellcodedateien angezeigt, die in der Diagnostik an den Compiler übergeben werden.  
   
@@ -727,7 +727,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **UseUnicodeForAssemblerListing**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Ausgabedatei im UTF-8-Format erstellt.  
   
@@ -735,29 +735,29 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **WarningLevel**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die höchste Warnstufe an, die vom Compiler generiert werden soll.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - " **Turnoffallwarning**  -  " **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **Enableallwarning**  -  **/Wall**  
   
-    Weitere Informationen finden Sie unter der Option **/W**_n_ in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+    Weitere Informationen finden Sie unter der **/W**_n_ -Option in [/W,/W0,/W1,/W2,/w3,/W4,/W1,/W2,/w3,/W4,/Wall,/WD,/We,/wo,/WV,/WX,,,,, (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **WholeProgramOptimization**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird die Optimierung des ganzen Programms aktiviert.  
   
@@ -765,7 +765,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **XMLDocumentationFileName**  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt den Namen der generierten XML-Dokumentationsdateien an. Bei diesem Parameter kann es sich um einen Datei- oder Verzeichnisnamen handeln.  
   
@@ -773,13 +773,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **MinimalRebuildFromTracking**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` wird ein nachverfolgter inkrementeller Build ausgeführt; bei `false` erfolgt eine Neuerstellung.  
   
 - **TLogReadFiles**  
   
-   Optionaler `ITaskItem[]` -Parameter.  
+   Optionaler `ITaskItem[]`-Parameter.  
   
    Gibt ein Array von Elementen an, die die *Read-Datei-Nachverfolgungsprotokolle* darstellen.  
   
@@ -787,7 +787,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **TLogWriteFiles**  
   
-   Optionaler `ITaskItem[]` -Parameter.  
+   Optionaler `ITaskItem[]`-Parameter.  
   
    Gibt ein Array von Elementen an, die die *Write-Datei-Nachverfolgungsprotokolle* darstellen.  
   
@@ -795,13 +795,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
 - **TrackFileAccess**  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Bei `true` werden Dateizugriffsmuster nachverfolgt.  
   
    Weitere Informationen finden Sie unter den Parametern **TLogReadFiles** und **TLogWriteFiles** in dieser Tabelle.  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254712"
 ---
 # <a name="namedrange-control"></a>NamedRange-Steuerelement
@@ -32,7 +32,7 @@ ms.locfileid: "71254712"
 ## <a name="create-the-control"></a>Erstellen des Steuer Elements
  Sie können <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelemente einem Microsoft Office Excel-Arbeitsblatt in Projekten auf Dokumentebene zur Entwurfszeit oder zur Laufzeit hinzufügen.
 
- Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelemente zur Laufzeit in einem VSTO-Add-In hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Name Drange-Steuerelementen](../vsto/how-to-add-namedrange-controls-to-worksheets.md)zu Arbeitsblättern.
+ Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelemente zur Laufzeit in einem VSTO-Add-In hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
 > Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt standardmäßig nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -47,12 +47,12 @@ ms.locfileid: "71254712"
  Wenn die Daten im gebundenen DataSet auf beliebige Weise aktualisiert werden, spiegelt das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement die Änderungen wider.
 
 ## <a name="formatting"></a>Formatierung
- Die auf <xref:Microsoft.Office.Interop.Excel.Range> anwendbare Formatierung kann auf ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement angewendet werden. Dies umfasst Rahmen, Schriftarten, Zahlenformate und Stile.
+ Die gesamte auf <xref:Microsoft.Office.Interop.Excel.Range> anwendbare Formatierung kann auf ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement angewendet werden. Dies umfasst Rahmen, Schriftarten, Zahlenformate und Stile.
 
 ## <a name="rename-the-control"></a>Umbenennen des Steuer Elements
  Wenn Sie Ihrem Arbeitsblatt über die <xref:Microsoft.Office.Tools.Excel.NamedRange> Toolbox **ein**-Steuerelement hinzufügen, generiert Visual Studio automatisch einen Namen für das Steuerelement. Sie können diesen Namen im Fenster **Eigenschaften** ändern.
 
-## <a name="events"></a>Ereignisse
+## <a name="events"></a>Events
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
@@ -78,8 +78,8 @@ ms.locfileid: "71254712"
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Vorgehensweise: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [Vorgehensweise: Ändern der Größe von Name Drange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)
+- [Gewusst wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Gewusst wie: Ändern der Größe von Name Drange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Exemplarische Vorgehensweise: Programm für Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332084"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Übersicht über Blend für Visual Studio
@@ -79,7 +79,7 @@ Verwenden der Storyboard-Schaltflächen ![Storyboard-Schaltflächen in Blend fü
 
 Fahren Sie mit dem Mauszeiger über jede Schaltfläche im Fenster, um mehr über die verfügbaren Funktionen zu erfahren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Animieren von Objekten](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Zeichnen von Formen und Pfaden](../xaml-tools/draw-shapes-and-paths.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3a70cec3ab9e03dd97a1df5f0ccf8713a79cc28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180479"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Quelle und die Zeilennummer der Anzahl, die angeben, in dem ein angegebenen benutzerdefinierten Typs definiert wird.  
+Ruft die Quelldatei und die Zeilennummer ab, die angeben, wo ein angegebener benutzerdefinierter Typ definiert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,11 +32,11 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Parameter  
  `ppResult`  
- [out] Ein `IDiaLineNumber` -Objekt, das die Quelle Quelldatei- und Zeileninformationen Anzahl enthält, in dem die benutzerdefinierte.  
+ vorgenommen Ein `IDiaLineNumber` -Objekt, das die Quelldatei und die Zeilennummer enthält, in der der benutzerdefinierte ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -15,63 +15,63 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177227"
 ---
 # <a name="using-fonts-and-colors"></a>Verwenden von Schriftarten und Farben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet Unterstützung für die Verwendung von Schriftarten und Farben zum Anzeigen von Text.  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]Bietet Unterstützung für die Verwendung von Schriftarten und Farben zum Anzeigen von Text.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht: Schriftart und Farben](../extensibility/font-and-color-overview.md)  
- Erläutert, Text-Schriftart und Farbe Einstellungen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE). Außerdem werden die Konzepte von Kategorien und Elemente anzeigen, und beschreibt, wie VSPackages und die Kern-Editor den Text-Attribute verwenden.  
+ Erläutert die Schriftart-und Farbeinstellungen von Text in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE). Außerdem werden die Konzepte von Kategorien und Anzeigeelementen eingeführt, und es wird beschrieben, wie VSPackages und der Core-Editor Text Attribute verwenden.  
   
  [Erhalten von Informationen zu Schriftart und Farbe für die Textfarbe](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- Enthält Richtlinien zum Implementieren von farbliche Kennzeichnung von Text in VSPackages, die verwalten **Kategorien** außer **Text-Editor**.  
+ Enthält Richtlinien für die Implementierung von Text Farbgebung in VSPackages, die andere **Kategorien** als **Text-Editor**verwalten.  
   
  [Zugriff auf gespeicherte Einstellungen zu Schriftart und Farbe](../extensibility/accessing-stored-font-and-color-settings.md)  
- Erläutert, wie die aktuelle Schriftart und Farbe Einstellungen gespeichert, abgerufen und angewendet werden können.  
+ Erläutert, wie die aktuellen Schriftart-und Farbeinstellungen gespeichert, abgerufen und angewendet werden können.  
   
  [Implementieren benutzerdefinierter Kategorien und Anzeigeelemente](../extensibility/implementing-custom-categories-and-display-items.md)  
- Beschreibt die grundlegenden Schritte, mit dem ein Fenster erstellen und verwenden eine eigene von **Elemente anzeigen** und **Kategorien** zur Unterstützung der Textanzeige.  
+ Beschreibt die grundlegenden Schritte, mit denen ein Fenster eine eigene **Anzeigeelemente** und **Kategorien** erstellen und verwenden kann, um die Textanzeige zu unterstützen.  
   
- Dieser Ansatz erfordert ein VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> -Schnittstelle und verwandten Schnittstellen.  
+ Diese Vorgehensweise erfordert ein VSPackage, um die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> -Schnittstelle und zugehörige Schnittstellen zu implementieren.  
   
  [Vorgehensweise: Zugriff auf integrierte Schriftarten und Farbschemas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- Erläutert das Definieren und registrieren eine Kategorie mit integrierten Schriftarten und Farben aus, und initiieren die Verwendung von vom System bereitgestellten Schriftarten und Farben.  
+ Erläutert, wie eine Kategorie mithilfe integrierter Schriftarten und Farben definiert und registriert wird und wie die Verwendung von vom System bereitgestellten Schriftarten und Farben initiiert wird.  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- Stellt eine Instanz der `IVsFontAndColorDefaults` oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> Schnittstelle, die ein bestimmtes Element in aufgeführten entspricht, der **Einstellungen anzeigen für** Liste der **Schriftarten und Farben** auf der Seite die **Optionen** Dialogfeld.  
+ Stellt eine Instanz der `IVsFontAndColorDefaults` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> -Schnittstelle oder der-Schnittstelle bereit, die einem bestimmten Element entspricht, das in der Liste **Einstellungen anzeigen für** auf der Seite **Schriftarten und Farben** des Dialog Felds **Optionen** aufgeführt ist.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- Aktiviert ein VSPackage, das die IDE unterstützen **Schriftarten und Farben** Seite durch Definieren von Standardschriftarten und Farben für eine Fenster- oder Benutzeroberflächenkomponente.  
+ Ermöglicht einem VSPackage, die Seite IDE **-Schriftarten und Farben** zu unterstützen, indem Standard Schriftarten und Farben für ein Fenster oder eine Benutzeroberflächen Komponente definiert werden.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- Stellt einen Mechanismus bereit, mit dem ein VSPackage, das stellt Schriftart- und farbunterstützung kann angeben, Gruppe: eine extrem Kategorie, die die Gesamtmenge von zwei oder mehr Kategorien darstellt.  
+ Stellt einen Mechanismus bereit, mit dem ein VSPackage, das Schriftart-und Farbunterstützung bereitstellt, eine Anzeigeelement Gruppe angeben kann. Dies ist eine Super Kategorie, die die Union von zwei oder mehr Kategorien darstellt.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- Ermöglicht einem VSPackages, Schriftart-und Farbdaten abrufen oder speichern Sie sie in der Registrierung.  
+ Ermöglicht einem VSPackage, Schriftart-und Farbdaten abzurufen oder in der Registrierung zu speichern.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- Benachrichtigt VSPackages, die Schriftart und Farbe Informationen zu Änderungen in den Schriftart-und farbeinstellungen verwenden.  
+ Benachrichtigt VSPackages, die Schriftart-und Farbinformationen zu Änderungen in den Schriftart-und Farbeinstellungen verwenden.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- Bietet Tools zum Arbeiten mit den Eingabe- und Daten, die von den Methoden der dient den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Schriftart- und Farbeinstellungen** Mechanismus.  
+ Bietet Tools zum Arbeiten mit den Eingabe-und Ausgabedaten, die von den Methoden des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Schriftart-und Farb** Mechanismus verwendet werden.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
- Steuert das Zwischenspeichern von Schriftart-und farbeinstellungen.  
+ Steuert das Zwischenspeichern von Schriftart- und Farbeinstellungen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Entwickeln eines Legacysprachdiensts](../extensibility/internals/developing-a-legacy-language-service.md)  
- Erläutert, wie VSPackages Sprachdienste können zum Anpassen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
+ Erläutert, wie VSPackages Sprachdienste zum Anpassen des Editors verwenden können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
  [Syntaxfarben in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries wie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor verwendet Sprachdienste zum Implementieren von Syntaxfarben.  
+ Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor Sprachdienste zum Implementieren von Syntax Farben verwendet.  
   
  [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Erläutert, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zum Erstellen von Benutzeroberflächenelementen verwendet werden, die zu den übrigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Komponenten passen.

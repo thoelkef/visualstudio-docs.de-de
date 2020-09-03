@@ -1,5 +1,5 @@
 ---
-title: 'Vorbereitung des Debugvorgangs: Visual C++-Projekttypen | Microsoft-Dokumentation'
+title: 'Vorbereitung zum Debuggen: Visual C++ Projekttypen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,20 +21,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691342"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung des Debugvorgangs: Visual C++-Projekttypen
+# <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung zum Debuggen: Visual C++-Projekttypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projektvorlagen erstellt wurden.  
   
- Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
+ Beachten Sie, dass Projekttypen, die DLLs als Ausgabe erstellen, aufgrund ihrer gemeinsamen Features unter [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) besprochen werden.  
   
-## <a name="BKMK_In_this_topic"></a> In diesem Thema  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Empfohlene Eigenschafteneinstellungen](#BKMK_Recommended_Property_Settings)  
   
  [Win32-Projekte](#BKMK_Win32_Projects)  
@@ -45,16 +45,16 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
   [Windows Forms-Anwendungen (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-## <a name="BKMK_Recommended_Property_Settings"></a> Empfohlene Eigenschafteneinstellungen  
- Bestimmte Eigenschaften sollten für alle Szenarios des nicht verwalteten Debuggens gleich festgelegt werden. Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen. Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
+## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Empfohlene Eigenschafteneinstellungen  
+ Bestimmte Eigenschaften sollten für alle Szenarios des nicht verwalteten Debuggens gleich festgelegt werden. Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen. Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md) .  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Konfigurationseigenschaften &#124; C/C++- &#124; Knoten "Optimierung"  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Konfigurationseigenschaften &#124; C/C++ &#124; Optimierungsknoten  
   
 |Eigenschaftenname|Einstellung|  
 |-------------------|-------------|  
 |**Optimization**|Legen Sie für diese Eigenschaft **Deaktiviert (/ 0d)** fest. Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im **Disassembly**-Fenster angezeigte Code aus optimiertem Code generiert wurde, der u. U. nicht mit dem Inhalt der Quellcodefenster übereinstimmt. Andere Funktionen, z. B. die Ausführung in Einzelschritten, verhalten sich möglicherweise nicht wie erwartet.|  
   
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Konfigurationseigenschaften &#124; Linker &#124; Knoten "Debuggen"  
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Konfigurationseigenschaften &#124; Linker &#124; Debugknoten  
   
 |Eigenschaftenname|Einstellung|  
 |-------------------|-------------|  
@@ -62,22 +62,22 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-## <a name="BKMK_Win32_Projects"></a> Win32-Projekte  
+## <a name="win32-projects"></a><a name="BKMK_Win32_Projects"></a> Win32-Projekte  
  Win32-Anwendungen sind herkömmliche in C oder C++ geschriebene Windows-Programme. Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist einfach.  
   
  Win32-Anwendungen enthalten MFC-Anwendungen und ATL-Projekte. Sie verwenden Windows-APIs und u. U. auch MFC oder ATL, nutzen jedoch nicht die Common Language Runtime (CLR). Sie können aber verwalteten Code aufrufen, der die CLR verwendet.  
   
- Die unten stehende Prozedur beschreibt, wie ein Win32-Projekt aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] heraus gedebuggt wird. Sie können eine Win32-Anwendung jedoch auch debuggen, indem sie sie außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] starten und dann eine Verbindung zu ihr herstellen. Weitere Informationen finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Die unten stehende Prozedur beschreibt, wie ein Win32-Projekt aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] heraus gedebuggt wird. Sie können eine Win32-Anwendung jedoch auch debuggen, indem sie sie außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] starten und dann eine Verbindung zu ihr herstellen. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Debuggen einer in C oder C++ geschriebenen Win32-Anwendung  
+### <a name="to-debug-a-c-or-c-win32-application"></a><a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Debuggen einer in C oder C++ geschriebenen Win32-Anwendung  
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
 2. Wählen Sie im Menü **Debuggen** den Befehl **Starten** aus.  
   
-3. Debuggen Sie mit die vorgestellten [Debugger – Grundlagen](../debugger/debugger-basics.md).  
+3. Debuggen Sie mithilfe der [Debugger Basics](../debugger/debugger-basics.md)in debuggergrundlagen beschriebenen Techniken  
   
-### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Manuelles Festlegen einer Debugkonfiguration  
+### <a name="to-manually-set-a-debug-configuration"></a><a name="BKMK_To_manually_set_a_Debug_configuration"></a> Manuelles Festlegen einer Debugkonfiguration  
   
 1. Klicken Sie im Menü **Ansicht** auf die Option **Eigenschaftenseiten**.  
   
@@ -85,7 +85,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
 3. Wählen Sie **Allgemein** aus, und legen Sie den Wert der Zeile **Ausgabe** auf **Debuggen** fest.  
   
-4. Öffnen Sie den Knoten **C/C++**, und wählen Sie **Allgemein** aus.  
+4. Öffnen Sie den Knoten **C/C++** , und wählen Sie **Allgemein** aus.  
   
     Geben Sie in der Zeile **Debuggen** den Typ der Debuginformationen an, die vom Compiler generiert werden sollen. Als Werte können Sie u. a. **Programmdatenbank (/Zi)** oder **Programmdatenbank zum Bearbeiten und Fortfahren (/ZI)** auswählen.  
   
@@ -95,16 +95,16 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
 6. Öffnen Sie den Knoten **Linker**, und wählen Sie **Debuggen** aus. Wählen Sie in der ersten **Generieren**-Zeile aus der Dropdownliste die Option **Ja (/DEBUG)** aus. Wählen Sie beim Debuggen immer diese Einstellung.  
   
-   Weitere Informationen finden Sie unter[Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
    [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)  
+## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)  
  Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist mit dem Debuggen in verwalteten Windows Forms-Anwendungen vergleichbar.  
   
- Wenn Sie ein Windows Forms-Projekt mit der Projektvorlage erstellen, werden die erforderlichen Einstellungen für die Debug- und Releasekonfigurationen automatisch durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] festgelegt. Wenn erforderlich, können Sie diese Einstellungen im Dialogfeld **\<Projektname>-Eigenschaftenseiten** ändern. Weitere Informationen finden Sie unter [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Wenn Sie ein Windows Forms-Projekt mit der Projektvorlage erstellen, werden die erforderlichen Einstellungen für die Debug- und Releasekonfigurationen automatisch durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] festgelegt. Falls erforderlich, können Sie diese Einstellungen im Dialogfeld ** \<project name> Eigenschaften Seiten** ändern. Weitere Informationen finden Sie unter [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md).  
   
  Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
@@ -112,9 +112,9 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Project Settings for a C++ Debug Configuration (Projekteinstellungen für eine C++-Debugkonfiguration)](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Attach to running processes with the Visual Studio debugger (Anfügen an laufende Prozesse mit dem Visual Studio Debugger)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Vorgehensweise: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Grundlagen](../debugger/debugger-basics.md)   
+ [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Anfügen an ein Programm oder mehrere Programme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Debug-und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [How to: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9dec73d392dc6af74e5daef99bd6d306f7d58409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662758"
 ---
 # <a name="how-to-create-an-activity-library"></a>Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek
@@ -27,7 +27,7 @@ Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozess
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie im Bereich **Projekttypen** die Option **Workflow** aus den **visuellen C#**  Projekten oder **Visual Basic** Gruppierungen abhängig von ihrer bevorzugte Sprache aus.
+3. Wählen Sie im Bereich **Projekttypen** die Option **Workflow** aus den **Visual c#** -Projekten oder **Visual Basic** Gruppierungen abhängig von ihrer bevorzugte Sprache aus.
 
 4. Wählen Sie im Bereich **Vorlagen** die Option **Aktivitäts Bibliothek**aus.
 
@@ -38,7 +38,7 @@ Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozess
 7. Geben Sie **im Feldprojekt** Mappe einen beschreibenden Namen für die Projekt Mappe ein, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
-    > Wenn Sie einer vorhandenen Projekt Mappe eine Workflow Konsolenanwendung hinzufügen möchten, öffnen Sie diese Projekt Mappe in [!INCLUDE[vs2010](../includes/vs2010-md.md)], klicken Sie mit der rechten Maustaste auf die Projekt Mappe in **Projektmappen-Explorer**, und wählen Sie **Hinzufügen**und dann **Neues Projekt... aus.** , um das Dialogfeld **Neues Projekt** zu öffnen. Fahren Sie wie oben in dieser Prozedur beschrieben fort.
+    > Wenn Sie einer vorhandenen Projekt Mappe eine Workflow Konsolenanwendung hinzufügen möchten, öffnen Sie diese Projekt Mappe in [!INCLUDE[vs2010](../includes/vs2010-md.md)] , klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Projekt Mappe, und wählen Sie **Hinzufügen**und dann **Neues Projekt...** , um das Dialogfeld **Neues Projekt** zu öffnen. Fahren Sie wie oben in dieser Prozedur beschrieben fort.
 
 8. Die Projektvorlage erstellt eine Aktivitätsdefinition im XAML-Format. [!INCLUDE[wfd1](../includes/wfd1-md.md)] wird geöffnet und zeigt den Zeichenbereich für die benutzerdefinierte Aktivität an.
 
@@ -47,5 +47,5 @@ Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozess
     > [!CAUTION]
     > Sie können nur eine untergeordnete Aktivität dem Text der benutzerdefinierten Aktivität hinzufügen. Diese untergeordnete Aktivität kann jedoch eine zusammengesetzte Aktivität sein, z. B. eine <xref:System.Activities.Statements.Sequence>-Aktivität oder <xref:System.Activities.Statements.Flowchart>-Aktivität.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Erstellen einer Aktivität erstellen](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436) [eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md)

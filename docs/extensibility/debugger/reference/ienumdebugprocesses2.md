@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProzesse2 | Microsoft Docs
+title: IEnumDebugProcesses2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715757"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
-Diese Schnittstelle zählt die Prozesse auf, die auf einem Debugport ausgeführt werden.
+Diese Schnittstelle listet die Prozesse auf, die auf einem Debugport ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IEnumDebugProcesses : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein benutzerdefinierter Portlieferant implementiert diese Schnittstelle, um eine Liste der Prozesse bereitzustellen, die auf einem Port ausgeführt werden.
+ Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle, um eine Liste der Prozesse bereitzustellen, die auf einem Port ausgeführt werden.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Visual Studio ruft [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) auf, um diese Schnittstelle abzuerhalten.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Visual Studio ruft [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) auf, um diese Schnittstelle zu erhalten.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IEnumDebugProcesses2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugProcesses2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Weiter](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Ruft eine angegebene Anzahl von Prozessen in einer Enumerationssequenz ab.|
-|[Überspringen](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Überspringt eine angegebene Anzahl von Prozessen in einer Enumerationssequenz.|
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Ruft eine angegebene Anzahl von Prozessen in einer Enumerationsfolge ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Überspringt eine angegebene Anzahl von Prozessen in einer enumerationssequenz.|
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Klon](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle Enumerator enthält.|
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Ruft die Anzahl der Prozesse in einem Enumerator ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Visual Studio verwendet diese Schnittstelle, um das **Fenster Prozesse** aufzufüllen.
+ Visual Studio verwendet diese Schnittstelle, um das Fenster **Prozesse** aufzufüllen.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

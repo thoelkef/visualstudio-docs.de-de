@@ -1,5 +1,5 @@
 ---
-title: Befehlszeilenschalter (Visual Studio SDK) | Microsoft Docs
+title: Befehls Zeilenschalter (Visual Studio SDK) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739767"
 ---
-# <a name="command-line-switches-visual-studio-sdk"></a>Befehlszeilenschalter (Visual Studio SDK)
-*Devenv.exe*, die ausführbare Datei, die die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) startet, unterstützt Befehlszeilen-Switches speziell für die Entwicklung von VSPackages. VSPackages kann auch eigene Switches an der Devenv-Befehlszeile zur Verfügung stellen. Die folgenden Themen enthalten Informationen zur Verwendung von Befehlszeilenwechseln in der IDE.
+# <a name="command-line-switches-visual-studio-sdk"></a>Befehls Zeilenschalter (Visual Studio SDK)
+*Devenv.exe*unterstützt die ausführbare Datei, die die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) startet, Befehls Zeilenschalter speziell für die Entwicklung von VSPackages. VSPackages können auch Ihre eigenen Switches in der Befehlszeile von "de venv" verfügbar machen. In den folgenden Themen finden Sie Informationen zur Verwendung von Befehls zeilenschaltern in der IDE.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Devenv-Befehlszeilenschalter für VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) Beschreibt die Devenv-Befehlszeilenschalter, mit denen Sie die VSPackage-Entwicklung, das Debuggen und die Bereitstellung vereinfachen können.
+- Debug [-Befehls Zeilenschalter für VSPackage ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) Beschreibt die devenv-Befehls Zeilenschalter, die Sie verwenden können, um die Entwicklung, das Debugging und die Bereitstellung von VSPackages zu vereinfachen.
 
-- [Hinzufügen von Befehlszeilenschaltern](../extensibility/adding-command-line-switches.md) Beschreibt, wie Sie vom Benutzer eingegebene Befehlszeilenschalter für Ihr Paket implementieren, suchen und lesen.
+- [Befehls Zeilenschalter hinzufügen](../extensibility/adding-command-line-switches.md) Beschreibt das implementieren, suchen und Lesen von Benutzern eingegebenen Befehls zeilenswitches für das Paket.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Devenv-Befehlsschalter](../ide/reference/devenv-command-line-switches.md) Erläutert, wie Sie mit Devenv verschiedene Optionen für die IDE festlegen können und wie Sie Projekte über die Befehlszeile kompilieren, erstellen und debuggen können. Darüber hinaus gibt es Informationen über die Syntax von Devenv-Switches und eine Tabelle mit Switches.
+- [Befehls Zeilenschalter für "de venv](../ide/reference/devenv-command-line-switches.md) " Erläutert, wie Sie mit devenv verschiedene Optionen für die IDE festlegen können und wie Sie Projekte über die Befehlszeile kompilieren, erstellen und Debuggen können. Außerdem finden Sie Informationen zur Syntax der devenv-Switches und eine Tabelle mit Schaltern.

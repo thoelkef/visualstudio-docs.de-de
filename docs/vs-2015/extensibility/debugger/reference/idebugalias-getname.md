@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetName | Microsoft-Dokumentation
+title: 'Idebugalias:: GetName | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a52f44caa896a528557e9e2ac362c47584e47f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149343"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen dieses Alias aus.  
+Ruft den Namen dieses Alias ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int GetName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Der Name des Alias.  
+ vorgenommen Der Name des Alias.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

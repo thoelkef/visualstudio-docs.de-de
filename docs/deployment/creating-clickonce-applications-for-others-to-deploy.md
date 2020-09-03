@@ -97,7 +97,7 @@ Nicht alle Entwickler, die ClickOnce-bereit Stellungen erstellen, planen, die An
 
  Der Nachteil dieser Methode besteht darin, dass der Kunde die .NET Framework SDK-Tools installieren und einen Entwickler oder Systemadministrator verwenden muss, der für die Verwendung durch den Entwickler zuständig ist. Einige Kunden benötigen möglicherweise eine Lösung, bei der nur wenig oder gar kein technischer Aufwand erforderlich ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Bereitstellen von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die keine erneute Signierung erfordert und Brandinginformationen beibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

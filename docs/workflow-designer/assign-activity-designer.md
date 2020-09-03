@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875942"
 ---
 # <a name="assign-activity-designer"></a>Assign-Aktivitätsdesigner
@@ -35,15 +35,15 @@ Der **assign** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf de
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.Assign>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Assign>-Aktivität. Der Standardwert lautet Assign. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.Assign.To%2A>|True|Die Variable oder das Argument, dem der <xref:System.Activities.Statements.Assign.Value%2A> zugewiesen wird. Der Wert muss ein gültiger Visual Basic Bezeichner sein. Um die-Eigenschaft festzulegen, geben Sie im **assign** -Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic-Ausdruck in das Feld **an** ein.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|Der der Variablen zugewiesene Wert. Um die festzulegen <xref:System.Activities.Statements.Assign.Value%2A> , geben Sie im Feld **Wert** des **assign** -Aktivitäts Designers oder im Eigenschaften Raster einen Visual Basic Ausdruck ein.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.Assign>-Aktivität. Der Standardwert lautet Assign. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.Assign.To%2A>|Richtig|Die Variable oder das Argument, dem der <xref:System.Activities.Statements.Assign.Value%2A> zugewiesen wird. Der Wert muss ein gültiger Visual Basic Bezeichner sein. Um die-Eigenschaft festzulegen, geben Sie im **assign** -Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic-Ausdruck in das Feld **an** ein.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|Richtig|Der der Variablen zugewiesene Wert. Um die festzulegen <xref:System.Activities.Statements.Assign.Value%2A> , geben Sie im Feld **Wert** des **assign** -Aktivitäts Designers oder im Eigenschaften Raster einen Visual Basic Ausdruck ein.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
 - [Verzögern](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

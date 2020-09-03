@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerCount | Microsoft-Dokumentation
+title: 'IDebugProperty3:: getcustomviewercount | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: adce7ad5813afc9c002ec9439326c12f3b2c8e6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193417"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Anzahl der benutzerdefinierten Viewer, die für diese Eigenschaft verfügbar sein können.  
+Ruft die Anzahl der benutzerdefinierten Viewer ab, die möglicherweise für diese Eigenschaft verfügbar sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,18 +40,18 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Parameter  
  `pcelt`  
- [out] Die Anzahl der benutzerdefinierten Viewer für diese Eigenschaft verfügbar.  
+ vorgenommen Die Anzahl der für diese Eigenschaft verfügbaren benutzerdefinierten Viewer.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Um Typ-Schnellansichten unterstützen, diese Methode den Aufruf leitet das [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) Methode. Wenn die ausdrucksauswertung benutzerdefinierten Viewer ebenfalls für den Typ dieser Eigenschaft unterstützt, wird der zurückgegebene Wert von dieser Methode die Anzahl der benutzerdefinierten Viewer hinzugefügt.  
+## <a name="remarks"></a>Bemerkungen  
+ Zur Unterstützung von typvisualisierungen leitet diese Methode den-Befehl an die [getcustomviewercount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) -Methode weiter. Wenn die Ausdrucks Auswertung auch benutzerdefinierte Viewer für diesen Eigenschaftentyp unterstützt, fügt diese Methode die Anzahl der benutzerdefinierten Viewer dem zurückgegebenen Wert hinzu.  
   
- Ausführliche Informationen zu den Unterschieden zwischen typschnellansichten und benutzerdefinierten Viewer finden Sie unter [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
+ Ausführliche Informationen zu den Unterschieden zwischen typvisualisierungen und benutzerdefinierten Viewern finden Sie unter [typvisualizer und Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CProperty** -Objekt, das macht die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cproperty** -Objekt implementiert wird, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  
@@ -72,7 +72,7 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)   
+ [Getcustomviewercount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)   
  [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

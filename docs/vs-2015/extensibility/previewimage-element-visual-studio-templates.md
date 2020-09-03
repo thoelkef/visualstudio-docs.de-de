@@ -12,20 +12,20 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90521b5ea05aae2f54e56f21b65933a93580da85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194068"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt das Vorschaubild als Dateiname, für das Vorschaubild, die entweder in angezeigt werden die **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
+Gibt das Vorschaubild (als Dateiname) für das Vorschaubild an, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<PreviewImage >  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,16 +46,16 @@ Gibt das Vorschaubild als Dateiname, für das Vorschaubild, die entweder in ange
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
  Der Text muss eine Zeichenfolge sein, die einen Dateinamen darstellt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  `PreviewImage` ist ein optionales Element.  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192857"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
@@ -34,13 +34,13 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
  Bei der parallelen Builderstellung können Fehler und Ausnahmen zu einem anderen Zeitpunkt auftreten als bei der nicht parallelen Builderstellung; außerdem kann die Erstellung eines anderen Builds fortgesetzt werden, wenn ein Build nicht erstellt werden kann. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] beendet gleichzeitig ausgeführte Projektbuilds nicht zusammen mit einem fehlgeschlagenen Build. Der Buildprozess anderer Projekte wird fortgesetzt, bis er erfolgreich abgeschlossen oder fehlgeschlagen ist. Wenn jedoch <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> aktiviert wurde, wird die Erstellung von Builds nicht abgebrochen, auch wenn ein Fehler auftritt.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Visual C++-Projektdateien (.vcproj) und Projektmappendateien (.sln)  
- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt- und -Projektmappendateien („.vcproj“ und „.sln“) können beide an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Bei [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt.  
+ Beide [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Projekte (. vcproj) und Projektmappendateien (. sln) können an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md)übergeben werden. Bei [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt.  
   
 ## <a name="multi-process-execution"></a>Multiprozessausführung  
  Bei fast allen buildbezogenen Aktivitäten ist es erforderlich, dass das aktuelle Verzeichnis während des Buildprozesses gleich bleibt, um pfadbezogene Fehler zu vermeiden. Aus diesem Grund können Projekte in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nicht auf verschiedenen Threads ausgeführt werden, da dies zur Erstellung mehrerer Verzeichnisse führen würde.  
   
  Um dieses Problem zu vermeiden und trotzdem Multiprozessorbuilds zu ermöglichen, verwendet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die "Prozessisolierung". Durch die Verwendung der Prozessisolierung kann [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] maximal `n`-Prozesse erstellen, wobei `n` der Anzahl der im System verfügbaren Prozessoren entspricht. Wenn [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zum Beispiel eine Lösung auf einem System mit zwei Prozessoren erstellt, werden nur zwei Buildprozessoren erstellt. Diese Prozesse werden zum Erstellen aller Projekte der Lösung wiederverwendet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Paralleles entwickeln mehrerer Projekte](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Aufgaben](../msbuild/msbuild-tasks.md)

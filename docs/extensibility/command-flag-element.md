@@ -1,5 +1,5 @@
 ---
-title: Befehls-Flag-Element | Microsoft Docs
+title: Befehlsflag-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649368"
 ---
-# <a name="command-flag-eelement"></a>Befehlsflag Eelement
+# <a name="command-flag-eelement"></a>Eelement für Befehlsflag
 Ändert das übergeordnete Element.
 
 ## <a name="syntax"></a>Syntax
@@ -28,51 +28,51 @@ ms.locfileid: "81649368"
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
- Im folgenden Abschnitt werden gültige Elementwerte beschrieben.
+ Im folgenden Abschnitt werden gültige Element Werte beschrieben.
 
-### <a name="attributes"></a>Attributes
- Keine.
+### <a name="attributes"></a>Attribute
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
-|AllowParams|Gibt an, dass Benutzer Befehlsparameter im **Befehlsfenster** eingeben können, wenn sie den kanonischen Namen des Befehls eingeben.<br /><br /> Gültig für:`Button`|
-|Alwayscreate|Menü wird erstellt, auch wenn es keine Gruppen oder Schaltflächen hat.<br /><br /> Gültig für:`Menu`|
-|CaseSensitive|Bei Benutzereinträgen wird die Groß-/Kleinschreibung beachtet.<br /><br /> Gültig für:`Combo`|
-|CommandWellOnly|Wenden Sie dieses Flag an, wenn der Befehl nicht im Menü der obersten Ebene angezeigt wird und Sie es für eine zusätzliche Shellanpassung verfügbar machen möchten, z. B. zum Binden an eine Tastenkombination. Nachdem das VSPackage installiert wurde, können Sie diese Befehle anpassen, indem Sie das Dialogfeld **Optionen** öffnen und dann die Befehlsplatzierung unter der Kategorie **Tastaturumgebung** bearbeiten. Dieses Flag wirkt sich nicht auf die Platzierung in Kontextmenüs, Symbolleisten, Menücontrollern oder Untermenüs aus.<br /><br /> Gültig für: `Button`,`Combo`|
-|DefaultDisabled|Standardmäßig ist der Befehl deaktiviert, wenn das VSPackage, das `QueryStatus` ihn implementiert, nicht geladen oder die Methode nicht aufgerufen wurde.<br /><br /> Gültig für: `Button`,`Combo`|
-|DefaultDocked|Standardmäßig angedockt. Diese Einstellung gilt nicht mehr für Symbolleisten, da sie immer angedockt sind.|
-|DefaultInvisible|Standardmäßig ist der Befehl unsichtbar, wenn das VSPackage, das `QueryStatus` ihn implementiert, nicht geladen oder die Methode nicht aufgerufen wurde.<br /><br /> Es wird empfohlen, dies mit dem `DynamicVisibility` Flag zu kombinieren.<br /><br /> Gültig `Button`für: `Combo`, ,`Menu`|
-|DontCache|Die Entwicklungsumgebung speichert `QueryStatus` die Methodenergebnisse für diesen Befehl nicht zwischen.<br /><br /> Bei einem Menü wird ein Menücontroller aufgefordert, den Text seiner Menüelemente nicht zwischenzuspeichern. Verwenden Sie dieses Flag, wenn das Menü dynamische Elemente oder Elemente mit dynamischem Text enthält.<br /><br /> Gültig für: `Button`,`Menu`|
-|DynamicItemStart|Gibt den Anfang einer dynamischen Liste an. Dadurch kann die Umgebung eine Liste erstellen, indem die `QueryStatus` Methode sukzessive für Listenelemente aufgerufen wird, bis das OLECMDERR_E_UNSUPPORTED-Flag zurückgegeben wird. Dies funktioniert gut für Elemente wie zuletzt verwendete (MRU) Listen und Fensterlisten.<br /><br /> Gültig für:`Button`|
-|DynamicVisibility|Die Sichtbarkeit des Befehls kann `QueryStatus` durch die Methode oder durch eine `VisibilityConstraints` Kontext-GUID geändert werden, die im Abschnitt enthalten ist.<br /><br /> Gilt für Befehle, die in Menüs und Symbolleisten für das Werkzeugfenster des Werkzeugs des Werkzeugs des Werkzeugs der obersten Ebene angezeigt werden. Symbolleistenelemente der obersten Ebene können deaktiviert, aber nicht ausgeblendet `QueryStatus` werden, wenn das OLECMDF_INVISIBLE-Flag von der Methode zurückgegeben wird. Symbolleistenbefehle, die auf Symbolleisten des Werkzeugfensters angezeigt werden, können ausgeblendet werden.<br /><br /> In einem Menü zeigt dieses Flag auch an, dass es automatisch ausgeblendet werden sollte, wenn alle mitglieder ausgeblendet sind. Dieses Flag wird in der Regel Untermenüs zugewiesen, da Menüs der obersten Ebene dieses Verhalten bereits aufweisen.<br /><br /> Dieses Flag sollte mit `DefaultInvisible` der Flagge kombiniert werden.<br /><br /> Gültig `Button`für: `Combo`, ,`Menu`|
-|FilterKeys|Siehe das Thema Filterschlüssel unter [Combo Element](../extensibility/combo-element.md).<br /><br /> Gültig für:`Combo`|
-|FixMenuController|Wenn dieser Befehl auf einem Menücontroller positioniert ist, ist der Befehl immer der Standard. Das heißt, der Befehl wird immer dann ausgewählt, wenn die Menücontrollerschaltfläche selbst ausgewählt ist. Wenn auf dem `TextIsAnchorCommand` Menücontroller das Flag gesetzt ist, nimmt der Menücontroller seinen Text auch von dem Befehl mit dem `FixMenuController` Flag.<br /><br /> Nur ein Befehl auf einem `FixMenuController` Menücontroller sollte das Flag haben. Wenn mehr als ein Befehl so markiert ist, wird der letzte Befehl im Menü zum Standardbefehl.<br /><br /> Gültig für:`Button`|
-|IconAndText|Zeigen Sie ein Symbol und Einen Text im Menü und auf der Symbolleiste an.<br /><br /> Gültig `Button`für: `Combo`, ,`Menu`|
-|NoAutoVervollständigen|Die Funktion "Auto-Vervollständigung" ist deaktiviert.<br /><br /> Gültig für:`Combo`|
-|NoButtonCustomize|Lassen Sie den Benutzer diese Schaltfläche nicht anpassen.<br /><br /> Gültig für: `Button`,`Combo`|
-|NoKeyCustomize|Aktivieren Sie die Tastaturanpassung nicht.<br /><br /> Gültig für: `Button`,`Combo`|
-|NoShowOnMenuController|Wenn dieser Befehl auf einem Menücontroller positioniert ist, wird der Befehl nicht in der Dropdownliste angezeigt.<br /><br /> Gültig für:`Button`|
-|NotInTBList|Wird nicht in der Liste der verfügbaren Symbolleisten angezeigt. Dies gilt nur für Toolbar-Menütypen.<br /><br /> Gültig für:`Menu`|
-|NoToolbarClose|Der Benutzer kann die Symbolleiste nicht schließen. Dies gilt nur für Toolbar-Menütypen.<br /><br /> Gültig für:`Menu`|
-|Pict|Zeigt nur ein Symbol auf einer Symbolleiste, aber nur Text in einem Menü an. Wenn kein Symbol angegeben ist, wird ein anklickbares Leerzeichen auf einer Symbolleiste angezeigt.<br /><br /> Gültig für:`Button`|
-|PostExec|Macht den Befehl nicht blockierend. Die Entwicklungsumgebung verschiebt die Ausführung, bis alle Vorverarbeitungsabfragen abgeschlossen sind.<br /><br /> Gültig für:`Button`|
-|RouteToDocs|Der Befehl wird an das aktive Dokument weitergeleitet.<br /><br /> Gültig für:`Button`|
-|StretchHorizontally|Wenn dieses Flag festgelegt ist, wird die Breite zur minimalen Breite für das Kombinationsfeld, und wenn auf der Symbolleiste Platz vorhanden ist, wird das Kombinationsfeld dehnt sich aus, um den verfügbaren Platz zu füllen. Dies tritt nur auf, wenn die Symbolleiste horizontal angedockt ist und nur ein Kombinationsfeld auf der Symbolleiste das Flag verwenden kann (das Flag wird auf allen außer dem ersten Kombinationsfeld ignoriert).<br /><br /> Gültig für:`Combo`|
-|TextÄnderungen|Der Befehl summiert sich zur Laufzeit, `QueryStatus` in der Regel über die Methode.<br /><br /> Gültig für: `Button`,`Menu`|
-|TextChangesButton|Gültig für:`Button`|
-|TextIsAnchorCommand|Bei einem Menücontroller wird der Text des Menüs dem Standardbefehl (Anker) entnommen. Ein Ankerbefehl ist der letzte ausgewählte oder gesperrte Befehl. Wenn dieses Flag nicht gesetzt ist, `MenuText` verwendet der Menücontroller ein eigenes Feld. Wenn Sie jedoch auf den Menücontroller klicken, wird weiterhin der zuletzt ausgewählte Befehl von diesem Controller aus aktiviert.<br /><br /> Es wird empfohlen, dieses `TextChanges` Flag mit dem Flag zu kombinieren.<br /><br /> Dieses Flag gilt nur für Menüs vom Typ MenuController oder MenuControllerLatched.<br /><br /> Gültig für:`Menu`|
-|TextMenuCtrlUseMenu|Verwenden `MenuText` Sie das Feld auf Menücontrollern. Das Standardfeld `ButtonText`ist .<br /><br /> Gültig für:`Button`|
-|TextMenuUseButton|Verwenden `ButtonText` Sie das Feld für Menüs. Das Standardfeld `MenuText` ist, wenn es angegeben ist.<br /><br /> Gültig für:`Button`|
-|TextOnly|Zeigt nur Text auf einer Symbolleiste oder einem Menü, aber kein Symbol an, auch wenn das Symbol angegeben ist.<br /><br /> Gültig für:`Button`|
+|Allowparametriams|Gibt an, dass Benutzer Befehlsparameter im **Befehls** Fenster eingeben können, wenn Sie den kanonischen Namen des Befehls eingeben.<br /><br /> Gültig für: `Button`|
+|AlwaysCreate|Das Menü wird auch dann erstellt, wenn es keine Gruppen oder Schaltflächen enthält.<br /><br /> Gültig für: `Menu`|
+|CaseSensitive|Bei Benutzer Einträgen wird die Groß-/Kleinschreibung beachtet.<br /><br /> Gültig für: `Combo`|
+|Commandwellonly|Wenden Sie dieses Flag an, wenn der Befehl nicht im Menü der obersten Ebene angezeigt wird und Sie für zusätzliche Shellanpassungen verfügbar machen möchten, z. b. für die Bindung an eine Tastenkombination. Nachdem das VSPackage installiert wurde, können Sie diese Befehle anpassen, indem Sie das Dialogfeld **Optionen** öffnen und dann die Befehls Platzierung unter der Kategorie **Tastatur Umgebung** bearbeiten. Dieses Flag wirkt sich nicht auf die Platzierung von Kontextmenüs, Symbolleisten, Menü Controllern oder Untermenüs aus.<br /><br /> Gültig für: `Button` , `Combo`|
+|Defaultdeaktiviert|Standardmäßig ist der Befehl deaktiviert, wenn das VSPackage, das es implementiert, nicht geladen wurde oder die `QueryStatus` Methode nicht aufgerufen wurde.<br /><br /> Gültig für: `Button` , `Combo`|
+|Defaultangedockt|Standardmäßig angedockt. Diese Einstellung gilt nicht mehr für Symbolleisten, da Sie immer angedockt sind.|
+|Defaultinvisible|Standardmäßig ist der Befehl unsichtbar, wenn das VSPackage, das es implementiert, nicht geladen wurde oder die- `QueryStatus` Methode nicht aufgerufen wurde.<br /><br /> Es wird empfohlen, dies mit dem-Flag zu kombinieren `DynamicVisibility` .<br /><br /> Gültig für: `Button` , `Combo` , `Menu`|
+|DontCache|Die- `QueryStatus` Methoden Ergebnisse für diesen Befehl werden von der Entwicklungsumgebung nicht zwischengespeichert.<br /><br /> Bei einem Menü wird einem Menü Controller mitgeteilt, dass er den Text seiner Menü Elemente nicht zwischenspeichern soll. Verwenden Sie dieses Flag, wenn das Menü dynamische Elemente oder Elemente mit dynamischem Text enthält.<br /><br /> Gültig für: `Button` , `Menu`|
+|Dynamicitemstart|Gibt den Anfang einer dynamischen Liste an. Dadurch kann die Umgebung eine Liste erstellen, indem Sie die- `QueryStatus` Methode für Listenelemente nacheinander aufrufen, bis das OLECMDERR_E_UNSUPPORTED-Flag zurückgegeben wird. Dies funktioniert gut für Elemente wie z. b. die zuletzt verwendeten (MRU) Listen und Fenster Listen.<br /><br /> Gültig für: `Button`|
+|Dynamicvisibility|Die Sichtbarkeit des Befehls kann durch die- `QueryStatus` Methode oder durch eine Kontext-GUID, die im-Abschnitt enthalten ist, geändert werden `VisibilityConstraints` .<br /><br /> Gilt für Befehle, die in Menüs und Tool Fenster Symbolleisten angezeigt werden, jedoch nicht für Symbolleisten der obersten Ebene, die im Hauptfenster angezeigt werden. Symbolleisten Elemente der obersten Ebene können deaktiviert, jedoch nicht ausgeblendet werden, wenn das OLECMDF_INVISIBLE-Flag von der-Methode zurückgegeben wird `QueryStatus` . Symbolleisten Befehle, die auf Symbolleisten des Tool Fensters angezeigt werden, können ausgeblendet werden.<br /><br /> In einem Menü gibt dieses Flag auch an, dass es automatisch ausgeblendet werden soll, wenn alle zugehörigen Member ausgeblendet sind. Dieses Flag wird normalerweise Untermenüs zugewiesen, da die Menüs der obersten Ebene bereits über dieses Verhalten verfügen.<br /><br /> Dieses Flag sollte mit dem-Flag kombiniert werden `DefaultInvisible` .<br /><br /> Gültig für: `Button` , `Combo` , `Menu`|
+|Filter Keys|Weitere Informationen finden Sie im Thema Filtern von Schlüsseln unter "Kombinations [Element](../extensibility/combo-element.md)"<br /><br /> Gültig für: `Combo`|
+|Fixmenucontroller|Wenn dieser Befehl auf einem Menü Controller positioniert ist, ist der Befehl immer der Standard. Das heißt, dass der Befehl immer dann ausgewählt wird, wenn die Menü Controller Schaltfläche selbst ausgewählt ist. Wenn für den Menü Controller das `TextIsAnchorCommand` Flag festgelegt ist, übernimmt der Menü Controller auch seinen Text aus dem Befehl, der über das `FixMenuController` Flag verfügt.<br /><br /> Nur ein Befehl in einem Menü Controller muss über das `FixMenuController` Flag verfügen. Wenn mehr als ein Befehl so gekennzeichnet ist, wird der letzte Befehl im Menü zum Standardbefehl.<br /><br /> Gültig für: `Button`|
+|Iconandtext|Symbol und Text im Menü und in der Symbolleiste anzeigen.<br /><br /> Gültig für: `Button` , `Combo` , `Menu`|
+|Noautocomplete|Die Funktion zum automatischen Vervollständigen ist deaktiviert.<br /><br /> Gültig für: `Combo`|
+|Nobuttoncustomize|Lassen Sie den Benutzer diese Schaltfläche nicht anpassen.<br /><br /> Gültig für: `Button` , `Combo`|
+|Nokeycustomize|Aktivieren Sie keine Tastatur Anpassung.<br /><br /> Gültig für: `Button` , `Combo`|
+|Noshowonmenucontroller|Wenn dieser Befehl auf einem Menü Controller positioniert ist, wird der Befehl nicht in der Dropdown Liste angezeigt.<br /><br /> Gültig für: `Button`|
+|Notintblist|Wird nicht in der Liste der verfügbaren Symbolleisten angezeigt. Dies ist nur für Symbolleisten-Menü Typen gültig.<br /><br /> Gültig für: `Menu`|
+|Notoolbarclose|Der Benutzer kann die Symbolleiste nicht schließen. Dies ist nur für Symbolleisten-Menü Typen gültig.<br /><br /> Gültig für: `Menu`|
+|PICT|Zeigt nur ein Symbol auf einer Symbolleiste an, aber nur Text in einem Menü. Wenn kein Symbol angegeben wird, wird ein klickbarer leerer Leerraum auf einer Symbolleiste angezeigt.<br /><br /> Gültig für: `Button`|
+|Postexec|Bewirkt, dass der Befehl nicht blockiert wird. Die Entwicklungsumgebung wird ausgeführt, bis alle vorab verarbeiteten Abfragen abgeschlossen sind.<br /><br /> Gültig für: `Button`|
+|Routeto docs|Der Befehl wird an das aktive Dokument weitergeleitet.<br /><br /> Gültig für: `Button`|
+|Stretchhorizontal|Wenn dieses Flag festgelegt ist, wird die Breite zur minimalen Breite für das Kombinations Feld. wenn auf der Symbolleiste Platz vorhanden ist, wird das Kombinations Feld gestreckt, um den verfügbaren Platz auszufüllen. Dies tritt nur dann auf, wenn die Symbolleiste horizontal angedockt ist und nur ein Kombinations Feld auf der Symbolleiste das Flag verwenden kann (das Flag wird ignoriert, außer das erste Kombinations Feld).<br /><br /> Gültig für: `Combo`|
+|Textchanges Befehlsflag|Der Befehl oder Menütext kann zur Laufzeit geändert werden, in der Regel über die- `QueryStatus` Methode.<br /><br /> Gültig für: `Button` , `Menu`|
+|Textchangesbutton|Gültig für: `Button`|
+|Textisanchorcommand|Bei einem Menü Controller wird der Text des Menüs aus dem Standardbefehl (Anker) entnommen. Ein Anker Befehl ist der letzte ausgewählte oder latchende Befehl. Wenn dieses Flag nicht festgelegt ist, verwendet der Menü Controller ein eigenes `MenuText` Feld. Wenn Sie jedoch auf den Menü Controller klicken, wird weiterhin der letzte ausgewählte Befehl von diesem Controller aktiviert.<br /><br /> Es wird empfohlen, dieses Flag mit dem-Flag zu kombinieren `TextChanges` .<br /><br /> Dieses Flag gilt nur für Menüs vom Typ menucontroller oder menucontrollerlatched.<br /><br /> Gültig für: `Menu`|
+|Textmenuctrlufestmenu|Verwenden Sie das- `MenuText` Feld auf Menü Controllern. Das Standardfeld ist `ButtonText` .<br /><br /> Gültig für: `Button`|
+|Textmenuusebutton|Verwenden Sie das `ButtonText` Feld für Menüs. Das Standardfeld ist, `MenuText` Wenn es angegeben wird.<br /><br /> Gültig für: `Button`|
+|TextOnly|Nur Text auf einer Symbolleiste oder einem Menü, aber ohne Symbol anzeigen, auch wenn das Symbol angegeben ist.<br /><br /> Gültig für: `Button`|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[Buttons-Element](../extensibility/buttons-element.md)|Stellt eine Gruppe für [Button-Elementelemente](../extensibility/button-element.md) bereit.|
-|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|
+|[Buttons-Element](../extensibility/buttons-element.md)|Stellt eine Gruppe für [Schaltflächen Element](../extensibility/button-element.md) Elemente bereit.|
+|[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Visual Studio-Befehlstabelle (. Vsct) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio-Befehls Tabelle (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -27,14 +27,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253985"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Übersicht über Visual Studio-Tools für Office-Laufzeit
-  Zum Ausführen von Projektmappen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss die Visual Studio 2010-Tools für Office-Laufzeit auf den Endbenutzer Computern installiert sein. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren Sie den Visual Studio-Tools für die weitervertreibbare](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)Office-Laufzeit. Die Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:
+  Zum Ausführen von Projektmappen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss die Visual Studio 2010-Tools für Office-Laufzeit auf den Endbenutzer Computern installiert sein. Weitere Informationen finden Sie unter Vorgehens [Weise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Die Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:
 
 - Den Office-Erweiterungen für .NET Framework. Diese Komponenten sind verwaltete Assemblys, die die Kommunikationsebene zwischen der Projektmappe und der Microsoft Office-Anwendung bereitstellen. Weitere Informationen finden Sie Untergrund Legendes [zu den Office-Erweiterungen für die .NET Framework](#officeextensions).
 
@@ -42,8 +42,8 @@ ms.locfileid: "71253985"
 
   Die Laufzeit kann auf unterschiedliche Weise installiert werden. In Abhängigkeit von der Konfiguration des Computers werden unterschiedliche Laufzeitkomponenten installiert, wenn Sie die Laufzeit installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-## <a name="officeextensions"></a>Verstehen der Office-Erweiterungen für die .NET Framework
- Die Visual Studio 2010 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] -Tools für Office-Laufzeit enthält Office-Erweiterungen für die .NET Framework 3,5, und höher. Projektmappen, die auf die einzelnen Versionen von .NET Framework abzielen, verwenden die entsprechenden Erweiterungen für die jeweilige Version.
+## <a name="understand-the-office-extensions-for-the-net-framework"></a><a name="officeextensions"></a> Verstehen der Office-Erweiterungen für die .NET Framework
+ Die Visual Studio 2010-Tools für Office-Laufzeit enthält Office-Erweiterungen für die .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher. Projektmappen, die auf die einzelnen Versionen von .NET Framework abzielen, verwenden die entsprechenden Erweiterungen für die jeweilige Version.
 
  Diese Erweiterungen bestehen aus Assemblys, die von den Projektmappen verwendet werden, um Office-Anwendungen zu automatisieren und zu erweitern. Wenn Sie ein Office-Projekt erstellen, fügt Visual Studio Verweise automatisch Verweise auf die Assemblys hinzu, die für den Projekttyp und das Ziel-.NET Framework des Projekts verwendet werden. Weitere Informationen zu den Assemblys in den Office-Erweiterungen finden Sie unter Assemblys [in der Visual Studio-Tools für Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
 
@@ -55,7 +55,7 @@ ms.locfileid: "71253985"
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Schnittstellen in den Office-Erweiterungen für die .NET Framework 4 oder höher
  Die meisten Schnittstellen in den Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher sind nicht für eine Implementierung durch Benutzercode vorgesehen. Die einzigen Schnittstellen, die Sie direkt implementieren können, haben einen Namen, der mit dem Buchstaben **I**beginnt, z. B. <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.
 
- Alle Schnittstellen, die nicht mit **dem Buchstaben** beginnen, werden intern von der Visual Studio 2010-Tools für Office-Laufzeit implementiert, und diese Schnittstellen können sich in zukünftigen Versionen ändern. Um Objekte zu erstellen, die diese Schnittstellen implementieren, verwenden Sie im Projekt die vom `Globals.Factory`-Objekt bereitgestellten Methoden. Verwenden Sie z. B. die <xref:Microsoft.Office.Tools.Excel.SmartTag>-Methode, um ein Objekt abzurufen, das die `Globals.Factory.CreateSmartTag`-Schnittstelle implementiert. Weitere Informationen `Globals.Factory`zu finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+ Alle Schnittstellen, die nicht mit **dem Buchstaben** beginnen, werden intern von der Visual Studio 2010-Tools für Office-Laufzeit implementiert, und diese Schnittstellen können sich in zukünftigen Versionen ändern. Um Objekte zu erstellen, die diese Schnittstellen implementieren, verwenden Sie im Projekt die vom `Globals.Factory`-Objekt bereitgestellten Methoden. Verwenden Sie z. B. die <xref:Microsoft.Office.Tools.Excel.SmartTag>-Methode, um ein Objekt abzurufen, das die `Globals.Factory.CreateSmartTag`-Schnittstelle implementiert. Weitere Informationen zu `Globals.Factory` finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
 ### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Aktivieren von typäquivalenz und eingebetteten Typen in Projekten, die auf die .NET Framework 4 oder höher abzielen
  Da das Objektmodell der Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher auf Schnittstellen basiert, können Sie die Typäquivalenzfunktion in Visual C# und Visual Basic in Visual Studio verwenden, um Typinformationen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in die Projektmappe einzubetten. Mithilfe dieser Funktion können Office-Projektmappen und die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] voneinander unabhängige Versionen verwenden. Wenn die Projektmappe beispielsweise die <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle als eingebetteten Typ verwendet und die nächste Version der Laufzeit der <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle Member hinzufügt, funktioniert die Projektmappe immer noch mit der nächsten Version der Laufzeit. Wenn die Projektmappe die <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle nicht als eingebetteten Typ verwendet, funktioniert die Projektmappe nicht mehr mit der nächsten Version der Laufzeit.
@@ -74,18 +74,18 @@ ms.locfileid: "71253985"
 
   Nachdem Sie diese Änderung vorgenommen haben, werden Typinformationen für alle vom Projekt verwendeten Laufzeittypen in die Projektmappenassembly eingebettet, wenn Sie das Projekt erstellen. Diese eingebetteten Typinformationen werden anstelle der Typinformationen in den Assemblys, auf die verwiesen wird, von der Projektmappe zur Laufzeit verwendet.
 
-## <a name="UnmanagedLoader"></a>Grundlegendes zum Office Solution Loader
+## <a name="understand-the-office-solution-loader"></a><a name="UnmanagedLoader"></a> Grundlegendes zum Office Solution Loader
  Visual Studio-Tools für Office-Laufzeit schließt mehrere nicht verwaltete DLLs ein, die Office-Anwendungen verwenden, um die Laufzeit sowie Office-Projektmappen zu laden. Obwohl Sie in der Regel nie direkt mit diesen DLLs arbeiten müssen, können Kenntnisse über ihren Zweck Ihnen dabei helfen, die Architektur der Office-Projektmappen besser zu verstehen.
 
  Informationen dazu, wie diese Komponenten während des Ladevorgangs verwendet werden, finden Sie unter [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md) und [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="vstoeedll"></a>vstoee.dll
- Wenn ein Benutzer eine Anpassung auf Dokument Ebene öffnet oder ein VSTO-Add-in startet, ruft die Office-Anwendung " *VSTOEE. dll* " auf, um die Aufgaben [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]auszuführen, die zum Laden von erforderlich sind.
+ Wenn ein Benutzer eine Anpassung auf Dokument Ebene öffnet oder ein VSTO-Add-in startet, ruft die Office-Anwendung *VSTOEE.dll* auf, um die Aufgaben auszuführen, die zum Laden von erforderlich sind [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
- *VSTOEE. dll* stellt sicher, dass die richtige Version von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] für die Lösung und die installierte Version von Office geladen wird. Obwohl mehrere Versionen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] auf demselben Computer installiert werden können, wird jeweils nur eine Instanz der Datei " *VSTOEE. dll* " installiert. Dabei handelt es sich um die Datei *VSTOEE. dll* , die in der neuesten Version der Laufzeit enthalten war, die auf dem Computer installiert ist. Weitere Informationen zu den verschiedenen Versionen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , die für andere Projektmappen verwendet werden können, finden Sie unter Ausführen von Projektmappen [in verschiedenen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).
+ *VSTOEE.dll* stellt sicher, dass die richtige Version von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] für die Lösung und die installierte Version von Office geladen wird. Obwohl mehrere Versionen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] auf demselben Computer installiert werden können, wird jeweils nur eine Instanz von *VSTOEE.dll* installiert. Dies ist der *VSTOEE.dll* , der in der neuesten Version der Laufzeit enthalten war, die auf dem Computer installiert ist. Weitere Informationen zu den verschiedenen Versionen von, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] für andere Projektmappen verwendet werden können, finden Sie unter Ausführen von Projektmappen [in verschiedenen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).
 
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll
- Nachdem *VSTOEE. dll* die entsprechende Version von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]geladen hat, führt *VSTOLoader. dll* den größten Teil der Arbeit aus, die zum Laden der Projektmappenassembly erforderlich ist. " *VSTOLoader. dll* " führt verschiedene Aktionen aus:
+ Nachdem *VSTOEE.dll* die entsprechende Version von geladen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] hat, führt *VSTOLoader.dll* den größten Teil der Arbeit aus, die zum Laden der Projektmappenassembly erforderlich ist. *VSTOLoader.dll* führt verschiedene Aktionen aus:
 
 - Es erstellt eine Anwendungsdomäne für jede Projektmappenassembly.
 
@@ -93,22 +93,22 @@ ms.locfileid: "71253985"
 
 - Es lädt die Version der Office-Erweiterungen für das .NET Framework, das für die Projektmappe erforderlich ist.
 
-  " *VSTOLoader. dll* " führt auch mehrere Aufgaben aus, die speziell für VSTO-Add-ins gelten:
+  *VSTOLoader.dll* führt auch mehrere Aufgaben aus, die speziell für VSTO-Add-ins gelten:
 
 - Es implementiert die <xref:Extensibility.IDTExtensibility2> -Schnittstelle. <xref:Extensibility.IDTExtensibility2> ist eine COM-Schnittstelle, die alle VSTO-Add-Ins für Microsoft Office-Anwendungen implementieren müssen. Diese Schnittstelle definiert Methoden, die die Anwendung aufruft, um mit dem VSTO-Add-In zu kommunizieren.
 
-- Es implementiert die IManagedAddin-Schnittstelle. Diese Schnittstelle wird von Office-Anwendungen beim Laden von VSTO-Add-Ins verwendet. Weitere Informationen finden Sie unter [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md).
+- Es implementiert die IManagedAddin-Schnittstelle. Diese Schnittstelle wird von Office-Anwendungen zum Laden von VSTO-Add-Ins verwendet. Weitere Informationen finden Sie unter [IManagedAddin-Schnittstelle](../vsto/imanagedaddin-interface.md).
 
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Verstehen der 32-Bit-und 64-Bit-Versionen der Laufzeit
  Es gibt separate 64-Bit-und 32-Bit-Versionen der Visual Studio 2010-Tools für Office-Laufzeit. Diese Versionen der Laufzeit werden verwendet, um Projektmappen in 64-Bit- und 32-Bit-Editionen von Office auszuführen. Die folgende Tabelle zeigt, welche Version der Laufzeit für jede Kombination von Windows und Office erforderlich ist.
 
 |Edition von Windows|Edition von Microsoft Office|Erforderliche Version der Visual Studio Tools for Office-Laufzeit.|
 |------------------------|---------------------------------|--------------------------------------------------------------------|
-|32-Bit|32-Bit|32-Bit|
+|32 Bit|32 Bit|32-Bit|
 |64-Bit|32-Bit|64-Bit|
 |64-Bit|64-Bit|64-Bit|
 
- Wenn Sie Office installieren, wird die erforderliche [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Version zusammen mit Office installiert. Wenn Sie z. B. die 64-Bit-Edition von Office unter einer 64-Bit-Version von Windows installieren, wird auch die 64-Bit-Version von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installiert. Weitere Informationen zum Installieren [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] von mit Office finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+ Wenn Sie Office installieren, wird die erforderliche [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Version zusammen mit Office installiert. Wenn Sie z. B. die 64-Bit-Edition von Office unter einer 64-Bit-Version von Windows installieren, wird auch die 64-Bit-Version von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installiert. Weitere Informationen zum Installieren von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mit Office finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
  Mit der 64-Bit-Version von Office können auch Office-Projektmappen ausgeführt werden, die mit Projektvorlagen für 2007 Microsoft Office System in Visual Studio 2008 erstellt wurden. Es können jedoch keine Office-Projektmappen ausgeführt werden, die mit Projektvorlagen für Microsoft Office 2003 in Visual Studio 2008 erstellt wurden, oder Office-Projektmappen, die mit Visual Studio 2005 erstellt wurden. Weitere Informationen finden Sie unter [Ausführen von Projektmappen in verschiedenen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).
 
@@ -120,6 +120,6 @@ ms.locfileid: "71253985"
 - [Assemblys in der Visual Studio-Tools für Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
-- [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Aktualisieren und Migrieren von Office-Lösungen](../vsto/upgrading-and-migrating-office-solutions.md)

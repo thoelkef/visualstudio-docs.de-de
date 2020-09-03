@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext | Microsoft-Dokumentation
+title: 'IDebugProperty2:: getmemorycontext | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3ad83bfe36f468dd0e2d7d040c188fd69970a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193483"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Kontext Arbeitsspeicher den Wert der Eigenschaft ab.  
+Ruft den Speicher Kontext des Eigenschafts Werts ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,11 +40,11 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Parameter  
  `ppMemory`  
- [out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt, das diese Eigenschaft zugeordneten Arbeitsspeicher darstellt.  
+ vorgenommen Gibt das [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt zurück, das den dieser Eigenschaft zugeordneten Arbeitsspeicher darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` liegt kein Speicherkontext abrufen.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben. Gibt zurück `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` , wenn kein Speicher Kontext zum Abrufen vorhanden ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

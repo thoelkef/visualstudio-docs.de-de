@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df35a25534961c6ab94891d2da6fe54f05c37a3e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681091"
 ---
 # <a name="how-to-debug-injected-code"></a>Vorgehensweise: Debuggen von eingefügtem Code
@@ -69,6 +69,6 @@ HINWEIS]
   
 2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

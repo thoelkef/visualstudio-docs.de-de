@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af22ef2d8a77b8c44b9e494736630480a0614162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205070"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enthält Informationen über den Zustand eines Haltepunkts an, die an einen Speicherort gebunden werden kann.  
+Enthält Informationen zum Zustand eines Breakpoints, der für die Bindung an einen Code Speicherort bereit ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,22 +42,22 @@ public struct PENDING_BP_STATE_INFO { 
   
 ## <a name="members"></a>Member  
  state  
- Ein Wert aus der [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) -Enumeration, die den Status des ausstehenden Haltepunkts angibt.  
+ Ein Wert aus der [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) Enumeration, der den Status des ausstehenden halte Punkts angibt.  
   
  flags  
- Eine Kombination von Flags aus der [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) -Enumeration, der angibt, ob der Breakpoint virtualisiert wird.  
+ Eine Kombination von Flags aus der [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) -Enumeration, die angibt, ob der Breakpoint virtualisiert ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) Methode, in denen es ausgefüllt wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird an die [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) -Methode übermittelt, wo Sie ausgefüllt ist.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
  [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   

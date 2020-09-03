@@ -1,5 +1,5 @@
 ---
-title: Websteuerelementbibliothek (verwalteter Code) | Microsoft-Dokumentation
+title: Websteuer Element Bibliothek (verwalteter Code) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688177"
 ---
 # <a name="web-control-library-managed-code"></a>Websteuerelementbibliothek (verwalteter Code)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Durch die Projektvorlage für eine Websteuerelementbibliothek wird eine DLL erstellt. Da es sich bei der Klassenbibliothek um eine DLL handelt, kann sie nicht direkt ausgeführt werden. Erstellen Sie eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Seite erstellen, in die das Steuerelement eingebettet ist. Weitere Informationen finden Sie unter [Web Control Bibliotheksvorlage](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Durch die Projektvorlage für eine Websteuerelementbibliothek wird eine DLL erstellt. Da es sich bei der Klassenbibliothek um eine DLL handelt, kann sie nicht direkt ausgeführt werden. Erstellen Sie eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Seite erstellen, in die das Steuerelement eingebettet ist. Weitere Informationen finden Sie unter [Vorlage für websteuer Element Bibliothek](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>So debuggen Sie eine Websteuerelementbibliothek (Methode 1)  
   
@@ -43,13 +43,13 @@ Durch die Projektvorlage für eine Websteuerelementbibliothek wird eine DLL erst
   
 6. Öffnen Sie ein Browserfenster, und geben Sie die URL ein, der auf die Testumgebung zeigt. Sobald ein Haltepunkt im Steuerelement erreicht ist, können Sie mit dem Debuggen beginnen.  
   
-### <a name="to-debug-a-web-control-library-method-2"></a>So debuggen Sie eine Websteuerelementbibliothek (Methode 2)  
+### <a name="to-debug-a-web-control-library-method-2"></a>So debuggen Sie eine websteuer Element Bibliothek (Methode 2)  
   
 1. Erstellen Sie ein Hostanwendungsprojekt und ein Websteuerelementprojekt in der gleichen Projektmappe.  
   
-2. In **Projektmappen-Explorer**mit der rechten Maustaste auf die hostanwendung, und wählen Sie **Verweis hinzufügen**.  
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Host Anwendung, und wählen Sie **Verweis hinzufügen**.  
   
 3. Fügen Sie dem Websteuerelementprojekt einen Verweis hinzu.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [ASP.NET-Webanwendungen](../debugger/debugging-preparation-aspnet-web-applications.md)

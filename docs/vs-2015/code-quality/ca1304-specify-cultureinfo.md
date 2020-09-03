@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d874d69f36fc8520a7cfbe3e946116c2d85ed88f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539060"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Kategorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -61,7 +61,7 @@ ms.locfileid: "85539060"
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass der standardmäßige Kultur-/Formatanbieter die richtige Wahl ist und die Code Wartbarkeit keine wichtige Entwicklungs Priorität darstellt.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel `BadMethod` verursacht zwei Verstöße gegen diese Regel. `GoodMethod`korrigiert den ersten Verstoß durch übergeben der invarianten Kultur an System. String. Compare und korrigiert den zweiten Verstoß durch übergeben der aktuellen Kultur an, <xref:System.String.ToLower%2A> da `string3` dem Benutzer angezeigt wird.
+ Im folgenden Beispiel `BadMethod` verursacht zwei Verstöße gegen diese Regel. `GoodMethod` korrigiert den ersten Verstoß durch übergeben der invarianten Kultur an System. String. Compare und korrigiert den zweiten Verstoß durch übergeben der aktuellen Kultur an, <xref:System.String.ToLower%2A> da `string3` dem Benutzer angezeigt wird.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

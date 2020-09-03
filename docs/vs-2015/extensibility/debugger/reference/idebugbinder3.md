@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f23c2ad4aeaf911e45b28686584d741e5c4d22f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704139"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Diese Schnittstelle bietet Zugriff auf Typen, Aliase und benutzerdefinierte Schnellansicht-Dienste.  
+ Diese Schnittstelle ermöglicht den Zugriff auf Typen, Aliase und benutzerdefinierte Visualisierungs Dienste.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,32 +34,32 @@ IDebugBinder3 : IDebugBinder
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein Debugmodul implementiert diese Schnittstelle, um die Aliase, benutzerdefinierte Schnellansicht-Dienste und den Zugriff auf Objekttypen zu unterstützen.  
+ Eine Debug-Engine implementiert diese Schnittstelle, um Aliase, benutzerdefinierte Visualisierungs Dienste und Zugriff auf Objekttyp Informationen zu unterstützen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Schnittstelle ruft diese Schnittstelle mit [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+ Eine [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle erhält diese Schnittstelle mithilfe von [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den Methoden, die bereitgestellt werden, indem die [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle, diese Schnittstelle implementiert, die folgenden:  
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden, die von der [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle bereitgestellt werden, implementiert diese Schnittstelle Folgendes:  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicherobjekt, das den Speicher an dem dieses Objekt gebunden ist darstellt.|  
-|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft ab, der die Ausnahme, die diesem Objekt (falls vorhanden) zugeordnet,|  
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Ruft einen Alias mit dem angegebenen Namen ab,|  
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Ruft ein Array aller Aliase für dieses Objekt ab,|  
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ruft die Anzahl von Argumenttypen, die diesem Objekt zugeordnet,|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Ruft eine Liste der Argumenttypen, die diesem Objekt zugeordnet,|  
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ruft eine Schnittstelle für einen schnellansichtsdienst,|  
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konvertiert entweder auf ein Objektspeicherort oder auf einer 64-Bit-Speicheradresse in einen Kontext an Arbeitsspeicher an.|  
+|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicher Objekt ab, das den Speicher darstellt, an den dieses-Objekt gebunden ist.|  
+|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft die Ausnahme ab, die diesem-Objekt zugeordnet ist (falls vorhanden).|  
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Ruft einen Alias anhand seines Namens ab.|  
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Ruft ein Array aller Aliase für dieses-Objekt ab.|  
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ruft die Anzahl von Argument Typen ab, die diesem-Objekt zugeordnet sind.|  
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Ruft eine Liste von Argument Typen ab, die diesem-Objekt zugeordnet sind.|  
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ruft eine Schnittstelle zu einem schnell Ansichts Dienst ab.|  
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konvertiert entweder einen Objekt Speicherort oder eine 64-Bit-Speicheradresse in einen Speicher Kontext.|  
   
-## <a name="requirements"></a>Anforderungen  
- Header: ee.h  
+## <a name="requirements"></a>Requirements (Anforderungen)  
+ Header: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausdrucks Bewertungs Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

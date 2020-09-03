@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32cafb9e68fc2535ed3b570022a59d284f4c4cae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666108"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generieren von Code für eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] bietet eine leistungsstarke Möglichkeit, Code, Dokumente, Konfigurationsdateien und andere Artefakte aus Daten zu generieren, die in Modellen dargestellt werden. Mithilfe [!INCLUDE[dsl](../includes/dsl-md.md)] können Sie einen Satz von Klassen erstellen, die Ihre Daten darstellen, und Sie können Ihre Textvorlagen in Klassen schreiben, deren Namen und Eigenschaften diese Daten widerspiegeln.
+Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] bietet eine leistungsstarke Möglichkeit, Code, Dokumente, Konfigurationsdateien und andere Artefakte aus Daten zu generieren, die in Modellen dargestellt werden. Mithilfe von [!INCLUDE[dsl](../includes/dsl-md.md)] können Sie einen Satz von Klassen erstellen, die Ihre Daten darstellen, und Sie können Ihre Textvorlagen in Klassen schreiben, deren Namen und Eigenschaften diese Daten widerspiegeln.
 
  Fabrikam hat z. b. eine XML-Datei mit Kundennamen und e-Mail-Adressen. Ihre Entwickler erstellen ein Modell, in dem Customer eine Klasse mit den Eigenschaften Name und e-Mail-Adresse ist. Sie schreiben mehrere Textvorlagen, um die Daten zu verarbeiten, einschließlich dieses Fragments, das eine Tabelle aller Kunden als Teil einer HTML-Seite erzeugt:
 
@@ -31,11 +31,11 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] bietet eine leistungsstarke Mö
 <# } #>  </table>
 ```
 
- Wenn die Kundendatenbank verarbeitet wird, wird die XML-Datei in den Modell Speicher gelesen. Ein *Direktivenprozessor*, der mit [!INCLUDE[dsl](../includes/dsl-md.md)] erstellt wurde, macht die Customer-Klasse für den Code in der Textvorlage verfügbar. Viele Textvorlagen können für denselben Speicher ausgeführt werden.
+ Wenn die Kundendatenbank verarbeitet wird, wird die XML-Datei in den Modell Speicher gelesen. Ein *Direktivenprozessor*, der mithilfe von erstellt wurde, [!INCLUDE[dsl](../includes/dsl-md.md)] macht die Customer-Klasse für den Code in der Textvorlage verfügbar. Viele Textvorlagen können für denselben Speicher ausgeführt werden.
 
- Text Vorlagen sind für die [!INCLUDE[dsl](../includes/dsl-md.md)] von entscheidender Bedeutung. Sie werden verwendet, um den Quellcode für die Elemente des Domänen Modells sowie für das VSPackage und die Steuerelemente zu generieren, die zum Integrieren der Tools in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet werden.
+ Text Vorlagen sind für erforderlich [!INCLUDE[dsl](../includes/dsl-md.md)] . Sie werden verwendet, um den Quellcode für die Elemente des Domänen Modells sowie für das VSPackage und die Steuerelemente zu generieren, mit denen die Tools in integriert werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- In diesem Abschnitt werden einige Methoden zum Erstellen, ändern und Debuggen von Textvorlagen erläutert, die in [!INCLUDE[dsl](../includes/dsl-md.md)] verwendet werden.
+ In diesem Abschnitt werden einige Methoden zum Erstellen, ändern und Debuggen von Textvorlagen erläutert, die in verwendet werden [!INCLUDE[dsl](../includes/dsl-md.md)] .
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Zugreifen auf Modelle aus Textvorlagen](../modeling/accessing-models-from-text-templates.md)
@@ -54,7 +54,7 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] bietet eine leistungsstarke Mö
 
  Beschreibt die Befehlsdatei, die für Textvorlagen, die auf domänenspezifische Sprachen verweisen, die ausführbare textTransform-Datei in der Befehlszeile ausführt.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
  [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
 
  Stellt die Syntax von Textvorlagen Direktiven und-Kontroll Blöcken bereit.

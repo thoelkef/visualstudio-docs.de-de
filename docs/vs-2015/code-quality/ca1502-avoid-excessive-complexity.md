@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547835"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -57,7 +57,7 @@ ms.locfileid: "85547835"
 
 - Anzahl von Verzweigungen (z. b. `if` , `while` und `do` )
 
-- Anzahl von `case` Anweisungen in einem`switch`
+- Anzahl von `case` Anweisungen in einem `switch`
 
   In den folgenden Beispielen werden Methoden veranschaulicht, die unterschiedliche zyklomatische Komplexität aufweisen.
 

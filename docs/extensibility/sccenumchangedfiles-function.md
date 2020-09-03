@@ -1,5 +1,5 @@
 ---
-title: SccEnumChangedFiles-Funktion | Microsoft Docs
+title: Sccenumchangedfiles-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700903"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles-Funktion
-Angesichts einer Liste lokaler Dateien bestimmt diese Funktion, welche Dateien sich von den entsprechenden Versionen in der Quellcodeverwaltungsdatenbank unterscheiden.
+# <a name="sccenumchangedfiles-function"></a>Sccenumchangedfiles-Funktion
+Wenn eine Liste lokaler Dateien angegeben ist, bestimmt diese Funktion, welche Dateien sich von den entsprechenden Versionen in der Quell Code Verwaltungs Datenbank unterscheiden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,26 +37,26 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>Parameter
  pContext
 
-[in] Der Kontextzeiger für die Quellcodeverwaltung.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
+in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
 
  cFiles
 
-[in] Anzahl der im `lpFileNames` Array angegebenen Dateinamen. Gibt auch die `plIsFileDifferent` Größe des Arrays an.
+in Anzahl der im Array angegebenen Dateinamen `lpFileNames` . Gibt auch die Größe des `plIsFileDifferent` Arrays an.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Array lokaler Dateinamen, die überprüft werden sollen.
+in Array der lokalen Dateinamen, die überprüft werden sollen.
 
- plIsFileDifferent
+ plisfiledifferent
 
-[in, out] Array von Werten, die den Differenzstatus jeder Datei `cFiles` angeben (Array muss mindestens Einträge haben). Ein Wert ungleich Null bedeutet, dass die Datei anders ist.
+[in, out] Ein Array von-Werten, die den Differenz Status der einzelnen Dateien angeben (Array muss mindestens `cFiles` Einträge aufweisen). Ungleich 0 bedeutet, dass die Datei anders ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
@@ -64,4 +64,4 @@ SCCRTN SccEnumChangedFiles(
 |SCC_UNSPECIFIEDERROR|Allgemeiner Fehler.|
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)

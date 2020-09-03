@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::ResumeProcess | Microsoft-Dokumentation
+title: 'IDebugEngineLaunch2:: resumeprocess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 49ba5157dfb72d22298a51a907be1ad86088bab7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195690"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Prozess wird fortgesetzt.  
+Nimmt die Prozess Ausführung wieder auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,15 +40,15 @@ int ResumeProcess ( 
   
 #### <a name="parameters"></a>Parameter  
  `pProcess`  
- [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess, bis die Wiederaufnahme erfolgt darstellt.  
+ in Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den fort zusetzenden Prozess darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, nach dem Starten eines Prozesses mit einem Aufruf der [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird aufgerufen, nachdem ein Prozess mit einem Aufruf der [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) -Methode gestartet wurde.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

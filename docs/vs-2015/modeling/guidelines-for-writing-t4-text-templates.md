@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d1e15a8c00a0614d020defd2df7b06665289a8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666052"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese allgemeinen Richtlinien können hilfreich sein, wenn Sie Programmcode oder andere Anwendungs Ressourcen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellen. Es handelt sich nicht um Fixed-Regeln.
+Diese allgemeinen Richtlinien können hilfreich sein, wenn Sie Programmcode oder andere Anwendungs Ressourcen in Erstellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Es handelt sich nicht um Fixed-Regeln.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Richtlinien für T4-Vorlagen zur Entwurfszeit
- T4-Vorlagen für die Entwurfszeit sind Vorlagen, die zur Entwurfszeit Code in Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt generieren. Weitere Informationen finden Sie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ T4-Vorlagen für die Entwurfszeit sind Vorlagen, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Entwurfszeit Code in Ihrem Projekt generieren. Weitere Informationen finden Sie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generieren Sie Variablen Aspekte der Anwendung.
 Die Code Generierung ist besonders nützlich für die Aspekte der Anwendung, die sich während des Projekts ändern können, oder sich zwischen verschiedenen Versionen der Anwendung ändert. Trennen Sie diese Variablen Aspekte von den mehr invarianten Aspekten, damit Sie leichter bestimmen können, was generiert werden muss. Wenn Ihre Anwendung z. b. eine Website bereitstellt, trennen Sie die Standardseiten für Funktionen von der Logik, die die Navigationspfade von einer Seite zu einer anderen definiert.
 
  Codieren der Variablen Aspekte in einem oder mehreren Quell Modellen.
-Bei einem Modell handelt es sich um eine Datei oder Datenbank, die jede Vorlage liest, um bestimmte Werte für Variablen Teile des Codes zu erhalten, die generiert werden sollen. Modelle können Datenbanken, XML-Dateien Ihrer eigenen Entwurfs-, Diagramm-oder domänenspezifischen Sprachen sein. In der Regel wird ein Modell verwendet, um viele Dateien in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt zu generieren. Jede Datei wird aus einer separaten Vorlage generiert.
+Bei einem Modell handelt es sich um eine Datei oder Datenbank, die jede Vorlage liest, um bestimmte Werte für Variablen Teile des Codes zu erhalten, die generiert werden sollen. Modelle können Datenbanken, XML-Dateien Ihrer eigenen Entwurfs-, Diagramm-oder domänenspezifischen Sprachen sein. In der Regel wird ein Modell verwendet, um viele Dateien in einem Projekt zu generieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Jede Datei wird aus einer separaten Vorlage generiert.
 
  Sie können mehr als ein Modell in einem Projekt verwenden. Beispielsweise können Sie ein Modell für die Navigation zwischen Webseiten und ein separates Modell für das Layout der Seiten definieren.
 
@@ -43,22 +43,22 @@ Verwenden Sie manuelle oder automatisierte Tests, um zu überprüfen, ob der res
  In einigen Fällen können allgemeine Tests direkt für das Modell durchgeführt werden. Beispielsweise können Sie einen Test schreiben, mit dem sichergestellt wird, dass jede Seite auf der Website durch Navigation von jedem anderen erreicht werden kann.
 
  Benutzerdefinierten Code zulassen: Generieren Sie partielle Klassen.
-Hiermit wird der Code, den Sie per Hand schreiben, zusätzlich zum generierten Code zugelassen. Es ist nicht ungewöhnlich, dass ein Code Generierungs Schema alle möglichen Abweichungen berücksichtigen kann, die auftreten können. Daher sollten Sie davon ausgehen, dass Sie einen Teil des generierten Codes hinzufügen oder überschreiben. Wenn sich das generierte Material in einer .NET-Sprache wie z. b. [!INCLUDE[csprcs](../includes/csprcs-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] befindet, sind zwei Strategien besonders nützlich:
+Hiermit wird der Code, den Sie per Hand schreiben, zusätzlich zum generierten Code zugelassen. Es ist nicht ungewöhnlich, dass ein Code Generierungs Schema alle möglichen Abweichungen berücksichtigen kann, die auftreten können. Daher sollten Sie davon ausgehen, dass Sie einen Teil des generierten Codes hinzufügen oder überschreiben. Wenn sich das generierte Material in einer .NET-Sprache, z. b. [!INCLUDE[csprcs](../includes/csprcs-md.md)] oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , befindet, sind zwei Strategien besonders nützlich:
 
 - Die generierten Klassen sollten partiell sein. Auf diese Weise können Sie dem generierten Code Inhalte hinzufügen.
 
 - Klassen sollten in Paaren generiert werden, von denen eine von der anderen erbt. Die Basisklasse sollte alle generierten Methoden und Eigenschaften enthalten, und die abgeleitete Klasse sollte nur die Konstruktoren enthalten. Dadurch kann der handgeschriebene Code eine beliebige der generierten Methoden überschreiben.
 
-  Verwenden Sie in anderen generierten Sprachen, wie z. b. XML, die `<#@include#>`-Direktive, um einfache Kombinationen von handgeschriebenen und generierten Inhalten zu erstellen. In komplexeren Fällen müssen Sie möglicherweise einen nach Verarbeitungsschritt schreiben, der die generierte Datei mit jeder handgeschriebenen Datei kombiniert.
+  Verwenden Sie in anderen generierten Sprachen, wie z. b. XML, die- `<#@include#>` Direktive, um einfache Kombinationen von handgeschriebenen und generierten Inhalten zu erstellen. In komplexeren Fällen müssen Sie möglicherweise einen nach Verarbeitungsschritt schreiben, der die generierte Datei mit jeder handgeschriebenen Datei kombiniert.
 
-  Verschieben allgemeiner Materialien in Includedateien oder Lauf Zeit Vorlagen, um zu vermeiden, dass ähnliche Textblöcke und Code in mehreren Vorlagen wiederholt werden sollen, verwenden Sie die `<#@ include #>`-Direktive. Weitere Informationen finden Sie unter [T4 include-Direktive](../modeling/t4-include-directive.md).
+  Verschieben allgemeiner Materialien in include-Dateien oder Lauf Zeit Vorlagen, um zu vermeiden, dass ähnliche Textblöcke und Code in mehreren Vorlagen wiederholt werden, verwenden Sie die- `<#@ include #>` Direktive. Weitere Informationen finden Sie unter [T4 include-Direktive](../modeling/t4-include-directive.md).
 
-  Sie können auch Lauf Zeit Textvorlagen in einem separaten Projekt erstellen und diese dann über die Entwurfszeit Vorlage abrufen. Verwenden Sie hierzu die `<#@ assembly #>`-Direktive, um auf das separate Projekt zuzugreifen.
+  Sie können auch Lauf Zeit Textvorlagen in einem separaten Projekt erstellen und diese dann über die Entwurfszeit Vorlage abrufen. Verwenden Sie hierzu die- `<#@ assembly #>` Direktive, um auf das separate Projekt zuzugreifen.
 
   Erwägen Sie, große Code Blöcke in eine separate Assembly zu verschieben.
-  Wenn Sie über umfangreiche Code Blöcke und Klassen Funktionsblöcke verfügen, kann es hilfreich sein, einen Teil dieses Codes in Methoden zu verschieben, die Sie in einem separaten Projekt kompilieren. Sie können die `<#@ assembly #>`-Direktive verwenden, um auf den Code in der Vorlage zuzugreifen. Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
+  Wenn Sie über umfangreiche Code Blöcke und Klassen Funktionsblöcke verfügen, kann es hilfreich sein, einen Teil dieses Codes in Methoden zu verschieben, die Sie in einem separaten Projekt kompilieren. Sie können die- `<#@ assembly #>` Direktive verwenden, um auf den Code in der Vorlage zuzugreifen. Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
-  Sie können die Methoden in einer abstrakten Klasse platzieren, die von der Vorlage geerbt werden kann. Die abstrakte Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> erben. Weitere Informationen finden Sie unter [T4 Template-Direktive](../modeling/t4-template-directive.md).
+  Sie können die Methoden in einer abstrakten Klasse platzieren, die von der Vorlage geerbt werden kann. Die abstrakte Klasse muss von Erben <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Weitere Informationen finden Sie unter [T4 Template-Direktive](../modeling/t4-template-directive.md).
 
   Code generieren, nicht Konfigurationsdateien eine Methode zum Schreiben einer Variablen Anwendung ist das Schreiben von generischem Programmcode, der eine Konfigurationsdatei akzeptiert. Eine auf diese Weise geschriebene Anwendung ist sehr flexibel und kann neu konfiguriert werden, wenn sich die Geschäftsanforderungen ändern, ohne die Anwendung neu zu erstellen. Ein Nachteil dieses Ansatzes ist jedoch, dass die Anwendung weniger gut als eine spezifischere Anwendung durchgeführt wird. Außerdem ist der Programmcode schwieriger zu lesen und zu warten, weil er immer mit den meisten generischen Typen umzugehen ist.
 
@@ -100,7 +100,7 @@ Jede Lauf Zeit Vorlage generiert eine partielle Klassendefinition mit dem gleich
 
  `private string ComputeTotal() { ... }`
 
- Zulassen von benutzerdefiniertem Code: Geben Sie Erweiterungs Punkte an, um virtuelle Methoden in \< # +-Klassen Funktionsblöcke # > zu erstellen. Dadurch kann eine einzelne Vorlage in vielen Kontexten ohne Änderungen verwendet werden. Anstatt die Vorlage zu ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulärer Code sein, oder es kann sich um eine Lauf Zeit Vorlage handeln.
+ Benutzerdefinierten Code zulassen: Geben Sie Erweiterungs Punkte an, um virtuelle Methoden in zu erstellen \<#+ class feature blocks #> . Dadurch kann eine einzelne Vorlage in vielen Kontexten ohne Änderungen verwendet werden. Anstatt die Vorlage zu ändern, können Sie eine abgeleitete Klasse erstellen, die die minimale zusätzliche Logik bereitstellt. Die abgeleitete Klasse kann entweder regulärer Code sein, oder es kann sich um eine Lauf Zeit Vorlage handeln.
 
  Beispielsweise in MyStandardRunTimeTemplate.tt:
 
@@ -122,9 +122,9 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Richtlinien für alle T4-Vorlagen
- Getrennte Datenerfassung aus der Textgenerierung versuchen Sie, die Berechnung und die Textblöcke nicht zu mischen. Verwenden Sie in jeder Textvorlage den ersten \< #-Code Block # >, um Variablen festzulegen und komplexe Berechnungen auszuführen. Vermeiden Sie vom ersten Text Block bis zum Ende der Vorlage oder der ersten \< # + Class Feature Block # >, vermeiden Sie Long-Ausdrücke, und vermeiden Sie Schleifen und Bedingungs Werte, es sei denn, Sie enthalten Textblöcke. Diese Vorgehensweise erleichtert das Lesen und warten der Vorlage.
+ Getrennte Datenerfassung aus der Textgenerierung versuchen Sie, die Berechnung und die Textblöcke nicht zu mischen. Verwenden Sie in jeder Textvorlage den ersten, \<# code block #> um Variablen festzulegen und komplexe Berechnungen auszuführen. Vermeiden Sie lange Ausdrücke vom ersten Text Block bis zum Ende der Vorlage oder des ersten Texts \<#+ class feature block #> , und vermeiden Sie Schleifen und Bedingungen, es sei denn, Sie enthalten Textblöcke. Diese Vorgehensweise erleichtert das Lesen und warten der Vorlage.
 
- Verwenden Sie keine `.tt` für Includedateien, verwenden Sie eine andere Dateinamenerweiterung, z. b. `.ttinclude` für Includedateien. Verwenden Sie `.tt` nur für Dateien, die Sie entweder als Lauf Zeit Vorlage oder als Entwurfszeit-Textvorlagen verarbeiten möchten. In einigen Fällen werden `.tt` Dateien von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erkannt, und ihre Eigenschaften werden automatisch für die Verarbeitung festgelegt.
+ Nicht `.tt` für Includedateien verwenden verwenden Sie eine andere Dateinamenerweiterung, z `.ttinclude` . b. für Includedateien. Verwenden `.tt` Sie nur für Dateien, die Sie entweder als Lauf Zeit Vorlage oder als Entwurfszeit-Textvorlagen verarbeiten möchten. In einigen Fällen werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] `.tt` Dateien von erkannt, und ihre Eigenschaften werden automatisch für die Verarbeitung festgelegt.
 
  Starten Sie jede Vorlage als einen Fixed-Prototyp.
 Schreiben Sie ein Beispiel für den Code oder Text, den Sie generieren möchten, und stellen Sie sicher, dass es korrekt ist. Ändern Sie dann die Erweiterung in. tt, und fügen Sie Code hinzu, durch den der Inhalt durchlesen des Modells geändert wird.
@@ -147,5 +147,5 @@ Viele Modelle werden am effektivsten als Text Tabellen dargestellt und verwaltet
 
  UML-Klassen-und Aktivitätsdiagramme können für diese Zwecke häufig angepasst werden. Sie können auch einen eigenen Diagrammtyp als domänenspezifische Sprache (DSL) entwerfen. Code kann sowohl von UML als auch von DSLs generiert werden. Weitere Informationen finden Sie unter [analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md) und [analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Code Generierung zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Lauf Zeit Textgenerierung mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)

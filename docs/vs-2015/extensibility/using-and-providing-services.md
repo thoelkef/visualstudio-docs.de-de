@@ -1,5 +1,5 @@
 ---
-title: Verwenden und Bereitstellen von Diensten | Microsoft-Dokumentation
+title: Verwenden von und Bereitstellen von Diensten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177437"
 ---
 # <a name="using-and-providing-services"></a>Verwenden und Bereitstellen von Diensten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. Z. B. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bietet die <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service jedem VSPackage lädt. Dieser Dienst stellt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> -Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).  
+Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet einen bestimmten Satz von Schnittstellen für ein anderes VSPackage, das verwendet werden soll. Beispielsweise [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bietet den <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> Dienst einem beliebigen VSPackage, das er lädt. Dieser Dienst stellt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle bereit, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden des Aktivitäts Protokolls](../extensibility/how-to-use-the-activity-log.md).  
   
- VSPackages können anbieten von Diensten, die Ihre eigenen durch die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> Schnittstelle...  
+ VSPackages können eigene Dienste anbieten, indem Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> Schnittstelle verwenden.  
   
- Visual Studio bietet wichtige Dienste wie z. B. Folgendes an:  
+ Visual Studio bietet wichtige Dienste wie die folgenden:  
   
 |IDE-Dienst|Beschreibung|  
 |-----------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Bietet Zugriff auf IDE Umgang mit grundlegenden Funktionen, die VSPackages und der Registrierung services.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Bietet grundlegende fensterverwaltungsfunktionalität und UI-bezogene Funktionen in der IDE, z. B. die Fähigkeit zum Erstellen von Tools und Dokumentfenstern.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet grundlegende Lösung bezogenen Funktionen, z.B. die Möglichkeit, Projekte auflisten, neue Projekte erstellen und Überwachen von Projekt wird geändert.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Bietet Zugriff auf IDE-Dienste, die mit den grundlegenden Funktionen, VSPackages und der Registrierung in Zusammenhang stehen.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Bietet grundlegende Fenster Funktionen und UI-bezogene Funktionen in der IDE, z. b. die Möglichkeit zum Erstellen von Tools und Dokument Fenstern.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet grundlegende Funktionen für die Lösung, z. b. die Möglichkeit, Projekte aufzulisten, neue Projekte zu erstellen und Projektänderungen zu überwachen.|  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)  
- Zeigt die wichtigen Elemente von Visual Studio-Dienst.  
+ Stellt die wichtigen Elemente eines Visual Studio-Dienstanbieter dar.  
   
- [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)  
- Behandelt das anfordern (nutzen) eines Diensts.  
+ [Gewusst wie: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)  
+ Erläutert, wie ein Dienst angefordert (genutzt) wird.  
   
- [Vorgehensweise: Bereitstellen eines Diensts](../extensibility/how-to-provide-a-service.md)  
+ [Gewusst wie: Bereitstellen eines Diensts](../extensibility/how-to-provide-a-service.md)  
  Erläutert, wie Sie einen Dienst bereitstellen.  
   
- [Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Diensts](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
- Erläutert, wie einen asynchronen Dienst bereitstellen.  
+ [Gewusst wie: Bereitstellen eines asynchronen Visual Studio-Diensts](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ Erläutert, wie ein asynchroner Dienst bereitgestellt wird.  
   
- [Vorgehensweise: Problembehandlung bei Diensten](../extensibility/how-to-troubleshoot-services.md)  
- Behandelt häufige Probleme und Lösungen dafür bietet.  
+ [Gewusst wie: Problembehandlung bei Diensten](../extensibility/how-to-troubleshoot-services.md)  
+ Erläutert häufige Probleme und stellt Ihnen Lösungen vor.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

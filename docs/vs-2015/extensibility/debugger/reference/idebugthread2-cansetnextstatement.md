@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Microsoft-Dokumentation
+title: 'IDebugThread2:: cansetnextstatement | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3e98603a39d820b5565836bd2620f8a27def76f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153071"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt, ob es sich bei der aktuellen Anweisungszeiger auf den angegebenen Stapelrahmen festgelegt werden kann.  
+Bestimmt, ob der aktuelle Anweisungs Zeiger auf den angegebenen Stapel Rahmen festgelegt werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int CanSetNextStatement ( 
   
 #### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert. Ist dies ein null-Wert, verwenden Sie den aktuellen Stapelrahmen aus.  
+ Für zukünftige Verwendung reserviert. Legen Sie auf einen NULL-Wert fest. Wenn dies ein NULL-Wert ist, verwenden Sie den aktuellen Stapel Rahmen.  
   
  `pCodeContext`  
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das beschreibt, der Code-Ort ausgeführt werden und der Kontext.  
+ in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den Code Speicherort beschreibt, der ausgeführt werden soll, und seinen Kontext.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn diese Methode zurückgibt `S_OK`, rufen Sie dann die [nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) Methode die nächste Anweisung festlegen.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn diese Methode zurückgibt `S_OK` , wird die [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) -Methode aufgerufen, um die nächste Anweisung tatsächlich festzulegen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586334"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
@@ -99,7 +99,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  Möglicherweise verwenden Sie eine Version von [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)], die Coded UI-Tests mit verschiedenen Webbrowsern nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise verwenden.
 
  *Was sollte ich noch wissen?*
- **Hinweise**
+ **Notizen**
 
 - ![Prerequsite](../test/media/prereq.png "Prereq") Der Webbrowser von Apple Safari wird nicht unterstützt.
 
@@ -109,7 +109,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 
 - ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen wie maximieren, minimieren und Wiederherstellen wird nicht unterstützt.
 
-  **Tipps**
+  **Chti**
 
 - ![Tipp](../test/media/tip.png "Tipp") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:
 

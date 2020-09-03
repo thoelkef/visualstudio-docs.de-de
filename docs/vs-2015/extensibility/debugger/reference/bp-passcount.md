@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b99cbd777755a9a48869299b5cea523ecacbb4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153376"
 ---
-# <a name="bppasscount"></a>BP_PASSCOUNT
+# <a name="bp_passcount"></a>BP_PASSCOUNT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt die Anzahl und die Bedingungen aus, auf denen ein bedingter Haltepunkt ausgelöst wird.  
+Beschreibt die Anzahl und die Bedingungen, auf die ein bedingter Breakpoint ausgelöst wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,26 +42,26 @@ public struct BP_PASSCOUNT { 
   
 ## <a name="members"></a>Member  
  `dwPassCount`  
- Die Anzahl der Male auf, um vor dem Auslösen, es auf den Haltepunkt zu übergeben.  
+ Gibt an, wie oft über den Haltepunkt übergeben werden soll, bevor es ausgelöst wird.  
   
  `stylePassCount`  
- Ein Wert aus der [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) -Enumeration, der den Stil der der Haltepunkt gibt an, übergeben Sie die Anzahl.  
+ Ein Wert aus der [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) Enumeration, der den Stil der Breakpoint-Durchlauf Anzahl angibt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur ist ein Member der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) -Struktur.  
   
- Diese Struktur wird ebenfalls übergeben, als Parameter an die[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) und[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) Methoden.  
+ Diese Struktur wird auch als Parameter an die[setpasscount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) -Methode und die[setpasscount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) -Methode übergeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
+ [Setpasscount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
+ [Setpasscount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
  [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903399"
 ---
 # <a name="add-search-to-a-tool-window"></a>Hinzufügen der Suche zu einem Tool Fenster
@@ -99,7 +99,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
     }
     ```
 
-2. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+2. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
 3. Öffnen Sie **testsearch**in der experimentellen Instanz von Visual Studio.
 
@@ -328,7 +328,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
 3. Testen Sie die Option:
 
-    1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+    1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
     2. Wählen Sie im Tool Fenster den Pfeil nach unten auf der rechten Seite des Textfelds aus.
 

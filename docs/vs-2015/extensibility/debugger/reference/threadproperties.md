@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Microsoft-Dokumentation
+title: Thread Properties | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4815a1e42b98fba812e8a3c2a53516bff16081db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204820"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
@@ -51,39 +51,39 @@ public struct THREADPROPERTIES { 
 ```  
   
 ## <a name="members"></a>Member  
- dwFields  
+ dwfields  
  Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) Enumeration, die beschreibt, welche Felder in dieser Struktur gültig sind.  
   
- dwThreadId  
+ dwthreadid  
  Die Thread-ID.  
   
- dwSuspendCount  
- Das Anhalten des Threads Anzahl.  
+ dwsuspendcount  
+ Die Thread Anzahl für den Thread.  
   
- dwThreadState  
- Ein Wert aus der [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) Enumeration, die den Zustand des Betriebssystem Threads angibt.  
+ dwthreadstate  
+ Ein Wert aus der [ThreadState](../../../extensibility/debugger/reference/threadstate.md) -Enumeration, der den Status des Betriebs Threads angibt.  
   
- bstrPriority  
- Eine Zeichenfolge, die die Priorität des Threads angibt. z. B. "Höher als Normal", "Normal" oder "Time Critical".  
+ bstraupriority  
+ Eine Zeichenfolge, die die Thread Priorität angibt. Beispiel: "oberhalb normal", "Normal" oder "Zeit kritisch".  
   
- bstName  
- Der Threadname.  
+ bstname  
+ Der Thread Name.  
   
- bstrLocation  
- Der Threadspeicherort (in der Regel den obersten Stapelrahmen), ausgedrückt in der Regel als Name der Methode, in dem Ausführung zurzeit angehalten wird.  
+ bstrinlocation  
+ Der Thread Speicherort (in der Regel der oberste Stapel Rahmen), der in der Regel als Name der Methode ausgedrückt wird, in der die Ausführung zurzeit angehalten wird.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird ausgefüllt, durch einen Aufruf der [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Methode. Die Informationen zurückgegeben, daher wird normalerweise verwendet, füllen die **Threads** Fenster.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird durch einen Aufrufen der [getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) -Methode ausgefüllt. Die Informationen, die zurückgegeben werden, werden in der Regel zum Auffüllen des **Thread** Fensters verwendet.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
+ [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
- [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)
+ [ThreadState](../../../extensibility/debugger/reference/threadstate.md)

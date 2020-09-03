@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Angeben einer Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,26 +17,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65679968"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstellung können Sie für eine Reihe von Voraussetzungen, die auf dem Clientcomputer für verfügbar sein müssen die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ausgeführt. Dazu gehören die erforderliche Mindestversion von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], kann jedoch nicht installiert diese erforderlichen Komponenten selbst Wenn eine erforderliche Komponente nicht gefunden wird, wird die Installation angehalten es einfach an und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation an.  
+Eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung kann eine Reihe von Voraussetzungen testen, die auf dem Client Computer verfügbar sein müssen, damit die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ausgeführt werden kann. Hierzu gehören die erforderliche Mindestversion von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (Global Assembly Cache, GAC) vorinstalliert werden müssen. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]kann jedoch keine dieser erforderlichen Komponenten installieren. Wenn eine Voraussetzung nicht gefunden wird, wird die Installation einfach angehalten, und es wird ein Dialogfeld angezeigt, in dem die Gründe für die Installation  
   
- Es gibt zwei Methoden zum Installieren der erforderlichen Komponenten. Sie können sie mit der eine Bootstrapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die für Benutzer im Dialogfeld angezeigt wird, wenn die erforderliche Komponente nicht gefunden wird. Die Seite, die auf diese URL verweist, kann Links zu Anweisungen zum Installieren der erforderlichen Komponente enthalten. Wenn eine Anwendung eine Support-URL für eine einzelne erforderliche Komponente, nicht angeben, wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zeigt die Support-URL in das Bereitstellungsmanifest für die Anwendung als Ganzes angegeben, wenn er definiert ist.  
+ Es gibt zwei Methoden zum Installieren der erforderlichen Komponenten. Sie können Sie mit einer Boots Trapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die Benutzern im Dialogfeld angezeigt wird, wenn die Voraussetzungen nicht gefunden werden. Die Seite, auf die diese URL verweist, kann Links zu Anweisungen für die Installation der erforderlichen Voraussetzungen enthalten. Wenn eine Anwendung keine Unterstützungs-URL für eine einzelne Voraussetzung angibt, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zeigt die im Bereitstellungs Manifest für die Anwendung als Ganzes angegebene Support-URL an, sofern diese definiert ist.  
   
- Während [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Mage.exe und MageUI.exe können alle verwendet werden, generieren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungen keines dieser Tools direkt unterstützt eine Support-URL für einzelne erforderliche Komponenten angeben. In diesem Dokument wird beschrieben, wie so ändern Sie der Bereitstellung des Anwendungs- und Bereitstellungsmanifest, dazu gehören support-URLs.  
+ Obwohl [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , Mage.exe und MageUI.exe zum Generieren von bereit Stellungen verwendet werden können [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , unterstützt keines dieser Tools direkt die Angabe einer Support-URL für die einzelnen Voraussetzungen. In diesem Dokument wird beschrieben, wie Sie das Anwendungs Manifest und das Bereitstellungs Manifest für die Bereitstellung so ändern, dass diese unterstützten URLs  
   
-### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Angeben eines Support-URLs für eine einzelne erforderliche Komponente  
+### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Angeben einer Unterstützungs-URL für eine individuelle Voraussetzung  
   
-1. Öffnen Sie das Anwendungsmanifest (die Manifest-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
+1. Öffnen Sie das Anwendungs Manifest (die Manifest-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung in einem Text-Editor.  
   
-2. Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
+2. Fügen Sie das-Attribut für eine erforderliche Betriebssystem `supportUrl` Komponente dem- `dependentOS` Element hinzu:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-3. Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
+3. Um eine Voraussetzung für eine bestimmte Version des Common Language Runtime zu erhalten, fügen Sie das-Attribut dem-Eintrag hinzu, der `supportUrl` `dependentAssembly` die Common Language Runtime Abhängigkeit angibt:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-4. Legen Sie für eine Voraussetzung für eine Assembly, die im globalen Assemblycache vorinstalliert sein muss, die `supportUrl` für die `dependentAssembly` Element, das die erforderliche Assembly angibt:  
+4. Um eine Voraussetzung für eine Assembly zu erhalten, die im globalen Assemblycache vorinstalliert werden muss, legen Sie `supportUrl` für das-Element fest, `dependentAssembly` das die erforderliche Assembly angibt:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-5. Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die Application-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
+5. Optional. Öffnen Sie für Anwendungen, die auf die .NET Framework 4 abzielen, das Bereitstellungs Manifest (die Anwendungsdatei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung in einem Text-Editor.  
   
-6. Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
+6. Fügen Sie für eine .NET Framework 4-Voraussetzung das-Attribut dem- `supportUrl` `compatibleFrameworks` Element hinzu:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,14 +79,14 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
     </compatibleFrameworks>  
     ```  
   
-7. Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden Sie Mage.exe oder MageUI.exe SDK-tools zum Ausführen dieser Aufgabe, als diese Dateien mithilfe von Neugenerieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Nachdem Sie das Anwendungs Manifest manuell geändert haben, müssen Sie das Anwendungs Manifest mit Ihrem digitalen Zertifikat erneut signieren und dann das Bereitstellungs Manifest aktualisieren und erneut signieren. Zum Ausführen dieser Aufgabe müssen Sie die Mage.exe-oder MageUI.exe-SDK-Tools verwenden, wenn Sie diese Dateien mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] löscht ihre manuellen Änderungen. Weitere Informationen zum Verwenden von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter Gewusst [wie: Erneutes Signieren von Anwendungs-und Bereitstellungs Manifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
- Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  
+ Die Support-URL wird im Dialogfeld nicht angezeigt, wenn die Anwendung für die Ausführung mit teilweiser Vertrauenswürdigkeit markiert ist.  
   
-## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [\<compatibleFrameworks> Gewisses](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)
+ [Erforderliche Anwendungs Bereitstellungs Voraussetzungen](../deployment/application-deployment-prerequisites.md)

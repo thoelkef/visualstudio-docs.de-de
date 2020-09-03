@@ -18,14 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189699"
 ---
 # <a name="debug-office-projects"></a>Debugging von Office-Projekten
-  Sie können Office-Projekte mit den gleichen Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Tools debuggen, die Sie auch für andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekte verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debuggerfunktionen, beispielsweise die Fähigkeit, Haltepunkte einzufügen und Variablen im Fenster **Lokal** anzuzeigen, stehen auch zur Verfügung, wenn Sie Office-Projekte debuggen. Weitere Informationen zu Debuggingtools [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] finden Sie unter [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md).
+  Sie können Office-Projekte mit den gleichen Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Tools debuggen, die Sie auch für andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekte verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debuggerfunktionen, beispielsweise die Fähigkeit, Haltepunkte einzufügen und Variablen im Fenster **Lokal** anzuzeigen, stehen auch zur Verfügung, wenn Sie Office-Projekte debuggen. Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Debuggingtools finden Sie unter [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Um das Debuggen zu vereinfachen, schließen Sie alle geöffneten Instanzen der Office-Anwendung, bevor Sie sie erstellen und debuggen.
@@ -35,7 +35,7 @@ ms.locfileid: "73189699"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="start-and-stop-the-debugger"></a>Starten und Abbrechen des Debuggers
- Sie können mit dem Debuggen eines Office-Projekts beginnen, ebenso wie beim Debuggen anderer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projekte. Beispielsweise können Sie die Taste **F5** drücken. Wenn Sie mit dem Debuggen eines VSTO-Add-in-Projekts beginnen, wird ein neuer Prozess für die entsprechende Office-Anwendung gestartet, und das VSTO-Add-in wird geladen.
+ Sie können mit dem Debuggen eines Office-Projekts beginnen, ebenso wie beim Debuggen anderer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projekte. Sie können z. b. die Taste **F5** drücken. Wenn Sie mit dem Debuggen eines VSTO-Add-in-Projekts beginnen, wird ein neuer Prozess für die entsprechende Office-Anwendung gestartet, und das VSTO-Add-in wird geladen.
 
  Wenn Sie mit dem Debuggen eines Projekts auf Dokumentebene beginnen, wird das Dokument oder die Arbeitsmappe in einem neuen Word- oder Excel-Prozess geöffnet.
 
@@ -51,7 +51,7 @@ ms.locfileid: "73189699"
  Wenn Sie Ihr VSTO-Add-In mithilfe einer anderen Office-Version (2013 oder 2016) debuggen möchten, öffnen Sie den **Projekt-Designer**und wählen auf der Registerkarte **Debuggen** die Optionsschaltfläche **Externes Programm starten** aus. Navigieren Sie dann zum Speicherort der ausführbaren Datei der entsprechenden Office-Anwendung.
 
 ## <a name="f10-and-f11-behavior"></a>F10-und F11-Verhalten
- Wenn Sie mit dem Debuggen eines Office-Projekts beginnen, haben **F10** und **F11** nicht das gleiche Verhalten wie beim Starten des C# Debuggens anderer Visual Basic oder Projekte. In Visual Basic- oder C#-Projekten wird der Debugger bei der main-Funktion angehalten. In Office-Projekten besitzt Visual Studio dagegen keine Kontrolle über die main-Funktion der Office-Anwendung. Während des Debuggens verfügen **F10** und **F11** jedoch über dieselben Funktionen wie in Visual Basic und C# Projekten.
+ Wenn Sie mit dem Debuggen eines Office-Projekts beginnen, haben **F10** und **F11** nicht das gleiche Verhalten wie beim Starten des Debuggens anderer Visual Basic-oder c#-Projekte. In Visual Basic- oder C#-Projekten wird der Debugger bei der main-Funktion angehalten. In Office-Projekten besitzt Visual Studio dagegen keine Kontrolle über die main-Funktion der Office-Anwendung. Während des Debuggens verfügen **F10** und **F11** jedoch über dieselben Funktionen wie in Visual Basic-und c#-Projekten.
 
 ## <a name="display-exceptions"></a>Ausnahmen anzeigen
  Durch die Art und Weise der Interaktion zwischen verwaltetem und nicht verwaltetem Code werden in Visual Studio keine Fehler angezeigt, die von Microsoft Office-Anwendungen ausgelöst werden. Wenn beispielsweise ein VSTO-Add-in, das mithilfe von Office-Entwicklungs Tools in Visual Studio erstellt wurde, eine Ausnahme auslöst, wird die Microsoft Office-Anwendung fortgesetzt, ohne dass ein Fehler angezeigt wird. Um diese Fehler anzuzeigen, konfigurieren Sie den Debugger so, dass er bei Ausnahmen der Common Language Runtime anhält. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).
@@ -72,7 +72,7 @@ ms.locfileid: "73189699"
  Bei jeder Erstellung eines Projekts wird das Dataset geleert und neu erstellt. Wenn Sie ein zwischengespeichertes Dataset debuggen möchten, müssen Sie das Dokument außerhalb von Visual Studio öffnen und dann den Debugger anfügen.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Debuggen von Word-Dokument Projekten auf Grundlage des Word 97-2003-Dokument Formats (*. doc)
- Zum Debuggen eines Word-Dokument Projekts, das auf dem Word 97-2003-Dokumentformat ( */* . doc *) basiert, müssen Sie den Projektordner der Liste vertrauenswürdiger Ordner hinzufügen. Weitere Informationen hierzu finden Sie unter Gewähren von Vertrauenswürdigkeit [für Dokumente](../vsto/granting-trust-to-documents.md).
+ Zum Debuggen eines Word-Dokument Projekts basierend auf dem Word 97-2003-Dokument */* Format (doc *) müssen Sie den Projektordner der Liste vertrauenswürdiger Ordner hinzufügen. Weitere Informationen hierzu finden Sie unter Gewähren von Vertrauenswürdigkeit [für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Debugdeaktivierte Add-ins
  VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Solche VSTO-Add-Ins werden von der Microsoft Office-Anwendung deaktiviert, um zu verhindern, dass bei jedem Start der Anwendung problematischer Code geladen wird. Aber auch beim typischen Debuggen kann es zu unerwartetem Verhalten kommen. Weitere Informationen zum erneuten Aktivieren von VSTO-Add-Ins finden Sie unter Gewusst [wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)wurde.
@@ -95,9 +95,9 @@ ms.locfileid: "73189699"
 
  Um jeden Fehler in einem Meldungsfeld anzuzeigen, erstellen Sie eine Umgebungsvariable mit dem Namen `VSTO_SUPPRESSDISPLAYALERTS` , die Sie auf 0 (null) festlegen. Sie können die Meldungen unterdrücken, indem Sie die Umgebungsvariable löschen oder auf 1 (eins) festlegen.
 
- Um die Fehler in eine Protokolldatei zu schreiben, erstellen Sie eine Umgebungsvariable mit dem Namen `VSTO_LOGALERTS` , die Sie auf 1 (eins) festlegen. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erstellt die Protokolldatei in dem Ordner, der das Bereitstellungsmanifest für das VSTO-Add-In enthält, bzw. dem Ordner, der das Dokument oder die Arbeitsmappe enthält, das bzw. die der Anpassung zugeordnet ist. Wenn dies nicht möglich ist, erstellt der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die Protokolldatei im lokalen Ordner *% Temp%* . Für VSTO-Add-Ins auf Anwendungsebene lautet der Standardname „ *Add-In-Name*.vsto.log“. Für Projekte auf Dokumentebene lautet der Name der Protokolldatei „ *Dokumentname*.*Erweiterung*.log“; Beispiel: „ExcelWorkbook1.xlsx.log“. Um die Fehlerprotokollierung zu beenden, löschen Sie die Umgebungsvariable, oder legen Sie sie auf 0 (null) fest.
+ Um die Fehler in eine Protokolldatei zu schreiben, erstellen Sie eine Umgebungsvariable mit dem Namen `VSTO_LOGALERTS` , die Sie auf 1 (eins) festlegen. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erstellt die Protokolldatei in dem Ordner, der das Bereitstellungsmanifest für das VSTO-Add-In enthält, bzw. dem Ordner, der das Dokument oder die Arbeitsmappe enthält, das bzw. die der Anpassung zugeordnet ist. Wenn dies fehlschlägt, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erstellt die Protokolldatei im lokalen Ordner " *% Temp%* ". Für VSTO-Add-Ins auf Anwendungsebene lautet der Standardname „ *Add-In-Name*.vsto.log“. Für Projekte auf Dokumentebene lautet der Name der Protokolldatei „ *Dokumentname*.*Erweiterung*.log“; Beispiel: „ExcelWorkbook1.xlsx.log“. Um die Fehlerprotokollierung zu beenden, löschen Sie die Umgebungsvariable, oder legen Sie sie auf 0 (null) fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)
 - [Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

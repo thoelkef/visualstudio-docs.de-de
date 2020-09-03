@@ -1,5 +1,5 @@
 ---
-title: Designer-Initialisierung und Metadatenkonfiguration | Microsoft-Dokumentation
+title: Initialisierungs-und Metadatenkonfiguration des Designers | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,90 +12,90 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2dec3937616c712c56b7012949e044702e6b11f2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703067"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Metadatenkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten und Filter Attribute bietet einen Mechanismus für Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um andere zu behandeln <xref:System.Type> Objekte (z. B. Datenstrukturen Klassen oder grafische Entitäten), wenn der Designer verfügbar ist, und wie die vom Designer unterstützt für Visual Studio-IDE konfiguriert ist (für die Instanz die **Toolbox** -Kategorie oder-Registerkarte zur Verfügung steht).  
+Durch die Bearbeitung der Metadaten und Filter Attribute, die einem Designer oder einer Designer Komponente zugeordnet sind, können Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um unterschiedliche <xref:System.Type> Objekte (z. b. Datenstrukturen, Klassen oder grafische Entitäten) zu verarbeiten, wann der Designer verfügbar ist und wie die Visual Studio-IDE für die unter **Toolbox** Stützung des Designers konfiguriert ist (z. b  
   
- Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet verschiedene Mechanismen, um das Steuerelement eine des Designers oder des Designerkomponente Initialisierung und die Bearbeitung seiner Metadaten von einem VSPackage zu erleichtern.  
+ [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]Bietet mehrere Mechanismen, um die Steuerung der Initialisierung eines Designers oder der Designer Komponente und die Bearbeitung der zugehörigen Metadaten durch ein VSPackage zu vereinfachen.  
   
-## <a name="initializing-metadata-and-configuration-information"></a>Initialisieren von Metadaten und Konfigurationsinformationen  
- Da sie bei Bedarf geladen werden, VSPackages möglicherweise nicht wurden geladen durch die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung vor der Instanziierung eines Designers. Aus diesem Grund VSPackages können keine den Standardmechanismus für die Konfiguration von einem Designer oder Designer-Komponente auf erstellen, über die behandeln eine <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> Ereignis. Eine VSPackage implementiert stattdessen eine Instanz der <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Schnittstelle, und registriert sich selbst zum Bereitstellen von Anpassungen, die als "Design Surface-Erweiterungen" bezeichnet.  
+## <a name="initializing-metadata-and-configuration-information"></a>Metadaten und Konfigurationsinformationen werden initialisiert.  
+ Da Sie bei Bedarf geladen werden, wurden VSPackages möglicherweise [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vor der Instanziierung eines Designers von der Umgebung nicht geladen. Daher können VSPackages nicht den Standardmechanismus zum Konfigurieren eines Designers oder einer Designer Komponente bei der Erstellung verwenden, um ein- <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> Ereignis zu behandeln. Stattdessen implementiert ein VSPackage eine Instanz der <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> -Schnittstelle und registriert sich für Anpassungen, die als Entwurfs Oberflächen Erweiterungen bezeichnet werden.  
   
-### <a name="customizing-initialization"></a>Anpassen von Initialisierung  
- Anpassen von einem Designer, einer Komponente oder ein Designer-Oberfläche umfasst:  
+### <a name="customizing-initialization"></a>Anpassen der Initialisierung  
+ Das Anpassen eines Designers, einer Komponente oder einer Designer Oberfläche umfasst Folgendes:  
   
-1. Ändern die Designer-Metadaten und effektiv ändern, wie eine bestimmte <xref:System.Type> zugegriffen oder konvertiert wird.  
+1. Ändern der Designer Metadaten und Ändern der Art und Weise, wie auf eine bestimmte <xref:System.Type> zugegriffen wird.  
   
-     Dies erfolgt normalerweise über die <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.TypeConverter> Mechanismen.  
+     Dies erfolgt in der Regel über den- <xref:System.Drawing.Design.UITypeEditor> Mechanismus oder den- <xref:System.ComponentModel.TypeConverter> Mechanismus.  
   
-     Z. B., wenn <xref:System.Windows.Forms>-Basis-Designer initialisiert werden, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung ändert die <xref:System.Drawing.Design.UITypeEditor> für <xref:System.Web.UI.WebControls.Image> Objekte, die mit dem Designer verwendet, um die Ressourcen-Manager verwenden, um Bitmaps anstatt im Dateisystem zu erhalten.  
+     Wenn <xref:System.Windows.Forms> -basierte Designer beispielsweise initialisiert werden, ändert die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung die <xref:System.Drawing.Design.UITypeEditor> für Objekte, die <xref:System.Web.UI.WebControls.Image> mit dem Designer verwendet werden, um den Ressourcen-Manager zum Abrufen von Bitmaps anstelle des Dateisystems zu verwenden.  
   
-2. Integrieren mit der Umgebung, z. B. durch Abonnieren von Ereignissen oder Abrufen der Konfigurationsinformationen des Projekts. Abrufen von Projektkonfigurationsinformationen und Abonnieren von Ereignissen durch Abrufen der <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle.  
+2. Integration in die Umgebung, z. b. durch Abonnieren von Ereignissen oder Abrufen von Projekt Konfigurationsinformationen. Sie können Projekt Konfigurationsinformationen abrufen und Ereignisse abonnieren, indem Sie die- <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle abrufen.  
   
-3. Änderung der benutzerumgebung durch Aktivieren der entsprechenden **Toolbox** Kategorien oder Beschränken des Designers Anwendbarkeit durch Anwenden einer Instanz von der <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse, um den Designer.  
+3. Änderung der Benutzerumgebung durch Aktivieren entsprechender **Toolbox** Kategorien oder durch Einschränken der Anwendbarkeit des Designers durch Anwenden einer Instanz der- <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse auf den Designer.  
   
-### <a name="designer-initialization-by-a-vspackage"></a>Designer-Initialisierung von einem VSPackage  
- Eine VSPackage sollte das Designer-Initialisierung von verarbeiten:  
+### <a name="designer-initialization-by-a-vspackage"></a>Initialisierung des Designers durch ein VSPackage  
+ Ein VSPackage sollte die Designer Initialisierung wie folgt behandeln:  
   
-1. Erstellen ein Objekt, das die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse.  
+1. Erstellen eines Objekts, das die- <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse implementiert.  
   
    > [!NOTE]
-   > Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.Shell.Package> Klasse.  
+   > Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie für dasselbe Objekt wie die Klasse implementiert werden <xref:Microsoft.VisualStudio.Shell.Package> .  
   
-2. Registrieren Sie die implementierende Klasse <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Bereitstellen von Unterstützung für die VSPackage Designer-Erweiterungen durch Anwenden von Instanzen von <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für die Bereitstellung die VSPackage Implementierung der Klasse <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. Registrieren Sie die-Klasse, die implementiert <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> , als Unterstützung für die Designer Erweiterungen des VSPackages durch Anwenden von Instanzen von  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> auf die-Klasse, die die Implementierung von VSPackage bereitstellt <xref:Microsoft.VisualStudio.Shell.Package> .  
   
-   Wenn alle Designer oder Designerkomponente erstellt wird, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung:  
+   Wenn ein Designer oder eine Designer Komponente erstellt wird, ist die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung:  
   
-3. Greift auf jeden registrierten Entwurf entwurfsoberflächenerweiterungs-Anbieter.  
+3. Greift auf jeden registrierten Entwurfs Oberflächen-Erweiterungs Anbieter zu.  
   
-4. Instanziiert und initialisiert eine Instanz jedes Design entwurfsoberflächenerweiterungs-Anbieters <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Objekt  
+4. Instanziiert und Initialisiert eine Instanz der einzelnen-Objekte des Entwurfs Oberflächen Erweiterungs Anbieters. <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>  
   
-5. Jeder Entwurf entwurfsoberflächenerweiterungs-Anbieter aufruft <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> Methode oder <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> -Methode (nach Bedarf).  
+5. Ruft die-Methode oder-Methode jedes Entwurfs Oberflächen Erweiterungs Anbieters auf <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> (je nach Bedarf).  
   
-   Bei der Implementierung der <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Objekt als Member von einem VSPackage, es ist wichtig zu verstehen, dass:  
+   Wenn Sie das <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Objekt als Member eines VSPackage implementieren, ist es wichtig, Folgendes zu verstehen:  
   
-6. Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung bietet keine Kontrolle über welche Metadaten oder sonstige Konfigurationseinstellungen ein bestimmtes `DesignSurfaceExtension` des Anbieters ändert. Es ist möglich, dass zwei oder mehr `DesignSurfaceExtension` Anbieter, die in Konflikt stehenden Möglichkeiten, mit der letzten Änderung, die definitive wird die gleiche Webdesigner-Feature ändern. Es ist unbestimmt, denen Änderungsfunktionen zuletzt angewendet wird.  
+6. Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung bietet keine Kontrolle über die Metadaten oder andere Konfigurationseinstellungen, die von einem bestimmten Anbieter geändert werden `DesignSurfaceExtension` . Es ist möglich, dass zwei oder mehr `DesignSurfaceExtension` Anbieter die gleiche Designer Funktion in widersprüchliche Weise ändern, wobei die abschließende Änderung endgültig ist. Es ist unbestimmt, welche Änderung zuletzt angewendet wurde.  
   
-7. Es ist möglich, explizit eine Implementierung von beschränken die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Objekt, das durch Anwenden von Instanzen von bestimmten Designer <xref:System.ComponentModel.ToolboxItemFilterAttribute> an, dass diese Implementierung. Weitere Informationen zu **Toolbox** Element filtern, finden Sie unter den <xref:System.ComponentModel.ToolboxItemFilterAttribute> und <xref:System.ComponentModel.ToolboxItemFilterType>.  
+7. Es ist möglich, eine Implementierung des-Objekts explizit <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> auf bestimmte Designer zu beschränken, indem Sie Instanzen von <xref:System.ComponentModel.ToolboxItemFilterAttribute> auf diese Implementierung anwenden. Weitere Informationen zum Filtern von **Toolbox** Elementen finden Sie unter <xref:System.ComponentModel.ToolboxItemFilterAttribute> und <xref:System.ComponentModel.ToolboxItemFilterType> .  
   
-## <a name="additional-metadata-provisioning"></a>Zusätzliche Metadaten bereitstellen  
- Eine VSPackage kann es sich um die Konfiguration von einem Designer oder Designerkomponente außer zur Entwurfszeit ändern.  
+## <a name="additional-metadata-provisioning"></a>Zusätzliche metadatenbereitstellung  
+ Ein VSPackage kann die Konfiguration eines Designers oder einer Designer Komponente außer zur Entwurfszeit ändern.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> -Klasse programmgesteuert verwendet werden kann oder auf einem VSPackage, das einen Designer angewendet werden.  
+ Die- <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Klasse kann Programm gesteuert verwendet werden oder auf ein VSPackage angewendet werden, das einen Designer bereitstellt.  
   
- Eine Instanz von der <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Klasse wird verwendet, um die Metadaten erstellt, die auf einer Entwurfsoberfläche Komponenten zu ändern. Eine konnte ersetzen Sie z. B. einen standardmäßigen-Eigenschaftenbrowser von verwendet <xref:System.Windows.Forms.CommonDialog> Objekte mit einem benutzerdefinierten Eigenschaftenbrowser.  
+ Eine Instanz der- <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Klasse wird verwendet, um die Metadaten von Komponenten zu ändern, die auf einer Entwurfs Oberfläche erstellt werden. Beispielsweise kann ein von Objekten verwendeter Standardeigenschaften Browser durch <xref:System.Windows.Forms.CommonDialog> einen benutzerdefinierten Eigenschaften Browser ersetzt werden.  
   
- Änderungen, die von einer Instanz von bereitgestellten <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> angewendet werden, um ein VSPackage Implementierung der <xref:Microsoft.VisualStudio.Shell.Package> kann einen der beiden Bereiche aufweisen:  
+ Änderungen, die von einer Instanz von bereitgestellt werden <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> , die auf die Implementierung von für ein VSPackage angewendet wird, <xref:Microsoft.VisualStudio.Shell.Package> können einen von zwei Bereichen aufweisen:  
   
-- Global – für alle neuen Instanzen einer bestimmten Komponente  
+- Global: für alle neuen Instanzen einer bestimmten Komponente  
   
-- Lokal, bezieht sich nur auf die Instanz der Komponente erstellt, die auf einer Entwurfsoberfläche, die vom aktuellen VSPackage bereitgestellt.  
+- Local: bezieht sich nur auf die Instanz der Komponente, die auf einer Entwurfs Oberfläche erstellt wurde, die vom aktuellen VSPackage bereitgestellt wird.  
   
-  Die `IsGlobal` Eigenschaft der <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Instanz angewendet wird, um ein VSPackage Implementierung der <xref:Microsoft.VisualStudio.Shell.Package> bestimmt dieser Bereich.  
+  Die `IsGlobal` -Eigenschaft der <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> -Instanz, die auf die Implementierung von VSPackage angewendet wird, <xref:Microsoft.VisualStudio.Shell.Package> bestimmt diesen Bereich.  
   
-  Anwenden des Attributs auf eine Implementierung der <xref:Microsoft.VisualStudio.Shell.Package> mit der <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> Eigenschaft der <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> -Objekts festgelegt, um `true`, wie folgt, ändert sich den Browser für die gesamte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung:  
+  Wenn Sie das-Attribut auf eine Implementierung von anwenden, <xref:Microsoft.VisualStudio.Shell.Package> wobei die- <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> Eigenschaft des- <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Objekts auf festgelegt `true` ist, ändert sich wie unten beschrieben der Browser für die gesamte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung:  
   
   `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
   `internal class MyPackage : Package {}`  
   
-  Wenn das globale Flag, um festgelegt wurde `false`, und klicken Sie dann die Änderung der Metadaten für den aktuellen Designer unterstützt durch das aktuelle VSPackage lokal ist:  
+  Wenn das globale Flag auf festgelegt wurde `false` , erfolgt die Metadatenänderung lokal für den aktuellen Designer, der vom aktuellen VSPackage unterstützt wird:  
   
   `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
-> Zur Zeit können die Entwurfsoberfläche unterstützt nur das Erstellen von Komponenten, und daher nur Komponenten lokalen Metadaten. Im obigen Beispiel, wir haben versucht, eine Eigenschaft zu ändern, wie z.B. die `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag übergebene `CustomBrowser` würde nie angezeigt werden, da der Designer nie eine Instanz erstellt `Color`. Wenn auf das globale Flag `false` eignet sich für Komponenten, z. B. Steuerelemente, Timer und Dialogfelder.  
+> Zum aktuellen Zeitpunkt unterstützt die Entwurfs Oberfläche nur das Erstellen von Komponenten, sodass nur Komponenten lokale Metadaten aufweisen können. Im obigen Beispiel haben wir versucht, eine Eigenschaft zu ändern, z. b. die- `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag an weitergegeben wurde, wird `CustomBrowser` nie angezeigt, da der Designer nie tatsächlich eine Instanz von erstellt `Color` . Wenn das globale Flag auf festgelegt `false` wird, ist es nützlich für Komponenten, z. b. Steuerelemente, Timer und Dialogfelder.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   

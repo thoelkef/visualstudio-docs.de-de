@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Microsoft Docs
+title: 'IDebugEngine2:: abtexception | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730933"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Gibt an, wie das Debugmodul (DE) eine bestimmte Ausnahme behandeln soll.
+Gibt an, wie die Debug-Engine (de) eine bestimmte Ausnahme behandeln soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetException( 
 
 ## <a name="parameters"></a>Parameter
 `pException`\
-[in] Eine [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur, die die Ausnahme und das Debuggen beschreibt.
+in Eine [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) -Struktur, die die Ausnahme beschreibt und debuggt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Eine DE könnte angewiesen werden, das Programm zu stoppen, das eine Ausnahme bei der ersten Chance, der zweiten Chance oder gar nicht erzeugt.
+ Ein de könnte angewiesen werden, das Programm zu beenden, das eine Ausnahme bei der ersten Chance, der zweiten Gelegenheit oder überhaupt nicht auslöst.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

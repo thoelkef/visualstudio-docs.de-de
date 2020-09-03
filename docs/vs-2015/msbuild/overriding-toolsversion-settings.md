@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199944"
 ---
 # <a name="overriding-toolsversion-settings"></a>Überschreiben von ToolsVersion-Einstellungen
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. Die standardmäßige Toolsversion in der MSBuild.exe.config-Datei.  
   
-    3. Die standardmäßige Toolsversion in der Registrierung. Weitere Informationen finden Sie unter [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3. Die standardmäßige Toolsversion in der Registrierung. Weitere Informationen finden Sie unter [Standard mäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md).  
   
 6. Wenn die Umgebungsvariable `MSBUILDLEGACYDEFAULTTOOLSVERSION` nicht festgelegt ist, werden die folgenden Schritte verwendet:  
   
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. Andernfalls verwenden Sie die aktuelle `ToolsVersion`.  
   
-## <a name="see-also"></a>Siehe auch  
- [Multitargeting (Festlegen von Zielversionen)](../msbuild/msbuild-multitargeting-overview.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+## <a name="see-also"></a>Weitere Informationen  
+ [Ziel Versionen festlegen](../msbuild/msbuild-multitargeting-overview.md)   
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
  [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
- [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)
+ [Standard mäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)

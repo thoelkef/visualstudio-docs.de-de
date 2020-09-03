@@ -28,16 +28,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254914"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Übersicht über Windows Forms Steuerelemente in Office-Dokumenten
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie dem Dokument oder der Arbeitsmappe in Ihrem Projekt zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, Sie können diese Steuerelemente aber auch zur Laufzeit programmgesteuert hinzufügen. Sie können diese Steuerelemente jedem geöffneten Dokument oder Arbeitsblatt zur Laufzeit in einem VSTO-Add-in für Excel oder Word Programm gesteuert hinzufügen.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Windows Forms-Steuer](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)Elementen zu Office-Dokumenten.
+ Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -119,7 +119,7 @@ Auf einem Windows Form.
  Unter bestimmten Bedingungen wird der Code nicht geladen und wird nur die Bitmap angezeigt, beispielsweise wenn der Benutzer die Arbeitsmappe im Entwurfsmodus öffnet. Außerdem kann, wenn der Benutzer die Arbeitsmappe auf einem Computer öffnet, auf dem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nicht installiert ist, die Anpassung nicht ausgeführt werden, sodass die Steuerelemente nicht geladen werden können und daher nur die Bitmap des Steuerelements sichtbar ist. Sie sollten persönliche Informationen stets aus Steuerelementen in einer Arbeitsmappe entfernen, bevor Sie die Arbeitsmappe speichern und an andere Benutzer senden. So ist sichergestellt, dass Sie vertrauliche Informationen nicht versehentlich preisgeben.
 
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Abgleichen der Steuerelement Größe mit der Zellgröße auf einem Excel-Arbeitsblatt
- Sie können ein Steuerelement so konfigurieren, dass dessen Größe automatisch bei Änderung der Größe der übergeordneten Zelle geändert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der Größe von Steuerelementen in](../vsto/how-to-resize-controls-within-worksheet-cells.md)Arbeitsblatt Zellen
+ Sie können ein Steuerelement so konfigurieren, dass dessen Größe automatisch bei Änderung der Größe der übergeordneten Zelle geändert wird. Weitere Informationen finden Sie unter Gewusst [wie: Ändern der Größe von Steuerelementen innerhalb von Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Komponenten hinzufügen, die von allen Arbeitsblättern gemeinsam genutzt werden
  Sie können Komponenten, die auf allen Arbeitsblättern nutzbar sein sollen (etwa ein <xref:System.Data.DataSet>), dem Arbeitsmappen-Designer hinzufügen, statt sie den Arbeitsblättern hinzuzufügen. Die Komponente wird auf der Komponentenleiste angezeigt.
@@ -130,7 +130,7 @@ Auf einem Windows Form.
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Layoutstil von Steuerelementen in einem Word-Dokument
  Wenn Sie einem Word-Dokument in einem Projekt auf Dokumentebene mithilfe des Visual Studio Designers ein Steuerelement hinzufügen, wird das Steuerelement in den Textfluss eingefügt. Um den Layoutstil eines Steuerelements zu ändern, klicken Sie mit der rechten Maustaste auf das Steuerelement, und klicken Sie dann auf **Steuerelement formatieren**. Wählen Sie im Dialogfeld **Objekt formatieren** auf der Seite **Layout** eine Umbruchart aus.
 
- Wenn Sie einem Word-Dokument zur Laufzeit ein Steuerelement hinzufügen, können Sie die layoutart des neuen Steuer Elements angeben, `Add`indem Sie eine \<andere *Steuerelement Klasse*> <xref:Microsoft.Office.Tools.Word.ControlCollection> Methoden Überladungen der-Klasse verwenden:
+ Wenn Sie einem Word-Dokument zur Laufzeit ein Steuerelement hinzufügen, können Sie die layoutart des neuen Steuer Elements angeben, indem Sie verschiedene `Add` \<*control class*> Methoden Überladungen der- <xref:Microsoft.Office.Tools.Word.ControlCollection> Klasse verwenden:
 
 - Um ein Steuerelement in den Textfluss einzufügen, verwenden Sie eine Überladung, die einen Bereich ( <xref:Microsoft.Office.Interop.Word.Range> ) akzeptiert, der die Position des Steuerelements angibt.
 
@@ -146,18 +146,18 @@ Auf einem Windows Form.
 ### <a name="add-components-at-design-time"></a>Hinzufügen von Komponenten zur Entwurfszeit
  Bestimmte Steuerelemente oder Komponenten sind auf einem Dokument nicht sichtbar, sondern werden stattdessen auf einer Komponentenleiste angezeigt. Visual Studio stellt eine Komponentenleiste für jedes Dokumentfenster bereit. Die Komponentenleiste wird nur dann auf dem Bildschirm angezeigt, wenn Komponenten auf dem jeweiligen Dokument vorhanden sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/index)
 - [Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [Vorgehensweise: Hinzufügen von Windows Forms Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Vorgehensweise: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Exemplarische Vorgehensweise: Ändern der Arbeitsblatt Formatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Exemplarische Vorgehensweise: Ändern der Dokument Formatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
+- [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Gewusst wie: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Exemplarische Vorgehensweise: Ändern der Arbeitsblatt Formatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Exemplarische Vorgehensweise: Ändern der Dokument Formatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
 - [Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

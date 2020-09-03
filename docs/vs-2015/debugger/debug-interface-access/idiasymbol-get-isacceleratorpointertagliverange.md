@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_isAcceleratorPointerTagLiveRange | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149446"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob das Symbol entspricht der *Definition Bereich Symbol* für die Komponente "Tag" einer Zeigervariablen im Code für eine C++-AMP-Beschleuniger kompiliert. Die Definition Bereich Symbol handelt es sich um den Speicherort der eine Variable für eine Spanne von Adressen.  
+Ruft ein Flag ab, das angibt, ob das Symbol dem *Definitions Bereichs Symbol* für die Tagkomponente einer Zeiger Variablen in Code entspricht, der für eine C++ amp Accelerator kompiliert wurde. Das Symbol für den Definitionsbereich ist der Speicherort einer Variablen für eine Adress Spanne.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Ein Zeiger auf eine `BOOL` , der angibt, ob das Symbol zum Symbol Bereich Definition entspricht.  
+ vorgenommen Ein Zeiger auf einen-Wert `BOOL` , der angibt, ob das Symbol dem Definitions Bereichs Symbol entspricht.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

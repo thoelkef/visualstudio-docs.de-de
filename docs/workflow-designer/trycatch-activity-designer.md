@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593069"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch-Aktivitätsdesigner
 
-Der **trycatch** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.TryCatch>-Aktivität zu erstellen und zu konfigurieren.
+Der **trycatch** -Aktivitäts Designer wird verwendet, um eine-Aktivität zu erstellen und zu konfigurieren <xref:System.Activities.Statements.TryCatch> .
 
 ## <a name="the-trycatch-activity"></a>Die TryCatch-Aktivität
- Die <xref:System.Activities.Statements.TryCatch>-Aktivität enthält eine <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität, eine Auflistung von **catch\<TException >** und eine <xref:System.Activities.Statements.TryCatch.Finally%2A>-Aktivität. Eine <xref:System.Activities.Statements.Catch%601> vom Typ **TException** enthält eine <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> und eine <xref:System.Activities.Statements.Catch%601.Action%2A>. Zusammen werden diese verwendet, um einen typischen ausnahmebasierten Fehlerbehandlungsmechanismus zu implementieren. Eine <xref:System.Activities.Statements.TryCatch>-Aktivität versucht, die zugehörige <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität auszuführen. Wenn die <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität eine Ausnahme auslöst, verwendet die <xref:System.Activities.Statements.TryCatch> Aktivität die **catch < TException-\>** Auflistung, um die Ausnahme abzugleichen. Wenn eine Übereinstimmung vorliegt, wird der <xref:System.Activities.Statements.Catch%601.Action%2A> der entsprechenden **catch-\<TException->** ausgeführt und fungiert als Fehler Behandlungs Logik für die Ausnahme. Wenn die Aktivitäten im Abschnitt <xref:System.Activities.Statements.TryCatch.Try%2A> erfolgreich abgeschlossen werden oder die Aktivitäten in <xref:System.Activities.Statements.TryCatch.Catches%2A> erfolgreich abgeschlossen werden, führt die <xref:System.Activities.Statements.TryCatch>-Aktivität die zugehörige <xref:System.Activities.Statements.TryCatch.Finally%2A>-Aktivität aus. Weitere Informationen finden Sie unter [Windows Workflow-Ausnahmen](/dotnet/framework/windows-workflow-foundation/exceptions).
+ Die <xref:System.Activities.Statements.TryCatch> -Aktivität enthält eine <xref:System.Activities.Statements.TryCatch.Try%2A> -Aktivität, eine Auflistung von ** \<TException> catch** -und eine- <xref:System.Activities.Statements.TryCatch.Finally%2A> Aktivität. Eine <xref:System.Activities.Statements.Catch%601> des Typs **TException** enthält eine <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> und eine <xref:System.Activities.Statements.Catch%601.Action%2A> . Zusammen werden diese verwendet, um einen typischen ausnahmebasierten Fehlerbehandlungsmechanismus zu implementieren. Eine <xref:System.Activities.Statements.TryCatch>-Aktivität versucht, die zugehörige <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität auszuführen. Wenn die- <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität eine Ausnahme auslöst, <xref:System.Activities.Statements.TryCatch> verwendet die-Aktivität die Catch- **<\> TException** -Auflistung, um die Ausnahme abzugleichen. Wenn eine Übereinstimmung vorliegt, wird die <xref:System.Activities.Statements.Catch%601.Action%2A> der entsprechenden **Catch \<TException> ** -Anweisung ausgeführt, die als Fehler Behandlungs Logik für die Ausnahme fungiert. Wenn die Aktivitäten im Abschnitt <xref:System.Activities.Statements.TryCatch.Try%2A> erfolgreich abgeschlossen werden oder die Aktivitäten in <xref:System.Activities.Statements.TryCatch.Catches%2A> erfolgreich abgeschlossen werden, führt die <xref:System.Activities.Statements.TryCatch>-Aktivität die zugehörige <xref:System.Activities.Statements.TryCatch.Finally%2A>-Aktivität aus. Weitere Informationen finden Sie unter [Windows Workflow-Ausnahmen](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Verwenden des TryCatch-Aktivitätsdesigners
 
 Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox**auf den **trycatch** -Aktivitäts Designer zu.
 
-Der **trycatch** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence>. Hierdurch erstellen Sie eine <xref:System.Activities.Statements.TryCatch>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert TryCatch. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **trycatch** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden. Die anderen Eigenschaften müssen auf der Oberfläche des **trycatch** -Aktivitäts Designers bearbeitet werden.
+Der **trycatch** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. in einer <xref:System.Activities.Statements.Sequence> . Hierdurch erstellen Sie eine <xref:System.Activities.Statements.TryCatch>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert TryCatch. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **trycatch** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden. Die anderen Eigenschaften müssen auf der Oberfläche des **trycatch** -Aktivitäts Designers bearbeitet werden.
 
 Klicken Sie in der rechten oberen Ecke des **trycatch** -Designers auf die Schaltfläche erweitern, um die Felder **ausprobieren**, **fängt**und **schließlich** in der erweiterten Ansicht anzuzeigen. Um einen catch hinzuzufügen, klicken Sie auf die Schaltfläche **neuen Catch hinzufügen** im **trycatch** -Designer. Die Schaltfläche nimmt die Form eines Kombinationsfelds an. Wählen Sie einen Ausnahmetyp aus, und drücken Sie die EINGABETASTE, um den Catch hinzuzufügen. Nach dem Hinzufügen eines **catch**-Blocks wird der catch-Bereich erweitert, und eine Aktivität kann im catch abgelegt werden, um die Ausführungs Logik für den catch zu definieren. Auf der rechten Seite des erweiterten Catch-Bereichs befindet sich ein Textfeld. In dieses Textfeld können Sie den Namen einer Ausnahmevariablen eingeben. Die Exception-Variable kann nur für Aktivitäten innerhalb desselben **catch**verwendet werden.
 
@@ -37,17 +37,17 @@ Der **trycatch** -Designer unterstützt das Bearbeiten von **catch**nicht. Wenn 
 
 ### <a name="the-trycatch-properties"></a>Die TryCatch-Eigenschaften
 
-In der folgenden Tabelle sind die <xref:System.Activities.Statements.TryCatch>Eigenschaften aufgeführt, und es wird beschrieben, wie Sie im Designer verwendet werden.
+In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Activities.Statements.TryCatch> und es wird beschrieben, wie Sie im Designer verwendet werden.
 
-|Eigenschaftsname|Erforderlich|Verwendungs-|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.TryCatch>-Aktivität an. Der Standardwert ist TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|Falsch|Die Aktivität wird erstmalig ausgeführt wird, wenn <xref:System.Activities.Statements.TryCatch> ausgeführt wird.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Falsch|Die Auflistung der **catch** -Elemente, die geprüft werden soll, wenn die <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität eine Ausnahme auslöst.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Falsch|Die Auflistung der **catch** -Elemente, die geprüft werden soll, wenn die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität eine Ausnahme auslöst.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|Falsch|Die Aktivität, die ausgeführt werden soll, wenn die Ausführung von <xref:System.Activities.Statements.TryCatch.Try%2A> und aller erforderlichen Aktivitäten in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung abgeschlossen wurde.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Auflistung](../workflow-designer/collection-activity-designers.md)
+- [Sammlung](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)
-- [Throw](../workflow-designer/throw-activity-designer.md)
+- [Schale](../workflow-designer/throw-activity-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: CommandPlacements-Element | Microsoft-Dokumentation
+title: Commandplacement-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184311"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandPlacements-Element gruppiert CommandPlacement-Elementen und anderen CommandPlacements Gruppierungen.  
+Das commandplacement-Element gruppiert commandplacement-Elemente und andere commandplacement-Gruppierungen.  
   
- CommandPlacements-Element ist optional. Wenn keine Befehle, Gruppen oder Menüs in einem sekundären Standort berücksichtigt werden müssen, müssen Sie nicht in diesem Abschnitt in der VSCT-Datei enthalten.  
+ Das commandplacement-Element ist optional. Wenn keine Befehle, Gruppen oder Menüs an einem sekundären Speicherort enthalten sein müssen, müssen Sie diesen Abschnitt nicht in die vsct-Datei einschließen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,22 +41,22 @@ CommandPlacements-Element gruppiert CommandPlacement-Elementen und anderen Comma
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|CommandPlacements|Gruppen CommandPlacement-Elementen und anderen CommandPlacements Gruppierungen.|  
-|[CommandPlacement-Element](../extensibility/commandplacement-element.md)|Können Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü einbezogen werden.|  
+|CommandPlacements|Gruppiert commandplacement-Elemente und andere commandplacement-Gruppierungen.|  
+|[CommandPlacement-Element](../extensibility/commandplacement-element.md)|Ermöglicht das Einschließen von Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle darstellen.|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -69,6 +69,6 @@ CommandPlacements-Element gruppiert CommandPlacement-Elementen und anderen Comma
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [CommandPlacement-Element](../extensibility/commandplacement-element.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Commandplacement-Element](../extensibility/commandplacement-element.md)   
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

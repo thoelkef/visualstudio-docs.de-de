@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255306"
 ---
 # <a name="chart-control"></a>Diagramm Steuerelement
@@ -29,9 +29,9 @@ ms.locfileid: "71255306"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Erstellen des Steuer Elements
- Sie können einem Microsoft Office Excel-Arbeitsblatt in einem Projekt auf Dokumentebene <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen.
+ Sie können <xref:Microsoft.Office.Tools.Excel.Chart> einem Microsoft Office Excel-Arbeitsblatt Steuerelemente zur Entwurfszeit oder zur Laufzeit in einem Projekt auf Dokument Ebene hinzufügen.
 
- Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Laufzeit in einem VSTO-Add-In hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Diagramm Steuerelementen](../vsto/how-to-add-chart-controls-to-worksheets.md)zu Arbeitsblättern.
+ Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Laufzeit in einem VSTO-Add-In hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
 > Dynamisch erstellte Diagrammobjekte werden nicht im Arbeitsblatt als Hoststeuerelemente dauerhaft gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -39,7 +39,7 @@ ms.locfileid: "71255306"
 ## <a name="formatting"></a>Formatierung
  Die gesamte Formatierung, die auf <xref:Microsoft.Office.Interop.Excel.Chart> angewendet werden kann, ist auch auf ein <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement anwendbar. Dies umfasst Rahmen, Schriftarten, Diagrammtypen, Gitternetzlinien, Legenden und Datenbezeichnungen.
 
-## <a name="events"></a>Ereignisse
+## <a name="events"></a>Events
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.Chart> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
@@ -78,6 +78,6 @@ ms.locfileid: "71255306"
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
-- [Vorgehensweise: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

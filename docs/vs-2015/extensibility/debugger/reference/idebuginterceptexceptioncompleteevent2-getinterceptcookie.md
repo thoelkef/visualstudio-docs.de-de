@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie | Microsoft-Dokumentation
+title: 'IDebugInterceptExceptionCompleteEvent2:: getinterceptcookie | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e186419a102bdf48a437002ab03120587d6e0822
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180658"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
@@ -40,14 +40,14 @@ int GetInterceptCookie(
   
 #### <a name="parameters"></a>Parameter  
  `pqwCookie`  
- [out] Eindeutiger Wert, der der Ausnahme zugeordnet ist, die abgefangen wurde.  
+ vorgenommen Eindeutiger Wert, der der abgefangenen Ausnahme zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Nach der [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) -Methode behandeln einer abgefangenen Ausnahme abgeschlossen wurde, sendet er die [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) Ereignis. Der Handler können die `GetInterceptCookie` Methode, um den eindeutigen Wert, der der Ausnahme zugeordnete abzurufen (den gleichen Wert, der zum Übergeben der `InterceptCurrentException` Methode).  
+## <a name="remarks"></a>Bemerkungen  
+ Nachdem die [interceptaccesstexception](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) -Methode die Verarbeitung einer abgefangenen Ausnahme abgeschlossen hat, sendet Sie das [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) -Ereignis. Der-Handler kann die- `GetInterceptCookie` Methode verwenden, um den eindeutigen Wert abzurufen, der der Ausnahme zugeordnet ist (derselbe Wert, der an die-Methode übertragen wird `InterceptCurrentException` ).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

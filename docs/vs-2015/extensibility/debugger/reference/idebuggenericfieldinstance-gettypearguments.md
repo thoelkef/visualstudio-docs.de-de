@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft-Dokumentation
+title: 'Idebuggenericfieldinstance:: gettypeer Arguments | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bef4d6c0d36eafd0279d97ecad2d1d2cc0656e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180830"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Typargumente für die Parameter für diese Instanz ab.  
+Ruft die Typparameter Argumente für diese Instanz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,16 +43,16 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>Parameter  
  `cArgs`  
- [in] Die Anzahl von Typparametern.  
+ in Anzahl der Typparameter.  
   
  `ppArgs`  
- [out] Gibt ein Array von Typparametern.  
+ vorgenommen Gibt ein Array von Typparametern zurück.  
   
  `pcArgs`  
- [in, out] Anzahl der Elemente in der `ppArgs` Array.  
+ [in, out] Anzahl der Elemente im `ppArgs` Array.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

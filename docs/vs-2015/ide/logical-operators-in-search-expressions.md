@@ -29,8 +29,8 @@ Mithilfe von logischen Operatoren können Sie Ihre Suche nach Inhalten eingrenze
 
 |Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
-|Beide Begriffe im gleichen Thema|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
-|Einer der Begriffe in einem Thema|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
+|Beide Begriffe im gleichen Thema|AND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
+|Einer der Begriffe in einem Thema|oder|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
 |Erster Begriff ohne den zweiten Begriff im gleichen Thema|NICHT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
 |Beide Begriffe nah beieinander in einem Thema|NEAR|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
 

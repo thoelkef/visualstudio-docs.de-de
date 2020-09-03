@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682680"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Fehler: Automatischer Einzelschritt auf dem Server nicht möglich
@@ -44,6 +44,6 @@ Der Fehler lautet:
   
 - Eine Version von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] wurde nach der Installation von Visual Studio installiert. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] muss vor Visual Studio installiert werden. Verwenden Sie zum Beheben dieses Problem in der Windows- **Systemsteuerung**die Option **Programme und Funktionen** , um die Visual Studio-Installation zu reparieren.  
   
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Remote Debugging-Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

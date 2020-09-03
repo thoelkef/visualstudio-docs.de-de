@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c7a173bf0b7f5b3dc2187c0c8574819b2317a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176912"
 ---
 # <a name="message-markers"></a>Meldungsmarker
@@ -26,6 +26,6 @@ Ein Meldungsmarker stellt Protokollausgaben dar. Eine Meldung ist eine Zeichenfo
 ## <a name="message-aggregation-markers"></a>Meldungsaggregationsmarker  
  Manchmal treten mehrere Meldungen so nah beieinander in der Nebenläufigkeitsschnellansicht auf, dass sie nicht einzeln gezeichnet werden können. Wenn dies geschieht, wird ein *Meldungsaggregationsmarker* angezeigt, der die zugrundeliegenden Meldungen darstellt. Wenn Sie mit dem Mauszeiger über eines dieser Symbole fahren, zeigt eine QuickInfo die Anzahl der zugrunde liegenden Meldungen an, die dargestellt werden. Um die Nachrichten anzuzeigen, zoomen Sie herein.  Wenn Sie bis zur maximalen Stufe vergrößern und weiterhin einen Aggregationsmarker angezeigt wird, können Sie die zugrunde liegenden Meldungen im [Markerbericht](../profiling/markers-report.md) anzeigen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Parallelitäts schnell Ansichts Marker](../profiling/concurrency-visualizer-markers.md)   
  [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

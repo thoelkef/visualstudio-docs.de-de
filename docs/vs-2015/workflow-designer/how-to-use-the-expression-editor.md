@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849235"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks-Editors
 Der Ausdrucks-Editor ist ein [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Steuerelement, das in vielen Workflowaktivitäten zum Eingeben und Auswerten von Ausdrücken verwendet wird. Der Ausdrucks-Editor stellt vollständige IDE-Bearbeitungsumgebung bereit, einschließlich IntelliSense, Einfärbung, ParamInfo, Fehlerschnörkel und weitere Funktionen. Der Compiler überprüft den Ausdruck, nachdem er eingegeben wurde. Wenn der Ausdruck ungültig ist, wird ein Fehlersymbol angezeigt. Der Editor kann auch als Dialogfeld **Ausdrucks-Editor** geöffnet werden.
 
- Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code. Sie enthalten Wertelemente, die (z. B. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu ergeben. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass die Groß-/Kleinschreibung keine Rolle spielt, der Vergleich mit einem einzelnen Gleichheitszeichen ("=") anstelle von ("= =") erfolgt. die booleschen Operatoren sind die Wörter "and" und "or" anstelle&#124;&#124;der Symbole "& &" und "", und anstelle von **null**wird **nichts** verwendet. Weitere Informationen zu Ausdrücken und Operatoren in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
+ Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code. Sie enthalten Wertelemente, die (z. B. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu ergeben. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass die Groß-/Kleinschreibung keine Rolle spielt, der Vergleich mit einem einzelnen Gleichheitszeichen ("=") anstelle von ("= =") erfolgt. die booleschen Operatoren sind die Wörter "and" und "or" anstelle der Symbole "&&" und "&#124;&#124;", und anstelle von **null**wird **nichts** verwendet. Weitere Informationen zu Ausdrücken und Operatoren in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  Der **Ausdrucks-Editor** verhält sich wie folgt:
 
@@ -45,7 +45,7 @@ Der Ausdrucks-Editor ist ein [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Steuerelem
 
 3. Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
 
-     Die grauen Wasserzeichen Zeichenfolgen **\<** und **\<einen VB-Ausdruck eingeben, >** die Standardtext Zeichenfolgen für Ausdrucks-Editoren in der <xref:System.Activities.Statements.Assign> Aktivität sind.
+     Die grauen Wasserzeichen Zeichenfolgen **\<To>** und **\<Enter a VB Expression>** sind die Standardtext Zeichenfolgen für Ausdrucks-Editoren in der- <xref:System.Activities.Statements.Assign> Aktivität.
 
 4. Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
 
@@ -53,5 +53,5 @@ Der Ausdrucks-Editor ist ein [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Steuerelem
 
      Eine andere Möglichkeit, einen Ausdruck einzugeben oder zu bearbeiten, besteht darin, auf die Auslassungspunkte neben einem Eigenschaftennamen im Eigenschaftenraster zu klicken. Dadurch wird der **Ausdrucks-Editor** als Dialogfeld geöffnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

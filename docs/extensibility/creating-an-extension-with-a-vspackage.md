@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903855"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Erstellen einer Erweiterung mit einem VSPackage
@@ -74,6 +74,6 @@ An diesem Punkt wird die Erweiterung nicht geladen, da nichts bewirkt, dass Sie 
     }
     ```
 
-3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
 4. Öffnen Sie eine Projekt Mappe in der experimentellen Instanz. Es sollte ein Meldungs Feld mit dem **ersten Paket in Initialize ()** angezeigt werden.

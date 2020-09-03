@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9531f0495bd0dc0a9f095ff71fdfd84fc8d1380
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189777"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher
-  Wenn das Ziel Framework eines Office-Projekts von einer früheren Version des .NET Framework in das [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, sind möglicherweise einige zusätzliche Schritte erforderlich, um die Lösung auf Entwicklungs-und Endbenutzer Computern weiter auszuführen. Weitere Informationen finden Sie unter [erforderliche Änderungen zum Ausführen von Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
+  Wenn das Ziel Framework eines Office-Projekts [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] von einer früheren Version des .NET Framework in oder höher geändert wird, sind möglicherweise einige zusätzliche Schritte erforderlich, um die Lösung auf Entwicklungs-und Endbenutzer Computern weiter auszuführen. Weitere Informationen finden Sie unter [erforderliche Änderungen zum Ausführen von Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
 
  Darüber hinaus wird das Projekt möglicherweise nicht mehr kompiliert. Einige Funktionen von Office-Projekten verfügen über unterschiedliche Programmiermodelle für die verschiedenen Versionen von .NET Framework. Wenn das Zielframework eines Office-Projekts von einer früheren .NET Framework-Version auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie die folgenden Codeänderungen am Projekt vornehmen:
 
@@ -34,9 +34,9 @@ ms.locfileid: "73189777"
 
   Das Zielframework eines Office-Projekts ändert sich, wenn Sie dieses Projekt von einer früheren Visual Studio-Version aktualisieren. Weitere Informationen finden Sie unter [aktualisieren und Migrieren von Office-](../vsto/upgrading-and-migrating-office-solutions.md)Projektmappen.
 
-  Weitere Informationen dazu, warum einige Funktionen in Office-Projekten ein anderes Programmiermodell aufweisen, wenn Sie auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielen, finden Sie unter [Änderungen am Entwurf von Office-Projekten, die auf die .NET Framework 4 oder die .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) und Visual abzielen. [ Übersicht über die Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+  Weitere Informationen dazu, warum einige Funktionen in Office-Projekten ein anderes Programmiermodell aufweisen, wenn Sie auf oder höher abzielen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , finden Sie unter [Änderungen am Entwurf von Office-Projekten, die auf die .NET Framework 4 abzielen, und in der Übersicht über die .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) und [Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
 - [Gewusst wie: Ziel einer Version des .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
 - [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)

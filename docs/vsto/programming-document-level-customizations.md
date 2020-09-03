@@ -28,10 +28,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254018"
 ---
 # <a name="program-document-level-customizations"></a>Program mieren von Anpassungen auf Dokument Ebene
@@ -53,7 +53,7 @@ ms.locfileid: "71254018"
 
   Einige Aspekte beim Schreiben von Code in Projekten auf Dokumentebene unterscheiden sich von anderen Projekttypen in Visual Studio. Viele dieser Unterschiede haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Weitere Informationen finden Sie unter [Schreiben von Code in Office](../vsto/writing-code-in-office-solutions.md)-Projektmappen.
 
-  Allgemeine Informationen zu Anpassungen auf Dokument Ebene und anderen Lösungs Typen, die Sie mithilfe der Office-Entwicklungs Tools in Visual Studio erstellen können, finden Sie unter [Übersicht über &#40;die Entwicklung von&#41;Office](../vsto/office-solutions-development-overview-vsto.md)-Projektmappen VSTO.
+  Allgemeine Informationen zu Anpassungen auf Dokument Ebene und anderen Lösungs Typen, die Sie mithilfe der Office-Entwicklungs Tools in Visual Studio erstellen können, finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>Verwenden der generierten Klassen in Projekten auf Dokument Ebene
  Wenn Sie ein Projekt auf Dokumentebene erstellen, generiert Visual Studio automatisch eine Klasse im Projekt, die Sie zum Schreiben von Code verwenden können. Visual Studio generiert unterschiedliche Klassen für Word und Excel:
@@ -79,7 +79,7 @@ ms.locfileid: "71254018"
 
 - `ThisWorkbook`wird aus <xref:Microsoft.Office.Tools.Excel.WorkbookBase>abgeleitet.
 
-- `Sheet`*n*: wird von <xref:Microsoft.Office.Tools.Excel.WorksheetBase>abgeleitet.
+- `Sheet`*n*: wird von abgeleitet <xref:Microsoft.Office.Tools.Excel.WorksheetBase> .
 
   Diese Basisklassen leiten alle Aufrufe an ihre Member zu internen Implementierungen der entsprechenden Hostelementschnittstellen in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]um. Wenn Sie beispielsweise die <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> -Methode der `ThisDocument` -Klasse aufrufen, leitet die <xref:Microsoft.Office.Tools.Word.DocumentBase> -Klasse diesen Aufruf an die interne Implementierung der <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]um.
 
@@ -110,7 +110,7 @@ Globals.ThisDocument.Save();
 
  Weitere Informationen zum Verwenden der Objekt Modelle von Word und Excel finden Sie unter Übersicht über das [Word-Objektmodell](../vsto/word-object-model-overview.md) und Übersicht über das [Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
- Weitere Informationen `Globals` zum-Objekt finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+ Weitere Informationen zum- `Globals` Objekt finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="add-controls-to-documents"></a>Hinzufügen von Steuerelementen zu Dokumenten
  Wenn Sie die Benutzeroberfläche des Dokuments anpassen möchten, können Sie der Dokumentoberfläche Windows Forms-Steuerelemente oder *Hoststeuerelemente* hinzufügen. Sie können Steuerelemente an Daten binden, Benutzerinformationen abfragen und auf Benutzeraktionen reagieren, indem Sie verschiedene Gruppen von Steuerelementen kombinieren und Code schreiben.
@@ -146,7 +146,7 @@ Globals.ThisDocument.Save();
 
 - Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte auf dem Menüband
 
-   Weitere Informationen finden Sie unter [Vorgehensweise: Passen Sie eine integrierte Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)an.
+   Weitere Informationen finden Sie unter Gewusst [wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md).
 
   Weitere Informationen zum Anpassen der Benutzeroberfläche von Microsoft Office Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
@@ -162,12 +162,12 @@ Globals.ThisDocument.Save();
 
 - Wenn Sie das erweiterte Objekt für ein systemeigenes Office-Objekt abrufen möchten, verwenden Sie die `GetVstoObject`-Methode. Diese Methode gibt ein <xref:Microsoft.Office.Tools.Excel.ListObject>-, <xref:Microsoft.Office.Tools.Excel.Workbook>-, <xref:Microsoft.Office.Tools.Excel.Worksheet>- oder <xref:Microsoft.Office.Tools.Word.Document> -Objekt zurück, wenn das angegebene systemeigene Office-Objekt ein solches Objekt hat. Andernfalls wird `GetVstoObject` **null**zurückgegeben. Die `GetVstoObject`-Methode gibt z. B. ein <xref:Microsoft.Office.Tools.Word.Document> zurück, wenn das angegebene <xref:Microsoft.Office.Interop.Word.Document>-Objekt das zugrunde liegende Objekt für das Dokument in Ihrem Word-Dokumentprojekt ist.
 
-  In Projekten auf Dokumentebene kann die `GetVstoObject`-Methode nicht dazu verwendet werden, zur Laufzeit ein neues <xref:Microsoft.Office.Tools.Excel.Workbook>-, <xref:Microsoft.Office.Tools.Excel.Worksheet>- oder <xref:Microsoft.Office.Tools.Word.Document>-Hostelement zu erstellen. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Host Elemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO-Add-in-Projekt entwickeln. Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  In Projekten auf Dokument Ebene können Sie die- `GetVstoObject` Methode nicht zum Erstellen eines neuen- <xref:Microsoft.Office.Tools.Excel.Workbook> ,-oder- <xref:Microsoft.Office.Tools.Excel.Worksheet> <xref:Microsoft.Office.Tools.Word.Document> Host Elements zur Laufzeit verwenden. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Host Elemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO-Add-in-Projekt entwickeln. Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Verwenden der Methoden GetVstoObject und HasVstoObject
- Um `HasVstoObject` die-Methode `GetVstoObject` und die-Methode aufzurufen, verwenden Sie die-Methode oder `Globals.Factory.HasVstoObject` die `Globals.Factory.GetVstoObject` -Methode, und übergeben Sie <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet>das systemeigene Word-oder Excel-Objekt, das Sie testen möchten.
+ Um die `HasVstoObject` -Methode und die-Methode aufzurufen `GetVstoObject` , verwenden Sie die- `Globals.Factory.GetVstoObject` Methode oder die `Globals.Factory.HasVstoObject` -Methode, und übergeben Sie das systemeigene Word-oder Excel-Objekt, <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet> das Sie testen möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Kombinieren von VBA und Anpassungen auf Dokument Ebene](../vsto/combining-vba-and-document-level-customizations.md)
 - [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

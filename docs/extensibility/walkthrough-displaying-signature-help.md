@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904812"
 ---
 # <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signatur Hilfe
@@ -244,5 +244,5 @@ Mit der Signatur Hilfe (auch als *Parameter Info*bezeichnet) wird die Signatur e
 
 4. Nachdem Sie die öffnende Klammer eingefügt haben, sollte eine QuickInfo angezeigt werden, in der eine Liste der beiden Signaturen für die Methode angezeigt wird `add()` .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

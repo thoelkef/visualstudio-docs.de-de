@@ -1,5 +1,5 @@
 ---
-title: Sicherheit/versionsverwaltung/Manifest Probleme in ClickOnce-Bereitstellung
+title: Sicherheit/Versionsverwaltung/Manifeste Probleme bei der ClickOnce-Bereitstellung
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,79 +23,79 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745605"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 
-Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sicherheit, versionsverwaltung von Anwendungen, und manifest-Syntax und Semantik, die dazu führen können, dass eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht für eine erfolgreiche Bereitstellung.
+Es gibt eine Vielzahl von Problemen mit der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sicherheit, der Anwendungs Versionsverwaltung und der Manifestressource und der Semantik, die dazu führen können, dass eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung nicht erfolgreich ist.
 
-## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce und Windows Vista-Benutzerkontensteuerung
+## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce-und Windows Vista-Benutzerkontensteuerung
 
-In [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], Anwendungen standardmäßig als ein Standardbenutzer ausführen, auch wenn der aktuelle Benutzer sich mit einem Konto angemeldet ist, die über Administratorberechtigungen verfügt. Wenn eine Anwendung eine Aktion, die Administratorberechtigungen erforderlich sind durchführen muss, weist er das Betriebssystem, das dann den Benutzer zur Eingabe ihrer Anmeldeinformationen aufgefordert werden. Diese Funktion, die Benutzerkontensteuerung (UAC) benannt wird, verhindert, dass Anwendungen vornehmen von Änderungen, die ohne explizite Zustimmung des Benutzers das gesamte Betriebssystem betreffen können. Windows-Anwendungen zu deklarieren, erfordern diese Ausweitung von Berechtigungen durch Angabe der `requestedExecutionLevel` -Attribut in der `trustInfo` Abschnitt Anwendungsmanifest.
+In [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] werden Anwendungen standardmäßig als Standardbenutzer ausgeführt, auch wenn der aktuelle Benutzer mit einem Konto angemeldet ist, das über Administrator Berechtigungen verfügt. Wenn eine Anwendung eine Aktion ausführen muss, für die Administrator Berechtigungen erforderlich sind, wird dem Betriebssystem mitgeteilt, dass der Benutzer aufgefordert wird, seine Administrator Anmelde Informationen einzugeben. Diese Funktion mit dem Namen Benutzerkontensteuerung (User Account Control, UAC) verhindert, dass Anwendungen Änderungen vornehmen, die das gesamte Betriebssystem ohne explizite Genehmigung des Benutzers beeinträchtigen können. Windows-Anwendungen deklarieren, dass Sie diese Berechtigungs Erweiterung benötigen, indem Sie das- `requestedExecutionLevel` Attribut im- `trustInfo` Abschnitt Ihres Anwendungs Manifests angeben.
 
-Aufgrund des Risikos von Anwendungen für erhöhte Rechte für Sicherheitsangriffe verfügbar zu machen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können nicht über erweiterte Berechtigungen anfordern, wenn UAC, für den Client aktiviert ist. Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die versucht, legen Sie dessen `requestedExecutionLevel` Attribut `requireAdministrator` oder `highestAvailable` installiert nicht auf [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
+Aufgrund des Risikos, dass Anwendungen für Angriffe durch Sicherheitserweiterungen verfügbar gemacht werden, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] können Anwendungen keine Berechtigungs Erweiterung anfordern, wenn die UAC für den Client aktiviert ist. Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die versucht, das zugehörige- `requestedExecutionLevel` Attribut auf oder zu `requireAdministrator` `highestAvailable` installieren [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] .
 
-In einigen Fällen Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] möglicherweise wird versucht, die aufgrund der Logik zur Erkennung von Installer mit Administratorberechtigungen ausgeführt, auf [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. In diesem Fall können Sie festlegen der `requestedExecutionLevel` -Attribut in das Anwendungsmanifest `asInvoker`. Dadurch wird die Anwendung selbst für die Ausführung ohne erhöhte Rechte. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] alle Anwendungsmanifeste hinzugefügt automatisch dieses Attribut.
+In einigen Fällen kann es vorkommen, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dass Ihre Anwendung mit Administrator Berechtigungen ausgeführt wird, da die installationserkennungs-Logik für installiert ist [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] . In diesem Fall können Sie das- `requestedExecutionLevel` Attribut im Anwendungs Manifest auf festlegen `asInvoker` . Dies bewirkt, dass die Anwendung selbst ohne Rechte Erweiterung ausgeführt wird. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] fügt dieses Attribut automatisch allen Anwendungs Manifesten hinzu.
 
-Wenn Sie eine Anwendung, die über Administratorberechtigungen für die gesamte Lebensdauer der Anwendung erforderlich sind entwickeln, sollten Sie erwägen, Bereitstellen der Anwendung, indem Sie stattdessen die Windows Installer (MSI)-Technologie verwenden. Weitere Informationen finden Sie unter [Windows Installer-Grundlagen](../extensibility/internals/windows-installer-basics.md).
+Wenn Sie eine Anwendung entwickeln, für die für die gesamte Lebensdauer der Anwendung Administrator Berechtigungen erforderlich sind, sollten Sie stattdessen die Bereitstellung der Anwendung mithilfe von Windows Installer-Technologie (MSI) in Erwägung gezogen. Weitere Informationen finden Sie unter [Windows Installer Grundlagen](../extensibility/internals/windows-installer-basics.md).
 
-## <a name="online-application-quotas-and-partial-trust-applications"></a>Online-Anwendung-Kontingente und teilweise vertrauenswürdige Anwendungen
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Online-Anwendungs Kontingente und teilweise vertrauenswürdige Anwendungen
 
-Wenn Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung online "anstelle von" durch eine Installation ausgeführt wird, muss es in das festgelegte Kontingent reserviert für online-Anwendungen passen. Darüber hinaus eine netzwerkanwendung, die bei teilweiser Vertrauenswürdigkeit wie z. B. mit einem eingeschränkten Satz von Sicherheitsberechtigungen ausgeführt, größer als die Hälfte der Größe des Speicherkontingents für den nicht möglich.
+Wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung nicht über eine Installation, sondern online ausgeführt wird, muss Sie in das Kontingent passen, das für Online Anwendungen reserviert wurde. Außerdem darf eine Netzwerk Anwendung, die mit teilweiser Vertrauenswürdigkeit ausgeführt wird, z. b. mit einem eingeschränkten Satz von Sicherheits Berechtigungen, nicht größer als die Hälfte der Kontingent Größe sein.
 
-Weitere Informationen und Anweisungen dazu, wie Sie das Kontingent für die online-Anwendung zu ändern, finden Sie unter [Übersicht über die ClickOnce-Cache](../deployment/clickonce-cache-overview.md).
+Weitere Informationen und Anweisungen zum Ändern des Online Anwendungs Kontingents finden Sie unter Übersicht über den [ClickOnce-Cache](../deployment/clickonce-cache-overview.md).
 
 ## <a name="versioning-issues"></a>Versionsprobleme
 
-Sie können Probleme auftreten, wenn Sie Ihrer Assembly einen starken Namen zuweisen und erhöht die Versionsnummer der Assembly ein Anwendungsupdate entsprechend. Jede Assembly kompiliert, die mit einem Verweis auf eine Assembly mit starkem Namen selbst neu kompiliert werden muss, oder die Assembly wird versucht, auf die ältere Version verweisen. Die Assembly wird diese verwenden, da die Assembly den alte Wert in seine bindungsanforderung verwendet wird.
+Möglicherweise treten Probleme auf, wenn Sie der Assembly starke Namen zuweisen und die Versionsnummer der Assembly erhöhen, um eine Anwendungs Aktualisierung widerzuspiegeln. Jede Assembly, die mit einem Verweis auf eine Assembly mit starkem Namen kompiliert wird, muss selbst neu kompiliert werden, oder die Assembly versucht, auf die ältere Version zu verweisen. Die Assembly wird dies versuchen, da die Assembly den alten Versions Wert in der Bindungs Anforderung verwendet.
 
-Angenommen Sie, dass Sie in einem eigenen Projekt mit Version 1.0.0.0 eine Assembly mit starkem Namen verfügen. Nach dem Kompilieren der Assemblys an, fügen Sie ihn als Verweis auf das Projekt, das Ihre hauptanwendung enthält. Wenn Sie die Assembly zu aktualisieren, erhöhen die Version 1.0.0.1, und versuchen Sie es, bereitzustellen, ohne auch die Anwendung erneut zu kompilieren, wird die Anwendung nicht zum Laden der Assembly zur Laufzeit möglich sein.
+Nehmen wir beispielsweise an, dass Sie eine Assembly mit starkem Namen in einem eigenen Projekt mit der Version 1.0.0.0 haben. Nachdem Sie die Assembly kompiliert haben, fügen Sie Sie als Verweis auf das Projekt hinzu, das Ihre Hauptanwendung enthält. Wenn Sie die Assembly aktualisieren, die Version auf 1.0.0.1 erhöhen und versuchen, Sie bereitzustellen, ohne dass die Anwendung auch neu kompiliert wird, kann die Anwendung die Assembly zur Laufzeit nicht laden.
 
-Dieser Fehler kann auftreten, nur, wenn Sie Bearbeiten Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste manuell; Sie sollten diesen Fehler nicht feststellen, wenn Sie die Bereitstellung mithilfe von Visual Studio generieren.
+Dieser Fehler kann nur auftreten, wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste manuell bearbeiten. dieser Fehler sollte nicht auftreten, wenn Sie die Bereitstellung mit Visual Studio generieren.
 
-## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Geben Sie die einzelnen .NET Framework-Assemblys im manifest
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Angeben einzelner .NET Framework Assemblys im Manifest
 
-Ihre Anwendung kann nicht geladen werden, wenn Sie manuell bearbeitet haben eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung auf eine ältere Version von .NET Framework-Assembly verweisen. Z. B. Wenn Sie einen Verweis auf eine Version von .NET Framework vor der Version, die im Manifest angegebenen Assembly System.Net hinzugefügt haben, würde ein Fehler auftreten. Sie sollten im Allgemeinen nicht versuchen, die Verweise auf die einzelnen .NET Framework-Assemblys angeben, wie die Version von .NET Framework für die die Anwendung ausgeführt wird als eine Abhängigkeit im Anwendungsmanifest angegeben ist.
+Die Anwendung kann nicht geladen werden, wenn Sie eine Bereitstellung manuell bearbeitet haben [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , um auf eine ältere Version einer .NET Framework Assembly zu verweisen. Wenn Sie z. b. einen Verweis auf die System.NET-Assembly für eine Version des .NET Framework vor der im Manifest angegebenen Version hinzugefügt haben, tritt ein Fehler auf. Im Allgemeinen sollten Sie nicht versuchen, Verweise auf einzelne .NET Framework Assemblys anzugeben, da die Version des .NET Framework, für die die Anwendung ausgeführt wird, als Abhängigkeit im Anwendungs Manifest angegeben wird.
 
-## <a name="manifest-parsing-issues"></a>Problemen bei der Manifestanalyse
+## <a name="manifest-parsing-issues"></a>Probleme bei der Manifeste-Verarbeitung
 
-Die Manifestdateien, mit denen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sind XML-Dateien, und sie müssen wohlgeformt und gültig sein: sie müssen unterliegen den Regeln der XML-Syntax und verwenden Sie nur Elemente und Attribute, die in der entsprechenden XML-Schema definiert.
+Die Manifestressourcen, die von verwendet werden [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , sind XML-Dateien, und Sie müssen beide wohl geformt und gültig sein: Sie müssen die XML-Syntax Regeln einhalten und nur im relevanten XML-Schema definierte Elemente und Attribute verwenden.
 
-Etwas, das Probleme, in einer Manifestdatei verursachen können wird einen Namen für Ihre Anwendung auswählen, die ein Sonderzeichen, wie z. B. eine einfache oder doppelte Anführungszeichen enthält. Der Name der Anwendung ist Teil der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Identität. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Derzeit wird analysiert keine Identitäten, die Sonderzeichen enthalten. Wenn Ihre Anwendung nicht aktivieren, stellen Sie sicher, dass Sie nur alphabetische und numerische Zeichen für den Namen, und versuchen sie erneut bereitstellen.
+Etwas, das in einer Manifestressource Probleme verursachen kann, ist die Auswahl eines Namens für die Anwendung, die ein Sonderzeichen enthält, z. b. ein einzelnes oder doppeltes Anführungszeichen. Der Name der Anwendung ist Teil seiner [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Identität. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] analysiert derzeit keine Identitäten, die Sonderzeichen enthalten. Wenn die Anwendung nicht aktiviert werden kann, stellen Sie sicher, dass Sie nur alphabetische und numerische Zeichen für den Namen verwenden, und versuchen Sie, die Anwendung erneut bereitzustellen.
 
-Wenn Sie Ihre bereitstellungs- noch die Anwendungsmanifeste manuell bearbeitet haben, Sie möglicherweise unbeabsichtigt sie beschädigt. Beschädigtes Manifest wird verhindert, dass eine korrekte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Installation. Sie können solche Fehler zur Laufzeit Debuggen, indem Sie auf **Details** auf die **ClickOnce-Fehler** (Dialogfeld), und die Fehlermeldung in das Protokoll lesen. Das Protokoll Listet die folgenden Meldungen:
+Wenn Sie Ihre Bereitstellungs-oder Anwendungs Manifeste manuell bearbeitet haben, haben Sie Sie möglicherweise unbeabsichtigt beschädigt. Durch ein beschädigtes Manifest wird eine korrekte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Installation verhindert. Sie können solche Fehler zur Laufzeit debuggen, indem Sie im Dialogfeld **ClickOnce-Fehler** auf **Details** klicken und die Fehlermeldung im Protokoll lesen. Im Protokoll wird eine der folgenden Meldungen angezeigt:
 
-- Eine Beschreibung der Syntaxfehler, und die Zeilennummer und Zeichenposition Position, in dem der Fehler aufgetreten ist.
+- Eine Beschreibung des Syntax Fehlers und die Zeilennummer und Zeichenposition, an der der Fehler aufgetreten ist.
 
-- Der Name der ein Element oder Attribut verwendet wird, gegen das Schema des Manifests. Wenn Sie XML manuell den Manifesten hinzugefügt haben, müssen Sie die Erweiterungen, die von Manifestschemas verglichen werden soll. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).
+- Der Name eines Elements oder Attributs, das als Verstoß gegen das Schema des Manifests verwendet wird. Wenn Sie ihren Manifesten XML manuell hinzugefügt haben, müssen Sie die Ergänzungen mit den manifestressschemas vergleichen. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md).
 
-- Ein ID-Konflikt auftritt. Dependency-Verweise in bereitstellungs- und Anwendungsmanifeste müssen in beiden eindeutig sein ihre `name` und `publicKeyToken` Attribute. Wenn beide Attribute zwischen zwei beliebigen Elementen in einem Manifest übereinstimmen, ist das manifest Analyse nicht erfolgreich.
+- Ein ID-Konflikt. Abhängigkeits Verweise in Bereitstellungs-und Anwendungs Manifesten müssen in Ihren `name` -und-Attributen eindeutig sein `publicKeyToken` . Wenn beide Attribute zwischen zwei Elementen innerhalb eines Manifests Stimmen, wird die Manifeste-Verarbeitung nicht erfolgreich durchgeführt.
 
-## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Vorsichtsmaßnahmen bei der Manifeste oder Anwendungen manuell zu ändern.
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Vorsichtsmaßnahmen beim manuellen Ändern von Manifesten oder Anwendungen
 
-Wenn Sie ein Anwendungsmanifest aktualisieren, müssen Sie sowohl das Anwendungsmanifest und das Bereitstellungsmanifest erneut signieren. Das Bereitstellungsmanifest enthält einen Verweis auf das Anwendungsmanifest, das diese Dateihash und seiner digitalen Signatur enthält.
+Wenn Sie ein Anwendungs Manifest aktualisieren, müssen Sie sowohl das Anwendungs Manifest als auch das Bereitstellungs Manifest neu signieren. Das Bereitstellungs Manifest enthält einen Verweis auf das Anwendungs Manifest, das den Hash der Datei und Ihre digitale Signatur enthält.
 
-### <a name="precautions-with-deployment-provider-usage"></a>Vorsichtsmaßnahmen bei der Bereitstellung Anbieter Nutzung
+### <a name="precautions-with-deployment-provider-usage"></a>Vorsichtsmaßnahmen bei Verwendung des Bereitstellungs Anbieters
 
-Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest hat einen `deploymentProvider` Eigenschaft verweist auf den vollständigen Pfad des Speicherorts aus, in dem die Anwendung installiert und gewartet werden soll:
+Das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest verfügt über eine- `deploymentProvider` Eigenschaft, die auf den vollständigen Pfad des Speicher Orts verweist, von dem die Anwendung installiert und gewartet werden soll:
 
 ```xml
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-Dieser Pfad wird festgelegt, wenn [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird die Anwendung erstellt und ist obligatorisch, zu den installierten Anwendungen. Der Pfad verweist auf den Standardspeicherort, in denen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Installer installiert die Anwendung aus, und Suchen nach Updates. Bei Verwendung von der **Xcopy** -Befehl zum Kopieren einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung an einen anderen Speicherort, aber keine Änderungen der `deploymentProvider` -Eigenschaft, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird immer noch zurückgreifen am ursprünglichen Speicherort, wenn versucht wird, Herunterladen der die Anwendung.
+Dieser Pfad wird festgelegt, wenn [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] die Anwendung von erstellt wird und für installierte Anwendungen obligatorisch ist. Der Pfad zeigt auf den Standard Speicherort, an dem das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Installationsprogramm die Anwendung installiert und nach Updates sucht. Wenn Sie den **xcopy** -Befehl verwenden, um eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung an einen anderen Speicherort zu kopieren, ohne die Eigenschaft zu ändern `deploymentProvider` , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird beim Versuch, die Anwendung herunterzuladen, weiterhin auf den ursprünglichen Speicherort zurückverwiesen.
 
-Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch aktualisieren die `deploymentProvider` Pfad, damit der Client vom neuen Speicherort vornimmt. Aktualisiert diesen Pfad ist vor allem relevant, wenn Sie die Anwendungen installiert haben. Für online-Anwendungen, die immer über die ursprüngliche URL, die Einstellung gestartet, werden die `deploymentProvider` ist optional. Wenn `deploymentProvider` festgelegt ist, wird es berücksichtigt werden; andernfalls wird zum Starten der Anwendung verwendete URL als Basis-URL verwendet werden, zum Herunterladen von Anwendungsdateien.
+Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch den Pfad aktualisieren `deploymentProvider` , damit der Client tatsächlich vom neuen Speicherort installiert wird. Wenn Sie Anwendungen installiert haben, ist das Aktualisieren dieses Pfades größtenteils von Bedeutung. Bei Online Anwendungen, die immer über die ursprüngliche URL gestartet werden, ist das Festlegen von `deploymentProvider` optional. Wenn `deploymentProvider` festgelegt ist, wird Sie berücksichtigt. andernfalls wird die URL, die zum Starten der Anwendung verwendet wird, als Basis-URL zum Herunterladen von Anwendungs Dateien verwendet.
 
 > [!NOTE]
 > Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-[Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
-[Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
-[auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
+Problembehandlung bei [ClickOnce-bereit Stellungen](../deployment/troubleshooting-clickonce-deployments.md) 
+ [Sichere ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md) 
+ [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

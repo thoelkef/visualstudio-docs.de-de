@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef22471d20df5582fec96c8a685029a1d475a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184563"
 ---
 # <a name="buttontext-element"></a>ButtonText-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Feld ermöglicht die Angabe der Text erscheint in verschiedenen Menüs. In der Standardeinstellung die `ButtonText` Element wird im Menücontroller angezeigt. Die `ButtonText` Element wird auch die Standardeinstellung, wenn die anderen Textfelder leer sind. Die `ButtonText` Element darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.  
+In diesem Feld können Sie den Text angeben, der in verschiedenen Menüs angezeigt wird. Standardmäßig wird das- `ButtonText` Element in Menü Controllern angezeigt. Das- `ButtonText` Element wird auch der Standardwert, wenn die anderen Textfelder leer sind. Das `ButtonText` Element darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,10 +42,10 @@ Dieses Feld ermöglicht die Angabe der Text erscheint in verschiedenen Menüs. I
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Strings-Element](../extensibility/strings-element.md)|Text-Elemente, wie z. B. gruppiert `ButtonText` und `CommandName`.|  
+|[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, wie z `ButtonText` `CommandName` . b. und.|  
   
 ## <a name="text-value"></a>Textwert  
- Der Textwert, der die `ButtonText` -Element stellt den Text, der angezeigt wird, für Menüelemente, Combos und andere Elemente der Benutzeroberfläche (UI), die sichtbaren Text bereit.  
+ Der Textwert des- `ButtonText` Elements stellt den Text bereit, der für Menü Elemente, Combos und andere Benutzeroberflächen Elemente (UI) angezeigt wird, die über sichtbaren Text verfügen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255325"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Code in VSTO-Add-Ins aus anderen Office-Projektmappen aufzurufen
@@ -66,7 +66,7 @@ ms.locfileid: "71255325"
 
 3. Ändern Sie Ihre Klasse zum Implementieren dieser Schnittstelle.
 
-4. Wenden Sie <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> das-Attribut auf die Klasse an, und legen Sie dieses Attribut auf den <xref:System.Runtime.InteropServices.ClassInterfaceType> Wert **None** der-Enumeration fest.
+4. Wenden Sie das <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut auf die Klasse an, und legen Sie dieses Attribut auf den Wert **None** der- <xref:System.Runtime.InteropServices.ClassInterfaceType> Enumeration fest.
 
 5. Wenn Sie diese Klasse für prozessübergreifende Clients verfügbar machen möchten, müssen Sie möglicherweise auch die folgenden Schritte ausführen:
 
@@ -74,7 +74,7 @@ ms.locfileid: "71255325"
 
    - Legen Sie die Eigenschaft **Für COM-Interop registrieren** im Projekt fest, in dem Sie die Schnittstelle definieren. Diese Eigenschaft ist nur erforderlich, wenn Sie es Clients ermöglichen möchten, eine frühe Bindung zum Abrufen des VSTO-Add-Ins zu verwenden.
 
-   Das folgende Codebeispiel veranschaulicht eine `AddInUtilities` -Klasse mit einer `ImportData` -Methode, die durch andere Lösungen aufgerufen werden kann. Um diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzuzeigen, finden [Sie weitere Informationen unter Exemplarische Vorgehensweise: Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)aufzurufen.
+   Das folgende Codebeispiel veranschaulicht eine `AddInUtilities` -Klasse mit einer `ImportData` -Methode, die durch andere Lösungen aufgerufen werden kann. Wenn Sie diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzeigen möchten, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
@@ -82,9 +82,9 @@ ms.locfileid: "71255325"
 ### <a name="expose-classes-to-vba"></a>Verfügbar machen von Klassen für VBA
  Wenn Sie die oben aufgeführten Schritte ausführen, kann der VBA-Code nur die Methoden aufrufen, die Sie in der Schnittstelle deklarieren. Der VBA-Code kann keine anderen Methoden in Ihrer Klasse aufrufen, einschließlich der Methoden, die Ihre Klasse aus Basisklassen wie <xref:System.Object>abruft.
 
- Alternativ können Sie die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle verfügbar machen <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> , indem Sie das-Attribut auf den AutoDispatch- <xref:System.Runtime.InteropServices.ClassInterfaceType> oder den AutoDual-Wert der-Enumeration festlegen. Wenn Sie die-Schnittstelle verfügbar machen, müssen Sie die Methoden nicht in einer separaten Schnittstelle deklarieren. Der VBA-Code kann jedoch öffentliche und nicht statische Methoden in Ihrer Klasse aufrufen, einschließlich der Methoden, die aus Basisklassen wie <xref:System.Object>abgerufen wurden. Zudem können prozessexterne Clients, die die frühe Bindung verwenden, Ihre Klasse nicht aufrufen.
+ Alternativ können Sie die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle verfügbar machen, indem Sie das- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> Attribut auf den AutoDispatch-oder den AutoDual-Wert der- <xref:System.Runtime.InteropServices.ClassInterfaceType> Enumeration festlegen. Wenn Sie die-Schnittstelle verfügbar machen, müssen Sie die Methoden nicht in einer separaten Schnittstelle deklarieren. Der VBA-Code kann jedoch öffentliche und nicht statische Methoden in Ihrer Klasse aufrufen, einschließlich der Methoden, die aus Basisklassen wie <xref:System.Object>abgerufen wurden. Zudem können prozessexterne Clients, die die frühe Bindung verwenden, Ihre Klasse nicht aufrufen.
 
-### <a name="outofproc"></a>Verfügbar machen von Klassen für prozessübergreifende Clients
+### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> Verfügbar machen von Klassen für prozessübergreifende Clients
  Wenn Sie eine Klasse in Ihrem VSTO-Add-In für prozessexterne Clients verfügbar machen möchten, sollten Sie die Klasse aus <xref:System.Runtime.InteropServices.StandardOleMarshalObject> ableiten, um sicherzustellen, dass prozessexterne Clients Ihr verfügbar gemachtes VSTO-Add-In-Objekt aufrufen können. Ansonsten treten bei Versuchen, eine Instanz Ihres verfügbar gemachten Objekts in einem prozessexternen Client abzurufen, unerwartete Fehler auf.
 
  Dieser Fehler ist darauf zurückzuführen, dass alle Aufrufe des Objektmodells einer Office-Anwendung auf dem Hauptbenutzer Oberflächen-Thread vorgenommen werden müssen, Aufrufe von einem Prozess außerhalb des Prozesses an Ihr Objekt jedoch in einem beliebigen RPC-Thread (Remote Prozedur Aufruf) ankommen. Der COM-Marshaling-Mechanismus in .NET Framework wechselt die Threads nicht. Vielmehr versucht er, den Aufruf für Ihr Objekt auf dem eingehenden RPC-Thread und nicht auf dem Hauptbenutzeroberflächen-Thread zu marshallen. Wenn Ihr Objekt eine Instanz einer Klasse ist, die von <xref:System.Runtime.InteropServices.StandardOleMarshalObject>abstammt, werden eingehende Aufrufe für Ihr Objekt automatisch zum Thread gemarshallt, auf dem das verfügbar gemachte Objekt erstellt wurde, welcher demnach der Hauptbenutzeroberflächen-Thread der Hostanwendung ist.
@@ -92,26 +92,26 @@ ms.locfileid: "71255325"
  Weitere Informationen zum Verwenden von Threads in Office-Projektmappen finden Sie [unter Threading-Unterstützung in Office](../vsto/threading-support-in-office.md).
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Überschreiben der RequestComAddInAutomationService-Methode
- Das folgende Codebeispiel veranschaulicht, wie <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> in der `ThisAddIn` -Klasse in Ihrem VSTO-Add-In überschrieben wird. Im Beispiel wird davon ausgegangen, dass Sie eine Klasse `AddInUtilities` mit dem Namen definiert haben, die Sie für andere Lösungen verfügbar machen möchten. Um diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzuzeigen, finden [Sie weitere Informationen unter Exemplarische Vorgehensweise: Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)aufzurufen.
+ Das folgende Codebeispiel veranschaulicht, wie <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> in der `ThisAddIn` -Klasse in Ihrem VSTO-Add-In überschrieben wird. Im Beispiel wird davon ausgegangen, dass Sie eine Klasse mit dem Namen definiert haben `AddInUtilities` , die Sie für andere Lösungen verfügbar machen möchten. Wenn Sie diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzeigen möchten, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
- Wenn Ihr VSTO-Add-In geladen ist, ruft die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode auf. Die Laufzeit weist das zurückgegebene Objekt der COMAddIn. Object-Eigenschaft eines <xref:Microsoft.Office.Core.COMAddIn> -Objekts zu, das Ihr VSTO-Add-in darstellt. Dieses <xref:Microsoft.Office.Core.COMAddIn> -Objektsd ist für andere Office-Lösungen verfügbar und für Lösungen, die Office automatisieren.
+ Wenn Ihr VSTO-Add-In geladen ist, ruft die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode auf. Die Laufzeit weist das zurückgegebene Objekt der COMAddIn. Object-Eigenschaft eines- <xref:Microsoft.Office.Core.COMAddIn> Objekts zu, das Ihr VSTO-Add-in darstellt. Dieses <xref:Microsoft.Office.Core.COMAddIn> -Objektsd ist für andere Office-Lösungen verfügbar und für Lösungen, die Office automatisieren.
 
 ## <a name="access-objects-from-other-solutions"></a>Zugreifen auf Objekte aus anderen Lösungen
  Befolgen Sie zum Aufrufen des verfügbar gemachten Objekts in Ihrem VSTO-Add-In die folgenden Schritte in der Clientlösung:
 
 1. Rufen Sie das <xref:Microsoft.Office.Core.COMAddIn> -Objekt ab, das für das verfügbar gemachte VSTO-Add-In steht. Clients können mithilfe der `Application.COMAddIns`-Eigenschaft im Objektmodell der Office-Hostanwendung auf alle verfügbaren VSTO-Add-Ins zugreifen.
 
-2. Greifen Sie auf die COMAddIn. Object- <xref:Microsoft.Office.Core.COMAddIn> Eigenschaft des-Objekts zu. Diese Eigenschaft gibt das verfügbar gemachte Objekt aus dem VSTO-Add-In zurück.
+2. Greifen Sie auf die COMAddIn. Object-Eigenschaft des- <xref:Microsoft.Office.Core.COMAddIn> Objekts zu. Diese Eigenschaft gibt das verfügbar gemachte Objekt aus dem VSTO-Add-In zurück.
 
 3. Rufen Sie die Member des verfügbar gemachten Objekts auf.
 
    Die Art und Weise, wie Sie den Rückgabewert der COMAddIn. Object-Eigenschaft verwenden, unterscheidet sich für VBA-Clients und nicht-VBA-Clients. Für prozessexterne Clients ist zusätzlicher Code erforderlich, um eine mögliche Racebedingung zu vermeiden.
 
 ### <a name="access-objects-from-vba-solutions"></a>Zugreifen auf Objekte aus VBA-Lösungen
- Im folgenden Codebeispiel wird veranschaulicht, wie VBA verwendet wird, um eine Methode aufzurufen, die von einem VSTO-Add-in verfügbar gemacht wird. Dieses VBA-Makro ruft eine Methode `ImportData` mit dem Namen auf, die in einem VSTO-Add-in mit dem Namen **ExcelImportData**definiert ist. Um diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzuzeigen, finden [Sie weitere Informationen unter Exemplarische Vorgehensweise: Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)aufzurufen.
+ Im folgenden Codebeispiel wird veranschaulicht, wie VBA verwendet wird, um eine Methode aufzurufen, die von einem VSTO-Add-in verfügbar gemacht wird. Dieses VBA-Makro ruft eine Methode `ImportData` mit dem Namen auf, die in einem VSTO-Add-in mit dem Namen **ExcelImportData**definiert ist. Wenn Sie diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzeigen möchten, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
 ```vb
 Sub CallVSTOMethod()
@@ -140,12 +140,12 @@ ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)add
 utilities.ImportData();
 ```
 
- Wenn Sie in diesem Beispiel versuchen, den Wert der COMAddIn. Object-Eigenschaft in die `AddInUtilities` -Klasse und nicht in die `IAddInUtilities` -Schnittstelle umzuwandeln, löst der Code eine <xref:System.InvalidCastException>aus.
+ Wenn Sie in diesem Beispiel versuchen, den Wert der COMAddIn. Object-Eigenschaft in die- `AddInUtilities` Klasse und nicht in die- `IAddInUtilities` Schnittstelle umzuwandeln, löst der Code eine aus <xref:System.InvalidCastException> .
 
 ## <a name="see-also"></a>Siehe auch
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Exemplarische Vorgehensweise: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterbarkeits Schnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: Symbole und Symboltags | Microsoft-Dokumentation
+title: Symbole und Symbol Tags | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,30 +14,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 625752125d3c68e9f03afd41cd549995fbc3272e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193539"
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole und Symboltags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Debuginformationen zu kompiliertes Programm wird als Symbole, die mithilfe der Debug Interface Access (DIA)-SDK-APIs zugegriffen werden kann, in die Programmdatenbankdatei (PDB) gespeichert. Alle Symbole haben ein [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) und [idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) Eigenschaft. Die `symTag` Eigenschaft gibt die Art des Symbols an, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration. Die `symIndexId` -Eigenschaft ist eine `DWORD` -Wert, der den eindeutigen Bezeichner für jede Instanz eines Symbols enthält.  
+Debuginformationen über ein kompiliertes Programm werden in der Programm Datenbankdatei (. pdb) als Symbole gespeichert, auf die mithilfe der Debug Interface Access (Dia) SDK-APIs zugegriffen werden kann. Alle Symbole verfügen über eine [idiasymmetribol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) -Eigenschaft und eine [idiasymmetribol:: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) -Eigenschaft. Die- `symTag` Eigenschaft gibt die Art des Symbols an, wie durch die Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) definiert. Die- `symIndexId` Eigenschaft ist ein `DWORD` Wert, der den eindeutigen Bezeichner für jede Instanz eines Symbols enthält.  
   
- Symbole verfügen auch über Eigenschaften, die zusätzliche Informationen zu den Symbol sowie Verweise auf andere Symbole, meistens angeben, können eine [idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) oder [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Wenn Sie eine Eigenschaft, die einen Verweis enthält Abfragen, wird der Verweis zurückgegeben, als ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt. Diese Eigenschaften werden immer zusammen mit einer anderen Eigenschaft von dem gleichen Namen und dem Suffix mit "Id", z. B. [idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) und [idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Die Tabellen in [Orte für Symboldateien](../../debugger/debug-interface-access/symbol-locations.md), [lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), und [Hierarchie der Symboltypen Klasse](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) beschreiben Sie die Eigenschaften für jede der verschiedenen Arten von Symbole. Diese Eigenschaften möglicherweise die relevanten Informationen oder Verweise auf andere Symbole. Da die `*Id` Eigenschaften sind einfach numerische Ordinalzahl Bezeichner ihrer zugehörigen Eigenschaften, die sie über weitere Diskussionen ausgelassen werden. Sie sind bezeichnet nur, wenn für die Erläuterung der Parameter erforderlich.  
+ Symbole verfügen auch über Eigenschaften, mit denen zusätzliche Informationen über das Symbol sowie Verweise auf andere Symbole angegeben werden können. Dies ist meistens ein [idiasymmetribol:: get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) oder [idiasymmetribol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Wenn Sie eine Eigenschaft Abfragen, die einen Verweis enthält, wird der Verweis als [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurückgegeben. Solche Eigenschaften werden immer mit einer anderen Eigenschaft mit demselben Namen gekoppelt, aber mit "ID" versehen, z. b. [idiasymmetribol:: get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) und [idiasymmetribol:: get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Die Tabellen in [Symbol Positionen](../../debugger/debug-interface-access/symbol-locations.md), [lexikalische Hierarchie von Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)und [Klassenhierarchie von Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) gliedern die Eigenschaften für die verschiedenen Arten von Symbolen. Diese Eigenschaften können relevante Informationen zu-oder-verweisen auf andere Symbole aufweisen. Da `*Id` es sich bei den Eigenschaften einfach um numerische ordinalbezeichner der zugehörigen Eigenschaften handelt, werden Sie in weiteren Diskussionen ausgelassen. Sie werden nur bei Bedarf für die Parameter Klärung bezeichnet.  
   
- Beim Versuch, die Eigenschaft zuzugreifen, wenn kein Fehler auftritt und die Symbol-Eigenschaft einen Wert zugewiesen wurde, der Eigenschaft "get"-Methode `S_OK`. Der Rückgabewert `S_FALSE` gibt an, dass die Eigenschaft für das aktuelle Symbol ungültig ist.  
+ Wenn Sie versuchen, auf die-Eigenschaft zuzugreifen, wenn kein Fehler auftritt und der Symbol Eigenschaft ein Wert zugewiesen wurde, gibt die "Get"-Methode der Eigenschaft zurück `S_OK` . Der Rückgabewert `S_FALSE` gibt an, dass die Eigenschaft für das aktuelle Symbol nicht gültig ist.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Symbolspeicherorte](../../debugger/debug-interface-access/symbol-locations.md)  
- Beschreibt die verschiedenen Arten von Standorten, die ein Symbol verwenden kann.  
+ Beschreibt die unterschiedlichen Arten von Standorten, die ein Symbol aufweisen kann.  
   
  [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
- Beschreibt die Symboltypen, die lexikalische Hierarchien wie z. B. Dateien, Module und Funktionen bilden.  
+ Beschreibt die Symboltypen, die lexikalische Hierarchien bilden, wie z. b. Dateien, Module und Funktionen.  
   
  [Klassenhierarchie der Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
- Beschreibt die Symboltypen, die auf der anderen Sprachelemente entsprechen, z. B. Klassen, Arrays und Funktion Typen zurückgeben.  
+ Beschreibt die Symboltypen, die unterschiedlichen Sprachelementen, z. b. Klassen, Arrays und Funktions Rückgabe Typen, entsprechen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

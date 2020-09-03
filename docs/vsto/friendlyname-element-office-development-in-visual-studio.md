@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541660"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;FriendlyName- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -38,7 +38,7 @@ ms.locfileid: "85541660"
 
 ## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Das folgende Codebeispiel veranschaulicht das `friendlyName` -Element in einer mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellten Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
@@ -49,7 +49,7 @@ ms.locfileid: "85541660"
 </vstov4:friendlyName>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)

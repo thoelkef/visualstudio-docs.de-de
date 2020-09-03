@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2317fafe410cacfca1c77b669a54669ea6e2224a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153535"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Fehlertyp eines Haltepunkts an.  
+Gibt den Fehlertyp eines Breakpoints an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -61,51 +61,51 @@ public enum enum_BP_ERROR_TYPE { 
   
 ## <a name="members"></a>Member  
  BPET_NONE  
- Gibt keine haltepunktfehler an.  
+ Gibt keinen Breakpoint-Fehler an.  
   
  BPET_TYPE_WARNING  
- Gibt eine Warnung-Stil haltepunktfehler an.  
+ Gibt einen Haltepunkt Fehler im Warnungs Stil an.  
   
  BPET_TYPE_ERROR  
- Gibt Fehler Haltepunkt Error-Format an.  
+ Gibt einen Haltepunkt Fehler im Fehler Stil an.  
   
  BPET_SEV_HIGH  
- Gibt einen mit hohem Schweregrad haltepunktfehler an.  
+ Gibt einen Breakpoint-Fehler mit hohem Schweregrad an.  
   
  BPET_SEV_GENERAL  
- Gibt einen mit mittleren Schweregrad haltepunktfehler an.  
+ Gibt einen Breakpoint-Fehler mit mittlerer Schweregrad an.  
   
  BPET_SEV_LOW  
- Gibt einen haltepunktfehler mit niedriger Schweregrad an.  
+ Gibt einen Haltepunkt Fehler mit niedrigem Schweregrad an.  
   
  BPET_TYPE_MASK  
- Gibt eine Maske-Stil haltepunktfehler an.  
+ Gibt einen Haltepunkt Fehler im Masken Stil an.  
   
  BPET_SEV_MASK  
- Gibt einen haltepunktfehler für Schweregrad-Maske-Style.  
+ Gibt einen Haltepunkt Fehler mit Schweregrad Maske an.  
   
  BPET_GENERAL_WARNING  
- Gibt einen für allgemeine-Warnung-Style-haltepunktfehler.  
+ Gibt einen Haltepunkt Fehler im allgemeinen Warn Stil an.  
   
  BPET_GENERAL_ERROR  
- Gibt eine allgemeine-Error-Format haltepunktfehler an.  
+ Gibt einen Haltepunkt Fehler im allgemeinen Fehler Stil an.  
   
  BPET_ALL  
- Gibt alle Haltepunkttypen Fehler an.  
+ Gibt alle Breakpoint-Fehlertypen an.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte können kombiniert werden, mit einer bitweisen `OR` und wird verwendet, für die `dwType` Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur. Übergeben als Parameter an die [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Werte können mit einem bitweisen kombiniert `OR` und für den `dwType` Member der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur verwendet werden. Wird als Parameter an die [enumerrorbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) -Methode übergeben.  
   
- Eine Haltepunkt-Fehlertyp besteht aus einem Typ und einen Schweregrad aus. Dies bedeutet, dass ein Fehler Haltepunkt niemals nur ein Typ ist (z. B. `BPET_TYPE_ERROR`,) oder einen Schweregrad (z. B. `BPET_SEV_GENERAL`) selbst. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` Geben Sie vordefinierte Werte für allgemeine Warnungs- und Haltepunkte.  
+ Ein breakpointfehlertyp besteht aus einem Typ und einem Schweregrad. Dies bedeutet, dass ein breakpointfehlertyp nie nur ein Typ (z `BPET_TYPE_ERROR` . b.,) oder ein Schweregrad (z `BPET_SEV_GENERAL` . b.) allein ist. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` stellen vordefinierte Werte für Allgemeine Warn-und Fehler Breakpoints bereit.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

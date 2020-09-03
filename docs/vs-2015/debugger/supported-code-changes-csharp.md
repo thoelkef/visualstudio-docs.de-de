@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Codeänderungen (c#) | Microsoft-Dokumentation
+title: Unterstützte Code Änderungen (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823535"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C#)
@@ -47,7 +47,7 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
 - Hinzufügen von `foreach`, `using` oder `lock` zu der aktiven Anweisung.  
   
 ## <a name="unsafe-code"></a>Unsicherer Code  
- Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Bearbeiten und Fortfahren unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden, die enthält die `stackalloc` Operator.  
+ Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Die Funktion „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der sich innerhalb einer Methode mit dem `stackalloc`-Operator befindet.  
   
 ## <a name="exceptions"></a>Ausnahmen  
  „Bearbeiten und Fortfahren“ unterstützt Änderungen an `catch`- und `finally`-Blöcken, und zwar mit der Ausnahme, dass das Hinzufügen eines `catch`- oder `finally`-Blocks um die aktive Anweisung herum nicht zulässig ist.  
@@ -59,7 +59,7 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
   
   - Erfassen einer zuvor noch nicht erfassten Variablen.  
 
-  - Ändern des Typs des Abfrageausdrucks (Wählen Sie z. B. eine = > "Neu" auswählen {A = eine};)  
+  - Ändern des Typs des Abfrage Ausdrucks (z. b. Select a => Select New {a = a};)  
 
   - Entfernen einer `where`-Klausel, die eine aktive Anweisung enthält.  
 
@@ -75,16 +75,16 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
   
 - Debuggen einer Dr. Watson-Sicherungskopie.  
   
-- Bearbeiten von Code nach einem Ausnahmefehler, wenn die "**Aufrufliste für Ausnahmefehler entladen**" nicht ausgewählt ist.  
+- Bearbeiten von Code nach einer nicht behandelten Ausnahme, wenn die Option "**aufrufsstapel bei nicht behandelten Ausnahmen**entladen" nicht ausgewählt ist.  
   
 - Debuggen einer eingebetteten Laufzeitanwendung.  
   
-- Debuggen einer Anwendung, die **Anfügen an** anstatt die Anwendung dazu **starten** aus der **Debuggen** Menü.  
+- Debuggen einer Anwendung, die an angefügt ist, anstatt die Anwendung durch Auswahl von starten im Menü **Debuggen** **zu** **starten** .  
   
 - Debuggen von optimiertem Code.  
   
 - Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
   
-## <a name="see-also"></a>Siehe auch  
- [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Vorgehensweise: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Bearbeiten und Fortfahren (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [How to: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

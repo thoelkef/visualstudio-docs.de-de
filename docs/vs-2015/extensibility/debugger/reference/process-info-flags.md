@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205054"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt, oder gibt die Eigenschaften eines Prozesses an.  
+Beschreibt die Eigenschaften eines Prozesses oder legt diese fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,29 +47,29 @@ enum enum_PROCESS_INFO_FLAGS { 
   
 ## <a name="members"></a>Member  
  PIFLAG_SYSTEM_PROCESS  
- Gibt an, dass der Prozess ein Systemprozess ist.  
+ Gibt an, dass der Prozess ein System Prozess ist.  
   
  PIFLAG_DEBUGGER_ATTACHED  
- Gibt an, dass der Prozess von einem Debugger debuggt wird. Es ist möglicherweise eine [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Debugger, oder es möglicherweise einige andere Debugger, z. B. WinDbg.  
+ Gibt an, dass der Prozess von einem Debugger debuggt wird. Möglicherweise handelt es sich [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] um einen Debugger, oder es handelt sich um einen anderen Debugger, z. b. WinDbg.  
   
  PIFLAG_PROCESS_STOPPED  
- Gibt an, dass der Prozess beendet wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. Verfügbar in [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] und höher.  
+ Gibt an, dass der Prozess beendet wurde. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ebenfalls angegeben ist. Verfügbar in [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] und höher.  
   
  PIFLAG_PROCESS_RUNNING  
- Gibt an, dass der Prozess ausgeführt wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. Verfügbar in [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] und höher.  
+ Gibt an, dass der Prozess ausgeführt wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ebenfalls angegeben ist. Verfügbar in [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] und höher.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `Flags` Mitglied der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird für den `Flags` Member der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) -Struktur verwendet.  
   
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

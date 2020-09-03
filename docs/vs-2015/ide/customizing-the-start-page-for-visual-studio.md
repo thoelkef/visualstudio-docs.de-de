@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665852"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
@@ -31,11 +31,11 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 
 ## <a name="customizing-the-default-start-page"></a>Anpassen der Standardstartseite
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 2. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
-3. Wählen Sie in der Liste **Beim Start** das gewünschte Element für die Anpassung aus.
+3. Wählen Sie in der Liste** Beim Start** das gewünschte Element für die Anpassung aus.
 
 ## <a name="show-a-custom-start-page"></a>Anzeigen einer benutzerdefinierten Startseite
 
@@ -52,7 +52,7 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 
          Weitere Informationen finden Sie unter [Erstellen einer eigenen Startseite](../misc/creating-your-own-start-page.md).
 
-2. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+2. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 3. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 
@@ -61,5 +61,5 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 > [!NOTE]
 > Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Erstellen einer eigenen Startseite](../misc/creating-your-own-start-page.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_imagealign | Microsoft-Dokumentation'
+title: 'IDiaAddressMap:: get_imageAlign | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f3e7a326c78207976fb8493905b412df65e0c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178238"
 ---
-# <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
+# <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Ausrichtung für das aktuelle ab.  
+Ruft die aktuelle Bild Ausrichtung ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,14 +35,14 @@ HRESULT get_imageAlign ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Ausrichtungswert der Images aus der ausführbaren Datei zurück.  
+ vorgenommen Gibt den Bild Ausrichtungs Wert aus der ausführbaren Datei zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Images sind auf bestimmten Arbeitsspeichergrenzen abhängig, wie das Bild geladen, und erstellt wurde, ausgerichtet. Die Ausrichtung ist in der Regel auf 1, 2, 4, 8, 16, 32 oder 64-Byte-Begrenzungen. Die Ausrichtung des kann festgelegt werden, durch einen Aufruf der [idiaaddressmap:: Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Abhängig von der Art und Weise, wie das Image geladen und erstellt wurde, werden Bilder an bestimmten Speichergrenzen ausgerichtet. Die Ausrichtung erfolgt in der Regel auf 1, 2, 4, 8, 16, 32 oder 64 Byte-Begrenzungen. Die Bild Ausrichtung kann mit einem Aufruf der [IDiaAddressMap::p ut_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) -Methode festgelegt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)

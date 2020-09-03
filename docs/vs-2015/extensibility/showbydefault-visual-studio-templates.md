@@ -14,16 +14,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184130"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn `false`, gibt an, dass die Vorlage nur angezeigt werden, wird unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
+`false`Gibt an, dass die Vorlage nur unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)angezeigt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -55,8 +55,8 @@ Wenn `false`, gibt an, dass die Vorlage nur angezeigt werden, wird unter der ang
   
  Der Text muss entweder `true` oder `false` sein. Gibt bei TRUE an, dass die Vorlage für alle Projekttypen angezeigt wird. Bei FALS wird die Vorlage nur unter der angegebenen `TemplateGroupID` angezeigt.  
   
-## <a name="remarks"></a>Hinweise  
- `ShowByDefault` ist ein optionales Element. Der Standardwert ist `true`.  
+## <a name="remarks"></a>Bemerkungen  
+ `ShowByDefault` ist ein optionales Element. Standardwert: `true`.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Vorlage veranschaulicht.  
@@ -86,7 +86,7 @@ Wenn `false`, gibt an, dass die Vorlage nur angezeigt werden, wird unter der ang
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md)

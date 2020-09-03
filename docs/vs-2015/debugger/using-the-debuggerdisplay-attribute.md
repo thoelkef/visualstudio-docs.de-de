@@ -1,5 +1,5 @@
 ---
-title: Verwenden des DebuggerDisplay-Attributs | Microsoft-Dokumentation
+title: Verwenden des Attributs "enbuggerdisplay" | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683938"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
@@ -41,7 +41,7 @@ Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von O
   
  In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.  
   
-|Attribut|Ausgabe (angezeigt in der Spalte **Wert** )|  
+|Attribut|Ausgabe wird in der Spalte **Wert** angezeigt)|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Angewendet auf einen Typ mit den Feldern `x` und `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Die Parametersyntax kann je nach Sprache unterschiedlich sein. Achten Sie deshalb besonders auf die Syntax.|`String value is [5, 6, 6]`|  
@@ -179,5 +179,5 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md) [verbessern des Debuggens mit den Debuggeranzeigeattributen](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md) [verbessern des Debuggens mit dem Debugger](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

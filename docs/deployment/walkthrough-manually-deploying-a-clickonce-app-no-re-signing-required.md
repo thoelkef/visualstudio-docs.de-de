@@ -1,5 +1,5 @@
 ---
-title: Manuelles Bereitstellen von ClickOnce beibehalten branding-apps
+title: Manuelles Bereitstellen von ClickOnce-apps, die Branding
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,87 +23,87 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263422"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält
-Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird der Kunde musste früher das Bereitstellungsmanifest aktualisieren und erneut signieren. Weiterhin ist die bevorzugte Methode in den meisten Fällen .NET Framework 3.5 ermöglicht Ihnen die Erstellung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen, die von Kunden bereitgestellt werden können, ohne dass ein neues Bereitstellungsmanifest erneut zu generieren. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die keine erneute Signierung erfordert und Brandinginformationen beibehält
+Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellen und Sie dann einem Kunden zum Veröffentlichen und Bereitstellen zuweisen, musste der Kunde das Bereitstellungs Manifest traditionell aktualisieren und neu signieren. Obwohl dies in den meisten Fällen immer noch die bevorzugte Methode ist, können Sie mit dem .NET Framework 3,5 bereit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Stellungen erstellen, die von Kunden bereitgestellt werden können, ohne ein neues Bereitstellungs Manifest generieren zu müssen. Weitere Informationen finden Sie unter Bereitstellen [von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
- Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird die Anwendung des Kunden Brandinginformationen verwenden oder Ihr branding beibehalten kann. Z. B., wenn die Anwendung eine einzelne geschützte Anwendung ist, möchten Sie Ihr branding beibehalten. Wenn die Anwendung hoch für jeden Kunden angepasst wird, empfiehlt es sich mit branding des Kunden. .NET Framework 3.5 können Sie Ihr branding beibehalten, Herausgeberinformationen und Security-Signatur, wenn Sie eine bereitzustellende Anwendung für eine Organisation geben. Weitere Informationen finden Sie unter [erstellen, ClickOnce-Anwendungen für andere bereitstellen](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
+ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellen und Sie dann einem Kunden zur Veröffentlichung und Bereitstellung zur Verfügung stellen, kann die Anwendung das Branding des Kunden nutzen oder Ihr Branding beibehalten. Wenn es sich bei der Anwendung beispielsweise um eine einzelne proprietäre Anwendung handelt, können Sie Ihr Branding beibehalten. Wenn die Anwendung für jeden Kunden hochgradig angepasst wird, können Sie das Branding des Kunden verwenden. Mit dem .NET Framework 3,5 können Sie Branding, Verleger Informationen und Sicherheits Signaturen beibehalten, wenn Sie eine Anwendung an eine bereit zustellende Organisation übergeben. Weitere Informationen finden Sie unter [Erstellen von ClickOnce-Anwendungen für die](../deployment/creating-clickonce-applications-for-others-to-deploy.md)Bereitstellung durch andere Benutzer.
 
 > [!NOTE]
-> In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell entweder das Befehlszeilentool *Mage.exe* oder dem grafischen Tool *MageUI.exe*. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> In dieser exemplarischen Vorgehensweise erstellen Sie bereit Stellungen manuell, indem Sie entweder das Befehlszeilen Tool *Mage.exe* oder das grafische Tool *MageUI.exe*verwenden. Weitere Informationen zu manuellen bereit Stellungen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Zum Ausführen der Schritte in dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
-- Eine Windows Forms-Anwendung, die Sie bereitstellen möchten. Diese Anwendung wird als bezeichnet werden *WindowsFormsApp1*.
+- Eine Windows Forms Anwendung, die Sie bereitstellen können. Diese Anwendung wird als *WindowsFormsApp1*bezeichnet.
 
 - Visual Studio oder das Windows SDK.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Bereitstellen eine ClickOnce-Anwendung mit mehreren Bereitstellung und mit "Mage.exe" branding-Unterstützung
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>So stellen Sie eine ClickOnce-Anwendung mit mehreren Bereitstellungs-und Brandingunterstützung mithilfe Mage.exe bereit
 
-1. Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und ändern Sie in das Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.
+1. Öffnen Sie eine Visual Studio-Eingabeaufforderung oder eine [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Eingabeaufforderung, und wechseln Sie in das Verzeichnis, in dem Sie die Dateien speichern möchten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
-2. Erstellen Sie ein Verzeichnis namens nach der aktuellen Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.
+2. Erstellen Sie ein Verzeichnis mit dem Namen nach der aktuellen Version der Bereitstellung. Wenn Sie die Anwendung zum ersten Mal bereitstellen, werden Sie wahrscheinlich **1.0.0.0**auswählen.
 
    > [!NOTE]
-   > Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
+   > Die Version der Bereitstellung kann sich von der Version Ihrer Anwendungs Dateien unterscheiden.
 
-3. Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.
+3. Erstellen Sie ein Unterverzeichnis mit dem Namen **bin** , und kopieren Sie alle Ihre Anwendungs Dateien, einschließlich ausführbarer Dateien, Assemblys, Ressourcen und Datendateien.
 
-4. Das Anwendungsmanifest mit einem Aufruf von Mage.exe zu generieren.
+4. Generieren Sie das Anwendungs Manifest mit einem Mage.exe aufzurufenden.
 
    ```cmd
    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"
    ```
 
-5. Melden Sie das Anwendungsmanifest mit das digitale Zertifikat.
+5. Signieren Sie das Anwendungs Manifest mit Ihrem digitalen Zertifikat.
 
    ```cmd
    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx
    ```
 
-6. Generieren Sie das Bereitstellungsmanifest mit einem Aufruf von *Mage.exe*. In der Standardeinstellung *Mage.exe* kennzeichnen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung als installierte Anwendung, damit die It-sowohl online ausgeführt werden kann und offline. Verwenden Sie die Anwendung zur Verfügung stellen möchten nur, wenn der Benutzer online ist, die `-i` Argument mit einem Wert von `f`. Da diese Anwendung mehrere-Bereitstellungsfeature des nutzen wird, schließen Sie die `-providerUrl` Argument *Mage.exe*. (In Versionen von .NET Framework vor Version 3.5, ausgenommen `-providerUrl` für eine offline-Anwendung zu einem Fehler führt.)
+6. Generieren Sie das Bereitstellungs Manifest mit einem *Mage.exe*aufzurufenden. Standardmäßig wird *Mage.exe* die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung vonMage.exeals installierte Anwendung markiert, sodass Sie online und offline ausgeführt werden kann. Um die Anwendung nur verfügbar zu machen, wenn der Benutzer online ist, verwenden Sie das- `-i` Argument mit dem Wert `f` . Da diese Anwendung das Feature für mehrere bereit Stellungen nutzt, schließen Sie das `-providerUrl` Argument in *Mage.exe*aus. (In Versionen der .NET Framework vor Version 3,5 führt der Ausschluss `-providerUrl` für eine Offline Anwendung zu einem Fehler.)
 
    ```cmd
    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest
    ```
 
-7. Melden Sie sich das Bereitstellungsmanifest nicht.
+7. Signieren Sie das Bereitstellungs Manifest nicht.
 
-8. Geben Sie alle Dateien an dem Kunden, der die Anwendung auf seinem Netzwerk bereitgestellt wird.
+8. Stellen Sie alle Dateien für den Kunden bereit, der die Anwendung in seinem Netzwerk bereitstellen wird.
 
-9. An diesem Punkt muss der Kunde das Bereitstellungsmanifest mit seinen eigenen selbst generiertes Zertifikat signieren. Z. B. wenn der Kunde für ein Unternehmen namens Adventure Works geeignet ist, er kann generiert ein selbstsigniertes Zertifikat verwenden die *MakeCert.exe* Tool. Verwenden Sie als Nächstes die *Pvk2pfx.exe* Tool, um die erstellten Dateien kombinieren *MakeCert.exe* in eine PFX-Datei, die übergeben werden kann *Mage.exe*.
+9. An diesem Punkt muss der Kunde das Bereitstellungs Manifest mit seinem eigenen selbst generierten Zertifikat signieren. Wenn der Kunde beispielsweise für ein Unternehmen mit dem Namen Adventure Works arbeitet, kann er mithilfe des *MakeCert.exe* Tools ein selbst signiertes Zertifikat generieren. Verwenden Sie als nächstes das *Pvk2pfx.exe* Tool, um die von *MakeCert.exe* erstellten Dateien in einer PFX-Datei zu kombinieren, die an *Mage.exe*übermittelt werden kann.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-10. Der Kunde verwendet anschließend dieses Zertifikat zum Signieren des Bereitstellungsmanifests.
+10. Der Kunde verwendet dieses Zertifikat, um das Bereitstellungs Manifest zu signieren.
 
     ```cmd
     mage -Sign WindowsFormsApp1.application -CertFile MyCert.pfx
     ```
 
-11. Der Kunde stellt die Anwendung für ihre Benutzer bereit.
+11. Der Kunde stellt die Anwendung für Ihre Benutzer bereit.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Bereitstellen eine ClickOnce-Anwendung mit mehreren Bereitstellung und branding-Unterstützung mit MageUI.exe
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>So stellen Sie eine ClickOnce-Anwendung mit mehreren Bereitstellungs-und Brandingunterstützung mithilfe MageUI.exe bereit
 
-1. Öffnen Sie Visual Studio-Eingabeaufforderung oder ein [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] -Eingabeaufforderung, und navigieren Sie zu dem Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dateien.
+1. Öffnen Sie eine Visual Studio-Eingabeaufforderung oder eine [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] Eingabeaufforderung, und navigieren Sie zu dem Verzeichnis, in dem Sie die Dateien speichern möchten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
-2. Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.
+2. Erstellen Sie ein Unterverzeichnis mit dem Namen **bin** , und kopieren Sie alle Ihre Anwendungs Dateien, einschließlich ausführbarer Dateien, Assemblys, Ressourcen und Datendateien.
 
-3. Erstellen Sie ein Unterverzeichnis für die aktuelle Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.
+3. Erstellen Sie ein Unterverzeichnis, das nach der aktuellen Version der Bereitstellung benannt wird. Wenn Sie die Anwendung zum ersten Mal bereitstellen, werden Sie wahrscheinlich **1.0.0.0**auswählen.
 
    > [!NOTE]
-   > Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
+   > Die Version der Bereitstellung kann sich von der Version Ihrer Anwendungs Dateien unterscheiden.
 
-4. Verschieben der \\ **Bin** Verzeichnis in das Verzeichnis, das Sie in Schritt 2 erstellt haben.
+4. Verschieben Sie das Verzeichnis " \\ **bin** " in das Verzeichnis, das Sie in Schritt 2 erstellt haben.
 
 5. Starten Sie das grafische Tool *MageUI.exe*.
 
@@ -111,50 +111,50 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
    MageUI.exe
    ```
 
-6. Erstellen Sie ein neues Anwendungsmanifest dazu **Datei**, **neu**, **Anwendungsmanifest** aus dem Menü.
+6. Erstellen Sie ein neues Anwendungs Manifest, indem Sie im Menü **Datei**, **neu**und **Anwendungs Manifest** auswählen.
 
-7. Auf der standardmäßigen **Namen** Registerkarte, geben Sie Name und Version dieser Bereitstellung. Geben Sie auch einen Wert für **Verleger**, bei der Bereitstellung als Ordnername für verknüpfungs-Link mit der Anwendung im Startmenü verwendet werden wird.
+7. Geben Sie auf der Registerkarte Standard **Name** den Namen und die Versionsnummer dieser Bereitstellung ein. Geben Sie außerdem einen Wert für **Publisher**an, der als Ordnername für den Verknüpfungs Link der Anwendung im Startmenü bei der Bereitstellung verwendet wird.
 
-8. Wählen Sie die **Anwendungsoptionen** Registerkarte, und klicken Sie auf **Anwendungsmanifest für Vertrauensinformationen verwenden**. Dadurch werden von Drittanbietern für dieses branding [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
+8. Wählen Sie die Registerkarte **Anwendungs Optionen** aus, und klicken Sie auf **Anwendungs Manifest für Vertrauens Informationen verwenden**. Dadurch wird das Branding von Drittanbietern für diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung aktiviert.
 
-9. Wählen Sie die **Dateien** Registerkarte, und klicken Sie auf die **Durchsuchen** neben der **Anwendungsverzeichnis** Textfeld.
+9. Wählen Sie die Registerkarte **Dateien** aus, und klicken Sie auf die Schaltfläche **Durchsuchen** neben dem Textfeld **Anwendungsverzeichnis** .
 
-10. Wählen Sie das Verzeichnis, das Ihre Anwendungsdateien enthält, die Sie in Schritt 2 erstellt haben, und klicken Sie auf **OK** auf im Dialogfeld für die Auswahl des Ordners.
+10. Wählen Sie das Verzeichnis mit den Anwendungs Dateien aus, die Sie in Schritt 2 erstellt haben, und klicken Sie im Dialogfeld Ordner Auswahl auf **OK** .
 
-11. Klicken Sie auf die **Auffüllen** , um alle Anwendungsdateien in die Liste der Dateien aufzunehmen. Wenn Ihre Anwendung mehr als eine ausführbare Datei enthält, markieren Sie die ausführbare Hauptdatei für diese Bereitstellung als startanwendung dazu **Einstiegspunkt** aus der **Dateityp** Dropdown-Liste. (Wenn Ihre Anwendung nur eine ausführbare Datei enthält *MageUI.exe* kennzeichnet diese für Sie.)
+11. Klicken Sie **auf die Schalt** Fläche auffüllen, um alle Anwendungs Dateien der Datei Liste hinzuzufügen. Wenn die Anwendung mehr als eine ausführbare Datei enthält, markieren Sie die ausführbare Hauptdatei für diese Bereitstellung als Start Anwendung, indem Sie in der Dropdown Liste **Dateityp** den **Eintrag Einstiegspunkt** auswählen. (Wenn Ihre Anwendung nur eine ausführbare Datei enthält, wird Sie von *MageUI.exe* für Sie markiert.)
 
-12. Wählen Sie die **erforderlichen Berechtigungen** Registerkarte, und wählen Sie die Ebene der Vertrauenswürdigkeit, die Sie benötigen Ihre Anwendung aus, um zu bestätigen. Der Standardwert ist **volle Vertrauenswürdigkeit**, die für die meisten Anwendungen geeignet sein.
+12. Wählen Sie die Registerkarte **erforderliche Berechtigungen** aus, und wählen Sie die Vertrauens Ebene aus, die Ihre Anwendung für die Bestätigung benötigt. Der Standardwert ist " **volle Vertrauens**Würdigkeit", der für die meisten Anwendungen geeignet ist.
 
-13. Wählen Sie **Datei**, **speichern** aus dem Menü, und speichern Sie das Anwendungsmanifest. Sie werden aufgefordert, das Anwendungsmanifest zu signieren, wenn Sie sie speichern.
+13. Wählen Sie im Menü **Datei**, **Speichern** aus, und speichern Sie das Anwendungs Manifest. Sie werden aufgefordert, das Anwendungs Manifest zu signieren, wenn Sie es speichern.
 
-14. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **als Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten ( **...** ) Schaltfläche.
+14. Wenn Sie über ein Zertifikat verfügen, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **als Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem mithilfe der Schaltfläche mit den Auslassungs Punkten (**...**) aus.
 
-     - oder - 
+     - oder -
 
-     Wenn das Zertifikat im Zertifikatspeicher gespeichert wird, der von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option mit gespeicherten Zertifikat signieren**, und wählen Sie das Zertifikat aus der Liste aus.
+     Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, auf den von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option gespeichertes Zertifikat signieren**aus, und wählen Sie das Zertifikat aus der Liste aus.
 
-15. Wählen Sie **Datei**, **neu**, **Bereitstellungsmanifest** aus, um das Bereitstellungsmanifest zu erstellen, und klicken Sie dann auf die **Namen** Registerkarte, geben Sie einen Name und Versionsnummer (**1.0.0.0** in diesem Beispiel).
+15. Wählen Sie im Menü **Datei**, **neu**und **Bereitstellungs Manifest** aus, um das Bereitstellungs Manifest zu erstellen, und geben Sie dann auf der Registerkarte **Name** einen Namen und eine Versionsnummer ein (in diesem Beispiel**1.0.0.0** ).
 
-16. Wechseln Sie zu der **aktualisieren** Registerkarte, und geben Sie, wie oft die Anwendung aktualisiert werden sollen. Wenn Ihre Anwendung verwendet die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Deployment API nach Updates suchen, deaktivieren Sie das Kontrollkästchen **diese Anwendung soll nach Updates suchen**.
+16. Wechseln Sie zur Registerkarte **Update** , und geben Sie an, wie oft diese Anwendung aktualisiert werden soll. Wenn Ihre Anwendung die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs-API verwendet, um nach Updates zu suchen, deaktivieren Sie das Kontrollkästchen **diese Anwendung sollte nach Updates suchen**.
 
-17. Wechseln Sie zu der **Anwendungsverweis** Registerkarte. Sie können alle Werte auf dieser Registerkarte vorab auffüllen, indem Sie auf die **Manifest auswählen** Schaltfläche, und wählen das Anwendungsmanifest ist Sie in den vorherigen Schritten erstellt.
+17. Wechseln Sie zur Registerkarte **Anwendungs Verweis** . Sie können alle Werte auf dieser Registerkarte vorab auffüllen, indem Sie auf die Schaltfläche **Manifest auswählen** klicken und das Anwendungs Manifest auswählen, das Sie in den vorherigen Schritten erstellt haben.
 
-18. Wählen Sie **speichern** und das Bereitstellungsmanifest auf Datenträger speichern. Sie werden aufgefordert, das Anwendungsmanifest zu signieren, wenn Sie sie speichern. Klicken Sie auf **Abbrechen** Speichern des Manifests, ohne es zu signieren.
+18. Wählen Sie **Speichern** , und speichern Sie das Bereitstellungs Manifest auf dem Datenträger Sie werden aufgefordert, das Anwendungs Manifest zu signieren, wenn Sie es speichern. Klicken Sie auf **Abbrechen** , um das Manifest ohne Signierung zu speichern.
 
-19. Geben Sie alle Dateien der Anwendung können Sie an, an dem Kunden.
+19. Stellen Sie dem Kunden alle Anwendungs Dateien bereit.
 
-20. An diesem Punkt muss der Kunde das Bereitstellungsmanifest mit seinen eigenen selbst generiertes Zertifikat signieren. Z. B. wenn der Kunde für ein Unternehmen namens Adventure Works geeignet ist, er kann generiert ein selbstsigniertes Zertifikat verwenden die *MakeCert.exe* Tool. Verwenden Sie als Nächstes die *Pvk2pfx.exe* Tool, um die erstellten Dateien kombinieren *MakeCert.exe* in eine PFX-Datei, die übergeben werden kann *MageUI.exe*.
+20. An diesem Punkt muss der Kunde das Bereitstellungs Manifest mit seinem eigenen selbst generierten Zertifikat signieren. Wenn der Kunde beispielsweise für ein Unternehmen mit dem Namen Adventure Works arbeitet, kann er mithilfe des *MakeCert.exe* Tools ein selbst signiertes Zertifikat generieren. Verwenden Sie als nächstes das *Pvk2pfx.exe* Tool, um die von *MakeCert.exe* erstellten Dateien in einer PFX-Datei zu kombinieren, die an *MageUI.exe*übermittelt werden kann.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-21. Mit dem Zertifikat generiert wird, meldet der Kunde das Bereitstellungsmanifest jetzt durch Öffnen des Bereitstellungsmanifests in *MageUI.exe*, und klicken Sie dann speichern. Wenn das Dialogfeld "Signatur" angezeigt wird, wählt der Kunde **als Zertifikatsdatei signieren** aus, und wählt die PFX-Datei, die er auf dem Datenträger gespeichert wurde.
+21. Nachdem das Zertifikat generiert wurde, signiert der Kunde das Bereitstellungs Manifest, indem er das Bereitstellungs Manifest in *MageUI.exe*öffnet und dann speichert. Wenn das Dialogfeld "Signierung" angezeigt wird, wählt der Kunde die Option " **als Zertifikat Datei anmelden** " aus und wählt die PFX-Datei aus, die er auf dem Datenträger
 
-22. Der Kunde stellt die Anwendung für ihre Benutzer bereit.
+22. Der Kunde stellt die Anwendung für Ihre Benutzer bereit.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
-- [MakeCert](/windows/desktop/SecCrypto/makecert)
+- [Makecert](/windows/desktop/SecCrypto/makecert)

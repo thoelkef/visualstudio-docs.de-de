@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ed637943d7a849357338593ffc684e4f45c09a30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662437"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Dialogfeld "Optionen" (Visual Studio)
@@ -45,5 +45,5 @@ Mit dem Dialogfeld **Optionen** können Sie die integrierte Entwicklungsumgebung
 ### <a name="show-all-settings"></a>Alle Einstellungen anzeigen
  Das Aktivieren oder Deaktivieren von **Alle Einstellungen anzeigen** wendet alle von Ihnen vorgenommenen Änderungen im Dialogfeld **Optionen** an, auch wenn Sie noch nicht auf **OK** geklickt haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Editors](../../ide/customizing-the-editor.md)

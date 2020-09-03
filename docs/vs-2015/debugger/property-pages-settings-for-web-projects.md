@@ -1,5 +1,5 @@
 ---
-title: Einstellungen für Webprojekte von Eigenschaftenseiten | Microsoft-Dokumentation
+title: Eigenschaften Seiteneinstellungen für Webprojekte | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3cb7cd3f8c3678d37feb2267f68ab5d2b3d970e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150854"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Einstellungen von Eigenschaftenseiten für Webprojekte
@@ -54,5 +54,5 @@ Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration 
 |**SQL Server debuggen**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
 |**Silverlight-Debuggen**|Ermöglicht das Debuggen von Silverlight-Komponenten.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

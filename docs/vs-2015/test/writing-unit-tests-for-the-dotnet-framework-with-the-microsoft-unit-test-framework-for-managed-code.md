@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657071"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code
@@ -20,7 +20,7 @@ ms.locfileid: "72657071"
 
 In diesem Abschnitt Exemplarische Vorgehensweise [: Erstellen und Ausführen von Komponenten Tests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
- [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
+ [Schnellstart: Test gestützte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
 
  [Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
@@ -32,4 +32,4 @@ In diesem Abschnitt Exemplarische Vorgehensweise [: Erstellen und Ausführen von
 
  [Vorgehensweise: Ausrichten auf eine frühere Version von .NET](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 
- [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md)
+ [Beispiel Projekt zum Erstellen von Komponenten Tests](../test/sample-project-for-creating-unit-tests.md)

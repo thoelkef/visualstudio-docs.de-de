@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253709"
 ---
 # <a name="document-host-item"></a>Dokument Host Element
@@ -40,14 +40,14 @@ ms.locfileid: "71253709"
 ### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Einschränkungen des Dokument Host Elements in Projekten auf Dokument Ebene
  Ein Projekt auf Dokumentebene kann nur ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement (die `ThisDocument` -Klasse) enthalten. Sie können dem Projekt zur Entwurfszeit keine neuen <xref:Microsoft.Office.Tools.Word.Document> -Hostelemente hinzufügen, und Sie können zur Laufzeit von einer Anpassung auf Dokumentebene keine neuen <xref:Microsoft.Office.Tools.Word.Document> -Hostelemente erstellen.
 
- Wenn Sie zur Laufzeit ein neues Word-Dokument erstellen, ist es vom Typ <xref:Microsoft.Office.Interop.Word.Document>. Da das Arbeitsblatt kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Dokumenten zur Laufzeit finden [Sie unter Gewusst wie: Programm gesteuertes Erstellen neuer](../vsto/how-to-programmatically-create-new-documents.md)Dokumente.
+ Wenn Sie zur Laufzeit ein neues Word-Dokument erstellen, ist es vom Typ <xref:Microsoft.Office.Interop.Word.Document>. Da es kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Dokumenten zur Laufzeit finden Sie unter Gewusst [wie: Programm gesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md).
 
 ## <a name="understand-document-host-items-in-application-level-projects"></a>Grundlegendes zu Dokument Host Elementen in Projekten auf Anwendungsebene
  In VSTO-Add-In-Projekten können Sie für jedes Dokument, das in Word geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement erstellen. Sie können das <xref:Microsoft.Office.Tools.Word.Document> -Hostelement verwenden, um dem zugeordneten Dokument Steuerelemente hinzuzufügen, oder um Ereignisse zu behandeln, die für <xref:Microsoft.Office.Interop.Word.Document> -Objekte nicht verfügbar sind.
 
  Verwenden Sie zum Generieren eines <xref:Microsoft.Office.Tools.Word.Document>-Hostelements die `GetVstoObject`-Methode. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)

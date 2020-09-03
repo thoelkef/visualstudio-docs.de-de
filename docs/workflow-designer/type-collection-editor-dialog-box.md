@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593056"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
@@ -25,9 +25,9 @@ Weitere Informationen finden Sie unter [Data Contract Known Types](/dotnet/frame
 
 In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Typsammlung** beschrieben.
 
-|Benutzeroberflächenelement|Beschreibung|
+|Benutzeroberflächenelement|BESCHREIBUNG|
 |-|-----------------|
-|**Typliste**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
+|**Type List**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität
 

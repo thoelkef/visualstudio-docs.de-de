@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254440"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formular Bereichen
@@ -28,7 +28,7 @@ ms.locfileid: "71254440"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Hinzufügen benutzerdefinierter Aktionen zu einem Formular Bereich
- Wenn Sie einem Formular Bereich eine benutzerdefinierte Aktion hinzufügen möchten, verwenden Sie das Dialogfeld **benutzerdefinierte Aktionen** . Um das Dialogfeld **benutzerdefinierte Aktionen** zu öffnen, wählen Sie den Formular Bereich in **Projektmappen-Explorer**aus, erweitern Sie im **Fenster Eigenschaften**den Knoten **Manifest** , wählen Sie die Eigenschaft **CustomActions** aus, und klicken Sie dann auf die Schaltfläche Schaltfläche mit Auslassungs Zeichen (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
+ Wenn Sie einem Formular Bereich eine benutzerdefinierte Aktion hinzufügen möchten, verwenden Sie das Dialogfeld **benutzerdefinierte Aktionen** . Um das Dialogfeld **benutzerdefinierte Aktionen** zu öffnen, wählen Sie den Formular Bereich in **Projektmappen-Explorer**aus, erweitern Sie im **Fenster Eigenschaften**den Knoten **Manifest** , wählen Sie die Eigenschaft **CustomActions** aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")).
 
  Mit dem Dialogfeld **benutzerdefinierte Aktionen** können Sie ein *Zielformular*angeben. Ein Zielformular ist das Formular, das angezeigt wird, wenn der Benutzer die benutzerdefinierte Aktion ausführt.
 
@@ -51,7 +51,7 @@ ms.locfileid: "71254440"
 ## <a name="customize-a-custom-action-at-run-time"></a>Anpassen einer benutzerdefinierten Aktion zur Laufzeit
  Mithilfe von Code können Sie auch der benutzerdefinierten Aktion Verhalten hinzufügen. Beispielsweise können Sie Code hinzufügen, der die Namen der e-Mail-Empfänger annimmt und diese Namen als Teilnehmer in einem neuen Termin Element hinzufügt. Behandeln Sie hierzu das [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) -Ereignis des [MailItem-Objekts](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

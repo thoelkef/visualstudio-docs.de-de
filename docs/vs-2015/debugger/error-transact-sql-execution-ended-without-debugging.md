@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Ausführen von Transact-SQL wurde ohne Debuggen beendet. | Microsoft-Dokumentation'
+title: 'Fehler: Die Transact-SQL-Ausführung wurde ohne Debuggen beendet | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681074"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Fehler: Das Ausführen von Transact-SQL wurde ohne Debuggen beendet
@@ -43,14 +43,14 @@ Dieser Fehler tritt auf, wenn Sie versuchen, eine Transact-SQL- oder SQL/CLR-Pro
   
   So können Sie diesen Fehler korrigieren:  
   
-- Überprüfen Sie die Berechtigungseinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Überprüfen Sie die Berechtigungseinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Berechtigungen für das Debuggen von SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)  
   
 - Stellen Sie sicher, dass SQL-Debuggen ordnungsgemäß eingerichtet ist.  
   
 - Weitere Informationen erhalten Sie vom Netzwerk- oder Datenbankadministrator.  
   
-## <a name="see-also"></a>Siehe auch  
- [Einrichten von SQL-Debugging](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Einrichten des SQL-Debuggens](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Vorgehensweise: Festlegen von SQL Server Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Debugger-Einstellungen und-Vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

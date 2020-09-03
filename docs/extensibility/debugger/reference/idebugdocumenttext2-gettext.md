@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: 'IDebugDocumentText2:: gettext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731578"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Ruft den Text von der angegebenen Position im Dokument ab.
+Ruft den Text an der angegebenen Position im Dokument ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Parameter
 `pos`\
-[in] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die die Position des abzuholenden Textes angibt.
+in Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die die Position des abzurufenden Texts angibt.
 
 `cMaxChars`\
-[in] Die maximale Anzahl von Zeichen des abrufbaren Textes.
+in Die maximale Anzahl von Zeichen, die abgerufen werden sollen.
 
 `pText`\
-[in, out] Ein Zeiger auf einen Puffer, der mit dem gewünschten Text ausgefüllt werden soll. Dieser Puffer muss mindestens `cMaxChars` eine Anzahl von breiten Zeichen enthalten können.
+[in, out] Ein Zeiger auf einen Puffer, der mit dem gewünschten Text aufgefüllt werden soll. Dieser Puffer muss mindestens eine `cMaxChars` Anzahl von breit Zeichen enthalten können.
 
 `pcNumChars`\
-[out] Gibt die Anzahl der tatsächlich abgerufenen Zeichen zurück.
+vorgenommen Gibt die Anzahl der tatsächlich abgerufenen Zeichen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt, wie diese Methode aus c.
+Dieses Beispiel zeigt, wie diese Methode aus c# aufgerufen werden kann.
 
 ```csharp
 using System.Runtime.Interop.Services;

@@ -1,5 +1,5 @@
 ---
-title: 'Excel: Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene'
+title: 'Excel: Einstieg in das Programmieren von Anpassungen auf Dokument Ebene'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,60 +14,60 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66402156"
 ---
-# <a name="get-started-programming-document-level-customizations-for-excel"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel
-  Wenn Sie gerade die mit Visual Studio erstellen von Anpassungen auf Dokumentebene für Microsoft Office Excel Schritte ersten, ist hier was Sie wissen müssen.
+# <a name="get-started-programming-document-level-customizations-for-excel"></a>Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Excel
+  Wenn Sie gerade erst mit dem Erstellen von Anpassungen auf Dokument Ebene für Microsoft Office Excel mithilfe von Visual Studio beginnen, müssen Sie Folgendes wissen.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-## <a name="understand-how-document-level-customizations-for-excel-work"></a>Verstehen Sie, wie Anpassungen auf Dokumentebene für Excel-Aufgaben
- Eine Anpassung auf Dokumentebene für Excel basiert auf eine einzelne Arbeitsmappe. Nutzen Sie die Anpassung, der Endbenutzer öffnet die Arbeitsmappe oder die Arbeitsmappe aus einer Excel-Vorlage erstellt. Ereignisse in der Arbeitsmappe, z. B. Zellen eingeben, oder klicken auf Schaltflächen und Menüelemente, können zur Verarbeitung von Ereignissen-Methoden in der Assembly aufrufen. Wenn die Arbeitsmappe geschlossen wird, stehen die Funktionen von der Anpassung nicht mehr in Excel nur in das Dokument, das sie enthalten sind.
+## <a name="understand-how-document-level-customizations-for-excel-work"></a>Informationen zur Funktionsweise von Anpassungen auf Dokument Ebene für Excel
+ Eine Anpassung auf Dokument Ebene für Excel basiert auf einer einzelnen Arbeitsmappe. Damit die Anpassung verwendet werden kann, öffnet der Endbenutzer die Arbeitsmappe oder erstellt die Arbeitsmappe aus einer Excel-Vorlage. Ereignisse in der Arbeitsmappe, z. b. die Eingabe in Zellen oder das Klicken auf Schaltflächen und Menü Elemente, können Ereignis Behandlungsmethoden in der Assembly aufzurufen. Wenn die Arbeitsmappe geschlossen wird, sind die Funktionen, die von der Anpassung bereitgestellt werden, nicht mehr in Excel verfügbar, sondern nur in dem Dokument, in dem Sie enthalten sind.
 
- Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).
+ Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md).
 
-## <a name="create-document-level-projects-for-excel"></a>Erstellen von Projekten auf Dokumentebene für Excel
- Um eine Anpassung auf Dokumentebene für Excel zu erstellen, verwenden Sie die Projektvorlage für Excel-Arbeitsmappen oder Excel-Vorlage in der **neues Projekt** Dialogfeld. Diese Vorlagen enthalten erforderliche Assemblyverweise und Projektdateien.
+## <a name="create-document-level-projects-for-excel"></a>Erstellen von Projekten auf Dokument Ebene für Excel
+ Um eine Anpassung auf Dokument Ebene für Excel zu erstellen, verwenden Sie die Excel-Arbeitsmappe oder Excel-Vorlagen-Projektvorlage im Dialogfeld **Neues Projekt** . Diese Vorlagen enthalten erforderliche Assemblyverweise und Projektdateien.
 
- Weitere Informationen dazu, wie Sie ein Projekt auf Dokumentebene für Excel erstellen, finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
+ Weitere Informationen zum Erstellen eines Projekts auf Dokument Ebene für Excel finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
-## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Programmieren von Excel-Arbeitsmappen mithilfe von Hostelementen und Hoststeuerelementen
- *Hostelemente* und *Hoststeuerelemente* sind Klassen, die für Anpassungen auf Dokumentebene, die mithilfe von Visual Studio erstellt das Programmiermodell bereitstellen.
+## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Program mieren von Excel-Arbeitsmappen mithilfe von Host Elementen und Host Steuerelementen
+ *Host Elemente* und *Host Steuerelemente* sind Klassen, die das Programmiermodell für Anpassungen auf Dokument Ebene bereitstellen, die mit Visual Studio erstellt wurden.
 
- Hostelemente bieten einen Einstiegspunkt für Ihren Code, und sie können auch dienen als Container für Hoststeuerelemente und Windows Forms-Steuerelemente. In Projekten auf Dokumentebene für Excel, werden diese Hostelemente dargestellt, durch die `ThisWorkbook`, `Sheet1`, `Sheet2`, und `Sheet3` Klassen.
+ Host Elemente stellen einen Einstiegspunkt für Ihren Code bereit, und Sie können auch als Container für Host Steuerelemente und Windows Forms Steuerelemente fungieren. In Projekten auf Dokument Ebene für Excel werden diese Host Elemente durch die `ThisWorkbook` `Sheet1` Klassen,, `Sheet2` und dargestellt `Sheet3` .
 
- Hosten von Steuerelementen basieren auf systemeigene Excel-Objekte, z. B. Objekte in der Liste und Bereiche. Hoststeuerelemente stellen ähnliche Funktionen wie die systemeigene Excel-Objekte, sie haben jedoch auch neue Ereignisse, Designer-Unterstützung und Datenbindungsfunktion. Sie sind als Objekte erster Klasse in Ihrem Projektcode und IntelliSense, dadurch wird es einfacher, die auf bestimmte Objekte direkt in Ihrem Code zu verweisen, ohne Excel-Objektmodell Navigieren zu müssen.
+ Host Steuerelemente basieren auf systemeigenen Excel-Objekten, z. b. Listen Objekten und Bereichen. Host Steuerelemente bieten ähnliche Funktionen wie die systemeigenen Excel-Objekte, Sie verfügen jedoch auch über neue Ereignisse, Designer Unterstützung und Daten Bindungs Funktion. Sie werden als First-Class-Objekte in Ihrem Projekt Code und in IntelliSense angezeigt, wodurch es einfacher ist, auf bestimmte Objekte direkt in Ihrem Code zu verweisen, ohne im Excel-Objektmodell navigieren zu müssen.
 
  Weitere Informationen finden Sie unter den folgenden Themen:
 
-- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
+- [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Anpassen der Benutzeroberfläche von Excel
- Die meisten Microsoft Office-Projektmappen ändern der Benutzeroberfläche (UI) der Office-Anwendung eine Möglichkeit für Benutzer, für die Interaktion mit der Lösung bereitstellen. Es gibt viele Möglichkeiten, die in denen Sie der Benutzeroberfläche von Excel mit einer Anpassung auf Dokumentebene ändern können. Beispielsweise können Sie Steuerelemente hinzufügen, auf dem Menüband, oder Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+ Die meisten Microsoft Office Lösungen ändern die Benutzeroberfläche (User Interface, UI) der Office-Anwendung, um Benutzern die Interaktion mit der Lösung zu ermöglichen. Es gibt viele Möglichkeiten, wie Sie die Benutzeroberfläche von Excel ändern können, indem Sie eine Anpassung auf Dokument Ebene verwenden. Beispielsweise können Sie dem Menüband Steuerelemente hinzufügen, oder Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
- Sie können auch die Arbeitsmappe öffnen, die dem Projekt direkt in Visual Studio zugeordnet ist. Wenn die Arbeitsmappe in Visual Studio geöffnet ist, können Sie die Arbeitsmappe mithilfe der Excel-Benutzeroberfläche ändern. Sie können auch die Arbeitsmappe als Entwurfsoberfläche, die Sie Steuerelemente auf Arbeitsblättern ziehen können. Weitere Informationen finden Sie unter [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
+ Sie können auch die Arbeitsmappe öffnen, die dem Projekt direkt in Visual Studio zugeordnet ist. Wenn die Arbeitsmappe in Visual Studio geöffnet ist, können Sie die Arbeitsmappe mithilfe der Excel-Benutzeroberfläche ändern. Sie können die Arbeitsmappe auch als Entwurfs Oberfläche verwenden, mit der Sie Steuerelemente auf Arbeitsblätter ziehen können. Weitere Informationen finden Sie unter [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
 
-## <a name="use-data-binding"></a>Mithilfe der Datenbindung
- Die Hoststeuerelemente sind auch in der Liste der Steuerelemente, die Sie ziehen können, aus der **Datenquellen** Fenster. Hinzufügen von Hoststeuerelementen in dieser Weise automatisch, bindet diese an die Datenquelle, die Sie mithilfe des Fensters eingerichtet. Ohne Code schreiben zu müssen, können Sie Daten aus Datenbanken, Webdienste und Geschäftsobjekte anzeigen. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).
+## <a name="use-data-binding"></a>Verwenden der Datenbindung
+ Die Host Steuerelemente sind auch in der Liste der Steuerelemente enthalten, die Sie aus dem **Datenquellen** Fenster ziehen können. Durch das Hinzufügen von Host Steuerelementen auf diese Weise werden diese automatisch an die Datenquelle gebunden, die Sie mithilfe des Fensters eingerichtet haben. Sie können Daten aus Datenbanken, Webdiensten und Geschäftsobjekten anzeigen, ohne Code schreiben zu müssen. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)-Projektmappen.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Vorgehensweise: erstellen eine Anpassung auf Dokumentebene für Excel finden Sie unter [Exemplarische Vorgehensweise: Erstellen Ihrer ersten Anpassung auf Dokumentebene, für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). Diese exemplarische Vorgehensweise führt Sie in Office-Entwicklungstools in Visual Studio und das Programmiermodell für Anpassungen auf Anwendungsebene Excel.
+ Informationen zum Erstellen einer Anpassung auf Dokument Ebene für Excel finden Sie unter Exemplarische Vorgehensweise [: Erstellen der ersten Anpassung auf Dokument Ebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). Diese exemplarische Vorgehensweise enthält eine Einführung in die Office-Entwicklungs Tools in Visual Studio und das Programmiermodell für Anpassungen auf Dokument Ebene in Excel.
 
- Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Excel-Projekten zu führen, finden Sie unter [häufig anfallenden Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
+ Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Excel-Projekten führen, finden Sie unter [Allgemeine Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
-- [Excel-Projektmappen](../vsto/excel-solutions.md)
-- [Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
-- [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)
-- [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md)
-- [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
+- [Excel-Lösungen](../vsto/excel-solutions.md)
+- [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)
+- [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)
+- [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)

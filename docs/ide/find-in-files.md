@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595474"
 ---
-# <a name="find-in-files"></a>Suchen in Dateien
+# <a name="find-in-files"></a>In Dateien suchen
 
 Mit der Option **Suchen in Dateien** können Sie einen bestimmten Satz Dateien durchsuchen. Die gefundenen Übereinstimmungen und ausgeführten Aktionen werden im Fenster **Suchergebnisse** angezeigt, das unter **Ergebnisoptionen** ausgewählt wurde.
 
@@ -48,11 +48,11 @@ Drücken Sie zum Abbrechen eines Suchvorgangs **STRG** + **UNTBR**.
 Um eine neue Zeichenfolge oder einen neuen Ausdruck zu suchen, geben Sie die Zeichenfolge oder den Ausdruck im Feld ein. Öffnen Sie die Dropdownliste, und wählen Sie die Zeichenfolge aus, um nach einer der 20 Zeichenfolgen zu suchen, nach denen Sie zuletzt gesucht haben. Wählen Sie die benachbarte Schaltfläche **Ausdrucks-Generator** aus, wenn Sie einen oder mehrere reguläre Ausdrücke in der Suchzeichenfolge verwenden möchten. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
-> Die Schaltfläche **Ausdrucks-Generator** wird nur aktiviert, wenn Sie in den **Suchoptionen** **Reguläre Ausdrücke verwenden** ausgewählt haben.
+> Die Schaltfläche **Ausdrucks-Generator** wird nur aktiviert, wenn Sie in den **Suchoptionen****Reguläre Ausdrücke verwenden** ausgewählt haben.
 
 ## <a name="look-in"></a>Suchen in
 
-Über die aus der Dropdownliste **Suchen in** ausgewählte Option legen Sie fest, ob die Funktion **In Dateien suchen** nur in den zurzeit aktiven Dateien oder in allen in bestimmten Ordnern gespeicherten Dateien sucht. Wählen Sie einen Suchbereich aus der Liste aus, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)** , um das Dialogfeld **Suchordner auswählen** aufzurufen und Ihre eigene Gruppe von Verzeichnissen anzugeben. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
+Über die aus der Dropdownliste **Suchen in** ausgewählte Option legen Sie fest, ob die Funktion **In Dateien suchen** nur in den zurzeit aktiven Dateien oder in allen in bestimmten Ordnern gespeicherten Dateien sucht. Wählen Sie einen Suchbereich aus der Liste aus, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)**, um das Dialogfeld **Suchordner auswählen** aufzurufen und Ihre eigene Gruppe von Verzeichnissen anzugeben. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
 
 > [!WARNING]
 > Mit den Optionen **Gesamte Projektmappe** oder **Aktuelles Projekt** werden Projekt- und Projektmappendateien nicht durchsucht. Wenn Sie die Projektdateien durchsuchen möchten, wählen Sie einen Suchordner aus.
@@ -60,7 +60,7 @@ Um eine neue Zeichenfolge oder einen neuen Ausdruck zu suchen, geben Sie die Zei
 > [!NOTE]
 > Wenn Sie mit der Option **Suchen in** eine Datei durchsuchen, die Sie aus der Quellcodeverwaltung ausgecheckt haben, wird nur eine Version der Datei durchsucht, die Sie auf den lokalen Computer heruntergeladen haben.
 
-## <a name="include-subfolders"></a>Unterordner einschließen
+## <a name="include-subfolders"></a>Unterordner einbeziehen
 
 Gibt an, dass auch die Unterordner des im Feld **Suchen in** angegebenen Ordners durchsucht werden.
 
@@ -96,7 +96,7 @@ Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche d
 
 **Fenster „Suchergebnisse: 2“**
 
-Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 2** aus.
+Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend** Suchergebnisse: 2** aus.
 
 **Nur Dateinamen anzeigen**
 
@@ -109,5 +109,5 @@ Fügt die Ergebnisse der Suche den Ergebnissen der vorherigen Suche hinzu.
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
-- [Ersetzen in Dateien](../ide/replace-in-files.md)
+- [In Dateien ersetzen](../ide/replace-in-files.md)
 - [Visual Studio-Befehle](../ide/reference/visual-studio-commands.md)

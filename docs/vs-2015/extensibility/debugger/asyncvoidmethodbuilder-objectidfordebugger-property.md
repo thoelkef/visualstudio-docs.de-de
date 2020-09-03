@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft | Microsoft-Dokumentation
+title: Asyncvoidmethodbuilder. objectidfordebugger-Eigenschaft | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0235335bd9e5f1b33ed971cb547c8222c5427c39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151629"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für den Debugger verwendet werden kann.  
+Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,6 +34,6 @@ Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für d
 private object ObjectIdForDebugger  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
  [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

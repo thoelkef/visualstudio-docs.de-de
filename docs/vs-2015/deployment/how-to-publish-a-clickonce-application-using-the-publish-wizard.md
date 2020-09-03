@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten | Microsoft-Dokumentation'
+title: 'Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,13 +19,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697639"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlichen. Für die Veröffentlichung stehen im **Projekt-Designer** auf der Seite **Veröffentlichen** zusätzliche Eigenschaften zur Verfügung. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md).  
@@ -42,7 +42,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
 1. Wählen Sie im **Projektmappen-Explorer** das Anwendungsprojekt aus.  
   
-2. Auf der **erstellen** Menü klicken Sie auf **veröffentlichen**`Projectname`.  
+2. Klicken Sie im Menü **Erstellen** auf **veröffentlichen** `Projectname` .  
   
     Der Webpublishing-Assistent wird angezeigt.  
   
@@ -52,7 +52,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
    - Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)  
   
-   - Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Dies ist für die Veröffentlichung von Standorten, von dem Format c:\deploy\myapp oder \\\server\myapp.)  
+   - Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Dies dient dem Veröffentlichen von Speicherorten im Format c:\deploy\myapp oder \\ \server\myapp.)  
   
    - Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
   
@@ -62,7 +62,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
    - Wenn die Anwendung direkt vom Ort der Veröffentlichung gestartet werden soll, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar.** Es wird keine Verknüpfung im **Startmenü** erstellt.  
   
-     Klicken Sie auf **Weiter**, um fortzufahren.  
+     Klicken Sie auf zum Fortfahren auf **Weiter**.  
   
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.  
   
@@ -78,7 +78,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
     Der Webpublishing-Assistent wird angezeigt.  
   
-3. In der **Wo möchten Sie die Anwendung veröffentlichen?** Seite, geben Sie den Dateipfad oder den FTP-Speicherort, in dem die Anwendung veröffentlicht werden, d:\deploy. Klicken Sie dann zum Fortfahren auf **Weiter**.  
+3. Geben Sie auf der Seite **wo möchten Sie die Anwendung veröffentlichen?** den Dateipfad oder den FTP-Speicherort ein, an dem die Anwendung veröffentlicht werden soll, z. b. d:\deploy. Klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.  
   
 4. Klicken Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
   
@@ -91,7 +91,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
    - Wenn die Anwendung nicht nach Updates sucht, klicken Sie auf **Anwendung sucht nicht nach Updates**.  
   
-     Klicken Sie auf **Weiter**, um fortzufahren.  
+     Klicken Sie auf zum Fortfahren auf **Weiter**.  
   
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.  
   
@@ -100,7 +100,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
    > [!NOTE]
    > Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.  
   
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

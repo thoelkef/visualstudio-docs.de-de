@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+title: 'IDebugDocumentPositionOffset2:: GetRange | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd305b6506471a40de90fbd954e54461d2a139d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731624"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Ruft den Bereich für die aktuelle Dokumentposition ab.
+Ruft den Bereich für die aktuelle Dokument Position ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ public int GetRange(
 
 ## <a name="parameters"></a>Parameter
 `pdwBegOffset`\
-[in, out] Offset für die Startposition des Bereichs. Legen Sie diesen Parameter auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
+[in, out] Offset für die Anfangsposition des Bereichs. Legen Sie diesen Parameter auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
 
 `pdwEndOffset`\
 [in, out] Offset für die Endposition des Bereichs. Legen Sie diesen Parameter auf einen NULL-Wert fest, wenn diese Informationen nicht benötigt werden.
@@ -50,14 +50,14 @@ public int GetRange(
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der in einer Dokumentposition für einen Positionshaltepunkt angegebene Bereich wird von der Debug-Engine (DE) verwendet, um im Voraus nach einer Anweisung zu suchen, die tatsächlich Code beisteuert. Beachten Sie z. B. folgenden Code:
+ Der in einer Dokument Position für einen Location-Breakpoint angegebene Bereich wird von der Debug-Engine (de) verwendet, um nach einer Anweisung zu suchen, die tatsächlich Code beiträgt. Beachten Sie z. B. folgenden Code:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Zeile 5 trägt keinen Code zum zu debuggenden Programm bei. Wenn der Debugger, der den Haltepunkt in Zeile 5 festlegt, möchte, dass die DE einen bestimmten Betrag für die erste Zeile, die Code beisteuert, vorwärts sucht, gibt der Debugger einen Bereich an, der zusätzliche Kandidatenzeilen enthält, in denen ein Haltepunkt möglicherweise korrekt platziert wird. Die DE durchsuchte dann diese Zeilen, bis sie eine Linie fand, die einen Haltepunkt akzeptieren konnte.
+ Zeile 5 trägt keinen Code zu dem Programm bei, das gedeppt wird. Wenn der Debugger, der den Breakpoint in Zeile 5 festlegt, eine bestimmte Menge für die erste Zeile, die Code beiträgt, durchsucht, würde der Debugger einen Bereich angeben, der zusätzliche Kandidaten Zeilen enthält, in denen ein Haltepunkt ordnungsgemäß platziert werden kann. Der de würde dann diese Zeilen durchsuchen, bis eine Zeile gefunden wird, die einen Haltepunkt akzeptieren könnte.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)

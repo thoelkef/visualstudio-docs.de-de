@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330756"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
@@ -23,7 +23,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse zur Verwendung als Datenquelle
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
 
 1. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** aus, erweitern Sie den Knoten **Windows Desktop**, und wählen Sie dann die Vorlage **WPF-Anwendung** aus.
 

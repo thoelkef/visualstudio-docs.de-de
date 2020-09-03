@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e617e7c19ae126980c0be5473fa279c0f69ff97a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690254"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle wird von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM) gesendet, wenn die DE die Behandlung eines abgefangenen Ereignisses abgeschlossen wurde.  
+Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die Verarbeitung eines abgefangenen Ereignisses von de abgeschlossen wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,28 +31,28 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
+ Die de implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf demselben Objekt wie diese Schnittstelle implementiert werden. Der SDM verwendet [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für den Zugriff auf die- `IDebugEvent2` Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die DE erstellt und sendet dieses Ereignisobjekt, um den Abschluss einer abgefangenen Ausnahme melden. Das Ereignis gesendet wird, mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt.  
+ Das de-Objekt erstellt und sendet dieses Ereignis Objekt, um den Abschluss einer abgefangenen Ausnahme zu melden. Das Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von der SDM bereitgestellt wird, wenn Sie an das Programm angefügt wird, das gedeppt wird.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die `IDebugInterceptExceptionCompleteEvent2` -Schnittstelle implementiert die folgenden Methoden.  
+ Die- `IDebugInterceptExceptionCompleteEvent2` Schnittstelle implementiert die folgenden Methoden.  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert, der die behandelte Ausnahme zugeordnet.|  
+|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert zurück, der der behandelten Ausnahme zugeordnet ist.|  
   
-## <a name="remarks"></a>Hinweise  
- Dieses Ereignis wird per [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) bei dieser Methode wurde erfolgreich eine abgefangene Ausnahme behandelt.  
+## <a name="remarks"></a>Bemerkungen  
+ Dieses Ereignis wird von [intercepteption TException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) gesendet, wenn die Verarbeitung einer abgefangenen Ausnahme von dieser Methode erfolgreich abgeschlossen wurde.  
   
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+## <a name="requirements"></a>Requirements (Anforderungen)  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

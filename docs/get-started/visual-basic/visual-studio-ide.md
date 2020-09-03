@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306932"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312001"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -36,9 +36,9 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
-- Im[Projektmappen-Explorer](../../ide/solutions-and-projects-in-visual-studio.md) (rechts oben) können Sie Ihre Codedateien anzeigen, durch die Dateien navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](tutorial-projects-solutions.md) gruppiert.
+- Im [Projektmappen-Explorer](../../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, darin navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](tutorial-projects-solutions.md) gruppiert.
 
-- Im [Editorfenster](../../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie Code bearbeiten oder eine Benutzeroberfläche wie etwa ein Fenster mit Schaltflächen und Textfeldern entwerfen.
+- Im [Editor-Fenster](../../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie Code bearbeiten oder eine Benutzeroberfläche wie etwa ein Fenster mit Schaltflächen und Textfeldern entwerfen.
 
 - Das Fenster [Ausgabe](../../ide/reference/output-window.md) (Mitte unten) ist der Ort, an den Visual Studio Benachrichtigungen sendet, z.B. Debug- und Fehlermeldungen, Compilerwarnungen, Nachrichten zum Veröffentlichungsstatus und mehr. Jede Nachrichtenquelle verfügt über eine eigene Registerkarte.
 
@@ -48,7 +48,7 @@ Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Projekt und einige
 
 Visual Studio ist für Windows und Mac verfügbar. [Visual Studio für Mac](/visualstudio/mac/) enthält viele der Features von Visual Studio 2017 und wurde für die Entwicklung plattformübergeifender und mobiler Apps optimiert. Dieser Artikel konzentriert sich auf die Windows-Version von Visual Studio 2017.
 
-Es sind drei Editionen von Visual Studio 2017 verfügbar: Community, Professional und Enterprise. Unter [Visual Studio 2017-IDEs im Vergleich](https://visualstudio.microsoft.com/vs/compare/) wird erläutert, welche Features in jeder Edition unterstützt werden.
+Es gibt drei Editionen von Visual Studio 2017: Community, Professional und Enterprise. Unter [Visual Studio 2017-IDEs im Vergleich](https://visualstudio.microsoft.com/vs/compare/) wird erläutert, welche Features in jeder Edition unterstützt werden.
 
 ## <a name="popular-productivity-features"></a>Gängige Features zur Steigerung der Produktivität
 
@@ -104,7 +104,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 - Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionen wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie den Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
    > [!TIP]
    > Verwenden Sie die Tastenkombination **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
@@ -215,7 +215,7 @@ Wenn Sie Visual Studio zum ersten Mal öffnen, können Sie sich optional mit Ihr
 
 Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispielsweise das Standardfarbdesign ändern.
 
-### <a name="change-the-color-theme"></a>Ändern des Farbschemas
+### <a name="change-the-color-theme"></a>Ändern des Farbdesigns
 
 So ändern Sie das Design in **Dunkel**:
 
@@ -283,7 +283,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
 
-1. Wählen Sie unterhalb von **Visual Basic** die Kategorie **.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)** . Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
+1. Wählen Sie unterhalb von **Visual Basic** die Kategorie **.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
 
    ![.NET Core-App-Vorlage](media/overview-npd.png)
 
@@ -459,7 +459,7 @@ Benennen Sie zunächst die Variable `name` um:
 
 ::: moniker range="vs-2017"
 
-10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa wie folgt aus:
+10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
 
     ![Konsolenfenster mit Programmausgabe](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ Benennen Sie zunächst die Variable `name` um:
 
 ::: moniker range=">=vs-2019"
 
-10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa wie folgt aus:
+10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
 
     ![Konsolenfenster mit Programmausgabe](../media/vs-2019/overview-console-final.png)
 
@@ -509,7 +509,7 @@ Informationen zu weiteren Features von Visual Studio finden Sie in den folgenden
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - Entdecken Sie [weitere Visual Studio-Features](../../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).

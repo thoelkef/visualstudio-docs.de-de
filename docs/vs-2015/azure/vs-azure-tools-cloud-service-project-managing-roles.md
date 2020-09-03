@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 63258f74f295078828d9af2f1f6d8fc2d500b8da
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624488"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Verwalten von Rollen in Azure-Clouddiensten mit Visual Studio
@@ -48,7 +48,7 @@ Mit den folgenden Schritten können Sie eine Web- oder Workerrolle aus einem Azu
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Erneutes Hinzufügen einer Rolle zu einem Azure-Clouddienstprojekt
 Wenn Sie eine Rolle aus Ihrem Clouddienstprojekt entfernen, sie aber später wieder zum Projekt hinzufügen möchten, werden nur die Rollendeklaration und grundlegende Attribute wie Endpunkte und Diagnoseinformationen hinzugefügt. Der Datei `ServiceDefinition.csdef` oder der Datei `ServiceConfiguration.cscfg` werden keine zusätzlichen Ressourcen oder Verweise hinzugefügt. Wenn Sie diese Informationen hinzufügen möchten, müssen Sie sie diesen Dateien manuell erneut hinzufügen.
 
-Beispielsweise könnten Sie eine Webdienstrolle entfernen und diese Rolle später wieder der Projektmappe hinzufügen. In diesem Fall tritt ein Fehler auf. Fügen Sie zur Vermeidung des Fehlers das im folgenden XML-Code dargestellte `<LocalResources>`-Element wieder der Datei `ServiceDefinition.csdef` hinzu. Verwenden Sie den Namen der Webdienstrolle, die Sie dem Projekt wieder hinzugefügt haben, als Teil des Namensattributs für das **\<LocalStorage>** -Element. In diesem Beispiel lautet der Name der Webdienstrolle **WCFServiceWebRole1**.
+Beispielsweise könnten Sie eine Webdienstrolle entfernen und diese Rolle später wieder der Projektmappe hinzufügen. In diesem Fall tritt ein Fehler auf. Fügen Sie zur Vermeidung des Fehlers das im folgenden XML-Code dargestellte `<LocalResources>`-Element wieder der Datei `ServiceDefinition.csdef` hinzu. Verwenden Sie den Namen der Webdienst Rolle, die Sie dem Projekt wieder hinzugefügt haben, als Teil des Namens Attributs für das- **\<LocalStorage>** Element. In diesem Beispiel lautet der Name der Webdienstrolle **WCFServiceWebRole1**.
 
 ```xml
 <WebRole name="WCFServiceWebRole1">
@@ -72,4 +72,4 @@ Beispielsweise könnten Sie eine Webdienstrolle entfernen und diese Rolle späte
 ```
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Konfigurieren der Rollen für einen Azure-Clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md)
+- [Konfigurieren der Rollen für einen Azure-clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md)

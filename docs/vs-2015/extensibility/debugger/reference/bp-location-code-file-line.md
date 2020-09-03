@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29fbb041a90118e7725ed3140e6583c7ac756a07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153471"
 ---
-# <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
+# <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enthält die Daten für den Speicherort eines Haltepunkts an einer bestimmten Zeile in einer Code-Quelldatei.  
+Enthält die Daten für den Speicherort eines Breakpoints in einer bestimmten Zeile in einer Code Quelldatei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,22 +35,22 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE { 
   
 ## <a name="members"></a>Member  
  `bstrContext`  
- Der Kontext des Haltepunkts, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.  
+ Der Kontext des Breakpoints, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.  
   
  `pDocPos`  
- Die [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) -Objekt, die Dokumentposition des Haltepunkts darstellt.  
+ Das [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) -Objekt, das die Dokument Position des Breakpoints darstellt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

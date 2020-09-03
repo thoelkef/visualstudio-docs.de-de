@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815889"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von ausgeführtem XAML-Code mit XAML Hot Reload in Visual Studio
@@ -47,13 +47,13 @@ Die folgende Abbildung zeigt die Verwendung der visuellen echt Zeitstruktur, um 
 
 Im folgenden finden Sie bekannte Einschränkungen für das heiße Laden von XAML. Beenden Sie den Debugger, und schließen Sie den Vorgang ab, um die Einschränkung zu umgehen, die Sie in ausführen.
 
-|Einschränkung|WPF|UWP|Hinweise|
+|Einschränkung|WPF|UWP|Notizen|
 |-|-|-|-|
 |Verknüpfen von Ereignissen mit Steuerelementen während der Ausführung der APP|Nicht unterstützt|Nicht unterstützt|Siehe Fehler: Fehler beim *sicherstellen des Ereignisses*. Beachten Sie, dass Sie in WPF auf einen vorhandenen Ereignishandler verweisen können. In UWP-apps wird das verweisen auf einen vorhandenen Ereignishandler nicht unterstützt.|
 |Erstellen von Ressourcen Objekten in einem Ressourcen Wörterbuch, z. b. in der Seite/im Fenster der APP oder in der *app. XAML*|Unterstützt ab Visual Studio 2019 Update 2|Unterstützt|Beispiel: Hinzufügen eines `SolidColorBrush` zu einem Ressourcen Wörterbuch, das als verwendet werden soll `StaticResource` .</br>Hinweis: Statische Ressourcen, Format Konverter und andere in ein Ressourcen Wörterbuch geschriebene Elemente können beim Verwenden von XAML-Hot-Neuladen angewendet/verwendet werden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern der Eigenschaft des Ressourcen Wörterbuchs `Source` .|
 |Hinzufügen von neuen Steuerelementen, Klassen, Fenstern oder anderen Dateien zu Ihrem Projekt, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Keine|
 |Verwalten von nuget-Paketen (hinzufügen/entfernen/aktualisieren von Paketen)|Nicht unterstützt|Nicht unterstützt|Keine|
-|Ändern der Datenbindung, die die {x:Bind}-Markup Erweiterung verwendet|Nicht zutreffend|Unterstützt ab Visual Studio 2019|Hierfür ist Windows 10 Version 1809 (Build 10.0.17763) erforderlich. Wird in Visual Studio 2017 oder früheren Versionen nicht unterstützt.|
+|Ändern der Datenbindung, die die {x:Bind}-Markup Erweiterung verwendet|–|Unterstützt ab Visual Studio 2019|Hierfür ist Windows 10 Version 1809 (Build 10.0.17763) erforderlich. Wird in Visual Studio 2017 oder früheren Versionen nicht unterstützt.|
 |Das Ändern von x:UID-Direktiven wird nicht unterstützt|NICHT ZUTREFFEND|Nicht unterstützt|Keine|
 |Mehrere Prozesse | Nicht unterstützt | Nicht unterstützt | Hot-Neuladen können nur für jeweils 1 Prozess verwendet werden. |
 

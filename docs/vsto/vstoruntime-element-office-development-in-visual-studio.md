@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541881"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -38,7 +38,7 @@ ms.locfileid: "85541881"
 
  Das `vstoRuntime` -Element weist folgende Attribute auf.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`release`|Erforderlich. Die Releaseversion der Visual Studio Tools for Office-Laufzeit.|
 |`version`|Erforderlich. Versionsnummer der Visual Studio Tools for Office-Laufzeit.|
@@ -56,7 +56,7 @@ ms.locfileid: "85541881"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)

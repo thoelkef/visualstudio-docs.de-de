@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d2dae9d1c7a08205a09cad67a0049accba2cae71
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670916"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Gewusst wie: Erstellen und Bearbeiten einer XSD-Schemadatei
@@ -39,5 +39,5 @@ In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt u
 
      Der XML-Schema-Explorer wird mit dem neuen Schemaset aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Arbeiten mit XML-Daten im](../xml-tools/working-with-xml-data.md) [XML-Schema-Designer](../xml-tools/xml-schema-designer-tasks.md)

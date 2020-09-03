@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149427"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterroutine ausführen, während die Anwendung nicht ausgeführt wird. Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Diese Funktion wird „Debuggen zur Entwurfszeit“ genannt.  
+Sie können das **direkt** Fenster in Visual Studio verwenden, um eine Funktion oder Unterroutine auszuführen, während die Anwendung nicht ausgeführt wird. Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Diese Funktion wird „Debuggen zur Entwurfszeit“ genannt.  
   
  Die folgende Prozedur veranschaulicht, wie Sie dieses Feature verwenden können.  
   
@@ -65,22 +65,22 @@ Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterrou
   
 2. Legen Sie einen Haltepunkt an der Zeile `s="Add BreakPoint Here"` fest.  
   
-3. Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
+3. Geben Sie im **direkt** Fenster Folgendes ein: `?MyFunction<enter>`  
   
 4. Stellen Sie sicher, dass der Haltepunkt erreicht wurde und dass die Aufrufliste korrekt ist.  
   
-5. Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
+5. Klicken Sie im Menü **Debuggen** auf **weiter**, und überprüfen Sie, ob Sie sich noch im Entwurfs Modus befinden.  
   
-6. Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
+6. Geben Sie im **direkt** Fenster Folgendes ein: `?MyFunction<enter>`  
   
-7. Geben Sie Folgendes in die **direkt** Fenster: `?MySub<enter>`  
+7. Geben Sie im **direkt** Fenster Folgendes ein: `?MySub<enter>`  
   
-8. Stellen Sie sicher, dass Sie den Haltepunkt, und überprüfen Sie den Wert der statischen Variablen `i` in die **"lokal"** Fenster. Sie sollte den Wert 3 haben.  
+8. Stellen Sie sicher, dass Sie den Breakpoint erreichen, und überprüfen Sie den Wert der statischen Variablen im Fenster "lokal" `i` . **Locals** Sie sollte den Wert 3 haben.  
   
 9. Überprüfen Sie, dass die Aufrufliste korrekt ist.  
   
-10. Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
+10. Klicken Sie im Menü **Debuggen** auf **weiter**, und überprüfen Sie, ob Sie sich noch im Entwurfs Modus befinden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)

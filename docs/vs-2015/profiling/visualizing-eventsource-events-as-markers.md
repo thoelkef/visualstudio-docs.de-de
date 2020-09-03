@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690215"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
@@ -62,11 +62,11 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
   
 |cvType-Wert|Resultierender Markertyp|  
 |------------------|---------------------------|  
-|0|Meldung|  
+|0|Nachricht|  
 |1|Bereichsanfang|  
 |2|Bereichsende|  
 |3|Flag|  
-|Alle anderen Werte|Meldung|  
+|Alle anderen Werte|Nachricht|  
   
 ### <a name="importance"></a>Wichtigkeit  
  Mit dem Feld `cvImportance`, einem Byte, können Sie zwar die Wichtigkeitseinstellung für ein EventSource-Ereignis festlegen. Es wird jedoch empfohlen, die angezeigte Wichtigkeit eines Ereignisses über die Ebene festzulegen.  
@@ -96,5 +96,5 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 > [!NOTE]
 > Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

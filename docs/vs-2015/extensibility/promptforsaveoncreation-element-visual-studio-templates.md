@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675368"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird die **neues Projekt** Dialogfeld beim Erstellen eines Projekts. Wenn dieses Element auf `true` festgelegt wird, wird der Benutzer aufgefordert, einen Speicherort anzugeben. Wird `false` angegeben, wird er dazu nicht aufgefordert. (In diesem Fall wird ein temporäres Projekt erstellt.)  
+Gibt an, ob der Benutzer beim Erstellen eines Projekts aufgefordert wird, einen Speicherort **für das Projekt** zu speichern. Wenn dieses Element auf `true` festgelegt wird, wird der Benutzer aufgefordert, einen Speicherort anzugeben. Wird `false` angegeben, wird er dazu nicht aufgefordert. (In diesem Fall wird ein temporäres Projekt erstellt.)  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,10 +54,10 @@ Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird d
   
  Der Text muss entweder `true` oder `false` lauten. `true` gibt an, dass der Benutzer bei Erstellung eines neuen Projekts zur Angabe eines Speicherorts aufgefordert wird.  
   
-## <a name="remarks"></a>Hinweise  
- `PromptForSaveOnCreation` ist ein optionales Element. Der Standardwert ist `false`.  
+## <a name="remarks"></a>Bemerkungen  
+ `PromptForSaveOnCreation` ist ein optionales Element. Standardwert: `false`.  
   
- Temporäre Projekte sind Projekte, die Sie erstellen und ändern können, ohne den Inhalt des Projekts auf einem Datenträger zu speichern. Weitere Informationen finden Sie unter [NIB temporäre Projekte](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Temporäre Projekte sind Projekte, die Sie erstellen und ändern können, ohne den Inhalt des Projekts auf einem Datenträger zu speichern. Weitere Informationen finden Sie unter [temporäre NIB-Projekte](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird der Wert von `PromptForSaveOnCreation` gleich `false` festgelegt. Dadurch wird angegeben, dass das Projekt als temporäres Projekt erstellt werden kann.  
@@ -87,6 +87,6 @@ Gibt an, ob der Benutzer, für ein Projekt Speicherort über aufgefordert wird d
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

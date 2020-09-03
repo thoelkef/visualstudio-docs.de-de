@@ -1,5 +1,5 @@
 ---
-title: SccRemove-Funktion | Microsoft-Dokumentation
+title: SC| Move-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62974f585fe164c7ccf7ea21a19d22939d806d73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199972"
 ---
 # <a name="sccremove-function"></a>SccRemove-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion löscht Dateien vom Quellcodeverwaltungssystem.  
+Diese Funktion löscht Dateien aus dem Quell Code Verwaltungssystem.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,43 +39,43 @@ SCCRTN SccRemove(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
  hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
+ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.  
   
- nFiles  
- [in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.  
+ nnoch  
+ in Anzahl der im Array angegebenen Dateien `lpFileNames` .  
   
- lpFileNames  
- [in] Array der Namen von voll gekennzeichneter lokaler Pfad von Dateien, die entfernt werden soll.  
+ lpfile-Namen  
+ in Array von voll qualifizierten lokalen Pfadnamen von Dateien, die entfernt werden sollen.  
   
- lpComment  
- [in] Der Kommentar, der auf jede entfernte Datei angewendet werden.  
+ lpcomment  
+ in Der Kommentar, der auf jede zu entfernende Datei angewendet werden soll.  
   
- Bestanden  
- [in] Befehl Flags (nicht verwendeten).  
+ f-Optionen  
+ in Befehlsflags (nicht verwendet).  
   
- pvOptions  
- [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
+ pvoptions  
+ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Zum Entfernen war erfolgreich.|  
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung.|  
-|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|  
-|SCC_E_ISCHECKEDOUT|Eine Datei kann nicht entfernt werden, da ein Benutzer zurzeit ausgecheckt ist.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers; Datei wurde nicht entfernt.|  
-|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|  
+|SCC_OK|Der Löschvorgang war erfolgreich.|  
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quell Code Verwaltung.|  
+|SCC_E_OPNOTSUPPORTED|Das Quell Code Verwaltungssystem unterstützt diesen Vorgang nicht.|  
+|SCC_E_ISCHECKEDOUT|Eine Datei kann nicht entfernt werden, da Sie zurzeit von einem Benutzer ausgecheckt ist.|  
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen.|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler. die Datei wurde nicht entfernt.|  
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion entfernt die Dateien aus dem Quellcodeverwaltungssystem, jedoch nicht von der Festplatte des Benutzers gelöscht.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion entfernt die Dateien aus dem Quell Code Verwaltungssystem, löscht sie aber nicht von der lokalen Festplatte des Benutzers.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

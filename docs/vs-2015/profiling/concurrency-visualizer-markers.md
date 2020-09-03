@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704350"
 ---
 # <a name="concurrency-visualizer-markers"></a>Parallelitätsschnellansichtsmarker
@@ -63,8 +63,8 @@ Marker sind in der Nebenläufigkeitsschnellansicht Symbole zur Darstellung der E
 ## <a name="markers-from-eventsource"></a>Marker aus EventSource  
  Die Nebenläufigkeitsschnellansicht zeigt auch EventSource-Ereignisse an.  Weitere Informationen finden Sie unter [Visualizing EventSource Events as Markers (Visualisieren von EventSource-Ereignissen als Marker)](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Flag Markers (Kennzeichenmarker)](../profiling/flag-markers.md)   
- [Message Marker (Meldungsmarker)](../profiling/message-markers.md)   
- [Span Markers (Spannenmarker)](../profiling/span-markers.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Markermarker](../profiling/flag-markers.md)   
+ [Nachrichten Marker](../profiling/message-markers.md)   
+ [Spannen Marker](../profiling/span-markers.md)   
  [Visualisieren von EventSource-Ereignissen als Marker](../profiling/visualizing-eventsource-events-as-markers.md)

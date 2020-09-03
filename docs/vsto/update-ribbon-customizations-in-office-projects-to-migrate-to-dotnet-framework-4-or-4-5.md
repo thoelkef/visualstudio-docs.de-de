@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254351"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Menü Band Anpassungen in Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren
-  Wenn das Projekt eine Menü Band Anpassung enthält, die mit dem Projekt Element **Menüband (visueller Designer)** erstellt wurde, müssen Sie die folgenden Änderungen am Projekt Code vornehmen, wenn das Ziel Framework in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird.
+  Wenn das Projekt eine Menü Band Anpassung enthält, die mit dem Projekt Element **Menüband (visueller Designer)** erstellt wurde, müssen Sie die folgenden Änderungen am Projekt Code vornehmen, wenn das Ziel Framework in oder höher geändert wird [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
 - Ändern Sie den generierten Menübandcode.
 
@@ -29,9 +29,9 @@ ms.locfileid: "71254351"
 ## <a name="update-the-generated-ribbon-code"></a>Aktualisieren des generierten Menüband-Codes
  Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie den generierten Code für das Menübandelement ändern, indem Sie die folgenden Schritte ausführen. Die zu aktualisierenden Codedateien hängen von der Programmiersprache ab und davon, wie Sie das Projekt erstellt haben:
 
-- In Visual Basic-Projekten oder in visuellen C# Projekten, die Sie entweder [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] in oder [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] in erstellt haben, führen Sie alle Schritte in der Code Behind-Datei des Menübands aus (*yourribbonitem*. Designer.cs oder *yourribbonitem*. Designer. vb). Um die Code Behind-Datei in Visual Basic-Projekten anzuzeigen, klicken Sie auf die Schaltfläche **alle Dateien anzeigen** in **Projektmappen-Explorer**.
+- In Visual Basic-Projekten oder in Visual c#-Projekten, die Sie entweder in oder in erstellt haben, [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] führen Sie alle Schritte in der Code Behind-Datei des Menübands aus (*yourribbonitem*. Designer.cs oder *yourribbonitem*. Designer. vb). Um die Code Behind-Datei in Visual Basic-Projekten anzuzeigen, klicken Sie auf die Schaltfläche **alle Dateien anzeigen** in **Projektmappen-Explorer**.
 
-- Führen Sie C# in Visual Studio-Projekten, die Sie in Visual Studio 2008 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]erstellt und dann auf aktualisiert haben, die ersten beiden Schritte in der Menüband-Codedatei (*yourribbonitem*. cs oder *yourribbonitem*. vb) aus, und führen Sie die restlichen Schritte im Code Behind-Datei des Menübands.
+- Führen Sie in Visual c#-Projekten, die Sie in Visual Studio 2008 erstellt und dann auf aktualisiert [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] haben, die ersten beiden Schritte in der Menüband-Codedatei (*yourribbonitem*. cs oder *yourribbonitem*. vb) aus, und führen Sie die restlichen Schritte in der Code Behind-Datei des Menübands aus.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>So ändern Sie den generierten Menübandcode
 
@@ -103,13 +103,13 @@ ms.locfileid: "71254351"
 
      Angenommen, die Datei enthält die folgende Codezeile, die das <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>-Ereignis in einem Projekt behandelt, das auf .NET Framework 3.5 abzielt.
 
-    \<Codecontentplachalter > 8</CodeContentPlaceHolder> in einem Projekt, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielt, müssen Sie stattdessen den folgenden Code verwenden.
+    \<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> in einem Projekt, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielt, müssen Sie stattdessen den folgenden Code verwenden.
 
-    \<Codecontentplachalter > 9</CodeContentPlaceHolder> eine vollständige Liste der multifunktionsleistendelegaten finden Sie unter Behandeln von Menü [Band Ereignissen](#ribbonevents).
+    \<CodeContentPlaceHolder>9 </CodeContentPlaceHolder> eine vollständige Liste der multifunktionsleistendelegaten finden Sie unter Behandeln von Menü [Band Ereignissen](#ribbonevents).
 
 5. Suchen Sie in Visual Basic-Projekten die `ThisRibbonCollection`-Klasse am Ende der Datei. Ändern Sie die Deklaration dieser Klasse, sodass sie nicht mehr von `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` erbt.
 
-## <a name="ribboncontrols"></a>Instanziieren von Menü Band Steuerelementen
+## <a name="instantiate-ribbon-controls"></a><a name="ribboncontrols"></a> Instanziieren von Menü Band Steuerelementen
  Sie müssen jeden Code ändern, in dem Menübandsteuerelemente dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 abzielen, sind Menübandsteuerelemente Klassen, die Sie in bestimmten Szenarien direkt instanziieren können. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, fungieren diese Steuerelemente als Schnittstellen, die Sie nicht direkt instanziieren können. Sie müssen die Steuerelemente mit Methoden erstellen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt werden.
 
  Es gibt zwei Möglichkeiten, um auf das <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt zuzugreifen:
@@ -120,9 +120,10 @@ ms.locfileid: "71254351"
 
   Im folgenden Codebeispiel wird dargestellt, wie ein <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> in einer Menübandklasse eines Projekts erstellt wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist.
 
-\<Codecontentplachalter > 10</CodeContentPlaceHolder> \<codecontentplachalter > 11</CodeContentPlaceHolder> in der folgenden Tabelle sind die Steuerelemente aufgelistet, die Sie Programm gesteuert erstellen können, sowie die-Methode, die zum Erstellen der Steuerelemente in Projekten verwendet werden soll, die auf abzielen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
+\<CodeContentPlaceHolder>10 </CodeContentPlaceHolder> 
+ \<CodeContentPlaceHolder> 11 </CodeContentPlaceHolder> in der folgenden Tabelle sind die Steuerelemente aufgelistet, die Sie Programm gesteuert erstellen können, sowie die-Methode, die zum Erstellen der Steuerelemente in Projekten verwendet, die auf oder höher abzielen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
-|Steuerelement|RibbonFactory-Methode für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
+|Control|RibbonFactory-Methode für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
 |-------------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|
@@ -142,14 +143,14 @@ ms.locfileid: "71254351"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-## <a name="ribbonevents"></a>Behandeln von Menü Band Ereignissen
+## <a name="handle-ribbon-events"></a><a name="ribbonevents"></a> Behandeln von Menü Band Ereignissen
  Sie müssen Code ändern, in dem Ereignisse von Menübandsteuerelementen behandelt werden. In Projekten, die auf .NET Framework 3.5 abzielen, werden diese Ereignisse vom generischen <xref:System.EventHandler%601>-Delegaten behandelt. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, werden diese Ereignisse jetzt von anderen Delegaten behandelt.
 
  In der folgenden Tabelle sind die Menübandereignisse und die Delegaten aufgeführt, die ihnen in Projekten zugeordnet sind, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind.
 
-|event|Delegat für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
+|Ereignis|Delegat für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
 |-----------| - |
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>-Ereignis in einer generierten Ribbon-Klasse|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> Ereignis in einer generierten Menü bandklasse|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|
 

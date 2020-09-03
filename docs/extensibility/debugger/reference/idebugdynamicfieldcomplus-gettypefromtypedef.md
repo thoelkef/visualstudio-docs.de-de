@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Microsoft Docs
+title: 'Idebugdynamicfieldcomplus:: gettypeer fromtypedef | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8e212f53467c25ca6084eaa5a91b37031baedf4a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731235"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
@@ -46,16 +46,16 @@ int GetTypeFromTypeDef(
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Bezeichner der Anwendungsdomäne.
+in Der Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner des Moduls.
+in Eindeutiger Bezeichner des Moduls.
 
 `tokClass`\
-[in] Token, das den Typ darstellt.
+in Token, das den Typ darstellt.
 
 `ppType`\
-[out] Gibt ein [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Typ enthält.
+vorgenommen Gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt zurück, das den Typ enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

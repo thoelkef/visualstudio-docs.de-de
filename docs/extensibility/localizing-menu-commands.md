@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904561"
 ---
 # <a name="localize-menu-commands"></a>Lokalisieren von Menübefehlen
@@ -147,7 +147,7 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
     </EmbeddedResource>
     ```
 
-8. Kopieren Sie für jede lokalisierte Sprache das- `EmbeddedResource` Element für `VsPackage.en-US` , und legen Sie das **include** -Attribut und das **LogicalName** -Element der Kopie auf das Ziel Gebiets Schema fest.
+8. Kopieren Sie für jede lokalisierte Sprache das-  `EmbeddedResource` Element für `VsPackage.en-US` , und legen Sie das **include** -Attribut und das **LogicalName** -Element der Kopie auf das Ziel Gebiets Schema fest.
 
 9. Fügen Sie für jedes lokalisierte `VSCTCompile` Element ein-Element hinzu, `ResourceName` das auf verweist `Menus.ctmenu` , wie im folgenden Beispiel gezeigt:
 
@@ -165,7 +165,7 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
 
      Dadurch werden eine Hauptassembly und Ressourcenassemblys für jede Sprache erstellt. Informationen zum Lokalisieren des Bereitstellungs Prozesses finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md) .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189204"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilerstellung für die Leistung von SharePoint-Anwendungen
@@ -49,7 +49,7 @@ Sie können die belastungsleistung Ihrer Anwendungen analysieren, indem Sie Ausl
 
 Abbildung 1: Beispiel für Auslastungstestergebnisse
 
-![Ansicht der Auslastungs Test Diagramme](../sharepoint/media/load-webgraphs.png "Diagramm für die Ausführung von Auslastungstests")
+![Diagramm für die Ausführung von Auslastungstests](../sharepoint/media/load-webgraphs.png "Diagramm für die Ausführung von Auslastungstests")
 
 Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit einer SharePoint-Anwendung. Sie können webleistungs Tests erstellen, indem Sie HTTP-Anforderungen in einer Browsersitzung oder mithilfe der **webleistungs Test**-Aufzeichnung aufzeichnen. Die Webanforderungen werden in der **Webleistungstest-Editor** angezeigt, nachdem die Browsersitzung abgeschlossen wurde. Anschließend können Sie die Ergebnisse im **webleistungs Testergebnisse Viewer**Debuggen. Sie können webleistungs Tests auch manuell erstellen, indem Sie die **Webleistungstest-Editor**verwenden.
 
@@ -59,14 +59,14 @@ Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über d
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Veranschaulicht, wie eine Samplingsprofilanalyse für eine SharePoint-Anwendung ausgeführt wird.|
 |[Testen der Leistung Ihrer App vor der Freigabe](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Beschreibt, wie Auslastungstests erstellt werden, mit deren Hilfe Sie Belastungstests für SharePoint-Anwendungen durchführen.|
-|[Komponententest für Code](../test/unit-test-your-code.md)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
+|[Komponententests für Ihren Code](../test/unit-test-your-code.md)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
 |[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Verbessern der Codequalität](../test/improve-code-quality.md)

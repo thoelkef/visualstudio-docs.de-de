@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2 | Microsoft Docs
+title: IEnumDebugBoundBreakpoints2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717441"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
-Diese Schnittstelle zählt die gebundenen Haltepunkte auf, die einem ausstehenden Haltepunkt- oder Haltepunktgebundenen Ereignis zugeordnet sind.
+Diese Schnittstelle listet die gebundenen Haltepunkte auf, die einem ausstehenden Haltepunkt oder Haltepunkt gebundenen Ereignis zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,35 +29,35 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debug-Modul (DE) implementiert diese Schnittstelle als Teil ihrer Unterstützung für Haltepunkte. Diese Schnittstelle muss implementiert werden, wenn Haltepunkte unterstützt werden.
+ Die Debug-Engine (de) implementiert diese Schnittstelle als Teil der Unterstützung von Breakpoints. Diese Schnittstelle muss implementiert werden, wenn Breakpoints unterstützt werden.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
  Visual Studio-Aufrufe:
 
-- [EnumBreakpoints,](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) um diese Schnittstelle zu erhalten, die eine Liste aller ausgelösten Haltepunkte darstellt.
+- [Enumbreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) zum Abrufen dieser Schnittstelle, die eine Liste aller ausgelösten Breakpoints darstellt.
 
-- [EnumBoundBreakpoints,](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) um diese Schnittstelle abzuerhalten, die eine Liste aller gebundenen Haltepunkte darstellt.
+- [Enumboundbreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) zum Abrufen dieser Schnittstelle, die eine Liste aller gebundenen Breakpoints darstellt.
 
-- [EnumBoundBreakpoints,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) um diese Schnittstelle abzuerhalten, die eine Liste aller Haltepunkte darstellt, die an diesen ausstehenden Haltepunkt gebunden sind.
+- [Enumboundbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) zum Abrufen dieser Schnittstelle, die eine Liste aller Haltepunkte darstellt, die an den ausstehenden Haltepunkt gebunden sind.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IEnumDebugBoundBreakpoints2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugBoundBreakpoints2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Weiter](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Ruft eine angegebene Anzahl gebundener Haltepunkte in einer Enumerationssequenz ab.|
-|[Überspringen](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Überspringt eine angegebene Anzahl gebundener Haltepunkte in einer Enumerationssequenz.|
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Ruft eine angegebene Anzahl gebundener Haltepunkte in einer enumerationssequenz ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Überspringt eine angegebene Anzahl gebundener Haltepunkte in einer enumerationssequenz.|
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Klon](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle Enumerator enthält.|
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Ruft die Anzahl der gebundenen Haltepunkte in einem Enumerator ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Visual Studio verwendet die gebundenen Haltepunkte, die von dieser Schnittstelle dargestellt werden, um die Anzeige von Haltepunkten in der IDE zu aktualisieren.
+ Visual Studio verwendet die gebundenen Haltepunkte, die durch diese Schnittstelle dargestellt werden, um die Anzeige von Breakpoints in der IDE zu aktualisieren.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

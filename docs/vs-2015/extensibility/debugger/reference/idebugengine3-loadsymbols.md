@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols | Microsoft-Dokumentation
+title: 'IDebugEngine3:: loadsymbols | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29f8af5e258da923ec814e0a224dcf87cbbfae9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195935"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Lädt (nach Bedarf)-Symbole für alle Module, die durch diese Debug-Engine gedebuggt wird.  
+Lädt (bei Bedarf) Symbole für alle Module, die von dieser Debug-Engine gedebuggt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,14 +35,14 @@ int LoadSymbols();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Keine  
+ Keine.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Dadurch wird die Debugsymbole für alle Module, die auf die verwiesen wird durch diese Debug-Engine geladen. Nur dann, wenn sie noch nicht geladen wurden, werden die Symbole geladen. Symbole werden durchsucht, auf den Pfaden, die festlegen, die durch einen Aufruf von [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Dadurch werden Debugsymbole für alle Module geladen, auf die von dieser Debug-Engine verwiesen wird Die Symbole werden nur geladen, wenn Sie nicht bereits geladen wurden. Symbole werden in den Pfaden durchsucht, die durch einen Aufrufen von [setsymbolpath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)festgelegt werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Setsymbolpath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

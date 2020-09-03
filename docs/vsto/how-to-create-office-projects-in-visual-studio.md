@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547562"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Gewusst wie: Erstellen von Office-Projekten in Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "85547562"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>So erstellen Sie ein VSTO-Add-In-Projekt
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**. Wenn die integrierte Entwicklungsumgebung (IDE) für die Verwendung von [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Wenn die integrierte Entwicklungsumgebung (IDE) für die Verwendung von [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -94,7 +94,7 @@ ms.locfileid: "85547562"
 
 ### <a name="to-create-a-document-level-customization-project"></a>So erstellen Sie ein Projekt für Anpassungen auf Dokumentebene
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -159,7 +159,7 @@ ms.locfileid: "85547562"
 
      Weitere Informationen zum Hinzufügen eines Dokuments zu den vertrauenswürdigen Speicherorten finden Sie auf der Microsoft Office Online Website [erstellen, entfernen oder Ändern eines vertrauenswürdigen Speicher Orts für Ihre Dateien](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
 - [Gemeinsame Entwicklung von Office-Lösungen](../vsto/collaborative-development-of-office-solutions.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

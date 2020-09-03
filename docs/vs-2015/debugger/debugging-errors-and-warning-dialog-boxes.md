@@ -1,5 +1,5 @@
 ---
-title: Debugfehler und Warnmeldungen | Microsoft-Dokumentation
+title: Dialogfelder für Debugfehler und Warnungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691186"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
@@ -60,7 +60,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggen von Skript- und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debuggen von Skript und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Fehler beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   

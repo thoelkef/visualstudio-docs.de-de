@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193604"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
@@ -35,13 +35,13 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
  **Speicherbelegung**  
  Standard. Erfasst Daten zur Speicherbelegung durch .NET-Framework.  
   
- **Lebensdauer**  
+ **Gültigkeitsdauer**  
  Erfasst sowohl Daten zur Speicherbelegung durch .NET-Framework als auch zur Lebensdauer von .NET Framework-Objekten.  
   
 ## <a name="required-options"></a>Erforderliche Optionen  
  Die Option **GC** kann nur mit der Option **Launch** (Start) verwendet werden.  
   
- **Starten:** `AppName`  
+ **Starten** Sie Folgendes: `AppName`  
  Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
   
 ## <a name="example"></a>Beispiel  
@@ -51,8 +51,8 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

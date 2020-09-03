@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821615"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang
+# <a name="how-to-exclude-files-from-the-build"></a>Gewusst wie: Ausschließen von Dateien vom Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in einem Verzeichnis oder einer geschachtelten Gruppe von Verzeichnissen als Eingaben für einen Buildvorgang einzuschließen. Möglicherweise gibt es jedoch eine Datei im Verzeichnis oder ein Verzeichnis in einer geschachtelten Gruppe von Verzeichnissen, die nicht als Eingabe für einen Buildvorgang eingeschlossen werden sollen. Sie können diese Datei oder dieses Verzeichnis explizit aus der Liste der Eingaben ausschließen. Vielleicht gibt es auch eine Datei in einem Projekt, das Sie nur unter bestimmten Umständen miteinbeziehen wollen. Sie können die Bedingungen explizit deklarieren, unter denen eine Datei in einem Buildvorgang enthalten ist.  
@@ -45,7 +45,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \- oder –  
+     \- oder -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \- oder –  
+     \- oder -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -125,6 +125,6 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Elemente](../msbuild/msbuild-items.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Punkte](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)

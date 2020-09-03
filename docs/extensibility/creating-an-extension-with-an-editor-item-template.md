@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903837"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Erstellen einer Erweiterung mit einer Editor-Element Vorlage
@@ -36,7 +36,7 @@ Mithilfe von Element Vorlagen, die im Visual Studio SDK enthalten sind, können 
 
     - *EditorClassifier1ClassificationDefinition.cs* enthält die- `EditorClassifier1ClassificationDefinition` Klasse.
 
-    - *EditorClassifier1Format.cs* enthält die- `EditorClassifier1Format` Klasse.
+    - *EditorClassifier1Format.cs* enthält die- `EditorClassifier1Format`  Klasse.
 
     - *EditorClassifier1Provider.cs* enthält die- `EditorClassifier1Provider` Klasse.
 
@@ -57,7 +57,7 @@ Mithilfe von Element Vorlagen, die im Visual Studio SDK enthalten sind, können 
 
     - *TextAdornment1TextViewCreationListener.cs* enthält die- `TextAdornment1TextViewCreationListener` Klasse.
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, werden alle "a"-Zeichen im Text rot vor einem blauen Hintergrund dargestellt.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet. Wenn Sie eine Textdatei öffnen, werden alle "a"-Zeichen im Text rot vor einem blauen Hintergrund dargestellt.
 
 ## <a name="create-a-viewport-relative-adornment-extension"></a>Erstellen einer Viewport-relativen Zusatzelement Erweiterung
  Mit der-Editor-Zusatzelement Vorlage wird ein Viewport-relativer Zusatzelement erstellt, das ein violettfeld mit einer roten Kontur in der oberen rechten Ecke des Viewports hinzufügt.
@@ -77,7 +77,7 @@ Mithilfe von Element Vorlagen, die im Visual Studio SDK enthalten sind, können 
 
     - *ViewportAdornment1TextViewCreationListener.cs* enthält die- `ViewportAdornment1TextViewCreationListener` Klasse.
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine neue Textdatei erstellen, wird in der oberen rechten Ecke des Viewports ein violettfeld mit einem roten Umriss angezeigt.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet. Wenn Sie eine neue Textdatei erstellen, wird in der oberen rechten Ecke des Viewports ein violettfeld mit einem roten Umriss angezeigt.
 
 ## <a name="create-a-margin-extension"></a>Erstellen einer Rand Erweiterung
  Die Vorlage für den Editor Rand erstellt einen grünen Rand, der mit den Wörtern **Hello World!* unterhalb der horizontalen Schiebe Leiste.
@@ -94,7 +94,7 @@ Mithilfe von Element Vorlagen, die im Visual Studio SDK enthalten sind, können 
 
     - *EditorMargin1Factory.cs* enthält die- `EditorMargin1Factory` Klasse.
 
-4. Erstellen Sie dieses Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, wird unterhalb der horizontalen Schiebe Leiste ein grüner Rand angezeigt, der die Wörter **Hello EditorMargin1** enthält.
+4. Erstellen Sie dieses Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet. Wenn Sie eine Textdatei öffnen, wird unterhalb der horizontalen Schiebe Leiste ein grüner Rand angezeigt, der die Wörter **Hello EditorMargin1** enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

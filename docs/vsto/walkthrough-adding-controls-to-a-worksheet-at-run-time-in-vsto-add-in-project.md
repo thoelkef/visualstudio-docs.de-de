@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253893"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt
@@ -37,8 +37,8 @@ ms.locfileid: "71253893"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,9 +49,9 @@ ms.locfileid: "71253893"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>So erstellen Sie ein neues Excel-VSTO-Add-In-Projekt
 
-1. Erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Sie in ein Excel-VSTO-Add-in-Projekt mit dem Namen **exceldynamiccontrols**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Erstellen Sie in ein Excel-VSTO-Add-in-Projekt mit dem Namen **exceldynamiccontrols**. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Fügen Sie einen Verweis auf die **Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll** -Assembly hinzu. Dieser Verweis ist erforderlich, um einem Arbeitsblatt ein Windows Forms-Steuerelement in dieser exemplarischen Vorgehensweise später programmgesteuert hinzuzufügen.
+2. Fügen Sie einen Verweis auf die **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** -Assembly hinzu. Dieser Verweis ist erforderlich, um einem Arbeitsblatt ein Windows Forms-Steuerelement in dieser exemplarischen Vorgehensweise später programmgesteuert hinzuzufügen.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Bereitstellen einer Benutzeroberfläche zum Hinzufügen von Steuerelementen zu einem Arbeitsblatt
  Fügen Sie dem Excel-Menüband eine benutzerdefinierte Registerkarte hinzu. Benutzer können Kontrollkästchen auf der Registerkarte aktivieren, um einem Arbeitsblatt Steuerelemente hinzuzufügen.
@@ -64,7 +64,7 @@ ms.locfileid: "71253893"
 
      Eine Datei mit dem Namen **Ribbon1.cs** oder **Ribbon1. vb** wird im Menüband-Designer geöffnet und zeigt eine Standard Registerkarte und-Gruppe an.
 
-3. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**ein CheckBox-Steuerelement auf **group1**.
+3. Ziehen Sie ein **Kontrollkästchen** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder**der Toolbox auf **group1**.
 
 4. Klicken Sie auf **CheckBox1** , um dieses Steuerelement auszuwählen.
 
@@ -72,22 +72,22 @@ ms.locfileid: "71253893"
 
     |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Name**|**Button** (Schaltfläche)|
-    |**Bezeichnung**|**Button** (Schaltfläche)|
+    |**Name**|**Schaltfläche**|
+    |**Label**|**Schaltfläche**|
 
 6. Fügen Sie **group1**ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Name**|**Name Drange**|
-    |**Bezeichnung**|**Name Drange**|
+    |**Name**|**NamedRange**|
+    |**Label**|**NamedRange**|
 
 7. Fügen Sie **group1**ein drittes Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**ListObject**|
-    |**Bezeichnung**|**ListObject**|
+    |**Label**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
  Verwaltete Steuerelemente können nur Hostelementen hinzugefügt werden, die als Container fungieren. Da VSTO-Add-in-Projekte mit allen geöffneten Arbeitsmappen funktionieren, konvertiert das VSTO-Add-In das Arbeitsblatt in ein Hostelement oder ruft ein vorhandenes Hostelement ab, bevor das Steuerelement hinzugefügt wird. Fügen Sie den Click-Ereignishandlern jedes Steuerelements Code hinzu, um ein auf dem geöffneten Arbeitsblatt basierendes <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelement zu generieren. Fügen Sie dann ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> an der aktuellen Auswahlposition in das Arbeitsblatt ein.
@@ -96,7 +96,7 @@ ms.locfileid: "71253893"
 
 1. Doppelklicken Sie im Menüband-Designer auf die **Schaltfläche**.
 
-     Der <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> -Ereignishandler des Kontrollkästchens **Schaltfläche** wird im Code-Editor geöffnet.
+     Der- <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> Ereignishandler des Kontrollkästchens **Schaltfläche** wird im Code-Editor geöffnet.
 
 2. Ersetzen Sie den `Button_Click` -Ereignishandler durch den folgenden Code.
 
@@ -141,12 +141,12 @@ ms.locfileid: "71253893"
 
 2. Klicken Sie im Menü **Ansicht** auf **Code**.
 
-3. Fügen Sie der `ThisAddIn` -Klasse die folgende Methode hinzu. Durch diesen Code wird das erste Arbeitsblatt in der Arbeitsmappe abgerufen und dann anhand der `HasVstoObject`-Methode überprüft, ob das Arbeitsblatt über ein generiertes Arbeitsblattobjekt verfügt. Wenn das generierte Arbeitsblattobjekt über Steuerelemente verfügt, ruft der Code das Arbeitsblattobjekt ab und durchläuft die Steuerelementauflistung, um Steuerelemente zu entfernen.
+3. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Durch diesen Code wird das erste Arbeitsblatt in der Arbeitsmappe abgerufen und dann anhand der `HasVstoObject`-Methode überprüft, ob das Arbeitsblatt über ein generiertes Arbeitsblattobjekt verfügt. Wenn das generierte Arbeitsblattobjekt über Steuerelemente verfügt, ruft der Code das Arbeitsblattobjekt ab und durchläuft die Steuerelementauflistung, um Steuerelemente zu entfernen.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4. In C# müssen Sie einen Ereignishandler für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>-Ereignis erstellen. Sie können diesen Code in der `ThisAddIn_Startup`-Methode positionieren. Weitere Informationen zum Erstellen von Ereignis Handlern finden [Sie unter Gewusst wie: Erstellen von Ereignis Handlern in Office](../vsto/how-to-create-event-handlers-in-office-projects.md)-Projekten. Ersetzen Sie die `ThisAddIn_Startup` -Methode durch folgenden Code:
+4. In C# müssen Sie einen Ereignishandler für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>-Ereignis erstellen. Sie können diesen Code in der `ThisAddIn_Startup`-Methode positionieren. Weitere Informationen zum Erstellen von Ereignis Handlern finden Sie unter Gewusst [wie: Erstellen von Ereignis Handlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md). Ersetzen Sie die `ThisAddIn_Startup`-Methode durch den folgenden Code.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
@@ -186,7 +186,7 @@ ms.locfileid: "71253893"
 
 - Informationen dazu, wie Sie Steuerelemente in einem Arbeitsblatt speichern, finden Sie im Beispiel für dynamische Steuerelemente für Excel-VSTO im Beispiel zu [Office-Entwicklungs Beispielen und](../vsto/office-development-samples-and-walkthroughs.md)exemplarischen Vorgehensweisen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Excel-Lösungen](../vsto/excel-solutions.md)
 - [Übersicht über Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547783"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
@@ -28,11 +28,11 @@ ms.locfileid: "85547783"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfen von nicht verwendeten Parametern](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie den Member so ändern, dass er den-Parameter innerhalb seines Texts verwendet.<br /><br /> Unterbrechen: Wenn Sie den Parameter entfernen und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

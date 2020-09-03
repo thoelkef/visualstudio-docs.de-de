@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance | Microsoft-Dokumentation
+title: Idebuggenericfieldinstance | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ab9c43e915f2c23dfe5f38ce61beff29949ca0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180798"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Stellt eine Instanz eines Felds für einen generischen Typ von verwaltetem Code.  
+Stellt eine Instanz eines Felds für einen generischen verwalteten Codetyp dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,12 +33,12 @@ IDebugGenericFieldInstance : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Ruft die Typargumente für die Parameter für diese Instanz ab.|  
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Gibt die Anzahl der Parameterargumente für diese Instanz zurück.|  
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Ruft die Typparameter Argumente für diese Instanz ab.|  
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Gibt die Anzahl der Typparameter Argumente für diese Instanz zurück.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Sh.h  
+ Header: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

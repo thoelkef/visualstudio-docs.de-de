@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662419"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Text-Editor"
@@ -43,7 +43,7 @@ In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschri
 |DetectUTF8WithoutSignature|Get/Set (boolesch)|Erkennt, ob eine Datei UTF-8-Codierung verwendet, wenn sie über keine Codierungssignatur verfügt.|
 |TrackChanges|Get/Set (boolesch)||
 
-## <a name="plain-text"></a>Nur-Text
+## <a name="plain-text"></a>Nur Text
  `DTE.Properties("TextEditor", "PlainText")`
 
  Die `PlainText`-Editoroptionen wirken sich auf die Editoreinstellungen aus, wenn Textdateien bearbeitet werden. Jede Programmiersprache und jedes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Paket weist eigene spezielle Einstellungen für den **Text-Editor** auf. Um beispielsweise die Editoreinstellungen von [!INCLUDE[csprcs](../../includes/csprcs-md.md)] anzuzeigen oder zu ändern, verwenden Sie `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Für die Editoreinstellungen von **SQL-Skript** verwenden Sie `DTE.Properties("TextEditor", "SQL ")`.
@@ -58,12 +58,12 @@ In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschri
 |WordWrapGlyphs|Get/Set (boolesch)|Zeigt am Ende einer Zeile ein Symbol an, um anzugeben, dass die Zeile in die nächste Zeile umbrochen wird.|
 |EnableLeftClickForURLs|Get/Set (boolesch)|Bestimmt, ob der Editor URLs unterstreicht und einen einfachen Mausklick für den Sprung zur URL in dem im System registrierten Webbrowser aktiviert.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Bestimmt den Einrückungsstil: Standard, Smart oder Kein.|
-|TabSize|Get/Set (lange ganze Zahl)|Stellt die Anzahl von Leerzeichen dar, die einer Registerkarte entspricht. Bei Auswahl einer ganzen Zahl außerhalb des Bereichs von 1 bis einschließlich 60 schlägt der Vorgang fehl.|
+|TabSize|Get/Set (lange ganze Zahl)|Stellt die Anzahl der Leerzeichen dar, die einer Registerkarte entsprechen. Das Festlegen einer Ganzzahl außerhalb des Bereichs von 1 bis 60 (einschließlich) schlägt fehl.|
 |InsertTabs|Get/Set (boolesch)|Wenn `True`, werden für Einzüge Tabulatorzeichen verwendet.|
 |IndentSize|Get/Set (lange ganze Zahl)|Stellt die Anzahl von Leerzeichen dar, die einer Einzugsebene entspricht. Bei Auswahl eines Ganzzahlwerts außerhalb des Bereichs von 1 bis einschließlich 60 schlägt der Vorgang fehl.|
 |ShowLineNumbers|Get/Set (boolesch)|Bestimmt, ob bei der Anzeige eines Haupteditordokuments Zeilenzahlen am linken Rand angezeigt werden.|
 |ShowNavigationBar|Get/Set (boolesch)|Bestimmt, ob die Dropdownlisten und Schaltflächen in Editorfenstern oben angezeigt werden.|
 |CutCopyBlankLines|Get/Set (boolesch)|Schneidet leere Zeilen aus oder kopiert sie, wenn sie ausgewählt werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Steuern von Options Einstellungen](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Festlegen der Namen von Eigenschaften Elementen auf Options Seiten](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Optionen (Optionsseite), Umgebungs Knoten Eigenschaften](../../ide/reference/options-page-environment-node-properties.md) [Optionen Seite, Eigenschaften des Knotens "Schriftarten und Farben](../../ide/reference/options-page-fonts-and-colors-node-properties.md) "

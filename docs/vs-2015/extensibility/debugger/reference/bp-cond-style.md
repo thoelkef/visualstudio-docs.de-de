@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153571"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
+# <a name="bp_cond_style"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Haltepunkt-Bedingung-Stil für ausstehende und gebundene Haltepunkte.  
+Gibt den Haltepunkt-Bedingungs Stil für ausstehende und gebundene Haltepunkte an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,24 +45,24 @@ public enum enum_BP_COND_STYLE { 
   
 ## <a name="members"></a>Member  
  BP_COND_NONE  
- Löst den Haltepunkt an, bei des Haltepunkts Position erreichen. Keine Bedingung für Haltepunkt angegeben.  
+ Löst den Haltepunkt aus, wenn die Position des Breakpoints erreicht ist. Es wurde keine breakpointbedingung angegeben.  
   
  BP_COND_WHEN_TRUE  
- Den Haltepunkt ausgelöst wird, nur wenn der bedingte Ausdruck mit dem Haltepunkt verknüpften ergibt `true`.  
+ Löst den Haltepunkt nur aus, wenn der bedingte Ausdruck, der dem Breakpoint zugeordnet ist, zu ausgewertet wird `true` .  
   
  BP_COND_WHEN_CHANGED  
- Wird ausgelöst, die der Haltepunkt nur, wenn der Wert des bedingten Ausdrucks mit dem Haltepunkt zugeordneten aus der vorherigen Auswertung geändert wurde.  
+ Löst den Breakpoint nur aus, wenn sich der Wert des bedingten Ausdrucks, der dem Breakpoint zugeordnet ist, von der vorherigen Auswertung geändert hat.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `styleCondition` Mitglied der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird für den `styleCondition` Member der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur verwendet.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

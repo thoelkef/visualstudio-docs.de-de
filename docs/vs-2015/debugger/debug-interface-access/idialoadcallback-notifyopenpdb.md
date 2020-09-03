@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89ab553fdbe75470853db4506261ab719061f10d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150619"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aufgerufen, wenn eine Kandidat PDB-Datei geöffnet wird.  
+Wird aufgerufen, wenn eine Candidate. PDB-Datei geöffnet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenPDB ( 
   
 #### <a name="parameters"></a>Parameter  
  `pdbPath`  
- [in] Der vollständige Pfad der PDB-Datei.  
+ in Der vollständige Pfad der PDB-Datei.  
   
  `resultCode`  
- [in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last auf diese Datei angewendet.  
+ in Code, der den Erfolg ( `S_OK` ) oder das Fehlschlagen der Last angibt, die auf diese Datei angewendet werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

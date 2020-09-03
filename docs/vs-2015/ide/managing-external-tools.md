@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651339"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
@@ -102,24 +102,24 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 > [!NOTE]
 > In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.
 
-|-Name|Argument|Beschreibung|
+|Name|Argument|BESCHREIBUNG|
 |----------|--------------|-----------------|
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|
 |Elementverzeichnis|$(ItemDir)|Das Verzeichnisses der aktuellen Datei (Laufwerk + Pfad).|
 |Elementdateiname|$(ItemFilename)|Der Dateiname der aktuellen Datei (Dateiname).|
 |Elementerweiterung|$(ItemExt)|Die Dateinamenerweiterung der aktuellen Datei.|
-|Aktuelle Zeile|&(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|
-|Aktuelle Spalte|&(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|
-|Aktueller Text|&(CurText)|Der ausgewählte Text.|
+|Aktuelle Zeile|$(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|
+|Aktuelle Spalte|$(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|
+|Aktueller Text|$(CurText)|Der ausgewählte Text.|
 |Zielpfad|$(TargetPath)|Der vollständige Dateiname des zu erstellenden Elements (Laufwerk + Pfad + Dateiname).|
-|Target Directory|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|
-|Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
+|Zielverzeichnis|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|
+|Zielname|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
 |Zielerweiterung|$(TargetExt)|Die Dateinamenerweiterung zu erstellenden Elements.|
-|Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert). Beispiel: **\\...\Eigene Dateien\ Visual Studio-\<Version >\\<ProjectName\>\bin\debug**|
+|Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert). Beispiel:** \\ . ..\My Documents\Visual Studio \<Version> \\<ProjectName \> \bin\debug**|
 |Projektverzeichnis|$(ProjDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|
 |Projektdateiname|$(ProjFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|
 |Projektmappenverzeichnis|$(SolutionDir)|Das Verzeichnisses der aktuellen Projektmappe (Laufwerk + Pfad).|
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [C/C++-Buildtools](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

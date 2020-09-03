@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205099"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Zustandsflags ausstehender Haltepunkt an.  
+Gibt die ausstehenden breakpointstatusflags an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,18 +46,18 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
  Platzhalter.  
   
  PBPSF_VIRTUALIZED  
- Gibt eine virtualisierte ausstehender Haltepunkt eine, die gebunden werden soll, jedes Mal, wenn neuer Code geladen wird.  
+ Gibt einen virtualisierten ausstehenden Haltepunkt an, der jedes Mal gebunden werden soll, wenn neuer Code geladen wird.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `flags` Mitglied der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird für den `flags` Member der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) -Struktur verwendet.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

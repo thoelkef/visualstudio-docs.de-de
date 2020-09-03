@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b5a94ddd9e170a709dca9107e6f1fcfff7cd0f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662591"
 ---
 # <a name="xml-documentation-comments-javascript"></a>XML-Dokumentationskommentare (JavaScript)
@@ -48,5 +48,5 @@ In JavaScript können Sie eine Dokumentation für Ihren Code erstellen, indem Si
 
 - [\<var>](../ide/var-javascript.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

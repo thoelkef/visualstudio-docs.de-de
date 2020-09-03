@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670688"
 ---
 # <a name="how-to-specify-build-events-c"></a>Gewusst wie: Angeben von Buildereignissen (C#)
@@ -49,12 +49,12 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
 5. Geben Sie im Feld **Befehlszeile für Postbuildereignis** die Syntax des Buildereignisses an.
 
     > [!NOTE]
-    > Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu.  Zum Beispiel: `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Geben Sie im Feld **Postbuildereignis ausführen** das Postbuildereignis als auszuführende Bedingung an.
 
     > [!NOTE]
-    > Um umfangreiche Syntax hinzuzufügen oder Buildmakros aus den [Dialogfeldern „Befehlszeile für Präbuildereignis“ und. „Befehlszeile für Postbuildereignis“](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) auszuwählen, klicken Sie auf das Symbol mit den Auslassungspunkten ( **...** ), damit ein Bearbeitungsfeld angezeigt wird.
+    > Zum Hinzufügen einer langen Syntax oder zum Auswählen von Buildmakros aus dem [Dialog Feld "Präbuildereignis/Postbuildereignis-Befehlszeile](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)" klicken Sie auf die Schaltfläche mit den Auslassungs Punkten (**...**), um ein Bearbeitungsfeld anzuzeigen.
 
      Die Syntax des Buildereignisses kann beliebige Befehle enthalten, die für eine Eingabeaufforderung oder ein BAT-Datei zulässig sind. Dem Namen der Batchdatei sollte ein `call` vorangestellt sein, um sicherzustellen, dass alle nachfolgenden Befehle ausgeführt werden.
 
@@ -75,7 +75,7 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
 
 1. Erstellen Sie eine Konsolenanwendung für den Befehl. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** **Visual C#** , klicken Sie auf **Windows** und dann auf die Vorlage **Konsolenanwendung**. Benennen Sie das Projekt mit `ChangeOSVersionCS`.
+2. Erweitern Sie im Dialogfeld **Neues Projekt****Visual C#**, klicken Sie auf **Windows** und dann auf die Vorlage **Konsolenanwendung**. Benennen Sie das Projekt mit `ChangeOSVersionCS`.
 
 3. Fügen Sie in „program.cs“ die folgende Zeile in die andere `using`-Anweisung am Anfang der Datei ein:
 
@@ -137,7 +137,7 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
 
     Der Befehl akzeptiert zwei Argumente: den Pfad des Anwendungsmanifests (also den Ordner, in dem der Buildprozess das Manifest erstellt, üblicherweise „projektname.publish“), und die neue Version des Betriebssystems.
 
-5. Erstellen Sie das Projekt. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+5. Erstellen Sie das Projekt. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 6. Kopieren Sie die EXE-Datei in ein Verzeichnis wie z.B. `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -147,7 +147,7 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
 
 1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** **Visual C#** , klicken Sie auf **Windows** und dann auf die Vorlage **Windows Forms-Anwendung**. Benennen Sie das Projekt mit `CSWinApp`.
+2. Erweitern Sie im Dialogfeld **Neues Projekt****Visual C#**, klicken Sie auf **Windows** und dann auf die Vorlage **Windows Forms-Anwendung**. Benennen Sie das Projekt mit `CSWinApp`.
 
 3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
@@ -163,7 +163,7 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. Klicken Sie im Projekt-Designer auf die Registerkarte **Ereignisse erstellen**, und klicken Sie anschließend auf die Schaltfläche **Postbuild bearbeiten**.
+6. Klicken Sie im Projekt-Designer auf die Registerkarte **Buildereignisse** , und klicken Sie auf die Schaltfläche **Postbuild bearbeiten** .
 
 7. Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
 
@@ -183,5 +183,5 @@ Verwenden Sie Buildereignisse, um Befehle festzulegen, die vor Beginn oder nach 
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Siehe auch
- [Seite "Buildereignisse"C#, Projekt-Designer ()](../ide/reference/build-events-page-project-designer-csharp.md) [Dialog Feld "Präbuildereignis/Postbuildereignis-Befehlszeile](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) " Gewusst [wie: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [Kompilieren](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Seite "Buildereignisse", Projekt-Designer (c#)](../ide/reference/build-events-page-project-designer-csharp.md) [Präbuildereignis/Dialog Feld "Befehlszeile für Postbuildereignis](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) " Gewusst [wie: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [Kompilieren](../ide/compiling-and-building-in-visual-studio.md)

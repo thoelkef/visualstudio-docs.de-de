@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332238"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Tastenkombinationen in Blend für Visual Studio
 
 ## <a name="project-shortcuts"></a>Tastenkombinationen für Projekte
 
-|Gewünschte Formatierung|Aktion|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Erstellen eines neuen Projekts|**STRG** + **UMSCHALT** + **N**|
 |Öffnet ein Projekt oder eine Projektmappe (keine Website)|**STRG** + **UMSCHALT** + **O**|
@@ -33,9 +33,9 @@ ms.locfileid: "85332238"
 
 ## <a name="document-shortcuts"></a>Tastenkombinationen für Dokumente
 
-|Gewünschte Formatierung|Aktion|
+|Aufgabe|Aktion|
 |----------------|-------------|
-|Schaltet zwischen geöffneten Dokumenten um|**STRG** + **Registerkarte**|
+|Schaltet zwischen geöffneten Dokumenten um|**STRG**+**TAB**|
 |Speichert das aktive Dokument|**STRG** + **S**|
 |Speichert alle Dokumente|**STRG** + **UMSCHALT** + **S**|
 |Schließt das aktive Dokument|**STRG** + **W**|
@@ -52,7 +52,7 @@ ms.locfileid: "85332238"
 
 ## <a name="object-shortcuts"></a>Tastenkombinationen für Objekte
 
-|Gewünschte Formatierung|Aktion|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Erstellen eines neuen Elements|**STRG** + **N**|
 |Ein Objekt duplizieren|Halten Sie die **ALT-TASTE** gedrückt, und ziehen Sie das Objekt.|
@@ -93,7 +93,7 @@ ms.locfileid: "85332238"
 
 ## <a name="view-shortcuts"></a>Tastenkombinationen für Ansichten
 
-|Gewünschte Formatierung|Aktion|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Zwischen der **Design**-, der **Code**- und der **geteilten** Ansicht wechseln|**F11**|
 |Zeichenfläche vergrößern|**STRG** + **Gleichheitszeichen** ( **=** )|
@@ -109,7 +109,7 @@ ms.locfileid: "85332238"
 
 ## <a name="workspace-shortcuts"></a>Tastenkombinationen für Arbeitsbereiche
 
-|Gewünschte Formatierung|Aktion|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Wechselt zwischen den Arbeitsbereichen **Animation** und **Design**|**STRG** + **F11**|
 |Blendet das **Objektepanel** ein oder aus|**STRG** + **Zeitraum**|

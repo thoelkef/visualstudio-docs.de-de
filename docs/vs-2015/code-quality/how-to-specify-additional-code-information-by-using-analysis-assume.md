@@ -14,28 +14,28 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277973"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Hinweise für das Code Analysetool für C/C++ Code bereitstellen, das den Analyseprozess unterstützt und Warnungen reduziert. Verwenden Sie die folgende Funktion, um zusätzliche Informationen bereitzustellen:  
+Sie können Hinweise zum Code Analysetool für C/C++-Code bereitstellen, der den Analyseprozess unterstützt und Warnungen reduziert. Verwenden Sie die folgende Funktion, um zusätzliche Informationen bereitzustellen:  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr`-beliebiger Ausdruck, der als true ausgewertet wird.  
+ `expr` -beliebiger Ausdruck, der als true ausgewertet wird.  
   
  Das Code Analysetool geht davon aus, dass die Bedingung, die durch den Ausdruck dargestellt wird, an der Stelle, an der die Funktion angezeigt wird, true ist, bis der Ausdruck geändert wird, z. b. durch Zuweisung zu einer Variablen.  
   
 > [!NOTE]
-> `__analysis_assume` wirkt sich nicht auf die Codeoptimierung aus. Außerhalb des Code Analysetools ist `__analysis_assume` als No-op definiert.  
+> `__analysis_assume` hat keine Auswirkung auf die Codeoptimierung. Außerhalb des Code Analysetools `__analysis_assume` ist als No-op definiert.  
   
 ## <a name="example"></a>Beispiel  
- Der folgende Code verwendet `__analysis_assume`, um die Code Analyse Warnung zu korrigieren [C6388](../code-quality/c6388.md):  
+ Der folgende Code verwendet `__analysis_assume` , um die Code Analyse Warnung zu korrigieren [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  

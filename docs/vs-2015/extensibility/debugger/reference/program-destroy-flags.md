@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205007"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Listet die gültigen Werte des Programms zerstört Flags.  
+Listet die gültigen Werte der Programm zerstörerflags auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,18 +41,18 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Begriffe  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Programm löschen, jedoch mit dem Debuggen fortfahren.  
+ Programm zerstören, aber weiter Debuggen.  
   
-## <a name="remarks"></a>Hinweise  
- Die Enumeration zurückgegeben wird, durch die [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Enumeration wird von der [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

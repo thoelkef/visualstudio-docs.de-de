@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d471a73205383f0f23c5016872712a3ba2c578d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153618"
 ---
-# <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
+# <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, wie eine Prozess-ID interpretieren die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.  
+Gibt an, wie eine Prozess-ID in der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur interpretiert werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,21 +43,21 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>Member  
  AD_PROCESS_ID_SYSTEM  
- Prozess-ID ist ein Systembezeichner. Verwenden der `ProcessId.dwProcessId` Feld der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.  
+ Die Prozess-ID ist ein System Bezeichner. Verwenden Sie das- `ProcessId.dwProcessId` Feld der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur.  
   
  AD_PROCESS_ID_GUID  
- Prozess-ID ist eine GUID. Verwenden der `ProcessId.guidProcessId` Feld der `AD_PROCESS_ID` Struktur.  
+ Die Prozess-ID ist eine GUID. Verwenden Sie das- `ProcessId.guidProcessId` Feld der- `AD_PROCESS_ID` Struktur.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `ProcessIdType` Mitglied der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Typ des Prozess-ID zu identifizieren, die in der Struktur enthalten ist. Bestimmt, wie zum Interpretieren der `ProcessId` union in der Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird für den `ProcessIdType` Member der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur verwendet, um den Typ der Prozess-ID zu identifizieren, der in der Struktur enthalten ist. Bestimmt, wie die `ProcessId` Union in der-Struktur interpretiert wird.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

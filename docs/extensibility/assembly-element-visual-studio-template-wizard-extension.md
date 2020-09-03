@@ -1,5 +1,5 @@
 ---
-title: Assemblyelement (Visual Studio Template Wizard Extension) | Microsoft Docs
+title: Assembly-Element (Visual Studio-Vorlagen-Assistenten Erweiterung) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740062"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assemblyelement (Visual Studio-Vorlagen-Assistentenerweiterung)
-Gibt den Namen oder den starken Namen `IWizard` der Assembly an, die die Schnittstelle implementiert.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly-Element (Assistenten Erweiterung für Visual Studio-Vorlagen)
+Gibt den Namen oder den starken Namen der Assembly an, die die- `IWizard` Schnittstelle implementiert.
 
- \<VSTemplate \<> WizardExtension> \<Assembly>
+ \<VSTemplate>
+\<WizardExtension>
+\<Assembly>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,27 +38,27 @@ Gibt den Namen oder den starken Namen `IWizard` der Assembly an, die die Schnitt
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungselemente zum Anpassen des Vorlagen-Assistenten.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Dieser Text gibt die Assembly `IWizard` an, die die Schnittstelle implementiert. Dieser Assemblyname muss als vollständiger Assemblyname angegeben werden. Beispiel: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ Dieser Text gibt die Assembly an, die die- `IWizard` Schnittstelle implementiert. Dieser Assemblyname muss als vollständiger Assemblyname angegeben werden. Beispiel: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
 ## <a name="remarks"></a>Bemerkungen
  `Assembly` ist ein erforderliches untergeordnetes Element von `WizardExtension`.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Standardprojektvorlage für eine Windows-Anwendung veranschaulicht.
+ Im folgenden Beispiel werden die Metadaten für die Standard Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung veranschaulicht.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -86,8 +88,8 @@ Gibt den Namen oder den starken Namen `IWizard` der Assembly an, die die Schnitt
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

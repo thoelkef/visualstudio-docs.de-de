@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft-Dokumentation
+title: 'IDebugProperty3:: setvalueasstringwitherror | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58b2c487e0259ec2381638c77608f8773af3e159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193383"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Legt den Wert dieser Eigenschaft fest, und gibt eine Fehlermeldung zurück, bei Bedarf.  
+Legt den Wert dieser Eigenschaft fest und gibt ggf. eine Fehlermeldung zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,25 +46,25 @@ int SetValueAsStringWithError(
   
 #### <a name="parameters"></a>Parameter  
  `pszValue`  
- [in] Der festzulegende Wert.  
+ in Der festzulegende Wert.  
   
  `dwRadix`  
- [in] Die Basis des Werts, der festgelegt wird.  
+ in Der Basis-Wert des festzulegenden Werts.  
   
  `dwTimeout`  
- [in] Die Länge der Wartezeit für den Wert festgelegt werden (`INFINITE` bedeutet unbegrenzte Wartezeit).  
+ in Die Zeitspanne, die gewartet werden soll, bis der Wert festgelegt wird (bedeutet, dass `INFINITE` immer gewartet wird).  
   
  `errorString`  
- [out] Fehler beim Festlegen des Werts aufgetreten ist, enthält dies die Ursache des Fehlers.  
+ vorgenommen Wenn beim Festlegen des Werts ein Fehler aufgetreten ist, enthält dies den Grund für den Fehler.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der eingehende Wert möglicherweise ein Ausdruck ausgewertet werden soll.  
+## <a name="remarks"></a>Bemerkungen  
+ Der eingehende Wert kann ein Ausdruck sein, der ausgewertet werden soll.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CProperty** -Objekt, das macht die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cproperty** -Objekt implementiert wird, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CProperty::SetValueAsStringWithError(   
@@ -168,5 +168,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

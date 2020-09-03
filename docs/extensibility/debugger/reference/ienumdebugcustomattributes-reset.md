@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Reset | Microsoft Docs
+title: 'Ienumentbugcustomattribute:: Reset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 061d67e628974b001f74d81675d8dcba45968678
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717207"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
@@ -39,8 +39,8 @@ int Reset();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf der [Next-Methode](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) das erste Element der Enumeration zurück.
+ Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf der [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) -Methode das erste Element der-Enumeration zurück.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
-- [Weiter](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)
+- [Nächste](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

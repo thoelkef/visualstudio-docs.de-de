@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Restrictregistryaccess | Microsoft-Dokumentation'
+title: 'IDiaLoadCallback:: RestrictRegistryAccess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: edc1bc130f2e8320de0cbd0e0ac3f84dad71b903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150610"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bestimmt, ob die Registrierung Abfragen verwendet werden können, um Symbolsuchpfade zu suchen.  
+Bestimmt, ob Registrierungs Abfragen verwendet werden können, um Symbol Suchpfade zu suchen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,10 +32,10 @@ HRESULT RestrictRegistryAccess();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Code als Rückgabewert `S_OK` wird verhindert, dass die Registrierung für die Symbolsuchpfade Abfragen.  
+## <a name="remarks"></a>Bemerkungen  
+ Durch einen anderen Rückgabecode als wird `S_OK` verhindert, dass die Registrierung für Symbol Suchpfade abgefragt wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662425"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Schriftarten und Farben"
@@ -29,11 +29,11 @@ Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ei
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Text-Editor oder Drucker oder Dialogfelder oder Toolfenster
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- -oder-
+ - oder -
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- Oder
+ - oder -
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
@@ -43,5 +43,5 @@ Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ei
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Ein <xref:EnvDTE.vsFontCharSet>-Wert, der den Typ des zu verwendenden Zeichensatzes angibt, z.B. Hebräisch oder Russisch.|
 |FontSize|Get/Set (kurzer Name)|Die zu verwendende Schriftgröße in Punkten. Beispielsweise 10 oder 12.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Steuern von Options Einstellungen](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Festlegen der Namen von Eigenschaften Elementen auf Options Seiten](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Optionen Seite, Umgebungs Knoten Eigenschaften](../../ide/reference/options-page-environment-node-properties.md) [Optionen Seite, Eigenschaften des Knotens "Text-Editor](../../ide/reference/options-page-text-editor-node-properties.md) "

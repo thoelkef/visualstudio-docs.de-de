@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670855"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Gewusst wie: Untersuchen des Inhaltsmodells von Knoten in der Inhaltsmodellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Ihre Knoten mithilfe der [Inhalts Modell Ansicht](../xml-tools/content-model-view.md)untersuchen.
+In diesem Thema wird das Untersuchen der Knoten in der [Inhaltsmodellansicht](../xml-tools/content-model-view.md) beschrieben.
 
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>So erstellen Sie eine neue XSD-Datei und zeigen Sie das Stammelement in der Inhaltsmodellansicht an
 
@@ -29,9 +29,9 @@ In diesem Thema wird beschrieben, wie Sie Ihre Knoten mithilfe der [Inhalts Mode
 
 3. Kopieren Sie den XML-Schema Beispielcode aus dem [Beispiel-XML-Schema: Bestell Schema](../xml-tools/sample-xsd-file-purchase-order-schema.md) , und fügen Sie ihn ein, um den Code zu ersetzen, der standardmäßig der neuen XSD-Datei hinzugefügt wurde.
 
-4. Wählen Sie im Schema-Explorer das `purchaseOrder` Element aus, indem Sie im XML-Editor mit der rechten Maustaste auf das Element `purchaseOrder` klicken und **im XML-Explorer anzeigen**auswählen.
+4. Wählen Sie im `purchaseOrder` Schema-Explorer das Element aus, indem Sie im XML-Editor mit der rechten Maustaste `purchaseOrder` auf das Element klicken und **im XML-Explorer anzeigen**auswählen.
 
-5. Klicken Sie mit der rechten Maustaste auf die `purchaseOrder` im XML-Explorer, und wählen Sie **in Inhalts Modell Ansicht anzeigen aus**.
+5. Klicken Sie im XML-Explorer mit der rechten Maustaste auf `purchaseOrder`, und wählen Sie **In Inhaltsmodellansicht anzeigen** aus.
 
      Das `purchaseOrder`-Element wird auf der Entwurfsoberfläche der Inhaltsmodellansicht angezeigt.
 
@@ -43,4 +43,4 @@ In diesem Thema wird beschrieben, wie Sie Ihre Knoten mithilfe der [Inhalts Mode
 
 8. Klicken Sie auf der XSD-Symbolleiste auf die Schaltfläche **Dokumentation anzeigen** , um die Dokumentation zu wechseln. Die Dokumentation kann auch über das Kontextmenü der Entwurfsoberfläche ein- und ausgeblendet werden.
 
-9. Klicken Sie auf den Knoten `purchaseOrder`, und wählen Sie **Beispiel-XML generieren** aus, um das XML-Instanzdokument anzuzeigen.
+9. Klicken Sie auf den `purchaseOrder` Knoten, und wählen Sie **Beispiel-XML generieren** aus, um das XML-Instanzdokument anzuzeigen.

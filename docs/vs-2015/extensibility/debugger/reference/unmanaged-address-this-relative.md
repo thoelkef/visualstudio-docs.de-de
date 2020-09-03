@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204750"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Struktur stellt eine Adresse, die relativ zu einem `this` Zeiger (`Me` in Visual Basic).  
+Diese Struktur stellt eine Adresse dar, die relativ zu einem `this` Zeiger ist ( `Me` in Visual Basic).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,24 +44,24 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>Begriffe  
  dwOffset  
- Byte-offset von einer Basisklasse Position (z. B. Anfang eine Klassen-Vtable).  
+ Byte Offset von einer Basis Position (z. b. Start einer Klasse Vtable).  
   
- dwBitOffset  
- Der Offset in Bits, die von einer Basisklasse Position (immer 0, wenn auf ein Bitfeld).  
+ dwbizu ffset  
+ Offset in Bits von einer Basis Position (immer 0, es sei denn, es wird auf ein Bitfeld verwiesen).  
   
- dwBitLength  
- Anzahl der Bits, die die Adresse (immer 0, wenn auf ein Bitfeld).  
+ dwbitlength  
+ Anzahl von Bits, die die Adresse darstellen (immer 0, sofern nicht auf ein Bitfeld verwiesen wird).  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) -Struktur, wenn das- `dwKind` Feld der- `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Enumeration).  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: sh.h  
+ Header: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

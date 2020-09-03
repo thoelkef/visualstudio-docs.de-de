@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253588"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Einstieg in das Programmieren von VSTO-Add-ins
-  Sie können mit VSTO-Add-Ins Microsoft Office-Anwendungen automatisieren, Funktionen der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen. Informationen dazu, wie VSTO-Add-Ins mit anderen Typen von Office-Lösungen verglichen werden, die Sie mit Visual Studio erstellen können, finden Sie unter [Übersicht über &#40;die Entwicklung von Office&#41;](../vsto/office-solutions-development-overview-vsto.md)-Projektmappen VSTO
+  Sie können mit VSTO-Add-Ins Microsoft Office-Anwendungen automatisieren, Funktionen der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen. Informationen dazu, wie VSTO-Add-Ins mit anderen Typen von Office-Projektmappen verglichen werden, die Sie mithilfe von Visual Studio erstellen können, finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;v&#41;Sto ](../vsto/office-solutions-development-overview-vsto.md)
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
 ## <a name="create-vsto-add-in-projects"></a>Erstellen von VSTO-Add-in-Projekten
  Erstellen Sie VSTO-Add-in-Projekte mit einer der VSTO-Add-in-Projektvorlagen im Dialogfeld **Neues Projekt** . Diese Vorlagen enthalten erforderliche Assemblyverweise und Projektdateien. Visual Studio stellt VSTO-Add-In-Projektvorlagen für die meisten Anwendungen in Office zur Verfügung.
 
- Weitere Informationen zum Erstellen eines VSTO-Add-in-Projekts finden [Sie unter Gewusst wie: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio. Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
+ Weitere Informationen zum Erstellen eines VSTO-Add-in-Projekts finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
 ## <a name="develop-vsto-add-in-projects"></a>Entwickeln von VSTO-Add-in-Projekten
- Wenn Sie ein VSTO-Add-in-Projekt erstellen, erstellt Visual Studio automatisch eine *ThisAddIn. vb* -Codedatei ( [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]in C#) oder eine *ThisAddIn.cs* -Codedatei (in). Diese Datei enthält die `ThisAddIn` -Klasse, die die Grundlage für das VSTO-Add-in bereitstellt. Sie können Member dieser Klasse verwenden, um Code auszuführen, wenn das VSTO-Add-In geladen oder entladen wird, um auf das Objektmodell der Hostanwendung zuzugreifen und um Funktionen der Anwendung zu erweitern. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+ Wenn Sie ein VSTO-Add-in-Projekt erstellen, erstellt Visual Studio automatisch eine *ThisAddIn. vb* - [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Codedatei (in) oder eine *ThisAddIn.cs* -Codedatei (in c#). Diese Datei enthält die- `ThisAddIn` Klasse, die die Grundlage für das VSTO-Add-in bereitstellt. Sie können Member dieser Klasse verwenden, um Code auszuführen, wenn das VSTO-Add-In geladen oder entladen wird, um auf das Objektmodell der Hostanwendung zuzugreifen und um Funktionen der Anwendung zu erweitern. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-applications-by-using-the-object-models"></a>Automatisieren von Anwendungen mithilfe der Objekt Modelle
  Die Objektmodelle von Microsoft Office-Anwendungen machen zahlreiche Typen verfügbar, mit denen Sie in einem VSTO-Add-In programmieren können. Sie können diese Typen verwenden, um die Anwendung zu automatisieren. So haben Sie die Möglichkeit, in Outlook programmgesteuert eine E-Mail zu erstellen und zu senden oder in Word ein Dokument zu öffnen und Inhalt hinzuzufügen. Weitere Informationen zum Zugreifen auf das Objektmodell der Host Anwendung im Code finden [Sie unter Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
@@ -74,9 +74,9 @@ ms.locfileid: "71253588"
 
 - [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
-- [Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
 - [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 
@@ -87,8 +87,8 @@ ms.locfileid: "71253588"
   Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Office-Projekten führen, finden Sie unter [Allgemeine Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
-- [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)

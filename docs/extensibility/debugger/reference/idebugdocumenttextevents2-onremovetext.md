@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onRemoveText | Microsoft Docs
+title: 'IDebugDocumentTextEvents2:: onremovetext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731413"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
-Benachrichtigt das Debugpaket, dass Text aus dem Dokument entfernt wurde.
+Benachrichtigt das Debugpaket, dass der Text aus dem Dokument entfernt wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int onRemoveText( 
 
 ## <a name="parameters"></a>Parameter
 `pos`\
-[in] Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur an, die angibt, wo der Text entfernt wurde.
+in Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die angibt, wo der Text entfernt wurde.
 
 `dwNumToRemove`\
-[in] Gibt die Anzahl der Zeichen des Textes an, die entfernt wurden.
+in Gibt die Anzahl der zu entfernenden Textzeichen an.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

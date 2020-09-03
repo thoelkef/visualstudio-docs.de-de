@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82caf285d73ab1b9b49b9546012bbb45f25c3320
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153437"
 ---
-# <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
+# <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Verwendet zum Festlegen von datenbreakpoints, die auf eine Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (IDE) eingeben können.  
+Wird verwendet, um Daten Breakpoints festzulegen, die auf einer Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_DATA_STRING { 
   
 ## <a name="members"></a>Member  
  `pThread`  
- Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, an dem der Haltepunkt wird.  
+ Das [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem der Breakpoint auftritt.  
   
  `bstrContext`  
- Der Kontext der der Haltepunkt im Code, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.  
+ Der Kontext des Breakpoints innerhalb des Codes, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.  
   
  `bstrDataExpr`  
- Die Zeichenfolge gibt der Benutzer, um den Haltepunkt festzulegen.  
+ Die Daten Zeichenfolge, die der Benutzer zum Festlegen des Breakpoints eingibt.  
   
  `dwNumElements`  
- Die Anzahl der Elemente in der Datenzeichenfolge, die in der der Breakpoint auftritt.  
+ Die Anzahl der Elemente in der Daten Zeichenfolge, in der der Breakpoint auftritt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

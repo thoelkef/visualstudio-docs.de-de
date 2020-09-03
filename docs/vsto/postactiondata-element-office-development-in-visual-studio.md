@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541868"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postaktiondata- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -40,7 +40,7 @@ ms.locfileid: "85541868"
 
 ## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Codebeispiel veranschaulicht das `postAction` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code

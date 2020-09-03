@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657637"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen
@@ -74,14 +74,14 @@ Sie können einen Anwendungsfall in einem Anwendungsfalldiagramm mit einem ander
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>So erstellen Sie einen Link zu einem freigegebenen Dokument, einem OneNote-Element oder einer Webseite
 
-1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad sein, der mit "\\ \\" beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
+1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad beginnen, der " \\ \\ " beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
 
 2. Klicken Sie in der Toolbox auf **artefaktelement** , und klicken Sie dann in das Anwendungsfall Diagramm.
 
 3. Wenn das neue Element ausgewählt ist, geben Sie die URL in die **Hyperlink** -Eigenschaft ein oder fügen Sie Sie ein.
 
     > [!NOTE]
-    > Wenn Sie einen Dateipfad angeben möchten, empfiehlt es sich, eine Datei entweder in einem gemeinsamen Arbeitsbereich (beginnend mit "\\ \\") oder in einer Datei in der Visual Studio-Projekt Mappe auszuwählen. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Wenn Sie der Projekt Mappe ein Dokument wie ein Word-Dokument hinzufügen möchten, klicken Sie mit der rechten Maustaste auf Projektmappen-Explorer, zeigen Sie auf **Hinzufügen** , und klicken Sie dann auf **Vorhandenes Element**.
+    > Wenn Sie einen Dateipfad angeben möchten, empfiehlt es sich, eine Datei entweder in einem gemeinsamen Arbeitsbereich (beginnend mit " \\ \\ ") oder in einer Datei in der Visual Studio-Projekt Mappe auszuwählen. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Wenn Sie der Projekt Mappe ein Dokument wie ein Word-Dokument hinzufügen möchten, klicken Sie mit der rechten Maustaste auf Projektmappen-Explorer, zeigen Sie auf **Hinzufügen** , und klicken Sie dann auf **Vorhandenes Element**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) zu UML- [Anwendungsfall Diagrammen: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md) [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md)
