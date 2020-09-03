@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines Legacy-Sprachdienstes | Microsoft Docs
+title: Entwickeln eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,62 +17,62 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708667"
 ---
-# <a name="develop-a-legacy-language-service"></a>Entwickeln eines älteren Sprachdienstes
-Dieser Abschnitt enthält Links zu Themen, die Ihnen beim Erstellen eines älteren Sprachdienstes helfen.
+# <a name="develop-a-legacy-language-service"></a>Entwickeln eines Legacy sprach Dienstanbieter
+Dieser Abschnitt ist mit Themen verknüpft, die Sie beim Erstellen eines Legacy sprach Dienstanbieter unterstützen.
 
- Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen zur neuen Möglichkeit zum Implementieren eines Sprachdienstes finden Sie unter [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren eines sprach Dienstanbieter finden Sie unter [Editor-und Sprachdienst Erweiterungen](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Modell eines älteren Sprachdienstes](../../extensibility/internals/model-of-a-legacy-language-service.md)
+- [Modell eines Legacy sprach Dienstanbieter](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
- Stellt ein Modell eines minimalen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sprachdienstes für den Kerneditor bereit. Sie können dieses Modell als Leitfaden zum Erstellen eines eigenen Sprachdienstes verwenden.
+ Stellt ein Modell eines minimalen sprach Dienstanbieter für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern-Editor bereit. Sie können dieses Modell als Leitfaden zum Erstellen Ihres eigenen sprach Dienstanbieter verwenden.
 
-- [Legacy-Sprachdienstschnittstellen](../../extensibility/internals/legacy-language-service-interfaces.md)
+- [Legacy-Sprachdienst Schnittstellen](../../extensibility/internals/legacy-language-service-interfaces.md)
 
- Erläutert die Objekte, die zum Implementieren eines Sprachdienstes erforderlich sind, und stellt eine Liste zusätzlicher Objekte bereit, die Sie zum Bereitstellen von Syntaxhervorhebungen, Methodendaten und anderen Features verwenden können.
+ Erläutert die Objekte, die zum Implementieren eines sprach Dienstanbieter erforderlich sind, und stellt eine Auflistung zusätzlicher Objekte bereit, mit denen Sie Syntax Hervorhebung, Methoden Daten und andere Funktionen bereitstellen können.
 
-- [Abfangen älterer Sprachdienstbefehle](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+- [Legacy-Sprachdienst Befehle abfangen](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
 
- Beschreibt, wie Sie einen Befehlsfilter in ihren Sprachdienst einfügen, um Befehle abzufangen, die andernfalls in der Textansicht behandelt würden.
+ Beschreibt, wie Sie einen Befehls Filter in ihren Sprachdienst einfügen, um Befehle abzufangen, die von der Textansicht andernfalls behandelt werden.
 
-- [Registrieren eines älteren Sprachdienstes](../../extensibility/internals/registering-a-legacy-language-service2.md)
+- [Registrieren eines Legacy sprach Dienstanbieter](../../extensibility/internals/registering-a-legacy-language-service2.md)
 
- Enthält Informationen zum Registrieren Ihres Sprachdienstes mithilfe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]von .
+ Enthält Informationen zum Registrieren Ihres sprach Dienstanbieter mithilfe von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Sprachdienstunterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md)
+- [Sprachdienst Unterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Beschreibt, wie ein Sprachdienst Features zur Unterstützung eines Debuggers bereitstellen kann.
+ Beschreibt, wie ein Sprachdienst Funktionen bereitstellen kann, um einen Debugger zu unterstützen.
 
-- [Checkliste: Erstellen eines älteren Sprachdienstes](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Prüfliste: Erstellen eines Legacy sprach Dienstanbieter](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
- Enthält schritt für Schritt Anweisungen zum Erstellen und Integrieren eines Sprachdienstes für den Kerneditor.
+ Enthält Schritt-für-Schritt-Anleitungen zum Erstellen und integrieren eines sprach Dienstanbieter für den Kern-Editor.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Syntaxfarben in einem älteren Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Erläutert, wie Syntaxhervorhebungen in Ihrem Sprachdienst implementiert werden.
+ Erläutert, wie Syntax Hervorhebung in ihren Sprachdienst implementiert wird.
 
-- [Anweisungsabschluss in einem älteren Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
+- [Anweisungs Vervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Erläutert die Anweisungsvervollständigung, den Prozess, mit dem ein Sprachdienst Benutzern hilft, ein Sprachschlüsselwort oder -element zu beenden, das sie mit der Eingabe begonnen haben.
+ Erläutert die Anweisungs Vervollständigung, den Prozess, mit dem ein Sprachdienst Benutzern hilft, ein sprach Schlüsselwort oder Element, das Sie eingegeben haben, zu beenden.
 
-- [Parameterinfo in einem älteren Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+- [Parameter Informationen in einem Legacy Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Beschreibt, wie Methodentipps für überladene Funktionen und Methoden angezeigt werden.
+ Beschreibt, wie Methoden Tipps für überladene Funktionen und Methoden bereitgestellt werden.
 
-- [Gewusst wie: Bereitstellen von verdeckter Textunterstützung in einem älteren Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Gewusst wie: Bereitstellen von ausgeblendeter Textunterstützung in einem Legacy Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- Erläutert den Zweck eines ausgeblendeten Textbereichs und enthält Anweisungen zum Implementieren eines ausgeblendeten Textbereichs.
+ Erläutert den Zweck eines ausgeblendeten Text Bereichs und stellt Anweisungen zum Implementieren eines ausgeblendeten Text Bereichs bereit.
 
-- [Gewusst wie: Erweiterte Umrissunterstützung in einem legacy Sprachdienst bereitstellen](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Vorgehensweise: Bereitstellen erweiterter Gliederungs Unterstützung in einem Legacy Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Erläutert die beiden Optionen, die die Umrissunterstützung für Ihre Sprache über die Unterstützung des *Befehls "In Definitionen reduzieren"* hinaus erweitern.
+ Erläutert die beiden Optionen, die die Gliederung der Unterstützung für Ihre Sprache über die Unterstützung des Befehls Reduzierungs *Definitionen* hinaus erweitern.

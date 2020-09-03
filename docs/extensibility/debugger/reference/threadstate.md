@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Microsoft Docs
+title: Thread State | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713341"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -53,27 +53,27 @@ public enum enum_THREADSTATE { 
  Gibt an, dass der Thread ausgeführt wird.
 
  `THREADSTATE_STOPPED`\
- Gibt an, dass der Thread aufgrund eines Haltepunkts angehalten wurde.
+ Gibt an, dass der Thread aufgrund eines Breakpoints angehalten wird.
 
  `THREADSTATE_FRESH`\
- Gibt an, dass der Thread erstellt wurde, aber noch keinen Code ausgeführt wird.
+ Gibt an, dass der Thread erstellt, aber noch nicht ausgeführt wird.
 
  `THREADSTATE_DEAD`\
- Gibt an, dass der Thread tot ist.
+ Gibt an, dass der Thread nicht aktiv ist.
 
  `THREADSTATE_FROZEN`\
  Gibt an, dass der Thread eingefroren ist (es kann keine Ausführung ausgeführt werden).
 
 ## <a name="remarks"></a>Bemerkungen
- Wird für `dwThreadState` das Feld der [THREADPROPERTIES-Struktur](../../../extensibility/debugger/reference/threadproperties.md) verwendet.
+ Wird für das- `dwThreadState` Feld der [Thread Properties](../../../extensibility/debugger/reference/threadproperties.md) -Struktur verwendet.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

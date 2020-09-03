@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543610"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
 |CheckId|CA2117|
@@ -40,9 +40,9 @@ ms.locfileid: "85543610"
 
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und ein Typ in der Assembly von einem Typ erbt, der keine teilweise vertrauenswürdigen Aufrufer zulässt, kann eine Sicherheitslücke ausgenutzt werden. Wenn zwei Typen `T1` und `T2` die folgenden Bedingungen erfüllen, können böswillige Aufrufer den-Typ verwenden, `T1` um die implizite Vererbungs-Vererbungs Anforderung zu umgehen, die schützt `T2` :
 
-- `T1`ein öffentlicher Typ, der in einer voll vertrauenswürdigen Assembly mit dem APTCA-Attribut deklariert ist.
+- `T1` ein öffentlicher Typ, der in einer voll vertrauenswürdigen Assembly mit dem APTCA-Attribut deklariert ist.
 
-- `T1`erbt von einem Typ `T2` außerhalb der Assembly.
+- `T1` erbt von einem Typ `T2` außerhalb der Assembly.
 
 - `T2`die Assembly verfügt nicht über das APTCA-Attribut und sollte daher nicht durch Typen in teilweise vertrauenswürdigen Assemblys vererbt werden können.
 

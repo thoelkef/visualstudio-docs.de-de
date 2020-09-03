@@ -1,5 +1,5 @@
 ---
-title: Icon-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Icon-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710530"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
-Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element hinzufügen** für die Vorlage angezeigt wird.
+Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird.
 
- \<VSTemplate \<> TemplateData> \<Icon>
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,22 +45,22 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das ent
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Package`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
-|`ID`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
+|`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
+|`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.
 
- Der Text enthält den Pfad und den Dateinamen des Vorlagensymbols, das im Dialogfeld **Neues Projekt** angezeigt wird.
+ Der Text enthält den Pfad und den Dateinamen des Vorlagen Symbols, das im Dialogfeld **Neues Projekt** angezeigt wird.
 
 ## <a name="remarks"></a>Bemerkungen
  `Icon` ist ein erforderliches untergeordnetes Element von `TemplateData`.
@@ -91,6 +92,6 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das ent
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Microsoft Docs
+title: PROCESS_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713885"
 ---
 # <a name="process_info"></a>PROCESS_INFO
@@ -57,39 +57,39 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Member
  `Fields`\
- Eine Kombination von [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) Flags aus der PROCESS_INFO_FIELDS-Enumeration, die angeben, welche Felder ausgefüllt werden.
+ Eine Kombination von Flags aus der [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) Enumeration, die angeben, welche Felder ausgefüllt werden.
 
  `bstrFileName`\
- Der vollständige Pfadname des Prozesses. Entspricht dem Aufrufen der [GetName-Methode](../../../extensibility/debugger/reference/idebugprocess2-getname.md) mit dem Parameter `GN_FILENAME`.
+ Der vollständige Pfadname des Prozesses. Äquivalent zum Aufrufen der [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) -Methode mit dem-Parameter `GN_FILENAME` .
 
  `bstrBaseName`\
- Der Dateiname und die Erweiterung des Prozesses. Entspricht dem `IDebugProcess2::Getname` Aufruf der `GN_BASENAME`Methode mit dem Parameter .
+ Der Dateiname und die Erweiterung des Prozesses. Äquivalent zum Aufrufen der- `IDebugProcess2::Getname` Methode mit dem-Parameter `GN_BASENAME` .
 
  `bstrTitle`\
- Der Titel des Prozesses, sofern vorhanden. Entspricht dem `IDebugProcess2::Getname` Aufruf der `GN_TITLE`Methode mit dem Parameter .
+ Der Titel des Prozesses, wenn ein solcher vorhanden ist. Äquivalent zum Aufrufen der- `IDebugProcess2::Getname` Methode mit dem-Parameter `GN_TITLE` .
 
  `ProcessId`\
- Die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Prozess identifiziert. Entspricht dem Aufrufen der [GetPhysicalProcessId-Methode.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+ Die [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die den Prozess identifiziert. Äquivalent zum Aufrufen der [getphysicalprocessid-](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) Methode.
 
  `dwSessionId`\
  Der Bezeichner der Debugsitzung, in der dieser Prozess ausgeführt wird.
 
  `bstrAttachedSessionName`\
- Der angehängte Sitzungsname. Entspricht dem Aufrufen der [GetAttachedSessionName-Methode.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+ Der Name der angefügten Sitzung. Äquivalent zum Aufrufen der [getattachedsessionname](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) -Methode.
 
  `CreationTime`\
  Der Zeitpunkt, zu dem der Prozess erstellt wurde.
 
  `Flags`\
- Eine Kombination von [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) Flags aus der PROCESS_INFO_FLAGS-Enumeration, die Eigenschaften des Prozesses angeben.
+ Eine Kombination von Flags aus der [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) Enumeration, die Eigenschaften des Prozesses angeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) übergeben, bei der sie ausgefüllt wird.
+ Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) -Methode, in der Sie ausgefüllt ist, übermittelt.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

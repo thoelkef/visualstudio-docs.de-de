@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Microsoft Docs
+title: PROVIDER_PROCESS_DATA | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713782"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
@@ -45,21 +45,21 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>Member
  `Fields`\
- Eine Kombination von [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Flags aus der PROVIDER_FIELDS-Enumeration, die angibt, welche Felder ausgefüllt werden.
+ Eine Kombination von Flags aus der [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
  `ProgramNodes`\
  Eine [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) Struktur, die ein Array von Programmknoten enthält.
 
  `fIsDebuggerPresent`\
- Ein Wert`TRUE`ungleich [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Null ( ),`FALSE`wenn der Debugger ausgeführt wird, Null ( ), wenn dies nicht der Fall ist.
+ Ungleich NULL ( `TRUE` ), wenn der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger ausgeführt wird, andernfalls 0 (NULL `FALSE` ) ().
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Struktur wird an die [GetProviderProcessData-Methode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) übergeben, bei der sie ausgefüllt wird.
+ Diese Struktur wird an die [getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) -Methode übermittelt, wo Sie ausgefüllt ist.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
