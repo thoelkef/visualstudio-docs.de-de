@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593693"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992367"
 ---
 # <a name="manage-application-resources-net"></a>Verwalten von Anwendungsressourcen (.NET)
 
@@ -31,7 +31,7 @@ Ressourcendateien sind Dateien, die Teil einer Anwendung sind, jedoch noch nicht
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Verwalten von Anwendungsressourcen (Visual Studio für Mac)](/visualstudio/mac/managing-app-resources).
 
-Weitere Informationen zu Ressourcen in .NET-Desktop-Apps finden Sie unter [Resources in desktop apps (Ressourcen in Desktop-Apps)](/dotnet/framework/resources/index).
+Weitere Informationen zu Ressourcen in .NET-Apps finden Sie unter [Ressourcen in .NET-Apps](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Arbeiten mit Ressourcen
 
@@ -52,5 +52,5 @@ Ressourcen werden in .NET-Projekten anders verwaltet als in anderen Projekttypen
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ressourcen in Desktop-Apps (.NET Framework)](/dotnet/framework/resources/index)
+- [Resources in .NET-Apps (.NET Framework)](/dotnet/framework/resources/index)
 - [Verwalten von Anwendungsressourcen (Visual Studio für Mac)](/visualstudio/mac/managing-app-resources)

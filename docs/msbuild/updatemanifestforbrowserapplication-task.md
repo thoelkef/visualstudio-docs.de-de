@@ -19,22 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631327"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
 
-Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, um dem Anwendungsmanifest ( *\<Projektname>.exe.manifest*) das Element **\<hostInBrowser />** hinzuzufügen, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
+Der Task <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> wird ausgeführt, um dem Anwendungsmanifest ( *\<projectname>.exe.manifest*) das Element **\<hostInBrowser />** hinzuzufügen, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |`ApplicationManifest`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|
-|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, dann ist ein neues **\<hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Der Einschluss von Elementen ist kumulativ: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|
+|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, ist ein neues **\<hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Der Einschluss von Elementen ist kumulativ: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|
 
 ## <a name="remarks"></a>Hinweise
 

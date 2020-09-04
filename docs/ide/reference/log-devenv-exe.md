@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595461"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -25,7 +25,7 @@ Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldate
 
 **%APPDATA%\\Microsoft\\VisualStudio\\** \<Version\> **\\ActivityLog.xml**
 
-wobei \<Version\> für die Visual Studio-Version steht. Sie können jedoch einen anderen Pfad und Dateinamen angeben.
+Dabei ist \<Version\> die Visual Studio-Version. Sie können jedoch einen anderen Pfad und Dateinamen angeben.
 
 ## <a name="syntax"></a>Syntax
 

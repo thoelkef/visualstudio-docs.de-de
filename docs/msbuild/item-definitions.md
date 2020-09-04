@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633706"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
@@ -80,7 +80,7 @@ Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschied
 
 - Bekannte Metadaten über ein Element aus ItemDefinitionGroup
 
-- CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>
+- CDATA-Abschnitt \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.

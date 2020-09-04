@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Tutorial zu Django in Visual Studio, Schritt 5: Authentifizierung'
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Authentifizierungsfeatures, die durch die Vorlage „Django-Webprojekt“ bereitgestellt werden.
@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957856"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
@@ -204,7 +204,7 @@ Die folgenden Schritte führen den Authentifizierungsablauf aus, und beschreiben
 
 1. Wenn Sie fertig sind, beenden Sie den Server, und übertragen Sie Ihre Änderungen erneut zur Quellcodeverwaltung.
 
-### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<Formular\>-Elementen auftritt?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Frage: Was ist der Zweck des Tags {% csrf_token %}, das in den \<form\>-Elementen auftritt?
 
 Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der websiteübergreifenden Anforderungsfälschung (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) von Django (Django-Dokumentation). In der Regel fügen Sie dieses Tag zu einem Element hinzu, das über POST-, PUT- oder DELETE-Anforderungsmethoden verfügt, z.B. zu einem Formular. Die Vorlagenrenderingfunktion (`render`) fügt anschließend den erforderlichen Schutz hinzu.
 

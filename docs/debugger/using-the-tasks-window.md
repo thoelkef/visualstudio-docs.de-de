@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901588"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Verwenden des Fensters „Aufgaben“ (C#, Visual Basic, C++)
@@ -65,7 +65,7 @@ In den Spalten im Fenster **Aufgaben** sind die folgenden Informationen angegebe
 
  Sie können der Ansicht Spalten hinzufügen, indem Sie mit der rechten Maustaste auf eine Spaltenüberschrift klicken und die gewünschten Spalten auswählen. (Entfernen Sie Spalten, indem Sie die jeweilige Auswahl aufheben.) Sie können auch die Anordnung der Spalten ändern, indem Sie sie nach links oder rechts ziehen. Das Kontextmenü für Spalten wird in der folgenden Abbildung veranschaulicht.
 
- ![Kontextmenüansicht im Fenster „Aufgaben“](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
+ ![Ansicht „Kontextmenü“ im Fenster „Aufgaben“](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Sortieren von Aufgaben
  Wenn Sie Aufgaben nach Spaltenkriterien sortieren möchten, klicken Sie auf den Spaltenheader. Wenn Sie z. B. auf die Spaltenüberschrift **ID** klicken, können Sie die Aufgaben nach Aufgaben-ID sortieren: 1,2,3,4,5 usw. Klicken Sie erneut auf den Spaltenheader, um die Sortierreihenfolge umzukehren. Die aktuelle Sortierspalte und die Sortierreihenfolge werden durch einen Pfeil in der Spalte angegeben.
@@ -86,7 +86,7 @@ In den Spalten im Fenster **Aufgaben** sind die folgenden Informationen angegebe
 
  In der folgenden Abbildung werden die anderen Menüelemente für die einzelnen Aufgaben angezeigt.
 
- ![Kontextmenü „Thread“ im Fenster „Aufgaben“](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu")
+ ![Kontextmenü „Thread“ im Fenster „Aufgaben“](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")
 
 ## <a name="switching-the-active-task-or-frame"></a>Wechseln des aktiven Threads oder Frames
 

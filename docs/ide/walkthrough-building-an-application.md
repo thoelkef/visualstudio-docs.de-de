@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115408"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
@@ -35,13 +35,13 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
    ![Menü "Erstellen", Konfigurations-Manager-Befehl](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<Neu…\>** aus.
+1. 2\. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<New...\>** aus.
 
 1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen **Debug**-Konfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
 
    ![Dialogfeld "Neue Projektmappenkonfiguration"](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **\<Neu…\>** aus.
+1. 4\. Wählen Sie in der Liste **Aktive Projektmappenplattform** **\<New...\>** aus.
 
 1. Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.
 

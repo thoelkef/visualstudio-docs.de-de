@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585521"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
@@ -30,7 +30,7 @@ Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden **Schne
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Richtige falsch geschriebenes Symbol oder Schlüsselwort
 
-Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **„Change '\<misspelled word>' to '\<correct word>'“** („'<Falsch geschriebenes Wort>' in '<richtiges Wort>' ändern“) angezeigt. Beispiel:
+Wenn Sie versehentlich einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion diesen Fehler für Sie. Diese Elemente werden im Fehlerbehebungsmenü als **"Change '\<misspelled word>' to '\<correct word>'"** angezeigt. Beispiel:
 
 ```csharp
 // Before

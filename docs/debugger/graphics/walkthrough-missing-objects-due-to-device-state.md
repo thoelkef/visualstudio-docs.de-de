@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895445"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
@@ -33,7 +33,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
  In dem Szenario, das in dieser exemplarischen Vorgehensweise beschrieben ist, haben Sie soeben den ersten Meilenstein in der Entwicklung Ihrer 3D-App erreicht und möchten diese nun zum ersten Mal testen. Wenn Sie die App ausführen, wird jedoch nur die Benutzeroberfläche auf dem Bildschirm gerendert. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, sodass Sie die App debuggen können. Das Problem sieht in der App wie folgt aus:
 
- ![App vor der Behebung des Problems](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
+ ![Die Anwendung vor Behebung des Problems](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
 
  Informationen zum Erfassen von Grafikproblemen in einem Grafikprotokoll finden Sie unter [Capturing Graphics Information](capturing-graphics-information.md).
 
@@ -46,7 +46,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Modell nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
 
-    ![Framepuffervorschau und Frameliste auf der Registerkarte „.vsglog“](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
+    ![.vsglog-Registerkarte - Framepuffer-Vorschau und Frameliste](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
 
    Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist, z. B. API-Aufrufe zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Dies gilt z. B. für Draw-, Dispatch-, Copy- oder Clear-Aufrufe. Draw-Aufrufe sind besonders interessant, da jeder Aufruf Geometrie darstellt, die von der App gerendert wird (auch Dispatch-Aufrufe können Geometrie rendern).
 
@@ -78,11 +78,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 2. Wählen Sie anhand der **Pixelshader** -Miniaturansicht ein Pixel in der Framepufferausgabe aus, das einen Teil der fehlenden Geometrie enthalten sollte. In diesem Szenario muss die Ausgabe des Pixelshaders den größten Teil des Renderziels überdecken. Nachdem ein Pixel ausgewählt wurde, sieht das Fenster **Grafikpixelverlauf** wie folgt aus:
 
-    ![Pixelverlaufsfenster mit zugehörigen Befehlen zum Zeichnen](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
+    ![Pixelverlauffenster mit zugehörigen Zeichnen-Befehlen](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
 
 3. Vergewissern Sie sich, dass das ausgewählte Renderzielpixel einen Teil der Geometrie enthält. Gleichen Sie dazu die Zahl des Draw-Aufrufs, den Sie überprüfen (aus dem Fenster **Grafikereignisliste** ), mit den Draw-Aufrufen im Fenster **Grafikpixelverlauf** ab. Stimmt keiner der Aufrufe im Fenster **Grafikpixelverlauf** mit dem Draw-Aufruf überein, den Sie überprüfen, wiederholen Sie die Schritte (mit Ausnahme von Schritt 1), bis Sie eine Übereinstimmung gefunden haben. In diesem Szenario sieht der übereinstimmende Draw-Aufruf wie folgt aus:
 
-    ![Pixelverlaufsfenster mit Fragmentinformationen](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")
+    ![Pixelverlauffenster mit Fragmentinformationen](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")
 
 4. Wenn Sie eine Übereinstimmung gefunden haben, erweitern Sie den zugehörigen Draw-Aufruf im Fenster **Grafikpixelverlauf** , und vergewissern Sie sich, dass das Pixel ausgeschlossen wurde. Jeder Draw-Aufruf im Fenster **Grafikpixelverlauf** entspricht mindestens einem Geometrieprimitiv (Punkt, Linie oder Dreieck), das dieses Pixel als Ergebnis der Geometrie des entsprechenden Objekts geschnitten hat. Jeder dieser Schnitte kann zur endgültigen Farbe des Pixels beitragen. Ein Primitiv, das ausgeschlossen wurde, weil es den Tiefentest nicht bestanden hat, wird durch ein Symbol dargestellt, das den Buchstaben Z auf einem Pfeil enthält, der von links oben nach rechts unten geneigt ist.
 
@@ -96,7 +96,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 2. Suchen Sie in der **Grafikobjekttabelle** nach dem **D3D10-Gerät**-Objekt, und öffnen Sie dann das **D3D10-Gerät** -Objekt. Eine neue Registerkarte **d3d10-Gerät** wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]geöffnet. Um dies zu vereinfachen, können Sie die **Grafikobjekttabelle** nach dem **Typ**sortieren:
 
-    ![Grafikobjekttabelle mit dem zugehörigen Gerätezustand](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
+    ![Grafikobjekttabelle und der zugehörige Gerätezustand](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 
 3. Überprüfen Sie den Gerätestatus, der auf der Registerkarte **d3d10-Gerät** angezeigt wird, auf mögliche Probleme. Da die Geometrie nicht angezeigt wird, weil deren Primitive den Tiefentest nicht bestanden haben, können Sie sich auf den Gerätestatus, etwa die Tiefenschablone, konzentrieren, der den Tiefentest beeinflusst. In diesem Szenario enthält die **Beschreibung der Tiefenschablone** (unter **Status der Ausgabezusammenführung**) einen ungewöhnlichen Wert für den **Tiefenfunktion** -Member `D3D10_COMPARISON_GREATER`:
 
@@ -104,4 +104,4 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
    Nachdem Sie ermittelt haben, dass der Grund für den Renderfehler eine fehlerhaft konfigurierte Tiefenfunktion sein könnte, können Sie anhand dieser Information und Ihrer Kenntnisse des Codes feststellen, wo die Tiefenfunktion falsch eingestellt wird, und das Problem dann beheben. Wenn Ihnen der Code unbekannt ist, könnten Sie anhand der Anhaltspunkte, die Sie beim Debuggen gesammelt haben, nach dem Problem suchen: Beispielsweise könnten Sie entsprechend der **Beschreibung der Tiefenschablone** in diesem Szenario den Code nach Wörtern wie „depth“ oder „GREATER“ durchsuchen. Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist:
 
-   ![App nach der Behebung des Problems](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")
+   ![App nach Behebung des Problems](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")

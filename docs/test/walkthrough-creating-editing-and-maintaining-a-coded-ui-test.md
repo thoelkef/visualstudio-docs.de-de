@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592060"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI
@@ -30,11 +30,11 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
 
 3. Ziehen Sie unter dem Abschnitt **Alle WPF-Steuerelemente** ein **Button**-, ein **CheckBox**- und ein **ProgressBar**-Steuerelement auf das MainWindow-Element in der Entwurfsoberfläche.
 
-4. Wählen Sie das **Schaltflächen**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „button1“. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
+4. Wählen Sie das **Schaltflächen**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<No Name> in „button1“. Ändern Sie den Wert für die Eigenschaft **Content** von „Button“ in „Start“.
 
-5. Wählen Sie das **ProgressBar**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „progressBar1“. Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
+5. Wählen Sie das **ProgressBar**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<No Name> in „progressBar1“. Ändern Sie dann den Wert für die Eigenschaft **Maximum** von **100** auf **10000**.
 
-6. Wählen Sie das **CheckBox**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<Ohne Name> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
+6. Wählen Sie das **CheckBox**-Steuerelement aus. Ändern Sie im Fenster **Eigenschaften** den Wert für die Eigenschaft **Name** von \<No Name> in „checkBox1“, und löschen Sie die Eigenschaft **IsEnabled**.
 
      ![Einfache WPF-Anwendung](../test/media/codedui_wpfapp.png)
 

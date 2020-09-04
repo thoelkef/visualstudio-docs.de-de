@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072540"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
@@ -147,7 +147,7 @@ Führen Sie MSBuild über die **Developer-Eingabeaufforderung** für Visual Stud
 
    (Windows 10) Geben Sie den Namen des Tools im Suchfeld auf der Taskleiste ein, z. B. `dev` oder `developer command prompt`. Dadurch wird eine Liste der installierten Apps angezeigt, die Ihrem Suchmuster entsprechen.
 
-   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<Visualstudio-Installationsordner\>\<Version>\Common7\Tools*.
+   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<Visualstudio-Installationsordner\>\<version>\Common7\Tools*.
 
 2. Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
 
@@ -575,7 +575,7 @@ Der Vergleich der beiden obigen Beispiele zeigt, dass zwar nicht jedes Element i
 
 ### <a name="metadata-transformations"></a>Transformationen von Metadaten
 
- Elementlisten können in neue Elementlisten umgewandelt werden. Eine Elementliste transformieren Sie mit der folgenden Syntax, wobei „\<ItemType>“ den Namen des Elementtyps darstellt und „\<MetadataName>“ den Namen der Metadaten:
+ Elementlisten können in neue Elementlisten umgewandelt werden. Eine Elementliste transformieren Sie mit der folgenden Syntax, wobei \<ItemType> den Namen des Elementtyps darstellt und \<MetadataName> den Namen der Metadaten:
 
 ```xml
 @(ItemType -> '%(MetadataName)')

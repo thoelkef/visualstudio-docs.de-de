@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901223"
 ---
 # <a name="what-is-debugging"></a>Was bedeutet „Debuggen“?
@@ -30,7 +30,7 @@ Ein Debugger ist hoch spezialisiertes Entwicklertool, das an Ihre laufende App a
 
 ## <a name="debug-mode-vs-running-your-app"></a>Gegenüberstellung von Debugmodus und App-Ausführung
 
-Wenn Sie Ihre App in Visual Studio zum ersten Mal ausführen, können Sie sie starten, indem Sie auf der Symbolleiste auf die grüne Pfeilschaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten") klicken oder **F5** drücken. In der Dropdownliste links davon ist standardmäßig der Wert **Debuggen** angegeben. Wenn Sie noch nicht mit Visual Studio vertraut sind, entsteht unter Umständen der Eindruck, dass das Debuggen Ihrer App mit der App-Ausführung zusammenhängt. Das stimmt zwar, trotzdem handelt es sich hierbei um zwei grundlegend verschieden Aufgaben.
+Wenn Sie Ihre App in Visual Studio zum ersten Mal ausführen, können Sie sie starten, indem Sie auf der Symbolleiste auf die grüne Pfeilschaltfläche ![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten") auf der Symbolleiste klicken (oder **F5** drücken). In der Dropdownliste links davon ist standardmäßig der Wert **Debuggen** angegeben. Wenn Sie noch nicht mit Visual Studio vertraut sind, entsteht unter Umständen der Eindruck, dass das Debuggen Ihrer App mit der App-Ausführung zusammenhängt. Das stimmt zwar, trotzdem handelt es sich hierbei um zwei grundlegend verschieden Aufgaben.
 
 ![Auswählen eines Debugbuilds](../debugger/media/what-is-debugging-debug-build.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Visual Studio-Erweiterbarkeit von geöffneten Ordnern | Microsoft-Dokumentation
+title: 'Visual Studio-Erweiterbarkeit „Ordner öffnen“: Übersicht | Microsoft-Dokumentation'
 ms.date: 02/21/2018
 ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
@@ -9,50 +9,50 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905978"
 ---
-# <a name="open-folder-extensibility"></a>Ordner Erweiterbarkeit öffnen
+# <a name="open-folder-extensibility"></a>Erweiterbarkeit „Ordner öffnen“
 
-Mit dem Feature "Ordner öffnen" können Benutzer jede beliebige Codebasis in Visual Studio öffnen, ohne dass Projekt-oder [Projektmappendateien](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) benötigt werden. Der Ordner öffnen bietet die Features, die Benutzer von Visual Studio erwarten, z. b.:
+Mit dem Feature [Ordner öffnen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) können Benutzer jede beliebige Codebasis in Visual Studio öffnen, ohne dass Projekt- oder Projektmappendateien benötigt werden. „Ordner öffnen“ bietet die Features, die Benutzer von Visual Studio erwarten, beispielsweise:
 
-* Projektmappen-Explorer Integration und Search
-* Farbliche Farbgebung des Editors
+* Integration von Projektmappen-Explorer und Suche
+* Farbliche Kennzeichnung im Editor
 * Gehe zu Navigation
-* Suche in Dateien suchen
+* Suchfunktion „In Dateien suchen“
 
-Bei Verwendung mit Workloads wie z. b. für die .net-und C++-Entwicklung erhalten Benutzer auch Folgendes:
+Bei Verwendung mit Workloads z. B. für .NET- und C++-Entwicklung können Benutzer auch die folgenden Funktionen nutzen:
 
 * Umfassende IntelliSense-Funktionen
-* Sprachspezifische Funktionalität
+* Sprachspezifische Funktionen
 
-Mit dem geöffneten Ordner können Erweiterungs Autoren umfassende Funktionen für jede beliebige Sprache erstellen. Es gibt APIs, mit denen das entwickeln, Debuggen und die Symbol Suche für eine beliebige Datei in der Codebasis eines Benutzers unterstützt wird. Aktuelle Extender können vorhandene Visual Studio-Features aktualisieren, um Code zu verstehen, ohne Projekte oder eine Projekt Mappe zu unterstützen.
+Mit „Ordner öffnen“ können Erweiterungsautoren umfassende Funktionen für jede beliebige Sprache erstellen. Es sind APIs vorhanden, die das Erstellen, Debuggen und die Symbolsuche für jede Datei in der Codebasis eines Benutzers unterstützen. Aktuelle Extender können vorhandene Visual Studio-Features aktualisieren, um Code zu erfassen, ohne dass Unterstützung durch Projekte oder eine Projektmappe erforderlich ist.
 
 ## <a name="an-api-without-project-systems"></a>Eine API ohne Projektsysteme
 
-In der Vergangenheit hat Visual Studio nur die Dateien in einer Projekt Mappe und deren Projekte mithilfe von Projekt Systemen verstanden. Ein Projekt System ist verantwortlich für die Funktionalität und die Benutzerinteraktionen eines geladenen Projekts. Es versteht, welche Dateien das Projekt enthält, die visuelle Darstellung des Projekt Inhalts, Abhängigkeiten von anderen Projekten und die Änderung der zugrunde liegenden Projektdatei. Diese Hierarchien und Funktionen werden von anderen Komponenten im Auftrag des Benutzers bearbeitet. Nicht alle Codebasen werden in einer Projekt-und Projektmappenstruktur gut dargestellt. In C++ für Linux geschriebene Skriptsprachen und Open Source-Code sind gute Beispiele. Mit Open Folder bietet Visual Studio Benutzern eine neue Möglichkeit, mit Ihrem Quellcode zu interagieren.
+In der Vergangenheit hat Visual Studio nur Dateien in einer Projektmappe und deren Projekte mithilfe von Projektsystemen verstanden. Ein Projektsystem ist für die Funktionalität und die Benutzerinteraktionen eines geladenen Projekts verantwortlich. Es versteht, welche Dateien das Projekt enthält, und kennt die visuelle Darstellung des Projektinhalts, Abhängigkeiten von anderen Projekten und Änderungen der zugrunde liegenden Projektdatei. Durch diese Hierarchien und Funktionen arbeiten andere Komponenten im Auftrag des Benutzers. Nicht alle Codebasen werden in einer Projekt- und Projektmappenstruktur gut dargestellt. Skriptsprachen und Open-Source-Code, der in C++ für Linux geschrieben wird, sind gute Beispiele. Mit „Ordner öffnen“ bietet Visual Studio Benutzern eine neue Möglichkeit, mit ihrem Quellcode zu interagieren.
 
-Die Open Folder-APIs befinden sich unter dem `Microsoft.VisualStudio.Workspace.*` -Namespace und stehen für Extender zum erzeugen und Nutzen von Daten oder Aktionen im Zusammenhang mit Dateien im geöffneten Ordner zur Verfügung. Erweiterungen können diese APIs verwenden, um Funktionen für viele Bereiche bereitzustellen, einschließlich:
+Die Ordner öffnen-APIs befinden sich unter dem Namespace `Microsoft.VisualStudio.Workspace.*` und stehen für Extender zum Generieren und Nutzen von Daten oder Aktionen im Zusammenhang mit Dateien in „Ordner öffnen“ zur Verfügung. Erweiterungen können diese APIs verwenden, um Funktionen für viele Bereiche bereitzustellen:
 
-- [Arbeitsbereiche](workspaces.md) : der Ausgangspunkt der Erweiterbarkeit offener Ordner ist der Arbeitsbereich und seine APIs.
-- [Datei Kontexte und Aktionen](workspace-file-contexts.md) : Datei spezifische Code Intelligenz, die über Datei Kontexte bereitgestellt wird.
-- [Indizierung](workspace-indexing.md) : sammeln und Speichern von Daten über geöffnete Ordner Arbeitsbereiche.
-- [Sprachdienste](workspace-language-services.md) : integrieren Sie Sprachdienste in Arbeitsbereiche für geöffnete Ordner.
-- [Build](workspace-build.md) -Buildunterstützung für geöffnete Ordner Arbeitsbereiche.
+- [Arbeitsbereiche](workspaces.md): Der Ausgangspunkt für die Erweiterbarkeit „Ordner öffnen“ ist der Arbeitsbereich und seine APIs.
+- [Dateikontexte und -aktionen](workspace-file-contexts.md): Dateispezifische Codeintelligenz, die über Dateikontexte bereitgestellt wird.
+- [Indizierung](workspace-indexing.md): Erfassen und Speichern von Daten zu Arbeitsbereichen des Typs „Ordner öffnen“.
+- [Sprachdienste](workspace-language-services.md): Integrieren von Sprachdiensten in Arbeitsbereiche des Typs „Ordner öffnen“.
+- [Erstellen](workspace-build.md): Buildunterstützung für Arbeitsbereiche des Typs „Ordner öffnen“.
 
-Für Funktionen, die die folgenden Typen verwenden, müssen neue APIs zur Unterstützung des geöffneten Ordners übernommen werden:
+Funktionen, die die folgenden Typen verwenden, müssen neue APIs einbinden, um „Ordner öffnen“ zu unterstützen:
 
 - `IVsHierarchy`
 - `IVsProject`
 - `DTE`
 
-## <a name="feedback-comments-issues"></a>Feedback, Kommentare, Probleme
+## <a name="feedback-comments-issues"></a>Feedback, Kommentare, Issues
 
-Öffnen Sie den Ordner, und die `Microsoft.VisualStudio.Workspace.*` APIs befinden sich in der aktiven Entwicklung. Wenn ein unerwartetes Verhalten auftritt, sehen Sie sich die bekannten Probleme für die betreffende Version an. Die [Entwickler Community](https://developercommunity.visualstudio.com) ist der empfohlene Ort, um Probleme zu beheben und Probleme zu beheben. Für jedes Feedback empfehlen wir dringend eine ausführliche Beschreibung Ihres Problems. Schließen Sie die Visual Studio-Version ein, die Sie entwickeln, die von Ihnen verwendeten APIs (sowohl das, was Sie implementiert haben, als auch das, mit dem Sie interagieren), das erwartete Ergebnis und das tatsächliche Ergebnis. Fügen Sie, wenn möglich, ein Dump des devenv.exe Prozesses ein. Verwenden Sie die Problemverfolgung von GitHub, um Feedback zu dieser und zugehörigen Dokumentation zu geben.
+„Ordner öffnen“ und die `Microsoft.VisualStudio.Workspace.*`-APIs befinden sich in aktiver Entwicklung. Wenn unerwartetes Verhalten auftritt, sehen Sie sich die bekannten Probleme für das betreffende Release an. Die [Entwicklercommunity](https://developercommunity.visualstudio.com) ist der empfohlene Ort für Abstimmungen und das Erstellen von Issues. Für jegliches Feedback empfehlen wir dringend eine ausführliche Beschreibung Ihres Problems. Geben Sie die Visual Studio-Version an, für die Sie entwickeln, die APIs, die Sie verwenden (sowohl die, die Sie implementiert haben, als auch die, mit dem Sie interagieren), das erwartete Ergebnis und das tatsächliche Ergebnis. Fügen Sie nach Möglichkeit ein Speicherabbild des devenv.exe-Prozesses bei. Verwenden Sie die Problemnachverfolgung von GitHub (Issues), um Feedback dazu sowie zu zugehöriger Dokumentation zu geben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Arbeitsbereiche](workspaces.md) : erfahren Sie mehr über die Arbeitsbereichs-API für geöffnete Ordner.
+* [Arbeitsbereiche](workspaces.md): Erfahren Sie mehr über die Arbeitsbereich-API „Ordner öffnen“.

@@ -13,10 +13,10 @@ ms.workload:
 helpviewer_keywords:
 - add missing usings
 ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094313"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Hinzufügen fehlender using-Anweisungen in Visual Studio
@@ -44,7 +44,7 @@ Diese Codegenerierung gilt für:
 
     ![Generieren von Using-Anweisungen](media/generate-using-codefix.png)
 
-3. Klicken Sie auf **Using \<Ihr Verweis\>;** , um den fehlenden Verweis hinzuzufügen.
+3. Wählen Sie **using \<your reference\>;** aus, um den fehlenden Verweis hinzuzufügen.
 
     ![Ergebnisse des Generierens von Using-Anweisungen](media/generate-using-result.png)
 

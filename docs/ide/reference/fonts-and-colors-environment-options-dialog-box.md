@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595617"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
@@ -196,9 +196,9 @@ Hier einige Anzeigeelemente:
 |**XML-Attribut**|Attributnamen.|
 |**XML-Attributanführungszeichen**|Die Anführungszeichen für XML-Attribute.|
 |**XML-Attributwert**|Der Inhalt von XML-Attributen.|
-|**XML-CData-Abschnitt**|Der Inhalt von \<![CDATA[...]]>|
-|**XML-Kommentar**|Der Inhalt von \<!-- -->|
-|**XML-Trennzeichen**|XML-Syntaxtrennzeichen, z.B. <, <?, <!, \<!--, -->, ?\>, \<![, ]]> und [, ]|
+|**XML-CData-Abschnitt**|Inhalt von \<![CDATA[...]]>.|
+|**XML-Kommentar**|Der Inhalt von \<!-- -->.|
+|**XML-Trennzeichen**|XML-Syntaxtrennzeichen, z. B. <, <?, <!, \<!--, -->, ?\>, \<![, ]]> und [, ].|
 |**XML-Dokumentattribut**|Der Wert eines XML-Dokumentationsattributs wie z.B. \<param name="I">, wobei das „I“ farbig hervorgehoben ist|
 |**XML-Dokumentkommentar**|Die in den XML-Dokumentationskommentaren eingeschlossenen Kommentare.|
 |**XML-Dokumenttag**|Die Tags in XML-Dokumentkommentaren, z. B.<br /><br /> /// \<summary>.|

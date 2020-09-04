@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821593"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads im Visual Studio-Debugger mithilfe des Fensters „Threads“ (C#, Visual Basic, C++)
@@ -46,7 +46,7 @@ Im Fenster **Threads** können Sie Threads in der gedebuggten Anwendung überpr�
 
 - **Kategorie:** Zeigt die Kategorie von Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf-Handler oder Arbeitsthreads an. In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.
 
-- **Name**: Identifiziert jeden Thread anhand des Namens, sofern er einen hat, oder als \<Kein Name>.
+- **Name**: Identifiziert jeden Thread anhand des Namens, sofern er einen hat, oder als \<No Name>.
 
 - **Standort**: Zeigt an, wo der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.
 

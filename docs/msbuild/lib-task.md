@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633589"
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
@@ -44,7 +44,7 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*).
 |---------------|-----------------|
 |**AdditionalDependencies**|Optionaler **String[]** -Parameter.<br /><br /> Gibt zusätzliche Elemente an, die zur Befehlszeile hinzugefügt werden.|
 |**AdditionalLibraryDirectories**|Optionaler **String[]** -Parameter.<br /><br /> Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.<br /><br /> Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/cpp/build/reference/libpath-additional-libpath).|
-|**AdditionalOptions**|Optionaler **String** -Parameter.<br /><br /> Eine Liste von *lib.exe*-Optionen (wie in der Befehlszeile angegeben). Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um *lib.exe*-Optionen anzugeben, die nicht durch einen anderen **LIB**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter [Ausführen von LIB](/cpp/build/reference/running-lib).|
+|**AdditionalOptions**|Optionaler **String** -Parameter.<br /><br /> Eine Liste von *lib.exe*-Optionen (wie in der Befehlszeile angegeben). Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um *lib.exe*-Optionen anzugeben, die nicht durch einen anderen **LIB**-Aufgabenparameter repräsentiert werden.<br /><br /> Weitere Informationen finden Sie unter [Ausführen von LIB](/cpp/build/reference/running-lib).|
 |**DisplayLibrary**|Optionaler **String** -Parameter.<br /><br /> Zeigt Informationen zur Ausgabebibliothek an. Geben Sie einen Dateinamen an, um die Informationen in eine Datei umzuleiten. Geben Sie "CON" oder nichts an, um die Informationen an die Konsole umzuleiten.<br /><br /> Dieser Parameter entspricht der Option **/LIST** von *lib.exe*.|
 |**ErrorReporting**|Optionaler **String** -Parameter.<br /><br /> Gibt an, wie interne Fehlerinformationen an Microsoft gesendet werden, wenn *lib.exe* zur Laufzeit fehlschlägt.<br /><br /> Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.<br /><br /> -   **NoErrorReport** -  **/ERRORREPORT:NONE**<br />-   **PromptImmediately** -  **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** -  **/ERRORREPORT:SEND**<br /><br /> Weitere Informationen finden Sie bei der **/ERRORREPORT**-Befehlszeilenoption unter [Ausführen von LIB](/cpp/build/reference/running-lib).|
 |**ExportNamedFunctions**|Optionaler **String[]** -Parameter.<br /><br /> Gibt eine oder mehrere zu exportierende Funktionen an.<br /><br /> Dieser Parameter entspricht der Option **/EXPORT:** von *lib.exe*.|

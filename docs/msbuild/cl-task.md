@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865335"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
@@ -48,7 +48,7 @@ Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert au
 
    Optionaler String-Parameter.
 
-   Eine Liste von Befehlszeilenoptionen. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.
+   Eine Liste von Befehlszeilenoptionen. Beispiel: „/\<option1> /\<option2> /\<option#>“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.
 
    Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).
 

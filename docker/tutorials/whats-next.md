@@ -1,6 +1,6 @@
 ---
 title: 'Docker-Tutorial: Nächste Schritte'
-description: Beschreibt Optionen zum Erweitern von Docker-apps mit Orchestrierung mithilfe von Cloud Native Computing Foundation-Projekten.
+description: Beschreibt Optionen zum Erweitern von Docker-Apps mit Orchestrierung mithilfe von Cloud Native Computing Foundation-Projekten.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,35 +10,35 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: f93185641a0814797b66eae90714e04cac83f7e5
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176691"
 ---
-# <a name="whats-next"></a>Nächste Schritte
+# <a name="whats-next"></a>Ausblick
 
-Obwohl Sie mit Ihrem Lernprogramm fertig sind, gibt es noch viel mehr über Container!
-Sie werden hier nicht ausführlich darauf eingehen, aber hier sind einige weitere Bereiche, die Sie als nächstes betrachten können.
+Obwohl Sie Ihr Tutorial abgeschlossen haben, gibt es noch VIEL mehr über Container zu erfahren!
+Wir werden an dieser Stelle nicht ausführlicher darauf eingehen, aber hier sind einige weitere Bereiche, die Sie als nächstes untersuchen können.
 
 ## <a name="container-orchestration"></a>Containerorchestrierung
 
-Die Ausführung von Containern in der Produktion ist schwierig. Sie möchten sich nicht bei einem Computer anmelden und einfach ein `docker run` oder Ausführen `docker-compose up` . Warum nicht? Was geschieht, wenn die Container? Wie Skalieren Sie auf mehreren Computern? Die Container Orchestrierung löst dieses Problem. Tools wie "Kubernetes", "Swarm", "Nomad" und "AKS" helfen Ihnen dabei, dieses Problem zu lösen.
+Die Ausführung von Containern in der Produktion ist schwierig. Sie möchten sich nicht bei einem Computer anmelden und einfach `docker run` oder `docker-compose up` ausführen. Warum nicht? Was geschieht, wenn die Container ausfallen? Wie skalieren Sie über mehrere Computern hinweg? Containerorchestrierung löst dieses Problem. Tools wie Kubernetes, Swarm, Nomad und AKS helfen Ihnen dabei, dieses Problem zu lösen.
 
-Die allgemeine Idee ist, dass Sie über "Manager" verfügen, die den **erwarteten Zustand**erhalten. Dieser Status kann lauten: "Ich möchte zwei Instanzen meiner Web-App ausführen und Port 80 verfügbar machen." Die Vorgesetzten betrachten dann alle Computer im Cluster und delegieren die Arbeit an die Worker-Knoten. Die Manager überwachen Änderungen (z. b. einen Containerstatus) und stellen dann fest, dass der **tatsächliche Zustand** den erwarteten Zustand widerspiegelt.
+Die allgemeine Idee besteht darin, dass Sie über „Manager“ verfügen, die den **erwarteten Status** erhalten. Dieser Status kann lauten: „Ich möchte zwei Instanzen meiner Web-App ausführen und Port 80 verfügbar machen." Die Manager untersuchen dann alle Computer im Cluster und delegieren die Aufgabe an „Workerknoten“. Die Manager überwachen Änderungen (z. B. einen Container, der beendet wird) und veranlassen dann, dass der **tatsächliche Status** den erwarteten Zustand widerspiegelt.
 
 ## <a name="cloud-native-computing-foundation-projects"></a>Cloud Native Computing Foundation-Projekte
 
-Cncf ist ein herstellerneutrales Zuhause für verschiedene Open Source-Projekte, einschließlich Kubernetes, Prometheus, Gesandter, linkerd, NATs und mehr! Hier können Sie die vollständig [gestaffelten und aufgestuften Projekte](https://www.cncf.io/projects/) und das gesamte [cncf-quer](https://landscape.cncf.io/)Format anzeigen. Es gibt viele Projekte, die Ihnen helfen, Probleme im Zusammenhang mit Überwachung, Protokollierung, Sicherheit, Abbild Registrierungen, Messaging und mehr zu lösen.
+CNCF ist ein herstellerneutraler Speicherort für verschiedene Open-Source-Projekte, einschließlich Kubernetes, Prometheus, Envoy, Linkerd, NATs und mehr! Sie können Projekte mit dem Reifegrad [Graduated und Incubating hier](https://www.cncf.io/projects/) und die gesamte [CNCF-Landschaft hier](https://landscape.cncf.io/) einsehen. Es gibt VIELE Projekte, die Ihnen dabei helfen, Probleme im Zusammenhang mit Überwachung, Protokollierung, Sicherheit, Imageregistrierungen, Messaging und mehr zu lösen!
 
-Wenn Sie also noch nicht mit der Container Landschaft und der cloudbasierten Anwendungsentwicklung vertraut sind, Willkommen! Stellen Sie eine Verbindung mit der Community her, stellen Sie Fragen, und halten Sie Ihr Lernen! Wir freuen uns auf Sie!
+Wenn Sie also noch nicht mit der Containerlandschaft und cloudnativer Anwendungsentwicklung vertraut sind, herzlich Willkommen! Schaffen Sie eine Verbindung mit der Community, stellen Sie Fragen, und lernen Sie Neues dazu! Wir freuen uns auf Sie!
 
-## <a name="working-with-docker-in-vs-code"></a>Arbeiten mit docker in vs Code
+## <a name="working-with-docker-in-vs-code"></a>Arbeiten mit Docker in VS Code
 
-Weitere Informationen zur Verwendung der Docker-vs Code Erweiterung finden Sie hier:
+Weitere Informationen zur Verwendung der VS Code-Erweiterung von Docker finden Sie hier:
 
-- [Übersicht über die vs Code docker-Erweiterung](https://code.visualstudio.com/docs/containers/overview)
-- [Beginnen Sie mit Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
+- [Übersicht über die VS Code-Erweiterung von Docker](https://code.visualstudio.com/docs/containers/overview)
+- [Erste Schritte mit Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [Erste Schritte mit Python](https://code.visualstudio.com/docs/containers/quickstart-python)
 - [Erste Schritte mit .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
-- [Debuggen von containerisierten apps](https://code.visualstudio.com/docs/containers/debug-common)
+- [Debuggen von containerisierten Apps](https://code.visualstudio.com/docs/containers/debug-common)

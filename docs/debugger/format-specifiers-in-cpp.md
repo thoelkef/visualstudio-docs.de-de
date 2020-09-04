@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62896619"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ im Visual Studio-Debugger
@@ -79,26 +79,26 @@ Die folgenden Tabellen beschreiben die Formatbezeichner, die Sie in Visual Studi
 |e|Wissenschaftliche Schreibweise|25000000|2.500000e+07|
 |g|Kürzere Variante aus wissenschaftlicher oder Gleitkommaschreibweise|25000000|2.5e+07|
 |c|Einzelnes Zeichen|0x0065, c|101 'e'|
-|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> "hello world"|"hello world"|
-|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
-|s8|UTF-8-Zeichenfolge|\<Speicherort> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
-|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
-|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort> L"hello world"|hello world|
-|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"|
+|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<location> "hello world"|"hello world"|
+|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<location> "hello world"|hello world|
+|s8|UTF-8-Zeichenfolge|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<location> "hello world"|hello world|
+|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<location> L"hello world"|hello world|
+|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<location> L"hello world"|L"hello world"|
 |env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> U"hello world"|u"hello world"|
-|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> U"hello world"|hello world|
+|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<location> U"hello world"|u"hello world"|
+|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<location> U"hello world"|hello world|
 |**en**|enum|Samstag(6)|Samstag|
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort>{\<Erster Member>, \<zweiter Member>, ...}|
-|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort>, {member=value…}|{member=value...}|
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<location>, {member=value...}|{member=value...}|
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|
 |hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|
 |nr|"Raw View"-Element unterdrücken|
 |nvo|"Raw View"-Element nur für numerische Werte anzeigen|
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -111,24 +111,24 @@ Die folgenden Tabellen beschreiben die Formatbezeichner, die Sie in Visual Studi
 |w<br /><br /> **h**|Ganze Hexadezimalzahl|102|0xcccccccc|
 |X<br /><br /> **H**|Ganze Hexadezimalzahl|102|0xcccccccc|
 |c|Einzelnes Zeichen|0x0065, c|101 'e'|
-|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> "hello world"|"hello world"|
-|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
-|s8|UTF-8-Zeichenfolge|\<Speicherort> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
-|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> "hello world"|hello world|
-|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<Speicherort> L"hello world"|hello world|
-|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<Speicherort> L"hello world"|L"hello world"|
+|s|const char*-Zeichenfolge (mit Anführungszeichen)|\<location> "hello world"|"hello world"|
+|**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<location> "hello world"|hello world|
+|s8|UTF-8-Zeichenfolge|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8-Zeichenfolge (ohne Anführungszeichen)|\<location> "hello world"|hello world|
+|su|Unicode-Zeichenfolge (UTF-16-Codierung mit Anführungszeichen)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode-Zeichenfolge (UTF-16-Codierung ohne Anführungszeichen)|\<location> L"hello world"|hello world|
+|bstr|BSTR-Binärzeichenfolge (mit Anführungszeichen)|\<location> L"hello world"|L"hello world"|
 |env|Umgebungsblock (doppelt nullterminierte Zeichenfolge)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<Speicherort> U"hello world"|u"hello world"|
-|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort> U"hello world"|hello world|
+|**s32**|UTF-32-Zeichenfolge (mit Anführungszeichen)|\<location> U"hello world"|u"hello world"|
+|**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<location> U"hello world"|hello world|
 |**en**|enum|Samstag(6)|Samstag|
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort>{\<Erster Member>, \<zweiter Member>, ...}|
-|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort>, {member=value…}|{member=value...}|
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<location>, {member=value...}|{member=value...}|
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|
 |hr|HRESULT oder Win32-Fehlercode. Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -157,15 +157,15 @@ Wenn Sie über einen Zeiger für ein Objekt verfügen, das Sie als Array anzeige
 |**f**|Gleitkommazahl mit Vorzeichen|(3./2.), f|1.500000|
 |**e**|Wissenschaftliche Notation mit Vorzeichen|(3.0/2.0)|1.500000e+000|
 |**g**|Gleitkommazahl oder wissenschaftliche Schreibweise mit Vorzeichen,<br/> je nachdem, was kürzer ist|(3.0/2.0)|1.5|
-|c|Einzelnes Zeichen|\<Speicherort>|101 'e'|
-|s|const char* (mit Anführungszeichen)|\<Speicherort>|"hello world"|
-|su|const wchar_t*<br /><br /> const char16_t\* (mit Anführungszeichen)|\<Speicherort>|L"hello world"|
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|hello world|
-|s8|const char* (mit Anführungszeichen)|\<Speicherort>|"hello world"|
+|c|Einzelnes Zeichen|\<location>|101 'e'|
+|s|const char* (mit Anführungszeichen)|\<location>|"hello world"|
+|su|const wchar_t*<br /><br /> const char16_t\* (mit Anführungszeichen)|\<location>|L"hello world"|
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|
+|s8|const char* (mit Anführungszeichen)|\<location>|"hello world"|
 |hr|HRESULT oder Win32-Fehlercode.<br/>Dieser Bezeichner wird nicht mehr für HRESULTs benötigt, da er vom Debugger automatisch decodiert wird.|S_OK|S_OK|
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert|\<Benutzerdefinierte Darstellung>|4|
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim Interop-Debuggen mit C++/CLI
 Die folgende Tabelle beschreibt Formatierungssymbole, die für Speicherbereiche verwendet werden. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.

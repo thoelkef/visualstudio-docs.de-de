@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865348"
 ---
 # <a name="link-task"></a>Link-Aufgabe
@@ -73,7 +73,7 @@ Umschließt das Microsoft C++-Linkertool (*link.exe*). Das Linkertool ist ein To
 
   Optionaler **String**-Parameter.
 
-  Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.
+  Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.
 
   Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
 
@@ -139,7 +139,7 @@ Umschließt das Microsoft C++-Linkertool (*link.exe*). Das Linkertool ist ein To
 
   Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Standard** -  *\<none>*
+  - **Default** -  *\<none>*
 
   - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
 

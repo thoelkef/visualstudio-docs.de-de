@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633472"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
@@ -53,7 +53,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Optionaler **String** -Parameter.
 
-     Eine Liste der Befehlszeilenoptionen. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.
+     Eine Liste der Befehlszeilenoptionen. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.
 
      Weitere Informationen finden Sie unter [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -329,7 +329,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TargetEnvironment**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt die Umgebung an, in der die Anwendung ausgeführt wird.
 
@@ -352,7 +352,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TypeLibFormat**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt das Format der Typbibliotheksdatei an.
 
@@ -367,7 +367,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TypeLibraryName**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt den Namen der Typbibliotheksdatei an.
 
@@ -401,7 +401,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **WarningLevel**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt den Schweregrad (*Warnstufe*) von auszugebenden Warnungen an. Für den Wert 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn ihre Warnstufe numerisch kleiner als oder gleich der angegebene Wert ist.
 
@@ -417,6 +417,6 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Weitere Informationen finden Sie unter der Option **/W** in der [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference). Siehe auch den Parameter **WarningLevel** in dieser Tabelle.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77706392"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation
@@ -38,7 +38,7 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
    - Führen Sie einen Rechtsklick aus, bzw. nutzen Sie das Kontextmenü, und klicken dann auf **Ausschnitt** > **Kommentar einfügen**.
 
-   Die XML-Vorlage wird sofort über dem Codeelement generiert. Wenn Sie zum Beispiel eine Methode kommentieren, wird ein **\<Summary\>** -Element, ein **\<param\>** -Element für jeden Parameter und ein **\<returns\>** -Element generiert, um den Rückgabewert zu dokumentieren.
+   Die XML-Vorlage wird sofort über dem Codeelement generiert. Wenn Sie zum Beispiel eine Methode kommentieren, wird ein **\<summary\>** -Element, ein **\<param\>** -Element für jeden Parameter und ein **\<returns\>** -Element generiert, um den Rückgabewert zu dokumentieren.
 
    ![XML-Kommentarvorlage – C#](media/doc-preview-cs.png)
 

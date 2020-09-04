@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849858"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# im Visual Studio-Debugger
@@ -65,14 +65,14 @@ In der folgenden Tabelle werden die C#-Formatbezeichner für den Visual Studio-D
 
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Anzeige|
 |---------------|------------|--------------------------|--------------|
-|ac|Erzwingt die Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind.|Meldung „Implizite Funktionsevaluierung durch den Benutzer deaktiviert“|\<Wert>|
+|ac|Erzwingt die Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind.|Meldung „Implizite Funktionsevaluierung durch den Benutzer deaktiviert“|\<value>|
 |T|Ganze Dezimalzahl|0x0065|101|
 |dynamic|Zeigt das angegebene Objekt mit einer dynamischen Ansicht an.|Zeigt alle Member des Objekts einschließlich der dynamischen Ansicht an.|Zeigt nur die dynamische Ansicht an.|
 |h|Ganze Hexadezimalzahl|61541|0x0000F065|
 |nq|Zeichenfolge ohne Anführungszeichen|"Meine Zeichenfolge"|Meine Zeichenfolge|
 |nse|Gibt das Verhalten an, nicht das Format. Wertet den Ausdruck ohne Nebeneffekte aus. Wenn der Ausdruck nicht interpretiert werden kann und sich nur durch eine Auswertung auflösen lässt (z. B. als Funktionsaufruf), wird stattdessen ein Fehler angezeigt.|Nicht zutreffend|Nicht zutreffend|
 |hidden|Zeigt alle öffentlichen und nicht öffentlichen Member an.|Zeigt öffentliche Member an.|Zeigt alle Member an.|
-|raw|Zeigt ein Element so an, wie es im Knoten für Rohdatenelemente dargestellt wird. Nur für Proxyobjekte gültig.|Dictionary\<T>|Rohdatenansicht von Dictionary\<T>|
+|raw|Zeigt ein Element so an, wie es im Knoten für Rohdatenelemente dargestellt wird. Nur für Proxyobjekte gültig.|Wörterbuch\<T>|Rohdatenansicht von Dictionary\<T>|
 |results|Wird mit einer Variablen eines Typs verwendet, durch den „IEnumerable“ oder „IEnumerable\<T>“ implementiert wird; normalerweise das Ergebnis eines Abfrageausdrucks. Zeigt nur die das Abfrageergebnis enthaltenden Member an.|Zeigt alle Member an.|Zeigt die Member an, die die Bedingungen der Abfrage erfüllen.|
 
 ## <a name="see-also"></a>Siehe auch
