@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 974b98408d7c88bd437439d10c2cf3b1711a339c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cb3e83b06b3533d1feb1e683fb246f238da732
+ms.sourcegitcommit: 6a43ace7b84c401ebd03f65abc17ae1d2a21a130
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219633"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471478"
 ---
 # <a name="performance-warnings"></a>Leistungswarnungen
 Leistungs Warnungen unterstützen Hochleistungs Bibliotheken und-Anwendungen.
@@ -58,6 +58,7 @@ Leistungs Warnungen unterstützen Hochleistungs Bibliotheken und-Anwendungen.
 | [CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.](../code-quality/ca1831.md) | Wenn Sie einen Range-Indexer für eine Zeichenfolge verwenden und den Wert implizit einem "Read onlyspan"- &lt; Char- &gt; Typ zuweisen, wird die-Methode <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils der Zeichenfolge erzeugt wird. |
 | [CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.](../code-quality/ca1832.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.ReadOnlySpan%601> oder- <xref:System.ReadOnlyMemory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
 | [CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.](../code-quality/ca1833.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.Span%601> oder- <xref:System.Memory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
+| [CA1834: StringBuilder. Append (Char) für Zeichen folgen mit einem Zeichen verwenden](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> verfügt über eine-Überladung `Append` , die einen `char` als sein Argument annimmt. Bevorzugen Sie die `char` Überladung, um die Leistung zu verbessern |
 | [CA1835: bevorzugen Sie die "Memory"-basierten über Ladungen für "Read Async" und "schreiteasync".](../code-quality/ca1835.md) | ' Stream ' weist eine ' Schreib async '-Überladung auf, die ein ' Memory &lt; Byte &gt; ' als erstes Argument annimmt, und eine ' schreiteasync '-Überladung, die ein ' Read onlymemory &lt; Byte &gt; ' als erstes Argument annimmt. Bevorzugen Sie das Aufrufen der Speicher basierten über Ladungen, die effizienter sind. |
 | [CA1836: bevorzugen `IsEmpty` , `Count` Wenn verfügbar](../code-quality/ca1836.md) | Bevorzugt eine `IsEmpty` Eigenschaft, die effizienter ist als `Count` , oder, `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> um zu bestimmen, ob das Objekt Elemente enthält oder nicht. |
 | [CA1837: Verwenden Sie `Environment.ProcessId` anstelle von. `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` ist einfacher und schneller als `Process.GetCurrentProcess().Id` . |
