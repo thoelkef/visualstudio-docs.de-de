@@ -956,7 +956,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastenkombinationen
       items:
@@ -1411,6 +1411,8 @@
       href: ide/whats-new-visual-studio-2019.md
     - name: Neues in der Visual Studio-Dokumentation
       href: ide/whats-new-visual-studio-docs.md
+    - name: Verlauf der Neuerungen in der Visual Studio-Dokumentation
+      href: ide/whats-new-visual-studio-docs-history.md
     - name: Versionsanmerkungen und Systemanforderungen
       items:
         - name: Releaserhythmus
