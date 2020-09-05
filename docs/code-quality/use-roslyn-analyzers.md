@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219776"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490286"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -76,6 +76,13 @@ Der folgende Screenshot des Code-Editors zeigt drei verschiedene Verstöße gege
 Der folgende Screenshot zeigt dieselben drei Verstöße, wie Sie im Fehlerliste angezeigt werden:
 
 ![Fehler-, Warn-und Informations Verstoß in Fehlerliste](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>Schweregrad "ausgeblendet" im Vergleich zu "None"
+
+`Hidden` Schweregrade, die standardmäßig aktiviert sind, unterscheiden sich `None` in vielerlei Hinsicht von den Regeln für deaktivierte Regeln oder Schweregrade.
+
+- Wenn eine Code Korrektur für eine `Hidden` Schweregrad Regel registriert wurde, wird die Korrektur in Visual Studio als eine Glühbirne-Refactoring-Aktion für das Codieren angeboten, auch wenn die verborgene Diagnose für den Benutzer nicht sichtbar ist. Dies gilt nicht für deaktivierte `None` Schweregrad Regeln.
+- `Hidden` Schweregrad Regeln können per Massen Konfiguration durch Einträge konfiguriert werden, die den [Schweregrad mehrerer Analyse Regeln in einer Editor config-Datei gleichzeitig festlegen](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file). `None` Schweregrad Regeln können nicht auf diese Weise konfiguriert werden. Stattdessen müssen Sie über Einträge konfiguriert werden, die den [Schweregrad der Regel in einer Editor config-Datei für jede Regel-ID festlegen](#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker range=">=vs-2019"
 
