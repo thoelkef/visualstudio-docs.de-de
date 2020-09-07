@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219685"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509847"
 ---
 # <a name="globalization-warnings"></a>Globalisierungswarnungen
 Globalisierungs Warnungen unterstützen weltweit bereite Bibliotheken und Anwendungen.
@@ -29,9 +29,6 @@ Globalisierungs Warnungen unterstützen weltweit bereite Bibliotheken und Anwend
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1300: MessageBoxOptions angeben.](../code-quality/ca1300.md)|Wenn in Kulturen, in denen von rechts nach links gelesen wird, ein Meldungsfeld richtig angezeigt werden soll, müssen der RightAlign-Member und der RtlReading-Member der MessageBoxOptions-Enumeration an die Show-Methode übergeben werden.|
-|[CA1301: Doppelte Zugriffstasten vermeiden.](../code-quality/ca1301.md)|Eine Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement unter Verwendung der ALT-TASTE. Wenn mehrere Steuerelemente über doppelte Zugriffsschlüssel verfügen, ist das Verhalten des Zugriffsschlüssels nicht klar definiert.|
-|[CA1302: Keine Hartkodierung für gebietsschemaspezifische Zeichenfolgen verwenden.](../code-quality/ca1302.md)|Die System.Environment.SpecialFolder-Enumeration enthält Member, die auf besondere Systemordner verweisen. Die Speicherorte dieser Ordner können sich von Betriebssystem zu Betriebssystem unterscheiden. Der Benutzer kann einige Speicherorte ändern, und die Speicherorte sind lokalisiert. Die Environment. GetFolderPath-Methode gibt die Speicherorte zurück, die der Umgebung. SpecialFolder-Enumeration zugeordnet sind, lokalisiert und für den aktuell ausgeführten Computer geeignet ist.|
 |[CA1303: Literale nicht als lokalisierte Parameter übergeben.](../code-quality/ca1303.md)|Eine extern sichtbare Methode übergibt ein Zeichenfolgenliteralzeichen als Parameter an einen .net-Konstruktor oder eine Methode, und diese Zeichenfolge muss lokalisierbar sein.|
 |[CA1304: CultureInfo angeben.](../code-quality/ca1304.md)|Eine Methode oder ein Konstruktor ruft einen Member mit einer Überladung auf, die einen System.Globalization.CultureInfo-Parameter akzeptiert. Die Methode oder der Konstruktor ruft nicht die Überladung auf, die den CultureInfo-Parameter akzeptiert. Wenn ein CultureInfo-Objekt oder ein System.IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt.|
 |[CA1305: IFormatProvider angeben.](../code-quality/ca1305.md)|Eine Methode oder ein Konstruktor ruft einen oder mehrere Member auf, die Überladungen besitzen und einen System.IFormatProvider-Parameter akzeptieren; die Methode oder der Konstruktor ruft die Überladung nicht auf, die den IFormatProvider-Parameter akzeptiert. Wenn ein System.Globalization.CultureInfo-Objekt oder ein IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt.|

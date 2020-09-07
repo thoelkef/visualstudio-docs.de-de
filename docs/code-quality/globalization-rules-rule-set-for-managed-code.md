@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219672"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509860"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Regelsatz für Globalisierungsregeln für verwalteten Code
 
@@ -21,13 +21,9 @@ Verwenden Sie den Regelsatz Microsoft-Globalisierungsregeln, um sich auf Problem
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|MessageBoxOptions angeben.|
-|[CA1301](../code-quality/ca1301.md)|Doppelte Zugriffstasten vermeiden.|
-|[CA1302](../code-quality/ca1302.md)|Gebiets Schema spezifische Zeichen folgen nicht hart codieren|
 |[CA1303](../code-quality/ca1303.md)|Literale nicht als lokalisierte Parameter übergeben.|
 |[CA1304](../code-quality/ca1304.md)|CultureInfo angeben.|
 |[CA1305](../code-quality/ca1305.md)|IFormatProvider angeben.|
-|[CA1306](../code-quality/ca1306.md)|Gebietsschema für Datentypen festlegen.|
 |[CA1307](../code-quality/ca1307.md)|StringComparison zur Übersichtlichkeit angeben|
 |[CA1308](../code-quality/ca1308.md)|Zeichenfolgen in Großbuchstaben normalisieren.|
 |[CA1309](../code-quality/ca1309.md)|Ordinal-StringComparison verwenden.|
