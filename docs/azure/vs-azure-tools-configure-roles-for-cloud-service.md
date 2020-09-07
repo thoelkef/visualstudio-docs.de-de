@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250845"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508508"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -140,7 +140,7 @@ Die folgenden Schritte zeigen, wie Sie programmgesteuert mithilfe von C# auf ein
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Hinzufügen benutzerdefinierter Einstellungen zur Verwendung in Ihrem Azure-Clouddienst
-Benutzerdefinierte Einstellungen in der Dienstkonfigurationsdatei ermöglichen das Hinzufügen eines Namens und eines Werts für eine Zeichenfolge für eine bestimmte Dienstkonfiguration. Sie können diese Einstellung verwenden, um ein Feature in Ihrem Clouddienst zu konfigurieren, indem Sie den Wert der Einstellung lesen und diesen Wert zum Steuern der Logik im Code verwenden. Sie können diese Dienstkonfigurationswerte ohne erneute Erstellung des Dienstpakets oder während der Ausführung des Clouddiensts ändern. Der Code kann auf Benachrichtigungen bzgl. Änderungen einer Einstellung prüfen. Weitere Informationen finden Sie unter [RoleEnvironment.Changing-Ereignis](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
+Benutzerdefinierte Einstellungen in der Dienstkonfigurationsdatei ermöglichen das Hinzufügen eines Namens und eines Werts für eine Zeichenfolge für eine bestimmte Dienstkonfiguration. Sie können diese Einstellung verwenden, um ein Feature in Ihrem Clouddienst zu konfigurieren, indem Sie den Wert der Einstellung lesen und diesen Wert zum Steuern der Logik im Code verwenden. Sie können diese Dienstkonfigurationswerte ohne erneute Erstellung des Dienstpakets oder während der Ausführung des Clouddiensts ändern. Der Code kann auf Benachrichtigungen bzgl. Änderungen einer Einstellung prüfen. Weitere Informationen finden Sie unter [RoleEnvironment.Changing-Ereignis](/previous-versions/azure/reference/ee758134(v=azure.100)).
 
 Sie können benutzerdefinierte Einstellungen für Ihre Dienstkonfigurationen hinzufügen, entfernen oder ändern. Möglicherweise möchten Sie verschiedene Werte für diese Zeichenfolgen für verschiedene Dienstkonfigurationen verwenden.
 
@@ -269,4 +269,4 @@ Um die durch den Code im vorhergehenden Abschnitt erstellte Datei anzuzeigen, f�
 1. Wenn das Fenster des Windows Explorer geöffnet wird, geben Sie im Textfeld **Suchen** „MyLocalStorageTest.txt“ ein, und wählen Sie **Eingabe** aus, um die Suche zu starten.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Unter [Konfigurieren eines Azure-Projekts](vs-azure-tools-configuring-an-azure-project.md)erhalten Sie weitere Informationen zu Azure-Projekten in Visual Studio. Informationen zum Clouddienstschema finden Sie unter [Schemareferenz](https://msdn.microsoft.com/library/azure/dd179398).
+Unter [Konfigurieren eines Azure-Projekts](vs-azure-tools-configuring-an-azure-project.md)erhalten Sie weitere Informationen zu Azure-Projekten in Visual Studio. Informationen zum Clouddienstschema finden Sie unter [Schemareferenz](/previous-versions/azure/dd179398(v=azure.100)).

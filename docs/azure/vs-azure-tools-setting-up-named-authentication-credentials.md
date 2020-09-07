@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911672"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508391"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Einrichten von benannten Anmeldeinformationen zur Authentifizierung
 
@@ -33,7 +33,7 @@ Klicken Sie im Server-Explorer mit der rechten Maustaste auf den Knoten **Azure*
 - Wählen Sie ein aktives Abonnement aus, und klicken Sie auf **Bearbeiten**. Dadurch wird ein Dialogfeld geöffnet, in dem Sie ein vorhandenes Abonnement für die Verwendung bei der Authentifizierung bearbeiten können.
 - Klicken Sie auf **Neu**, um das Dialogfeld **Neues Abonnement** zu öffnen, und geben Sie die erforderlichen Details an. Um das Zertifikat für den im Dialogfeld angegebenen Clouddienst hochzuladen, melden Sie sich beim Azure-Portal an, navigieren Sie zu Ihrem Clouddienst, klicken Sie auf **Einstellungen > Verwaltungszertifikate**, klicken Sie auf **Hochladen**, und geben Sie dann den Pfad zu der Datei vom Typ `.cer` an.
 
-Wenn Sie selbst ein Zertifikat erstellen möchten, lesen Sie die Anleitung unter [Erstellen und Hochladen eines Verwaltungszertifikats für Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx), und laden Sie das Zertifikat anschließend manuell in das [Azure-Portal](https://portal.azure.com/) hoch.
+Wenn Sie selbst ein Zertifikat erstellen möchten, lesen Sie die Anleitung unter [Erstellen und Hochladen eines Verwaltungszertifikats für Azure](/azure/cloud-services/cloud-services-certs-create), und laden Sie das Zertifikat anschließend manuell in das [Azure-Portal](https://portal.azure.com/) hoch.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

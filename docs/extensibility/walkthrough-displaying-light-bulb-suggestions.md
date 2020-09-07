@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904996"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508950"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen
 Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine Reihe von Aktionen anzuzeigen, z. b. Fehlerbehebungen für Probleme, die von den integrierten Code Analysemodulen oder der Code Umgestaltung identifiziert werden.
 
- In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter
+ In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter:
 
-- [Gewusst wie: Schreiben einer c#-Diagnose und-Code Korrektur](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [Gewusst wie: Schreiben einer c#-Diagnose und-Code Korrektur](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [Gewusst wie: Schreiben einer Visual Basic Diagnose und Code Korrektur](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [Gewusst wie: Schreiben einer Visual Basic Diagnose und Code Korrektur](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   Andere Sprachen, wie z. b. C++, stellen auch Glühbirnen für einige schnelle Aktionen bereit, wie z. b. einen Vorschlag, eine Stubimplementierung dieser Funktion zu erstellen.
 
@@ -37,7 +37,7 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
   Sie können Glühbirnen verwenden, um Ihre eigenen empfohlenen Aktionen bereitzustellen. Beispielsweise können Sie Aktionen zum Verschieben von öffnenden geschweiften Klammern in eine neue Zeile oder zum Verschieben an das Ende der vorherigen Zeile bereitstellen. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Glühbirne erstellen, die auf dem aktuellen Wort angezeigt wird und zwei Empfohlene Aktionen hat: **Konvertieren in Großbuchstaben** und **Konvertieren in Kleinbuchstaben**.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen eines Managed Extensibility Framework-Projekts (MEF)
 

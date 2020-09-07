@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285709"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509015"
 ---
 # <a name="net-code-analysis-rules"></a>.NET-Code Analyse Regeln
 Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.
@@ -29,7 +29,7 @@ Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverle
 
 |Element|BESCHREIBUNG|
 |----------|-----------------|
-|type|TypeName für die Regel.|
+|Typ|TypeName für die Regel.|
 |CheckId|Eindeutiger Bezeichner für die Regel. CheckId und Category werden für die Unterdrückung einer Warnung im Quellcode verwendet.|
 |Category|Kategorie der Warnung.|
 |Unterbrechende Änderung|Gibt an, ob die Lösung einer Verletzung der Regel eine unterbrechende Änderung ist. Unterbrechende Änderung bedeutet, dass eine Assembly, die eine Abhängigkeit von dem Ziel aufweist, das die Verletzung verursacht hat, nicht mit der neuen behobenen Version erneut kompiliert wird oder aufgrund der Änderung zur Laufzeit möglicherweise fehlschlägt. Wenn mehrere Korrekturen verfügbar sind und mindestens eine Lösung eine Breaking Change und eine Korrektur nicht besteht, werden sowohl "Breaking" als auch "non-breaking" angegeben.|
@@ -44,18 +44,15 @@ Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverle
 
 |Category|BESCHREIBUNG|
 |-|-|
-|[Warnungen nach CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Listet alle Warnungen nach CheckId auf|
-|[Kryptografiewarnungen](../code-quality/cryptography-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen durch die korrekte Verwendung von Kryptografie unterstützen.|
-|[Entwurfs Warnungen](../code-quality/design-warnings.md)|Warnungen, die ein korrektes Bibliotheks Design gemäß den .net-Entwurfs Richtlinien unterstützen.|
-|[Dokumentations Warnungen](../code-quality/documentation-warnings.md)|Warnungen, die einen gut dokumentierten Bibliotheks Entwurf durch die korrekte Verwendung von XML-Dokumentations Kommentaren unterstützen.|
-|[Globalisierungs Warnungen](../code-quality/globalization-warnings.md)|Warnungen, die global verwendbare Bibliotheken und Anwendungen unterstützen.|
-|[Interoperabilitäts Warnungen](../code-quality/interoperability-warnings.md)|Warnungen, die die Interaktion mit COM-Clients unterstützen.|
-|[Wart barkeits Warnungen](../code-quality/maintainability-warnings.md)|Warnungen, die die Bibliotheks- und Anwendungswartung unterstützen.|
-|[Mobilitäts Warnungen](../code-quality/mobility-warnings.md)|Warnungen, die einen effizienten Stromverbrauch unterstützen.|
-|[Benennungs Warnungen](../code-quality/naming-warnings.md)|Warnungen, die die Einhaltung der Benennungs Konventionen der .net-Entwurfs Richtlinien unterstützen.|
-|[Leistungs Warnungen](../code-quality/performance-warnings.md)|Warnungen, die leistungsstarke Bibliotheken und Anwendungen unterstützen.|
-|[Portabilitäts Warnungen](../code-quality/portability-warnings.md)|Warnungen, die Portabilität auf verschiedenen Plattformen unterstützen.|
-|[Zuverlässigkeits Warnungen](../code-quality/reliability-warnings.md)|Warnungen, die Bibliotheks- und Anwendungszuverlässigkeit unterstützen, wie z. B. die richtige Speicher- und Threadverwendung.|
-|[Sicherheitswarnungen](../code-quality/security-warnings.md)|Warnungen, die sicherere Bibliotheken und Anwendungen unterstützen.|
-|[Verwendungs Warnungen](../code-quality/usage-warnings.md)|Warnungen, die die entsprechende Verwendung von .NET unterstützen.|
-|[Richtlinienfehler bei der Codeanalyse](../code-quality/code-analysis-policy-errors.md)|Fehler die auftreten, wenn die Codeanalyserichtlinie beim Einchecken nicht erfüllt wird.|
+|[Regeln nach ID](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Listet alle Regeln nach RuleId auf.|
+|[Entwurfsregeln](../code-quality/design-warnings.md)|Regeln, die ein korrektes Bibliotheks Design gemäß den .net-Entwurfs Richtlinien unterstützen.|
+|[Dokumentations Regeln](../code-quality/documentation-warnings.md)|Regeln, die einen gut dokumentierten Bibliotheks Entwurf durch die korrekte Verwendung von XML-Dokumentations Kommentaren unterstützen.|
+|[Globalisierungsregeln](../code-quality/globalization-warnings.md)|Regeln, die weltweit einsatzbereite Bibliotheken und Anwendungen unterstützen.|
+|[Wartbarkeitsregeln](../code-quality/maintainability-warnings.md)|Regeln, die Bibliotheks-und Anwendungs Wartung unterstützen.|
+|[Benennungs Regeln](../code-quality/naming-warnings.md)|Regeln, die die Einhaltung der Benennungs Konventionen der .net-Entwurfs Richtlinien unterstützen.|
+|[Leistungs Regeln](../code-quality/performance-warnings.md)|Regeln, die hochleistungsfähige Bibliotheken und Anwendungen unterstützen.|
+|[Portabilität und Interoperabilitäts Regeln](../code-quality/interoperability-warnings.md)|Regeln, die Portabilität auf verschiedenen Plattformen und die Interaktion mit com-Clients unterstützen.|
+|[Regeln veröffentlichen](../code-quality/publish-warnings.md)|Regeln, die die entsprechende Veröffentlichung von .NET-Anwendungen unterstützen.|
+|[Zuverlässigkeitsregeln](../code-quality/reliability-warnings.md)|Regeln, die die Zuverlässigkeit von Bibliotheken und Anwendungen unterstützen, z. b. die korrekte Speicher-und Thread Verwendung|
+|[Sicherheitsregeln](../code-quality/security-warnings.md)|Regeln, die sicherere Bibliotheken und Anwendungen unterstützen.|
+|[Nutzungsregeln](../code-quality/usage-warnings.md)|Regeln, die die entsprechende Verwendung von .NET unterstützen.|

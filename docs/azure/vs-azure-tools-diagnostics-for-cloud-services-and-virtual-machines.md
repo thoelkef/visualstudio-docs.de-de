@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426732"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508495"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -156,18 +156,18 @@ Wenn Sie Azure SDK 2.5 verwenden und eine benutzerdefinierte Datenquelle angeben
 ```
 
 ### <a name="performance-counters"></a>Leistungsindikatoren
-Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
+Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](/azure/cloud-services/diagnostics-performance-counters). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
 
 ![Leistungsindikatoren](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Für das Hinzufügen eines Leistungsindikators, der nicht aufgelistet ist, geben Sie diesen mit der vorgeschlagenen Syntax ein, und klicken Sie dann auf **Hinzufügen**. Das Betriebssystem auf dem virtuellen Computer bestimmt, welche Leistungsindikatoren Sie nachverfolgen können. Weitere Informationen zur Syntax finden Sie unter [Angeben eines Counter-Pfads](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Für das Hinzufügen eines Leistungsindikators, der nicht aufgelistet ist, geben Sie diesen mit der vorgeschlagenen Syntax ein, und klicken Sie dann auf **Hinzufügen**. Das Betriebssystem auf dem virtuellen Computer bestimmt, welche Leistungsindikatoren Sie nachverfolgen können. Weitere Informationen zur Syntax finden Sie unter [Angeben eines Counter-Pfads](/windows/win32/perfctrs/specifying-a-counter-path).
 
 ### <a name="infrastructure-logs"></a>Infrastrukturprotokolle
 Infrastrukturprotokolle enthalten Informationen über die Azure-Diagnoseinfrastruktur, das RemoteAccess-Modul und das RemoteForwarder-Modul. Aktivieren Sie das Kontrollkästchen **Übertragung von Infrastrukturprotokollen aktivieren**, um Informationen über Infrastrukturprotokolle zu sammeln. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Infrastrukturprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 ![Diagnoseinfrastrukturprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="log-directories"></a>Protokollverzeichnisse
 Protokollverzeichnisse enthalten Daten, die aus IIS-Anforderungen (Internetinformationsdienste), fehlerhaften Anforderungen oder von Ihnen ausgewählten Ordnern gesammelt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Protokollverzeichnissen aktivieren**, um Protokollverzeichnisse zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
@@ -185,7 +185,7 @@ Die Ereignisse werden von den Ereignisquellen und Ereignismanifesten erfasst, di
 
 ![ETW-Protokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-Das ETW-Framework wird in ASP.NET durch Klassen im Namespace [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) unterstützt. Der Microsoft.WindowsAzure.Diagnostics-Namespace, der von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))-Standardklassen erbt und diese erweitert, ermöglicht die Verwendung von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) als Protokollierungsframework in der Azure-Umgebung. Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Das ETW-Framework wird in ASP.NET durch Klassen im Namespace [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) unterstützt. Der Microsoft.WindowsAzure.Diagnostics-Namespace, der von [System.Diagnostics.aspx](/dotnet/api/system.diagnostics)-Standardklassen erbt und diese erweitert, ermöglicht die Verwendung von [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) als Protokollierungsframework in der Azure-Umgebung. Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) und [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Absturzabbilder
 Aktivieren Sie das Kontrollkästchen **Übertragung von Absturzabbildern aktivieren**, um Informationen zum Absturz einer Rolleninstanz zu erfassen. (Da ASP.net die meisten Ausnahmen behandelt, ist dies im Allgemeinen nur für workerrollen nützlich.) Um den Prozentsatz des Speicherplatzes zu erhöhen oder zu verringern, der für die Absturz Abbilder reserviert ist, ändern Sie den Wert für das **Verzeichnis Kontingent (%)** . Sie können den Speichercontainer ändern, in dem die Absturzabbilder gespeichert werden, und Sie können angeben, ob Sie ein **vollständiges Abbild** oder ein **Miniabbild** erfassen möchten.
@@ -194,7 +194,7 @@ Die derzeit nachverfolgten Prozesse werden im folgenden Screenshot aufgelistet. 
 
 ![Absturzabbilder](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Microsoft Azure Diagnostics Part 4: Custom Logging Components and Azure Diagnostics 1.3 Changes (Microsoft Azure-Diagnose Teil 4: benutzerdefinierte Protokollierungskomponenten und Änderungen an Azure-Diagnose 1.3)](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) und [Microsoft Azure Diagnostics Part 4: Custom Logging Components and Azure Diagnostics 1.3 Changes (Microsoft Azure-Diagnose Teil 4: benutzerdefinierte Protokollierungskomponenten und Änderungen an Azure-Diagnose 1.3)](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Anzeigen von Diagnosedaten
 Nachdem Sie die Diagnosedaten für einen Clouddienst oder einen virtuellen Computer gesammelt haben, können Sie diese anzeigen.
@@ -256,7 +256,7 @@ Wenn Sie ein Problem mit einem Clouddienst untersuchen, der bereits ausgeführt 
     Wenn Sie die Datensammlung im Server-Explorer ändern, bleiben diese Änderungen wirksam, bis Sie den Clouddienst vollständig erneut bereitstellen. Wenn Sie die Standardeinstellungen für die Veröffentlichung verwenden, werden die Änderungen nicht überschrieben. Die Standardeinstellung für die Veröffentlichung ist nicht die vollständige erneute Bereitstellung, sondern das Aktualisieren der vorhandenen Bereitstellung. Wechseln Sie zur Registerkarte **Erweiterte Einstellungen** im Veröffentlichungs-Assistenten, und deaktivieren Sie das Kontrollkästchen **Deployment update** (Bereitstellungsupdate), um sicherzustellen, dass die Einstellungen zum Zeitpunkt der Bereitstellung gelöscht werden. Wenn Sie bei deaktiviertem Kontrollkästchen eine erneute Bereitstellung durchführen, werden die Einstellungen wieder auf die der WADCFGX-Datei (oder WADCFG-Datei) zurückgesetzt, die mit dem **Eigenschaften-Editor** für die Rolle festgelegt wurden. Wenn Sie Ihre Bereitstellung aktualisieren, behält Azure die früheren Einstellungen bei.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Problembehandlung für Azure-Clouddienste
-Wenn Probleme mit Ihren Clouddienstprojekten auftreten, z.B. eine Rolle, die dauerhaft den Status „Beschäftigt“ hat, wiederholte Neustarts oder die Ausgabe eines internen Serverfehlers, stehen Ihnen Tools und Techniken zur Verfügung, mit denen Sie diese Probleme diagnostizieren und beheben können. Beispiele für häufige Probleme und Lösungen sowie einen Überblick über die Konzepte und Tools, die Sie zum Diagnostizieren und Beheben dieser Fehler verwenden können, finden Sie unter [Azure PaaS compute diagnostics data (Computediagnosedaten in Azure PaaS)](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
+Wenn Probleme mit Ihren Clouddienstprojekten auftreten, z.B. eine Rolle, die dauerhaft den Status „Beschäftigt“ hat, wiederholte Neustarts oder die Ausgabe eines internen Serverfehlers, stehen Ihnen Tools und Techniken zur Verfügung, mit denen Sie diese Probleme diagnostizieren und beheben können. Beispiele für häufige Probleme und Lösungen sowie einen Überblick über die Konzepte und Tools, die Sie zum Diagnostizieren und Beheben dieser Fehler verwenden können, finden Sie unter [Azure PaaS compute diagnostics data (Computediagnosedaten in Azure PaaS)](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).
 
 ## <a name="q--a"></a>Fragen und Antworten
 **Wie groß ist der Puffer, und wie groß sollte er sein?**

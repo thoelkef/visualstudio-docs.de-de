@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800475"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508443"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -126,7 +126,7 @@ Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswä
 
 Wenn Sie mithilfe der Azure-Diagnose Daten von der Azure-Anwendung protokollieren und Protokolle an das Speicherkonto übertragen haben, werden Container angezeigt, die von Azure für diese Protokolle erstellt wurden. Das Anzeigen dieser Protokolle im Server-Explorer ist eine einfache Möglichkeit, um Probleme mit Ihrer Anwendung zu erkennen, insbesondere wenn sie für Azure bereitgestellt wurde.
 
-Weitere Informationen zu Azure-Diagnose finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Weitere Informationen zu Azure-Diagnose finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>So rufen Sie die URL für ein Blob ab
 
@@ -262,7 +262,7 @@ Es gibt zwei Möglichkeiten, Speicherkonten mithilfe des Server-Explorers hinzuz
 
    ![Erstellen eines Azure-Speicherkontos](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Klicken Sie auf **Erstellen**.
+1. Wählen Sie **Erstellen** aus.
 
 Das neue Speicherkonto wird im Projektmappen-Explorer in der Liste **Speicher** angezeigt.
 
@@ -275,7 +275,7 @@ Das neue Speicherkonto wird im Projektmappen-Explorer in der Liste **Speicher** 
 
    * Den Namen des vorhandenen Speicherkontos, das Sie anfügen möchten.
    * Den Schlüssel für das ausgewählte Speicherkonto. Dieser Wert wird für gewöhnlich bereitgestellt, wenn Sie ein Speicherkonto auswählen. Wenn Visual Studio sich den Speicherkontoschlüssel merken soll, aktivieren Sie das Kontrollkästchen **Kontoschlüssel merken**.
-   * Das Protokoll, das zum Herstellen einer Verbindung mit dem Speicherkonto verwendet wird, beispielsweise HTTP, HTTPS oder ein benutzerdefinierter Endpunkt. Weitere Informationen über benutzerdefinierte Endpunkte finden Sie unter [Konfigurieren von Verbindungszeichenfolgen](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Das Protokoll, das zum Herstellen einer Verbindung mit dem Speicherkonto verwendet wird, beispielsweise HTTP, HTTPS oder ein benutzerdefinierter Endpunkt. Weitere Informationen über benutzerdefinierte Endpunkte finden Sie unter [Konfigurieren von Verbindungszeichenfolgen](/azure/storage/common/storage-configure-connection-string).
 
 ### <a name="to-view-the-secondary-endpoints"></a>So zeigen Sie die sekundären Endpunkte an
 

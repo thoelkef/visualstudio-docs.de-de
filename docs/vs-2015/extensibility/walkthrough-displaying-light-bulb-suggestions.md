@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,54 +8,54 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e95466094f15b4fa166bfdb20c85836da32df96
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438147"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508586"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen von mit einer Glühbirne gekennzeichneten Vorschlägen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert werden, um eine Reihe von Aktionen angezeigt, z. B. Korrekturen für Probleme, die von den integrierten Code-Analyzer oder Umgestaltung von Code identifiziert.  
+Glühbirnen sind Symbole, die im Visual Studio-Editor verwendet werden, um eine Reihe von Aktionen anzuzeigen, z. b. Fehlerbehebungen für Probleme, die von den integrierten Code Analysemodulen oder der Umgestaltung von Code erkannt werden.  
   
- In der Visual c# und Visual Basic-Editoren können Sie auch das .NET Compiler Platform ("Roslyn") verwenden, schreiben und Packen Ihren eigenen Code-Analyzer mit Aktionen, die automatisch angezeigt werden Glühbirnen. Weitere Informationen finden Sie unter:  
+ In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter:  
   
-- [How To: Schreiben einer C# Diagnose- und Codefix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Gewusst wie: Schreiben einer c#-Diagnose und-Code Korrektur](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)  
   
-- [How To: Schreiben Sie eine Visual Basic-Diagnose und Codefix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Gewusst wie: Schreiben einer Visual Basic Diagnose und Code Korrektur](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)  
   
-  Andere Sprachen wie C++ bieten auch Glühbirnen für einige schnellen Aktion verwenden, z. B. einen Vorschlag zum Erstellen einer Stubimplementierung dieser Funktion.  
+  Andere Sprachen wie C++ stellen auch Glühbirnen für einige schnelle Aktionen bereit, wie z. b. einen Vorschlag, eine Stubimplementierung dieser Funktion zu erstellen.  
   
-  Hier ist, wie eine Glühbirne aussieht. In einem Visual Basic oder Visual C#-Projekt wird eine rote Wellenlinie unter dem Namen einer Variablen angezeigt, wenn er ungültig ist. Wenn Sie den Mauszeiger über einem ungültigen Bezeichner, wird eine Glühbirne neben dem Cursor angezeigt.  
+  Eine Glühbirne sieht wie folgt aus: In einem Visual Basic-oder Visual c#-Projekt wird eine rote Wellenlinie unter einem Variablennamen angezeigt, wenn Sie ungültig ist. Wenn Sie den Mauszeiger über den ungültigen Bezeichner bewegen, wird eine Glühbirne in der Nähe des Cursors angezeigt.  
   
-  ![Glühbirne](../extensibility/media/lightbulb.png "Glühbirne")  
+  ![Glühbirne](../extensibility/media/lightbulb.png "LightBulb")  
   
-  Wenn Sie den Pfeil nach unten durch die Glühbirne klicken, wird ein Satz von Vorschlägen für Aktionen, sowie eine Vorschau der ausgewählten Aktion angezeigt. In diesem Fall wird die Änderungen, die an Ihrem Code vorgenommen werden, wenn Sie den Vorgang auszuführen.  
+  Wenn Sie mit der Glühbirne auf den Pfeil nach unten klicken, wird eine Reihe von empfohlenen Aktionen sowie eine Vorschau der ausgewählten Aktion angezeigt. In diesem Fall werden die Änderungen angezeigt, die an Ihrem Code vorgenommen werden, wenn Sie die Aktion ausführen.  
   
-  ![Light Bulb-Vorschau](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Vorschau für Glühbirne](../extensibility/media/lightbulbpreview.png "Lightbulbpreview")  
   
-  Glühbirnen können Sie Ihre eigenen Vorschlägen für Aktionen bieten. Beispielsweise können Sie Aktionen zum Öffnen von geschweiften Klammern in eine neue Zeile zu verschieben, oder verschieben Sie sie am Ende der vorherigen Zeile bereitstellen. Die folgende exemplarische Vorgehensweise veranschaulicht, wie erstellen Sie eine Glühbirne, die angezeigt wird, für das aktuelle Wort und verfügt über zwei empfohlene Aktionen beinhaltet: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
+  Sie können Glühbirnen verwenden, um Ihre eigenen empfohlenen Aktionen bereitzustellen. Beispielsweise können Sie Aktionen zum Verschieben von öffnenden geschweiften Klammern in eine neue Zeile oder zum Verschieben an das Ende der vorherigen Zeile bereitstellen. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Glühbirne erstellen, die auf dem aktuellen Wort angezeigt wird und zwei Empfohlene Aktionen hat: **Konvertieren in Großbuchstaben** und **Konvertieren in Kleinbuchstaben**.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  
   
-1. Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual c# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `LightBulbTest`.  
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `LightBulbTest` .  
   
-2. Hinzufügen einer **Editor Klassifizierer** Elementvorlage zum Projekt. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Fügen Sie dem Projekt eine **Editor-Klassifizierungs** Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3. Löschen Sie die vorhandenen Klassendateien.  
   
-4. Fügen Sie den folgenden Verweis auf das Projekt, und legen **lokale Kopie** zu `False`:  
+4. Fügen Sie den folgenden Verweis auf das Projekt hinzu, und legen Sie **lokale Kopie** auf fest `False` :  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-5. Fügen Sie eine neue Klassendatei hinzu, und nennen Sie sie **LightBulbTest**.  
+5. Fügen Sie eine neue Klassendatei hinzu, und nennen Sie Sie " **lightbulbtest**".  
   
-6. Fügen Sie die folgenden using-Anweisungen:  
+6. Fügen Sie die folgenden using-Anweisungen hinzu:  
   
     ```csharp  
     using System;  
@@ -72,9 +72,9 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
   
     ```  
   
-## <a name="implementing-the-light-bulb-source-provider"></a>Implementieren den Quellenanbieter Glühbirne  
+## <a name="implementing-the-light-bulb-source-provider"></a>Implementieren des Glühbirnen-Quell Anbieters  
   
-1. Löschen Sie in der Klassendatei LightBulbTest.cs die LightBulbTest-Klasse. Fügen Sie eine Klasse, die mit dem Namen **TestSuggestedActionsSourceProvider** implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Exportieren Sie es mit dem Namen **Test vorgeschlagene Aktionen** und <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text".  
+1. Löschen Sie in der LightBulbTest.cs-Klassendatei die lightbulbtest-Klasse. Fügen Sie eine Klasse mit dem Namen " **testvorschlags stedactionssourceprovider** " hinzu, die implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Exportieren Sie die Datei mit dem Namen der **vorgeschlagenen Aktionen** und <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> der Zeichenfolge "Text".  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -83,14 +83,14 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2. Importieren Sie in der Quelle Provider-Klasse, die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> und als eine Eigenschaft hinzufügen.  
+2. Importieren Sie in der Quell Anbieter Klasse das, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> und fügen Sie es als Eigenschaft hinzu.  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3. Implementieren der <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> -Methode zur Rückgabe einer <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> Objekt. Die Quelle im nächsten Abschnitt erörtert.  
+3. Implementieren Sie die- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> Methode, um ein Objekt zurückzugeben <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> . Die Quelle wird im nächsten Abschnitt erläutert.  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
@@ -103,16 +103,16 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-## <a name="implementing-the-isuggestedactionsource"></a>Implementieren der ISuggestedActionSource  
- Die empfohlene Aktion-Quelle ist verantwortlich für das Sammeln der Satz von Vorschlägen für Aktionen, und sie in den richtigen Kontext hinzufügen. In diesem Fall der Kontext für das aktuelle Wort ist und die vorgeschlagenen Aktionen sind **UpperCaseSuggestedAction** und **LowerCaseSuggestedAction**, die wir im folgenden Abschnitt behandelt wird.  
+## <a name="implementing-the-isuggestedactionsource"></a>Implementieren von ivorschlags stedactionsource  
+ Die vorgeschlagene Aktions Quelle ist dafür verantwortlich, den Satz der vorgeschlagenen Aktionen zu erfassen und im richtigen Kontext hinzuzufügen. In diesem Fall ist der Kontext das aktuelle Wort, und die vorgeschlagenen Aktionen sind **uppercasesuggestedaction** und **lowercasesuggestedaction**, die im folgenden Abschnitt erläutert werden.  
   
-1. Fügen Sie eine Klasse **TestSuggestedActionsSource** implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+1. Fügen Sie eine **testvorschlags stedactionssource** -Klasse hinzu, die implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> .  
   
     ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2. Fügen Sie private schreibgeschützte Felder, für der Quellenanbieter empfohlene Aktion, die den Textpuffer und die Textansicht.  
+2. Fügen Sie private schreibgeschützte Felder für den vorgeschlagenen Aktions Quellen Anbieter, den Text Puffer und die Textansicht hinzu.  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -120,7 +120,7 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     private readonly ITextView m_textView;  
     ```  
   
-3. Fügen Sie einen Konstruktor, der die privaten Felder festlegt.  
+3. Fügen Sie einen Konstruktor hinzu, der die privaten Felder festlegt.  
   
     ```csharp  
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)  
@@ -131,7 +131,7 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-4. Fügen Sie eine private Methode, die das Wort zurückgibt, die derzeit unter dem Cursor hinzu. Die folgende Methode sucht nach der aktuellen Position des Cursors und fordert die Textstruktur-Navigator das Extent des Worts. Wenn der Cursor auf ein Wort, ist die <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> im Ausgabeparameter zurückgegeben; andernfalls lautet der `out` -Parameter ist `null` und die Methode gibt `false`.  
+4. Fügen Sie eine private Methode hinzu, die das Wort zurückgibt, das sich zurzeit unter dem Cursor befindet. Die folgende Methode untersucht die aktuelle Position des Cursors und fordert den Text Struktur Navigator für das Wort an. Wenn sich der Cursor auf einem Wort befindet, <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> wird im out-Parameter zurückgegeben. andernfalls `out` ist der `null` -Parameter, und die-Methode gibt zurück `false` .  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -156,9 +156,9 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-5. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>-Methode. Der Editor ruft diese Methode, um zu ermitteln, ob die Glühbirne anzuzeigen. Dieser Aufruf erfolgt häufig, z. B., wenn der Cursor über mehrere Zeilen in eine andere verschoben wird, oder wenn der Mauszeiger auf einen Fehlerschnörkel loszuwerden zeigt. Es ist damit können andere UI-Vorgänge ausführen, während der Arbeit mit dieser Methode ist asynchron. In den meisten Fällen, die diese Methode eine Analyse und Analyse der aktuellen Zeile ausführen muss, kann die Verarbeitung also einige Zeit dauern.  
+5. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>-Methode. Der Editor ruft diese Methode auf, um herauszufinden, ob die Glühbirne angezeigt werden soll. Dieser Aufruf wird sehr häufig durchgeführt, z. b. wenn der Cursor von einer Zeile zu einer anderen bewegt wird oder wenn mit der Maus auf eine Fehler Wellenlinie gezeigt wird. Es ist asynchron, damit andere UI-Vorgänge durchgeführt werden können, während diese Methode funktioniert. In den meisten Fällen muss diese Methode eine Analyse und Analyse der aktuellen Zeile ausführen, sodass die Verarbeitung einige Zeit in Anspruch nehmen kann.  
   
-     In unserer Implementierung ruft sie asynchron die <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> und bestimmt, ob der Block berücksichtigt, d. h., ob es sich um Text als Leerzeichen verfügt.  
+     In unserer Implementierung ruft Sie asynchron ab <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> und bestimmt, ob der Block signifikant ist, d. h., ob er einen anderen Text als Leerraum hat.  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -176,10 +176,10 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-6. Implementieren der <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> Methode, die ein Array von zurückgibt <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> Objekte, die die verschiedenen enthalten <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> Objekte. Diese Methode wird aufgerufen, wenn die Glühbirne erweitert wird.  
+6. Implementieren Sie die- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> Methode, die ein Array von-Objekten zurückgibt, die <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> die verschiedenen- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> Objekte enthalten. Diese Methode wird aufgerufen, wenn die Glühbirne erweitert wird.  
   
     > [!WARNING]
-    > Sie sollten sicherstellen, dass die Implementierungen der `HasSuggestedActionsAsync()` und `GetSuggestedActions()` sind konsistent; die, wenn `HasSuggestedActionsAsync()` gibt `true`, klicken Sie dann `GetSuggestedActions()` müssen einige Aktionen angezeigt. In vielen Fällen `HasSuggestedActionsAsync()` wird aufgerufen, kurz bevor `GetSuggestedActions()`, aber dies ist nicht immer der Fall. Wenn der Benutzer die Glühbirne Aktionen durch Drücken von ruft z. B. (STRG +.) nur `GetSuggestedActions()` aufgerufen wird.  
+    > Sie sollten sicherstellen, dass die Implementierungen von `HasSuggestedActionsAsync()` und `GetSuggestedActions()` konsistent sind, d. h., wenn `HasSuggestedActionsAsync()` zurückgibt `true` , `GetSuggestedActions()` sollten einige anzuzeigende Aktionen aufweisen. In vielen Fällen `HasSuggestedActionsAsync()` wird direkt vor aufgerufen `GetSuggestedActions()` , dies ist jedoch nicht immer der Fall. Wenn der Benutzer z. b. die Glühbirnen Aktionen durch Drücken von (STRG +.) aufruft, `GetSuggestedActions()` wird nur aufgerufen.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -196,13 +196,13 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }   
     ```  
   
-7. Definieren einer `SuggestedActionsChanged` Ereignis.  
+7. Definieren Sie ein- `SuggestedActionsChanged` Ereignis.  
   
     ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8. Um die Implementierung abzuschließen, fügen Sie Implementierungen für die `Dispose()` und `TryGetTelemetryId()` Methoden. Sollten keine Telemetriedaten, also gibt "false" und die GUID auf leer festgelegt.  
+8. Um die Implementierung abzuschließen, fügen Sie Implementierungen für die `Dispose()` -Methode und die- `TryGetTelemetryId()` Methode hinzu. Wir möchten keine Telemetriedaten verwenden. Geben Sie daher einfach false zurück, und legen Sie die GUID auf Empty fest.  
   
     ```csharp  
     public void Dispose()  
@@ -217,9 +217,9 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>Implementieren von Aktionen für Glühbirne  
+## <a name="implementing-light-bulb-actions"></a>Implementieren von Glühbirnen Aktionen  
   
-1. Fügen Sie im Projekt einen Verweis auf Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll und **lokale Kopie** zu `False`.  
+1. Fügen Sie im Projekt einen Verweis auf Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll hinzu, und legen Sie **lokale Kopie** auf fest `False` .  
   
 2. Erstellen Sie zwei Klassen, die erste mit dem Namen `UpperCaseSuggestedAction` und die zweite mit dem Namen `LowerCaseSuggestedAction`. Beide Klassen implementieren <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
@@ -230,7 +230,7 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
   
      Beide Klassen sind bis auf eine Ausnahme identisch: Die eine ruft <xref:System.String.ToUpper%2A> und die andere <xref:System.String.ToLower%2A> auf. In den folgenden Schritten wird nur die Klasse für die Umwandlung in Großbuchstaben behandelt; Sie müssen aber beide Klassen implementieren. Verwenden Sie diese Schritte als Muster für die Implementierung der Aktion zur Umwandlung in Kleinbuchstaben.  
   
-3. Fügen Sie die folgenden using-Anweisungen für diese Klassen:  
+3. Fügen Sie die folgenden using-Anweisungen für diese Klassen hinzu:  
   
     ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
@@ -262,7 +262,7 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-6. Implementieren der <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> Methode, sodass die It die Vorschau der Aktion wird angezeigt.  
+6. Implementieren Sie die- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> Methode, sodass die Aktions Vorschau angezeigt wird.  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -274,7 +274,7 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-7. Implementieren der <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> Methode so, dass die It eine leere zurückgegeben <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> Enumeration.  
+7. Implementieren Sie die- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> Methode, sodass Sie eine leere- <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> Enumeration zurückgibt.  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -328,9 +328,9 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     ```  
   
     > [!WARNING]
-    > Die Glühbirne Aktion **Invoke** Methode nicht erwartet, dass die Benutzeroberfläche anzuzeigen.  Wenn die neue Benutzeroberfläche (z. B. ein Dialogfeld "Preview" oder "Auswahl") die Aktion angezeigt, die Benutzeroberfläche direkt aus nicht anzeigen der **Invoke** Methode jedoch planen Sie stattdessen die Benutzeroberfläche angezeigt wird, nach der Rückgabe vom **Invoke**.  
+    > Die Methode zum **aufrufen** der Glühbirnen Aktion erwartet nicht, dass die Benutzeroberfläche angezeigt wird.  Wenn Ihre Aktion eine neue Benutzeroberfläche (z. b. ein Vorschau-oder Auswahl Dialogfeld) aufruft, zeigen Sie die Benutzeroberfläche nicht direkt in der **Aufruf** Methode an, sondern planen Sie die Anzeige der Benutzeroberfläche **nach der Rückgabe**des Aufrufs.  
   
-10. Um die Implementierung abzuschließen, fügen Sie der `Dispose()` und `TryGetTelemetryId()` Methoden.  
+10. Fügen Sie zum Durchführen der-Implementierung die `Dispose()` Methoden und hinzu `TryGetTelemetryId()` .  
   
     ```csharp  
     public void Dispose()  
@@ -345,23 +345,23 @@ Glühbirnen sind Symbole, die in Visual Studio-Editor verwendet, die erweitert w
     }  
     ```  
   
-11. Vergessen Sie nicht das gleiche tun für `LowerCaseSuggestedAction` ändern den Anzeigetext zu "konvertieren"{0}"in Kleinbuchstaben" und der Aufruf <xref:System.String.ToUpper%2A> zu <xref:System.String.ToLower%2A>.  
+11. Vergessen Sie nicht, das gleiche zu tun, wenn Sie `LowerCaseSuggestedAction` den Anzeige Text auf "konvertieren" {0} in Kleinbuchstaben und den Aufrufen <xref:System.String.ToUpper%2A> von ändern möchten <xref:System.String.ToLower%2A> .  
   
 ## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
- Um diesen Code zu testen, erstellen Sie die Projektmappe LightBulbTest, und führen Sie es in der experimentellen Instanz.  
+ Um diesen Code zu testen, erstellen Sie die lightbulbtest-Projekt Mappe, und führen Sie Sie in der experimentellen Instanz aus.  
   
 1. Erstellen Sie die Projektmappe.  
   
 2. Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-3. Erstellen Sie eine Textdatei, und geben Sie Text ein. Daraufhin sollte eine Glühbirne auf der linken Seite des Texts.  
+3. Erstellen Sie eine Textdatei, und geben Sie Text ein. Links neben dem Text sollte eine Glühbirne angezeigt werden.  
   
-     ![die Glühbirne testen](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
+     ![Die Glühbirne testen](../extensibility/media/testlightbulb.png "Testlightbulb")  
   
-4. Zeigen Sie auf die Glühbirne. Sie sollten einen Pfeil nach unten sehen.  
+4. Zeigen Sie auf die Glühbirne. Ein Pfeil nach unten sollte angezeigt werden.  
   
-5. Wenn Sie die Glühbirne klicken, sollten zwei empfohlene Aktionen zusammen mit der Vorschau der ausgewählten Aktion angezeigt.  
+5. Wenn Sie auf die Glühbirne klicken, sollten zwei Empfohlene Aktionen sowie die Vorschau der ausgewählten Aktion angezeigt werden.  
   
-     ![Erweiterte Glühbirne testen](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![Glühbirne testen, erweitert](../extensibility/media/testlightbulbexpanded.gif "Testlightbulbexpanded")  
   
 6. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.
