@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444569"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509405"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analysen und Code bewusste Bibliothek für immutablearrays
 
@@ -25,7 +25,7 @@ Um dieses Beispiel zu erstellen, benötigen Sie Folgendes:
 
 * Visual Studio 2015 (keine Express Edition) oder eine höhere Version. Sie können die kostenlose [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) verwenden.
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sie können auch bei der Installation von Visual Studio **Visual Studio-Erweiterungstools** unter **Allgemeine Tools** aktivieren, um das SDK gleichzeitig zu installieren. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, **c#** im linken Navigationsbereich auswählen und dann **Erweiterbarkeit**auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**install the Visual Studio-Erweiterungstools**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren.
-* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Sie können dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, im linken Navigationsbereich **c#** auswählen und dann **Erweiterbarkeit**auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**.NET Compiler Platform SDK herunterladen**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren. Dieses SDK enthält die [Roslyn-Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Mit diesem nützlichen Tool können Sie herausfinden, welche Code Modelltypen Sie in Ihrem Analyzer suchen sollten. Die Analyse Infrastruktur Ruft den Code für bestimmte Code Modelltypen auf, sodass der Code nur bei Bedarf ausgeführt wird und sich nur auf die Analyse von relevantem Code konzentrieren kann.
+* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Sie können dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, im linken Navigationsbereich **c#** auswählen und dann **Erweiterbarkeit**auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**.NET Compiler Platform SDK herunterladen**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren. Dieses SDK enthält die [Roslyn-Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Mit diesem nützlichen Tool können Sie herausfinden, welche Code Modelltypen Sie in Ihrem Analyzer suchen sollten. Die Analyse Infrastruktur Ruft den Code für bestimmte Code Modelltypen auf, sodass der Code nur bei Bedarf ausgeführt wird und sich nur auf die Analyse von relevantem Code konzentrieren kann.
 
 ## <a name="whats-the-problem"></a>Was ist das Problem?
 
@@ -306,7 +306,7 @@ Sie sehen, dass dieses Beispiel in [diesem Gespräch](https://channel9.msdn.com/
 
 Den gesamten Code finden Sie [hier](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Die Unterordner *donotuseimmutablearraycollectioninitializer* und *donotuseimmutablearrayctor* verfügen jeweils über eine c#-Datei zum Auffinden von Problemen und eine c#-Datei, die die Code Korrekturen implementiert, die in der Benutzeroberfläche von Visual Studio Glühbirnen angezeigt werden. Beachten Sie, dass der fertige Code etwas Abstraktes ist, um zu vermeiden, dass das immutablearray \<T> -Typobjekt immer wiederholt abgerufen wird. Er verwendet in der Liste gespeicherte registrierte Aktionen, um das Typobjekt in einem Kontext zu speichern, der immer verfügbar ist, wenn die untergeordneten Aktionen (Objekt Erstellung analysieren und Auflistungs Initialisierungen analysieren) ausgeführt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Vollständig ausgefülltes Code auf GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
