@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283007"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508547"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
 
@@ -53,7 +53,7 @@ Das [BindingNavigator-Steuer](/dotnet/framework/winforms/controls/bindingnavigat
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Binden an Daten in einem DataGridView-Steuerelement
 
-Bei einem [DataGridView-Steuer](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)Element ist die gesamte Tabelle an dieses einzelne Steuerelement gebunden. Wenn Sie ein **DataGridView** -Steuerelemente auf das Formular ziehen, wird auch eine Tool Leiste zum Navigieren in Datensätzen ( <xref:System.Windows.Forms.BindingNavigator> ) angezeigt. Die Komponenten [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt. In der folgenden Abbildung wird auch ein [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) hinzugefügt, da die Customers-Tabelle eine Beziehung zur Orders-Tabelle aufweist. Diese Variablen werden alle im automatisch generierten Code als private Member in der Formular Klasse deklariert. Der automatisch generierte Code zum Auffüllen der **DataGridView** befindet sich im- `Form_Load` Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich im- `Save` Ereignishandler für **BindingNavigator**. Sie können diesen Code nach Bedarf verschieben oder ändern.
+Bei einem [DataGridView-Steuer](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)Element ist die gesamte Tabelle an dieses einzelne Steuerelement gebunden. Wenn Sie ein **DataGridView** -Steuerelemente auf das Formular ziehen, wird auch eine Tool Leiste zum Navigieren in Datensätzen ( <xref:System.Windows.Forms.BindingNavigator> ) angezeigt. Die Komponenten [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt. In der folgenden Abbildung wird auch ein [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) hinzugefügt, da die Customers-Tabelle eine Beziehung zur Orders-Tabelle aufweist. Diese Variablen werden alle im automatisch generierten Code als private Member in der Formular Klasse deklariert. Der automatisch generierte Code zum Auffüllen der **DataGridView** befindet sich im- `Form_Load` Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich im- `Save` Ereignishandler für **BindingNavigator**. Sie können diesen Code nach Bedarf verschieben oder ändern.
 
 ![GridView mit BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -80,7 +80,7 @@ Die folgende Abbildung zeigt die standardmäßigen Daten gebundenen Steuerelemen
 
 Beachten Sie auch, dass jedes Steuerelement über ein Smarttag verfügt. Dieses Tag ermöglicht Anpassungen, die nur für dieses Steuerelement gelten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binding controls to data in Visual Studio (Binden von Steuerelementen an Daten in Visual Studio)](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Datenbindung in Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)
