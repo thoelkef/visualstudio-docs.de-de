@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532366"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
-Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache entwerfen und dann alle Elemente generieren, die Benutzer benötigen, um auf der Sprache basierende Modelle zu erstellen.
+DSL-Tools (Domain-Specific Language Tools, domänenspezifische Sprachtools), die in Visual Studio gehostet werden, ermöglichen Ihnen das Entwerfen einer domänenspezifischen Sprache. Anschließend können Sie sämtliche Komponenten generieren, die Benutzer zum Erstellen von Modellen basierend auf der Sprache benötigen.
 
  Die folgenden Tools gehören zu den DSL-Tools:
 
@@ -48,7 +48,7 @@ Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie ein
 
   Weitere Informationen finden Sie unter [Choosing a Domain-Specific Language Solution Template (Auswählen einer Projektmappenvorlage für eine domänenspezifische Sprache)](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-  Der Assistent erstellt eine Visual Studio-Projekt Mappe mit den folgenden Projekten:
+  Der Assistent erstellt eine Visual Studio-Projektmappe, die die folgenden Projekte enthält:
 
 - DSL
 
@@ -56,7 +56,7 @@ Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie ein
 
 - **DslPackage**
 
-   Das dslpackage-Projekt bestimmt, wie die Sprach Tools in Visual Studio integriert werden.
+   Das DslPackage-Projekt bestimmt, wie die Sprachtools mit Visual Studio integriert werden.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Die grafische Benutzeroberfläche der DSL-Tools
  Sie können die grafische Benutzeroberfläche der DSL-Tools verwenden, um Elemente und Beziehungen zu Ihrer domänenspezifischen Sprache hinzuzufügen. Wenn Sie die Elemente hinzugefügt haben, können Sie deren Darstellung definieren, indem Sie ihnen Formen zuordnen, Farben anpassen und Decorator-Elemente hinzufügen. Sie können die Elemente auch der Toolbox hinzufügen.
@@ -72,7 +72,7 @@ Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie ein
 ## <a name="distributing-your-dsl-solution"></a>Verteilen Ihrer DSL-Projektmappe
  DSL-Tools generieren ein Paket, das in Visual Studio gehostet wird. Das Paket zeigt eine Toolbox, einen DSL-Explorer und andere Benutzeroberflächenelemente an, über die Benutzer mithilfe Ihrer domänenspezifischen Sprache Modelle erstellen können.
 
- Wenn Sie die DSL-Tools-Projekt Mappe in Visual Studio erstellen und ausführen, wird in einer zweiten Instanz von Visual Studio gezeigt, wie die domänenspezifische Sprache dem Benutzer der Sprache entspricht. Wenn Sie überprüft haben, dass alles einwandfrei funktioniert, können Sie die `.vsix`-Datei verteilen, die um Buildordner des DslPackage-Projekts enthalten ist. Diese Datei kann verwendet werden, um die DSL als Visual Studio-Erweiterung auf anderen Computern zu installieren.  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
+ Wenn Sie die Projektmappe für die DSL-Tools in Visual Studio erstellen und ausführen, zeigt Ihnen eine zweite Instanz von Visual Studio, wie Ihre domänenspezifische Sprache für den Benutzer aussieht. Wenn Sie überprüft haben, dass alles einwandfrei funktioniert, können Sie die `.vsix`-Datei verteilen, die um Buildordner des DslPackage-Projekts enthalten ist. Diese Datei kann auf anderen Computern als Visual Studio-Erweiterung für die Installation der DSL-Tools verwendet werden.  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 

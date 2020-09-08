@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584490"
 ---
 # <a name="load-test-results-summary-overview"></a>Übersicht der Auslastungstestergebnisse
@@ -107,9 +107,9 @@ Der Abschnitt über Transaktionsergebnisse enthält einer Liste aller im Auslast
 
 Die Prozentwerte geben die folgenden Transaktionsinformationen an:
 
-- 90 % der gesamten Transaktionen wurden in weniger als \<Zeit> Sekunden abgeschlossen.
+- 90 Prozent der gesamten Transaktionen wurden in weniger als \<time> Sekunden abgeschlossen.
 
-- 95 % der gesamten Transaktionen wurden in weniger als \<Zeit> Sekunden abgeschlossen.
+- 95 Prozent der gesamten Transaktionen wurden in weniger als \<time> Sekunden abgeschlossen.
 
 ## <a name="system-under-test-resources"></a>Ressourcen des getesteten Systems
 

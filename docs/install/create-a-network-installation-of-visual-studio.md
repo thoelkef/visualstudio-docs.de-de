@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 03/27/2020
+ms.date: 08/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759726"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992354"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -73,7 +73,7 @@ Weitere unterstützte Bootstrapper sind [vs_teamexplorer.exe](https://download.v
 Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein. Um eine Offlineinstallation mit allen Sprachen und allen Funktionen zu erstellen, verwenden Sie einen Befehl, der denen in den folgenden Beispielen ähnelt.
 
    > [!IMPORTANT]
-   > Ein vollständiges Visual Studio-Layout erfordert mindestens 35 GB Speicherplatz, und der Download kann einige Zeit in Anspruch nehmen. Im Abschnitt [Anpassen des Netzwerklayouts](#customize-the-network-layout) finden Sie weitere Informationen zum Erstellen eines Layouts, das nur die Komponenten enthält, die Sie installieren möchten.
+   > Ein komplettes Layout für ein Gebietsschema mit einer Sprache benötigt etwa 35 GB Festplattenspeicher für Visual Studio Community und 42 GB für Visual Studio Enterprise. Jedes zusätzliche [Gebietsschema](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) benötigt etwa 0,5 GB Speicherplatz. Weitere Informationen finden Sie im Abschnitt [Anpassen des Netzwerklayouts](#customize-the-network-layout).
    >
    > [!TIP]
    > Stellen Sie sicher, dass Sie den Befehl über das Download-Verzeichnis ausführen. Dies ist in der Regel `C:\Users\<username>\Downloads` auf einem Computer, auf dem Windows 10 installiert ist.
@@ -96,7 +96,7 @@ Wenn der Visual Studio-Bootstrapper einen Fehler auslöst, wenn Sie ihn an eine 
 
 Hosten Sie das Layout in einer Netzwerkfreigabe, damit es auf anderen Computern ausgeführt werden kann.
 
-Im folgenden Beispiel wird [xcopy](/windows-server/administration/windows-commands/xcopy/) verwendet. Sie können auch [robocopy](/windows-server/administration/windows-commands/robocopy/) verwenden, wenn Sie möchten.  
+Im folgenden Beispiel wird [xcopy](/windows-server/administration/windows-commands/xcopy/) verwendet. Sie können auch [robocopy](/windows-server/administration/windows-commands/robocopy/) verwenden, wenn Sie möchten.
 
 ::: moniker range="vs-2017"
 

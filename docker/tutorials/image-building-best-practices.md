@@ -1,6 +1,6 @@
 ---
-title: 'Docker-Tutorial-Teil 8: Bild Schicht'
-description: Überprüfen und Verwalten von Bildebenen in docker-Images.
+title: 'Docker-Tutorial – Teil 8: Imageschichten'
+description: Hier erfahren Sie, wie Sie Imageschichten in Docker-Images untersuchen und verwalten.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: eae21a729f30a0c77fa52e5774a2f5157286dab1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176701"
 ---
-# <a name="image-layering"></a>Bild Schicht
+# <a name="image-layering"></a>Imageschichten
 
-Wussten Sie, dass Sie sehen können, was ein Bild ausmacht? Mit dem `docker image history` Befehl können Sie den Befehl sehen, der zum Erstellen der einzelnen Ebenen innerhalb eines Bilds verwendet wurde.
+Wussten Sie, dass Sie sich ansehen können, aus welchen Schichten ein Image besteht? Mithilfe des `docker image history`-Befehls können Sie den Befehl anzeigen, der verwendet wurde, um die einzelnen Schichten eines Images zu erstellen.
 
-1. Verwenden Sie den- `docker image history` Befehl, um die Ebenen in dem Bild anzuzeigen, das `getting-started` Sie zuvor in diesem Tutorial erstellt haben.
+1. Verwenden Sie den `docker image history`-Befehl, damit die Schichten des `getting-started`-Images angezeigt werden, das Sie zuvor im Tutorial erstellt haben.
 
     ```bash
     docker image history getting-started
     ```
 
-    Sie sollten eine Ausgabe erhalten, die in etwa wie folgt aussieht (Datumsangaben/IDs können unterschiedlich sein).
+    Sie sollten eine Ausgabe erhalten, die in etwa wie folgt aussieht (Datumsangaben/IDs unterscheiden sich möglicherweise).
 
     ```plaintext
     IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -45,21 +45,21 @@ Wussten Sie, dass Sie sehen können, was ein Bild ausmacht? Mit dem `docker imag
     <missing>           13 days ago         /bin/sh -c #(nop) ADD file:e69d441d729412d24…   5.59MB   
     ```
 
-    Jede Zeile stellt eine Ebene im Bild dar. In der hier angezeigten Anzeige wird die Basis unten mit der neuesten Ebene angezeigt. Dadurch können Sie auch schnell die Größe der einzelnen Ebenen anzeigen, um große Images zu diagnostizieren.
+    Jede der Zeilen steht für eine Schicht des Images. Die Anzeige hier zeigt die Basis ganz unten, die neueste Schicht wird ganz oben angezeigt. Auf die gleiche Weise können Sie sich auch schnell die Größe der einzelnen Schichten ansehen, was bei der Diagnose großer Images hilft.
 
-1. Sie werden feststellen, dass einige der Zeilen abgeschnitten werden. Wenn Sie das- `--no-trunc` Flag hinzufügen, erhalten Sie die vollständige Ausgabe (ja, Sie verwenden ein abgeschnittenes Flag, um eine nicht gekürzte Ausgabe zu erhalten).
+1. Wie Sie sehen können, sind mehrere der Zeilen gekürzt. Wenn Sie das `--no-trunc`-Flag hinzufügen, wird die vollständige Ausgabe angezeigt. Sie verwenden also ein gekürztes Flag zum Abrufen der ungekürzten Ausgabe.
 
     ```bash
     docker image history --no-trunc getting-started
     ```
 
-## <a name="layer-caching"></a>Ebenencaching
+## <a name="layer-caching"></a>Zwischenspeichern von Schichten
 
-Nachdem Sie nun die Schichten in Aktion gesehen haben, ist eine wichtige Lektion zu erlernen, die Ihnen hilft, die Buildzeiten für Ihre Container Images zu verkürzen.
+Da Sie sich nun angesehen haben, wie Sie die einzelnen Schichten eines Images anzeigen können, können Sie davon eine wichtige Erkenntnis ableiten, mit der Sie die Zeit für die Erstellung Ihrer Containerimages verkürzen können.
 
-> Nachdem sich eine Ebene geändert hat, müssen alle downstreamschichten ebenfalls neu erstellt werden.
+> Sobald eine Schicht geändert wird, müssen alle Schichten, die sich unter dieser befinden, ebenfalls neu erstellt werden.
 
-Sehen wir uns nun die dockerfile-Datei an, die Sie noch einmal verwendet haben...
+Sehen Sie sich das verwendete Dockerfile noch mal an.
 
 ```dockerfile
 FROM node:12-alpine
@@ -69,11 +69,11 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-Wenn Sie zur Ausgabe des Image Verlaufs zurückkehren, sehen Sie, dass jeder Befehl in der dockerfile-Datei zu einer neuen Ebene im Image wird. Möglicherweise erinnern Sie sich daran, dass bei einer Änderung an dem Image die Yarn-Abhängigkeiten neu installiert werden mussten. Gibt es eine Möglichkeit, dieses Problem zu beheben? Es ist nicht sinnvoll, bei jeder Erstellung dieselben Abhängigkeiten zu liefern.
+Wenn Sie sich die Ausgabe des Imageverlaufs ansehen, können Sie feststellen, dass jeder Befehl im Dockerfile zu einer neuen Schicht im Image wird. Möglicherweise erinnern Sie sich, dass die YARN-Abhängigkeiten bei Änderungen am Image neu installiert werden mussten. Gibt es eine Möglichkeit, dies zu beheben? Es ergibt keinen Sinn, diesen Aufwand für jedes Erstellen für dieselben Abhängigkeiten zu betreiben.
 
-Um dieses Problem zu beheben, können Sie die dockerfile-Datei neu strukturieren, um das Zwischenspeichern der Abhängigkeiten zu unterstützen. Bei Knoten basierten Anwendungen werden diese Abhängigkeiten in der `package.json` Datei definiert. Was geschieht, wenn Sie nur diese Datei in zuerst kopiert, die Abhängigkeiten installieren und *dann* in alles andere kopieren? Anschließend erstellen Sie nur die Yarn-Abhängigkeiten neu, wenn eine Änderung an der vorgenommen wurde `package.json` . Sinn machen?
+Sie können dies beheben, indem Sie Ihr Dockerfile umstrukturieren, sodass das Zwischenspeichern der Abhängigkeiten unterstützt wird. Bei Node-basierten Anwendungen sind diese Abhängigkeiten in der `package.json`-Datei definiert. Was wäre also, wenn Sie zuerst nur diese Datei kopieren, die Abhängigkeiten installieren und *dann* alles Restliche kopieren? In diesem Fall erstellen Sie die YARN-Abhängigkeiten nur neu, wenn eine Änderung an `package.json` vorgenommen wurde. Ergibt das Sinn?
 
-1. Aktualisieren Sie die dockerfile-Datei, um Sie in die erste zu kopieren `package.json` , installieren Sie Abhängigkeiten, und kopieren Sie alles andere in.
+1. Aktualisieren Sie das Dockerfile, damit zuerst `package.json` kopiert wird, installieren Sie dann die Abhängigkeiten, und kopieren Sie dann alles Restliche.
 
     ```dockerfile hl_lines="3 4 5"
     FROM node:12-alpine
@@ -84,13 +84,13 @@ Um dieses Problem zu beheben, können Sie die dockerfile-Datei neu strukturieren
     CMD ["node", "/app/src/index.js"]
     ```
 
-1. Erstellen Sie mithilfe von ein neues Image `docker build` .
+1. Erstellen Sie mithilfe von `docker build` ein neues Image.
 
     ```bash
     docker build -t getting-started .
     ```
 
-    Es sollte eine Ausgabe wie die folgende angezeigt werden...
+    Es sollte in etwa folgende Ausgabe angezeigt werden:
 
     ```plaintext
     Sending build context to Docker daemon  219.1kB
@@ -123,11 +123,11 @@ Um dieses Problem zu beheben, können Sie die dockerfile-Datei neu strukturieren
     Successfully tagged getting-started:latest
     ```
 
-    Sie werden feststellen, dass alle Ebenen neu erstellt wurden. Ganz einfach, da Sie die dockerfile-Datei etwas geändert haben.
+    Sie können feststellen, dass alle Schichten neu erstellt wurden. Das ist perfekt, da Sie doch einige Änderungen am Dockerfile vorgenommen haben.
 
-1. Nehmen Sie nun eine Änderung an der `src/static/index.html` Datei vor (wie z `<title>` . b. Ändern von "the awesome ToDo APP").
+1. Nehmen Sie nun eine Änderung an der `src/static/index.html`-Datei vor, ändern Sie beispielsweise `<title>` in „The Awesome Todo App“.
 
-1. Erstellen Sie das docker-Image jetzt `docker build` erneut. Dieses Mal sollte die Ausgabe etwas anders aussehen.
+1. Erstellen Sie nun mithilfe von `docker build` das Docker-Image noch mal. Dieses Mal sollte Ihre Ausgabe etwas anders aussehen.
 
     ```plaintext hl_lines="5 8 11"
     Sending build context to Docker daemon  219.1kB
@@ -152,19 +152,19 @@ Um dieses Problem zu beheben, können Sie die dockerfile-Datei neu strukturieren
     Successfully tagged getting-started:latest
     ```
 
-    Zuerst sollten Sie feststellen, dass der Build viel schneller war! Und Sie sehen, dass die Schritte 1-4 alle enthalten `Using cache` . Und so: Sie verwenden den buildcache. Das übertragen und ziehen dieses Abbilds und Updates an dieses Bild werden ebenfalls viel schneller. Hurra!
+    Vor allem sollten Sie jedoch feststellen, dass der Build VIEL schneller erfolgt ist. Außerdem können Sie feststellen, dass die Schritte 1–4 alle `Using cache` aufweisen. Sehr gut. Sie verwenden den Buildzwischenspeicher. Push- und Pullvorgänge für dieses Image sowie Aktualisierungen können ebenfalls viel schneller ausgeführt werden. Das ist sehr gut.
 
 ## <a name="multi-stage-builds"></a>Mehrstufige Builds
 
-Wir werden uns in diesem Tutorial nicht zu viel ansehen, aber mehrstufige Builds sind ein unglaublich leistungsfähiges Tool, mit dem Sie mehrere Stufen zum Erstellen eines Images verwenden können. Hierfür gibt es mehrere Vorteile:
+Obwohl dieses Thema im Rahmen dieses Tutorials nicht im Detail behandelt werden soll, handelt es sich bei mehrstufigen Builds um ein unglaublich leistungsfähiges Tool, das die Verwendung mehrerer Stufen für das Erstellen eines Images unterstützt. Daraus entstehen mehrere Vorteile:
 
-- Trennen von Abhängigkeiten der Build-Zeit von Laufzeitabhängigkeiten
-- Reduzieren Sie die Gesamtgröße des Images, indem Sie *nur* das Ausführen, was Ihre APP ausführen muss
+- Abgrenzen von Abhängigkeiten zur Buildzeit von Laufzeitabhängigkeiten
+- Reduzieren der Imagegesamtgröße, indem *nur* geliefert wird, was die App für ihre Ausführung benötigt
 
 ### <a name="maventomcat-example"></a>Maven/Tomcat-Beispiel
 
-Beim Erstellen von Java-basierten Anwendungen ist ein JDK erforderlich, um den Quellcode in Java-Bytecode zu kompilieren. Allerdings ist dieses JDK nicht in der Produktionsumgebung erforderlich. Sie können auch Tools wie Maven oder gradle verwenden, um die APP zu erstellen.
-Diese werden auch in ihrem endgültigen Image nicht benötigt. Hilfe zu mehrstufigen Builds.
+Wenn Java-basierte Anwendungen erstellt werden, ist ein JDK erforderlich, um den Quellcode in Java-Bytecode zu kompilieren. Dieses JDK ist jedoch nicht für die Produktion erforderlich. Außerdem verwenden Sie möglicherweise Tools wie Maven oder Gradle für die Erstellung der App.
+Diese sind aber ebenfalls nicht für Ihr endgültiges Image erforderlich. Mehrstufige Builds unterstützen Sie hierbei.
 
 ```dockerfile
 FROM maven AS build
@@ -176,11 +176,11 @@ FROM tomcat
 COPY --from=build /app/target/file.war /usr/local/tomcat/webapps 
 ```
 
-In diesem Beispiel wird eine Stufe ( `build` mit dem Namen) verwendet, um den eigentlichen Java-Build mithilfe von Maven auszuführen. In der zweiten Phase (beginnend bei `FROM tomcat` ) werden Dateien aus der `build` Stufe kopiert. Das abschließende Bild ist nur die letzte Phase, die erstellt wird (die mit dem-Flag überschrieben werden kann `--target` ).
+In diesem Beispiel wird eine Stufe (namens `build`) verwendet, um den tatsächlichen Java-Buildvorgang mithilfe von Maven durchzuführen. Die zweite Stufe (ab `FROM tomcat`) kopiert Dateien aus der `build`-Stufe. Beim endgültigen Image handelt es sich nur um die letzte Stufe, die erstellt wird. Diese kann jedoch mithilfe des `--target`-Flags überschrieben werden.
 
-### <a name="react-example"></a>Beispiel für Reaktion
+### <a name="react-example"></a>React-Beispiel
 
-Beim Erstellen von Anwendungen, die reagieren, benötigen Sie eine Node-Umgebung, um den JS-Code (in der Regel jsx), Sass-Stylesheets und vieles mehr in statische HTML, js und CSS zu kompilieren. Wenn Sie kein serverseitiges Rendering durchgeführt haben, benötigen Sie nicht einmal eine Node-Umgebung für den produktionsbuild. Warum werden die statischen Ressourcen nicht in einem statischen nginx-Container ausgeliefert?
+Für die Erstellung von React-Anwendungen benötigen Sie eine Node-Umgebung, um z. B. den JS-Code (in der Regel JSX) und SASS-Stylesheets in statische HTML-, JS- und CSS-Sprache zu kompilieren. Wenn Sie kein serverseitiges Rendering vornehmen, benötigen Sie auch keine Node-Umgebung für den Produktionsbuild. Warum stellen Sie die statischen Ressourcen nicht einfach in einem statischen nginx-Container bereit?
 
 ```dockerfile
 FROM node:12 AS build
@@ -195,15 +195,15 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 ```
 
-Hier verwenden Sie ein `node:12` Bild zum Durchführen des Builds (Maximieren der ebenenzwischenspeicherung) und anschließendes Kopieren der Ausgabe in einen nginx-Container. Cool, huh?
+Hier verwenden Sie ein `node:12`-Image, um die Erstellung durchzuführen, was die Zwischenspeicherung von Stufen erhöht. Danach kopieren Sie die Ausgabe in einen nginx-Container. Beeindruckend, nicht?
 
 ## <a name="recap"></a>Zusammenfassung
 
-Wenn Sie etwas über die Struktur von Bildern wissen, können Sie Images schneller erstellen und weniger Änderungen liefern. Mehrstufige Builds helfen auch, die gesamte Abbild Größe zu verringern und die endgültige Containersicherheit zu erhöhen, indem die Build-Zeit Abhängigkeiten von Laufzeitabhängigkeiten getrennt werden.
+Mit Informationen dazu, wie Images strukturiert sind, können Sie Images schneller und mit weniger Änderungen erstellen und bereitstellen. Mehrstufige Builds ermöglichen es Ihnen außerdem, die Imagegesamtgröße zu reduzieren und die letztendliche Sicherheit des Containers zu erhöhen, indem Buildzeitabhängigkeiten von Laufzeitabhängigkeiten abgegrenzt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit dem Tutorial fort.
+Setzen Sie das Tutorial fort.
 
 > [!div class="nextstepaction"]
 > [Bereitstellen in der Cloud](deploy-to-cloud.md)

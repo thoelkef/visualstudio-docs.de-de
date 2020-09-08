@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745547"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debuggen von HTML- und CSS-Beispielcode
@@ -26,7 +26,7 @@ ms.locfileid: "72745547"
 Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.
 
 ## <a name="sample-code"></a>Beispielcode
-Der folgende HTML-Code wird im \<body>-Tag im Schnellstart verwendet.
+Der folgende HTML-Code wird im Schnellstart im Tag \<body> verwendet.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"

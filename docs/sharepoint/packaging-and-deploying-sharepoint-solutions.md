@@ -1,5 +1,5 @@
 ---
-title: Verpacken und Bereitstellen von SharePoint-Lösungen | Microsoft-Dokumentation
+title: Packen und Bereitstellen von SharePoint-Lösungen | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,90 +15,91 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015596"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
-  In der Regel wird eine SharePoint-Lösung auf einem SharePoint-Server bereitgestellt, indem eine Projektmappenpaketdatei (. wsp) verwendet wird. Sie können Visual Studio verwenden, um die SharePoint-Projekt Elemente in Funktionen zu organisieren und ein Paket zum Bereitstellen der SharePoint-Funktionen zu erstellen.
+  In der Regel wird eine SharePoint-Lösung auf einem SharePoint-Server bereitgestellt, indem eine Lösungspaketdatei (WSP) verwendet wird. Sie können Visual Studio verwenden, um die SharePoint-Projektelemente in Funktionen zu organisieren und ein Paket zum Bereitstellen der SharePoint-Features zu erstellen.
 
  Dieses Thema enthält die folgenden Informationen:
 
 - [Erstellen von Features und Paketen](#create-features-and-packages)
 
-- [Unterstützung für Funktionen und Verpackungs Tools](#feature-and-packaging-tool-support)
+- [Unterstützung für Features und Pakettools](#feature-and-packaging-tool-support)
 
 - [Bereitstellen von SharePoint-Lösungen](#deploy-sharepoint-solutions)
 
 - [Bereitstellen von Dateien in SharePoint-Lösungen](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Erstellen von Features und Paketen
- Sie können Visual Studio verwenden, um verwandte SharePoint-Elemente in einer *Funktion*zu gruppieren. Beispielsweise kann eine Funktion für eine Kontaktlisten Definition die Listen Instanz und die Listen Definition enthalten. Sie können diese beiden Elemente zu Bereitstellungs Zwecken in einer einzigen Funktion kombinieren. Weitere Informationen zu Features finden Sie unter [Baustein: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
+ Sie können Visual Studio verwenden, um verwandte SharePoint-Elemente in ein *Feature* zu gruppieren. Beispielsweise kann ein Feature für eine Kontaktlistendefinition die Listeninstanz und die Listendefinition enthalten. Sie können diese beiden Elemente zu Bereitstellungszwecken in einem einzigen Feature kombinieren. Weitere Informationen zu diesen Features finden Sie unter [Baustein: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
 
- Als nächstes können Sie ein SharePoint-Lösungspaket (*. wsp*) erstellen, um mehrere Features, Site Definitionen, Assemblys und andere Dateien in einem einzelnen Paket zu bündeln, das die Dateien in einem von SharePoint benötigten Format speichert, um die Dateien auf dem Server bereitzustellen. Weitere Informationen finden Sie unter [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
+ Als Nächstes können Sie ein SharePoint-Lösungspaket (*WSP*) erstellen, um mehrere Features, Websitedefinitionen, Assemblys und andere Dateien in einem einzelnen Paket zu bündeln, das die Dateien in einem von SharePoint benötigten Format speichert, um die Dateien auf dem Server bereitzustellen. Weitere Informationen finden Sie unter [Baustein: Lösungen](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
 
-## <a name="feature-and-packaging-tool-support"></a>Unterstützung für Funktionen und Verpackungs Tools
- Sie können die SharePoint-Entwicklungs Tools in Visual Studio verwenden, um Ihre SharePoint-Dateien schnell in Features und Lösungs Paketen zu organisieren, um die Bereitstellung zu vereinfachen. Sie können die folgenden Tools verwenden, um das Feature und das Lösungspaket zu konfigurieren.
+## <a name="feature-and-packaging-tool-support"></a>Unterstützung für Features und Pakettools
+ Sie können die SharePoint-Entwicklungstools in Visual Studio verwenden, um Ihre SharePoint-Dateien für die einfachere Bereitstellung schnell in Features und Lösungspaketen zu organisieren. Sie können die folgenden Tools verwenden, um das Feature und das Lösungspaket zu konfigurieren.
 
-- Funktions-Designer und Paket-Designer.
+- Feature- und Paket-Designer
 
-- Verpackungs-Explorer, ein Tool Fenster.
+- Paket-Explorer (ein Toolfenster)
 
 - Projektmappen-Explorer.
 
-### <a name="feature-designer-and-package-designer"></a>Funktions-Designer und Paket-Designer
- Mithilfe des Funktions-Designers können Sie Features erstellen, Bereiche festlegen und andere Features als Abhängigkeiten markieren. Der Designer zeigt außerdem die endgültige XML-Datei an, in der die einzelnen Features beschrieben werden. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Funktionen](../sharepoint/creating-sharepoint-features.md).
+### <a name="feature-designer-and-package-designer"></a>Feature- und Paket-Designer
+ Mithilfe des Feature-Designers können Sie Features erstellen, Bereiche festlegen und andere Features als Abhängigkeiten markieren. Der Designer zeigt außerdem die endgültige XML-Datei an, in der die einzelnen Features beschrieben werden. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Features](../sharepoint/creating-sharepoint-features.md).
 
- Wenden Sie die Funktion auf eine bestimmte Website oder Gruppe von Websites an, indem Sie Ihren *Bereich* im Funktions-Designer festlegen. Wenn eine Funktion für eine einzelne Website aktiviert ist, kann die Funktion nur auf dieser speziellen Website verwendet werden. Wenn eine Funktion für eine Website Sammlung aktiviert ist, gelten die Elemente in der Funktion für die gesamte Website Sammlung. Weitere Informationen finden Sie unter [Element Bereich](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14)).
+ Wenden Sie das Feature auf eine bestimmte Website oder Gruppe von Websites an, indem Sie den *Bereich* im Feature-Designer festlegen. Wenn ein Feature für eine einzelne Website aktiviert ist, kann es nur auf dieser speziellen Website verwendet werden. Wenn ein Feature für eine Websitesammlung aktiviert ist, gelten die Elemente im Feature für die gesamte Websitesammlung. Weitere Informationen finden Sie unter [Elementbereich](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14)).
 
- Wenn Ihre Funktion von anderen Features abhängig ist, können Sie eine *Funktions Aktivierungs Abhängigkeit* festlegen, um die abhängigen Features zu markieren, bevor Sie das Feature verfügbar macht. Eine Funktions Aktivierungs Abhängigkeit prüft, ob die abhängigen Funktionen bereits in diesem Bereich aktiviert sind. Weitere Informationen finden Sie unter [Aktivierungs Abhängigkeiten und Bereich](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14)).
+ Wenn das Feature von anderen Features abhängig ist, können Sie eine *Abhängigkeit bei der Funktionsaktivierung* festlegen, um die abhängigen Features zu markieren, bevor Ihr Feature verfügbar gemacht wird. Eine Abhängigkeit bei der Funktionsaktivierung prüft, ob die abhängigen Features in diesem Bereich bereits aktiviert wurden. Weitere Informationen finden Sie unter [Aktivierungsabhängigkeiten und Bereich](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14)).
 
- Im Paket-Designer können Sie SharePoint-Elemente in einem einzelnen Projektmappenpaket gruppieren und konfigurieren, ob der Webserver während der Bereitstellung zurückgesetzt werden soll. Verwenden Sie zum Festlegen des Bereitstellungs Server Typs das **Eigenschaften** Fenster. Der Designer generiert außerdem die XML-Datei, die den Paket Inhalt beschreibt. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Lösungs Paketen](../sharepoint/creating-sharepoint-solution-packages.md).
+ Im Paket-Designer können Sie SharePoint-Elemente in ein einzelnes Lösungspaket gruppieren und konfigurieren, ob der Webserver während der Bereitstellung zurückgesetzt werden soll. Verwenden Sie zum Festlegen des Bereitstellungsservertyps das Fenster **Eigenschaften**. Der Designer generiert außerdem die XML-Datei, die den jeweiligen Paketinhalt beschreibt. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Lösungspaketen](../sharepoint/creating-sharepoint-solution-packages.md).
 
- Während der Bereitstellung wird der Internetinformationsdienste (IIS)-Dienst beendet, um die Projektmappendateien auf den SharePoint-Server zu kopieren. Wenn Sie den Paket-Designer in Visual Studio verwenden, können Sie auswählen, ob der Webserver neu gestartet werden soll. Um zu konfigurieren, ob die Lösung auf einem Front-End-Webserver oder einem Anwendungsserver bereitgestellt wird, verwenden Sie das **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Solution-Element (](/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14))Projekt Mappe).
+ Während der Bereitstellung wird der Internetinformationsdienste-Dienst (IIS) beendet, um die Lösungsdateien auf den SharePoint-Server zu kopieren. Wenn Sie den Paket-Designer in Visual Studio verwenden, können Sie auswählen, ob der Webserver neu gestartet werden soll. Verwenden Sie das Fenster **Eigenschaften**, um zu konfigurieren, ob die Lösung auf einem Front-End-Webserver oder einem Anwendungsserver bereitgestellt wird. Weitere Informationen finden Sie unter [Solution-Element (Lösung)](/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14)).
 
 ### <a name="packaging-explorer"></a>Paket-Explorer
- Um den Funktions-Designer und den Paket-Designer zu ergänzen, können Sie den Paket-Explorer verwenden, um die SharePoint-Dateien in Funktionen und Pakete zu gruppieren. Außerdem können Sie die hierarchische Ansicht des Pakets, der Features, der SharePoint-Projekt Elemente und der Dateien sehen. Der Paket-Explorer ist ein Tool Fenster, das Sie verwenden können, um die folgenden Aufgaben auszuführen:
+ Sie können den Paket-Explorer verwenden, um die SharePoint-Dateien in Features und Pakete zu gruppieren und somit die Feature- und Paket-Designer zu ergänzen. Außerdem können Sie die hierarchische Ansicht des Pakets, der Features, der SharePoint-Projektelemente und der Dateien anzeigen. Der Paket-Explorer ist ein Toolfenster, das Sie verwenden können, um die folgenden Aufgaben auszuführen:
 
-- Öffnen Sie SharePoint-Projekt Elemente und-Dateien.
+- Öffnen von SharePoint-Projektelementen und -dateien
 
-- Ziehen Sie SharePoint-Projekt Elemente per Drag & Drop aus einer Funktion in eine andere.
+- Verschieben von SharePoint-Projektelementen aus einem Feature in ein anderes per Drag & Drop
 
-- Ziehen Sie SharePoint-Projekt Elemente und-Funktionen per Drag & Drop aus einem Paket in ein anderes.
+- Verschieben von SharePoint-Projektelementen und Features aus einem Paket in ein anderes per Drag & Drop
 
-- Fügen Sie einem Paket ein neues Feature hinzu.
+- Hinzufügen neuer Features zu einem Paket
 
-- Öffnen Sie eine Funktion oder einen Paket-Designer.
+- Öffnen des Feature- oder Paket-Designers
 
-- Überprüfen von Features und Paketen.
+- Überprüfen von Features und Paketen
 
-  Die SharePoint-Entwicklungs Tools in Visual Studio verfügen über Validierungsregeln, um sicherzustellen, dass das Lösungspaket ordnungsgemäß formatiert ist. Außerdem überprüfen die Regeln, ob die *wsp* -Projektmappendatei erfolgreich auf einem SharePoint-Server bereitgestellt und aktiviert werden kann. Weitere Informationen zum XML-Schema für Funktionen finden Sie unter [Funktions Schemas](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14)).
+  Die SharePoint-Entwicklungstools in Visual Studio umfassen Validierungsregeln, die dabei helfen, die ordnungsgemäße Formatierung des Lösungspakets sicherzustellen. Außerdem überprüfen die Regeln, ob die *WSP*-Lösungsdatei erfolgreich auf einem SharePoint-Server bereitgestellt und aktiviert werden kann. Weitere Informationen zum XML-Schema für Features finden Sie unter [Featureschemas](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14)).
 
-  Sie können dem SharePoint-Projekt Systembenutzer definierte Feature-und Paket Validierungsregeln hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+  Sie können dem SharePoint-Projektsystem benutzerdefinierte Feature- und Paketvalidierungsregeln hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von benutzerdefinierten Feature- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-  Weitere Informationen zum Paket-Explorer finden Sie unter Gewusst [wie: Hinzufügen und Entfernen von Features und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+  Weitere Informationen zum Paket-Explorer finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu bzw. aus einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
 ### <a name="solution-explorer"></a>Projektmappen-Explorer
- Sie können Projektmappen-Explorer verwenden, um die Dateien des SharePoint-Projekts zu navigieren und zu öffnen. Verwenden Sie das Kontextmenü in Projektmappen-Explorer, um Features, Funktions Ereignis Empfänger und featureressourcen hinzuzufügen. Außerdem können Sie die Funktions-Designer und Paket-Designer öffnen, um die Features und Pakete für die Bereitstellung zu konfigurieren.
+ Sie können den Projektmappen-Explorer verwenden, um zu den Dateien des SharePoint-Projekts zu navigieren und diese zu öffnen. Verwenden Sie das Kontextmenü im Projektmappen-Explorer, um Features, Funktionsereignisempfänger und Featureressourcen hinzuzufügen. Außerdem können Sie die Feature- und Paket-Designer öffnen, um die Features und Pakete für die Bereitstellung zu konfigurieren.
 
 ## <a name="deploy-sharepoint-solutions"></a>Bereitstellen von SharePoint-Lösungen
- Nachdem Sie die Features und das Paket in Visual Studio angepasst haben, können Sie eine *wsp* -Datei erstellen, die für SharePoint-Server bereitgestellt werden soll. Sie können Visual Studio verwenden, um das zu Debuggen und zu testen. *wsp* ist nur auf dem SharePoint-Server auf dem Entwicklungs Computer. Weitere Informationen zum Bereitstellen von SharePoint-Lösungen auf einem Remote-SharePoint-Server finden Sie unter Bereitstellen [einer Lösung](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14)).
+ Nachdem Sie die Features und das Paket in Visual Studio angepasst haben, können Sie eine *WSP*-Datei erstellen, die auf SharePoint-Servern bereitgestellt werden soll. Sie können Visual Studio verwenden, um die *WSP*-Datei nur auf dem SharePoint-Server auf dem Entwicklungscomputer zu debuggen und zu testen. Weitere Informationen zum Bereitstellen von SharePoint-Lösungen auf einem SharePoint-Remoteserver finden Sie unter [Installieren und Bereitstellen einer Farmlösung](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14)).
 
- Sie können auch die Bereitstellungs Schritte auf dem Entwicklungs Computer anpassen. Weitere Informationen finden Sie unter Bereitstellen [, veröffentlichen und Aktualisieren von SharePoint-Lösungs Paketen](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
+ Sie können auch die Bereitstellungsschritte auf dem Entwicklungscomputer anpassen. Weitere Informationen finden Sie unter [Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>Bereitstellen von Dateien in SharePoint-Lösungen
- Wenn Sie der SharePoint-Lösung ein SharePoint-Projekt Element hinzufügen, werden in der Regel alle erforderlichen Dateien eingeschlossen. Dateien, die kompiliert werden können (Code Dateien), werden in die Ausgabeassembly der Projekt Mappe integriert. Möglicherweise müssen Sie jedoch auch nicht Kompilier Bare Dateien, z *. b. XML*-, *txt*-oder Ressourcen Dateien, einem SharePoint-Projekt hinzufügen. Diese Dateien werden nicht automatisch in die Projekt Mappe gepackt. Um sicherzustellen, dass Sie verpackt sind, fügen Sie die Dateien entweder einem zugeordneten Ordner oder einem SharePoint-Projekt Element hinzu.
+ Wenn Sie der SharePoint-Lösung ein SharePoint-Projektelement hinzufügen, werden in der Regel alle erforderlichen Dateien eingeschlossen. Dateien, die kompiliert werden können (Codedateien), werden in die Ausgabeassembly der Lösung integriert. Möglicherweise müssen Sie jedoch auch nicht kompilierbare Dateien (z. B. *XML*-, *TXT*- oder Ressourcendateien) einem SharePoint-Projekt hinzufügen. Diese Dateien werden nicht automatisch in die Lösung gepackt. Fügen Sie die Dateien entweder einem zugeordneten Ordner oder einem SharePoint-Projektelement hinzu, um sicherzustellen, dass sie gepackt werden.
 
- Dateien, die zugeordneten Ordnern hinzugefügt werden, werden bei der Bereitstellung der Lösung automatisch in die SharePoint-Struktur kopiert. Dateien, die einem SharePoint-Projekt Element hinzugefügt werden, werden an dem Speicherort bereitgestellt, der in der Eigenschaft **Bereitstellungsort** für jede Datei angegeben ist, die teilweise basierend auf der Eigenschaft **Bereitstellungstyp** festgelegt ist. Standardmäßig ist der Wert der Eigenschaft **Bereitstellungstyp** **nodeployment**, was bedeutet, dass die Datei nicht mit der Lösung bereitgestellt wird. Sie müssen einen anderen Wert für die-Eigenschaft festlegen, um die Datei in das Paket aufzunehmen.
+ Dateien, die zugeordneten Ordnern hinzugefügt werden, werden bei der Bereitstellung der Lösung automatisch in die SharePoint-Struktur kopiert. Dateien, die zu einem SharePoint-Projektelement hinzugefügt werden, werden an dem Speicherort bereitgestellt, der in der Eigenschaft **Bereitstellungsort** für jede Datei angegeben wurde, die teilweise basierend auf der Eigenschaft **Bereitstellungstyp** festgelegt ist. Der Eigenschaftswert **Bereitstellungstyp** ist standardmäßig **NoDeployment**, was bedeutet, dass die Datei nicht mit der Lösung bereitgestellt wird. Sie müssen einen anderen Wert für die Eigenschaft festlegen, um die Datei in das Paket aufzunehmen.
 
- Um z. b. eine *XML* -Datei zu einem SharePoint-Projekt hinzuzufügen, führen Sie eine der folgenden Aktionen aus:
+ Führen Sie beispielsweise eine der folgenden Aktionen aus, um eine *XML*-Datei zu einem SharePoint-Projekt hinzuzufügen:
 
-- Fügen Sie dem Projekt einen für den SharePoint-Ordner "Layouts" zugeordneten Ordner hinzu. Dadurch wird in **Projektmappen-Explorer** einem Ordner mit dem Namen **Layouts** erstellt, der einen Unterordner für das Projekt enthält. Fügen Sie die *XML* -Datei dem neuen Unterordner hinzu. Standardmäßig wird die Datei im SharePoint-Dateisystem unter. bereitgestellt. * \template\layouts \\ \<Folder Name> *. Weitere Informationen zum Hinzufügen von zugeordneten Ordnern finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
+- Fügen Sie dem Projekt den zugeordneten SharePoint-Ordner „Layouts“ hinzu. Dadurch wird im **Projektmappen-Explorer** ein Ordner namens **Layouts** erstellt, der einen Unterordner für das Projekt enthält. Fügen Sie dem neuen Unterordner die *XML*-Datei hinzu. Die Datei wird standardmäßig im SharePoint-Dateisystem unter *..\TEMPLATE\LAYOUTS\\\<Folder Name>* bereitgestellt. Weitere Informationen zum Hinzufügen von zugeordneten Ordnern finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
-- Fügen Sie die *XML* -Datei zum Ordner eines SharePoint-Projekt Elements hinzu, und ändern Sie dann die Eigenschaft **Bereitstellungstyp** der *XML* -Datei von **nodeployment** in eine andere Einstellung, z. b. **RootFile** oder **Element File**. Die geeignete Einstellung für den **Bereitstellungstyp** hängt von der Datei und dem Projekt ab. Weitere Informationen zu den Eigenschaften Einstellungen für den **Bereitstellungstyp** finden Sie unter [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).
+- Fügen Sie dem Ordner eines SharePoint-Projektelements die *XML*-Datei hinzu, und ändern Sie dann die Eigenschaft **Bereitstellungstyp** der *XML*-Datei von **NoDeployment** in eine andere Einstellung wie **RootFile** oder **ElementFile**. Die geeignete Einstellung für den **Bereitstellungstyp** hängt von der Datei und dem Projekt ab. Weitere Informationen zu den Einstellungen für die Eigenschaft **Bereitstellungstyp** finden Sie unter [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).
 
-  Wenn eine hinzugefügte Datei nicht auf ein bestimmtes Projekt in der Projekt Mappe angewendet wird, können Sie der Projekt Mappe ein leeres SharePoint-Projekt hinzufügen und dann die zusätzlichen Dateien hinzufügen. Eine weitere Alternative zum Bereitstellen von Dateien für SharePoint, insbesondere für die Inhalts Datenbank, besteht darin, dem Projekt ein Modul hinzuzufügen und die Dateien dem Modul hinzuzufügen. Weitere Informationen finden Sie unter [Verwenden von Modulen zum Einschließen von Dateien in die](../sharepoint/using-modules-to-include-files-in-the-solution.md)Projekt Mappe.
+  Wenn eine hinzugefügte Datei nicht auf ein bestimmtes Projekt in der Projektmappe angewendet wird, können Sie der Lösung ein leeres SharePoint-Projekt und dann die zusätzlichen Dateien hinzufügen. Eine weitere Alternative zum Bereitstellen von Dateien für SharePoint, insbesondere für die Inhaltsdatenbank, besteht darin, dem Projekt ein Modul hinzuzufügen und die Dateien dem Modul hinzuzufügen. Weitere Informationen finden Sie unter [Verwenden von Modulen zum Einbinden von Dateien in eine Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

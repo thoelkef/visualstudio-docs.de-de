@@ -1,6 +1,6 @@
 ---
-title: 'Docker-Tutorial-Teil 4: Persistenz Ihrer Daten'
-description: Erfahren Sie, wie Sie Daten in einer Datenbank beibehalten und Verzeichnisse in einem Container freigeben, indem Sie ein Volume bereitstellen.
+title: 'Docker-Tutorial – Teil 4: Beibehalten von Daten'
+description: In diesem Tutorial erfahren Sie, wie Sie Daten in einer Datenbank beibehalten und Verzeichnisse in einem Container freigeben, indem Sie ein Volume einbinden.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,110 +10,110 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176692"
 ---
 # <a name="persist-your-data"></a> Beibehalten von Daten
 
-Falls Sie nicht bemerkt haben, wird die TODO-Liste jedes Mal bereinigt, wenn Sie den Container starten. Warum? Sehen wir uns nun an, wie der Container funktioniert.
+Falls es Ihnen noch nicht aufgefallen ist: Die Aufgabenliste wird jedes Mal bereinigt, wenn Sie den Container starten. Warum? Im folgenden wird erläutert, wie der Container funktioniert.
 
-## <a name="the-containers-filesystem"></a>Das Dateisystem des Containers
+## <a name="the-containers-filesystem"></a>Dateisystem des Containers
 
-Wenn ein Container ausgeführt wird, werden die verschiedenen Ebenen von einem Bild für das zugehörige Dateisystem verwendet. Jeder Container erhält auch seinen eigenen "temporären Speicherplatz", um Dateien zu erstellen, zu aktualisieren oder zu entfernen. Änderungen werden in keinem anderen Container angezeigt, *auch wenn* Sie das gleiche Image verwenden.
+Wenn ein Container ausgeführt wird, werden die verschiedenen Ebenen eines Images für das Dateisystem verwendet. Jeder Container verfügt außerdem über einen eigenen „temporären Speicherbereich“ zum Erstellen, Aktualisieren oder Entfernen von Dateien. Änderungen werden nicht in anderen Containern angezeigt, *selbst wenn* sie dasselbe Image verwenden.
 
-### <a name="see-this-in-practice"></a>Siehe dies in der Praxis.
+### <a name="see-this-in-practice"></a>Praxisbeispiel
 
-Um dies in Aktion zu sehen, starten Sie zwei Container und erstellen jeweils eine Datei. Sie werden sehen, dass die in einem Container erstellten Dateien nicht in einem anderen Container verfügbar sind.
+Im Folgenden erstellen Sie zwei Container und jeweils eine Datei in diesen Containern, um dies in Aktion zu sehen. Dann werden Sie sehen, dass die in einem Container erstellten Dateien nicht in einem anderen Container verfügbar sind.
 
-1. Starten Sie einen `ubuntu` Container, mit dem eine Datei `/data.txt` mit dem Namen und einer Zufallszahl zwischen 1 und 10000 erstellt wird.
+1. Starten Sie einen `ubuntu`-Container, der eine Datei namens `/data.txt` mit einer zufälligen Zahl zwischen 1 bis 10.000 enthalten soll.
 
     ```bash
     docker run -d ubuntu bash -c "shuf -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"
     ```
 
-    Wenn Sie sich an den Befehl interessiert sind, starten Sie eine bash-Shell und rufen zwei Befehle auf (warum dies der Fall ist `&&` ). Der erste Teil wählt eine einzelne Zufallszahl aus und schreibt Sie in `/data.txt` . Der zweite Befehl dient zum Überwachen einer Datei, um die Ausführung des Containers beizubehalten.
+    Mit diesem Befehl starten Sie eine Bash-Shell und rufen zwei Befehle auf (daher enthält der Befehl `&&`). Im ersten Abschnitt wird eine einzelne zufällige Zahl ausgewählt und in `/data.txt` geschrieben. Mit dem zweiten Befehl wird lediglich eine Datei überwacht, damit der Container weiter ausgeführt wird.
 
-1. Überprüfen Sie die Ausgabe, indem Sie verwenden `exec` , um in den Container zu gelangen. Öffnen Sie hierzu die vs Code-Erweiterung, und klicken Sie auf die Option " **Shell anfügen** ". Dadurch wird `exec` eine Shell im Container innerhalb des vs Code Terminal geöffnet.
+1. Überprüfen Sie, ob Sie die Ausgabe anzeigen können, indem Sie `exec` zum Abrufen des Containers verwenden. Öffnen Sie hierzu die VS Code-Erweiterung, und klicken Sie auf die Option **Attach Shell** (Shell anfügen). Dadurch wird `exec` zum Öffnen einer Shell im Container innerhalb des VS Code-Terminals verwendet.
 
-    ![Öffnen der CLI in Ubuntu-Container vs Code](media/attach_shell.png)
+    ![Öffnen der CLI im Ubuntu-Container mit VS Code](media/attach_shell.png)
 
-    Sie sehen ein Terminal, das eine Shell im Ubuntu-Container ausgeführt wird. Führen Sie den folgenden Befehl aus, um den Inhalt der `/data.txt` Datei anzuzeigen. Schließen Sie dieses Terminal anschließend erneut.
+    Daraufhin wird Ihnen ein Terminal angezeigt, das eine Shell im Ubuntu-Container ausführt. Führen Sie den folgenden Befehl aus, um den Inhalt der `/data.txt`-Datei anzuzeigen. Schließen Sie dieses Terminal anschließend.
 
     ```bash
     cat /data.txt
     ```
 
-    Wenn Sie die Befehlszeile bevorzugen, können Sie den Befehl verwenden, `docker exec` um das gleiche zu tun. Sie müssen die Container-ID (verwenden Sie `docker ps` , um Sie zu erhalten) und den Inhalt mit dem folgenden Befehl erhalten.
+    Wenn Sie die Befehlszeile bevorzugen, können Sie stattdessen den Befehl `docker exec` verwenden. Sie müssen die ID des Containers abrufen (verwenden Sie hierzu `docker ps`), und rufen Sie dann den Inhalt mit dem folgenden Befehl ab.
 
     ```bash
     docker exec <container-id> cat /data.txt
     ```
 
-    Eine Zufallszahl sollte angezeigt werden.
+    Ihnen sollte nun eine zufällige Zahl angezeigt werden.
 
-1. Starten Sie nun einen anderen `ubuntu` Container (das gleiche Image), und Sie sehen, dass Sie nicht über die gleiche Datei verfügen.
+1. Als Nächstes starten Sie einen weiteren `ubuntu`-Container (dasselbe Image). Ihnen sollte auffallen, dass Sie nicht über dieselbe Datei verfügen.
 
     ```bash
     docker run -it ubuntu ls /
     ```
 
-    Und sehen Sie! Es ist keine `data.txt` Datei vorhanden. Das liegt daran, dass es nur für den ersten Container in den temporären Bereich geschrieben wurde.
+    Beachten Sie außerdem, dass keine `data.txt`-Datei vorliegt. Das liegt daran, dass die Datei nur für den ersten Container in den temporären Speicher geschrieben wurde.
 
-1. Entfernen Sie den ersten Container mithilfe des `docker rm -f` Befehls.
+1. Entfernen Sie den ersten Container mithilfe des `docker rm -f`-Befehls.
 
 ## <a name="container-volumes"></a>Containervolumes
 
-Beim vorherigen Experiment haben Sie gesehen, dass jeder Container bei jedem Start von der Image Definition ausgeht. Während Container Dateien erstellen, aktualisieren und löschen können, gehen diese Änderungen verloren, wenn der Container entfernt wird und alle Änderungen in diesem Container isoliert sind. Mit Volumes können Sie all dies ändern.
+In der letzten Übung haben Sie erfahren, dass jeder Container bei jedem Start mit der Imagedefinition beginnt. Zwar können Container Dateien erstellen, aktualisieren und löschen, jedoch werden diese Änderungen verworfen, wenn der Container entfernt wird und alle Änderungen in diesem Container isoliert sind. Mit Volumes können Sie das ändern.
 
-[Volumes](https://docs.docker.com/storage/volumes/) bieten die Möglichkeit, bestimmte Dateisystem Pfade des Containers wieder mit dem Host Computer zu verbinden. Wenn ein Verzeichnis im Container bereitgestellt wird, werden Änderungen in diesem Verzeichnis auch auf dem Host Computer angezeigt. Wenn Sie dasselbe Verzeichnis über Container Neustarts einbinden, werden Ihnen dieselben Dateien angezeigt.
+[Volumes](https://docs.docker.com/storage/volumes/) bieten die Möglichkeit, eine Verbindung mit spezifischen Dateisystempfaden des Containers zurück zum Hostcomputer herzustellen. Wenn ein Verzeichnis im Container eingebunden wird, werden die Änderungen in diesem Verzeichnis auch auf dem Hostcomputer widergespiegelt. Wenn Sie dasselbe Verzeichnis nach einem Neustart des Containers einbinden, stehen Ihnen dieselben Dateien zur Verfügung.
 
-Es gibt zwei Haupttypen von Volumes. Sie werden letztendlich beide verwenden, aber Sie beginnen mit **benannten Volumes**.
+Es gibt zwei Haupttypen von Volumes. Sie werden im Laufe der Zeit beide verwenden, doch hier beginnen Sie mit **benannten Volumes**.
 
-## <a name="persist-your-todo-data"></a>Beibehalten von TODO-Daten
+## <a name="persist-your-todo-data"></a>Speichern von Daten für die Aufgabenliste
 
-Standardmäßig speichert die ToDo-APP die Daten in einer [SQLite-Datenbank](https://www.sqlite.org/index.html) unter `/etc/todos/todo.db` . Wenn Sie nicht mit SQLite vertraut sind, machen Sie sich keine Sorgen! Es handelt sich einfach um eine relationale Datenbank, in der alle Daten in einer einzigen Datei gespeichert werden. Dies ist zwar nicht das beste für umfangreiche Anwendungen, aber es funktioniert bei kleinen Demos. Wir werden später über das Wechseln zu einer tatsächlichen Datenbank-Engine sprechen.
+Die Aufgabenlisten-App speichert Daten standardmäßig in einer [SQLite-Datenbank](https://www.sqlite.org/index.html) unter `/etc/todos/todo.db`. Sie benötigen keine Vorkenntnisse über SQLite. Es handelt sich dabei lediglich um eine relationale Datenbank, bei der alle Daten in einer einzigen Datei gespeichert werden. Dies ist zwar nicht die beste Lösung für umfangreiche Anwendungen, funktioniert jedoch hervorragend für kleine Demos. Das Wechseln zu einer tatsächlichen Datenbank-Engine wird später erläutert.
 
-Wenn die Datenbank eine einzelne Datei ist und Sie diese Datei auf dem Host beibehalten und für den nächsten Container verfügbar machen können, sollte Sie in der Lage sein, den Speicherort des letzten Containers aufzunehmen. Durch Erstellen eines Volumes und Anfügen (häufig als "einbinden" bezeichnet) an das Verzeichnis, in dem die Daten gespeichert werden, können Sie die Daten persistent speichern. Wenn der Container in die `todo.db` Datei schreibt, wird er auf dem Host auf dem Volume persistent gespeichert.
+Wenn Sie die Datei auf dem Hostcomputer speichern und für den nächsten Container zur Verfügung stellen können, sollte der Container dort fortfahren können, wo der vorherige Container aufgehört hat, da es sich bei der Datenbank um eine einzelne Datei handelt. Indem Sie ein Volume erstellen und an das Verzeichnis anfügen (dies wird oft als „Einbindung“ bezeichnet), können Sie die Daten speichern. Wenn der Container in die Datei `todo.db` schreibt, wird dies auf dem Host im Volume gespeichert.
 
-Wie bereits erwähnt, verwenden Sie ein **benanntes Volume**. Stellen Sie sich ein benanntes Volume einfach als einen Bucket von Daten vor. Docker verwaltet den physischen Speicherort auf dem Datenträger, und Sie müssen sich nur den Namen des Volumes merken. Jedes Mal, wenn Sie das Volume verwenden, stellt docker sicher, dass die richtigen Daten bereitgestellt werden.
+Wie bereits erwähnt, verwenden Sie ein **benanntes Volume**. Sie können sich ein benanntes Volume einfach als Bucket mit Daten vorstellen. Docker verwaltet den physischen Speicherort auf dem Datenträger, und Sie müssen sich lediglich den Namen des Volumes merken. Jedes Mal, wenn Sie das Volume verwenden, stellt Docker sicher, dass die richtigen Daten bereitgestellt werden.
 
-1. Erstellen Sie mit dem Befehl ein Volume `docker volume create` .
+1. Erstellen Sie mithilfe des Befehls `docker volume create` ein Volume.
 
     ```bash
     docker volume create todo-db
     ```
 
-1. Beendet den ToDo-APP-Container erneut im Dashboard (oder mit `docker rm -f <id>` ), da er noch ausgeführt wird, ohne das persistente Volume zu verwenden.
+1. Beenden Sie den Container der Aufgabenlisten-App wieder über das Dashboard (oder mit `docker rm -f <id>`), da er weiterhin ausgeführt wird, ohne das persistente Volume zu verwenden.
 
-1. Starten Sie den ToDo-APP-Container, und fügen Sie das-Flag hinzu, `-v` um eine Volumegruppe anzugeben Sie verwenden das benannte Volume, das Sie in einbinden `/etc/todos` , sodass alle im Pfad erstellten Dateien erfasst werden.
+1. Starten Sie den Container der Aufgabenlisten-App, aber fügen Sie das Flag `-v` hinzu, um eine Volumebereitstellung anzugeben. Sie verwenden das benannte Volume und binden es in `/etc/todos` ein, wodurch alle in dem Pfad erstellten Dateien erfasst werden.
 
     ```bash
     docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
     ```
 
-1. Nachdem der Container gestartet wurde, öffnen Sie die APP, und fügen Sie Ihrer TODO-Liste einige Elemente hinzu.
+1. Sobald der Container gestartet wurde, öffnen Sie die App, und fügen Sie einige Elemente zur Aufgabenliste hinzu.
 
-    ![Der TODO-Liste hinzugefügte Elemente](media/items-added.png)
+    ![Zur Aufgabenliste hinzugefügte Elemente](media/items-added.png)
 
-1. Entfernen Sie den Container für die ToDo-APP. Verwenden Sie das Dashboard oder `docker ps` , um die ID zu erhalten und dann `docker rm -f <id>` zu entfernen.
+1. Entfernen Sie den Container für die Aufgabenlisten-App. Verwenden Sie das Dashboard oder `docker ps`, um die ID abzurufen. Verwenden Sie dann `docker rm -f <id>`, um sie zu entfernen.
 
-1. Starten Sie einen neuen Container, indem Sie den oben aufgeführten Befehl verwenden.
+1. Starten Sie mithilfe desselben Befehls, den Sie oben verwendet haben, einen neuen Container.
 
-1. Öffnen Sie die app. Ihre Elemente sollten noch in der Liste angezeigt werden.
+1. Öffnen Sie die App. Ihnen sollten weiterhin die Elemente in Ihrer Liste angezeigt werden.
 
-1. Entfernen Sie den Container, wenn Sie das Auschecken Ihrer Liste abgeschlossen haben.
+1. Entfernen Sie den Container, wenn Sie damit fertig sind, Ihre Liste zu begutachten.
 
-Hurra! Sie haben nun erfahren, wie Daten persistent gespeichert werden.
+Gut gemacht. Sie wissen nun, wie Sie Daten speichern können.
 
 > [!TIP]
-> Obwohl benannte Volumes und Bindungs Zustellungen (die wir in einer Minute sprechen werden) die beiden Haupttypen von Volumes sind, die von einer Standardinstallation der Docker-Engine unterstützt werden, stehen viele Volumetreiber-Plug-Ins zur Unterstützung von NFS, SFTP, nettapp und mehr zur Verfügung. Dies ist besonders wichtig, wenn Sie Container auf mehreren Hosts in einer Cluster Umgebung mit Swarm, Kubernetes usw. ausführen.
+> Während benannte Volumes und Bindungsbereitstellungen (die in Kürze erläutert werden) die zwei Haupttypen der Volumes darstellen, die von der Standardinstallation der Docker-Engine unterstützt werden, stehen viele Treiber-Plug-Ins für Volumes zur Verfügung, um beispielsweise NFS, SFTP, NetApp und mehr zu unterstützen. Das ist insbesondere Wichtig, wenn Sie damit beginnen, Container mit Swarm, Kubernetes usw. auf mehreren Hosts in einer Clusterumgebung auszuführen.
 
-## <a name="dive-into-your-volume"></a>Einblicke in Ihr Volume
+## <a name="dive-into-your-volume"></a>Untersuchen des Volumes
 
-Viele Leute fragen sich häufig, "wo ist docker meine Daten *tatsächlich* speichert, wenn ich ein benanntes Volume verwende?" Wenn Sie wissen möchten, können Sie den Befehl verwenden `docker volume inspect` .
+Oft wird die Frage gestellt „Wo speichert Docker die Daten *tatsächlich*, wenn ich ein benanntes Volume verwende?“. Dies können Sie mithilfe des Befehls `docker volume inspect` in Erfahrung bringen.
 
 ```bash
 docker volume inspect todo-db
@@ -130,20 +130,20 @@ docker volume inspect todo-db
 ]
 ```
 
-`Mountpoint`Ist der tatsächliche Speicherort auf dem Datenträger, auf dem die Daten gespeichert sind. Beachten Sie, dass Sie auf den meisten Computern über root-Zugriff verfügen müssen, um vom Host aus auf dieses Verzeichnis zuzugreifen. Aber an dieser Stelle ist es!
+`Mountpoint` entspricht dem tatsächlichen Speicherort auf dem Datenträger, an dem die Daten gespeichert werden. Beachten Sie, dass Sie auf den meisten Computern über Stammzugriffsberechtigungen verfügen müssen, um auf dieses Verzeichnis des Hosts zuzugreifen. Sie können sich jedoch sicher sein, dass es sich dabei um den Speicherort handelt.
 
 > [!NOTE]
-> Direktes **zugreifen auf Volumedaten auf dem docker-Desktop** Während der Ausführung in docker Desktop werden die Docker-Befehle tatsächlich auf einer kleinen VM auf Ihrem Computer ausgeführt. Wenn Sie sich den eigentlichen Inhalt des Verzeichnisses " *Mountpoint* " ansehen möchten, müssen Sie sich zunächst in der VM befinden. In WSL 2 befindet sich dies innerhalb einer WSL 2-Distribution, auf die über den Datei-Explorer zugegriffen werden kann.
+> **Direkter Zugriff auf Volumedaten in Docker Desktop:** Wenn Sie Docker Desktop ausführen, werden die Docker-Befehle tatsächlich in einer kleinen VM auf Ihrem Computer ausgeführt. Wenn Sie die tatsächlichen Inhalte des *Mountpoint*-Verzeichnisses (Bereitstellungspunkt) untersuchen möchten, müssen Sie zunächst auf die VM zugreifen. In WSL 2 befindet diese sich in einer WSL 2-Verteilung, auf die über den Datei-Explorer zugegriffen werden kann.
 
 ## <a name="recap"></a>Zusammenfassung
 
-An diesem Punkt verfügen Sie über eine funktionierende Anwendung, die neu gestartet werden kann! Sie können Sie für ihre Investoren anzeigen und hoffen, dass Sie Ihre Vision abfangen können!
+Sie verfügen nun über eine funktionierende Anwendung, die neu gestartet werden kann. Diese können Sie Ihren Investoren präsentieren und hoffen, dass sie Ihre Vision unterstützen.
 
-Sie haben jedoch bereits gesehen, dass das Neuerstellen von Images für jede Änderung etwas Zeit in sich bringt. Es gibt eine bessere Möglichkeit, Änderungen vorzunehmen, richtig? Mit BIND-bereit Stellungen (was wir vorhin angedeutet haben) gibt es eine bessere Möglichkeit! Sehen wir uns das jetzt an!
+Allerdings haben Sie auch gelernt, dass das Neuerstellen von Images für jede Änderung einige Zeit beansprucht. Also stellen Sie sich bestimmt die Frage, ob es nicht einen besseren Weg gibt, um Änderungen vorzunehmen. Mit den zuvor erwähnten Bindungsbereitstellungen gibt es eine bessere Vorgehensweise. Diese sehen Sie sich als Nächstes an.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit dem Tutorial fort.
+Setzen Sie das Tutorial fort.
 
 > [!div class="nextstepaction"]
-> [Verwenden von Bindungs Zustellungen](use-bind-mounts.md)
+> [Verwenden von Bindungsbereitstellungen](use-bind-mounts.md)

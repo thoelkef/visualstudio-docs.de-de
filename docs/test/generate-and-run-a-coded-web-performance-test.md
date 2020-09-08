@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589577"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
@@ -92,7 +92,7 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
 Wenn Sie einen codierten Test mit einer Datenquelle ausführen, wird möglicherweise folgende Fehlermeldung angezeigt:
 
-**Could not run test\<Test Name> on agent \<Computer Name>: Object reference not set to an instance of an object. (Der Test „<Testname>“ konnte auf dem Agent „<Computername>“ nicht ausgeführt werden: Der Objektverweis ist nicht auf eine Objektinstanz festgelegt.)**
+**Could not run test \<Test Name> on agent \<Computer Name> (Der Test <Name des Tests> konnte auf dem Agent <Name des Computers> nicht ausgeführt werden): Object reference not set to an instance of an object. (Der Test „<Testname>“ konnte auf dem Agent „<Computername>“ nicht ausgeführt werden: Der Objektverweis ist nicht auf eine Objektinstanz festgelegt.)**
 
 Dieser Fehler kann auftreten, wenn Sie für die Testklasse ein DataSourceAttribute ohne ein zugehöriges DataBindingAttribute definiert haben. Um diesen Fehler zu beheben, fügen Sie ein entsprechendes DataBindingAttribute hinzu, löschen es oder kommentieren es aus dem Code aus.
 

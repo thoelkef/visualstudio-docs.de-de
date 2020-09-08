@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188234"
 ---
 # <a name="edit-and-continue-error-message"></a>Fehlermeldung für „Bearbeiten und Fortfahren“
@@ -40,7 +40,7 @@ Mögliche Ursachen für diesen Fehler:
 - Sie versuchen, Code während des Debuggens einer Watson-Sicherungskopie zu bearbeiten.
 - Sie versuchen, Code nach dem Auftreten eines Ausnahmefehlers zu bearbeiten, und die Option **Aufrufliste für Ausnahmefehler entladen** ist dabei nicht aktiviert.
 - Sie versuchen, Code zu bearbeiten, während Sie eine eingebettete Laufzeitanwendung debuggen.
-- Sie versuchen, verwalteten Code mit einer älteren .NET Framework-Version als 4.5.1 mit einem 64-Bit-App-Ziel zu bearbeiten. Wenn Sie „Bearbeiten und Fortfahren“ für ältere .NET Framework-Versionen als 4.5.1 verwenden möchten, legen Sie unter **\<Projektname>**  > **Eigenschaften** > **Kompilieren** für **Erweiterte Compilereinstellungen** als Ziel **x86** fest.
+- Sie versuchen, verwalteten Code mit einer älteren .NET Framework-Version als 4.5.1 mit einem 64-Bit-App-Ziel zu bearbeiten. Wenn Sie „Bearbeiten und fortfahren“ für ältere .NET Framework-Versionen als 4.5.1 verwenden möchten, legen Sie unter **\<ProjectName>**  > **Eigenschaften** > **Kompilieren** für die Einstellung **Advanced Compiler** (Erweiterter Compiler) als Ziel **x86** fest.
 - Sie versuchen, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert und erneut geladen wurde.
 - Sie versuchen, Code in einer Assembly zu bearbeiten, die nicht geladen wurde.
 - Sie starten das Debugging einer alten Version einer App, da die aktuelle Version Buildfehler enthält.

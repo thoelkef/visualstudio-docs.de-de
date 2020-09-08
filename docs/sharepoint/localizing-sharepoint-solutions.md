@@ -18,16 +18,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017138"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
 
   Die Vorbereitung von Anwendungen für eine weltweite Verwendung wird als Lokalisierung bezeichnet. Bei der Lokalisierung werden die Ressourcen für einen bestimmten Kulturkreis übersetzt. Weitere Informationen finden Sie unter [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md). Dieses Thema bietet eine Übersicht über die Lokalisierung einer SharePoint-Lösung.
 
- Für die Lokalisierung einer Lösung werden die hartcodierten Zeichenfolgen aus dem Code entfernt und in Ressourcendateien zusammengefasst. Eine Ressourcen Datei ist eine [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -basierte Datei mit der Erweiterung " *. resx* ". Die Ressourcendatei enthält die übersetzten Versionen der in der Lösung verwendeten Zeichenfolgen. Weitere Informationen finden Sie unter [Ressourcen in Anwendungen](/previous-versions/dotnet/netframework-4.0/f45fce5x(v=vs.100)).
+ Für die Lokalisierung einer Lösung werden die hartcodierten Zeichenfolgen aus dem Code entfernt und in Ressourcendateien zusammengefasst. Bei einer Ressourcendatei handelt es sich um eine [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-basierte Datei mit der Erweiterung *.resx*. Die Ressourcendatei enthält die übersetzten Versionen der in der Lösung verwendeten Zeichenfolgen. Weitere Informationen finden Sie unter [Ressourcen in Anwendungen](/previous-versions/dotnet/netframework-4.0/f45fce5x(v=vs.100)).
 
 > [!NOTE]
 > Fügen Sie Ressourcendateien von SharePoint-Lösungen ausschließlich Zeichenfolgenressourcen hinzu. Zwar ermöglicht der Ressourcen-Editor auch das Hinzufügen von Ressourcen, bei denen es sich nicht um Zeichenfolgen handelt, diese Ressourcen werden jedoch nicht für SharePoint bereitgestellt.
@@ -41,9 +42,9 @@ ms.locfileid: "86017138"
 |Sprachunabhängig|Eine Ressourcendatei mit lokalisierten Zeichenfolgen für eine Sprache, aber nicht für eine bestimmte Kultur. Beispiel: "fr" für Französisch.|
 |Sprachspezifisch|Eine Ressourcendatei mit lokalisierten Zeichenfolgen für eine Sprache und eine Kultur. Beispiel: "fr-CA" für Französisch (Kanada).|
 
- Weitere Informationen finden Sie unter [hierarchische Organisation der Ressourcen für die Lokalisierung](../ide/globalizing-and-localizing-applications.md).
+ Weitere Informationen finden Sie unter [Hierarchische Organisation der Ressourcen für die Lokalisierung](../ide/globalizing-and-localizing-applications.md).
 
- Zum Angeben von Standard Ressourcen Dateien in SharePoint-Projekten, die Sie in entwickeln [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wählen Sie in der Liste Kultur des Dialog Felds **Ressource hinzufügen** die Option **invariante Sprache (invarianter Land)** aus, wenn Sie eine Ressourcen Datei hinzufügen.
+ Wählen Sie beim Hinzufügen einer Ressourcendatei in der Kulturliste des Dialogfelds **Ressource hinzufügen** die Option **Invariante Sprache (Invariantes Land)** aus, um in SharePoint-Projekten, die Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] entwickeln, Standardressourcendateien anzugeben.
 
 ## <a name="localize-visual-studio-sharepoint-solutions"></a>Lokalisieren von Visual Studio SharePoint-Lösungen
  Beim Lokalisieren einer Lösung müssen alle den Benutzern angezeigten Textinformationen berücksichtigt werden. Informationsmeldungen, Fehlermeldungen und [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]-Zeichenfolgen müssen übersetzt und die Übersetzungen in die Ressourcendateien eingefügt werden.
@@ -53,7 +54,7 @@ ms.locfileid: "86017138"
  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Anwendungen werden in der Regel drei Bereiche lokalisiert: Funktionen, ASPX-Seitenmarkup und Code. Zur Veranschaulichung wird in den folgenden Abschnitten von einer SharePoint-Lösung ausgegangen, die ins Deutsche und ins Japanische lokalisiert werden soll. Die Standardsprache ist Deutsch.
 
 ### <a name="localize-features"></a>Lokalisieren von Features
- Zum Lokalisieren einer Funktion müssen der hartcodierte Titel und die Beschreibung der Funktion durch einen Ausdruck ersetzt werden, durch den auf den übersetzten Titel und die Zeichenfolge in der lokalisierten Ressourcendatei verwiesen wird. Sie nehmen diese Änderung im **Funktions-Designer** in vor [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter Vorgehens [Weise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md).
+ Zum Lokalisieren einer Funktion müssen der hartcodierte Titel und die Beschreibung der Funktion durch einen Ausdruck ersetzt werden, durch den auf den übersetzten Titel und die Zeichenfolge in der lokalisierten Ressourcendatei verwiesen wird. Diese Änderung wird in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] im **Funktions-Designer** vorgenommen. Weitere Informationen finden Sie unter [Vorgehensweise: Lokalisieren eines Features](../sharepoint/how-to-localize-a-feature.md).
 
  Zum Lokalisieren der englischen Funktion für Deutsch und Japanisch werden dem Projekt drei Ressourcendatei-Projektelemente hinzugefügt – jeweils eins für Englisch, Deutsch und Japanisch. Funktionsressourcendateien können nicht zum Lokalisieren von ASPX-Markup oder -Code verwendet werden. Hierfür werden separate Ressourcendateien benötigt.
 
@@ -63,16 +64,16 @@ ms.locfileid: "86017138"
 $Resources:String ID
 ```
 
- Funktionsressourcen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] werden immer mit „Resources“ benannt. Wenn Sie eine andere Sprache als die invariante Sprache auswählen, wird dem Ressourcendateinamen die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] hinzugefügt. Wenn Sie z. b. eine Funktions Ressourcen Datei mit invarianter Sprache (Standard) hinzufügen, wird Sie als " *Resources. resx*" bezeichnet. Wenn Sie eine sprachspezifische Funktions Ressource hinzufügen, indem Sie eine Kultur von Japanisch (Japan) auswählen, wird die Datei " *Resources. ja-JP. resx*" genannt. Der Name einer Funktionsressourcendatei wird automatisch zugewiesen und kann nicht geändert werden.
+ Funktionsressourcen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] werden immer mit „Resources“ benannt. Wenn Sie eine andere Sprache als die invariante Sprache auswählen, wird dem Ressourcendateinamen die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] hinzugefügt. Wenn Sie beispielsweise eine Standard-Featureressourcendatei mit invarianter Sprache hinzufügen, wird diese *Resources.resx* genannt. Wenn Sie eine sprachspezifische Featureressource hinzufügen, indem Sie als Kultur die Option „Japanisch (Japan)“ auswählen, wird die Datei mit *Resources.ja-JP.resx* benannt. Der Name einer Funktionsressourcendatei wird automatisch zugewiesen und kann nicht geändert werden.
 
- Der Bereich von Funktionsressourcen ist für die Funktion, der sie hinzugefügt werden, lokal. Fügen Sie zum Erstellen von Ressourcen, die von jeder Funktions-oder Element Datei in der Lösung verwendet werden können, anstelle einer featureressourcendatei ein **globales Ressourcen Datei** -Projekt Element hinzu. Das Projekt Element " **Global Resources File** " befindet sich im Ordner " **2010** " unter **SharePoint** im Dialogfeld **Neues Element hinzufügen** . Das Bereitstellungsziel globaler Ressourcendateien ist der Ordner "\Resources" des SharePoint-Stammordners.
+ Der Bereich von Funktionsressourcen ist für die Funktion, der sie hinzugefügt werden, lokal. Wenn Sie Ressourcen erstellen möchten, die von jeder Feature- oder Elementdatei in der Lösung verwendet werden können, fügen Sie dem Projekt anstelle einer Featureressourcendatei eine **globale Ressourcendatei** hinzu. Das Projektelement **Globale Ressourcendatei** befindet sich im Dialogfeld **Neues Element** hinzufügen unter **SharePoint** im Ordner **2010**. Das Bereitstellungsziel globaler Ressourcendateien ist der Ordner "\Resources" des SharePoint-Stammordners.
 
-### <a name="localize-aspx-page-markup"></a>Lokalisieren von ASPX-Seiten Markup
- Zum Lokalisieren von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten fügen Sie dem Projekt drei Ressourcen Datei-Projekt Elemente hinzu: eine für Englisch, eine für Deutsch und eine für Japanisch. Wenn Sie neben dem Markup nicht auch noch Code lokalisieren müssen, können Sie stattdessen globale Ressourcendateien hinzufügen.
+### <a name="localize-aspx-page-markup"></a>Lokalisieren von ASPX-Seitenmarkup
+ Um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Seiten zu lokalisieren, fügen Sie dem Projekt drei Ressourcendatei-Projektelemente hinzu: eins für Englisch, eins für Deutsch und eins für Japanisch. Wenn Sie neben dem Markup nicht auch noch Code lokalisieren müssen, können Sie stattdessen globale Ressourcendateien hinzufügen.
 
- Geben Sie einen Namen für die Ressourcendatei der Standardsprache an. Benennen Sie die lokalisierten Ressourcendateien mit dem gleichen Namen, und fügen Sie diesem jeweils die sprachspezifische [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]-ID an. Beispiel: *MyAppResources.de-de. resx* für Deutsch und *myappresources. ja-JP. resx* für Japanisch.
+ Geben Sie einen Namen für die Ressourcendatei der Standardsprache an. Benennen Sie die lokalisierten Ressourcendateien mit dem gleichen Namen, und fügen Sie diesem jeweils die sprachspezifische [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]-ID an. Beispiel: *MyAppResources.de-DE.resx* für Deutsch und *MyAppResources.ja-JP.resx* für Japanisch.
 
- Legen Sie die Eigenschaft **Bereitstellungstyp** jeder Ressourcen Datei auf **appglobalresource**fest. Dadurch werden die Ressourcendateien im Ordner "App_GlobalResources" bereitgestellt und stehen somit allen ASPX-Seiten und -Steuerelementen in der Lösung zur Verfügung. Der Ordner "App_GlobalResources" befindet sich in c:\Inetpub\Wwwroot\Wss\VirtualDirectories \\<Portnummer \> \ App_GlobalResources.
+ Legen Sie die Eigenschaft **Bereitstellungstyp** der einzelnen Ressourcendateien auf **AppGlobalResource** fest. Dadurch werden die Ressourcendateien im Ordner "App_GlobalResources" bereitgestellt und stehen somit allen ASPX-Seiten und -Steuerelementen in der Lösung zur Verfügung. Der Ordner „App_GlobalResources“ befindet sich unter "C:\inetpub\wwwroot\wss\VirtualDirectories\\<Portnummer\>\App_GlobalResources".
 
 > [!NOTE]
 > Verschieben Sie bei Verwendung nicht globaler Ressourcendateien die nicht globalen Ressourcendateien in den Projektelementordner, um die Eigenschaft "Bereitstellungstyp" und andere SharePoint-spezifische Eigenschaften zu aktivieren.
@@ -103,16 +104,16 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />
 ```
 
- Weitere Informationen finden Sie unter Gewusst [wie: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md).
 
 ### <a name="localize-code"></a>Lokalisieren von Code
  Neben Funktionszeichenfolgen und [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Markup müssen auch die im Code der Lösung enthaltenen Meldungs- und Fehlerzeichenfolgen lokalisiert werden. Lokalisierte Informations- und Fehlermeldungen sind in Satellitenassemblys enthalten. Satellitenassemblys enthalten Zeichenfolgen, die Benutzern angezeigt werden, beispielsweise [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]-Text und Ausgabemeldungen wie Ausnahmen.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verwendet den Standard .NET Framework Hub und das Sprachmodell. Der Hub (Hauptprogrammassembly) enthält die Ressourcen für die Standardsprache. Die Spokes (Satellitenassemblys) enthalten die sprachspezifischen Ressourcen. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von Ressourcen](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Satellitenassemblys werden aus Ressourcen Dateien (*RESX*-Dateien) kompiliert. Wenn Sie dem Projekt und dem Projektmappenpaket sprachspezifische Ressourcen Dateien hinzufügen, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiliert die Ressourcen Dateien in Satellitenassemblys mit dem Namen " *{Project Name} #b0 *".
+ Von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wird das Hub- und Spoke-Standardmodell von .NET Framework verwendet. Der Hub (Hauptprogrammassembly) enthält die Ressourcen für die Standardsprache. Die Spokes (Satellitenassemblys) enthalten die sprachspezifischen Ressourcen. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von Ressourcen](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Satellitenassemblys werden aus Ressourcendateien ( *.resx*-Dateien) kompiliert. Wenn Sie dem Projekt und dem Lösungspaket sprachspezifische Ressourcendateien hinzufügen, werden die Ressourcendateien von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zu Satellitenassemblys mit dem Namen *{Projektname}.resources.dll* kompiliert.
 
- Beim Lokalisieren von SharePoint-Anwendungscode müssen dem Projekt genau wie bei ASPX-Markup separate Ressourcendatei-Projektelemente hinzugefügt werden. Dabei wird jeweils ein Element für die Standardsprache und ein Element für jede lokalisierte Sprache hinzugefügt. Wie jedoch zuvor bereits erwähnt: Wenn Sie bereits über Ressourcendateien zum Lokalisieren von ASPX-Markup verfügen, können Sie diese für die Lokalisierung des Codes wiederverwenden. Wenn Sie Ressourcen Dateien erstellen müssen, benennen Sie die Standard Sprachressourcen Datei mit der Erweiterung " *. resx* ". Benennen Sie die lokalisierten Ressourcendateien mit dem gleichen Namen, und fügen Sie diesem jeweils die sprachspezifische [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]-ID an. Legen Sie die Eigenschaft "Buildvorgang" der einzelnen Ressourcendateien auf "Eingebettete Ressource" fest, um die Erstellung von Satellitenressourcenassemblys zu aktivieren.
+ Beim Lokalisieren von SharePoint-Anwendungscode müssen dem Projekt genau wie bei ASPX-Markup separate Ressourcendatei-Projektelemente hinzugefügt werden. Dabei wird jeweils ein Element für die Standardsprache und ein Element für jede lokalisierte Sprache hinzugefügt. Wie jedoch zuvor bereits erwähnt: Wenn Sie bereits über Ressourcendateien zum Lokalisieren von ASPX-Markup verfügen, können Sie diese für die Lokalisierung des Codes wiederverwenden. Wenn Sie Ressourcendateien erstellen müssen, benennen Sie die Ressourcendatei für die Standardsprache mit einem beliebigen Namen, gefolgt von der Erweiterung *.resx*. Benennen Sie die lokalisierten Ressourcendateien mit dem gleichen Namen, und fügen Sie diesem jeweils die sprachspezifische [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]-ID an. Legen Sie die Eigenschaft "Buildvorgang" der einzelnen Ressourcendateien auf "Eingebettete Ressource" fest, um die Erstellung von Satellitenressourcenassemblys zu aktivieren.
 
- Um die Satellitenassemblys zu erstellen, erstellen Sie das Projekt, und fügen Sie dann die Dateien als zusätzliche Assemblys über die Registerkarte **erweitert** des **Paket-Designers** Stellen Sie beim Hinzufügen der Assemblys dem [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] Speicherort Pfad einen Kultur Ordner voran, z. b. *de-de \\ {Project Item Name} .resources.dll*. Dadurch kann das Paket Dateien mit dem gleichen Namen enthalten.
+ Erstellen Sie zum Erstellen der Satellitenassemblys das Projekt, und fügen Sie die Dateien mithilfe der Registerkarte **Erweitert** des **Paket-Designers** als zusätzliche Assemblys hinzu. Stellen Sie dem Pfad zum Speicherort beim Hinzufügen der Assemblys einen Kultur-[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]-Ordner voran (beispielsweise *de-DE\\{Projektelementname}.resources.dll*). Dadurch kann das Paket Dateien mit dem gleichen Namen enthalten.
 
  Ersetzen Sie hartcodierte Zeichenfolgen im Code durch Aufrufe der <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>-Methode, und verwenden Sie dabei die folgende Syntax:
 
@@ -120,16 +121,16 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
 ```
 
- Weitere Informationen finden Sie unter Gewusst [wie: Lokalisieren von Code](../sharepoint/how-to-localize-code.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md).
 
-#### <a name="web-part-code-localization"></a>Lokalisierung des webpartcodes
+#### <a name="web-part-code-localization"></a>Lokalisieren von Webpartcode
  Webparts enthalten eine benutzerdefinierte Funktion des Eigenschaften-Editors mit Codeattributen, von denen hartcodierte Zeichenfolgen wie „WebDisplayName“, „Category“ oder „WebDescription“ verwendet werden. Erstellen Sie eine separate, von der Klasse des Attributs abgeleitete Klasse, um die Zeichenfolgenwerte für diese Attribute zu ersetzen. Legen Sie in diesen Klassen die Eigenschaft des Attributs fest. Die Attributeigenschaft hängt von der Basisklasse ab. So lautet beispielsweise die WebDisplayName-Attributeigenschaft "DisplayNameValue", und die WebDescription-Attributeigenschaft lautet "DescriptionValue".
 
  Verweisen Sie in der abgeleiteten Klasse auf die Zeichenfolgen-ID aus der Ressourcendatei sowie auf das ResourceManager-Objekt, um den lokalisierten Wert für die Zeichenfolgen-ID abzurufen. Geben Sie diesen Wert an das Eigenschaften-Editor-Attribut zurück.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)
-- [Gewusst wie: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
-- [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)
-- [Vorgehensweise: Hinzufügen einer Ressourcen Datei](../sharepoint/how-to-add-a-resource-file.md)
-- [Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcen Datei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [How to: Lokalisieren eines Features](../sharepoint/how-to-localize-a-feature.md)
+- [How to: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
+- [How to: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)
+- [How to: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)
+- [How to: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
