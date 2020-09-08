@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307106"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315121"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -37,7 +37,7 @@ Alle anderen Vorlagen basieren auf dem Web-Frameworks Bottle, Flask oder Django 
 
 ### <a name="blank-group"></a>Leere Gruppe
 
-Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen Abhängigkeiten, die in einer *requirements.txt.* -Datei deklariert sind.
+Alle **leeren \<framework>-Webprojektvorlagen** erstellen ein Projekt mit mehr oder weniger gering gehaltenen Codebausteinen und den erforderlichen Abhängigkeiten, die in in der Datei *requirements.txt* deklariert sind.
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -47,7 +47,7 @@ Alle Vorlagen für **leere \<Framework> Webprojekte** erstellen ein Projekt mit 
 
 ### <a name="web-group"></a>Web-Gruppe
 
-Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem identischen Design, unabhängig vom ausgewählten Framework. Die App verfügt über die Seiten „Home“, „Info“ und „Kontakte“ sowie einer Navigationsleiste und reaktives Design über Bootstrap. Jede App wird entsprechend der statischen Serverdateien (CSS, JavaScript und Schriftarten) konfiguriert und verwendet einen Seitenvorlagenmechanismus entsprechend dem Framework.
+Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Starter-Web-App mit einem identischen Design, unabhängig vom ausgewählten Framework. Die App verfügt über die Seiten „Home“, „Info“ und „Kontakte“ sowie einer Navigationsleiste und reaktives Design über Bootstrap. Jede App wird entsprechend der statischen Serverdateien (CSS, JavaScript und Schriftarten) konfiguriert und verwendet einen Seitenvorlagenmechanismus entsprechend dem Framework.
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -58,7 +58,7 @@ Alle Vorlagen für **\<Framework>-Webprojekte** erstellen eine Web-App mit einem
 
 ### <a name="polls-group"></a>Umfragen-Gruppe
 
-Die Vorlagen **Framework>-Webprojekt für **Umfragen\< erstellen eine Web-App, mit der Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
+Die Vorlagen für **\<framework>-Webprojekte für Umfragen** erstellen eine Starter-Web-App, über die Benutzer bei verschiedenen Umfragen abstimmen können. Jede App baut auf der Struktur von **Webprojektvorlagen** auf, um eine Datenbank zu verwenden und die Umfragen und Benutzerantworten zu verwalten. Die Apps enthalten entsprechende Datenmodelle und eine spezielle App-Seite (/seed), die Umfragen aus einer *samples.json*-Datei lädt.
 
 | Vorlage | Beschreibung |
 | --- | --- |
@@ -95,7 +95,7 @@ Durch die Eigenschaften in den Gruppen **Serverbefehl ausführen** und **Debugse
 
 - **Befehl**: Hierbei kann es sich um ein Python-Skript ( *\*.py*-Datei), einen Modulnamen (wie in `python.exe -m module_name`) oder eine einzelne Codezeile (wie in `python.exe -c "code"`) handeln. Der Wert in der Dropdownliste gibt an, welcher dieser Typen beabsichtigt ist.
 - **Argumente**: Diese Argumente werden in der Befehlszeile nach dem Befehl übergeben.
-- **Umgebung**: eine durch Zeilenumbrüche getrennte Liste von \<NAME>=\<VALUE>-Paaren, durch die die Umgebungsvariablen angegeben werden. Diese Variablen werden nach allen Eigenschaften festgelegt, durch die die Umgebung möglicherweise modifiziert wird (z.B. Portnummer und Suchpfade), und können daher diese Werte überschreiben.
+- **Umgebung:** Hierbei handelt es sich um eine durch Zeilenumbrüche getrennte Liste von \<NAME>=\<VALUE>-Paaren, die Umgebungsvariablen angeben. Diese Variablen werden nach allen Eigenschaften festgelegt, durch die die Umgebung möglicherweise modifiziert wird (z.B. Portnummer und Suchpfade), und können daher diese Werte überschreiben.
 
 Jede Projekteigenschaft oder Umgebungsvariable kann mit der MSBuild-Syntax angegeben werden. Beispiel: `$(StartupFile) --port $(SERVER_PORT)`.
 `$(StartupFile)` ist der relative Pfad zur Startdatei, und `{StartupModule}` ist der importierbare Name der Startdatei. `$(SERVER_HOST)` und `$(SERVER_PORT)` sind normale Umgebungsvariablen, die durch die Eigenschaften **Start-URL** und **Portnummer**, automatisch oder durch die Eigenschaft **Umgebung** festgelegt werden.

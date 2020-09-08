@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630846"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Tasks für WPF
@@ -65,7 +65,7 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Fügt dem Anwendungsmanifest ( *\<Projektname>.exe.manifest*)  das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
+ Fügt dem Anwendungsmanifest ( *\<projectname>.exe.manifest*) das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="see-also"></a>Siehe auch
 

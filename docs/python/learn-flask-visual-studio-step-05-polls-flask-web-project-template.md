@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154894"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Schritt 5: Verwenden der Vorlage „Fragt ein Flask-Webprojekt ab“
@@ -242,7 +242,7 @@ Die meisten der von den Vorlagen „Fragt ein Flask-Webprojekt ab“ und „Frag
 
 Nun müssen noch die Ansicht für die Abstimmung (Details) und die Ergebnisse einer einzelnen Umfrage untersucht werden.
 
-Wenn Sie eine Umfrage auf der Startseite auswählen, navigiert die App zur URL „poll/\<key\>“. Hierbei entspricht *key* dem eindeutigen Bezeichner einer Umfrage. In *views.py* können Sie erkennen, dass die Funktion `details` zugewiesen wird, um das URL-Routing für GET- und POST-Anforderungen zu verarbeiten. Sie werden ebenfalls feststellen, dass durch das Verwenden von `<key>` in der URL-Route jede Route dieses Formulars derselben Funktion zugeordnet wird. Außerdem wird ein Argument für die Funktion mit gleichem Namen generiert:
+Wenn Sie eine Umfrage auf der Startseite auswählen, navigiert die App zur URL „/poll/\<key\>“. Hierbei entspricht *key* dem eindeutigen Bezeichner einer Umfrage. In *views.py* können Sie erkennen, dass die Funktion `details` zugewiesen wird, um das URL-Routing für GET- und POST-Anforderungen zu verarbeiten. Sie werden ebenfalls feststellen, dass durch das Verwenden von `<key>` in der URL-Route jede Route dieses Formulars derselben Funktion zugeordnet wird. Außerdem wird ein Argument für die Funktion mit gleichem Namen generiert:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461538"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer
@@ -130,7 +130,7 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Die folgenden Visual C++-Laufzeitbibliotheken sind nur erforderlich, wenn Sie Buildausgaben auf den Build Computer ausführen. z. B. als Teil automatisierter Tests. Die Dateien befinden sich abhängig von der Systemarchitektur in der Regel in Unterordnern unter dem Ordner *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* oder dem Ordner *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*. Kopieren Sie die x86-Binärdateien auf x86-Systemen in den Ordner *Windows\System32*. Kopieren Sie die x86-Binärdateien auf x64-Systemen in den Ordner *Windows\SysWOW64* und die x64-Binärdateien in den Ordner *Windows\System32*.
+4. Die folgenden Visual C++-Laufzeitbibliotheken sind nur erforderlich, wenn Sie Buildausgaben auf den Build Computer ausführen. z. B. als Teil automatisierter Tests. Die Dateien befinden abhängig von der Systemarchitektur sich in der Regel in Unterordnern unter *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* oder *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*. Kopieren Sie die x86-Binärdateien auf x86-Systemen in den Ordner *Windows\System32*. Kopieren Sie die x86-Binärdateien auf x64-Systemen in den Ordner *Windows\SysWOW64* und die x64-Binärdateien in den Ordner *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -255,7 +255,7 @@ Um MSBuild auf dem Buildcomputer zu verwenden, müssen die PATH-Umgebungsvariabl
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Verwenden von „vcvarsall.bat“ zum Festlegen der Umgebungsvariablen
 
-Öffnen Sie auf dem Buildcomputer ein **Eingabeaufforderungsfenster**, und führen Sie *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* aus. Sie können ein Befehlszeilenargument verwenden, um das Toolset, das Sie verwenden möchten, anzugeben: "x86", "systemeigenes x64" oder "x64-Cross-Compiler". Wenn Sie kein Befehlszeilenargument angeben, wird das x86-Toolset verwendet.
+Öffnen Sie ein **Eingabeaufforderungsfenster** auf dem Buildcomputer, und führen Sie *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* aus. Sie können ein Befehlszeilenargument verwenden, um das Toolset, das Sie verwenden möchten, anzugeben: "x86", "systemeigenes x64" oder "x64-Cross-Compiler". Wenn Sie kein Befehlszeilenargument angeben, wird das x86-Toolset verwendet.
 
 In dieser Tabelle werden die unterstützten Argumente für *vcvarsall.bat* beschrieben:
 
@@ -271,7 +271,7 @@ Wenn *vcvarsall.bat* erfolgreich (d.h. ohne Anzeigen einer Fehlermeldung) ausgef
 
 1. Zur manuellen Konfiguration der Befehlszeilenumgebung fügen Sie der PATH-Umgebungsvariable diesen Pfad hinzu:
 
-    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
 
 2. Optional können Sie der PATH-Variable auch die folgenden Pfade hinzufügen, um die Verwendung von MSBuild zum Erstellen der Lösungen zu vereinfachen.
 

@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532404"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
-Wenn Sie zum ersten Mal eine DSL-Tools Projekt Mappe (DSL-Tools) in Visual Studio öffnen, ähnelt die Benutzeroberfläche der folgenden Abbildung.
+Wenn Sie zum ersten Mal eine Projektmappe für DSL-Tools (Domain-Specific Language Tools) in Visual Studio öffnen, sieht die Benutzeroberfläche in etwa wie folgt aus.
 
  ![DSL-Designer](../modeling/media/dsl_designer.png)
 
@@ -46,7 +46,7 @@ Wenn Sie zum ersten Mal eine DSL-Tools Projekt Mappe (DSL-Tools) in Visual Studi
 |Formen und Konnektoren|Formen geben an, wie Modellelemente in einem DSL-Diagramm angezeigt werden sollen, und Connectors geben Zeilen auf einem DSL-Diagramm an, die zum Anzeigen von Beziehungen verwendet werden können.<br /><br /> Wenn Sie eine Form oder einen Connector erstellen möchten, ziehen Sie das Tool zur Seite **Diagram Elements** (Diagrammelemente) des Diagramms.|
 |Formzuordnungen|Eine Formzuordnung wird im Domänenmodelldiagramm in Form einer Linie dargestellt, die eine Form mit der angezeigten Domänenklasse oder einen Connector mit der angezeigten Domänenbeziehung verbindet.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md)
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

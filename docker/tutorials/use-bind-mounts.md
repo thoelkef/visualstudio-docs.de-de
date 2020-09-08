@@ -1,6 +1,6 @@
 ---
-title: 'Docker-Tutorial-Teil 5: Verwenden von BIND-bereit Stellungen'
-description: Beschreibt die Verwendung von Bindungs Aufstellungen zum Steuern des Einbindungs Punkts auf dem Host.
+title: 'Docker-Tutorial – Teil 5: Verwenden von Bindungsbereitstellungen'
+description: In diesem Tutorial wird beschrieben, wie Bindungsbereitstellungen verwendet werden, um den Bereitstellungspunkt auf dem Host zu steuern.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,42 +10,42 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 6474179a0714f2407ac37e724b997139206a91fb
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176741"
 ---
-# <a name="use-bind-mounts"></a>Verwenden von Bindungs Zustellungen
+# <a name="use-bind-mounts"></a>Verwenden von Bindungsbereitstellungen
 
-Im vorherigen Kapitel haben Sie erfahren, wie Sie ein **benanntes Volume** verwendet haben, um die Daten in der Datenbank beizubehalten. Benannte Volumes sind hervorragend, wenn Sie einfach Daten speichern möchten, da Sie sich nicht darum kümmern müssen, *wo* die Daten gespeichert werden.
+Im vorherigen Kapitel haben Sie Informationen zu einem **benannten Volume** erhalten und eines verwendet, um die Daten in Ihrer Datenbank aufzubewahren. Benannte Volumes eignen sich hervorragend, wenn Sie Daten einfach nur speichern möchten, da Sie sich dabei keine Gedanken darüber machen müssen, *wo* die Daten gespeichert werden.
 
-Mit **Bindungs**Bereitstellungen steuern Sie den genauen Bereitstellungspunkt auf dem Host. So können Sie Daten persistent speichern, werden jedoch häufig verwendet, um zusätzliche Daten in Containern bereitzustellen. Wenn Sie an einer Anwendung arbeiten, können Sie mit einer Bindungs Bindung Quellcode in den Container einbinden, um Codeänderungen anzuzeigen, zu reagieren und die Änderungen sofort anzuzeigen.
+Mithilfe von **Bindungsbereitstellungen** können Sie den exakten Bereitstellungspunkt auf dem Host bestimmen. So können Sie Daten aufbewahren, oft wird diese Möglichkeit aber auch dazu verwendet, zusätzliche Daten in Containern bereitzustellen. Wenn Sie an einer Anwendung arbeiten, können Sie eine Bindungsbereitstellung verwenden, um Quellcode in Container einzubinden, damit Codeänderungen erkannt werden können und darauf reagiert werden kann und damit Sie die Änderungen sofort sehen.
 
-Bei Knoten basierten Anwendungen ist [nodemon](https://npmjs.com/package/nodemon) ein großartiges Tool zum Überwachen von Dateiänderungen und anschließendes Neustarten der Anwendung. In den meisten anderen Sprachen und Frameworks sind äquivalente Tools vorhanden.
+Für Node-basierte Anwendungen eignet sich das Tool [nodemon](https://npmjs.com/package/nodemon) ideal für die Erkennung von Dateiänderungen und ein anschließendes Neustarten der Anwendung. In den meisten anderen Sprachen und Frameworks stehen ähnliche Tools zur Verfügung.
 
-## <a name="quick-volume-type-comparisons"></a>Kurze Volumentyp Vergleiche
+## <a name="quick-volume-type-comparisons"></a>Schnellvergleich von Volumetypen
 
-Bindungs Zustellungen und benannte Volumes sind die zwei Haupttypen von Volumes, die in der Docker-Engine enthalten sind. Es sind jedoch zusätzliche Volumetreiber verfügbar, um andere Verwendungs Fälle ([SFTP](https://github.com/vieux/docker-volume-sshfs), [CEPH](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/), [nettapp](https://netappdvp.readthedocs.io/en/stable/), [S3](https://github.com/elementar/docker-s3-volume)usw.) zu unterstützen.
+Bindungsbereitstellungen und benannte Volumes sind die zwei Haupttypen von Volumes, die über die Docker-Engine zur Verfügung stehen. Es stehen jedoch auch weitere Volumetreiber zur Verfügung, um andere Anwendungsfälle zu unterstützen (z B. [SFTP](https://github.com/vieux/docker-volume-sshfs), [Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/), [NetApp](https://netappdvp.readthedocs.io/en/stable/) und [S3](https://github.com/elementar/docker-s3-volume)).
 
 | Eigenschaft | Benannte Volumes | Binden von Bereitstellungen |
 | -------- | ------------- | ----------- |
-| Host Speicherort | Docker wählt | Steuerelement |
-| Einstellungsbeispiel (mit `-v` ) | mein Volume:/usr/local/data | /path/to/data:/usr/local/data |
-| Füllt neue Volumes mit Container Inhalten auf | Ja | Nein |
-| Unterstützt Volumetreiber | Ja | Nein |
+| Hoststandort | Wird von Docker ausgewählt | Wird von Ihnen bestimmt |
+| Beispiel für Volumebereitstellung (mithilfe von `-v`) | my-volume:/usr/local/data | /path/to/data:/usr/local/data |
+| Auffüllen des neuen Volumes mit Containerinhalten | Ja | Nein |
+| Unterstützung für Volumetreiber | Ja | Nein |
 
-## <a name="start-a-dev-mode-container"></a>Starten eines Containers im dev-Modus
+## <a name="start-a-dev-mode-container"></a>Starten eines Containers im Entwicklermodus
 
-Führen Sie die folgenden Schritte aus, um den Container zur Unterstützung eines Entwicklungs Workflows auszuführen:
+Wenn Sie einen Container so ausführen möchten, dass ein Entwicklungsworkflow unterstützt wird, müssen Sie Folgendes tun:
 
 - Einbinden des Quellcodes in den Container
-- Alle Abhängigkeiten installieren, einschließlich der "dev"-Abhängigkeiten
-- Nodemon zum Überwachen von Dateisystem Änderungen starten
+- Installieren aller Abhängigkeiten einschließlich der „dev“-Abhängigkeiten
+- Starten des nodemon-Tools zur Erkennung möglicher Änderungen im Dateisystem
 
-1. Stellen Sie sicher, dass keine vorherigen `getting-started` Container ausgeführt werden.
+1. Sorgen Sie dafür, dass keine zuvor genutzten `getting-started`-Container ausgeführt werden.
 
-1. Führen Sie den folgenden Befehl aus (ersetzen Sie die ` \ ` Zeichen durch `` ` `` in Windows PowerShell). Anschließend erfahren Sie, was im folgenden geschieht:
+1. Führen Sie den folgenden Befehl in Windows PowerShell aus, und ersetzen Sie dabei die ` \ `-Zeichen durch `` ` ``. Sie erfahren später, was genau hier geschieht:
 
     ```bash
     docker run -dp 3000:3000 \
@@ -54,13 +54,13 @@ Führen Sie die folgenden Schritte aus, um den Container zur Unterstützung eine
         sh -c "yarn install && yarn run dev"
     ```
 
-    - `-dp 3000:3000` -wie zuvor. Ausführen im getrennten Modus (Hintergrund) und Erstellen einer Port Zuordnung
-    - `-w /app` : legt das Arbeitsverzeichnis oder das aktuelle Verzeichnis fest, aus dem der Befehl ausgeführt wird.
-    - `-v ${PWD}:/app` -binden das aktuelle Verzeichnis vom Host im Container in das `/app` Verzeichnis einbinden
-    - `node:12-alpine` : das zu verwendende Bild. Beachten Sie, dass dies das Basis Image für Ihre APP aus der dockerfile-Datei ist.
-    - `sh -c "yarn install && yarn run dev"` -der Befehl. Wir starten eine Shell mit `sh` (Alpine ist nicht vorhanden `bash` ) und werden ausgeführt `yarn install` , um *alle* Abhängigkeiten zu installieren und dann ausgeführt zu werden `yarn run dev` . Wenn Sie in der sehen `package.json` , sehen Sie, dass das `dev` Skript gestartet wird `nodemon` .
+    - `-dp 3000:3000`: wie zuvor. Führen Sie den Befehl im Hintergrund (getrennter Modus) aus, und erstellen Sie eine Portzuordnung.
+    - `-w /app` legt das Arbeitsverzeichnis oder das aktuelle Verzeichnis fest, in dem der Befehl ausgeführt wird.
+    - `-v ${PWD}:/app` Hier wird eine Bindungsbereitstellung für das aktuelle Verzeichnis vom Host im Container in das `/app`-Verzeichnis durchgeführt.
+    - `node:12-alpine`: Dies ist das zu verwendende Image. Beachten Sie, dass es sich hierbei um das Basisimage für Ihre App aus dem Dockerfile handelt.
+    - `sh -c "yarn install && yarn run dev"`: der Befehl. Hier wird mithilfe von `sh` (alpine verfügt nicht über `bash`) eine Shell gestartet und `yarn install` ausgeführt, um *alle* Abhängigkeiten zu installieren und dann `yarn run dev` auszuführen. Wenn Sie `package.json` ansehen, stellen Sie fest, dass das `dev`-Skript `nodemon` startet.
 
-1. Sie können die Protokolle mit überwachen `docker logs -f <container-id>` . Sie werden feststellen, dass Sie bereit sind, wenn Sie Folgendes sehen:
+1. Mithilfe von `docker logs -f <container-id>` können Sie sich die Protokolle ansehen. Wenn Folgendes angezeigt wird, sind Sie soweit:
 
     ```bash
     docker logs -f <container-id>
@@ -73,34 +73,34 @@ Führen Sie die folgenden Schritte aus, um den Container zur Unterstützung eine
     Listening on port 3000
     ```
 
-    Wenn Sie mit dem Überwachen der Protokolle fertig sind, beenden Sie den Vorgang `Ctrl` + `C` .
+    Wenn Sie die Untersuchung der Protokolle abgeschlossen haben, können Sie sie schließen, indem Sie `Ctrl`+`C` drücken.
 
-1. Nehmen Sie nun eine Änderung an der APP vor. Ändern Sie in der `src/static/js/app.js` Datei die Schaltfläche **Element hinzufügen** , um einfach die Schaltfläche **hinzu**fügen. Diese Änderung erfolgt in Zeile 109.
+1. Nehmen Sie nun eine Änderung an der App vor. Ändern Sie in der `src/static/js/app.js`-Datei die Schaltfläche **Element hinzufügen** so, dass nur noch **Hinzufügen** angezeigt wird. Diese Änderung findet in Zeile 109 statt.
 
     ```diff
     -                         {submitting ? 'Adding...' : 'Add Item'}
     +                         {submitting ? 'Adding...' : 'Add'}
     ```
 
-1. Aktualisieren Sie einfach die Seite (oder öffnen Sie Sie), und die Änderung sollte sich fast sofort im Browser widerspiegeln. Es kann einige Sekunden dauern, bis der Knoten Server neu gestartet wird. Wenn Sie also eine Fehlermeldung erhalten, versuchen Sie es nach einigen Sekunden erneut.
+1. Aktualisieren Sie die Seite einfach, oder öffnen Sie sie neu, dann sollte die Änderung im Browser beinahe sofort wiedergegeben werden. Möglicherweise dauert es einige Sekunden, bis der Node-Server neu gestartet wurde. Wenn Sie also eine Fehlermeldung erhalten, aktualisieren Sie die Seite einfach nach einigen Sekunden noch mal.
 
-    ![Screenshot der aktualisierten Bezeichnung für die Schaltfläche "hinzufügen"](media/updated-add-button.png)
+    ![Screenshot: Aktualisierte Bezeichnung für die Schaltfläche „Hinzufügen“](media/updated-add-button.png)
 
-1. Sie können andere Änderungen vornehmen, die Sie vornehmen möchten. Wenn Sie fertig sind, beenden Sie den Container, und erstellen Sie das neue Image mithilfe von `docker build -t getting-started .` .
+1. Auf Wunsch können Sie beliebige andere Änderungen vornehmen. Wenn Sie soweit sind, halten Sie den Container an, und erstellen Sie Ihr neues Image mithilfe von `docker build -t getting-started .`.
 
-Die Verwendung von Bindungs Bereitstellungen ist für lokale Entwicklungseinrichtungen *sehr* üblich. Der Vorteil besteht darin, dass auf dem Entwicklungs Computer nicht alle Buildtools und-Umgebungen installiert sein müssen. Mit einem einzigen `docker run` Befehl wird die Entwicklungsumgebung abgerufen und ist einsatzbereit. In einem späteren Schritt erfahren Sie mehr über die Docker Compose, da dies zur Vereinfachung ihrer Befehle beiträgt (Sie erhalten bereits viele Flags).
+Die Verwendung von Bindungsbereitstellungen ist *sehr* gängig bei lokalen Entwicklungssetups. Der Vorteil besteht darin, dass der Entwicklungscomputer nicht über Installationen aller Buildtools und Umgebungen verfügen muss. Die Entwicklungsumgebung wird mit einem einzigen `docker run`-Befehl gepullt und ist sofort einsatzbereit. In einem weiteren Schritt werden Sie weitere Informationen zu Docker Compose erhalten. Dies unterstützt Sie beim Vereinfachen Ihrer Befehle, denn Sie erhalten aktuell bereits viele Flags.
 
 ## <a name="recap"></a>Zusammenfassung
 
-An diesem Punkt können Sie Ihre Datenbank dauerhaft speichern und schnell auf die Anforderungen und Anforderungen Ihrer Investoren und Gründer reagieren. Hurra! Aber raten Sie? Sie haben großartige Neuigkeiten erhalten!
+Bisher können Sie Ihre Datenbank speichern und schnell auf die Anforderungen und Wünsche Ihrer Investoren und Gründer reagieren. Das ist sehr gut. Aber wissen Sie was? Sie haben großartige Neuigkeiten erfahren.
 
-**Ihr Projekt wurde für die zukünftige Entwicklung ausgewählt!**
+**Ihr Projekt soll zukünftig weiter ausgebaut werden.**
 
-Um sich auf die Produktion vorzubereiten, müssen Sie die Datenbank von der Arbeit in SQLite zu einem anderen migrieren, der etwas besser skaliert werden kann. Der Einfachheit halber behalten Sie eine relationale Datenbank bei und wechseln Ihre Anwendung zur Verwendung von MySQL. Aber wie sollten Sie MySQL ausführen? Wie lassen sich die Container miteinander kommunizieren? Weitere Informationen finden Sie hier.
+Dazu müssen Sie Ihre Datenbank von SQLite zu einer Lösung migrieren, die sich noch etwas besser skalieren lässt, um sie für die Produktion vorzubereiten. Aus Gründen der Einfachheit verwenden Sie weiterhin eine relationale Datenbank, ändern Ihre Anwendung jedoch so, dass MySQL verwendet wird. Wie können Sie jedoch MySQL ausführen? Wie ermöglichen Sie die Kommunikation zwischen den Containern? In einem weiteren Teil erhalten Sie Informationen dazu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit dem Tutorial fort.
+Setzen Sie das Tutorial fort.
 
 > [!div class="nextstepaction"]
 > [Apps mit mehreren Containern](multi-container-apps.md)

@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731278"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
@@ -430,9 +430,9 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
 3. Zunächst erstellen Sie eine neue Projektkonfiguration.
 
-   1. Klicken Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.
+   1. Klicken Sie im Dialogfeld **\<Project>-Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.
 
-   2. Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)). Wählen Sie in der Spalte **Konfiguration** die Option **\<Neu...>** aus.
+   2. Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)). Wählen Sie in der Spalte **Konfiguration** die Option **\<New...>** aus.
 
    3. Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".
 
@@ -472,7 +472,7 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
    6. Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.
 
-   7. Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++** , Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.
+   7. Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Project>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++** , Kategorie **Vorkompilierte Header**) die Einstellung **Create/Use Precompiled Headers** (Vorkompilierte Header erstellen/verwenden) ändern.
 
 7. Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461390"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Dialogfeld „Optionen“: Projekte und Projektmappen \> Erstellen und Ausführen
@@ -58,7 +58,7 @@ Bestimmt, wie viele Informationen aus dem Buildprozess im **Ausgabefenster** ang
 
 *Dies bezieht sich nur auf C++-Projekte.*
 
-Bestimmt, wie viele Informationen in die Buildprotokolldatei geschrieben werden, die sich unter *\\\<ProjectName>\Debug\\\<ProjectName>.log* befindet.
+Hiermit wird festgelegt, wie viele Informationen in die Buildprotokolldatei geschrieben werden, die sich unter *\\\<ProjectName>\Debug\\\<ProjectName>.log* befindet.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,6 +1,6 @@
 ---
-title: 'Docker-Tutorial-Teil 6: apps mit mehreren Containern'
-description: Erfahren Sie, wie Sie Netzwerkverbindungen zwischen Containern einrichten und einen Container für eine MySQL-Datenbank hinzufügen.
+title: 'Docker-Tutorial – Teil 6: Apps mit mehreren Containern'
+description: Hier erfahren Sie, wie Sie eine Netzwerkverbindungen zwischen Containern einrichten und einen Container für eine MySQL-Datenbank hinzufügen.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,35 +10,35 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176695"
 ---
 # <a name="multi-container-apps"></a>Apps mit mehreren Containern
 
-Bis zu diesem Zeitpunkt haben Sie mit einzelcontaineranwendungen gearbeitet. Nun fügen Sie MySQL dem Anwendungs Stapel hinzu. Die folgende Frage kommt häufig vor: "wo wird MySQL ausgeführt? Installieren Sie Sie im gleichen Container, oder führen Sie Sie separat aus? " Im allgemeinen **sollte jeder Container eine Aktion durchführen und dies gut tun.** Einige Gründe:
+Bis zu diesem Zeitpunkt haben Sie mit Apps mit einem einzelnen Container gearbeitet. Nun fügen Sie dem Anwendungsstapel MySQL hinzu. Häufig kommt die Frage auf: „Wo wird MySQL ausgeführt? Ist eine Installation im gleichen Container oder eine separate Ausführung ratsam?“ Im Allgemeinen sollte **jeder Container eine Aufgabe haben und diese erfolgreich ausführen**. Einige Gründe:
 
-- Es gibt eine gute Chance, APIs und Front-Ends anders als Datenbanken zu skalieren.
-- Getrennte Container ermöglichen Ihnen die Isolation von Versions-und Update Versionen.
-- Obwohl Sie einen Container für die-Datenbank lokal verwenden können, empfiehlt es sich, in der Produktion einen verwalteten Dienst für die Datenbank zu verwenden. Sie möchten die Datenbank-Engine dann nicht mit Ihrer APP versenden.
-- Das Ausführen mehrerer Prozesse erfordert einen Prozess-Manager (der Container startet nur einen Prozess), wodurch die Komplexität beim Starten/Herunterfahren des Containers erhöht wird.
+- Die Wahrscheinlichkeit ist groß, dass Sie APIs und Front-Ends anders als Datenbanken skalieren müssen.
+- Separate Container ermöglichen das Verwalten und Aktualisieren von Versionen in Isolation.
+- Obwohl Sie möglicherweise einen Container lokal für die Datenbank verwenden, sollten Sie in der Produktion einen verwalteten Dienst für die Datenbank verwenden. Sie möchten die Datenbank-Engine nicht mit Ihrer App versenden.
+- Das Ausführen mehrerer Prozesse erfordert einen Prozess-Manager (der Container startet nur einen Prozess), wodurch sich die Komplexität beim Starten bzw. Herunterfahren des Containers erhöht.
 
-Und es gibt weitere Gründe. Daher aktualisieren Sie die Anwendung so, dass Sie wie folgt funktioniert:
+Es gibt aber noch weitere Gründe. Daher aktualisieren Sie die Anwendung so, dass sie wie folgt funktioniert:
 
-![Mit MySQL-Container verbundene ToDo-APP](media/multi-app-architecture.png)
+![Mit MySQL-Container verbundene To-Do-App](media/multi-app-architecture.png)
 
 ## <a name="container-networking"></a>Containernetzwerke
 
-Beachten Sie, dass Container standardmäßig isoliert ausgeführt werden und nichts über andere Prozesse oder Container auf dem gleichen Computer weiß. Wie können Sie also einen Container mit einem anderen kommunizieren? Die Antwort ist " **Networking**". Nun müssen Sie kein Netzwerktechniker ("huoray!") sein. Merken Sie sich diese Regel...
+Beachten Sie, dass Container standardmäßig isoliert ausgeführt werden und nichts über andere Prozesse oder Container auf dem gleichen Computer wissen. Wie schaffen Sie es also, dass ein Container mit einem anderen kommunizieren kann? Die Antwort ist: **Netzwerke**. Zum Glück müssen Sie hierfür kein Netzwerktechniker sein (Hurra!). Bedenken Sie diese Regel:
 
 > [!NOTE]
-> Wenn sich zwei Container im gleichen Netzwerk befinden, können Sie miteinander kommunizieren. Wenn dies nicht der Fall ist, ist dies nicht möglich.
+> Wenn sich zwei Container im gleichen Netzwerk befinden, können sie miteinander kommunizieren. Wenn dies nicht der Fall ist, ist das eben nicht möglich.
 
 ## <a name="start-mysql"></a>Starten Sie MySQL.
 
-Es gibt zwei Möglichkeiten, einen Container in einem Netzwerk zu platzieren: weisen Sie ihn beim Starten oder Verbinden eines vorhandenen Containers zu. Zum jetzigen Zeitpunkt erstellen Sie zuerst das Netzwerk und fügen den MySQL-Container beim Start an.
+Es gibt zwei Möglichkeiten, einen Container in einem Netzwerk zu platzieren: Entweder Sie weisen ihn beim Start zu, oder Sie verbinden ihn mit einem vorhandenen Container. In diesem Fall erstellen Sie zuerst das Netzwerk und fügen dann den MySQL-Container beim Start an.
 
 1. Erstellen Sie das Netzwerk.
 
@@ -46,7 +46,7 @@ Es gibt zwei Möglichkeiten, einen Container in einem Netzwerk zu platzieren: we
     docker network create todo-app
     ```
 
-1. Starten Sie einen MySQL-Container, und fügen Sie ihn dem Netzwerk an. Wir definieren außerdem einige Umgebungsvariablen, die von der Datenbank zum Initialisieren der Datenbank verwendet werden (Weitere Informationen finden Sie im Abschnitt "Umgebungsvariablen" in der [MySQL docker Hub-Auflistung](https://hub.docker.com/_/mysql/)) (ersetzen Sie die ` \ ` Zeichen durch `` ` `` in Windows PowerShell).
+1. Starten Sie einen MySQL-Container, und fügen Sie ihn dem Netzwerk an. Außerdem definieren Sie einige Umgebungsvariablen, die von der Datenbank zum Initialisieren der Datenbank verwendet werden (weitere Informationen im Abschnitt „Umgebungsvariablen“ in der [MySQL-Docker Hub-Liste](https://hub.docker.com/_/mysql/)). Ersetzen Sie in Windows PowerShell die ` \ `-Zeichen durch `` ` ``-Zeichen.
 
     ```bash
     docker run -d \
@@ -57,18 +57,18 @@ Es gibt zwei Möglichkeiten, einen Container in einem Netzwerk zu platzieren: we
         mysql:5.7
     ```
 
-    Sie sehen auch, dass Sie das-Flag angegeben haben `--network-alias` . Wir kommen dann in Kürze darauf zurück.
+    Sie sehen auch, dass Sie das Flag `--network-alias` angegeben haben. Dies wird in Kürze erläutert.
 
     > [!TIP]
-    > Sie werden feststellen, dass Sie hier einen `todo-mysql-data` Volumenamen verwenden und ihn an der Stelle bereitstellen `/var/lib/mysql` , an der MySQL seine Daten speichert. Sie haben jedoch nie einen `docker volume create` Befehl ausgeführt. Docker erkennt, dass Sie ein benanntes Volume verwenden möchten, und erstellt eine automatische Erstellung für Sie.
+    > Sie stellen fest, dass Sie hier den Volumenamen `todo-mysql-data` verwenden und unter `/var/lib/mysql` bereitstellen, wo MySQL Daten speichert. Sie haben jedoch noch nie einen `docker volume create`-Befehl ausgeführt. Docker erkennt, dass Sie ein benanntes Volume verwenden möchten und erstellt daher automatisch eines.
 
-1. Stellen Sie eine Verbindung mit der Datenbank her, und überprüfen Sie, ob die Datenbank eine Verbindung herstellt, um zu bestätigen, dass Sie
+1. Stellen Sie eine Verbindung mit der Datenbank her, und überprüfen Sie diese Verbindung, um zu bestätigen, dass die Datenbank erfolgreich ausgeführt wird.
 
     ```bash
     docker exec -it <mysql-container-id> mysql -p
     ```
 
-    Wenn die Kenn Wort Eingabeaufforderung angezeigt wird, geben Sie **geheimer**Schlüssel ein. In der MySQL-Shell können Sie die Datenbanken auflisten und überprüfen, ob die Datenbank angezeigt wird `todos` .
+    Wenn Sie zur Eingabe des Kennworts aufgefordert werden, geben Sie **secret** ein. In der MySQL-Shell werden die Datenbanken aufgelistet. Überprüfen Sie, ob die Datenbank `todos` angezeigt wird.
 
     ```cli
     mysql> SHOW DATABASES;
@@ -89,27 +89,27 @@ Es gibt zwei Möglichkeiten, einen Container in einem Netzwerk zu platzieren: we
     5 rows in set (0.00 sec)
     ```
 
-    Hurra! Ihre `todos` Datenbank ist einsatzbereit.
+    Sehr gut! Sie verfügen über die `todos`-Datenbank und können diese verwenden.
 
 ## <a name="connect-to-mysql"></a>Herstellen einer Verbindung mit MySQL
 
-Nun, da Sie wissen, dass MySQL in Betrieb ist und ausgeführt wird, können Sie es verwenden. Die Frage ist jedoch... dass? Wenn Sie einen anderen Container im selben Netzwerk ausführen, wie finden Sie den Container (denken Sie daran, dass jeder Container über eine eigene IP-Adresse verfügt)?
+Da Sie nun wissen, dass MySQL ausgeführt wird, können Sie das System verwenden. Die Frage ist nur: Wie wird es verwendet? Wie finden Sie den Container, wenn Sie einen anderen Container im selben Netzwerk ausführen? (Denken Sie daran, dass jeder Container über eine eigene IP-Adresse verfügt.)
 
-Um dies herauszufinden, verwenden Sie den [nicolaka/Netshoot-](https://github.com/nicolaka/netshoot) Container, der mit *vielen* Tools ausgeliefert wird, die für die Problembehandlung oder das Debuggen von Netzwerkproblemen nützlich sind.
+Sie verwenden hierfür den Container [nicolaka/netshoot](https://github.com/nicolaka/netshoot), der *viele* Tools umfasst, die für die Problembehandlung oder das Debuggen von Netzwerkproblemen nützlich sind.
 
-1. Starten Sie einen neuen Container mithilfe des `nicolaka/netshoot` Bilds. Stellen Sie sicher, dass Sie mit demselben Netzwerk verbunden sind.
+1. Starten Sie einen neuen Container mithilfe des Images `nicolaka/netshoot`. Stellen Sie sicher, dass Sie mit demselben Netzwerk verbunden sind.
 
     ```bash
     docker run -it --network todo-app nicolaka/netshoot
     ```
 
-1. Verwenden Sie innerhalb des Containers den `dig` Befehl, bei dem es sich um ein nützliches DNS-Tool handelt. Suchen Sie nach der IP-Adresse für den Hostnamen `mysql` .
+1. Verwenden Sie innerhalb des Containers den `dig`-Befehl, der ein nützliches DNS-Tool ist. Suchen Sie nach der IP-Adresse für den Hostnamen `mysql`.
 
     ```bash
     dig mysql
     ```
 
-    Und Sie erhalten eine Ausgabe wie diese...
+    Sie erhalten eine Ausgabe wie die folgende:
 
     ```text
     ; <<>> DiG 9.14.1 <<>> mysql
@@ -130,27 +130,27 @@ Um dies herauszufinden, verwenden Sie den [nicolaka/Netshoot-](https://github.co
     ;; MSG SIZE  rcvd: 44
     ```
 
-    Im Abschnitt "Antwort" wird ein Datensatz angezeigt, der `A` `mysql` zu aufgelöst wird `172.23.0.2` (Ihre IP-Adresse hat wahrscheinlich einen anderen Wert). Obwohl `mysql` normalerweise kein gültiger Hostname ist, konnte docker ihn in die IP-Adresse des Containers auflösen, der diesen Netzwerkalias besaß (merken Sie sich das Flag, das `--network-alias` Sie zuvor verwendet haben?).
+    Im Abschnitt „ANSWER SECTION“ wird ein `A`-Datensatz für `mysql` angezeigt, der in `172.23.0.2` aufgelöst wird (Ihre IP-Adresse hat wahrscheinlich einen anderen Wert). Obwohl `mysql` normalerweise kein gültiger Hostname ist, konnte Docker ihn in die IP-Adresse des Containers auflösen, der diesen Netzwerkalias besaß (erinnern Sie sich an das `--network-alias`-Flag, das Sie zuvor verwendet haben?).
 
-    Dies bedeutet, dass... Ihre APP muss lediglich eine Verbindung mit einem Host namens herstellen, `mysql` der mit der Datenbank kommuniziert. Das ist nicht viel einfacher als das!
+    Dies bedeutet, dass Ihre App lediglich eine Verbindung mit einem Host namens `mysql` herstellen muss, um mit der Datenbank kommunizieren zu können. Einfacher geht es nicht.
 
-## <a name="run-your-app-with-mysql"></a>Ausführen der APP mit MySQL
+## <a name="run-your-app-with-mysql"></a>Ausführen der App mit MySQL
 
-Die ToDo-APP unterstützt das Festlegen einiger Umgebungsvariablen zum Angeben von MySQL-Verbindungseinstellungen. Sie lauten wie folgt:
+Die To-Do-App unterstützt das Festlegen einiger Umgebungsvariablen zum Angeben von MySQL-Verbindungseinstellungen. Es handelt sich hierbei um die folgenden Topologien:
 
-- `MYSQL_HOST` : der Hostname für den laufenden MySQL-Server
-- `MYSQL_USER` -der für die Verbindung zu verwendende Benutzername
-- `MYSQL_PASSWORD` : das für die Verbindung zu verwendende Kennwort
-- `MYSQL_DB` -die Datenbank, die nach der Verbindung verwendet werden soll
+- `MYSQL_HOST`: Dies ist der Hostname für den ausgeführten MySQL-Server
+- `MYSQL_USER`: Dies ist der für die Verbindung zu verwendende Benutzername.
+- `MYSQL_PASSWORD`: Dies ist das für die Verbindung zu verwendende Kennwort.
+- `MYSQL_DB`: Dies ist die Datenbank, die nach dem Herstellen der Verbindung verwendet werden soll.
 
 > [!WARNING]
-> **Festlegen der Verbindungseinstellungen über Umgebungsvariablen** Die Verwendung von Umgebungsvariablen zum Festlegen der Verbindungseinstellungen ist im Allgemeinen für die Entwicklung geeignet Informationen zu den Grundlagen finden [Sie Untergründe für die Verwendung von Umgebungsvariablen für geheime Daten](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
-> Ein sichereren Mechanismus ist die Verwendung der von Ihrem containerorchestrierungs-Framework bereitgestellten Geheimnis Unterstützung. In den meisten Fällen werden diese geheimen Schlüssel als Dateien im laufenden Container bereitgestellt. Sie sehen, dass viele apps (einschließlich MySQL-Image und ToDo-APP) auch env-VARs mit einem Suffix unterstützen `_FILE` , um auf eine Datei zu verweisen, die die Datei enthält.
-> Beispielsweise bewirkt das Festlegen der `MYSQL_PASSWORD_FILE` var, dass die APP den Inhalt der Datei, auf die verwiesen wird, als Verbindungs Kennwort verwendet. Docker unterstützt keine Informationen zur Unterstützung dieser erfv-vars. Ihre APP muss wissen, um nach der Variablen zu suchen und den Dateiinhalt zu erhalten.
+> **Festlegen von Verbindungseinstellungen über Umgebungsvariablen:** Während die Verwendung von Umgebungsvariablen zum Festlegen der Verbindungseinstellungen in der Entwicklung im Allgemeinen geeignet ist, wird für die Ausführung von Anwendungen in der Produktion dringend davon abgeraten. Weitere Informationen hierzu finden Sie unter [Warm Umgebungsvariablen nicht für geheime Daten verwendet werden sollten](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
+> Ein sicherer Mechanismus ist die Verwendung der vom Containerorchestrierungsframework bereitgestellten Geheimnisunterstützung. In den meisten Fällen werden diese Geheimnisse als Dateien im laufenden Container bereitgestellt. Sie sehen, dass viele Apps (einschließlich MySQL-Image und To-Do-App) auch Umgebungsvariablen mit einem `_FILE`-Suffix unterstützen, um auf eine Datei zu verweisen, die die Datei enthält.
+> Beispielsweise bewirkt das Festlegen der `MYSQL_PASSWORD_FILE`-Variable, dass die App den Inhalt der Datei, auf die verwiesen wird, als Verbindungskennwort verwendet. Docker trägt nicht zur Unterstützung dieser Umgebungsvariablen bei. Ihre App muss nach der Variablen suchen und den Dateiinhalt abrufen.
 
-Wenn Sie all dies erläutert haben, starten Sie Ihren Entwicklungs bereiten Container!
+Nachdem all dies erläutert wurde, können Sie nun Ihren Container bereitstellen, der bereit für die Entwicklung ist.
 
-1. Geben Sie die oben aufgeführten Umgebungsvariablen an, und verbinden Sie den Container mit Ihrem App-Netzwerk (ersetzen Sie die ` \ ` Zeichen durch `` ` `` in Windows PowerShell).
+1. Geben Sie die oben aufgeführten Umgebungsvariablen an, und verbinden Sie den Container mit Ihrem App-Netzwerk (ersetzen Sie in Windows PowerShell die ` \ `-Zeichen durch `` ` ``-Zeichen).
 
     ```bash hl_lines="3 4 5 6 7"
     docker run -dp 3000:3000 \
@@ -164,7 +164,7 @@ Wenn Sie all dies erläutert haben, starten Sie Ihren Entwicklungs bereiten Cont
       sh -c "yarn install && yarn run dev"
     ```
 
-1. Wenn Sie sich die Protokolle für den Container ( `docker logs <container-id>` ) ansehen, sollte eine Meldung angezeigt werden, die angibt, dass die MySQL-Datenbank verwendet wird.
+1. Wenn Sie sich die Protokolle für den Container (`docker logs <container-id>`) ansehen, sollte eine Meldung angezeigt werden, die angibt, dass die MySQL-Datenbank verwendet wird.
 
     ```plaintext hl_lines="7"
     # Previous log messages omitted
@@ -177,15 +177,15 @@ Wenn Sie all dies erläutert haben, starten Sie Ihren Entwicklungs bereiten Cont
     Listening on port 3000
     ```
 
-1. Öffnen Sie die app in Ihrem Browser, und fügen Sie Ihrer TODO-Liste einige Elemente hinzu.
+1. Öffnen Sie die App in Ihrem Browser, und fügen Sie Ihrer To-Do-Liste einige Elemente hinzu.
 
-1. Stellen Sie eine Verbindung mit der MySQL-Datenbank her, und prüfen Sie, ob die Elemente in die Datenbank geschrieben werden. Beachten Sie, dass das Kennwort **geheim**ist.
+1. Stellen Sie eine Verbindung mit der MySQL-Datenbank her, und prüfen Sie, ob die Elemente in die Datenbank geschrieben werden. Beachten Sie, dass **secret** das Kennwort ist.
 
     ```bash
     docker exec -ti <mysql-container-id> mysql -p todos
     ```
 
-    Führen Sie in der MySQL-Shell folgendes aus:
+    Führen Sie in der MySQL-Shell Folgendes aus:
 
     ```plaintext
     mysql> select * from todo_items;
@@ -197,23 +197,23 @@ Wenn Sie all dies erläutert haben, starten Sie Ihren Entwicklungs bereiten Cont
     +--------------------------------------+--------------------+-----------+
     ```
 
-    Natürlich sieht die Tabelle anders aus, da Sie Ihre Elemente enthält. Sie sollten dort jedoch angezeigt werden.
+    Natürlich sieht Ihre Tabelle anders aus, da diese Ihre Elemente enthält. Sie sollten jedoch dort angezeigt werden.
 
-Wenn Sie sich die Docker-Erweiterung kurz ansehen, werden Sie feststellen, dass zwei App-Container ausgeführt werden. Aber es gibt keinen wirklichen Hinweis darauf, dass Sie in einer einzelnen App zusammengefasst werden. Sie werden erfahren, wie Sie das in Kürze verbessern können.
+Wenn Sie sich die Docker-Erweiterung kurz ansehen, werden Sie feststellen, dass zwei App-Container ausgeführt werden. Es gibt allerdings keinen wirklichen Hinweis darauf, dass diese in einer einzelnen App gruppiert werden. Sie erfahren in Kürze, wie Sie dies verbessern können.
 
-![Docker-Erweiterung, die zwei nicht gruppierte App-Container anzeigt](media/vs-multi-container-app.png)
+![Docker-Erweiterung mit zwei App-Containern, deren Gruppierung aufgehoben wurde](media/vs-multi-container-app.png)
 
 ## <a name="recap"></a>Zusammenfassung
 
-An diesem Punkt verfügen Sie über eine Anwendung, die Ihre Daten nun in einer externen Datenbank speichert, die in einem separaten Container ausgeführt wird. Sie haben etwas über Container Netzwerke gelernt und gesehen, wie die Dienst Ermittlung mithilfe von DNS ausgeführt werden kann.
+An diesem Punkt verfügen Sie über eine Anwendung, die Ihre Daten nun in einer externen Datenbank speichert, die in einem separaten Container ausgeführt wird. Sie haben etwas über Containernetzwerke gelernt und gesehen, wie die Dienstermittlung mithilfe von DNS ausgeführt werden kann.
 
-Es ist jedoch eine gute Chance, dass Sie sich mit allen Aufgaben vertraut machen, die Sie zum Starten dieser Anwendung benötigen. Sie müssen ein Netzwerk erstellen, Container starten, alle Umgebungsvariablen angeben, Ports verfügbar machen und vieles mehr! Das ist viel zu merken, und es macht es sicher, dass Dinge an andere Personen weitergereicht werden.
+Möglicherweise sind Sie anfangs von all den Schritten etwas überwältigt, die zum Starten dieser Anwendung nötig sind. Sie müssen unter anderem ein Netzwerk erstellen, Container starten, alle Umgebungsvariablen angeben und Ports verfügbar machen. Dabei müssen Sie sich also viel merken, und es ist sicherlich noch schwieriger, dies anderen Personen zu erklären.
 
-Im nächsten Abschnitt wird docker Compose erläutert. Mit docker Compose können Sie Ihre Anwendungs Stapel auf viel einfachere Weise freigeben und mit einem einzelnen Befehl (und einem einfachen Befehl) beginnen.
+Im nächsten Abschnitt wird Docker Compose erläutert. Mit Docker Compose können Sie Ihre Anwendungsstapel auf viel einfachere Weise freigeben, und andere können diese mit einem einzelnen (und einfachen) Befehl starten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit dem Tutorial fort.
+Setzen Sie das Tutorial fort.
 
 > [!div class="nextstepaction"]
 > [Verwenden von Docker Compose](use-docker-compose.md)

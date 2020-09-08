@@ -20,38 +20,39 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016313"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrieren von Geschäftsdaten in SharePoint
-  Sie können Geschäftsdaten in SharePoint integrieren. Geschäftsdaten können von Back-End-Server Anwendungen wie [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel und SAP oder einem Webdienst stammen. Benutzer können Geschäftsdaten anzeigen, hinzufügen, aktualisieren oder löschen, indem Sie externe Listen oder Geschäftsdaten Webparts in SharePoint verwenden.  Benutzer können auf diese Daten auch offline in einer Microsoft Office Anwendung wie Microsoft Outlook zugreifen. Weitere Informationen finden Sie unter [wo können externe Daten angezeigt](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))werden.
+  Sie können Geschäftsdaten in SharePoint integrieren. Geschäftsdaten stammen aus Back-End-Serveranwendungen wie [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel und SAP oder von einem Webdienst. Benutzer können Geschäftsdaten mithilfe externer Listen oder mit Webparts für Geschäftsdaten anzeigen, hinzufügen, ändern oder löschen.  Benutzer können auch offline mit einer Microsoft Office-Anwendung wie Microsoft Outlook auf diese Daten zugreifen. Weitere Informationen finden Sie unter [Wo können externe Daten angezeigt werden?](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
 
- Um Daten in SharePoint zu integrieren, erstellen Sie ein Modell für den Business Data Connectivity (BDC)-Dienst. Der BDC-Dienst ist eine Anwendung in SharePoint, die Informationen zu Daten in Geschäftsanwendungen speichert. Weitere Informationen finden Sie [unter Business Data Connectivity (BDC)-Dienst](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14)).
+ Erstellen Sie ein Modell für den BDC-Dienst (Business Data Connectivity), um Daten mit SharePoint zu integrieren. Bei dem BDC-Dienst handelt es sich um eine Anwendung in SharePoint, die Informationen über Daten in Geschäftsanwendungen speichert. Weitere Informationen finden Sie im Artikel zum [BDC-Dienst (Business Data Connectivity)](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14)).
 
 ## <a name="models-in-visual-studio"></a>Modelle in Visual Studio
- Modelle in Visual Studio ermöglichen das Schreiben von benutzerdefiniertem Code zum Abrufen und Aktualisieren von Daten aus Back-End-Datenquellen. Sie können auch Daten aus mehreren Datenquellen aggregieren. Beispielsweise können Sie eine Liste von Kunden anzeigen, die Daten aus einer [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] Datenbank und einem Webdienst enthält.
+ In Visual Studio können Sie mit Modellen benutzerdefinierten Code zum Abrufen und Ändern von Daten schreiben, die aus Back-End-Datenquellen stammen. Sie können auch Daten aus mehreren Datenquellen aggregieren. Beispielsweise können Sie eine Liste von Kunden anzeigen, die Daten aus einer [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]-Datenbank und einem Webdienst enthält.
 
- Sie können auch Modelle importieren, die bereits in SharePoint bereitgestellt wurden. Nachdem Sie ein Modell importiert haben, können Sie benutzerdefinierten Code hinzufügen oder einfach Visual Studio verwenden, um das Modell in mehreren SharePoint-Serverfarmen zu verpacken und bereitzustellen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
+ Außerdem können Sie Modelle importieren, die bereits in SharePoint bereitgestellt wurden. Nachdem Sie ein Modell importiert haben, können Sie benutzerdefinierten Code hinzufügen oder einfach Visual Studio verwenden, um das Modell zu packen und für mehrere SharePoint-Serverfarmen bereitzustellen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ## <a name="design-a-model-in-visual-studio"></a>Entwerfen eines Modells in Visual Studio
- Ein Modell kann mithilfe eines Designers und mehrerer Tool Fenster entworfen werden. Wenn Sie das Modell entwerfen, generiert Visual Studio die Modell-XML-Datei. Weitere Informationen finden Sie unter [Übersicht über die Entwurfs Tools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).
+ Sie können ein Modell mithilfe eines Designers und mehrerer Toolfenster entwerfen. Während Sie das Modell entwerfen, generiert Visual Studio den XML-Code für das Modell. Weitere Informationen finden Sie unter [Übersicht über die Tools zum Entwerfen von BDC-Modellen](../sharepoint/bdc-model-design-tools-overview.md).
 
- Ein Modell enthält Entitäten und Methoden.
+ Modelle enthalten Entitäten und Methoden.
 
 ### <a name="entities"></a>Entitäten
- Eine Entität beschreibt eine Auflistung von Feldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Entität wird in SharePoint als externer Inhaltstyp angezeigt. Weitere Informationen zu externen Inhaltstypen finden Sie unter [Was sind externe Inhaltstypen?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))
+ Eine Entität beschreibt eine Sammlung von Feldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Identität wird in SharePoint als externer Inhaltstyp angezeigt. Weitere Informationen über externe Inhaltstypen finden Sie unter [Was sind externe Inhaltstypen?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14)).
 
 ### <a name="methods"></a>Methoden
- Eine-Methode ermöglicht es den Consumern eines externen Inhaltstyps, eine Aktion für die Felder einer Entität auszuführen. Beispielsweise können Benutzer mit einer Updater-Methode die Adresse und das Geburtsdatum eines Kunden ändern, wobei `Address` und die `BirthDate` Felder der `Customer` Entität sind.
+ Mithilfe von Methoden können Benutzer eines externen Inhaltstyps Aktionen für die Felder einer Entität durchführen. Beispielsweise könnte eine Updater-Methode Benutzern das Ändern der Adresse und des Geburtsdatums eines Kunden ermöglichen, wenn die Entität `Customer` die Felder `Address` und `BirthDate` aufweist.
 
- Visual Studio generiert eine Dienst Codedatei für jede Entität im Modell. Wenn Sie dem Modell eine Methode hinzufügen, generiert Visual Studio eine entsprechende Methode in der Dienst Codedatei. Fügen Sie jeder Methode Code hinzu, um die entsprechende Aufgabe auszuführen. Wenn Sie dem Modell beispielsweise eine Creator-Methode hinzufügen, generiert Visual Studio in ihrer Dienst Code Datei eine Ersteller-Methode. Diese Methode wird vom BDC-Dienst aufgerufen, wenn ein Benutzer auf die Schaltfläche **Neues Element** in einer Liste klickt, die auf dem Modell basiert. Fügen Sie daher der Creator-Methode Code hinzu, der einer Datenquelle neue Daten hinzufügt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
+ Visual Studio generiert eine Dienstcodedatei für jede Entität in Ihrem Modell. Wenn Sie eine Methode zu Ihrem Modell hinzufügen, generiert Visual Studio eine entsprechende Methode in der Dienstcodedatei. Fügen Sie Code zu jeder Methode hinzu, um die entsprechenden Aufgaben durchzuführen. Wenn Sie beispielsweise die Creator-Methode zum Modell hinzufügen, generiert Visual Studio eine Creator-Methode in Ihrer Dienstcodedatei. Diese Methode wird vom BDC-Dienst aufgerufen, wenn ein Benutzer in einer auf dem Modell basierenden Liste auf **Neues Element** klickt. Fügen Sie daher Code zur Creator-Methode hinzu, der neue Daten zu einer Datenquelle hinzufügt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)|Zeigt, wie Sie ein neues Modell erstellen oder ein Modell importieren, das Sie aus SharePoint exportieren.|
-|[Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)|Erläutert das Entwerfen der Elemente eines Modells mithilfe der Visual Studio-Entwurfs Tools.|
-|[Verwendungsmöglichkeiten von SharePoint Designer und Visual Studio bei der Erstellung von Lösungen mit BCS](/previous-versions/office/developer/sharepoint-2010/ee558875(v=office.14))|Hilft Ihnen bei der Entscheidung, ob Sie Visual Studio verwenden oder SharePoint Designer verwenden möchten, um ein Modell für den BDC zu erstellen.|
+|[Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)|In diesem Artikel erfahren Sie, wie Sie ein neues Modell erstellen oder ein Modell importieren, das Sie aus SharePoint exportiert haben.|
+|[Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)|In diesem Artikel wird erläutert, wie Sie die Elemente eines Modells mithilfe der Entwurfstools von Visual Studio entwerfen.|
+|[Verwenden von SharePoint Designer verglichen mit Visual Studio beim Erstellen von Lösungen mithilfe von BCS](/previous-versions/office/developer/sharepoint-2010/ee558875(v=office.14))|Dieser Artikel unterstützt Sie beim Treffen der Entscheidung, ob Sie Visual Studio oder SharePoint Designer zum Erstellen eines Modells für den BDC-Dienst verwenden sollten.|

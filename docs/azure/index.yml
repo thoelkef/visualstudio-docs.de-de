@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "88639327"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509743"
 landingContent:
 - title: Bereitstellen in Azure App Service
   linkLists:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: Containerentwicklung
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Containertools in Visual Studio
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Kubernetes-Tools
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: Debugging und Leistungsanalyse bei Azure-Diensten
   linkLists:
   - linkListType: tutorial
     links:
     - text: Debuggen von ASP.NET Core auf IIS in Azure
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: Debuggen eines Clouddiensts in Azure
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: Debuggen einer App bei Ausführung auf einem virtuellen Computer
@@ -77,7 +77,7 @@ landingContent:
       url: azure-cache-for-redis-add-connected-service.md
     - text: Azure CosmosDB
       url: azure-cosmosdb-add-connected-service.md
-    - text: Azure-Schlüsseltresor
+    - text: Azure Key Vault
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure SignalR
       url: azure-signalr-add-connected-service.md
