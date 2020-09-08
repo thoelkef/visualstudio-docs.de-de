@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.'
                   href: ca1833.md
+                - name: 'CA1834: Verwenden von StringBuilder.Append(char) für Zeichenfolgen mit einem einzelnen Zeichen'
+                  href: ca1834.md
                 - name: 'CA1835: Arbeitsspeicherüberladungen von „ReadAsync/WriteAsync“-Methoden des Datenstroms bevorzugen.'
                   href: ca1835.md
                 - name: 'CA1836: Ziehen Sie "IsEmpty" gegenüber "Count" vor (falls verfügbar)'
