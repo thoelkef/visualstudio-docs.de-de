@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176692"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485585"
 ---
 # <a name="persist-your-data"></a> Beibehalten von Daten
 
@@ -86,7 +86,7 @@ Wie bereits erwähnt, verwenden Sie ein **benanntes Volume**. Sie können sich e
     docker volume create todo-db
     ```
 
-1. Beenden Sie den Container der Aufgabenlisten-App wieder über das Dashboard (oder mit `docker rm -f <id>`), da er weiterhin ausgeführt wird, ohne das persistente Volume zu verwenden.
+1. Beenden Sie den Container der Aufgabenlisten-App wieder in der Docker-Ansicht (oder mit `docker rm -f <id>`), da er weiterhin ausgeführt wird, ohne das persistente Volume zu verwenden.
 
 1. Starten Sie den Container der Aufgabenlisten-App, aber fügen Sie das Flag `-v` hinzu, um eine Volumebereitstellung anzugeben. Sie verwenden das benannte Volume und binden es in `/etc/todos` ein, wodurch alle in dem Pfad erstellten Dateien erfasst werden.
 
@@ -98,7 +98,7 @@ Wie bereits erwähnt, verwenden Sie ein **benanntes Volume**. Sie können sich e
 
     ![Zur Aufgabenliste hinzugefügte Elemente](media/items-added.png)
 
-1. Entfernen Sie den Container für die Aufgabenlisten-App. Verwenden Sie das Dashboard oder `docker ps`, um die ID abzurufen. Verwenden Sie dann `docker rm -f <id>`, um sie zu entfernen.
+1. Entfernen Sie den Container für die Aufgabenlisten-App. Verwenden Sie die Docker-Ansicht oder `docker ps`, um die ID abzurufen, und dann `docker rm -f <id>`, um sie zu entfernen.
 
 1. Starten Sie mithilfe desselben Befehls, den Sie oben verwendet haben, einen neuen Container.
 
@@ -143,7 +143,7 @@ Allerdings haben Sie auch gelernt, dass das Neuerstellen von Images für jede Ä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Setzen Sie das Tutorial fort.
+Tutorial fortsetzen!
 
 > [!div class="nextstepaction"]
 > [Verwenden von Bindungsbereitstellungen](use-bind-mounts.md)

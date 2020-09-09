@@ -55,66 +55,6 @@
           items:
             - name: Unterdrücken von Legacyanalysewarnungen für generierten Code
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Anwendungsfehler bei der Legacyanalyse
-          items:
-            - name: Richtlinienfehler bei der Legacyanalyse
-              href: code-analysis-policy-errors.md
-            - name: Übersicht
-              href: code-analysis-application-errors.md
-            - name: CA0001
-              href: ca0001.md
-            - name: CA0051
-              href: ca0051.md
-            - name: CA0052
-              href: ca0052.md
-            - name: CA0053
-              href: ca0053.md
-            - name: CA0054
-              href: ca0054.md
-            - name: CA0055
-              href: ca0055.md
-            - name: CA0056
-              href: ca0056.md
-            - name: CA0057
-              href: ca0057.md
-            - name: CA0058
-              href: ca0058.md
-            - name: CA0059
-              href: ca0059.md
-            - name: CA0060
-              href: ca0060.md
-            - name: CA0061
-              href: ca0061.md
-            - name: CA0062
-              href: ca0062.md
-            - name: CA0063
-              href: ca0063.md
-            - name: CA0064
-              href: ca0064.md
-            - name: A0065
-              href: ca0065.md
-            - name: CA0066
-              href: ca0066.md
-            - name: CA0067
-              href: ca0067.md
-            - name: CA0068
-              href: ca0068.md
-            - name: CA0069
-              href: ca0069.md
-            - name: CA0070
-              href: ca0070.md
-            - name: CA0501
-              href: ca0501.md
-            - name: CA0502
-              href: ca0502.md
-            - name: CA0503
-              href: ca0503.md
-            - name: CA0504
-              href: ca0504.md
-            - name: CA0505
-              href: ca0505.md
-            - name: FxCopCmd-Fehler
-              href: fxcopcmd-errors.md
         - name: Eincheckrichtlinien
           items:
             - name: Erstellen oder Aktualisieren von Eincheckrichtlinien
@@ -137,40 +77,6 @@
                   href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
                 - name: FAQ
                   href: fxcop-analyzers-faq.md
-                - name: Portierte Regeln
-                  href: fxcop-rule-port-status.md
-            - name: Konfigurieren von FxCop-Analysetools
-              items:
-                - name: Regelsätze
-                  items:
-                    - name: Übersicht
-                      href: rule-set-reference.md
-                    - name: Alle Regeln
-                      href: all-rules-rule-set.md
-                    - name: Grundlegende Regeln für Richtigkeit
-                      href: basic-correctness-rules-rule-set-for-managed-code.md
-                    - name: Grundlegende Regeln für Entwurfsrichtlinien
-                      href: basic-design-guideline-rules-rule-set-for-managed-code.md
-                    - name: Erweiterte Regeln für Richtigkeit
-                      href: extended-correctness-rules-rule-set-for-managed-code.md
-                    - name: Erweiterte Regeln für Entwurfsrichtlinien
-                      href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-                    - name: Globalisierungsregeln
-                      href: globalization-rules-rule-set-for-managed-code.md
-                    - name: Verwaltete Mindestregeln
-                      href: managed-minimum-rules-rule-set-for-managed-code.md
-                    - name: Verwaltete empfohlene Regeln
-                      href: managed-recommended-rules-rule-set-for-managed-code.md
-                    - name: Gemischte Mindestregeln
-                      href: mixed-minimum-rules-rule-set.md
-                    - name: Gemischte empfohlene Regeln
-                      href: mixed-recommended-rules-rule-set.md
-                    - name: Native Mindestregeln
-                      href: native-minimum-rules-rule-set.md
-                    - name: Native empfohlene Regeln
-                      href: native-recommended-rules-rule-set.md
-                    - name: Sicherheitsregeln
-                      href: security-rules-rule-set-for-managed-code.md
         - name: Regelsätze
           items:
             - name: Übersicht
@@ -181,6 +87,347 @@
               href: how-to-create-a-custom-rule-set.md
             - name: Verwenden des Regelsatz-Editors
               href: working-in-the-code-analysis-rule-set-editor.md
+        - name: Referenz
+          items:
+            - name: Portierte Regeln
+              href: fxcop-rule-port-status.md
+            - name: Nicht portierte Regeln
+              href: fxcop-unported-rules.md
+              items:
+                - name: 'Nicht portierte Regeln, die möglicherweise portiert werden'
+                  href: fxcop-unported-rules-may-get-ported.md
+                  items:
+                    - name: 'CA1004: Generische Methoden müssen den Typparameter angeben.'
+                      href: ca1004.md
+                    - name: 'CA1006: Generische Typen in Membersignaturen nicht schachteln.'
+                      href: ca1006.md
+                    - name: 'CA1007: Nach Möglichkeit Generics verwenden.'
+                      href: ca1007.md
+                    - name: 'CA1011: Basistypen als Parameter übergeben.'
+                      href: ca1011.md
+                    - name: 'CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen.'
+                      href: ca1013.md
+                    - name: 'CA1023: Indexer sollten nicht mehrdimensional sein.'
+                      href: ca1023.md
+                    - name: 'CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.'
+                      href: ca1049.md
+                    - name: 'CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf.'
+                      href: ca1057.md
+                    - name: 'CA1300: MessageBoxOptions angeben.'
+                      href: ca1300.md
+                    - name: 'CA1301: Doppelte Zugriffstasten vermeiden.'
+                      href: ca1301.md
+                    - name: 'CA1306: Gebietsschema für Datentypen festlegen.'
+                      href: ca1306.md
+                    - name: 'CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.'
+                      href: ca1402.md
+                    - name: 'CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.'
+                      href: ca1403.md
+                    - name: 'CA1404: GetLastError unmittelbar nach P/Invoke aufrufen.'
+                      href: ca1404.md
+                    - name: 'CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.'
+                      href: ca1405.md
+                    - name: 'CA1407: Statische Member in für COM sichtbaren Typen vermeiden.'
+                      href: ca1407.md
+                    - name: 'CA1408: AutoDual ClassInterfaceType nicht verwenden.'
+                      href: ca1408.md
+                    - name: 'CA1409: Für COM sichtbare Typen müssen erstellt werden können.'
+                      href: ca1409.md
+                    - name: 'CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.'
+                      href: ca1410.md
+                    - name: 'CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein.'
+                      href: ca1411.md
+                    - name: 'CA1412: ComSource-Schnittstellen als IDispatch markieren.'
+                      href: ca1412.md
+                    - name: 'CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden.'
+                      href: ca1413.md
+                    - name: 'CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren.'
+                      href: ca1414.md
+                    - name: 'CA1415: P/Invokes korrekt deklarieren.'
+                      href: ca1415.md
+                    - name: 'CA1500: Variablennamen sollten nicht mit Feldnamen übereinstimmen.'
+                      href: ca1500.md
+                    - name: 'CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle".'
+                      href: ca1600.md
+                    - name: 'CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern.'
+                      href: ca1601.md
+                    - name: 'CA1704: Bezeichner sollten korrekt geschrieben werden.'
+                      href: ca1704.md
+                    - name: 'CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.'
+                      href: ca1709.md
+                    - name: 'CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.'
+                      href: ca1719.md
+                    - name: 'CA1722: Bezeichner sollten kein falsches Präfix aufweisen.'
+                      href: ca1722.md
+                    - name: 'CA1726: Bevorzugte Begriffe verwenden.'
+                      href: ca1726.md
+                    - name: 'CA1900: Werttypfelder sollten portabel sein.'
+                      href: ca1900.md
+                    - name: 'CA2001: Keine problematischen Methoden aufrufen.'
+                      href: ca2001.md
+                    - name: 'CA2004: Aufrufe an GC.KeepAlive entfernen.'
+                      href: ca2004.md
+                    - name: 'CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.'
+                      href: ca2006.md
+                    - name: 'CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.'
+                      href: ca2204.md
+                    - name: 'CA2205: Verwaltete Entsprechungen der Win32 API verwenden.'
+                      href: ca2205.md
+                    - name: 'CA2212: ServicedComponents nicht mit WebMethod markieren.'
+                      href: ca2212.md
+                    - name: 'CA2218: GetHashCode beim Überschreiben von Equals überschreiben.'
+                      href: ca2218.md
+                    - name: 'CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.'
+                      href: ca2224.md
+                    - name: 'CA2232: Windows Forms-Einstiegspunkte mit STAThread markieren.'
+                      href: ca2232.md
+                    - name: 'CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.'
+                      href: ca2236.md
+                    - name: 'CA2238: Serialisierungsmethoden korrekt implementieren.'
+                      href: ca2238.md
+                    - name: 'CA2239: Deserialisierungsmethoden für optionale Felder angeben.'
+                      href: ca2239.md
+                    - name: 'CA2240: ISerializable ordnungsgemäß implementieren.'
+                      href: ca2240.md
+                - name: Veraltete Regeln
+                  href: fxcop-unported-deprecated-rules.md
+                  items:
+                    - name: 'CA1009: Ereignishandler korrekt deklarieren.'
+                      href: ca1009.md
+                    - name: 'CA1020: Namespaces mit wenigen Typen vermeiden.'
+                      href: ca1020.md
+                    - name: 'CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen.'
+                      href: ca1025.md
+                    - name: 'CA1026: Standardparameter sollten nicht verwendet werden.'
+                      href: ca1026.md
+                    - name: 'CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung auf.'
+                      href: ca1035.md
+                    - name: 'CA1038: Enumeratoren sollten eine starke Typisierung aufweisen.'
+                      href: ca1038.md
+                    - name: 'CA1039: Listen weisen eine starke Typisierung auf.'
+                      href: ca1039.md
+                    - name: 'CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren.'
+                      href: ca1048.md
+                    - name: 'CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen.'
+                      href: ca1059.md
+                    - name: 'CA1302: Keine Hartkodierung für gebietsschemaspezifische Zeichenfolgen verwenden.'
+                      href: ca1302.md
+                    - name: 'CA1400: Für P/Invoke müssen Einstiegspunkte vorhanden sein.'
+                      href: ca1400.md
+                    - name: 'CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden.'
+                      href: ca1406.md
+                    - name: 'CA1504: Irreführende Feldnamen überprüfen.'
+                      href: ca1504.md
+                    - name: 'CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.'
+                      href: ca1701.md
+                    - name: 'CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.'
+                      href: ca1702.md
+                    - name: 'CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.'
+                      href: ca1703.md
+                    - name: 'CA1800: Keine unnötigen Umwandlungen.'
+                      href: ca1800.md
+                    - name: 'CA1804: Nicht verwendete lokale Variablen entfernen.'
+                      href: ca1804.md
+                    - name: 'CA1809: Übermäßige lokale Variablen vermeiden.'
+                      href: ca1809.md
+                    - name: 'CA1811: Nicht aufgerufenen privaten Code vermeiden.'
+                      href: ca1811.md
+                    - name: 'CA1901: Deklarationen von P/Invoke müssen portabel sein.'
+                      href: ca1901.md
+                    - name: 'CA1903: Nur API aus Zielframework verwenden.'
+                      href: ca1903.md
+                    - name: 'CA2003: Fibers nicht als Threads behandeln.'
+                      href: ca2003.md
+                    - name: 'CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen.'
+                      href: ca2102.md
+                    - name: 'CA2103: Imperative Sicherheit überprüfen.'
+                      href: ca2103.md
+                    - name: 'CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren.'
+                      href: ca2104.md
+                    - name: 'CA2105: Arrayfelder dürfen nicht schreibgeschützt sein.'
+                      href: ca2105.md
+                    - name: 'CA2106: Sichere Bestätigungen.'
+                      href: ca2106.md
+                    - name: 'CA2107: Verwendung von Deny und PermitOnly überprüfen.'
+                      href: ca2107.md
+                    - name: 'CA2108: Deklarative Sicherheit auf Werttypen überprüfen.'
+                      href: ca2108.md
+                    - name: 'CA2111: Zeiger sollten nicht sichtbar sein.'
+                      href: ca2111.md
+                    - name: 'CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.'
+                      href: ca2112.md
+                    - name: 'CA2114: Methodensicherheit sollte Superset des Typs sein.'
+                      href: ca2114.md
+                    - name: 'CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.'
+                      href: ca2115.md
+                    - name: 'CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.'
+                      href: ca2116.md
+                    - name: 'CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.'
+                      href: ca2117.md
+                    - name: 'CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen.'
+                      href: ca2118.md
+                    - name: 'CA2120: Sichere Serialisierungskonstruktoren.'
+                      href: ca2120.md
+                    - name: 'CA2121: Statische Konstruktoren sollten privat sein.'
+                      href: ca2121.md
+                    - name: 'CA2122: Methoden mit Linkaufrufen nicht indirekt verfügbar machen.'
+                      href: ca2122.md
+                    - name: 'CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.'
+                      href: ca2123.md
+                    - name: 'CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.'
+                      href: ca2124.md
+                    - name: 'CA2126: Typlinkaufrufe erfordern Vererbungsanforderungen.'
+                      href: ca2126.md
+                    - name: 'CA2130: Sicherheitskritische Konstanten sollten transparent sein.'
+                      href: ca2130.md
+                    - name: 'CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein.'
+                      href: ca2131.md
+                    - name: 'CA2132: Standardkonstruktoren müssen mindestens so kritisch sein wie die Standardkonstruktoren des Basistyps.'
+                      href: ca2132.md
+                    - name: 'CA2133: Delegaten müssen an Methoden mit konsistenter Transparenz gebunden werden.'
+                      href: ca2133.md
+                    - name: 'CA2134: Methoden müssen beim Überschreiben von Basismethoden eine konsistente Transparenz wahren.'
+                      href: ca2134.md
+                    - name: 'CA2135: Assemblys der Stufe 2 dürfen keine LinkDemands enthalten.'
+                      href: ca2135.md
+                    - name: 'CA2136: Member dürfen keine miteinander in Konflikt stehenden Transparenzanmerkungen aufweisen.'
+                      href: ca2136.md
+                    - name: 'CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten.'
+                      href: ca2137.md
+                    - name: 'CA2138: Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.'
+                      href: ca2138.md
+                    - name: 'CA2139: Transparente Methoden dürfen das HandleProcessCorruptingExceptions-Attribut nicht verwenden.'
+                      href: ca2139.md
+                    - name: 'CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.'
+                      href: ca2140.md
+                    - name: 'CA2141: Transparente Methoden dürfen keine LinkDemands erfüllen'
+                      href: ca2141.md
+                    - name: 'CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden.'
+                      href: ca2142.md
+                    - name: 'CA2143: Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.'
+                      href: ca2143.md
+                    - name: 'CA2144: Transparenter Code darf keine Assemblys aus Bytearrays laden.'
+                      href: ca2144.md
+                    - name: 'CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity-Attribut versehen werden.'
+                      href: ca2145.md
+                    - name: 'CA2146: Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.'
+                      href: ca2146.md
+                    - name: 'CA2147: Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.'
+                      href: ca2147.md
+                    - name: 'CA2149: Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.'
+                      href: ca2149.md
+                    - name: 'CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein.'
+                      href: ca2151.md
+                    - name: 'CA2202: Objekte nicht mehrmals verwerfen.'
+                      href: ca2202.md
+                    - name: 'CA2210: Assemblys müssen gültige starke Namen aufweisen.'
+                      href: ca2210.md
+                    - name: 'CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen.'
+                      href: ca2220.md
+                    - name: 'CA2221: Finalizer sollten geschützt sein.'
+                      href: ca2221.md
+                    - name: 'CA2222: Sichtbarkeit für geerbte Member nicht verringern.'
+                      href: ca2222.md
+                    - name: 'CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.'
+                      href: ca2223.md
+                    - name: 'CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.'
+                      href: ca2228.md
+                    - name: 'CA2230: params für Variablenargumente verwenden.'
+                      href: ca2230.md
+                    - name: 'CA2233: Vorgänge sollten nicht überlaufen.'
+                      href: ca2233.md
+                    - name: CA5122 P-Invoke-Deklarationen sollten nicht sicherungskritisch sein
+                      href: ca5122.md
+                - name: Anwendungsfehler bei der Legacyanalyse
+                  items:
+                    - name: Richtlinienfehler bei der Legacyanalyse
+                      href: code-analysis-policy-errors.md
+                    - name: Übersicht
+                      href: code-analysis-application-errors.md
+                    - name: CA0001
+                      href: ca0001.md
+                    - name: CA0051
+                      href: ca0051.md
+                    - name: CA0052
+                      href: ca0052.md
+                    - name: CA0053
+                      href: ca0053.md
+                    - name: CA0054
+                      href: ca0054.md
+                    - name: CA0055
+                      href: ca0055.md
+                    - name: CA0056
+                      href: ca0056.md
+                    - name: CA0057
+                      href: ca0057.md
+                    - name: CA0058
+                      href: ca0058.md
+                    - name: CA0059
+                      href: ca0059.md
+                    - name: CA0060
+                      href: ca0060.md
+                    - name: CA0061
+                      href: ca0061.md
+                    - name: CA0062
+                      href: ca0062.md
+                    - name: CA0063
+                      href: ca0063.md
+                    - name: CA0064
+                      href: ca0064.md
+                    - name: A0065
+                      href: ca0065.md
+                    - name: CA0066
+                      href: ca0066.md
+                    - name: CA0067
+                      href: ca0067.md
+                    - name: CA0068
+                      href: ca0068.md
+                    - name: CA0069
+                      href: ca0069.md
+                    - name: CA0070
+                      href: ca0070.md
+                    - name: CA0501
+                      href: ca0501.md
+                    - name: CA0502
+                      href: ca0502.md
+                    - name: CA0503
+                      href: ca0503.md
+                    - name: CA0504
+                      href: ca0504.md
+                    - name: CA0505
+                      href: ca0505.md
+                    - name: FxCopCmd-Fehler
+                      href: fxcopcmd-errors.md
+            - name: Regelsätze
+              items:
+                - name: Übersicht
+                  href: rule-set-reference.md
+                - name: Alle Regeln
+                  href: all-rules-rule-set.md
+                - name: Grundlegende Regeln für Richtigkeit
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: Grundlegende Regeln für Entwurfsrichtlinien
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: Erweiterte Regeln für Richtigkeit
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: Erweiterte Regeln für Entwurfsrichtlinien
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: Globalisierungsregeln
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: Verwaltete Mindestregeln
+                  href: managed-minimum-rules-rule-set-for-managed-code.md
+                - name: Verwaltete empfohlene Regeln
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: Gemischte Mindestregeln
+                  href: mixed-minimum-rules-rule-set.md
+                - name: Gemischte empfohlene Regeln
+                  href: mixed-recommended-rules-rule-set.md
+                - name: Native Mindestregeln
+                  href: native-minimum-rules-rule-set.md
+                - name: Native empfohlene Regeln
+                  href: native-recommended-rules-rule-set.md
+                - name: Sicherheitsregeln
+                  href: security-rules-rule-set-for-managed-code.md
     - name: Codemetrik
       items:
         - name: Übersicht
@@ -198,15 +445,6 @@
               href: code-analysis-for-managed-code-warnings.md
             - name: Übersicht über Codequalitätsregeln
               href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: Kryptografiewarnungen
-              items:
-                - name: Übersicht
-                  displayName: cryptography warnings
-                  href: cryptography-warnings.md
-                - name: 'CA5350: Keine schwachen Kryptografiealgorithmen verwenden.'
-                  href: ca5350.md
-                - name: CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
-                  href: ca5351.md
             - name: Entwurfswarnungen
               items:
                 - name: Übersicht
@@ -220,26 +458,14 @@
                   href: ca1002.md
                 - name: 'CA1003: Generische Ereignishandlerinstanzen verwenden.'
                   href: ca1003.md
-                - name: 'CA1004: Generische Methoden müssen den Typparameter angeben.'
-                  href: ca1004.md
                 - name: 'CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.'
                   href: ca1005.md
-                - name: 'CA1006: Generische Typen in Membersignaturen nicht schachteln.'
-                  href: ca1006.md
-                - name: 'CA1007: Nach Möglichkeit Generics verwenden.'
-                  href: ca1007.md
                 - name: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
                   href: ca1008.md
-                - name: 'CA1009: Ereignishandler korrekt deklarieren.'
-                  href: ca1009.md
                 - name: 'CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.'
                   href: ca1010.md
-                - name: 'CA1011: Basistypen als Parameter übergeben.'
-                  href: ca1011.md
                 - name: 'CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen.'
                   href: ca1012.md
-                - name: 'CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen.'
-                  href: ca1013.md
                 - name: 'CA1014: Assemblys mit CLSCompliantAttribute markieren.'
                   href: ca1014.md
                 - name: 'CA1016: Assemblys mit AssemblyVersionAttribute markieren.'
@@ -250,18 +476,10 @@
                   href: ca1018.md
                 - name: 'CA1019: Accessoren für Attributargumente definieren.'
                   href: ca1019.md
-                - name: 'CA1020: Namespaces mit wenigen Typen vermeiden.'
-                  href: ca1020.md
                 - name: 'CA1021: out-Parameter vermeiden.'
                   href: ca1021.md
-                - name: 'CA1023: Indexer sollten nicht mehrdimensional sein.'
-                  href: ca1023.md
                 - name: 'CA1024: Nach Möglichkeit Eigenschaften verwenden.'
                   href: ca1024.md
-                - name: 'CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen.'
-                  href: ca1025.md
-                - name: 'CA1026: Standardparameter sollten nicht verwendet werden.'
-                  href: ca1026.md
                 - name: 'CA1027: Enumerationen mit FlagsAttribute markieren.'
                   href: ca1027.md
                 - name: 'CA1028: Der Enumerationsspeicher sollte Int32 sein.'
@@ -276,14 +494,8 @@
                   href: ca1033.md
                 - name: 'CA1034: Geschachtelte Typen sollten nicht sichtbar sein.'
                   href: ca1034.md
-                - name: 'CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung auf.'
-                  href: ca1035.md
                 - name: 'CA1036: Methoden bei vergleichbaren Typen überschreiben.'
                   href: ca1036.md
-                - name: 'CA1038: Enumeratoren sollten eine starke Typisierung aufweisen.'
-                  href: ca1038.md
-                - name: 'CA1039: Listen weisen eine starke Typisierung auf.'
-                  href: ca1039.md
                 - name: 'CA1040: Leere Schnittstellen vermeiden.'
                   href: ca1040.md
                 - name: 'CA1041: ObsoleteAttribute-Meldung bereitstellen.'
@@ -298,10 +510,6 @@
                   href: ca1046.md
                 - name: 'CA1047: Geschützte Member in versiegelten Typen nicht deklarieren.'
                   href: ca1047.md
-                - name: 'CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren.'
-                  href: ca1048.md
-                - name: 'CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.'
-                  href: ca1049.md
                 - name: 'CA1050: Typen in Namespaces deklarieren.'
                   href: ca1050.md
                 - name: 'CA1051: Sichtbare Instanzfelder nicht deklarieren.'
@@ -316,12 +524,8 @@
                   href: ca1055.md
                 - name: 'CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.'
                   href: ca1056.md
-                - name: 'CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf.'
-                  href: ca1057.md
                 - name: 'CA1058: Typen sollten bestimmte Basistypen nicht erweitern.'
                   href: ca1058.md
-                - name: 'CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen.'
-                  href: ca1059.md
                 - name: 'CA1060: P/Invokes in NativeMethods-Klasse verschieben.'
                   href: ca1060.md
                 - name: 'CA1061: Basisklassenmethoden nicht ausblenden.'
@@ -344,8 +548,6 @@
                   href: ca1069.md
                 - name: 'CA1070: Ereignisfelder dürfen nicht als virtuell deklariert werden.'
                   href: ca1070.md
-                - name: 'CA2210: Assemblys müssen gültige starke Namen aufweisen.'
-                  href: ca2210.md
             - name: Warnungen in der Dokumentation
               items:
                 - name: Übersicht
@@ -358,20 +560,12 @@
                 - name: Übersicht
                   displayName: globalization warnings
                   href: globalization-warnings.md
-                - name: 'CA1300: MessageBoxOptions angeben.'
-                  href: ca1300.md
-                - name: 'CA1301: Doppelte Zugriffstasten vermeiden.'
-                  href: ca1301.md
-                - name: 'CA1302: Keine Hartkodierung für gebietsschemaspezifische Zeichenfolgen verwenden.'
-                  href: ca1302.md
                 - name: 'CA1303: Literale nicht als lokalisierte Parameter übergeben.'
                   href: ca1303.md
                 - name: 'CA1304: CultureInfo angeben.'
                   href: ca1304.md
                 - name: 'CA1305: IFormatProvider angeben.'
                   href: ca1305.md
-                - name: 'CA1306: Gebietsschema für Datentypen festlegen.'
-                  href: ca1306.md
                 - name: 'CA1307: "StringComparison" zur Verdeutlichung angeben'
                   href: ca1307.md
                 - name: 'CA1308: Zeichenfolgen in Großbuchstaben normalisieren.'
@@ -382,43 +576,13 @@
                   href: ca1310.md
                 - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.'
                   href: ca2101.md
-            - name: Interoperabilitätswarnungen
+            - name: Portabilitäts- und Interoperabilitätswarnungen
               items:
                 - name: Übersicht
-                  displayName: interoperability warnings
+                  displayName: portability and interoperability warnings
                   href: interoperability-warnings.md
-                - name: 'CA1400: Für P/Invoke müssen Einstiegspunkte vorhanden sein.'
-                  href: ca1400.md
                 - name: 'CA1401: P/Invokes dürfen nicht sichtbar sein.'
                   href: ca1401.md
-                - name: 'CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.'
-                  href: ca1402.md
-                - name: 'CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.'
-                  href: ca1403.md
-                - name: 'CA1404: GetLastError unmittelbar nach P/Invoke aufrufen.'
-                  href: ca1404.md
-                - name: 'CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.'
-                  href: ca1405.md
-                - name: 'CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden.'
-                  href: ca1406.md
-                - name: 'CA1407: Statische Member in für COM sichtbaren Typen vermeiden.'
-                  href: ca1407.md
-                - name: 'CA1408: AutoDual ClassInterfaceType nicht verwenden.'
-                  href: ca1408.md
-                - name: 'CA1409: Für COM sichtbare Typen müssen erstellt werden können.'
-                  href: ca1409.md
-                - name: 'CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.'
-                  href: ca1410.md
-                - name: 'CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein.'
-                  href: ca1411.md
-                - name: 'CA1412: ComSource-Schnittstellen als IDispatch markieren.'
-                  href: ca1412.md
-                - name: 'CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden.'
-                  href: ca1413.md
-                - name: 'CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren.'
-                  href: ca1414.md
-                - name: 'CA1415: P/Invokes korrekt deklarieren.'
-                  href: ca1415.md
                 - name: 'CA1417: "OutAttribute" nicht für Zeichenfolgenparameter für P/Invokes verwenden.'
                   href: ca1417.md
             - name: Verwaltbarkeitswarnungen
@@ -426,14 +590,10 @@
                 - name: Übersicht
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
-                - name: 'CA1500: Variablennamen sollten nicht mit Feldnamen übereinstimmen.'
-                  href: ca1500.md
                 - name: 'CA1501: Übermäßige Vererbung vermeiden.'
                   href: ca1501.md
                 - name: 'CA1502: Übermäßige Komplexität vermeiden.'
                   href: ca1502.md
-                - name: 'CA1504: Irreführende Feldnamen überprüfen.'
-                  href: ca1504.md
                 - name: 'CA1505: Nicht wartbaren Code vermeiden.'
                   href: ca1505.md
                 - name: 'CA1506: Übermäßige Klassenkopplungen vermeiden.'
@@ -444,15 +604,6 @@
                   href: ca1508.md
                 - name: 'CA1509: Ungültiger Eintrag in der Konfigurationsdatei für die Codemetrik.'
                   href: ca1509.md
-            - name: Mobilitätswarnungen
-              items:
-                - name: Übersicht
-                  displayName: mobility warnings
-                  href: mobility-warnings.md
-                - name: 'CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle".'
-                  href: ca1600.md
-                - name: 'CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern.'
-                  href: ca1601.md
             - name: Benennungswarnungen
               items:
                 - name: Übersicht
@@ -460,20 +611,10 @@
                   href: naming-warnings.md
                 - name: 'CA1700: Enumerationswerte nicht mit "Reserviert" benennen.'
                   href: ca1700.md
-                - name: 'CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.'
-                  href: ca1701.md
-                - name: 'CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.'
-                  href: ca1702.md
-                - name: 'CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.'
-                  href: ca1703.md
-                - name: 'CA1704: Bezeichner sollten korrekt geschrieben werden.'
-                  href: ca1704.md
                 - name: 'CA1707: Bezeichner sollten keine Unterstriche enthalten.'
                   href: ca1707.md
                 - name: 'CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.'
                   href: ca1708.md
-                - name: 'CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.'
-                  href: ca1709.md
                 - name: 'CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.'
                   href: ca1710.md
                 - name: 'CA1711: Bezeichner sollten kein falsches Suffix aufweisen.'
@@ -490,43 +631,27 @@
                   href: ca1716.md
                 - name: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.'
                   href: ca1717.md
-                - name: 'CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.'
-                  href: ca1719.md
                 - name: 'CA1720: Bezeichner dürfen keine Typnamen enthalten.'
                   href: ca1720.md
                 - name: 'CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.'
                   href: ca1721.md
-                - name: 'CA1722: Bezeichner sollten kein falsches Präfix aufweisen.'
-                  href: ca1722.md
-                - name: 'CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.'
-                  href: ca1725.md
                 - name: 'CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.'
                   href: ca1724.md
-                - name: 'CA1726: Bevorzugte Begriffe verwenden.'
-                  href: ca1726.md
+                - name: 'CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.'
+                  href: ca1725.md
             - name: Leistungswarnungen
               items:
                 - name: Übersicht
                   displayName: performance warnings
                   href: performance-warnings.md
-                - name: 'CA1800: Keine unnötigen Umwandlungen.'
-                  href: ca1800.md
-                - name: 'CA1801: Nicht verwendete Parameter überprüfen.'
-                  href: ca1801.md
                 - name: 'CA1802: Nach Möglichkeit Literale verwenden.'
                   href: ca1802.md
-                - name: 'CA1804: Nicht verwendete lokale Variablen entfernen.'
-                  href: ca1804.md
                 - name: 'CA1805: Keine unnötige Initialisierung.'
                   href: ca1805.md
                 - name: 'CA1806: Methodenergebnisse nicht ignorieren.'
                   href: ca1806.md
-                - name: 'CA1809: Übermäßige lokale Variablen vermeiden.'
-                  href: ca1809.md
                 - name: 'CA1810: Statische Felder von Referenztypen inline initialisieren.'
                   href: ca1810.md
-                - name: 'CA1811: Nicht aufgerufenen privaten Code vermeiden.'
-                  href: ca1811.md
                 - name: 'CA1812: Nicht instanziierte interne Klassen vermeiden.'
                   href: ca1812.md
                 - name: 'CA1813: Nicht versiegelte Attribute vermeiden.'
@@ -535,8 +660,6 @@
                   href: ca1814.md
                 - name: 'CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben.'
                   href: ca1815.md
-                - name: 'CA1816: GC.SuppressFinalize korrekt aufrufen.'
-                  href: ca1816.md
                 - name: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
                   href: ca1819.md
                 - name: 'CA1820: Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.'
@@ -577,17 +700,6 @@
                   href: ca1837.md
                 - name: 'CA1838: StringBuilder-Parameter für "P/Invokes" vermeiden.'
                   href: ca1838.md
-            - name: Portabilitätswarnungen
-              items:
-                - name: Übersicht
-                  displayName: portability warnings
-                  href: portability-warnings.md
-                - name: 'CA1900: Werttypfelder sollten portabel sein.'
-                  href: ca1900.md
-                - name: 'CA1901: Deklarationen von P/Invoke müssen portabel sein.'
-                  href: ca1901.md
-                - name: 'CA1903: Nur API aus Zielframework verwenden.'
-                  href: ca1903.md
             - name: Zuverlässigkeitswarnungen
               items:
                 - name: Übersicht
@@ -595,16 +707,8 @@
                   href: reliability-warnings.md
                 - name: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht.'
                   href: ca2000.md
-                - name: 'CA2001: Keine problematischen Methoden aufrufen.'
-                  href: ca2001.md
                 - name: 'CA2002: Auf Objekten mit schwacher Identität nicht sperren.'
                   href: ca2002.md
-                - name: 'CA2003: Fibers nicht als Threads behandeln.'
-                  href: ca2003.md
-                - name: 'CA2004: Aufrufe an GC.KeepAlive entfernen.'
-                  href: ca2004.md
-                - name: 'CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.'
-                  href: ca2006.md
                 - name: 'CA2007: Eine Aufgabe nicht direkt abwarten'
                   href: ca2007.md
                 - name: 'CA2008: Keine Tasks ohne Übergabe eines TaskSchedulers erstellen'
@@ -630,92 +734,12 @@
                   href: security-warnings.md
                 - name: 'CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.'
                   href: ca2100.md
-                - name: 'CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen.'
-                  href: ca2102.md
-                - name: 'CA2103: Imperative Sicherheit überprüfen.'
-                  href: ca2103.md
-                - name: 'CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren.'
-                  href: ca2104.md
-                - name: 'CA2105: Arrayfelder dürfen nicht schreibgeschützt sein.'
-                  href: ca2105.md
-                - name: 'CA2106: Sichere Bestätigungen.'
-                  href: ca2106.md
-                - name: 'CA2107: Verwendung von Deny und PermitOnly überprüfen.'
-                  href: ca2107.md
-                - name: 'CA2108: Deklarative Sicherheit auf Werttypen überprüfen.'
-                  href: ca2108.md
                 - name: 'CA2109: Sichtbare Ereignishandler überprüfen.'
                   href: ca2109.md
-                - name: 'CA2111: Zeiger sollten nicht sichtbar sein.'
-                  href: ca2111.md
-                - name: 'CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.'
-                  href: ca2112.md
-                - name: 'CA2114: Methodensicherheit sollte Superset des Typs sein.'
-                  href: ca2114.md
-                - name: 'CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.'
-                  href: ca2115.md
-                - name: 'CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.'
-                  href: ca2116.md
-                - name: 'CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.'
-                  href: ca2117.md
-                - name: 'CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen.'
-                  href: ca2118.md
                 - name: 'CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.'
                   href: ca2119.md
-                - name: 'CA2120: Sichere Serialisierungskonstruktoren.'
-                  href: ca2120.md
-                - name: 'CA2121: Statische Konstruktoren sollten privat sein.'
-                  href: ca2121.md
-                - name: 'CA2122: Methoden mit Linkaufrufen nicht indirekt verfügbar machen.'
-                  href: ca2122.md
-                - name: 'CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.'
-                  href: ca2123.md
-                - name: 'CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.'
-                  href: ca2124.md
-                - name: 'CA2126: Typlinkaufrufe erfordern Vererbungsanforderungen.'
-                  href: ca2126.md
-                - name: 'CA2130: Sicherheitskritische Konstanten sollten transparent sein.'
-                  href: ca2130.md
-                - name: 'CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein.'
-                  href: ca2131.md
-                - name: 'CA2132: Standardkonstruktoren müssen mindestens so kritisch sein wie die Standardkonstruktoren des Basistyps.'
-                  href: ca2132.md
-                - name: 'CA2133: Delegaten müssen an Methoden mit konsistenter Transparenz gebunden werden.'
-                  href: ca2133.md
-                - name: 'CA2134: Methoden müssen beim Überschreiben von Basismethoden eine konsistente Transparenz wahren.'
-                  href: ca2134.md
-                - name: 'CA2135: Assemblys der Stufe 2 dürfen keine LinkDemands enthalten.'
-                  href: ca2135.md
-                - name: 'CA2136: Member dürfen keine miteinander in Konflikt stehenden Transparenzanmerkungen aufweisen.'
-                  href: ca2136.md
-                - name: 'CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten.'
-                  href: ca2137.md
-                - name: 'CA2138: Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.'
-                  href: ca2138.md
-                - name: 'CA2139: Transparente Methoden dürfen das HandleProcessCorruptingExceptions-Attribut nicht verwenden.'
-                  href: ca2139.md
-                - name: 'CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.'
-                  href: ca2140.md
-                - name: 'CA2141: Transparente Methoden dürfen keine LinkDemands erfüllen'
-                  href: ca2141.md
-                - name: 'CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden.'
-                  href: ca2142.md
-                - name: 'CA2143: Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.'
-                  href: ca2143.md
-                - name: 'CA2144: Transparenter Code darf keine Assemblys aus Bytearrays laden.'
-                  href: ca2144.md
-                - name: 'CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity-Attribut versehen werden.'
-                  href: ca2145.md
-                - name: 'CA2146: Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.'
-                  href: ca2146.md
-                - name: 'CA2147: Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.'
-                  href: ca2147.md
-                - name: 'CA2149: Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.'
-                  href: ca2149.md
-                - name: 'CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein.'
-                  href: ca2151.md
-                - name: CA5122 P-Invoke-Deklarationen sollten nicht sicherungskritisch sein
-                  href: ca5122.md
+                - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden'
+                  href: ca2153.md
                 - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.'
                   href: ca2153.md
                 - name: 'CA2300: Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden'
@@ -800,6 +824,10 @@
                   href: ca3077.md
                 - name: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
                   href: ca3147.md
+                - name: 'CA5350: Keine schwachen Kryptografiealgorithmen verwenden.'
+                  href: ca5350.md
+                - name: CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
+                  href: ca5351.md
                 - name: 'CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.'
                   href: ca5358.md
                 - name: 'CA5359: Zertifikatüberprüfung nicht deaktivieren'
@@ -899,28 +927,18 @@
                   href: usage-warnings.md
                 - name: 'CA1801: Nicht verwendete Parameter überprüfen.'
                   href: ca1801.md
-                - name: 'CA1806: Methodenergebnisse nicht ignorieren.'
-                  href: ca1806.md
                 - name: 'CA1816: GC.SuppressFinalize korrekt aufrufen.'
                   href: ca1816.md
                 - name: 'CA2200: Erneut ausführen, um Stapeldetails beizubehalten.'
                   href: ca2200.md
                 - name: 'CA2201: Keine reservierten Ausnahmetypen auslösen.'
                   href: ca2201.md
-                - name: 'CA2202: Objekte nicht mehrmals verwerfen.'
-                  href: ca2202.md
-                - name: 'CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.'
-                  href: ca2204.md
-                - name: 'CA2205: Verwaltete Entsprechungen der Win32 API verwenden.'
-                  href: ca2205.md
                 - name: 'CA2207: Statische Felder für Werttyp inline initialisieren.'
                   href: ca2207.md
                 - name: 'CA2208: Argumentausnahmen korrekt instanziieren.'
                   href: ca2208.md
                 - name: 'CA2211: Nicht konstante Felder sollten nicht sichtbar sein.'
                   href: ca2211.md
-                - name: 'CA2212: ServicedComponents nicht mit WebMethod markieren.'
-                  href: ca2212.md
                 - name: 'CA2213: Verwerfbare Felder verwerfen.'
                   href: ca2213.md
                 - name: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.'
@@ -931,52 +949,24 @@
                   href: ca2216.md
                 - name: 'CA2217: Enumerationen nicht mit FlagsAttribute markieren.'
                   href: ca2217.md
-                - name: 'CA2218: GetHashCode beim Überschreiben von Equals überschreiben.'
-                  href: ca2218.md
                 - name: 'CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen.'
                   href: ca2219.md
-                - name: 'CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen.'
-                  href: ca2220.md
-                - name: 'CA2221: Finalizer sollten geschützt sein.'
-                  href: ca2221.md
-                - name: 'CA2222: Sichtbarkeit für geerbte Member nicht verringern.'
-                  href: ca2222.md
-                - name: 'CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.'
-                  href: ca2223.md
-                - name: 'CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.'
-                  href: ca2224.md
                 - name: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf.'
                   href: ca2225.md
                 - name: 'CA2226: Operatoren sollten symmetrische Überladungen aufweisen.'
                   href: ca2226.md
                 - name: 'CA2227: Sammlungseigenschaften sollten schreibgeschützt sein.'
                   href: ca2227.md
-                - name: 'CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.'
-                  href: ca2228.md
                 - name: 'CA2229: Serialisierungskonstruktoren implementieren.'
                   href: ca2229.md
-                - name: 'CA2230: params für Variablenargumente verwenden.'
-                  href: ca2230.md
                 - name: 'CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.'
                   href: ca2231.md
-                - name: 'CA2232: Windows Forms-Einstiegspunkte mit STAThread markieren.'
-                  href: ca2232.md
-                - name: 'CA2233: Vorgänge sollten nicht überlaufen.'
-                  href: ca2233.md
                 - name: 'CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.'
                   href: ca2234.md
                 - name: 'CA2235: Alle nicht serialisierbaren Felder markieren.'
                   href: ca2235.md
-                - name: 'CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.'
-                  href: ca2236.md
                 - name: 'CA2237: ISerializable-Typen mit SerializableAttribute markieren.'
                   href: ca2237.md
-                - name: 'CA2238: Serialisierungsmethoden korrekt implementieren.'
-                  href: ca2238.md
-                - name: 'CA2239: Deserialisierungsmethoden für optionale Felder angeben.'
-                  href: ca2239.md
-                - name: 'CA2240: ISerializable ordnungsgemäß implementieren.'
-                  href: ca2240.md
                 - name: 'CA2241: Geben Sie die korrekte Anzahl für Formatierungsmethoden an.'
                   href: ca2241.md
                 - name: 'CA2242: Ordnungsgemäß auf NaN testen.'
@@ -1001,6 +991,7 @@
               items:
                 - name: Übersicht
                   displayName: publish warnings
+                  href: publish-warnings.md
                 - name: 'IL3000: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
                   href: il3000.md
                 - name: 'IL3001: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
