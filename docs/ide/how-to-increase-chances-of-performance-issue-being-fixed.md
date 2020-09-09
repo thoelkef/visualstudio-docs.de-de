@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250516"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509925"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
@@ -171,7 +171,7 @@ Fügen Sie keine Leistungsüberwachungen direkt an Feedbackelemente an, die bere
 
 **Erweiterte Leistungsüberwachung**
 
-Die Funktionen zum Erfassen einer Ablaufverfolgung im Tool „Problem melden“ sind in den meisten Szenarien ausreichend. Es kann jedoch vorkommen, dass mehr Kontrolle über die Erfassung der Ablaufverfolgung erforderlich ist (z. B. eine Ablaufverfolgung mit höherer Puffergröße). In diesem Fall ist PerfView ein besonders gut geeignetes Tool. Schritte zur manuellen Aufzeichnung der Leistungsüberwachung mit dem Tool PerfView finden Sie auf der Seite zum [Aufzeichnen der Leistungsüberwachung mit PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView).
+Die Funktionen zum Erfassen einer Ablaufverfolgung im Tool „Problem melden“ sind in den meisten Szenarien ausreichend. Es kann jedoch vorkommen, dass mehr Kontrolle über die Erfassung der Ablaufverfolgung erforderlich ist (z. B. eine Ablaufverfolgung mit höherer Puffergröße). In diesem Fall ist PerfView ein besonders gut geeignetes Tool. Schritte zur manuellen Aufzeichnung der Leistungsüberwachung mit dem Tool PerfView finden Sie auf der Seite zum [Aufzeichnen der Leistungsüberwachung mit PerfView](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md).
 
 ## <a name="out-of-process-issues"></a>Out-of-Process-Probleme
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729090"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509418"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte Codeänderungen (C# und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -32,15 +32,15 @@ In der folgenden Tabelle sind die Änderungen aufgeführt, die während einer De
 
 |Sprachelement/Feature|Unterstützter Bearbeitungsvorgang|Einschränkungen|
 |-|-|-|
-|Typen|Hinzufügen von Methoden, Feldern, Konstruktoren usw.|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Typen|Hinzufügen von Methoden, Feldern, Konstruktoren usw.|[Ja](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iterators|Hinzufügen oder ändern|Nein|
-|async-/await-Ausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|async-/await-Ausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Dynamische Objekte|Hinzufügen oder ändern|Nein|
-|Lambdaausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ-Ausdrücke|Hinzufügen oder ändern|[Wie bei Lambdaausdrücken](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Lambdaausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|LINQ-Ausdrücke|Hinzufügen oder ändern|[Wie bei Lambdaausdrücken](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> Neuere Sprachfeatures wie Zeichenfolgeninterpolation und NULL-bedingte Operatoren werden von „Bearbeiten und Fortfahren“ in der Regel unterstützt. Aktuelle Informationen finden Sie auf der Seite [Von „Bearbeiten und Fortfahren“ unterstützte Bearbeitungsvorgänge](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
+> Neuere Sprachfeatures wie Zeichenfolgeninterpolation und NULL-bedingte Operatoren werden von „Bearbeiten und Fortfahren“ in der Regel unterstützt. Aktuelle Informationen finden Sie auf der Seite [Von „Bearbeiten und Fortfahren“ unterstützte Bearbeitungsvorgänge](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md).
 
 ## <a name="unsupported-changes-to-code"></a>Nicht unterstützte Änderungen an Code
  Folgende Änderungen am C#- und Visual Basic-Code können während einer Debugsitzung nicht übernommen werden:
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Änderungen aufgeführt, die während einer De
 |Namespaces, Typen, Member|Löschen|
 |Generics|Hinzufügen oder ändern|
 |Schnittstellen|Ändern|
-|Typen|Hinzufügen abstrakter oder virtueller Member, Hinzufügen von Außerkraftsetzung (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Typen|Hinzufügen abstrakter oder virtueller Member, Hinzufügen von Außerkraftsetzung (siehe [Details](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Typen|Destruktor hinzufügen|
 |Member|Ändern eines Members, der auf einen eingebetteten Interoptyp verweist|
 |Member|Ändern eines statischen Members, nachdem darauf durch Ausführen von Code bereits zugegriffen wurde|
@@ -75,8 +75,8 @@ In der folgenden Tabelle sind die Änderungen aufgeführt, die während einer De
 |catch-Blöcke|Ändern, wenn eine aktive Anweisung enthalten ist|
 |Blöcke vom Typ „try-catch-finally“|Ändern, wenn eine aktive Anweisung enthalten ist|
 |Using-Anweisungen|Hinzufügen|
-|Async-Methoden oder -Lambdaausdrücke|Ändern einer Async-Methode oder eines Async-Lambdaausdrucks in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Ändern eines Iterators in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Async-Methoden oder -Lambdaausdrücke|Ändern einer Async-Methode oder eines Async-Lambdaausdrucks in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Iterators|Ändern eines Iterators in einem Projekt für .NET Framework 4 und niedrigere Versionen (siehe [Details](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
 ## <a name="unsafe-code"></a>Unsicherer Code
  Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Die Funktion „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der sich innerhalb einer Methode mit dem `stackalloc`-Operator befindet.

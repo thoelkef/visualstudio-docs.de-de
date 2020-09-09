@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214585"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427001"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -82,7 +82,7 @@ Einige Tools oder Erweiterungen können ausgeschaltet werden, um die Leistung zu
 
 ### <a name="managed-language-service-roslyn"></a>Dienste für verwaltete Sprachen (Roslyn)
 
-Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Überlegungen zur Leistung bei großen Projektmappen)](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform („Roslyn“) finden Sie unter [Performance considerations for large solutions (Überlegungen zur Leistung bei großen Projektmappen)](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 - **Deaktivieren der vollständigen Projektmappenanalyse**
 

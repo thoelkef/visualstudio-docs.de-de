@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 6006689e67e41c774030ccf646658ca31a1e214f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159058"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Visual Studio-Kern-Editor (in Visual Studio Enterprise 2017 enthalten)
@@ -25,7 +25,7 @@ ms.locfileid: "76159058"
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 15.8.27729.1 | Erforderlich
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio-Startseite für C++-Benutzer | 15.0.27128.1 | Optional
@@ -38,7 +38,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio-Startse
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor-Sprachdienste | 15.0.26720.2 | Erforderlich
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs-Tools | 15.7.27617.1 | Erforderlich
@@ -130,11 +130,11 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **ID:** Microsoft.VisualStudio.Workload.Data
 
-**Beschreibung:** Verbinden, Entwickeln und Testen von Datenlösungen mit SQL Server, Azure Data Lake oder Hadoop.
+**Beschreibung:** Hiermit werden Datenlösungen mit SQL Server, Azure Data Lake oder Hadoop verbunden, entwickelt und getestet.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor-Sprachdienste | 15.0.26720.2 | Empfohlen
 Component.Microsoft.Web.LibraryManager | Bibliotheks-Manager | 15.8.27705.0 | Empfohlen
@@ -197,7 +197,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#-Desktopsprachunterstützung
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Anaconda3.x64 | Anaconda3 64-Bit (5.2.0) | 5.2.0 | Empfohlen
 Microsoft.Component.CookiecutterTools | Unterstützung von Cookiecutter-Vorlagen | 15.0.26621.2 | Empfohlen
@@ -242,7 +242,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.8.27825.0 | Erforderlich
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
@@ -258,7 +258,7 @@ Microsoft.VisualStudio.Component.SQL.CLR | CLR-Datentypen für SQL Server | 15.0
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.TextTemplating | Textvorlagentransformation | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.VisualStudioData | Datenquellen und Dienstverweise | 15.6.27406.0 | Erforderlich
-Microsoft.ComponentGroup.Blend | Blend für Visual Studio | 15.6.27406.0 | Empfohlen
+Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 15.6.27406.0 | Empfohlen
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 15.6.27406.0 | Empfohlen
 Microsoft.Net.Component.4.5.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.2 | 15.6.27406.0 | Empfohlen
 Microsoft.Net.Component.4.5.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5 | 15.6.27406.0 | Empfohlen
@@ -325,7 +325,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET und Webentwic
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5-Entwicklungstools | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Component.4.7.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.7.1 | 15.6.27406.0 | Erforderlich
@@ -345,7 +345,7 @@ Component.UnityEngine.x86 | Unity 5.6-Editor (32 Bit) | 15.6.27406.0 | Empfohlen
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.MDD.Linux | Visual C++ für die Linux-Entwicklung | 15.6.27406.0 | Erforderlich
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++-Kernfeatures | 15.6.27406.0 | Erforderlich
@@ -365,7 +365,7 @@ Component.MDD.Linux.GCC.arm | Eingebettete und IoT-Entwicklung | 15.6.27309.0 | 
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.VisualStudio.Component.ClassDesigner | Klassen-Designer | 15.0.26208.0 | Erforderlich
@@ -420,15 +420,15 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Windows XP-Unterstü
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
-## <a name="game-development-with-c"></a>Entwicklung von Spielen mit C++
+## <a name="game-development-with-c"></a>Spieleentwicklung mit C++
 
 **ID:** Microsoft.VisualStudio.Workload.NativeGame
 
-**Beschreibung:** Verwenden Sie die ganze Leistungsfähigkeit von C++ zum Erstellen professioneller Spiele mit DirectX, Unreal oder Cocos2d.
+**Beschreibung:** Verwenden Sie die volle Leistung von C++, um professionelle Spiele zu erstellen, die von DirectX, Unreal oder Cocos2D unterstützt werden.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++-Kernfeatures | 15.6.27406.0 | Erforderlich
@@ -479,15 +479,15 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK und 
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
-## <a name="mobile-development-with-c"></a>Entwicklung mobiler Apps mit C++
+## <a name="mobile-development-with-c"></a>Mobile Entwicklung mit C++
 
 **ID:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**Beschreibung:** Erstellen Sie plattformübergreifende Anwendungen für iOS, Android oder Windows mithilfe von C++.
+**Beschreibung:** Erstellen Sie mit C++ plattformübergreifende Anwendungen für iOS, Android oder Windows.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Android.SDK19.Private | Android SDK-Setup (API-Ebene 19, lokale Installation für die Mobile-Entwicklung mit JavaScript/C++) | 15.9.28107.0 | Erforderlich
 Component.Android.SDK21.Private | Android SDK-Setup (API-Ebene 21, lokale Installation für die Mobile-Entwicklung mit JavaScript/C++) | 15.9.28016.0 | Erforderlich
@@ -514,11 +514,11 @@ Component.MDD.IOS | C++ iOS-Entwicklungstools | 15.0.26621.2 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Beschreibung:** Plattformübergreifende Anwendungsentwicklungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern einschließlich Docker-Unterstützung.
+**Beschreibung:** Hiermit erstellen Sie plattformübergreifende Anwendungen mit .NET Core, ASP.NET Core, HTML, JavaScript und Containern mit Docker-Unterstützung.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor-Sprachdienste | 15.0.26720.2 | Erforderlich
 Component.Microsoft.Web.LibraryManager | Bibliotheks-Manager | 15.8.27705.0 | Erforderlich
@@ -585,11 +585,11 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Entwicklungszeit-IIS-Unte
 
 **ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**Beschreibung:** Erstellen Sie plattformübergreifende Anwendungen für iOS, Android oder Windows mithilfe von Xamarin.
+**Beschreibung:** Erstellen Sie mit Xamarin plattformübergreifende Anwendungen für iOS, Android oder Windows.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Xamarin | Xamarin | 15.8.27906.1 | Erforderlich
 Component.Xamarin.RemotedSimulator | Xamarin Remoted Simulator | 15.6.27323.2 | Erforderlich
@@ -639,7 +639,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | UWP-Tools für Xamarin | 15.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor-Sprachdienste | 15.0.26720.2 | Erforderlich
 Component.Microsoft.Web.LibraryManager | Bibliotheks-Manager | 15.8.27705.0 | Erforderlich
@@ -732,11 +732,11 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Laufzeit. 
+**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mithilfe von Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime. 
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Erforderlich
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript-Diagnose | 15.8.27729.1 | Erforderlich
@@ -754,7 +754,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools 
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++-Kernfeatures | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Neueste v141-Tools in VC++ 2017, Version 15.9 v14.16 | 15.9.28230.55 | Optional
 
-## <a name="officesharepoint-development"></a>Office-/SharePoint-Entwicklung
+## <a name="officesharepoint-development"></a>Office/SharePoint-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.Office
 
@@ -762,7 +762,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Neueste v141-Tools in VC++ 2
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor-Sprachdienste | 15.0.26720.2 | Erforderlich
 Component.Microsoft.Web.LibraryManager | Bibliotheks-Manager | 15.8.27705.0 | Erforderlich
@@ -830,7 +830,7 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Unterstützung der Sprache Python | 15.0.26823.1 | Erforderlich
 Component.CPython3.x64 | Python 3 64-Bit (3.6.6) | 3.6.6 | Empfohlen
@@ -909,7 +909,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Voraussetzungen: ASP.NET- und Webentwicklungstools | 15.9.28219.51 | Optional
 
-## <a name="universal-windows-platform-development"></a>Entwicklung auf der universellen Windows-Plattform
+## <a name="universal-windows-platform-development"></a>Entwicklung für die universelle Windows-Plattform
 
 **ID:** Microsoft.VisualStudio.Workload.Universal
 
@@ -917,12 +917,12 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Voraussetzungen: ASP.NET-
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Erforderlich
 Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.8.27825.0 | Erforderlich
 Microsoft.Component.NetFX.Native | .NET systemeigen | 15.0.26208.0 | Erforderlich
-Microsoft.ComponentGroup.Blend | Blend für Visual Studio | 15.6.27406.0 | Erforderlich
+Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Component.4.5.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5 | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1-Entwicklungstools | 15.8.27924.0 | Erforderlich
@@ -983,11 +983,11 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Beschreibung:** Erstellen Sie Add-Ons und Extensions für Visual Studio, z.B. neue Befehle, Codeanalysen und Toolfenster.
+**Beschreibung:** Erstellen Sie Add-Ons und Erweiterungen für Visual Studio, z. B. neue Befehle, Codeanalysetools und Toolfenster.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.8.27825.0 | Erforderlich
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
@@ -1031,7 +1031,7 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Architektur- u
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Component.CordovaToolset.6.3.1 | Cordova 6.3.1-Toolset | 15.7.27625.0 | Erforderlich
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Erforderlich
@@ -1062,7 +1062,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | UWP-Tools für Cordova | 15.
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Komponenten-ID | Name | Version
+Komponenten-ID | name | Version
 --- | --- | ---
 Component.Android.Emulator | Visual Studio-Emulator für Android | 15.6.27413.0
 Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.14

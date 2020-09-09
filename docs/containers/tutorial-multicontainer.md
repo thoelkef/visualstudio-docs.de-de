@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711663"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490312"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -86,7 +86,7 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
    ```
    
     > [!NOTE]
-    > Für tatsächlich verwendeten Code sollte `HttpClient` nicht nach jeder Anforderung gelöscht werden. Best Practices finden Sie unter [Verwenden von HttpClientFactory zur Implementierung robuster HTTP-Anforderungen](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > Für tatsächlich verwendeten Code sollte `HttpClient` nicht nach jeder Anforderung gelöscht werden. Best Practices finden Sie unter [Verwenden von HttpClientFactory zur Implementierung robuster HTTP-Anforderungen](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    Für .NET Core 3.1 in Visual Studio 2019 oder höher verwendet die Web-API-Vorlage eine WeatherForecast-API, also kommentieren Sie diese Zeile nicht aus. Kommentieren Sie stattdessen die Zeile für ASP.NET 2.x aus.
 
@@ -195,4 +195,4 @@ Sehen Sie sich die Optionen zum Bereitstellen Ihrer [Container in Azure](/azure/
 ## <a name="see-also"></a>Weitere Informationen
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[Containertools](/visualstudio/containers/)
+[Containertools](./index.yml)
