@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841b73bbb0c1f226e4a31a812bf8745bda1f118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507871"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599457"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -34,13 +34,13 @@ Weitere Informationen zum Generieren von Codemetrikdaten in Visual Studio finden
 
 In der folgenden Liste sind die Code Metrikergebnisse aufgeführt, die von Visual Studio berechnet werden:
 
-- **Wart barkeits Index** : berechnet einen Indexwert zwischen 0 und 100, der die relative einfache Verwaltung des Codes darstellt. Ein hoher Wert bedeutet eine bessere Wartbarkeit. Farb codierte Bewertungen können verwendet werden, um schnell Probleme im Code zu erkennen. Eine grüne Bewertung liegt zwischen 20 und 100 und zeigt an, dass der Code eine gute Wartbarkeit hat. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code nicht nur in der Lage ist. Eine rote Bewertung ist eine Bewertung zwischen 0 und 9 und deutet auf eine geringe Wartbarkeit hin. Weitere Informationen finden Sie im Abschnitt [Wartbarkeitsindex Bereich und Bedeutung](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) .
+- **Wart barkeits Index** : berechnet einen Indexwert zwischen 0 und 100, der die relative einfache Verwaltung des Codes darstellt. Ein hoher Wert bedeutet eine bessere Wartbarkeit. Farb codierte Bewertungen können verwendet werden, um schnell Probleme im Code zu erkennen. Eine grüne Bewertung liegt zwischen 20 und 100 und zeigt an, dass der Code eine gute Wartbarkeit hat. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code nicht nur in der Lage ist. Eine rote Bewertung ist eine Bewertung zwischen 0 und 9 und deutet auf eine geringe Wartbarkeit hin. Weitere Informationen finden Sie im Abschnitt [Wartbarkeitsindex Bereich und Bedeutung](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) .
 
 - **Zyklomatische Komplexität** : misst die strukturelle Komplexität des Codes. Sie wird erstellt, indem die Anzahl der unterschiedlichen Codepfade im Fluss des Programms berechnet wird. Ein Programm, das eine komplexe Ablauf Steuerung aufweist, erfordert mehr Tests, um eine gute Code Coverage zu erzielen und weniger wart Bar zu sein. Weitere Informationen finden Sie im [Wikipedia-Eintrag für die zyklomatische Komplexität](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Vererbungs Tiefe** : gibt die Anzahl der verschiedenen Klassen an, die von einem anderen erben, bis hin zur Basisklasse. Die Vererbungs Tiefe ähnelt der Klassen Kopplung darin, dass sich eine Änderung in einer Basisklasse auf eine beliebige geerbte Klasse auswirken kann. Je höher diese Zahl ist, desto tiefer die Vererbung und desto höher ist das Potenzial für Basisklassen Änderungen, die zu einer Breaking Change führen. Bei einer tiefen Vererbung ist ein niedriger Wert gut, und ein hoher Wert ist schlecht.
 
-- **Klassen Kopplung** : misst die Kopplung mit eindeutigen Klassen durch Parameter, lokale Variablen, Rückgabe Typen, Methodenaufrufe, generische oder Vorlagen Instanziierungen, Basisklassen, Schnittstellen Implementierungen, für externe Typen definierte Felder und die Attribut Ergänzung. Ein guter Software Entwurf legt fest, dass die Typen und Methoden eine hohe Kohäsion und eine geringe Kopplung aufweisen sollten. Hohe Kopplung weist auf einen Entwurf hin, der aufgrund der vielen Abhängigkeiten von anderen Typen schwierig zu verwenden und zu warten ist. Weitere Informationen finden Sie im Blogbeitrag [Klassen Kopplung](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
+- **Klassen Kopplung** : misst die Kopplung mit eindeutigen Klassen durch Parameter, lokale Variablen, Rückgabe Typen, Methodenaufrufe, generische oder Vorlagen Instanziierungen, Basisklassen, Schnittstellen Implementierungen, für externe Typen definierte Felder und die Attribut Ergänzung. Ein guter Software Entwurf legt fest, dass die Typen und Methoden eine hohe Kohäsion und eine geringe Kopplung aufweisen sollten. Hohe Kopplung weist auf einen Entwurf hin, der aufgrund der vielen Abhängigkeiten von anderen Typen schwierig zu verwenden und zu warten ist. Weitere Informationen finden Sie im Blogbeitrag [Klassen Kopplung](/archive/blogs/zainnab/code-metrics-class-coupling) .
 
 ::: moniker range=">=vs-2019"
 
