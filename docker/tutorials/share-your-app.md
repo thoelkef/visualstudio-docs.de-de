@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176746"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485534"
 ---
 # <a name="share-your-app"></a>Freigeben der App
 
@@ -64,6 +64,8 @@ Rechts auf der Seite finden Sie einen Abschnitt namens **Docker-Befehle**. Dort 
     docker push <username>/getting-started
     ```
 
+    Statt die Befehlszeile zu verwenden, können Sie auch mit der rechten Maustaste in der Docker-Ansicht im Abschnitt **Images** auf das Imagetag klicken und dann **Pushen**, **Verbindung mit Registrierung herstellen** und **Docker Hub** auswählen.
+
 ## <a name="run-the-image-on-a-new-instance"></a>Ausführen des Images auf einer neuen Instanz
 
 Da Sie Ihr Image nun erstellt und in eine Registrierung gepusht haben, versuchen Sie als Nächstes, die App in einer neuen Instanz auszuführen, die dieses Containerimage noch nicht kennt. Hierzu verwenden Sie Play with Docker.
@@ -94,7 +96,7 @@ Erinnern Sie sich an das Ende des letzten Abschnitts, bei dem Sie die App neu ge
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Setzen Sie das Tutorial fort.
+Tutorial fortsetzen!
 
 > [!div class="nextstepaction"]
 > [Beibehalten Ihrer Datenbank](persist-your-data.md)
