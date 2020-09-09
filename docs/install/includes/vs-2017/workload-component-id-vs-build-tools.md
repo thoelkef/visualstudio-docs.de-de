@@ -10,21 +10,21 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159711"
 ---
 ## <a name="azure-development-build-tools"></a>Buildtools zur Azure-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Beschreibung:** MSBuild-Aufgaben und -Ziele zum Erstellen von Azure-Anwendungen.
+**Beschreibung:** MSBuild-Tasks und -Ziele für das Erstellen von Azure-Anwendungen.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 15.6.27406.0 | Erforderlich
@@ -64,11 +64,11 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Beschreibung:** SQL Server-Datenbankprojekte erstellen
+**Beschreibung:** Erstellen Sie SQL Server-Datenbankprojekte
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 15.6.27406.0 | Empfohlen
 Microsoft.Net.Component.4.5.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.2 | 15.6.27406.0 | Empfohlen
@@ -89,7 +89,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools 
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
@@ -127,11 +127,11 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F#-Compiler | 15.8.27825.0 | O
 
 **ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Beschreibung:** Stellt die erforderlichen Tools zum Erstellen von MSBuild-basierten Anwendungen bereit.
+**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von auf MSBuild basierenden Anwendungen erforderlich sind.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools, Core | 15.6.27309.0 | Erforderlich
@@ -141,11 +141,11 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-C
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**Beschreibung:** Tools zum Erstellen von Anwendungen über .NET Core, ASP.NET Core, HTML/JavaScript und Container.
+**Beschreibung:** Tools zum Erstellen von Anwendungen mit .NET Core, ASP.NET Core, HTML/JavaScript und Containern.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1-Entwicklungstools | 15.8.27924.0 | Erforderlich
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core-Buildtools | 15.8.27906.1 | Erforderlich
@@ -157,11 +157,11 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 – 1.1-Entwicklungstools | 
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Beschreibung:** MSBuild-Tasks und -Ziele zum Erstellen von skalierbaren Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Laufzeit.
+**Beschreibung:** MSBuild-Tasks und -Ziele zum Erstellen von skalierbaren Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild-Unterstützung | 15.8.27825.0 | Erforderlich
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | Erforderlich
@@ -174,7 +174,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce-Buildtools | 15.7.27617.1 | Erforderlich
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
@@ -210,11 +210,11 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7-Entwicklung
 
 **ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von Anwendungen für die universelle Windows-Plattform erforderlich sind.
+**Beschreibung:** Stellt die Tools bereit, die zum Erstellen von Anwendungen für die Universelle Windows-Plattform erforderlich sind.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.Component.NetFX.Native | .NET systemeigen | 15.0.26208.0 | Erforderlich
@@ -249,7 +249,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools Kernfunktionen | 15.8.27729.1 | Erforderlich
@@ -291,11 +291,11 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Beschreibung:** Tools zum Erstellen von Add-Ons und Erweiterungen für Visual Studio, z.B. neue Befehle, Codeanalysetools und Toolfenster.
+**Beschreibung:** Tools zum Erstellen von Add-Ons und Erweiterungen für Visual Studio, z. B. neue Befehle, Codeanalysetools und Toolfenster.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
@@ -317,11 +317,11 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Neueste v141-Tools in VC++ 2
 
 **ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Beschreibung:** MSBuild-Aufgaben und -Ziele zum Erstellen von Webanwendungen.
+**Beschreibung:** MSBuild-Tasks und -Ziele für das Erstellen von Webanwendungen.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 15.6.27406.0 | Erforderlich
@@ -366,7 +366,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 – 1.1-Entwicklungstools | 
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
@@ -380,7 +380,7 @@ Component.OpenJDK | Microsoft-Verteilung von OpenJDK | 15.9.28125.51 | Optional
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Komponenten-ID | Name | Version
+Komponenten-ID | name | Version
 --- | --- | ---
 Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.8.27729.1

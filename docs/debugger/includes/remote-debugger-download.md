@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149206"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324449"
 ---
 Laden Sie über die Links in der folgenden Tabelle die richtige Version der Remotetools herunter, und installieren Sie sie nicht auf dem Visual Studio-Computer, sondern auf dem Remotegerät oder -server, auf dem Sie das Debugging durchführen möchten.
 

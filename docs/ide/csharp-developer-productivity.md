@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567501"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509938"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
 
@@ -139,7 +139,7 @@ Zu gängigen schnellen Problembehebungen und Refactorings zählen Folgende:
 
 Weitere Informationen finden Sie unter [Feature für die Codegenerierung in Visual Studio](code-generation-in-visual-studio.md).
 
-Sie können auch [FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md) installieren, um Codeprobleme zu kennzeichnen. Oder Sie schreiben mit [Roslyn-Analysetools](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix) Ihr eigenes Refactoring oder Ihre eigene Codekorrektur.
+Sie können auch [FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md) installieren, um Codeprobleme zu kennzeichnen. Oder Sie schreiben mit [Roslyn-Analysetools](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md) Ihr eigenes Refactoring oder Ihre eigene Codekorrektur.
 
 Mehrere Communitymitglieder haben kostenlose Erweiterungen geschrieben, die zusätzliche Codeüberprüfungen hinzufügen:
 

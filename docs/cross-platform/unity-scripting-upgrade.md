@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815135"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508976"
 ---
 # <a name="using-net-4x-in-unity"></a>Verwenden von .NET 4.x in Unity
 
@@ -233,7 +233,7 @@ Diese Tipps können Ihnen bei den ersten Schritten mit TAP in Unity helfen:
 * Asynchrone Funktionen, die einen Task zurückgeben, sollten das Suffix **„Async“** an ihren Namen angehängt haben. Das Suffix „Async“ weist darauf hin, dass auf eine Funktion immer gewartet werden sollte.
 * Verwenden Sie den Rückgabetyp `async void` nur für Funktionen, die asynchrone Funktionen aus traditionellem synchronem Code auslösen. Solche Funktionen können selbst nicht erwartet werden und sollten das Suffix „Async“ nicht im Namen haben.
 * Unity stellt mit UnitySynchronizationContext sicher, dass asynchrone Funktionen standardmäßig im Hauptthread ausgeführt werden. Auf die Unity-API kann außerhalb des Hauptthreads nicht zugegriffen werden.
-* Mit Methoden wie [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) und [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) ist es möglich, Tasks in Hintergrundthreads auszuführen. Diese Technik ist nützlich, um teure Vorgänge vom Hauptthread zu verlagern, um so die Leistung zu verbessern. Die Verwendung von Hintergrundthreads kann jedoch zu Problemen führen, die schwer zu debuggen sind, wie z.B. [Racebedingungen](https://wikipedia.org/wiki/Race_condition).
+* Mit Methoden wie [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) und [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) ist es möglich, Tasks in Hintergrundthreads auszuführen. Diese Technik ist nützlich, um teure Vorgänge vom Hauptthread zu verlagern, um so die Leistung zu verbessern. Die Verwendung von Hintergrundthreads kann jedoch zu Problemen führen, die schwer zu debuggen sind, wie z.B. [Racebedingungen](https://wikipedia.org/wiki/Race_condition).
 * Auf die Unity-API kann außerhalb des Hauptthreads nicht zugegriffen werden.
 * Tasks, die Threads verwenden, werden in Unity-WebGL-Builds nicht unterstützt.
 
