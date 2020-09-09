@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509457"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599970"
 ---
 # <a name="security-warnings"></a>Sicherheitswarnungen
 
@@ -33,7 +33,7 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.](../code-quality/ca2100.md)|Eine Methode legt die System.Data.IDbCommand.CommandText-Eigenschaft mithilfe einer Zeichenfolge fest, die aus einem Zeichenfolgenargument für die Methode erstellt wird. Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthält. Eine aus Benutzereingaben erstellte SQL-Befehlszeichenfolge ist anfällig für SQL-Injection-Angriffe.|
 |[CA2109: Sichtbare Ereignishandler überprüfen.](../code-quality/ca2109.md)|Eine öffentliche oder geschützte Ereignisbehandlungsmethode wurde erkannt. Ereignisbehandlungsmethoden sollten nur dann verfügbar gemacht werden, wenn dies absolut notwendig ist.|
 |[CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.](../code-quality/ca2119.md)|Ein vererbbarer öffentlicher Typ stellt eine überschreibbare Methodenimplementierung einer internen Schnittstelle (Friend in Visual Basic) bereit. Um einen Verstoß gegen diese Regel zu beheben, verhindern Sie, dass die Methode außerhalb der Assembly überschrieben wird.|
-|[CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.](../code-quality/ca2153.md)|[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|
+|[CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.](../code-quality/ca2153.md)|[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|
 |[CA2300: Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden](../code-quality/ca2300.md)|Unsichere deserialisierungssoren sind beim Deserialisieren nicht vertrauenswürdiger Daten anfällig. Ein Angreifer könnte die serialisierten Daten so ändern, dass unerwartete Typen eingefügt werden, um Objekte mit bösartigen Nebeneffekten einzuschleusen.|
 |[CA2301: BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen](../code-quality/ca2301.md)|Unsichere deserialisierungssoren sind beim Deserialisieren nicht vertrauenswürdiger Daten anfällig. Ein Angreifer könnte die serialisierten Daten so ändern, dass unerwartete Typen eingefügt werden, um Objekte mit bösartigen Nebeneffekten einzuschleusen.|
 |[CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen](../code-quality/ca2302.md)|Unsichere deserialisierungssoren sind beim Deserialisieren nicht vertrauenswürdiger Daten anfällig. Ein Angreifer könnte die serialisierten Daten so ändern, dass unerwartete Typen eingefügt werden, um Objekte mit bösartigen Nebeneffekten einzuschleusen.|

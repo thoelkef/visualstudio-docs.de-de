@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b060ae550fd0188728c827cac01c12d51930b57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711546"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599621"
 ---
 # <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
@@ -92,7 +92,7 @@ Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen
 
 **F**: wo befindet sich die Eigenschaften Seite "Code Analyse" für die Lösung?
 
-**A**: die Code Analyse-Eigenschaften Seite auf Projektmappenebene wurde zugunsten der zuverlässigeren freigegebenen Eigenschaften Gruppe entfernt. Zum Verwalten der Code Analyse auf Projektebene ist die Eigenschaften Seite für die Code Analyse weiterhin verfügbar. (Bei verwalteten Projekten wird auch empfohlen, von RuleSets zu Editor config für die Regel Konfiguration zu migrieren.)  Zum Freigeben von RuleSets für mehrere/alle Projekte in einer Projekt Mappe oder einem Repository empfiehlt es sich, eine Eigenschaften Gruppe mit der codeanalysisruleset-Eigenschaft in einer freigegebenen Datei mit den Eigenschaften/Zielen oder der Datei "Directory.-Eigenschaften/Verzeichnis. targets" zu definieren. Wenn Sie keine gemeinsamen Eigenschaften oder Ziele haben, die von all ihren Projekten importiert werden, sollten Sie [eine solche Eigenschaften Gruppe zu einem Verzeichnis.-Eigenschaften oder zu einem Verzeichnis. targets in einem Projektmappenverzeichnis der obersten Ebene hinzufügen, das automatisch in alle Projektdateien importiert wird, die im Verzeichnis oder seinen Unterverzeichnissen definiert](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)sind.
+**A**: die Code Analyse-Eigenschaften Seite auf Projektmappenebene wurde zugunsten der zuverlässigeren freigegebenen Eigenschaften Gruppe entfernt. Zum Verwalten der Code Analyse auf Projektebene ist die Eigenschaften Seite für die Code Analyse weiterhin verfügbar. (Bei verwalteten Projekten wird auch empfohlen, von RuleSets zu Editor config für die Regel Konfiguration zu migrieren.)  Zum Freigeben von RuleSets für mehrere/alle Projekte in einer Projekt Mappe oder einem Repository empfiehlt es sich, eine Eigenschaften Gruppe mit der codeanalysisruleset-Eigenschaft in einer freigegebenen Datei mit den Eigenschaften/Zielen oder der Datei "Directory.-Eigenschaften/Verzeichnis. targets" zu definieren. Wenn Sie keine gemeinsamen Eigenschaften oder Ziele haben, die von all ihren Projekten importiert werden, sollten Sie [eine solche Eigenschaften Gruppe zu einem Verzeichnis.-Eigenschaften oder zu einem Verzeichnis. targets in einem Projektmappenverzeichnis der obersten Ebene hinzufügen, das automatisch in alle Projektdateien importiert wird, die im Verzeichnis oder seinen Unterverzeichnissen definiert](../msbuild/customize-your-build.md)sind.
 
 ## <a name="see-also"></a>Weitere Informationen
 

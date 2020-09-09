@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490286"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599981"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -118,7 +118,7 @@ Wenn Sie über mehrere Einträge verfügen, die auf eine bestimmte Regel-ID anwe
 - Der Schweregrad Eintrag für eine einzelne Regel nach ID hat Vorrang vor dem Schweregrad für eine Kategorie.
 - Der Schweregrad Eintrag für eine Kategorie hat Vorrang vor dem Schweregrad für alle Analyse Regeln.
 
-Sehen Sie sich das folgende Editor config-Beispiel an, wobei [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) die Kategorie "Performance" hat:
+Sehen Sie sich das folgende Editor config-Beispiel an, wobei [CA1822](./ca1822.md) die Kategorie "Performance" hat:
 
    ```ini
    [*.cs]
