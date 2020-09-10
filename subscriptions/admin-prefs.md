@@ -1,18 +1,18 @@
 ---
 title: Festlegen von Vertragseinstellungen im Verwaltungsportal
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 03/17/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234613"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426794"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
 Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können nur von Superadministratoren global geändert werden.  
@@ -22,12 +22,12 @@ Wenn Sie sich die Einstellungen anzeigen lassen oder diese ändern möchten, mü
 
 So legen Sie Ihre Einstellungen fest:
 1. Melden Sie sich beim Verwaltungsportal mit einer ID an, der Superadministratorberechtigungen zugewiesen sind.
-2. Klicken Sie auf die Registerkarte **Administratoren verwalten**.
+2. Klicken Sie im linken Bereich auf das Einstellungssymbol.
    > [!div class="mx-imgBorder"]
    > ![Schaltfläche für Administratoreinstellungen](_img/admin-prefs/admin-prefs-button.png "Klicken Sie auf „Administratoren verwalten“ und dann auf „Agreement Preferences“ (Vereinbarungseinstellungen), um die Einstellungen anzuzeigen.")
 
 3. Klicken Sie auf **Agreement Preferences** (Vertragseinstellungen).
-Auf der rechten Seite wird ein Bereich angezeigt, in dem die verfügbaren Einstellungen aufgeführt sind. 
+Auf der linken Seite wird ein Bereich angezeigt, in dem die verfügbaren Einstellungen aufgeführt sind. 
 
    > [!div class="mx-imgBorder"]
    > ![Flyoutdialogfeld für Administratoreinstellungen](_img/admin-prefs/admin-prefs-flyout.png "Legen Sie die gewünschten Einstellungen fest, und klicken Sie dann auf „Speichern“.")
@@ -36,9 +36,9 @@ Auf der rechten Seite wird ein Bereich angezeigt, in dem die verfügbaren Einste
 Im Folgenden werden die jeweiligen Einstellungen und ihre Auswirkungen beschrieben. 
 
 ### <a name="agreement"></a>„Agreement“ (Vertrag)
-Wenn Sie über mehrere Verträge verfügen, in denen Sie als Superadministrator festgelegt sind, können Sie den gewünschten Vertrag über die Dropdownliste auswählen.  Die von Ihnen festgelegten Einstellungen gelten nur für diesen Vertrag.  Einige dieser Einstellungen können in manchen Fällen von einzelnen Administratoren bei der Zuweisung von Abonnements überschrieben werden. 
+Wenn Sie über mehrere Verträge verfügen, in denen Sie als Superadministrator festgelegt sind, können Sie den gewünschten Vertrag über die Dropdownliste rechts neben dem erweiterten Einstellungsbereich auswählen.  Die von Ihnen festgelegten Einstellungen gelten nur für diesen Vertrag.  Einige dieser Einstellungen können in manchen Fällen von einzelnen Administratoren bei der Zuweisung von Abonnements überschrieben werden. 
 
-Wenn nur ein Vertrag mit der E-Mail-Adresse verknüpft ist, mit der Sie sich angemeldet haben, wird nur dieser Vertrag angezeigt, und die Dropdownliste wird deaktiviert. 
+Wenn nur ein Vertrag mit der E-Mail-Adresse verknüpft ist, mit der Sie sich angemeldet haben, wird dieser Vertrag rechts neben dem erweiterten Einstellungsbereich angezeigt, und die Dropdownliste wird deaktiviert. 
 
 ### <a name="contact-email-address"></a>„Contact email address“ (E-Mail-Adresse des Kontakts)
 Mit dieser Einstellung und der Schaltfläche **Contact my Admin** (Administrator kontaktieren) auf der [Abonnementseite](https://my.visualstudio.com/subscriptions) im Verwaltungsportal können Abonnenten einen Administrator kontaktieren.  Wenn diese Einstellung nicht angegeben wird, werden Abonnentennachrichten an alle Administratoren und Superadministratoren weitergeleitet, die im Vertrag festgelegt sind.  Es wird empfohlen, einen E-Mail-Alias für eine Gruppe oder eine Sicherheitsgruppe zu verwenden, damit Nachrichten nur an die E-Mail-Adresse der gewünschten Zielgruppe weitergeleitet werden. Bei Bedarf können Sie auch die E-Mail-Adresse einer Einzelperson eingeben.
@@ -46,17 +46,18 @@ Mit dieser Einstellung und der Schaltfläche **Contact my Admin** (Administrator
 > [!NOTE]
 > Die E-Mail-Adresse, die Sie mit dieser Einstellung festlegen, wird den Abonnenten NICHT mitgeteilt.  Wenn ein Abonnent mit dem Feature **Contact my Admin** (Administrator kontaktieren) eine Anfrage im Abonnentenportal stellt, wird die Nachricht an den Alias weitergeleitet. Dieser ist für den Abonnenten nicht sichtbar. 
 
+### <a name="default-subscription-level"></a>„Default subscription level“ (Standardabonnementebene)
+Mit dieser Einstellung können Sie festlegen, welche Abonnementebenen, die in Ihrem Vertrag festgelegt sind, standardmäßig ausgewählt werden, wenn ein Abonnement einem Benutzer zugewiesen wird.  Administratoren können diese Einstellung anpassen und dabei jede Abonnementebene Ihres Vertrags auswählen. Dadurch wird verhindert, dass Sie die am häufigsten verwendete Einstellung mehrfach angeben müssen. 
+
+### <a name="default-communication-preferences"></a>„Default communication preferences“ (Standardeinstellungen für Kommunikation)
+Wenn Sie eine Standardsprache und ein Standardgebietsschema für die Kommunikation festlegen, können Sie das Zuweisen von Abonnements optimieren.  Wenn sich beispielsweise Ihr Entwicklungsteam in einem anderen Land als Ihr Administratorteam befindet, können Sie die Einstellungen festlegen, die für den Standort der Abonnenten am geeignetsten sind. Diese Einstellungen können weiterhin von allen Administratoren für einzelne Abonnenten geändert werden. 
+
 ### <a name="default-external-subscribers-setting"></a>„Default external subscribers setting“ (Standardeinstellung für externe Abonnenten)
 Mit dieser Einstellung legen Sie fest, ob Administratoren Abonnenten hinzufügen können, die sich außerhalb des Mandanten oder des Verzeichnisses Ihrer Organisation befinden.  Wenn Sie diese Einstellung deaktivieren, sind keine externen Abonnenten zulässig.  Wenn Sie die Einstellung aktivieren und ein Administrator versucht, einen externen Abonnenten hinzuzufügen, wird dieser Administrator aufgefordert, die Aktion zu bestätigen. Anschließend kann er das Abonnent zuweisen. Administratoren können diese Einstellung nicht überschreiben. 
 
 ### <a name="default-downloads-setting"></a>„Default downloads setting“ (Standardeinstellung für Downloads)
 Wenn Sie diese Einstellung aktivieren (was der Standardeinstellung entspricht), können Abonnenten auf Downloads zugreifen, wenn Administratoren neue Abonnements erstellen.  Administratoren können Downloads aber weiterhin für einzelne Abonnements deaktivieren.  Durch das Deaktivieren des Zugriffs auf Downloads wird auch der Zugriff auf Product Keys deaktiviert.  
 
-### <a name="default-subscription-level"></a>„Default subscription level“ (Standardabonnementebene)
-Mit dieser Einstellung können Sie festlegen, welche Abonnementebenen, die in Ihrem Vertrag festgelegt sind, standardmäßig ausgewählt werden, wenn ein Abonnement einem Benutzer zugewiesen wird.  Administratoren können diese Einstellung anpassen und dabei jede Abonnementebene Ihres Vertrags auswählen. Dadurch wird verhindert, dass Sie die am häufigsten verwendete Einstellung mehrfach angeben müssen. 
-
-### <a name="default-communication-preferences"></a>„Default communication preferences“ (Standardeinstellungen für Kommunikation)
-Wenn Sie eine Standardsprache und ein Standardgebietsschema für die Kommunikation festlegen, können Sie das Zuweisen von Abonnements optimieren.  Wenn sich beispielsweise Ihr Entwicklungsteam in einem anderen Land als Ihr Administratorteam befindet, können Sie die Einstellungen festlegen, die für den Standort der Abonnenten am geeignetsten sind. Diese Einstellungen können weiterhin von allen Administratoren für einzelne Abonnenten geändert werden. 
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Frage:  Kann ich die Einstellung **Contact email address** (E-Mail-Adresse des Kontakts) deaktivieren, damit Abonnenten keine Administratoren kontaktieren können?
