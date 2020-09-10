@@ -1,5 +1,6 @@
 ---
-title: 'Idebugcomplussymbolprovider:: getaddressesinmodulefromposition | Microsoft-Dokumentation'
+title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c8d2f8cb5591c789b55b5c04fffb024c4442398
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734033"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743309"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 Ordnet eine Dokument Position im angegebenen Modul einem Array von debugadressen zu.
@@ -222,5 +223,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
