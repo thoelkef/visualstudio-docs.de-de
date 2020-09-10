@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382197"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641605"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
 Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaften für Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen (XBAP) oder Office-Projektmappen vorgenommen haben, müssen Sie sowohl die Anwendungs-als auch die Bereitstellungs Manifeste mit einem Zertifikat signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
@@ -31,7 +31,7 @@ Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaf
  Ein weiteres Szenario, in dem Sie die Manifeste neu signieren können, ist, wenn Ihre Kunden die Anwendungs-und Bereitstellungs Manifeste mit Ihrem eigenen Zertifikat signieren möchten.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste
- Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungs Manifest-Datei (*. Manifest*) vorgenommen haben. Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern von Bereitstellungs Eigenschaften](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungs Manifest-Datei (*. Manifest*) vorgenommen haben. Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern von Bereitstellungs Eigenschaften](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Zum erneuten Signieren der Anwendung und der Bereitstellungs Manifeste mit Mage.exe
 
@@ -112,7 +112,7 @@ Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaf
 
 7. Kopieren Sie optional das Master Bereitstellungs Manifest (*Publish \\ \<appname> . Application*) in Ihr Versions Bereitstellungs Verzeichnis (*publish\anwendungsdateien \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)

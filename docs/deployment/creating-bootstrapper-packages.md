@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314861"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641659"
 ---
 # <a name="create-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermittlung und die Installation von weitervertreibbaren Komponenten wie Windows Installer (*MSI*-Format) und ausführbaren Programmen konfiguriert werden kann. Das Installationsprogramm wird auch als Bootstrapper bezeichnet. Der Bootstrapper wird mithilfe einer Reihe von XML-Manifesten programmiert, mit denen die Metadaten zur Verwaltung der Komponenteninstallation angegeben werden.  Jede verteilbare Komponente bzw. erforderliche Komponente **, die im Dialogfeld** für die erforderlichen Komponenten für ClickOnce angezeigt wird, ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss.
@@ -122,4 +122,4 @@ Die verteilbare Liste ist eine XML-Datei, die Sie im folgenden Format benennen s
 - [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Dialogfeld für erforderliche Komponenten](../ide/reference/prerequisites-dialog-box.md)
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)
-- [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)
