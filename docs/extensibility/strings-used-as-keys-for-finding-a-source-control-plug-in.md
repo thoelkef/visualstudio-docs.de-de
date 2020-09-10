@@ -1,5 +1,5 @@
 ---
-title: Zeichen folgen, die als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-ins verwendet werden | Microsoft-Dokumentation
+title: Zeichen folgen, die als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-ins verwendet werden
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699715"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741787"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-Ins verwendete Zeichenfolgen
 Die folgenden Zeichen folgen sind die Schlüssel für den Zugriff auf die Registrierung, um Informationen über das Quellcodeverwaltungs-Plug-in zu suchen.
@@ -46,7 +46,7 @@ Die folgenden Zeichen folgen sind die Schlüssel für den Zugriff auf die Regist
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\microsoft\sourcesafe|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
 - [Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Datei „MSSCCPRJ.SCC“](../extensibility/mssccprj-scc-file.md)

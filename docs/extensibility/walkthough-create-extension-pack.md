@@ -1,5 +1,6 @@
 ---
-title: Erstellen eines Erweiterungspakets mit der Element Vorlage für das Erweiterungspaket | Microsoft-Dokumentation
+title: Erstellen eines Erweiterungspakets
+description: Erfahren Sie, wie Sie mit der Element Vorlage für das Erweiterungspaket ein Erweiterungspaket erstellen.
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697750"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742917"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Exemplarische Vorgehensweise: Erstellen eines Erweiterungspakets
 
@@ -23,7 +24,7 @@ Ein Erweiterungspaket ist ein Satz von Erweiterungen, die gleichzeitig installie
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 ist das Visual Studio SDK als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 ist das Visual Studio SDK als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 Das Erweiterungspaket Feature ist ab Visual Studio 15,8 Preview 2 verfügbar.
 

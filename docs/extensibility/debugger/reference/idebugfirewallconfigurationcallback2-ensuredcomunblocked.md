@@ -1,5 +1,6 @@
 ---
-title: 'IDebugFirewallConfigurationCallback2:: ensuredcomunblockierte | Microsoft-Dokumentation'
+title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d3d5e30cee8f142d0278f0a9fbcb9aaf2ba39b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77ed081f47d08bc297050ed0cf92a88c8b167674
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728707"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741370"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
+
 Fordert an, dass die Firewall das Remote Debugging nicht blockiert.
 
 ## <a name="syntax"></a>Syntax
@@ -37,7 +39,9 @@ public int EnsureDCOMUnblocked();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
+
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
+
 - [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)

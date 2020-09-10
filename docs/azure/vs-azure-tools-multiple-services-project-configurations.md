@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren eines Azure-Projekts mit mehreren Dienstkonfigurationen
+title: Konfigurieren des clouddiensts mit mehreren Konfigurationen
 description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt konfigurieren, indem Sie die Dateien „ServiceDefinition.csdef“, „ServiceConfiguration.Local.cscfg“ und „ServiceConfiguration.Cloud.cscfg“ ändern.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280543"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739962"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 

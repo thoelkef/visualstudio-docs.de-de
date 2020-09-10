@@ -1,5 +1,5 @@
 ---
-title: Migrieren und Veröffentlichen der Webanwendung in Azure Cloud Service
+title: Migrieren und Veröffentlichen einer Webanwendung in einem clouddienst
 description: Sie erfahren, wie Sie Ihre Webanwendung mit Visual Studio zu einem Azure-Clouddienst migrieren und veröffentlichen.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280556"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739989"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-clouddienst aus Visual Studio
 

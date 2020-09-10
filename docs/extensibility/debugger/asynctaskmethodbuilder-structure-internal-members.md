@@ -1,5 +1,6 @@
 ---
-title: 'Asynctaskmethodbuilder-Struktur: interne Member | Microsoft-Dokumentation'
+title: AsyncTaskMethodBuilder-Struktur – interne Member
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c918890551515ab9fadbf329d4c3ee96621c7aae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032bac9fc4eabccc2368d0b0403ce97a43b7966c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739373"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741627"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Asynctaskmethodbuilder-Struktur: interne Member
 In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> Klasse beschrieben. Allgemeine Informationen zu dieser Klasse finden Sie im <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> Referenz Thema.
@@ -42,6 +43,6 @@ In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerSer
 |[Objectidfordebugger-Eigenschaft](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.|
 |[m_builder Feld](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Stellt das generische Generator Objekt dar, an das diese nicht generische Instanz delegiert.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [Parallele Erweiterungs internale für die .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für das Fenster "Auto" in einem Legacy Sprachdienst | Microsoft-Dokumentation
+title: Unterstützen des Fensters Auto in einem Legacy Sprachdienst
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704885"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741451"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützen des Auto-Fensters in einem Legacysprachdienst
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützung für das Fenster "Auto" in einem Legacy Sprachdienst
+
 Im **Fenster Auto** werden Ausdrücke wie Variablen und Parameter angezeigt, die sich im Gültigkeitsbereich befinden, wenn das Programm, das gedebuggt wird, angehalten wurde (entweder aufgrund eines Breakpoints oder einer Ausnahme). Die Ausdrücke können Variablen, lokale oder globale Variablen und Parameter enthalten, die im lokalen Gültigkeitsbereich geändert wurden. Das **Fenster** Auto kann auch Instanziierungen einer Klasse, Struktur oder eines anderen Typs einschließen. Alle Elemente, die von einer Ausdrucks Auswertung ausgewertet werden können, können im **Fenster Auto** angezeigt werden.
 
  Das Managed Package Framework (MPF) stellt keine direkte Unterstützung für das Auto **-Fenster bereit** . Wenn Sie jedoch die- <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> Methode überschreiben, können Sie eine Liste der Ausdrücke zurückgeben, die im Fenster **Auto angezeigt** werden sollen.
 
 ## <a name="implementing-support-for-the-autos-window"></a>Implementieren der Unterstützung für das Fenster "Auto"
+
  Um das Auto **-Fenster zu** unterstützen, müssen Sie lediglich die- <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> Methode in der- <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse implementieren. Ihre Implementierung muss bei Angabe eines Speicher Orts in der Quelldatei entscheiden, welche Ausdrücke **im Fenster "** Auto" angezeigt werden sollen. Die-Methode gibt eine Liste von Zeichen folgen zurück, in denen jede Zeichenfolge einen einzelnen Ausdruck darstellt. Der Rückgabewert gibt an, <xref:Microsoft.VisualStudio.VSConstants.S_OK> dass die Liste Ausdrücke enthält, während <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> angibt, dass keine Ausdrücke angezeigt werden.
 
  Die tatsächlich zurückgegebenen Ausdrücke sind die Namen der Variablen oder Parameter, die an dieser Stelle im Code angezeigt werden. Diese Namen werden an die Ausdrucks Auswertung weitergegeben, um Werte und Typen abzurufen **, die dann im Fenster Auto** angezeigt werden.

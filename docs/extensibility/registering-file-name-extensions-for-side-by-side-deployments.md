@@ -1,5 +1,5 @@
 ---
-title: Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen | Microsoft-Dokumentation
+title: Dateinamen Erweiterungen für Seite-an-Seite-IDES registrieren
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701541"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741698"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen
 Für VSPackages, die in einer parallelen Umgebung bereitgestellt werden, müssen Sie Dateinamen Erweiterungen registrieren, um die Dateien der richtigen Version von zuzuordnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Die Registrierung ermöglicht es Benutzern, Ihre Projekt-und Projekt Element Dateien in der entsprechenden Version von zu öffnen, es sei denn, Sie verwenden eine versionsspezifische Dateinamenerweiterung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

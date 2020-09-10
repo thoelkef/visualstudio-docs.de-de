@@ -1,5 +1,6 @@
 ---
-title: Supportscode Separation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b5e03e7ea01b6e6f75c18da44c0233660c17f8e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699501"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741755"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
@@ -85,6 +86,6 @@ Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Di
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
