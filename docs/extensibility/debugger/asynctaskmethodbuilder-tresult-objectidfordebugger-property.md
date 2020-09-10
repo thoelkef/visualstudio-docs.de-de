@@ -1,5 +1,6 @@
 ---
-title: Asynctaskmethodbuilder &lt; TResult &gt; . Objectidfordebugger-Eigenschaft | Microsoft-Dokumentation
+title: Asynctaskmethodbuilder &lt; TResult &gt; . Objectidfordebugger-Eigenschaft
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712cd8b1a178d69899aeac2fde5640e20d18be95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b486631cb5fa2d424b145e8900b879ac5de1739
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739351"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741596"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>Asynctaskmethodbuilder &lt; TResult &gt; . Objectidfordebugger-Eigenschaft
 Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.
@@ -32,6 +33,6 @@ Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debu
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
 - [Parallele Erweiterungs internale für die .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

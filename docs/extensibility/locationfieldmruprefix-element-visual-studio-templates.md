@@ -1,5 +1,6 @@
 ---
-title: LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702823"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741339"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen)
+
 Gibt die zuletzt verwendeten (MRU) Pfade im Dialogfeld **Neues Projekt** und **Neues Element hinzufügen** an.
 
 ## <a name="syntax"></a>Syntax
@@ -31,12 +33,15 @@ Gibt die zuletzt verwendeten (MRU) Pfade im Dialogfeld **Neues Projekt** und **N
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
+
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
+
  Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
+
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -46,8 +51,10 @@ Gibt die zuletzt verwendeten (MRU) Pfade im Dialogfeld **Neues Projekt** und **N
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="remarks"></a>Bemerkungen
+
  Dieses Element sollte nur für Vorlagen verwendet werden, die über den erstellt werden [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

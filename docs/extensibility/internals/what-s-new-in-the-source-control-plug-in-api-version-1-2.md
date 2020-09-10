@@ -1,5 +1,5 @@
 ---
-title: '&apos;Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2 | Microsoft-Dokumentation'
+title: '&apos;Neuerungen in der Quellcodeverwaltungs-Plug-in-API 1,2'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711754"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741553"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Neuerungen in der API-Version 1,2 der Quellcodeverwaltungs-Plug-ins&#39;
 In diesem Abschnitt werden die erweiterten Funktionen der Quell Code Verwaltung in der Quellcodeverwaltungs-Plug-in-API-Version 1,2 hervorgehoben. Im folgenden sind die neuen Features in Version 1,2 aufgeführt:
@@ -32,5 +32,5 @@ In diesem Abschnitt werden die erweiterten Funktionen der Quell Code Verwaltung 
 
 - [Entfernen von Quell Code Verwaltungsinformationen aus. Proj und. SLN-Dateien](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) erläutert, wie die Quellcodeverwaltungs-Plug-in-API-Version 1,2 Informationen zu Projekten und Lösungen speichert.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
