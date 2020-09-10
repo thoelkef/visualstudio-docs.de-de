@@ -1,5 +1,6 @@
 ---
-title: Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.
+title: Unterstützungs Methode kann nicht gelöscht werden.
+description: Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 252303c4933501dd3a4672329d66ef4910238a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad7c66c6d110d09940a93e694a897a7dafd92e17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535251"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743079"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.
 
@@ -31,6 +32,6 @@ Die ausgewählte `DataContext` Methode wird derzeit als eine der `Insert` `Updat
 
    Das Meldungsfeld wird geschlossen, und es werden keine Änderungen vorgenommen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

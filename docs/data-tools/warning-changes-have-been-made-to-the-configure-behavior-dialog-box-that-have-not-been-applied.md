@@ -1,5 +1,6 @@
 ---
-title: 'Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden'
+title: Nicht übernommene Änderungen
+description: 'Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden'
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4eba7fb1274b36a6a6f2454f4642c1c78505719e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbdf4e252df1063610964aaa1df37fa9bfc94132
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535199"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743152"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden
 
@@ -27,6 +28,6 @@ Im Dialogfeld **Verhalten konfigurieren** können Sie das `Insert` -, `Update` -
 
 - Um die vorherige Änderung abzubrechen und fortzufahren, klicken Sie auf **Nein**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

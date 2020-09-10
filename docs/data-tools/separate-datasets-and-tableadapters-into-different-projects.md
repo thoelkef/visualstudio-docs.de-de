@@ -1,5 +1,6 @@
 ---
-title: Aufteilen von DataSets und TableAdapters in verschiedene Projekte
+title: Fehler bei separaten Projekten verwenden
+description: Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281551"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743107"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 Typisierte Datasets wurden verbessert, sodass die [TableAdapters](create-and-configure-tableadapters.md) -Klasse und die DataSet-Klasse in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.
@@ -57,10 +58,10 @@ Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis s
 > [!NOTE]
 > Um die generierte Klassendatei anzuzeigen, wählen Sie das DataSet oder das TableAdapter-Projekt aus. Wählen Sie dann in **Projektmappen-Explorer**die Option **alle Dateien anzeigen**aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
-- [Exemplarische Vorgehensweise: Erstellen einer n schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Daten Anwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

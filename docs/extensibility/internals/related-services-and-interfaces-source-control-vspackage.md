@@ -1,5 +1,6 @@
 ---
-title: Zugehörige Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
+title: Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 533f1bf4fcfbaebb25ec10908abf4a46ddacd521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705627"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743072"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
+
 In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPackage-Schnittstellen im aufgeführt [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Das VSPackage der Quell Code Verwaltung implementiert einige dieser Schnittstellen und verwendet andere zum Ausführen von Quell Code Verwaltungs Tasks.
 
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Von und implementierte Schnittstellen für Quellcodeverwaltungs-VSPackages
+
  Die folgenden Schnittstellen werden in beschrieben [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , und das Quellcodeverwaltungs-VSPackage implementiert abhängig von der gewünschten featuremenge eine Teilmenge davon. Einige Schnittstellen werden als erforderlich gekennzeichnet und müssen von jedem Quell Code Verwaltungs-VSPackage implementiert werden.
 
  Für die Schnittstellen, die ein Paket nicht implementiert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt eine Standard Implementierung bereit. Beachten Sie, dass die Standard Implementierung für den Fall konzipiert ist, dass kein VSPackage registriert und kein Projekt gesteuert wird. Ein ordnungsgemäß geschriebenes VSPackage für die Quell Code Verwaltung implementiert alle notwendigen Schnittstellen, anstatt Sie der Standard Implementierung dieser Schnittstellen zu überschreiten.
@@ -40,7 +43,7 @@ In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPacka
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editoren bezeichnen diese Schnittstelle vor dem ändern oder Speichern einer Datei. Das VSPackage der Quell Code Verwaltung kann die Datei Auschecken oder den Vorgang ablehnen, wenn das Auschecken fehlschlägt. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Diese Schnittstelle stellt grundlegende Funktionen der Quell Code Verwaltung für Projekte bereit, z. b. das registrieren und Aufheben der Registrierung von Projekten mit der Quell Code Verwaltung und das Bereitstellen von Unterstützung für | Quellcodeverwaltungs-VSPackage | Erforderlich |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Diese Schnittstelle wird von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> mithilfe der- <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> Funktion abgerufen, oder durch Umwandeln des Objekts, das in implementiert wird `IVsHierarchy` `IVsSccProject2` . Sie wird verwendet, um die Dateien in einem Projekt unter Quell Code Verwaltung zu übermitteln oder um das Projekt über den aktuellen Status oder Speicherort der Quell Code Verwaltung zu informieren. | Projekt | Erforderlich |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Diese Schnittstelle wird von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> mithilfe der- <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> Funktion abgerufen, oder durch Umwandeln des Objekts, das in implementiert wird `IVsHierarchy` `IVsSccProject2` . Sie wird verwendet, um die Dateien in einem Projekt unter Quell Code Verwaltung zu übermitteln oder um das Projekt über den aktuellen Status oder Speicherort der Quell Code Verwaltung zu informieren. | Project | Erforderlich |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | Das Integrationsmodul verwendet diese Schnittstelle zum Festlegen des aktuellen aktiven VSPackages. | Quellcodeverwaltungs-VSPackage | Erforderlich |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | Diese Schnittstelle basiert auf einem Abonnement Modell. Jedes VSPackage kann signalisieren, dass es Dokument Ereignisse empfangen und von der Shell auf Ereignisse hingewiesen werden soll, die in der Regel auftreten. Es wird von implementiert und behandelt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , das wiederum Ereignisse übergibt, die den in `IVsTrackProjectDocumentsEvents2` das VSPackage implementieren. | Quellcodeverwaltungs-Stub | Erforderlich |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Diese Schnittstelle bietet Batch Verarbeitung, synchronisierte Lese-/Schreibvorgänge und eine erweiterte `OnQueryAddFiles` Methode. | Quellcodeverwaltungs-Stub | Erforderlich |
@@ -53,7 +56,7 @@ In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPacka
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Das VSPackage verwendet diese Schnittstelle, um zusätzliche Glyphen als Symbole der Quell Code Verwaltung für Knoten in **Projektmappen-Explorer**zu definieren. | Quellcodeverwaltungs-VSPackage | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Im Dialogfeld **Hinzufügen** für Webprojekte wird diese Schnittstelle verwendet. Es bietet Methoden zum Durchsuchen eines Quell Code Verwaltungs Speicher Orts und zum Öffnen eines Webprojekts, das zuvor im Quellcodeverwaltungs-Repository an diesem Speicherort hinzugefügt wurde. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Diese Schnittstelle bietet Unterstützung für das asynchrone Laden von Projekten aus der Quell Code Verwaltung. | Quellcodeverwaltungs-VSPackage | Optional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Diese Schnittstelle ermöglicht es Projekten, den Fortschritt des asynchronen Ladens zu beobachten, das von initiiert wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Projekt | Optional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Diese Schnittstelle ermöglicht es Projekten, den Fortschritt des asynchronen Ladens zu beobachten, das von initiiert wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Diese Schnittstelle ermöglicht der IDE das Abfragen des VSPackage für die aktive Quell Code Verwaltung. Die IDE fragt den Wert der Quell Code Verwaltungs Einstellungen ab, die Bedeutung haben, auch wenn kein aktives VSPackage für die Quell Code Verwaltung registriert ist. Diese Schnittstelle wird von implementiert und behandelt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . | Quellcodeverwaltungs-Stub | Erforderlich |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Diese Schnittstelle wird verwendet, um das VSPackage der Quell Code Verwaltung zu registrieren. | Quellcodeverwaltungs-Stub | Erforderlich |
 | <xref:EnvDTE.SourceControl> | Diese Schnittstelle wird bei der Automatisierung verwendet. Daher werden nur Funktionen verfügbar gemacht, die ohne Anzeige einer Benutzeroberfläche ausgeführt werden können. | Quellcodeverwaltungs-VSPackage | Optional |
@@ -61,5 +64,5 @@ In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPacka
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Diese Schnittstelle wird verwendet, um die Quell Code Verwaltungs Einstellungen in der Projektmappenoptionen (. suo) zu speichern. Dies kann benutzerspezifische Einstellungen der Quell Code Verwaltung umfassen, z. b. den Anmelde Speicherort des aktuellen Benutzers. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Diese Schnittstelle wird verwendet, um Ereignisse zu überwachen, um Vorgänge wie das Einchecken von Projektdateien vor dem Schließen von Projektmappen oder das erhalten von neuen Dateien aus der Quell Code Verwaltung beim Öffnen eines Projekts auszuführen. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)
