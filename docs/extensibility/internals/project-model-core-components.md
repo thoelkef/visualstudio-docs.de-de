@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706540"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012411"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 Die folgenden Tabellen erweitern das Projekt Modell. Die Tabellen enthalten kurze Beschreibungen der im Modell identifizierten Schnittstellen und Dienste sowie der Schnittstellen und Dienste, die bestimmten Objekten zugeordnet sind. Außerdem beschreiben die Tabellen weitere Schnittstellen, die bei der Erstellung und Wartung von Projekten optional sind, abhängig von den Anforderungen des jeweiligen Projekt Typs.
@@ -99,9 +99,9 @@ Die folgenden Tabellen erweitern das Projekt Modell. Die Tabellen enthalten kurz
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Wird verwendet, um das Automatisierungs Modell zu implementieren. In Ihrem Projekt Modell wird ein Properties-Objekt zurückgegeben, mit dem Sie eine Instanz dieses Objekts erstellen können.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Wird zum Implementieren von Zwischenablage Ereignissen für das Project-Objekt in der Hierarchie verwendet. `SVsUIHierWinClipboardHelper` mit können Sie Ausschneide-, Kopier-und Einfügevorgänge ordnungsgemäß behandeln.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Nicht im Build: Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Nicht im Build: Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100))
 - [Unterstützen von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)

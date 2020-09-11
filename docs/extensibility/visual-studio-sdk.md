@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173564"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012359"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue Funktionen in Visual Studio integrieren. Sie können Ihre Erweiterungen sowohl an andere Benutzer als auch an den Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:
@@ -41,7 +41,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
   Wenn Sie noch nie eine Visual Studio-Erweiterung geschrieben haben, finden Sie weitere Informationen zu diesen Features und zum [Einstieg in die Entwicklung von Visual Studio-Erweiterungen](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Installieren des Visual Studio SDK
- Das Visual Studio SDK ist ein optionales Feature in Visual Studio-Setup. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Das Visual Studio SDK ist ein optionales Feature in Visual Studio-Setup. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="whats-new-in-the-visual-studio-sdk"></a>Neuerungen im Visual Studio SDK
  Das Visual Studio SDK verfügt über einige neue Features, wie z. b. die synchron authentifigene Erweiterungen Warnung und das VSIX v3-Format sowie wichtige Änderungen, die möglicherweise eine Aktualisierung ihrer Erweiterung erforderlich machen. Weitere Informationen finden Sie unter [What es New in the Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md) und [What es New in the Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
@@ -65,7 +65,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
 ## <a name="other-visual-studio-sdk-resources"></a>Weitere Visual Studio SDK-Ressourcen
  Wenn Sie Fragen zum VSSDK haben oder Ihre Erfahrungen mit der Entwicklung von Erweiterungen freigeben möchten, können Sie das [Visual Studio-Erweiterbarkeits Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) oder den [erweiterbaren Gitter-Chatroom](https://gitter.im/Microsoft/extendvs)verwenden.
 
- Weitere Informationen finden Sie im [Arkana-Blog zu VSX](https://blogs.msdn.microsoft.com/vsx/) und in einer Reihe von Blogs, die von Microsoft MVPs geschrieben werden:
+ Weitere Informationen finden Sie im [Arkana-Blog zu VSX](/archive/blogs/vsx/) und in einer Reihe von Blogs, die von Microsoft MVPs geschrieben werden:
 
 - [Bevorzugte Visual Studio-Erweiterungen](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -77,7 +77,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
 
 - [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [Verwalten mehrerer Threads in verwaltetem Code](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Hinzufügen von Befehlen zu Symbolleisten](../extensibility/adding-commands-to-toolbars.md)

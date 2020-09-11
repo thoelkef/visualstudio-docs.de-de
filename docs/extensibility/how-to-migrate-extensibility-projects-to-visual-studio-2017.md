@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3cd21242bd4b5a3bdb0da9691d6efb32288d3444
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742877"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012281"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017
 
@@ -171,7 +171,7 @@ Beim Suchen ihrer Abhängigkeiten werden Sie feststellen, dass eine Abhängigkei
 
 Um weitere Anleitungen bereitzustellen, haben wir einige allgemeine Erweiterungs Typen und ihre vorgeschlagenen Voraussetzungen identifiziert:
 
-Erweiterungstyp | Anzeigename | id
+Erweiterungstyp | Anzeigename | ID
 --- | --- | ---
 Editor | Visual Studio-Kern-Editor | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# und Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -180,7 +180,7 @@ Debugger | Just-In-Time-Debugger | Microsoft.VisualStudio.Component.Debugger.Jus
 
 ## <a name="find-component-ids"></a>Komponenten-IDs suchen
 
-Die Liste der von Visual Studio-Produkten sortierten Komponenten finden Sie unter [Visual Studio 2017-Arbeitsauslastung und Komponenten-IDs](/visualstudio/install/workload-and-component-ids?view=vs-2019). Verwenden Sie diese Komponenten-IDs für die erforderlichen IDs im Manifest.
+Die Liste der von Visual Studio-Produkten sortierten Komponenten finden Sie unter [Visual Studio 2017-Arbeitsauslastung und Komponenten-IDs](../install/workload-and-component-ids.md?view=vs-2019). Verwenden Sie diese Komponenten-IDs für die erforderlichen IDs im Manifest.
 
 Wenn Sie nicht sicher sind, welche Komponente eine bestimmte Binärdatei enthält, laden Sie das Arbeitsblatt für die [Binär Zuordnung von Komponenten >](https://aka.ms/vs2017componentid-binaries)herunter.
 

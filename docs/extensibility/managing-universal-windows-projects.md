@@ -8,20 +8,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744940"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012307"
 ---
 # <a name="manage-universal-windows-projects"></a>Universelle Windows-Projekte verwalten
 
-Universelle Windows-apps sind apps, die sowohl Windows 8.1 als auch Windows Phone 8,1 als Ziel verwenden, sodass Entwickler Code und andere Ressourcen auf beiden Plattformen verwenden können. Der freigegebene Code und die Ressourcen werden in einem freigegebenen Projekt aufbewahrt, während der plattformspezifische Code und die Ressourcen in separaten Projekten aufbewahrt werden, einer für Windows und der andere für Windows phone. Weitere Informationen zu universellen Windows-apps finden Sie unter [universelle Windows-apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Visual Studio-Erweiterungen, die Projekte verwalten, sollten beachten, dass universelle Windows-App-Projekte eine Struktur aufweisen, die sich von apps mit einer einzelnen Plattform unterscheidet In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie im freigegebenen Projekt navigieren und die freigegebenen Elemente verwalten.
+Universelle Windows-apps sind apps, die sowohl Windows 8.1 als auch Windows Phone 8,1 als Ziel verwenden, sodass Entwickler Code und andere Ressourcen auf beiden Plattformen verwenden können. Der freigegebene Code und die Ressourcen werden in einem freigegebenen Projekt aufbewahrt, während der plattformspezifische Code und die Ressourcen in separaten Projekten aufbewahrt werden, einer für Windows und der andere für Windows phone. Weitere Informationen zu universellen Windows-apps finden Sie unter [universelle Windows-apps](/windows/uwp/get-started/create-uwp-apps). Visual Studio-Erweiterungen, die Projekte verwalten, sollten beachten, dass universelle Windows-App-Projekte eine Struktur aufweisen, die sich von apps mit einer einzelnen Plattform unterscheidet In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie im freigegebenen Projekt navigieren und die freigegebenen Elemente verwalten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="navigate-the-shared-project"></a>Navigieren im freigegebenen Projekt
 

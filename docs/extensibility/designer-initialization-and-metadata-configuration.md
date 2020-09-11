@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712217"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011708"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisierungs-und Metadatenkonfiguration des Designers
 
@@ -97,9 +97,9 @@ Wenn das globale Flag auf festgelegt wurde `false` , erfolgt die Metadatenänder
 > [!NOTE]
 > Die Entwurfs Oberfläche unterstützt nur das Erstellen von Komponenten, sodass nur Komponenten lokale Metadaten aufweisen können. Im obigen Beispiel haben wir versucht, eine Eigenschaft zu ändern, z. b. die- `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag an weitergegeben wurde, wird `CustomBrowser` nie angezeigt, da der Designer nie tatsächlich eine Instanz von erstellt `Color` . Wenn das globale Flag auf festgelegt `false` wird, ist es nützlich für Komponenten, z. b. Steuerelemente, Timer und Dialogfelder.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Erweitern der Entwurfszeit Unterstützung](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Erweitern der Entwurfszeit Unterstützung](/previous-versions/37899azc(v=vs.140))

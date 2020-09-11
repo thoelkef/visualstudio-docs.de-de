@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705863"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012047"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrieren der Befehlshandler von Interop-Assemblys
 Ein VSPackage muss bei registriert werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit die integrierte Entwicklungsumgebung (IDE) die Befehle ordnungsgemäß weiterleitet.
@@ -25,7 +25,7 @@ Ein VSPackage muss bei registriert werden [!INCLUDE[vsprvs](../../code-quality/i
 
  Das Managed Package Framework (MPF) stellt diese Funktionalität durch die- <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Klasse bereit.
 
-- [Referenz Ressourcen des Befehls Tabellen Formats](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) befinden sich in nicht verwalteten Satelliten-UI-DLLs.
+- [Referenz Ressourcen des Befehls Tabellen Formats](/previous-versions/bb164647(v=vs.100)) befinden sich in nicht verwalteten Satelliten-UI-DLLs.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Befehls Handler-Registrierung eines VSPackages
  Ein VSPackage, das als Handler für Benutzeroberflächen basierte Befehle fungiert, erfordert einen Registrierungs Eintrag, der nach dem VSPackage benannt ist `GUID` . Dieser Registrierungs Eintrag gibt den Speicherort der UI-Ressourcen Datei des VSPackages und die Menü Ressource in dieser Datei an. Der Registrierungs Eintrag selbst befindet sich unter HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *\<Version>* \menüs, wobei *\<Version>* die Version von ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , z. b. 9,0.
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehle und Menüs, die Interop-Assemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

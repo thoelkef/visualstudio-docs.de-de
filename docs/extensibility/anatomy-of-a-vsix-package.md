@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250828"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012333"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 Bei einem VSIX-Paket handelt es sich um eine *VSIX* -Datei, die eine oder mehrere Visual Studio-Erweiterungen enthält, sowie die Metadaten, die Visual Studio zum klassifizieren und Installieren der Erweiterungen verwendet. Diese Metadaten sind im VSIX-Manifest und in der Datei *[Content_Types]. XML* enthalten. Ein VSIX-Paket kann auch eine oder mehrere *Extension. vsixlangpack* -Dateien enthalten, um lokalisierten Setup Text bereitzustellen, und kann weitere VSIX-Pakete enthalten, um Abhängigkeiten zu installieren.
@@ -28,7 +28,7 @@ Bei einem VSIX-Paket handelt es sich um eine *VSIX* -Datei, die eine oder mehrer
 > Die Namen der Dateien, die in VSIX-Paketen enthalten sind, dürfen keine Leerzeichen und keine Zeichen enthalten, die in URI (Uniform Resource Identifier) reserviert sind, wie unter [ \[ rfc2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt)definiert.
 
 ## <a name="the-vsix-manifest"></a>Das VSIX-Manifest
- Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie in der [Referenz zum VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Ein Beispiel für ein VSIX-Manifest finden Sie unter [packagemanifest-Element (Stamm Element, VSX-Schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
+ Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie in der [Referenz zum VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)). Ein Beispiel für ein VSIX-Manifest finden Sie unter [packagemanifest-Element (Stamm Element, VSX-Schema)](/previous-versions/dd393754(v=vs.110)).
 
  Das VSIX-Manifest muss benannt werden, `extension.vsixmanifest` Wenn es in einer ^. vsix *-Datei enthalten ist.
 
@@ -52,9 +52,9 @@ Bei einem VSIX-Paket handelt es sich um eine *VSIX* -Datei, die eine oder mehrer
 ## <a name="installation-location"></a>Installationspfad
  Während der Installation sucht **Extensions und Updates** nach dem Inhalt des VSIX-Pakets in einem Ordner unter *%LocalAppData%\microsoft\visualstudio\14.0\Extensions*.
 
- Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *% LocalAppData%* ein benutzerspezifisches Verzeichnis ist. Wenn Sie jedoch das [ALLUSERS](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) -Element des Manifests auf festlegen `True` , wird die Erweiterung unter installiert <em>. \\ </em> Visualstudioinstallationfolder<em>\common7\ide\Extensions</em> und steht allen Benutzern des Computers zur Verfügung.
+ Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *% LocalAppData%* ein benutzerspezifisches Verzeichnis ist. Wenn Sie jedoch das [ALLUSERS](/previous-versions/ee191547(v=vs.110)) -Element des Manifests auf festlegen `True` , wird die Erweiterung unter installiert <em>. \\ </em> Visualstudioinstallationfolder<em>\common7\ide\Extensions</em> und steht allen Benutzern des Computers zur Verfügung.
 
 ## <a name="content_typesxml"></a>[Content_Types]. XML
  Die Datei *[Content_Types]. XML* identifiziert die Dateitypen in der erweiterten *VSIX* -Datei. Visual Studio verwendet diese Datei bei der Installation des Pakets, installiert die Datei jedoch nicht selbst. Weitere Informationen zu dieser Datei finden Sie [in der Struktur der Datei [Content_Types]. XML](the-structure-of-the-content-types-dot-xml-file.md).
 
- Eine *[Content_Types]. XML* -Datei wird vom OPC-Standard (Open Packaging Conventions) benötigt. Weitere Informationen zu OPC finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) auf der MSDN-Website.
+ Eine *[Content_Types]. XML* -Datei wird vom OPC-Standard (Open Packaging Conventions) benötigt. Weitere Informationen zu OPC finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) auf der MSDN-Website.

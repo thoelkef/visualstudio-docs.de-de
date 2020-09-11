@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6d402b6605f2e01a20d400c2c33573c686a1cdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87b33d9b4b3863b89ecd06c3ea959c6e35ec7c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701822"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011982"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink-Element (Visual Studio-Vorlagen)
 Gibt den Pfad zur *VSTEMPLATE* -Datei eines Projekts in einer Vorlage mit mehreren Projekten an.
@@ -44,19 +44,19 @@ noch \<VSTemplate>
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute
+### <a name="attributes"></a>Attributes
 
 |attribute|Beschreibung|
 |---------------|-----------------|
 |`ProjectName`|Optionales Attribut.<br /><br /> Gibt in einer Vorlage für mehrere Projekte den Namen für jedes einzelne Projekt an. Das Dialogfeld **Neues Projekt** kann einzelnen Projekten keine Namen zuweisen.|
-|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Wenn z. b. in der übergeordneten Gruppen Vorlage der-Parameter den `$projectname$` Wert **ExampleProject1**hat, wenn die verknüpfte Vorlage die Ausführung erhält, wird ein Parameter abgerufen, bei dem es sich um `$ext_projectname$` eine Kopie des `$projectname$` Parameters aus der übergeordneten Gruppen Vorlage handelt.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Weitere Informationen zum Verweisen auf die richtige Produktversion finden Sie unter Verweisassemblys, [die im Visual Studio 2013 SDK-Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)|
+|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Wenn z. b. in der übergeordneten Gruppen Vorlage der-Parameter den `$projectname$` Wert **ExampleProject1**hat, wenn die verknüpfte Vorlage die Ausführung erhält, wird ein Parameter abgerufen, bei dem es sich um `$ext_projectname$` eine Kopie des `$projectname$` Parameters aus der übergeordneten Gruppen Vorlage handelt.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Weitere Informationen zum Verweisen auf die richtige Produktversion finden Sie unter Verweisassemblys, [die im Visual Studio 2013 SDK-Update 2](/previous-versions/dn632168(v=vs.120))|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Gruppiert Projekte in Vorlagen für mehrere Projekte.|

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721524"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011865"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Diese Schnittstelle ermöglicht einem Debugmodul (de) oder benutzerdefinierten Port Zulieferern das Registrieren von Programmen für das Debuggen.
@@ -48,7 +48,7 @@ Diese Schnittstelle implementiert die folgenden Methoden:
 ## <a name="remarks"></a>Bemerkungen
 Diese Schnittstelle macht Programme und Programmknoten verfügbar (d. h., veröffentlicht sie) für die Verwendung durch des und den Sitzungs-Debug-Manager (SDM). Um auf veröffentlichte Programme und Programmknoten zuzugreifen, verwenden Sie die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) -Schnittstelle. Dies ist die einzige Möglichkeit, wie Visual Studio erkennen kann, dass ein Programm gedeppt wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
@@ -56,7 +56,7 @@ Namespace: Microsoft. VisualStudio. Debugger. Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Beispiel
-In diesem Beispiel wird gezeigt, wie der Programm Verleger instanziiert und ein Programmknoten registriert wird. Dies wird aus dem Tutorial zum [Veröffentlichen des Programm Knotens](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)entnommen.
+In diesem Beispiel wird gezeigt, wie der Programm Verleger instanziiert und ein Programmknoten registriert wird. Dies wird aus dem Tutorial zum [Veröffentlichen des Programm Knotens](/previous-versions/bb161795(v=vs.90))entnommen.
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
