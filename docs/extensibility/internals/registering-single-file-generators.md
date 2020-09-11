@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705811"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012034"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
 Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , müssen Sie es registrieren, damit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es instanziieren und einem bestimmten Projekttyp zuordnen kann.
@@ -40,7 +40,7 @@ Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../
 
    - (Standardwert)
 
-        Optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
+        (Optional) Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
 
    - CLSID
 
@@ -67,8 +67,8 @@ Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementieren von Generatoren einzelner Dateien](../../extensibility/internals/implementing-single-file-generators.md)
 - [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [Einführung in das BuildManager-Objekt](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Einführung in das BuildManager-Objekt](/previous-versions/8f9kffa8(v=vs.140))

@@ -10,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706384"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012060"
 ---
 # <a name="project-type-essentials"></a>Grundlagen zu Projekttypen
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umfasst mehrere Projekttypen für Sprachen, wie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . b. oder. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit können Sie auch eigene Projekttypen erstellen.
 
- Wenn Sie nur benutzerdefinierte Befehle, Editoren oder Tool Fenster hinzufügen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , können Sie dies tun, ohne einen neuen Projekttyp erstellen zu müssen. Weitere Informationen finden Sie unter den folgenden Themen:
+ Wenn Sie nur benutzerdefinierte Befehle, Editoren oder Tool Fenster hinzufügen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , können Sie dies tun, ohne einen neuen Projekttyp erstellen zu müssen. Weitere Informationen finden Sie in den folgenden Themen:
 
 - [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)
 
@@ -40,7 +40,7 @@ ms.locfileid: "80706384"
 
 - Quellcodeverwaltung
 
-- Debuggen
+- Debugging
 
 - Projekt Elemente in Projektmappen-Explorer
 
@@ -52,7 +52,7 @@ ms.locfileid: "80706384"
 
 - Projekttypen sind Objekte in einem VSPackage, die den Satz von erwarteten Schnittstellen implementieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Wenn Sie c# verwenden, um einen Projekttyp zu entwickeln, implementieren die Projektklassen des Managed Package Frameworks die erforderlichen Schnittstellen für Sie, und Sie können diese Implementierung erben. Weitere Informationen finden Sie unter [Verwenden des Managed Package Frameworks zum Implementieren eines Projekt Typs (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
 
-- Für C++-Entwickler funktionieren die Klassen in der Hierarchien-Bibliothek auf ähnliche Weise. Weitere Informationen finden Sie unter [nicht im Build: Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+- Für C++-Entwickler funktionieren die Klassen in der Hierarchien-Bibliothek auf ähnliche Weise. Weitere Informationen finden Sie unter [nicht im Build: Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100)).
 
 - Projekttypen können andere Daten als typische Quell Code Dateien unterstützen, die in einer exe-oder dll-Assembly erstellt werden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Datenbankprojekte enthalten z. b. Verweise auf Skript-und Abfrage Dateien, die auf dem Datenträger gespeichert sind, und fügen Befehle zu **Projektmappen-Explorer** hinzu, um die Skripts und Abfragen für eine Datenbank auszuführen, aber die Projekte unterstützen kein Buildverhalten Weitere Informationen finden Sie unter [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md).
 

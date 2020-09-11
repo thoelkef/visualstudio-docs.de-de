@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713222"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011839"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrieren einer benutzerdefinierten Debug-Engine
 Die Debug-Engine muss sich selbst als Klassenfactory registrieren, die auf com-Konventionen folgt und sich über den Visual Studio-Registrierungs Unterschlüssel bei Visual Studio registriert.
 
 > [!NOTE]
-> Ein Beispiel für die Registrierung einer Debug-Engine finden Sie im Textinterpreter-Beispiel, das im Rahmen des [Tutorials: Erstellen einer Debug-Engine mithilfe von ATL-COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)erstellt wird.
+> Ein Beispiel für die Registrierung einer Debug-Engine finden Sie im Textinterpreter-Beispiel, das im Rahmen des [Tutorials: Erstellen einer Debug-Engine mithilfe von ATL-COM](/previous-versions/bb147024(v=vs.90))erstellt wird.
 
 ## <a name="dll-server-process"></a>DLL-Server Prozess
  Eine Debug-Engine wird in der Regel in einer eigenen dll als com-Server eingerichtet. Daher muss die Debug-Engine die CLSID ihrer Klassenfactory bei com registrieren, bevor Visual Studio darauf zugreifen kann. Anschließend muss die Debug-Engine sich bei Visual Studio registrieren, um Eigenschaften (auch als Metriken bezeichnet) zu erstellen, die von der Debug-Engine unterstützt werden. Die Auswahl der in den Visual Studio-Registrierungs Unterschlüssel geschriebenen Metriken hängt von den Funktionen ab, die die Debug-Engine unterstützt.
@@ -48,7 +48,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [SDK-Hilfsprogramme zum Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Tutorial: aufbauen einer Debug-Engine mithilfe von ATL-COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [Tutorial: aufbauen einer Debug-Engine mithilfe von ATL-COM](/previous-versions/bb147024(v=vs.90))

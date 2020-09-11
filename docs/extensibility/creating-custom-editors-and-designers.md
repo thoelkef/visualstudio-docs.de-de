@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903736"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012268"
 ---
 # <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 
@@ -59,7 +59,7 @@ Weitere Informationen zum Visual Studio-Kern-Editor finden Sie unter [Erweitern 
 
 - Muss der Editor ActiveX-Steuerelemente hosten?
 
-   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard Editor an.
+   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](../vs-2015/misc/in-place-activation.md?view=vs-2015)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard Editor an.
 
 - Unterstützt der Editor mehrere Ansichten? Sie müssen mehrere Sichten unterstützen, wenn Sie möchten, dass Ansichten des Editors zur gleichen Zeit wie der Standard-Editor sichtbar sind.
 
@@ -93,7 +93,7 @@ Erläutert, wie Dokument Daten und Dokument Sichten in benutzerdefinierten Edito
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Legacy Schnittstellen im Editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[Legacy Schnittstellen im Editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 Erläutert, wie Sie mithilfe der Legacy-API auf den Kern-Editor zugreifen können.
 
 [Entwickeln eines Legacy sprach Dienstanbieter](../extensibility/internals/developing-a-legacy-language-service.md)\

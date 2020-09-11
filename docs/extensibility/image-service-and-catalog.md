@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536330"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011956"
 ---
 # <a name="image-service-and-catalog"></a>Image-Dienst und-Katalog
 Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung von Visual Studio Image Service und Image Catalog, die in Visual Studio 2015 eingeführt wurden.
@@ -105,7 +105,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|
 |Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
-|id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
+|ID|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:
@@ -144,7 +144,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|id|Benötigten Der ID-Teil des bilmonikers.|
+|ID|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
  **Quelle**
@@ -166,7 +166,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|
 |-|-|-|
-|\<Size>|value|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|
+|\<Size>|Wert|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|
 |\<SizeRange>|MinSize, MaxSize|Die Quelle wird für Images von MinSize bis MaxSize (in Geräte Einheiten) inklusive verwendet. Das Bild wird quadratisch.|
 |\<Dimensions>|Width, Height|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräte Einheiten) verwendet.|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird für Bilder von der minimalen Breite/Höhe bis zur maximalen Breite bzw. Höhe (in Geräte Einheiten) einschließlich der maximalen Breite/Höhe verwendet.|
@@ -179,8 +179,8 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Attribut**|**Definition**|
 |-|-|
-|type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
-|id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
+|Typ|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
+|ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
 
@@ -196,7 +196,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|id|Benötigten Der ID-Teil des bilmonikers.|
+|ID|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
  Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.
@@ -712,9 +712,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aktualisieren Sie Ihren Code, um den Image-Dienst zum Anfordern von Monikern über die aktualisierte Zuordnung zu verwenden. (Dies kann bedeuten, dass Sie für verwalteten Code auf " **crispimages** " aktualisieren, HBITMAPs oder hicons aus dem Image-Dienst anfordern und Sie für nativen Code übergeben.)
 
 ## <a name="testing-your-images"></a>Testen von Images
- Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](./internals/vssdk-utilities.md?view=vs-2015).
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 ### <a name="samples"></a>Beispiele
  Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zu veranschaulichen, wie Sie den Image Service als Teil verschiedener Visual Studio-Erweiterbarkeits Punkte verwenden können.

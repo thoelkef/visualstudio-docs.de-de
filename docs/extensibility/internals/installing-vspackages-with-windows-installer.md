@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707460"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012203"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installieren von VSPackages mit Windows Installer
 Die Integration des VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erfordert mehr als nur das Kopieren von Dateien auf den Computer eines Benutzers. Das VSPackage-Installationsprogramm muss das VSPackage und seine abhängigen Dateien installieren und Sie registrieren und in integrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Das VSPackage kann Integrations Features wie das Anzeigen eines Symbols auf dem Begrüßungs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bildschirm und das Dialogfeld "Info" nutzen.
 
- Microsoft Windows Installer Dateien sind die empfohlene Vorgehensweise zum Verteilen von VSPackages. Leicht zu verwendende Windows Installer Pakete können unter allen Windows-Betriebssystemen ausgeführt werden, die von unterstützt werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Weitere Informationen finden Sie unter [Windows Installer](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).
+ Microsoft Windows Installer Dateien sind die empfohlene Vorgehensweise zum Verteilen von VSPackages. Leicht zu verwendende Windows Installer Pakete können unter allen Windows-Betriebssystemen ausgeführt werden, die von unterstützt werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Weitere Informationen finden Sie unter [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Grundlagen zu Windows Installer](../../extensibility/internals/windows-installer-basics.md)

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6673ad8f26c94165635b5f1bc652b91dcbbfd24f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709311"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012450"
 ---
 # <a name="context-parameters"></a>Kontextparameter
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) können Sie Assistenten zu den Dialogfeldern **Neues Projekt**, **Neues Element hinzu**fügen oder **Unterprojekt hinzufügen** hinzufügen. Die hinzugefügten Assistenten sind im Menü **Datei** verfügbar, oder Sie klicken mit der rechten Maustaste auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontext Parameter an die Implementierung des Assistenten. Die Kontext Parameter definieren den Status des Projekts, wenn der Assistent von der IDE aufgerufen wird.
@@ -58,10 +58,10 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 | `InstallationDirectory` | Verzeichnispfad der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Installation. |
 | `Silent` | Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll, als ob auf **Fertig** stellen geklickt wurde ( `TRUE` ). |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)
-- [The](../../extensibility/internals/wizards.md)
+- [Assistenten](../../extensibility/internals/wizards.md)
 - [Assistenten Datei (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-- [Kontext Parameter für das Starten von Assistenten](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+- [Kontext Parameter für das Starten von Assistenten](/previous-versions/tz690efs(v=vs.140))

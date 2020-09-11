@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173602"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012151"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
 In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von Menü Elementen, Symbolleisten und anderen Elementen der Benutzeroberfläche zur integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen. Gehen Sie folgendermaßen vor, wenn Sie einem Visual Studio-Paket (VSPackage), das noch keine *vsct* -Datei enthält, Benutzeroberflächen Elemente hinzufügen.
@@ -108,7 +108,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
        > [!NOTE]
        > Symbolleisten-Schaltflächen müssen Symbole aufweisen.
 
-   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 4. Wenn für einen ihrer Befehle Symbole erforderlich sind, fügen Sie dem-Element ein [Bitmaps](../../extensibility/bitmaps-element.md) -Element hinzu `Commands` . Fügen Sie dann für jedes Symbol dem-Element ein [Bitmap](../../extensibility/bitmap-element.md) -Element hinzu `Bitmaps` . Hier geben Sie den Speicherort der Bitmap-Ressource an. Weitere Informationen finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](../../extensibility/adding-icons-to-menu-commands.md).
 

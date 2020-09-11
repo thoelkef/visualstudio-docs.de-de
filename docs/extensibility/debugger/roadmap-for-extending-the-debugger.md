@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713137"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011826"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roadmap für die Erweiterung des Debuggers
 Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern des [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] Debuggers mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -27,7 +27,7 @@ Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern
 
 - Gibt das systemeigene Windows-Betriebssystem an und schreibt *. PDB* -Datei: Sie können Programme mit dem systemeigenen Code Debug Engine (de) Debuggen, das in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Sie müssen keine de-oder-Ausdrucks Auswertung implementieren. Die Ausdrucks Auswertung wird für die Syntax der Programmiersprache C++ geschrieben.
 
-- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
+- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
 
    [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
@@ -39,11 +39,11 @@ Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern
 
    [Schreiben einer Common Language Runtime Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
+- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
 
    [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Tutorial: Erstellen einer Debug-Engine mithilfe von ATL-COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Tutorial: Erstellen einer Debug-Engine mithilfe von ATL-COM](/previous-versions/bb147024(v=vs.90))
 
    [Implementieren eines Port Anbieters](../../extensibility/debugger/implementing-a-port-supplier.md)
 

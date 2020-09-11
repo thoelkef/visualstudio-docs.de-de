@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739968"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011787"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -97,7 +97,7 @@ Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Di
 
 ### <a name="global-com-registration"></a>Globale com-Registrierung
 
-* Zuvor hat Visual Studio viele Registrierungsschlüssel im HKEY_CLASSES_ROOT und HKEY_LOCAL_MACHINE Strukturen installiert, um die Native COM-Registrierung zu unterstützen. Um diese Auswirkung auszuschließen, verwendet Visual Studio jetzt die [Registrierungs freie Aktivierung für COM-Komponenten](https://msdn.microsoft.com/library/ms973913.aspx).
+* Zuvor hat Visual Studio viele Registrierungsschlüssel im HKEY_CLASSES_ROOT und HKEY_LOCAL_MACHINE Strukturen installiert, um die Native COM-Registrierung zu unterstützen. Um diese Auswirkung auszuschließen, verwendet Visual Studio jetzt die [Registrierungs freie Aktivierung für COM-Komponenten](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
 * Folglich werden die meisten TLB/OLB/dll-Dateien unter% Program Files (x86)% \ Common Files\Microsoft shared\msenv nicht mehr standardmäßig von Visual Studio installiert. Diese Dateien werden jetzt unter [INSTALLDIR] mit den entsprechenden Registrierungs freien com-Manifesten installiert, die vom Visual Studio-Host Prozess verwendet werden.
 * Folglich findet externer Code, der auf der globalen com-Registrierung für Visual Studio-com-Schnittstellen basiert, diese Registrierungen nicht mehr. Im Code, der in Visual Studio ausgeführt wird, wird kein Unterschied angezeigt.
 

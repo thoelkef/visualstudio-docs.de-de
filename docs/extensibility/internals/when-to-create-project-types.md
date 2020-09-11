@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 861250dac25288f353cbd5c57f510bf67dadce70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703431"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012008"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
 Wenn Sie einen neuen Projekttyp erstellen, finden Sie eine Grundlage für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Anpassung für Ihre Benutzer. Es ist jedoch nicht erforderlich, einen neuen Projekttyp für alle Anpassungen zu erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Die folgenden Richtlinien sollen Ihnen dabei helfen zu bestimmen, ob ein neuer Projekttyp für Ihr Szenario erforderlich ist.
@@ -50,14 +50,14 @@ Wenn Sie einen neuen Projekttyp erstellen, finden Sie eine Grundlage für [!INCL
 |Aufgabe|BESCHREIBUNG|
 |----------|-----------------|
 |Verarbeiten von Befehlen|Alle VSPackage können Befehle verarbeiten.|
-|Aufbauen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Fenster und Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Aufbauen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Fenster und Editoren](/previous-versions/bb165691(v=vs.100)).|
 |Besitzende Fenster|Sie können sowohl Tool-als auch Dokument Fenster erstellen, ohne einen neuen Projekttyp hinzuzufügen.|
 |Verfügbar machen von Eigenschaften im Eigenschaftenfenster|Alle-Objekte können Eigenschaften verfügbar machen.|
 
 ## <a name="create-a-project-subtype"></a>Erstellen eines Projekt unter Typs
  Mithilfe von Projekt Untertypen können Sie einen verwalteten Projekttyp erweitern, ohne einen neuen Projekttyp erstellen zu müssen. Projekt Untertypen verwenden com-Aggregation, um verwaltete Projekte zu erweitern, die in Microsoft oder geschrieben wurden [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . Mit com-Aggregation können Sie einen Großteil der Implementierung des verwalteten Projekt Systems wieder verwenden und dennoch für ein bestimmtes Szenario durch Aggregation und die Verwendung von unterstützenden Schnittstellen anpassen. Weitere Informationen zu Projekt Untertypen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>Weitere Informationen
-- [Dokument Fenster und-Editoren](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+## <a name="see-also"></a>Siehe auch
+- [Dokument Fenster und-Editoren](/previous-versions/bb165691(v=vs.100))
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
