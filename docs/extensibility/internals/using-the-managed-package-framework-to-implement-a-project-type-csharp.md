@@ -1,5 +1,6 @@
 ---
 title: Verwenden des Managed Package Frameworks für einen Projekttyp (c#)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 496a2528ae70d06696ef25b1adc6255622be3b2f
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741356"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038646"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)
 Das Managed Package Framework (MPF) stellt c#-Klassen bereit, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren. Das MPF implementiert viele der Schnittstellen, die Visual Studio für einen Projekttyp erwartet, sodass Sie sich auf die Implementierung der Einzelheiten Ihres Projekt Typs konzentrieren können.

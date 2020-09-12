@@ -1,6 +1,7 @@
 ---
 title: Bearbeitbare Änderungen ohne Commit
 description: Commit-Prozess interne Bearbeitung von Daten gebundenen Steuerelementen vor dem Speichern
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: accf31187318c70ded0cc347763664b8fd51d479
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739267"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038373"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Ausführen eines Commits für aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten
 
@@ -51,7 +52,7 @@ Im folgenden Code wird eine [LINQ (Language-Integrated Query)-](/dotnet/csharp/l
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)

@@ -1,5 +1,6 @@
 ---
 title: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 33886b170a8e0138a199f5d7cb51467875c8c3c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742036"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037470"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
 Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einer Textansicht im Editor ein Zusatzelement hinzugefügt wird, indem ein Menübefehl aufgerufen wird.
@@ -691,5 +692,5 @@ Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen
 
      Vierscore...
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

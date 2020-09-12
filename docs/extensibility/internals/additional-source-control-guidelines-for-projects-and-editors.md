@@ -1,5 +1,6 @@
 ---
 title: Richtlinien für die Quell Code Verwaltung für Projekte und Editoren
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743391"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037633"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Weitere Richtlinien zur Quell Code Verwaltung für Projekte und Editoren
 Es gibt eine Reihe von Richtlinien, die von Projekten und Editoren befolgt werden sollten, um die Quell Code Verwaltung zu unterstützen.
@@ -33,5 +34,5 @@ Es gibt eine Reihe von Richtlinien, die von Projekten und Editoren befolgt werde
 |Beibehalten von Objekten und Eigenschaften in vorhersag barer Reihenfolge|X|X|Speichern Sie die Dateien in einer vorhersagbaren Reihenfolge, z. b. in alphabetischer Reihenfolge|
 |Erneut laden|X|X|Wenn sich eine Datei auf dem Datenträger ändert, muss Sie in der Lage sein, Sie erneut zu laden. Wenn Sie an der Quell Code Verwaltung teilnehmen, lädt die Umgebung Daten für Sie neu, indem Sie Ihre- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung aufrufen. Die schwierigste groß-und Kleinschreibung besteht darin, dass ein Auschecken auftritt, wenn Sie ivsqueryeditquerysave:: aufgerufen haben <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Verarbeitungs Informationen sind. Der Code zum erneuten Laden muss jedoch in dieser Situation ausgeführt werden können.<br /><br /> Die Umgebung lädt Projektdateien automatisch erneut. Ein Projekt muss jedoch implementieren, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Wenn es über unterstützte Hierarchien verfügt, um das erneute Laden von masted-Projektdateien zu unterstützen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Quell Code Verwaltung unterstützen](../../extensibility/internals/supporting-source-control.md)

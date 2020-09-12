@@ -1,6 +1,7 @@
 ---
 title: Diagnose für Azure Cloud Services und VMS
 description: Erfahren Sie mehr über das Einrichten der Diagnose für das Debuggen von Azure-Clouddiensten und virtuellen Azure-Computern (VMs) in Visual Studio.
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -8,12 +9,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 7e0d261edfd946aed5d459ec732f652448fc46c0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0dd19ff2fd03304beccbb6f24fa6b5fe4e9e0106
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89740136"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037093"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
