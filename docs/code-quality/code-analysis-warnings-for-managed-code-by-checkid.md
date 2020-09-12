@@ -1,6 +1,6 @@
 ---
 title: Übersicht über Codequalitätsregeln
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509444"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037236"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
+# <a name="code-quality-analysis-rules-by-rule-id"></a>Regeln für die Code Qualitätsanalyse nach Regel-ID
 
-In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach dem CheckId-Bezeichner der Warnung aufgeführt.
+In der folgenden Tabelle sind die Regeln zur Code Qualitätsanalyse nach Regel Bezeichner aufgeführt.
 
 | CheckId | Warnung | BESCHREIBUNG |
 |---------| - | - |
@@ -372,7 +372,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1831 |[CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.](../code-quality/ca1831.md) | Wenn Sie einen Range-Indexer für eine Zeichenfolge verwenden und den Wert dem Typ "Read onlyspan char" implizit zuweisen &lt; &gt; , wird die-Methode <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils der Zeichenfolge erzeugt wird. |
 | CA1832 |[CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.](../code-quality/ca1832.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.ReadOnlySpan%601> oder- <xref:System.ReadOnlyMemory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
 | CA1833 |[CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.](../code-quality/ca1833.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.Span%601> oder- <xref:System.Memory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
-| CA1834 |[CA1834: StringBuilder. Append (Char) für Zeichen folgen mit einem Zeichen verwenden](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> verfügt über eine-Überladung `Append` , die einen `char` als sein Argument annimmt. Bevorzugen Sie die `char` Überladung aus Leistungsgründen. |
+| CA1834 |[CA1834: Verwenden von StringBuilder.Append(char) für Zeichenfolgen mit einem einzelnen Zeichen](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> verfügt über eine-Überladung `Append` , die einen `char` als sein Argument annimmt. Bevorzugen Sie die `char` Überladung aus Leistungsgründen. |
 | CA1835 |[CA1835: bevorzugen Sie die "Memory"-basierten über Ladungen für "Read Async" und "schreiteasync".](../code-quality/ca1835.md) | ' Stream ' weist eine ' Schreib async '-Überladung auf, die ein ' Memory &lt; Byte &gt; ' als erstes Argument annimmt, und eine ' schreiteasync '-Überladung, die ein ' Read onlymemory &lt; Byte &gt; ' als erstes Argument annimmt. Bevorzugen Sie das Aufrufen der Speicher basierten über Ladungen, die effizienter sind. |
 | CA1836 |[CA1836: bevorzugen `IsEmpty` , `Count` Wenn verfügbar](../code-quality/ca1836.md) | Bevorzugt eine `IsEmpty` Eigenschaft, die effizienter ist als `Count` , oder, `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> um zu bestimmen, ob das Objekt Elemente enthält oder nicht. |
 | CA1837 | [CA1837: Verwenden Sie `Environment.ProcessId` anstelle von. `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` ist einfacher und schneller als `Process.GetCurrentProcess().Id` . |
@@ -466,7 +466,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA5358 | [CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.](../code-quality/ca5358.md) | Verwenden Sie keine unsicheren Verschlüsselungsmodi. |
 | CA5359 | [CA5359 die Zertifikats Überprüfung nicht deaktivieren](../code-quality/ca5359.md) | Ein Zertifikat kann bei der Authentifizierung der Identität des Servers helfen. Clients sollten das Serverzertifikat überprüfen, um sicherzustellen, dass Anforderungen an den vorgesehenen Server gesendet werden. Wenn servercertifikatevalidationcallback immer zurück `true` gegeben wird, übergibt jedes Zertifikat die Validierung. |
 | CA5360 | [CA5360 keine gefährlichen Methoden bei der Deserialisierung aufzurufen](../code-quality/ca5360.md) | Unsichere Deserialisierung ist ein Sicherheitsrisiko, das auftritt, wenn nicht vertrauenswürdige Daten verwendet werden, um die Logik einer Anwendung zu missbrauchen, einen Denial-of-Service-Angriff (DOS) zu verursachen oder sogar beliebigen Code auszuführen, wenn Sie deserialisiert werden. Es ist oft möglich, dass böswillige Benutzer diese deserialisierungsfeatures missbrauchen, wenn die Anwendung nicht vertrauenswürdige Daten deserialisiert, die unter ihrer Kontrolle liegen. Rufen Sie insbesondere gefährliche Methoden im Prozess der Deserialisierung auf. Erfolgreiche unsichere deserialisierungsangriffe können einem Angreifer ermöglichen, Angriffe wie DOS-Angriffe, Authentifizierungs Umgehungen und Remote Codeausführung auszuführen. |
-| CA5361 | [CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.](../code-quality/ca5361.md) | Durch Festlegen `Switch.System.Net.DontEnableSchUseStrongCrypto` von auf `true` wird die Kryptografie für ausgehende Transport Layer Security Verbindungen (TLS) schwächer. Schwächere Kryptografie kann die Vertraulichkeit der Kommunikation zwischen Ihrer Anwendung und dem Server beeinträchtigen, sodass Angreifer die Möglichkeit erhalten, sensible Daten besser zu löschen. |
+| CA5361 | [CA5361: die SChannel-Verwendung der starken Kryptografie nicht deaktivieren](../code-quality/ca5361.md) | Durch Festlegen `Switch.System.Net.DontEnableSchUseStrongCrypto` von auf `true` wird die Kryptografie für ausgehende Transport Layer Security Verbindungen (TLS) schwächer. Schwächere Kryptografie kann die Vertraulichkeit der Kommunikation zwischen Ihrer Anwendung und dem Server beeinträchtigen, sodass Angreifer die Möglichkeit erhalten, sensible Daten besser zu löschen. |
 | CA5362 | [CA5362 potenzieller Verweis Cycle im deserialisierten Objekt Diagramm](../code-quality/ca5362.md) | Wenn nicht vertrauenswürdige Daten deserialisiert werden, muss jeder Code, der das deserialisierte Objekt Diagramm verarbeitet, Verweis Zyklen verarbeiten, ohne in unendliche Schleifen zu wechseln. Dies umfasst sowohl Code, der Teil eines deserialisierungsrückrufs ist, als auch Code, der das Objekt Diagramm nach Abschluss der Deserialisierung verarbeitet. Andernfalls könnte ein Angreifer einen Denial-of-Service-Angriff mit bösartigen Daten durchführen, die einen Verweis-Cycle enthalten. |
 | CA5363 | [CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.](../code-quality/ca5363.md) | Die Anforderungs Validierung ist eine Funktion in ASP.net, die HTTP-Anforderungen untersucht und bestimmt, ob Sie potenziell gefährlichen Inhalt enthalten, der zu Injection-Angriffen führen kann, einschließlich Website übergreifender Skripts. |
 | CA5364 | [CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.](../code-quality/ca5364.md) | Transport Layer Security (TLS) sichert die Kommunikation zwischen Computern, in der Regel mit HTTPS (Hypertext Transfer Protocol Secure). Ältere Protokoll Versionen von TLS sind weniger sicher als TLS 1,2 und TLS 1,3 und haben wahrscheinlich neue Sicherheitsrisiken. Vermeiden Sie ältere Protokoll Versionen, um Risiken zu minimieren. |

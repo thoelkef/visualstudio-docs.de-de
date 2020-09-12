@@ -1,6 +1,7 @@
 ---
 title: Erweitern von Eigenschaften, Aufgabenliste, Ausgabe, Fenster "Optionen"
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743342"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038477"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster Eigenschaften, Aufgabenliste, Ausgabe und Optionen
 Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Informationen zu Ihrem Tool Fenster in eine neue **options** Seite und eine neue Einstellung auf der **Eigenschaften** Seite integrieren und wie Sie in die **Aufgabenliste** -und **Ausgabe** Fenster schreiben.
