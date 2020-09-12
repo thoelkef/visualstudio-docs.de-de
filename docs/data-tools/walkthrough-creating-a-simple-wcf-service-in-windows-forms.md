@@ -1,6 +1,7 @@
 ---
 title: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 697e7b36b1b83987450a25e3cf8b717218bff5c9
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741931"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036794"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
 
@@ -150,6 +151,6 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
      ![Das Formular mit dem Ergebnis](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

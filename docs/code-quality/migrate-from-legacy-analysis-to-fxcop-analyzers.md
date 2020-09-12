@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937560"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036573"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migration von der Legacy Analyse (FxCop) zur Quell Analyse (FxCop-Analyzers)
 
@@ -27,11 +27,11 @@ Viele der Regeln für die Legacy Analyse (FxCop) wurden bereits für FxCop-Analy
 
 Weitere Informationen zu den Unterschieden zwischen der Legacy-und der Quell Analyse finden Sie in den folgenden Quellen:
 
-- [Quellcodeanalyse im Vergleich zur Legacyanalyse](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Quellcodeanalyse im Vergleich zur Legacyanalyse](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [FAQ zu FxCop-Analyzern](../code-quality/fxcop-analyzers-faq.md)
 
-[Installieren Sie die FxCop](../code-quality/install-fxcop-analyzers.md)-Analysetools, um zur Quell Analyse zu migrieren. Wenn Verstöße bei der Quellcodeanalyse gefunden werden, werden diese ähnlich wie bei der Legacyanalyse im Fenster „Fehlerliste“ in Visual Studio angezeigt. Außerdem erscheinen Verstöße bei der Quellcodeanalyse auch im Code-Editor als *Wellenlinie* unter dem fehlerhaften Code. Die Farbe der Wellenlinie hängt von den [Schweregradeinstellungen](../code-quality/use-roslyn-analyzers.md#rule-severity) der Regel ab. Informationen zum Status der Regeln, die in die neuen FxCop-Analyzers portiert werden, finden Sie unter [portierte und nicht portierte Regeln](../code-quality/fxcop-rule-port-status.md).
+[Installieren Sie die FxCop](../code-quality/install-fxcop-analyzers.md)-Analysetools, um zur Quell Analyse zu migrieren. Wenn Verstöße bei der Quellcodeanalyse gefunden werden, werden diese ähnlich wie bei der Legacyanalyse im Fenster „Fehlerliste“ in Visual Studio angezeigt. Außerdem erscheinen Verstöße bei der Quellcodeanalyse auch im Code-Editor als *Wellenlinie* unter dem fehlerhaften Code. Die Farbe der Wellenlinie hängt von den [Schweregradeinstellungen](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) der Regel ab. Informationen zum Status der Regeln, die in die neuen FxCop-Analyzers portiert werden, finden Sie unter [portierte und nicht portierte Regeln](../code-quality/fxcop-rule-port-status.md).
 
 Weitere Informationen zum Konfigurieren der FxCop-Analyzers finden Sie unter:
 

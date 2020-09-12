@@ -1,6 +1,7 @@
 ---
 title: SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58c8cd8eef19c6fe5ef6129d9149ec9b650c5025
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2ef6cb4f96bf1b31566fef8b714ed30c270ad754
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741738"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036846"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
 
@@ -61,7 +62,7 @@ Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob di
 
 ## <a name="remarks"></a>Bemerkungen
 
- `SupportsLanguageDropDown` ist ein optionales Element. Standardwert: `false`.
+ `SupportsLanguageDropDown` ist ein optionales Element. Der Standardwert ist `false`.
 
  Das- `SupportsLanguageDropDown` Element ist nur für Webelement Vorlagen verfügbar.
 
@@ -93,7 +94,7 @@ Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob di
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
