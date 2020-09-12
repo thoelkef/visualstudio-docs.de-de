@@ -1,6 +1,7 @@
 ---
 title: Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743072"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034792"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 
@@ -64,5 +65,5 @@ In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPacka
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Diese Schnittstelle wird verwendet, um die Quell Code Verwaltungs Einstellungen in der Projektmappenoptionen (. suo) zu speichern. Dies kann benutzerspezifische Einstellungen der Quell Code Verwaltung umfassen, z. b. den Anmelde Speicherort des aktuellen Benutzers. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Diese Schnittstelle wird verwendet, um Ereignisse zu überwachen, um Vorgänge wie das Einchecken von Projektdateien vor dem Schließen von Projektmappen oder das erhalten von neuen Dateien aus der Quell Code Verwaltung beim Öffnen eines Projekts auszuführen. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)

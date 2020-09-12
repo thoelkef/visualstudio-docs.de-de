@@ -1,54 +1,34 @@
 ---
-title: Schweregrad und Unterdrückung der Analyse Regel
-ms.date: 03/04/2020
+title: Analyse der Codequalität
+ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599981"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036364"
 ---
-# <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
+# <a name="configure-code-quality-analysis"></a>Konfigurieren der Codequalitätsanalyse
 
-.NET Compiler Platform ("Roslyn")-Code Analysen analysieren Ihren c#-oder Visual Basic Code, während Sie eingeben. Jede *Diagnose* oder Regel weist einen Standard Schweregrad und Unterdrückungs Status auf, der für Ihr Projekt überschrieben werden kann. In diesem Artikel werden der Schweregrad der Regel, die Verwendung von Regelsätzen und das Unterdrücken von Verletzungen behandelt
+Ab .net 5,0 sind Code Qualitätsanalysen im .NET SDK enthalten. (Bisher haben Sie diese Analysen als nuget-Paket installiert.) Die Code Analyse ist standardmäßig für Projekte aktiviert, die auf .net 5,0 oder höher ausgerichtet sind. Sie können die Code Analyse für Projekte aktivieren, die auf frühere .NET-Versionen abzielen, indem Sie die [enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) -Eigenschaft auf festlegen `true` . Sie können die Code Analyse für Ihr Projekt auch deaktivieren, indem Sie `EnableNETAnalyzers` auf festlegen `false` .
 
-## <a name="analyzers-in-solution-explorer"></a>Analyzers in Projektmappen-Explorer
+Jede *Diagnose* oder Regel der Code Qualitätsanalyse hat einen Standard Schweregrad und Unterdrückungs Status, der überschrieben und für Ihr Projekt angepasst werden kann. In diesem Artikel werden die Schweregrade von Code Quality Analyzer und das Unterdrücken von Analyzer-Verstößen behandelt
 
-Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmappen-Explorer**erledigen. Wenn Sie [Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren, wird in **Projektmappen-Explorer**unter dem Knoten **Verweise** oder **Abhängigkeiten** ein **Analysen** -Knoten angezeigt. Wenn Sie **Analyzers**erweitern und dann eine der Analyzer-Assemblys erweitern, werden alle Diagnosen in der Assembly angezeigt.
-
-![Analyzers-Knoten in Projektmappen-Explorer](media/analyzers-expanded-in-solution-explorer.png)
-
-Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften**aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
-
-![Diagnose Eigenschaften in Eigenschaftenfenster](media/analyzer-diagnostic-properties.png)
-
-Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose und wählen **Hilfe anzeigen**aus.
-
-Die Symbole neben den einzelnen Diagnose in **Projektmappen-Explorer** entsprechen den Symbolen, die im Regelsatz angezeigt werden, wenn Sie Sie im Editor öffnen:
-
-- Das "x" in einem Kreis zeigt den [Schweregrad](#rule-severity) " **Fehler** " an.
-- "!" in einem Dreieck weist auf den [Schweregrad](#rule-severity) " **Warnung** " hin.
-- "i" in einem Kreis zeigt den [Schweregrad](#rule-severity) der **Informationen** an.
-- Das "i" in einem Kreis in einem hellfarbigen Hintergrund weist auf den [Schweregrad](#rule-severity) " **ausgeblendet** " hin.
-- der nach unten zeigende Pfeil in einem Kreis gibt an, dass die Diagnose unterdrückt wird.
-
-![Diagnose Symbole in Projektmappen-Explorer](media/diagnostics-icons-solution-explorer.png)
-
-## <a name="rule-severity"></a>Regelschweregrad
+## <a name="configure-severity-levels"></a>Konfigurieren von Schweregraden
 
 ::: moniker range=">=vs-2019"
 
-Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose*konfigurieren, wenn Sie [die-Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren. Ab Visual Studio 2019 Version 16,3 können Sie den Schweregrad einer Regel [in einer Editor config-Datei](#set-rule-severity-in-an-editorconfig-file)konfigurieren. Sie können den Schweregrad einer Regel auch [von Projektmappen-Explorer](#set-rule-severity-from-solution-explorer) oder [einer Regel Satz Datei](#set-rule-severity-in-the-rule-set-file)aus ändern.
+Ab Visual Studio 2019 Version 16,3 können Sie den Schweregrad von Analyse Regeln oder *Diagnosen*in einer [Editor config-Datei](#set-rule-severity-in-an-editorconfig-file), im [Glühbirnen Menü](#set-rule-severity-from-the-light-bulb-menu)und in der Fehlerliste konfigurieren.
 
 ::: moniker-end
 
@@ -69,13 +49,19 @@ In der folgenden Tabelle werden die verschiedenen Optionen für den Schweregrad 
 | Keine | `none` | Vollständig unterdrückt. | Vollständig unterdrückt. |
 | Standard | `default` | Entspricht dem Standard Schweregrad der Regel. Um den Standardwert für eine Regel zu ermitteln, suchen Sie in der Eigenschaftenfenster. | Entspricht dem Standard Schweregrad der Regel. |
 
-Der folgende Screenshot des Code-Editors zeigt drei verschiedene Verstöße gegen verschiedene Schweregrade. Beachten Sie die Farbe der Wellenlinie und das kleine farbige Quadrat in der Bild Lauf Leiste auf der rechten Seite.
+Wenn ein Analysetool Regelverstöße findet, werden sie im Code-Editor (als *Wellenlinie* unter dem fehlerhaften Code) und im Fenster „Fehlerliste“ angezeigt.
 
-![Fehler-, Warn-und Informations Verstoß im Code-Editor](media/diagnostics-severity-colors.png)
+Die in der Fehlerliste gemeldeten Analyzer-Verstöße stimmen mit der Einstellung für den [Schweregrad](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) der Regel ab. Analyse Verstöße werden auch im Code-Editor als Wellenlinien unter dem fehlerhaften Code angezeigt. In der folgenden Abbildung werden drei Verstöße mit &mdash; einem Fehler (rote Wellenlinie), eine Warnung (grüne Wellenlinie) und ein Vorschlag (drei graue Punkte) angezeigt:
+
+![Wellenlinien im Code-Editor in Visual Studio](media/diagnostics-severity-colors.png)
 
 Der folgende Screenshot zeigt dieselben drei Verstöße, wie Sie im Fehlerliste angezeigt werden:
 
 ![Fehler-, Warn-und Informations Verstoß in Fehlerliste](media/diagnostics-severities-in-error-list.png)
+
+Viele Analyzer-Regeln oder *Diagnosen*verfügen über eine oder mehrere zugeordnete *Code Korrekturen* , die Sie anwenden können, um die Regelverletzung zu korrigieren. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
+
+![Verstoß im Analysetool und Codefix mithilfe einer schnellen Aktion](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ### <a name="hidden-severity-versus-none-severity"></a>Schweregrad "ausgeblendet" im Vergleich zu "None"
 
@@ -94,7 +80,7 @@ Sie können den Schweregrad für Compilerwarnungen oder Analyse Regeln in einer 
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-Das Festlegen des schwere Grads einer Regel in einer Editor config-Datei hat Vorrang vor einem Schweregrad, der in einem Regelsatz oder in Projektmappen-Explorer festgelegt ist. Sie können den Schweregrad [manuell](#manually-configure-rule-severity) in einer Editor config-Datei oder [automatisch](#automatically-configure-rule-severity) über die Glühbirne konfigurieren, die neben einem Verstoß angezeigt wird.
+Das Festlegen des schwere Grads einer Regel in einer Editor config-Datei hat Vorrang vor einem Schweregrad, der in einem Regelsatz oder in Projektmappen-Explorer festgelegt ist. Sie können den Schweregrad [manuell](#manually-configure-rule-severity-in-an-editorconfig-file) in einer Editor config-Datei oder [automatisch](#set-rule-severity-from-the-light-bulb-menu) über die Glühbirne konfigurieren, die neben einem Verstoß angezeigt wird.
 
 ### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>Festlegen des Regel schwere Grads mehrerer Analyse Regeln in einer Editor config-Datei
 
@@ -129,7 +115,7 @@ Sehen Sie sich das folgende Editor config-Beispiel an, wobei [CA1822](./ca1822.m
 
 Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwendung der angegebenen Rang folgen Regeln gewinnt jedoch der erste Schweregrad der Regel-ID auf die nächsten Einträge. In diesem Beispiel hat CA1822 den effektiven Schweregrad "Fehler". Alle verbleibenden Regeln mit der Kategorie "Leistung" weisen den Schweregrad "Warnung" auf. Alle verbleibenden Analyse Regeln, die nicht die Kategorie "Leistung" aufweisen, haben den Schweregrad "Vorschlag".
 
-#### <a name="manually-configure-rule-severity"></a>Regel Schweregrad manuell konfigurieren
+#### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>Manuelles Konfigurieren des Regel schwere Grads in einer Editor config-Datei
 
 1. Wenn Sie nicht bereits über eine Editor config-Datei für Ihr Projekt verfügen, [fügen Sie eine hinzu](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
@@ -142,6 +128,68 @@ Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwen
 
 > [!NOTE]
 > Bei IDE-Code Analysetools können Sie Sie auch in einer editorconfig-Datei mit einer anderen Syntax konfigurieren, z `dotnet_style_qualification_for_field = false:suggestion` . b.. Wenn Sie jedoch einen Schweregrad mithilfe der `dotnet_diagnostic` Syntax festlegen, hat dies Vorrang. Weitere Informationen finden Sie unter [sprach Konventionen für Editor config](../ide/editorconfig-language-conventions.md).
+
+### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Festlegen des schwere Grads der Regel im Glühbirnen Menü
+
+Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im Glühbirnen Menü [schnell Aktionen](../ide/quick-actions.md) zu konfigurieren.
+
+1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG**-Taste + **.** (Punkt).
+
+2. Klicken Sie im Glühbirnen Menü auf **Probleme** konfigurieren, und konfigurieren Sie den > ** \<rule ID> Schweregrad**.
+
+   ![Konfigurieren des schwere Grads von Regeln über das Glühbirnen Menü in Visual Studio](media/configure-rule-severity.png)
+
+3. Wählen Sie von dort eine der Optionen für den Schweregrad aus.
+
+   ![Regel Schweregrad als Vorschlag konfigurieren](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio fügt der Datei Editor config einen Eintrag hinzu, um die Regel auf der angeforderten Ebene zu konfigurieren, wie im Feld Vorschau angezeigt.
+
+   > [!TIP]
+   > Wenn Sie noch nicht über eine Editor config-Datei im Projekt verfügen, erstellt Visual Studio einen für Sie.
+
+### <a name="set-rule-severity-from-the-error-list-window"></a>Festlegen des schwere Grads der Regel im Fenster "Fehlerliste"
+
+Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwere Grads einer Regel im Kontextmenü "Fehlerliste".
+
+1. Wenn eine Verletzung auftritt, klicken Sie mit der rechten Maustaste auf den diagnoseeintrag in der Fehlerliste.
+
+2. Wählen Sie im Kontextmenü die Option **Schweregrad festlegen**aus.
+
+   ![Konfigurieren des schwere Grads von Regeln in der Fehlerliste in Visual Studio](media/configure-rule-severity-error-list.png)
+
+3. Wählen Sie von dort eine der Optionen für den Schweregrad aus.
+
+   Visual Studio fügt der Datei Editor config einen Eintrag hinzu, um die Regel auf der angeforderten Ebene zu konfigurieren.
+
+   > [!TIP]
+   > Wenn Sie noch nicht über eine Editor config-Datei im Projekt verfügen, erstellt Visual Studio einen für Sie.
+
+::: moniker-end
+
+### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
+
+Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmappen-Explorer**erledigen. Wenn Sie [Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren, wird in **Projektmappen-Explorer**unter dem Knoten **Verweise** oder **Abhängigkeiten** ein **Analysen** -Knoten angezeigt. Wenn Sie **Analyzers**erweitern und dann eine der Analyzer-Assemblys erweitern, werden alle Diagnosen in der Assembly angezeigt.
+
+![Analyzers-Knoten in Projektmappen-Explorer](media/analyzers-expanded-in-solution-explorer.png)
+
+Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften**aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
+
+![Diagnose Eigenschaften in Eigenschaftenfenster](media/analyzer-diagnostic-properties.png)
+
+Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose und wählen **Hilfe anzeigen**aus.
+
+Die Symbole neben den einzelnen Diagnose in **Projektmappen-Explorer** entsprechen den Symbolen, die im Regelsatz angezeigt werden, wenn Sie Sie im Editor öffnen:
+
+- Das "x" in einem Kreis zeigt den [Schweregrad](#configure-severity-levels) " **Fehler** " an.
+- "!" in einem Dreieck weist auf den [Schweregrad](#configure-severity-levels) " **Warnung** " hin.
+- "i" in einem Kreis zeigt den [Schweregrad](#configure-severity-levels) der **Informationen** an.
+- Das "i" in einem Kreis in einem hellfarbigen Hintergrund weist auf den [Schweregrad](#configure-severity-levels) " **ausgeblendet** " hin.
+- der nach unten zeigende Pfeil in einem Kreis gibt an, dass die Diagnose unterdrückt wird.
+
+![Diagnose Symbole in Projektmappen-Explorer](media/diagnostics-icons-solution-explorer.png)
+
+::: moniker range=">=vs-2019"
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>Konvertieren einer vorhandenen RuleSet-Datei in eine Editor config-Datei
 
@@ -209,45 +257,6 @@ dotnet_diagnostic.CA2213.severity = warning
 
 dotnet_diagnostic.CA2231.severity = warning
 ```
-
-#### <a name="automatically-configure-rule-severity"></a>Regel Schweregrad automatisch konfigurieren
-
-##### <a name="configure-from-light-bulb-menu"></a>Aus Glühbirnen Menü konfigurieren
-
-Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im Glühbirnen Menü [schnell Aktionen](../ide/quick-actions.md) zu konfigurieren.
-
-1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG**-Taste + **.** (Punkt).
-
-2. Klicken Sie im Glühbirnen Menü auf **Probleme** konfigurieren, und konfigurieren Sie den > ** \<rule ID> Schweregrad**.
-
-   ![Konfigurieren des schwere Grads von Regeln über das Glühbirnen Menü in Visual Studio](media/configure-rule-severity.png)
-
-3. Wählen Sie von dort eine der Optionen für den Schweregrad aus.
-
-   ![Regel Schweregrad als Vorschlag konfigurieren](media/configure-rule-severity-suggestion.png)
-
-   Visual Studio fügt der Datei Editor config einen Eintrag hinzu, um die Regel auf der angeforderten Ebene zu konfigurieren, wie im Feld Vorschau angezeigt.
-
-   > [!TIP]
-   > Wenn Sie noch nicht über eine Editor config-Datei im Projekt verfügen, erstellt Visual Studio einen für Sie.
-
-##### <a name="configure-from-error-list"></a>Aus Fehlerliste konfigurieren
-
-Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwere Grads einer Regel im Kontextmenü "Fehlerliste".
-
-1. Wenn eine Verletzung auftritt, klicken Sie mit der rechten Maustaste auf den diagnoseeintrag in der Fehlerliste.
-
-2. Wählen Sie im Kontextmenü die Option **Schweregrad festlegen**aus.
-
-   ![Konfigurieren des schwere Grads von Regeln in der Fehlerliste in Visual Studio](media/configure-rule-severity-error-list.png)
-
-3. Wählen Sie von dort eine der Optionen für den Schweregrad aus.
-
-   Visual Studio fügt der Datei Editor config einen Eintrag hinzu, um die Regel auf der angeforderten Ebene zu konfigurieren.
-
-   > [!TIP]
-   > Wenn Sie noch nicht über eine Editor config-Datei im Projekt verfügen, erstellt Visual Studio einen für Sie.
-
 ::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
@@ -377,7 +386,7 @@ Wenn Sie das Projekt in der Befehlszeile erstellen, werden Regelverstöße in de
 
 - Mindestens eine Regel wird im Code des Projekts verletzt.
 
-- Der [Schweregrad](#rule-severity) einer verletzten Regel ist auf " **Warnung**" festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler**auftritt.
+- Der [Schweregrad](#configure-severity-levels) einer verletzten Regel ist auf " **Warnung**" festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler**auftritt.
 
 Die Ausführlichkeit der Buildausgabe wirkt sich nicht darauf aus, ob Regelverstöße angezeigt werden. Auch mit der **stillen** Ausführlichkeit werden Regel Verletzungen in der Buildausgabe angezeigt.
 

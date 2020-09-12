@@ -15,17 +15,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509015"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034103"
 ---
 # <a name="net-code-analysis-rules"></a>.NET-Code Analyse Regeln
-Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.
+Die .NET-Code Analyse enthält Regeln, die auf Code Qualitäts Verletzungen oder Vorschläge zur Verbesserung der Codequalität hinweisen. Die Regeln sind in Regel Bereichen, z. b. Entwurf, Lokalisierung, Leistung und Sicherheit, angeordnet. Bestimmte Regeln gelten speziell für die .NET-API-Verwendung, während die verbleibenden Regeln die generische Codequalität sind. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Regel.
 
- Die folgende Tabelle zeigt die Art der Informationen, die für jede Warnung bereitgestellt werden.
+ In der folgenden Tabelle werden die Informationen angezeigt, die für die einzelnen Diagnosen bereitgestellt werden.
 
 |Element|BESCHREIBUNG|
 |----------|-----------------|

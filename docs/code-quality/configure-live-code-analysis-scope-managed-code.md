@@ -1,34 +1,34 @@
 ---
-title: Konfigurieren des Gültigkeits Bereichs der Live Code Analyse für verwalteten Code
-ms.date: 03/23/2018
+title: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für .net
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249192"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035416"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Gewusst wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code
+# <a name="configure-live-code-analysis-for-net"></a>Konfigurieren der Live Code Analyse für .net
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>Was ist "Live Code Analyse" für verwalteten Code?
 Visual Studio führt eine Reihe von Live-Code Analysen aus, die auch als *Hintergrundanalyse*bezeichnet werden, während Sie Quelldateien im Editor bearbeiten. Einige davon sind minimal Analysen für eine akzeptable Visual Studio-IDE-Bearbeitungsumgebung. Einige davon sind für eine verbesserte Reaktionsfähigkeit von IDE-Features vorgesehen. Ein Teil davon besteht darin, zusätzliche IDE-Funktionen wie Diagnose-und Code Korrekturen von Roslyn-Analyzern zu aktivieren. Basierend auf der-Funktionalität können diese Analysen wie folgt gruppiert werden:
 
 - **Hintergrund Berechnung der Diagnose**: Analyse zum Berechnen von Fehlern, Warnungen und Vorschlägen in den Quelldateien. Diese Diagnosen werden als Einträge in der Fehlerliste und als Wellenlinien im Editor angezeigt. Sie können in zwei Kategorien eingeteilt werden:
   - C#-und Visual Basic-Compilerdiagnose
   - Roslyn Analyzer-Diagnose, die Folgendes umfasst:
 
-    - Integrierte IDE-Analysen für Vorschläge im Codestil und
+    - Integrierte IDE-Analysen für Vorschläge im Codestil
+    - Integrierte ZS-Analysen für Code Qualitäts Vorschläge
     - Drittanbieter-Analyzer-Pakete, die für Projekte in der aktuellen Projekt Mappe [installiert](./install-roslyn-analyzers.md) werden.
 
 - **Weitere Hintergrundanalysen**: Analyse zur Verbesserung der Reaktionsfähigkeit und Visual Studio-Interaktion für IDE-Features. Beispiele für derartige Analysen:

@@ -1,6 +1,7 @@
 ---
 title: LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741339"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034051"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix-Element (Visual Studio-Vorlagen)
 
