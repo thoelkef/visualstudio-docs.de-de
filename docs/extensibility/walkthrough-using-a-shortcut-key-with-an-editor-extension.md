@@ -1,5 +1,6 @@
 ---
 title: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dcbf5c22af9cabeca0b89ffa98d4ddf86173a4a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89735149"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037457"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
 Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie einer Textansicht mit einer Tastenkombination ein Ansichts Zusatzelement hinzugefügt wird. Diese exemplarische Vorgehensweise basiert auf der Ansichts-Editor-Vorlage Viewport und ermöglicht das Hinzufügen des Zusatz Elements mit dem Zeichen +.
