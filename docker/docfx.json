@@ -39,6 +39,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "bilingual_type": "hover_over",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
       "breadcrumb_path": "/visualstudio/docker/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
@@ -48,7 +51,6 @@
       "ms.author": "jillfra",
       "ms.topic": "conceptual",
       "audience": "developer",
-      "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
