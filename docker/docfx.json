@@ -44,7 +44,6 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
       "breadcrumb_path": "/visualstudio/docker/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
       "ms.prod": "visual-studio-windows",
       "manager": "jillfra",
       "author": "jillre",
