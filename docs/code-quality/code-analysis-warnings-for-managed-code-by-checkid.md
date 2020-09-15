@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037236"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094225"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>Regeln für die Code Qualitätsanalyse nach Regel-ID
 
 In der folgenden Tabelle sind die Regeln zur Code Qualitätsanalyse nach Regel Bezeichner aufgeführt.
 
-| CheckId | Warnung | BESCHREIBUNG |
+| RuleId | Warnung | BESCHREIBUNG |
 |---------| - | - |
 | CA1000 | [CA1000: Statische Member nicht in generischen Typen deklarieren.](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
 | CA1001 | [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.](../code-quality/ca1001.md) | Eine Klasse deklariert und implementiert ein Instanzenfeld, das den System.IDisposable-Typ aufweist, IDisposable jedoch nicht implementiert. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren. |
@@ -324,6 +325,7 @@ In der folgenden Tabelle sind die Regeln zur Code Qualitätsanalyse nach Regel B
 | CA1309 | [CA1309: Ordinal-StringComparison verwenden.](../code-quality/ca1309.md) | Durch einen nicht linguistischen Zeichenfolgenvergleich wird der StringComparison-Parameter nicht auf Ordinal und nicht auf OrdinalIgnoreCase festgelegt. Wenn der Parameter explizit auf StringComparison.Ordinal oder StringComparison.OrdinalIgnoreCase festgelegt wird, werden die Codeausführung beschleunigt sowie Richtigkeit und Zuverlässigkeit gesteigert. |
 | CA1310 | [CA1310: "StringComparison" für Richtigkeit angeben](../code-quality/ca1310.md) | Eine Zeichen folgen Vergleichsoperation verwendet eine Methoden Überladung, die keinen StringComparison-Parameter festgelegt und standardmäßig einen kulturspezifischen Zeichen folgen Vergleich verwendet. |
 | CA1401 | [CA1401: P/Aufrufe dürfen nicht sichtbar sein.](../code-quality/ca1401.md) | Eine öffentliche oder geschützte Methode in einem öffentlichen Typ enthält das System.Runtime.InteropServices.DllImportAttribute-Attribut (in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] auch durch das Declare-Schlüsselwort implementiert). Solche Methoden sollten nicht verfügbar gemacht werden. |
+| CA1416 | [CA1416: Platt Form Kompatibilität überprüfen](../code-quality/ca1416.md) | Durch die Verwendung von Platt Form abhängigen APIs in einer Komponente wird der Code nicht mehr auf allen Plattformen funktionieren. |
 | CA1417 | [CA1417: nicht `OutAttribute` für Zeichen folgen Parameter für P/Aufrufe verwenden](../code-quality/ca1417.md) | Zeichen folgen Parameter, die mit dem als Wert übermittelt werden, `OutAttribute` können die Laufzeit destabilisieren, wenn die Zeichenfolge eine Internpool vorhanden Zeichenfolge ist. |
 | CA1501 | [CA1501: Übermäßige Vererbung vermeiden.](../code-quality/ca1501.md) | Ein Typ ist in seiner Vererbungshierarchie mehr als vier Ebenen tief. Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. |
 | CA1502 | [CA1502: Übermäßige Komplexität vermeiden.](../code-quality/ca1502.md) | Diese Regel ermöglicht Aussagen über die Anzahl linear unabhängiger Pfade in einer Methode, wobei die Anzahl der Pfade durch die Anzahl und Komplexität bedingter Branches bestimmt wird. |

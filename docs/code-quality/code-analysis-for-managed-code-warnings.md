@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034103"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094329"
 ---
 # <a name="net-code-analysis-rules"></a>.NET-Code Analyse Regeln
 Die .NET-Code Analyse enthält Regeln, die auf Code Qualitäts Verletzungen oder Vorschläge zur Verbesserung der Codequalität hinweisen. Die Regeln sind in Regel Bereichen, z. b. Entwurf, Lokalisierung, Leistung und Sicherheit, angeordnet. Bestimmte Regeln gelten speziell für die .NET-API-Verwendung, während die verbleibenden Regeln die generische Codequalität sind. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Regel.
@@ -30,7 +30,7 @@ Die .NET-Code Analyse enthält Regeln, die auf Code Qualitäts Verletzungen oder
 |Element|BESCHREIBUNG|
 |----------|-----------------|
 |Typ|TypeName für die Regel.|
-|CheckId|Eindeutiger Bezeichner für die Regel. CheckId und Category werden für die Unterdrückung einer Warnung im Quellcode verwendet.|
+|RuleId|Eindeutiger Bezeichner für die Regel. RuleId und Kategorie werden zur Quell Unterdrückung einer Warnung verwendet.|
 |Category|Kategorie der Warnung.|
 |Unterbrechende Änderung|Gibt an, ob die Lösung einer Verletzung der Regel eine unterbrechende Änderung ist. Unterbrechende Änderung bedeutet, dass eine Assembly, die eine Abhängigkeit von dem Ziel aufweist, das die Verletzung verursacht hat, nicht mit der neuen behobenen Version erneut kompiliert wird oder aufgrund der Änderung zur Laufzeit möglicherweise fehlschlägt. Wenn mehrere Korrekturen verfügbar sind und mindestens eine Lösung eine Breaking Change und eine Korrektur nicht besteht, werden sowohl "Breaking" als auch "non-breaking" angegeben.|
 |Ursache|Der spezielle verwaltete Code, aufgrund dessen die Regel eine Warnung generiert.|
