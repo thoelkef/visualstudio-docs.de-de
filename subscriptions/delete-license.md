@@ -1,18 +1,18 @@
 ---
-title: Löschen von Abonnementzuweisungen im Verwaltungsportal für Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Löschen von Zuweisungen im Verwaltungsportal für Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
-description: Erfahren Sie, wie Administratoren Abonnementzuweisungen löschen können.
-ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+description: Hier erfahren Sie, wie Sie Abonnementzuweisungen im Verwaltungsportal für Visual Studio-Abonnements löschen.
+ms.openlocfilehash: c4e55a18bb172588bf1daf777aeee8fee1dca02b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434267"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561350"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Löschen von Zuweisungen in Visual Studio-Abonnements
 Wenn ein Abonnent kein Visual Studio-Abonnement mehr benötigt (wenn er z.B. ein Unternehmen verlässt, ein Projekt abgeschlossen ist, oder wenn er eine neue Rolle übernimmt), können Sie das entsprechende Abonnement entfernen und es einem anderen Benutzer zuweisen. Beachten Sie, dass bei der Neuzuweisung eines Abonnements nicht alle Abonnementvorteile zurückgesetzt werden.  Der neue Benutzer kann noch nicht in Anspruch genommene Schlüssel in Anspruch nehmen und sich bereits in Anspruch genommene Schlüssel ansehen. Anspruchseinschränkungen werden **nicht** zurückgesetzt.  Für Organisationen mit Enterprise Agreements (EA) werden jegliche Vorteile zurückgesetzt, die der ursprüngliche Benutzer genutzt hat, wie z.B. Pluralsight-Schulung. 
