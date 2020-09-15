@@ -1,18 +1,18 @@
 ---
 title: Verwenden von Product Keys zur Unterstützung von Internetdemonstrationen über Terminaldienste | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Informationen zum Verwenden von Product Keys zur Unterstützung von Internetdemonstrationen über Terminaldienste und zum Aktivieren des RDS-Zugriffs
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232438"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561311"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Internetdemonstrationen über Terminaldienste
 Mit einem Visual Studio-Abonnement sind Sie berechtigt, Benutzern den Zugriff auf Internetdemonstrationen Ihrer Programme über Terminaldienste (Windows Server 2003 oder Windows Server 2008) oder Remotedesktopdienste (Windows Server 2008 R2 und höher) zu ermöglichen. So können bis zu 200 anonyme Benutzer gleichzeitig auf Ihre Demonstration zugreifen. In Ihrer Demonstration dürfen keine Produktionsdaten verwendet werden. Visual Studio-Abonnenten sind berechtigt, Benutzern ihre Anwendungen zu demonstrieren. Allerdings können bei dieser Internetdemonstration Benutzer ohne Visual Studio-Abonnement nur über Terminaldienste (Terminal Services, TS) oder Remotedesktopdienste (Remote Desktop Services, RDS) mit der Demonstrationsanwendung interagieren, solange die Software mittels Visual Studio-Abonnements lizenziert ist.

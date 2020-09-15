@@ -1,18 +1,18 @@
 ---
 title: Einführung in Azure Functions
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402316"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -91,7 +91,7 @@ Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten v
 
     Im Abschnitt [Verfügbare Funktionsvorlagen](#available-function-templates) finden Sie eine Liste der Azure Function-Vorlagen.
 
-Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-App-Projekt hinzufügen. Jede Funktion im Projekt kann über einen anderen Trigger verfügen, aber jede Funktion darf nur einen Trigger haben. Weitere Informationen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](/azure/azure-functions/functions-triggers-bindings).
+Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-App-Projekt hinzufügen. Jede Funktion im Projekt kann über einen anderen Trigger verfügen, aber einer Funktion muss genau ein Trigger zugeordnet sein. Weitere Informationen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
@@ -159,4 +159,4 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
 
-- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsstufe kontrolliert, ob die Funktion einen API-Schlüssel verlangt und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel und „Admin“ verwendet den Masterschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://github.com/Azure-Samples/functions-dotnet-sas-token/).
+- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsebene kontrolliert, ob die Funktion einen API-Schlüssel erfordert und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel, „Admin“ Ihren Kontozugriffsschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

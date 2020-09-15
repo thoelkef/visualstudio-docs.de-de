@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 40108f56ee9d64688fc665fdef0e0ab731bddfff
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82204489"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89042803"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension-Parameter
 
@@ -19,7 +19,7 @@ In der folgenden Tabelle werden die Parameter der Basisklassen beschrieben:
 | Parameter | Beschreibung |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Optionaler `bool`-Parameter.<br /><br /> Bei der Festlegung auf `true` gibt diese Aufgabe **/Q** an die Befehlszeile *cmd.exe* so weiter, dass die Befehlszeile nicht zu „stdout“ kopiert wird. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Optionaler `String`-Arrayparameter.<br /><br /> Ein Array von Paaren von Umgebungsvariablen; durch Gleichheitszeichen getrennt. Diese Variablen werden an die erstellte ausführbare Datei zusätzlich zum regulären Umgebungsblock oder zum ausgewählten Überschreiben hinzugefügt. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Optionaler `String`-Arrayparameter.<br /><br /> Array aus Umgebungsvariablendefinitionen, getrennt durch Semikolons. Jede Definition sollte einen Namen und einen Wert für eine Umgebungsvariable angeben, getrennt durch ein Gleichheitszeichen. Diese Variablen werden an die erstellte ausführbare Datei zusätzlich zum regulären Umgebungsblock oder zum ausgewählten Überschreiben hinzugefügt. Beispiel: `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Optionaler schreibgeschützter `Int32`-Ausgabeparameter.<br /><br /> Gibt den durch den ausgeführten Befehl bereitgestellten Exitcode an. Wenn bei der Aufgabe Fehler protokolliert wurden, der Prozess jedoch über einen Exitcode von „0“ (Erfolg) verfügt hat, wird dies auf „-1“ festgelegt. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Optionaler `bool`-Parameter.<br /><br /> Wenn `true` gegeben ist, werden alle im Standardfehlerstream empfangenen Meldungen als Fehler protokolliert. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Optionaler `bool`-Parameter.<br /><br /> Wenn `true` gegeben ist, werden alle im Standardfehlerstream empfangenen Meldungen als Fehler protokolliert. |

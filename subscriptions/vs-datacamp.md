@@ -1,18 +1,18 @@
 ---
-title: Verbessern Sie Ihre Data Science-Fähigkeiten mit dem DataCamp-Vorteil in ausgewählten Visual Studio-Abonnements. | Microsoft-Dokumentation
+title: Aneignen von Data Science-Fähigkeiten mit DataCamp in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904521"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561493"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit DataCamp können Sie über Ihren Browser alle Data Science-Fähigkeiten erwerben, die Sie benötigen. Sie können auswählen, wann Sie lernen und was Sie lernen. Da keine Software installiert werden muss und keine besonderen Hardwareanforderungen vorliegen, ist das Erlernen von Data Science einfacher als je zuvor.

@@ -1,17 +1,17 @@
 ---
 title: Umgestalten von Code (Refactoring)
 description: Optimieren von Code mithilfe von Visual Studio für Mac und schnelle Aktionen.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691286"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402583"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -31,9 +31,9 @@ Dadurch werden das Symbol und sämtliche Verweise darauf hervorgehoben. Wenn Sie
 
 ![Umbenennen und Bezeichner](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Schnelle Aktionen
+## <a name="quick-actions-and-refactorings"></a>Schnellaktionen und Refactorings
 
-Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.
+Mit Schnellaktionen und Refactorings können Sie Code ganz einfach mit einer einzigen Aktion umgestalten, generieren oder anderweitig ändern.
 
 Schnelle Aktionen können für Folgendes verwendet werden:
 
@@ -55,7 +55,7 @@ Das Symbol, das angezeigt wird, wenn eine schnelle Aktion verfügbar ist, erläu
 
    ![Glühbirne mit Mauszeigerbewegung](media/refactoring-lightbulb-hover.png)
 
-- Glühbirnen und Schraubendreher werden im linken Rand des Editors angezeigt, wenn Sie das Caretzeichen in eine Codezeile verschieben, für die eine schnelle Aktion verfügbar ist.
+- Glühbirnen- und Schraubendrehersymbole werden im linken Rand des Editors angezeigt, wenn Sie das Caretzeichen in einer Codezeile platzieren, für die eine Schnellaktion oder ein Refactoring verfügbar ist.
 
 - Drücken Sie **Option (⌥)** +**EINGABETASTE**, wenn sich der Cursor irgendwo auf einer Zeile befindet, damit eine Liste verfügbarer schneller Aktionen und Refactorings anzeigt wird.
 
@@ -93,7 +93,7 @@ Wenn Sie auf den Kreis oben klicken, können Sie jeden einzelnen Vorschlag durch
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schnellaktionen (Visual Studio unter Windows)](/visualstudio/ide/quick-actions)
 - [Umgestalten von Code (Visual Studio unter Windows)](/visualstudio/ide/refactoring-in-visual-studio)

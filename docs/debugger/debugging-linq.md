@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738201"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509769"
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt zwar das Debuggen von Language Integrated Query-Code (LINQ), aber es gelten einige Einschränkungen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. In diesem Thema werden die Haupteinschränkungen des LINQ-Debuggens beschrieben.
@@ -105,7 +105,7 @@ End Function
  Die überarbeitete Abfrage ruft bei jedem Durchlauf von `IsEven` die `items`-Funktion auf. Mithilfe der Debuggerfenster können Sie feststellen, ob die einzelnen Elemente die angegebene Bedingung erfüllen und den Code in `IsEven` schrittweise ausführen. Das Prädikat in diesem Beispiel ist recht einfach gehalten. Falls Ihr zu debuggendes Prädikat jedoch komplizierter ist, kann diese Technik sehr hilfreich sein.
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten und Fortfahren wird für LINQ nicht unterstützt
- Die Funktion „Bearbeiten und Fortfahren“ unterstützt Änderungen an LINQ-Abfragen mit Einschränkungen. Weitere Informationen finden Sie unter [EnC Supported Edits](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) (Unterstützte Änderungen in „Bearbeiten und Fortfahren“, in englischer Sprache).
+ Die Funktion „Bearbeiten und Fortfahren“ unterstützt Änderungen an LINQ-Abfragen mit Einschränkungen. Details finden Sie unter [Supported Edits in Edit & Continue (EnC)](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md) (Unterstützte Bearbeitungen bei „Bearbeiten und Fortfahren“).
 
 ## <a name="see-also"></a>Siehe auch
 
