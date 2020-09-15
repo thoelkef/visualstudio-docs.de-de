@@ -1,18 +1,20 @@
 ---
-title: Siehe Abhängigkeiten zwischen C++-Quelldateien und Header Dateien
+title: Siehe Abhängigkeiten zwischen C++-Quell-und Header Dateien
+description: Stellt Informationen zu Code Maps für C++-Projekte bereit.
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597242"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100439"
 ---
 # <a name="code-maps-for-c-projects"></a>Code Maps für C++-Projekte
 
@@ -38,7 +40,7 @@ Diese Elemente werden für C- und C++-Code nicht unterstützt:
 
 Diese Probleme können auftreten, wenn Sie Code Maps für C-und C++-Code erstellen:
 
-|**Problem**|**Mögliche Ursache**|**Auflösung**|
+|**Problem**|**Mögliche Ursache**|**Lösung**|
 |-|-|-|
 |Fehler beim Generieren der Code Map.|Kein Projekt in der Projektmappe wurde erfolgreich erstellt.|Korrigieren Sie die aufgetretenen Buildfehler, und generieren Sie dann die Code Map erneut.|
 |Visual Studio reagiert nicht mehr, wenn Sie versuchen, eine Code Map über das Menü **Architektur** zu generieren.|Die Programmdatenbankdatei (.pdb) ist möglicherweise beschädigt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Erstellen Sie die Projektmappe neu, und versuchen Sie es dann erneut.|

@@ -1,18 +1,20 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift'
+title: 'Exemplarische Vorgehensweise: Debuggen von Text Vorlagen für das Modell'
+description: Enthält Informationen zum Debuggen einer Textvorlage, die auf ein Modell zugreift.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546899"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100786"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder hinzufügen, treten möglicherweise Fehler auf, wenn die Engine die Vorlage in den Quellcode umwandelt oder den generierten Code kompiliert. In der folgenden exemplarischen Vorgehensweise werden einige Dinge veranschaulicht, die Sie zum Debuggen einer Textvorlage ausführen können.

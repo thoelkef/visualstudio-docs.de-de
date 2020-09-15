@@ -1,18 +1,20 @@
 ---
 title: Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
+description: Enthält Informationen zum Verwenden von Windows Forms, um den Status eines domänenspezifischen sprach Modells anzuzeigen.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238360"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100452"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms basierten domänenspezifischen Sprache
 
@@ -67,9 +69,9 @@ Wenn Sie die DSL-Definitionsdatei aktualisieren, um Ihre eigene DSL zu definiere
 
 ## <a name="update-the-dsl-definition"></a>Aktualisieren der DSL-Definition
 
-Die folgende DSL-Definition wird in dieser exemplarischen Vorgehensweise verwendet.
+Die folgende Abbildung ist die DSL-Definition, die in dieser exemplarischen Vorgehensweise verwendet wird.
 
-![DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
+![DSL-Definition](../modeling/media/dsl-wpf-1.png)
 
 1. Öffnen Sie die Datei "DslDefinition. DSL" im DSL-Designer.
 
@@ -127,7 +129,7 @@ Nun können Sie ein neues Benutzer Steuerelement erstellen, in dem die im DSL-Mo
 
      Die Eigenschaften und Beziehungen der Modell Klasse werden im Fenster Datenquellen angezeigt.
 
-     ![Dslwpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![Datenquellen Fenster](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>Verbinden des Modells mit einem Formular
 
@@ -172,7 +174,9 @@ Nun können Sie ein neues Benutzer Steuerelement erstellen, in dem die im DSL-Mo
 
 - Dadurch wird sichergestellt, dass die Eigenschaftenfenster die Eigenschaften des entsprechenden Modell Elements anstelle der Datenraster Zeile anzeigt, wenn der Benutzer eine Zeile auswählt.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) Schema der Links zwischen Datenquellen und Sichten.
+  ![Schema der DSL-Bindung](../modeling/media/dslwpf4.png)
+  
+  Schema der Links zwischen Datenquellen und Sichten.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Vervollständigen der Bindungen an die DSL
 
@@ -298,7 +302,7 @@ Die DSL-Lösung kann nun erstellt und ausgeführt werden, obwohl Sie möglicherw
 
     Sie sollten in der Lage sein, den Namen des Elements in der Datenraster Ansicht zu bearbeiten. Sie können Sie auch von dort aus löschen.
 
-   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Beispiel Datenraster Ansicht](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informationen zum Code zum Hinzufügen eines Elements
 

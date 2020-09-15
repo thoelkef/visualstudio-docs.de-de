@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
       href: install/using-visual-studio-vm.md
+    - name: Verwenden von Visual Studio auf einem ARM-Gerät
+      href: install/visual-studio-on-arm-devices.md
     - name: Container
       items:
         - name: Installieren von Build Tools in einem Container
@@ -956,7 +958,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Tastenkombinationen
       items:
