@@ -1,18 +1,18 @@
 ---
 title: Von Partnern verwaltete Visual Studio-Abonnements für Kunden | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
-ms.date: 03/09/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Partner Visual Studio-Abonnements für ihre Kunden verwalten.
-ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289026"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426550"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Von Partnern verwaltete Visual Studio-Abonnements für Kunden
 Partner müssen zuerst einige Schritte befolgen, bevor sie Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) verwalten können. 
@@ -22,6 +22,27 @@ Der Prozess sieht folgendermaßen aus:
 - Der Kunde erhält eine Benachrichtigung, in der er aufgefordert wird, Administratoren zuzuweisen und auf seine Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zuzugreifen.
 - Damit Partner Abonnements im Namen von Kunden verwalten können, müssen sie sich im Verwaltungsportal registrieren. Die verschiedenen Zugriffsmöglichkeiten sind im Folgenden aufgeführt (und ähneln dem Hinzufügen einer Open License).
 
+## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Neue Partner, die das Verwaltungsportal für Visual Studio-Abonnements direkt besuchen
+Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellungen aufgegeben haben, sich aber nicht beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registriert haben und direkt zum [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.  Führen Sie folgende Schritte aus:
+1. Besuchen Sie <https://manage.visualstudio.com>.
+1. Sie erhalten eine Benachrichtigung, dass Sie kein bekannter Benutzer sind.
+1. Wählen Sie die Registrierungsoption **OLP-Partner** aus, geben Sie die bei der Bestellung verwendete Autorisierungsnummer, Lizenznummer und E-Mail-Adresse des Kunden ein, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Senden**.
+
+> [!NOTE]
+> Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
+
+## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Neue Partner, die sich beim Volume Licensing Service Center (VLSC) registrieren
+
+Dies gilt für neue Partner, die neue Open License-Bestellungen aufgeben und sich über den Vorgang zum Hinzufügen einer Open License beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registrieren, bevor sie versuchen, auf das [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zuzugreifen. Die Partner müssen folgende Schritte ausführen:
+1. Melden Sie sich bei VLSC an, und navigieren Sie zu „Beziehungszusammenfassung“.
+1. Wählen Sie die gewünschte Open License aus.
+1. Anschließend wählen Sie unter „Visual Studio-Abonnements“ in den „Lizenzdetails“ über den Link **Klicken Sie hier** die Option zur Abonnementverwaltung aus.
+1. Melden Sie sich mit der E-Mail-Adresse beim Administratorportal an, die als primärer Kontakt aufgeführt ist.
+1. Daraufhin kann der Partner Abonnements für diese Open License verwalten.
+
+> [!NOTE]
+> Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
+
 ## <a name="existing-partners-adding-a-new-license"></a>Hinzufügen einer neuen Lizenz durch bestehende Partner
 Dies gilt für Partner, die bereits auf das [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zugreifen können und Open License-Bestellungen für Visual Studio-Abonnements aufgegeben haben, die sie verwalten müssen.  
 
@@ -30,34 +51,13 @@ Dies gilt für Partner, die bereits auf das [Verwaltungsportal für Visual Studi
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Hinzufügen einer neuen Lizenz durch Partner:
-- Melden Sie sich bei <https://manage.visualstudio.com> an.
-- Wählen Sie die Dropdownliste mit Vereinbarungen aus, und scrollen nach unten zur Option **Neue Open License**.
-- Geben Sie im Popupfenster die Autorisierungsnummer, die Lizenznummer und die E-Mail-Adresse des Kunden gemäß den Angaben in der Vereinbarung ein, aktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Senden**.
+1. Melden Sie sich bei <https://manage.visualstudio.com> an.
+1. Klicken Sie neben dem Dropdowneintrag für Vereinbarungen auf „+ Vereinbarung hinzufügen“, und scrollen Sie nach unten, wo Sie die Option **New Open License** finden.
+1. Geben Sie im Popupfenster die Autorisierungsnummer, die Lizenznummer und die E-Mail-Adresse des Kunden gemäß den Angaben in der Vereinbarung ein, aktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Senden**.
 
 > [!NOTE]
 > Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
 
-## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Neue Partner, die sich beim Volume Licensing Service Center (VLSC) registrieren
-
-Dies gilt für neue Partner, die neue Open License-Bestellungen aufgeben und sich über den Vorgang zum Hinzufügen einer Open License beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registrieren, bevor sie versuchen, auf das [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zuzugreifen. Die Partner müssen folgende Schritte ausführen:
-- Melden Sie sich bei VLSC an, und navigieren Sie zu „Beziehungszusammenfassung“.
-- Wählen Sie die gewünschte Open License aus.
-- Anschließend wählen Sie unter „Visual Studio-Abonnements“ in den „Lizenzdetails“ über den Link **Klicken Sie hier** die Option zur Abonnementverwaltung aus.
-- Melden Sie sich beim neuen Verwaltungsportal mit der gleichen E-Mail-Adresse an, die Sie zur Anmeldung beim VLSC verwendet haben.
-- Daraufhin kann der Partner Abonnements für diese Open License verwalten.
-
-> [!NOTE]
-> Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
-
-
-## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Neue Partner, die das Verwaltungsportal für Visual Studio-Abonnements direkt besuchen
-Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellungen aufgegeben haben, sich aber nicht beim [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) registriert haben und direkt zum [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) wechseln.  Führen Sie folgende Schritte aus:
-- Besuchen Sie <https://manage.visualstudio.com>.
-- Eine Fehlermeldung weist darauf hin, dass Sie kein bekannter Benutzer sind.
-- Wählen Sie die Registrierungsoption **OLP-Partner** aus, geben Sie die bei der Bestellung verwendete Autorisierungsnummer, Lizenznummer und E-Mail-Adresse des Kunden ein, aktivieren Sie das Kontrollkästchen, und klicken Sie auf **Senden**.
-
-> [!NOTE]
-> Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
 
 ## <a name="resources"></a>Ressourcen
 - [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)

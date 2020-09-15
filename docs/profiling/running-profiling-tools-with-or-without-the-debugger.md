@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508079"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561587"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 
-Visual Studio bietet eine Auswahl an Tools für Leistungsmessung und Profilerstellung. Einige Tools, wie z. B. „CPU-Auslastung“ und „Speicherauslastung“, können mit oder ohne Debugger und in den Release- oder Debugbuildkonfigurationen ausgeführt werden. Leistungs-Profiler-Tools wie „Anwendungszeitachse“ können in Debug- oder Releasebuilds ausgeführt werden. In den Debugger integrierte Tools wie das Fenster „Diagnosetools“ und die Registerkarte „Ereignisse“ können nur während Debugsitzungen ausgeführt werden.
+Visual Studio bietet eine Auswahl an Tools für Leistungsmessung und Profilerstellung. Einige Tools, wie z. B. „CPU-Auslastung“ und „Speicherauslastung“, können mit oder ohne Debugger und in den Release- oder Debugbuildkonfigurationen ausgeführt werden. Im [Fenster „Diagnosetools“](../profiling/profiling-feature-tour.md#view-performance-while-debugging) angezeigte Tools werden nur während einer Debugsitzung ausgeführt. Tools im [Leistungs-Profiler](../profiling/profiling-feature-tour.md#post_mortem) werden ohne den Debugger ausgeführt, und Sie analysieren die Ergebnisse, nachdem Sie die Option zum Beenden und Erfassen von Daten ausgewählt haben (für eine Post-Mortem-Analyse).
 
 >[!NOTE]
 >Sie können die nicht in den Debugger integrierten Leistungstools unter Windows 7 und höher verwenden. Windows 8 oder höher ist erforderlich, um die in den Debugger integrierten Profilerstellungstools auszuführen.
@@ -46,6 +46,11 @@ Wenn Sie mit dem Debuggen in Visual Studio beginnen, indem Sie **Debuggen** > **
 - Wenn Sie Visual Studio Enterprise ausführen, können Sie IntelliTrace unter **Extras** > **Optionen** > **IntelliTrace** aktivieren oder deaktivieren.
 
 Die Diagnosesitzung endet, wenn Sie das Debugging beenden.
+
+Weitere Informationen finden Sie in folgenden Quellen:
+
+- [Messen der Anwendungsleistung durch Analyse der CPU-Nutzung](../profiling/beginners-guide-to-performance-profiling.md)
+- [Messen der Speicherauslastung in Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>Die Registerkarte „Ereignisse“
 
@@ -86,6 +91,15 @@ Sie können zum Erfassen von Leistungsdaten ohne Debuggen die Leistungs-Profiler
 Sie können die Berichte auch speichern und über die Liste der **zuletzt geöffneten Sitzungen** auf der Startseite der Diagnosetools öffnen.
 
 ![Screenshot der Liste der zuletzt geöffneten Sitzungen in den Diagnosetools](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+Weitere Informationen finden Sie in folgenden Quellen:
+
+- [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md)
+- [Analysieren der Speicherauslastung für .NET-Code](../profiling/dotnet-alloc-tool.md)
+- [Analysieren der Speicherauslastung](../profiling/analyze-memory-usage.md)
+- [Analysieren der Leistung von asynchronem .NET-Code](../profiling/analyze-async.md)
+- [Analysieren der Datenbankleistung](../profiling/analyze-database.md)
+- [Analysieren der GPU-Nutzung](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Sammeln von Profilerstellungsdaten über die Befehlszeile
 

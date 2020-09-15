@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938863"
+ms.locfileid: "89402625"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -161,4 +161,4 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
 
-- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsstufe kontrolliert, ob die Funktion einen API-Schlüssel verlangt und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel und „Admin“ verwendet den Masterschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://github.com/Azure-Samples/functions-dotnet-sas-token/).
+- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsebene kontrolliert, ob die Funktion einen API-Schlüssel erfordert und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel, „Admin“ Ihren Kontozugriffsschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

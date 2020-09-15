@@ -1,18 +1,18 @@
 ---
-title: Hinzufügen neuer Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements| Microsoft-Dokumentation
+title: Hinzufügen neuer Monatsabonnements zum Verwaltungsportal für Abonnements| Microsoft-Dokumentation
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie neu erworbene Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements hinzufügen
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904697"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561402"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Hinzufügen neuer Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements
 Wenn Sie unter Verwendung eines Azure-Abonnements neue Visual Studio-Monatsabonnements erwerben, müssen Sie diese gegebenenfalls zum Verwaltungsportal für Abonnements hinzufügen, um sie Benutzern zuweisen zu können.  
@@ -25,17 +25,17 @@ Ob bzw. welche Schritte zum Hinzufügen von Monatsabonnements ausgeführt werden
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Hinzufügen von Monatsabonnements
 1. Melden Sie sich beim Verwaltungsportal für Abonnements unter <https://manage.visualstudio.com> an
-1. Wählen Sie auf der Registerkarte **Abonnenten verwalten** die Dropdownliste **Neuer Vertrag** aus 
+1. Wählen Sie auf der Registerkarte **Abonnenten verwalten** die Dropdownliste **Vereinbarung hinzufügen** aus. 
 1. Wählen Sie in der Liste **Neue Monatsabonnements**  aus
    > [!div class="mx-imgBorder"]
-   > ![Dropdownliste zum Hinzufügen neuer Monatsabonnements](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Dropdownliste zum Hinzufügen neuer Monatsabonnements](_img/add-monthly-subs/add-subs-drop-down.png "Auswählen von „Vereinbarung hinzufügen“ und dann „Neue Monatsabonnements“")
 1. Das System sucht nach Azure-Abonnements, für die Sie über die Berechtigung „Benutzerzugriffsadministrator“ verfügen, und importiert die Visual Studio-Abonnements, die mit diesen Azure-Abonnements erworben wurden.
 1. Wenn keine Azure-Abonnements gefunden werden, für die Sie über die Berechtigung „Benutzerzugriffsadministrator“ verfügen, bzw. wenn entsprechende Azure-Abonnements, jedoch keine Visual Studio-Abonnements gefunden werden, wird die folgende Meldung angezeigt:
    > [!div class="mx-imgBorder"]
-   > ![Keine neuen Monatsabonnements gefunden](_img/add-monthly-subs/no-subs-found.png)
+   > ![Keine neuen Monatsabonnements gefunden](_img/add-monthly-subs/no-subs-found.png "Fehlermeldung, dass keine Azure-Abonnements oder Visual Studio-Abonnements verfügbar sind")
 1. Wenn neue Monatsabonnements gefunden werden, wird eine Bestätigungsmeldung angezeigt
    > [!div class="mx-imgBorder"]
-   > ![Bestätigungsmeldung für das Hinzufügen von Abonnements](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Bestätigungsmeldung für das Hinzufügen von Abonnements](_img/add-monthly-subs/subs-added-confirmation.png "Bestätigungsmeldung mit Anzeige der hinzugefügten Abonnements")
 
 ## <a name="things-to-keep-in-mind"></a>Bitte beachten
 - Die Option zum Hinzufügen neuer Monatsabonnements ist erst verfügbar, wenn Sie erstmalig ein solches Abonnement erwerben.  Nachdem Sie Monatsabonnements hinzugefügt haben, überprüfen wir jedes Mal, wenn Sie sich beim Portal anmelden, ob neue Abonnements vorhanden sind. 

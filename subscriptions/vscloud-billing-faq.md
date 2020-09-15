@@ -1,18 +1,18 @@
 ---
-title: Häufig gestellte Fragen zur Abrechnung von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
+title: Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 03/24/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249386"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561324"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.

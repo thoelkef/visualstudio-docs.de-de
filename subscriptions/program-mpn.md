@@ -1,18 +1,18 @@
 ---
-title: Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
+title: Im Microsoft Partner Network angebotene Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Einzelheiten zu den angebotenen Abonnements, geltenden Regeln und der Anzahl der in MPN angebotenen Abonnements
-ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 8aab10f3268fa9d9a822487c80efa4318cd9d3a7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387147"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561467"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
 

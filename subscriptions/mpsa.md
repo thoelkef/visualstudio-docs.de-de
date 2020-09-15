@@ -1,29 +1,29 @@
 ---
-title: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA) | Microsoft-Dokumentation
+title: Visual Studio-Abonnements in MPSA | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
-description: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
-ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+description: Erfahren Sie mehr über Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA).
+ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801463"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561389"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie ein Administrator von Visual Studio-Abonnements werden und Abonnements für Ihre Benutzer zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
 
-MPSA-Kunden verwalten ihre über MPSA erworbenen Ressourcen jetzt in einem neuen Portal namens [Business Center](https://businessaccount.microsoft.com/Customer), das ähnliche Funktionen unterstützt wie das Volume Licensing Service Center (VLSC). Dazu gehören die Anzeige Ihrer Lizenzzusammenfassung, Aufträge, Downloads, Schlüssel, Benutzer usw. Visual Studio-Abonnements in MPSA verhalten sich jedoch ähnlich wie Clouddienste. Das Business Center verwendet zudem Geschäftskonten statt Microsoft-Konten (MSA) zur Anmeldung. Wenn Ihre Organisation Clouddienste wie Microsoft 365 oder Azure Active Directory verwendet und Ihre E-Mail-Adresse Teil eines dieser beiden Dienste ist, ist es bereits ein Geschäftskonto. Dadurch können Sie sich mit Ihrem vorhandenen Kennwort beim Business Center registrieren. Wenn Ihre Organisation keine Clouddienste verwendet und Ihre E-Mail-Adresse kein Geschäftskonto ist, können Sie die Adresse dennoch für die Registrierung beim Business Center verwenden.
+MPSA-Kunden verwalten ihre per MPSA erworbenen Ressourcen in einem Portal namens [Business Center](https://businessaccount.microsoft.com/Customer), das ähnliche Funktionen unterstützt wie das Volume Licensing Service Center (VLSC). Dazu gehören die Anzeige Ihrer Lizenzzusammenfassung, Aufträge, Downloads, Schlüssel, Benutzer usw. Visual Studio-Abonnements in MPSA verhalten sich jedoch ähnlich wie Clouddienste. Das Business Center verwendet zudem Geschäftskonten statt Microsoft-Konten (MSA) zur Anmeldung. Wenn Ihre Organisation Clouddienste wie Office 365 oder Azure Active Directory verwendet und Ihre E-Mail-Adresse Teil eines dieser beiden Dienste ist, ist es bereits ein Geschäftskonto. Dadurch können Sie sich mit Ihrem vorhandenen Kennwort beim Business Center registrieren. Wenn Ihre Organisation keine Clouddienste verwendet und Ihre E-Mail-Adresse kein Geschäftskonto ist, können Sie die Adresse dennoch für die Registrierung beim Business Center verwenden.
 
-Darüber hinaus ist das [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements der Ort, an dem die Abonnements den Abonnenten zugewiesen werden, sobald Sie Administrator für Visual Studio-Abonnements sind. In MPSA müssen Visual Studio-Abonnements in ihrem jeweiligen Verwaltungsportal bereitgestellt werden, also im Verwaltungsportal für Visual Studio-Abonnements. Zu diesem Zweck müssen Sie Ihr Einkaufskonto einem Mandanten zuordnen (z.B. „contoso.onmicrosoft.com“).
+Darüber hinaus weisen Sie Abonnements im [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements zu, sobald Sie Administrator für Visual Studio-Abonnements sind. In MPSA müssen Visual Studio-Abonnements in ihrem jeweiligen Verwaltungsportal bereitgestellt werden, also im Verwaltungsportal für Visual Studio-Abonnements. Zu diesem Zweck müssen Sie Ihr Einkaufskonto einem Mandanten zuordnen (z.B. „contoso.onmicrosoft.com“).
 
 Beachten Sie, dass es zwei Arten von Mandanten gibt: verwaltete und nicht verwaltete Mandanten. Der Begriff „verwalteter Mandant“ bezieht sich auf einen Mandanten, der bereits von internen Administratoren der Organisation verwaltet wird.
 
-Ein nicht verwalteter Mandant ist ein Mandant ohne zugewiesene Administratoren und kann nicht für Onlinedienste wie Microsoft 365 verwendet werden. Nicht verwaltete Mandanten werden auch erstellt, wenn die Registrierung beim Business Center mit einer E-Mail-Adresse durchgeführt wird, die kein Geschäftskonto ist. Wenn Sie während der Registrierung beim Business Center aufgefordert wurden, ein Kennwort zu erstellen, bedeutet dies, dass Ihre E-Mail-Adresse kein Geschäftskonto war und ein nicht verwalteter Mandant erstellt wurde.
+Ein nicht verwalteter Mandant ist ein Mandant ohne zugewiesene Administratoren und kann nicht für Onlinedienste wie Office 365 verwendet werden. Nicht verwaltete Mandanten werden auch erstellt, wenn die Registrierung beim Business Center mit einer E-Mail-Adresse durchgeführt wird, die kein Geschäftskonto ist. Wenn Sie während der Registrierung beim Business Center aufgefordert wurden, ein Kennwort zu erstellen, bedeutet dies, dass Ihre E-Mail-Adresse kein Geschäftskonto war und ein nicht verwalteter Mandant erstellt wurde.
 
 Im Folgenden finden Sie einige Anforderungen/Schritte, die erforderlich sind, um Administrator für Visual Studio-Abonnements zu werden, bevor die Mandantenzuordnung abgeschlossen werden kann.
 
@@ -39,14 +39,14 @@ Im Folgenden finden Sie einige Anforderungen/Schritte, die erforderlich sind, um
 
 Sobald Sie die oben genannten Kriterien erfüllen, können Sie damit fortfahren, Ihr Einkaufskonto Ihrem Mandanten zuzuordnen. Führen Sie dazu die folgenden Schritte aus.
 1. Melden Sie sich bei [Business Center](https://businessaccount.microsoft.com/Customer) an.
-2. Wählen Sie die Registerkarte **Konto** und dann **Domänen zuordnen** aus.
+2. Klicken Sie auf die Registerkarte **Konto**, und wählen Sie **Domänen zuordnen** aus.
 3. Wählen Sie Ihr **Einkaufskonto** aus (falls mehrere vorhanden sind).
 4. Wählen Sie Ihren **Mandanten** aus (z.B. „contoso.onmicrosoft.com“).
-5. Wählen Sie **Domäne zuordnen** aus.
+5. Klicken Sie auf **Domäne zuordnen**.
 
 Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Regel innerhalb weniger Minuten als Administratoren für Visual Studio Abonnements bereitgestellt. Manchmal kann es allerdings bis zu 24 Stunden dauern. Nach der Bereitstellung des Mandanten können Sie auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen. Wenden Sie sich folgendermaßen an den MPSA-Support, wenn der Vorgang länger als 24 Stunden dauert:
 1. Rufen Sie <https://www.microsoft.com/licensing/mpsa/default> auf.
-2. Wählen Sie oben auf der Seite das Menü **Mehr** aus. 
+2. Klicken Sie oben auf der Seite auf die das Menü **Mehr**. 
 3. Klicken Sie auf **Hilfe**.
 4. Wählen Sie die Option für **Hilfe bei der Lizenzierung** aus.
 5. Wählen Sie nun die Hilfeoption aus, die Ihren Anforderungen am besten entspricht: 
@@ -55,7 +55,7 @@ Nach der Zuordnung werden alle Benutzer, die die Kriterien erfüllen, in der Reg
 > Wenn es sich um neue Benutzer handelt, die (nach der Zuweisung) die Kriterien in den Schritten 2 und 5 erfüllen, müssen Sie sich an den MPSA-Support wenden. Der MPSA-Support bietet Unterstützung für die Bereitstellung der neuen Administratoren für Visual Studio-Abonnements.
 
 ## <a name="tenant-association-unmanaged"></a>Mandantenzuordnung (nicht verwaltet)
-Wenn Sie sich beim Business Center mit einer E-Mail-Adresse registriert haben, die kein Geschäftskonto war (nicht in Azure Active Directory registriert), wie oben erläutert, verläuft die Mandantenzuordnung etwas anders. Sie müssen eine sogenannte „Domänenübernahme“ ausführen. Während dieses Vorgangs machen Sie sich selbst zum globalen Administrator. Dadurch wird Ihr Mandant von einem nicht verwalteten zu einem verwalteten.
+Wenn Sie sich beim Business Center mit einer E-Mail-Adresse registriert haben, die kein Geschäftskonto war (nicht in Azure Active Directory registriert), wie oben erläutert, verläuft die Mandantenzuordnung etwas anders. Sie müssen eine sogenannte „Domänenübernahme“ ausführen. Während dieses Vorgangs machen Sie sich selbst zum globalen Administrator. Dadurch wird Ihr Mandant von einem nicht verwalteten zu einem verwalteten Mandanten.
 
 Eine ausführlichere Erläuterung dieses Prozesses finden Sie in den [Schnellstartanleitungen](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Laden Sie das Handbuch *Setup and Use Your Online Services* (Einrichten und Verwenden Ihrer Onlinedienste) herunter, das Ihnen bei der Domänenübernahme hilft. Anschließend wird Ihr Einkaufskonto Ihrem Mandanten zugeordnet.
 

@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149171"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312098"
 ---
 1. Suchen und starten Sie auf dem Remotecomputer im Menü **Start** den **Remotedebugger**. 
    
@@ -38,7 +38,7 @@ ms.locfileid: "68149171"
   
 1. Wenn die Konfiguration abgeschlossen ist, wird das Fenster **Remotedebugger** angezeigt.
   
-    ![Fenster „Remotedebugger“](../media/remotedebuggerwindow.png "Fenster „Remotedebugger“")
+    ![Fenster des Remotedebuggers](../media/remotedebuggerwindow.png "Fenster des Remotedebuggers")
   
     Der Remotedebugger wartet nun auf eine Verbindung. Verwenden Sie den Servernamen und die Portnummer, die angezeigt werden, um die Remoteverbindungskonfiguration in Visual Studio festzulegen.  
   

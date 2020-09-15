@@ -1,18 +1,18 @@
 ---
-title: Visual Studio-Abonnements, die im Microsoft Store erworben werden können | Microsoft-Dokumentation
+title: Im Microsoft Store verfügbare Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Visual Studio-Abonnements im Microsoft Store erwerben und im Visual Studio-Abonnementportal aktivieren.
-ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247482"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561574"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio-Abonnements sind über den Microsoft Store verfügbar
 Visual Studio-Abonnements können über verschiedene Kanäle erworben werden. Dazu zählen u. a. die [Volumenlizenzierung](https://www.microsoft.com/licensing/default), Cloud Solution Provider, den [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) und den Microsoft Store.  In diesem Artikel wird erläutert, wie Abonnements über den [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) erworben und aktiviert werden.  

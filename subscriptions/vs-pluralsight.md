@@ -2,17 +2,17 @@
 title: Pluralsight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375897"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509756"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -23,35 +23,50 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
  Je nach Art des Abonnements können nicht alle Abonnenten die neuen Angebote für Pluralsight-Vorteile einlösen, die zuvor ein Pluralsight-Abonnement verwendet haben, das über ein Visual Studio-Abonnement bereitgestellt wurde. Wenn Sie nicht für zusätzliche Pluralsight-Schulungsvorteile berechtigt sind, erhalten Sie eine Benachrichtigung, wenn Sie versuchen, den Vorteil auf der Pluralsight-Website zu aktivieren.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-1. Stellen Sie eine Verbindung mit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und klicken Sie auf der Kachel mit den Pluralsight-Vorteilen im Abschnitt „Professionelle Entwicklung“ auf den Link **Code abrufen**, um Ihr Abonnement zu aktivieren.
+1. Zum Aktivieren Ihres Abonnements stellen Sie eine Verbindung mit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her und klicken auf der Kachel mit den Pluralsight-Vorteilen auf den Link **Aktivieren**.  Um die Liste der angezeigten Kacheln einzugrenzen, können Sie einen Gruppenfilter auswählen.  Pluralsight befindet sich in der Gruppe der Vorteile für die professionelle Entwicklung.
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „Pluralsight“](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > Wenn Sie auf der Kachel „Pluralsight-Vorteil“ auf den Link „Code abrufen“ klicken, wird möglicherweise folgende Meldung angezeigt:
-   >
-   > **„Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.“** („Bitte beachten Sie: Wenn Sie zuvor ein anderes Pluralsight-Angebot über Ihr Visual Studio-Abonnement aktiviert haben, können Sie mit diesem Code möglicherweise kein neues Pluralsight-Konto erstellen.“)
+   > ![Kachel des Vorteils „Pluralsight“](_img/vs-pluralsight/vs-pluralsight-tile.png "Klicken auf „Aktivieren“ zum Abrufen des Vorteils")
 
-2. Sie erhalten eine Benachrichtigung, dass der Gutscheincode erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-
-3. Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.
+(Die obige Kachel ist ein Beispiel dessen, was einem Visual Studio Enterprise-Abonnenten angezeigt wird.  Wenn Sie ein anderes Visual Studio-Abonnement verwenden, weicht die Laufzeit des Pluralsight-Vorteils ab.  Details finden Sie in der Berechtigungstabelle.)
+1. Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.
    - Geben Sie im Formular die geforderten Kontaktinformationen ein.
-   - Klicken Sie auf das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren.
-   - Klicken Sie auf **I agree, activate benefit** (Ich stimme zu, Vorteil aktivieren).
+   - Aktivieren Sie das Kontrollkästchen, um die Nutzungsbedingungen zu akzeptieren.
+   - Klicken Sie auf **EINLÖSEN**.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight – Vorteile aktivieren](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Registrierung bei Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Ausfüllen des Registrierungsformulars, Aktivieren des Kontrollkästchens zum Akzeptieren der Bedingungen, und Klicken auf „Einlösen“")
 
-5. Das Einrichten Ihres Kontos kann einen Moment dauern.  Sobald dieser Vorgang abgeschlossen ist, wird auf der Seite eine Bestätigung angezeigt, und Sie erhalten eine E-Mail, die Ihre Anmeldeinformationen enthält.  Diese E-Mail wird an den Alias gesendet, den Sie bei der Erstellung des Kontos angegeben haben.  Überprüfen Sie auch Ihre Ordner für Junk- oder Spam-E-Mails, wenn Sie die Nachricht nicht finden können.
+   > [!NOTE]
+   > Die Registrierungsseite läuft nach wenigen Minuten ab.  Wenn Sie den Registrierungsprozess nicht vor Ablauf der Seite abschließen, kehren Sie zur Pluralsight-Kachel auf der Seite <https://my.visualstudio.com/benefits> zurück und klicken erneut auf **Aktivieren**. 
+
+1. Das Einrichten Ihres Kontos kann einen Moment dauern.  Nach Abschluss des Vorgangs wird auf der Seite eine Bestätigung angezeigt, und Sie erhalten eine E-Mail mit Ihren Anmeldeinformationen.  Diese E-Mail wird an den Alias gesendet, den Sie bei der Erstellung des Kontos angegeben haben.  Überprüfen Sie auch Ihre Ordner für Junk- oder Spam-E-Mails, wenn Sie die Nachricht nicht finden können.
 
    > [!NOTE]
    > Wenn Ihr Konto nicht dafür berechtigt ist, neue Angebote einzulösen, informiert Sie die empfangene E-Mail darüber, dass es ein Problem mit der Erstellung Ihres Accounts gab, da diesem Berechtigungen fehlen.  Darüber hinaus sind Informationen enthalten, die Sie dabei unterstützen, das Pluralsight-Supportteam zu kontaktieren, damit dieses Ihnen bei Bedarf offene Fragen zu Ihrem Konto beantwortet.
-   
 
-6. Nachdem Ihr Konto erfolgreich erstellt wurde, erhalten Sie eine Mail mit Ihrem Benutzernamen, in der Sie aufgefordert werden, ein Kennwort zu erstellen.  Geben Sie ein Kennwort ein, und geben Sie es dann zur Bestätigung erneut ein. Klicken Sie dann auf **Log in to Pluralsight** (Bei Pluralsight anmelden).
+1. Klicken Sie auf **KENNWORT FESTLEGEN**.
 
-7. Geben Sie den Benutzernamen ein, den Sie mit der Willkommens-E-Mail erhalten haben sowie das Kennwort, das Sie gerade erstellt haben, und klicken Sie auf **Anmelden**.
+1. Geben Sie Ihr gewünschtes Kennwort im Feld **Neues Kennwort** ein, geben Sie das Kennwort im Feld **Kennwort bestätigen** erneut ein, und klicken Sie auf **Speichern**.
 
-8. Das ist alles!  Nun können Sie Ihre Kenntnisse mit Tausenden von Pluralsight-Kursen erweitern.
+1. Das ist alles!  Nun können Sie Ihre Kenntnisse mit Tausenden von Pluralsight-Kursen erweitern.
+
+## <a name="status-of-your-pluralsight-subscription"></a>Status Ihres Pluralsight-Abonnements
+Nachdem Sie Ihren Pluralsight-Vorteil aktiviert haben, ändert sich das Aussehen der Kachel im Visual Studio-Abonnementportal, sodass Sie den Status Ihres Abonnements nachverfolgen können.  
+
+### <a name="while-your-subscription-is-active"></a>Ihr Abonnement ist aktiv
+Anstelle der Schaltfläche „Aktivieren“ sehen Sie eine kleine runde Schaltfläche. Wenn Sie darauf klicken, gelangen Sie direkt zum Pluralsight-Portal, sodass Sie sich dort anmelden und mit dem Training fortfahren können.  
+
+Unter dem Titel „Pluralsight“ oben auf der Kachel wird angezeigt, wie viel Zeit noch in Ihrem Pluralsight-Abonnement verbleibt.  Wenn der Ablaufzeitraum des Abonnements weniger als 60 Tage beträgt, ändert sich der Text und zeigt nicht mehr die Anzahl der verbleibenden Monate, sondern die Anzahl der verbleibenden Tage an.  
+
+Im unteren Bereich der Kachel wird sowohl das Aktivierungsdatum als auch das Ablaufdatum Ihres Pluralsight-Abonnements angezeigt.
+
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight-Kachel nach der Aktivierung](_img/vs-pluralsight/vs-pluralsight-activated.png "Nach der Aktivierung zeigt die Kachel die Anzahl der im Abonnement verbleibenden Tage sowie das Ablaufdatum und einen Link zum Pluralsight-Portal an")
+
+### <a name="when-your-subscription-expires"></a>Ihr Abonnement läuft ab
+Wenn Ihr Pluralsight-Abonnement abläuft, ändert sich der Status in „0 Tage verbleibend“, und der Link zum Portal wird entfernt. Sie können weiterhin sehen, an welchem Datum das Abonnement aktiviert wurde und wann es abgelaufen ist.  
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight-Kachel nach dem Ablauf](_img/vs-pluralsight/vs-pluralsight-expired.png "Nach dem Ablauf wird der Link zu Pluralsight entfernt, und die Daten, an denen das Abonnement aktiv war, werden unten auf der Kachel angezeigt")
+
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -83,6 +98,9 @@ Antwort: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsig
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Frage: Habe ich Zugriff auf benutzerdefinierte Wiedergabelisten oder -Kanäle mit Lernressourcen?
 Antwort: Ja. Als Visual Studio-Abonnent erhalten Sie im Rahmen Ihres Pluralsight-Schulungsvorteils Zugriff auf ausgewählte Rollen, Lernpfade und benutzerdefinierte Kanäle (Playlists). Die ausgewählten Inhalte wurden speziell von Microsoft und Pluralsight zusammengestellt und sind auf das Lernen wichtiger Interessenbereiche ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnementportal (<https://my.visualstudio.com/benefits>), um Zugriff auf diese und andere Inhalte auf der Pluralsight-Startseite zu erhalten.
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>Frage: Die Pluralsight-Kachel enthält keinen Link „Aktivieren“. Wie kann ich den Vorteil aktivieren?
+Antwort:  Wenn Sie Ihren Pluralsight-Vorteil bereits aktiviert haben, wird der Link „Aktivieren“ durch einen Link ersetzt, über den Sie zur Anmeldeseite für Pluralsight gelangen.  Sie sehen auch das Datum, an dem der Vorteil aktiviert wurde, sowie Informationen dazu, wie viel Zeit in Ihrem Abonnement noch verbleibt.  Wenn Sie bereits ein Abonnement verwendet haben, können Sie kein weiteres aktivieren.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Frage: Was passiert, wenn mein Pluralsight-Abonnement abläuft?
 Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein Abonnement direkt bei Pluralsight abschließen.  Wenden Sie sich an [Pluralsight](https://www.pluralsight.com), um alle notwendigen Informationen zu erhalten.

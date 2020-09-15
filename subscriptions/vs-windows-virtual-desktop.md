@@ -1,18 +1,18 @@
 ---
-title: Microsoft Windows Virtual Desktop-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Microsoft Windows Virtual Desktop in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie Microsoft Windows Virtual Desktop über Ihr Visual Studio-Abonnement nutzen können.
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800605"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561363"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Zugriff auf Windows Virtual Desktop in Abonnements 
 Visual Studio-Abonnenten können nun ihr Azure DevTest-Einzelguthaben für Microsoft Windows Virtual Desktop-Dienste verwenden.  
