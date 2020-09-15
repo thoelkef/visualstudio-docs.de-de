@@ -1,5 +1,5 @@
 ---
-title: Analyse der Codequalität
+title: Analysetoolkonfiguration
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036364"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560748"
 ---
-# <a name="configure-code-quality-analysis"></a>Konfigurieren der Codequalitätsanalyse
+# <a name="overview"></a>Überblick
 
-Ab .net 5,0 sind Code Qualitätsanalysen im .NET SDK enthalten. (Bisher haben Sie diese Analysen als nuget-Paket installiert.) Die Code Analyse ist standardmäßig für Projekte aktiviert, die auf .net 5,0 oder höher ausgerichtet sind. Sie können die Code Analyse für Projekte aktivieren, die auf frühere .NET-Versionen abzielen, indem Sie die [enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) -Eigenschaft auf festlegen `true` . Sie können die Code Analyse für Ihr Projekt auch deaktivieren, indem Sie `EnableNETAnalyzers` auf festlegen `false` .
-
-Jede *Diagnose* oder Regel der Code Qualitätsanalyse hat einen Standard Schweregrad und Unterdrückungs Status, der überschrieben und für Ihr Projekt angepasst werden kann. In diesem Artikel werden die Schweregrade von Code Quality Analyzer und das Unterdrücken von Analyzer-Verstößen behandelt
+Jede Roslyn Analyzer- *Diagnose* oder Regel weist einen Standard Schweregrad und Unterdrückungs Zustand auf, der überschrieben und für Ihr Projekt angepasst werden kann. In diesem Artikel werden das Festlegen von Schweregraden und das Unterdrücken von Analyzer-Verstößen behandelt
 
 ## <a name="configure-severity-levels"></a>Konfigurieren von Schweregraden
 
