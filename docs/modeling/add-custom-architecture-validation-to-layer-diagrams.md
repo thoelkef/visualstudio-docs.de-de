@@ -1,20 +1,23 @@
 ---
 title: Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
+description: Stellt Informationen zum Hinzufügen einer benutzerdefinierten Architektur Validierung zu Abhängigkeits Diagrammen bereit.
 ms.date: 11/04/2016
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546923"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100525"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 
@@ -107,7 +110,7 @@ Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Bef
 
 6. Kehren Sie zum Ebenenvalidierungsprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:
 
-    |**Referenz**|**Optionen**|
+    |**Verweis**|**Optionen**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Lesen des Architekturdiagramms|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Lesen des Ebenen zugeordneten Code-DOMs|

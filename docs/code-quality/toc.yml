@@ -2,34 +2,30 @@
   href: index.yml
 - name: .NET-Codeanalyse
   items:
-    - name: Übersicht
-      href: code-analysis-for-managed-code-overview.md
     - name: Quellcodeanalyse
       expanded: true
       items:
         - name: Übersicht
-          displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: Installieren von Drittanbieteranalysetools
-          href: install-roslyn-analyzers.md
         - name: Konfiguration
+          expanded: true
           items:
-            - name: Konfigurieren der Quellcodeanalyse
-              href: use-roslyn-analyzers.md
-            - name: Konfigurieren der Codequalitätsanalyse
-              href: configure-fxcop-analyzers.md
-            - name: Konfigurieren von Kategorien für die Codequalitätsanalyse
-              href: analyzer-rule-sets.md
-            - name: Optionen für die Codequalitätsanalyse
-              href: fxcop-analyzer-options.md
-            - name: Umfang der Livecodeanalyse
+            - name: Codequalität
+              items:
+                - name: Übersicht
+                  href: use-roslyn-analyzers.md
+                - name: Konfigurieren der Codequalitätsanalyse mit EditorConfig
+                  href: configure-fxcop-analyzers.md
+            - name: Konfigurieren der Livecodeanalyse
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Manuelles Ausführen der Codeanalyse
               href: how-to-run-code-analysis-manually-for-managed-code.md
             - name: Deaktivieren der Codeanalyse
               href: disable-code-analysis.md
-            - name: Unterdrücken der Codeanalyse
+            - name: Unterdrücken von Codeanalyseverletzungen
               href: in-source-suppression-overview.md
+        - name: Installieren von Drittanbieteranalysetools
+          href: install-roslyn-analyzers.md
         - name: Häufig gestellte Fragen
           href: analyzers-faq.md
     - name: Legacyanalyse
@@ -443,556 +439,557 @@
           items:
             - name: Übersicht
               href: code-analysis-for-managed-code-warnings.md
-            - name: Übersicht über Codequalitätsregeln
-              href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: Entwurfswarnungen
               items:
                 - name: Übersicht
-                  displayName: design warnings
-                  href: design-warnings.md
-                - name: 'CA1000: Statische Member nicht in generischen Typen deklarieren.'
-                  href: ca1000.md
-                - name: 'CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.'
-                  href: ca1001.md
-                - name: 'CA1002: Generische Listen nicht verfügbar machen.'
-                  href: ca1002.md
-                - name: 'CA1003: Generische Ereignishandlerinstanzen verwenden.'
-                  href: ca1003.md
-                - name: 'CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.'
-                  href: ca1005.md
-                - name: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
-                  href: ca1008.md
-                - name: 'CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.'
-                  href: ca1010.md
-                - name: 'CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen.'
-                  href: ca1012.md
-                - name: 'CA1014: Assemblys mit CLSCompliantAttribute markieren.'
-                  href: ca1014.md
-                - name: 'CA1016: Assemblys mit AssemblyVersionAttribute markieren.'
-                  href: ca1016.md
-                - name: 'CA1017: Assemblys mit ComVisibleAttribute markieren.'
-                  href: ca1017.md
-                - name: 'CA1018: Attribute mit AttributeUsageAttribute markieren.'
-                  href: ca1018.md
-                - name: 'CA1019: Accessoren für Attributargumente definieren.'
-                  href: ca1019.md
-                - name: 'CA1021: out-Parameter vermeiden.'
-                  href: ca1021.md
-                - name: 'CA1024: Nach Möglichkeit Eigenschaften verwenden.'
-                  href: ca1024.md
-                - name: 'CA1027: Enumerationen mit FlagsAttribute markieren.'
-                  href: ca1027.md
-                - name: 'CA1028: Der Enumerationsspeicher sollte Int32 sein.'
-                  href: ca1028.md
-                - name: 'CA1030: Nach Möglichkeit Ereignisse verwenden.'
-                  href: ca1030.md
-                - name: 'CA1031: Allgemeine Ausnahmetypen nicht auffangen.'
-                  href: ca1031.md
-                - name: 'CA1032: Standardausnahmekonstruktoren implementieren.'
-                  href: ca1032.md
-                - name: 'CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.'
-                  href: ca1033.md
-                - name: 'CA1034: Geschachtelte Typen sollten nicht sichtbar sein.'
-                  href: ca1034.md
-                - name: 'CA1036: Methoden bei vergleichbaren Typen überschreiben.'
-                  href: ca1036.md
-                - name: 'CA1040: Leere Schnittstellen vermeiden.'
-                  href: ca1040.md
-                - name: 'CA1041: ObsoleteAttribute-Meldung bereitstellen.'
-                  href: ca1041.md
-                - name: 'CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden.'
-                  href: ca1043.md
-                - name: 'CA1044: Eigenschaften sollten nicht lesegeschützt sein.'
-                  href: ca1044.md
-                - name: 'CA1045: Typen nicht als Verweis übergeben.'
-                  href: ca1045.md
-                - name: 'CA1046: Gleichheitsoperator für Referenztypen nicht überladen.'
-                  href: ca1046.md
-                - name: 'CA1047: Geschützte Member in versiegelten Typen nicht deklarieren.'
-                  href: ca1047.md
-                - name: 'CA1050: Typen in Namespaces deklarieren.'
-                  href: ca1050.md
-                - name: 'CA1051: Sichtbare Instanzfelder nicht deklarieren.'
-                  href: ca1051.md
-                - name: 'CA1052: Statische Haltertypen sollten versiegelt sein.'
-                  href: ca1052.md
-                - name: 'CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen.'
-                  href: ca1053.md
-                - name: 'CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.'
-                  href: ca1054.md
-                - name: 'CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein.'
-                  href: ca1055.md
-                - name: 'CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.'
-                  href: ca1056.md
-                - name: 'CA1058: Typen sollten bestimmte Basistypen nicht erweitern.'
-                  href: ca1058.md
-                - name: 'CA1060: P/Invokes in NativeMethods-Klasse verschieben.'
-                  href: ca1060.md
-                - name: 'CA1061: Basisklassenmethoden nicht ausblenden.'
-                  href: ca1061.md
-                - name: 'CA1062: Argumente von öffentlichen Methoden validieren.'
-                  href: ca1062.md
-                - name: 'CA1063: IDisposable korrekt implementieren.'
-                  href: ca1063.md
-                - name: 'CA1064: Ausnahmen sollten öffentlich sein.'
-                  href: ca1064.md
-                - name: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.'
-                  href: ca1065.md
-                - name: 'CA1066: „IEquatable“ beim Außerkraftsetzen von „Equals“ implementieren'
-                  href: ca1066.md
-                - name: 'CA1067: „Object.Equals(object)“ bei Implementierung von „IEquatable“ außer Kraft setzen'
-                  href: ca1067.md
-                - name: 'CA1068: CancellationToken-Parameter müssen zuletzt aufgeführt werden.'
-                  href: ca1068.md
-                - name: 'CA1069: Enumerationen dürfen keine doppelten Werte aufweisen.'
-                  href: ca1069.md
-                - name: 'CA1070: Ereignisfelder dürfen nicht als virtuell deklariert werden.'
-                  href: ca1070.md
-            - name: Warnungen in der Dokumentation
-              items:
-                - name: Übersicht
-                  displayName: documentation warnings
-                  href: documentation-warnings.md
-                - name: 'CA1200: Verwenden Sie keine cref-Tags mit einem Präfix.'
-                  href: ca1200.md
-            - name: Globalisierungswarnungen
-              items:
-                - name: Übersicht
-                  displayName: globalization warnings
-                  href: globalization-warnings.md
-                - name: 'CA1303: Literale nicht als lokalisierte Parameter übergeben.'
-                  href: ca1303.md
-                - name: 'CA1304: CultureInfo angeben.'
-                  href: ca1304.md
-                - name: 'CA1305: IFormatProvider angeben.'
-                  href: ca1305.md
-                - name: 'CA1307: "StringComparison" zur Verdeutlichung angeben'
-                  href: ca1307.md
-                - name: 'CA1308: Zeichenfolgen in Großbuchstaben normalisieren.'
-                  href: ca1308.md
-                - name: 'CA1309: Ordinal-StringComparison verwenden.'
-                  href: ca1309.md
-                - name: 'CA1310: "StringComparison" für Richtigkeit angeben'
-                  href: ca1310.md
-                - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.'
-                  href: ca2101.md
-            - name: Portabilitäts- und Interoperabilitätswarnungen
-              items:
-                - name: Übersicht
-                  displayName: portability and interoperability warnings
-                  href: interoperability-warnings.md
-                - name: 'CA1401: P/Invokes dürfen nicht sichtbar sein.'
-                  href: ca1401.md
-                - name: 'CA1417: "OutAttribute" nicht für Zeichenfolgenparameter für P/Invokes verwenden.'
-                  href: ca1417.md
-            - name: Verwaltbarkeitswarnungen
-              items:
-                - name: Übersicht
-                  displayName: maintainability warnings
-                  href: maintainability-warnings.md
-                - name: 'CA1501: Übermäßige Vererbung vermeiden.'
-                  href: ca1501.md
-                - name: 'CA1502: Übermäßige Komplexität vermeiden.'
-                  href: ca1502.md
-                - name: 'CA1505: Nicht wartbaren Code vermeiden.'
-                  href: ca1505.md
-                - name: 'CA1506: Übermäßige Klassenkopplungen vermeiden.'
-                  href: ca1506.md
-                - name: 'CA1507: „nameof“ anstelle der Zeichenfolge verwenden'
-                  href: ca1507.md
-                - name: 'CA1508: Toten Bedingungscode vermeiden'
-                  href: ca1508.md
-                - name: 'CA1509: Ungültiger Eintrag in der Konfigurationsdatei für die Codemetrik.'
-                  href: ca1509.md
-            - name: Benennungswarnungen
-              items:
-                - name: Übersicht
-                  displayName: naming warnings
-                  href: naming-warnings.md
-                - name: 'CA1700: Enumerationswerte nicht mit "Reserviert" benennen.'
-                  href: ca1700.md
-                - name: 'CA1707: Bezeichner sollten keine Unterstriche enthalten.'
-                  href: ca1707.md
-                - name: 'CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.'
-                  href: ca1708.md
-                - name: 'CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.'
-                  href: ca1710.md
-                - name: 'CA1711: Bezeichner sollten kein falsches Suffix aufweisen.'
-                  href: ca1711.md
-                - name: 'CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden.'
-                  href: ca1712.md
-                - name: 'CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen.'
-                  href: ca1713.md
-                - name: 'CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen.'
-                  href: ca1714.md
-                - name: 'CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.'
-                  href: ca1715.md
-                - name: 'CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.'
-                  href: ca1716.md
-                - name: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.'
-                  href: ca1717.md
-                - name: 'CA1720: Bezeichner dürfen keine Typnamen enthalten.'
-                  href: ca1720.md
-                - name: 'CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.'
-                  href: ca1721.md
-                - name: 'CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.'
-                  href: ca1724.md
-                - name: 'CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.'
-                  href: ca1725.md
-            - name: Leistungswarnungen
-              items:
-                - name: Übersicht
-                  displayName: performance warnings
-                  href: performance-warnings.md
-                - name: 'CA1802: Nach Möglichkeit Literale verwenden.'
-                  href: ca1802.md
-                - name: 'CA1805: Keine unnötige Initialisierung.'
-                  href: ca1805.md
-                - name: 'CA1806: Methodenergebnisse nicht ignorieren.'
-                  href: ca1806.md
-                - name: 'CA1810: Statische Felder von Referenztypen inline initialisieren.'
-                  href: ca1810.md
-                - name: 'CA1812: Nicht instanziierte interne Klassen vermeiden.'
-                  href: ca1812.md
-                - name: 'CA1813: Nicht versiegelte Attribute vermeiden.'
-                  href: ca1813.md
-                - name: 'CA1814: Jagged Arrays mehrdimensionalen Arrays vorziehen.'
-                  href: ca1814.md
-                - name: 'CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben.'
-                  href: ca1815.md
-                - name: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
-                  href: ca1819.md
-                - name: 'CA1820: Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.'
-                  href: ca1820.md
-                - name: 'CA1821: Leere Finalizer entfernen.'
-                  href: ca1821.md
-                - name: 'CA1822: Member als statisch markieren.'
-                  href: ca1822.md
-                - name: 'CA1823: Nicht verwendete private Felder vermeiden.'
-                  href: ca1823.md
-                - name: 'CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren.'
-                  href: ca1824.md
-                - name: 'CA1825: Vermeiden Sie Arrayzuteilungen mit einer Länge von 0 (null).'
-                  href: ca1825.md
-                - name: 'CA1826: Eigenschaft anstelle der LINQ-Enumerable-Methode verwenden.'
-                  href: ca1826.md
-                - name: 'CA1827: Count/LongCount nicht verwenden, wenn Any verwendet werden kann.'
-                  href: ca1827.md
-                - name: 'CA1828: CountAsync/LongCountAsync nicht verwenden, wenn AnyAsync verwendet werden kann.'
-                  href: ca1828.md
-                - name: 'CA1829: Length/Count-Eigenschaft anstelle der Enumerable.Count-Methode verwenden.'
-                  href: ca1829.md
-                - name: 'CA1830: Bevorzugen Sie stark typisierte Append- und Insert-Methodenüberladungen für StringBuilder.'
-                  href: ca1830.md
-                - name: 'CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.'
-                  href: ca1831.md
-                - name: 'CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.'
-                  href: ca1832.md
-                - name: 'CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.'
-                  href: ca1833.md
-                - name: 'CA1834: Verwenden von StringBuilder.Append(char) für Zeichenfolgen mit einem einzelnen Zeichen'
-                  href: ca1834.md
-                - name: 'CA1835: Arbeitsspeicherüberladungen von „ReadAsync/WriteAsync“-Methoden des Datenstroms bevorzugen.'
-                  href: ca1835.md
-                - name: 'CA1836: Ziehen Sie "IsEmpty" gegenüber "Count" vor (falls verfügbar)'
-                  href: ca1836.md
-                - name: 'CA1837: Verwenden Sie "Environment.ProcessId" anstelle von "Process.GetCurrentProcess().Id"'
-                  href: ca1837.md
-                - name: 'CA1838: StringBuilder-Parameter für "P/Invokes" vermeiden.'
-                  href: ca1838.md
-            - name: Zuverlässigkeitswarnungen
-              items:
-                - name: Übersicht
-                  displayName: reliability warnings
-                  href: reliability-warnings.md
-                - name: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht.'
-                  href: ca2000.md
-                - name: 'CA2002: Auf Objekten mit schwacher Identität nicht sperren.'
-                  href: ca2002.md
-                - name: 'CA2007: Eine Aufgabe nicht direkt abwarten'
-                  href: ca2007.md
-                - name: 'CA2008: Keine Tasks ohne Übergabe eines TaskSchedulers erstellen'
-                  href: ca2008.md
-                - name: 'CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.'
-                  href: ca2009.md
-                - name: 'CA2011: Eigenschaft nicht innerhalb ihres Setters zuweisen'
-                  href: ca2011.md
-                - name: 'CA2012: Verwenden Sie ValueTasks ordnungsgemäß.'
-                  href: ca2012.md
-                - name: 'CA2013: Verwenden Sie ReferenceEquals nicht mit Werttypen.'
-                  href: ca2013.md
-                - name: 'CA2014: Verwenden Sie stackalloc nicht in Schleifen.'
-                  href: ca2014.md
-                - name: 'CA2015: Keine Finalizer für von MemoryManager abgeleitete Typen definieren<T>'
-                  href: ca2015.md
-                - name: 'CA2016: Parameter "CancellationToken" an Methoden weiterleiten, die diesen Parameter akzeptieren.'
-                  href: ca2016.md
-            - name: Sicherheitswarnungen
-              items:
-                - name: Übersicht
-                  displayName: security warnings
-                  href: security-warnings.md
-                - name: 'CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.'
-                  href: ca2100.md
-                - name: 'CA2109: Sichtbare Ereignishandler überprüfen.'
-                  href: ca2109.md
-                - name: 'CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.'
-                  href: ca2119.md
-                - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden'
-                  href: ca2153.md
-                - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.'
-                  href: ca2153.md
-                - name: 'CA2300: Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden'
-                  href: ca2300.md
-                - name: 'CA2301: BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen'
-                  href: ca2301.md
-                - name: 'CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen'
-                  href: ca2302.md
-                - name: 'CA2305: Unsicheren Deserialisierer nicht verwenden: LosFormatter'
-                  href: ca2305.md
-                - name: 'CA2310: Unsicheren Deserialisierer nicht verwenden: NetDataContractSerializer'
-                  href: ca2310.md
-                - name: 'CA2311: Nicht deserialisieren, ohne zuerst NetDataContractSerializer.Binder festzulegen'
-                  href: ca2311.md
-                - name: 'CA2312: Vor dem Deserialisieren sicherstellen, dass NetDataContractSerializer.Binder festgelegt ist'
-                  href: ca2312.md
-                - name: 'CA2315: Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter'
-                  href: ca2315.md
-                - name: 'CA2321: Nicht mit JavaScriptSerializer und SimpleTypeResolver deserialisieren'
-                  href: ca2321.md
-                - name: 'CA2322: Vor dem Deserialisieren sicherstellen, dass JavaScriptSerializer nicht mit SimpleTypeResolver initialisiert ist'
-                  href: ca2322.md
-                - name: 'CA2326: Keine anderen TypeNameHandling-Werte als None (Keine) verwenden'
-                  href: ca2326.md
-                - name: 'CA2327: Keine unsichere JsonSerializerSettings-Klasse verwenden'
-                  href: ca2327.md
-                - name: 'CA2328: Sicherstellen, dass JsonSerializerSettings sicher ist'
-                  href: ca2328.md
-                - name: 'CA2329: Nicht mit JsonSerializer mit unsicherer Konfiguration deserialisieren'
-                  href: ca2329.md
-                - name: 'CA2350: Sicherstellen, dass die Eingabe von DataTable.ReadXml() vertrauenswürdig ist'
-                  href: ca2350.md
-                - name: 'CA2351: Sicherstellen, dass die Eingabe von DataSet.ReadXml() vertrauenswürdig ist'
-                  href: ca2351.md
-                - name: 'CA2352: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ können anfällig für Angriffe durch Remotecodeausführung sein'
-                  href: ca2352.md
-                - name: 'CA2353: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ'
-                  href: ca2353.md
-                - name: 'CA2354: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph können anfällig für Angriffe durch Remotecodeausführung sein'
-                  href: ca2354.md
-                - name: 'CA2355: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph'
-                  href: ca2355.md
-                - name: 'CA2356: Unsicherer DataSet- oder DataTable-Typ in einem webdeserialisierten Objektgraph'
-                  href: ca2356.md
-                - name: 'CA2361: Sicherstellen, dass die automatisch generierte Klasse mit DataSet.ReadXml() nicht mit nicht vertrauenswürdigen Daten verwendet wird'
-                  href: ca2361.md
-                - name: 'CA2362: Ein unsicheres DataSet- oder DataTable-Element in einem automatisch generierten, serialisierbaren Typ kann für Angriffe durch Remotecodeausführung anfällig sein'
-                  href: ca2362.md
-                - name: 'CA2330: Sicherstellen, dass JsonSerializer eine sichere Konfiguration bei der Deserialisierung verwendet'
-                  href: ca2330.md
-                - name: 'CA3001: Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)'
-                  href: ca3001.md
-                - name: 'CA3002: Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)'
-                  href: ca3002.md
-                - name: 'CA3003: Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)'
-                  href: ca3003.md
-                - name: 'CA3004: Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)'
-                  href: ca3004.md
-                - name: 'CA3005: Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)'
-                  href: ca3005.md
-                - name: 'CA3006: Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)'
-                  href: ca3006.md
-                - name: 'CA3007: Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)'
-                  href: ca3007.md
-                - name: 'CA3008: Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)'
-                  href: ca3008.md
-                - name: 'CA3009: Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)'
-                  href: ca3009.md
-                - name: 'CA3010: Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)'
-                  href: ca3010.md
-                - name: 'CA3011: Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)'
-                  href: ca3011.md
-                - name: 'CA3012: Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)'
-                  href: ca3012.md
-                - name: 'CA3061: Fügen Sie kein Schema nach URL hinzu.'
-                  href: ca3061.md
-                - name: 'CA3075: Unsichere DTD-Verarbeitung.'
-                  href: ca3075.md
-                - name: 'CA3076: Unsichere XSLT-Skriptausführung.'
-                  href: ca3076.md
-                - name: 'CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-Textreader.'
-                  href: ca3077.md
-                - name: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
-                  href: ca3147.md
-                - name: 'CA5350: Keine schwachen Kryptografiealgorithmen verwenden.'
-                  href: ca5350.md
-                - name: CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
-                  href: ca5351.md
-                - name: 'CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.'
-                  href: ca5358.md
-                - name: 'CA5359: Zertifikatüberprüfung nicht deaktivieren'
-                  href: ca5359.md
-                - name: 'CA5360: Keine gefährlichen Methoden bei der Deserialisierung aufrufen.'
-                  href: ca5360.md
-                - name: 'CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.'
-                  href: ca5361.md
-                - name: 'CA5362: Potenzieller Verweiszyklus in deserialisiertem Objektgraph'
-                  href: ca5362.md
-                - name: 'CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.'
-                  href: ca5363.md
-                - name: 'CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.'
-                  href: ca5364.md
-                - name: 'CA5365: Überprüfung von HTTP-Headern nicht deaktivieren'
-                  href: ca5365.md
-                - name: 'CA5366: XmlReader zum Lesen von DataSet-XML verwenden'
-                  href: ca5366.md
-                - name: 'CA5367: Typen mit Zeigerfeldern dürfen nicht serialisiert werden.'
-                  href: ca5367.md
-                - name: 'CA5368: Festlegen von ViewStateUserKey für von der Seite abgeleitete Klassen'
-                  href: ca5368.md
-                - name: 'CA5369: Verwenden Sie XmlReader zur Deserialisierung.'
-                  href: ca5369.md
-                - name: 'CA5370: Verwenden Sie XmlReader als überprüfenden Reader.'
-                  href: ca5370.md
-                - name: 'CA5371: Verwenden Sie XmlReader für Schemalesevorgänge.'
-                  href: ca5371.md
-                - name: 'CA5372: Verwenden Sie XmlReader für XPathDocument.'
-                  href: ca5372.md
-                - name: 'CA5373: Verwenden Sie keine veraltete Schlüsselableitungsfunktion.'
-                  href: ca5373.md
-                - name: 'CA5374: Kein XslTransform verwenden'
-                  href: ca5374.md
-                - name: 'CA5375: Shared Access Signature des Kontos nicht verwenden.'
-                  href: ca5375.md
-                - name: 'CA5376: SharedAccessProtocol.HttpsOnly verwenden.'
-                  href: ca5376.md
-                - name: 'CA5377: Zugriffsrichtlinie auf Containerebene verwenden.'
-                  href: ca5377.md
-                - name: 'CA5378: Deaktivieren Sie ServicePointManagerSecurityProtocols nicht.'
-                  href: ca5378.md
-                - name: 'CA5379: Keinen schwachen Algorithmus für die Schlüsselableitungsfunktion verwenden'
-                  href: ca5379.md
-                - name: 'CA5380: Fügen Sie keine Zertifikate zum Stammspeicher hinzu.'
-                  href: ca5380.md
-                - name: 'CA5381: Stellen Sie sicher, dass keine Zertifikate zum Stammspeicher hinzugefügt werden.'
-                  href: ca5381.md
-                - name: 'CA5382: Sichere Cookies in ASP.NET Core verwenden'
-                  href: ca5382.md
-                - name: 'CA5383: Sicherstellen, dass sichere Cookies in ASP.NET Core verwendet werden'
-                  href: ca5383.md
-                - name: 'CA5384: Digitalen Signaturalgorithmus (DSA) nicht verwenden'
-                  href: ca5384.md
-                - name: 'CA5385: RSA-Algorithmus (Rivest – Shamir – Adleman) mit ausreichender Schlüsselgröße verwenden'
-                  href: ca5385.md
-                - name: 'CA5386: Vermeiden Sie die Hartcodierung des SecurityProtocolType-Werts.'
-                  href: ca5386.md
-                - name: 'CA5387: Schwache Schlüsselableitungsfunktion nicht mit unzureichender Iterationsanzahl verwenden'
-                  href: ca5387.md
-                - name: 'CA5388: Sicherstellen einer ausreichenden Iterationsanzahl bei Verwendung einer schwachen Schlüsselableitungsfunktion'
-                  href: ca5388.md
-                - name: 'CA5389: Fügen Sie den Pfad des Archivelements nicht zum Pfad des Zieldateisystems hinzu.'
-                  href: ca5389.md
-                - name: 'CA5390: Keine Hartcodierung von Verschlüsselungsschlüsseln'
-                  href: ca5390.md
-                - name: 'CA5391: Fälschungssicherheitstoken in ASP.NET Core MVC-Controllern verwenden.'
-                  href: ca5391.md
-                - name: 'CA5392: DefaultDllImportSearchPaths-Attribut für P/Invokes verwenden.'
-                  href: ca5392.md
-                - name: 'CA5393: Keinen unsicheren DllImportSearchPath-Wert verwenden.'
-                  href: ca5393.md
-                - name: 'CA5394: Keine unsichere Zufälligkeitsstufe verwenden'
-                  href: ca5394.md
-                - name: 'CA5395: Fehlendes HttpVerb-Attribut für Aktionsmethoden.'
-                  href: ca5395.md
-                - name: 'CA5396: HttpOnly für HttpCookie auf TRUE festlegen'
-                  href: ca5396.md
-                - name: 'CA5397: Verwenden Sie keine veralteten SslProtocols-Werte.'
-                  href: ca5397.md
-                - name: 'CA5398: Vermeiden Sie hartcodierte SslProtocols-Werte.'
-                  href: ca5398.md
-                - name: 'CA5399: Überprüfung der HttpClient-Zertifikatsperrliste definitiv deaktivieren'
-                  href: ca5399.md
-                - name: 'CA5400: Sicherstellen, dass die Überprüfung der HttpClient-Zertifikatsperrliste nicht deaktiviert ist'
-                  href: ca5400.md
-                - name: 'CA5401: CreateEncryptor nicht mit Nicht-Standard-Initialisierungsvektoren verwenden'
-                  href: ca5401.md
-                - name: 'CA5402: CreateEncryptor mit Standard-Initialisierungsvektoren verwenden'
-                  href: ca5402.md
-                - name: 'CA5403: Keine Hartcodierung von Zertifikaten'
-                  href: ca5403.md
-            - name: Verwendungswarnungen
-              items:
-                - name: Übersicht
-                  displayName: usage warnings
-                  href: usage-warnings.md
-                - name: 'CA1801: Nicht verwendete Parameter überprüfen.'
-                  href: ca1801.md
-                - name: 'CA1816: GC.SuppressFinalize korrekt aufrufen.'
-                  href: ca1816.md
-                - name: 'CA2200: Erneut ausführen, um Stapeldetails beizubehalten.'
-                  href: ca2200.md
-                - name: 'CA2201: Keine reservierten Ausnahmetypen auslösen.'
-                  href: ca2201.md
-                - name: 'CA2207: Statische Felder für Werttyp inline initialisieren.'
-                  href: ca2207.md
-                - name: 'CA2208: Argumentausnahmen korrekt instanziieren.'
-                  href: ca2208.md
-                - name: 'CA2211: Nicht konstante Felder sollten nicht sichtbar sein.'
-                  href: ca2211.md
-                - name: 'CA2213: Verwerfbare Felder verwerfen.'
-                  href: ca2213.md
-                - name: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.'
-                  href: ca2214.md
-                - name: 'CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen.'
-                  href: ca2215.md
-                - name: 'CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren.'
-                  href: ca2216.md
-                - name: 'CA2217: Enumerationen nicht mit FlagsAttribute markieren.'
-                  href: ca2217.md
-                - name: 'CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen.'
-                  href: ca2219.md
-                - name: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf.'
-                  href: ca2225.md
-                - name: 'CA2226: Operatoren sollten symmetrische Überladungen aufweisen.'
-                  href: ca2226.md
-                - name: 'CA2227: Sammlungseigenschaften sollten schreibgeschützt sein.'
-                  href: ca2227.md
-                - name: 'CA2229: Serialisierungskonstruktoren implementieren.'
-                  href: ca2229.md
-                - name: 'CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.'
-                  href: ca2231.md
-                - name: 'CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.'
-                  href: ca2234.md
-                - name: 'CA2235: Alle nicht serialisierbaren Felder markieren.'
-                  href: ca2235.md
-                - name: 'CA2237: ISerializable-Typen mit SerializableAttribute markieren.'
-                  href: ca2237.md
-                - name: 'CA2241: Geben Sie die korrekte Anzahl für Formatierungsmethoden an.'
-                  href: ca2241.md
-                - name: 'CA2242: Ordnungsgemäß auf NaN testen.'
-                  href: ca2242.md
-                - name: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.'
-                  href: ca2243.md
-                - name: 'CA2244: Keine Initialisierungen indizierter Elemente duplizieren'
-                  href: ca2244.md
-                - name: 'CA2245: Keine Zuweisung einer Eigenschaft zu sich selbst'
-                  href: ca2245.md
-                - name: 'CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung'
-                  href: ca2246.md
-                - name: 'CA2247: Anstelle einer TaskContinuationOptions-Enumeration muss eine TaskCreationOptions-Enumeration als Argument an den TaskCompletionSource-Konstruktor übergeben werden.'
-                  href: ca2247.md
-                - name: 'CA2248: Geben Sie das richtige enum-Argument für „Enum.HasFlag“ an.'
-                  href: ca2248.md
-                - name: 'CA2249: Erwägen Sie die Verwendung von "String.Contains" anstelle von "String.IndexOf"'
-                  href: ca2249.md
-            - name: Automatisches Anhalten von Features
-              href: automatic-feature-suspension.md
-            - name: Veröffentlichen von Warnungen
-              items:
-                - name: Übersicht
-                  displayName: publish warnings
-                  href: publish-warnings.md
-                - name: 'IL3000: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
-                  href: il3000.md
-                - name: 'IL3001: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
-                  href: il3001.md
+                  href: code-analysis-warnings-for-managed-code-by-checkid.md
+                - name: Entwurfswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: design warnings
+                      href: design-warnings.md
+                    - name: 'CA1000: Statische Member nicht in generischen Typen deklarieren.'
+                      href: ca1000.md
+                    - name: 'CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.'
+                      href: ca1001.md
+                    - name: 'CA1002: Generische Listen nicht verfügbar machen.'
+                      href: ca1002.md
+                    - name: 'CA1003: Generische Ereignishandlerinstanzen verwenden.'
+                      href: ca1003.md
+                    - name: 'CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.'
+                      href: ca1005.md
+                    - name: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
+                      href: ca1008.md
+                    - name: 'CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.'
+                      href: ca1010.md
+                    - name: 'CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen.'
+                      href: ca1012.md
+                    - name: 'CA1014: Assemblys mit CLSCompliantAttribute markieren.'
+                      href: ca1014.md
+                    - name: 'CA1016: Assemblys mit AssemblyVersionAttribute markieren.'
+                      href: ca1016.md
+                    - name: 'CA1017: Assemblys mit ComVisibleAttribute markieren.'
+                      href: ca1017.md
+                    - name: 'CA1018: Attribute mit AttributeUsageAttribute markieren.'
+                      href: ca1018.md
+                    - name: 'CA1019: Accessoren für Attributargumente definieren.'
+                      href: ca1019.md
+                    - name: 'CA1021: out-Parameter vermeiden.'
+                      href: ca1021.md
+                    - name: 'CA1024: Nach Möglichkeit Eigenschaften verwenden.'
+                      href: ca1024.md
+                    - name: 'CA1027: Enumerationen mit FlagsAttribute markieren.'
+                      href: ca1027.md
+                    - name: 'CA1028: Der Enumerationsspeicher sollte Int32 sein.'
+                      href: ca1028.md
+                    - name: 'CA1030: Nach Möglichkeit Ereignisse verwenden.'
+                      href: ca1030.md
+                    - name: 'CA1031: Allgemeine Ausnahmetypen nicht auffangen.'
+                      href: ca1031.md
+                    - name: 'CA1032: Standardausnahmekonstruktoren implementieren.'
+                      href: ca1032.md
+                    - name: 'CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.'
+                      href: ca1033.md
+                    - name: 'CA1034: Geschachtelte Typen sollten nicht sichtbar sein.'
+                      href: ca1034.md
+                    - name: 'CA1036: Methoden bei vergleichbaren Typen überschreiben.'
+                      href: ca1036.md
+                    - name: 'CA1040: Leere Schnittstellen vermeiden.'
+                      href: ca1040.md
+                    - name: 'CA1041: ObsoleteAttribute-Meldung bereitstellen.'
+                      href: ca1041.md
+                    - name: 'CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden.'
+                      href: ca1043.md
+                    - name: 'CA1044: Eigenschaften sollten nicht lesegeschützt sein.'
+                      href: ca1044.md
+                    - name: 'CA1045: Typen nicht als Verweis übergeben.'
+                      href: ca1045.md
+                    - name: 'CA1046: Gleichheitsoperator für Referenztypen nicht überladen.'
+                      href: ca1046.md
+                    - name: 'CA1047: Geschützte Member in versiegelten Typen nicht deklarieren.'
+                      href: ca1047.md
+                    - name: 'CA1050: Typen in Namespaces deklarieren.'
+                      href: ca1050.md
+                    - name: 'CA1051: Sichtbare Instanzfelder nicht deklarieren.'
+                      href: ca1051.md
+                    - name: 'CA1052: Statische Haltertypen sollten versiegelt sein.'
+                      href: ca1052.md
+                    - name: 'CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen.'
+                      href: ca1053.md
+                    - name: 'CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.'
+                      href: ca1054.md
+                    - name: 'CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein.'
+                      href: ca1055.md
+                    - name: 'CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.'
+                      href: ca1056.md
+                    - name: 'CA1058: Typen sollten bestimmte Basistypen nicht erweitern.'
+                      href: ca1058.md
+                    - name: 'CA1060: P/Invokes in NativeMethods-Klasse verschieben.'
+                      href: ca1060.md
+                    - name: 'CA1061: Basisklassenmethoden nicht ausblenden.'
+                      href: ca1061.md
+                    - name: 'CA1062: Argumente von öffentlichen Methoden validieren.'
+                      href: ca1062.md
+                    - name: 'CA1063: IDisposable korrekt implementieren.'
+                      href: ca1063.md
+                    - name: 'CA1064: Ausnahmen sollten öffentlich sein.'
+                      href: ca1064.md
+                    - name: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.'
+                      href: ca1065.md
+                    - name: 'CA1066: „IEquatable“ beim Außerkraftsetzen von „Equals“ implementieren'
+                      href: ca1066.md
+                    - name: 'CA1067: „Object.Equals(object)“ bei Implementierung von „IEquatable“ außer Kraft setzen'
+                      href: ca1067.md
+                    - name: 'CA1068: CancellationToken-Parameter müssen zuletzt aufgeführt werden.'
+                      href: ca1068.md
+                    - name: 'CA1069: Enumerationen dürfen keine doppelten Werte aufweisen.'
+                      href: ca1069.md
+                    - name: 'CA1070: Ereignisfelder dürfen nicht als virtuell deklariert werden.'
+                      href: ca1070.md
+                - name: Warnungen in der Dokumentation
+                  items:
+                    - name: Übersicht
+                      displayName: documentation warnings
+                      href: documentation-warnings.md
+                    - name: 'CA1200: Verwenden Sie keine cref-Tags mit einem Präfix.'
+                      href: ca1200.md
+                - name: Globalisierungswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: globalization warnings
+                      href: globalization-warnings.md
+                    - name: 'CA1303: Literale nicht als lokalisierte Parameter übergeben.'
+                      href: ca1303.md
+                    - name: 'CA1304: CultureInfo angeben.'
+                      href: ca1304.md
+                    - name: 'CA1305: IFormatProvider angeben.'
+                      href: ca1305.md
+                    - name: 'CA1307: "StringComparison" zur Verdeutlichung angeben'
+                      href: ca1307.md
+                    - name: 'CA1308: Zeichenfolgen in Großbuchstaben normalisieren.'
+                      href: ca1308.md
+                    - name: 'CA1309: Ordinal-StringComparison verwenden.'
+                      href: ca1309.md
+                    - name: 'CA1310: "StringComparison" für Richtigkeit angeben'
+                      href: ca1310.md
+                    - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.'
+                      href: ca2101.md
+                - name: Portabilitäts- und Interoperabilitätswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: portability and interoperability warnings
+                      href: interoperability-warnings.md
+                    - name: 'CA1401: P/Invokes dürfen nicht sichtbar sein.'
+                      href: ca1401.md
+                    - name: 'CA1417: "OutAttribute" nicht für Zeichenfolgenparameter für P/Invokes verwenden.'
+                      href: ca1417.md
+                - name: Verwaltbarkeitswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: maintainability warnings
+                      href: maintainability-warnings.md
+                    - name: 'CA1501: Übermäßige Vererbung vermeiden.'
+                      href: ca1501.md
+                    - name: 'CA1502: Übermäßige Komplexität vermeiden.'
+                      href: ca1502.md
+                    - name: 'CA1505: Nicht wartbaren Code vermeiden.'
+                      href: ca1505.md
+                    - name: 'CA1506: Übermäßige Klassenkopplungen vermeiden.'
+                      href: ca1506.md
+                    - name: 'CA1507: „nameof“ anstelle der Zeichenfolge verwenden'
+                      href: ca1507.md
+                    - name: 'CA1508: Toten Bedingungscode vermeiden'
+                      href: ca1508.md
+                    - name: 'CA1509: Ungültiger Eintrag in der Konfigurationsdatei für die Codemetrik.'
+                      href: ca1509.md
+                - name: Benennungswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: naming warnings
+                      href: naming-warnings.md
+                    - name: 'CA1700: Enumerationswerte nicht mit "Reserviert" benennen.'
+                      href: ca1700.md
+                    - name: 'CA1707: Bezeichner sollten keine Unterstriche enthalten.'
+                      href: ca1707.md
+                    - name: 'CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.'
+                      href: ca1708.md
+                    - name: 'CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.'
+                      href: ca1710.md
+                    - name: 'CA1711: Bezeichner sollten kein falsches Suffix aufweisen.'
+                      href: ca1711.md
+                    - name: 'CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden.'
+                      href: ca1712.md
+                    - name: 'CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen.'
+                      href: ca1713.md
+                    - name: 'CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen.'
+                      href: ca1714.md
+                    - name: 'CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.'
+                      href: ca1715.md
+                    - name: 'CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.'
+                      href: ca1716.md
+                    - name: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.'
+                      href: ca1717.md
+                    - name: 'CA1720: Bezeichner dürfen keine Typnamen enthalten.'
+                      href: ca1720.md
+                    - name: 'CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.'
+                      href: ca1721.md
+                    - name: 'CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.'
+                      href: ca1724.md
+                    - name: 'CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.'
+                      href: ca1725.md
+                - name: Leistungswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: performance warnings
+                      href: performance-warnings.md
+                    - name: 'CA1802: Nach Möglichkeit Literale verwenden.'
+                      href: ca1802.md
+                    - name: 'CA1805: Keine unnötige Initialisierung.'
+                      href: ca1805.md
+                    - name: 'CA1806: Methodenergebnisse nicht ignorieren.'
+                      href: ca1806.md
+                    - name: 'CA1810: Statische Felder von Referenztypen inline initialisieren.'
+                      href: ca1810.md
+                    - name: 'CA1812: Nicht instanziierte interne Klassen vermeiden.'
+                      href: ca1812.md
+                    - name: 'CA1813: Nicht versiegelte Attribute vermeiden.'
+                      href: ca1813.md
+                    - name: 'CA1814: Jagged Arrays mehrdimensionalen Arrays vorziehen.'
+                      href: ca1814.md
+                    - name: 'CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben.'
+                      href: ca1815.md
+                    - name: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
+                      href: ca1819.md
+                    - name: 'CA1820: Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.'
+                      href: ca1820.md
+                    - name: 'CA1821: Leere Finalizer entfernen.'
+                      href: ca1821.md
+                    - name: 'CA1822: Member als statisch markieren.'
+                      href: ca1822.md
+                    - name: 'CA1823: Nicht verwendete private Felder vermeiden.'
+                      href: ca1823.md
+                    - name: 'CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren.'
+                      href: ca1824.md
+                    - name: 'CA1825: Vermeiden Sie Arrayzuteilungen mit einer Länge von 0 (null).'
+                      href: ca1825.md
+                    - name: 'CA1826: Eigenschaft anstelle der LINQ-Enumerable-Methode verwenden.'
+                      href: ca1826.md
+                    - name: 'CA1827: Count/LongCount nicht verwenden, wenn Any verwendet werden kann.'
+                      href: ca1827.md
+                    - name: 'CA1828: CountAsync/LongCountAsync nicht verwenden, wenn AnyAsync verwendet werden kann.'
+                      href: ca1828.md
+                    - name: 'CA1829: Length/Count-Eigenschaft anstelle der Enumerable.Count-Methode verwenden.'
+                      href: ca1829.md
+                    - name: 'CA1830: Bevorzugen Sie stark typisierte Append- und Insert-Methodenüberladungen für StringBuilder.'
+                      href: ca1830.md
+                    - name: 'CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.'
+                      href: ca1831.md
+                    - name: 'CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.'
+                      href: ca1832.md
+                    - name: 'CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.'
+                      href: ca1833.md
+                    - name: 'CA1834: Verwenden von StringBuilder.Append(char) für Zeichenfolgen mit einem einzelnen Zeichen'
+                      href: ca1834.md
+                    - name: 'CA1835: Arbeitsspeicherüberladungen von „ReadAsync/WriteAsync“-Methoden des Datenstroms bevorzugen.'
+                      href: ca1835.md
+                    - name: 'CA1836: Ziehen Sie "IsEmpty" gegenüber "Count" vor (falls verfügbar)'
+                      href: ca1836.md
+                    - name: 'CA1837: Verwenden Sie "Environment.ProcessId" anstelle von "Process.GetCurrentProcess().Id"'
+                      href: ca1837.md
+                    - name: 'CA1838: StringBuilder-Parameter für "P/Invokes" vermeiden.'
+                      href: ca1838.md
+                - name: Zuverlässigkeitswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: reliability warnings
+                      href: reliability-warnings.md
+                    - name: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht.'
+                      href: ca2000.md
+                    - name: 'CA2002: Auf Objekten mit schwacher Identität nicht sperren.'
+                      href: ca2002.md
+                    - name: 'CA2007: Eine Aufgabe nicht direkt abwarten'
+                      href: ca2007.md
+                    - name: 'CA2008: Keine Tasks ohne Übergabe eines TaskSchedulers erstellen'
+                      href: ca2008.md
+                    - name: 'CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.'
+                      href: ca2009.md
+                    - name: 'CA2011: Eigenschaft nicht innerhalb ihres Setters zuweisen'
+                      href: ca2011.md
+                    - name: 'CA2012: Verwenden Sie ValueTasks ordnungsgemäß.'
+                      href: ca2012.md
+                    - name: 'CA2013: Verwenden Sie ReferenceEquals nicht mit Werttypen.'
+                      href: ca2013.md
+                    - name: 'CA2014: Verwenden Sie stackalloc nicht in Schleifen.'
+                      href: ca2014.md
+                    - name: 'CA2015: Keine Finalizer für von MemoryManager abgeleitete Typen definieren<T>'
+                      href: ca2015.md
+                    - name: 'CA2016: Parameter "CancellationToken" an Methoden weiterleiten, die diesen Parameter akzeptieren.'
+                      href: ca2016.md
+                - name: Sicherheitswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: security warnings
+                      href: security-warnings.md
+                    - name: 'CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.'
+                      href: ca2100.md
+                    - name: 'CA2109: Sichtbare Ereignishandler überprüfen.'
+                      href: ca2109.md
+                    - name: 'CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.'
+                      href: ca2119.md
+                    - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden'
+                      href: ca2153.md
+                    - name: 'CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.'
+                      href: ca2153.md
+                    - name: 'CA2300: Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden'
+                      href: ca2300.md
+                    - name: 'CA2301: BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen'
+                      href: ca2301.md
+                    - name: 'CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen'
+                      href: ca2302.md
+                    - name: 'CA2305: Unsicheren Deserialisierer nicht verwenden: LosFormatter'
+                      href: ca2305.md
+                    - name: 'CA2310: Unsicheren Deserialisierer nicht verwenden: NetDataContractSerializer'
+                      href: ca2310.md
+                    - name: 'CA2311: Nicht deserialisieren, ohne zuerst NetDataContractSerializer.Binder festzulegen'
+                      href: ca2311.md
+                    - name: 'CA2312: Vor dem Deserialisieren sicherstellen, dass NetDataContractSerializer.Binder festgelegt ist'
+                      href: ca2312.md
+                    - name: 'CA2315: Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter'
+                      href: ca2315.md
+                    - name: 'CA2321: Nicht mit JavaScriptSerializer und SimpleTypeResolver deserialisieren'
+                      href: ca2321.md
+                    - name: 'CA2322: Vor dem Deserialisieren sicherstellen, dass JavaScriptSerializer nicht mit SimpleTypeResolver initialisiert ist'
+                      href: ca2322.md
+                    - name: 'CA2326: Keine anderen TypeNameHandling-Werte als None (Keine) verwenden'
+                      href: ca2326.md
+                    - name: 'CA2327: Keine unsichere JsonSerializerSettings-Klasse verwenden'
+                      href: ca2327.md
+                    - name: 'CA2328: Sicherstellen, dass JsonSerializerSettings sicher ist'
+                      href: ca2328.md
+                    - name: 'CA2329: Nicht mit JsonSerializer mit unsicherer Konfiguration deserialisieren'
+                      href: ca2329.md
+                    - name: 'CA2350: Sicherstellen, dass die Eingabe von DataTable.ReadXml() vertrauenswürdig ist'
+                      href: ca2350.md
+                    - name: 'CA2351: Sicherstellen, dass die Eingabe von DataSet.ReadXml() vertrauenswürdig ist'
+                      href: ca2351.md
+                    - name: 'CA2352: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ können anfällig für Angriffe durch Remotecodeausführung sein'
+                      href: ca2352.md
+                    - name: 'CA2353: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ'
+                      href: ca2353.md
+                    - name: 'CA2354: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph können anfällig für Angriffe durch Remotecodeausführung sein'
+                      href: ca2354.md
+                    - name: 'CA2355: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph'
+                      href: ca2355.md
+                    - name: 'CA2356: Unsicherer DataSet- oder DataTable-Typ in einem webdeserialisierten Objektgraph'
+                      href: ca2356.md
+                    - name: 'CA2361: Sicherstellen, dass die automatisch generierte Klasse mit DataSet.ReadXml() nicht mit nicht vertrauenswürdigen Daten verwendet wird'
+                      href: ca2361.md
+                    - name: 'CA2362: Ein unsicheres DataSet- oder DataTable-Element in einem automatisch generierten, serialisierbaren Typ kann für Angriffe durch Remotecodeausführung anfällig sein'
+                      href: ca2362.md
+                    - name: 'CA2330: Sicherstellen, dass JsonSerializer eine sichere Konfiguration bei der Deserialisierung verwendet'
+                      href: ca2330.md
+                    - name: 'CA3001: Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)'
+                      href: ca3001.md
+                    - name: 'CA3002: Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)'
+                      href: ca3002.md
+                    - name: 'CA3003: Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)'
+                      href: ca3003.md
+                    - name: 'CA3004: Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)'
+                      href: ca3004.md
+                    - name: 'CA3005: Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)'
+                      href: ca3005.md
+                    - name: 'CA3006: Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)'
+                      href: ca3006.md
+                    - name: 'CA3007: Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)'
+                      href: ca3007.md
+                    - name: 'CA3008: Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)'
+                      href: ca3008.md
+                    - name: 'CA3009: Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)'
+                      href: ca3009.md
+                    - name: 'CA3010: Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)'
+                      href: ca3010.md
+                    - name: 'CA3011: Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)'
+                      href: ca3011.md
+                    - name: 'CA3012: Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)'
+                      href: ca3012.md
+                    - name: 'CA3061: Fügen Sie kein Schema nach URL hinzu.'
+                      href: ca3061.md
+                    - name: 'CA3075: Unsichere DTD-Verarbeitung.'
+                      href: ca3075.md
+                    - name: 'CA3076: Unsichere XSLT-Skriptausführung.'
+                      href: ca3076.md
+                    - name: 'CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-Textreader.'
+                      href: ca3077.md
+                    - name: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
+                      href: ca3147.md
+                    - name: 'CA5350: Keine schwachen Kryptografiealgorithmen verwenden.'
+                      href: ca5350.md
+                    - name: CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
+                      href: ca5351.md
+                    - name: 'CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.'
+                      href: ca5358.md
+                    - name: 'CA5359: Zertifikatüberprüfung nicht deaktivieren'
+                      href: ca5359.md
+                    - name: 'CA5360: Keine gefährlichen Methoden bei der Deserialisierung aufrufen.'
+                      href: ca5360.md
+                    - name: 'CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.'
+                      href: ca5361.md
+                    - name: 'CA5362: Potenzieller Verweiszyklus in deserialisiertem Objektgraph'
+                      href: ca5362.md
+                    - name: 'CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.'
+                      href: ca5363.md
+                    - name: 'CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.'
+                      href: ca5364.md
+                    - name: 'CA5365: Überprüfung von HTTP-Headern nicht deaktivieren'
+                      href: ca5365.md
+                    - name: 'CA5366: XmlReader zum Lesen von DataSet-XML verwenden'
+                      href: ca5366.md
+                    - name: 'CA5367: Typen mit Zeigerfeldern dürfen nicht serialisiert werden.'
+                      href: ca5367.md
+                    - name: 'CA5368: Festlegen von ViewStateUserKey für von der Seite abgeleitete Klassen'
+                      href: ca5368.md
+                    - name: 'CA5369: Verwenden Sie XmlReader zur Deserialisierung.'
+                      href: ca5369.md
+                    - name: 'CA5370: Verwenden Sie XmlReader als überprüfenden Reader.'
+                      href: ca5370.md
+                    - name: 'CA5371: Verwenden Sie XmlReader für Schemalesevorgänge.'
+                      href: ca5371.md
+                    - name: 'CA5372: Verwenden Sie XmlReader für XPathDocument.'
+                      href: ca5372.md
+                    - name: 'CA5373: Verwenden Sie keine veraltete Schlüsselableitungsfunktion.'
+                      href: ca5373.md
+                    - name: 'CA5374: Kein XslTransform verwenden'
+                      href: ca5374.md
+                    - name: 'CA5375: Shared Access Signature des Kontos nicht verwenden.'
+                      href: ca5375.md
+                    - name: 'CA5376: SharedAccessProtocol.HttpsOnly verwenden.'
+                      href: ca5376.md
+                    - name: 'CA5377: Zugriffsrichtlinie auf Containerebene verwenden.'
+                      href: ca5377.md
+                    - name: 'CA5378: Deaktivieren Sie ServicePointManagerSecurityProtocols nicht.'
+                      href: ca5378.md
+                    - name: 'CA5379: Keinen schwachen Algorithmus für die Schlüsselableitungsfunktion verwenden'
+                      href: ca5379.md
+                    - name: 'CA5380: Fügen Sie keine Zertifikate zum Stammspeicher hinzu.'
+                      href: ca5380.md
+                    - name: 'CA5381: Stellen Sie sicher, dass keine Zertifikate zum Stammspeicher hinzugefügt werden.'
+                      href: ca5381.md
+                    - name: 'CA5382: Sichere Cookies in ASP.NET Core verwenden'
+                      href: ca5382.md
+                    - name: 'CA5383: Sicherstellen, dass sichere Cookies in ASP.NET Core verwendet werden'
+                      href: ca5383.md
+                    - name: 'CA5384: Digitalen Signaturalgorithmus (DSA) nicht verwenden'
+                      href: ca5384.md
+                    - name: 'CA5385: RSA-Algorithmus (Rivest – Shamir – Adleman) mit ausreichender Schlüsselgröße verwenden'
+                      href: ca5385.md
+                    - name: 'CA5386: Vermeiden Sie die Hartcodierung des SecurityProtocolType-Werts.'
+                      href: ca5386.md
+                    - name: 'CA5387: Schwache Schlüsselableitungsfunktion nicht mit unzureichender Iterationsanzahl verwenden'
+                      href: ca5387.md
+                    - name: 'CA5388: Sicherstellen einer ausreichenden Iterationsanzahl bei Verwendung einer schwachen Schlüsselableitungsfunktion'
+                      href: ca5388.md
+                    - name: 'CA5389: Fügen Sie den Pfad des Archivelements nicht zum Pfad des Zieldateisystems hinzu.'
+                      href: ca5389.md
+                    - name: 'CA5390: Keine Hartcodierung von Verschlüsselungsschlüsseln'
+                      href: ca5390.md
+                    - name: 'CA5391: Fälschungssicherheitstoken in ASP.NET Core MVC-Controllern verwenden.'
+                      href: ca5391.md
+                    - name: 'CA5392: DefaultDllImportSearchPaths-Attribut für P/Invokes verwenden.'
+                      href: ca5392.md
+                    - name: 'CA5393: Keinen unsicheren DllImportSearchPath-Wert verwenden.'
+                      href: ca5393.md
+                    - name: 'CA5394: Keine unsichere Zufälligkeitsstufe verwenden'
+                      href: ca5394.md
+                    - name: 'CA5395: Fehlendes HttpVerb-Attribut für Aktionsmethoden.'
+                      href: ca5395.md
+                    - name: 'CA5396: HttpOnly für HttpCookie auf TRUE festlegen'
+                      href: ca5396.md
+                    - name: 'CA5397: Verwenden Sie keine veralteten SslProtocols-Werte.'
+                      href: ca5397.md
+                    - name: 'CA5398: Vermeiden Sie hartcodierte SslProtocols-Werte.'
+                      href: ca5398.md
+                    - name: 'CA5399: Überprüfung der HttpClient-Zertifikatsperrliste definitiv deaktivieren'
+                      href: ca5399.md
+                    - name: 'CA5400: Sicherstellen, dass die Überprüfung der HttpClient-Zertifikatsperrliste nicht deaktiviert ist'
+                      href: ca5400.md
+                    - name: 'CA5401: CreateEncryptor nicht mit Nicht-Standard-Initialisierungsvektoren verwenden'
+                      href: ca5401.md
+                    - name: 'CA5402: CreateEncryptor mit Standard-Initialisierungsvektoren verwenden'
+                      href: ca5402.md
+                    - name: 'CA5403: Keine Hartcodierung von Zertifikaten'
+                      href: ca5403.md
+                - name: Verwendungswarnungen
+                  items:
+                    - name: Übersicht
+                      displayName: usage warnings
+                      href: usage-warnings.md
+                    - name: 'CA1801: Nicht verwendete Parameter überprüfen.'
+                      href: ca1801.md
+                    - name: 'CA1816: GC.SuppressFinalize korrekt aufrufen.'
+                      href: ca1816.md
+                    - name: 'CA2200: Erneut ausführen, um Stapeldetails beizubehalten.'
+                      href: ca2200.md
+                    - name: 'CA2201: Keine reservierten Ausnahmetypen auslösen.'
+                      href: ca2201.md
+                    - name: 'CA2207: Statische Felder für Werttyp inline initialisieren.'
+                      href: ca2207.md
+                    - name: 'CA2208: Argumentausnahmen korrekt instanziieren.'
+                      href: ca2208.md
+                    - name: 'CA2211: Nicht konstante Felder sollten nicht sichtbar sein.'
+                      href: ca2211.md
+                    - name: 'CA2213: Verwerfbare Felder verwerfen.'
+                      href: ca2213.md
+                    - name: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.'
+                      href: ca2214.md
+                    - name: 'CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen.'
+                      href: ca2215.md
+                    - name: 'CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren.'
+                      href: ca2216.md
+                    - name: 'CA2217: Enumerationen nicht mit FlagsAttribute markieren.'
+                      href: ca2217.md
+                    - name: 'CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen.'
+                      href: ca2219.md
+                    - name: 'CA2225: Operatorüberladungen weisen benannte Alternativen auf.'
+                      href: ca2225.md
+                    - name: 'CA2226: Operatoren sollten symmetrische Überladungen aufweisen.'
+                      href: ca2226.md
+                    - name: 'CA2227: Sammlungseigenschaften sollten schreibgeschützt sein.'
+                      href: ca2227.md
+                    - name: 'CA2229: Serialisierungskonstruktoren implementieren.'
+                      href: ca2229.md
+                    - name: 'CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.'
+                      href: ca2231.md
+                    - name: 'CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.'
+                      href: ca2234.md
+                    - name: 'CA2235: Alle nicht serialisierbaren Felder markieren.'
+                      href: ca2235.md
+                    - name: 'CA2237: ISerializable-Typen mit SerializableAttribute markieren.'
+                      href: ca2237.md
+                    - name: 'CA2241: Geben Sie die korrekte Anzahl für Formatierungsmethoden an.'
+                      href: ca2241.md
+                    - name: 'CA2242: Ordnungsgemäß auf NaN testen.'
+                      href: ca2242.md
+                    - name: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.'
+                      href: ca2243.md
+                    - name: 'CA2244: Keine Initialisierungen indizierter Elemente duplizieren'
+                      href: ca2244.md
+                    - name: 'CA2245: Keine Zuweisung einer Eigenschaft zu sich selbst'
+                      href: ca2245.md
+                    - name: 'CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung'
+                      href: ca2246.md
+                    - name: 'CA2247: Anstelle einer TaskContinuationOptions-Enumeration muss eine TaskCreationOptions-Enumeration als Argument an den TaskCompletionSource-Konstruktor übergeben werden.'
+                      href: ca2247.md
+                    - name: 'CA2248: Geben Sie das richtige enum-Argument für „Enum.HasFlag“ an.'
+                      href: ca2248.md
+                    - name: 'CA2249: Erwägen Sie die Verwendung von "String.Contains" anstelle von "String.IndexOf"'
+                      href: ca2249.md
+                - name: Automatisches Anhalten von Features
+                  href: automatic-feature-suspension.md
+                - name: Veröffentlichen von Warnungen
+                  items:
+                    - name: Übersicht
+                      displayName: publish warnings
+                      href: publish-warnings.md
+                    - name: 'IL3000: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
+                      href: il3000.md
+                    - name: 'IL3001: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
+                      href: il3001.md
