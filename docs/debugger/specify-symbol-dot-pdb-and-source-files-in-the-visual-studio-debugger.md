@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183796"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599587"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symboldateien (PDB-Dateien) und Quelldateien im Visual Studio Debugger (C#, C++, Visual Basic, F#)
 
@@ -46,7 +46,7 @@ Eine ausführliche Erläuterung zu Symboldateien finden Sie in den folgenden The
 
 - [Grundlegendes zu Symboldateien und Symboleinstellungen in Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Warum müssen Debuggersymboldateien genau den Binärdateien entsprechen, mit denen sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Warum müssen Debuggersymboldateien genau den Binärdateien entsprechen, mit denen sie erstellt wurden?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Funktionsweise von Symboldateien
 
@@ -57,7 +57,7 @@ Die *PDB-Datei* enthält Debug- und Projekstatusinformationen, die die inkrement
 
 Symboldateien zeigen auch den Speicherort der Quelldateien und optional den Server an, von dem sie abgerufen werden sollen.
 
-Der Debugger lädt nur *PDB*-Dateien, die genau mit den *PDB*-Dateien übereinstimmen, die beim Buildvorgang einer App erstellt wurden (d. h. die ursprünglichen *PDB*-Dateien oder Kopien davon). Diese [genaue Duplizierung](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) ist erforderlich, da sich das Layout von Apps ändern kann, auch wenn sich der Code selbst nicht geändert hat.
+Der Debugger lädt nur *PDB*-Dateien, die genau mit den *PDB*-Dateien übereinstimmen, die beim Buildvorgang einer App erstellt wurden (d. h. die ursprünglichen *PDB*-Dateien oder Kopien davon). Diese [genaue Duplizierung](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) ist erforderlich, da sich das Layout von Apps ändern kann, auch wenn sich der Code selbst nicht geändert hat.
 
 > [!TIP]
 > Um Code außerhalb des Quellcodes Ihres Projekts zu debuggen, z. B. Windows-Code oder Code von Drittanbietern, den Ihr Projekt aufruft, müssen Sie den Speicherort der *PDB*-Dateien des externen Codes (und optional der Quelldateien) angeben, der genau mit den Builds in Ihrer App übereinstimmen muss.

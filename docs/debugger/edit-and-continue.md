@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737894"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599635"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten von Code und Fortsetzen des Debuggens in Visual Studio (C#, VB, C++)
 Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, z. B. durch Auswählen eines Ausführungsbefehls wie **Weiter** oder **Schritt**, wendet „Bearbeiten und Fortfahren“ die Codeänderungen mit einigen Einschränkungen automatisch an. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.
@@ -47,5 +47,4 @@ Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Que
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)
-- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

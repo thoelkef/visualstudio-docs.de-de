@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778426"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038607"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 
@@ -42,9 +42,9 @@ Weitere Informationen zur Profilerstellung für UWP-Apps finden Sie in den folge
 - [Ausführen von UWP-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Einführung in Profilerstellungstools](profiling-feature-tour.md)
 - [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
-- [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem lokalen Computer](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem Remotegerät](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem lokalen Computer](/previous-versions/hh696631(v=vs.140))
+- [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem Remotegerät](/previous-versions/hh972878(v=vs.140))
+- [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Verwenden der Visual Studio-IDE zum Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden
 

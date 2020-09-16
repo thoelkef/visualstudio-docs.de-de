@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348469"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600270"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen
 
@@ -59,7 +59,7 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
 
    3. Klicken Sie auf **OK**, um das Dialogfeld **Authentifizierungsmethoden** zu schließen.
 
-5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen des DEBUG-Verbs zur Erweiterung](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen des DEBUG-Verbs zur Erweiterung](/previous-versions/ms165022(v=vs.100)).
 
 6. Stellen Sie bei einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung sicher, dass für das virtuelle Verzeichnis der Anwendung in **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** ein Anwendungsname festgelegt ist.
 

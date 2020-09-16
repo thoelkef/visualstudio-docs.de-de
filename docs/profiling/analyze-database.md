@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290880"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037529"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analysieren der Datenbankleistung mit dem Tool „Datenbank“
 
 Mit dem Tool „Datenbank“ können Sie die Datenbankabfragen aufzeichnen, die Ihre App während einer Diagnosesitzung durchführt. Sie können anschließend Informationen zu einzelnen Abfragen analysieren, um Möglichkeiten zur Verbesserung der Leistung Ihrer App zu finden.
 
 > [!NOTE]
-> Das Tool „Datenbank“ erfordert mindestens Visual Studio 2019 Version 16.3 und ein .NET Core-Projekt unter Windows, das entweder mit [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) oder [Entity Framework Core](https://docs.microsoft.com/ef/core/) arbeitet.
+> Das Tool „Datenbank“ erfordert mindestens Visual Studio 2019 Version 16.3 und ein .NET Core-Projekt unter Windows, das entweder mit [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) oder [Entity Framework Core](/ef/core/) arbeitet.
 
 ## <a name="setup"></a>Setup
 
@@ -50,7 +50,7 @@ Wenn Sie eine Abfrage gefunden haben, die Sie untersuchen möchten, klicken Sie 
 
 ![Ausgewählte Option „Zur Quelldatei wechseln“](./media/db-gotosource.png "Ausgewählte Option „Zur Quelldatei wechseln“")
 
-Wenn Sie in einem Diagramm einen Zeitbereich auswählen, zeigt die Abfragetabelle nur Abfragen an, die in diesem Zeitbereich erfolgt sind. Dieses Verhalten ist besonders nützlich, wenn Sie auch das [Tool „CPU-Auslastung“](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019) ausführen.
+Wenn Sie in einem Diagramm einen Zeitbereich auswählen, zeigt die Abfragetabelle nur Abfragen an, die in diesem Zeitbereich erfolgt sind. Dieses Verhalten ist besonders nützlich, wenn Sie auch das [Tool „CPU-Auslastung“](./cpu-usage.md?view=vs-2019) ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

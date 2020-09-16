@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350562"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600107"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generieren von Quellcode aus .NET-Assemblys beim Debuggen
 
@@ -27,7 +27,7 @@ Wenn Sie eine .NET-Anwendung debuggen, möchten Sie möglicherweise Quellcode an
 > [!NOTE]
 > * Die Quellcodegenerierung (Dekompilierung) ist nur für .NET-Anwendungen verfügbar und basiert auf dem [ILSpy](https://github.com/icsharpcode/ILSpy)-Open Source-Projekt.
 > * Dekompilierung ist nur in Visual Studio 2019 16.5 und höher verfügbar.
-> * Durch Anwenden des [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) auf eine Assembly oder ein Modul wird die Kompilierung in Visual Studio verhindert.
+> * Durch Anwenden des [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) auf eine Assembly oder ein Modul wird die Kompilierung in Visual Studio verhindert.
 
 ## <a name="generate-source-code"></a>Generieren von Quellcode
 
@@ -99,7 +99,7 @@ Weitere Informationen finden Sie im GitHub-Problem: [PDB Generator Status](https
 
 ### <a name="just-my-code"></a>Nur eigenen Code
 
-Mit den Einstellungen für [Nur eigenen Code (Just My Code, JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) können System-, Framework-, Bibliotheks- und andere nicht benutzerseitige Aufrufe in Visual Studio übersprungen werden. Während einer Debugsitzung wird im Fenster **Module** angezeigt, welche Codemodule vom Debugger als eigener Code (Benutzercode) behandelt werden.
+Mit den Einstellungen für [Nur eigenen Code (Just My Code, JMC)](./just-my-code.md) können System-, Framework-, Bibliotheks- und andere nicht benutzerseitige Aufrufe in Visual Studio übersprungen werden. Während einer Debugsitzung wird im Fenster **Module** angezeigt, welche Codemodule vom Debugger als eigener Code (Benutzercode) behandelt werden.
 
 Bei der Dekompilierung von optimierten oder Releasemodulen wird Nichtbenutzercode erzeugt. Wenn der Debugger beispielsweise die Ausführung von dekompiliertem Nichtbenutzercode unterbricht, wird das Fenster **Keine Quelle** angezeigt. Um „Nur eigenen Code“ zu deaktivieren, navigieren Sie zu **Extras** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debugging** > **Allgemein**, und deaktivieren Sie dann **Nur meinen Code aktivieren**.
 

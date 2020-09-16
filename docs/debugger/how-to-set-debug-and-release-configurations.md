@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349158"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599907"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 
@@ -67,7 +67,7 @@ oder
 Sie können Symboldateien (PDB-Dateien) generieren und auswählen, welche Debuginformationen eingeschlossen werden sollen. Bei den meisten Projekttypen werden vom Compiler standardmäßig Symboldateien für Debug- und Releasebuilds generiert. Andere Standardeinstellungen variieren dagegen je nach Projekttyp und Visual Studio-Version.
 
 > [!IMPORTANT]
-> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden Sie unter [Warum müssen Debuggersymboldateien exakt den Binärdateien entsprechen, mit denen sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
+> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden Sie unter [Warum müssen Debuggersymboldateien exakt den Binärdateien entsprechen, mit denen sie erstellt wurden?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with).
 
 Diese Optionen werden unter Umständen bei jedem Projekttyp anders festgelegt.
 

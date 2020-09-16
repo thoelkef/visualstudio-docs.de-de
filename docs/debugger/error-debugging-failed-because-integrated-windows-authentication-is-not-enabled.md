@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460837"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599630"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist
 Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authentifizierungsfehlers nicht authentifiziert werden. Dies kann beim Versuch, eine Webanwendung oder einen XML-Webdienst in Einzelschritten auszuführen, auftreten. Eine Ursache dieses Fehlers besteht darin, dass die integrierte Windows-Authentifizierung nicht aktiviert ist. Um sie zu aktivieren, führen Sie die Schritte in "So aktivieren Sie die integrierte Windows-Authentifizierung" aus.
@@ -116,4 +116,4 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication (Microsoft Digest-Authentifizierung)](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0 und Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0 und Visual Studio](/previous-versions/aa964620(v=vs.140))

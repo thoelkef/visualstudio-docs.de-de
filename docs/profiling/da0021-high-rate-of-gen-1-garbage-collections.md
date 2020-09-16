@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b22341f1e4944b91f86a16af19494a85a2abd013
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 391ce629eea295f1436708b363b54fb0213914a4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544689"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036157"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Hohes Maß an Garbage Collections der Generation 1
 
@@ -40,11 +40,11 @@ ms.locfileid: "85544689"
 
  Objekte in der Generation 0 werden häufig und i. d. R. äußerst effizient gesammelt. Objekte in der Generation 1 werden nicht so häufig und weniger effizient gesammelt. Und langlebige Objekte in der Generation 2 werden schließlich noch seltener gesammelt. Die Collection der Generation 2, bei der es sich um eine vollständige Ausführung der Garbage Collection handelt, ist zudem der aufwändigste Vorgang.
 
- Diese Regel wird ausgelöst, wenn anteilsmäßig zu viele Garbage Collections der Generation 1 aufgetreten sind. Sind nach der Collection der Generation 0 zu viele relativ kurzlebige Objekte vorhanden, die dann aber im Rahmen einer Collection der Generation 1 gesammelt werden können, wird der Aufwand für die Speicherverwaltung unter Umständen zu groß. Weitere Informationen finden Sie im Beitrag [Mid-life crisis (Mid­life-Cri­sis)](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) unter „Rico Mariani's Performance Tidbits“ (Schmankerln zum Thema Leistung von Rico Mariani) auf der MSDN-Website.
+ Diese Regel wird ausgelöst, wenn anteilsmäßig zu viele Garbage Collections der Generation 1 aufgetreten sind. Sind nach der Collection der Generation 0 zu viele relativ kurzlebige Objekte vorhanden, die dann aber im Rahmen einer Collection der Generation 1 gesammelt werden können, wird der Aufwand für die Speicherverwaltung unter Umständen zu groß. Weitere Informationen finden Sie im Beitrag [Mid-life crisis (Mid­life-Cri­sis)](/archive/blogs/ricom/mid-life-crisis) unter „Rico Mariani's Performance Tidbits“ (Schmankerln zum Thema Leistung von Rico Mariani) auf der MSDN-Website.
 
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie die Spalten **.NET CLR-Speicher\\Auflistungsanzahl der Generation 0** und **.NET CLR-Speicher\\Auflistungsanzahl der Generation 1**. Überprüfen Sie, ob die Garbage Collection in bestimmten Phasen der Programmausführung besonders häufig auftritt. Vergleichen Sie diese Werte mit den Werten der Spalte **GC-Zeitdauer in Prozent**, um zu überprüfen, ob das Muster für verwaltete Speicherbelegungen einen übermäßig hohen Speicherverwaltungsaufwand verursacht.
 
  Führen Sie die Profilerstellung mithilfe eines .NET-Speicherbelegungsprofils erneut aus, und rufen Sie Informationen zur Objektlebensdauer ab, damit Sie das Muster für die verwaltete Speicherauslastung der Anwendung nachvollziehen können.
 
- Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered).

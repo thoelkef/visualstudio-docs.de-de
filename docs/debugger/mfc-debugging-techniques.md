@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731278"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600245"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:
@@ -80,7 +80,7 @@ Achten Sie darauf, die `AfxDebugBreak` -Anweisungen vor dem Erstellen eines Rele
 [Inhalt](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro
-Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.
+Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) -Makro oder das MFC- [TRACE](/previous-versions/6w95a4ha(v=vs.140)) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.
 
 Die folgenden Beispiele zeigen einige Verwendungsmöglichkeiten für das **TRACE** -Makro auf. Ähnlich wie `printf`ist das **TRACE** -Makro in der Lage, mehrere Argumente zu verarbeiten.
 
@@ -115,7 +115,7 @@ Weitere Informationen zum **TRACE** -Makro finden Sie unter [Diagnosedienste](/c
 MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermittelt werden können, die belegt, jedoch nicht wieder freigegeben werden.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung
-In MFC können Sie anstelle des Operators [new](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.
+In MFC können Sie anstelle des Operators [new](/previous-versions/tz7sxz99(v=vs.140)) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.
 
 Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:
 
@@ -134,11 +134,11 @@ Damit Sie die Speicherdiagnosefeatures nutzen können, muss die Diagnosenachverf
 
 **So aktivieren oder deaktivieren Sie die Speicherdiagnose**
 
-- Rufen Sie die globale [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) -Funktion auf, um die Diagnose-Speicherbelegungsfunktion zu aktivieren oder zu deaktivieren. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.
+- Rufen Sie die globale [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) -Funktion auf, um die Diagnose-Speicherbelegungsfunktion zu aktivieren oder zu deaktivieren. Da die Speicherdiagnose in der Debugbibliothek standardmäßig aktiviert ist, wird diese Funktion in der Regel verwendet, um die Speicherdiagnose vorübergehend zu deaktivieren. Auf diese Weise wird die Programmausführung beschleunigt und die Diagnoseausgabe reduziert.
 
   **So wählen Sie spezifische Speicherdiagnosefeatures mit "afxMemDF" aus**
 
-- Wenn Sie die Speicherdiagnosefeatures präziser steuern möchten, können Sie einzelne Features gezielt aktivieren und deaktivieren, indem Sie den Wert der globalen MFC-Variablen [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)festlegen. Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:
+- Wenn Sie die Speicherdiagnosefeatures präziser steuern möchten, können Sie einzelne Features gezielt aktivieren und deaktivieren, indem Sie den Wert der globalen MFC-Variablen [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))festlegen. Diese Variable wird über den enumerierten **afxMemDF**-Typ festgelegt und kann folgende Werte annehmen:
 
   |Wert|Beschreibung|
   |-----------|-----------------|

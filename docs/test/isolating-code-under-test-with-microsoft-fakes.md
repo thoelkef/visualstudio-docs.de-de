@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286959"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038412"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -33,7 +33,7 @@ Es gibt zwei Arten von Fakes:
 
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
-- Die Unterstützung für Projekte im .NET Core- und SDK-Stil befindet sich derzeit in der Vorschau. [Weitere Informationen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+- Die Unterstützung für Projekte im .NET Core- und SDK-Stil befindet sich derzeit in der Vorschau. [Weitere Informationen](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - .NET Standard-Projekte werden nicht unterstützt.

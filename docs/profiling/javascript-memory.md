@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331273"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037483"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -363,7 +363,7 @@ if (performance && performance.mark) {
 
 - Sehen Sie sich den letzten Teil [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.
 
-- Lesen Sie sich [Managing memory in UWP apps (Verwalten von Speicher in UWP-Apps)](https://msdn.microsoft.com/magazine/jj651575.aspx) durch.
+- Lesen Sie sich [Managing memory in UWP apps (Verwalten von Speicher in UWP-Apps)](/archive/msdn-magazine/2012/windows-8-special-issue/javascript-managing-memory-in-windows-store-apps) durch.
 
 - Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:
 

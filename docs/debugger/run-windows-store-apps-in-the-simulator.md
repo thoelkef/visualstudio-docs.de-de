@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348140"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599527"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ausführen von UWP-Apps im Simulator
 
@@ -115,7 +115,7 @@ Die Schaltfläche **Fingereingabe-Emulation – Drehen** legt den Interaktionsmo
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Simulieren der Netzwerkverbindungseigenschaften
 
-Sie können die Benutzer der App dabei unterstützen, die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie die Statusänderungen von Netzwerkverbindungskosten oder Datentarifplänen präsent halten und die App so aktivieren, dass zusätzliche Kosten für das Roaming oder das Überschreiten angegebener Datenübertragungsgrenzen anhand dieser Informationen vermieden werden. Mithilfe der [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) -APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) - und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) -Ereignisse antworten, die signieren. Ein Beispiel finden Sie unter [Schnellstart: Verwalten von Kosteneinschränkungen in getakteten Netzwerken (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Sie können die Benutzer der App dabei unterstützen, die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie die Statusänderungen von Netzwerkverbindungskosten oder Datentarifplänen präsent halten und die App so aktivieren, dass zusätzliche Kosten für das Roaming oder das Überschreiten angegebener Datenübertragungsgrenzen anhand dieser Informationen vermieden werden. Mithilfe der [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) -APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) - und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) -Ereignisse antworten, die signieren. Ein Beispiel finden Sie unter [Schnellstart: Verwalten von Kosteneinschränkungen in getakteten Netzwerken (HTML)](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Um den Code für die kostenbewusste Nutzung des Netzwerks zu debuggen oder zu testen, kann der Simulator Eigenschaften eines Netzwerks imitieren, die vom [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) -Objekt verfügbar gemacht werden, das von [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)zurückgegeben wird.
 
@@ -139,7 +139,7 @@ So simulieren Sie Netzwerkeigenschaften:
 
 Weitere Informationen zum Verwalten von Netzwerkverbindungen finden Sie unter:
 
-[Schnellstart: Verwalten von Kosteneinschränkungen in getakteten Netzwerken (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Schnellstart: Verwalten von Kosteneinschränkungen in getakteten Netzwerken (HTML)](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [Beispiel für Netzwerkinformationen](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

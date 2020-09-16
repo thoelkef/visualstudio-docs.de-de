@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585560"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038620"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Verwenden des MSTest-Frameworks in Komponententests
 
@@ -43,7 +43,7 @@ Verwenden Sie die folgenden Elemente zum Einrichten eines datengesteuerten Kompo
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Zum Einrichten einer Aufrufreihenfolge verwendete Attribute
 
-Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Attribute für Assemblys
 
@@ -69,7 +69,7 @@ ClassInitialize und ClassCleanup werden direkt nach dem Laden und direkt vor dem
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Zum Angeben von Testklassen und Testmethoden verwendete Attribute
 
-Jede Testklasse muss das `TestClass`-Attribut aufweisen und jede Testmethode das `TestMethod`-Attribut. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Jede Testklasse muss das `TestClass`-Attribut aufweisen und jede Testmethode das `TestMethod`-Attribut. Weitere Informationen finden Sie unter [Aufbau eines Komponententests](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350393"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599891"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Wie können Funktionen der Windows-API gedebuggt werden?
 Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen sind, müssen Sie wie im Folgenden beschrieben vorgehen.
@@ -40,7 +40,7 @@ Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Informationen zum Abrufen des ergänzten Namens finden Sie unter [Anzeigen von ergänzten Namen](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Informationen zum Abrufen des ergänzten Namens finden Sie unter [Anzeigen von ergänzten Namen](/previous-versions/5x49w699(v=vs.140)).
 
      Sie können den ergänzten Namen testen und ihn im Disassemblycode anzeigen. Während die Funktion im Visual Studio-Debugger angehalten ist, klicken Sie im Code-Editor oder im Aufruflistenfenster mit der rechten Maustaste auf die Funktion, und wählen Sie **Gehe zu Disassembly**.
 

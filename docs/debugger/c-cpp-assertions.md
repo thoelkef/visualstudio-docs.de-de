@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911608"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600213"
 ---
 # <a name="cc-assertions"></a>C/C++-Assertionen
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht den Wert TRUE aufweist, kann die Assertion nicht durchgeführt werden, die Programmausführung wird unterbrochen, und das Dialogfeld [Assertionsfehler](../debugger/assertion-failed-dialog-box.md) wird geöffnet.
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [Inhalt](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> MFC-Assertionen
-Das [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)-Makro für die Assertionsüberprüfung ist in MFC definiert. Sie definiert auch die `MFC ASSERT_VALID`- und `CObject::AssertValid`-Methoden zum Überprüfen des internen Zustands eines von `CObject` abgeleiteten Objekts.
+Das [ASSERT](/previous-versions/ew16s3zc(v=vs.140))-Makro für die Assertionsüberprüfung ist in MFC definiert. Sie definiert auch die `MFC ASSERT_VALID`- und `CObject::AssertValid`-Methoden zum Überprüfen des internen Zustands eines von `CObject` abgeleiteten Objekts.
 
 Wenn das Argument des MFC-`ASSERT`-Makros mit "0 (null)" oder "false" ausgewertet wird, wird die Programmausführung durch das Makro angehalten und eine Warnung an den Benutzer ausgegeben. Andernfalls wird die Ausführung fortgesetzt.
 
@@ -175,7 +175,7 @@ Um eine Typüberprüfung für die Funktionsargumente vorzunehmen, können Sie AS
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-In der Releaseversion generiert das `ASSERT`-Makro keinen Code. Wenn Sie den Ausdruck in der Releaseversion auswerten müssen, verwenden Sie anstelle von ASSERT das [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify)-Makro.
+In der Releaseversion generiert das `ASSERT`-Makro keinen Code. Wenn Sie den Ausdruck in der Releaseversion auswerten müssen, verwenden Sie anstelle von ASSERT das [VERIFY](/cpp/mfc/reference/diagnostic-services#verify)-Makro.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID und CObject::AssertValid
 Die [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid)-Methode ermöglicht es, den internen Zustand eines Objekts zur Laufzeit zu überprüfen. Es ist zwar nicht erforderlich, `AssertValid`beim Ableiten der Klasse aus `CObject` zu überschreiben, Sie können so jedoch die Zuverlässigkeit der Klasse erhöhen. `AssertValid` sollte Assertionen für alle Membervariablen des Objekts ausführen und sicherstellen, dass diese gültige Werte enthalten. Beispielsweise sollte überprüft werden, ob alle Membervariablen in Form von Zeigern ungleich NULL sind.

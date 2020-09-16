@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901631"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599479"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Exemplarische Vorgehensweise: Debuggen eines Webformulars
 Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zum Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen (auch bekannt als Web Forms). Darin wird dargestellt, wie die Ausführung gestartet und beendet wird, wie Haltepunkte festgelegt und Variablen im Fenster **Überwachen** überprüft werden.
@@ -98,7 +98,7 @@ Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven E
    textBox1.Text = "Button was clicked!";
    ```
 
-    Ein roter Punkt wird angezeigt, und der Text der Zeile wird rot hervorgehoben. Der rote Punkt steht für einen Haltepunkt. Wenn Sie die Anwendung unter dem Debugger ausführen, hält dieser die Ausführung an der Stelle mit dem Haltepunkt an. Dadurch erhalten Sie die Möglichkeit, den Status der Anwendung zu überprüfen und diese zu debuggen. Weitere Informationen finden Sie unter [Breakpoints (Haltepunkte)](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+    Ein roter Punkt wird angezeigt, und der Text der Zeile wird rot hervorgehoben. Der rote Punkt steht für einen Haltepunkt. Wenn Sie die Anwendung unter dem Debugger ausführen, hält dieser die Ausführung an der Stelle mit dem Haltepunkt an. Dadurch erhalten Sie die Möglichkeit, den Status der Anwendung zu überprüfen und diese zu debuggen. Weitere Informationen finden Sie unter [Breakpoints (Haltepunkte)](/previous-versions/ktf38f66(v=vs.100)).
 
 2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 

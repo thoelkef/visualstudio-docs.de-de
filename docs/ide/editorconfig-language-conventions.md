@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533457"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035719"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
@@ -76,7 +76,7 @@ So ändern Sie die Codeformatkonvention:
 
    Visual Studio fügt der EditorConfig-Datei die Konfigurationseinstellung hinzu oder bearbeitet diese Einstellung, wie im Vorschaufeld veranschaulicht wird.
 
-Führen Sie dieselben Schritte aus, um den Schweregrad für den Verstoß gegen das Codeformat zu ändern, aber wählen Sie **Schweregrad \<rule ID> konfigurieren** anstelle von **Codeformat \<rule ID> konfigurieren** aus. Weitere Informationen finden Sie unter [Automatisches Konfigurieren des Regelschweregrads](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Führen Sie dieselben Schritte aus, um den Schweregrad für den Verstoß gegen das Codeformat zu ändern, aber wählen Sie **Schweregrad \<rule ID> konfigurieren** anstelle von **Codeformat \<rule ID> konfigurieren** aus. Weitere Informationen finden Sie unter [Automatisches Konfigurieren des Regelschweregrads](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 ::: moniker-end
 
@@ -1049,6 +1049,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Gültige Sprachen** | C# 6.0+ und Visual Basic 14+ |
 | **Werte** | `true`: Bei diesem Wert wird die NULL-Überprüfung gegenüber der Verweisgleichheitsmethode bevorzugt.<br /><br />`false`: Bei diesem Wert wird die Verweisgleichheitsmethode gegenüber der NULL-Überprüfung bevorzugt. |
 | **Visual Studio-Standard** | `true:silent` |
+
+Codebeispiele:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
 
 ## <a name="net-code-quality-settings"></a>Einstellungen für die Codequalität in .NET
 

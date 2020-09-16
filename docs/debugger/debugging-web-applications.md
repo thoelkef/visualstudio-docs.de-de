@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714449"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600119"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 
@@ -42,7 +42,7 @@ Dieser Artikel enthält Links, mit denen Sie verschiedene Arten von Webanwendung
 
 - Debuggen von AJAX-Skriptanwendungen
 
-  AJAX-fähige Webanwendungen machen umfangreichen Gebrauch von Skriptcode und stellen besondere Anforderungen an das Debuggen. Informationen zu AJAX-Debugtechniken finden Sie unter [Debuggen und Ablaufverfolgung von AJAX-Anwendungen: Übersicht](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
+  AJAX-fähige Webanwendungen machen umfangreichen Gebrauch von Skriptcode und stellen besondere Anforderungen an das Debuggen. Informationen zu AJAX-Debugtechniken finden Sie unter [Debuggen und Ablaufverfolgung von AJAX-Anwendungen: Übersicht](/previous-versions/bb398817(v=vs.140)).
 
 ## <a name="see-also"></a>Siehe auch
 

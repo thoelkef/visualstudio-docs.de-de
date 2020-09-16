@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527924"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600078"
 ---
 # <a name="debugger-security"></a>Debuggersicherheit
 Die Fähigkeit zum Debuggen eines anderen Prozesses verleiht Ihnen weitreichende Möglichkeiten, die sonst nicht zur Verfügung stehen. Dies gilt insbesondere für das Remotedebuggen. Ein bösartiger Debugger könnte sich diese Möglichkeiten zunutze machen und auf dem zu debuggenden Computer schwere Schäden verursachen.
@@ -57,7 +57,7 @@ Die Fähigkeit zum Debuggen eines anderen Prozesses verleiht Ihnen weitreichende
  Weitere Informationen zum Konfigurieren von msvsmon finden Sie unter [Einrichten des Remotedebuggers](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Sicherheit beim Debuggen von Webdiensten
- Lokales Debuggen ist sicherer, aber häufig nicht durchführbar, da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wahrscheinlich nicht auf dem Webserver installiert ist. Das Debuggen von Webdiensten erfolgt außer während der Entwicklung im Allgemeinen remote. Daher gelten die Empfehlungen für die Sicherheit beim Remotedebuggen auch für das Debuggen von Webdiensten. Im Folgenden finden Sie einige zusätzlich empfohlene Vorgehensweisen. Weitere Informationen finden Sie unter [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+ Lokales Debuggen ist sicherer, aber häufig nicht durchführbar, da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wahrscheinlich nicht auf dem Webserver installiert ist. Das Debuggen von Webdiensten erfolgt außer während der Entwicklung im Allgemeinen remote. Daher gelten die Empfehlungen für die Sicherheit beim Remotedebuggen auch für das Debuggen von Webdiensten. Im Folgenden finden Sie einige zusätzlich empfohlene Vorgehensweisen. Weitere Informationen finden Sie unter [Debugging XML Web Services](/previous-versions/ms241873(v=vs.100)).
 
 - Aktivieren Sie das Debuggen nicht auf einem Webserver, dessen Sicherheit gefährdet ist.
 

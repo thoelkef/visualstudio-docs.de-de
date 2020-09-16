@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536408"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599999"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Verwenden von Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -74,7 +74,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
 
      **PS C:>Import-Module "C:\Programme\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. Um die neuesten Hilfeinhalte abzurufen,[besuchen Sie TechNet](https://technet.microsoft.com/systemcenter/default) .
+3. Um die neuesten Hilfeinhalte abzurufen,[besuchen Sie TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) .
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> Frage: Wie richte ich Berechtigungen für den Anwendungspool ein?
  **Antwort:** Verwenden Sie den Windows-Befehl **icacls** oder den Windows-Explorer (bzw. den Datei-Explorer). Zum Beispiel:
@@ -108,7 +108,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
   7. Stellen Sie sicher, dass der Anwendungspool über Berechtigungen zum **Lesen und Ausführen** verfügt.
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Schritt 2: Die Überwachung Ihrer App starten
- Verwenden Sie den Windows PowerShell-Befehl [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) , um die Überwachung der App zu starten. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Verwenden Sie den Windows PowerShell-Befehl [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) , um die Überwachung der App zu starten. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 1. Öffnen Sie auf dem Webserver ein **Windows PowerShell** - oder **Windows PowerShell ISE** -Eingabeaufforderungsfenster als Administrator.
 
@@ -134,7 +134,7 @@ Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder
 
     |name|Beschreibung|
     |-|-|
-    |*"\<appName>"*|Geben Sie den Pfad zur Website und dem Namen der Web App in IIS an. Sie können auch den IIS-Pfad einschließen, falls gewünscht.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - oder -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Sie können diesen Pfad im IIS-Manager finden. Zum Beispiel:<br /><br /> ![Pfad zur IIS-Website und -Webanwendung](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Sie können auch die Befehle [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) und [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) verwenden.|
+    |*"\<appName>"*|Geben Sie den Pfad zur Website und dem Namen der Web App in IIS an. Sie können auch den IIS-Pfad einschließen, falls gewünscht.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - oder -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Sie können diesen Pfad im IIS-Manager finden. Zum Beispiel:<br /><br /> ![Pfad zur IIS-Website und -Webanwendung](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Sie können auch die Befehle [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) und [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) verwenden.|
     |*\<monitoringMode>*|Legen Sie den Überwachungsmodus fest:<br /><br /> <ul><li>**Überwachen**: Zeichnen Sie minimale Details über Ausnahmeereignisse und Leistungsereignisse auf. Dieser Modus verwendet den Standardauflistungsplan.</li><li>**Ablaufverfolgung**: Zeichnen Sie Funktionsebenendetails auf, oder überwachen Sie SharePoint 2010- und SharePoint 2013-Anwendungen mithilfe des angegebenen Auflistungsplans. Durch diesen Modus wird Ihre App möglicherweise langsamer ausgeführt.<br /><br /> <ul><li>[Frage: Wie richte ich Berechtigungen für den Anwendungspool ein?](#FullPermissionsITLog)</li><li>[Frage: Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing)</li></ul><br />     Dieses Beispiel zeichnet Ereignisse für eine SharePoint-App auf, die auf einer SharePoint-Website gehostet wird:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Programme\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Benutzerdefiniert**: Zeichnen Sie benutzerdefinierte Details mithilfe des angegebenen benutzerdefinierten Auflistungsplans auf. Sie müssen die Überwachung neu starten, wenn Sie den Auflistungsplan bearbeiten, nachdem die Überwachung bereits gestartet wurde.</li></ul>|
     |*"\<outputPath>"*|Geben Sie den vollständigen Verzeichnispfad zum Speichern der IntelliTrace-Protokolle an. Achten Sie darauf, dass Sie dieses Verzeichnis erstellen, bevor Sie die Überwachung starten.|
     |*\<UInt32>*|Geben Sie die maximale Größe für das IntelliTrace-Protokoll an. Die standardmäßige maximale Größe der IntelliTrace-Datei beträgt 250 MB.<br /><br /> Wenn das Protokoll diese Grenze erreicht, überschreibt der Agent die frühesten Einträge, um Platz für mehr Einträge zu schaffen. Um diese Beschränkung zu ändern, verwenden Sie die Option **-MaximumFileSizeInMegabytes** oder bearbeiten Sie das `MaximumLogFileSize` -Attribut im Auflistungsplan.|
@@ -229,7 +229,7 @@ Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `Hom
 Der Agent zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Agent zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Agent zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a>Schritt 3: Speichern von aufgezeichneten Ereignissen
- Wenn Sie einen Fehler oder ein Leistungsproblem finden, speichern Sie die aufgezeichneten Ereignisse in einem IntelliTrace-Protokoll. Der Agent erstellt das Protokoll nur, wenn Ereignisse aufgezeichnet wurden. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Wenn Sie einen Fehler oder ein Leistungsproblem finden, speichern Sie die aufgezeichneten Ereignisse in einem IntelliTrace-Protokoll. Der Agent erstellt das Protokoll nur, wenn Ereignisse aufgezeichnet wurden. Wenn Sie System Center 2012 verwenden, erhalten Sie weitere Informationen unter [Überwachung von Webanwendungen mit Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Speichern Sie aufgezeichnete Ereignisse, aber setzen Sie die Überwachung fort.
  Befolgen Sie diese Schritte, wenn Sie das IntelliTrace-Protokoll erstellen möchten, aber nicht möchten, dass die App neu startet oder die Überwachung beendet wird. Der Agent setzt die Überwachung auch dann fort, wenn der Server oder die Anwendung neu gestartet wird.
