@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778439"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037327"
 ---
 # <a name="performance-rules-by-id"></a>Leistungsregeln nach ID
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778439"
 | [DA0006: Equals() für Werttypen überschreiben](../profiling/da0006-override-equals-parens-for-value-types.md) | Aufrufe der Equals-Methode oder der Gleichheitsoperatoren eines öffentlichen Werttyps machen einen großen Teil der Profilerstellungsdaten aus. Implementieren Sie ggf. eine effizientere Methode. |
 | [DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | In den Profilerstellungsdaten wurde eine Vielzahl von .NET Framework-Ausnahmehandlern aufgerufen. Verwenden Sie ggf. eine andere Kontrollflusslogik, um die Anzahl der ausgelösten Ausnahmen zu verringern. |
 | [DA0008: Es wurden nur wenige Beispiele aufgelistet](../profiling/da0008-few-samples-collected.md) | Während der Profilerstellung wurden nur wenige Samplings gesammelt. Sie sollten eine längere Ausführung oder eine schnellere Samplingrate in Betracht ziehen, um aussagekräftigere Ergebnisse zu erzielen. |
-| [DA0009: Hohe JIT-Zeitdauer in Prozent](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | Ein großer Anteil der Ausführungszeit für die Anwendung wurde im JIT-Compiler (Just In Time) aufgewendet. |
+| [DA0009: Hohe JIT-Zeitdauer in Prozent](/previous-versions/dd264972(v=vs.100)) | Ein großer Anteil der Ausführungszeit für die Anwendung wurde im JIT-Compiler (Just In Time) aufgewendet. |
 | [DA0010: Speicherintensive GetHashCode-Funktionen](../profiling/da0010-expensive-gethashcode.md) | Aufrufe der GetHashCode-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die Methode belegt Arbeitsspeicher. |
 | [DA0011: Speicherintensive CompareTo-Funktionen](../profiling/da0011-expensive-compareto.md) | Die CompareTo-Methode des Typs ist aufwändig oder belegt Arbeitsspeicher. |
 | [DA0012: Starke Reflektion](../profiling/da0012-significant-amount-of-reflection.md) | Aufrufe der System.Reflection-Methoden (beispielsweise „InvokeMember“ oder „GetMember“) oder der Type-Methoden (beispielsweise „MemberInvoke“) machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys. |

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972295"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038438"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -107,7 +107,7 @@ Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei
 
 - Laufzeiteinstellungen auf Projektebene werden zurzeit in C#-, VB-, C++- und F#-Projekten unterstützt.
 - Eine für ein Projekt angegebene Datei setzt alle anderen in der Projektmappe angegebenen Laufzeiteinstellungen außer Kraft.
-- Mithilfe [dieser MSBuild-Eigenschaften](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) können Sie den Pfad zur RUNSETTINGS-Datei angeben. 
+- Mithilfe [dieser MSBuild-Eigenschaften](../msbuild/msbuild-reserved-and-well-known-properties.md) können Sie den Pfad zur RUNSETTINGS-Datei angeben. 
 
 Beispiel für die Angabe einer *RUNSETTINGS*-Datei für ein Projekt:
     
@@ -307,7 +307,7 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 |Konfiguration|Standard|Werte|
 |-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf **TRUE** fest, um den älteren Testadapter zu verwenden.<br /><br />Beispielsweise können Sie diese Einstellung verwenden, wenn Sie eine *app.config*-Datei für einen Komponententest angegeben haben.<br /><br />Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
-|**IgnoreTestImpact**|False|Das Testauswirkungsfeature priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder über Microsoft Test Manager ausgeführt werden (ab Visual Studio 2017 veraltet). Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](https://msdn.microsoft.com/library/dd286589)|
+|**IgnoreTestImpact**|False|Das Testauswirkungsfeature priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder über Microsoft Test Manager ausgeführt werden (ab Visual Studio 2017 veraltet). Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](/previous-versions/dd286589(v=vs.140))|
 |**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Sie können auch eine Testeinstellungsdatei [ im Menü „Einstellungen“](#specify-a-run-settings-file-in-the-ide) angeben.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Nachdem ein Testlauf abgeschlossen ist, wird MSTest beendet. Jeder Prozess, der als Teil des Tests gestartet wird, wird dann ebenfalls abgebrochen. Wenn der Test-Executor aktiv bleiben soll, legen Sie den Wert auf **TRUE** fest. Beispielsweise können Sie mit dieser Einstellung erreichen, dass der Browser zwischen Tests der programmierten UI aktiv bleibt.|
 |**DeploymentEnabled**|true|Wenn Sie den Wert auf **FALSE** festlegen, werden in der Testmethode angegebene Bereitstellungselemente nicht in das Bereitstellungsverzeichnis kopiert.|
@@ -463,4 +463,3 @@ Der Knoten **RunConfiguration** muss einen **EnvironmentVariables**-Knoten entha
 - [Konfigurieren eines Testlaufs](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

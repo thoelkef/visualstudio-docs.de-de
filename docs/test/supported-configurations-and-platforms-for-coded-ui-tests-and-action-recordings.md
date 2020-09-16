@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75845810"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036898"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 
@@ -59,11 +59,11 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 | Windows Forms 2.0 und höher | Vollständige Unterstützung **Hinweis:** NetFx-Steuerelemente werden vollständig unterstützt, dies gilt jedoch nicht für alle Steuerelemente von Drittanbietern. |
 | WPF 3.5 und höher | Vollständige Unterstützung<br /><br /> **Hinweis** NetFx-Steuerelemente werden vollständig unterstützt, dies gilt jedoch nicht für alle Steuerelemente von Drittanbietern. |
 | Windows Win32 | Funktioniert möglicherweise mit einigen bekannten Problemen, wird jedoch nicht offiziell unterstützt. |
-| MFC | Teilweise unterstützt. Unter [UITest Framework – MFC support in VS 2010 (UITest Framework – MFC-Unterstützung in VS 2010)](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) finden Sie nähere Informationen zu unterstützten Funktionen. |
+| MFC | Teilweise unterstützt. Unter [UITest Framework – MFC support in VS 2010 (UITest Framework – MFC-Unterstützung in VS 2010)](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) finden Sie nähere Informationen zu unterstützten Funktionen. |
 | SharePoint | Vollständige Unterstützung |
 | Office-Clientanwendungen | Wird nicht unterstützt. |
 | Dynamics CRM-Webclient | Vollständige Unterstützung |
-| Dynamics (Ax) 2012-Client | Aktionsaufzeichnung und -wiedergabe werden teilweise unterstützt. Unter [Visual Studio 10 Coded UI / Action Recordings support for Microsoft Dynamics (Visual Studio 10 – programmierte UI / Unterstützung von Aktionsaufzeichnungen für Microsoft Dynamics)](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) finden Sie weitere Informationen zu unterstützten Funktionen. |
+| Dynamics (Ax) 2012-Client | Aktionsaufzeichnung und -wiedergabe werden teilweise unterstützt. Unter [Visual Studio 10 Coded UI / Action Recordings support for Microsoft Dynamics (Visual Studio 10 – programmierte UI / Unterstützung von Aktionsaufzeichnungen für Microsoft Dynamics)](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012) finden Sie weitere Informationen zu unterstützten Funktionen. |
 | SAP | Wird nicht unterstützt. |
 | Citrix/Terminaldienste | Das Aufzeichnen von Aktionen auf einem Terminalserver wird nicht empfohlen. Die Aufzeichnung unterstützt nicht, dass mehrere Instanzen gleichzeitig ausgeführt werden. |
 | PowerBuilder | Teilweise unterstützt.<br /><br /> Die Unterstützung erfolgt in dem Umfang, in dem der Zugang zu PowerBuilder-Steuerelementen ermöglicht wird. |

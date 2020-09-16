@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348950"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599849"
 ---
 # <a name="how-to-stop-code-changes"></a>Vorgehensweise: Anhalten von Codeänderungen
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.
@@ -40,4 +40,4 @@ Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den V
 
 ## <a name="see-also"></a>Siehe auch
 - [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)
-- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](./edit-and-continue.md)

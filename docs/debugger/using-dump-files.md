@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386952"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599498"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Speicherabbilddateien im Visual Studio-Debugger
 
@@ -74,7 +74,7 @@ Wenn [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio
 1. Folgen Sie einem Pfad, wählen Sie einen Namen für die Speicherabbilddatei aus, und klicken Sie dann auf **Speichern**.
 
 >[!NOTE]
->Speicherabbilddateien können mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) finden Sie weitere Informationen zur Verwendung anderer Tools für die Erstellung von Speicherabbilddateien.
+>Speicherabbilddateien können mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](/sysinternals/) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) finden Sie weitere Informationen zur Verwendung anderer Tools für die Erstellung von Speicherabbilddateien.
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei
 

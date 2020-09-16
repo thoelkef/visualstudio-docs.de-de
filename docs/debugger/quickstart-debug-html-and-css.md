@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348261"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600191"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-Apps in Visual Studio
 
@@ -262,4 +262,4 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 - [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Produktsupport und Barrierefreiheit](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Produktsupport und Barrierefreiheit](/previous-versions/tzbxw1af(v=vs.120))

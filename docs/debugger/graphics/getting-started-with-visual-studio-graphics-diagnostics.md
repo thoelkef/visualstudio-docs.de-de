@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350458"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600093"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.
@@ -56,7 +56,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 Wenn Sie bereits über eine eigene Direct3D-App zum Erkunden von Grafikdiagnose verfügen, ist das eine gute Voraussetzung. Verwenden Sie andernfalls eines der folgenden Elemente:
 
 ::: moniker range=">=vs-2019"
-Laden Sie ein Beispiel aus [Direct3D Game Sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/) herunter.
+Laden Sie ein Beispiel aus [Direct3D Game Sample](/samples/microsoft/windows-universal-samples/simple3dgamedx/) herunter.
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Eine der Projektvorlagen **DirectX 11-App (Universelle Windows-App)** oder **DirectX 12-App (Universelle Windows-App)** für Windows 10.

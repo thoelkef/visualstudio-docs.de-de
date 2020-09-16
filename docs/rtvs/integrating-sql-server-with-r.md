@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144713"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011878"
 ---
 # <a name="work-with-sql-server-and-r"></a>Arbeiten mit SQL Server und R
 
@@ -50,7 +50,7 @@ Sobald eine Verbindung hergestellt wurde, können Sie Abfragen ausführen und Er
 ![SQL-Fenster mit Abfrageergebnissen](media/sql-query-results.png)
 
 Der Transact-SQL-Editor unterstützt eine Vielzahl anderer Funktionen, z.B. die Darstellung des Ausführungsplans für die Abfrage und einen Abfragedebugger.
-Weitere Informationen finden Sie unter [Verwenden des Transact-SQL-Editors zum Bearbeiten und Ausführen von Skripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Weitere Informationen finden Sie unter [Verwenden des Transact-SQL-Editors zum Bearbeiten und Ausführen von Skripts](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103)).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Arbeiten mit gespeicherten SQL Server-Prozeduren
 

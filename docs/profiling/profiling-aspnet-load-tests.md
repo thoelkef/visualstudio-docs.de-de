@@ -9,19 +9,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 455ca0d2032e1f30fc5f70eaac9518b2774b03c7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772132"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038399"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profilerstellung für ASP.NET-Auslastungstests
 Sie können Profilerstellungsdaten von automatisierten [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]-Webtests sammeln, die Sie für ASP.NET-Websiteprojekte ausführen. Sie können Sampling- und Ebeneninteraktionsdaten sammeln. Weitere Informationen finden Sie unter den folgenden Themen:
 
-- [(NIB) Vorgehensweise: Erstellen einer Leistungssitzung für eine Webanwendung aus dem Webleistungstest-Editor](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+- [(NIB) Vorgehensweise: Erstellen einer Leistungssitzung für eine Webanwendung aus dem Webleistungstest-Editor](/previous-versions/ff356203(v=vs.100))
 
-- [Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+- [Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio](/previous-versions/dd504817(v=vs.140))
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

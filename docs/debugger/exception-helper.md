@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350497"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600303"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Untersuchen einer Ausnahme mit der Ausnahmen-Hilfe 
 
@@ -50,7 +50,7 @@ Ab Visual Studio 2017 gilt sowohl für .NET- als auch für C/C++-Code Folgendes
 Sie können den Debugger so konfigurieren, dass der Vorgang unterbrochen wird, wenn eine Ausnahme des aktuellen Typs auftritt. Verwenden Sie hierfür in der Ausnahmen-Hilfe den Abschnitt mit den **Ausnahmeeinstellungen**. Wenn der Debugger bei Auslösung einer Ausnahme angehalten wird, können Sie das Anhalten über das Kontrollkästchen für den Ausnahmetyp deaktivieren, um das Verhalten bei zukünftigen Fällen entsprechend zu ändern. Gehen Sie wie folgt vor, wenn der Vorgang bei Auslösung dieser Ausnahme im aktuellen Modul nicht angehalten werden soll: Aktivieren Sie im Fenster **Ausnahmeeinstellungen** das Kontrollkästchen neben dem Modulnamen unter **Ausgenommen, wenn ausgelöst von:** . 
 
 ## <a name="inspect-inner-exceptions"></a>Untersuchen von inneren Ausnahmen 
-Falls die Ausnahme über innere Ausnahmen verfügt ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)), können Sie diese in der Ausnahmen-Hilfe anzeigen. Wenn mehrere Ausnahmen vorhanden sind, können Sie dazwischen wechseln, indem Sie oberhalb der Aufrufliste den Pfeil nach links bzw. rechts verwenden.
+Falls die Ausnahme über innere Ausnahmen verfügt ([InnerException](/dotnet/api/system.exception.innerexception)), können Sie diese in der Ausnahmen-Hilfe anzeigen. Wenn mehrere Ausnahmen vorhanden sind, können Sie dazwischen wechseln, indem Sie oberhalb der Aufrufliste den Pfeil nach links bzw. rechts verwenden.
 
 ![Ausnahmen-Hilfe mit innerer Ausnahme](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Falls eine Ausnahme ausgelöst wurde (`thrown`), wird in der Ausnahmen-Hilfe die
 ![Ausnahmen-Hilfe mit erneut ausgelösten Ausnahmen](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Freigeben einer Debugsitzung mit Live Share
-Über die Ausnahmen-Hilfe können Sie eine [Live Share](https://docs.microsoft.com/visualstudio/liveshare/)-Sitzung starten, indem Sie den Link **Live Share-Sitzung starten...** verwenden. Alle Benutzer, die der Live Share-Sitzung beitreten, können die Ausnahmen-Hilfe und alle anderen Debuginformationen anzeigen.
+Über die Ausnahmen-Hilfe können Sie eine [Live Share](/visualstudio/liveshare/)-Sitzung starten, indem Sie den Link **Live Share-Sitzung starten...** verwenden. Alle Benutzer, die der Live Share-Sitzung beitreten, können die Ausnahmen-Hilfe und alle anderen Debuginformationen anzeigen.

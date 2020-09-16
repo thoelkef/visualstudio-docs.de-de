@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290881"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037542"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analysieren der Leistung von asynchronem .NET-Code
 
@@ -41,7 +41,7 @@ Mit dem Tool .NET Async können Sie die Leistung von asynchronem Code in Ihrer A
 
 Asynchrone Ereignisse werden in Aktivitäten chronologisch organisiert. Für jede wird die Startzeit, Endzeit und Dauer angezeigt.
 
-Jede Zeile, die einer [Aufgabe](https://docs.microsoft.com/dotnet/api/system.threading.tasks) entspricht, wird in der Spalte **Name** bezeichnet. Für alle Aufgabennamen, die nicht aufgelöst werden können, wird die Bezeichnung **Aufgabe in** angezeigt. Darauf folgt der Name der Methode, in der die Aufgabe auftritt. Wenn eine asynchrone Aktivität nicht innerhalb der Erfassungssitzung abgeschlossen wird, wird in der Spalte **Endzeit** die Bezeichnung **Unvollständig** angezeigt.
+Jede Zeile, die einer [Aufgabe](/dotnet/api/system.threading.tasks) entspricht, wird in der Spalte **Name** bezeichnet. Für alle Aufgabennamen, die nicht aufgelöst werden können, wird die Bezeichnung **Aufgabe in** angezeigt. Darauf folgt der Name der Methode, in der die Aufgabe auftritt. Wenn eine asynchrone Aktivität nicht innerhalb der Erfassungssitzung abgeschlossen wird, wird in der Spalte **Endzeit** die Bezeichnung **Unvollständig** angezeigt.
 
 Um eine bestimmte Aufgabe oder Aktivität weiter zu untersuchen, klicken Sie mit der rechten Maustaste auf die Zeile. Wählen Sie dann **Zur Quelldatei wechseln**, um zu ermitteln, wo in Ihrem Code diese Aktivität stattgefunden hat.
 
