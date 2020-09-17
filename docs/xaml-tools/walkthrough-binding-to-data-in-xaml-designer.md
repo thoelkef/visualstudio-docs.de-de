@@ -10,12 +10,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cc5348004f344bd62e66aa03a20b0dd61017692
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330756"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713424"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
@@ -95,7 +95,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
      Die Steuerung `TextBlock` sollte den Standardwert von 0 als Text anzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Dialogfeld „Wertkonverter hinzufügen“](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Dialogfeld „Wertkonverter hinzufügen“](/previous-versions/hh965588(v=vs.140))
