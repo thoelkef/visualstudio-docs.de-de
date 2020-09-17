@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114821"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713476"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope-Aktivitätsdesigner
 
@@ -33,13 +33,13 @@ Greifen Sie in der Kategorie **Transaktion** der **Toolbox**auf den **transaktio
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.TransactionScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Statements.TransactionScope.Body%2A> Eigenschaften und können auf Workflow-Designer-Oberfläche bearbeitet werden. Die anderen Eigenschaften müssen jedoch im Eigenschaftenraster bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.Activities.Statements.TransactionScope>-Aktivität. Der Standardwert lautet TransactionScope. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Gibt die Aktivität an, die in einer einzelnen Transaktion ausgeführt werden soll. Um die-Aktivität hinzuzufügen, legen Sie <xref:System.Activities.Statements.TransactionScope.Body%2A> eine Aktivität aus der **Toolbox** in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **transaktionscope** -Aktivitäts Designers ab.|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Gibt die <xref:System.Transactions.IsolationLevel>-Ebene für diesen <xref:System.Activities.Statements.TransactionScope>-Bereich an.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Gibt das Zeitintervall (im Format 00:00:00 für Stunden:Minuten:Sekunden) an, in dem die Transaktion abgeschlossen werden muss. Der Standardwert beträgt 1 Minute (00:01:00).|
-|[System. Activities. Statements. transaktionscope. abortinstanceontransaktionfailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|True|Gibt den Wert an, der angibt, ob der Workflow abgebrochen werden soll, wenn die Transaktion abbricht.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|Gibt den Wert an, der angibt, ob der Workflow abgebrochen werden soll, wenn die Transaktion abbricht.|
 
 ## <a name="see-also"></a>Weitere Informationen
 
@@ -47,4 +47,4 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Transacti
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Bekräftigen](../workflow-designer/confirm-activity-designer.md)
+- [Bestätigen](../workflow-designer/confirm-activity-designer.md)

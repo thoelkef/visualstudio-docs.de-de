@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2344c9331b8fe253077b6bbc8c3cdba01ea9731
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282916"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713489"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -52,7 +52,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über die Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
@@ -149,8 +149,8 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
        <RowDefinition Height="75" />
        <RowDefinition Height="625" />
    </Grid.RowDefinitions>
-   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75">&lt;</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">&gt;</Button>
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
@@ -258,7 +258,7 @@ Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie 
 
 - Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen verwandter Daten in einer WPF-App](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
