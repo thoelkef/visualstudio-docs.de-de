@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67329000"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810992"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Seite "veröffentlichen", Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.
@@ -29,7 +29,7 @@ ms.locfileid: "67329000"
  Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer**aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.
 
 > [!NOTE]
-> Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe mithilfe von ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe mithilfe von ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Speicherort des Veröffentlichungs Ordners (Website, FTP-Server oder Dateipfad)** Erforderlich.
@@ -50,7 +50,7 @@ ms.locfileid: "67329000"
 
  Lassen Sie dieses Feld leer, wenn sich die Installationsdateien an einem Speicherort befinden, der relativ zum Dokument oder Setupprogramm angegeben ist, z. B. bei der Option „CD“.
 
- Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)-Projekt Mappe.
+ Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](/previous-versions/bb608626(v=vs.110))-Projekt Mappe.
 
  **Prerequisites** Erforderliche Komponenten Die Voraussetzungen können im Setup Programm enthalten sein oder bei Bedarf während der Installation heruntergeladen werden.
 
@@ -98,8 +98,8 @@ ms.locfileid: "67329000"
 
   **Jetzt veröffentlichen** Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertig stellen** im **Veröffentlichungs-Assistent**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Office-Lösungs Voraussetzungen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office-Lösungs Voraussetzungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110))

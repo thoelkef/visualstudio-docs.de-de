@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558173"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810979"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungs-Assistent (Office-Entwicklung in Visual Studio)
   Verwenden Sie den **Veröffentlichungs-Assistenten** , um Projektmappendateien an einen angegebenen Speicherort zu kopieren, die Manifest-Dateien zu erstellen und ein Setup Programm zu erstellen.
@@ -49,7 +49,7 @@ ms.locfileid: "77558173"
 > Es gibt weitere Überlegungen, wenn auf dem Bereitstellungs Zielcomputer Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer sein, um die lokale Veröffentlichungs Option zu verwenden. Außerdem ist der Standard Speicherort immer das *Veröffentlichungs \\ * Verzeichnis, unabhängig davon, ob IIS installiert ist.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standard Installationspfad auf Endbenutzer Computern?
- Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, wenn Sie dies bevorzugen. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)-Projekt Mappe.
+ Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, wenn Sie dies bevorzugen. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](/previous-versions/bb608626(v=vs.110))-Projekt Mappe.
 
  Der Installationspfad ist das Verzeichnis, in dem der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Die Projekt Mappe wird vom **Veröffentlichungs-Assistenten** nicht an diesem Speicherort bereitgestellt, es sei denn, der Pfad ist identisch mit dem Pfad, den Sie im Feld **Geben Sie den Speicherort für die Veröffentlichung dieser Anwendung** eingegeben auf der vorherigen Seite eingegeben haben.
 

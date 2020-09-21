@@ -1,5 +1,6 @@
 ---
-title: 'Gewusst wie: Automatisches erhöhen der ClickOnce-Veröffentlichungs Version | Microsoft-Dokumentation'
+title: Automatisches Inkrement der ClickOnce-Veröffentlichungs Version
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6267e75db2e2a23d01368cdaa822d835cb8b844
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382600"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809793"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Vorgehensweise: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion
 
@@ -41,7 +42,7 @@ Sie können dieses Verhalten auf der Seite **veröffentlichen** des Projekt- **D
 
 3. Deaktivieren Sie im Abschnitt Veröffentlichungs **Version** das Kontrollkästchen **Automatische Schritt weite Revision mit jeder Version** .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

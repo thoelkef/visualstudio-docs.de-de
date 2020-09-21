@@ -1,5 +1,6 @@
 ---
-title: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen | Microsoft-Dokumentation
+title: Deaktivieren der URL-Aktivierung von ClickOnce-apps
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3de5272bdb47e0d7d87bad63d5ea0cd6a8b9bef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382457"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809757"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
 
@@ -31,7 +32,7 @@ Dieses Verfahren kann nur für [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 In diesem Verfahren wird das Windows Software Development Kit (SDK)-Tool MageUI.exe verwendet. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Sie können dieses Verfahren auch mit Visual Studio ausführen.
 
-## <a name="procedure"></a>Verfahren
+## <a name="procedure"></a>Prozedur
 
 ### <a name="to-disable-url-activation-for-your-application"></a>So deaktivieren Sie die URL-Aktivierung für Ihre Anwendung
 

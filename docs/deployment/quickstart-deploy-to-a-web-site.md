@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173685"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036404"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio
 
@@ -32,9 +32,9 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
     ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
-1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Klicken Sie auf **Neues Profil erstellen**.
+1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird der Bereich **Veröffentlichen** angezeigt. Wählen Sie **Neu**aus.
 
-1. Wählen Sie im Dialogfeld **Veröffentlichen** die Option **Webserver (IIS)** aus.
+1. Wählen Sie im Fenster **Veröffentlichen** die Option **Webserver (IIS)** aus.
 
     ![Auswählen eines Veröffentlichungsziels](../deployment/media/quickstart-publish-iis.png "Auswählen von IIS, FTP, usw.")
 
@@ -47,6 +47,8 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
     ![Web Deploy-Verbindungsdetails](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. Klicken Sie zum Veröffentlichen auf der Zusammenfassungsseite auf **Veröffentlichen**. Im Ausgabefenster werden der Fortschritt und das Ergebnis der Bereitstellung angezeigt.
+
+   Weitere Informationen zur Problembehandlung von ASP.NET Core in IIS finden Sie unter [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

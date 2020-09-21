@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565902"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809975"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie durch benutzerdefinierten Programmcode definiert, den Sie möglicherweise schreiben. Der meiste Programmcode in der DSL-Lösung wird aus dieser Datei generiert.
@@ -150,4 +150,4 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

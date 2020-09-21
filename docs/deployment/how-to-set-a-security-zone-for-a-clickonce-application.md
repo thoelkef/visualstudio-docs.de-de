@@ -1,5 +1,6 @@
 ---
-title: 'Vorgehensweise: Festlegen einer Sicherheits Zone für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: Sicherheitszone festlegen (ClickOnce-APP)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382132"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809728"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung
 Beim Festlegen von Codezugriffssicherheits-Berechtigungen für eine ClickOnce-Anwendung müssen Sie mit einem Basissatz von Berechtigungen auf der Seite **Sicherheit** des **Projekt-Designer**beginnen.
@@ -42,7 +43,7 @@ Beim Festlegen von Codezugriffssicherheits-Berechtigungen für eine ClickOnce-An
 
 5. Wählen Sie aus der Dropdownliste **Zone, aus der die Anwendung installiert wird** eine Sicherheitszone.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)

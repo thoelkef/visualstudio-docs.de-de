@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015900"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740018"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Bereitstellungs Schritten in einer bestimmten Reihenfolge aus. Visual Studio enthält viele integrierte Bereitstellungs Schritte, aber Sie können auch eigene erstellen.
@@ -190,7 +190,7 @@ ms.locfileid: "86015900"
 
 1. Öffnen Sie in **Projektmappen-Explorer**unter dem Projekt **UpgradeDeploymentStep** das Kontextmenü für die Datei " **Source. Extension. vsixmanifest** ", und wählen Sie dann **Öffnen**aus.
 
-     Die Datei wird von Visual Studio im Manifest-Editor geöffnet. Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Die Datei wird von Visual Studio im Manifest-Editor geöffnet. Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Geben Sie im Feld **Produkt Name** den **Schritt upgradebereitstellungs Schritt für SharePoint-Projekte**ein.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015900"
 10. Geben Sie in der Liste **Typ** den Namen **SharePoint. Commands. v4**ein.
 
     > [!NOTE]
-    > Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio-Erweiterung einschließen möchten. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio-Erweiterung einschließen möchten. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](/previous-versions/dd393737(v=vs.110)).
 
 11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
 

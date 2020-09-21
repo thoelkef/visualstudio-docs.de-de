@@ -1,8 +1,8 @@
 ---
-title: Erstellen einer UWP-App (Universelle Windows-Plattform) mit Visual Studio und C#
+title: Erstellen einer UWP-App mit Visual Studio und C#
 description: Erstellen einer UWP-App in Visual Studio mit XAML und C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249255"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037275"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Erstellen Ihrer ersten Anwendung für die Universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -72,7 +72,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 
 1. Übernehmen Sie im Dialogfeld **Neues UWP-Projekt (Universelle Windows-Plattform)** die Standardeinstellungen für **Zielversion** und **Mindestversion**.
 
-   ![Übernehmen Sie die Standardeinstellungen für Zielversion und Mindestversion im Dialogfeld „Neues UWP-Projekt (Universelle Windows-Plattform)“.](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Übernehmen der Standardeinstellungen für Zielversion und Mindestversion im Dialogfeld „Neues UWP-Projekt (Universelle Windows-Plattform)“](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ Beginnen wir jetzt mit der Entwicklung. Sie fügen ein Schaltflächensteuereleme
 
    Wenn Sie den Code im **XAML-Editor** betrachten, sehen Sie, dass die Schaltfläche auch dort hinzugefügt wurde:
 
-   ![Klicken Sie auf das Steuerelement „Schaltfläche“, und ziehen Sie es auf die Entwurfs-Canvas.](media/uwp-xaml-control-code-window.png)
+   ![Anzeigen der Schaltfläche im XAML-Editor](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Hinzufügen einer Bezeichnung zur Schaltfläche
 
@@ -192,7 +192,7 @@ Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und star
 
 1. Sehen Sie sich Ihre App an, die gleich nach der Anzeige eines Begrüßungsbildschirms angezeigt wird. Die App sollte ungefähr folgendermaßen aussehen:
 
-   ![Eine UWP-App „Hallo Welt“](media/vs-2019/uwp-hello-world-app.png)
+   ![UWP-App „Hallo Welt“](media/vs-2019/uwp-hello-world-app.png)
 
 1. Klicken Sie auf die Schaltfläche **Hallo Welt**.
 
