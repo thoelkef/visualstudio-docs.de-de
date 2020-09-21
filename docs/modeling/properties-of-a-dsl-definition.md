@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532301"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810092"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition-Eigenschaften definieren *domänenspezifische sprach* Definitions Eigenschaften, z. b. Versionsnummerierung. Die DslDefinition-Eigenschaften werden im **Eigenschaften** Fenster angezeigt, wenn Sie im *domänenspezifischen sprach Designer*auf einen geöffneten Bereich des Diagramms klicken.
@@ -23,25 +23,25 @@ DslDefinition-Eigenschaften definieren *domänenspezifische sprach* Definitions 
 
  DslDefinition verfügt über die Eigenschaften in der folgenden Tabelle:
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
-|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänen Klasse öffentlich oder intern ist.|public|
+|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänen Klasse öffentlich oder intern ist.|öffentlich|
 |Benutzerdefinierte Attribute|Benutzerdefinierte Attribute für die Domänen Klasse.<br /><br /> **Hinweis** Verwenden Sie die Schaltfläche Durchsuchen, um ein Attribut hinzuzufügen.|\<none>|
 |Name des Unternehmens|Der Name des aktuellen Firmennamens in der Systemregistrierung.|Aktueller Firmenname|
-|Name|Der Name dieser Domänen Klasse.|Aktueller Name|
+|name|Der Name dieser Domänen Klasse.|Aktueller Name|
 |Namespace|Der Namespace, der dieser Domänen Klasse angehört.|Aktueller Namespace|
 |Paket-GUID|Die GUID für das für diese DSL generierte Visual Studio-Paket.|\<none>|
 |Package-Namespace|Der Namespace für das Visual Studio-Paket, das für diese DSL generiert wurde.|\<none>|
 |Produktname|Der Name des Produkts, das für das für diese DSL generierte Visual Studio-Paket registriert wird.|\<none>|
-|Notizen|Anmerkungen, die dieser Domänen Klasse zugeordnet sind.|\<none>|
-|BESCHREIBUNG|Die Beschreibung für diese Domänen Klasse.|\<none>|
+|Hinweise|Anmerkungen, die dieser Domänen Klasse zugeordnet sind.|\<none>|
+|Beschreibung|Die Beschreibung für diese Domänen Klasse.|\<none>|
 |Anzeigename|Der Name, der im generierten Designer für diese Domänen Klasse angezeigt wird.|\<none>|
 |Hilfsschlüsselwort|Das Hilfe Schlüsselwort, das dieser Domänen Klasse zugeordnet ist.|\<none>|
-|Erstellen|Die inkrementelle Buildnummer für diese domänenspezifische Sprachdefinition.|0|
+|Build|Die inkrementelle Buildnummer für diese domänenspezifische Sprachdefinition.|0|
 |Hauptversion|Die inkrementelle Hauptbuildnummer für diese domänenspezifische Sprachdefinition.|1|
 |Nebenversion|Die inkrementelle nebenwert-Buildnummer für diese domänenspezifische Sprachdefinition.|0|
 |Revision|Die inkrementelle Revisions Buildnummer für diese domänenspezifische Sprachdefinition.|0|
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

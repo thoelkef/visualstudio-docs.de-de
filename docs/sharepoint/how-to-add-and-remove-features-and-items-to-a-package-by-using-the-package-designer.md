@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd712eafb6061da89367c247475904886579d2de
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014603"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740083"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Designer
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio dem Paket in der Projekt Mappe die SharePoint-Standard Features hinzu. Vor der endgültigen Bereitstellung können Sie SharePoint-Projekt Elemente und-Funktionen hinzufügen und entfernen, um das SharePoint-Paket zu ändern.
@@ -59,4 +59,4 @@ ms.locfileid: "86014603"
 ## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von SharePoint-Lösungs Paketen](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Vorgehensweise: Erstellen eines Pakets](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [Vorgehensweise: Erstellen eines Pakets](/previous-versions/ee231585(v=vs.110))

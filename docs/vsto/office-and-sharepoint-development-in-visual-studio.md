@@ -21,17 +21,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800943"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811031"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office-und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.
 
- Inhalte dieses Themas:
+ In diesem Thema:
 
 - [Erstellen von Add-Ins für Office und SharePoint](#Apps)
 
@@ -57,12 +57,12 @@ ms.locfileid: "88800943"
 
  ![Inhalts-App für Office](../vsto/media/appforoffice.png "Inhalts-App für Office")
 
- **Erfahren Sie mehr**
+ **Weitere Informationen**
 
 |Beschreibung|Siehe|
 |--------|---------|
 |Erfahren Sie mehr über Office-Add-Ins, und erstellen Sie dann eins.|[Office-Add-ins](/office/dev/add-ins/publish/publish)|
-|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie eine Anwendung oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-Ins, VSTO und VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie eine Anwendung oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-Ins, VSTO und VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Erstellen eines SharePoint-Add-ins
  Um SharePoint für Ihre Benutzer zu erweitern, erstellen Sie ein SharePoint-Add-In. Es handelt sich im Grunde um eine kleine, benutzerfreundliche, eigenständige Anwendung, die einen Bedarf für Ihre Benutzer oder Ihr Unternehmen löst.
@@ -73,7 +73,7 @@ ms.locfileid: "88800943"
 
  ![Geschäftskontaktmanager-App für SharePoint](../vsto/media/appforsharepoint.png "Geschäftskontaktmanager-App für SharePoint")
 
- **Erfahren Sie mehr**
+ **Weitere Informationen**
 
 |Beschreibung|Siehe|
 |--------|---------|
@@ -88,11 +88,11 @@ ms.locfileid: "88800943"
 
  ![PowerPoint-Add-in-Lösung](../vsto/media/powerpointaddin.png "PowerPoint-Add-In-Lösung")
 
- **Erfahren Sie mehr**
+ **Weitere Informationen**
 
 |Beschreibung|Lesen|
 |--------|----------|
-|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie ein VSTO-Add-In oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-Ins, VSTO und VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie ein VSTO-Add-In oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-Ins, VSTO und VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Erstellen eines VSTO-Add-Ins|[Mit Visual Studio erstellte VSTO-Add-Ins](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Erstellen einer SharePoint-Lösung
@@ -100,7 +100,7 @@ ms.locfileid: "88800943"
 
  SharePoint-Lösungen erfordern lokale SharePoint-Farm-Server. Administratoren müssen sie installieren, und da Lösungen in SharePoint ausgeführt werden, können sie die Leistung des Servers beeinträchtigen. Allerdings bieten Lösungen einen tieferen Zugriff auf SharePoint-Objekte. Wenn Sie eine SharePoint-Lösung erstellen, können Sie außerdem das .NET Framework und C# und Visual Basic für die Interaktion mit SharePoint-Objekte verwenden.
 
- **Erfahren Sie mehr**
+ **Weitere Informationen**
 
 |Beschreibung|Siehe|
 |--------|---------|

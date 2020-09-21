@@ -1,5 +1,6 @@
 ---
-title: 'Gewusst wie: Angeben der Dateien, die von ClickOnce veröffentlicht werden | Microsoft-Dokumentation'
+title: Zu veröffentlichende Dateien angeben (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ab6d724b40168f84227edb6ccfafc6245c30e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381781"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809491"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden alle nicht-Code Dateien im Projekt zusammen mit der Anwendung bereitgestellt. In einigen Fällen möchten Sie möglicherweise bestimmte Dateien nicht veröffentlichen oder müssen bestimmte Dateien auf der Grundlage von Bedingungen installieren. Visual Studio bietet die Funktionen zum Ausschließen von Dateien, zum Markieren von Dateien als Datendateien oder erforderliche Komponenten und zum Erstellen von Dateigruppen für die bedingte Installation.
@@ -113,6 +114,6 @@ Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndpte
     > [!NOTE]
     > Die **Download Gruppe** kann nicht für Dateien geändert werden, die für die Anwendung erforderlich sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

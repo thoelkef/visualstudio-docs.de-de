@@ -505,7 +505,7 @@
         - name: Codeformat
           items:
             - name: Codeformateinstellungen
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: Verwenden von EditorConfig-Dateien für das Codeformat
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
@@ -960,7 +960,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Tastenkombinationen
       items:

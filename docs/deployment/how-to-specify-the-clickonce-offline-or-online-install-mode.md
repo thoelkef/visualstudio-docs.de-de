@@ -1,5 +1,6 @@
 ---
-title: 'Gewusst wie: Angeben des Offline-oder Online Installationsmodus von ClickOnce | Microsoft-Dokumentation'
+title: Offline-oder Online Installationsmodus angeben (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9eeedfdd2a4661e3744da369a6fadc11039a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 896d2218237b884d9483496e0adac157a6e26fd3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381755"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808736"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Vorgehensweise: Angeben des Offline- oder Onlineinstallationsmodus von ClickOnce
 Der `Install Mode` für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung bestimmt, ob die Anwendung offline oder online verfügbar ist. Wenn Sie auswählen, dass **die Anwendung nur online verfügbar ist**, muss der Benutzer Zugriff auf den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veröffentlichungs Speicherort (entweder eine Webseite oder eine Dateifreigabe) haben, um die Anwendung auszuführen. Wenn Sie auswählen, dass **die Anwendung auch offline verfügbar ist**, fügt die Anwendung dem **Startmenü** und **dem Dialogfeld** "Software" Einträge hinzu. der Benutzer kann die Anwendung ausführen, wenn er nicht verbunden ist.
@@ -51,7 +52,7 @@ Der `Install Mode` kann auf der Seite **veröffentlichen** des **Projekt-Designe
 
      Wenn die Anwendung installiert ist, werden dem **Startmenü** Einträge hinzugefügt und Programme in der Systemsteuerung **hinzugefügt oder entfernt** .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

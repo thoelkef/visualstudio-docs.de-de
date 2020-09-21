@@ -1,29 +1,29 @@
 ---
-title: Verwaltbarkeitswarnungen
+title: Wart barkeits Regeln
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509899"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808583"
 ---
-# <a name="maintainability-warnings"></a>Verwaltbarkeitswarnungen
+# <a name="maintainability-rules"></a>Wart barkeits Regeln
 
-Wart barkeits Warnungen unterstützen die Verwaltung von Bibliotheken und Anwendungen.
+Wart barkeits Regeln unterstützen die Verwaltung von Bibliotheken und Anwendungen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -37,6 +37,6 @@ Wart barkeits Warnungen unterstützen die Verwaltung von Bibliotheken und Anwend
 | [CA1508: Toten Bedingungscode vermeiden](../code-quality/ca1508.md) | Eine Methode verfügt über bedingten Code, der immer zu oder zur Laufzeit ausgewertet wird `true` `false` . Dies führt zu einem unzustellbaren Code in der `false` Verzweigung der Bedingung. |
 | [CA1509: Ungültiger Eintrag in der Konfigurationsdatei für die Codemetrik.](../code-quality/ca1509.md) | Code metrikregeln, wie z. b. [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) und [CA1506](ca1506.md), haben eine Konfigurationsdatei mit dem Namen mit `CodeMetricsConfig.txt` einem ungültigen Eintrag bereitgestellt. |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Messen von Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/code-metrics-values.md)

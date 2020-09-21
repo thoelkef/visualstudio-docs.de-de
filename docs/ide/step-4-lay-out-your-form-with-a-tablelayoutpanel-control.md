@@ -1,6 +1,8 @@
 ---
-title: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
+title: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
+description: Legen Sie das Formular mit einem TableLayoutPanel-Steuerelement im Tutorial zum Erstellen eines Bildanzeigeprogramms fest.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579380"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036976"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
 
@@ -28,12 +30,12 @@ In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.Table
 1. Klicken Sie zum Öffnen der Gruppe **Container** wie im folgenden Screenshot gezeigt auf das kleine Dreiecksymbol daneben.
 
      ![Containergruppe](../ide/media/express_toolbox.png)<br>
-***Container****gruppe*
+***Container*** *gruppe*
 
 1. Sie können dem Formular Steuerelemente hinzufügen, z. B. Schaltflächen, Kontrollkästchen und Beschriftungen. Doppelklicken Sie in der **Toolbox** auf das TableLayoutPanel-Steuerelement. (Sie können auch das Steuerelement von der Toolbox in das Formular ziehen.) Dies bewirkt, dass die IDE dem Formular wie im folgenden Screenshot gezeigt ein TableLayoutPanel-Steuerelement hinzufügt.
 
      ![TableLayoutPanel-Steuerelement](../ide/media/express_formtablelayout.png)<br>
-***TableLayoutPanel***-*Steuerelement*
+***TableLayoutPanel-*** *Steuerelement*
 
     > [!NOTE]
     > Wenn im Formular ein Fenster mit dem Titel **TableLayoutPanel-Aufgaben** angezeigt wird, nachdem Sie das TableLayoutPanel-Steuerelement hinzugefügt haben, wählen Sie eine beliebige Stelle im Formular aus, um es zu schließen. Im späteren Verlauf dieses Tutorials erfahren Sie mehr über dieses Fenster.
@@ -62,7 +64,7 @@ In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.Table
 1. Nachdem Sie die **Dock**-Eigenschaft des TableLayoutPanel-Steuerelements auf **Füllen** festgelegt haben, nimmt der Bereich das gesamte Formular ein. Wenn Sie die Größe des Formulars wieder ändern, bleibt das TableLayoutPanel-Steuerelement verankert und passt sich an die Formulargröße an.
 
     > [!NOTE]
-    > Ein TableLayoutPanel-Steuerelement funktioniert wie eine Tabelle in Microsoft Office Word: Es weist Zeilen und Spalten auf, und eine einzelne Zelle kann sich über mehrere Zeilen und Spalten erstrecken. Jede Zelle kann ein Steuerelement enthalten (z. B. eine Schaltfläche, ein Kontrollkästchen oder eine Beschriftung). Das TableLayoutPanel-Steuerelement sollte über ein <xref:System.Windows.Forms.PictureBox>-Steuerelement, das sich über die gesamte oberste Zeile erstreckt, ein <xref:System.Windows.Forms.CheckBox>-Steuerelement in der Zelle unten links und vier <xref:System.Windows.Forms.Button>-Steuerelemente in der Zelle unten rechts verfügen.
+    > Ein TableLayoutPanel-Steuerelement funktioniert wie eine Tabelle in Microsoft Office Word: Es weist Zeilen und Spalten auf, und eine einzelne Zelle kann mehrere Zeilen und Spalten umfassen. Jede Zelle kann ein Steuerelement enthalten (z. B. eine Schaltfläche, ein Kontrollkästchen oder eine Beschriftung). Das TableLayoutPanel-Steuerelement sollte über ein <xref:System.Windows.Forms.PictureBox>-Steuerelement, das sich über die gesamte oberste Zeile erstreckt, ein <xref:System.Windows.Forms.CheckBox>-Steuerelement in der Zelle unten links und vier <xref:System.Windows.Forms.Button>-Steuerelemente in der Zelle unten rechts verfügen.
 
 1. Derzeit weist das TableLayoutPanel-Steuerelement zwei gleich große Zeilen und zwei gleich große Spalten auf. Als Nächstes ändern Sie ihre Größe, damit die obere Zeile und die rechte Spalte deutlich größer sind. Wählen Sie im **Windows Forms-Designer** das TableLayoutPanel-Steuerelement aus. Oben rechts in der Ecke befindet sich eine Schaltfläche in Form eines kleinen schwarzen Dreiecks, die wie folgt aussieht.
 
@@ -74,12 +76,12 @@ In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.Table
 1. Klicken Sie auf das Dreieck, um die Aufgabenliste des Steuerelements wie im folgenden Screenshot gezeigt anzuzeigen.
 
      ![TableLayoutPanel-Aufgaben](../ide/media/express_tablepanel.png)<br>
-***TableLayoutPanel***-*Aufgaben*
+***TableLayoutPanel-*** *Aufgaben*
 
 1. Wählen Sie die Aufgabe **Zeilen und Spalten bearbeiten** aus, um das Fenster **Spalten- und Zeilenstile** anzuzeigen. Wählen Sie **Column1** aus, und legen Sie die Größe auf 15 Prozent fest, indem Sie die Schaltfläche **Prozent** auswählen und im Feld **Prozent** den Wert **15** eingeben. (Das ist ein <xref:System.Windows.Forms.NumericUpDown>-Steuerelement, das Sie in einem späteren Tutorial verwenden.) Wählen Sie **Column2** aus, und legen Sie die Größe auf 85 Prozent fest. Wählen Sie noch nicht die Schaltfläche **OK** aus, da sonst das Fenster geschlossen wird. (Wenn Sie das Fenster versehentlich schließen, können Sie es über die Aufgabenliste noch mal öffnen.)
 
      ![Zeilen- und Spaltenstile für TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png)<br>
-***Zeilen- und Spaltenstile*** für *TableLayoutPanel*
+***Zeilen- und Spaltenstile für *** *TableLayoutPanel*
 
 1. Wählen Sie in der Dropdownliste **Anzeigen** oben im Fenster **Spalten- und Zeilenstile** die Option **Zeilen** aus. Legen Sie **Row1** auf 90 Prozent und **Row2** auf 10 Prozent fest.
 
@@ -94,7 +96,7 @@ In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.Table
 
 * Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

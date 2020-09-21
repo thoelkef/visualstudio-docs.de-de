@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561324"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641437"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -31,7 +31,7 @@ Antwort: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen m�
 
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise Agreement-Kunden
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Frage: Kann ich ein Business Agreement verwenden, um Visual Studio-Cloudabonnements zu kaufen?
-Antwort: Ja, das ist möglich. Sie müssen Besitzer oder Mitwirkender des Azure-Abonnements sein, das für Enterprise Agreement erstellt wurde. Stellen Sie sicher, dass Sie Käufe für Visual Studio-Cloudabonnements direkt im Visual Studio Marketplace durchführen. Sie können Visual Studio-Cloudabonnements nicht mithilfe einer Bestellung kaufen.
+Antwort: Ja, das ist möglich. Sie müssen in einem Azure-Abonnement, das für Enterprise Agreement erstellt wurde, Mitwirkender sein oder eine höhere Rolle haben. Stellen Sie sicher, dass Sie Käufe für Visual Studio-Cloudabonnements direkt im Visual Studio Marketplace durchführen. Sie können Visual Studio-Cloudabonnements nicht mithilfe einer Bestellung kaufen.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Frage: Wie kann ich herausfinden, ob ich über die erforderlichen Berechtigungen verfüge, um Dienste im Visual Studio Marketplace über das Enterprise Agreement meiner Organisation zu kaufen?
 Antwort: Sie können am einfachsten feststellen, ob Sie über die erforderlichen Berechtigungen verfügen, indem Sie für einen in Visual Studio Marketplace angebotenen Dienst **Kaufen** auswählen.

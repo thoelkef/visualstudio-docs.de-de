@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402282"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741766"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -43,6 +43,14 @@ Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 - [Namenskonventionen](../ide/editorconfig-naming-conventions.md)
 
    Regeln für die Benennung von Codeelementen. Sie können beispielsweise angeben, dass die `async`-Methoden mit „Async“ enden müssen.
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>Erzwingen von Codierungskonventionen beim Build
+
+Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>EDITORCONFIG-Beispieldatei
 
@@ -261,7 +269,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 > [!NOTE]
 > Weitere Informationen zu den unterstützten Kategorien für .NET-Codierungskonventionen finden Sie auf den Seiten [Sprachkonventionen](../ide/editorconfig-language-conventions.md), [Formatierungskonventionen](../ide/editorconfig-formatting-conventions.md) und [Namenskonventionen](../ide/editorconfig-naming-conventions.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnelle Aktionen](../ide/quick-actions.md)
 - [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)

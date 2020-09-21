@@ -1,6 +1,7 @@
 ---
-title: Arbeiten mit Konten, die mehrstufige Authentifizierung erfordern
+title: Verwenden von Konten, die mehrstufige Authentifizierung erfordern
 ms.date: 05/27/2020
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Visual Studio mit Konten verwendet wird, die mehrstufige Authentifizierung erfordern.
 author: ornellaalt
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283545"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093346"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Verwenden von Visual Studio mit Konten, die mehrstufige Authentifizierung erfordern
 
@@ -49,10 +50,11 @@ Nachdem der Systemwebbrowser-Workflow aktiviert wurde, können Sie sich wie gewo
 
 Mit dieser Aktion wird der Standardwebbrowser Ihres Systems geöffnet, Sie werden aufgefordert, sich bei Ihrem Konto anzumelden, und es werden alle erforderlichen MFA-Richtlinien überprüft.
 
-Je nach Ihren Entwicklungsaktivitäten und Ihrer Ressourcenkonfiguration werden Sie möglicherweise aufgefordert, Ihre Anmeldeinformationen während Ihrer Sitzung erneut einzugeben. Dies kann der Fall sein, wenn Sie eine neue Ressource hinzufügen oder versuchen, auf eine Ressource zuzugreifen, ohne zuvor deren Zertifizierungsstellen-/MFA-Autorisierungsanforderungen erfüllt zu haben.
+Während des Anmeldevorgangs erhalten Sie möglicherweise eine zusätzliche Aufforderung, angemeldet zu bleiben. Diese Aufforderung wird wahrscheinlich angezeigt, wenn ein Konto zum zweiten Mal zum Anmelden verwendet wird. Um die Notwendigkeit der erneuten Eingabe Ihrer Anmeldeinformationen zu minimieren, sollten Sie **Ja** auswählen, da dadurch sichergestellt wird, dass Ihre Anmeldeinformationen über Browsersitzungen hinweg beibehalten werden.
 
-> [!NOTE] 
-> Am besten lassen Sie Ihren Browser geöffnet, bis alle Zertifizierungsstellen-/MFA-Richtlinien für Ihre Ressourcen überprüft wurden. Das Schließen des Browsers kann dazu führen, dass der zuvor aufgebaute MFA-Status verloren geht und zusätzliche Autorisierungsaufforderungen angezeigt werden.
+:::image type="content" source="media/kmsi.png" alt-text="Angemeldet bleiben?":::
+
+Je nach Ihren Entwicklungsaktivitäten und Ihrer Ressourcenkonfiguration werden Sie möglicherweise noch aufgefordert, Ihre Anmeldeinformationen während Ihrer Sitzung erneut einzugeben. Dies kann der Fall sein, wenn Sie eine neue Ressource hinzufügen oder versuchen, auf eine Ressource zuzugreifen, ohne zuvor deren Zertifizierungsstellen-/MFA-Autorisierungsanforderungen erfüllt zu haben.
 
 ## <a name="reauthenticating-an-account"></a>Erneutes Authentifizieren eines Kontos  
 Wenn ein Problem mit Ihrem Konto vorliegt, werden Sie möglicherweise von Visual Studio aufgefordert, Ihre Kontoanmeldeinformationen erneut einzugeben.  

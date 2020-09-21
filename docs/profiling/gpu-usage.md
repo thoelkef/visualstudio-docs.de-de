@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279878"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074968"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 
-Verwenden Sie das Tool zur GPU-Nutzung im Visual Studio-Leistungs- und Diagnosehub, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen. Sie können damit feststellen, ob die Leistung Ihrer App CPU- oder GPU-gebunden ist, und Sie erhalten Erkenntnisse darüber, wie Sie die Plattformhardware effektiver nutzen können. Das Tool für die GPU-Nutzung unterstützt Apps, die Direct3D 12, Direct3D 11 und Direct3D 10 verwenden. Andere Grafik-APIs, beispielsweise Direct2D oder OpenGL, werden nicht unterstützt.
+Verwenden Sie das Tool zur GPU-Nutzung im Leistungs-Profiler, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen. Sie können damit feststellen, ob die Leistung Ihrer App CPU- oder GPU-gebunden ist, und Sie erhalten Erkenntnisse darüber, wie Sie die Plattformhardware effektiver nutzen können. Das Tool für die GPU-Nutzung unterstützt Apps, die Direct3D 12, Direct3D 11 und Direct3D 10 verwenden. Andere Grafik-APIs, beispielsweise Direct2D oder OpenGL, werden nicht unterstützt.
 
 Das Fenster mit dem **Bericht zur GPU-Nutzung** sieht folgendermaßen aus:
 
@@ -43,7 +43,7 @@ So starten Sie das GPU-Nutzungstool:
 
 2. Aktivieren Sie im **Leistungs- und Diagnosehub** das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild zur Leistung Ihrer App zu erhalten.
 
-    ![Screenshot des Leistungs- und Diagnosehubs mit ausgewählter Option zur GPU-Nutzung](media/gpuusageselected.png "GPU-Nutzung ausgewählt")
+    ![Screenshot des Leistungs-Profilers mit ausgewählter Option zur GPU-Nutzung](media/gpuusageselected.png "GPU-Nutzung ausgewählt")
 
    > [!NOTE]
    > Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015264"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740070"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Vorgehensweise: Einschließen einer benutzerdefinierten Assembly in eine BDC-Funktion
   Das Projekt kann auf Assemblys aus anderen Projekten in derselben Projekt Mappe verweisen. Allerdings müssen Sie diese Assemblys mithilfe des Dialog Felds referenzierte Assemblys **auf lobsystems zuweisen** der Featuredatei des Projekts hinzufügen.
@@ -40,7 +40,7 @@ ms.locfileid: "86015264"
 4. Wählen Sie in der Liste **Wählen Sie eine Assembly** aus die benutzerdefinierte Assembly aus.
 
     > [!NOTE]
-    > Assemblys werden nur im Dialogfeld **Zuweisen von referenzierten Assemblys zu lobsystems** angezeigt, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, das die Assembly enthält. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)".
+    > Assemblys werden nur im Dialogfeld **Zuweisen von referenzierten Assemblys zu lobsystems** angezeigt, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, das die Assembly enthält. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](/previous-versions/wkze6zky(v=vs.140))".
 
 5. Öffnen Sie in der Gruppe **Verweis Eigenschaften** die Liste, die für die Eigenschaft **LobSystem Scope** angezeigt wird, wählen Sie das Branchen System der Methoden aus, die die benutzerdefinierte Assembly verwenden, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -48,8 +48,8 @@ ms.locfileid: "86015264"
     > Zum Debuggen von Code in der benutzerdefinierten Assembly müssen Sie die Assembly dem Projektmappenpaket hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcen Datei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [How to: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [How to: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)
 - [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

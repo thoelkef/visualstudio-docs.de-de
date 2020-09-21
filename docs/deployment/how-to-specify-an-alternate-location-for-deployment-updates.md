@@ -1,5 +1,6 @@
 ---
-title: 'Vorgehensweise: Angeben eines alternativen Speicher Orts für Bereitstellungs Updates | Microsoft-Dokumentation'
+title: Alternativen Speicherort für Bereitstellungs Updates angeben
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381911"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808749"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung anfänglich von einer CD oder einer Dateifreigabe installieren, aber die Anwendung muss sich auf regelmäßige Updates im Web überprüfen. Sie können einen alternativen Speicherort für Updates im Bereitstellungs Manifest angeben, damit Ihre Anwendung nach der Erstinstallation aus dem Web aktualisiert werden kann.
@@ -60,7 +61,7 @@ Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 
  Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die verwenden, `<deploymentProvider>` sollten explizit die Berechtigungen deklarieren, die Sie in Ihrem Anwendungs Manifest benötigen, damit die Anwendung nicht unterschiedliche Vertrauens Ebenen auf verschiedenen Computern erhält.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
