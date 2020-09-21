@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234977"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806732"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei der Bereitstellung von Office
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.
@@ -121,11 +121,11 @@ ms.locfileid: "87234977"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Eine ClickOnce-Lösung kann nicht installiert werden, indem das Bereitstellungs Manifest aus dem Web geöffnet wird
  Benutzer können Office-Projektmappen installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Einige Installationen von Internetinformationsdienste (IIS) blockieren jedoch die Dateinamenerweiterung *. VSTO* . Sie müssen den MIME-Typ in IIS definieren, bevor Sie ihn zum Bereitstellen einer Office-Projekt Mappe verwenden.
 
- Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden [Sie unter Hinzufügen eines MIME-Typs (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden [Sie unter Hinzufügen eines MIME-Typs (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10)).
 
  Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto**fest.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

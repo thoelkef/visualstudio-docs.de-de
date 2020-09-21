@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caf7d395c08a8c1e8c21f933ba63c8943813831b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532183"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810782"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
 Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen zu den meisten Elementen im DSL-Explorer finden [Sie unter Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).
@@ -43,4 +43,4 @@ Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Struktu
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

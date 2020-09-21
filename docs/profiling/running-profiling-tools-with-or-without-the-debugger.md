@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561587"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074955"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 
-Visual Studio bietet eine Auswahl an Tools für Leistungsmessung und Profilerstellung. Einige Tools, wie z. B. „CPU-Auslastung“ und „Speicherauslastung“, können mit oder ohne Debugger und in den Release- oder Debugbuildkonfigurationen ausgeführt werden. Im [Fenster „Diagnosetools“](../profiling/profiling-feature-tour.md#view-performance-while-debugging) angezeigte Tools werden nur während einer Debugsitzung ausgeführt. Tools im [Leistungs-Profiler](../profiling/profiling-feature-tour.md#post_mortem) werden ohne den Debugger ausgeführt, und Sie analysieren die Ergebnisse, nachdem Sie die Option zum Beenden und Erfassen von Daten ausgewählt haben (für eine Post-Mortem-Analyse).
+Visual Studio bietet eine Auswahl an Tools für Leistungsmessung und Profilerstellung. Einige Tools, wie z. B. „CPU-Auslastung“ und „Speicherauslastung“, können mit oder ohne Debugger und in den Release- oder Debugbuildkonfigurationen ausgeführt werden. Im [Fenster „Diagnosetools“](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) angezeigte Tools werden nur während einer Debugsitzung ausgeführt. Tools im [Leistungs-Profiler](../profiling/profiling-feature-tour.md#post_mortem) werden ohne den Debugger ausgeführt, und Sie analysieren die Ergebnisse, nachdem Sie die Option zum Beenden und Erfassen von Daten ausgewählt haben (für eine Post-Mortem-Analyse).
 
 >[!NOTE]
 >Sie können die nicht in den Debugger integrierten Leistungstools unter Windows 7 und höher verwenden. Windows 8 oder höher ist erforderlich, um die in den Debugger integrierten Profilerstellungstools auszuführen.
 
-Der nicht in den Debugger integrierte Leistungs-Profiler und die in den Debugger integrierten Diagnosetools bieten verschiedene Informationen und Funktionen. In den Debugger integrierte Tools zeigen Breakpoints und Variablenwerte an. Nicht in den Debugger integrierte Tools bieten Ihnen Ergebnisse, die sich näher an der Endbenutzeroberfläche befinden.
+Der nicht in den Debugger integrierte Leistungs-Profiler und die in den Debugger integrierten Diagnosetools bieten verschiedene Informationen und Funktionen. In den Debugger integrierte Tools zeigen Variablenwerte an und ermöglichen Ihnen, Breakpoints zu verwenden. Nicht in den Debugger integrierte Tools bieten Ihnen Ergebnisse, die sich näher an der Endbenutzeroberfläche befinden.
 
 Berücksichtigen Sie bei der Entscheidung, welche Tools und Ergebnisse Sie nutzen möchten, Folgendes:
 
-- Externe Leistungsprobleme, wie z.B. Datei-E/A oder die Reaktionszeit des Netzwerks, werden in den Debuggertools ähnlich angezeigt wie in den nicht in den Debugger integrierten Tools.
-- Bei Problemen, die durch CPU-intensive Aufrufe ausgelöst werden, kann es möglicherweise zu erheblichen Leistungsunterschieden zwischen Release- und Debugbuilds kommen. Überprüfen Sie, ob das Problem in Releasebuilds vorhanden ist.
-- Wenn das Problem nur bei Debugbuilds auftritt, ist es wahrscheinlich, dass Sie die nicht in den Debugger integrierten Tools nicht ausführen müssen. Bei Problemen mit Releasebuilds entscheiden Sie, ob die Debuggertools Ihnen bei weiteren Untersuchungen helfen können.
-- Releasebuilds bieten Optimierungen wie Inlinefunktionsaufrufe und -konstanten, die ungenutzte Codepfade bereinigen und Variablen mit bestimmten Methoden speichern, sodass sie vom Debugger nicht genutzt werden können. Leistungsangaben der in den Debugger integrierten Tools sind weniger genau, da Debugbuilds diese Optimierungen fehlen.
-- Der Debugger selbst ändert Leistungszeiten, während er erforderliche Debuggervorgänge durchführt, wie z. B. das Abfangen von Ausnahmen und Modulladeereignissen.
-- Leistungsangaben zu Releasebuilds in den Leistungs-Profiler-Tools sind am präzisesten und genauesten. In den Debugger integrierte Toolergebnisse sind besonders nützlich, wenn es um den Vergleich mit anderen debuggingbezogenen Messungen geht.
+- In den Debugger integrierte Tools im Vergleich zu nicht in den Debugger integrierten Tools
+  - Externe Leistungsprobleme, wie z.B. Datei-E/A oder die Reaktionszeit des Netzwerks, werden in den Debuggertools ähnlich angezeigt wie in den nicht in den Debugger integrierten Tools.
+  - Der Debugger selbst ändert Leistungszeiten, während er erforderliche Debuggervorgänge durchführt, wie z. B. das Abfangen von Ausnahmen und Modulladeereignissen.
+  - Leistungsangaben zu Releasebuilds in den Leistungs-Profiler-Tools sind am präzisesten und genauesten. In den Debugger integrierte Toolergebnisse sind besonders nützlich, wenn es um den Vergleich mit anderen debuggingbezogenen Messungen oder die Verwendung von Debuggerfeatures geht.
+- Debug- im Vergleich zu Releasebuilds
+  - Bei Problemen, die durch CPU-intensive Aufrufe ausgelöst werden, kann es möglicherweise zu erheblichen Leistungsunterschieden zwischen Release- und Debugbuilds kommen. Überprüfen Sie, ob das Problem in Releasebuilds vorhanden ist.
+  - Wenn das Problem nur bei Debugbuilds auftritt, ist es wahrscheinlich, dass Sie die nicht in den Debugger integrierten Tools nicht ausführen müssen. Entscheiden Sie bei Releasebuildproblemen, ob die Features zum Ermitteln des Problems beitragen, die von den Tools bereitgestellt werden, die in den Debugger integriert sind.
+  - Releasebuilds bieten Optimierungen wie Inlinefunktionsaufrufe und -konstanten, die ungenutzte Codepfade bereinigen und Variablen mit bestimmten Methoden speichern, sodass sie vom Debugger nicht genutzt werden können. Leistungsangaben in den Debugbuilds sind weniger genau, da Debugbuilds diese Optimierungen fehlen.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens
 
@@ -82,7 +84,7 @@ Sie können zum Erfassen von Leistungsdaten ohne Debuggen die Leistungs-Profiler
 
    Während Sie die Sitzung ausführen, zeigen einige Tools auf der Seite der Diagnosetools Diagramme mit Echtzeitdaten sowie Steuerelemente zum Anhalten und Fortsetzen der Datensammlung.
 
-    ![Screenshot der Datensammlung auf dem Leistungs- und Diagnosehub](../profiling/media/diaghubcollectdata.png "Sammeln von Daten im Hub")
+    ![Screenshot der Datensammlung auf dem Leistungs-Profiler](../profiling/media/diaghubcollectdata.png "Sammeln von Daten im Hub")
 
 1. Klicken Sie zum Beenden der Diagnosesitzung auf **Sammlung beenden**.
 

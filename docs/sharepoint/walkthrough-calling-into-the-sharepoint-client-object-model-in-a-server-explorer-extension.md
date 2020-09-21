@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014629"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740096"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufen des SharePoint-Client Objektmodells in einer Server-Explorer-Erweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie das SharePoint-Client Objektmodell aus einer Erweiterung für den Knoten **SharePoint-Verbindungen** in **Server-Explorer**aufgerufen wird. Weitere Informationen zur Verwendung des SharePoint-Client Objektmodells finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".
@@ -192,7 +192,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 
 1. Öffnen Sie in **Projektmappen-Explorer**im **WebPartNode** -Projekt im Manifest-Editor die Datei " **Source. Extension. vsixmanifest** ".
 
-     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Geben Sie im Feld **Produkt Name** den **Webpartkatalog-Knoten für Server-Explorer**ein.
 
@@ -281,7 +281,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)
 - [Erstellen eines Symbols oder anderen Bilds &#40;Bildbearbeitung für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

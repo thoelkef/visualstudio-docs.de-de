@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256191"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074981"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Messen der Speicherauslastung in Visual Studio
 
-Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem im Debugger integrierten **Speicherauslastungs**-Diagnosetool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und nativen Momentaufnahme-Heaps erstellen, um ein besseres Verständnis darüber zu erlangen, welchen Einfluss die Speicherauslastung von Objekttypen hat. Sie können Momentaufnahmen von .NET-Apps, systemeigenen Apps und Apps in gemischtem Modus (.Net und systemeigen) erfassen.
-
-Das folgende Bild zeigt das Fenster **Diagnosetools** (verfügbar in Visual Studio 2015 Update 1 und höheren Versionen):
-
-![Diagnosetools-Update1](../profiling/media/diagnostictools-update1.png "Diagnosetools-Update1")
+Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem im Debugger integrierten **Speicherauslastungs**-Diagnosetool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und nativen Momentaufnahme-Heaps erstellen, um ein besseres Verständnis darüber zu erlangen, welchen Einfluss die Speicherauslastung von Objekttypen hat. Sie können die Speicherauslastung auch ohne einen angefügten Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel festlegen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Obwohl Sie Speichermomentaufnahmen des Arbeitsspeichers zu jedem beliebigen Zeitpunkt im **Speicherauslastungstool** erfassen können, können Sie mit dem Visual Studio-Debugger kontrollieren, wie Ihre Anwendung die Ausführung vornimmt, und dabei Leistungsprobleme untersuchen. Festlegen von Haltepunkten, schrittweises Ausführen, alles unterbrechen und andere Debugger-Aktionen können Ihnen helfen, Ihre Leistungsuntersuchungen auf die relevantesten Codepfade zu fokussieren. Durch die Ausführung dieser Aktionen, während Ihre App ausgeführt wird, kann das Rauschen, das Sie nicht interessiert, vom Code entfernt werden, wodurch sich der Zeitaufwand, den Sie zur Diagnose eines Problems benötigen, maßgeblich verringert.
 
-Sie können das Speichertool auch außerhalb des Debuggers verwenden. Siehe [Analysieren der Arbeitsspeicherauslastung ohne Visual Studio-Debugger](../profiling/memory-usage-without-debugging2.md). Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
-
-> [!NOTE]
-> **Unterstützung für benutzerdefinierte Speicherbelegungen** Der native Speicherprofiler sammelt auf die Speicherbelegung bezogene [ETW-](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)-Ereignisdaten, die zur Laufzeit ausgegeben werden.  Zuweisungen im CRT und Windows SDK wurden auf Quellebene kommentiert, sodass ihre Speicherbelegungsdaten erfasst werden können. Wenn Sie Ihre eigenen Zuweisungen schreiben, kann jede Funktion, die einen Zeiger auf neu zugewiesenen Heapspeicher zurückgibt, mit [__declspec](/cpp/cpp/declspec)(allocator) ergänzt werden, wie in diesem Beispiel für myMalloc zu sehen ist:
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> Die in den Debugger integrierten Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, ASP.NET Core, native/C++-Entwicklung sowie für Apps im gemischten Modus (.NET und nativ) unterstützt. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
 > * Erstellen von Momentaufnahmen des Speichers
 > * Analysieren der Speicherauslastungsdaten
+
+Wenn Sie von der **Speicherauslastung** nicht die benötigten Daten erhalten, stehen andere [Leistungs-Profiler](../profiling/profiling-feature-tour.md#post_mortem) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als den Arbeitsspeicher ausgelöst werden, z.B. durch die CPU, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks.
+
+> [!NOTE]
+> **Unterstützung für benutzerdefinierte Speicherbelegungen** Der native Speicherprofiler sammelt auf die Speicherbelegung bezogene [ETW-](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)-Ereignisdaten, die zur Laufzeit ausgegeben werden.  Zuweisungen im CRT und Windows SDK wurden auf Quellebene kommentiert, sodass ihre Speicherbelegungsdaten erfasst werden können. Wenn Sie Ihre eigenen Zuweisungen schreiben, kann jede Funktion, die einen Zeiger auf neu zugewiesenen Heapspeicher zurückgibt, mit [__declspec](/cpp/cpp/declspec)(allocator) ergänzt werden, wie in diesem Beispiel für myMalloc zu sehen ist:
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>Sammeln von Speicherauslastungsdaten
 

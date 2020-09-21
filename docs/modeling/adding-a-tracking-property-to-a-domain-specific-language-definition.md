@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238243"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810821"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -26,7 +26,7 @@ Eine nach *Verfolgungs Domänen* Eigenschaft ist eine Eigenschaft, die vom Benut
 
 Beispielsweise verfügt die Anzeige Name-Eigenschaft einer Domänen Klasse im DSL-Tools (DSL-Tools) über einen Standardwert, der mit dem Namen der Domänen Klasse berechnet wird. ein Benutzer kann den Wert zur Entwurfszeit jedoch ändern oder auf den berechneten Wert zurücksetzen.
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL) mit einer Namespace-nach Verfolgungs Eigenschaft, die über einen Standardwert verfügt, der auf der Standard Namespace-Eigenschaft des Modells basiert. Weitere Informationen zu Überwachungs Eigenschaften finden Sie unter [Definieren von Überwachungs Eigenschaften](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL) mit einer Namespace-nach Verfolgungs Eigenschaft, die über einen Standardwert verfügt, der auf der Standard Namespace-Eigenschaft des Modells basiert. Weitere Informationen zu Überwachungs Eigenschaften finden Sie unter [Definieren von Überwachungs Eigenschaften](/previous-versions/cc825929(v=vs.100)).
 
 - Die DSL-Tools unterstützen die Nachverfolgung von Eigenschaften Deskriptoren. Der DSL-Designer kann jedoch nicht zum Hinzufügen einer nach Verfolgungs Eigenschaft zu einer Sprache verwendet werden. Daher müssen Sie benutzerdefinierten Code hinzufügen, um die nach Verfolgungs Eigenschaft zu definieren und zu implementieren.
 
@@ -52,7 +52,7 @@ Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunäc
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Vergeben Sie den Namen `TrackingPropertyDSL`.
 
@@ -754,7 +754,7 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
 Wenn Sie planen, mehr als eine nach Verfolgungs Eigenschaft zu verwenden oder nach Verfolgungs Eigenschaften in mehr als einer DSL zu implementieren, können Sie eine Textvorlage erstellen, um den allgemeinen Code für die Unterstützung der einzelnen Überwachungs Eigenschaften zu generieren. Weitere Informationen zu Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

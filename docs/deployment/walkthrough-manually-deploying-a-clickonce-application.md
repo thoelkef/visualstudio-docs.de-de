@@ -1,5 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: Manuelles Bereitstellen einer ClickOnce-App
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249986"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809478"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
 Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung bereitzustellen, oder Sie erweiterte Bereitstellungs Funktionen wie die Bereitstellung einer vertrauenswürdigen Anwendung verwenden müssen, sollten Sie die Manifeste mit dem Befehlszeilen Tool *Mage.exe* erstellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . In dieser exemplarischen Vorgehensweise wird beschrieben, wie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe der Befehlszeilenversion (*Mage.exe*) oder der grafischen Version (*MageUI.exe*) der Manifest Generation and Editing Tool erstellt wird.
@@ -149,7 +150,7 @@ Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](.
 
 13. Wenn Sie ein Zertifikat haben, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem aus, indem Sie die Schaltfläche mit den Auslassungs Punkten (**...**) verwenden. Geben Sie dann Ihr Zertifikat Kennwort ein.
 
-     Oder
+     - oder -
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, der von Ihrem Computer aus zugänglich ist, aktivieren Sie die Option **gespeichertes Zertifikat signieren** , und wählen Sie das Zertifikat aus der Liste bereitgestellt aus.
 
@@ -177,7 +178,7 @@ Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](.
 
 25. Wenn Sie ein Zertifikat haben, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem aus, indem Sie die Schaltfläche mit den Auslassungs Punkten (**...**) verwenden. Geben Sie dann Ihr Zertifikat Kennwort ein.
 
-     Oder
+     - oder -
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, der von Ihrem Computer aus zugänglich ist, aktivieren Sie die Option **gespeichertes Zertifikat signieren** , und wählen Sie das Zertifikat aus der Liste bereitgestellt aus.
 
@@ -192,7 +193,7 @@ Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](.
 ## <a name="next-steps"></a>Nächste Schritte
  Wenn Sie eine neue Version der Anwendung bereitstellen müssen, erstellen Sie ein neues Verzeichnis, das nach der neuen Version benannt ist – z. b. 1.0.0.1 –, und kopieren Sie die neuen Anwendungs Dateien in das neue Verzeichnis. Als nächstes müssen Sie die vorherigen Schritte ausführen, um ein neues Anwendungs Manifest zu erstellen und zu signieren und das Bereitstellungs Manifest zu aktualisieren und zu signieren. Achten Sie darauf, die gleiche höhere Version sowohl im *Mage.exe* `-New` als auch in den `-Update` aufrufen anzugeben, da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nur höhere Versionen aktualisiert werden, wobei die ganz links größte Ganzzahl am wichtigsten ist. Wenn Sie *MageUI.exe*verwendet haben, können Sie das Bereitstellungs Manifest aktualisieren, indem Sie es öffnen, die Registerkarte **Anwendungs Verweis** auswählen, auf die Schaltfläche **Manifest auswählen** klicken und dann das aktualisierte Anwendungs Manifest auswählen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

@@ -1,6 +1,8 @@
 ---
-title: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“'
+title: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
+description: Schreiben Sie Code für den Ereignishandler der Schaltfläche „Bild anzeigen“ im Tutorial zum Erstellen eines Bildanzeigeprogramms.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579806"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038659"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 
@@ -66,7 +68,7 @@ Als Nächstes verwenden Sie IntelliSense, um weiteren Code einzugeben, mit dem d
 
     Weitere Informationen zur `ShowDialog()`-Methode finden Sie unter [ShowDialog-Methode](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
- 1. Wenn Sie für ein Steuerelement oder eine Komponente eine Methode verwenden (wird als *Aufrufen einer Methode* bezeichnet), müssen Sie Klammern hinzufügen. Geben Sie also in `ShowDialog` direkt nach dem „g“ eine öffnende und eine schließende Klammer ein: `()`. Das sollte nun folgendermaßen aussehen: „openFileDialog1.ShowDialog()“.
+ 1. Wenn Sie für ein Steuerelement oder eine Komponente eine Methode verwenden (wird als *Aufrufen einer Methode* bezeichnet), müssen Sie Klammern hinzufügen. Geben Sie daher eine öffnende und schließende runde Klammer direkt nach dem „g“ in `ShowDialog` ein: `()`. Nun sollte es wie „openFileDialog1.ShowDialog()“ angezeigt werden.
 
     > [!NOTE]
     > Methoden sind ein wichtiger Bestandteil von Apps, und in diesem Tutorial wurden mehrere Möglichkeiten zum Verwenden von Methoden veranschaulicht. Sie können die Methode einer Komponente aufrufen, um sie zu veranlassen, eine bestimmte Aufgabe auszuführen, so wie Sie beispielsweise die `ShowDialog()`-Methode der **OpenFileDialog**-Komponente aufgerufen haben. Sie können eigene Methoden erstellen, um die App zum Ausführen bestimmter Schritte zu veranlassen. Hierzu gehört zum Beispiel die jetzt von Ihnen erstellten Methode, die als `showButton_Click()`-Methode bezeichnet wird und ein Dialogfeld sowie ein Bild öffnet, wenn ein Benutzer auf eine Schaltfläche klickt.
@@ -105,7 +107,7 @@ Als Nächstes verwenden Sie IntelliSense, um weiteren Code einzugeben, mit dem d
 
 * Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

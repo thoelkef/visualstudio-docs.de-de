@@ -1,30 +1,30 @@
 ---
-title: Sicherheitswarnungen
+title: Sicherheitsregeln
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599970"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807923"
 ---
-# <a name="security-warnings"></a>Sicherheitswarnungen
+# <a name="security-rules"></a>Sicherheitsregeln
 
-Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese Warnungen tragen dazu bei, Sicherheitsmängel im Programm zu vermeiden. Wenn Sie eine dieser Warnungen deaktivieren, sollten Sie den Grund dafür im Code deutlich angeben und außerdem den für Ihr Entwicklungsprojekt zuständigen Sicherheitsbeauftragten informieren.
+Sicherheitsregeln unterstützen sicherere Bibliotheken und Anwendungen. Diese Regeln helfen dabei, Sicherheitslücken im Programm zu vermeiden. Wenn Sie diese Regeln deaktivieren, sollten Sie den Grund im Code eindeutig markieren und den designierten Sicherheitsbeauftragten für Ihr Entwicklungsprojekt informieren.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -79,7 +79,7 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA5358: Verwenden Sie keine unsicheren Verschlüsselungsmodi.](../code-quality/ca5358.md)|Verwenden Sie keine unsicheren Verschlüsselungsmodi.|
 |[CA5359: Zertifikatüberprüfung nicht deaktivieren](../code-quality/ca5359.md)|Ein Zertifikat kann bei der Authentifizierung der Identität des Servers helfen. Clients sollten das Serverzertifikat überprüfen, um sicherzustellen, dass Anforderungen an den vorgesehenen Server gesendet werden. Wenn servercertifikatevalidationcallback immer zurück `true` gegeben wird, übergibt jedes Zertifikat die Validierung.|
 |[CA5360: Keine gefährlichen Methoden bei der Deserialisierung aufrufen.](../code-quality/ca5360.md)|Unsichere Deserialisierung ist ein Sicherheitsrisiko, das auftritt, wenn nicht vertrauenswürdige Daten verwendet werden, um die Logik einer Anwendung zu missbrauchen, einen Denial-of-Service-Angriff (DOS) zu verursachen oder sogar beliebigen Code auszuführen, wenn Sie deserialisiert werden. Es ist oft möglich, dass böswillige Benutzer diese deserialisierungsfeatures missbrauchen, wenn die Anwendung nicht vertrauenswürdige Daten deserialisiert, die unter ihrer Kontrolle liegen. Rufen Sie insbesondere gefährliche Methoden im Prozess der Deserialisierung auf. Erfolgreiche unsichere deserialisierungsangriffe können einem Angreifer ermöglichen, Angriffe wie DOS-Angriffe, Authentifizierungs Umgehungen und Remote Codeausführung auszuführen.|
-|[CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.](../code-quality/ca5361.md)|Durch Festlegen `Switch.System.Net.DontEnableSchUseStrongCrypto` von auf `true` wird die Kryptografie für ausgehende Transport Layer Security Verbindungen (TLS) schwächer. Schwächere Kryptografie kann die Vertraulichkeit der Kommunikation zwischen Ihrer Anwendung und dem Server beeinträchtigen, sodass Angreifer die Möglichkeit erhalten, sensible Daten besser zu löschen.|
+|[CA5361: die SChannel-Verwendung der starken Kryptografie nicht deaktivieren](../code-quality/ca5361.md)|Durch Festlegen `Switch.System.Net.DontEnableSchUseStrongCrypto` von auf `true` wird die Kryptografie für ausgehende Transport Layer Security Verbindungen (TLS) schwächer. Schwächere Kryptografie kann die Vertraulichkeit der Kommunikation zwischen Ihrer Anwendung und dem Server beeinträchtigen, sodass Angreifer die Möglichkeit erhalten, sensible Daten besser zu löschen.|
 |[CA5362: Potenzieller Verweiszyklus in deserialisiertem Objektgraph](../code-quality/ca5362.md)|Wenn nicht vertrauenswürdige Daten deserialisiert werden, muss jeder Code, der das deserialisierte Objekt Diagramm verarbeitet, Verweis Zyklen verarbeiten, ohne in unendliche Schleifen zu wechseln. Dies umfasst sowohl Code, der Teil eines deserialisierungsrückrufs ist, als auch Code, der das Objekt Diagramm nach Abschluss der Deserialisierung verarbeitet. Andernfalls könnte ein Angreifer einen Denial-of-Service-Angriff mit bösartigen Daten durchführen, die einen Verweis-Cycle enthalten.|
 |[CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.](../code-quality/ca5363.md)|Die Anforderungs Validierung ist eine Funktion in ASP.net, die HTTP-Anforderungen untersucht und bestimmt, ob Sie potenziell gefährlichen Inhalt enthalten, der zu Injection-Angriffen führen kann, einschließlich Website übergreifender Skripts.|
 |[CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.](../code-quality/ca5364.md)|Transport Layer Security (TLS) sichert die Kommunikation zwischen Computern, in der Regel mit HTTPS (Hypertext Transfer Protocol Secure). Ältere Protokoll Versionen von TLS sind weniger sicher als TLS 1,2 und TLS 1,3 und haben wahrscheinlich neue Sicherheitsrisiken. Vermeiden Sie ältere Protokoll Versionen, um Risiken zu minimieren.|
