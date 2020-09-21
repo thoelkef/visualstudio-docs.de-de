@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189717"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808219"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Lösungen
 
@@ -50,7 +50,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 
   Nachdem das Zielframework von Visual Studio geändert wurde, müssen Sie jedoch möglicherweise einen Teil des Codes im Projekt ändern, wenn es bestimmte Funktionen verwendet. Weitere Informationen zum Ändern des Ziel Frameworks finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Weitere Informationen zu Änderungen, die Sie möglicherweise in Ihrem Projekt vornehmen müssen, finden Sie unter Migrieren von Office-Projektmappen [zum .NET Framework 4 oder](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)höher.
 
-  Wenn Visual Studio die Ziel .NET Framework für Ihr Projekt ändert und Sie ClickOnce verwenden, um die Projekt Mappe bereitzustellen, müssen Sie auch die entsprechende Version des .NET Framework **im Dialogfeld** erforderliche Komponenten auswählen. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office-](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)Projektmappen.
+  Wenn Visual Studio die Ziel .NET Framework für Ihr Projekt ändert und Sie ClickOnce verwenden, um die Projekt Mappe bereitzustellen, müssen Sie auch die entsprechende Version des .NET Framework **im Dialogfeld** erforderliche Komponenten auswählen. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office-](/previous-versions/bb608608(v=vs.110))Projektmappen.
 
 > [!NOTE]
 > Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
@@ -58,7 +58,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Verstehen, wann die Office-PIAs auf Endbenutzer Computern erforderlich sind
  Standardmäßig müssen primäre Interop-Assemblys (PIAs) von Office nicht auf Endbenutzer Computern installiert werden, wenn die Eigenschaft **Interoptypen einbetten** jedes Office-Pia-Verweises im Projekt auf **true**festgelegt ist. Dies ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit werden die eingebetteten Typinformationen statt der PIAs verwendet, um das COM-basierte Objektmodell der Office-Anwendung aufzurufen. Weitere Informationen zur Einbettung von Typen aus PIAs in die Projekt Mappe finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
- Wenn die Eigenschaft **Interop-Typen einbetten** jedes Office-Pia-Verweises im Projekt auf **false**festgelegt ist, muss Office PIAs im globalen Assemblycache auf jedem Endbenutzer Computer installiert und registriert werden, auf dem die Lösung ausgeführt wird. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [Voraussetzungen für Office-Lösungen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
+ Wenn die Eigenschaft **Interop-Typen einbetten** jedes Office-Pia-Verweises im Projekt auf **false**festgelegt ist, muss Office PIAs im globalen Assemblycache auf jedem Endbenutzer Computer installiert und registriert werden, auf dem die Lösung ausgeführt wird. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [Voraussetzungen für Office-Lösungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110)).
 
 ### <a name="understand-the-client-profile"></a>Grundlegendes zum Client Profil
  .NET Framework Client Profile ist eine Teilmenge der Vollversion von .NET Framework. Sie können .NET Framework Client Profile verwenden, wenn nur die Clientfunktionen in .NET Framework verwendet werden müssen und die schnellstmögliche Bereitstellung für die Office-Lösung angegeben werden soll. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
@@ -91,7 +91,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird
  Eine Assembly kann auf andere Assemblys verweisen, die in den Verweisen des Projekts aufgelistet sind. Eine Assembly in einem Projekt auf Dokumentebene kann jedoch auf keine andere Assembly in einem Projekt auf Dokumentebene verweisen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)

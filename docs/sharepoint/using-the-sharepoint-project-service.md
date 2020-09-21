@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3aeee895810eed8e434fda93328e4e179c9d39
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007938"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740109"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Verwenden des SharePoint-Projekt Dienstanbieter
   Das SharePoint-Projektsystem beinhaltet einen Projektdienst, den Sie verwenden können, um mit dem Projektsystem zusammenhängende Aufgaben auszuführen. Der Projektdienst ist ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>-Objekt.
@@ -45,6 +45,6 @@ ms.locfileid: "63007938"
 ## <a name="see-also"></a>Weitere Informationen
 - [Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 - [Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](https://msdn.microsoft.com/library/bb166401.aspx)
+- [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](/previous-versions/bb166401(v=vs.140))

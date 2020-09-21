@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abb58d30e33ab5cfe713175b40cd32f593921ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80543950"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811018"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Übersicht über die Entwicklung von Office-Lösungen (VSTO)
   Wenn Sie Microsoft Office als Front-End für Projektmappen verwenden, können Sie die vertrauten Microsoft Office-Benutzeroberflächen und -Tools verwenden, z. B. die Textverarbeitungsfunktionen in Word, die Datenanalysefunktionen von Excel und die E-Mail-Verwaltungsfunktionen von Outlook. Sie können Projektmappen in Visual Studio entwickeln, um Office-Anwendungen anzupassen und die speziellen Funktionen hinzuzufügen, die Sie für Ihre Geschäftsprozesse benötigen. Beispielsweise können Sie Word in einen Vertragsgenerator verwandeln, mit dem Verträge aus bereits vorhandenen Teilen zusammengestellt werden können. Die Teile können dabei bearbeitbar oder nicht bearbeitbar sein. Mit Excel können Sie ein automatisiertes Budgetarbeitsblatt erstellen, das für unterschiedliche Projekte angepasst werden kann. Ihre Benutzer können Bürolösungen auch offline verwenden. Dies ist bei komplexen Lösungen praktikabler als die Verwendung einer webbasierten Architektur.
@@ -80,7 +80,7 @@ ms.locfileid: "80543950"
  Verwenden Sie ClickOnce oder Windows Installer zum Bereitstellen von Projektmappen, die Sie mit den Office-Entwicklungstools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen. Mit der ClickOnce-Bereitstellung können Sie sich selbst aktualisierende Projektmappen erstellen, die mit minimaler Benutzerinteraktion installiert und ausgeführt werden können. Windows Installer Dateien (*. msi*) können problemlos auf Endbenutzer Computer verteilt oder mithilfe von Systems Management Server (SMS) verteilt werden. Weitere Informationen zum Bereitstellen von VSTO-Office-Lösungen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
 ### <a name="install-prerequisites"></a>Installieren der erforderlichen Komponenten
- Bevor Endbenutzer eine Projektmappe ausführen können, die Sie mit den Office-Entwicklungstools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen, müssen auf deren Computern bestimmte erforderliche Komponenten installiert werden. Wenn Sie Ihre Projektmappe per ClickOnce oder per Erstellung einer Windows Installer-Datei bereitstellen, können diese erforderlichen Komponenten mit Ihrer Projektmappe installiert werden. Weitere Informationen finden Sie unter [Voraussetzungen für die Bereitstellung von Office](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) -Lösungen und Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office-Lösungen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Bevor Endbenutzer eine Projektmappe ausführen können, die Sie mit den Office-Entwicklungstools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen, müssen auf deren Computern bestimmte erforderliche Komponenten installiert werden. Wenn Sie Ihre Projektmappe per ClickOnce oder per Erstellung einer Windows Installer-Datei bereitstellen, können diese erforderlichen Komponenten mit Ihrer Projektmappe installiert werden. Weitere Informationen finden Sie unter [Voraussetzungen für die Bereitstellung von Office](/previous-versions/bb608617(v=vs.110)) -Lösungen und Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office-Lösungen](/previous-versions/bb608608(v=vs.110)).
 
 ### <a name="security"></a>Sicherheit
  Die Sicherheit für VSTO-Office-Projektmappen wird mit einer Reihe von Prüfungen durchgesetzt, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] durchgeführt werden, wenn die Projektmappe installiert und geladen wird. Bei diesen Prüfungen wird unter anderem überprüft, ob der Speicherort des Bereitstellungsmanifests vertrauenswürdig ist oder ob das Zertifikat, mit dem das Bereitstellungsmanifest signiert wurde, vertrauenswürdig ist. Weitere Informationen finden Sie unter [sichere Office-Lösungen](../vsto/securing-office-solutions.md).

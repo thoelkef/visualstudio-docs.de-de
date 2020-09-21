@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986158"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809361"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
   Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .
@@ -116,6 +116,6 @@ ms.locfileid: "72986158"
 
 - [Abschnitt zur Microsoft Office Entwicklung der MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12)) Der Bereich der MSDN Library, in dem Sie Artikel und Referenz Dokumentation zum Entwickeln von Lösungen für mehrere Versionen von Office finden (nicht spezifisch für die Office-Entwicklung mit Visual Studio).
 
-- [Anwendungsentwicklung in Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Enthält Links zu Themen, in denen erläutert wird, wie Sie Visual Studio zum Entwerfen, entwickeln, Debuggen und Bereitstellen von Webanwendungen, XML-Webdiensten und herkömmlichen Client Anwendungen verwenden können.
+- [Anwendungsentwicklung in Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Enthält Links zu Themen, in denen erläutert wird, wie Sie Visual Studio zum Entwerfen, entwickeln, Debuggen und Bereitstellen von Webanwendungen, XML-Webdiensten und herkömmlichen Client Anwendungen verwenden können.
 
 - [.NET Framework Programmierung in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Erläutert die Anwendungsentwicklung mit dem .NET Framework in Visual Basic und Visual c#.

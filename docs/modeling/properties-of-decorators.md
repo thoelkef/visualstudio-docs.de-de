@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14965f829530ba5a2f6a7797291e9d1cfab0ae2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566136"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810053"
 ---
 # <a name="properties-of-decorators"></a>Eigenschaften von Decorators
 Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf Formen oder Connectors im Diagramm angezeigt werden können. Die folgenden Tabellen zeigen die Eigenschaften für die drei Arten von Decorator-Objekten. Einige Eigenschaften werden nur in Form-Decorator oder nur in Connector-Decorator-Zeichen angezeigt.
@@ -26,8 +26,8 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 |Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DisplayName|Der Name des Decorators, der im generierten Designer angezeigt wird.|Erweitern des aufklappen-Decorators|
-|Name|Der Name des Decorators.|ExpandCollapseDecorator|
-|Notizen|Informelle Notizen, die diesem Decorator zugeordnet sind.|\<none>|
+|name|Der Name des Decorators.|ExpandCollapseDecorator|
+|Hinweise|Informelle Notizen, die diesem Decorator zugeordnet sind.|\<none>|
 |Horizontal Offset|Der horizontale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |Offsetfromline|Der Offset des Decorators von der Linie relativ zu seiner Standardposition in Zoll. (Nur für Connectors.)|0|
@@ -40,8 +40,8 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 |-|-|-|
 |DefaultIcon|Der Pfad der Symbol-oder Bilddatei, die angezeigt werden soll.|\<none>|
 |DisplayName|Der Name des Decorator-Designers, der im generierten Designer angezeigt werden soll.|Symboldecorator|
-|Name|Der Name des Decorators.|IconDecorator|
-|Notizen|Informelle Notizen, die dem Decorator zugeordnet sind.|\<none>|
+|name|Der Name des Decorators.|IconDecorator|
+|Hinweise|Informelle Notizen, die dem Decorator zugeordnet sind.|\<none>|
 |Horizontal Offset|Der horizontale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |Offsetfromline|Der Offset des Decorators von der Linie relativ zu seiner Standardposition in Zoll. (Nur für Connectors.)|0|
@@ -56,8 +56,8 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 |DisplayName|Der Name des Decorator-Designers, der im generierten Designer angezeigt werden soll.|Bezeichnung|
 |FontSize|Der Schrift Grad für den Text, der im Decorator angezeigt wird.|8|
 |FontStyle|Der Schriftart Stil für den Text, der im Decorator angezeigt wird.|Regulär|
-|Name|Der Name des Decorators.|Bezeichnung|
-|Notizen|Informelle Notizen, die dem Decorator zugeordnet sind.|\<none>|
+|name|Der Name des Decorators.|Bezeichnung|
+|Hinweise|Informelle Notizen, die dem Decorator zugeordnet sind.|\<none>|
 |Horizontal Offset|Der horizontale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-in Zoll. (Nur bei Formen)|0|
 |Offsetfromline|Der Offset des Decorators von der Linie relativ zu seiner Standardposition in Zoll. (Nur für Connectors.)|0|
@@ -66,4 +66,4 @@ Decoratoren sind Symbole, Text oder Erweiterungs-/reduzierungschevd, die auf For
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

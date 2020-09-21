@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416561"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809348"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (*. msi*) in Erwägung gezogen, wenn die Projekt Mappe von mehreren Benutzern auf dem gleichen Computer ausgeführt wird.
@@ -358,7 +358,7 @@ ms.locfileid: "79416561"
 |Fehlercode|Definition|
 |----------------|----------------|
 |0|Die Projektmappe wurde erfolgreich installiert oder deinstalliert, oder die VSTOInstaller-Hilfe wurde angezeigt.|
-|-100|Mindestens eine Befehlszeilenoption ist ungültig oder wurde mehrmals festgelegt. Weitere Informationen erhalten Sie, wenn Sie "VSTOInstaller/?" eingeben. oder siehe [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)-Projekt Mappe.|
+|-100|Mindestens eine Befehlszeilenoption ist ungültig oder wurde mehrmals festgelegt. Weitere Informationen erhalten Sie, wenn Sie "VSTOInstaller/?" eingeben. oder siehe [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office](/previous-versions/bb772078(v=vs.110))-Projekt Mappe.|
 |-101|Mindestens eine Befehlszeilenoption ist ungültig. Weitere Informationen erhalten Sie, indem Sie "vstoinstaller/?" eingeben.|
 |-200|Der URI des Bereitstellungs Manifests ist ungültig. Weitere Informationen erhalten Sie, indem Sie "vstoinstaller/?" eingeben.|
 |-201|Die Projekt Mappe konnte nicht installiert werden, da das Bereitstellungs Manifest ungültig ist. Siehe [Bereitstellungs Manifeste für Office](../vsto/deployment-manifests-for-office-solutions.md)-Projektmappen.|
@@ -460,7 +460,7 @@ ms.locfileid: "79416561"
 
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Veröffentlichen von Office-Lösungen](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Gewusst wie: Installieren einer ClickOnce-Office-Projekt Mappe](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office-Projekt Mappe](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe mit ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Gewusst wie: Installieren einer ClickOnce-Office-Projekt Mappe](/previous-versions/bb608592(v=vs.110))
+- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office-Projekt Mappe](/previous-versions/bb772078(v=vs.110))

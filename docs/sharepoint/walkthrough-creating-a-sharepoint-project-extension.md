@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015076"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739927"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Erweiterung für SharePoint-Projekte erstellen. Sie können eine Projekt Erweiterung zum reagieren auf Ereignisse auf Projektebene verwenden, z. b. Wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn sich ein Eigenschafts Wert ändert. Im Gegensatz zu Projekt Element Erweiterungen können Projekt Erweiterungen nicht einem bestimmten SharePoint-Projekttyp zugeordnet werden. Wenn Sie eine Projekt Erweiterung erstellen, wird die Erweiterung geladen, wenn eine beliebige Art von SharePoint-Projekt in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -114,7 +114,7 @@ ms.locfileid: "86015076"
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
-## <a name="build-the-solution"></a>Erstellen der Projektmappe
+## <a name="build-the-solution"></a>Erstellen Sie die Lösung.
  Erstellen Sie als nächstes die Projekt Mappe, um sicherzustellen, dass Sie fehlerfrei kompiliert wird.
 
 #### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
@@ -128,7 +128,7 @@ ms.locfileid: "86015076"
 
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Datei im Manifest-Designer. Die Informationen, die auf der Registerkarte **Metadaten** angezeigt werden, werden auch in den **Erweiterungen und Updates**angezeigt. Alle VSIX-Pakete benötigen die Dateierweiterung. vsixmanifest. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Datei im Manifest-Designer. Die Informationen, die auf der Registerkarte **Metadaten** angezeigt werden, werden auch in den **Erweiterungen und Updates**angezeigt. Alle VSIX-Pakete benötigen die Dateierweiterung. vsixmanifest. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Geben Sie im Feld **Produkt Name** die **Eigenschaft benutzerdefiniertes Projekt**ein.
 

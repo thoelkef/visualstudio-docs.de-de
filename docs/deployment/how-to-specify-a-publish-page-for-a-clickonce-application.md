@@ -1,5 +1,6 @@
 ---
-title: 'Vorgehensweise: Angeben einer Veröffentlichungs Seite für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: Angeben einer Veröffentlichungs Seite (ClickOnce-APP)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381963"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808775"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird eine Standard Webseite (publish.htm) generiert und zusammen mit der Anwendung veröffentlicht. Diese Seite enthält den Namen der Anwendung, einen Link zum Installieren der Anwendung und/oder alle Voraussetzungen sowie einen Link zu einem Hilfethema, das beschreibt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Mit der Eigenschaft **Veröffentlichungs Seite** für Ihr Projekt können Sie einen Namen für die Webseite für Ihre Anwendung angeben [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -57,7 +58,7 @@ Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 5. Deaktivieren Sie im Dialogfeld **Veröffentlichungs Optionen** das Kontrollkästchen **Bereitstellungs Webseite nach Veröffentlichung öffnen** .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Gewusst wie: Anpassen der ClickOnce-Standard Webseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

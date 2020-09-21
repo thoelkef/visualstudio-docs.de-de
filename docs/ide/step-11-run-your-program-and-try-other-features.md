@@ -1,6 +1,8 @@
 ---
-title: 'Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features'
+title: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features
+description: Führen Sie Ihre Bildanzeigeprogramm-App aus, und probieren Sie weitere Funktionen im Tutorial zum Erstellen eines Bildanzeigeprogramms aus.
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579901"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036937"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features
 
@@ -54,7 +56,7 @@ Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
 > [!div class="nextstepaction"]
 > [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416535"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808788"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Aktualisieren und Migrieren von Office-Lösungen
   Wenn Sie über ein Microsoft Office-Projekt verfügen, das in einer früheren Version von Visual Studio erstellt wurde, müssen Sie das Projekt aktualisieren, um es in der aktuellen Version von Visual Studio verwenden zu können. Um ein Microsoft Office-Projekt zu aktualisieren, öffnen Sie es in einer Version von Visual Studio, die die Microsoft Office-Entwicklertools umfasst. Weitere Informationen zu den Versionen von Visual Studio, die die Microsoft Office-Entwicklertools enthalten, finden [Sie unter Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
@@ -84,6 +84,6 @@ ms.locfileid: "79416535"
  Wenn Sie das VSTO-Add-In mit ClickOnce bereitstellen möchten, können Sie das Setup- oder das InstallShield Limited- Edition-Projekt vollständig löschen. Weitere Informationen zum Bereitstellen von VSTO-Add-Ins mithilfe von ClickOnce finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Aktualisieren von Office-Projektmappen](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Gewusst wie: Aktualisieren von Office-Projektmappen](/previous-versions/4bez6837(v=vs.140))
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Projekt Upgrade, Dialogfeld "Optionen"](../vsto/project-upgrade-options-dialog-box.md)

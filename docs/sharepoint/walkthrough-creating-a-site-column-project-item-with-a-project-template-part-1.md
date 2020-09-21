@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016501"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739914"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -236,7 +236,7 @@ ms.locfileid: "86016501"
 
 - *ProjectTemplate. csproj* oder *ProjectTemplate. vbproj*
 
-  In den folgenden Verfahren fügen Sie einigen Dateien ersetzbare Parameter hinzu. Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Wenn ein Benutzer mit dieser Projektvorlage ein Projekt erstellt, werden diese Parameter im neuen Projekt von Visual Studio automatisch durch bestimmte Werte ersetzt. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
+  In den folgenden Verfahren fügen Sie einigen Dateien ersetzbare Parameter hinzu. Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Wenn ein Benutzer mit dieser Projektvorlage ein Projekt erstellt, werden diese Parameter im neuen Projekt von Visual Studio automatisch durch bestimmte Werte ersetzt. Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>So bearbeiten Sie die Datei AssemblyInfo.cs oder die Datei AssemblyInfo.vb
 
@@ -639,7 +639,7 @@ ms.locfileid: "86016501"
 
 1. Öffnen Sie in **Projektmappen-Explorer**im Projekt **sitecolumnprojectitem** die Datei "Source. Extension. vsixmanifest" im Manifest-Editor.
 
-     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Geben Sie im Feld **Produkt Name den Namen** **Site Column**ein.
 
