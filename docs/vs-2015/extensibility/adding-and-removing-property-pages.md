@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen und Entfernen von Eigenschaftenseiten | Microsoft-Dokumentation
+title: Hinzufügen und Entfernen von Eigenschaften Seiten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,24 +13,24 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440144"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841086"
 ---
 # <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaften, Einstellungen und Ressourcen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sie wird als ein einzelnes Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) und enthält eine Reihe von Bereichen auf der rechten Seite, die über die Registerkarten auf der linken Seite zugegriffen wird. Die Bereiche (häufig als Eigenschaftenseiten bezeichnet) im Projekt-Designer variieren je nach Projekttyp und Sprache. Projekt-Designer kann zugegriffen werden, mit der **Eigenschaften** Befehl die **Projekt** Menü.  
+Der Projekt-Designer stellt einen zentralisierten Speicherort zum Verwalten von Projekteigenschaften,-Einstellungen und-Ressourcen in bereit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Es wird als ein einzelnes Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) angezeigt und enthält eine Reihe von Bereichen auf der rechten Seite, auf die über die Registerkarten auf der linken Seite zugegriffen wird. Die Bereiche (häufig als Eigenschaften Seiten bezeichnet) im Projekt-Designer variieren je nach Projekttyp und-Sprache. Der Zugriff auf den Projekt-Designer ist über den Befehl " **Eigenschaften** " im Menü " **Projekt** " möglich.  
   
- Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-Designer angezeigt. Ebenso möglicherweise einige Projektuntertypen integrierte Eigenschaftenseiten entfernt werden müssen. Dazu entweder muss Ihre Projektuntertyp implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle, und überschreiben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode. Indem Sie diese Methode überschreiben und `propId` mit einem der Werte der Parameter der <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> -Enumeration können Sie filtern, hinzufügen oder entfernen Sie die Projekteigenschaften. Beispielsweise müssen Sie eine Seite mit den konfigurationsabhängigen Eigenschaftenseiten hinzugefügt. Zu diesem Zweck müssen Sie zum Filtern von konfigurationsabhängigen Eigenschaftenseiten, und fügen eine neue Seite klicken Sie dann auf die vorhandene Liste.  
+ In einem Projekt Untertyp müssen häufig zusätzliche Eigenschaften Seiten im Projekt-Designer angezeigt werden. Ebenso können einige Projekt Untertypen erfordern, dass integrierte Eigenschaften Seiten entfernt werden. Zu diesem Zweck muss der Projekt Untertyp die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> -Schnittstelle implementieren und die-Methode überschreiben <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Wenn Sie diese Methode überschreiben und `propId` einen Parameter verwenden, der einen der Werte der- <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> Enumeration enthält, können Sie Projekteigenschaften filtern, hinzufügen oder entfernen. Beispielsweise müssen Sie möglicherweise eine Seite zu den Konfigurations abhängigen Eigenschaften Seiten hinzufügen. Zu diesem Zweck müssen Sie Konfigurations abhängige Eigenschaften Seiten Filtern und dann der vorhandenen Liste eine neue Seite hinzufügen.  
   
-## <a name="adding-and-removing-property-pages-in-project-designer"></a>Hinzufügen und Entfernen von Eigenschaftenseiten im Projekt-Designer  
+## <a name="adding-and-removing-property-pages-in-project-designer"></a>Hinzufügen und Entfernen von Eigenschaften Seiten im Projekt-Designer  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>So entfernen Sie eine Eigenschaftenseite im Projekt-Designer  
+#### <a name="to-remove-a-property-page-in-project-designer"></a>So entfernen Sie eine Eigenschaften Seite im Projekt-Designer  
   
-1. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
+1. Überschreiben `GetProperty(uint itemId, int propId, out object property)` Sie die-Methode, um Eigenschaften Seiten zu filtern und eine `clsids` Liste abzurufen.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2. Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
+2. Entfernen Sie die Seite **Buildereignisse** aus der `clsids` Liste abgerufen.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -109,9 +109,9 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>Hinzufügen eine Eigenschaftenseite im Projekt-Designer  
+#### <a name="to-add-a-property-page-in-project-designer"></a>So fügen Sie eine Eigenschaften Seite im Projekt-Designer hinzu  
   
-1. Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
+1. Erstellen Sie eine Eigenschaften Seite, die Sie hinzufügen möchten.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2. Registrieren Sie Ihre neue Eigenschaftenseite an.  
+2. Registrieren Sie die neue Eigenschaften Seite.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
+3. Überschreiben `GetProperty(uint itemId, int propId, out object property)` Sie die-Methode zum Filtern von Eigenschaften Seiten, zum Abrufen einer `clsids` Liste und zum Hinzufügen einer neuen Eigenschaften Seite.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -205,7 +205,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     ```  
   
 > [!NOTE]
-> Alle Codebeispiele in diesem Thema werden die Teile eines größeren Beispiels, [VSSDK-Beispiele](../misc/vssdk-samples.md).  
+> Alle in diesem Thema enthaltenen Codebeispiele sind Teile eines größeren Beispiels, [VSSDK](../misc/vssdk-samples.md)-Beispiele.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Projektuntertypen](../extensibility/internals/project-subtypes.md)

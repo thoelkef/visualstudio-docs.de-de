@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsEncOutdated | Microsoft-Dokumentation
+title: 'IDebugObject2:: isencveraltet | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa4acd0476a0df75644738840da562db97a34bf6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431677"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840962"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode bestimmt, ob der Bearbeiten und Fortfahren-Status dieses Objekts oder des übergeordneten Containers veraltet ist. Diese Methode und gibt immer eine benutzerdefinierte ausdrucksauswertung nicht implementiert `E_NOTIMPL`.  
+Diese Methode bestimmt, ob der Status "Bearbeiten und Fortfahren" dieses Objekts oder des übergeordneten Containers veraltet ist. Eine benutzerdefinierte Ausdrucks Auswertung implementiert diese Methode nicht und gibt immer zurück `E_NOTIMPL` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int IsEncOutdated(
   
 #### <a name="parameters"></a>Parameter  
  `pfEncOutdated`  
- [out] Ungleich Null (`TRUE`), wenn der Bearbeiten und Fortfahren-Status nicht mehr aktuell ist, NULL (`FALSE`) ist dies nicht.  
+ vorgenommen Ungleich NULL ( `TRUE` ), wenn der Zustand "Bearbeiten und Fortfahren" veraltet ist, andernfalls "Null" ( `FALSE` ).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Eine benutzerdefinierte ausdrucksauswertung sollte immer zurückgeben `E_NOTIMPL`.  
+> Eine benutzerdefinierte Ausdrucks Auswertung sollte immer zurückgeben `E_NOTIMPL` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

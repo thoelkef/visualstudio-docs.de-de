@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Microsoft-Dokumentation
+title: 'IDebugModule3:: getsymbolinfo | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426353"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841294"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Liste der Pfade, die für Symbole als auch die Ergebnisse der Suche von jedem Pfad durchsucht werden.  
+Ruft eine Liste der Pfade, die nach Symbolen durchsucht werden, sowie die Ergebnisse der Suche der einzelnen Pfade ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,29 +44,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>Parameter  
  `dwFields`  
- [in] Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) Enumeration angeben welche Felder der `pInfo` in ausgefüllt werden.  
+ in Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) -Enumeration, die angibt, welche Felder von `pInfo` ausgefüllt werden sollen.  
   
  `pInfo`  
- [out] Ein [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) -Struktur, deren Mitglieder sind, sich mit den angegebenen Informationen gefüllt werden soll. Wenn dies ein null-Wert ist, gibt diese Methode `E_INVALIDARG`.  
+ vorgenommen Eine [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) -Struktur, deren Member mit den angegebenen Informationen aufgefüllt werden sollen. Wenn dies ein NULL-Wert ist, gibt diese Methode zurück `E_INVALIDARG` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, gibt es `S_OK`ist, andernfalls einen Fehlercode zurückgegeben.  
+ Wenn die Methode erfolgreich ist, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Die zurückgegebene Zeichenfolge (in der `MODULE_SYMBOL_SEARCH_INFO` Struktur) kann leer sein. auch wenn `S_OK` zurückgegeben wird. In diesem Fall gab es keine Suchinformationen zurückgegeben.  
+> Die zurückgegebene Zeichenfolge (in der- `MODULE_SYMBOL_SEARCH_INFO` Struktur) kann leer sein, auch wenn `S_OK` zurückgegeben wird. In diesem Fall gab es keine Suchinformationen, die zurückgegeben werden konnten.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn die `bstrVerboseSearchInfo` Feld der `MODULE_SYMBOL_SEARCH_INFO` Struktur ist nicht leer, und es enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad, gefolgt von Auslassungspunkte ("…"), gefolgt von dem Ergebnis formatiert. Wenn mehr als ein Paar der Path-Ergebnis vorhanden ist, wird jedes Paar von ein Paar aus "\r\n" (Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht folgendermaßen aus:  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn das `bstrVerboseSearchInfo` -Feld der `MODULE_SYMBOL_SEARCH_INFO` -Struktur nicht leer ist, enthält es eine Liste der durchsuchten Pfade und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad, gefolgt von Ellipsen ("..."), gefolgt vom Ergebnis formatiert. Wenn mehr als ein Pfad Ergebnis Paar vorhanden ist, wird jedes Paar durch das Paar "\r\n" (Wagen Rücklauf/Zeilenvorschub) getrennt. Das Muster sieht wie folgt aus:  
   
- \<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis >  
+ \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>  
   
- Beachten Sie, dass der letzte Eintrag nicht mit eine Sequenz \r\n verfügt.  
+ Beachten Sie, dass der letzte Eintrag keine \r\n-Sequenz hat.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel gibt diese Methode drei Pfade mit drei unterschiedliche Ergebnisse zurück. Jede Zeile wird mit einem Paar aus Wagenrücklauf/Zeilenvorschub beendet. Die Beispielausgabe gibt nur die Ergebnisse der Suche als einzelne Zeichenfolge.  
+ In diesem Beispiel gibt diese Methode drei Pfade mit drei unterschiedlichen Suchergebnissen zurück. Jede Zeile wird mit einem Wagen Rücklauf/Zeilenvorschub Paar beendet. Die Beispielausgabe druckt nur die Suchergebnisse als eine einzelne Zeichenfolge.  
   
 > [!NOTE]
-> Einem statusergebnis ist alles, was unmittelbar nach dem "..." bis zum Ende der Zeile.  
+> Ein Status Ergebnis ist alles, das unmittelbar nach dem "..." bis zum Ende der Zeile.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -85,9 +85,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 ```  
   
  **c:\symbols\user32.pdb... Die Datei wurde nicht gefunden.**  
-**c:\winnt\symbols\user32.pdb... Version stimmt nicht überein.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbole geladen.**   
-## <a name="see-also"></a>Siehe auch  
+**c:\winnt\symbols\user32.pdb... Die Version stimmt nicht mit ab.**  
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Symbole geladen.**   
+## <a name="see-also"></a>Weitere Informationen  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439334"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840832"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
  [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Aufrufstrukturansicht - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
  [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>Siehe auch  
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)   
- [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Leistungs Berichts Ansichten](../profiling/performance-report-views.md)   
+ [Grundlegendes zu Instrumentations Datenwerten](../profiling/understanding-instrumentation-data-values.md)   
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)

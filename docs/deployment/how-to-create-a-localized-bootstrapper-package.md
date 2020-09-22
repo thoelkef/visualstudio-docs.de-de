@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382561"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852484"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrappakets
 Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Boots Trapper-Pakets erstellen, indem Sie für jedes Gebiets Schema zwei weitere Dateien erstellen: eine Datei mit Software-Lizenzbedingungen (z *. b. "EULA. RTF*") und ein Paket Manifest (*package.xml*).

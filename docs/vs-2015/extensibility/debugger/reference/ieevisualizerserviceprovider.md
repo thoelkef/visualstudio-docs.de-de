@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider | Microsoft-Dokumentation
+title: Ieevisualizerserviceprovider | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9ba7c7216c590f773f1054a1f06cd3412ff6b20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432142"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840964"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Diese Schnittstelle bietet Zugriff auf eine Methode, die einen schnellansichtsdienst erstellen können, die verwendet wird, um Typ Schnellansicht Aufgaben für die IDE zu behandeln.  
+ Diese Schnittstelle ermöglicht den Zugriff auf eine Methode, mit der ein schnell Ansichts Dienst erstellt werden kann, der zum Verarbeiten von Aufgaben für die typschnell Ansicht der IDE verwendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,33 +34,33 @@ IEEVisualizerServiceProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Visual Studio implementiert diese Schnittstelle, um ein Dienstobjekt der Schnellansicht zu erstellen, der wiederum verwendet wird, geben Sie die Klassen-IDs (`CLSID`s) des Typ-Schnellansichten der Visual Studio-IDE.  
+ Diese Schnittstelle wird von Visual Studio implementiert, um ein Dienst Objekt für die Schnellansicht zu erstellen, das wiederum zum Bereitstellen von Klassen-IDs `CLSID` vom Typ "schnell Ansichten" an die Visual Studio-IDE verwendet wird.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ruft die ausdrucksauswertung (EE) [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) dieser Schnittstelle abgerufen.  
+ Die Ausdrucks Auswertung (EE) ruft [geteeservice](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) auf, um diese Schnittstelle zu erhalten.  
   
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Erstellt die schnellansichtsdienst|  
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Erstellt den schnell Ansichts Dienst.|  
   
-## <a name="remarks"></a>Hinweise  
- Die `IEEVisualizerServiceProvider` Schnittstelle wird abrufen, während der Implementierung der [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Der schnellansichtsdienst, erstellt diese Schnittstelle, wird verwendet, zum Bereitstellen von Funktionen zu einer [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle, die die EE für die Implementierung verantwortlich ist. Die EE ist auch verantwortlich für die Implementierung einer [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) Schnittstelle, die Typ-Schnellansichten anzeigen und ändern den Wert einer Eigenschaft ermöglicht.  
+## <a name="remarks"></a>Bemerkungen  
+ Die- `IEEVisualizerServiceProvider` Schnittstelle wird während der Implementierung von [evaluatesync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)abgerufen. Der schnell Ansichts Dienst, der von dieser Schnittstelle erstellt wird, wird verwendet, um Funktionen für eine [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle bereitzustellen, die für die Implementierung verantwortlich ist. Der EE ist auch dafür verantwortlich, eine [ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) -Schnittstelle zu implementieren, die es typvisualisierungen ermöglicht, den Wert einer Eigenschaft anzuzeigen und zu ändern.  
   
- Finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) Einzelheiten, wie diese Schnittstellen zu interagieren.  
+ Ausführliche Informationen dazu, wie diese Schnittstellen interagieren, finden Sie unter [visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: ee.h  
+ Header: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausdrucks Bewertungs Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [Evaluatesync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
+ [Ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
+ [Geteeservice](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [Visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md)
