@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a1601b855cfc895aa01c6b72cbbe36b59980bd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432898"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841111"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.  
@@ -63,11 +63,11 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
 7. Starten Sie den Profiler. Typ:  
 
-    **VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/Start](../profiling/start.md) **: Sample**  [/Output](../profiling/output.md) **:** `OutputFile` [ `Options` ]  
 
    - Mit der Option **/start:sample** wird der Profiler initialisiert.  
 
-   - Die Option **/output:**`OutputFile` ist für **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.  
+   - Die Option **/output:** `OutputFile` ist für **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.  
 
      Sie können mindestens eine der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
 
@@ -76,21 +76,21 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
    |                                 Option                                  |                                                                                                                                                   Beschreibung                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                      Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des Prozesses ist. Diese Option ist erforderlich, wenn der Prozess als ein Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt.                       |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |                      Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des Prozesses ist. Diese Option ist erforderlich, wenn der Prozess als ein Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt.                       |
    |              [/crosssession](../profiling/crosssession.md)              | Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. Diese Option ist erforderlich, wenn die ASP.NET-Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte „Prozesse“ in der Spalte „Sitzungs-ID“ des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                                                    Gibt den optionalen Domänen- und Benutzernamen des Anmeldekontos an, unter dem der Dienst ausgeführt wird. Das Anmeldekonto ist in der Spalte "Anmelden als" des Diensts im Windows Dienststeuerungs-Manager aufgeführt.                                                     |
-   |          [/crosssession|cs](../profiling/crosssession.md)          |                                                                                                                             Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen.                                                                                                                              |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |                                                    Gibt den optionalen Domänen- und Benutzernamen des Anmeldekontos an, unter dem der Dienst ausgeführt wird. Das Anmeldekonto ist in der Spalte "Anmelden als" des Diensts im Windows Dienststeuerungs-Manager aufgeführt.                                                     |
+   |          [/CrossSession&#124;CS](../profiling/crosssession.md)          |                                                                                                                             Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen.                                                                                                                              |
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen.                                                                                                                     |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.                                                                                     |
 
 8. Fügen Sie den Profiler an den Dienst an. Typ:  
 
-    **VSPerfCmd** [/attach](../profiling/attach.md) **:**{`PID`|`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+    **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**:** `Version` ]    
 
    - Geben Sie entweder die Prozess-ID oder den Prozessnamen des Diensts an. Die Prozess-IDs und die Namen aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
 
-   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.  
+   - **targetclr:** `Version` Gibt die Version des Common Language Runtime (CLR) für die Profilerstellung an, wenn mehr als eine Laufzeitversion in eine Anwendung geladen wird. (Optional)  
 
 ## <a name="controlling-data-collection"></a>Steuern der Datenauflistung  
  Wenn der Dienst ausgeführt wird, können Sie die **VSPerfCmd.exe**-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
@@ -101,12 +101,12 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
     |Option|Beschreibung|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID oder des Prozessnamens angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess, oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist, beendet.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|  
+    |**/Attach:**{ `PID`&#124;`ProcName` } [/Detach](../profiling/detach.md)[: { `PID`&#124;`ProcName` }]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID oder des Prozessnamens angegeben ist. **/Detach** beendet die Datensammlung für den angegebenen Prozess oder für alle Prozesse, wenn kein bestimmter Prozess angegeben wird.|  
 
 ## <a name="ending-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
- Um eine Profilerstellungssitzung beenden zu können, darf der Profiler keine Daten erfassen. Sie können die Auflistung der Daten von einer Anwendung beenden, die mit der Samplingmethode profiliert wurde, indem Sie den Dienst beenden oder die **VSPerfCmd /detach**-Option aufrufen. Rufen Sie anschließend die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Der Befehl **VSPerfClrEnv /globaloff** löscht die Umgebungsvariablen für die Profilerstellung, die Systemkonfiguration wird jedoch erst zurückgesetzt, wenn der Computer neu gestartet wird.  
+ Um eine Profilerstellungssitzung beenden zu können, darf der Profiler keine Daten erfassen. Sie können die Auflistung der Daten von einer Anwendung beenden, die mit der Samplingmethode profiliert wurde, indem Sie den Dienst beenden oder die **VSPerfCmd /detach**-Option aufrufen. Rufen Sie anschließend die **VSPerfCmd**-Option [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Der **VSPerfClrEnv /globaloff**-Befehl löscht die Umgebungsvariablen für die Profilerstellung, die Systemkonfiguration wird jedoch erst zurückgesetzt, wenn der Computer neu gestartet wird.  
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
@@ -114,7 +114,7 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
     - Beenden Sie den Dienst.  
 
-         - oder -   
+         - oder -  
 
     - Geben Sie **VSPerfCmd /detach** ein.  
 
@@ -128,6 +128,6 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
 4. Starten Sie den Computer neu.  
 
-## <a name="see-also"></a>Siehe auch  
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Profil Erstellungs Dienste](../profiling/command-line-profiling-of-services.md)   
+ [.NET-Arbeitsspeicher Datenansichten](../profiling/dotnet-memory-data-views.md)

@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429100"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841191"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Beschreibt die Attribute eines Dokuments.  
@@ -39,20 +39,20 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  TEXT_DOC_ATTR_READONLY_2  
  Gibt an, dass das Dokument schreibgeschützt ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
 > [!NOTE]
-> Dieser Wert ist nicht tatsächlich in der Assembly für C#-Code definiert. Stattdessen müssen Sie die Definition Ihrer Quelldatei kopieren.  
+> Dieser Wert ist in der Assembly für c# nicht tatsächlich definiert. Stattdessen müssen Sie die Definition in die Quelldatei kopieren.  
   
- Übergeben als Argument an die [OnUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) Methode.  
+ Wird als Argument an die [onupdatedocumentattributormethode](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) übermittelt.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439364"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841247"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +82,9 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
 - Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.  
   
-  Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.  
+  Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z. B. \<" or ">, nicht mit Escapezeichen versehen.  
   
-  Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
+  Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type``Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
   
 > [!NOTE]
 > Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
@@ -191,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erfüllen](../msbuild/msbuild-tasks.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer Inline Aufgabe](../msbuild/walkthrough-creating-an-inline-task.md)

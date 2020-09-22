@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von Berechtigungen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440591"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842315"
 ---
-# <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
+# <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erforderlichen Sicherheitsberechtigungen für die Profilerstellung für einen Benutzer oder eine Gruppe, die keine Administratorberechtigungen auf diesem Computer haben, gewährt.  
@@ -70,13 +70,13 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
 2. Klicken Sie mit der rechten Maustaste auf den Ordner und anschließend auf **Eigenschaften**.  
   
-     Das Dialogfeld **\<Ordnername> Eigenschaften** wird angezeigt.  
+     Daraufhin wird das Dialogfeld **\<folder name>-Eigenschaften** angezeigt.  
   
 3. Klicken Sie auf die Registerkarte **Sicherheit** .  
   
 4. Klicken Sie auf den Namen eines Benutzerkontos im Feld **Gruppen- oder Benutzernamen**.  
   
-5. Im Feld **Berechtigungen für \<Benutzername >** wählen Sie das Kontrollkästchen für **Vollzugriff**.  
+5. Aktivieren Sie im Feld **Berechtigungen für \<user name>** das Kontrollkästchen für **Vollzugriff**.  
   
 6. Klicken Sie auf **OK**.  
   
@@ -110,7 +110,7 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:  
+    Dieser Befehl gewährt dem \<user name>- oder \<group name>-Konto den Zugriff auf die Profilerstellungstools. Mit der Option \<right> werden die Profilerstellungsfunktionen bestimmt, auf die der Benutzer zugreifen kann. Mit der Option \<right> können folgende Werte festgelegt werden:  
   
    - FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
   
@@ -126,7 +126,7 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
    Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+ [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

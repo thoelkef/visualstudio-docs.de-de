@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443508"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841230"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
+# <a name="cv_hreg_e"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt an, ein Ziel-Register.  
+Gibt ein Ziel Register an.  
   
 > [!NOTE]
-> Da die `CV_HREG_e` Enumeration ist zu groß, um hier in seiner Gesamtheit duplizieren, ist eine verkürzte Version als Referenz angegeben. Fehlende Einträge werden in Kursivschrift angegeben werden. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.  
+> Da die `CV_HREG_e` Enumeration zu groß ist, um in ihrer Gesamtheit vollständig zu duplizieren, wird eine abgekürzte Version als Verweis bereitgestellt. Fehlende Einträge werden in kursiv Schrift nicht angezeigt. Die gesamte Enumeration ist in der Header Datei "cvrest. h" verfügbar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -411,44 +411,44 @@ enum CV_HREG_e { 
 } CV_HREG_e;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  CV_REG_*  
- Führt die Registrierung von Intel 80 x 86- und ix86 Prozessoren und p-Code genutzt werden.  
+ Register, die von Intel 80x86-und ix86-Prozessoren und p-Code verwendet werden.  
   
  CV_R68_*  
- Führt die Registrierung von 68 KB-Prozessor verwendet.  
+ Register, die vom 68K-Prozessor verwendet werden.  
   
  CV_M4_*  
- Führt die Registrierung von MIPS 4000 Reihe Prozessor verwendet.  
+ Register, die vom MIPS 4000-Serien Prozessor verwendet werden.  
   
  CV_ALPHA_*  
- Führt die Registrierung von Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.  
+ Register, die vom Prozessor der Alpha AXP-Serie Digital Equipment Corporation verwendet werden.  
   
  CV_PPC_*  
- Führt die Registrierung, die von Get/IBM Motorola PowerPC-Prozessor verwendet.  
+ Register, die vom Befehl "Motorola/IBM PowerPC" verwendet werden.  
   
  CV_SH3_ * und CV_SH_\*  
- Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.  
+ Register, die von Hitachi SH3 und dem Hitachi SH-Serien Prozessor verwendet werden.  
   
  CV_ARM_*  
- Führt die Registrierung von Advanced RISC Machine (ARM)-Prozessoren verwendet.  
+ Register, die von Advanced RISC Machine (Arm)-Prozessoren verwendet werden.  
   
  CV_IA64_*  
- Führt die Registrierung von Prozessoren der Intel-IA64-Serie verwendet.  
+ Register werden von Prozessoren der Intel ia64-Serie verwendet.  
   
  CV_TRI_*  
- Führt die Registrierung von Infineon Technologien TriCore Prozessor verwendet.  
+ Register, die von dem dcore-Prozessor von Infineon Technologies verwendet werden  
   
  CV_AM33_*  
- Registriert von Matsushita/Panasonic AM33 verwendet und beziehen Prozessoren.  
+ Register von "Matsushita/Panasonic AM33" und zugehörigen Prozessoren.  
   
  CV_M32R_*  
- Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.  
+ Register, die von Mitsubishi M32R Processor verwendet werden.  
   
-## <a name="remarks"></a>Hinweise  
- Jeder Prozessortyp verwendet seinen eigenen Satz von Registern.  
+## <a name="remarks"></a>Bemerkungen  
+ Jeder Prozessortyp verwendet einen eigenen eindeutigen Satz von Registern.  
   
- Die Werte in dieser Enumeration werden für die folgenden Methoden übergeben:  
+ Die Werte in dieser Enumeration werden an die folgenden Methoden übermittelt:  
   
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   
@@ -463,10 +463,10 @@ enum CV_HREG_e { 
 ## <a name="requirements"></a>Anforderungen:  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
+ [IDiaStackWalkFrame:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkHelper:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
+ [IDiaStackWalkHelper::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

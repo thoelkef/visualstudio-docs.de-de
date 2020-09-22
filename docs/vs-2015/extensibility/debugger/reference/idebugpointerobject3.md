@@ -11,19 +11,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6ec2f0ffc48e8c23f65ab56ec7b66d69d11a2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440608"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842270"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Stellt einen Zeiger in eine Analysestruktur und erweitert die **IDebugPointerObject** Schnittstelle.  
+ Stellt einen Zeiger in einer Analyse Struktur dar und erweitert die **idebugpointerobject** -Schnittstelle.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,18 +32,18 @@ IDebugPointerObject3 : IDebugPointerObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Eine ausdrucksauswertung (EE) implementiert diese Schnittstelle.  
+ Diese Schnittstelle wird von einer Ausdrucks Auswertung (EE) implementiert.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den Methoden für die [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
+ Zusätzlich zu den Methoden für die [idebugpointerobject](../../../extensibility/debugger/reference/idebugpointerobject.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Ruft die Adresse des Zeigers ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: EE.h  
+ Header: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

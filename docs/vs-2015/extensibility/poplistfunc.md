@@ -1,5 +1,5 @@
 ---
-title: POPLISTFUNC | Microsoft-Dokumentation
+title: Poplistfunc | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,21 +13,21 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c3ae2ce451f076c33ea5613b71c6d262c1d7a0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430833"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841102"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Rückruf wird bereitgestellt, um die [SccPopulateList](../extensibility/sccpopulatelist-function.md) von der IDE und wird durch das Quellcodeverwaltungs-Plug-in verwendet, um eine Liste der Dateien oder Verzeichnisse zu aktualisieren (ebenfalls angegeben wird, um die `SccPopulateList` Funktion).  
+Dieser Rückruf wird von der IDE für [sccpopulatelist](../extensibility/sccpopulatelist-function.md) bereitgestellt und wird vom Quellcodeverwaltungs-Plug-in verwendet, um eine Liste der Dateien oder Verzeichnisse (auch für die Funktion bereitgestellt) zu aktualisieren `SccPopulateList` .  
   
- Wenn ein Benutzer wählt die **erhalten** Befehl in der IDE, die IDE zeigt eine Liste aller Dateien, die der Benutzer abrufen können. Leider können weiß die IDE nicht, die genaue Liste aller Dateien, die der Benutzer erhalten kann; nur das plug-in enthält diese Liste. Wenn andere Benutzer das Quellcodeverwaltungsprojekt Dateien hinzugefügt haben, sollten diese Dateien in der Liste angezeigt, aber die IDE nicht, welche sie. Die IDE erstellt eine Liste der Dateien, die er davon ausgeht, dass der Benutzer abrufen kann. Bevor sie diese Liste, die dem Benutzer angezeigt wird, ruft es die [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` bietet das Quellcodeverwaltungs-Plug-in eine Möglichkeit zum Hinzufügen und Löschen von Dateien aus der Liste.  
+ Wenn ein Benutzer den Befehl **Get** in der IDE auswählt, zeigt die IDE ein Listenfeld aller Dateien an, die der Benutzer erhalten kann. Leider kennt die IDE nicht die genaue Liste aller Dateien, die der Benutzer möglicherweise erhält. Diese Liste ist nur für das Plug-in enthalten. Wenn andere Benutzer dem Quell Code Verwaltungsprojekt Dateien hinzugefügt haben, sollten diese Dateien in der Liste angezeigt werden, aber die IDE kennt Sie nicht. Die IDE erstellt eine Liste der Dateien, die Sie vom Benutzer erhalten kann. Bevor die Liste für den Benutzer angezeigt wird, wird die [sccpopulatelist](../extensibility/sccpopulatelist-function.md) aufgerufen, die `,` dem Quellcodeverwaltungs-Plug-in die Möglichkeit bietet, Dateien in der Liste hinzuzufügen und zu löschen.  
   
 ## <a name="signature"></a>Signatur  
- Das Quellcodeverwaltungs-Plug-Ins ändert die Liste durch Aufrufen einer IDE implementierte Funktion mit dem folgenden Prototyp:  
+ Das Quellcodeverwaltungs-Plug-in ändert die Liste, indem eine IDE-implementierte Funktion mit dem folgenden Prototyp aufgerufen wird:  
   
 ```cpp#  
 typedef BOOL (*POPLISTFUNC) (  
@@ -39,33 +39,33 @@ typedef BOOL (*POPLISTFUNC) (
 ```  
   
 ## <a name="parameters"></a>Parameter  
- pvCallerData  
- Die `pvCallerData` übergebene Parameter vom Aufrufer (der IDE von) der [SccPopulateList](../extensibility/sccpopulatelist-function.md). Das Quellcodeverwaltungs-Plug-in sollte nichts über den Inhalt dieses Parameters voraussetzen.  
+ pvcallerdata  
+ Der vom Aufrufer `pvCallerData` (der IDE) an [sccpopulatelist](../extensibility/sccpopulatelist-function.md)übergebenen Parameter. Das Quellcodeverwaltungs-Plug-in sollte nichts über den Inhalt dieses Parameters ausgehen.  
   
- fAddRemove  
- Wenn `TRUE`, `lpFileName` ist eine Datei, die die Liste der Dateien hinzugefügt werden sollen. Wenn `FALSE`, `lpFileName` ist eine Datei, die aus der Dateiliste gelöscht werden soll.  
+ Verschieben von Adressen  
+ Wenn `TRUE` `lpFileName` der Wert ist, wird eine Datei hinzugefügt, die der Datei Liste hinzugefügt werden soll. Wenn `FALSE` `lpFileName` der Wert ist, wird eine Datei gelöscht, die aus der Datei Liste gelöscht werden soll.  
   
  nStatus  
- Status des `lpFileName` (eine Kombination aus der `SCC_STATUS` Bits, finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md) Einzelheiten).  
+ Status von `lpFileName` (eine Kombination der `SCC_STATUS` Bits; Weitere Informationen finden Sie unter [Datei Status Code](../extensibility/file-status-code-enumerator.md) ).  
   
  lpFileName  
- Vollständigen Verzeichnispfad der Datei hinzufügen oder aus der Liste löschen.  
+ Der vollständige Verzeichnispfad des Datei namens, der in der Liste hinzugefügt oder gelöscht werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|`TRUE`|Das plug-in kann weiterhin das Aufrufen dieser Funktion.|  
-|`FALSE`|Es wurde ein Problem auf der Seite der IDE (z. B. eine Out-of Situation Arbeitsspeicher). Die Plug-in-soll Vorgang beendet werden.|  
+|`TRUE`|Das Plug-in kann diese Funktion weiterhin aufrufen.|  
+|`FALSE`|Es ist ein Problem auf der IDE-Seite aufgetreten (z. b. eine nicht genügend Arbeitsspeicher Situation). Das Plug-in sollte den Vorgang abbrechen.|  
   
-## <a name="remarks"></a>Hinweise  
- Für jede Datei, die das Quellcodeverwaltungs-Plug-In hinzufügen oder aus der Liste löschen möchte, ruft diese Funktion auf, übergibt die `lpFileName`. Die `fAddRemove` Flag gibt an, eine neue Datei hinzugefügt oder eine alte Datei zu löschen. Die `nStatus` Parameter enthält den Status der Datei. Wenn es sich bei SCC-Plug-In hinzufügen und Löschen von Dateien abgeschlossen ist, gibt er aus der [SccPopulateList](../extensibility/sccpopulatelist-function.md) aufrufen.  
+## <a name="remarks"></a>Bemerkungen  
+ Für jede Datei, die das Quellcodeverwaltungs-Plug-in der Datei Liste hinzufügen oder aus ihr löschen möchte, wird diese Funktion aufgerufen, wobei der übergeben wird `lpFileName` . Das- `fAddRemove` Flag gibt eine neue Datei an, die der Liste hinzugefügt werden soll, oder eine alte zu löschende Datei. Der- `nStatus` Parameter gibt den Status der Datei an. Wenn das SCC-Plug-in das Hinzufügen und Löschen von Dateien abgeschlossen hat, wird der [sccpopulatelist](../extensibility/sccpopulatelist-function.md) -Befehl zurückgegeben.  
   
 > [!NOTE]
-> Die `SCC_CAP_POPULATELIST` Funktion Bit ist für Visual Studio erforderlich.  
+> Das Funktionalitäts `SCC_CAP_POPULATELIST` Bit ist für Visual Studio erforderlich.  
   
-## <a name="see-also"></a>Siehe auch  
- [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Von der IDE implementierte Rückruf Funktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
- [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
+ [Sccpopulatelist](../extensibility/sccpopulatelist-function.md)   
  [Dateistatuscode](../extensibility/file-status-code-enumerator.md)

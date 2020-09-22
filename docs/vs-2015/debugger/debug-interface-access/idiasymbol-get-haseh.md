@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haseh | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasEH | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4badf13f21bae028ee782d23bc26b1c1348ebeb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807759"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841071"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Funktion nicht verwaltete Ausnahmebehandlung für C++-Stil (z. B. einen Try/Catch-Block) enthält.  
+Ruft ein Flag ab, das angibt, ob die Funktion eine nicht verwaltete Ausnahmebehandlung im C++-Stil (z. b. einen try/catch-Block) enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,20 +35,20 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` sollte die Funktion eine C++-Stil Ausnahme behandeln; Anderenfalls gibt `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn die Funktion eine Ausnahmebehandlung im C++-Stil aufweist; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der- `S_FALSE` oder-Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

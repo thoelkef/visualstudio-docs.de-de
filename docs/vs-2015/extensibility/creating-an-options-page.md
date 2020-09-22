@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Optionsseite | Microsoft-Dokumentation
+title: Erstellen einer Options Seite | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430577"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841158"
 ---
 # <a name="creating-an-options-page"></a>Erstellen einer Optionsseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-Seite, die ein Eigenschaftenraster zum Überprüfen und Festlegen von Eigenschaften verwendet.  
+In dieser exemplarischen Vorgehensweise wird eine einfache Seite Extras/Optionen erstellt, die ein Eigenschaften Raster zum Überprüfen und Festlegen von Eigenschaften verwendet.  
   
- Um diese Eigenschaften zu speichern und aus einer Datei wiederherstellen, gehen Sie folgendermaßen vor, und klicken Sie dann finden Sie unter [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
+ Führen Sie die folgenden Schritte aus, um diese Eigenschaften in einer Einstellungsdatei zu speichern und wiederherzustellen. Weitere Informationen finden Sie unter [Erstellen einer Einstellungs Kategorie](../extensibility/creating-a-settings-category.md).  
   
- Das MPF bietet zwei Klassen zum Erstellen von Optionsseiten im Menü Extras, stehen Ihnen die <xref:Microsoft.VisualStudio.Shell.Package> Klasse und die <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse. Sie erstellen eine VSPackage, um diese Seiten durch Ableitung von Unterklassen der Klasse einen Container bereit. Sie erstellen jedes Optionsseite "Tools" der Klasse von DialogPage abgeleitet.  
+ Das MPF bietet zwei Klassen, die Sie beim Erstellen von Tools-Optionen-Seiten, der <xref:Microsoft.VisualStudio.Shell.Package> -Klasse und der-Klasse unterstützen <xref:Microsoft.VisualStudio.Shell.DialogPage> . Sie erstellen ein VSPackage, um einen Container für diese Seiten bereitzustellen, indem Sie die Paket Klasse Unterklassen. Sie erstellen jede Tool Optionsseite durch Ableiten von der DialogPage-Klasse.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-tools-options-grid-page"></a>Erstellen eine Rasterseite des Tools-Optionen  
- In diesem Abschnitt erstellen Sie ein einfaches Extras/Optionen Eigenschaftenraster. Sie können dieses Raster verwenden, um anzuzeigen, und ändern Sie den Wert einer Eigenschaft.  
+## <a name="creating-a-tools-options-grid-page"></a>Erstellen einer Raster Seite für Extras-Optionen  
+ In diesem Abschnitt erstellen Sie das Eigenschaften Raster einfache Tools-Optionen. Sie verwenden dieses Raster, um den Wert einer Eigenschaft anzuzeigen und zu ändern.  
   
-#### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Erstellen das VSIX-Projekt und Hinzufügen von einem VSPackage  
+#### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>So erstellen Sie das VSIX-Projekt und fügen ein VSPackage hinzu  
   
-1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `MyToolsOptionsExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
+1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt mit dem Namen `MyToolsOptionsExtension` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** " unter **Visual c#/Erweiterbarkeit**.  
   
-2. Fügen Sie eine VSPackage, indem ein Visual Studio-Paket-Elementvorlage, die mit dem Namen hinzufügen `MyToolsOptionsPackage`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **Dialogfeld "Neues Element hinzufügen"**, wechseln Sie zu **Visual c#-Elemente / Erweiterbarkeit** , und wählen Sie **Visual Studio-Paket**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an `MyToolsOptionsPackage.cs`. Weitere Informationen dazu, wie Sie ein VSPackage zu erstellen, finden Sie unter [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Fügen Sie ein VSPackage hinzu, indem Sie eine Visual Studio-Paket Element Vorlage namens hinzufügen `MyToolsOptionsPackage` . Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Hinzufügen/Neues Element**aus. Navigieren Sie im **Dialogfeld Neues Element hinzufügen**zu **Visual c# Elemente/Erweiterbarkeit** , und wählen Sie dann **Visual Studio-Paket**aus. Ändern Sie im Feld **Name** am unteren Rand des Dialog Felds den Dateinamen in `MyToolsOptionsPackage.cs` . Weitere Informationen zum Erstellen eines VSPackage finden Sie unter [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
-#### <a name="to-create-the-tools-options-property-grid"></a>Um das Eigenschaftenraster Extras/Optionen zu erstellen.  
+#### <a name="to-create-the-tools-options-property-grid"></a>So erstellen Sie das Eigenschaften Raster "Extras Optionen"  
   
-1. Öffnen Sie die MyToolsOptionsPackage-Datei im Code-Editor ein.  
+1. Öffnen Sie im Code-Editor die Datei "mytoolsoptionspackage".  
   
-2. Fügen Sie die folgenden using-Anweisung.  
+2. Fügen Sie die folgende using-Anweisung hinzu.  
   
     ```csharp  
     using System.ComponentModel;  
     ```  
   
-3. Deklarieren Sie eine OptionPageGrid-Klasse und leiten sie von <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+3. Deklarieren Sie eine OptionPageGrid-Klasse und leiten Sie von ab <xref:Microsoft.VisualStudio.Shell.DialogPage> .  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4. Anwenden einer <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> der VSPackage-Klasse, die Klasse eine Kategorie mit Optionen und der Name der Optionen-Seite für die OptionPageGrid zuweisen. Das Ergebnis sollte wie folgt aussehen:  
+4. Wenden <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> Sie einen auf die VSPackage-Klasse an, um der Klasse eine Options Kategorie und einen Options Seitennamen für das OptionPageGrid zuzuweisen. Das Ergebnis sollte wie folgt aussehen:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -67,13 +67,13 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5. Hinzufügen einer `OptionInteger` Eigenschaft, um die `OptionPageGrid` Klasse.  
+5. Fügen Sie `OptionInteger` der-Klasse eine-Eigenschaft hinzu `OptionPageGrid` .  
   
-    - Anwenden einer <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> die Eigenschaft eine Eigenschaft Raster Kategorie zuweisen.  
+    - Wenden <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> Sie einen an, der der Eigenschaft eine Eigenschaften Raster Kategorie zugewiesen werden soll.  
   
-    - Anwenden einer <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> , auf die Eigenschaft einen Namen zuzuweisen.  
+    - Wenden <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> Sie einen an, um der Eigenschaft einen Namen zuzuweisen.  
   
-    - Anwenden einer <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> eine Beschreibung der Eigenschaft zugewiesen.  
+    - Anwenden eines <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> , das der Eigenschaft eine Beschreibung zugewiesen werden soll.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -92,28 +92,28 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     ```  
   
     > [!NOTE]
-    > Die standardmäßige Implementierung des <xref:Microsoft.VisualStudio.Shell.DialogPage> unterstützt Eigenschaften, die entsprechenden Konverter haben oder die Strukturen oder Arrays, die in Eigenschaften erweitert werden können, die entsprechenden Typkonverter aufweisen. Eine Liste der Konverter, finden Sie unter den <xref:System.ComponentModel> Namespace.  
+    > Die Standard Implementierung von <xref:Microsoft.VisualStudio.Shell.DialogPage> unterstützt Eigenschaften mit entsprechenden Konvertern oder Strukturen oder Arrays, die in Eigenschaften erweitert werden können, die über entsprechende Konverter verfügen. Eine Liste der Konverter finden Sie unter dem- <xref:System.ComponentModel> Namespace.  
   
 6. Erstellen Sie das Projekt, und starten Sie das Debugging.  
   
-7. In der experimentellen Instanz von Visual Studio auf die **Tools** klicken Sie im Menü **Optionen**.  
+7. Klicken Sie in der experimentellen Instanz von Visual Studio im **Menü Extras** auf **Optionen**.  
   
-     Im linken Bereich sollte **My Category**. (Optionen Kategorien werden in alphabetischer Reihenfolge aufgeführt, sodass sie über während des laufenden Vorgangs in der Liste angezeigt werden soll.) Open **My Category** , und klicken Sie dann auf **Meine Rasterseite**. Das Raster wird im rechten Bereich angezeigt. Die Eigenschaftskategorie ist **Meine Optionen**, und der Eigenschaftenname ist **Meine ganze Zahl Option**. Die Beschreibung der Eigenschaft **Meine ganze Zahl Option**, wird am unteren Rand des Bereichs. Ändern Sie den Wert der ursprüngliche Wert von 256 auf etwas anderes. Klicken Sie auf **OK**, und klicken Sie dann erneut öffnen **Meine Rasterseite**. Sie können sehen, dass der neue Wert beibehalten.  
+     Im linken Bereich sollte **Meine Kategorie**angezeigt werden. (Kategorien von Optionen sind in alphabetischer Reihenfolge aufgelistet, sodass Sie ungefähr in der Mitte der Liste angezeigt werden.) Öffnen Sie **Meine Kategorie** , und klicken Sie dann auf **meine Raster Seite**. Das Raster Optionen wird im rechten Bereich angezeigt. Die Eigenschaften Kategorie ist **meine Optionen**, und der Eigenschaftsname ist **meine ganzzahlige Option**. Die Eigenschafts Beschreibung, **meine ganzzahlige Option**, wird am unteren Rand des Bereichs angezeigt. Ändern Sie den Wert von seinem Anfangswert von 256 in etwas anderes. Klicken Sie auf **OK**, und öffnen Sie die **Raster Seite**erneut. Sie können sehen, dass der neue Wert weiterhin besteht.  
   
-     Ihre Seite "Optionen" ist auch über Visual Studio-Schnellstarts verfügbar. Geben Sie in das Fenster "Schnellstart" in der oberen rechten Ecke der IDE, **My Category** und Sie sehen **My Category Memberauswahloperator Meine Rasterseite** in der Dropdownliste aufgeführt.  
+     Die Seite "Optionen" ist auch über den Schnellstart von Visual Studio verfügbar. Geben Sie im Fenster Schnellstart in der oberen rechten Ecke der IDE **Meine Kategorie** ein, und Sie sehen **Meine Kategorie – > meine Raster Seite** , die in der Dropdown Liste aufgeführt ist.  
   
-## <a name="creating-a-tools-options-custom-page"></a>Erstellen einer Extras Optionen benutzerdefinierten Seite  
- In diesem Abschnitt erstellen Sie eine Seite "Extras/Optionen", mit einer benutzerdefinierten Benutzeroberfläche. Sie können diese Seite verwenden, um anzuzeigen, und ändern Sie den Wert einer Eigenschaft.  
+## <a name="creating-a-tools-options-custom-page"></a>Erstellen einer benutzerdefinierten Seite für Extras-Optionen  
+ In diesem Abschnitt erstellen Sie eine Extras Options Seite mit einer benutzerdefinierten Benutzeroberfläche. Auf dieser Seite können Sie den Wert einer Eigenschaft anzeigen und ändern.  
   
-1. Öffnen Sie die MyToolsOptionsPackage-Datei im Code-Editor ein.  
+1. Öffnen Sie im Code-Editor die Datei "mytoolsoptionspackage".  
   
-2. Fügen Sie die folgenden using-Anweisung.  
+2. Fügen Sie die folgende using-Anweisung hinzu.  
   
     ```csharp  
     using System.Windows.Forms;  
     ```  
   
-3. Hinzufügen einer `OptionPageCustom` Klasse, kurz bevor die `OptionPageGrid` Klasse. Leiten Sie die neue Klasse von `DialogPage`.  
+3. Fügen Sie eine- `OptionPageCustom` Klasse hinzu, direkt vor der- `OptionPageGrid` Klasse. Leiten Sie die neue Klasse von ab `DialogPage` .  
   
     ```csharp  
     public class OptionPageCustom : DialogPage  
@@ -128,7 +128,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     }  
     ```  
   
-4. Fügen Sie ein GUID-Attribut hinzu. Fügen Sie eine OptionString-Eigenschaft hinzu:  
+4. Fügen Sie ein GUID-Attribut hinzu. Optionstring-Eigenschaft hinzufügen:  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -144,7 +144,7 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     }  
     ```  
   
-5. Anwenden eine Sekunde <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> der VSPackage-Klasse. Dieses Attribut weist der Klasse, eine Kategorie mit Optionen und einen Namen für Optionen-Seite.  
+5. Wenden Sie ein zweites <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> auf die VSPackage-Klasse an. Dieses Attribut weist der-Klasse eine Options Kategorie und einen Options Seitennamen zu.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -158,13 +158,13 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6. Fügen Sie einen neuen **Benutzersteuerelement** mit dem Namen MyUserControl zum Projekt.  
+6. Fügen Sie dem Projekt ein neues **Benutzer Steuer** Element mit dem Namen "MyUserControl" hinzu.  
   
-7. Hinzufügen einer **Textfeld** Steuerelement auf das Benutzersteuerelement.  
+7. Fügen Sie dem Benutzer Steuerelement ein **TextBox** -Steuerelement hinzu.  
   
-     In der **Eigenschaften** Fenster auf der Symbolleiste klicken Sie auf die **Ereignisse** Schaltfläche, und doppelklicken Sie dann auf die **lassen** Ereignis. Der neue Ereignishandler wird in der MyUserControl.cs Code angezeigt.  
+     Klicken Sie im Fenster **Eigenschaften** auf der Symbolleiste auf die Schaltfläche **Ereignisse** , und doppelklicken Sie dann auf das **Leave** -Ereignis. Der neue Ereignishandler wird im MyUserControl.cs-Code angezeigt.  
   
-8. Hinzufügen eine öffentlichen `OptionsPage` Feld eine `Initialize` Methode zum Control-Klasse, und aktualisieren Sie der Ereignishandler zum Festlegen der Option-Wert auf den Inhalt des Textfelds:  
+8. Fügen Sie `OptionsPage` der Steuerelement Klasse ein öffentliches Feld, eine `Initialize` Methode hinzu, und aktualisieren Sie den Ereignishandler, um den Optionswert auf den Inhalt des Textfelds festzulegen:  
   
     ```csharp  
     public partial class MyUserControl : UserControl  
@@ -188,9 +188,9 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
     }  
     ```  
   
-     Die `optionsPage` Feld enthält einen Verweis auf das übergeordnete Element `OptionPageCustom` Instanz. Die `Initialize` Methode zeigt `OptionString` in die **Textfeld**. Der Ereignishandler schreibt den aktuellen Wert des der **Textfeld** auf die `OptionString` Wenn konzentrieren / / Blätter der **Textfeld**.  
+     Das `optionsPage` Feld enthält einen Verweis auf die übergeordnete `OptionPageCustom` Instanz. Die- `Initialize` Methode wird `OptionString` im **Textfeld**angezeigt. Der-Ereignishandler schreibt den aktuellen Wert des **Textfelds** in den, `OptionString` Wenn der Fokus das **Textfeld**verlässt.  
   
-9. In der Paket-Codedatei, fügen Sie eine Außerkraftsetzung für die `OptionPageCustom.Window` Eigenschaft zu erstellen, initialisieren und zurückgeben eine Instanz von Klasse OptionPageCustom `MyUserControl`. Die Klasse sollte jetzt wie folgt aussehen:  
+9. Fügen Sie in der Paket Code Datei `OptionPageCustom.Window` der optionpagecustom-Klasse eine Überschreibung für die-Eigenschaft hinzu, um eine Instanz von zu erstellen, zu initialisieren und zurückzugeben `MyUserControl` . Die Klasse sollte nun wie folgt aussehen:  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -219,16 +219,16 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
 10. Erstellen Sie das Projekt, und führen Sie es aus.  
   
-11. Klicken Sie in der experimentellen Instanz auf **Extras / Optionen**.  
+11. Klicken Sie in der experimentellen Instanz auf Extras > **Optionen**.  
   
-12. Suchen **Meine Kategorie** und dann **meiner Seite**.  
+12. **Meine Kategorie** und dann **meine benutzerdefinierte Seite**suchen.  
   
-13. Ändern Sie den Wert der **OptionString**. Klicken Sie auf **OK**, und klicken Sie dann erneut öffnen **Meine benutzerdefinierte Seite**. Sie können sehen, dass der neue Wert persistent gespeichert wurde.  
+13. Ändern Sie den Wert von **optionstring**. Klicken Sie auf **OK**, und öffnen Sie dann die **benutzerdefinierte Seite**erneut. Sie können sehen, dass der neue Wert persistent ist.  
   
 ## <a name="accessing-options"></a>Zugreifen auf Optionen  
- In diesem Abschnitt erhalten Sie den Wert einer Option aus dem VSPackage, die die zugeordnete Tooloptionen-Seite hostet. Das gleiche Verfahren kann verwendet werden, um den Wert, der eine beliebige öffentliche Eigenschaft abzurufen.  
+ In diesem Abschnitt erhalten Sie den Wert einer Option aus dem VSPackage, das die zugehörige Optionsseite Extras hostet. Das gleiche Verfahren kann verwendet werden, um den Wert einer beliebigen öffentlichen Eigenschaft abzurufen.  
   
-1. Fügen Sie in der Paket-Codedatei, die eine öffentliche Eigenschaft namens **OptionInteger** auf die **MyToolsOptionsPackage** Klasse.  
+1. Fügen Sie in der Paket Code Datei der **mytoolsoptionspackage** -Klasse eine öffentliche Eigenschaft mit dem Namen " **OptionInteger** " hinzu.  
   
     ```  
     public int OptionInteger  
@@ -242,11 +242,11 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
     ```  
   
-     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> zu erstellen oder Abrufen einer `OptionPageGrid` Instanz. `OptionPageGrid` Aufrufe <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> zu diesen Optionen laden, die öffentlichen Eigenschaften sind.  
+     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> auf, um eine-Instanz zu erstellen oder abzurufen `OptionPageGrid` . `OptionPageGrid` Ruft <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> auf, um die Optionen zu laden, die öffentliche Eigenschaften sind.  
   
-2. Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **MyToolsOptionsCommand** zur Anzeige des Werts. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **MyToolsOptionsCommand.cs**.  
+2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **mytoolsoptionscommand** hinzu, um den Wert anzuzeigen. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in **MyToolsOptionsCommand.cs**.  
   
-3. Ersetzen Sie in der Datei MyToolsOptionsCommand Text des Befehls `ShowMessageBox` -Methode durch Folgendes:  
+3. Ersetzen Sie in der Datei mytoolsoptionscommand den Text der-Methode des Befehls `ShowMessageBox` durch Folgendes:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -259,9 +259,9 @@ In dieser exemplarischen Vorgehensweise erstellt eine einfache Extras/Optionen-S
   
 4. Erstellen Sie das Projekt, und starten Sie das Debugging.  
   
-5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen MyToolsOptionsCommand**.  
+5. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **mytoolsoptionscommand aufrufen**.  
   
-     Ein Meldungsfeld angezeigt, den aktuellen Wert der `OptionInteger`.  
+     Ein Meldungs Feld zeigt den aktuellen Wert von an `OptionInteger` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Optionen und Optionsseiten](../extensibility/internals/options-and-options-pages.md)

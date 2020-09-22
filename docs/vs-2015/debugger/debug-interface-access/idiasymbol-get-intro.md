@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intro | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_intro | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df8930d620f6199ecde4d6d921d5b969204f92e6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830312"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841263"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktion ist ab.  
+Ruft ein Flag ab, das angibt, ob die Funktion eine virtuelle Einführungs Funktion ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_intro ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn die Funktion Einführung virtuellen; ist andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn die Funktion ein virtuelles Intro ist; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der- `S_FALSE` oder-Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -54,14 +54,14 @@ class B : public A {
 }  
 ```  
   
- Beide `A::f1` und `B::f1` sind virtuelle Funktionen, aber `A::f1` Einführung virtuell ist.  
+ Sowohl `A::f1` als auch `B::f1` sind virtuelle Funktionen, sind aber `A::f1` Intro Virtual.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

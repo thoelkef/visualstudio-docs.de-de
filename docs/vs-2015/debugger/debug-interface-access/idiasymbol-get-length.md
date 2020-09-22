@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_length | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_Length | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8c757d3da3049c29f7da13b13985dc2c50b4b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842295"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Anzahl der Bits oder Bytes an Arbeitsspeicher ein, die das Objekt, das durch dieses Symbol dargestellt.  
+Ruft die Anzahl der Bits oder Bytes des Arbeitsspeichers ab, die von dem durch dieses Symbol dargestellten Objekt verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,16 +35,16 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Anzahl von Bytes oder Bits im Arbeitsspeicher ein, die das Objekt, das durch dieses Symbol dargestellt zurück.  
+ vorgenommen Gibt die Anzahl von Bytes oder Bits des Speichers zurück, die von dem durch dieses Symbol dargestellten Objekt verwendet werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols ist `LocIsBitField`, die von dieser Methode zurückgegebene Länge in Bits ist; andernfalls ist die Länge in Bytes für alle anderen Typen.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols ist `LocIsBitField` , ist die von dieser Methode zurückgegebene Länge in Bits. andernfalls ist die Länge für alle anderen Speicherort Typen in Byte.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -56,11 +56,11 @@ pSymbol->get_length( &length );
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

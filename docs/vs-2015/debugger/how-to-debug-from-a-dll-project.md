@@ -21,56 +21,56 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438493"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841171"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>Vorgehensweise: Debuggen Sie über ein DLL-Projekt
+# <a name="how-to-debug-from-a-dll-project"></a>Gewusst wie: Debuggen über ein DLL-Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um mit dem Debuggen eines DLL-Projekts zu beginnen, müssen Sie die aufrufende Anwendung in den Projekteigenschaften angeben. Die Eigenschaftenseiten in C++ unterscheiden sich im Hinblick auf Layout und Inhalt von den Eigenschaftenseiten in C# und Visual Basic.  
   
- Wenn eine verwaltete DLL von nativem Code aufgerufen wird, und Sie sowohl DLL als auch Code debuggen möchten, können Sie dies in den Projekteigenschaften angeben. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).  
+ Wenn eine verwaltete DLL von nativem Code aufgerufen wird, und Sie sowohl DLL als auch Code debuggen möchten, können Sie dies in den Projekteigenschaften angeben. Weitere Informationen finden Sie unter Gewusst [wie: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 > In den Express-Versionen von Visual Studio kann keine externe aufrufende Anwendung angegeben werden. Um eine DLL in einer Express-Version zu debuggen, fügen Sie der Lösung ein ausführbares Projekt hinzu, legen es als Startpunkt für die Lösung fest  und rufen Methoden in der DLL vom ausführbaren Projekt aus auf.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>So geben Sie die aufrufende Anwendung in einem C++-Projekt an  
   
-1. Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Eigenschaften**aus. Wechseln Sie zur Registerkarte **Debuggen** .  
   
 2. Stellen Sie sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** festgelegt ist.  
   
-3. Wechseln Sie zu **Konfigurationseigenschaften / Debugging**.  
+3. Wechseln Sie zu **Konfigurations Eigenschaften/Debuggen**.  
   
-4. In der **zu startender Debugger** wählen **lokaler Windows-Debugger** oder **Remote-Windows-Debugger**.  
+4. Wählen Sie in der Liste **zu startender Debugger** die Option **lokaler Windows-Debugger** oder **Remote-Windows-Debugger**aus.  
   
-5. In der **Befehl** oder **Remotebefehl** hinzu, und den vollqualifizierten Pfadnamen der Anwendung.  
+5. Fügen Sie im Feld **Befehl** oder **Remote Befehl** den voll qualifizierten Pfadnamen der Anwendung hinzu.  
   
 6. Fügen Sie die notwendigen Programmargumente in das Feld **Befehlsargumente** ein.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>So geben Sie die aufrufende Anwendung in einem C#- oder Visual Basic-Projekt an  
   
-1. Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Eigenschaften**aus. Wechseln Sie zur Registerkarte **Debuggen** .  
   
-     Wählen Sie **externes Programm starten**, und fügen Sie den vollqualifizierten Pfadnamen der Ausführung des Programms hinzu.  
+     Wählen Sie **externes Programm starten**aus, und fügen Sie den voll qualifizierten Pfadnamen des Programms ein, das ausgeführt werden soll.  
   
-     Wenn Sie Befehlszeilenargumente für das externe Programm hinzufügen müssen, fügen Sie sie in der **Befehlszeilenargumente** Feld.  
+     Wenn Sie die Befehlszeilenargumente des externen Programms hinzufügen müssen, fügen Sie Sie in das Feld **Befehlszeilenargumente** ein.  
   
 2. Sie können eine Anwendung auch als URL aufrufen. (Dies empfiehlt sich u. U., wenn Sie eine verwaltete DLL debuggen, die von einer lokalen ASP.NET-Anwendung verwendet wird.)  
   
-     Klicken Sie unter **Startaktion**, wählen die **Browser mit folgender URL starten:** Optionsfeld aus, und geben Sie in der URL.  
+     Wählen Sie unter **Start Aktion**die Options Schaltfläche **Browser in URL starten** aus, und geben Sie die URL ein.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>So debuggen Sie über das DLL-Projekt  
   
 1. Legen Sie die gewünschten Haltepunkte fest.  
   
-2. Starten Sie das Debuggen (drücken Sie F5, klicken Sie auf den grünen Pfeil, oder klicken Sie auf **Debuggen / Debugging starten**).  
+2. Starten Sie das Debugging (drücken Sie F5, klicken Sie auf den grünen Pfeil, oder klicken Sie auf **Debuggen/Debugging starten**)  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md)   
- [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugging von DLL-Projekten](../debugger/debugging-dll-projects.md)   
+ [Projekteinstellungen für c#-Debugkonfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)

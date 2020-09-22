@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ddfda1e46dc1c5918a4ee1095f39db027bd3fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431595"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841108"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Verwenden von Leistungsregeln zur Analyse von Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Die Leistungswarnungen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profiler
 > Leistungswarnungen des Profilers werden mithilfe der dynamischen Analyse bei der Programmausführung generiert; es besteht kein Zusammenhang mit Codeanalysewarnungen. Mit der Codeanalyse können auch Leistungswarnungen für verwalteten Code auf Grundlage der statischen Analyse des Quellcodes generiert werden. Weitere Informationen finden Sie unter [Analyzing Managed Code Quality (Analysieren der Qualität von verwaltetem Code)](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) und [Performance Warnings (Leistungswarnungen)](../code-quality/performance-warnings.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Anzeigen von Leistungswarnungen](../profiling/how-to-view-performance-warnings.md)  
+ [Vorgehensweise: Anzeigen von Leistungs Warnungen](../profiling/how-to-view-performance-warnings.md)  
  Enthält Informationen zum Öffnen des Fensters **Fehlerliste**, um Leistungswarnungen des Profilers anzuzeigen.  
   
- [Vorgehensweise: Konfigurieren von Leistungsregeln](../profiling/how-to-configure-performance-rules.md)  
+ [Vorgehensweise: Konfigurieren von Leistungs Regeln](../profiling/how-to-configure-performance-rules.md)  
  Enthält Informationen zum Aktivieren und Deaktivieren von einzelnen Leistungswarnungen.  
   
- [Performance Rules Reference (Referenz zu den Leistungsregeln)](../profiling/performance-rules-reference.md)  
+ [Referenz zu Leistungs Regeln](../profiling/performance-rules-reference.md)  
  Enthält ausführliche Informationen zu den Leistungswarnungen des Profilers.

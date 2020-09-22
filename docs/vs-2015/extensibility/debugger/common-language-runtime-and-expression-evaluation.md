@@ -1,5 +1,5 @@
 ---
-title: Common Language Runtime und Ausdrucksauswertung | Microsoft-Dokumentation
+title: Common Language Runtime und Ausdrucks Auswertung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b75cb1b0604f3611c0e51c6f458939433d2a5470
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383530"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841238"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime und Ausdrucksauswertung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Compiler, kompiliert wie z. B. Visual Basic und c# (ausgesprochen als C-Sharp), die die Common Language Runtime (CLR) abzielen, Microsoft Intermediate Language (MSIL), erzeugt die höher ist in nativen Code. Die CLR bietet eine Debug-Engine (DE), um den sich ergebenden Code Debuggen. Wenn Sie beabsichtigen, Ihre proprietäre Programmiersprache in Visual Studio-IDE integriert, können Sie in MSIL kompiliert wird, und aus diesem Grund müssen nicht Ihren eigenen DE schreiben. Sie müssen jedoch eine ausdrucksauswertung (EE) zu schreiben, die kann der Auswertung von Ausdrücken innerhalb des Kontexts von der Programmiersprache ist.  
+ Compiler, wie z. b. Visual Basic und c# (ausgesprochen C-Sharp), die auf die Common Language Runtime (CLR) abzielen, erzeugen eine Microsoft Intermediate Language (MSIL), die später in nativem Code kompiliert wird. Die CLR stellt eine Debug-Engine (de) zum Debuggen des resultierenden Codes bereit. Wenn Sie beabsichtigen, ihre proprietäre Programmiersprache in die Visual Studio-IDE zu integrieren, können Sie die Kompilierung in MSIL durchführt, sodass Sie keine eigene de schreiben müssen. Sie müssen jedoch eine Ausdrucks Auswertung (EE) schreiben, mit der Ausdrücke im Kontext der Programmiersprache ausgewertet werden können.  
   
-## <a name="discussion"></a>Diskussion  
- In der Regel werden Computer Sprachausdrücke analysiert, erzeugt einen Satz von Datenobjekten und einen Satz von Operatoren verwendet, um sie zu bearbeiten. Der Ausdruck, der "A + B" analysiert werden, möglicherweise um den Additionsoperator (+) gelten für die Daten z. B. Objekte, "A" und "B", was möglicherweise ein anderes Datenobjekt. Der gesamte Satz von Datenobjekten, Operatoren und ihre Zuordnungen werden meist in einem Programm dargestellt, als eine Struktur, die Operatoren an den Knoten der Struktur und die Datenobjekte an die Branches. Ein Ausdruck, der in Form der Ausdrucksbaumstruktur unterteilt wird häufig eine analysierte Struktur bezeichnet.  
+## <a name="discussion"></a>Diskussion (Discussion)  
+ Computer sprach Ausdrücke werden in der Regel analysiert, um einen Satz von Datenobjekten und eine Reihe von Operatoren zu entwickeln, die zur Bearbeitung verwendet werden. Beispielsweise kann der Ausdruck "a + B" analysiert werden, um den Additions Operator (+) auf die Datenobjekte "a" und "B" anzuwenden, was möglicherweise zu einem anderen Datenobjekt führt. Der gesamte Satz von Datenobjekten, Operatoren und deren Zuordnungen wird am häufigsten in einem Programm als Struktur dargestellt, mit den Operatoren an den Knoten der Struktur und den Datenobjekten in den Verzweigungen. Ein Ausdruck, der in die Struktur Form aufgeteilt wurde, wird häufig als analysierte Struktur bezeichnet.  
   
- Sobald ein Ausdruck analysiert wurde, ein symbolanbieter (SP) aufgerufen, um die einzelnen Datenobjekte zu bewerten. Angenommen, "A" definiert ist, sowohl in mehr als eine Methode, und klicken Sie dann auf die Frage "Welche A?" müssen beantwortet werden, bevor der Wert von A überprüft werden kann. Die von der gespeicherten Prozedur zurückgegebene Antwort ähnelt den "Das dritte Element auf der fünften Stapelrahmen" oder "Das A, die 50 Bytes hinter dem Anfang des statischen Speichers ist für diese Methode zugeordnet."  
+ Nachdem ein Ausdruck analysiert wurde, wird ein Symbol Anbieter (SP) aufgerufen, um die einzelnen Datenobjekte auszuwerten. Wenn z. b. "A" sowohl in mehr als einer Methode definiert ist, dann wird die Frage "What A?" muss beantwortet werden, bevor der Wert eines ermittelt werden kann. Die Antwort, die vom SP zurückgegeben wird, ist etwa "das dritte Element im fünften Stapel Rahmen" oder "die A, die nach dem Anfang des statischen Speichers, der dieser Methode zugeordnet ist, 50 Bytes überschreitet."  
   
- Neben MSIL für das Programm selbst erstellt werden, können CLR-Compiler auch sehr aussagekräftig Debuginformationen zu erzeugen, die in einer Programmdatenbankdatei (.pdb)-Datei geschrieben wird. Solange ein proprietäre Sprache-Compiler Debuginformationen in das gleiche Format wie die CLR-Compiler generiert, kann der CLR SP erkennen, dass die Sprache die Datenobjekte mit dem Namen um. Nachdem ein benanntes Objekt identifiziert wurde, verwendet die EE ein binderobjekt zuzuordnen (oder gebunden) das Datenobjekt, das in den Arbeitsspeicherbereich, der den Wert des Objekts enthält. Die DE kann dann abrufen oder einen neuen Wert für das Datenobjekt, das festlegen.  
+ Neben der Erstellung von MSIL für das Programm selbst können CLR-Compiler auch sehr beschreibende Debuginformationen erzeugen, die in eine Programm Datenbankdatei (. pdb) geschrieben werden. Solange ein Compiler einer proprietären Sprache Debuginformationen im gleichen Format wie die CLR-Compiler erstellt, kann der CLR-SP die benannten Datenobjekte dieser Sprache identifizieren. Nachdem ein benanntes Datenobjekt identifiziert wurde, verwendet das EE ein Binder Objekt, um das Datenobjekt dem Speicherbereich zuzuordnen (oder zu binden), der den Wert dieses Objekts enthält. Der de kann dann einen neuen Wert für das Datenobjekt erhalten oder festlegen.  
   
- Einen proprietären Compilers bieten ein CLR-Debuggen von Informationen durch Aufrufen der `ISymbolWriter` Schnittstelle (definiert in .NET Framework im Namespace `System.Diagnostics.SymbolStore`). Kompilieren in MSIL und beim Schreiben der Debuginformationen über diese Schnittstellen, kann einen proprietären Compilers der CLR DE und SP verwenden. Dies vereinfacht eine proprietäre Sprache in Visual Studio-IDE integrieren.  
+ Proprietäre Compiler können CLR-Debuginformationen bereitstellen, indem Sie die- `ISymbolWriter` Schnittstelle aufrufen (die im-.NET Framework im-Namespace definiert ist `System.Diagnostics.SymbolStore` ). Durch Kompilieren in MSIL und Schreiben von Debuginformationen über diese Schnittstellen kann ein proprietärer Compiler die CLR de und SP verwenden. Dies vereinfacht die Integration einer proprietären Sprache in die Visual Studio-IDE erheblich.  
   
- Wenn die CLR-DE zum Auswerten eines Ausdrucks den proprietäre EE aufruft, stellt die DE die EE mit Schnittstellen für einen SP und ein binderobjekt. Daher ist das Schreiben einer CLR-basierten Debug-Engine bedeutet, dass es nur notwendig, um die entsprechenden Ausdruck Evaluator-Schnittstellen implementieren; die CLR übernimmt die Bindung und das Symbol für die Sie behandeln.  
+ Wenn die CLR de den proprietären EE aufruft, um einen Ausdruck auszuwerten, stellt der de den EE mit Schnittstellen an einen SP-und ein Binder Objekt bereit. Daher bedeutet das Schreiben einer CLR-basierten Debug-Engine, dass nur die entsprechenden Ausdrucks auswerterschnittstellen implementiert werden müssen. die CLR kümmert sich um die Bindung und die Symbol Behandlung für Sie.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schreiben einer CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_relativevirtualaddress | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_relativeVirtualAddress | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adb67fb7fb448a35124440149f6b755dd0a02d38
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808076"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841075"
 ---
-# <a name="idiasymbolgetrelativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
+# <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die relative virtuelle Adresse (RVA) des Speicherorts ab. Verwenden, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) nastaven NA hodnotu `LocIsStatic`.  
+Ruft die relative virtuelle Adresse (RVA) des Speicher Orts ab. Verwenden Sie, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) auf festgelegt ist `LocIsStatic` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_relativeVirtualAddress ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die relative virtuelle Adresse des Speicherorts zurück.  
+ vorgenommen Gibt die relative virtuelle Adresse des Speicher Orts zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -51,6 +51,6 @@ DWORD       rva;
 pSymbol->get_relativeVirtualAddress( &rva );  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

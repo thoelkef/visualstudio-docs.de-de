@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446688"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841260"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,10 +106,10 @@ VSPerfCmd /Attach:MyService.exe
 |**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|  
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Bemerkungen  
  Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht erforderlich, wenn die Anwendung mithilfe des Leistungs-Explorers in der IDE gestartet wurde. Der Leistungs-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.  
   
  Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird während der Analyse eine Warnung ausgegeben und die Namen der verwalteten Funktionen werden nicht ordnungsgemäß aufgelöst.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

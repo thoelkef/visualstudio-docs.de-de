@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824937"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841221"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Anfang der Adressbereich, in dem die lokalen Symbolcache gültig ist.  
+Gibt den Anfang des Adress Bereichs zurück, in dem das lokale Symbol gültig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,22 +35,22 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
   
 #### <a name="parameters"></a>Parameter  
  `address`  
- [out] Gibt den Beginn des Adressbereichs zurück.  
+ vorgenommen Gibt den Anfang des Adress Bereichs zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die relative virtuelle Adresse zurückgegeben wird, den Anfang des Bereichs, in dem das Symbol gültig ist.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Die relative virtuelle Adresse, die zurückgegeben wird, ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
 > [!NOTE]
-> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
+> Ein zurückgegebener Fehlercode bedeutet, dass das Symbol keine Informationen zum Live Bereich enthält.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

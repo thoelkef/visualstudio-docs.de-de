@@ -1,5 +1,5 @@
 ---
-title: Einschränkungen für Zeichenfolgenlängen | Microsoft-Dokumentation
+title: Einschränkungen für Zeichen folgen Längen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432534"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840949"
 ---
 # <a name="restrictions-on-string-lengths"></a>Einschränkungen für die Längen von Zeichenfolgen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Source-Plug-in-API schränkt die Längen der Zeichenfolgen, die in verschiedenen Funktionen verwendet.  
+Die Quellcodeverwaltungs-Plug-in-API beschränkt die Längen von Zeichen folgen, die in verschiedenen Funktionen verwendet werden.  
   
-## <a name="string-length-values"></a>Länge-Zeichenfolgenwerten  
+## <a name="string-length-values"></a>Zeichen folgen Längenwerte  
   
 |Konstante|Wert|  
 |--------------|-----------|  
@@ -32,7 +32,7 @@ Die Source-Plug-in-API schränkt die Längen der Zeichenfolgen, die in verschied
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
-> Länge schließt nicht das abschließende `null`. Schließen Sie andere Konstanten mit dem Suffix "_Größe" anstelle von "_LEN" Speicherplatz für das abschließende `null`.  
+> Die Länge schließt das abschließende nicht ein `null` . Andere Konstanten mit dem Suffix "_SIZE" anstelle von "_LEN" enthalten Platz für das abschließende `null` .  
   
 |Konstante|Wert|  
 |--------------|-----------|  
@@ -41,5 +41,5 @@ Die Source-Plug-in-API schränkt die Längen der Zeichenfolgen, die in verschied
 |SCC_USER_SIZE|32|  
 |SCC_PRJPATH_SIZE|301|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)

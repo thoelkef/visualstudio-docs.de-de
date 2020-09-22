@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439685"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841181"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Befehlszeile mit Sampling-Profilerstellung
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeilentools und Sampling eine Profilerstellung einer Anwendung ausgeführt wird, um Leistungsprobleme zu identifizieren.  
@@ -33,7 +33,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
 - Analysieren der Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde, um Leistungsprobleme zu lokalisieren und zu beheben  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Voraussetzungen  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -49,7 +49,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
  Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Prozess periodisch zum Bestimmen der aktiven Funktion überprüft wird. Die resultierenden Daten enthalten Angaben dazu, wie häufig die Funktion sich während des Samplings des Prozesses in der Aufrufliste ganz oben befunden hat.  
   
 > [!NOTE]
-> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis „\Team Tools\Performance Tools“ des Visual Studio-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax ist eine 32-Bit-Anwendung.  
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des Visual Studio-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax ist eine 32-Bit-Anwendung.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>So erstellen Sie ein Profil für die Anwendung "PeopleTrax" mithilfe der Samplingmethode  
   
@@ -97,7 +97,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
     - Öffnen Sie die VSP-Datei in der Visual Studio-IDE.  
   
-         - oder -  
+         \- oder -  
   
     - Generieren Sie mithilfe des Befehlszeilentools "VSPerfReport.exe" eine Datei mit durch Trennzeichen getrennten Werten (CSV-Datei). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE verwendet werden können:  
   
@@ -105,9 +105,9 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)   
- [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)   
+ [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)   
+ [Leistungs Berichts Ansichten](../profiling/performance-report-views.md)
