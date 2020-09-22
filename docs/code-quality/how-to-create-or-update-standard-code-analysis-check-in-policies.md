@@ -1,5 +1,6 @@
 ---
-title: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
+title: Eincheck Richtlinien für Standard Code Analyse erstellen/aktualisieren
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371897"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808625"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
@@ -49,7 +50,7 @@ Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, kön
 
 Aktivieren oder deaktivieren Sie die folgenden Optionen:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**Erzwingen Sie den Eincheck Vorgang, sodass nur Dateien enthalten sind, die Teil der aktuellen Projekt Mappe sind.**|Die Code Analyse kann nur für Dateien ausgeführt werden, die in den Projektmappen-und Projekt Konfigurationsdateien Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Lösung ist, analysiert wird.|
 |**C/C++-Code Analyse erzwingen (/analyze)**|Erfordert, dass alle C-oder C++-Projekte mit der/analyze-Compileroption erstellt werden, um die Code Analyse auszuführen, bevor Sie eingeglichen werden können.|
@@ -67,6 +68,6 @@ Verwenden Sie in der Liste **diesen Regelsatz ausführen** eine der folgenden Me
 
 Weitere Informationen zum Erstellen und Implementieren eines benutzerdefinierten Eincheck Richtlinien-Regelsatzes finden Sie unter [Implementieren von benutzerdefinierten Eincheck Richtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

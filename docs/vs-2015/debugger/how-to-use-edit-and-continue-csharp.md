@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Bearbeiten und Fortfahren verwenden (C#) | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ (C#) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,18 +17,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384026"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841064"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ [C#]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen.  
   
- Bearbeiten und Fortfahren wird automatisch aufgerufen, wenn Änderungen im Unterbrechungsmodus befindet, und wählen Sie dann einen Ausführungsbefehl des Debuggers Befehl, z. B. **Weiter**, **Schritt**, oder **Festlegen der nächsten Anweisung**, oder für die Auswertung einer Funktion in einem Debuggerfenster.  
+ "Bearbeiten und Fortfahren" wird automatisch aufgerufen, wenn Sie Änderungen im Break-Modus vornehmen. Wählen Sie dann einen Debugger-Ausführungs Befehl aus, z. b. **fortsetzen**, **Schritt**oder **nächste Anweisung festlegen**, oder Werten Sie eine Funktion in einem Debuggerfenster aus.  
   
 > [!NOTE]
 > Die Funktion "Bearbeiten und Fortfahren" wird beim Debuggen von Compact Framework, optimiertem Code, gemischtem systemeigenem/verwaltetem Code und SQL Server Common Language Runtime (CLR)-Integrationscode nicht unterstützt. Bei dem Versuch, in einem solchen Szenario Codeänderungen vorzunehmen, wird im Debugger ein Dialogfeld mit dem Hinweis angezeigt, dass Bearbeiten und Fortfahren nicht unterstützt wird.  
@@ -37,21 +37,21 @@ Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen 
   
 1. Nehmen Sie im Unterbrechungsmodus eine Änderung am Quellcode vor.  
   
-2. Von der **Debuggen** Menü klicken Sie auf **Weiter**, **Schritt**, oder **Festlegen der nächsten Anweisung** oder Auswerten einer Funktion in einem Debuggerfenster.  
+2. Klicken Sie im Menü **Debuggen** auf **weiter**, **Schritt**oder **nächste Anweisung festlegen** , oder Werten Sie eine Funktion in einem Debuggerfenster aus.  
   
-     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt. Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt. Weitere Informationen finden Sie unter [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt. Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt. Weitere Informationen finden Sie [unter Unterstützte Code Änderungen (c#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>So aktivieren bzw. deaktivieren Sie "Bearbeiten und Fortfahren"  
   
 1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2. In der **Optionen** Dialogfeld erweitern Sie die **Debuggen** Knoten, und wählen **bearbeiten und Fortfahren**.  
+2. Erweitern Sie im Dialogfeld **Optionen** den Knoten **Debuggen** , und wählen Sie **Bearbeiten und Fortfahren**aus.  
   
-3. In der **Optionen** Dialogfeld **bearbeiten und Fortfahren** Seite aktivieren oder Deaktivieren der **bearbeiten und Fortfahren aktivieren** Kontrollkästchen.  
+3. Aktivieren bzw. deaktivieren Sie im Dialogfeld **Optionen** auf der Seite **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren** .  
   
      Die Einstellungen werden beim Neustarten der Debugsitzung aktiv.  
   
-## <a name="see-also"></a>Siehe auch  
- [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Unterstützte Codeänderungen (c#)](../debugger/supported-code-changes-csharp.md)   
- [Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Bearbeiten und Fortfahren (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Unterstützte Code Änderungen (c#)](../debugger/supported-code-changes-csharp.md)   
+ [Bearbeiten und Fortfahren mit Fehlern und Warnungen (c#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

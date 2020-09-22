@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_udtkind | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_udtKind | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb58bec19460a78839ded86c9b7d194e838cb09
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809626"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841089"
 ---
-# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
+# <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Vielfalt der einen benutzerdefinierten Typ (UDT) ab.  
+Ruft die Vielfalt eines benutzerdefinierten Typs (User-Defined Type, UDT) ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,14 +35,14 @@ HRESULT get_udtKind ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md) Enumeration, der angibt, die Art eines UDT:-Struktur, Klasse oder Union.  
+ vorgenommen Gibt einen Wert aus der [UdtKind](../../debugger/debug-interface-access/udtkind.md) -enumerationsenumeration zurück, der die Art eines UDT angibt: Structure, Class oder Union.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der- `S_FALSE` oder-Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md)

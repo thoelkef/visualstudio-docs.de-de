@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_compilername | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_compilerName | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6276247bb93e7482dda713c95b40a68809c0237
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64815003"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841126"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Namen der der Compiler, die zum Generieren der [Kompiliereinheit](../../debugger/debug-interface-access/compiland.md).  
+Gibt den Namen des Compilers zurück, der zum Generieren der [kompiund](../../debugger/debug-interface-access/compiland.md)verwendet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,22 +35,22 @@ HRESULT get_compilerName (
   
 #### <a name="parameters"></a>Parameter  
  `pName`  
- Zeiger auf ein BSTR, das die Unicode-Namen des Compilers enthält.  
+ Zeiger auf einen BSTR-Wert, der den Unicode-Namen des Compilers enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

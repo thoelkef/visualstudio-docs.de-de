@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978372"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810953"
 ---
 # <a name="secure-deployment"></a>Sichere Bereitstellung
   Wenn Sie eine Office-Projekt Mappe erstellen, wird der Entwicklungs Computer automatisch aktualisiert, damit der Code in Ihrem Projekt ausgeführt werden kann. Wenn Sie die Lösung bereitstellen, müssen Sie jedoch einen Beweis dafür bereitstellen, welche Grundlage eine Vertrauensstellungs Entscheidung bilden soll, indem Sie die Lösung mit einem Zertifikat signieren oder die Eingabeaufforderung für die Vertrauenswürdigkeit verwenden [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office](../vsto/granting-trust-to-office-solutions.md)-Projektmappen.
@@ -44,7 +44,7 @@ ms.locfileid: "62978372"
 
   Um Office-Projektmappen das Ausführen von Code zu ermöglichen, legen Sie beide `Disabled` Einträge auf 0 (null) fest, oder löschen Sie die Registrierungseinträge.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
-- [Vorbereiten von Computern zum Ausführen oder Hosten von Office-Lösungen](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [Vorbereiten von Computern zum Ausführen oder Hosten von Office-Lösungen](/previous-versions/bb772092(v=vs.110))
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

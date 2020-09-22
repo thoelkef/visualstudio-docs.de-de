@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312586"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743330"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -60,6 +60,14 @@ In diesem Fenster festgelegte Optionen gelten für Ihr Visual Studio-Personalis
 
 Sie können für jede dieser Codeformateinstellungen auf dieser Seite über die Dropdownfelder jeder Zeile die Werte für **Preference** (Präferenz)und **Schweregrad** festlegen. Der Schweregrad kann auf **Nur Refactoring**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Nur Refactoring** festgelegt ist. Das Glühbirnensymbol für **Schnellaktionen**![Glühbirnensymbol](media/light-bulb-dropdown.png), das Fehlerglühbirnensymbol ![Fehlerglühbirnensymbol](media/error-bulb.png) oder das Schraubendrehersymbol ![Schraubendrehersymbol](media/screwdriver.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der **Schnellaktionen** auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
 
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Erzwingen von Codeformatregeln beim Build
+
+Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
+
+::: moniker-end
+
 ## <a name="apply-code-styles"></a>Anwenden von Codeformaten
 
 ::: moniker range="vs-2017"
@@ -101,7 +109,7 @@ Wenn Ihre Codeformateinstellungen bei jedem Speichern einer Datei angewendet wer
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schnelle Aktionen](../ide/quick-actions.md)
 - [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

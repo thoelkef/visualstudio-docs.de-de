@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424136"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841141"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,38 +37,38 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`AssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn kein Name erstellt werden kann, löst die Aufgabe einen Fehler aus.|  
-|`AssemblyVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Standardwert "1.0.0.0" verwendet.|  
-|`ClrVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die für die Anwendung erforderliche Mindestversion der Common Language Runtime (CLR) an. Der Standardwert ist die vom Buildsystem verwendete CLR-Version. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
+|`AssemblyName`|Optionaler `String`-Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn kein Name erstellt werden kann, löst die Aufgabe einen Fehler aus.|  
+|`AssemblyVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Standardwert "1.0.0.0" verwendet.|  
+|`ClrVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt die für die Anwendung erforderliche Mindestversion der Common Language Runtime (CLR) an. Der Standardwert ist die vom Buildsystem verwendete CLR-Version. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`ConfigFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt an, welches Element die Anwendungskonfigurationsdatei enthält. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`Dependencies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Elementliste an, die die abhängigen Assemblys für das generierte Manifest definiert. Jedes Element wird ggf. anhand von Elementmetadaten näher beschrieben, um zusätzlich den Bereitstellungszustand und den Typ der Abhängigkeit anzugeben. Weitere Informationen finden Sie im Abschnitt "Elementmetadaten" weiter unten.|  
-|`Description`|Optionaler `String` -Parameter.<br /><br /> Gibt die Beschreibung der Anwendung oder Komponente an.|  
+|`Description`|Optionaler `String`-Parameter.<br /><br /> Gibt die Beschreibung der Anwendung oder Komponente an.|  
 |`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt ein einzelnes Element an, das den Einstiegspunkt für die generierte Manifestassembly bezeichnet.<br /><br /> Bei einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsmanifest gibt dieser Parameter die Assembly an, die gestartet wird, wenn die Anwendung ausgeführt wird.|  
 |`ErrorReportUrl`|Optionaler [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
 |`FileAssociations`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Liste mit mindestens einem Dateityp an, der dem ClickOnce-Bereitstellungsmanifest zugeordnet ist.<br /><br /> Dateizuordnungen sind nur gültig, wenn als Ziel .NET Framework 3.5 oder höher verwendet wird.|  
 |`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Dateien, die in das Manifest eingeschlossen werden sollen. Geben Sie den vollständigen Pfad für jede Datei an.|  
 |`HostInBrowser`|Optionaler [Boolescher](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
 |`IconFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Anwendungssymboldatei an. Das Anwendungssymbol wird im generierten Anwendungsmanifest ausgedrückt und im Startmenü sowie im Dialogfeld Software verwendet. Erfolgt diese Angabe nicht, wird ein Standardsymbol verwendet. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`InputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt ein Eingabe-XML-Dokument an, das als Basis für den Manifestgenerator dienen soll. Dadurch können strukturierte Daten, z. B. für Anwendungssicherheit oder benutzerdefinierte Manifestdefinitionen, im Ausgabemanifest dargestellt werden. Das Stammelement im XML-Dokument muss ein Assemblyknoten im "asmv1"-Namespace sein.|  
+|`InputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt ein Eingabe-XML-Dokument an, das als Basis für den Manifestgenerator dienen soll. Dadurch können strukturierte Daten, z. B. für Anwendungssicherheit oder benutzerdefinierte Manifestdefinitionen, im Ausgabemanifest dargestellt werden. Das Stammelement im XML-Dokument muss ein Assemblyknoten im "asmv1"-Namespace sein.|  
 |`IsolatedComReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt COM-Komponenten an, die im generierten Manifest isoliert werden sollen. Dieser Parameter unterstützt das Isolieren von COM-Komponenten für die Bereitstellung über "COM-Interop ohne Registrierung". Zu diesem Zweck wird automatisch ein Manifest mit standardmäßigen COM-Registrierungsdefinitionen generiert. Die COM-Komponenten müssen jedoch auf dem Buildcomputer registriert werden, damit dies ordnungsgemäß funktioniert.|  
-|`ManifestType`|Optionaler `String` -Parameter.<br /><br /> Gibt an, welcher Manifesttyp generiert werden soll. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Wird dieser Parameter nicht angegeben, verwendet die Aufgabe standardmäßig `ClickOnce`.|  
-|`MaxTargetPath`|Optionaler `String` -Parameter.<br /><br /> Gibt die maximal zulässige Länge eines Dateipfads in einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsbereitstellung an. Wenn dieser Wert angegeben wird, wird die Länge jedes Dateipfads in der Anwendung mit dem Grenzwert verglichen. Alle Elemente, die den Grenzwert übersteigen, lösen eine Buildwarnung aus. Wenn dieser Parameter nicht angegeben wird oder den Wert 0 (null) hat, wird keine Prüfung ausgeführt. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`OSVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die für die Anwendung mindestens erforderliche Betriebssystemversion an. Der Wert "5.1.2600.0" gibt z. B. an, dass es sich um das Betriebssystem Windows XP handelt. Wenn dieser Parameter nicht angegeben wird, wird der Wert "4.10.0.0" verwendet, der Windows 98 Zweite Ausgabe bezeichnet, also das Betriebssystem, das für .Net Framework mindestens erforderlich ist. Wenn die Aufgabe ein natives Manifest generiert, wird diese Eingabe ignoriert.|  
+|`ManifestType`|Optionaler `String`-Parameter.<br /><br /> Gibt an, welcher Manifesttyp generiert werden soll. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Wird dieser Parameter nicht angegeben, verwendet die Aufgabe standardmäßig `ClickOnce`.|  
+|`MaxTargetPath`|Optionaler `String`-Parameter.<br /><br /> Gibt die maximal zulässige Länge eines Dateipfads in einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsbereitstellung an. Wenn dieser Wert angegeben wird, wird die Länge jedes Dateipfads in der Anwendung mit dem Grenzwert verglichen. Alle Elemente, die den Grenzwert übersteigen, lösen eine Buildwarnung aus. Wenn dieser Parameter nicht angegeben wird oder den Wert 0 (null) hat, wird keine Prüfung ausgeführt. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
+|`OSVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt die für die Anwendung mindestens erforderliche Betriebssystemversion an. Der Wert "5.1.2600.0" gibt z. B. an, dass es sich um das Betriebssystem Windows XP handelt. Wenn dieser Parameter nicht angegeben wird, wird der Wert "4.10.0.0" verwendet, der Windows 98 Zweite Ausgabe bezeichnet, also das Betriebssystem, das für .Net Framework mindestens erforderlich ist. Wenn die Aufgabe ein natives Manifest generiert, wird diese Eingabe ignoriert.|  
 |`OutputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt den Namen der generierten Ausgabemanifestdatei an. Wenn dieser Parameter nicht angegeben wird, wird der Name der Ausgabedatei von der Identität des generierten Manifests abgeleitet.|  
-|`Platform`|Optionaler `String` -Parameter.<br /><br /> Gibt die Zielplattform für die Anwendung an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Wird dieser Parameter nicht angegeben, verwendet die Aufgabe standardmäßig `AnyCPU`.|  
-|`Product`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen der Anwendung an. Wenn dieser Parameter nicht angegeben wird, wird der Name von der Identität des generierten Manifests abgeleitet. Dieser Name wird für die Verknüpfung im Startmenü verwendet und ist Teil des Namens, der im Dialogfeld "Software" angezeigt wird.|  
-|`Publisher`|Optionaler `String` -Parameter.<br /><br /> Gibt den Herausgeber der Anwendung an. Wenn dieser Parameter nicht angegeben ist, wird der Name vom registrierten Benutzer oder von der Identität des generierten Manifests abgeleitet. Dieser Name wird für den Ordnernamen im Startmenü verwendet und ist Teil des Namens, der im Dialogfeld "Software" angezeigt wird.|  
-|`RequiresMinimumFramework35SP1`|Optionaler `Boolean` -Parameter.<br /><br /> Bei "true" ist für die Anwendung .NET Framework 3.5 SP1 oder eine aktuellere Version erforderlich.|  
-|`TargetCulture`|Optionaler `String` -Parameter.<br /><br /> Identifiziert die Kultur der Anwendung und gibt das `Language`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben ist, wird davon ausgegangen, dass die Anwendung kulturunabhängig ist.|  
-|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt den Zielframeworkmoniker an.|  
-|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt das Zielframeworkprofil an.|  
-|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt den Namen der .NET Framework-Teilmenge an, auf die abgezielt wird.|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt das .NET Framework-Ziel des Projekts an.|  
-|`TrustInfoFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Bezeichnet ein XML-Dokument, das die Anwendungssicherheit angibt. Das Stammelement im XML-Dokument muss ein trustInfo-Knoten im asmv2-Namespace sein. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Bei "true" werden die Eigenschaften `Product`, `Publisher` und `SupportUrl` in das Anwendungsmanifest geschrieben.|  
+|`Platform`|Optionaler `String`-Parameter.<br /><br /> Gibt die Zielplattform für die Anwendung an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Wird dieser Parameter nicht angegeben, verwendet die Aufgabe standardmäßig `AnyCPU`.|  
+|`Product`|Optionaler `String`-Parameter.<br /><br /> Gibt den Namen der Anwendung an. Wenn dieser Parameter nicht angegeben wird, wird der Name von der Identität des generierten Manifests abgeleitet. Dieser Name wird für die Verknüpfung im Startmenü verwendet und ist Teil des Namens, der im Dialogfeld "Software" angezeigt wird.|  
+|`Publisher`|Optionaler `String`-Parameter.<br /><br /> Gibt den Herausgeber der Anwendung an. Wenn dieser Parameter nicht angegeben ist, wird der Name vom registrierten Benutzer oder von der Identität des generierten Manifests abgeleitet. Dieser Name wird für den Ordnernamen im Startmenü verwendet und ist Teil des Namens, der im Dialogfeld "Software" angezeigt wird.|  
+|`RequiresMinimumFramework35SP1`|Optionaler `Boolean`-Parameter.<br /><br /> Bei "true" ist für die Anwendung .NET Framework 3.5 SP1 oder eine aktuellere Version erforderlich.|  
+|`TargetCulture`|Optionaler `String`-Parameter.<br /><br /> Identifiziert die Kultur der Anwendung und gibt das `Language`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben ist, wird davon ausgegangen, dass die Anwendung kulturunabhängig ist.|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Gibt den Zielframeworkmoniker an.|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Gibt das Zielframeworkprofil an.|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Gibt den Namen der .NET Framework-Teilmenge an, auf die abgezielt wird.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Gibt das .NET Framework-Ziel des Projekts an.|  
+|`TrustInfoFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Bezeichnet ein XML-Dokument, das die Anwendungssicherheit angibt. Das Stammelement im XML-Dokument muss ein trustInfo-Knoten im asmv2-Namespace sein. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Bei "true" werden die Eigenschaften `Product`, `Publisher` und `SupportUrl` in das Anwendungsmanifest geschrieben.|  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.GenerateManifestBase>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste der Parameter der „Task“-Klasse finden Sie unter [Aufgabenbasisklasse](../msbuild/task-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.GenerateManifestBase>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste der Parameter der Task-Klasse finden Sie unter [Task-Basisklasse](../msbuild/task-base-class.md).  
   
  Weitere Informationen zum Verwenden der `GenerateDeploymentManifest`-Aufgabe finden Sie unter [GenerateApplicationManifest Task (GenerateApplicationManifest-Aufgabe)](../msbuild/generateapplicationmanifest-task.md).  
   
@@ -76,7 +76,7 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
   
 ## <a name="item-metadata"></a>Elementmetadaten  
   
-|Metadatenname|Beschreibung|  
+|Metadatenname|BESCHREIBUNG|  
 |-------------------|-----------------|  
 |`DependencyType`|Gibt an, ob die Abhängigkeit veröffentlicht und mit der Anwendung installiert wird oder als erforderliche Komponente vorhanden sein muss. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Der Standardwert lautet "Install".|  
 |`AssemblyType`|Gibt an, ob die Abhängigkeit eine verwaltete oder eine systemeigene Assembly ist. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Der Standardwert lautet `Unspecified`. Er gibt an, dass der Manifest-Generator den Assemblytyp automatisch bestimmt.|  
@@ -352,8 +352,8 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [GenerateDeploymentManifest Task (GenerateDeploymentManifest-Aufgabe)](../msbuild/generatedeploymentmanifest-task.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Erfüllen](../msbuild/msbuild-tasks.md)   
+ [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile-Aufgabe](../msbuild/signfile-task.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

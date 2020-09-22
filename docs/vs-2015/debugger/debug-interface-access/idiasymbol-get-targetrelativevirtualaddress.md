@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetrelativevirtualaddress | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_targetRelativeVirtualAddress | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b472b7a92f7b8e56aa8cfaaba52829812694823
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64822123"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841194"
 ---
-# <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
+# <a name="idiasymbolget_targetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ruft die relative virtuelle Adresse (RVA) eines Thunk-Ziels ab.  
@@ -35,19 +35,19 @@ HRESULT get_targetRelativeVirtualAddress ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die RVA eines Thunk-Ziels zurück.  
+ vorgenommen Gibt die RVA eines Thunk-Ziels zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft gilt nur, wenn das Symbol als ein [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Wert `SymTagThunk`.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Eigenschaft ist nur gültig, wenn das Symbol als [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationswert von verwendet wird `SymTagThunk` .  
   
- Ein "Thunk" ist ein Codeabschnitt, der einen 16-Bit-Adressraum (als einen segmentierten Adressraum bezeichnet) bis ein Arbeitsspeicher von 32-Bit-Adressraum (auch bekannt als flache Adressraum) konvertiert.  
+ Ein "Thunk" ist ein Code Ausschnitt, der zwischen einem 32-Bit-Speicher Adressraum (auch als flataddress-Raum bezeichnet) und einem 16-Bit-Adressraum (als segmentierter Adressraum bezeichnet) konvertiert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

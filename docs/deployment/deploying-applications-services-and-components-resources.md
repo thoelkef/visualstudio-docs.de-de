@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800831"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036687"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Stellen Sie Ihre App in einem Ordner, in IIS, in Azure oder einem anderen Ziel bereit.
 
 Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen.
 
-Für viele gängige App-Typen können Sie Ihre App direkt über den Projektmappen-Explorer in Visual Studio bereitstellen. Einen schnellen Überblick über diese Funktion finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
+Hilfe zu Ihrer Bereitstellungsaufgabe:
 
-![Auswählen einer Veröffentlichungsoption](../deployment/media/quickstart-publish-dialog.png)
+- Sind Sie nicht sicher, welche Bereitstellungsoption Sie wählen sollen? Siehe [Welche Optionen für die Veröffentlichung sind für mich geeignet?](#what-publishing-options-are-right-for-me).
+- Hilfe zu Bereitstellungsproblemen für Azure App Service oder IIS finden Sie unter [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Hilfe zum Konfigurieren der .NET-Bereitstellungseinstellungen finden Sie unter [Konfigurieren von .NET-Bereitstellungseinstellungen](#configure-net-deployment-settings).
+- Wenn Sie zuvor ein Veröffentlichungsprofil erstellt haben, wählen Sie für die Bereitstellung auf einem neuen Ziel im Fenster **Veröffentlichen** für ein konfiguriertes Profil **Neu** aus.
+
+   ![Erstellen eines neuen Veröffentlichungsprofils](../deployment/media/create-a-new-publish-profile.png)
+
+   Wählen Sie dann im Fenster „Veröffentlichen“ eine Bereitstellungsoption aus. Informationen zu den Veröffentlichungsoptionen finden Sie in den folgenden Abschnitten.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Welche Optionen für die Veröffentlichung sind für mich geeignet?
 
 Apps können aus Visual Studio direkt auf die folgenden Ziele veröffentlicht werden:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Docker-Containerregistrierung](#docker-container-registry)
 - [Ordner](#folder)
 - [FTP/FTPS-Server](#ftpftps-server)
 - [Webserver (IIS)](#web-server-iis)
 - [Profil importieren](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service (Linux)](#azure-app-service)
+- [IIS (Auswählen von IIS, FTP usw.)](#web-server-iis)
+- [FTP/FTPS (Auswählen von IIS, FTP usw.)](#ftpftps-server)
+- [Ordner](#folder)
+- [Profil importieren](#import-profile)
+::: moniker-end
+
+Die vorangehenden Optionen werden wie in der folgenden Abbildung dargestellt angezeigt, wenn Sie ein neues Veröffentlichungsprofil erstellen.
+
+::: moniker range=">=vs-2019"
+![Auswählen einer Veröffentlichungsoption](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Auswählen einer Veröffentlichungsoption](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Einen kurzen Überblick über allgemeinere Optionen für die Anwendungsbereitstellung finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Wenn Sie Azure auswählen, können Sie zwischen den folgenden Optionen wählen:
 
-- Azure App Service unter Windows, Linux oder als Docker-Image ausgeführt
-- Ein Docker-Image, das der Azure Container Registry bereitgestellt wird
-- Eine VM von Azure
+- [Azure App Service](#azure-app-service) unter Windows, Linux oder als Docker-Image ausgeführt
+- Ein Docker-Image, das der [Azure Container Registry](#azure-container-registry) bereitgestellt wird
+- [Ein virtueller Azure-Computer](#azure-virtual-machine)
 
 ![Auswahl eines Azure-Diensts](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ Sie bestimmen, wie viel Computingleistung dem App Service zur Verfügung stehen,
 > Wenn Sie Azure App Service in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
 
 Weitere Informationen zum Veröffentlichen in App Service finden Sie unter:
-- [Veröffentlichen einer Web-App in Azure App Service mit Visual Studio](quickstart-deploy-to-azure.md) und [Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux](quickstart-deploy-to-linux.md).
+- [Schnellstart: Veröffentlichen in Azure App Service](quickstart-deploy-to-azure.md)
+- [Schnellstart: Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux](quickstart-deploy-to-linux.md)
+- [Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,13 +108,17 @@ Mit [Azure Container Registry](/azure/container-registry/) können Sie Docker-Co
 - Wenn Sie über eine Entwicklungs- und Bereitstellungspipeline für Docker-Container verfügen.
 - Wenn Sie Docker-Containerimages in Azure erstellen möchten.
 
-### <a name="azure-virtual-machines"></a>Azure Virtual Machines
+Weitere Informationen finden Sie unter:
+
+- [Bereitstellen eines ASP.NET-Containers an eine Containerregistrierung mithilfe von Visual Studio](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Virtueller Azure-Computer
 
 Mit [Azure Virtual Machines (VMs)](https://azure.microsoft.com/documentation/services/virtual-machines/) können Sie eine beliebige Anzahl von Computingressourcen in der Cloud erstellen und verwalten. Indem Sie die Verantwortung für die gesamte Software und alle Updates auf den VMs übernehmen, können Sie diese wie gewünscht dem Bedarf Ihrer App anpassen. Sie können direkt über den Remotedesktop auf die VMs zugreifen, und jeder behält, sofern gewünscht, die ihm zugewiesene IP-Adresse bei.
 
 Beim Skalieren einer App, die auf virtuellen Computern gehostet wird, werden zusätzliche VMs entsprechend dem Bedarf sowie die erforderliche Software bereitgestellt. Diese zusätzliche Kontrollebene ermöglicht Ihnen, in verschiedenen Regionen weltweit unterschiedliche Skalierungen vorzunehmen. Wenn Ihre Anwendung beispielsweise von Mitarbeitern in einer Vielzahl von Zweigstellen eingesetzt wird, können Sie Ihre virtuellen Computer entsprechend der Anzahl der Mitarbeiter in diesen Regionen skalieren und damit potenziell Kosten senken.
 
-Weitere Informationen finden Sie in dem [detaillierten Vergleich](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) zwischen Azure App Service, Azure Virtual Machines und anderen Azure-Diensten, die Sie als Bereitstellungsziel mithilfe der Option „Benutzerdefiniert“ in Visual Studio verwenden können.
+Weitere Informationen finden Sie in dem [detaillierten Vergleich](/azure/architecture/guide/technology-choices/compute-decision-tree) zwischen Azure App Service, Azure Virtual Machines und anderen Azure-Diensten, die Sie als Bereitstellungsziel mithilfe der Option „Benutzerdefiniert“ in Visual Studio verwenden können.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Unter welchen Umständen Sie Azure Virtual Machines wählen sollten
 
@@ -103,6 +137,11 @@ Wenn Ihre Anwendung Docker verwendet, können Sie Ihre containerisierte Anwendun
 
 - Sie möchten eine containerisierte Anwendung bereitstellen.
 
+Weitere Informationen finden Sie unter
+
+- [Bereitstellen eines ASP.NET-Containers an eine Containerregistrierung mithilfe von Visual Studio](../containers/hosting-web-apps-in-docker.md)
+- [Bereitstellen in Docker Hub](../containers/deploy-docker-hub.md)
+
 ## <a name="folder"></a>Ordner
 
 Bereitstellung im Dateisystem bedeutet einfach, dass Sie die Dateien Ihrer App in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Dies erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Server ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.
@@ -117,7 +156,13 @@ Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Serv
 - Sie benötigen nur eine lokale Testbereitstellung.
 - Sie möchten Anwendungsdateien einzeln untersuchen und möglicherweise ändern, bevor sie auf ein anderes Bereitstellungsziel gesendet werden.
 
-Weitere Informationen finden Sie unter [Quickstart – Deploy to a local folder (Schnellstart: Bereitstellen einer App in einem lokalen Ordner)](quickstart-deploy-to-local-folder.md).
+Weitere Informationen finden Sie unter [Bereitstellen einer App in einem lokalen Ordner mithilfe von Visual Studio](quickstart-deploy-to-local-folder.md).
+
+Weitere Hilfe zum Auswählen der Einstellungen finden Sie in den folgenden Themen:
+
+- [Übersicht über die .NET Core-Anwendungsveröffentlichung](/dotnet/core/deploying/)
+- [.NET Core-RID-Katalog](/dotnet/core/rid-catalog)
+- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>FTP/FTPS-Server
 
@@ -157,7 +202,9 @@ Sie können in Visual Studio beliebig viele IIS-Webserver-Bereitstellungsprofile
 - Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
 - Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
 
-Weitere Informationen finden Sie unter [Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio](quickstart-deploy-to-a-web-site.md). Weitere Informationen zur Problembehandlung von ASP.NET Core in IIS finden Sie unter [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Weitere Informationen finden Sie unter [Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio](quickstart-deploy-to-a-web-site.md).
+
+Weitere Informationen zur Problembehandlung von ASP.NET Core in IIS finden Sie unter [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Profil importieren
 
@@ -174,6 +221,14 @@ Weitere Informationen finden Sie unter
 
 - [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in IIS](tutorial-import-publish-settings-iis.md)
 - [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Konfigurieren von .NET-Bereitstellungseinstellungen
+
+Weitere Hilfe zum Auswählen der Einstellungen finden Sie in den folgenden Themen:
+
+- [Übersicht über die .NET Core-Anwendungsveröffentlichung](/dotnet/core/deploying/)
+- [.NET Core-RID-Katalog](/dotnet/core/rid-catalog)
+- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

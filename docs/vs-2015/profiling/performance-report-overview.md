@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434276"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840881"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
  In der Ansicht des Anweisungszeiger werden die bestimmten Anweisungen angezeigt, die während der Sampling-Profilerstellung ausgeführt wurden. Weitere Informationen finden Sie unter [Anweisungszeigeransicht (IPs)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Zuordnungsansicht  
- Die Zuordnungsansicht ist verfügbar, wenn **.NET-Objektzuordnung sammeln** auf der Seite **Allgemein** im Eigenschaftendialogfeld **Leistungssitzung** ausgewählt wurde. Siehe [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md). Die Zuordnungsansicht listet die .NET-Objekte auf, die von der Anwendung oder Komponente zugeordnet wurden. Wenn eine Objektzeile erweitert wird, wird eine Aufrufstruktur angezeigt. Die Aufrufstruktur zeigt die Ausführungspfade, die zur Erstellung des Objekts geführt haben. Informationen werden auch über die Anzahl der inklusiven und exklusiven Zuordnungen für jede Funktion in der Aufrufstruktur angezeigt. Die Zuordnungsansicht kann den Ausführungspfad einer Funktion, die die größte Anzahl an Objekten zugeordnet hat, auch erweitern und hervorheben. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**. Weitere Informationen finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) und [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md).  
+ Die Zuordnungsansicht ist verfügbar, wenn **.NET-Objektzuordnung sammeln** auf der Seite **Allgemein** im Eigenschaftendialogfeld **Leistungssitzung** ausgewählt wurde. Siehe [Übersicht über die Leistungs Sitzung](../profiling/performance-session-overview.md). Die Zuordnungsansicht listet die .NET-Objekte auf, die von der Anwendung oder Komponente zugeordnet wurden. Wenn eine Objektzeile erweitert wird, wird eine Aufrufstruktur angezeigt. Die Aufrufstruktur zeigt die Ausführungspfade, die zur Erstellung des Objekts geführt haben. Informationen werden auch über die Anzahl der inklusiven und exklusiven Zuordnungen für jede Funktion in der Aufrufstruktur angezeigt. Die Zuordnungsansicht kann den Ausführungspfad einer Funktion, die die größte Anzahl an Objekten zugeordnet hat, auch erweitern und hervorheben. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**. Weitere Informationen finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) und [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Objektlebensdaueransicht  
  Die Objektlebensdaueransicht ist verfügbar, wenn **.NET Objekt-Zuordnungsinformationen auflisten** und **Lebensdauerinformationen für .NET-Objekte auflisten**  auf der Seite **Allgemein** des Eigenschaftendialogfelds **Leistungssitzung** ausgewählt wurden.  
@@ -96,6 +96,6 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
   
 - **Exportieren**: speichert den aktuellen Bericht im CVS-Format oder als XML-formatierte Datei mit Optionen, die verschiedenen Ansichten zu speichern.  
   
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
- [Leistungsberichtansichten](../profiling/performance-report-views.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)   
+ [Leistungs Berichts Ansichten](../profiling/performance-report-views.md)

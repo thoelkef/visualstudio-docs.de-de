@@ -1,5 +1,5 @@
 ---
-title: Konfigurationsobjekts für das Projekt | Microsoft-Dokumentation
+title: Projekt Konfigurationsobjekt | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 32e4d34ec3d1fbe8753b4185cab76caa77038bd1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434831"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841178"
 ---
 # <a name="project-configuration-object"></a>Projektkonfigurationsobjekt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dem projektkonfigurationsobjekt verwaltet es sich um die Anzeige der Konfigurationsinformationen auf der Benutzeroberfläche.  
+Das Projekt Konfigurationsobjekt verwaltet die Anzeige der Konfigurationsinformationen für die Benutzeroberfläche.  
   
- ![Visual Studio-Projektkonfiguration](../../extensibility/internals/media/vsprojectcfg.gif "VsProjectCfg")  
-Eigenschaftenseiten für Projekt-Konfiguration  
+ ![Visual Studio-Projekt Konfiguration](../../extensibility/internals/media/vsprojectcfg.gif "vsprojectcfg")  
+Eigenschaften Seiten für die Projekt Konfiguration  
   
- Der Konfigurationsanbieter Projekt verwaltet die Projektkonfigurationen. Die Umgebung und andere Pakete, auf das Abrufen von Informationen zu Konfigurationen eines Projekts, und rufen Sie die Projekt-Konfigurationsanbieter-Objekt zugeordneten Schnittstellen zuzugreifen.  
-  
-> [!NOTE]
-> Sie können nicht erstellen oder bearbeiten die Konfigurationsdateien für die Lösung programmgesteuert. Verwenden Sie `DTE.SolutionBuilder`. Finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md) für Weitere Informationen.  
-  
- Um veröffentlichen einen Anzeigenamen ein, in der Benutzeroberfläche für die Konfiguration verwendet werden, sollte Ihr Projekt implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. Die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, womit eine Liste der `IVsCfg` Zeiger, die Sie verwenden können, zum Abrufen der Anzeigenamen für die Konfiguration und Plattform-Informationen in der Benutzeroberfläche der Umgebung aufgelistet werden. Die aktive Konfiguration und Plattform ergeben sich die Konfiguration des Projekts in der Konfiguration der aktuellen Projektmappe gespeichert. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Methode kann verwendet werden, um die aktive Projektkonfiguration abzurufen.  
-  
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Objekt kann optional implementiert werden, auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> Objekt mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> Objekt, das Sie abrufen können eine `IVsProjectCfg2` -Objekt basierend auf den Namen der kanonische Projektkonfiguration.  
-  
- Eine weitere Möglichkeit für die Umgebung und andere Projekte den Zugriff auf Projektkonfigurationen bereit ist für Projekte, die eine Implementierung bereitstellen der `IVsCfgProvider2::GetCfgs` Methode, um eine oder mehrere Konfigurationsobjekte zurück. Die Projekte können auch implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, erbt von `IVsProjectCfg` und dadurch `IVsCfg`, um die konfigurationsspezifischen Informationen bereitstellen. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> unterstützt die Plattformen und Funktionen zum Hinzufügen, löschen und Umbenennen von Projektkonfigurationen.  
+ Der Projekt Konfigurations Anbieter verwaltet die Projekt Konfigurationen. Die Umgebung und andere Pakete, um Zugriff auf die und das Abrufen von Informationen über die Konfigurationen eines Projekts zu erhalten, rufen Sie die Schnittstellen auf, die an das Projekt Konfigurations Anbieter Objekt angefügt  
   
 > [!NOTE]
-> Da Visual Studio nicht mehr auf zwei Arten der Konfiguration beschränkt ist, Code, der Konfigurationen verarbeitet nicht mit Annahmen über die Anzahl der Konfigurationen geschrieben werden sollte, noch mit der Annahme geschrieben werden, die ein Projekt, das nur eine Festplatte verfügt Konfiguration ist unbedingt Debuggen oder der Verkaufsversion durchführen. Dadurch wird die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> veraltet.  
+> Projektmappenkonfigurationsdateien können nicht Programm gesteuert erstellt oder bearbeitet werden. Hierzu muss `DTE.SolutionBuilder` verwendet werden. Weitere [Solution Configuration](../../extensibility/internals/solution-configuration.md) Informationen finden Sie unter Projektmappenkonfiguration.  
   
- Aufrufen von `QueryInterface` auf das von zurückgegebene Objekt`IVsGetCfgProvider::GetCfgProvider` ruft `IVsCfgProvider2`. Wenn `IVsGetCfgProvider` wurde nicht gefunden, durch den Aufruf `QueryInterface` auf die `IVsProject3` Project-Objekt, Sie können das konfigurationsanbieterobjekt zugreifen, durch den Aufruf `QueryInterface` für die Hierarchie Browser Stammobjekt für das Objekt zurückgegeben, für die `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, oder über Ein Zeiger auf den Konfigurationsanbieter für zurückgegebenen `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.  
+ Um einen anzeigen Amen zu veröffentlichen, der in der Konfigurations Benutzeroberfläche verwendet werden soll, sollte das Projekt implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A> . Die-Umgebung Ruft auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> , wodurch eine Liste von Zeigern zurückgegeben wird, die `IVsCfg` Sie verwenden können, um die anzeigen Amen für die Konfigurations-und Platt Form Informationen zu erhalten, die in der Benutzeroberfläche der Umgebung aufgeführt werden Die aktive Konfiguration und Plattform werden durch die Konfiguration des Projekts festgelegt, die in der aktiven Projektmappenkonfiguration gespeichert ist. Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Methode kann verwendet werden, um die aktive Projekt Konfiguration abzurufen.  
   
- `IVsProjectCfg2` vor allem bietet Zugriff auf entwickeln, Debuggen und Bereitstellung von Verwaltungsobjekten und können Projekte die Freiheit gibt, die Ausgaben der Gruppe. Die Methoden der `IVsProjectCfg` und `IVsProjectCfg2` kann verwendet werden, um implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> des Buildprozesses zu verwalten und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> Zeiger für die Ausgabegruppen einer Konfiguration.  
+ Das-Objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> kann optional für das-Objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> mit dem-Objekt implementiert werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> , damit Sie ein `IVsProjectCfg2` Objekt basierend auf dem Namen der kanonischen Projekt Konfiguration abrufen können.  
   
- Das Projekt muss die gleiche Anzahl von Gruppen für jede Konfiguration zurückgeben, die es unterstützt, auch wenn die Anzahl von Ausgaben in einer Gruppe enthaltene Konfiguration auf Konfiguration variieren. Die Gruppen müssen auch die gleichen Bezeichnerinformationen (kanonischer Name, Anzeigename und Gruppeninformationen) Konfiguration auf Konfiguration innerhalb eines Projekts verfügen. Weitere Informationen finden Sie unter [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md).  
+ Eine andere Möglichkeit, die Umgebung und andere Projekte mit Zugriff auf Projekt Konfigurationen bereitzustellen, besteht darin, dass-Projekte eine Implementierung der-Methode bereitstellen `IVsCfgProvider2::GetCfgs` , um mindestens ein Konfigurationsobjekt zurückzugeben. Die Projekte können auch implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> , das von `IVsProjectCfg` und somit von erbt `IVsCfg` , um Konfigurations spezifische Informationen bereitzustellen. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> unterstützt Plattformen und Funktionen zum Hinzufügen, löschen und Umbenennen von Projekt Konfigurationen.  
   
- Zum Debuggen aktivieren möchten, sollten Ihre Konfigurationen implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>. `IVsDebuggableProjectCfg` ist eine optionale Schnittstelle, die von Projekten, damit der Debugger, starten Sie eine Konfiguration kann implementiert und wird auf das Konfigurationsobjekt mit implementiert `IVsCfg` und `IVsProjectCfg`. Die Umgebung ruft es, wenn der Benutzer wählt den Debugger zu starten, indem Sie F5 drücken.  
+> [!NOTE]
+> Da Visual Studio nicht mehr auf zwei Konfigurationstypen beschränkt ist, sollte der Code, der Konfigurationen verarbeitet, nicht mit Annahmen über die Anzahl der Konfigurationen geschrieben werden, und er sollte nicht mit der Annahme geschrieben werden, dass ein Projekt, das nur über eine Konfiguration verfügt, notwendigerweise entweder Debug oder Retail ist. Dadurch wird die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> und als <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> veraltet markiert.  
   
- `ISpecifyPropertyPages` und `IDispatch` werden in Verbindung mithilfe von Eigenschaftenseiten zum Abrufen und Anzeigen der Konfiguration abhängig, die dem Benutzer verwendet. Weitere Informationen finden Sie unter [Eigenschaftenseiten](../../extensibility/internals/property-pages.md).  
+ Durch Aufrufen von `QueryInterface` für das von zurückgegebene Objekt wird `IVsGetCfgProvider::GetCfgProvider` abgerufen `IVsCfgProvider2` . Wenn `IVsGetCfgProvider` nicht gefunden wird, indem für `QueryInterface` das `IVsProject3` Project-Objekt aufgerufen wird, können Sie auf das Konfigurations Anbieter Objekt zugreifen, indem Sie für `QueryInterface` das Hierarchie Stamm Browser-Objekt für das-Objekt aufrufen, das für zurückgegeben `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)` wurde, oder durch einen Zeiger auf den für zurückgegebenen Konfigurations Anbieter `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`  
   
-## <a name="see-also"></a>Siehe auch  
+ `IVsProjectCfg2` bietet primär Zugriff auf Build-, Debug-und bereitstellungsverwaltungsobjekte und ermöglicht es Projekten, Ausgaben zu gruppieren. Die-Methoden von `IVsProjectCfg` und `IVsProjectCfg2` können zur Implementierung von verwendet werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> , um den Buildprozess zu verwalten, und <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> Zeiger für die Ausgabe Gruppen einer Konfiguration.  
+  
+ Das Projekt muss die gleiche Anzahl von Gruppen für jede Konfiguration zurückgeben, die unterstützt wird, obwohl die Anzahl der in einer Gruppe enthaltenen Ausgaben von der Konfiguration bis zur Konfiguration abweichen kann. Die Gruppen müssen auch die gleichen Bezeichnerinformationen (Kanonischer Name, Anzeige Name und Gruppeninformationen) aufweisen, von der Konfiguration bis zur Konfiguration innerhalb eines Projekts. Weitere Informationen finden Sie unter [Projekt Konfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md).  
+  
+ Um das Debuggen zu aktivieren, sollten Ihre Konfigurationen implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> . `IVsDebuggableProjectCfg` ist eine optionale Schnittstelle, die von-Projekten implementiert wird, damit der Debugger eine-Konfiguration starten kann und für das Konfigurationsobjekt mit und implementiert wird `IVsCfg` `IVsProjectCfg` . Die Umgebung ruft Sie auf, wenn der Benutzer die Option zum Starten des Debuggers durch Drücken von F5 wählt.  
+  
+ `ISpecifyPropertyPages` und `IDispatch` werden zusammen mit Eigenschaften Seiten verwendet, um dem Benutzer Konfigurations abhängige Informationen abzurufen und anzuzeigen. Weitere Informationen finden Sie unter [Eigenschaften Seiten](../../extensibility/internals/property-pages.md).  
+  
+## <a name="see-also"></a>Weitere Informationen  
  [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)   
- [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
- [Konfiguration für die Ausgabe des Projekts](../../extensibility/internals/project-configuration-for-output.md)   
- [Eigenschaftenseiten](../../extensibility/internals/property-pages.md)   
+ [Projekt Konfiguration zum aufbauen](../../extensibility/internals/project-configuration-for-building.md)   
+ [Projekt Konfiguration für Ausgabe](../../extensibility/internals/project-configuration-for-output.md)   
+ [Eigenschaften Seiten](../../extensibility/internals/property-pages.md)   
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)

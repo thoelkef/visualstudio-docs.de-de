@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438301"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841105"
 ---
-# <a name="how-to-edit-a-register-value"></a>Vorgehensweise: Bearbeiten eines Registerwerts
+# <a name="how-to-edit-a-register-value"></a>Gewusst wie: Bearbeiten eines Registerwerts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Fenster „Register“ ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld **Optionen** im Knoten **Debuggen** aktiviert ist.  
@@ -47,5 +47,5 @@ Das Fenster „Register“ ist nur verfügbar, wenn Debuggen auf Adressebene im 
     > [!CAUTION]
     > Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar unwesentliche Bearbeitung kann Änderungen in einigen Bits mit dem niedrigsten Wert in einem Gleitkommaregister bewirken.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [How to: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
