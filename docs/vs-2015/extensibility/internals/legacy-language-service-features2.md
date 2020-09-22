@@ -1,5 +1,5 @@
 ---
-title: Legacysprache Service Features2 | Microsoft-Dokumentation
+title: Legacy Sprachdienst Features2 | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 885940b90d24b471d1712670f53ea72fcd4d40e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434390"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842307"
 ---
-# <a name="legacy-language-service-features"></a>Legacy-Dienst-Sprachfunktionen
+# <a name="legacy-language-service-features"></a>Funktionen von Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In den folgenden Themen sind einige der legacysprache-Service-Features, die Sie bereitstellen können.  
+In den folgenden Themen werden einige der Funktionen von Legacy Sprachdiensten aufgelistet, die Sie bereitstellen können.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren eines sprach Dienstanbieter finden Sie unter [Editor-und Sprachdienst Erweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Syntaxfarben in einem Legacysprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Implementieren von Syntaxfarben erläutert.  
+ Erläutert, wie Syntax Farben implementiert werden.  
   
  [Automatisches Formatieren in einem Legacysprachdienst](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
- Erläutert, wie die automatische Formatierung implementiert.  
+ Erläutert, wie die automatische Formatierung implementiert wird.  
   
  [Parameterinformationen in einem Legacysprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- Erläutert, wie die QuickInfo im IntelliSense-Parameter Info zu implementieren.  
+ Erläutert, wie die IntelliSense-Parameter Info-QuickInfo implementiert wird.  
   
  [Anweisungsvervollständigung in einem Legacysprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- Erläutert, wie zur Implementierung der Anweisungsliste für IntelliSense und membervervollständigungsliste.  
+ Erläutert, wie die IntelliSense-Anweisungs Liste und die Element Vervollständigungsliste implementiert werden.  
   
  [Gliederung und ausgeblendeter Text in einem Legacysprachdienst](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
- Erläutert das Implementieren der Gliederung oder den ausgeblendeten Text.  
+ Erläutert, wie Gliederung oder ausgeblendeter Text implementiert wird.  
   
- [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Erläutert einige der Schritte bei der Implementierung von Debugger-Support...  
+ [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Erläutert einige der Schritte zum Implementieren der Debugger-Unterstützung.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte

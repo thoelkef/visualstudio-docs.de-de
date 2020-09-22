@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von COM-Clients und Servern, die RPC-Debuggen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Debuggen von com-Clients und-Servern mit RPC-Debugging | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384034"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842286"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Vorgehensweise: RPC-Debuggen von COM-Clients und -Servern
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Gewusst wie: RPC-Debuggen von COM-Clients und -Servern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden, um COM-Client-/Server-Anwendungen zu debuggen. Vor der Verwendung muss RPC-Debuggen allerdings aktiviert werden. Bei aktiviertem RPC-Debuggen wird der Debugger an den Server angefügt, wenn Sie vom Client in den Serveraufruf springen. Der Code kann nun debuggt werden. Wenn der Debugger angefügt wurde, können alle Debuggerfunktionen sowohl für Client- als auch für Serverprozesse verwendet werden.  
@@ -54,6 +54,6 @@ Sie können RPC-Debuggen (Remote Procedure Call, Remoteprozeduraufruf) verwenden
     > [!NOTE]
     > RPC-Stepping auf einem Remoteserver, auf dem Microsoft Windows Vista ausgeführt wird, funktioniert nur, wenn ein systemeigener Debugger an den Remoteserver angehängt wird. Andernfalls schlägt der RPC-Aufruf ohne eine Fehlermeldung fehl. Sonst wird der RPC-Aufruf abgeschlossen, aber der Einzelschritt beim RPC-Aufruf funktioniert nicht.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von COM-Servern und -Containern](../debugger/com-server-and-container-debugging.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [COM-Server-und Container Debugging](../debugger/com-server-and-container-debugging.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

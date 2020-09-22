@@ -1,5 +1,5 @@
 ---
-title: Auswertung der lokalen Variablen | Microsoft-Dokumentation
+title: Auswerten von lokalen Variablen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444769"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842323"
 ---
 # <a name="evaluating-locals"></a>Auswerten von lokalen Elementen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) wird aufgerufen, um den Wert von einem lokalen, als auch den lokalen Namen und Typ abzurufen. Da der Wert eines lokalen Elements hängt von den aktuellen Zustand des Programms ist, muss den lokalen Wert aus dem Speicher abgerufen werden. Die [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekt dient zum Anbinden der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt, das an die gewünschte Position im Arbeitsspeicher, die mit dem Wert den lokalen darstellt. Dieser Speicherort im Arbeitsspeicher wird dargestellt, durch eine [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
+ [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) wird aufgerufen, um den Wert eines lokalen zu erhalten, sowie den Namen und den Typ des lokalen. Da der Wert eines lokalen von dem aktuellen Status des Programms abhängig ist, muss der Wert des lokalen Werts aus dem Arbeitsspeicher abgerufen werden. Das [idebugbinder](../../extensibility/debugger/reference/idebugbinder.md) -Objekt wird verwendet, um das [idebugfield](../../extensibility/debugger/reference/idebugfield.md) -Objekt, das die lokale darstellt, an die entsprechende Position im Speicher zu binden, die den Wert enthält. Diese Position im Arbeitsspeicher wird durch ein [idebugobject](../../extensibility/debugger/reference/idebugobject.md) -Objekt dargestellt.  
   
- Diese Funktionalität des Abrufen des Werts eines lokalen Elements wird in eine Hilfsfunktion gekapselt, die die folgenden Aufgaben ausführt:  
+ Diese Funktion zum Abrufen des Werts eines lokalen wird in einer Hilfsfunktion gekapselt, die folgende Aufgaben ausführt:  
   
-1. Bindet die `IDebugField` Objekt in den Speicher zum Abrufen einer `IDebugObject` Objekt.  
+1. Bindet das-Objekt an den Arbeits `IDebugField` Speicher, um ein- `IDebugObject` Objekt abzurufen.  
   
-2. Ruft den Wert aus dem Arbeitsspeicher. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
+2. Ruft den Wert aus dem Arbeitsspeicher ab. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
   
-3. Formatiert den Wert basierend auf den lokalen Typ.  
+3. Formatiert den Wert basierend auf dem Typ des lokalen.  
   
-4. Gibt ein generisches Objekt, das den lokalen Wert enthält. In c# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
+4. Gibt ein generisches-Objekt zurück, das den lokalen Wert enthält. In c# ist dies ein `object` , und in C++ ist dies ein `VARIANT` .  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dies ist eine Implementierung einer Funktion, die den Wert einer lokalen in verwaltetem Code abruft.  
@@ -79,7 +79,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Nicht verwalteter Code  
- Dies ist eine Implementierung einer Funktion, die den Wert eines lokalen Elements in nicht verwaltetem Code abruft. `FieldGetType` sehen Sie in [lokale Werte abrufen](../../extensibility/debugger/getting-local-values.md).  
+ Dies ist eine Implementierung einer Funktion, die den Wert eines lokalen in nicht verwaltetem Code abruft. `FieldGetType` wird in " [lokale Werte](../../extensibility/debugger/getting-local-values.md)" angezeigt.  
   
 ```cpp#  
 HRESULT FieldGetPrimitiveValue(  
@@ -191,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Beispielimplementierung von lokalen Elementen](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Abrufen von lokalen Werten](../../extensibility/debugger/getting-local-values.md)   
- [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Beispiel Implementierung von lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Lokale Werte werden erhalten.](../../extensibility/debugger/getting-local-values.md)   
+ [Auswertungs Kontext](../../extensibility/debugger/evaluation-context.md)

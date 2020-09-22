@@ -1,6 +1,6 @@
 ---
 title: Bei einem Prozess ist ein nicht behebbarer Fehler aufgetreten
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544340"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025564"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Nicht behebbare Prozessfehler in Visual Studio
 
@@ -51,3 +51,6 @@ Im Folgenden finden Sie eine Liste der Out-of-Proc-Prozesse, die von Visual Stud
 - WindowsAzureTelemetryService.exe
 
 Wenn einer dieser Prozesse unerwartet beendet wird, funktionieren einige Funktionalitäten in Visual Studio nicht mehr. Bei einigen Prozesse kann der Ausfall dieser Funktionalitäten unbedeutend sein. Bei anderen wird die Stabilität von Visual Studio beeinträchtigt, und eine Fehlermeldung wird angezeigt.
+
+> [!NOTE]
+> Wenn ein Problem auftritt, das auf dieser Seite nicht berücksichtigt wird, informieren Sie uns bitte über das Tool [Problem melden](../../ide/how-to-report-a-problem-with-visual-studio.md), das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.

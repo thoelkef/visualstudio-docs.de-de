@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443726"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842327"
 ---
 # <a name="manage-channels"></a>Verwalten von Kanälen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
 ## <a name="group-markers-by-thread"></a>Marker nach Threads gruppieren  
  Wenn die Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, um Markerkanäle unter dem Thread, der die Markerereignisse generiert hat, zu gruppieren.  Die Datenträgerkanäle werden an das obere Ende der Kanalliste verschoben, und GPU-Kanäle werden ganz nach unten verschoben.  
   
-## <a name="see-also"></a>Siehe auch  
- [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)   
- [Messmodus aktivieren/deaktivieren](../profiling/measure-mode-on-off.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Zoom Steuerelement (Thread Ansicht)](../profiling/zoom-control-threads-view.md)   
+ [Messmodus ein/aus](../profiling/measure-mode-on-off.md)   
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
