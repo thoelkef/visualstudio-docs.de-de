@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_databytes | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_dataBytes | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858496"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841239"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Datenbytes eine OEM-Symbols ab.  
+Ruft die Daten Bytes eines OEM-Symbols ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,26 +37,26 @@ HRESULT get_dataBytes ( 
   
 #### <a name="parameters"></a>Parameter  
  `cbData`  
- [in] Die Größe des Puffers zum Speichern der Daten.  
+ in Größe des Puffers, der die Daten enthalten soll.  
   
  `pcbData`  
- [out] Gibt die Anzahl der Bytes, die geschrieben wird, oder, wenn Sie die `data` Parameter `NULL`, gibt die Anzahl der verfügbaren Bytes zurück.  
+ vorgenommen Gibt die Anzahl der geschriebenen Bytes zurück. wenn der- `data` Parameter ist `NULL` , wird die Anzahl der verfügbaren Bytes zurückgegeben.  
   
  `data[]`  
- [out] Ein Puffer, der mit der Datenbytes gefüllt wird.  
+ [out,] Ein Puffer, der mit den Daten Bytes gefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

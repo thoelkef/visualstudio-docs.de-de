@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen eines Produkt Manifests | Microsoft-Dokumentation'
+title: Erstellen eines Produkt Manifests | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382509"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852217"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Das Paket Manifest enthält Lokalisierungs spezifische Aspekte des Pakets. Hierzu gehören Zeichen folgen, Endbenutzer-Lizenzverträge und Sprachpakete.
@@ -158,5 +158,5 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 </Product>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)

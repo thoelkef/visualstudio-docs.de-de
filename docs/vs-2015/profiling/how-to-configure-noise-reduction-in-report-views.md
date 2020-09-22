@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432767"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841265"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Gewusst wie: Konfigurieren der Rauschunterdrückung in Berichtsansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl von Daten, die in der Aufrufstrukturansicht und der Zuordnungsansicht angezeigt werden, eingeschränkt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung erkennbarer. Dies ist hilfreich bei der Analyse von Leistungsberichten.  
@@ -79,8 +79,8 @@ Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl 
   
 4. Klicken Sie auf **OK**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)   
- [Vorgehensweise: Schließen Sie aus oder einschließen Sie kurzer Funktionen in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [Aufrufstrukturansicht](../profiling/call-tree-view.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Anpassen von Berichts Ansichten von Leistungs Tools](../profiling/customizing-performance-tools-report-views.md)   
+ [Gewusst wie: ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Strukturansicht für Aufrufe](../profiling/call-tree-view.md)   
  [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)
