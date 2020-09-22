@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben eines Links für technischen Support | Microsoft-Dokumentation'
+title: Angeben eines Links für technischen Support | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382054"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851748"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für technischen Support
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung identifiziert die Eigenschaft **Support-URL** eine Webseite oder eine Dateifreigabe, mit der Benutzerinformationen zur Anwendung erhalten können. Diese Eigenschaft ist optional. Wenn diese Option angegeben ist, wird die URL **im Dialogfeld** "Software" der Anwendung angezeigt.

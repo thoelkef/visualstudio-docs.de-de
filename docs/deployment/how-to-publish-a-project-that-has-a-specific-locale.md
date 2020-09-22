@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Veröffentlichen eines Projekts mit einem bestimmten Gebiets Schema | Microsoft-Dokumentation'
+title: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38be27ca9873d662fd4839590f50c9788b5ae7ea
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382223"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851696"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Vorgehensweise: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
 Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedlichen Gebietsschemas enthält. In diesem Szenario würden Sie eine Projektmappe aus mehreren Projekten erstellen und dann gesonderte Projekte für jedes Gebietsschema veröffentlichen. Dieses Verfahren zeigt, wie Sie das erste Projekt in einer Projektmappe mit dem Gebietsschema "en" mit einem Makro veröffentlichen können. Wenn Sie das Verfahren mit einem anderen Gebietsschema als "en" verwenden möchten, müssen Sie `localeString` im Makro auf das verwendete Gebietsschema festlegen (beispielsweise auf "de" oder "de-DE").

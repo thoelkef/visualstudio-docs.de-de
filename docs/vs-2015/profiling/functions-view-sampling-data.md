@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5aace03631cd768566dca8e314f280e20d9de77f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432942"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841080"
 ---
 # <a name="functions-view---sampling-data"></a>Funktionsansicht - Samplingdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ Die Funktionsberichtansicht für die Samplingprofilmethode listet die Funktionen
 |**Exklusive Samplings**|Die Gesamtzahl an Samplings, die während der Ausführung von Code im Text der Funktion erfasst wurden, d.h., während sich die Funktion in der Aufrufliste befand. Samplings, die in von Funktionen, die von dieser Funktion aufgerufen wurden, erfasst wurden, sind nicht enthalten.|  
 |**Exklusive Samplings %**|Der Prozentsatz aller Samplings während der Profilerstellung, die exklusive Samplings dieser Funktion waren.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Funktionsansicht - Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Funktionsansicht - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Funktions Ansicht-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Funktions Ansicht-Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)

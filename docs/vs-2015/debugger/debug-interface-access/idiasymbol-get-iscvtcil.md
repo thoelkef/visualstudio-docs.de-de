@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_iscvtcil | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isCVTCIL | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34868f48cf330670c3c14b3979897d80b5525f40
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799824"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840993"
 ---
-# <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
+# <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob das Modul aus einem Modul Common Intermediate Language (CIL) in ein systemeigenes Modul konvertiert wurde.  
+Ruft ein Flag ab, das angibt, ob das Modul von einem Common Intermediate Language (CIL)-Modul in ein System eigenes Modul konvertiert wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,24 +35,24 @@ HRESULT get_isCVTCIL(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn das Modul aus der CIL in systemeigenen Code konvertiert wurde, andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn das Modul von cil in systemeigenen Code konvertiert wurde. andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Eigenschaft ist über den `SymTagCompilandDetails` Symboltyp verfügbar (siehe " [compilanddetails](../../debugger/debug-interface-access/compilanddetails.md)".  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

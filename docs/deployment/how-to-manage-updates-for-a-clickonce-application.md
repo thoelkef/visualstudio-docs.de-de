@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382353"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851605"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Updates für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
@@ -105,7 +105,7 @@ ms.locfileid: "85382353"
 
 7. Erstellen Sie Ihre Anwendung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Application updates dialog box (Dialogfeld „Anwendungsupdates“)](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)

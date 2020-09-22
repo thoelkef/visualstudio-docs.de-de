@@ -1,5 +1,6 @@
 ---
-title: Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-
+title: Assemblys bei Bedarf herunterladen (ClickOnce-API)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52d853399bb568407b5022dca7f6288e3901a7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262908"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809249"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-
 Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] heruntergeladen, wenn die Anwendung zum ersten Mal ausgeführt wird. Allerdings haben Sie möglicherweise Teile der Anwendung, die von einer kleinen Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application>-Namespace verwenden, wenn diese von der Common Language Runtime (CLR) angefordert werden.
@@ -126,5 +127,5 @@ Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[n
 
 3. Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Daraufhin sollte eine Zeichenfolge in einem Meldungsfeldfenster angezeigt werden, die „Hello, World!“ lautet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:System.Deployment.Application.ApplicationDeployment>

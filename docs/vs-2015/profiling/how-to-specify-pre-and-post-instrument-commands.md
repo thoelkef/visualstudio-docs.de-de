@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439711"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840910"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Vorgehensweise: Festlegen von Präinstrumentations-und Postinstrumentationsbefehlen
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.  
@@ -45,11 +45,11 @@ Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Bin�
   
 - Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-   *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Laufwerk*\Programme (x86) \Microsoft Visual Studio 10.0 \ Team Tools\Performance Tools  
   
 - Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-   *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Laufwerk*\Programme (x86) \Microsoft Visual Studio 10.0 \ Team Tools\Performance tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an  
   
@@ -64,7 +64,7 @@ Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Bin�
 3. Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Präinstrumentationsereignisse** ein.  
   
     > [!NOTE]
-    > Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
+    > Sie können auf die Schaltfläche mit den Auslassungs Punkten **(...)** neben dem Feld **Befehlszeile** klicken, um die entsprechende exe-, cmd-oder bat-Datei zu suchen und auszuwählen.  
   
 4. Klicken Sie auf **OK**.  
   
@@ -83,11 +83,11 @@ Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Bin�
 3. Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Postinstrumentationsereignisse** ein.  
   
     > [!NOTE]
-    > Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
+    > Sie können auf die Schaltfläche mit den Auslassungs Punkten **(...)** neben dem Feld **Befehlszeile** klicken, um die entsprechende exe-, cmd-oder bat-Datei zu suchen und auszuwählen.  
   
 4. Klicken Sie auf **OK**.  
   
      Um den Befehl zu deaktivieren, ohne ihn zu entfernen, wählen Sie das Kontrollkästchen **Aus Instrumentation ausschließen** aus. Verwenden Sie zum Ändern der Compiler- oder Linkereinstellungen die Eigenschaftenseiten des Projekts.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)

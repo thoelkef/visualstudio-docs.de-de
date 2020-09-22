@@ -1,5 +1,6 @@
 ---
-title: 'Vorgehensweise: Angeben eines Startmenü namens für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: Angeben des Start Menü namens für eine ClickOnce-App
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d6f7471530a101404040368dbc6088e9b5d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d60985d0fdf766fb49348bb9eb5d14d62d7e4d5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381924"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808762"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Vorgehensweise: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
 Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung für die Online-und Offline Verwendung installiert wird, wird dem **Startmenü** und der Liste Software **Add or Remove Programs** ein Eintrag hinzugefügt. Standardmäßig ist der Anzeige Name mit dem Namen der Anwendungsassembly identisch, aber Sie können den anzeigen Amen ändern, indem Sie im Dialogfeld **Veröffentlichungs Optionen** den **Product Name** festlegen.
@@ -48,6 +49,6 @@ Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anw
 
 6. Optional können Sie einen Herausgeber Namen in den **Herausgeber Namen**eingeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

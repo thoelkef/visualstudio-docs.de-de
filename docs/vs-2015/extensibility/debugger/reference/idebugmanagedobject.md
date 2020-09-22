@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject | Microsoft-Dokumentation
+title: Idebugmanagedobject | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: be39e42de029b597d46fc775ef7df63c5d31c0c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439058"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840834"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Diese Schnittstelle ermöglicht die ausdrucksauswertung (EE) aufrufen, Eigenschaften oder Methoden auf Klasseninstanzen Wert (z. B. `System.Decimal`) und ihren Wert ohne festlegen [auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) auf die Anwendung gedebuggt wird.  
+ Diese Schnittstelle ermöglicht es der Ausdrucks Auswertung (EE), Eigenschaften oder Methoden für Wert Klassen Instanzen (z. b.) aufzurufen `System.Decimal` und um ihren Wert festzulegen, ohne die [Auswertung](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) für das Programm aufzurufen, das gedeppt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,29 +34,29 @@ IDebugManagedObject : IDebugObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Eine ausdrucksauswertung implementiert diese Schnittstelle, um ein verwalteter Code-Objekt, z. B. eine Variable darstellen.  
+ Eine Ausdrucks Auswertung implementiert diese Schnittstelle, um ein verwaltetes Code Objekt, z. b. eine Variable, darzustellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie zum Abrufen dieser Schnittstelle [GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) auf eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die eine Instanz einer Wertklasse darstellt.  
+ Um diese Schnittstelle zu erhalten, rufen Sie [getmanageddebugobject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) für ein [idebugobject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) auf, das eine Instanz einer Value-Klasse darstellt.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den von geerbten Methoden [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugManagedObject` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md)geerbt werden, stellt die- `IDebugManagedObject` Schnittstelle die folgenden Methoden zur Verfügung.  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Gibt eine Schnittstelle, die das Objekt von verwaltetem Code darstellt und aus der entsprechenden verwalteter Code Schnittstelle abgerufen werden kann.|  
-|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Legt den Wert dieses Objekts auf den Wert eines Objekts des angegebenen verwalteten Code fest.|  
+|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Gibt eine-Schnittstelle zurück, die das verwaltete Code Objekt darstellt und von dem eine beliebige entsprechende verwaltete Code Schnittstelle abgerufen werden kann.|  
+|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Legt den Wert dieses-Objekts auf den Wert eines angegebenen verwalteten Code Objekts fest.|  
   
-## <a name="remarks"></a>Hinweise  
- Eine ausdrucksauswertung verwendet diese Schnittstelle, um ein Objekt von verwaltetem Code in eine Analysestruktur zu speichern.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine Ausdrucks Auswertung verwendet diese Schnittstelle, um ein verwaltetes Code Objekt in einer Analyse Struktur zu speichern.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: ee.h  
+ Header: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen für die Ausdrucksauswertung](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausdrucks Bewertungs Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [Evaluieren](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
