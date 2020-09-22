@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508508"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740044"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -24,7 +24,7 @@ Die Informationen für Ihren Clouddienst werden in den folgenden Dateien gespeic
 - Service **Definition. csdef** : die Dienst Definitionsdatei definiert die Lauf Zeit Einstellungen für Ihren clouddienst, einschließlich der erforderlichen Rollen, Endpunkte und der Größe des virtuellen Computers. Die in `ServiceDefinition.csdef` gespeicherten Daten können während der Ausführung der Rolle nicht geändert werden.
 - **ServiceConfiguration.cscfg**: Die Dienstkonfigurationsdatei konfiguriert, wie viele Instanzen einer Rolle ausgeführt werden, und die Werte der für eine Rolle definierten Einstellungen. Die in `ServiceConfiguration.cscfg` gespeicherten Daten können während der Ausführung der Rolle geändert werden.
 
-Um verschiedene Werte für die Einstellungen zur Ausführungsweise der Rolle zu speichern, können mehrere Dienstkonfigurationen definiert werden. Sie können unterschiedliche Dienstkonfigurationen für die einzelnen Bereitstellungsumgebungen verwenden. Beispielsweise können Sie festlegen, dass die Verbindungszeichenfolge des Speicherkontos den lokalen Azure-Speicheremulator in einer lokalen Dienstkonfiguration verwendet, und eine weitere Dienstkonfiguration erstellen, die den Azure-Speicher in der Cloud verwendet.
+Um verschiedene Werte für die Einstellungen zur Ausführungsweise der Rolle zu speichern, können mehrere Dienstkonfigurationen definiert werden. Sie können unterschiedliche Dienstkonfigurationen für die einzelnen Bereitstellungsumgebungen verwenden. Beispielsweise können Sie die Verbindungs Zeichenfolge für das Speicherkonto so festlegen, dass der lokale Azure Storage Emulator in einer lokalen Dienst Konfiguration verwendet wird, und eine weitere Dienst Konfiguration erstellen, um Azure Storage in der Cloud zu verwenden.
 
 Beim Erstellen eines Azure-Clouddiensts in Visual Studio werden standardmäßig zwei Dienstkonfigurationen erstellt und Ihrem Azure-Projekt hinzugefügt:
 

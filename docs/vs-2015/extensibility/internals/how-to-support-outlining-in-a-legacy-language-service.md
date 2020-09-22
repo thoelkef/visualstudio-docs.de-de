@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation'
+title: 'Gewusst wie: unterstützen von Gliederung in einem Legacy Sprachdienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436144"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842279"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Gewusst wie: Unterstützen der Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gliederung wird zum Erweitern oder reduzieren die verschiedene Regionen des Texts. Die Möglichkeit Gliederung wird verwendet, kann durch verschiedene Sprachen unterschiedlich definiert werden. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md).  
+Gliederung wird zum Erweitern oder reduzieren verschiedener Textbereiche verwendet. Die Verwendung der Gliederung kann in verschiedenen Sprachen unterschiedlich definiert werden. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md).  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Gliederung zu suchen, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren von Gliederung finden Sie unter Exemplarische Vorgehensweise [:](../../extensibility/walkthrough-outlining.md)Gliederung.  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
- Das folgende Beispiel veranschaulicht, wie Sie mit diesem Befehl für den Sprachdienst zu unterstützen.  
+ Im folgenden wird veranschaulicht, wie dieser Befehl für Ihren Sprachdienst unterstützt wird.  
   
-### <a name="to-support-outlining"></a>Zur Unterstützung der Gliederung  
+### <a name="to-support-outlining"></a>Unterstützung der Gliederung  
   
-1. Implementieren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> auf das sprachendienstobjekt.  
+1. Implementieren <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> Sie für Ihr Sprachdienst Objekt.  
   
-2. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> auf das aktuelle gliederungssitzungsobjekt neue Gliederungsbereiche hinzufügen.  
+2. Ruft <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> das aktuelle Gliederungs Sitzungs Objekt auf, um neue Gliederungs Bereiche hinzuzufügen.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Wenn ein Benutzer auswählt **reduzieren auf Definitionen** auf die **Gliedern** Menü, die IDE-Aufrufe <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> auf den Sprachdienst.  
+ Wenn ein Benutzer im Gliederungs **Menü** **auf Definitionen** reduzieren klickt, ruft die IDE den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> Sprachdienst auf.  
   
- Wenn diese Methode aufgerufen wird, übergibt die IDE in einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> Zeiger (einen Zeiger auf einen Textpuffer) und ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (einen Zeiger auf die aktuelle Sitzung für die Gliederung).  
+ Wenn diese Methode aufgerufen wird, übergibt die IDE einen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> Zeiger (einen Zeiger auf einen Text Puffer) und einen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (einen Zeiger auf die aktuelle Gliederungs Sitzung).  
   
- Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> -Methode für mehrere Gliederungsbereiche durch Angeben dieser Regionen in den `rgOutlnReg` Parameter. Die `rgOutlnReg` -Parameter ist ein <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> Struktur. So können Sie zum Angeben von verschiedenen Merkmale des ausgeblendeten Bereichs, z. B., ob eine bestimmte Region erweitert oder reduziert ist.  
+ Sie können die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> Methode für mehrere Gliederungs Bereiche aufrufen, indem Sie diese Bereiche im- `rgOutlnReg` Parameter angeben. Der- `rgOutlnReg` Parameter ist eine- <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> Struktur. Mit diesem Prozess können Sie verschiedene Eigenschaften des ausgeblendeten Bereichs angeben, z. b. ob eine bestimmte Region erweitert oder reduziert wird.  
   
 > [!NOTE]
-> Achten Sie darauf, dass zum Ausblenden von neue-Zeile-Zeichen. Ausgeblendeten Text sollten ab dem Anfang der ersten Zeile bis zum letzten Zeichen der letzten Zeile in einem Abschnitt, sodass das abschließende neue-Zeile-Zeichen sichtbar erweitern.  
+> Gehen Sie vorsichtig vor, wenn Sie neue Zeilen ausblenden. Ausgeblendeter Text sollte vom Anfang der ersten Zeile bis zum letzten Zeichen der letzten Zeile in einem Abschnitt erweitert werden, sodass das abschließende Zeichen für die neue Zeile sichtbar bleibt.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Unterstützen der ausgeblendeten Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Bereitstellen von ausgeblendeter Text Unterstützung in einem Legacy Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

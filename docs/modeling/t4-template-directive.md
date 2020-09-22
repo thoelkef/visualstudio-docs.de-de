@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591839"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808063"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
@@ -96,7 +96,7 @@ Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvo
 
 Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn `hostspecific` ist `true` und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
+Wenn `hostspecific` ist `true` und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +134,7 @@ Gültige Werte:
 
 Das- `language` Attribut gibt die Sprache ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
-Beispiel:
+Zum Beispiel:
 
 ```vb
 <#@ template language="VB" #>
@@ -156,7 +156,7 @@ Sie können angeben, dass der Programmcode der Vorlage von einer anderen Klasse 
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Vererbung in einer Laufzeittextvorlage (vorverarbeiteten Textvorlage)
 
-Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Lauf Zeit Vorlagen sind solche, bei denen die Eigenschaft **benutzerdefinierter Tool** auf **texttemplatingfilepreprocessor**festgelegt ist. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Lauf Zeit Vorlagen sind solche, bei denen die Eigenschaft **benutzerdefinierter Tool** auf **texttemplatingfilepreprocessor**festgelegt ist. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Wenn Sie kein `inherits`-Attribut angeben, werden eine Basisklasse und eine abgeleitete Klasse von der Textvorlage generiert. Wenn Sie ein `inherits`-Attribut angeben, wird nur die abgeleitete Klasse generiert. Sie können eine Basisklasse manuell erstellen, doch sie muss über die Methoden verfügen, die von der abgeleiteten Klasse verwendet werden.
 
@@ -235,7 +235,7 @@ Eine Textvorlage für die Entwurfszeit ist eine Datei, für die das **benutzerde
 
 Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Direktive, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
 
-Weitere Informationen finden Sie unter ["Vererbung in Text Vorlagen" im Blog von Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
+Weitere Informationen finden Sie unter ["Vererbung in Text Vorlagen" im Blog von Gareth Jones](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata).
 
 ## <a name="linepragmas-attribute"></a>linepragmas-Attribut
 

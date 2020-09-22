@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_oemsymbolid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_oemSymbolId | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4031672840237b0496ba7c6dbb9bb3b1658d7023
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837905"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842303"
 ---
-# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+# <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die ID-Wert des Symbols für Originalgerätehersteller (OEM) ab.  
+Ruft den ID-Wert des Originalgeräte Herstellers (OEM) ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,19 +35,19 @@ HRESULT get_oemSymbolId ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt an, die einer OEMs intern zugewiesene symbol-ID  
+ vorgenommen Gibt die intern zugewiesene Symbol-ID eines OEM zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Bezeichner ist ein eindeutiger Wert, der vom Dia SDK erstellt wird, um alle Symbole als eindeutig zu markieren.  
   
- Diese Eigenschaft gilt nur für Symbole mit einem [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Typ `SymTagCustomType`.  
+ Diese Eigenschaft gilt nur für Symbole mit einem [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationstyp von `SymTagCustomType` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

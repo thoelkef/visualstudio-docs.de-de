@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten mit dem Profiler über die Befehlszeile | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432661"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842291"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Vorgehensweise: Instrumentieren einer nativen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten mit der Profiler von der Befehlszeile aus
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Gewusst wie: Instrumentieren einer systemeigenen, eigenständigen Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie eine systemeigene Komponente (beispielsweise eine EXE- oder DLL-Datei in C++) mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools instrumentiert wird und wie ausführliche Zeitsteuerungsdaten gesammelt werden.  
@@ -40,15 +40,15 @@ In diesem Thema wird beschrieben, wie eine systemeigene Komponente (beispielswei
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
-   - Mit der Option [/start](../profiling/start.md)**:trace** wird der Profiler initialisiert.  
+   - Mit der Option [/start](../profiling/start.md) **:trace** wird der Profiler initialisiert.  
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.  
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.  
 
      Sie können mindestens eine der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.  
 
    |                                 Option                                  |                                                                                                                                                 Beschreibung                                                                                                                                                 |
    |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |             Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt.             |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |             Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt.             |
    |              [/crosssession](../profiling/crosssession.md)              | Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte Prozesse in der Spalte Sitzungs-ID des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
    |          [/globaloff](../profiling/globalon-and-globaloff.md)           |                                                                                        Startet den Profiler mit angehaltener Datensammlung. Mit[/globalon](../profiling/globalon-and-globaloff.md) setzen Sie die Profilerstellung fort.                                                                                        |
    |           [/counter](../profiling/counter.md) **:** `Config`            |                                                               Sammelt Informationen aus dem in `Config` angegebenen Prozessorleistungsindikator. Informationen zu Leistungsindikatoren werden den Daten hinzugefügt, die bei jedem Profilerstellungsereignis gesammelt werden.                                                                |
@@ -67,12 +67,12 @@ In diesem Thema wird beschrieben, wie eine systemeigene Komponente (beispielswei
 
     |Option|Beschreibung|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet ( **/threadon**) oder beendet ( **/threadoff**).|  
 
 ## <a name="ending-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
- Um eine Profilerstellungssitzung zu beenden, schließen Sie die Anwendung, die die instrumentierte Komponente ausführt, und rufen Sie dann die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.  
+ Schließen Sie die Anwendung, die die instrumentierte Komponente ausführt, um eine Profilerstellungssitzung zu beenden. Rufen Sie anschließend die **VSPerfCmd**-Option [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen.  
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
@@ -82,6 +82,6 @@ In diesem Thema wird beschrieben, wie eine systemeigene Komponente (beispielswei
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+ [Instrumentierungs Methoden-Datenansichten](../profiling/instrumentation-method-data-views.md)

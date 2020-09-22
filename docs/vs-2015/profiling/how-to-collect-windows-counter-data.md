@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9743fa7defbbf3321636d2ba4799454713a647db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432783"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842278"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Gewusst wie: Sammeln von Windows-Indikatordaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Windows-Indikatoren sind Systemleistungsindikatoren, die während der Profilerst
   
 8. Klicken Sie auf **Übernehmen**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)   
- [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Leistungs Sitzungs Eigenschaften](../profiling/performance-session-properties.md)   
+ [CPU-und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)

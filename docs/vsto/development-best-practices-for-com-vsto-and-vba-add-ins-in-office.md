@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801502"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808206"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Methoden für die Entwicklung von com-, VSTO-und VBA-Add-Ins in Office
   Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Vorteile:
@@ -31,7 +31,7 @@ ms.locfileid: "88801502"
  Es wird nicht empfohlen, dass Sie mit dem Add-in erkennen, ob Office während des Add-in-Installationsvorgangs installiert wird. Wenn Office nicht installiert ist, können Sie das Add-in installieren, und der Benutzer kann nach der Installation von Office darauf zugreifen.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Eingebettete Interop-Typen (nopia) verwenden
-Wenn Ihre Lösung .NET 4,0 oder höher verwendet, verwenden Sie eingebettete Interop-Typen (nopia) anstelle von der verteilbaren Office Primary Interopassemblys (PIA). Durch die Verwendung von Einbettungs Typen wird die Installations Größe Ihrer Lösung reduziert, und die zukünftige Kompatibilität wird sichergestellt. Office 2010 war die letzte Version von Office, die die PIA Redistributable ausgeliefert hat. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Einbetten von Typinformationen aus Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) Assemblys und [typäquivalenz und eingebetteten Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
+Wenn Ihre Lösung .NET 4,0 oder höher verwendet, verwenden Sie eingebettete Interop-Typen (nopia) anstelle von der verteilbaren Office Primary Interopassemblys (PIA). Durch die Verwendung von Einbettungs Typen wird die Installations Größe Ihrer Lösung reduziert, und die zukünftige Kompatibilität wird sichergestellt. Office 2010 war die letzte Version von Office, die die PIA Redistributable ausgeliefert hat. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Einbetten von Typinformationen aus Microsoft Office](/previous-versions/ee317478(v=vs.140)) Assemblys und [typäquivalenz und eingebetteten Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
 
 Wenn Ihre Lösung eine frühere Version von .NET verwendet, empfiehlt es sich, die Lösung für die Verwendung von .NET 4,0 oder höher zu aktualisieren. Die Verwendung von .NET 4,0 oder höher reduziert die Lauf Zeit Voraussetzungen für neuere Versionen von Windows.
 

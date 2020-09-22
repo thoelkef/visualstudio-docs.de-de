@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 602a185b598410de47dc9d3c98ca2b0ae3c45633
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 6e721a424cc1c8b7202764fdc9b23eae737d22a4
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412008"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074877"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 
 Visual Studio enthält viele leistungsstarke Features, mit denen Sie Leistungsprobleme in Ihrer Anwendung besser analysieren können. In diesem Thema werden einige der grundlegenden Funktionen erläutert. Außerdem betrachten wir das Tool, mit dem Leistungsengpässe aufgrund hoher CPU-Auslastung erkannt werden können. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
-Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn das hier beschriebene **CPU-Auslastungs-Tool** nicht die benötigten Daten zurückgibt, gibt es andere [Tools zur Profilerstellung](../profiling/profiling-feature-tour.md), mit denen sie andere hilfreiche Informationen erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten. [PerfTips](../profiling/perftips.md), ein weiteres debuggerintegriertes Profilerstellungstool, ermöglicht Ihnen ebenfalls die Schritt-für-Schritt-Ausführung von Code und das Ermitteln, wie viel Zeit bestimmte Funktionen oder Codeblöcke beanspruchen.
+Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn das hier beschriebene **CPU-Auslastungs-Tool** nicht die benötigten Daten zurückgibt, gibt es andere [Tools zur Profilerstellung](../profiling/profiling-feature-tour.md), mit denen sie andere hilfreiche Informationen erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Leistungs-Profiler bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten. [PerfTips](../profiling/perftips.md), ein weiteres debuggerintegriertes Profilerstellungstool, ermöglicht Ihnen ebenfalls die Schritt-für-Schritt-Ausführung von Code und das Ermitteln, wie viel Zeit bestimmte Funktionen oder Codeblöcke beanspruchen.
 
 Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**). Unter Windows 7 und höher können Sie das Post-Mortem-Tool [Leistungsprofiler](../profiling/profiling-feature-tour.md) verwenden.
 

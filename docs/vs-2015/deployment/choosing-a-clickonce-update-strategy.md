@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442335"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842310"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Auswählen einer Strategie für die ClickOnce-Aktualisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442335"
 > Für Anwendungsupdates ist eine Netzwerkverbindung erforderlich. Wenn keine Netzwerkverbindung vorhanden ist, wird die Anwendung unabhängig von der ausgewählten Updatestrategie ausgeführt, ohne nach Updates zu suchen.  
   
 > [!NOTE]
-> Immer, wenn die Anwendung in .NET Framework 2.0 and .NET Framework 3.0 vor oder nach dem Start bzw. unter Verwendung der <xref:System.Deployment.Application>-APIs nach Updates sucht, muss `deploymentProvider` im Bereitstellungsmanifest festgelegt werden. Das `deploymentProvider`-Element entspricht in Visual Studio dem Feld **Updatepfad**, das sich im Dialogfeld **Updates** der Registerkarte **Veröffentlichen** befindet. Diese Regel wird in .NET Framework 3.5 gelockert. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> Immer, wenn die Anwendung in .NET Framework 2.0 and .NET Framework 3.0 vor oder nach dem Start bzw. unter Verwendung der <xref:System.Deployment.Application>-APIs nach Updates sucht, muss `deploymentProvider` im Bereitstellungsmanifest festgelegt werden. Das- `deploymentProvider` Element entspricht in Visual Studio dem Feld **Aktualisierungs Speicherort** im Dialogfeld **Updates** der Registerkarte **veröffentlichen** . Diese Regel wird in .NET Framework 3,5 gelockert. Weitere Informationen finden Sie unter Bereitstellen [von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Suchen nach Updates nach dem Anwendungsstart  
  Bei dieser Strategie versucht die Anwendung während der Ausführung, die Datei mit dem Bereitstellungsmanifest im Hintergrund aufzufinden und zu lesen. Wenn ein Update verfügbar ist, wird der Benutzer beim nächsten Ausführen der Anwendung aufgefordert, das Update zu herunterladen und zu installieren.  
@@ -119,10 +119,10 @@ ms.locfileid: "63442335"
   
  Wenn Sie die Bereitstellung vertrauenswürdiger Anwendungen verwenden, wird keine Eingabeaufforderung für Vertrauensebenen angezeigt. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:System.Deployment.Application>   
- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Wie ClickOnce Anwendungsupdates ausführt](../deployment/how-clickonce-performs-application-updates.md)   
- [Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Wie ClickOnce Anwendungs Updates ausführt](../deployment/how-clickonce-performs-application-updates.md)   
+ [How to: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

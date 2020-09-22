@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537370"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075430"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 
-Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. In diesem Artikel wird die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools zum Abrufen von Leistungsdaten zu Ihrer App veranschaulicht.
+Suchen Sie Leistungsprobleme beim Debuggen mit dem in den Debugger integrierten Diagnosetool für die **CPU-Auslastung**.  Sie können die CPU-Auslastung auch ohne einen angefügten Debugger analysieren oder indem Sie eine ausgeführte App als Ziel festlegen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
-
-Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn Sie von **CPU-Auslastung** nicht die benötigten Daten erhalten, stehen andere [Profiling Tools (Profilerstellungstools)](../profiling/profiling-feature-tour.md) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten.
+Wenn der Debugger angehalten wird, sammelt das **CPU-Auslastung**-Tool im Diagnosetools-Fenster Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
 
 > [!Important]
-> Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
-
-In diesem Artikel wird die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow behandelt. Sie können die CPU-Auslastung auch ohne einen angefügten Debugger analysieren oder indem Sie eine ausgeführte App als Ziel festlegen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Sie können auch ein anderes debuggerintegriertes Profilerstellungstool namens [PerfTips](../profiling/perftips.md) verwenden, um die Schritt-für-Schritt-Ausführung von Code und die Ermittlung, wie viel Zeit bestimmte Funktionen oder Codeblöcke beanspruchen, zu nutzen.
-
-Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
+> Die in den Debugger integrierten Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, ASP.NET Core und native/C++-Entwicklung unterstützt. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
 > * Erfassen von CPU-Auslastungsdaten
 > * Analysieren der CPU-Auslastungsdaten
+
+Wenn Sie von der **CPU-Auslastung** nicht die benötigten Daten erhalten, stehen andere [Leistungs-Profiler](../profiling/profiling-feature-tour.md#post_mortem) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks.
 
 ## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
 
