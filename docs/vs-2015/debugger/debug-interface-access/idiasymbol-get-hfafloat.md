@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hfafloat | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hfaFloat | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97f635688ff5cc96885479081962c9a48fccea84
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64782614"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840861"
 ---
-# <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
+# <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob ein benutzerdefinierten Typ (UDT) homogene Gleitkomma (zu HFA) Aggregatdaten von Typ "float" enthält.  
+Ruft ein Flag ab, das angibt, ob ein benutzerdefinierter Typ (User-Defined Type, UDT) homogene Gleit Komma Aggregatdaten (HFA) vom Typ float enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,23 +35,23 @@ HRESULT get_hfaFloat( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn der UDT zu HFA-Daten des Typs "float"; enthält andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn der UDT HFA-Daten vom Typ float enthält; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

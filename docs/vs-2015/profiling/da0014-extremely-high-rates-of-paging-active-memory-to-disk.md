@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440913"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841114"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Regel-Id | DA0014 |  
-| Kategorie | Speicher und Auslagerung |  
-| Profilerstellungsmethode | Alle |  
-| Nachricht | Ein sehr hohes Maß an paging von aktivem Speicher auf den Datenträger wurde festgestellt. Die Anwendung ist möglicherweise speichergebunden.|  
+Regel-ID | DA0014 |  
+| Kategorie | Arbeitsspeicher und Paging |  
+| Profil Erstellungs Methode | Alle |  
+| Meldung | Es tritt ein extrem hohes Paging von aktivem Speicher auf den Datenträger auf. Die Anwendung ist möglicherweise speichergebunden.|  
 | Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 25 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -35,7 +35,7 @@ Regel-Id | DA0014 |
 ## <a name="cause"></a>Ursache  
  Die bei der Profilerstellung erfassten Systemleistungsdaten deuten darauf hin, dass während der Profilerstellung ein sehr hohes Maß an Auslagerungen von aktivem Speicher auf den Datenträger (und umgekehrt) aufgetreten ist. Solch hohe Auslagerungsraten wirken sich in der Regel negativ auf Leistung und Reaktionszeit der Anwendung aus. Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten. Sie müssen möglicherweise auch die Speicheranforderungen der Anwendung berücksichtigen. Wiederholen Sie ggf. die Profilerstellung auf einem Computer mit einem größeren Arbeitsspeicher aus.  
   
-## <a name="rule-description"></a>Regelbeschreibung  
+## <a name="rule-description"></a>Beschreibung der Regel  
  Eine übermäßige Auslagerung auf den Datenträger kann auf einen zu kleinen physischen Speicher zurückzuführen sein. Wenn der physische Datenträger, auf dem sich die Auslagerungsdatei befindet, hauptsächlich für Auslagerungsvorgänge verwendet wird, kann dies zu einer Verlangsamung anderer anwendungsorientierter Datenträgervorgänge auf diesem Datenträger führen.  
   
  Seiten werden häufig in Massenauslagerungsvorgängen vom Datenträger gelesen oder auf den Datenträger geschrieben. Die Anzahl der geänderten Seiten pro Sekunde ist häufig deutlich größer als beispielsweise die Anzahl der Seiten-Schreibvorgänge pro Sekunde. Der Grund hierfür ist, dass die geänderten Seiten pro Sekunde auch geänderte Datenseiten aus dem Systemdateicache beinhalten. ist jedoch nicht immer einfach, den direkt für die Auslagerung verantwortlichen Prozess oder den Grund für die Auslagerung zu ermitteln.  

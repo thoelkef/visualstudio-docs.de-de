@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a14c944cf38e0eaec7d1fbe4d7699bbd91c3e7d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961188"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841190"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:  
   
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu finden  
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu finden  
   
--   Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen  
+- Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen  
   
--   Verwenden des Fensters **Grafikpixelverlauf** , um spezieller nach dem Problem zu suchen  
+- Verwenden des Fensters **Grafikpixelverlauf** , um spezieller nach dem Problem zu suchen  
   
--   Überprüfen des Gerätestatus auf mögliche Probleme oder fehlerhafte Konfigurationen  
+- Überprüfen des Gerätestatus auf mögliche Probleme oder fehlerhafte Konfigurationen  
   
 ## <a name="scenario"></a>Szenario  
  Einer der Gründe dafür, dass Objekte nicht an den gewünschten Stellen in einer 3D-App angezeigt werden, kann eine fehlerhafte Konfiguration des Grafikgeräts sein, die zur Folge hat, dass die Objekte nicht gerendert werden. Dies kann z. B. der Fall sein, wenn die Windungsreihenfolge dazu führt, dass Dreiecke fälschlicherweise herausgefiltert werden, oder wenn die Tiefentestfunktion dazu führt, dass alle Pixel im Objekt abgelehnt werden.  
@@ -49,7 +49,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
 2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Modell nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   
-    ![Der .vsglog Framepuffer Vorschau und frameliste Registerkartenliste](../debugger/media/vsg-walkthru1-experiment.png "vsg_walkthru1_experiment")  
+    ![.vsglog-Registerkarte - Framepuffer-Vorschau und Frameliste](../debugger/media/vsg-walkthru1-experiment.png "vsg_walkthru1_experiment")  
   
    Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist, z. B. API-Aufrufe zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Dies gilt z. B. für Draw-, Dispatch-, Copy- oder Clear-Aufrufe. Draw-Aufrufe sind besonders interessant, da jeder Aufruf Geometrie darstellt, die von der App gerendert wird (auch Dispatch-Aufrufe können Geometrie rendern).  
   
@@ -71,7 +71,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
 3. Halten Sie an, wenn Sie den Zeichnen-Befehl (Draw-Aufruf) erreicht haben, der dem fehlenden Modell entspricht. In diesem Szenario ist dem Fenster **Grafikpipelinestufen** zu entnehmen, dass die Geometrie gerendert, aber im Renderziel nicht angezeigt wurde:  
   
-    ![Pipeline-Viewer, die mit dem fehlenden Objekt](../debugger/media/vsg-walkthru1-pipeline.png "vsg_walkthru1_pipeline")  
+    ![Pipeline-Viewer mit dem fehlenden Objekt](../debugger/media/vsg-walkthru1-pipeline.png "vsg_walkthru1_pipeline")  
   
    Nachdem Sie bestätigt haben, dass die App die fehlende Geometrie gerendert hat, und den entsprechenden Draw-Aufruf gefunden haben, können Sie einen Teil der Renderzielausgabe auswählen, in dem die fehlende Geometrie angezeigt werden sollte, und anschließend im Fenster **Grafikpixelverlauf** ermitteln, warum die Pixel ausgeschlossen wurden. Der Pixelverlauf enthält eine Liste aller Draw-Aufrufe, die sich auf ein bestimmtes Pixel auswirken könnten. Jeder Draw-Aufruf im Fenster **Grafikpixelverlauf** ist durch eine Zahl gekennzeichnet, die ebenfalls im Fenster **Grafikereignisliste** angezeigt wird. Über diese Zahl können Sie bestätigen, dass das Pixel die fehlende Geometrie anzeigen sollte, und feststellen, warum das Pixel ausgeschlossen wurde.  
   
@@ -81,7 +81,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
 2. Wählen Sie anhand der **Pixelshader** -Miniaturansicht ein Pixel in der Framepufferausgabe aus, das einen Teil der fehlenden Geometrie enthalten sollte. In diesem Szenario muss die Ausgabe des Pixelshaders den größten Teil des Renderziels überdecken. Nachdem ein Pixel ausgewählt wurde, sieht das Fenster **Grafikpixelverlauf** wie folgt aus:  
   
-    ![Pixelverlauffenster mit zugehörigen zeichnen-Befehlen](../debugger/media/vsg-walkthru1-hist1.png "vsg_walkthru1_hist1")  
+    ![Pixelverlauffenster mit zugehörigen Zeichnen-Befehlen](../debugger/media/vsg-walkthru1-hist1.png "vsg_walkthru1_hist1")  
   
 3. Vergewissern Sie sich, dass das ausgewählte Renderzielpixel einen Teil der Geometrie enthält. Gleichen Sie dazu die Zahl des Draw-Aufrufs, den Sie überprüfen (aus dem Fenster **Grafikereignisliste** ), mit den Draw-Aufrufen im Fenster **Grafikpixelverlauf** ab. Stimmt keiner der Aufrufe im Fenster **Grafikpixelverlauf** mit dem Draw-Aufruf überein, den Sie überprüfen, wiederholen Sie die Schritte (mit Ausnahme von Schritt 1), bis Sie eine Übereinstimmung gefunden haben. In diesem Szenario sieht der übereinstimmende Draw-Aufruf wie folgt aus:  
   
@@ -103,7 +103,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
 3. Überprüfen Sie den Gerätestatus, der auf der Registerkarte **d3d10-Gerät** angezeigt wird, auf mögliche Probleme. Da die Geometrie nicht angezeigt wird, weil deren Primitive den Tiefentest nicht bestanden haben, können Sie sich auf den Gerätestatus, etwa die Tiefenschablone, konzentrieren, der den Tiefentest beeinflusst. In diesem Szenario enthält die **Beschreibung der Tiefenschablone** (unter **Status der Ausgabezusammenführung**) einen ungewöhnlichen Wert für den **Tiefenfunktion** -Member `D3D10_COMPARISON_GREATER`:  
   
-    ![D3D10-Gerätefenster mit Informationen zur tiefenschablone](../debugger/media/vsg-walkthru1-devicestate.png "vsg_walkthru1_devicestate")  
+    ![D3D10-Gerätefenster mit Informationen zur Tiefenschablone](../debugger/media/vsg-walkthru1-devicestate.png "vsg_walkthru1_devicestate")  
   
    Nachdem Sie ermittelt haben, dass der Grund für den Renderfehler eine fehlerhaft konfigurierte Tiefenfunktion sein könnte, können Sie anhand dieser Information und Ihrer Kenntnisse des Codes feststellen, wo die Tiefenfunktion falsch eingestellt wird, und das Problem dann beheben. Wenn Ihnen der Code unbekannt ist, könnten Sie anhand der Anhaltspunkte, die Sie beim Debuggen gesammelt haben, nach dem Problem suchen: Beispielsweise könnten Sie entsprechend der **Beschreibung der Tiefenschablone** in diesem Szenario den Code nach Wörtern wie „depth“ oder „GREATER“ durchsuchen. Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist:  
   

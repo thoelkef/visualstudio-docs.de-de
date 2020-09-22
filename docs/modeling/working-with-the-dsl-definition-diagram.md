@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115292"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810795"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 Das Diagramm einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist ein wichtiges Tool zum Definieren der domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.
@@ -70,6 +70,6 @@ Das Diagramm einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition is
 ### <a name="show-as-class"></a>Als Klasse anzeigen
  Wenn eine Domänen Beziehung abgeleitete Beziehungen aufweist oder wenn Sie Einbettungs-oder Verweis Beziehungen zu anderen Domänen Beziehungen aufweist, können Sie die Beziehung als Klasse anzeigen, indem Sie mit der rechten Maustaste auf die Beziehung klicken und dann auf **als Klasse anzeigen**klicken. Die Beziehung wird mit einem **Domänen Eigenschaften** Depot angezeigt und zeigt die Vererbungs-und Beziehungsstrukturen an.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

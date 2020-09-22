@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Implementieren von Fehlermarker | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Implementieren von Fehlermarkierungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,52 +11,52 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435970"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841015"
 ---
-# <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehlermarker
+# <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehlermarkierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-Editor Anpassungen implementieren. Die Vorteile, die sie für Benutzer Ihres VSPackage erhalten, können jedoch weit zunichte machen die Kosten für die sie angeben. Fehlermarker markieren etwas Text, der Ihre Sprachenparser mit eine Wellenlinie oder wellenförmige rote Linie falsch erachtet. Dieser Indikator kann Programmierer, indem Sie visuelle Anzeige von falschen Code.  
+Fehler Marker (oder rote wellenförmige Unterstreichungen) sind die schwierigsten der zu implementierenden Text-Editor-Anpassungen. Die Vorteile, die Sie Benutzern Ihres VSPackages bieten, können jedoch die Kosten für die Bereitstellung deutlich überwiegen. Fehlermarkierungen markieren den Text, der von Ihrem sprach Parser nicht korrekt ist, mit einer Wellenlinien-oder Wellenlinie. Dieser Indikator unterstützt Programmierer durch visuelles Anzeigen von fehlerhaftem Code.  
   
- Verwenden Sie Textmarkierungen, um die roten wellenförmigen unterstreichungen zu implementieren. Als Faustregel gilt hinzufügen Sprachdienste rote wellenförmige unterstreichungen auf den Textpuffer als bestanden Hintergrund zur Zeit im Leerlauf oder in einem Hintergrundthread.  
+ Verwenden Sie Textmarker zum Implementieren der roten wellenförmigen Unterstriche. Als Regel fügen Sprachdienste dem Text Puffer rote Wellen Striche als Hintergrund Durchlauf hinzu, entweder zur Leerlaufzeit oder in einem Hintergrund Thread.  
   
-### <a name="to-implement-the-red-wavy-underline-feature"></a>Für die Implementierung der rote, wellenförmige Unterstreichung-Funktion  
+### <a name="to-implement-the-red-wavy-underline-feature"></a>So implementieren Sie die rote wellenförmige Unterstreichung-Funktion  
   
-1. Wählen Sie den Text unter dem Sie die rote Wellenlinie platziert möchten.  
+1. Wählen Sie den Text aus, unter dem Sie die rote wellenförmige Unterstreichung platzieren möchten.  
   
-2. Erstellen Sie einen Marker des Typs `MARKER_CODESENSE_ERROR`. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md).  
+2. Erstellen Sie einen Marker des Typs `MARKER_CODESENSE_ERROR` . Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Standard Text Markern](../extensibility/how-to-add-standard-text-markers.md).  
   
-3. Übergeben Sie anschließend eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstellenzeiger auf.  
+3. Übergeben Sie anschließend einen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstellen Zeiger.  
   
-   Dieser Prozess ermöglicht Ihnen die Erstellung von QuickInfo-Text oder in einem speziellen Kontext-Menü auf einen bestimmten Marker. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md).  
+   Mit diesem Prozess können Sie auch Tip Text oder ein spezielles Kontextmenü über einen bestimmten Marker erstellen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Standard Text Markern](../extensibility/how-to-add-standard-text-markers.md).  
   
-   Die folgenden Objekte sind erforderlich, damit fehlermarker angezeigt werden können.  
+   Die folgenden Objekte sind erforderlich, bevor Fehlermarkierungen angezeigt werden können.  
   
 - Ein Parser.  
   
-- Einen Aufgabenanbieter (d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), die unterhält eine Aufzeichnung der Änderungen an Informationen, um die Zeilen erneut analysiert werden.  
+- Ein Aufgaben Anbieter (d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> ), der einen Datensatz von Änderungen an Zeilen Informationen verwaltet, um die neu zu analysierten Zeilen zu identifizieren.  
   
-- Ein textansichtsfilter, die Einfügemarke erfasst Änderungsereignisse in der Ansicht mit den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) Methode.  
+- Ein Text Ansichts Filter, der changesechangereignisse aus der Sicht mithilfe der Methode "" erfasst <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A> .  
   
-  Der Parser Aufgabenanbieter und Filter bieten die nötige Infrastruktur für fehlermarker zu ermöglichen. Die folgenden Schritte stellen den Prozess, zur Anzeige von fehlermarker.  
+  Der Parser, der Aufgaben Anbieter und der Filter stellen die erforderliche Infrastruktur bereit, um Fehlermarkierungen zu ermöglichen. In den folgenden Schritten wird der Prozess zum Anzeigen von Fehlermarkierungen bereitgestellt.  
   
-1. In einer Sicht, die gefiltert wird, ruft der Filter ein Zeiger auf den Aufgabenanbieter zugeordnet, die Daten Ansicht ab.  
+1. In einer Ansicht, die gefiltert wird, erhält der Filter einen Zeiger auf den Task Anbieter, der den Daten dieser Sicht zugeordnet ist.  
   
     > [!NOTE]
-    > Sie können den gleichen Befehlsfilter für methodentipps, Anweisungsvervollständigung, fehlermarker und So weiter verwenden.  
+    > Sie können denselben Befehls Filter für Methoden Tipps, Anweisungs Vervollständigung, Fehler Marker usw. verwenden.  
   
-2. Wenn der Filter empfängt ein Ereignis gibt an, dass Sie in eine neue Zeile verschoben haben, wird eine Aufgabe erstellt, um Fehler zu finden.  
+2. Wenn der Filter ein Ereignis empfängt, das angibt, dass Sie in eine andere Zeile verschoben haben, wird eine Aufgabe erstellt, um auf Fehler zu überprüfen.  
   
-3. Der taskhandler wird überprüft, ob die Zeile geändert wurde. Wenn dies der Fall ist, analysiert er die Zeile nach Fehlern.  
+3. Der Task Handler überprüft, ob die Zeile geändert wurde. Wenn dies der Fall ist, wird die Zeile für Fehler analysiert.  
   
-4. Wenn Fehler gefunden werden, erstellt der Aufgabenanbieter eine Instanz des Tasks-Element. Diese Instanz erstellt, die textmarkierung, die die Umgebung als einen fehlermarker in der Textansicht verwendet wird.  
+4. Wenn Fehler gefunden werden, erstellt der Aufgaben Anbieter eine Aufgaben Element Instanz. Diese Instanz erstellt den Textmarker, den die Umgebung als Fehler Marker in der Textansicht verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Textmarkierungen mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md)   
- [Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden von Text Markern mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Vorgehensweise: Hinzufügen von Standard Text Markern](../extensibility/how-to-add-standard-text-markers.md)   
+ [Gewusst wie: Erstellen von benutzerdefinierten Text Markern](../extensibility/how-to-create-custom-text-markers.md)   
  [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)

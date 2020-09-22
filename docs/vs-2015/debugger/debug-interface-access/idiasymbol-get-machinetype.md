@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_machinetype | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_machineType | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ed70a2263cea9c6988149dacdf7269606fcdfe3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785537"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840884"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ruft den Typ der Ziel-CPU ab.  
@@ -35,14 +35,14 @@ HRESULT get_machineType ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) -Enumeration, die das Ziel-CPU-Typ angibt.  
+ vorgenommen Gibt einen Wert aus der [CV_CPU_TYPE_e Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) zurück, der den CPU-Zieltyp angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

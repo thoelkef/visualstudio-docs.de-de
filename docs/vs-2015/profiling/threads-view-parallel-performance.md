@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841192"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,14 +69,14 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
   
   Hier ist die Threadansicht veranschaulicht:  
   
-  ![Threadansicht](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  ![Threadansicht](../profiling/media/threadsviewnarrowing.png "Threadsvieweinschränkende")  
   Threadansicht  
   
   Die Threads werden zuerst in der Reihenfolge sortiert, in der sie erstellt werden, sodass der Hauptanwendungsthread der erste ist. Sie können die Sortieroption in der linken oberen Ecke der Ansicht verwenden, um Threads nach einem anderen Kriterium zu sortieren (z.B. nach der meisten Arbeit bei der Ausführung).  
   
   Sie können Threads ausblenden, die keine Arbeit ausführen, indem Sie deren Namen in der Spalte auf der linken Seite auswählen und dann auf der Symbolleiste **Ausgewählte Threads ausblenden** auswählen. Es wird empfohlen, vollständig blockierte Threads auszublenden, da ihre Statistiken irrelevant sind und die Berichte überlasten können.  
   
-  Um zusätzliche Threads zu ermitteln, die Sie ausblenden können, wählen Sie in der aktiven Legende über die Registerkarte **Profilbericht** den Bericht **Zusammenfassung pro Thread** aus. Dadurch wird das Ausführungsaufschlüsselungsdiagramm angezeigt, das den Zustand von Threads für das derzeit ausgewählte Zeitintervall anzeigt. Auf einigen Zoomstufen, werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt.  
+  Um zusätzliche Threads zu verbergen, die ausgeblendet werden sollen, wählen Sie in der aktiven Legende auf der Registerkarte **Profil Bericht** den **Zusammenfassungs Bericht pro Thread** aus. Dadurch wird das Diagramm Ausführungs Aufschlüsselung angezeigt, in dem der Status der Threads für das aktuell ausgewählte Zeitintervall angezeigt wird. Auf einigen Zoomstufen, werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt.  
   
   Wenn Sie ein Zeitintervall und einige Threads darin ausgewählt haben, können Sie die Leistungsanalyse starten.  
   
@@ -94,7 +94,7 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
 ### <a name="thread-execution-details"></a>Details zur Threadausführung  
  Im Zeitachsendiagramm eines Threads zeigen die grünen Segmente an, wann Code ausgeführt wurde. Sie können ausführlichere Informationen über ein Ausführungssegment abrufen.  
   
- Wenn Sie einen Punkt in einem Ausführungssegment auswählen, durchsucht die Parallelitätsschnellansicht die relevante Aufrufliste nach diesem Zeitpunkt, zeigt dann darüber ein schwarzes Caretzeichen an sowie die Aufrufliste selbst auf der Registerkarte **Aktueller Stapel**. Sie können auf dem Ausführungssegment mehrere Punkte auswählen.  
+ Wenn Sie einen Punkt in einem Ausführungs Segment auswählen, sucht die neben läufigkeits Schnellansicht in der relevanten Aufruf Liste nach diesem Zeitpunkt und zeigt dann eine schwarze Einfügemarke oberhalb des ausgewählten Punkts im Ausführungs Segment an und zeigt die Aufruf Liste selbst auf der Registerkarte **Aktueller Stapel** an. Sie können mehrere Punkte im Ausführungs Segment auswählen.  
   
 > [!NOTE]
 > Die Parallelitätsschnellansicht ist möglicherweise nicht in der Lage, eine Auswahl auf einem Ausführungssegment aufzulösen. In der Regel tritt dies auf, wenn die Dauer des Segments weniger als eine Millisekunde beträgt.  
@@ -126,28 +126,28 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
  Um die Codezeile zu finden, für die Ausführungszeit aufgewendet wird, erweitern Sie die Aufrufstruktur, und wählen Sie dann im Kontextmenü für den Aufrufstruktureintrag **Quelle anzeigen** oder **Aufrufsites anzeigen** aus. **Quelle anzeigen** sucht die ausgeführte Codezeile. **Aufrufsites anzeigen** sucht die Codezeile, die die ausgeführte Codezeile aufgerufen hat. Wenn nur eine Aufrufsite vorhanden ist, wird die Codezeile hervorgehoben. Wenn mehrere Aufrufsites vorhanden sind, können Sie im erscheinenden Dialogfeld die gewünschte auswählen und dann die Schaltfläche **Zu Quelle wechseln** auswählen, um den Aufrufsitecode hervorzuheben. Es ist oft am nützlichsten, die Aufrufsite mit den meisten Instanzen, der meisten Zeit oder beidem zu suchen. Weitere Informationen finden Sie unter [Ausführungsprofilbericht](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Synchronisierung  
- Im Synchronisierungsbericht werden die Aufrufe angezeigt, die Blockierungen der Synchronisierung verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Synchronisierungszeit](../profiling/synchronization-time.md).  
+ Im Synchronisierungsbericht werden die Aufrufe angezeigt, die Blockierungen der Synchronisierung verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Synchronisierungs Zeit](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>E/A  
- Im E/A-Bericht werden die Aufrufe angezeigt, die E/A-Blockierungen verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md).  
+ Im E/A-Bericht werden die Aufrufe angezeigt, die E/A-Blockierungen verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter e/a- [Zeit (Thread Ansicht)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Sleep  
+#### <a name="sleep"></a>Standby  
  Im Bericht zum Standbymodus werden die Aufrufe angezeigt, die Blockierungen des Standbymodus verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Standbyzeit](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Speicherverwaltung  
  Im Speicherverwaltungsbericht werden die Aufrufe angezeigt, bei denen Blockierungen der Speicherverwaltung aufgetreten sind, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Sie können diese Informationen verwenden, um Bereiche zu identifizieren, die eine übermäßige Paging- oder Garbage Collection aufweisen.  Weitere Informationen finden Sie unter [Speicherverwaltungszeit](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Vorzeitige Entfernung  
- Im Bericht über die vorzeitige Entfernung werden die Instanzen angezeigt, bei denen Prozesse auf dem System den aktuellen Prozess vorzeitig entfernt haben, sowie die einzelnen Threads, die Threads im aktuellen Prozess ersetzt haben. Sie können diese Informationen verwenden, um die Prozesse und Threads zu identifizieren, die an der vorzeitigen Entfernung am stärksten beteiligt sind. Weitere Informationen finden Sie unter [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md).  
+ Im Bericht über die vorzeitige Entfernung werden die Instanzen angezeigt, bei denen Prozesse auf dem System den aktuellen Prozess vorzeitig entfernt haben, sowie die einzelnen Threads, die Threads im aktuellen Prozess ersetzt haben. Sie können diese Informationen verwenden, um die Prozesse und Threads zu identifizieren, die an der vorzeitigen Entfernung am stärksten beteiligt sind. Weitere Informationen finden Sie unter [voremptionzeit](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Benutzeroberflächenverarbeitung  
- Im Bericht zur Benutzeroberflächenverarbeitung werden die Aufrufe angezeigt, die eine Blockierung der Benutzeroberflächenverarbeitung verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [Benutzeroberflächenverarbeitungszeit](../profiling/ui-processing-time.md).  
+ Im Bericht zur Benutzeroberflächenverarbeitung werden die Aufrufe angezeigt, die eine Blockierung der Benutzeroberflächenverarbeitung verursachen, sowie die aggregierten Blockierungszeiten der einzelnen Aufruflisten. Weitere Informationen finden Sie unter [UI processing time](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Zusammenfassung pro Thread  
- In dieser Registerkarte zeigt eine farbcodierte Spaltenansicht die Gesamtzeit an, die die einzelnen Threads im ausführenden oder blockierten Zustand, in der E/A oder anderen Zuständen verbracht haben. Die Spalten sind unten beschriftet. Wenn Sie die Zoomstufe im Zeitachsendiagramm anpassen, wird die Registerkarte automatisch aktualisiert. Auf einigen Zoomstufe werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt. Wenn der gewünschte Thread nicht angezeigt wird, können Sie andere Threads ausblenden. Weitere Informationen finden Sie unter [Zusammenfassungsbericht pro Thread](../profiling/per-thread-summary-report.md).  
+ In dieser Registerkarte zeigt eine farbcodierte Spaltenansicht die Gesamtzeit an, die die einzelnen Threads im ausführenden oder blockierten Zustand, in der E/A oder anderen Zuständen verbracht haben. Die Spalten sind unten beschriftet. Wenn Sie die Zoomstufe im Zeitachsendiagramm anpassen, wird die Registerkarte automatisch aktualisiert. Auf einigen Zoomstufen, werden mehrere Threads möglicherweise nicht angezeigt. In diesem Fall werden auf der rechten Seite Auslassungszeichen angezeigt. Wenn der gewünschte Thread nicht angezeigt wird, können Sie andere Threads ausblenden. Weitere Informationen finden Sie unter [Zusammenfassungsbericht pro Thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Datenträgervorgänge  
  In dieser Registerkarte wird unter anderem angezeigt, welche Prozesse und Threads durch den aktuellen Prozess an der Datenträger-E/A beteiligt waren, welche Dateien davon betroffen waren (z.B. DLLs, die geladen wurden) und wie viele Bytes gelesen wurden. Sie können diesen Bericht verwenden, um die Zeit auszuwerten, die während der Ausführung für den Zugriff auf Dateien aufgewendet wird, insbesondere wenn der Prozess E/A-gebunden scheint. Weitere Informationen finden Sie unter [Bericht über Datenträgervorgänge](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)

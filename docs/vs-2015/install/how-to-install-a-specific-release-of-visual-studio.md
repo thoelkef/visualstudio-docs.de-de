@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433083"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841122"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Gewusst wie: Installieren eines bestimmten Releases von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ Wir aktualisieren Visual Studio-Setup häufig, damit Sie die aktuellste, optimie
 >   - rus (für Russisch)
 >   - trk (für Türkisch)
 
-## <a name="see-also"></a>Siehe auch
- [Administratorhandbuch für Visual Studio](../install/visual-studio-administrator-guide.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Administrator Handbuch für Visual Studio](../install/visual-studio-administrator-guide.md)

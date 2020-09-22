@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410070"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841242"
 ---
 # <a name="notifying-the-port"></a>Benachrichtigen des Ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nach dem Starten eines Programms, muss der Port, wie folgt benachrichtigt werden:  
+Nachdem Sie ein Programm gestartet haben, muss der Port wie folgt benachrichtigt werden:  
   
-1. Bei ein Port einen neuen Knoten für die Anwendung empfängt, sendet er ein Programm Erstellungsereignis zurück an die Debug-Sitzung. Das Ereignis enthält eine Schnittstelle, die Anwendung darstellt.  
+1. Wenn ein Port einen neuen Programmknoten empfängt, sendet er ein Programm Erstellungs Ereignis an die Debugsitzung zurück. Das Ereignis enthält eine Schnittstelle, die das Programm darstellt.  
   
-2. Die Debugsitzung fragt die Anwendung für den Bezeichner einer Debug-Engine (DE), die zum Anfügen können.  
+2. Die Debugsitzung fragt das Programm nach dem Bezeichner einer Debug-Engine (de) ab, die an angefügt werden kann.  
   
-3. Die Debugsitzung überprüft, um festzustellen, ob die DE in der Liste der zulässigen des (Datenverschlüsselungsstandard) dieses Programm ist. Die Debugsitzung ruft diese Liste ab, aus der Projektmappe active programmeinstellungen, ursprünglich durch das debugpaket übergeben.  
+3. Die Debugsitzung prüft, ob de in der Liste der zulässigen des für dieses Programm ist. Die Debugsitzung ruft diese Liste aus den aktiven Programmeinstellungen der Projekt Mappe ab, die ursprünglich vom Debugpaket an Sie übermittelt wurden.  
   
-    Die DE in der Liste der zulässigen befinden muss, andernfalls die DE für das Programm nicht angefügt.  
+    Die "de" muss in der Liste der zulässigen Dateien enthalten sein, andernfalls wird die "de" nicht an das Programm angefügt.  
   
-   Programmgesteuert, wenn ein Port zuerst einen neuen Knoten für die Anwendung empfängt, erstellt es ein [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, um die Anwendung darstellen.  
-  
-> [!NOTE]
-> Dies sollte nicht mit verwechselt werden die `IDebugProgram2` Schnittstelle, die später von der Debug-Engine (DE) erstellt.  
-  
- Der Port sendet eine [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Programm Erstellungsereignis an die sitzungsbasierter Debug-Manager (SDM) mithilfe einer COM- `IConnectionPoint` Schnittstelle.  
+   Programm gesteuert, wenn ein Port zum ersten Mal einen neuen Programmknoten empfängt, erstellt er eine [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle, die das Programm darstellt.  
   
 > [!NOTE]
-> Dies sollte nicht mit verwechselt werden die `IDebugProgramCreateEvent2` -Schnittstelle, die später von der DE gesendet wird.  
+> Dies sollte nicht mit der-Schnittstelle verwechselt werden, die `IDebugProgram2` später von der Debug-Engine (de) erstellt wird.  
   
- Zusammen mit der Ereignisschnittstelle selbst, der Port sendet die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), und [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstellen, die den Port darstellen, zu verarbeiten, und Programmieren Sie, bzw. Die SDM-Aufrufe [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) um die GUID des DE abzurufen, die das Programm zu debuggen können. Die GUID war ursprünglich abgerufene der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
+ Der Port sendet ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Program Creation-Ereignis mithilfe einer COM-Schnittstelle an den Sitzungs-Debug-Manager (SDM) zurück `IConnectionPoint` .  
   
- Das SDM überprüft, um festzustellen, ob die DE in der Liste der zulässigen DEs ist. Das SDM ruft diese Liste ab, aus der Projektmappe active programmeinstellungen, ursprünglich durch das debugpaket übergeben. Die DE in der Liste der zulässigen befinden muss, andernfalls wird an das Programm nicht angefügt werden.  
+> [!NOTE]
+> Dies sollte nicht mit der- `IDebugProgramCreateEvent2` Schnittstelle verwechselt werden, die später von der de gesendet wird.  
   
- Nachdem die Identität des DE bekannt ist, ist das SDM bereit für die Verbindung mit dem Programm.  
+ Zusammen mit der Ereignis Schnittstelle selbst sendet der Port die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)-, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)-und [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstellen, die den Port, den Prozess bzw. das Programm darstellen. Der SDM ruft [IDebugProgram2:: getengineingefo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) auf, um die GUID des de-Objekts zu erhalten, das das Programm debuggen kann. Die GUID wurde ursprünglich von der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) -Schnittstelle abgerufen.  
   
-## <a name="see-also"></a>Siehe auch  
+ Der SDM prüft, ob de in der Liste der zulässigen des ist. Die SDM ruft diese Liste aus den aktiven Programmeinstellungen der Projekt Mappe ab, die ursprünglich vom Debugpaket an Sie übermittelt wurden. Die de muss in der Liste der zulässigen Dateien enthalten sein, oder Sie wird nicht an das Programm angefügt.  
+  
+ Nachdem die Identität der de bekannt ist, ist die SDM zum Anfügen an das Programm bereit.  
+  
+## <a name="see-also"></a>Weitere Informationen  
  [Starten eines Programms](../../extensibility/debugger/launching-a-program.md)   
  [Anfügen nach einem Start](../../extensibility/debugger/attaching-after-a-launch.md)   
  [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)

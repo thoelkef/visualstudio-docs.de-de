@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406678"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840858"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Auswählen einer Strategie für die ClickOnce-Bereitstellung
 Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen. Folgende Strategien sind verfügbar:
@@ -32,14 +32,14 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
 - Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe
 
     > [!NOTE]
-    > Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen. Weitere Informationen finden Sie unter [auswählen eine Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Installation aus dem Web oder einer Netzwerkfreigabe
  Bei dieser Strategie wird die Anwendung auf einem Webserver oder in einer Dateifreigabe im Netzwerk bereitgestellt. Benutzer installieren die Anwendung, indem sie auf ein Symbol auf einer Webseite klicken oder auf ein Symbol in der Dateifreigabe doppelklicken. Die Anwendung wird dann auf den Computer des Endbenutzers heruntergeladen, installiert und gestartet. Dem Menü **Start** und unter **Software** in der **Systemsteuerung** werden Elemente hinzugefügt.
 
  Da diese Strategie von einer Netzwerkverbindung abhängt, funktioniert sie am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die Zugriff auf ein lokales Netzwerk haben oder eine Internetverbindung mit hoher Geschwindigkeit besitzen.
 
- Wenn Sie die Anwendung aus dem Web bereitstellen, können Sie Argumente in die Anwendung übergeben, wenn sie mit einer URL aktiviert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Sie können keine Argumente in eine Anwendung übergeben, die mit einer der anderen in diesem Dokument beschriebenen Methoden aktiviert wird.
+ Wenn Sie die Anwendung aus dem Web bereitstellen, können Sie Argumente in die Anwendung übergeben, wenn sie mit einer URL aktiviert wird. Weitere Informationen finden Sie unter Gewusst [wie: Abrufen von Abfrage Zeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Sie können keine Argumente in eine Anwendung übergeben, die mit einer der anderen in diesem Dokument beschriebenen Methoden aktiviert wird.
 
  Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Installationsart** des Webpublishing-Assistenten auf **Aus dem Web** oder **Von UNC-Pfad oder Dateifreigabe**.
 
@@ -71,8 +71,8 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
 
  Anwendungen, die auf .NET Framework 2.0 ausgerichtet sind, erfordern Internet Explorer.
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
