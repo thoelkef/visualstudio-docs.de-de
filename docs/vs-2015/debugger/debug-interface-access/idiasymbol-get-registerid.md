@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_registerid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_registerId | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817420"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841150"
 ---
-# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
+# <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ab, der Register-Kennzeichner des Standorts bei der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) nastaven NA hodnotu `LocIsEnregistered`.  
+Ruft den Register Kenn Zeichner des Speicher Orts ab, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) auf festgelegt ist `LocIsEnregistered` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,17 +35,17 @@ HRESULT get_registerId ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Register-Kennzeichner des Speicherorts zurück.  
+ vorgenommen Gibt den Register Kenn Zeichner des Speicher Orts zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn das Symbol Bezug auf ein Register, d. h. wenn des Symbols [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) nastaven NA hodnotu `LocIsRegRel`, verwenden Sie die `get_registerId` Methode, gefolgt von einem Aufruf von der [idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) Methode, die der Offset aus der Registrierung abgerufen werden, wo sich das Symbol befindet.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn das Symbol relativ zu einem Register ist, d. h., wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols auf festgelegt ist `LocIsRegRel` , verwenden Sie die- `get_registerId` Methode, gefolgt von einem Aufruf der [idiasymmetribol:: get_Offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) -Methode, um den Offset aus dem Register abzurufen, in dem sich das Symbol befindet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

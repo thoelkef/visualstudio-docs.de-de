@@ -9,337 +9,337 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f17b875f0637883222a633cb1082ad24788d4c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431345"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841237"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="BKMK_NotificationSystems"></a> Benachrichtigungssysteme
+## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Benachrichtigungs Systeme
 
 ### <a name="overview"></a>Übersicht
- Es gibt mehrere Möglichkeiten, den Benutzer zu informieren, was in Bezug auf ihre softwareentwicklungsaufgaben in Visual Studio passiert.
+ Es gibt mehrere Möglichkeiten, den Benutzer darüber zu informieren, was in Visual Studio in Bezug auf die Software Entwicklungsaufgaben passiert.
 
- Wenn Sie jede Art von Benachrichtigung zu implementieren:
+ Beim Implementieren beliebiger Benachrichtigungs Arten:
 
-- **Behalten Sie die Anzahl der Benachrichtigungen auf ein Minimum** effektive Anzahl. Benachrichtigungen sollten auf der Mehrzahl der Visual Studio-Benutzer oder für Benutzer von einem spezifischen Features und Feature-Bereich anwenden. Eine übermäßige Beanspruchung von Benachrichtigungen vom eigentlichen Thema abweichen des Benutzers oder abnehmen wahrgenommene benutzerfreundlichkeit des Systems.
+- **Halten Sie die Anzahl der Benachrichtigungen auf die minimale** effektive Anzahl. Benachrichtigungs Meldungen sollten für die meisten Visual Studio-Benutzer oder Benutzer eines bestimmten Features bzw. featurebereichs gelten. Eine übermäßige Verwendung von Benachrichtigungen kann den Benutzer ggf. beeinträchtigen oder die erkannte Benutzerfreundlichkeit des Systems beeinträchtigen.
 
-- **Stellen Sie sicher, präsentieren Sie klare und Aktionen erfordernde Nachrichten** , dass der Benutzer verwenden kann, um den geeigneten Kontext für eine komplexere Entscheidungen und weitere Aktionen durchführen aufzurufen.
+- **Stellen Sie sicher, dass Sie klare, Handlungs relevante Nachrichten präsentieren** , mit denen der Benutzer den entsprechenden Kontext aufrufen kann, um komplexere Auswahlmöglichkeiten zu treffen und weitere Maßnahmen zu ergreifen.
 
-- **Stellen Sie die synchrone und asynchrone Nachrichten entsprechend.** Synchrone Benachrichtigungen angeben, dass etwas erfordert sofortige Bearbeitung, wie z. B. wenn ein Webdienst stürzt ab, oder mit einem Code Ausnahme ausgelöst. Diese Situationen sofort in einer Weise, die die Eingabe wie z. B. in einem modalen Dialogfeld erfordert, sollte der Benutzer informiert werden. Asynchrone Benachrichtigungen sind diejenigen, die der Benutzer kennen sollten, aber nicht zu sofort reagieren erforderlich, z. B. wenn ein Buildvorgang abgeschlossen ist, oder eine Website-Bereitstellung abgeschlossen ist. Diese Nachrichten mehr ambient trennen und die Abfolge der Aufgaben des Benutzers nicht unterbrochen.
+- **Stellen Sie synchrone und asynchrone Nachrichten entsprechend dar.** Synchrone Benachrichtigungen deuten darauf hin, dass eine sofortige Aufmerksamkeit erforderlich ist, z. b. Wenn ein Webdienst abstürzt oder eine Code Ausnahme ausgelöst wird. Der Benutzer sollte über diese Situationen sofort informiert werden, wenn die Eingabe erforderlich ist, z. b. in einem modalen Dialogfeld. Asynchrone Benachrichtigungen sind solche, die dem Benutzer bekannt sein sollten, die aber nicht sofort ausgeführt werden müssen, z. b. Wenn ein Buildvorgang abgeschlossen oder eine Website Bereitstellung abgeschlossen wurde. Diese Nachrichten sollten mehr Ambiente aufweisen und den Aufgaben Fluss des Benutzers nicht unterbrechen.
 
-- **Verwenden Sie modale Dialogfelder, die nur bei Bedarf, um zu verhindern, dass den Benutzer führt weitere Aktionen** vor der Bestätigung der Nachricht oder einer Entscheidung, die im Dialogfeld angezeigt.
+- **Verwenden Sie modale Dialogfelder nur, wenn dies notwendig ist, um zu verhindern, dass der Benutzer weitere Aktionen durchführen muss,** bevor die Nachricht bestätigt oder eine Entscheidung im Dialogfeld
 
-- **Entfernen Sie Ambiente-Benachrichtigungen, wenn sie nicht mehr gültig sind.** Erfordern Sie keine des Benutzers eine Benachrichtigung zu schließen, wenn sie bereits unternommen haben, Aktion aus, um das Problem zu beheben, die, dem Sie über benachrichtigt wurden.
+- **Entfernen Sie Ambient-Benachrichtigungen, wenn Sie nicht mehr gültig sind.** Verlangen Sie nicht, dass der Benutzer eine Benachrichtigung verwerfen muss, wenn er bereits Maßnahmen ergriffen hat, um das Problem zu beheben, über das Sie benachrichtigt wurden.
 
-- **Denken Sie daran, dass Benachrichtigungen, um falsche Korrelationen führen können.** Benutzer gehen davon aus, dass eine oder mehrere ihrer Aktionen eine Benachrichtigung ausgelöst hat, wenn es tatsächlich keine kausale Beziehung gab. Löschen in der Benachrichtigung über den Kontext, der Trigger und die Quelle der Benachrichtigung sein.
+- **Beachten Sie, dass Benachrichtigungen zu falschen Korrelationen führen können.** Benutzer können davon ausgehen, dass eine oder mehrere ihrer Aktionen eine Benachrichtigung ausgelöst haben, wenn es tatsächlich keine kausale Beziehung gab. Löschen Sie in der Benachrichtigungs Meldung den Kontext, den-Fehler und die Quelle der Benachrichtigung.
 
 ### <a name="choosing-the-right-method"></a>Auswählen der richtigen Methode
- Verwenden Sie diese Tabelle, die Ihnen helfen, bei der Auswahl der richtigen Methode zur Benachrichtigung des Benutzers der Nachricht.
+ Verwenden Sie diese Tabelle, um Sie bei der Auswahl der richtigen Methode zum Benachrichtigen des Benutzers über Ihre Nachricht zu unterstützen.
 
-|Methode|Mit|Verwenden Sie keine|
+|Methode|Verwendung|Nicht verwenden|
 |------------|---------|----------------|
-|[Modale Meldung Fehlerdialoge](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Wird verwendet, wenn eine Antwort des Benutzers, bevor Sie fortfahren erforderlich ist.|Verwenden Sie nicht bei keine Notwendigkeit besteht, blockieren den Benutzer zu identifizieren und deren Fluss. Verwenden Sie modale Dialogfelder, wenn es möglich ist, die die Nachricht in eine andere und weniger intrusiv Weise anzeigen.|
-|[IDE-Statusleiste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Verwenden Sie Wenn ambient Textinformationen in Bezug auf den Status eines Prozesses vorhanden ist.|Verwenden Sie nicht allein. Am besten verwendet in Verbindung mit einem anderen Feedbackmechanismus.|
-|[Eingebettete Infoleiste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|Verwenden Sie in einem Toolfenster oder Dokumentfenster zum Status, Zustand "Fehler", Ergebnisse, und/oder handlungsrelevante Informationen zu benachrichtigen.|Verwenden Sie nicht, wenn die Informationen nicht an den Speicherort relevant ist, in dem die Infoleiste platziert wird.<br /><br /> Verwenden Sie nicht außerhalb eines Dokuments/Toolfensters.|
-|[Mauszeiger ändert sich](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|Kann verwendet werden, um mitzuteilen, dass ein Prozess vor sich geht. Auch verwendet benachrichtigt, dass eine Zustandsänderung bei der Maus vorhanden ist, z. B. bei Drag & Drop in Bearbeitung "oder", wird der Mauszeiger in einem bestimmten Modus, z. B. Zeichnungsmodus des.|Verwenden Sie nicht für Änderungen des kurzen Status oder der fluttering der Cursor wahrscheinlich (z. B., wenn auf Teile ein längerer ausgeführten Prozess statt für den gesamten Prozess gebunden) ist.|
-|[Statusanzeigen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Wird verwendet, wenn der Status (bestimmte oder unbestimmt) benötigen. Es gibt verschiedene Arten von Fortschrittsanzeigen und die anwendungsspezifische Nutzung für jede. Finden Sie unter [Fortschritt Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||
-|[Visual Studio-benachrichtigunsfenster](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Das Fenster "Benachrichtigungen" ist nicht öffentlich erweiterbar. Es wird jedoch verwendet, um einen Bereich von Meldungen über die Visual Studio, z. B. kritische Probleme mit Ihrer Lizenz und informativen Benachrichtigungen von Updates für Visual Studio oder Pakete zu kommunizieren.|Verwenden Sie nicht für andere Arten von Benachrichtigungen.|
-|[Fehlerliste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Wenn das Problem direkt an des Benutzers aktuell geöffneten Projektmappe ist ein Problem (Fehler/Warnung/Info) verbunden ist, müssen sie möglicherweise Maßnahmen ergreifen, auf dem Code.<br /><br /> Dies würde, z. B. Folgendes umfassen:<br /><br /> -Compiler Nachrichten (Fehler/Warnung/Info)<br /><br /> -Code Analyzer/Diagnosedateien Nachrichten über den code<br /><br /> – Erstellen von Nachrichten<br /><br /> Kann für Probleme im Zusammenhang mit der Projektmappen- oder Projektdateien geeignet, aber Sie sollten eine Angabe über das Projektmappen-Explorer zuerst.|Verwenden Sie nicht für Elemente, die keinen Bezug zu den Code des Benutzers Projektmappe öffnen.|
-|Editor für Benachrichtigungen: Glühbirne|Verwenden Sie haben eine Lösung zur Verfügung, um ein Problem zu beheben, die in der geöffneten Datei vorhanden ist.<br /><br /> Beachten Sie, dass die Glühbirne auch verwendet werden soll, für das Hosten von Schnellaktionen, die auf den Code des Benutzers bei Bedarf, z. B. Refactorings, stammen in diesem Fall wird jedoch nicht angezeigt "Notification-Style".|Verwenden Sie nicht für Elemente, die nicht über Beziehung mit der geöffneten Datei verfügen.|
-|Editor für Benachrichtigungen: Wellenlinien|Benachrichtigung des Benutzers auf ein Problem mit einer bestimmten Spanne des Codes öffnen (z. B. eine rote Wellenlinie für Fehler) verwenden.|Verwenden Sie nicht für Elemente, die nicht auf eine bestimmte Spanne des Codes öffnen beziehen.|
-|[Eingebettete Statusleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Zum Bereitstellen von Status, die im Zusammenhang mit Inhalt oder der Prozess im Kontext eines bestimmten Toolfenster, Dokumentfenster oder Dialogfenster verwenden.|Verwenden Sie nicht für allgemeine Benachrichtigungen, Prozessen oder Elemente, die nicht über Beziehung zu den Inhalt in das jeweilige Fenster verfügen.|
-|[Windows-Taskleiste-Benachrichtigungen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Verwenden Sie, um Benachrichtigungen für die Out-of-Proc-Prozesse Oberfläche oder Begleit-Anwendungen.|Verwenden Sie nicht für Benachrichtigungen, die für die IDE relevant sind.|
-|[Benachrichtigung Blasen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Verwenden, um einen Remoteprozess, zu melden, oder ändern Sie **außerhalb** der IDE.|Verwenden Sie nicht als Mittel zum Benachrichtigen des Benutzers von Prozessen **in** der IDE.|
+|[Dialogfelder für modale Fehlermeldungen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Verwenden Sie, wenn eine Benutzer Antwort erforderlich ist, bevor Sie fortfahren.|Verwenden Sie nicht, wenn es nicht erforderlich ist, den Benutzer zu blockieren und den Flow zu unterbrechen. Vermeiden Sie die Verwendung von modalen Dialogfeldern, wenn es möglich ist, die Nachricht in einer anderen, weniger eindringlichen Weise anzuzeigen.|
+|[IDE-Statusleiste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Verwenden Sie, wenn Ambient-Textinformationen zum Status eines Prozesses vorhanden sind.|Verwenden Sie nicht allein. Wird am besten in Verbindung mit einem anderen Feedback Mechanismus verwendet.|
+|[Eingebettete Infoleiste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|Verwenden Sie in einem Tool Fenster oder Dokument Fenster, um den Fortschritt, den Fehlerzustand, Ergebnisse und/oder Aktions Informationen zu benachrichtigen.|Verwenden Sie nicht, wenn die Informationen für den Speicherort der Info Leiste nicht relevant sind.<br /><br /> Nicht außerhalb eines Dokuments/Tool Fensters verwenden.|
+|[Maus Cursor Änderungen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|Kann verwendet werden, um zu benachrichtigen, dass ein Prozess fort läuft. Wird auch verwendet, um zu benachrichtigen, dass eine Statusänderung in der Maus vorliegt, z. b. wenn der Drag & Drop-Vorgang ausgeführt wird oder sich der Mauszeiger in einem bestimmten Modus befindet (z. b. im Zeichnungsmodus).|Verwenden Sie für kurze Statusänderungen nicht, oder wenn das geleert des Cursors wahrscheinlich ist (z. b., wenn es an Teile eines längeren Prozesses und nicht an den gesamten Prozess gebunden ist).|
+|[Status Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Verwenden Sie, wenn Sie den Fortschritt (entweder bestimmte oder unbestimmt) melden müssen. Es gibt eine Vielzahl von Status Indikator Typen und eine spezifische Verwendung für jeden. Siehe Status [Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||
+|[Visual Studio-Benachrichtigunsfenster](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Das Benachrichtigungsfenster ist nicht öffentlich erweiterbar. Es wird jedoch verwendet, um eine Reihe von Nachrichten über Visual Studio zu kommunizieren, einschließlich kritischer Probleme mit Ihrer Lizenz und Informations Benachrichtigungen über Updates für Visual Studio oder Pakete.|Verwenden Sie nicht für andere Benachrichtigungs Typen.|
+|[Fehlerliste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Wenn sich das Problem direkt auf die aktuell geöffnete Lösung des Benutzers bezieht (Fehler/Warnung/Info), müssen Sie möglicherweise eine Aktion für den Code ausführen.<br /><br /> Hierzu gehören beispielsweise:<br /><br /> -Compilernachrichten (Fehler/Warnung/Info)<br /><br /> -Code Analyse-/Diagnosenachrichten zum Code<br /><br /> -Erstellen von Nachrichten<br /><br /> Eignet sich möglicherweise für Probleme im Zusammenhang mit den Projekt-oder Projektmappendateien, berücksichtigt jedoch zuerst eine Projektmappen-Explorer-Angabe.|Verwenden Sie nicht für Elemente, die keine Beziehung zum geöffneten Projektmappencode des Benutzers haben.|
+|Editor-Benachrichtigungen: Glühbirne|Verwenden Sie, wenn eine Korrektur verfügbar ist, um ein Problem zu beheben, das in der geöffneten Datei vorhanden ist.<br /><br /> Beachten Sie, dass Glühbirnen auch zum Hosten schneller Aktionen verwendet werden soll, die bei Bedarf für den Code des Benutzers ausgeführt werden, wie z. b. refacktoren, aber in diesem Fall wird nicht "Benachrichtigungs Stil" angezeigt.|Verwenden Sie nicht für Elemente, die keine Beziehung zu der geöffneten Datei haben.|
+|Editor-Benachrichtigungen: Wellenlinien|Verwenden Sie, um den Benutzer auf ein Problem mit einer bestimmten Spanne des geöffneten Codes zu benachrichtigen (z. b. eine rote Wellenlinie für Fehler).|Verwenden Sie nicht für Elemente, die sich nicht auf eine bestimmte Spanne Ihres geöffneten Codes beziehen.|
+|[Eingebettete Status leisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Wird verwendet, um den Status im Zusammenhang mit Inhalt oder Prozess innerhalb eines bestimmten Tool Fensters, Dokument Fensters oder Dialogfensters bereitzustellen.|Verwenden Sie nicht für allgemeine Produkt Benachrichtigungen, Prozesse oder Elemente, die keine Beziehung zum Inhalt innerhalb des jeweiligen Fensters haben.|
+|[Windows-Info Bereichs Benachrichtigungen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Verwenden Sie, um Benachrichtigungen für Out-of-proc-Prozesse oder Begleit Anwendungen zu verwenden.|Verwenden Sie nicht für Benachrichtigungen, die für die IDE relevant sind.|
+|[Benachrichtigungs Blasen](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Verwenden Sie, um einen Remote Prozess zu benachrichtigen oder **außerhalb** der IDE zu wechseln.|Verwenden Sie nicht als Mittel zum Benachrichtigen des Benutzers von Prozessen **innerhalb** der IDE.|
 
-### <a name="notification-methods"></a>Benachrichtigungsmethoden
+### <a name="notification-methods"></a>Benachrichtigungs Methoden
 
-#### <a name="BKMK_ModalErrorMessageDialogs"></a> Modale Meldung Fehlerdialoge
- Eine modale Fehlerdialogfeld wird verwendet, eine Fehlermeldung angezeigt, die Bestätigung des Benutzers oder eine Aktion erforderlich sind.
+#### <a name="modal-error-message-dialogs"></a><a name="BKMK_ModalErrorMessageDialogs"></a> Dialogfelder für modale Fehlermeldungen
+ Ein modales Fehlermeldungs Dialogfeld wird verwendet, um eine Fehlermeldung anzuzeigen, die die Bestätigung oder Aktion des Benutzers erfordert.
 
  ![Modale Fehlermeldung](../../extensibility/ux-guidelines/media/0901-01-modalerrormessage.png "0901-01_ModalErrorMessage")
 
- **Eine modale Fehlerdialogfeld warnen der Benutzer, der eine ungültige Verbindungszeichenfolge in einer Datenbank**
+ **Ein modales Fehlermeldungs Dialogfeld, das den Benutzer über eine ungültige Verbindungs Zeichenfolge für eine Datenbank**
 
-#### <a name="BKMK_IDEStatusBar"></a> IDE-Statusleiste
- Die Wahrscheinlichkeit, dass Benutzer Statusleistentext Beachten Sie, dass entspricht ihre Erfahrung mit umfassenden Computern und Anwendungsverhalten mit der Windows-Plattform. Die Kunden von Visual Studio ist meist erfahrene in beiden Bereichen, obwohl auch erfahrene Windows-Benutzer Änderungen in der Statusleiste verpassen würde. Aus diesem Grund wird die Statusleiste am besten für Informationszwecke oder redundante Stichwort verwendet für Informationen, die an anderer Stelle angezeigt. Jede Art von wichtigen Informationen, den der Benutzer sofort beheben muss, muss in einem Dialogfeld oder im Toolfenster, Benachrichtigungen bereitgestellt werden.
+#### <a name="ide-status-bar"></a><a name="BKMK_IDEStatusBar"></a> IDE-Statusleiste
+ Die Wahrscheinlichkeit, dass Benutzer den Status leisten Text bemerken, korreliert mit der gesamten Computerumgebung und der Windows-Plattform. Die Visual Studio-Kundenbasis ist tendenziell in beiden Bereichen zu sehen, auch wenn fachkundige Windows-Benutzer möglicherweise Änderungen in der Statusleiste übersehen. Daher wird die Statusleiste am besten zu Informationszwecken oder als redundanter Hinweis für Informationen verwendet, die an anderer Stelle angezeigt werden. Alle wichtigen Informationen, die der Benutzer sofort auflösen muss, sollten in einem Dialogfeld oder im Benachrichtigungs Tool Fenster bereitgestellt werden.
 
- Die Statusleiste von Visual Studio wurde entwickelt, um verschiedene Arten von Informationen zu ermöglichen, die angezeigt werden. Es ist in Regionen für Feedback, Designer, Statusanzeige, Animation und Client unterteilt.
+ Die Visual Studio-Statusleiste ist so konzipiert, dass verschiedene Arten von Informationen angezeigt werden können. Es ist in Bereiche für Feedback, Designer, Statusanzeige, Animation und Client unterteilt.
 
- Das Feedback und Designer Region sind immer sichtbar. Die Statusanzeige und eine Animation Regionen sind immer dynamisch und basieren auf den Benutzerkontext. Der Designerbereich hat es sich um eine statische Breite bestimmt, indem die Länge der Zeichenfolge, die aus einer zugehörigen Ressource für die Nachricht abgerufen werden. Dadurch wird die Lokalisierung in die Breite des zu ändern, ohne dass eine Änderung des Codes. Für Englisch ist die Breite dieser Zeichenfolge etwa 220 Pixel. Der Designerbereich verhält sich normal, und die Feedbackbereich wird den verbleibenden Speicherplatz absorb.
+ Der Feedback Bereich und der Designer Bereich sind immer sichtbar. Die Statusanzeige und die Animations Bereiche sind immer dynamisch und basieren auf dem Benutzer Kontext. Der Designer Bereich hat eine statische Breite, die durch die Länge der Zeichenfolge bestimmt wird, die von einer begleitenden Ressource für die Textnachricht abgerufen wird. Dadurch kann die Größe der Lokalisierung geändert werden, ohne dass eine Codeänderung erforderlich ist. In englischer Sprache beträgt die Breite dieser Zeichenfolge ungefähr 220 Pixel. Der Designer Bereich verhält sich normal, und der Feedback Bereich nimmt den verbleibenden Speicherplatz auf.
 
- Die Statusleiste wird auch zum Hinzufügen von visuellem Reiz und funktionale Wert durch Kommunikation verschiedener statusänderungen der IDE z. B. wenn die IDE im Debugmodus wird eingefärbt.
+ Außerdem wird die Statusleiste hervorgehoben, um einen visuellen Interessen-und Funktionswert durch die Kommunikation verschiedener IDE-Statusänderungen, wie z. b. wenn sich die IDE im Debugmodus befindet,
 
- ![IDE-Statusleiste farbänderungen](../../extensibility/ux-guidelines/media/0901-02-idestatusbar.png "0901-02_IDEStatusBar")
+ ![Farbänderungen für IDE-Statusleiste](../../extensibility/ux-guidelines/media/0901-02-idestatusbar.png "0901-02_IDEStatusBar")
 
- **IDE-statusleistenfarben**
+ **Farben der IDE-Statusleiste**
 
-#### <a name="BKMK_EmbeddedInfobar"></a> Eingebettete Infoleiste
- Eine Infoleiste kann am oberen Rand eines Dokument- oder Toolfenster verwendet werden, die Benutzer über einen Status oder Zustand informiert. Sie können auch Befehle bieten, damit, dass der Benutzer eine Möglichkeit, problemlos Maßnahmen ergreifen kann. Die Infoleiste ist ein standard-Shell-Steuerelement. Erstellen Sie keine eigene die fungieren und nicht mit anderen Benutzern in der IDE angezeigt wird. Finden Sie unter [Infoleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) Implementierungsdetails und Anleitungen.
+#### <a name="embedded-infobar"></a><a name="BKMK_EmbeddedInfobar"></a> Eingebettete Info Leiste
+ Eine Info Leiste kann im oberen Bereich eines Dokument Fensters oder Tool Fensters verwendet werden, um den Benutzer über einen Zustand oder eine Bedingung zu informieren. Es können auch Befehle angeboten werden, damit der Benutzer problemlos Maßnahmen ergreifen kann. Die Info Leiste ist ein Standardmäßiges shellsteuerelement. Erstellen Sie keine eigenen, die agieren und mit anderen in der IDE inkonsistent erscheinen. Weitere Informationen zur Implementierung finden Sie in den [infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) und Anleitungen zur Verwendung.
 
  ![Eingebettete Infoleiste](../../extensibility/ux-guidelines/media/0901-03-embeddedinfobar.png "0901-03_EmbeddedInfobar")
 
- **Eine Infoleiste eingebettet in einem Dokumentfenster warnen der Benutzer, den der IDE befindet sich im Modus "verlaufsbezogenes debugging" und der Editor reagiert nicht auf die gleiche Weise wie im standard-debugging-Modus.**
+ **Eine in ein Dokument Fenster eingebettete Info Leiste, die den Benutzer darüber informiert, dass sich die IDE im Verlaufs bezogenen Debugmodus befindet, und der Editor antwortet nicht auf die gleiche Weise wie im standarddebugmodus.**
 
-#### <a name="BKMK_MouseCursorChanges"></a> Mauszeiger ändert sich
- Wenn Sie den Mauszeiger zu ändern, verwenden Sie Farben, die an den Dienst VSColor gebunden werden und sind bereits mit dem Cursor zugeordnet. Cursor geändert für, der angibt, einer laufenden Operation verwendet werden können, als auch erreichen Zonen, in denen der Benutzer über ein Ziel, die gezogen bewegt wird, abgelegt oder zum Auswählen eines Objekts verwendet werden können.
+#### <a name="mouse-cursor-changes"></a><a name="BKMK_MouseCursorChanges"></a> Maus Cursor Änderungen
+ Wenn Sie den Mauszeiger ändern, verwenden Sie Farben, die an den vscolor-Dienst gebunden sind und dem Cursor bereits zugeordnet sind. Cursor Änderungen können zum Angeben eines laufenden Vorgangs sowie für Trefferzonen verwendet werden, in denen der Benutzer auf ein Ziel zeigt, das gezogen, abgelegt oder zum Auswählen eines Objekts verwendet werden kann.
 
- Verwenden Sie den Mauszeiger ausgelastet/warten, nur, wenn alle verfügbaren CPU-Zeit für einen Vorgang, der verhindert, dass des Benutzers weitere Eingabe Ausdrücken reserviert werden muss. In den meisten Fällen gut geschriebene Anwendungen, die Verwendung von multithreading sollte nur selten Mal, wenn Benutzer daran gehindert werden andere Vorgänge ausführen.
+ Verwenden Sie den ausgelasteten/Wait-Mauszeiger nur, wenn die gesamte verfügbare CPU-Zeit für einen Vorgang reserviert werden muss, sodass der Benutzer keine weiteren Eingaben Ausdrücken kann. In den meisten Fällen, in denen die Verwendung von Multithreading durch gut geschriebene Anwendungen verhindert, sollte es selten vorkommen, wenn Benutzer an anderen Vorgängen gehindert werden.
 
- Bedenken Sie, dass Cursor Änderungen nützlich sind, wie ein redundanter Cue Informationen, die an anderer Stelle angezeigt. Verlassen Sie sich nicht auf eine Änderung der Cursor als die einzige Möglichkeit der Kommunikation mit dem Benutzer, insbesondere, wenn Sie versuchen, etwas zu vermitteln, die wichtig sind, dass der Benutzer erfüllen muss.
+ Beachten Sie, dass Cursor Änderungen als redundanter Hinweis für Informationen an anderer Stelle nützlich sind. Verlassen Sie sich nicht auf eine Cursor Änderung als einzige Art der Kommunikation mit dem Benutzer, insbesondere, wenn Sie versuchen, etwas zu vermitteln, das für den Benutzer wichtig ist.
 
-#### <a name="BKMK_NotSysProgressIndicators"></a> Statusanzeigen
- Statusanzeigen sind wichtig für die Benutzerfeedback dazu, während der Prozesse, die mehr als ein paar Sekunden dauern. Statusanzeige angezeigt werden direkte (in der Nähe der Startpunkt der Aktion wird ausgeführt), in eine eingebettete Statusleiste, in ein modales Dialogfeld oder in der Statusleiste von Visual Studio. Führen Sie die Anleitung im [Fortschritt Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) im Hinblick auf ihre Verwendung und Implementierung.
+#### <a name="progress-indicators"></a><a name="BKMK_NotSysProgressIndicators"></a> Status Indikatoren
+ Status Indikatoren sind wichtig, um dem Benutzer Feedback während der Prozesse zu geben, die mehr als ein paar Sekunden dauern müssen. Status Indikatoren können direkt (in der Nähe des Startpunkts der aktuell ausgeführten Aktion), in einer eingebetteten Statusleiste, in einem modalen Dialogfeld oder in der Statusleiste von Visual Studio angezeigt werden. Befolgen Sie die Anleitungen in den Status [Indikatoren](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) bezüglich ihrer Verwendung und Implementierung.
 
-#### <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio-benachrichtigunsfenster
- Die Visual Studio-benachrichtigunsfenster benachrichtigt Entwickler zu Lizenzierung, Umgebung (Visual Studio), Erweiterungen und Updates. Benutzer können können die Benachrichtigung verwerfen oder, um bestimmte Arten von Benachrichtigungen zu ignorieren. Die Liste der ignorierten Benachrichtigungen wird verwaltet, einem **Tools > Optionen** Seite.
+#### <a name="visual-studio-notifications-window"></a><a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio-Benachrichtigungsfenster
+ Das Visual Studio-Benachrichtigungsfenster benachrichtigt Entwickler über Lizenzierung, Umgebung (Visual Studio), Erweiterungen und Updates. Benutzer können einzelne Benachrichtigungen verwerfen oder bestimmte Benachrichtigungs Typen ignorieren. Die Liste der ignorierten Benachrichtigungen wird auf der Seite **Tools > Optionen** verwaltet.
 
- Das Fenster "Benachrichtigungen" ist nicht aktuell erweiterbar.
+ Das Benachrichtigungsfenster ist zurzeit nicht erweiterbar.
 
- ![Visual Studio-benachrichtigunsfenster](../../extensibility/ux-guidelines/media/0901-06-vsnotificationswindow.png "0901-06_VSNotificationsWindow")
+ ![Visual Studio-Benachrichtigunsfenster](../../extensibility/ux-guidelines/media/0901-06-vsnotificationswindow.png "0901-06_VSNotificationsWindow")
 
- **Toolfenster für Visual Studio-Benachrichtigungen**
+ **Visual Studio-Benachrichtigungs Tool Fenster**
 
-#### <a name="BKMK_ErrorList"></a> Fehlerliste
- Eine Benachrichtigung in der Fehlerliste anzugeben, Fehler und Warnungen, die aufgetreten sind, während der Kompilierung oder und Buildprozess und ermöglicht dem Benutzer, die im Code, um diesen Fehler für bestimmten Code navigieren.
+#### <a name="error-list"></a><a name="BKMK_ErrorList"></a> Fehlerliste
+ Eine Benachrichtigung in der Fehlerliste weist auf Fehler und Warnungen hin, die während der Kompilierung und des Buildprozesses aufgetreten sind, und ermöglicht dem Benutzer, im Code zu diesem spezifischen Code Fehler zu navigieren.
 
  ![Fehlerliste](../../extensibility/ux-guidelines/media/0901-08-errorlist.png "0901-08_ErrorList")
 
  **Fehlerliste in Visual Studio**
 
-#### <a name="BKMK_EmbeddedStatusBars"></a> Eingebettete Statusleisten
- Da die IDE-Statusleiste dynamisch, mit der Region-Clientkontext, die auf das aktive Fenster und die Informationen, die Aktualisierung auf den Kontext des Benutzers und/oder Systemantworten festgelegt ist, ist es schwierig, eine kontinuierliche Anzeige von Informationen zu verwalten, oder geben Sie Status für langfristige asynchroner Prozesse. Beispielsweise eignet sich die IDE-Statusleiste nicht für Benachrichtigungen über Ergebnisse für mehrere Ausführungen und/oder sofort umsetzbare Elemente aus. Es ist wichtig, diese Statusinformationen im Kontext des Fensters Dokument- oder Toolfenster, in denen der Benutzer stellt eine Auswahl oder startet einen Prozess, beibehalten werden sollen.
+#### <a name="embedded-status-bars"></a><a name="BKMK_EmbeddedStatusBars"></a> Eingebettete Status leisten
+ Da die IDE-Statusleiste dynamisch ist, wenn der Client Regions Kontext auf das aktive Dokument Fenster festgelegt ist und die Informationen im Kontext und/oder in den System Antworten des Benutzers aktualisiert werden, ist es schwierig, eine kontinuierliche Anzeige der Informationen beizubehalten oder den Status für langfristige asynchrone Prozesse anzugeben. Die IDE-Statusleiste eignet sich z. b. nicht für Benachrichtigungen über Test Lauf Ergebnisse für mehrere Ausführungen und/oder sofort Handlungs relevante Elementauswahl. Es ist wichtig, diese Statusinformationen im Kontext des Dokuments oder Tool Fensters beizubehalten, in dem der Benutzer eine Auswahl trifft oder einen Prozess startet.
 
  ![Eingebettete Statusleiste](../../extensibility/ux-guidelines/media/0901-09-embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
 
  **Eingebettete Statusleiste in Visual Studio**
 
-#### <a name="BKMK_WindowsTray"></a> Windows-Taskleiste-Benachrichtigungen
- Der Infobereich neben das System ist Windows Systemzeit auf dem der Windows-Taskleiste. Viele Hilfsprogramme und Software-Komponenten bieten Symbole in diesem Bereich an, damit der Benutzer ein Kontextmenü für eine systemweite-Aufgaben, z. B. Änderung der Bildschirmauflösung oder Abrufen von Softwareupdates abrufen kann.
+#### <a name="windows-tray-notifications"></a><a name="BKMK_WindowsTray"></a> Windows-Info Bereichs Benachrichtigungen
+ Der Windows-Benachrichtigungsbereich befindet sich neben der Systemuhr auf der Windows-Taskleiste. Viele Hilfsprogramme und Softwarekomponenten stellen Symbole in diesem Bereich bereit, sodass der Benutzer ein Kontextmenü für systemweite Aufgaben, z. b. das Ändern der Bildschirmauflösung oder das Abrufen von Software Updates, abrufen kann.
 
- Auf Umgebungsebene Benachrichtigungen sollten im Visual Studio-Benachrichtigungs-Hubs, nicht die Windows-Infobereich eingeblendet werden.
+ Benachrichtigungen auf Umgebungs Ebene sollten im Benachrichtigungs-Hub von Visual Studio und nicht im Windows-Benachrichtigungsbereich angezeigt werden.
 
-#### <a name="BKMK_NotificationBubbles"></a> Benachrichtigung Blasen
- Benachrichtigung Blasen können als informationsmeldung in einem Designer/Editor oder als Teil der Windows-Infobereich der Taskleiste angezeigt werden. Der Benutzer nimmt diese Blasen als Probleme, die sie später auflösen können dies ist ein Vorteil für nicht kritische Benachrichtigungen wahr. Blasen sind nicht geeignet, um wichtige Informationen, den der Benutzer sofort gelöst werden muss. Wenn Sie Benachrichtigungen Blasen in Visual Studio verwenden, führen Sie die [Windows-Desktop-Anleitungen für die Benachrichtigung Blasen](https://msdn.microsoft.com/library/windows/desktop/dn742472\(v=vs.85\).aspx).
+#### <a name="notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a> Benachrichtigungs Blasen
+ Benachrichtigungs Blasen können als Informations Informationen in einem Editor oder Designer oder als Teil des Windows-Benachrichtigungs Bereichs angezeigt werden. Der Benutzer spürt diese Blasen als Probleme auf, die Sie später auflösen können. Dies ist ein Vorteil für nicht kritische Benachrichtigungen. Blasen sind für wichtige Informationen ungeeignet, die der Benutzer sofort lösen muss. Wenn Sie Benachrichtigungs Blasen in Visual Studio verwenden, befolgen Sie die [Anleitungen für den Windows-Desktop für Benachrichtigungs Blasen](https://msdn.microsoft.com/library/windows/desktop/dn742472\(v=vs.85\).aspx).
 
  ![Benachrichtigungssprechblase](../../extensibility/ux-guidelines/media/0901-07-notificationbubbles.png "0901-07_NotificationBubbles")
 
- **Benachrichtigungssprechblase im Windows-Infobereich der Taskleiste für Visual Studio verwendet**
+ **Benachrichtigungsblase im Windows-Benachrichtigungsbereich, der für Visual Studio verwendet wird**
 
-## <a name="BKMK_ProgressIndicators"></a> Statusanzeigen
+## <a name="progress-indicators"></a><a name="BKMK_ProgressIndicators"></a> Status Indikatoren
 
 ### <a name="overview"></a>Übersicht
- Statusanzeigen sind ein wichtiger Teil ein Benachrichtigungssystem, für die Benutzerfeedback dazu geben. Sie können dem Benutzer mitgeteilt, wenn Prozesse und Vorgänge abgeschlossen werden. Vertraute Indikator zählen Statusanzeigen, rotierende Cursor und animierter Symbole. Der Typ und die Platzierung einer Statusanzeige hängt davon ab, den Kontext, einschließlich welche gemeldet wird und wie lange der Prozess oder Vorgang bis zum Abschluss.
+ Status Indikatoren sind ein wichtiger Bestandteil eines Benachrichtigungs Systems, um dem Benutzer Feedback zu geben. Sie informieren den Benutzer, wenn Prozesse und Vorgänge ausgeführt werden. Zu den bekannten Indikator Typen zählen Status leisten, drehende Cursor und animierte Symbole. Der Typ und die Platzierung einer Statusanzeige sind abhängig vom Kontext, einschließlich der gemeldeten Informationen und der Zeit, zu der der Prozess oder Vorgang abgeschlossen wird.
 
 #### <a name="factors"></a>Faktoren
- Um zu bestimmen, welche Indikatortyp geeignet ist, müssen Sie die folgenden Faktoren zu bestimmen.
+ Um zu ermitteln, welcher Indikator Typ geeignet ist, müssen Sie die folgenden Faktoren ermitteln.
 
-1. **Zeitliche Steuerung:** Zeitdauer der Vorgang dauert
+1. **Zeitliche Steuerung:** Zeitspanne, die der Vorgang dauert
 
-2. **Modalität:** gibt an, ob der Vorgang ist modal ist, in der Umgebung (Sperren der Benutzeroberfläche, bis der Vorgang abgeschlossen ist)
+2. **Modalität:** gibt an, ob der Vorgang für die Umgebung modal ist (sperrt die Benutzeroberfläche, bis der Prozess beendet ist).
 
-3. **Persistente/vorübergehend:** gibt an, ob das endgültige Ergebnis über den Fortschritt zu einem späteren Zeitpunkt gemeldeten und/oder angezeigt werden muss
+3. **Persistent/vorübergehend:** gibt an, ob das Endergebnis des Status zu einem späteren Zeitpunkt gemeldet und/oder angezeigt werden muss.
 
-4. **Bestimmte/unbestimmt:** gibt an, ob die Endzeit des Vorgangs und den Fortschritt berechnet werden können
+4. **Determinate/unbestimmte Zeit:** gibt an, ob die Endzeit des Vorgangs und der Fortschritt berechnet werden können.
 
-5. **Grafik zu/Textual-Speicherort:** gibt an, ob der Status oder Prozess aufgezeichneten Inline im Hauptteil einer Nachricht oder ein bestimmtes Steuerelement, z. B. das Strukturansicht-Steuerelement ist
+5. **Grafik-/textspeicherort:** gibt an, ob der Fortschritt oder Prozess Inline, im Nachrichtentext oder in einem bestimmten Steuerelement (z. b. in der Strukturansicht) aufgezeichnet wird.
 
-6. **NEAR:** , ob der Status in der Nähe der Benutzeroberfläche sein soll, die mit dem es verknüpft ist. (Beispielsweise kann es sein, in der Statusleiste, die weit entfernt sein kann, oder hat er sich in der Nähe der Schaltfläche, die der Prozess gestartet?)
+6. **Near:** gibt an, ob sich der Fortschritt in der Nähe der Benutzeroberfläche befinden soll, mit der er verknüpft ist. (Beispielsweise kann es sich in der Statusleiste befinden, die möglicherweise weit entfernt ist oder sich in der Nähe der Schaltfläche befinden muss, die den Prozess gestartet hat?)
 
-#### <a name="determinate-progress"></a>Bestimmte Status
+#### <a name="determinate-progress"></a>Determinate des Fortschritts
 
-|Statustyp|Wann und wie Sie mit|Hinweise|
+|Fortschritts Typen|Verwendung|Hinweise|
 |-------------------|-------------------------|-----------|
-|Statusanzeige (bestimmte)|Dauer der erwarteten > 5 Sekunden.<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.|**Keine** Einbetten von Text in der Animation.|
-|Infoleiste|Messaging kontextbezogene Benutzeroberfläche zugeordnet ist. Finden Sie unter [Infoleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.|**Keine** mehrere Infoleisten verwenden, wenn Sie mehrere Prozesse angeben müssen. Verwenden Sie stattdessen gestapelte Statusanzeigen.|
-|Ausgabefenster|Vorübergehenden Benachrichtigung: app-basierten Prozess dieser Benutzer möchten **überprüfen** Details nach dem Abschluss.|**Keine** verwenden, wenn der Benutzer muss zum Verweisen auf Daten später noch mal.|
-|Protokolldatei|Zusammen mit intransient Notification in Fällen, wenn es darauf ankommt, **speichern** Details nach dem Abschluss.||
-|Statusleiste|Vorübergehenden Benachrichtigung: app-basierten Prozess dieser Benutzer wird **nicht** Details nach dem Abschluss.<br /><br /> Enthält eine Statusanzeige für embedded.<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.||
+|Statusanzeige (determinate)|Erwartete Dauer >5 Sekunden.<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.|Betten Sie **keinen** Text in die Animation ein.|
+|Infoleiste|Messaging in Verbindung mit kontextbezogener Benutzeroberfläche. Siehe [Info leisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.|Verwenden Sie **nicht** mehrere Info leisten, wenn Sie mehrere Prozesse angeben müssen. Verwenden Sie stattdessen gestapelte Status leisten.|
+|Ausgabefenster|Vorübergehende Benachrichtigung: Prozess auf App-Ebene, nach dem der Benutzer Details **überprüfen** möchte.|Verwenden Sie **nicht** , wenn der Benutzer später auf Daten verweisen muss.|
+|Protokolldatei|In Kombination mit einer vorübergehenden Benachrichtigung in Fällen, in denen es wichtig ist, nach Abschluss Details zu **Speichern** .||
+|Statusleiste|Vorübergehende Benachrichtigung: Prozess auf App-Ebene, von dem der Benutzer nach Abschluss keine weiteren Details **benötigt** .<br /><br /> Enthält eine eingebettete Statusanzeige.<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.||
 
-#### <a name="indeterminate-progress"></a>Unbestimmte Statusanzeige
+#### <a name="indeterminate-progress"></a>Unbestimmter Status
 
-|Statustyp|Wann und wie Sie mit|Hinweise|
+|Fortschritts Typen|Verwendung|Hinweise|
 |-------------------|-------------------------|-----------|
-|Statusanzeige (unbestimmt)|Dauer der erwarteten > 5 Sekunden.<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.|**Keine** Einbetten von Text in der Animation.|
-|ANTS (animierte horizontale Punkte)|Der Roundtrip zum Server.<br /><br /> Platziert nahe Punkt des Kontexts am oberen Rand der übergeordneten Container.|**Keine** verwenden, wenn der gesamte Container nicht untergeordnet.|
-|Drehfeld (statuskreis)|Der Prozess, zugeordnet ist kontextbezogene Benutzeroberfläche, in dem Speicherplatz zu berücksichtigen ist.<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.||
-|Infoleiste|Messaging kontextbezogene Benutzeroberfläche zugeordnet ist. Finden Sie unter [Infoleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Keine** mehrere Infoleisten verwenden, wenn Sie mehrere Prozesse angeben müssen. Verwenden Sie stattdessen gestapelte Statusanzeigen.|
-|Ausgabefenster|Vorübergehenden Benachrichtigung: Prozess der app-Ebene, Benutzer sollten **überprüfen** Details nach dem Abschluss.|**Keine** verwenden, um Informationen, die über Sitzungen hinweg beibehalten werden muss.|
-|Protokolldatei|Zusammen mit intransient Notification in Fällen, wenn es darauf ankommt, **speichern** Details nach dem Abschluss.||
-|Statusleiste|Vorübergehenden Benachrichtigung: app-basierten Prozess dieser Benutzer wird **nicht** Details nach dem Abschluss.<br /><br /> Enthält eingebettete Statusanzeige an.<br /><br /> Textbeschreibung des Prozessdetails herausgeberkontos ausgewiesenen Form.||
+|Statusanzeige (unbestimmt)|Erwartete Dauer >5 Sekunden.<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.|Betten Sie **keinen** Text in die Animation ein.|
+|Ameisen (animierte horizontale Punkte)|Roundtrip zum Server.<br /><br /> Wird in der Nähe des Kontext Punkts über den übergeordneten Container platziert.|**Verwenden Sie nicht,** wenn der gesamte Container nicht übergeordnet ist.|
+|Spinner (Fortschritts Ring)|Der Prozess, der der kontextbezogenen Benutzeroberfläche zugeordnet ist, oder, wenn Speicherplatz berücksichtigt wird<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.||
+|Infoleiste|Messaging in Verbindung mit kontextbezogener Benutzeroberfläche. Siehe [Info leisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|Verwenden Sie **nicht** mehrere Info leisten, wenn Sie mehrere Prozesse angeben müssen. Verwenden Sie stattdessen gestapelte Status leisten.|
+|Ausgabefenster|Vorübergehende Benachrichtigung: Prozess auf App-Ebene, über den der Benutzer nach Abschluss Details **prüfen** möchte.|Verwenden Sie **nicht** , um Informationen zu erhalten, die Sitzungs übergreifend beibehalten werden müssen.|
+|Protokolldatei|In Kombination mit einer vorübergehenden Benachrichtigung in Fällen, in denen es wichtig ist, nach Abschluss Details zu **Speichern** .||
+|Statusleiste|Vorübergehende Benachrichtigung: Prozess auf App-Ebene, von dem der Benutzer nach Abschluss keine weiteren Details **benötigt** .<br /><br /> Schließt die eingebettete Statusleiste ein.<br /><br /> Kann eine Textbeschreibung der Prozessdetails einschließen.||
 
-### <a name="progress-indicator-types"></a>Arten von Fortschrittsanzeigen
+### <a name="progress-indicator-types"></a>Fortschrittsindikator Typen
 
-#### <a name="progress-bars"></a>Statusanzeigen
+#### <a name="progress-bars"></a>Status anzeigen
 
-##### <a name="indeterminate"></a>Unbestimmt
- ![Unbestimmte Fortschrittsleiste](../../extensibility/ux-guidelines/media/0901-04-indeterminate.png "0901-04_Indeterminate")
+##### <a name="indeterminate"></a>Unbestimmten
+ ![Unbestimmte Statusanzeige](../../extensibility/ux-guidelines/media/0901-04-indeterminate.png "0901-04_Indeterminate")
 
- **Unbestimmte Fortschrittsleiste**
+ **Unbestimmte Statusanzeige**
 
- "Unbestimmt" bedeutet, dass der allgemeinen Status eines Vorgangs oder Prozess kann nicht bestimmt werden. Verwenden Sie unbestimmt Statusanzeigen für Vorgänge, die eine ungebundene Menge an Zeit erfordern, oder, die auf eine unbekannte Anzahl von Objekten. Verwenden Sie eine Beschreibung, begleitet, was passiert. Verwenden Sie Timeouts Grenzen auf Zeit-basierte Vorgänge zu gewähren. Unbestimmte Statusanzeige Balken verwenden Sie Animationen an, dass der Status wird ausgeführt, aber keine weiteren Informationen bereitstellen. Wählen Sie keine unbestimmte Fortschrittsleiste nur aufgrund der möglichen Mangel an Genauigkeit, die allein.
+ "Unbestimmt" bedeutet, dass der allgemeine Fortschritt eines Vorgangs oder Prozesses nicht bestimmt werden kann. Verwenden Sie für Vorgänge, die einen unbegrenzten Zeitraum erfordern oder auf eine unbekannte Anzahl von Objekten zugreifen, unbeschränkte Status leisten. Verwenden Sie eine Textbeschreibung, um zu beobachten, was passiert. Verwenden Sie Timeouts, um zeitbasierte Vorgänge zu Grenzen. Unbeendete Status leisten verwenden Animationen, um anzuzeigen, dass der Fortschritt ausgeführt wird, aber es werden keine weiteren Informationen bereitgestellt. Wählen Sie nicht nur basierend auf dem möglichen Mangel an Genauigkeit eine unbestimmte Statusanzeige aus.
 
 ##### <a name="determinate"></a>Bestimmte
  ![Festgelegte Fortschrittsleiste](../../extensibility/ux-guidelines/media/0901-05-determinate.png "0901-05_Determinate")
 
  **Festgelegte Fortschrittsleiste**
 
- "Bestimmte" bedeutet, dass eine Operation oder ein Prozess eine begrenzte Menge an Zeit erfordert, selbst wenn Sie der angegebenen Zeitraum nicht genau vorhergesagt werden kann. Geben Sie die Vervollständigung eindeutig an. Lassen Sie keine Statusanzeige an, wechseln zu 100 Prozent, wenn der Vorgang abgeschlossen ist. Bestimmte Leiste Statusanimation verschiebt links-nach-rechts-zwischen 0 und 100 %.
+ "Determinate" bedeutet, dass ein Vorgang oder ein Prozess einen begrenzten Zeitraum erfordert, auch wenn diese Zeitspanne nicht genau vorhergesagt werden kann. Geben Sie den Abschluss eindeutig an. Lassen Sie eine Statusanzeige nicht zu 100 Prozent wechseln, es sei denn, der Vorgang wurde abgeschlossen. Die determinate der Statusanzeige Animation wechselt von 0 nach rechts von 0 bis 100%.
 
- Nie verschoben Sie die Statusanzeige ändert sich während eines Vorgangs rückwärts werden. Die Leiste sollte fortfahren stetig zu Beginn des Vorgangs und erreichen 100 %, wenn sie endet. Der Punkt der Statusanzeige ist, Benutzern eine Vorstellung davon, wie lange der gesamte Vorgang dauert unabhängig davon, wie viele Schritte erforderlich sind.
+ Verschieben Sie die Statusanzeige niemals rückwärts während eines Vorgangs. Der Balken sollte sich stetig vorwärts bewegen, wenn der Vorgang beginnt und 100% erreicht, wenn er endet. Der Punkt der Statusanzeige besteht darin, den Benutzern einen Überblick darüber zu verschaffen, wie lange der gesamte Vorgang dauert, unabhängig davon, wie viele Schritte ausgeführt werden.
 
-##### <a name="concurrent-reporting-stacked-progress-bars"></a>Gleichzeitige reporting (gestapelten Statusanzeigen)
- Wenn ein Vorgang wird sehr lange dauern möglicherweise mehrere Minuten – dann zwei Statusanzeigen verwendet werden können, wird eine dargestellt, die Gesamtfortschritt für einen Vorgang und eine für den Fortschritt des aktuellen Schritts. Z. B. wenn ein Setupprogramm, das viele Dateien kopiert werden, kann dann eine Statusanzeige verwendet werden, um anzugeben, wie lange dauert der gesamte Prozess während eine Sekunde, welcher Prozentsatz der aktuellen Datei angeben kann oder Verzeichnis kopiert werden. Melden Sie mehr als fünf Prozesse, die mit gestapelten Statusanzeigen oder gleichzeitigen Vorgängen nicht. Wenn Sie mehr als fünf gleichzeitige Vorgänge oder Prozesse zum Bericht haben, verwenden Sie einem modalen Dialogfeld mit einer Schaltfläche "Abbrechen" und der Bericht die Statusdetails im Ausgabefenster.
+##### <a name="concurrent-reporting-stacked-progress-bars"></a>Gleichzeitige Berichterstellung (gestapelte Status leisten)
+ Wenn ein Vorgang eine lange Zeit in Anspruch nimmt – möglicherweise mehrere Minuten – dann können zwei Status leisten verwendet werden, eine, die den Gesamtfortschritt für einen Vorgang anzeigt, und eine andere für den Fortschritt des aktuellen Schritts. Wenn ein Setup Programm z. b. viele Dateien kopiert, kann eine Statusanzeige verwendet werden, um anzugeben, wie lange der gesamte Prozess dauert, während eine Sekunde angeben kann, welcher Prozentsatz der aktuellen Datei oder des Verzeichnisses kopiert wird. Melden Sie nicht mehr als fünf gleichzeitige Vorgänge oder Prozesse mithilfe von gestapelten Status leisten. Wenn Sie über mehr als fünf gleichzeitige Vorgänge oder Prozesse zum Melden verfügen, verwenden Sie ein modales Dialogfeld mit der Schaltfläche Abbrechen, und melden Sie die Status Details an den Ausgabefenster.
 
 ##### <a name="textual-descriptions"></a>Textbeschreibungen
- Verwenden Sie eine Beschreibung, die begleitet, was passiert ist und die geschätzte Zeit bis zum Abschluss. Ist dies nicht möglich, um zu bestimmen, wie lange ein Vorgang dauert, kann eine bessere Wahl für das Bereitstellen von Feedback eine Statusanzeige, anstatt eine animierte Symbol sein.
+ Verwenden Sie eine Textbeschreibung, um die Vorgänge und die geschätzte Zeit bis zum Abschluss zu begleiten. Wenn es nicht möglich ist, zu bestimmen, wie lange ein Vorgang dauert, kann es besser sein, Feedback zu geben, anstatt eine Statusanzeige zu erhalten.
 
- Visual Studio bietet eine standard-Statusanzeige in der Statusleiste, die ein Produkt in Visual Studio integriert verwendet werden kann. Für textbeschreibungen, was geschieht, während die Statusanzeige animiert wird kann der Text der Statusleiste aktualisiert werden.
+ Visual Studio bietet eine Standardstatus Anzeige in der Statusleiste, die von jedem in Visual Studio integrierten Produkt verwendet werden kann. Bei Textbeschreibungen der Vorgänge, die während der Animation der Statusanzeige auftreten, kann der Text der Statusleiste aktualisiert werden.
 
-#### <a name="other-progress-indicators"></a>Andere Statusanzeigen
+#### <a name="other-progress-indicators"></a>Weitere Status Indikatoren
 
-##### <a name="ants-animated-horizontal-dots"></a>ANTS (animierte horizontale Punkte)
- ![Status der Ants](../../extensibility/ux-guidelines/media/0903-01-ants.png "0903-01_Ants")
+##### <a name="ants-animated-horizontal-dots"></a>Ameisen (animierte horizontale Punkte)
+ ![Ant-Elemente zum Fortschritt](../../extensibility/ux-guidelines/media/0903-01-ants.png "0903-01_Ants")
 
- "Ameisen," animierte horizontale Punkte, bieten eine visuelle Referenz für einen unbestimmten Round-Trip Serverprozess.
+ "Ameisen", animierte horizontale Punkte, stellen einen visuellen Verweis für einen unbestimmten Roundtrip-Server Prozess bereit.
 
-##### <a name="spinner-progress-ring"></a>Drehfeld (statuskreis)
+##### <a name="spinner-progress-ring"></a>Spinner (Fortschritts Ring)
  ![Drehelement zum Fortschritt](../../extensibility/ux-guidelines/media/0903-02-spinner.png "0903-02_Spinner")
 
- Das Drehfeld (auch bekannt als ein "statuskreis") ist eine unbestimmte Statusanzeige hauptsächlich in Bezug auf die kontextbezogene Benutzeroberfläche verwendet. Zeigen Sie ein Drehfeld, in der Nähe der verwandtem Inhalt, wie Text Kategorieheaders, messaging oder Steuerelement.
+ Der Spinner (auch als "Fortschritts Ring" bezeichnet) ist eine unbestimmende Statusanzeige, die hauptsächlich in Bezug auf die kontextabhängige Benutzeroberfläche verwendet wird. Zeigen Sie einen Spinner in unmittelbarer Nähe zum zugehörigen Inhalt an, wie z. b. einen Header der Textkategorie, ein Messaging oder ein Steuerelement.
 
-##### <a name="cursor-feedback"></a>Cursor-feedback
- Zu Vorgängen, die zwischen 2 bis 7 Sekunden dauern, Feedback Cursor. In der Regel bedeutet dies mithilfe des Wartecursors, die vom Betriebssystem bereitgestellt werden. Anleitungen finden Sie im MSDN-Artikel [Cursors.Wait Eigenschaft](https://msdn.microsoft.com/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).
+##### <a name="cursor-feedback"></a>Cursor Feedback
+ Stellen Sie für Vorgänge, die zwischen 2-7 Sekunden dauern, Cursor Feedback bereit. In der Regel bedeutet dies, dass der vom Betriebssystem bereitgestellte warte Cursor verwendet wird. Anleitungen hierzu finden Sie im MSDN-Artikel [Cursor. Wait-Eigenschaft](https://msdn.microsoft.com/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).
 
-#### <a name="progress-indicator-locations"></a>Status Indicator Speicherorte
+#### <a name="progress-indicator-locations"></a>Status Indikator Speicherorte
 
 ##### <a name="status-bar"></a>Statusleiste
- Die Statusleiste kann Ihre Anwendung einer Nachrichten und nützliche Informationen für den Benutzer anzuzeigen, ohne Unterbrechung der Arbeit. In der Regel am unteren Rand eines Fensters angezeigt wird, werden Status für den Status einer QuickInfo-Toolbereich, die eine Meldung über das Maß für Fortschritt in Kombination mit einer Statusanzeige für die Leiste enthält.
+ Die Statusleiste gibt Ihrer Anwendung einen Ort zum Anzeigen von Nachrichten und nützliche Informationen für den Benutzer, ohne die Arbeit des Benutzers zu unterbrechen. Der Status für den Fortschritt wird in der Regel am unteren Rand eines Fensters angezeigt. er enthält eine Meldung zum Measure des Status in Kombination mit einem Statusanzeige Indikator.
 
- ![Statusleiste mit Statusanzeige](../../extensibility/ux-guidelines/media/0903-03-statusbarprogressbar.png "0903-03_StatusBarProgressBar")
+ ![Statusleiste mit Fortschrittsleiste](../../extensibility/ux-guidelines/media/0903-03-statusbarprogressbar.png "0903-03_StatusBarProgressBar")
 
- **Statusleiste mit Statusanzeige**
+ **Statusleiste mit Fortschrittsleiste**
 
  ![Statusleiste mit Meldungen](../../extensibility/ux-guidelines/media/0903-04-statusbarmessage.png "0903-04_StatusBarMessage")
 
- **Statusleiste mit textbeschreibung**
+ **Status Leiste mit Textbeschreibung**
 
 ##### <a name="infobar"></a>Infoleiste
- Ähnlich wie in der Statusleiste der Infoleiste bietet kontextbezogene Benachrichtigungen und messaging, die auch mit einer unbestimmten Statusanzeigen wie die Statusanzeige oder das Drehfeld gekoppelt werden kann. Die Infoleiste sollten keine präzise Ebene ausgeführt werden oder bestimmte Fortschrittsanzeige bereit. Finden Sie unter [Infoleisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).
+ Ähnlich wie bei der Statusleiste bietet die Info Leiste kontextbezogene Benachrichtigungen und Messaging, die auch mit unbestimmten Status Indikatoren gekoppelt werden können, wie z. b. der Statusanzeige oder dem Spinner. Die Info Leiste sollte keinen granularitätsstatus bereitstellen oder die Fortschrittsanzeige bestimmen. Siehe [Info leisten](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).
 
  ![Infoleiste mit Fortschrittsanzeige und Meldungen](../../extensibility/ux-guidelines/media/0903-05-infobar.png "0903-05_InfoBar")
 
- **Infoleiste mit Fortschrittsanzeige und Beschreibung**
+ **Info Leiste mit Statusanzeige und Textbeschreibung**
 
  ![Infoleiste in einem Fenster](../../extensibility/ux-guidelines/media/0903-06-infobarinwindow.png "0903-06_InfoBarInWindow")
 
- **Infoleiste in das Fenster "Codeanalyse"**
+ **Info Leiste im Code Analysefenster**
 
 ##### <a name="inline"></a>Inline
- Inline-Fortschrittsanzeige kann von jedem der Progress-Ladeprogramm-Typen dargestellt werden. In der Regel ist die Statusanzeige mit messaging kombiniert, aber dies ist nicht erforderlich.
+ Die Inline Statusanzeige kann von einem beliebigen Status Lade-Typ dargestellt werden. In der Regel wird die Statusanzeige mit Messaging gekoppelt, dies ist jedoch nicht zwingend erforderlich.
 
- ![Drehelement zum Fortschritt der Inline](../../extensibility/ux-guidelines/media/0903-07-inlinespinner.png "0903-07_InlineSpinner")
+ ![Inline-Drehelement zum Fortschritt](../../extensibility/ux-guidelines/media/0903-07-inlinespinner.png "0903-07_InlineSpinner")
 
- **Drehfeld, in Kombination mit textbeschreibung**
+ **Spinner in Kombination mit Textbeschreibung**
 
  ![Gestapelte Inline-Fortschrittsleisten](../../extensibility/ux-guidelines/media/0903-08-inlinestackedprogress.png "0903-08_InlineStackedProgress")
 
- **Bestimmte gestapelte Statusanzeigen**
+ **Festlegen von gestapelten Status leisten**
 
- ![Inline-fortschrittsmeldungen](../../extensibility/ux-guidelines/media/0903-09-inlinetext.png "0903-09_InlineText")
+ ![Inline-Fortschrittsmeldungen](../../extensibility/ux-guidelines/media/0903-09-inlinetext.png "0903-09_InlineText")
 
- **Server-Explorer-inlinetext: Wird aktualisiert...**
+ **Inline Text Server-Explorer: wird aktualisiert...**
 
 ##### <a name="tool-windows"></a>Toolfenster
- Globale Fortschrittsanzeige wird durch eine unbestimmte Fortschrittsleiste direkt unterhalb der Symbolleiste positioniert dargestellt.
+ Die globale Statusanzeige wird durch eine unbestimmtes Statusanzeige dargestellt, die direkt unterhalb der Symbolleiste positioniert ist.
 
  ![Globale unbestimmte Fortschrittsleiste](../../extensibility/ux-guidelines/media/0903-23-globalindeterminate.png "0903-23_GlobalIndeterminate")
 
- **Team Explorer globale unbestimmte Fortschrittsleiste**
+ **Team Explorer globale Statusanzeige "unbegrenzt"**
 
 ##### <a name="dialogs"></a>Dialogfelder
- Dialoge können die Status-Ladeprogramm-Typen enthalten. Statusanzeigen können werden zusammen mit messaging als auch in Kombination mit mehreren Ebenen der Fortschrittsanzeige darstellen, die präzise oder Sub-Prozesse.
+ Dialoge können beliebige Status Lade Typen enthalten. Status Indikatoren können mit Messaging gekoppelt werden, und es werden mehrere Ebenen der Fortschrittsanzeige kombiniert, um differenzierte und unter Prozesse darzustellen.
 
  ![Dialogfeld mit mehreren Arten von Fortschrittsanzeigen](../../extensibility/ux-guidelines/media/0903-11-dialog.png "0903-11_Dialog")
 
- **Visual Studio-Dialogfeld mit gleichzeitiger Prozesse und mehreren Arten von Fortschrittsanzeigen**
+ **Visual Studio-Dialogfeld mit gleichzeitigen Prozessen und mehreren Fortschrittsindikator Typen**
 
  ![Dialogfeld mit Fortschrittsanzeige und Meldungen](../../extensibility/ux-guidelines/media/0903-12-dialog2.png "0903-12_Dialog2")
 
- **Visual Studio-Dialogfeld mit Fortschrittsanzeige und Meldungen, Inline-Befehle**
+ **Visual Studio-Dialogfeld mit Fortschritts Lade-und Messaging Inline-Befehlsausführung**
 
-##### <a name="document-well"></a>Dokumentursprung
- Das Dokument kann mehrere Status-Ladeprogramm-Typen auch in Kombination mit Steuerelementen angezeigt werden.
+##### <a name="document-well"></a>Dokument gut
+ Das Dokument ist in Kombination mit Steuerelementen in der Lage, mehrere Fortschritts Lade Typen anzuzeigen.
 
- ![Fortschrittsmeldungen in Dokument auch](../../extensibility/ux-guidelines/media/0903-13-documentwell.png "0903-13_DocumentWell")
+ ![Fortschrittsmeldungen in Dokument](../../extensibility/ux-guidelines/media/0903-13-documentwell.png "0903-13_DocumentWell")
 
- **Unbestimmte Fortschrittsleiste unter Symbolleiste**
+ **Unbestimmte Statusanzeige unterhalb der Symbolleiste**
 
 ##### <a name="output-window"></a>Ausgabefenster
- Das Fenster "Ausgabe" eignet sich für die Behandlung von Prozess Fortschritt und Fortschrittstatus von laufenden über Text Inline-messaging. Sie sollten die Statusleiste zusammen mit jeder Ausgabe Fenster statusberichterstellung verwenden.
+ Das Fenster Ausgabe eignet sich für die Verarbeitung von Prozessfortschritt und fortlaufender Status Status über Inline-Textnachrichten. Sie sollten die Status Leiste zusammen mit der Status Berichterstellung für Ausgabefenster verwenden.
 
  ![Fortschrittsmeldungen in Ausgabefenster](../../extensibility/ux-guidelines/media/0903-14-outputwindow.png "0903-14_OutputWindow")
 
- **Ausgabefenster mit dem Status des laufenden Prozess und warten Sie, messaging**
+ **Ausgabefenster mit fortlaufendem Prozessstatus und Wait-Messaging**
 
-## <a name="BKMK_Infobars"></a> Infobars
+## <a name="infobars"></a><a name="BKMK_Infobars"></a> Info leisten
 
 ### <a name="overview"></a>Übersicht
- Infoleisten weisen Sie dem Benutzer einen Indikator in der Nähe ihrer Punkt Aufmerksamkeit und mithilfe des freigegebenen Infoleiste-Steuerelements, wird die Konsistenz in visual Erscheinungsbild und Wechselwirkung sichergestellt wird.
+ Mit Info leisten erhält der Benutzer einen Indikator, der in der Nähe ihrer Aufmerksamkeit liegt, und die Verwendung des freigegebenen Info Leiste-Steuer Elements gewährleistet die Konsistenz bei visueller Darstellung und Interaktion.
 
- ![Infobar](../../extensibility/ux-guidelines/media/0904-01-infobar.png "0904-01_Infobar")
+ ![Infoleiste](../../extensibility/ux-guidelines/media/0904-01-infobar.png "0904-01_Infobar")
 
- **Infoleisten in Visual Studio**
+ **Info leisten in Visual Studio**
 
-#### <a name="appropriate-uses-for-an-infobar"></a>Entsprechende verwendet für eine Infoleiste
+#### <a name="appropriate-uses-for-an-infobar"></a>Geeignete Verwendungsmöglichkeiten für eine Info Leiste
 
-- Um dem Benutzer eine nicht blockierende, jedoch wichtige Meldung, die für den aktuellen Kontext relevant geben.
+- , Um dem Benutzer eine nicht blockierende, aber wichtige Meldung zu vermitteln, die für den aktuellen Kontext relevant ist.
 
-- Um anzugeben, dass die Benutzeroberfläche in einem bestimmten Status oder Zustand ausführt, die Interaktion Auswirkungen, wie verlaufsbezogenes debugging
+- So geben Sie an, dass sich die Benutzeroberfläche in einem bestimmten Zustand oder einer bestimmten Bedingung befindet, die Auswirkungen auf die Interaktion hat
 
-- Um den Benutzer zu benachrichtigen, dass das System Probleme, z. B. wenn eine Erweiterung Leistungsprobleme wohl verursacht werden erkannt hat
+- So Benachrichtigen Sie den Benutzer, dass Probleme erkannt wurden, z. b. Wenn eine Erweiterung Leistungsprobleme verursacht
 
-- Um Benutzern eine Möglichkeit, problemlos Maßnahmen ergreifen, z.B. wenn der Editor erkennt, dass eine Datei, Registerkarten und Leerzeichen gemischt hat
+- So bieten Sie dem Benutzer eine Möglichkeit, mühelos Maßnahmen zu ergreifen, z. b. wenn der Editor erkennt, dass eine Datei über gemischte Registerkarten und Leerzeichen verfügt
 
-##### <a name="do"></a>Führen Sie aus:
+##### <a name="do"></a>Führen Sie Folgendes aus:
 
-- Behalten Sie den Meldungstext Infoleiste kurz und sachlich.
+- Halten Sie den Text der Info Leiste kurz und an den Punkt.
 
-- Behalten Sie den Text auf die Links und Schaltflächen kompakt.
+- Halten Sie den Text auf Verknüpfungen und Schaltflächen als prätiv.
 
-- Stellen Sie sicher, dass die "Action"-Optionen, die Sie für Benutzer bereitstellen, sehr einfach gehalten und zeigt nur die erforderliche Aktionen sind.
+- Stellen Sie sicher, dass die "action"-Optionen, die Sie für Benutzer bereitstellen, minimal sind und nur erforderliche Aktionen
 
 ##### <a name="dont"></a>Tue nicht:
 
-- Verwenden Sie eine Infoleiste Standardbefehle anbieten, die in einer Symbolleiste platziert werden soll.
+- Verwenden Sie eine Info Leiste, um Standard Befehle anzubieten, die in einer Symbolleiste platziert werden sollen.
 
-- Verwenden Sie eine Infoleiste anstelle ein modales Dialogfeld an.
+- Verwenden Sie eine Info Leiste anstelle eines modalen Dialog Felds.
 
 - Erstellen Sie eine unverankerte Nachricht außerhalb eines Fensters.
 
-- Verwenden Sie mehrere Infoleisten an mehreren Standorten in demselben Fenster an.
+- Verwenden Sie mehrere Info leisten an mehreren Positionen innerhalb desselben Fensters.
 
-#### <a name="can-multiple-infobars-show-at-the-same-time"></a>Werden mehrere Infoleisten können gleichzeitig angezeigt?
- Ja, können mehrere Infoleisten gleichzeitig anzeigen. Sie werden mit der ersten Infoleiste anzeigen auf der oberen und zusätzliche Infoleisten mit folgenden datagrammbasierte paketschaltertechnologie, First-served-Reihenfolge angezeigt werden.
+#### <a name="can-multiple-infobars-show-at-the-same-time"></a>Können mehrere Info leisten gleichzeitig angezeigt werden?
+ Ja, mehrere Info leisten können gleichzeitig angezeigt werden. Sie werden in der Reihenfolge First-Come und first-served angezeigt, wobei die erste Infoleiste oben und zusätzliche Info leisten unten angezeigt werden.
 
- Der Benutzer sieht maximal drei Infoleisten zu einem Zeitpunkt nach, die, wenn weitere Infoleisten verfügbar sind, werden die Infoleiste Region bildlauffähigen werden soll.
+ Der Benutzer erhält maximal drei Info leisten gleichzeitig. Danach wird der Info Leiste-Bereich scrollfähig, wenn weitere Info leisten verfügbar sind.
 
-### <a name="creating-an-infobar"></a>Erstellen eine Infoleiste
- Die Infoleiste verfügt über vier Abschnitte, von links nach rechts:
+### <a name="creating-an-infobar"></a>Erstellen einer Info Leiste
+ Die Info Leiste hat vier Abschnitte von links nach rechts:
 
-- **Icon:** Dies ist, in dem Sie alle Symbol hinzufügen würden Sie möchten für die Infoleiste, z. B. ein Warnsymbol angezeigt werden soll.
+- **Symbol:** An dieser Stelle würden Sie jedes Symbol hinzufügen, das Sie für die Info Leiste anzeigen möchten, z. b. ein Warnsymbol.
 
-- **Text:** Sie können, dass Text, der den Benutzer-Szenario/Situation zu beschreiben, zusammen mit Links innerhalb des Texts, wird bei Bedarf hinzufügen. Denken Sie daran, um den Text kompakt zu halten.
+- **Text:** Sie können Text hinzufügen, um den Benutzer des Szenarios bzw. der Situation zu beschreiben, der in zusammen mit Links im Text enthalten ist, falls erforderlich. Denken Sie daran, den Text kurz zu halten.
 
-- **Aktionen:** Dieser Abschnitt sollte enthalten, Links und Schaltflächen für Aktionen, die der Benutzer in Ihrer Infoleiste aufnehmen kann.
+- **Aktionen:** Dieser Abschnitt sollte Links und Schaltflächen für Aktionen enthalten, die der Benutzer in der Info Leiste ausführen kann.
 
-- **Schaltfläche "Schließen":** Im letzten Abschnitt rechts kann es sich um eine Schaltfläche "Schließen" verfügen.
+- **Schaltfläche Schließen:** Der letzte Abschnitt rechts kann eine Schaltfläche Schließen aufweisen.
 
-#### <a name="creating-a-standard-infobar-in-managed-code"></a>Erstellen eine standardmäßige Infoleiste in verwaltetem code
- Die InfoBarModel-Klasse kann verwendet werden, um eine Datenquelle für eine Infoleiste zu erstellen. Verwenden Sie eine dieser vier Konstruktoren:
+#### <a name="creating-a-standard-infobar-in-managed-code"></a>Erstellen einer Standard Infoleiste in verwaltetem Code
+ Die Infobar Model-Klasse kann zum Erstellen einer Datenquelle für eine Info Leiste verwendet werden. Verwenden Sie einen dieser vier Konstruktoren:
 
 ```
 public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
@@ -360,7 +360,7 @@ public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, IEnumerable<IVsIn
 public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
 ```
 
- Hier ist ein Beispiel, eine InfoBarModel mit etwas Text mit einem Hyperlink, einer Aktionsschaltfläche und ein Symbol erstellt.
+ Hier ist ein Beispiel, das ein Infobar Model mit Text mit einem Hyperlink, einer Aktions Schaltfläche und einem Symbol erstellt.
 
  ![Infoleiste mit Hyperlink](../../extensibility/ux-guidelines/media/0904-02-infobarhyperlink.png "0904-02_InfobarHyperlink")
 
@@ -381,8 +381,8 @@ var infoBar = new InfoBarModel(
 
 ```
 
-#### <a name="creating-a-standard-infobar-in-native-code"></a>Erstellen eine standardmäßige Infoleiste in nativem code
- Implementieren Sie die IVsInfoBar-Schnittstelle, um eine Infoleiste von nativem Code zu gewährleisten.
+#### <a name="creating-a-standard-infobar-in-native-code"></a>Erstellen einer Standard Infoleiste in nativem Code
+ Implementieren Sie die ivsinfobar-Schnittstelle, um eine Info Leiste aus nativem Code bereitzustellen.
 
 ```
 public interface IVsInfoBar
@@ -395,8 +395,8 @@ public interface IVsInfoBar
 
 ```
 
-#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>Abrufen einer Infoleiste "UIElement" über eine Infoleiste
- Die InfoBarModel oder IVsInfoBar-Implementierung sind die Datenmodelle, die in "UIElement" umgewandelt werden müssen, um in der Benutzeroberfläche angezeigt werden. Eine "UIElement" kann mit dem Dienst SVsInfoBarUIFactory/IVsInfoBarUIFactory abgerufen werden.
+#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>Erhalten eines Info Leiste-UIElement über eine Info Leiste
+ Die infobarmodel-oder ivsinfobar-Implementierung ist ein Datenmodell, das in ein UIElement-Element umgewandelt werden muss, damit es in der Benutzeroberfläche angezeigt wird. Ein UIElement kann mit dem Dienst svsinfobaruifactory/ivsinfobaruifactory abgerufen werden.
 
 ```
 private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiElement)
@@ -414,20 +414,20 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ```
 
 ### <a name="placement"></a>Platzierung
- Infoleisten können in einer oder mehreren der folgenden Speicherorte angezeigt werden:
+ Info leisten können an einem oder mehreren der folgenden Speicherorte angezeigt werden:
 
 - Toolfenster
 
-- Innerhalb einer Registerkarte "Dokument"
+- Innerhalb einer Dokument Registerkarte
 
 > [!IMPORTANT]
-> Es ist möglich, die position einer Infoleiste, um eine Nachricht zum globalen Kontext zu gewähren. Dies wird zwischen Symbolleisten und Dokumentursprung angezeigt. Dies wird nicht empfohlen, da es Probleme mit "wechseln und ruck" bewirkt, dass der IDE und sollte vermieden werden, es sei denn, absolut notwendig und zweckmäßig.
+> Es ist möglich, eine Info Leiste zu positionieren, um eine Nachricht über den globalen Kontext zu senden. Dies wird zwischen Symbolleisten und Dokument hervorragend angezeigt. Dies wird nicht empfohlen, da dies Probleme mit "Sprung und Ruck" der IDE verursacht und daher vermieden werden sollte, wenn dies nicht unbedingt erforderlich und angemessen ist.
 
-#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Platzieren eine Infoleiste in einem ToolWindowPane
- Die ToolWindowPane.AddInfoBar(IVsInfoBar)-Methode kann verwendet werden, eine Infoleiste eines Toolfensters hinzu. Diese API kann entweder ein IVsInfoBar (welche InfoBarModel ist eine standardmäßige Implementierung), hinzufügen oder eine IVsUIElement.
+#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Platzieren einer Info Leiste in einem ToolWindowPane
+ Mithilfe der ToolWindowPane. addinfobar (ivsinfobar)-Methode kann einem Tool Fenster eine Infoleiste hinzugefügt werden. Diese API kann entweder ivsinfobar (von dem infobarmodel eine Standard Implementierung ist) oder ein ivsuielement-Element hinzufügen.
 
-#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>Platzieren eine Infoleiste in einem Dokument oder die nicht von ToolWindowPane
- Um eine Infoleiste in jeder IVsWindowFrame platzieren möchten, verwenden Sie die VSFPROPID_InfoBarHost-Eigenschaft, um die IVsInfoBarHost für den Frame zu erhalten, und fügen Sie dann die Infoleiste "UIElement" hinzu.
+#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>Platzieren einer Info Leiste in einem Dokument oder einem nicht-ToolWindowPane
+ Verwenden Sie die VSFPROPID_InfoBarHost-Eigenschaft, um den ivsinfobarhost für den Frame zu erhalten, und fügen Sie dann das Info Leiste-UIElement hinzu, um eine Infoleiste in einem IVsWindowFrame zu platzieren.
 
 ```
 private void AddInfoBar(IVsWindowFrame frame, IVsUIElement uiElement)
@@ -453,17 +453,17 @@ private bool TryGetInfoBarHost(IVsWindowFrame frame, out IVsInfoBarHost infoBarH
 
 ```
 
-#### <a name="placing-an-infobar-in-the-main-window"></a>Platzieren im Hauptfenster von einer Infoleiste
- Um eine Infoleiste im Hauptfenster von platzieren möchten, verwenden Sie die VSSPROPID_MainWindowInfoBarHost des IVsShell-Diensts, um das Hauptfenster IVsInfoBarHost abzurufen, und klicken Sie dann die Infoleiste "UIElement" hinzugefügt.
+#### <a name="placing-an-infobar-in-the-main-window"></a>Platzieren einer Info Leiste im Hauptfenster
+ Um eine Info Leiste im Hauptfenster zu platzieren, verwenden Sie den VSSPROPID_MainWindowInfoBarHost des IVsShell-Diensts, um das Hauptfenster ivsinfobarhost zu erhalten, und fügen Sie dann das Info Leiste-UIElement hinzu.
 
-### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>Kann ich erkennen, wenn der Benutzer in Mein Infoleiste eine Aktion ausführt?
- Ja, gibt es jede Aktion des Ereignisses an den Autor Infoleiste zurück. Er ist Autor der Infoleiste Maßnahmen zu ergreifen, in der IDE auf Grundlage der Benutzerauswahl in der Infoleiste. Infoleisten werden automatisch entfernt werden, auf dem Host, dessen Schaltfläche "Schließen" geklickt wurde, jedoch zusätzliche Schritte sind erforderlich, wenn andere Infoleisten müssen nach dem zu entfernenden schließen. Telemetriedaten müssen außerdem unabhängig von jeder Infoleiste protokolliert werden.
+### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>Weiß ich, wann der Benutzer in meiner Infobar Aktionen durchführt?
+ Ja, wir werden jede Ereignis Aktion an den Info Leiste-Autor zurückgeben. Der Info Leiste-Autor kann dann auf der Grundlage der Benutzer Auswahl in der Info Leiste Aktionen in der IDE durchführen. Info leisten werden automatisch vom Host entfernt, auf dessen Schaltfläche "Schließen" geklickt wurde. es sind jedoch weitere Schritte erforderlich, wenn andere Info leisten nach dem Schließen entfernt werden müssen. Telemetrie muss auch unabhängig von jeder Infobar protokolliert werden.
 
-#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>Empfangen von Ereignissen Infoleiste in einem ToolWindowPane
- ToolWindowPane verfügt über zwei Ereignisse für Infoleisten. Die InfoBarClosed-Ereignis wird ausgelöst, wenn eine Infoleiste in die ToolWindowPane geschlossen wird. Die InfoBarActionItemClicked-Ereignis wird ausgelöst, wenn auf einen Link oder eine Schaltfläche in der Infoleiste geklickt wird.
+#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>Empfangen von Info Leiste-Ereignissen in einem ToolWindowPane
+ ToolWindowPane verfügt über zwei Ereignisse für Info leisten. Das infobarclosed-Ereignis wird ausgelöst, wenn eine Info Leiste im ToolWindowPane geschlossen wird. Das infobaraktionitemgeklickt-Ereignis wird ausgelöst, wenn auf einen Link oder eine Schaltfläche in der Info Leiste geklickt wird.
 
-#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>Empfangen von Ereignissen Infoleiste direkt über das "UIElement"
- IVsInfoBarUIElement.Advise kann verwendet werden, Ereignisse direkt über eine Infoleiste die "UIElement" abonniert. Implementieren von IVsInfoBarUIEvents lässt sich auf den Autor zum Schließen empfangen, und klicken Sie auf Ereignisse aus.
+#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>Empfangen von Info Leiste-Ereignissen direkt aus dem UIElement
+ Ivsinfobaruielement.-Empfehlung kann verwendet werden, um Ereignisse direkt aus dem UIElement-Element einer Infobar zu abonnieren. Durch das Implementieren von ivsinfobaruievents kann der Autor schließen-und Click-Ereignisse empfangen.
 
 ```
 public interface IVsInfoBarUIEvents
@@ -474,52 +474,52 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-## <a name="BKMK_ErrorValidation"></a> Fehler-Überprüfung
- Wenn ein Benutzer Informationen, der nicht zulässig eingibt, z. B. wenn ein erforderliches Feld ausgelassen wird oder wenn Daten im falschen Format eingegeben werden, ist es besser, die Validierung von Steuerelementen verwenden oder Feedback in der Nähe des Steuerelements, anstatt eine blockierende Popupdialogfeld-Fehler.
+## <a name="error-validation"></a><a name="BKMK_ErrorValidation"></a> Fehlerüberprüfung
+ Wenn ein Benutzerinformationen eingibt, die nicht zulässig sind, z. b. Wenn ein erforderliches Feld ausgelassen wird oder wenn Daten im falschen Format eingegeben werden, ist es besser, die Steuerelement Validierung oder das Feedback in der Nähe des Steuer Elements zu verwenden, anstatt ein blockierendes Popup Fehler Dialogfeld zu verwenden
 
-### <a name="field-validation"></a>Feldvalidierung
- Formular und Feld-Überprüfung besteht aus drei Komponenten: ein Steuerelement, ein Symbol und eine QuickInfo. Verschiedene Typen von Steuerelementen können dies verwenden, wird ein Textfeld als Beispiel verwendet werden.
+### <a name="field-validation"></a>Feldprüfung
+ Die Formular-und Feld Validierung besteht aus drei Komponenten: einem-Steuerelement, einem-Symbol und einer QuickInfo. Obwohl mehrere Steuerelement Typen dies verwenden können, wird ein Textfeld als Beispiel verwendet.
 
- ![Feldüberprüfung &#40;leere&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905-01_FieldValidation")
+ ![Die Feld Validierung &#40;leer&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905-01_FieldValidation")
 
- Wenn das Feld erforderlich ist, dürfte das Wasserzeichen Text, der besagt  **\<erforderlichen >** und der Hintergrund des Felds muss ein Licht gelb (VSColor: `Environment.ControlEditRequiredBackground`) und der Vordergrund grau (VSColor: `Environment.ControlEditRequiredHintText`):
+ Wenn das Feld erforderlich ist, sollte Wasserzeichen Text angegeben werden, **\<Required>** und der Feld Hintergrund sollte hellgelb (vscolor:) sein, `Environment.ControlEditRequiredBackground` und der Vordergrund sollte grau (vscolor: `Environment.ControlEditRequiredHintText` ) lauten:
 
  ![Feldüberprüfung mit Beschriftung "Erforderlich"](../../extensibility/ux-guidelines/media/0905-02-fieldvalidationrequired.png "0905-02_FieldValidationRequired")
 
- Das Programm kann bestimmen, dass das Steuerelement in einem *ungültige Inhalte eingegeben* entweder wenn der Fokus auf ein anderes Steuerelement verschoben wird oder der Benutzer auf eine Schaltfläche "OK" Commit klickt, oder wenn der Benutzer das Dokument oder die Form speichert.
+ Das Programm kann ermitteln, ob sich das Steuerelement in einem *ungültigen Inhalt* befindet, wenn der Fokus auf ein anderes Steuerelement verschoben wird oder wenn der Benutzer auf eine [OK] Commit-Schaltfläche klickt oder wenn der Benutzer das Dokument oder das Formular speichert.
 
- Wenn Sie der ungültige Inhalt Status bestimmt wird, wird ein Symbol angezeigt, entweder innerhalb des Steuerelements oder einfach neben. Eine QuickInfo, die Beschreibung des Fehlers sollten bei einer mauszeigerbewegung über das Symbol oder das Steuerelement angezeigt werden. Darüber hinaus sollte ein 1-Pixel-Rahmen um das Steuerelement aufgeführt, die einen ungültigen Zustand erstellt.
+ Wenn der ungültige Inhalts Zustand festgelegt wird, wird ein Symbol entweder im Steuerelement oder direkt daneben angezeigt. Eine QuickInfo, die den Fehler beschreibt, sollte auf dem Mauszeiger auf das Symbol oder das Steuerelement zeigen. Außerdem sollte ein 1-Pixel-Rahmen um das Steuerelement angezeigt werden, das den ungültigen Zustand erstellt.
 
- ![Layoutspezifikationen für feldvalidierung Feld](../../extensibility/ux-guidelines/media/0905-03-layoutspecs.png "0905-03_LayoutSpecs")
+ ![Layoutspezifikationen für Feldüberprüfung](../../extensibility/ux-guidelines/media/0905-03-layoutspecs.png "0905-03_LayoutSpecs")
 
- **Layoutspezifikationen für feldvalidierung**
+ **Layoutspezifikationen für die Feld Validierung**
 
-#### <a name="acceptable-variations-for-icon-location"></a>Zulässige Variationen für symbolplatzierung
- Es gibt unzählige besonderen Fällen, in denen Benutzer über Validierungsfehler informiert werden müssen. Wählen Sie unter Berücksichtigung der Steuerelementtyp vorliegt und die Konfiguration der Benutzeroberfläche die Symbol-Platzierung für Ihre Situation geeignet.
+#### <a name="acceptable-variations-for-icon-location"></a>Akzeptable Variationen der Symbol Position
+ Es gibt unzählige einmalige Fälle, in denen Benutzer über Validierungs Fehler informiert werden müssen. Wenn Sie den Steuerungstyp und die Konfiguration der Benutzeroberfläche berücksichtigen, wählen Sie die für Ihre Situation geeignete Symbolplatzierung aus.
 
- ![Zulässige Positionen für symbolplatzierung](../../extensibility/ux-guidelines/media/0905-04-iconlocation.png "0905-04_IconLocation")
+ ![Zulässige Positionen für Symbolplatzierung](../../extensibility/ux-guidelines/media/0905-04-iconlocation.png "0905-04_IconLocation")
 
- **Zulässige Variationen für Feld Überprüfung Symbol Speicherorte**
+ **Akzeptable Variationen für Symbol Speicherorte für Feld Validierung**
 
-#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Validierung, erfordern einen Roundtrip zu einer Server- oder Netzwerk-Verbindung
- In einigen Fällen ein Roundtrip zum Server ist erforderlich, um den Inhalt zu verifizieren, und wäre es wichtig, um die Benutzer ausgeführt wird, überprüft, und die Fehlerzustände anzuzeigen. Die folgende Abbildung zeigt, ein Beispiel für diesen Fall und die empfohlenen-Benutzeroberfläche.
+#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Validierung, die einen Roundtrip zu einer Server-oder Netzwerkverbindung erfordert
+ In einigen Fällen ist ein Roundtrip zum Server erforderlich, um den Inhalt zu überprüfen, und es ist wichtig, den Status des Benutzers, überprüft und Fehler anzuzeigen. Die folgende Abbildung zeigt ein Beispiel für diesen Fall und die empfohlene Benutzeroberfläche.
 
  ![Validierung mit Roundtrip zu einem Server](../../extensibility/ux-guidelines/media/0905-05-roundtrip.png "0905-05_RoundTrip")
 
- **Validierung mit Roundtrip zu einem server**
+ **Validierung mit Roundtrip zu einem Server**
 
- Beachten Sie, dass ausreichend Speicherplatz auf der rechten Seite des Steuerelements bereitgestellt werden muss, damit die sich die "wird überprüft..." und dem Text "Wiederholen".
+ Beachten Sie, dass ausreichend freier Speicherplatz auf der rechten Seite des-Steuer Elements bereitgestellt werden muss, um die "Überprüfung..." und wiederholen Sie den Text.
 
-#### <a name="in-place-warning-text"></a>Direktes Warnungstext
- Wenn Platz verfügbar ist, platzieren Sie die Fehlermeldung in der Nähe des Steuerelements in einem Zustand des Fehlers verfügbar ist, ist dies besser als mit die QuickInfo, die allein.
+#### <a name="in-place-warning-text"></a>Direkter Warn Text
+ Wenn genügend Platz zur Verfügung steht, um die Fehlermeldung in der Nähe des Steuer Elements in einem Fehlerzustand zu platzieren, empfiehlt es sich, die QuickInfo allein zu verwenden.
 
- ![In&#45;platzieren Warnung](../../extensibility/ux-guidelines/media/0905-06-inplacewarning.png "0905-06_InPlaceWarning")
+ ![Warnung in&#45;Ort](../../extensibility/ux-guidelines/media/0905-06-inplacewarning.png "0905-06_InPlaceWarning")
 
- **Direktes Warnungstext**
+ **Direkter Warn Text**
 
 #### <a name="watermarks"></a>Wasserzeichen
- Manchmal ist eine gesamte Steuerelement oder das Fenster, in einem Fehlerzustand befindet. Verwenden Sie in diesem Fall ein Wasserzeichen den Fehler angibt.
+ Manchmal befindet sich ein gesamtes Steuerelement oder Fenster in einem Fehlerzustand. Verwenden Sie in dieser Situation ein Wasserzeichen, um den Fehler anzugeben.
 
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07-watermark.png "0905-07_Watermark")
+ ![Wasserzeichen](../../extensibility/ux-guidelines/media/0905-07-watermark.png "0905-07_Watermark")
 
- **Feldvalidierung Wasserzeichen**
+ **Überprüfung des Wasserzeichen Felds**

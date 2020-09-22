@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Implementieren von geschachtelten Projekten | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Implementieren von in einem Projekt unter fallenen Projekten | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,73 +12,73 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435239"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841140"
 ---
-# <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekten
+# <a name="how-to-implement-nested-projects"></a>Gewusst wie: Implementieren von geschachtelten Projekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bei der Erstellung ein geschachtelten Projekts-Typs vorhanden sind eine zusätzliche Schritte, die implementiert werden müssen. Ein übergeordnetes Projekt nimmt Teil die gleichen Aufgaben, die die Lösung für die geschachtelten (untergeordnet) Projekte. Das übergeordnete Projekt ist ein Container für Projekte, die ähnlich wie eine Lösung. Insbesondere stehen mehrere Ereignisse, die von der Lösung und von der übergeordneten zu erstellenden Projekte an die Hierarchie von geschachtelten Projekten ausgelöst werden müssen. Diese Ereignisse werden in den folgenden Prozess zum Erstellen von geschachtelten Projekten beschrieben.  
+Wenn Sie einen Typ für ein nicht Erstellungs Projekt erstellen, müssen mehrere zusätzliche Schritte implementiert werden. Ein übergeordnetes Projekt übernimmt einige der gleichen Zuständigkeiten wie die Projekt Mappe für die zugehörigen (untergeordneten) Projekte. Das übergeordnete Projekt ist ein Container mit Projekten, die einer Projekt Mappe ähneln. Insbesondere gibt es mehrere Ereignisse, die von der Projekt Mappe und von den übergeordneten Projekten ausgelöst werden müssen, um die Hierarchie der geschposteten Projekte zu erstellen. Diese Ereignisse werden im folgenden Verfahren zum Erstellen von geschposteten Projekten beschrieben.  
   
-### <a name="to-create-nested-projects"></a>Zum Erstellen von geschachtelten Projekten  
+### <a name="to-create-nested-projects"></a>So erstellen Sie ein-Projekt  
   
-1. Die integrierte Entwicklungsumgebung (IDE) lädt des übergeordneten Projekts Project-Datei und Start-Informationen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle. Das übergeordnete Projekt wird erstellt und zur Projektmappe hinzugefügt.  
-  
-   > [!NOTE]
-   > An diesem Punkt ist es zu früh im Prozess für das übergeordnete Projekt, das geschachtelte Projekt erstellt werden, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Das übergeordnete Projekt Einstellungen für die untergeordneten Projekte anwenden und untergeordneten Projekte können Informationen aus der übergeordneten Projekten abrufen, bei Bedarf, nach der Sequenz. Diese Sequenz ist, wenn es von Clients wie z.B. quellcodeverwaltung (SCC) und der Projektmappen-Explorer auf benötigt wird.  
-  
-    Das übergeordnete Projekt warten muss, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> Methode, um die von der IDE aufgerufen werden, bevor sie die geschachtelten (untergeordnet) Projekte erstellen kann.  
-  
-2. Die IDE-Aufrufe `QueryInterface` auf das übergeordnete Projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Wenn dieser Aufruf erfolgreich ist, die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> -Methode der das übergeordnete Element, um alle geschachtelten Projekte für das übergeordnete Projekt zu öffnen.  
-  
-3. Das übergeordnete projektaufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> Methode, um Listener zu benachrichtigen, die Projekte geschachtelt sind im Begriff, die erstellt werden. SCC, z. B. überwacht für diese Ereignisse zu wissen, ob die Schritte im Prozess Projektmappen- und Projektdateien in der Reihenfolge auftreten. Wenn Sie die Schritte werden außerhalb der Reihenfolge ausgeführt, kann die Lösung nicht mit quellcodeverwaltung ordnungsgemäß registriert werden.  
-  
-4. Das übergeordnete projektaufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> Methode oder der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> -Methode für jedes der zugehörigen untergeordneten Projekte.  
-  
-    Übergeben Sie <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> auf die `AddVirtualProject` Methode, um anzugeben, dass das Projektfenster, aus dem Build ausgeschlossen (geschachtelte) virtuelle Projekt hinzugefügt werden soll, quellcodeverwaltung usw. hinzugefügt. `VSADDVPFLAGS` ermöglicht Ihnen das Steuern der Sichtbarkeit des geschachtelten Projekts, und geben Sie an, welche Funktion zugeordnet ist.  
-  
-    Wenn Sie ein bereits vorhandene untergeordnete Projekt erneut laden, die ein Projekt in der Projektdatei die Aufrufe der übergeordneten Projekt des übergeordneten Projekts gespeicherte GUID hat `AddVirtualProjectEx`. Der einzige Unterschied zwischen `AddVirtualProject` und `AddVirtualProjectEX` ist, die `AddVirtualProjectEX` verfügt über einen Parameter So aktivieren Sie das übergeordnete Projekt an einen pro Instanz `guidProjectID` für das untergeordnete Projekt aktivieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> -Funktion richtig.  
-  
-    Wenn keine GUID vorhanden verfügbar, ist z. B. Wenn Sie ein neues geschachtelte Projekt hinzufügen, erstellt die Lösung für das Projekt zum Zeitpunkt ist es das übergeordnete Element hinzugefügt. Es ist die Verantwortung für das übergeordnete Projekt, Projekt-GUID in der Projektdatei beibehalten werden. Wenn Sie eine geschachtelte Projekt löschen, kann auch die GUID für das Projekt gelöscht werden.  
-  
-5. Die IDE-Aufrufe der `M:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren` Methode für jedes untergeordnete Projekt des übergeordneten Projekts.  
-  
-    Das übergeordnete Projekt implementieren muss `IVsParentProject` Wenn Projekte geschachtelt werden sollen. Aber das übergeordnete Element, das niemals Aufrufe Projekt `QueryInterface` für `IVsParentProject` auch wenn es sich um übergeordnete Projekte darunter hat. In der Lösung wird den Aufruf von `IVsParentProject` und, wenn sie implementiert ist, ruft `OpenChildren` um geschachtelte Projekte zu erstellen. `AddVirtualProjectEX` wird immer aufgerufen, von `OpenChildren`. Es sollte nie durch das übergeordnete Projekt zu der Hierarchie Ereignisse der diensterstellung in der Reihenfolge aufgerufen werden.  
-  
-6. Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> Methode für das untergeordnete Projekt.  
-  
-7. Das übergeordnete projektaufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> Methode, um Listener zu benachrichtigen, dass die untergeordneten Projekte für das übergeordnete Element erstellt wurden.  
-  
-8. Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> Methode für das übergeordnete Projekt, nachdem alle untergeordneten Projekte geöffnet wurden.  
-  
-    Wenn es nicht bereits vorhanden ist, erstellt das übergeordnete Projekt eine GUID für jede geschachtelte Projekt durch den Aufruf `CoCreateGuid`.  
+1. Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) lädt die Projektdatei und die Startinformationen des übergeordneten Projekts durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle. Das übergeordnete Projekt wird erstellt und der Projekt Mappe hinzugefügt.  
   
    > [!NOTE]
-   > `CoCreateGuid` eine COM-API wird aufgerufen werden, wenn eine GUID ist, erstellt werden. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.  
+   > An diesem Punkt ist es zu früh im Prozess, bis das übergeordnete Projekt das untergeordnete Projekt erstellt hat, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Nach dieser Sequenz kann das übergeordnete Projekteinstellungen auf die untergeordneten Projekte anwenden, und die untergeordneten Projekte können bei Bedarf Informationen aus den übergeordneten Projekten abrufen. Diese Sequenz ist, wenn Sie von Clients wie der Quell Code Verwaltung (Quell Code Verwaltung, SCC) und Projektmappen-Explorer benötigt wird.  
   
-    Das übergeordnete Projekt speichert diese GUID in der Projektdatei das nächste Mal abgerufen werden soll, das sie in der IDE geöffnet ist. Finden Sie unter Schritt 4 für Weitere Informationen über das Aufrufen der `AddVirtualProjectEX` zum Abrufen der `guidProjectID` für das untergeordnete Projekt.  
+    Das übergeordnete Projekt muss warten, bis die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> Methode von der IDE aufgerufen wird, bevor das zugehörige (untergeordnete) Projekt oder die zugehörigen Projekte erstellt werden können.  
   
-9. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode wird dann aufgerufen, für das übergeordnete Element-ID die gemäß der Konvention in dem geschachtelte Projekt delegieren. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Ruft die Eigenschaften des Knotens, der ein Projekt schachtelt die zu delegieren, wenn sie auf dem übergeordneten Element aufgerufen wird.  
+2. Die IDE ruft `QueryInterface` für das übergeordnete Projekt für auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject> . Wenn dieser Aufruf erfolgreich ist, ruft die IDE die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> Methode des übergeordneten-Elements auf, um alle für das übergeordnete Projekt zu öffnen.  
   
-     Da über- und untergeordneten Projekte programmgesteuert instanziiert werden, können Sie die Eigenschaften für geschachtelte Projekte an diesem Punkt festlegen.  
+3. Das übergeordnete Projekt Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> Methode auf, um Listener darüber zu benachrichtigen, dass die Erstellung von Projekten im Begriff ist. Beispielsweise überwacht SCC diese Ereignisse, um zu ermitteln, ob die Schritte im Projektmappen-und Projekt Erstellungs Prozess in der richtigen Reihenfolge ausgeführt werden. Wenn die Schritte nicht in der richtigen Reihenfolge ausgeführt werden, ist die Lösung möglicherweise nicht ordnungsgemäß mit der Quell Code Verwaltung registriert.  
+  
+4. Das übergeordnete Projekt Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> Methode für jedes seiner untergeordneten Projekte auf.  
+  
+    Sie übergeben <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> an die- `AddVirtualProject` Methode, um anzugeben, dass das virtuelle (gestreamte) Projekt dem Projektfenster hinzugefügt werden soll, von der Erstellung ausgeschlossen, der Quell Code Verwaltung hinzugefügt usw. `VSADDVPFLAGS` ermöglicht es Ihnen, die Sichtbarkeit des eingefügten Projekts zu steuern und anzugeben, welche Funktionalität damit verknüpft ist.  
+  
+    Wenn Sie ein bereits vorhandenes untergeordnetes Projekt erneut laden, das eine Projekt-GUID enthält, die in der Projektdatei des übergeordneten Projekts gespeichert ist, ruft das übergeordnete Projekt auf `AddVirtualProjectEx` Der einzige Unterschied zwischen `AddVirtualProject` und `AddVirtualProjectEX` besteht darin, dass `AddVirtualProjectEX` über einen-Parameter verfügt, damit das übergeordnete Projekt eine pro-Instanz angeben kann, damit `guidProjectID` das untergeordnete Projekt aktiviert <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> und ordnungsgemäß <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funktioniert.  
+  
+    Wenn keine GUID verfügbar ist, z. b. Wenn Sie ein neues, neu eingefügtes Projekt hinzufügen, erstellt die Projekt Mappe eine für das Projekt, wenn Sie dem übergeordneten Element hinzugefügt wird. Es liegt in der Verantwortung des übergeordneten Projekts, die Projekt-GUID in der Projektdatei beizubehalten. Wenn Sie ein geduschtes Projekt löschen, kann auch die GUID für das Projekt gelöscht werden.  
+  
+5. Die IDE Ruft die- `M:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren` Methode für jedes untergeordnete Projekt des übergeordneten Projekts auf.  
+  
+    Das übergeordnete Projekt muss implementieren `IVsParentProject` , wenn Sie Projekte Schachteln möchten. Das übergeordnete Projekt ruft jedoch nie `QueryInterface` auf, `IVsParentProject` auch wenn es über übergeordnete Projekte darunter verfügt. Die Lösung verarbeitet den Aufruf von `IVsParentProject` und, wenn Sie implementiert ist, ruft `OpenChildren` auf, um die zu erstellenden Projekte zu erstellen. `AddVirtualProjectEX` wird immer von aufgerufen `OpenChildren` . Sie sollte nie vom übergeordneten Projekt aufgerufen werden, um die Hierarchie Erstellungs Ereignisse in der richtigen Reihenfolge beizubehalten.  
+  
+6. Die IDE Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> Methode für das untergeordnete Projekt auf.  
+  
+7. Das übergeordnete Projekt Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> Methode auf, um Listener zu benachrichtigen, dass die untergeordneten Projekte für das übergeordnete Projekt erstellt wurden.  
+  
+8. Die IDE Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> Methode für das übergeordnete Projekt auf, nachdem alle untergeordneten Projekte geöffnet wurden.  
+  
+    Wenn Sie nicht bereits vorhanden ist, erstellt das übergeordnete Projekt eine GUID für jedes geschachtelte Project durch Aufrufen von `CoCreateGuid` .  
+  
+   > [!NOTE]
+   > `CoCreateGuid` ist eine com-API, die aufgerufen wird, wenn eine GUID erstellt werden soll. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.  
+  
+    Das übergeordnete Projekt speichert diese GUID in der Projektdatei, um beim nächsten Öffnen in der IDE abgerufen zu werden. Weitere Informationen zum Aufrufen von `AddVirtualProjectEX` , um den für das untergeordnete Projekt abzurufen, finden Sie in Schritt 4 `guidProjectID` .  
+  
+9. Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode wird dann für die übergeordnete Itemid aufgerufen, die gemäß der Konvention, die Sie an das untergeordnete Projekt delegiert haben. Der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Ruft die Eigenschaften des Knotens ab, der ein Projekt geschachtelt, das Sie in delegieren möchten, wenn es für das übergeordnete Element aufgerufen wird.  
+  
+     Da das übergeordnete und das untergeordnete Projekt Programm gesteuert instanziiert werden, können Sie an dieser Stelle Eigenschaften für die untergeordneten Projekte festlegen.  
   
     > [!NOTE]
-    > Nicht nur erhalten Sie die Kontextinformationen aus dem geschachtelten Projekt, sondern können auch gefragt, ob das übergeordnete Projekt einen beliebigen Kontext für dieses Element durch die Überprüfung hat <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Auf diese Weise können Sie zusätzliche Attribute der dynamischen Hilfe und Menüoptionen, die bestimmten einzelnen geschachtelten Projekten hinzufügen.  
+    > Sie erhalten nicht nur die Kontextinformationen aus dem eingefügten Projekt, sondern Sie können auch Fragen, ob das übergeordnete Projekt über einen beliebigen Kontext für dieses Element verfügt, indem Sie überprüfen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> . Auf diese Weise können Sie zusätzliche dynamische Hilfe Attribute und Menü Optionen hinzufügen, die für einzelne, in der Projekt masted Projekte spezifisch sind.  
   
-10. Die Hierarchie wird erstellt, für die Anzeige im Projektmappen-Explorer mit einem Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> Methode.  
+10. Die-Hierarchie wird erstellt, um in Projektmappen-Explorer mit einem Aufrufen der-Methode angezeigt zu werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> .  
   
-     Übergeben Sie die Hierarchie, an die Umgebung über `GetNestedHierarchy` die Hierarchie für die Anzeige im Projektmappen-Explorer zu erstellen. Auf diese Weise weiß die Lösung an, das Projekt vorhanden ist und für die Erstellung von der Build-Manager verwaltet werden kann, oder Dateien im Projekt unter quellcodeverwaltung versetzt werden können.  
+     Sie übergeben die Hierarchie an die Umgebung, `GetNestedHierarchy` um die Hierarchie für die Anzeige in Projektmappen-Explorer zu erstellen. Auf diese Weise weiß die Lösung, dass das Projekt vorhanden ist und für die Erstellung durch den Build-Manager verwaltet werden kann oder ob Dateien im Projekt in der Quell Code Verwaltung abgelegt werden können.  
   
-11. Wenn alle geschachtelten Projekte für Projekt1 erstellt wurden, erhält die Kontrolle wieder an die Lösung, und der Vorgang wird wiederholt, für die "Projekt2".  
+11. Wenn alle für Projekt1 erstellten Projekte erstellt wurden, wird die Steuerung an die Projekt Mappe zurückgegeben, und der Prozess wird für "Projekt2" wiederholt.  
   
-     Dieser Prozess zum Erstellen von geschachtelten Projekten tritt ein, für ein untergeordnetes Projekt, das ein untergeordnetes Element verfügt. In diesem Fall wenn BuildProject1, das ein untergeordnetes Element des Projekt1 ist, untergeordnete Projekte enthält, würden sie nach dem BuildProject1 und vor "Projekt2" erstellt werden. Der Vorgang ist rekursiv, und die Hierarchie wird von oben nach unten erstellt.  
+     Der gleiche Vorgang zum Erstellen von untergeordneten Projekten erfolgt bei einem untergeordneten Projekt, das über ein untergeordnetes Projekt verfügt. Wenn BuildProject1, bei dem es sich um ein untergeordnetes Element von Projekt1 handelt, über untergeordnete Projekte verfügte, werden Sie in diesem Fall nach BuildProject1 und vor "Projekt2" erstellt. Der Prozess ist rekursiv, und die Hierarchie wird von oben nach unten erstellt.  
   
-     Wenn ein geschachtelten Projekts geschlossen ist, da der Benutzer die Projektmappe geschlossen hat oder das entsprechende Projekt selbst, die andere Methode auf `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, aufgerufen wird. Das übergeordnete Projekt umschließt Aufrufe an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> -Methode mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> Methoden, um Listener zu Projektmappenereignissen benachrichtigen Sie, dass die geschachtelten Projekte geschlossen werden.  
+     Wenn ein gesperrtes Projekt geschlossen wird, weil der Benutzer die Projekt Mappe oder das spezifische Projekt geschlossen hat, wird die andere Methode in `IVsParentProject` , <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A> , aufgerufen. Das übergeordnete Projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> umschließt Aufrufe der-Methode mit dem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> und den- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> Methoden, um Listener an Lösungs Ereignisse zu benachrichtigen, dass die geachtelten Projekte geschlossen werden.  
   
-    In den folgenden Themen behandeln verschiedene andere Konzepte beim Implementieren von geschachtelter Projekten zu berücksichtigen:  
+    In den folgenden Themen werden verschiedene weitere Konzepte behandelt, die bei der Implementierung von in-Projekten zu beachten sind:  
   
     [Überlegungen für das Entladen und Neuladen von geschachtelten Projekten](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
   
@@ -88,9 +88,9 @@ Bei der Erstellung ein geschachtelten Projekts-Typs vorhanden sind eine zusätzl
   
     [Filtern des AddItem-Dialogfelds für geschachtelte Projekte](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
-## <a name="see-also"></a>Siehe auch  
- [Hinzufügen von Elementen, das Hinzufügen neuer Elemente in Dialogfeldern](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Hinzufügen von Elementen zu den Dialog Feldern "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Kontextparameter](../../extensibility/internals/context-parameters.md)   
+ [Kontext Parameter](../../extensibility/internals/context-parameters.md)   
  [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

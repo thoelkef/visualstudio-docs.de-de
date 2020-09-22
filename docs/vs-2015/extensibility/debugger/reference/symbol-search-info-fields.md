@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a988e8f5409a3a9e1f9fd8a4b5bd863a3309acc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429035"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841269"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Art von symbolischen Informationen abrufen.  
+Gibt die Art der abzurufenden Symbol Informationen an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,24 +46,24 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ## <a name="members"></a>Member  
  SSIF_NONE  
- Gibt keine Flags an.  
+ Gibt keine Flags an  
   
  SSIF_VERBOSE_SEARCH_INFO  
- Gibt, die alle Pfade verwendet werden, für die Suche nach Symbolen suchen  
+ Gibt alle Suchpfade für die Suche nach Symbolen zurück.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Flags werden übergeben, als Parameter an die ["getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode, um zu bestimmen, die Menge an Informationen zurückgegeben.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Flags werden als Parameter an die [getsymbolinfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) -Methode übergeben, um die Menge der zurückgegebenen Informationen zu bestimmen.  
   
 > [!NOTE]
-> Derzeit nur `SSIF_VERBOSE_SEARCH_INFO` wird unterstützt, und es muss angegeben werden, als die `dwFlags` Parameter `IDebugModule3::GetSymbolInfo`. Alle anderen Werte wird ein Fehler zurückgegeben.  
+> Derzeit wird nur `SSIF_VERBOSE_SEARCH_INFO` unterstützt, und es muss als `dwFlags` Parameter für angegeben werden `IDebugModule3::GetSymbolInfo` . Alle anderen Werte geben einen Fehler zurück.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

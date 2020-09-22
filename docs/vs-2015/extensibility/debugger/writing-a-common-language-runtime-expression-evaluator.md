@@ -1,5 +1,5 @@
 ---
-title: Schreiben eine Common Language Runtime-Ausdrucksauswertung | Microsoft-Dokumentation
+title: Schreiben einer Common Language Runtime-Ausdrucks Auswertung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435276"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841165"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Schreiben einer Ausdrucksauswertung für die Common Language Runtime
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Die ausdrucksauswertung (EE) ist der Teil einer Debug-Engine (DE), die behandelt die Syntax und Semantik der Programmiersprache, die der gerade gedebuggten Code erstellt. Ausdrücke müssen innerhalb des Kontexts einer Programmiersprache ausgewertet werden. In einigen Sprachen können beispielsweise der Ausdruck "A + B" bedeutet "die Summe von A und b." In anderen Sprachen kann der gleiche Ausdruck "A oder b" bedeuten. Daher muss ein separates EE für jede Programmiersprache geschrieben werden, die zu debuggende Objektcode in Visual Studio-IDE generiert.  
+ Die Ausdrucks Auswertung (EE) ist der Teil einer Debug-Engine (de), der die Syntax und Semantik der Programmiersprache behandelt, die den zu debuggenden Code erzeugt hat. Ausdrücke müssen innerhalb des Kontexts einer Programmiersprache ausgewertet werden. In manchen Sprachen bedeutet der Ausdruck "a + B" z. b. "die Summe von A und b". In anderen Sprachen kann derselbe Ausdruck "A" oder "B" bedeuten. Daher muss für jede Programmiersprache, die den in der Visual Studio-IDE zu decodierende Objektcode generiert, ein separates EE geschrieben werden.  
   
- Einige Aspekte der Visual Studio-Paket debuggen, müssen den Code im Kontext der Programmiersprache interpretiert. Z. B. wenn die Ausführung angehalten wird an einem Haltepunkt any-Ausdrücke, die in der Benutzer eingegeben hat eine **Watch** Fenster ausgewertet und angezeigt werden muss. Darüber hinaus kann der Benutzer den Wert einer lokalen Variablen ändern, durch Eingabe eines Ausdrucks in einer **Watch** Fenster oder in der **direkt** Fenster.  
+ Einige Aspekte des Visual Studio-debugpakets müssen den Code im Kontext der Programmiersprache interpretieren. Wenn die Ausführung z. b. an einem Haltepunkt angehalten wird, müssen alle Ausdrücke, die der Benutzer in ein **Überwachungs** Fenster eingegeben hat, ausgewertet und angezeigt werden. Außerdem kann der Benutzer den Wert einer lokalen Variablen ändern, indem er einen Ausdruck in einem **Überwachungs** Fenster oder im **direkt** Fenster eingeben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Common Language Runtime und Ausdrucksauswertung](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
- Erklärt, dass beim Integrieren von proprietären Programmiersprache in Visual Studio-IDE, schreiben eine EE Auswerten von Ausdrücken innerhalb des Kontexts der proprietäre Sprache kann in einer Microsoft intermediate Language (MSIL) kompiliert wird, Sie können ohne das Schreiben einer Debug-Engine.  
+ Erläutert, dass Sie, wenn Sie proprietäre Programmiersprache in die Visual Studio-IDE integrieren, das Schreiben eines EE-fähigen Ausdrucks im Kontext der proprietären Sprache ermöglicht die Kompilierung in eine Microsoft Intermediate Language (MSIL), ohne eine Debug-Engine zu schreiben.  
   
  [Architektur der Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator-architecture.md)  
- Erläutert, wie die erforderlichen EE-Schnittstellen zu implementieren, und rufen Sie die common Language Runtime-Symbol-Dienstanbieter (SP) und den Binder-Schnittstellen.  
+ Erläutert, wie die erforderlichen EE-Schnittstellen implementiert und die Common Language Runtime Symbol Anbieter (SP) und Binder Schnittstellen aufgerufen werden.  
   
  [Registrieren einer Ausdrucksauswertung](../../extensibility/debugger/registering-an-expression-evaluator.md)  
- Anmerkungen dieser, dass die EE selbst als eine Klassenfactory mit der common Language Runtime und die Visual Studio-Laufzeitumgebungen registrieren muss.  
+ Beachten Sie, dass sich der EE als Klassenfactory mit den Common Language Runtime-und Visual Studio-Laufzeitumgebungen registrieren muss.  
   
  [Implementieren einer Ausdrucksauswertung](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
- Beschreibt, wie der Prozess der Auswertung eines Ausdrucks für die Debug-Engine (DE), die Symbol-Dienstanbieter (SP), das binderobjekt und die ausdrucksauswertung (EE) enthält.  
+ Beschreibt, wie der Prozess der Auswertung eines Ausdrucks die Debug-Engine (de), den Symbol Anbieter (SP), das Binder Objekt und die Ausdrucks Auswertung (EE) enthält.  
   
  [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)  
- Beschreibt, wie, wenn die Ausführung angehalten wird, das debugpaket die DE zum Abrufen einer Liste von lokalen Variablen und Argumenten aufruft.  
+ Beschreibt, wie das Debugpaket, wenn die Ausführung angehalten wird, den de aufruft, um eine Liste der lokalen Variablen und Argumente zu erhalten.  
   
  [Auswerten eines Überwachungsfensterausdrucks](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
- Beschreibt, wie der Visual Studio-Paket Debuggen die DE zum Bestimmen des aktuellen Werts des jeder Ausdruck in der Liste sehen Sie sich aufruft.  
+ Dokumentiert, wie das Visual Studio-Debugpaket den de aufruft, um den aktuellen Wert der einzelnen Ausdrücke in der Überwachungsliste zu ermitteln.  
   
  [Ändern des Werts eines lokalen Elements](../../extensibility/debugger/changing-the-value-of-a-local.md)  
- Erklärt, dass in den Wert eines lokalen Elements ändern, jede Zeile des Fensters "lokal" ein zugeordnetes Objekt verfügt, das die Namen, Typ und aktuellen Wert eines lokalen Elements bereitstellt.  
+ Erläutert, dass bei der Änderung des Werts eines lokalen die einzelnen Zeilen des Fensters lokal über ein zugeordnetes-Objekt verfügen, das den Namen, den Typ und den aktuellen Wert eines lokalen bereitstellt.  
   
  [Implementieren von Typschnellansichten und benutzerdefinierten Viewern](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
- Erklärt, welche Schnittstelle muss von der Komponente zur Unterstützung von typschnellansichten und benutzerdefinierten Viewern implementiert werden.  
+ Erläutert, welche Schnittstelle von welcher Komponente implementiert werden muss, um typvisualisierungen und benutzerdefinierte Viewer zu unterstützen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Visual Studio Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

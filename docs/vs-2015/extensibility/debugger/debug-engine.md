@@ -11,35 +11,35 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383369"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841070"
 ---
 # <a name="debug-engine"></a>Debug-Engine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ein Debugmodul (DE) arbeitet mit den Interpreter oder das Betriebssystem wie z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung Debugdienste bereit. Die DE ist verantwortlich für die Überwachung des Status eines gedebuggten Programms. Zu diesem Zweck führen Sie die DE unabhängig Methoden, in der unterstützten Runtime verfügbar sein sollen, ob von der CPU oder von APIs durch die Common Language Runtime bereitgestellt wird verwendet.  
+Eine Debug-Engine (de) verwendet den Interpreter oder das Betriebssystem, um debuggingdienste wie Ausführungs Steuerung, Breakpoints und Ausdrucks Auswertung bereitzustellen. Die de ist für die Überwachung des Status eines Programms zuständig, das gedeppt wird. Um dies zu erreichen, verwendet die de alle verfügbaren Methoden in der unterstützten Laufzeit, unabhängig davon, ob die CPU oder die von der Laufzeit bereitgestellten APIs verwendet werden.  
   
- Beispielsweise stellt die common Language Runtime (CLR) Mechanismen zum Überwachen von eines laufenden Programms über die ICorDebugXXX-Schnittstellen bereit. Eine bereitgestellten Kompatibilitätsrichtlinie, die die CLR unterstützt werden die entsprechenden ICorDebugXXX Schnittstellen zum Nachverfolgen einer verwalteten Code zu debuggende Programm wird verwendet. Es kommuniziert dann alle Änderungen des Zustands für die Sitzung Debug-Manager (SDM), der solche Informationen an weiterleitet der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+ Der Common Language Runtime (CLR) stellt z. b. Mechanismen zum Überwachen eines laufenden Programms über die ICorDebugXxx-Schnittstellen bereit. Ein de-Element, das die CLR unterstützt, verwendet die entsprechenden ICorDebugXxx-Schnittstellen, um das debuggt eines verwalteten Code Programms nachzuverfolgen. Anschließend werden alle Zustandsänderungen an den Sitzungs-Debug-Manager (SDM) übermittelt, der diese Informationen an die IDE weiterleitet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
 > [!NOTE]
-> Eine Debug-Engine ist eine bestimmte Laufzeit, also das System, in dem das Programm ausgeführt wird debuggten, ausgerichtet. Die CLR ist die Runtime für verwalteten Code, und die Win32-Laufzeit für systemeigene Windows-Anwendungen. Wenn die Sprache, die Sie erstellen eine dieser zwei Laufzeiten, Ziel kann [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] stellt bereits die erforderlichen Debug-Engines bereit. Sie implementieren müssen lediglich eine ausdrucksauswertung.  
+> Eine Debug-Engine hat eine bestimmte Laufzeit als Ziel, d. h. das System, in dem das Debuggingprogramm ausgeführt wird. Die CLR ist die Laufzeit für verwalteten Code, und die Win32-Laufzeit ist für Native Windows-Anwendungen vorgesehen. Wenn die von Ihnen erstellte Sprache auf eine dieser beiden Laufzeiten abzielen kann, stellt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bereits die erforderlichen Debug-engines bereit. Sie müssen lediglich eine Ausdrucks Auswertung implementieren.  
   
 ## <a name="debug-engine-operation"></a>Debug-Engine-Vorgang  
- Die Überwachung Dienste werden über die DE-Schnittstellen implementiert und können dazu führen, dass das debugpaket für den Übergang zwischen verschiedenen Betriebsmodi. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md). Es gibt in der Regel nur eine Implementierung von DE pro-Umgebung ausgeführt.  
+ Die Überwachungsdienste werden über die de-Schnittstellen implementiert und können dazu führen, dass das Debugpaket zwischen verschiedenen Betriebsmodi übergeht. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md). Es gibt in der Regel nur eine de-Implementierung pro Laufzeitumgebung.  
   
 > [!NOTE]
-> Es gibt separate DE-Implementierungen für Transact-SQL und [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript und [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] eine einzelne DE freigeben.  
+> Es gibt zwar separate de-Implementierungen für Transact-SQL und [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] VBScript und verwenden [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] nur ein einzelnes de-Objekt.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ermöglicht das Debuggen debug-Engines führen Sie eine von zwei Arten: entweder im selben Prozess wie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell oder in demselben Prozess wie das Zielprogramm gedebuggt wird. Die letztgenannte Form tritt gewöhnlich auf, wenn der gedebuggte Prozess tatsächlich ein Skript, die unter einem Interpreter ausgeführt wird, und die Debug-Engine sehr gute Kenntnisse über den Interpreter verfügen muss, um das Skript zu überwachen. Beachten Sie, dass in diesem Fall der Interpreter tatsächlich eine Laufzeit ist. Debug-Engines sind für eine spezifische Runtime-Implementierungen. Darüber hinaus kann die Implementierung von einem einzelnen DE über Prozess- und Computergrenzen hinweg (z. B. remote debugging) geteilt werden.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] das Debuggen ermöglicht debugengines, eine von zwei Methoden auszuführen: entweder in demselben Prozess wie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Shell oder im gleichen Prozess wie das zu debuggende Zielprogramm. Das letztere Formular tritt normalerweise auf, wenn der Prozess, der debuggt wird, tatsächlich ein Skript ist, das unter einem Interpreter ausgeführt wird, und die Debug-Engine über eine intime Kenntnis des interpreters verfügen muss, um das Skript zu überwachen Beachten Sie, dass der Interpreter in diesem Fall tatsächlich eine Laufzeit ist. Debug-engines gelten für bestimmte Lauf Zeit Implementierungen. Außerdem kann die Implementierung eines einzelnen de-Prozesses über Prozess-und Computer Grenzen hinweg aufgeteilt werden (z. b. Remote Debugging).  
   
- Die DE-macht die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugschnittstellen. Die gesamte Kommunikation wird über COM Ob die DE in-Process, Out-of-Process, oder auf einem anderen Computer geladen wird, wirkt es sich nicht Komponente Kommunikation.  
+ Der de macht die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugschnittstellen verfügbar. Die gesamte Kommunikation erfolgt über com. Ob die de in-Process, out-of-Process oder auf einem anderen Computer geladen wird, wirkt sich nicht auf die Komponenten Kommunikation aus.  
   
- Die DE funktioniert mit einer Expression Evaluator-Komponente der DE für diese bestimmte zur Laufzeit die Syntax von Ausdrücken zu aktivieren. Die DE funktioniert auch mit einer Symbol-Handler-Komponente auf den symbolischen Debuginformationen vom Sprachcompiler generiert werden. Weitere Informationen finden Sie unter [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator.md) und [Symbolanbieter](../../extensibility/debugger/symbol-provider.md).  
+ Die Funktion "de" funktioniert mit einer Ausdrucks auswerterkomponente, um die Verwendung der Syntax von Ausdrücken durch den de für diese bestimmte Laufzeit zu ermöglichen. Der Dienst kann auch mit einer symbolhandlerkomponente auf die symbolischen Debuginformationen zugreifen, die vom sprach Compiler generiert werden. Weitere Informationen finden Sie unter [Ausdrucks Auswertung](../../extensibility/debugger/expression-evaluator.md) und [Symbol Anbieter](../../extensibility/debugger/symbol-provider.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)   
- [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluator.md)   
+ [Ausdrucks Auswertung](../../extensibility/debugger/expression-evaluator.md)   
  [Symbolanbieter](../../extensibility/debugger/symbol-provider.md)

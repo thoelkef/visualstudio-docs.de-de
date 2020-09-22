@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431408"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841311"
 ---
-# <a name="how-to-build-incrementally"></a>Vorgehensweise: Inkrementelles Erstellen
+# <a name="how-to-build-incrementally"></a>Gewusst wie: Inkrementelles Erstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor erstellte Komponenten, die noch immer auf dem neuesten Stand sind, nicht neu erstellt werden. Wenn alle Ziele jedes mal neu erstellt werden, braucht jeder Build sehr lange, bis er abgeschlossen wird. Um inkrementelle Builds zu aktivieren (es werden nur Builds mit den Zielen neu erstellt, die zuvor noch nicht erstellt wurden oder mit Zielen, die nicht mehr aktuell sind) kann [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) die Zeitstempel der Eingabedateien mit jenen der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Es muss jedoch eine 1:1-Zuordnung zwischen Eingaben und Ausgaben bestehen. Sie können Transformationen verwenden, damit Ziele diese direkte Zuordnung identifizieren können. Weitere Informationen zu Transformationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md).  
@@ -51,7 +51,7 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
 </Target>  
 ```  
   
- Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. Im vorherigen [Csc-Task](../msbuild/csc-task.md) kann z.B. die Ausgabedatei „hello.exe“ keiner einzelnen Eingabe zugeordnet werden – sie hängt von allen Eingaben ab.  
+ Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. In der vorherigen [Csc-Aufgabe](../msbuild/csc-task.md)kann z. b. die Ausgabe (hello.exe) keiner einzelnen Eingabe zugeordnet werden – Sie hängt von all diesen ab.  
   
 > [!NOTE]
 > Ein Ziel, in dem keine direkte Zuordnung zwischen den Ein- und Ausgaben besteht, führt immer öfter eine Erstellung durch, als ein Ziel, in dem jede Ausgabe nur einer Eingabe zugeordnet werden kann, da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nicht bestimmen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben verändert haben.  
@@ -61,9 +61,9 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypothetisches Hilfesystem erstellt. Das Projekt arbeitet, indem TXT-Quelldateien in CONTENT-Zwischendateien konvertiert werden, die dann mit XML-Metadatendateien kombiniert werden, um die finale Hilfedatei zu erstellen, die vom Hilfesystem verwendet wird. Das Projekt verwendet die folgenden hypothetischen Aufgaben:  
   
-- `GenerateContentFiles`: Konvertiert TXT-Dateien in Content-Dateien.  
+- `GenerateContentFiles`: Konvertiert TXT-Dateien in CONTENT-Dateien.  
   
-- `BuildHelp`: Kombiniert Content-Dateien und XML-Metadatendateien, um die finale Hilfedatei zu erstellen.  
+- `BuildHelp`: Kombiniert CONTENT-Dateien und XML-Metadatendateien, um die finale Hilfedatei zu erstellen.  
   
   Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.  
   
@@ -104,9 +104,9 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Ziele](../msbuild/msbuild-targets.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Lern](../msbuild/msbuild-targets.md)   
  [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Transformationen](../msbuild/msbuild-transforms.md)   
+ [Kranz](../msbuild/msbuild-transforms.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
  [Vbc-Aufgabe](../msbuild/vbc-task.md)

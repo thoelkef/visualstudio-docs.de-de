@@ -13,47 +13,47 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435944"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841251"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Vorgehensweise: Öffnen von projektspezifischen Editoren
+# <a name="how-to-open-project-specific-editors"></a>Gewusst wie: Öffnen von projektspezifischen Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn eine Elementdatei, die von einem Projekt geöffnet wird systemintern auf den bestimmten Editor für das Projekt gebunden ist, muss das Projekt die Datei öffnen, mit einem projektspezifischen-Editor. Die Datei kann nicht auf den Mechanismus der IDE für das Auswählen eines Editors delegiert werden. Anstatt einen standard-Bitmap-Editor zu verwenden, können Sie z. B. diese projektspezifischer Editor-Option verwenden, an einem bestimmten Bitmap-Editor, der Informationen in der Datei, die dem Projekt eindeutig ist, erkennt.  
+Wenn eine Element Datei, die von einem Projekt geöffnet wird, intrinsisch an den jeweiligen Editor für dieses Projekt gebunden ist, muss das Projekt die Datei mit einem projektspezifischen Editor öffnen. Die Datei kann nicht an den IDE-Mechanismus für die Auswahl eines Editors delegiert werden. Anstatt z. b. einen Standard-Bitmap-Editor zu verwenden, können Sie mit dieser projektspezifischen Editor-Option einen bestimmten Bitmap-Editor angeben, der Informationen in der Datei erkennt, die für Ihr Projekt eindeutig ist.  
   
- Die IDE-Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode, wenn er feststellt, dass eine Datei von einem bestimmten Projekt geöffnet werden soll. Weitere Informationen finden Sie unter [Anzeigen von Dateien mithilfe des Befehls der geöffneten Datei](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Verwenden Sie die folgenden Richtlinien zum Implementieren der `OpenItem` Methode, um Ihr Projekt eine Datei mit einem projektspezifischen-Editor zu öffnen.  
+ Die IDE Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode auf, wenn Sie bestimmt, dass eine Datei von einem bestimmten Projekt geöffnet werden soll. Weitere Informationen finden Sie unter [Anzeigen von Dateien mit dem Befehl "Datei öffnen](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)". Verwenden Sie die folgenden Richtlinien, um die- `OpenItem` Methode zu implementieren, damit das Projekt eine Datei mithilfe eines projektspezifischen Editors öffnet.  
   
-### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>So implementieren Sie die OpenItem-Methode mit einem projektspezifischen editor  
+### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>So implementieren Sie die OpenItem-Methode mit einem projektspezifischen Editor  
   
-1. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode (RDT_EditLock), um zu bestimmen, ob die Datei (dokumentdatenobjekt) bereits geöffnet ist.  
+1. Wenden Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode (RDT_EditLock) an, um zu bestimmen, ob die Datei (Dokument Datenobjekt) bereits geöffnet ist.  
   
     > [!NOTE]
-    > Weitere Informationen zu Dokumentdaten und dokumentenansichtsobjekten finden Sie unter [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md).  
+    > Weitere Informationen zu Dokument Daten und Dokument Ansichts Objekten finden Sie unter [Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
-2. Wenn die Datei bereits geöffnet ist, diesem die Datei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> -Methode und geben einen Wert von IDO_ActivateIfOpen für den `grfIDO` Parameter.  
+2. Wenn die Datei bereits geöffnet ist, können Sie die Datei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> -Methode neu anordnen und den Wert IDO_ActivateIfOpen für den- `grfIDO` Parameter angeben.  
   
-     Wenn die Datei geöffnet ist, und das Dokument von einem anderen Projekt als dem aufrufenden Projekt gehört, wird eine Warnung, die dem Benutzer angezeigt werden, die der Editor geöffnet wird aus einem anderen Projekt ist. Fenster "Datei" wird dann angezeigt.  
+     Wenn die Datei geöffnet ist und das Dokument im Besitz eines anderen Projekts als dem aufrufenden Projekt ist, wird dem Benutzer eine Warnung angezeigt, dass der zu öffnende Editor von einem anderen Projekt aus angezeigt wird. Das Datei Fenster wird dann angezeigt.  
   
-3. Wenn Ihr Textpuffer (dokumentdatenobjekt) bereits geöffnet ist, und Sie eine andere Ansicht anfügen möchten, sind Sie verantwortlich für das Einbinden dieser Ansicht. Die empfohlene Vorgehensweise für das Instanziieren einer Ansicht (dokumentenansichtsobjekt) aus dem Projekt, lautet wie folgt aus:  
+3. Wenn Ihr Text Puffer (Dokument Datenobjekt) bereits geöffnet ist und Sie eine weitere Ansicht an ihn anfügen möchten, sind Sie dafür verantwortlich, diese Sicht zu verknüpfen. Die empfohlene Vorgehensweise zum Instanziieren einer Ansicht (Dokument Ansichts Objekt) aus dem Projekt lautet wie folgt:  
   
-    1. Rufen Sie `QueryService` auf die <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> Dienst um einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> Schnittstelle.  
+    1. Ruft für `QueryService` den <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> Dienst auf, um einen Zeiger auf die- <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> Schnittstelle zu erhalten.  
   
-    2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> Methode, um eine Instanz der Ansichtsklasse Dokument zu erstellen.  
+    2. Rufen Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> Methode auf, um eine Instanz der Dokument Ansichts Klasse zu erstellen.  
   
-4. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> Methode, geben Sie Ihrem dokumentenansichtsobjekt.  
+4. Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> Methode auf und gibt das Dokument Ansichts Objekt an.  
   
-     Diese Methode Standorte das dokumentenansichtsobjekt in einem Dokumentfenster angezeigt.  
+     Diese Methode zeigt das Dokument Ansichts Objekt in einem Dokument Fenster an.  
   
-5. Führen Sie die entsprechenden Aufrufe an die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> Methoden.  
+5. Führen Sie die entsprechenden Aufrufe entweder für die- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> Methode aus.  
   
-     An diesem Punkt sollte die Ansicht vollständig initialisiert und bereit, die geöffnet werden.  
+     An diesem Punkt sollte die Ansicht vollständig initialisiert und geöffnet werden können.  
   
-6. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Methode zum Anzeigen und öffnen Sie die Ansicht.  
+6. Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> -Methode auf, um die Ansicht anzuzeigen und zu öffnen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Sie öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
- [Vorgehensweise: Open-Standard-Editoren](../extensibility/how-to-open-standard-editors.md)   
- [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../extensibility/how-to-open-editors-for-open-documents.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Öffnen und Speichern von Projekt Elementen](../extensibility/internals/opening-and-saving-project-items.md)   
+ [Vorgehensweise: Öffnen von Standard-Editoren](../extensibility/how-to-open-standard-editors.md)   
+ [Gewusst wie: Öffnen von Editoren für geöffnete Dokumente](../extensibility/how-to-open-editors-for-open-documents.md)

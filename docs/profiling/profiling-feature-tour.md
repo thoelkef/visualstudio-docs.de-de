@@ -1,8 +1,8 @@
 ---
-title: Messen von Leistung mit Profilerstellungstools
+title: Erste Schritte mit Profilerstellungstools
 description: Einführung in die verschiedenen für Visual Studio verfügbaren Diagnosetools
-ms.custom: mvc
-ms.date: 06/03/2020
+ms.custom: ''
+ms.date: 09/08/2020
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,18 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507988"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100773"
 ---
 # <a name="first-look-at-profiling-tools"></a>Einführung in Profilerstellungstools
 
 Visual Studio bietet eine Vielzahl von Profilerstellungstools, um Ihnen bei der Diagnose von unterschiedlichen Leistungsprobleme zu helfen, die von dem App-Typ abhängen. In diesem Artikel werfen wir einen kurzen Blick auf die gängigsten Profilerstellungstools.
 
-## <a name="view-performance-while-debugging"></a>Anzeigen der Leistung beim Debuggen
+Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#which-tool-should-i-use).
+
+## <a name="measure-performance-while-debugging"></a>Messen der Leistung beim Debuggen
 
 Die Profilerstellungstools, auf die Sie während einer Debugsitzung zugreifen können, stehen im Fenster „Diagnosetools“ zur Verfügung. Das Fenster „Diagnosetools“ wird automatisch angezeigt, wenn Sie es nicht deaktiviert haben. Klicken Sie auf **Debuggen/Windows/Diagnosetools anzeigen**, um das Fenster aufzurufen. Wenn das Fenster geöffnet ist, können Sie Tools auswählen, für die Sie Daten sammeln möchten.
 
@@ -39,8 +41,36 @@ Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren
 
 Das Fenster **Diagnosetools** ist ein gängiges Instrument zum Profilen von Apps. Aber für Releasebuilds können Sie stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#which-tool-should-i-use).
 
+Zu den Tools, die im Fenster „Diagnosetools“ oder während einer Debugsitzung verfügbar sind, zählen:
+- [CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md)
+- [Speicherauslastung](../profiling/memory-usage.md)
+- [PerfTips](../profiling/perftips.md)
+
 > [!NOTE]
-> Sie können die Post-Mortem-Tools mit Windows 7 und höher verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
+> Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**). Sie können die [Post-Mortem](#post_mortem)-Tools mit Windows 7 und höher verwenden. 
+
+## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Messen der Leistung in Releasebuilds
+
+Tools im Leistungs-Profiler dienen zur Analyse der **Releasebuilds**. Im Leistungs-Profiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wurde (eine Post-Mortem-Analyse).
+
+Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
+
+![Leistungs-Profiler](../profiling/media/prof-tour-performance-profiler.png "Leistungs-Profiler")
+
+Weitere Informationen zur Verwendung des Tools „CPU-Auslastung“ oder „Speicherauslastung“ im Leistungs-Profiler im Vergleich zu den in den Debugger integrierten Tools finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+
+Im Leistungs-Profiler verfügbare Tools:
+
+- [CPU-Auslastung](../profiling/cpu-usage.md)
+- [Speicherauslastung für .NET-Code](../profiling/dotnet-alloc-tool.md)
+- [Speicherauslastung](#analyze-memory-usage)
+- [.NET Async-Tool](../profiling/analyze-async.md)
+- [Datenbanktool](../profiling/analyze-database.md)
+- [GPU-Nutzung](../profiling/gpu-usage.md)
+
+Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#which-tool-should-i-use).
+
+In einigen Szenarien können Sie im Fenster [mehrere Profilerstellungstools](../profiling/use-multiple-profiler-tools-simultaneously.md) auswählen. Tools wie z.B. CPU-Auslastung stellen möglicherweise ergänzende Daten bereit, die Sie als Hilfe bei Ihrer Analyse verwenden können. Sie können auch den [Befehlszeilen-Profiler](../profiling/profile-apps-from-command-line.md) verwenden, um Szenarios mit mehreren Profilerstellungstools zu ermöglichen.
 
 ## <a name="examine-performance-using-perftips"></a>Untersuchen der Leistung mit PerfTips
 
@@ -59,9 +89,9 @@ PerfTips zeigt dieselben Ereignisse an, die auch in der Ansicht **Ereignisse** d
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
-Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App starten. So erfahren Sie mehr über die CPU-Ressourcen, die Ihre App in Anspruch nimmt. Eine ausführlichere exemplarische Vorgehensweise zum Tool CPU-Auslastung finden Sie unter [Messen der Anwendungsleistung durch Analyse der CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md).
+Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App starten. So erfahren Sie mehr über die CPU-Ressourcen, die Ihre App in Anspruch nimmt. Sie können das [in den Debugger integrierte CPU-Auslastungstool](../profiling/beginners-guide-to-performance-profiling.md) oder das [Post-Mortem-CPU-Auslastungstool](../profiling/cpu-usage.md) verwenden.
 
-Wählen Sie aus der Ansicht **Zusammenfassung** der Diagnosetools **CPU-Profilerstellung aktivieren** aus. (Sie müssen in einer Debugsitzung sein.)
+Wenn Sie das in den Debugger integrierte CPU-Auslastungstool verwenden, öffnen Sie das Fenster „Diagnosetool“ (wenn es geschlossen ist, wählen Sie **Debuggen/Fenster/Diagnosetools anzeigen**). Öffnen Sie beim Debuggen die Ansicht **Zusammenfassung**, und wählen Sie **CPU-Profilerstellung aufzeichnen** aus.
 
 ![Aktivieren der CPU-Auslastung in den Diagnosetools](../profiling/media/prof-tour-enable-cpu-profiling.png "Diagnosetools: CPU-Auslastung aktivieren")
 
@@ -77,9 +107,9 @@ Doppelklicken Sie auf eine Funktion, an der Sie interessiert sind. Ihnen wird ei
 
 ## <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
-Im Fenster **Diagnosetools** können Sie auch das Tool **Speicherauslastung** verwenden, um die Arbeitsspeicherauslastung in Ihrer App auszuwerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung). Ein anderes Arbeitsspeicheranalysetool, [.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md), unterstützt Sie beim Identifizieren von Speicherbelegungsmustern und Anomalien in Ihrem .NET-Code.
+Im Fenster **Diagnosetools** können Sie auch das Tool **Speicherauslastung** verwenden, um die Arbeitsspeicherauslastung in Ihrer App auszuwerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Sie können das [in den Debugger integrierte Speicherauslastungstool](../profiling/memory-usage.md) oder das Post-Mortem-Speicherauslastungstool im [Leistungs-Profiler](#post_mortem) verwenden. Ein anderes Arbeitsspeicheranalysetool, [.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md), unterstützt Sie beim Identifizieren von Speicherbelegungsmustern und Anomalien in Ihrem .NET-Code.
 
-Sie müssen mindestens eine Arbeitsspeichermomentaufnahme erfassen, um die Arbeitsspeicherauslastung mit dem debuggerintegrierten Speicherauslastungstool zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
+Sie müssen mindestens eine Arbeitsspeicher-Momentaufnahme erstellen, um die Arbeitsspeicherauslastung zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat. In der folgenden Abbildung wird gezeigt, wie eine Momentaufnahme mit dem in den Debugger integrierten Tool erstellt wird.
 
 ![Erstellen einer Momentaufnahme in den Diagnosetools](../profiling/media/prof-tour-take-snapshots.gif "Diagnosetools: Momentaufnahmen erstellen")
 
@@ -88,16 +118,6 @@ Wenn Sie auf einen der Pfeillinks klicken, erhalten Sie eine Differenzansicht de
 ![Differenzansicht „Heap“ in den Diagnosetools](../profiling/media/prof-tour-mem-usage-diff-heap.png "Diagnosetools: Differenzansicht „Heap“")
 
 Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken Seite klicken, ist die Heapansicht nach der Objektanzahl organisiert. Die Objekte eines bestimmten Typs, der die Zahl am meisten erhöht hat, werden oben angezeigt (sortiert nach der Spalte **Anzahlunterschied**).
-
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Profilerstellung für Releasebuilds ohne den Debugger
-
-Profilerstellungstools wie die CPU-Auslastung und Speicherauslastung können mit dem Debugger verwendet werden (siehe frühere Abschnitte), oder Sie führen die Profilerstellungstools post mortem mithilfe des Leistungsprofilers aus, der Analysen für **Release**builds erstellen soll. Im Leistungsprofiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wird. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Zusätzliche Tools wie das [.NET-Tool für die Objektzuordnung](../profiling/dotnet-alloc-tool.md) stehen ebenfalls im Leistungs-Profiler zur Verfügung.
-
-![Leistungs-Profiler](../profiling/media/prof-tour-performance-profiler.png "Leistungs-Profiler")
-
-Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
-
-In einigen Szenarien können Sie im Fenster [mehrere Profilerstellungstools](../profiling/use-multiple-profiler-tools-simultaneously.md) auswählen. Tools wie z.B. CPU-Auslastung stellen möglicherweise ergänzende Daten bereit, die Sie als Hilfe bei Ihrer Analyse verwenden können. Sie können auch den [Befehlszeilen-Profiler](../profiling/profile-apps-from-command-line.md) verwenden, um Szenarios mit mehreren Profilerstellungstools zu ermöglichen.
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analysieren des Ressourcenverbrauchs (XAML)
 
@@ -147,7 +167,7 @@ In Ihren UWP-Apps können Sie die **Analyse der Benutzeroberfläche** im Fenster
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analysieren der GPU-Nutzung (Direct3D)
 
-In Direct3D-Apps (Direct3D-Komponenten müssen in C++ vorhanden sein) können Sie Aktivitäten auf der GPU überprüfen und Leistungsprobleme analysieren. Weitere Informationen erhalten Sie unter [GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage). Wählen Sie die **GPU-Nutzung** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, für das Sie ein Profil erstellen wollen, und wählen Sie anschließend **Auflistung beenden**, um einen Bericht zu generieren.
+In Direct3D-Apps (Direct3D-Komponenten müssen in C++ vorhanden sein) können Sie Aktivitäten auf der GPU überprüfen und Leistungsprobleme analysieren. Weitere Informationen erhalten Sie unter [GPU-Nutzung](./gpu-usage.md). Wählen Sie die **GPU-Nutzung** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, für das Sie ein Profil erstellen wollen, und wählen Sie anschließend **Auflistung beenden**, um einen Bericht zu generieren.
 
 Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird eine detaillierte Ansicht wird im unteren Bereich angezeigt. In der Detailansicht können Sie überprüfen, wie viel Aktivität auf jeder CPU und GPU vorhanden ist. Wählen Sie Ereignisse im untersten Bereich aus, um Popups in der Zeitachse aufzurufen. Wählen Sie z.B. das **Vorhanden**-Ereignis aus, um die **Vorhanden**-Aufruf-Popups anzuzeigen. (Die hellgrauen vertikalen Vsync-Zeilen können als Verweis verwendet werden, um zu verstehen, ob bestimmte **Vorhanden**-Aufrufe Vsync verpasst haben. Es muss ein **Vorhanden**-Aufruf zwischen jeden zwei Vsyncs in der Reihenfolge geben, damit die App kontinuierlich 60 FPS erreicht.)
 
@@ -203,29 +223,29 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[PerfTips](../profiling/perftips.md)|ja|ja|ja|
-|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
+|[CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md)|ja|ja|ja|
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
 |[.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md)|Ja (Nur .NET)|ja|ja|
-|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|Ja|nein|
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|Ja|nein|
+|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|ja|Nein|
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja (XAML)|ja|Nein|
 |[Ereignisanzeige](../profiling/events-viewer.md)|ja|ja|ja|
 |[.NET Async](../profiling/analyze-async.md)|Ja (Nur .NET)|ja|ja|
 |[Datenbank](../profiling/analyze-database.md)|Ja (nur .NET Core)|Nein|Ja (nur ASP.NET Core)|
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Nein|Nein|
+|[Leistungs-Explorer](#analyze-performance-legacy-tools)|Nein|Nein|Nein|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 |Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
-|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
-|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|Ja|nein|
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|Ja|nein|
+|[CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md)|ja|ja|ja|
+|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|Ja|
+|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|ja|Nein|
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja (XAML)|ja|nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|Ja|nein|ja|
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|ja|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
-|[Netzwerkverwendung](../profiling/network-usage.md)|nein|Ja|nein|
+|[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
 ::: moniker-end

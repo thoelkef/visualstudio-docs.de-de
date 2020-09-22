@@ -1,5 +1,5 @@
 ---
-title: Migrieren eines Legacysprachdiensts | Microsoft-Dokumentation
+title: Migrieren eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,103 +11,103 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434374"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841206"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrieren eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Sie können eine legacysprachdiensten auf eine neuere Version von Visual Studio migrieren, durch Aktualisieren des Projekts und dem Projekt eine Datei "Source.Extension.vsixmanifest" hinzugefügt. Der Sprachdienst selbst werden wie zuvor funktionieren weiterhin, weil Visual Studio-Editor passt.  
+Sie können einen Legacy Sprachdienst zu einer späteren Version von Visual Studio migrieren, indem Sie das Projekt aktualisieren und dem Projekt eine Datei vom Typ "Source. Extension. vsixmanifest" hinzufügen. Der Sprachdienst selbst funktioniert weiterhin wie zuvor, da er vom Visual Studio-Editor angepasst wird.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren eines sprach Dienstanbieter finden Sie unter [Editor-und Sprachdienst Erweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
-## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Migrieren Sie eine Visual Studio 2008 Language Service-Lösung auf eine höhere Version  
- Die folgenden Schritte zeigen, wie Sie eine Visual Studio 2008-Beispiel, das mit dem Namen RegExLanguageService anpassen. Sie finden dieses Beispiel in einer Visual Studio 2008 SDK-Installation in der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\-Ordner.  
+## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Migrieren einer Visual Studio 2008-Sprachdienst Lösung zu einer späteren Version  
+ In den folgenden Schritten wird gezeigt, wie ein Visual Studio 2008-Beispiel mit dem Namen regexlanguageservice angepasst wird. Sie finden dieses Beispiel in einer Visual Studio 2008 SDK-Installation im Ordner " *Visual Studio SDK-Installationspfad*\visualstudiointegration\samples\ide\csharp\example.regexlanguageservice\".  
   
 > [!IMPORTANT]
-> Wenn es sich bei der Sprachdienst Farben nicht definiert, müssen Sie explizit festlegen <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> zu `true` für das VSPackage:  
+> Wenn Ihr Sprachdienst keine Farben definiert, müssen Sie für <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> `true` das VSPackage explizit auf festlegen:  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  
 ```  
   
-#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Einen Visual Studio 2008-Sprachdienst auf eine neuere Version migrieren.  
+#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>So migrieren Sie einen Visual Studio 2008-Sprachdienst zu einer späteren Version  
   
-1. Installieren Sie die neueren Versionen von Visual Studio und Visual Studio SDK. Weitere Informationen zu Möglichkeiten, um das SDK zu installieren, finden Sie unter [Installieren von Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).  
+1. Installieren Sie die neueren Versionen von Visual Studio und dem Visual Studio SDK. Weitere Informationen zu den Möglichkeiten, das SDK zu installieren, finden Sie unter [Installieren des Visual Studio SDK](../../extensibility/installing-the-visual-studio-sdk.md).  
   
-2. Bearbeiten Sie die RegExLangServ.csproj-Datei (ohne Laden in Visual Studio.  
+2. Bearbeiten Sie die Datei regexlangserv. csproj (ohne Sie in Visual Studio zu laden.  
   
-     In der `Import` Knoten, der auf die Datei Microsoft.VsSDK.targets verweist ersetzen Sie den Wert mit dem folgenden Text.  
+     Ersetzen Sie in dem Knoten, der `Import` auf die Datei Microsoft. VSSDK. targets verweist, den Wert durch den folgenden Text.  
   
     ```  
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets  
     ```  
   
-3. Speichern Sie die Datei, und schließen Sie sie.  
+3. Speichern Sie die Datei, und schließen Sie Sie.  
   
-4. Öffnen Sie die RegExLangServ.sln-Projektmappe.  
+4. Öffnen Sie die Projekt Mappe "regexlangserv. sln".  
   
-5. Die **unidirektionales Upgrade** Fenster wird angezeigt. Klicken Sie auf **OK**.  
+5. Das Fenster für das unidirektionale **Upgrade** wird angezeigt. Klicken Sie auf **OK**.  
   
-6. Aktualisieren Sie die Projekteigenschaften an. Öffnen der **Projekteigenschaften** Fenster, indem Sie den Projektknoten im Auswählen der **Projektmappen-Explorer**, mit der rechten Maustaste, und wählen **Eigenschaften**.  
+6. Aktualisieren Sie die Projekteigenschaften. Öffnen Sie das **Projekteigenschaften** Fenster, indem Sie den Projekt Knoten im **Projektmappen-Explorer**auswählen, mit der rechten Maustaste klicken und **Eigenschaften**auswählen.  
   
-    - Auf der **Anwendung** Registerkarte **Zielframework** zu **4.6.1**.  
+    - Ändern Sie auf der Registerkarte **Anwendung** das **Ziel Framework** in **4.6.1**.  
   
-    - Auf der **Debuggen** Registerkarte die **externes Programm starten** geben  **\<Visual Studio-Installationspfad > \Common7\IDE\devenv.exe.** .  
+    - Geben Sie auf der Registerkarte **Debuggen** im Feld **externes Programm starten** ** \<Visual Studio installation path>\Common7\IDE\devenv.exe. ein.**  
   
-         In der **Befehlszeilenargumente** geben /**Rootsuffix Exp**.  
+         Geben Sie im Feld **Befehlszeilenargumente** den Text/**rootsuffix Exp**ein.  
   
 7. Aktualisieren Sie die folgenden Verweise:  
   
-    - Entfernen Sie den Verweis auf Microsoft.VisualStudio.Shell.9.0.dll, und fügen Sie Verweise auf Microsoft.VisualStudio.Shell.14.0.dll und Microsoft.VisualStudio.Shell.Immutable.11.0.dll.  
+    - Entfernen Sie den Verweis auf Microsoft.VisualStudio.Shell.9.0.dll, und fügen Sie dann Verweise auf Microsoft.VisualStudio.Shell.14.0.dll und Microsoft.VisualStudio.Shell.Immutable.11.0.dll hinzu.  
   
-    - Entfernen Sie den Verweis auf Microsoft.VisualStudio.Package.LanguageService.9.0.dll, und fügen Sie einen Verweis auf Microsoft.VisualStudio.Package.LanguageService.14.0.dll.  
+    - Entfernen Sie den Verweis auf Microsoft.VisualStudio.Package.LanguageService.9.0.dll, und fügen Sie dann einen Verweis auf Microsoft.VisualStudio.Package.LanguageService.14.0.dll hinzu.  
   
     - Fügen Sie einen Verweis auf Microsoft.VisualStudio.Shell.Interop.10.0.dll hinzu.  
   
-8. Öffnen Sie die Datei VsPkg.cs und ändern Sie den Wert, der die `DefaultRegistryRoot` Attribut  
+8. Öffnen Sie die Datei vspkg.cs, und ändern Sie den Wert des `DefaultRegistryRoot` Attributs in.  
   
     ```  
     "Software\\Microsoft\\VisualStudio\\14.0Exp"  
     ```  
   
-9. Das ursprüngliche Beispiel werden der Sprachdienst nicht registriert, sodass Sie das folgende Attribut VsPkg.cs hinzufügen müssen.  
+9. Das ursprüngliche Beispiel registriert nicht seinen Sprachdienst. Daher müssen Sie das folgende Attribut zu vspkg.cs hinzufügen.  
   
     ```  
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]  
     ```  
   
-10. Sie müssen eine Datei "Source.Extension.vsixmanifest" hinzufügen.  
+10. Sie müssen eine "Source. Extension. vsixmanifest"-Datei hinzufügen.  
   
-    - Kopieren Sie diese Datei aus einer vorhandenen Erweiterung zu Ihrem Projektverzeichnis. (Eine Möglichkeit zum Abrufen dieser Datei wird zum Erstellen eines VSIX-Projekts (unter **Datei**, klicken Sie auf **neu**, klicken Sie dann auf **Projekt**. Klicken Sie in Visual Basic oder c# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**.)  
+    - Kopieren Sie diese Datei aus einer vorhandenen Erweiterung in Ihr Projektverzeichnis. (Eine Möglichkeit, diese Datei zu erstellen, besteht darin, ein VSIX-Projekt zu erstellen (unter **Datei**, auf **neu**und dann auf **Projekt**. Klicken Sie unter Visual Basic oder c# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**aus.)  
   
-    - Die Datei zu Ihrem Projekt hinzufügen.  
+    - Fügen Sie Ihrem Projekt die Datei hinzu.  
   
-    - In der Datei **Eigenschaften**legen **Buildvorgang** zu **keine**.  
+    - Legen Sie in den **Eigenschaften**der Datei den Wert für **Build Action** auf **None**fest.  
   
-    - Öffnen Sie die Datei mit den **VSIX-Manifest-Editor**.  
+    - Öffnen Sie die Datei mit dem **VSIX-Manifest-Editor**.  
   
     - Ändern Sie die folgenden Felder:  
   
-    - **ID**: RegExLangServ  
+    - **ID**: regexlangserv  
   
-    - **Produktname**: RegExLangServ  
+    - **Produkt Name**: regexlangserv  
   
-    - **Beschreibung:** Sprachdienst für einen regulären Ausdruck.  
+    - **Beschreibung**: ein Sprachdienst für reguläre Ausdrücke.  
   
-    - Unter **Assets**, klicken Sie auf **neu**, wählen die **Typ** zu **"Microsoft.VisualStudio.VSPackage"** legen die **Quelle** zu **ein Projekt in der aktuellen Projektmappe**, und legen Sie dann die **Projekt** zu **RegExLangServ**.  
+    - Klicken Sie unter **Assets**auf **New**, wählen Sie den **Typ** **Microsoft. VisualStudio. VSPackage**aus, legen Sie die **Quelle** auf **ein Projekt in der aktuellen Projekt**Mappe fest, und legen Sie dann das **Projekt** auf **regexlangserv**fest.  
   
     - Speichern und schließen Sie die Datei.  
   
-11. Erstellen Sie die Projektmappe. Die erstellten Dateien bereitgestellt werden, um **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
+11. Erstellen Sie die Projektmappe. Die erstellten Dateien werden unter **%UserProfile%\appdata\local\microsoft\visualstudio\14.0exp\extensions\msit\ regexlangserv \\ **bereitgestellt.  
   
-12. Beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio geöffnet.  
+12. Beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wurde geöffnet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)
