@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Put_loadaddress | Microsoft-Dokumentation'
+title: IDiaSession::p ut_loadAddress | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438457"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840828"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legt die Ladeadresse für die ausführbare Datei, die entspricht auf die Symbole in diesem Symbolspeicher fest.  
+Legt die Lade Adresse für die ausführbare Datei fest, die den Symbolen in diesem Symbol Speicher entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT put_loadAddress ( 
   
 #### <a name="parameters"></a>Parameter  
  `NewVal`  
- [in] Lädt die Adresse für die ausführbare Datei.  
+ in Lade Adresse für die ausführbare Datei.  
   
-## <a name="remarks"></a>Hinweise  
- Symboleigenschaften für die virtuelle Adresse (VA) werden mithilfe des Werts für diese Methode berechnet. Virtuelle Adressen werden nicht berechnet werden, es sei denn, diese Eigenschaft nicht 0 (null) festgelegt ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Eigenschaften der Symbol-virtuellen Adresse (VA) werden mit dem Wert dieser Methode berechnet. Virtuelle Adressen werden nur berechnet, wenn diese Eigenschaft auf einen Wert ungleich 0 (null) festgelegt ist.  
   
 > [!NOTE]
-> Sie müssen diese Methode aufrufen, wenn Sie erhalten die [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt aus, und bevor Sie beginnen mit dem Objekt, wenn Sie keine virtuellen Eigenschaften von Symbolen verwenden müssen.  
+> Diese Methode muss aufgerufen werden, wenn Sie das [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Objekt abrufen und bevor Sie mit der Verwendung des-Objekts beginnen, wenn Sie virtuelle Eigenschaften für Symbole verwenden müssen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
