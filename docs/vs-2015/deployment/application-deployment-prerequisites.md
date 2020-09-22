@@ -1,5 +1,5 @@
 ---
-title: Vorbedingungen für die Anwendungsbereitstellung | Microsoft-Dokumentation
+title: Voraussetzungen der Anwendungs Bereitstellung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,36 +21,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427255"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841214"
 ---
 # <a name="application-deployment-prerequisites"></a>Vorbedingungen für die Anwendungsbereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen Sie zuerst sicherstellen, dass alle für die Anwendung erforderlichen Komponenten bereits auf dem Zielcomputer installiert sind. Beispielsweise hängen die meisten Anwendungen, die mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt werden, von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ab. Die richtige Version von Common Language Runtime muss auf dem Zielcomputer verfügbar sein, bevor die Anwendung installiert wird.  
   
- Sie können auswählen, wenn diese Voraussetzungen sind die **Prerequisites Dialog Box** herunter, und Installieren von .NET Framework sowie andere verteilbare Komponenten im Rahmen der Installation. Dieses Vorgehen wird als *Bootstrapping* bezeichnet. Als Nächstes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert ein ausführbares Windows-Programm namens Setup.exe, auch bekannt als eine *Bootstrapper*. Der Bootstrapper installiert diese erforderlichen Komponenten, bevor die Anwendung ausgeführt wird. Weitere Informationen zum Auswählen der erforderlichen Komponenten finden Sie unter [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
+ Sie können diese erforderlichen Komponenten im **Dialog Feld** erforderliche Komponenten auswählen und die .NET Framework und andere verteilbare Komponenten als Teil der-Installation installieren. Dieses Vorgehen wird als *Bootstrapping* bezeichnet. Als nächstes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert ein ausführbares Windows-Programm mit dem Namen Setup.exe, das auch als *Boots Trapper*bezeichnet wird. Der Bootstrapper installiert diese erforderlichen Komponenten, bevor die Anwendung ausgeführt wird. Weitere Informationen zum Auswählen dieser Voraussetzungen finden Sie unter [Voraussetzungen (Dialog Feld](../ide/reference/prerequisites-dialog-box.md)).  
   
- Jede erforderliche Komponente ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss. Wenn die erforderlichen Komponenten für die Anwendung nicht im Dialogfeld **Erforderliche Komponenten** aufgeführt sind, können Sie benutzerdefinierte Bootstrapperpakete erstellen und Visual Studio hinzufügen. Dann können Sie die erforderlichen Komponenten im Dialogfeld **Erforderliche Komponenten** auswählen. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
+ Jede erforderliche Komponente ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss. Wenn die erforderlichen Komponenten für die Anwendung nicht im Dialogfeld **Erforderliche Komponenten** aufgeführt sind, können Sie benutzerdefinierte Bootstrapperpakete erstellen und Visual Studio hinzufügen. Dann können Sie die erforderlichen Komponenten im Dialogfeld **Erforderliche Komponenten** auswählen. Weitere Informationen finden Sie unter [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md).  
   
  Standardmäßig ist Bootstrapping für die ClickOnce-Bereitstellung aktiviert. Der für die ClickOnce-Bereitstellung generierte Bootstrapper ist signiert. Sie können Bootstrapping für eine Komponente deaktivieren, Sie sollten dies aber nur tun, wenn Sie sicher sind, dass die richtige Version der Komponente bereits auf allen Zielcomputern installiert ist.  
   
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Bootstrapping und ClickOnce-Bereitstellung  
- Vor der Installation einer Anwendung auf einem Clientcomputer untersucht [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] den Client, um sicherzustellen, dass bestimmte im Anwendungsmanifest angegebene Anforderungen erfüllt werden. Hierzu gehört Folgendes:  
+ Vor der Installation einer Anwendung auf einem Clientcomputer untersucht [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] den Client, um sicherzustellen, dass bestimmte im Anwendungsmanifest angegebene Anforderungen erfüllt werden. Diese umfassen Folgendes:  
   
 - Die mindestens erforderliche Version von Common Language Runtime, die als Assemblyabhängigkeit im Anwendungsmanifest angegeben ist.  
   
-- Die für die Anwendung mindestens erforderliche Version des Windows-Betriebssystems, wie im Anwendungsmanifest mit dem `<osVersionInfo>`-Element angegeben. (Finden Sie unter [ \<Dependency >-Element](../deployment/dependency-element-clickonce-application.md))  
+- Die für die Anwendung mindestens erforderliche Version des Windows-Betriebssystems, wie im Anwendungsmanifest mit dem `<osVersionInfo>`-Element angegeben. (Siehe- [ \<dependency> Element](../deployment/dependency-element-clickonce-application.md))  
   
 - Die Mindestversion aller Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen, wie von Deklarationen der Assemblyabhängigkeiten im Assemblymanifest angegeben.  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kann fehlende erforderliche Komponenten bestimmen, und Sie können erforderliche Komponenten mit Bootstrap installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kann fehlende erforderliche Komponenten bestimmen, und Sie können erforderliche Komponenten mit Bootstrap installieren. Weitere Informationen finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
-> Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und "MageUI.exe" generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und "MageUI.exe" generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Wenn Sie Visual Studio und ClickOnce für die Bereitstellung der Anwendung verwenden, hängen die standardmäßig ausgewählten Bootstrapperpakete von der .NET Framework-Version in der Projektmappe ab. Wenn Sie jedoch die .NET Framework-Zielversion ändern, müssen Sie die Optionen im Dialogfeld **Erforderliche Komponenten** manuell aktualisieren.  
   
@@ -73,17 +73,17 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
   
  Wenn Sie Bootstrapperoptionen ändern, müssen Sie den nicht signierten Bootstrapper ändern und die Bootstrapperdatei später signieren.  
   
-|Befehlszeilenargument|Beschreibung|  
+|Befehlszeilenargument|BESCHREIBUNG|  
 |---------------------------|-----------------|  
 |**-?, -h, -help**|Zeigt das Dialogfeld der Hilfe an.|  
 |**-url, -componentsurl**|Zeigt die gespeicherte URL und Komponenten-URLs für diese Installation an.|  
-|**-url=** `location`|Legt die URL fest, bei der "Setup.exe" nach der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung sucht.|  
+|**-URL =**`location`|Legt die URL fest, bei der "Setup.exe" nach der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung sucht.|  
 |**-componentsurl=** `location`|Legt die URL fest, bei der "Setup.exe" nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sucht.|  
-|**-homesite=** `true` **&#124;** `false`|Wenn `true`, lädt die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters herunter. Dies überschreibt die **- Componentsurl** festlegen. Wenn `false`, die Abhängigkeiten aus dem vom angegebenen URL heruntergeladen **- Componentsurl**.|  
+|**-homesite=** `true` **&#124;** `false`|Bei `true` werden die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters heruntergeladen. Dadurch wird die **-componentsurl-** Einstellung überschrieben. Wenn `false` , werden die Abhängigkeiten von der durch **-componentsurl**angegebenen URL heruntergeladen.|  
   
-## <a name="operating-system-support"></a>Unterstützte Betriebssysteme  
+## <a name="operating-system-support"></a>Betriebssystemunterstützung  
  Windows Server 2008 Server Core oder Windows Server 2008 R2 Server Core bieten eine wartungsarme Serverumgebung mit beschränktem Funktionsumfang und unterstützen den Visual Studio-Bootstrapper nicht. Die Server Core-Installationsoption unterstützt beispielsweise nur das Profil .NET Framework 3.5 Server Core. Visual Studio-Funktionen, die auf das vollständige .NET Framework angewiesen sind, können daher nicht ausgeführt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)

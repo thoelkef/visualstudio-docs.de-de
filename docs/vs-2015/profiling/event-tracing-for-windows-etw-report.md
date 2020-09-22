@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444015"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840955"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-
 > [!NOTE]
 > ETW-Berichte werden in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Schnittstellen nicht angezeigt.  
   
-- Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Sammeln der Ereignisablaufverfolgung für Windows (ETW) Daten](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Weitere Informationen zum Erfassen von etw mithilfe der Profilerstellungstools from- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Schnittstelle finden Sie unter Gewusst [wie: Erfassen von Daten der Ereignis Ablauf Verfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Weitere Informationen zum Erfassen von ETW-Daten über die Befehlszeilentools [VSPerfCmd](../profiling/vsperfcmd.md) finden Sie unter [Events (Ereignisse)](../profiling/events-vsperfcmd.md).  
   
@@ -39,5 +39,5 @@ In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-
 |**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|  
 |**Thread-ID**|Gibt den Thread an, der das Ereignis generiert hat|  
 |**Beschreibung**|Gibt den Ereignisanbieter an|  
-|**Type**|Gibt den Ereignistyp an|  
+|**Typ**|Gibt den Ereignistyp an|  
 |**Eigenschaften**|Eigenschaften des Ereignisses Jedes Ereignis besteht aus einem durch Kommas abgetrennten Name/Wert-Paar in Klammern.|

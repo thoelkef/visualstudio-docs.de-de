@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440049"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841052"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Gewusst wie: Konfigurieren von Zielen und Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,5 +110,5 @@ Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklu
 > [!NOTE]
 > Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der Programmdateien) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht.  Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)

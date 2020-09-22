@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isaggregated | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isAggregated | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9345aee08dcc5c27bfa6c20f9b5821d1875a5b99
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64822167"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841197"
 ---
-# <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
+# <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob das Datensymbol Teil ein Aggregat oder eine Auflistung von Symbolen ist; vom Compiler aggregierte Symbole als separate Entitäten behandelt, aber sie gehören eigentlich ein einmaliges umfangreicheren Symbol.  
+Ruft ein Flag ab, das angibt, ob das Daten Symbol Teil eines Aggregats oder einer Auflistung von Symbolen ist. der Compiler behandelt aggregierte Symbole als separate Entitäten, Sie sind jedoch wirklich Teil eines einzigen größeren Symbols.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,24 +35,24 @@ HRESULT get_isAggregated(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn die Daten eine Kombination aus Symbolen, die aus einer übergeordneten Symbol; Teilen gehört, andernfalls `FALSE`.  
+ vorgenommen Gibt zurück `TRUE` , wenn die Daten Teil einer Aggregation von Symbolen sind, die von einem übergeordneten Symbol getrennt sind; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Die [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) Methode `TRUE` für das Symbol, das das übergeordnete Element der aggregierten Symbole ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Die [idiasymmetribol:: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) -Methode ist `TRUE` für das Symbol, das das übergeordnete Element der aggregierten Symbole ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

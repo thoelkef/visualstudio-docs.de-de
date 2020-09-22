@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Erstellen von benutzerdefinierten Text Markern | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,86 +11,86 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435980"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840851"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen
+# <a name="how-to-create-custom-text-markers"></a>Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisieren Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
+Wenn Sie einen benutzerdefinierten Textmarker zum hervorheben oder organisieren von Code erstellen möchten, müssen Sie die folgenden Schritte ausführen:  
   
-- Registrieren Sie die neue textmarkierung, sodass andere Tools, die darauf zugreifen können  
+- Registrieren Sie den neuen Textmarker, damit andere Tools darauf zugreifen können.  
   
-- Geben Sie einen Standardimplementierung und Konfiguration der textmarkierung  
+- Bereitstellen einer Standard Implementierung und Konfiguration des Text Markers  
   
-- Erstellen ein Diensts, der von anderen Prozessen verwendet werden kann, zu der textmarkierung verwenden  
+- Erstellen Sie einen Dienst, der von anderen Prozessen verwendet werden kann, um den Textmarker zu verwenden.  
   
-  Weitere Informationen darüber, wie Sie eine textmarkierung für einen Codebereich gelten, finden Sie unter [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md).  
+  Ausführliche Informationen zum Anwenden eines Text Markers auf einen Code Bereich finden Sie unter Gewusst [wie: Verwenden von Text Markern](../extensibility/how-to-use-text-markers.md).  
   
-### <a name="to-register-a-custom-marker"></a>Um eine benutzerdefinierte Markierung zu registrieren.  
+### <a name="to-register-a-custom-marker"></a>So registrieren Sie einen benutzerdefinierten Marker  
   
-1. Erstellen Sie einen Registrierungseintrag wie folgt:  
+1. Erstellen Sie einen Registrierungs Eintrag wie folgt:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *\<Version>* \text Editor \ externe Marker\\*\<MarkerGUID>*  
   
-    <em>\<MarkerGUID ></em>ist eine `GUID` zum Identifizieren des Markers, der hinzugefügt wird  
+    <em>\<MarkerGUID></em>ist eine `GUID` , die zum Identifizieren des hinzugefügten Markers verwendet wird.  
   
-    *\<Version >* ist die Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], z. B. 8.0  
+    *\<Version>* ist die Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , z. b. 8,0  
   
-    *\<PackageGUID >* ist die GUID des VSPackage das Automatisierungsobjekt implementieren.  
+    *\<PackageGUID>* die GUID des VSPackage, das das Automatisierungs Objekt implementiert.  
   
    > [!NOTE]
-   > Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die Visual Studio-Shell, können Sie auch weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Der Stammpfad von HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *\<Version>* kann beim Initialisieren der Visual Studio-Shell mit einem alternativen Stamm überschrieben werden. Weitere Informationen finden Sie unter [Befehls Zeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Erstellen Sie vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* \Text Editor\External Marker\\ *\<MarkerGUID >*  
+2. Erstellen Sie unter HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *\<Version>* \text Editor \ externe Marker vier Werte.\\*\<MarkerGUID>*  
   
-   - (Standard)  
+   - (Standardwert)  
   
    - Dienst  
   
    - DisplayName  
   
-   - Package  
+   - Paket  
   
-   - `Default` ist eine optionale Eingabe des Typs REG_SZ. Wenn festgelegt, ist der Wert des Eintrags, eine Zeichenfolge, enthält einige nützliche identifizierende Informationen, z. B. "benutzerdefinierte Textmarkierung" auf.  
+   - `Default` ist ein optionaler Eintrag vom Typ REG_SZ. Wenn festgelegt, ist der Wert des Eintrags eine Zeichenfolge, die einige nützliche identifizierende Informationen enthält, z. b. "benutzerdefinierter Text Marker".  
   
-   - `Service` ist ein Eintrag des Typs REG_SZ enthält die GUID-Zeichenfolge des Diensts, der die benutzerdefinierten textmarkierung von proffering bietet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Service` ein Eintrag vom Typ REG_SZ mit der GUID-Zeichenfolge des Dienstanbieter, der die benutzerdefinierte Textmarkierung bereitstellt <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> . Das Format ist {xxxxxx xxxx xxxx xxxx xxxxxxxxx}.  
   
-   - `DisplayName` Dies ist für ein Eintrag vom Typ: REG_SZ die Ressourcen-ID mit dem Namen der benutzerdefinierten textmarkierung enthält. Das Format ist #YYYY.  
+   - `DisplayName` ein Eintrag vom Typ REG_SZ, der die Ressourcen-ID des Namens der benutzerdefinierten Textmarkierung enthält. Das Format ist #YYYY.  
   
-   - `Package` ist der Eintrag des Typs REG_SZ, enthält die `GUID` des VSPackage, das der Dienst bietet Service aufgeführt. Das Format ist {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Package` ist ein Eintrag vom Typ REG_SZ der das `GUID` VSPackage enthält, das den unter Dienst aufgelisteten Dienst bereitstellt. Das Format ist {xxxxxx xxxx xxxx xxxx xxxxxxxxx}.  
   
-### <a name="to-create-a-custom-text-marker"></a>Erstellen Sie einen benutzerdefinierten Text-marker  
+### <a name="to-create-a-custom-text-marker"></a>So erstellen Sie einen benutzerdefinierten Textmarker  
   
 1. Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>-Schnittstelle.  
   
-     Die Implementierung dieser Schnittstelle definiert das Verhalten und Aussehen Ihrer benutzerdefinierten Markertyps.  
+     Die Implementierung dieser Schnittstelle definiert das Verhalten und die Darstellung des benutzerdefinierten Markertyps.  
   
      Diese Schnittstelle wird aufgerufen, wenn  
   
-    1. Ein Benutzer startet die IDE zum ersten Mal an.  
+    1. Ein Benutzer startet die IDE zum ersten Mal.  
   
-    2. Auswahl der **Standard wiederherstellen** Schaltfläche der **Schriftarten und Farben** Eigenschaftenseite in der **Umgebung** Ordner auf den linken Bereich des der  **Optionen** erhalten Sie im Dialogfeld aus der **Tools** im Menü der IDE.  
+    2. Ein Benutzer wählt die Schaltfläche **Standardwerte zurücksetzen** auf der Eigenschaften Seite **Schriftarten und Farben** im Ordner **Umgebung** aus, die sich im linken Bereich des Dialog Felds **Optionen** befindet **, das über das Menü Extras** der IDE abgerufen wird.  
   
-2. Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> Methode, die angeben, welche `IVsPackageDefinedTextMarkerType` Implementierung sollte zurückgegeben werden basierend auf den Typ des Markers GUID, die im Aufruf Methode angegeben.  
+2. Implementieren Sie die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> Methode, und geben Sie an, welche `IVsPackageDefinedTextMarkerType` Implementierung basierend auf der Markertyp-GUID zurückgegeben werden soll.  
   
-     Die Umgebung ruft dieser Methode die erste Zeit Ihrer benutzerdefinierten Markertyp wird erstellt, und gibt eine GUID, die den benutzerdefinierten Markertyp identifiziert.  
+     Die Umgebung ruft diese Methode bei der erstmaligen Erstellung des benutzerdefinierten Markertyps auf und gibt eine GUID an, die den benutzerdefinierten Markertyp identifiziert.  
   
-### <a name="to-proffer-your-marker-type-as-a-service"></a>Auf Ihrem Typ des Markers als Dienst aussprechen.  
+### <a name="to-proffer-your-marker-type-as-a-service"></a>So profferdu deinen Markertyp als Dienst  
   
-1. Rufen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> -Methode für <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
+1. Ruft die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> Methode für auf <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> .  
   
-     Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> zurückgegeben wird.  
+     Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> wird zurückgegeben.  
   
-2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> -Methode, gibt die GUID, die Ihre benutzerdefinierten Marker-typdienst erkennen und bereitstellen, einen Zeiger auf die Implementierung von der <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle. Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Implementierung sollte einen Zeiger zurückgeben, für Ihre Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> Schnittstelle.  
+2. Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> -Methode auf und gibt die GUID an, die den benutzerdefinierten markertypdienst identifiziert und einen Zeiger auf die Implementierung der- <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle bereitstellt. Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Implementierung sollte einen Zeiger auf Ihre Implementierung der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> Schnittstelle zurückgeben.  
   
-     Ein eindeutiges Cookie identifiziert werden, wird Ihr Dienst zurückgegeben werden. Sie können dieses Cookie später verwenden, widerrufen Sie Ihre benutzerdefinierten Marker-typdienst durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> Methode der <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> Schnittstelle, die die Angabe dieses Werts Cookie.  
+     Ein eindeutiges Cookie, das identifiziert, dass Ihr Dienst zurückgegeben wird. Sie können dieses Cookie später verwenden, um den benutzerdefinierten Markertyp Dienst zu widerrufen, indem Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> Methode der- <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> Schnittstelle aufrufen  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Textmarkierungen mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md)   
- [Vorgehensweise: Implementieren von Fehlermarker](../extensibility/how-to-implement-error-markers.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden von Text Markern mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Vorgehensweise: Hinzufügen von Standard Text Markern](../extensibility/how-to-add-standard-text-markers.md)   
+ [Gewusst wie: Implementieren von Fehlermarkierungen](../extensibility/how-to-implement-error-markers.md)   
  [Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)

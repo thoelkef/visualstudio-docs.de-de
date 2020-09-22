@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439696"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841153"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Exemplarische Vorgehensweise: Befehlszeilen-Profilerstellung mit Instrumentation
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer eigenständigen [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Anwendung zum Sammeln ausführlicher Daten zur Zeitsteuerung und Aufrufanzahl mithilfe der Instrumentierungsmethode der Profilerstellungstools. Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:  
@@ -33,7 +33,7 @@ Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer e
   
 - Verwenden des Tools [VSPerfReport](../profiling/vsperfreport.md) zum Erstellen dateibasierter Berichte der Profilerstellungsdaten  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Voraussetzungen  
   
 - [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
@@ -43,7 +43,7 @@ Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer e
   
 - Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)  
   
-- Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein. Weitere Informationen finden Sie unter [Vorgehensweise: Referenz-Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md).  
+- Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein. Weitere Informationen finden Sie unter Gewusst [wie: verweisen auf Windows-Symbol Informationen](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Profilerstellung über die Befehlszeile mithilfe der Instrumentierungsmethode  
  Bei der Instrumentierung handelt es sich um eine Profilerstellungsmethode, bei der speziell erstellte Versionen der Binärdateien, für die das Profil erstellt wird, Testfunktionen erhalten, die Zeitsteuerungsdaten zum Funktionseinstieg und -ende in einem instrumentierten Modul sammeln. Da diese Profilerstellungsmethode invasiver als das Sampling ist, fällt der Mehraufwand höher aus. Instrumentierte Binärdateien sind zudem größer als Binärdateien für eine Debug- oder Releaseversion und nicht für die Bereitstellung vorgesehen.  
@@ -123,9 +123,9 @@ Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer e
   
      Sie können die erstellten Berichte in einem Tabellenkalkulationsprogramm analysieren, oder Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE verwenden, um die Profilerstellungsdaten in der Datei „Report.vsp“ zu analysieren. Weitere Informationen finden Sie unter [Analysieren der durch Profilerstellungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)   
- [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)   
+ [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)   
+ [Leistungs Berichts Ansichten](../profiling/performance-report-views.md)

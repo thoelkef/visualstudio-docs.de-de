@@ -1,5 +1,6 @@
 ---
-title: Zugreifen auf lokale und Remote Daten in ClickOnce-Anwendungen | Microsoft-Dokumentation
+title: Zugreifen auf lokale & Remote Daten (ClickOnce-Apps)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746068"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810470"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.
@@ -107,6 +108,6 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 
  In den meisten Fällen ist ein direkter Zugriff auf die Datenbank nicht erforderlich, sondern der Zugriff erfolgt über eine in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geschriebene Webserveranwendung oder einen XML-Webdienst. Diese Art des Datenbankzugriffs ist häufig die beste Methode, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung über einen Webserver bereitgestellt wird. Sie können auf den als teilweise vertrauenswürdig eingestuften Server zugreifen, ohne dass die Berechtigungen der Anwendung erweitert werden müssen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Hinzufügen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+- [Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

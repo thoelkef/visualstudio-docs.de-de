@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Schnellansichten von Daten | Microsoft-Dokumentation
+title: Erstellen benutzerdefinierter Visualisierungen von Daten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,23 +24,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434895"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841184"
 ---
-# <a name="create-custom-visualizers-of-data"></a>Erstellen Sie benutzerdefinierter Schnellansichten von Daten
+# <a name="create-custom-visualizers-of-data"></a>Erstellen von benutzerdefinierten Visualisierungen von Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Schnellansichten sind Komponenten der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Debugger-Benutzeroberfläche. Ein *Schnellansicht* erstellt ein Dialogfeld oder eine andere Schnittstelle für eine Variable oder ein Objekt in einer Weise anzeigen, die für den Datentyp geeignet ist. So interpretiert zum Beispiel eine HTML-Schnellansicht eine HTML-Zeichenfolge und stellt das Ergebnis so dar, wie es in einem Browserfenster angezeigt würde, eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die in der Bitmapdatei enthaltene Grafik an. Bei einigen Schnellansichten können Sie die Daten nicht nur anzeigen lassen, sondern auch bearbeiten.  
+Visualisierungen sind Komponenten der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Debugger-Benutzeroberfläche. Eine schnell *Ansicht erstellt ein* Dialogfeld oder eine andere Schnittstelle, um eine Variable oder ein Objekt auf eine Weise anzuzeigen, die für den Datentyp geeignet ist. So interpretiert zum Beispiel eine HTML-Schnellansicht eine HTML-Zeichenfolge und stellt das Ergebnis so dar, wie es in einem Browserfenster angezeigt würde, eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die in der Bitmapdatei enthaltene Grafik an. Bei einigen Schnellansichten können Sie die Daten nicht nur anzeigen lassen, sondern auch bearbeiten.  
   
- Der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Dies sind der Text, HTML, XML und JSON-Schnellansichten, die alle auf Zeichenfolgenobjekten arbeiten. die WPF-Strukturschnellansicht zum Anzeigen der visuellen Struktur eines WPF-Objekt; sowie die Datasetschnellansicht, die für die DataView-DataSet und DataTable-Objekten funktioniert. Weitere Schnellansichten stehen möglicherweise in Zukunft zum Download von der Microsoft Corporation zur Verfügung und werden von Dritten und der Community zur Verfügung. Außerdem können Sie eigene Schnellansichten schreiben und sie im [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Debugger installieren.  
+ Der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Dies sind die Schnellansichten für Text, HTML, XML und JSON, die alle auf Zeichenfolgenobjekten basieren, der WPF Tree visualizer (WPF-Strukturschnellansicht) zum Anzeigen der visuellen Struktur eines WPF-Objekts sowie die Datasetschnellansicht, die für die Verarbeitung von DataSet-Objekten, DataView-Objekten und DataTable-Objekten zuständig ist. Weitere Schnellansichten stehen möglicherweise in Zukunft zum Download von der Microsoft Corporation zur Verfügung und werden von Dritten und der Community zur Verfügung. Außerdem können Sie eigene Schnellansichten schreiben und sie im [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Debugger installieren.  
   
 > [!NOTE]
-> In **Store** apps, die nur den Standardtext, HTML, XML und JSON-Schnellansichten werden unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
+> In **Store** -apps werden nur die standardmäßigen Text-, HTML-, XML-und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
   
- Schnellansichten werden im Debugger durch ein Lupensymbol dargestellt. Wenn Sie das Lupensymbol in sehen eine **DataTip**, in einem Debuggervariablenfenster oder in der **Schnellüberwachung** Dialogfeld klicken Sie auf das Lupensymbol, um eine dem Datentyp entsprechende Schnellansicht auszuwählen des entsprechenden Objekts.  
+ Schnellansichten werden im Debugger durch ein Lupensymbol dargestellt. Wenn das Lupensymbol in einem **DataTip**, in einem Debuggervariablenfenster oder im Dialogfeld **schnell Überwachung** angezeigt wird, können Sie auf das Lupensymbol klicken, um eine Schnellansicht auszuwählen, die dem Datentyp des entsprechenden Objekts entspricht.  
   
  Schnellansichten werden in Compact Framework nicht unterstützt.  
   
@@ -48,11 +48,11 @@ Schnellansichten sind Komponenten der [!INCLUDE[vs_current_short](../includes/vs
 > Debuggerschnellansichten erfordern umfangreichere Privilegien, als sie von einer partiell vertrauenswürdigen Anwendung zugelassen werden. Schnellansichten werden deshalb nicht geladen, wenn die Ausführung in Code mit partieller Vertrauensstellung unterbrochen wurde. Wenn Sie in einer Schnellansicht debuggen möchten, müssen Sie den Code mit voller Vertrauenswürdigkeit ausführen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)  
+ [How to: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)  
   
  [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
- [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).  
+ [How to: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).  
   
  [Vorgehensweise: Testen und Debuggen einer Schnellansicht](../debugger/how-to-test-and-debug-a-visualizer.md)  
   

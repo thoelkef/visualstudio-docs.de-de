@@ -1,5 +1,5 @@
 ---
-title: Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Gliederung in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408555"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841013"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die Gliederung zu reduzieren. In c# können z. B. alle Methoden einer einzelnen Zeile zeigt nur die Signatur der Methode reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. In einer einzelnen Methode, komplexer Logik reduziert werden kann, um den Gesamtablauf anzeigen, indem Sie nur die erste Zeile von Anweisungen wie z. B. mit `foreach`, `if`, und `while`.  
+Durch Gliederung kann ein komplexes Programm in eine Übersicht oder eine Gliederung reduziert werden. In c# können z. b. alle Methoden in eine einzelne Zeile reduziert werden, die nur die Methoden Signatur anzeigt. Außerdem können Strukturen und Klassen so reduziert werden, dass nur die Namen der Strukturen und Klassen angezeigt werden. Innerhalb einer einzelnen Methode kann eine komplexe Logik reduziert werden, um den gesamten Datenfluss anzuzeigen, indem nur die erste Zeile der Anweisungen angezeigt wird, z `foreach` `if` . b., und `while` .  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [:](../../extensibility/walkthrough-outlining.md)Gliederung.  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
-## <a name="enabling-support-for-outlining"></a>Aktivieren der Unterstützung für eine Gliederung  
- Die `AutoOutlining` Registrierungseintrags auf 1 festgelegt ist, um automatische Gliederung zu aktivieren. Automatische Gliederung richtet eine Analyse der gesamten Quelle, wenn eine Datei geladen oder geändert, um die ausgeblendeten Bereiche zu identifizieren und die Gliederung Symbole anzeigen. Gliederung kann auch manuell vom Benutzer gesteuert werden.  
+## <a name="enabling-support-for-outlining"></a>Aktivieren der Unterstützung für Gliederung  
+ Der `AutoOutlining` Registrierungs Eintrag ist auf 1 festgelegt, um die automatische Gliederung zu aktivieren. Die automatische Gliederung richtet eine Analyse der gesamten Quelle ein, wenn eine Datei geladen oder geändert wird, um ausgeblendete Bereiche zu identifizieren und die Gliederungs Symbole anzuzeigen. Die Gliederung kann auch manuell vom Benutzer gesteuert werden.  
   
- Der Wert des der `AutoOutlining` Eintrag in der Registrierung erhalten Sie über die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Eigenschaft für die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Die `AutoOutlining` Registrierungseintrag kann initialisiert werden, mit einem benannten Parameter, um die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attribut (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten).  
+ Der Wert des `AutoOutlining` Registrierungs Eintrags kann über die- <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Eigenschaft der-Klasse abgerufen werden <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . Der `AutoOutlining` Registrierungs Eintrag kann mit einem benannten Parameter für das Attribut initialisiert werden <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> (Weitere Informationen finden Sie unter [Registrieren eines Legacy sprach Dienstanbieter](../../extensibility/internals/registering-a-legacy-language-service1.md) ).  
   
-## <a name="the-hidden-region"></a>Der ausgeblendete Bereich  
- Um Gliederung zu gewährleisten, muss der Sprachdienst ausgeblendeten Bereiche unterstützen. Hierbei handelt es sich um Spannen der Text, der erweitert oder reduziert werden können. Ausgeblendete Bereiche können Standardsprache-Symbole, z. B. von geschweiften Klammern oder durch benutzerdefinierte Symbole getrennt werden. Z. B. c# verfügt über eine `#region` / `#endregion` -Paar, das einen ausgeblendeten Bereich begrenzt.  
+## <a name="the-hidden-region"></a>Der verborgene Bereich  
+ Zum Bereitstellen von Gliederung muss Ihr Sprachdienst ausgeblendete Bereiche unterstützen. Dabei handelt es sich um Textabschnitte, die erweitert oder reduziert werden können. Ausgeblendete Bereiche können durch Standardsprachen Symbole (z. b. geschweifte Klammern) oder durch benutzerdefinierte Symbole begrenzt werden. C# verfügt beispielsweise über ein paar, das einen ausgeblendeten `#region` / `#endregion` Bereich begrenzt.  
   
- Ausgeblendete Bereiche werden durch einen Manager für ausgeblendete Bereiche, die als verfügbar gemacht wird verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Schnittstelle.  
+ Ausgeblendete Bereiche werden von einem ausgeblendeten Bereichs-Manager verwaltet, der als Schnittstelle verfügbar gemacht wird <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>  
   
- Gliedern von ausgeblendeten Bereichen verwendet die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> -Schnittstelle und enthalten die Spanne des ausgeblendeten Bereichs, der derzeit sichtbaren Zustand und das Banner angezeigt werden, wenn die Spanne reduziert ist.  
+ Gliederung verwendet ausgeblendete Bereiche die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> Schnittstelle und enthält die Spanne des ausgeblendeten Bereichs, den aktuellen sichtbaren Zustand und das Banner, das angezeigt werden soll, wenn die Spanne reduziert wird.  
   
- Die sprachdienstparser verwendet die <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Methode, um einen neuen ausgeblendeten Bereich mit dem Standardverhalten für ausgeblendete Bereiche hinzuzufügen während der <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Methode können Sie das Aussehen und Verhalten der Gliederung anpassen. Nach der ausgeblendeten Bereiche, die der Sitzung des ausgeblendeten Bereichs, erteilt werden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] der ausgeblendeten Bereiche für den Sprachdienst verwaltet.  
+ Der Sprachdienst Parser verwendet die- <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Methode, um einen neuen ausgeblendeten Bereich mit dem Standardverhalten für ausgeblendete Bereiche hinzuzufügen, während die- <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Methode Ihnen ermöglicht, die Darstellung und das Verhalten der Gliederung anzupassen. Wenn ausgeblendete Bereiche der ausgeblendeten Regions Sitzung zugewiesen werden, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwaltet die ausgeblendeten Bereiche für den Sprachdienst.  
   
- Bei Bedarf, um zu bestimmen, wenn die Sitzung des ausgeblendeten Bereich zerstört wird, ein ausgeblendeter Bereich geändert wird, oder Sie müssen Sie sicherstellen, dass ein bestimmter verborgener Bereich angezeigt wird; Sie müssen leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.Source> Klasse, und überschreiben Sie die entsprechenden Methoden, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, und <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>bzw.  
+ Wenn Sie bestimmen müssen, wann die ausgeblendete Regions Sitzung zerstört wird, wird ein ausgeblendeter Bereich geändert, oder Sie müssen sicherstellen, dass ein bestimmter ausgeblendeter Bereich sichtbar ist. Sie müssen eine Klasse von der <xref:Microsoft.VisualStudio.Package.Source> -Klasse ableiten und die entsprechenden Methoden, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> , <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> und überschreiben <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> .  
   
 ### <a name="example"></a>Beispiel  
- Hier ist ein vereinfachtes Beispiel der Erstellung der ausgeblendeten Bereiche für alle Paare von geschweiften Klammern ein. Es wird davon ausgegangen, dass die Sprache bereitstellt, Zuordnung von geschweiften Klammern und geschweiften Klammern in geschweiften Klammern, um die abzugleichenden mindestens enthalten sein ({und}). Dieser Ansatz ist nur zur Veranschaulichung. Eine vollständige Implementierung hätte eine vollständige Behandlung der Fälle im <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Dieses Beispiel zeigt auch Gewusst wie: Festlegen der <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Vorrang `true` vorübergehend. Geben Sie eine Alternative ist die `AutoOutlining` benannten Parameter in der `ProvideLanguageServiceAttribute` Attribut im Language-Paket.  
+ Hier ist ein vereinfachtes Beispiel für das Erstellen ausgeblendeter Bereiche für alle Paare von geschweiften Klammern. Es wird davon ausgegangen, dass die Sprache geschweifte Klammern enthält und dass die geschweiften Klammern mindestens die geschweiften Klammern ({und}) enthalten. Diese Vorgehensweise dient nur zu Veranschaulichung. Eine vollständige Implementierung hätte eine vollständige Behandlung von Fällen in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . Außerdem wird in diesem Beispiel gezeigt, wie die-Einstellung temporär festgelegt wird <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> `true` . Eine Alternative besteht darin, den `AutoOutlining` benannten Parameter im- `ProvideLanguageServiceAttribute` Attribut in Ihrem Sprachpaket anzugeben.  
   
- In diesem Beispiel wird davon ausgegangen, c#-Regeln für Kommentare, Zeichenfolgen und Literale.  
+ In diesem Beispiel werden c#-Regeln für Kommentare, Zeichen folgen und Literale angenommen.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -119,6 +119,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Funktionen von Legacy Sprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)

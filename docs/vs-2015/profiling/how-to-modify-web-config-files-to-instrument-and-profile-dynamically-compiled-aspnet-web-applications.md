@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432614"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840935"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |**version**|**10.0.0.0**|  
     |**href**|`PathToASPNetHelperDll`|  
   
-     `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] am Standardspeicherort installiert ist, sollte der Wert **href** `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen  
+     `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] am Standardspeicherort installiert ist, sollte der Wert **href**`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen  
   
 ```  
     <configuration>  
@@ -221,6 +221,6 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Speicherdaten](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln ausführlicher Zeit Steuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
+ [Gewusst wie: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Speicherdaten](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
