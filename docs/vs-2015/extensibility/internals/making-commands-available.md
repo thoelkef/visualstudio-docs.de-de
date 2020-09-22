@@ -1,5 +1,5 @@
 ---
-title: Verfügbarmachen von Befehlen | Microsoft-Dokumentation
+title: Verfügbar machung von Befehlen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,25 +14,25 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436245"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840847"
 ---
 # <a name="making-commands-available"></a>Verfügbarmachen von Befehlen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzeroberfläche (UI) mit den Befehlen Akzente werden. Sie können das Paket, um dieses Problem lautet wie folgt zu reduzieren, Programmieren:  
+Wenn Visual Studio mehrere VSPackages hinzugefügt werden, kann die Benutzeroberfläche (UI) mit Befehlen überfüllt werden. Um dieses Problem zu beheben, können Sie das Paket wie folgt programmieren:  
   
-- Programm des Pakets, damit sie geladen wird, nur wenn ein Benutzer ist erforderlich.  
+- Program mieren Sie das Paket so, dass es nur geladen wird, wenn es von einem Benutzer benötigt wird.  
   
-- Programmieren Sie das Paket so, dass die Befehle nur angezeigt werden, wenn diese im Kontext des aktuellen Zustands der integrierten Entwicklungsumgebung (IDE) werden möglicherweise benötigt.  
+- Program mieren Sie das Paket so, dass seine Befehle nur angezeigt werden, wenn Sie im Kontext des aktuellen Status der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) erforderlich sind.  
   
 ## <a name="delayed-loading"></a>Verzögertes Laden  
- Das übliche Verfahren zum ermöglichen ist das VSPackage so entwerfen, dass die Befehle werden in der Benutzeroberfläche angezeigt, aber das Paket selbst nicht geladen werden, wird bis ein Benutzer, einen der Befehle klickt das verzögerte Laden. Erstellen Sie dazu in der VSCT-Datei Befehle, die keine Befehlsflags.  
+ Die übliche Vorgehensweise zum Aktivieren des verzögerten Ladens besteht darin, das VSPackage so zu entwerfen, dass seine Befehle in der Benutzeroberfläche angezeigt werden. das Paket selbst wird jedoch erst geladen, wenn ein Benutzer auf einen der Befehle klickt. Um dies zu erreichen, erstellen Sie in der vsct-Datei Befehle ohne Befehlsflags.  
   
- Das folgende Beispiel zeigt die Definition eines Menübefehls in einer VSCT-Datei. Dies ist der Befehl, der von der Visual Studio-Paketvorlage generiert wird bei der **Menübefehl** in der Vorlage ausgewählt ist.  
+ Das folgende Beispiel zeigt die Definition eines Menübefehls aus einer vsct-Datei. Dies ist der Befehl, der von der Visual Studio-Paket Vorlage generiert wird, wenn die **Menübefehls** Option in der Vorlage ausgewählt wird.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -46,23 +46,23 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
   
 ```  
   
- Im Beispiel wenn der übergeordneten Gruppe `MyMenuGroup`, ist ein untergeordnetes Element eines Menüs der obersten Ebene wie die **Tools** im Menü der Befehl wird auf diesem Menü angezeigt werden, aber das Paket, das der Befehl ausgeführt wird nicht geladen werden, bis der Befehl geklickt wird durch einen Benutzer. Doch durch die Programmierung des Befehls zum Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle, damit Sie das Paket geladen werden, wenn das Menü, das den Befehl enthält zunächst erweitert wird.  
+ Wenn im Beispiel die übergeordnete Gruppe,, ein untergeordnetes Element `MyMenuGroup` eines Menüs der obersten Ebene, z. b **Tools** . im Menü Extras, ist, wird der Befehl in diesem Menü angezeigt, das Paket, das den Befehl ausführt, wird jedoch erst geladen, wenn ein Benutzer auf den Befehl klickt. Wenn Sie jedoch den-Befehl zum Implementieren der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle programmieren, können Sie das Laden des Pakets aktivieren, wenn das Menü, in dem der Befehl enthalten ist, erstmalig erweitert wird.  
   
- Beachten Sie, dass das verzögertes Laden auch die startleistung verbessern kann.  
+ Beachten Sie, dass durch das verzögerte Laden auch die Startleistung verbessert werden kann.  
   
-## <a name="current-context-and-the-visibility-of-commands"></a>Aktuelle Kontext und die Sichtbarkeit von Befehlen  
- Sie können programmieren, dass VSPackage Befehle sein sichtbar oder ausgeblendet ist, abhängig vom aktuellen Zustand der VSPackage-Daten oder die Aktionen, die derzeit relevant sind. Sie können das VSPackage, um den Status der darin enthaltenen Befehle, in der Regel festgelegt werden, indem eine Implementierung von der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> Methode aus der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle, aber dies erfordert das VSPackage geladen werden, bevor sie den Code ausgeführt werden kann. Stattdessen empfehlen wir, dass Sie die IDE die Sichtbarkeit der Befehle zu verwalten, ohne das Laden des Pakets aktivieren. Ordnen Sie dazu in der VSCT-Datei eine oder mehrere spezielle Benutzeroberfläche-Kontexte Befehle. Diese Benutzeroberfläche-Kontexte werden durch eine GUID, die als bekannt identifiziert eine *Befehlskontext-GUID*.  
+## <a name="current-context-and-the-visibility-of-commands"></a>Aktueller Kontext und die Sichtbarkeit von Befehlen  
+ Sie können VSPackage-Befehle so programmieren, dass Sie sichtbar oder ausgeblendet werden, je nach dem aktuellen Zustand der VSPackage-Daten oder den aktuell relevanten Aktionen. Sie können das VSPackage aktivieren, um den Status seiner Befehle festzulegen, in der Regel mithilfe einer Implementierung der- <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> Methode aus der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. hierfür muss jedoch das VSPackage geladen werden, bevor der Code ausgeführt werden kann. Stattdessen empfiehlt es sich, die IDE zum Verwalten der Sichtbarkeit der Befehle zu aktivieren, ohne das Paket zu laden. Ordnen Sie zu diesem Zweck in der vsct-Datei Befehle einem oder mehreren speziellen UI-Kontexten zu. Diese UI-Kontexte werden durch eine GUID identifiziert, die als *Befehls Kontext-GUID*bezeichnet wird.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] überwacht die Änderungen, die sich aus Benutzeraktionen wie das Laden eines Projekts oder die Bearbeitung von Erstellen von ergeben. Wenn Änderungen auftreten, wird die Darstellung der IDE automatisch geändert. Die folgende Tabelle zeigt die vier wichtigsten Kontexte der IDE ändern, die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] überwacht.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] überwacht Änderungen, die sich aus Benutzeraktionen ergeben, z. b. das Laden eines Projekts oder das Wechseln von der Bearbeitung zum Aufbau. Wenn Änderungen auftreten, wird die Darstellung der IDE automatisch geändert. In der folgenden Tabelle sind vier wichtige Kontexte der IDE-Änderungen aufgeführt, die von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] überwacht werden.  
   
-|Typ des Kontexts|Beschreibung|  
+|Kontexttyp|BESCHREIBUNG|  
 |---------------------|-----------------|  
-|Aktive Projekttyp|Für die meisten Projekttypen dies `GUID` Wert ist identisch mit der GUID des VSPackage, die das Projekt implementiert. Allerdings [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte verwenden den Projekttyp `GUID` als Wert.|  
-|Des aktiven Fensters|In der Regel ist dies die letzte aktive Fenster, das die aktuellen UI-Kontext für tastenbindungen herstellt. Allerdings kann er auch eines Toolfensters sein, eine schlüsselbindungstabellen, die den internen Webbrowser ähnelt. Für Windows wie z. B. die HTML-Editor-Dokument mit mehreren Registerkarten jede Registerkarte verfügt über einen anderen Befehlskontext `GUID`.|  
-|Aktive Sprachdienst|Der Sprachdienst, der der Datei zugeordnet ist, die derzeit in einem Text-Editor angezeigt wird.|  
-|Aktives Toolfenster|Ein Toolfenster, das geöffnet ist und den Fokus besitzt.|  
+|Aktiver Projekttyp|Bei den meisten Projekttypen `GUID` ist dieser Wert mit der GUID des VSPackage identisch, das das Projekt implementiert. - [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte verwenden jedoch den Projekttyp `GUID` als-Wert.|  
+|Aktives Fenster|In der Regel handelt es sich hierbei um das letzte aktive Dokument Fenster, das den aktuellen UI-Kontext für Tastenbindungen festlegt. Es könnte aber auch ein Tool Fenster mit einer Schlüssel Bindungs Tabelle sein, die dem internen Webbrowser ähnelt. Für Dokument Fenster mit mehreren Registerkarten, wie z. b. den HTML-Editor, verfügt jede Registerkarte über einen anderen Befehls Kontext `GUID` .|  
+|Aktiver Sprachdienst|Der Sprachdienst, der der Datei zugeordnet ist, die derzeit in einem Text-Editor angezeigt wird.|  
+|Aktives Tool Fenster|Ein Tool Fenster, das geöffnet ist und den Fokus besitzt.|  
   
- Eine fünfte wichtigen Kontextbereich wird der Zustand der Benutzeroberfläche der IDE. Benutzeroberfläche-Kontexte werden vom aktiven Befehlskontext identifiziert `GUID`s, wie folgt:  
+ Ein fünfter Haupt Kontext Bereich ist der UI-Status der IDE. UI-Kontexte werden wie folgt durch aktive Befehls Kontexte identifiziert `GUID` :  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
@@ -86,27 +86,27 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
-  Diese GUIDs werden als aktiv oder inaktiv ist, je nach den aktuellen Zustand der IDE markiert. Mehrere UI-Kontext können gleichzeitig aktiv sein.  
+  Diese GUIDs werden je nach dem aktuellen Status der IDE als aktiv oder inaktiv gekennzeichnet. Mehrere UI-Kontexte können gleichzeitig aktiv sein.  
   
-### <a name="hiding-and-displaying-commands-based-on-context"></a>Ausblenden und Anzeigen der Befehle, die anhand des Kontexts  
- Sie können ein- oder Ausblenden von einem paketbefehl in der IDE ohne Laden des Pakets selbst. Zu diesem Zweck definieren Sie den Befehl in der VSCT-Datei des Pakets mithilfe der `DefaultDisabled`, `DefaultInvisible`, und `DynamicVisibility` Befehl Flags und Hinzufügen einer oder mehrerer [VisibilityItem](../../extensibility/visibilityitem-element.md) Elementen, die die [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) Abschnitt. Wenn eine angegebene Befehlskontext `GUID` wird aktiv ist, wird der Befehl ohne das Laden des Pakets angezeigt.  
+### <a name="hiding-and-displaying-commands-based-on-context"></a>Ausblenden und Anzeigen von Befehlen auf der Grundlage des Kontexts  
+ Sie können einen Paket Befehl in der IDE anzeigen oder ausblenden, ohne das Paket selbst zu laden. Zu diesem Zweck definieren Sie den Befehl in der vsct-Datei des Pakets, indem Sie die `DefaultDisabled` `DefaultInvisible` -,-und- `DynamicVisibility` Befehlsflags verwenden und dem Abschnitt " [visibilityeinschränkungs](../../extensibility/visibilityconstraints-element.md) " mindestens ein [visibilityitem](../../extensibility/visibilityitem-element.md) -Element hinzufügen. Wenn ein angegebener Befehls Kontext `GUID` aktiv wird, wird der Befehl angezeigt, ohne das Paket zu laden.  
   
-### <a name="custom-context-guids"></a>Benutzerdefinierten Kontext-GUIDs  
- Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, können Sie eine solche im VSPackage definieren, und klicken Sie dann Programmieren zu aktiven oder inaktiven nach Bedarf, um die Sichtbarkeit Ihrer Befehle zu steuern. Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> -Dienst:  
+### <a name="custom-context-guids"></a>Benutzerdefinierte Kontext-GUIDs  
+ Wenn noch keine geeignete Befehls Kontext-GUID definiert ist, können Sie eine in Ihrem VSPackage definieren und diese dann so programmieren, dass Sie je nach Bedarf aktiv oder inaktiv ist, um die Sichtbarkeit der Befehle zu steuern. Verwenden Sie den- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> Dienst für Folgendes:  
   
-- Registrieren Sie die Kontext-GUIDs (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
+- Registrieren Sie Kontext-GUIDs (durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
   
-- Abrufen des Status eines Kontexts `GUID` (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode).  
+- Rufen Sie den Zustand eines Kontexts `GUID` (durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode) ab.  
   
-- Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
+- Aktivieren `GUID` und Deaktivieren von Kontext-s (durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
   
     > [!CAUTION]
-    > Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  
+    > Stellen Sie sicher, dass sich das VSPackage nicht auf den Status einer vorhandenen Kontext-GUID auswirkt, da andere VSPackages von Ihnen abhängig sein können.  
   
 ## <a name="example"></a>Beispiel  
- Ein VSPackage-Befehl im folgende Beispiel wird veranschaulicht, die dynamische Sichtbarkeit eines Befehls, der von befehlskontexte verwaltet wird, ohne dass das VSPackage geladen wird.  
+ Das folgende Beispiel für einen VSPackage-Befehl veranschaulicht die dynamische Sichtbarkeit eines Befehls, der von Befehls Kontexten verwaltet wird, ohne das VSPackage zu laden.  
   
- Der Befehl festgelegt ist, werden aktiviert, und dann angezeigt, wenn eine Projektmappe vorhanden ist; Das heißt, jedes Mal, wenn eine der folgenden Befehlskontext GUIDs aktiv ist:  
+ Der Befehl ist so festgelegt, dass er aktiviert und angezeigt wird, wenn eine Projekt Mappe vorhanden ist Das heißt, wenn eine der folgenden Befehls Kontext-GUIDs aktiv ist:  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
@@ -114,7 +114,7 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
-  Im Beispiel beachten Sie, dass jede Befehlsflag ein separates [Befehlsflag](../../extensibility/command-flag-element.md) Element.  
+  Beachten Sie im Beispiel, dass jedes Befehlsflag ein separates [Befehlsflag](../../extensibility/command-flag-element.md) -Element ist.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   
@@ -132,7 +132,7 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
   
 ```  
   
- Beachten Sie auch, mit dem alle UI-Kontext in einer separaten muss `VisibilityItem` -Element wie folgt.  
+ Beachten Sie auch, dass jeder Benutzeroberflächen Kontext wie folgt in einem separaten Element angegeben werden muss `VisibilityItem` .  
   
 ```xml  
 <VisibilityConstraints>  
@@ -146,8 +146,8 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [MenuCommands im Vergleich zu OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [MenuCommands im Vergleich zu olemenucommands](../../misc/menucommands-vs-olemenucommands.md)   
+ [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Befehls Routing in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Dynamisches Hinzufügen von Menüelementen](../../extensibility/dynamically-adding-menu-items.md)

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Syntaxfarben | Microsoft-Dokumentation
+title: Implementieren von Syntax Farben | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,59 +13,59 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447277"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840997"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array der kolorierbaren Elemente, und gibt die Typen von Sicherheitstoken für diese kolorierbaren Elemente zurück. Der Parser sollte Tokentypen zurückgeben, die eine Liste der kolorierbaren Elemente angehören. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zeigt jede kolorierbaren Elements im Code-Fenster gemäß der Attribute, die von der Farbauswahl-Objekt zugeordnet wird, dem entsprechenden Tokentyp an.  
+Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert der Parser eine Textzeile in ein Array von kolorierbaren Elementen und gibt Tokentypen zurück, die diesen färb baren Elementen entsprechen. Der Parser sollte Tokentypen zurückgeben, die zu einer Liste von kolatable-Elementen gehören. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zeigt jedes kolorierbare Element im Code Fenster entsprechend der Attribute an, die vom Farb Zeichenfolgenobjekt dem entsprechenden Tokentyp zugewiesen werden.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gibt keine Parser-Schnittstelle, und der Parser-Implementierung steht Ihnen völlig frei. Allerdings wird eine Standardimplementierung der Parser in das Sprachpaket für Visual Studio-Projekt bereitgestellt. Für verwalteten Code bietet das managed Package Framework (MPF) vollständige Unterstützung für die farbliche Kennzeichnung von Text an.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gibt keine parserschnittstelle an, und die Parser-Implementierung ist vollständig für Sie festgelegt. Im Visual Studio-Sprachpaket Projekt wird jedoch eine standardmäßige Parser-Implementierung bereitgestellt. Bei verwaltetem Code bietet das Managed Package Framework (MPF) vollständige Unterstützung für die Farbgebung von Text.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren von Syntaxfarben finden Sie unter [Exemplarische Vorgehensweise: Markieren von Text](../../extensibility/walkthrough-highlighting-text.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren von Syntax Farben finden Sie unter Exemplarische Vorgehensweise [: Markieren von Text](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
-## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Schritte, gefolgt von einem Editor zum farbigen Anzeigen von Text  
+## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Schritte, gefolgt von einem Editor zum Einfärben von Text  
   
-1. Der Editor Ruft die Farbauswahl durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.  
+1. Der Editor Ruft die Farbgebung durch Aufrufen der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode für das- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt ab.  
   
-2. Der Editor Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Methode, um zu bestimmen, ob die Farbauswahl Zustand jeder Zeile außerhalb der Farbauswahl beibehalten werden soll.  
+2. Der Editor Ruft die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Methode auf, um zu bestimmen, ob die Farbgebung den Zustand der einzelnen Zeilen außerhalb der Farbgebung beibehalten muss.  
   
-3. Die Farbauswahl den Status außerhalb der Farbauswahl beibehalten werden benötigt, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> Methode, um den Zustand der ersten Zeile abzurufen.  
+3. Wenn die Farbgebung erfordert, dass der Zustand außerhalb der Farbgebung beibehalten wird, ruft der Editor die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> Methode auf, um den Zustand der ersten Zeile zu erhalten.  
   
-4. Für jede Zeile im Puffer, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> -Methode, die die folgenden Schritte ausführt:  
+4. Für jede Zeile im Puffer ruft der Editor die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode auf, die die folgenden Schritte ausführt:  
   
-    1. Die Zeile des Texts wird an einen Scanner so konvertieren Sie den Text in Token übergeben. Jedes Token gibt an, die token-Text und der Typ des Sicherheitstokens.  
+    1. Die Textzeile wird an einen Scanner übermittelt, um den Text in Token zu konvertieren. Jedes Token gibt den Tokentext und den Tokentyp an.  
   
-    2. Der Tokentyp wird in einen Index in eine Liste der kolorierbaren Elemente konvertiert.  
+    2. Der Tokentyp wird in einen Index in eine Liste der färb baren Elemente konvertiert.  
   
-    3. Die token Informationen werden verwendet, um in einem Array zu füllen, sodass jedes Element des Arrays in ein Zeichen in der Zeile entspricht. Die Werte im Array gespeichert sind, die Indizes in der Liste der kolorierbaren Elemente.  
+    3. Die Tokeninformationen werden verwendet, um ein Array so auszufüllen, dass jedes Element des Arrays einem Zeichen in der Zeile entspricht. Die im Array gespeicherten Werte sind die Indizes in der Liste der färb baren Elemente.  
   
-    4. Für jede Zeile wird der Zustand am Ende der Zeile zurückgegeben.  
+    4. Der Status am Ende der Zeile wird für jede Zeile zurückgegeben.  
   
-5. Wenn die Farbauswahl den Zustand verwaltet werden, erforderlich sind, werden der Editor den Zustand für diese Zeile zwischengespeichert.  
+5. Wenn die Farbgebung erfordert, dass der Zustand beibehalten wird, speichert der Editor den Zustand für diese Zeile zwischen.  
   
-6. Der Editor rendert die Textzeile, die mit den Informationen zurückgegeben, die von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode. Gehen Sie dazu folgendermaßen vor:  
+6. Der Editor rendert die Textzeile mithilfe der Informationen, die von der-Methode zurückgegeben werden <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> . Gehen Sie dazu folgendermaßen vor:  
   
-    1. Erhalten Sie für jedes Zeichen in der Zeile den Index des kolorierbaren Elements.  
+    1. Für jedes Zeichen in der Zeile wird der kolapable Item Index angezeigt.  
   
-    2. Wenn Sie die standardmäßige kolorierbaren Elemente verwenden zu können, Zugriff auf der Editorliste kolorierbaren Elemente.  
+    2. Wenn Sie die standardmäßigen Kolon-Elemente verwenden, greifen Sie auf die Liste der kolaktivierbaren Elemente des Editors zu  
   
-    3. Rufen Sie andernfalls des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Methode, um ein färbbares Element abzurufen.  
+    3. Rufen Sie andernfalls die-Methode des sprach dienstanders <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> auf, um ein kolfärb bares Element abzurufen.  
   
-    4. Verwenden Sie die Informationen in das kolorierbare Element, mit der Text in der Anzeige gerendert.  
+    4. Verwenden Sie die Informationen im Kolb baren Element, um den Text in der Anzeige zu erzeugen.  
   
-## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Farbauswahl  
- Das managed Package Framework (MPF) stellt alle Klassen, die erforderlich sind, um eine Farbauswahl zu implementieren. Sprachdienstklasse sollten erben die <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse und die erforderlichen Methoden zu implementieren. Sie müssen einen Scanner und Parser angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle und eine Instanz dieser Schnittstelle vom Zurückgeben der <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode (eine der Methoden, die in implementiert werden müssen die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse). Weitere Informationen finden Sie unter [einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
+## <a name="managed-package-framework-colorizer"></a>Farbauswahl für Managed Package Framework  
+ Das Managed Package Framework (MPF) stellt alle Klassen bereit, die erforderlich sind, um eine Farbgebung zu implementieren. Ihre Sprachdienst Klasse sollte die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse erben und die erforderlichen Methoden implementieren. Sie müssen einen Scanner und einen Parser angeben, indem Sie die <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle implementieren und eine Instanz dieser Schnittstelle von der-Methode zurückgeben <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (eine der Methoden, die in der-Klasse implementiert werden müssen <xref:Microsoft.VisualStudio.Package.LanguageService> ). Weitere Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
- [Benutzerdefinierte kolorierbare Elemente](../../extensibility/internals/custom-colorable-items.md)   
- [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Verwenden integrierter, Färb baren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Benutzerdefinierte färb Bare Elemente](../../extensibility/internals/custom-colorable-items.md)   
+ [Entwickeln eines Legacy sprach Dienstanbieter](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

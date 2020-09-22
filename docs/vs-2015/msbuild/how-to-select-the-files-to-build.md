@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437908"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840840"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
+# <a name="how-to-select-the-files-to-build"></a>Gewusst wie: Auswählen von Dateien für den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.  
@@ -172,6 +172,6 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Ausschließen von Dateien aus dem Build](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Elemente](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_platform | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_Platform | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c44603a767903e71103107fab6f8f041e7946902
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64783608"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840872"
 ---
-# <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
+# <a name="idiasymbolget_platform"></a>IDiaSymbol::get_platform
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ab den Plattformtyp aus, für den der Kompiliereinheit kompiliert wurde.  
+Ruft den Plattformtyp ab, für den kompiliert wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,14 +35,14 @@ HRESULT get_platform ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) -Enumeration, die die Plattform angibt, geben Sie für die der Kompiliereinheit kompiliert wurde.  
+ vorgenommen Gibt einen Wert aus der [CV_CPU_TYPE_e Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) zurück, der den Plattformtyp angibt, für den kompiliert wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md)

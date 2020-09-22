@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thunkordinal | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_thunkOrdinal | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 540eb49b215d06127a47df1defc436a0a307aa6d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784292"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840874"
 ---
-# <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
+# <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Thunk-Typ, der eine Funktion ab.  
+Ruft den Thunk-Typ einer Funktion ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,20 +35,20 @@ HRESULT get_thunkOrdinal ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert aus der [THUNK_ORDINAL-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md) -Enumeration, die den Thunk-Typ, der eine Funktion angibt.  
+ vorgenommen Gibt einen Wert aus der [THUNK_ORDINAL Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md) zurück, der den THUNK-Typ einer Funktion angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft gilt nur, wenn das Symbol als ein [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Wert `SymTagThunk`.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Eigenschaft ist nur gültig, wenn das Symbol als [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationswert von verwendet wird `SymTagThunk` .  
   
- Ein "Thunk" ist ein Codeabschnitt, der einen 16-Bit-Adressraum (als einen segmentierten Adressraum bezeichnet) bis ein Arbeitsspeicher von 32-Bit-Adressraum (auch bekannt als flache Adressraum) konvertiert.  
+ Ein "Thunk" ist ein Code Ausschnitt, der zwischen einem 32-Bit-Speicher Adressraum (auch als flataddress-Raum bezeichnet) und einem 16-Bit-Adressraum (als segmentierter Adressraum bezeichnet) konvertiert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [THUNK_ORDINAL-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

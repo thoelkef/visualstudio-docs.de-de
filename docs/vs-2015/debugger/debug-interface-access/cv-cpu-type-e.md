@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444476"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840889"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Zielprozessor.  
+Gibt den Zielprozessor an.  
   
 > [!NOTE]
-> Der Prozessor wird identifiziert, in das Enumerationselement, nach der `CV_CFL_*` Präfix.  
+> Der Prozessor wird im Enumerationselement nach dem `CV_CFL_*` Präfix identifiziert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -97,12 +97,12 @@ typedef enum CV_CPU_TYPE_e { 
 } CV_CPU_TYPE_e;  
 ```  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte in dieser Enumeration werden von einem Rückruf der [idiasymmetribol:: get_Platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

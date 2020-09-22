@@ -1,5 +1,5 @@
 ---
-title: Word-Abschluss in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Wortvervollständigung in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8b4449a30119d925b167213141c3ba577ce42609
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439889"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841005"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wortvervollständigung füllt das fehlenden Zeichen in eine teilweise eingegebenen Wort. Wenn nur eine mögliche abgeschlossen ist, ist das Wort abgeschlossen, wenn das Abschluss Zeichen eingegeben wird. Wenn die Wortteil mehr als eine Möglichkeit übereinstimmt, wird eine Liste der möglichen vervollständigungen angezeigt. Ein Vervollständigungszeichen kann es sich um eine beliebige Zeichen handeln, die nicht für Bezeichner verwendet wird.  
+Die Wortvervollständigung füllt die fehlenden Zeichen für ein teilweise typisiertes Wort aus. Wenn nur ein möglicher Abschluss vorhanden ist, wird das Wort abgeschlossen, wenn das Abschluss Zeichen eingegeben wird. Wenn das partielle Wort mit mehr als einer Möglichkeit übereinstimmt, wird eine Liste der möglichen Vervollständigungen angezeigt. Bei einem Abschluss Zeichen kann es sich um ein beliebiges Zeichen handeln, das nicht für Bezeichner verwendet wird.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
-## <a name="implementation-steps"></a>Implementierungsschritte  
+## <a name="implementation-steps"></a>Implementierungs Schritte  
   
-1. Wenn der Benutzer auswählt **Wort vervollständigen** aus der **IntelliSense** im Menü der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl gesendet wird, auf den Sprachdienst.  
+1. Wenn der Benutzer im **IntelliSense** -Menü die Option **Wort vervollständigen** <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> auswählt, wird der Befehl an den Sprachdienst gesendet.  
   
-2. Die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse fängt die Befehls- und Aufrufe der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. Die <xref:Microsoft.VisualStudio.Package.ViewFilter> -Klasse fängt den Befehl ab und ruft die- <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode mit der Analyse Ursache von auf <xref:Microsoft.VisualStudio.Package.ParseReason> .  
   
-3. Die <xref:Microsoft.VisualStudio.Package.Source> -Klasse anschließend ruft der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode zum Abrufen der Liste der möglichen Word vervollständigungen und zeigt dann, die die Wörter in einer QuickInfo Liste mit den <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse.  
+3. Die <xref:Microsoft.VisualStudio.Package.Source> -Klasse ruft dann die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode auf, um die Liste der möglichen Wort Vervollständigungen zu erhalten, und zeigt dann die Wörter in einer QuickInfo-Liste mithilfe der- <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse an.  
   
-    Es ist nur ein Wort nach übereinstimmendes und die <xref:Microsoft.VisualStudio.Package.Source> -Klasse abgeschlossen, wird das Wort.  
+    Wenn nur ein Wort übereinstimmt, schließt die <xref:Microsoft.VisualStudio.Package.Source> Klasse das Wort ab.  
   
-   Alternativ, wenn die Überprüfung der Triggerwert zurückgegeben wird <xref:Microsoft.VisualStudio.Package.TokenTriggers> , wenn das erste Zeichen eines Bezeichners typisiert ist, die <xref:Microsoft.VisualStudio.Package.Source> -Klasse erkennt dies und ruft die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>. In diesem Fall muss der Parser erkennen, ob ein Member-Auswahl-Zeichen vorhanden, und geben Sie eine Liste von Elementen.  
+   Wenn der Scanner den Wert des Auslösers zurückgibt <xref:Microsoft.VisualStudio.Package.TokenTriggers> , wenn das erste Zeichen eines Bezeichners eingegeben wird, <xref:Microsoft.VisualStudio.Package.Source> erkennt die Klasse dies, und ruft die- <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode mit der Analyse Grund von auf <xref:Microsoft.VisualStudio.Package.ParseReason> . In diesem Fall muss der Parser das vorhanden sein eines Elementauswahl Zeichens erkennen und eine Liste von Membern bereitstellen.  
   
-## <a name="enabling-support-for-the-complete-word"></a>Aktivieren der Unterstützung für das vollständige Wort  
- Aktivieren der Unterstützung für Word Vervollständigungssatz der `CodeSense` benannter Parameter, die an die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Benutzerattribut das Language Pack zugeordnet. Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Eigenschaft für die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
+## <a name="enabling-support-for-the-complete-word"></a>Aktivieren der Unterstützung für das Wort "Complete"  
+ Um die Unterstützung für die Wortvervollständigung zu aktivieren, wird der `CodeSense` benannte Parameter an das Benutzer Attribut übergeben, das <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> dem Sprachpaket zugeordnet ist. Dadurch wird die- <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Eigenschaft für die-Klasse festgelegt <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .  
   
- Der Parser muss eine Liste der Deklarationen zurückgeben, als Reaktion auf den ursachenwert Analyse <xref:Microsoft.VisualStudio.Package.ParseReason>, für wortvervollständigung ausgeführt werden.  
+ Der Parser muss eine Liste von Deklarationen als Reaktion auf den Wert der analysieren-Ursache zurückgeben <xref:Microsoft.VisualStudio.Package.ParseReason> , damit die Wortvervollständigung ausgeführt werden kann.  
   
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementieren in der Methode ParseSource Wort vervollständigen  
- Für wortvervollständigung die <xref:Microsoft.VisualStudio.Package.Source> -Klasse ruft die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> Methode für die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse zum Abrufen einer Liste der möglichen Wort übereinstimmt. Sie müssen die Liste implementieren, in eine abgeleitete Klasse, aus der <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Finden Sie unter den <xref:Microsoft.VisualStudio.Package.Declarations> -Klasse Weitere Informationen zu den Methoden, die Sie implementieren müssen.  
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementieren von Complete Word in der Methode "Parser ource"  
+ Für die Wortvervollständigung <xref:Microsoft.VisualStudio.Package.Source> Ruft die-Klasse die- <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> Methode für die- <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse auf, um eine Liste möglicher Wort Übereinstimmungen abzurufen. Sie müssen die Liste in einer Klasse implementieren, die von der- <xref:Microsoft.VisualStudio.Package.Declarations> Klasse abgeleitet wird. Weitere <xref:Microsoft.VisualStudio.Package.Declarations> Informationen zu den Methoden, die Sie implementieren müssen, finden Sie in der-Klasse.  
   
- Wenn die Liste nur ein einzelnes Wort, enthält die <xref:Microsoft.VisualStudio.Package.Source> Klasse fügt automatisch das Wort anstelle der partiellen Worts. Wenn die Liste mehr als ein Wort, enthält die <xref:Microsoft.VisualStudio.Package.Source> -Klasse stellt einen Tipp-Toolliste in dem der Benutzer die richtige Wahl auswählen kann.  
+ Wenn die Liste nur ein einzelnes Wort enthält, fügt die <xref:Microsoft.VisualStudio.Package.Source> Klasse dieses Wort anstelle des partiellen Worts automatisch ein. Wenn die Liste mehr als ein Wort enthält, zeigt die Klasse eine QuickInfo- <xref:Microsoft.VisualStudio.Package.Source> Liste an, aus der der Benutzer die geeignete Auswahl treffen kann.  
   
- Betrachten Sie das Beispiel auch eine <xref:Microsoft.VisualStudio.Package.Declarations> -klassenimplementierung in [Membervervollständigung in einem Legacysprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
+ Sehen Sie sich auch das Beispiel einer <xref:Microsoft.VisualStudio.Package.Declarations> Klassen Implementierung in der Element [Vervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)an.

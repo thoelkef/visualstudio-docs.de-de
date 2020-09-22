@@ -13,34 +13,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799503"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840991"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Vorgehensweise: Suchen eines Prozesses in der Prozessansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können mithilfe der Prozess-ID oder ein Modul Zeichenfolge als Suchkriterium für einen bestimmten Prozess in der Prozessansicht suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld zeigt die Attribute des ausgewählten Prozess in der Struktur verarbeiten.  
+Sie können in der Prozessansicht nach einem bestimmten Prozess suchen, indem Sie die Prozess-ID oder die Modulzeichenfolge als Suchkriterium verwenden. Sie können auch die anfängliche Richtung der Suche angeben. In den Feldern im Dialogfeld werden die Attribute des ausgewählten Prozesses in der Prozessstruktur angezeigt.  
   
-### <a name="to-search-for-a-process-in-processes-view"></a>Suchen Sie für einen Prozess in der Prozessansicht  
+### <a name="to-search-for-a-process-in-processes-view"></a>So suchen Sie einen Prozess in der Prozessansicht  
   
-1. Ordnen Sie die Fenster also, Spy++ und ein aktiver [Prozessansicht](../debugger/processes-view.md) Fenster sichtbar sind.  
+1. Ordnen Sie die Fenster so an, dass Spy++ und ein aktives [Prozessansichtsfenster](../debugger/processes-view.md) sichtbar sind.  
   
-2. Von der **Suche** Menü wählen **Prozess suchen**  
+2. Wählen Sie im Menü **Suchen** die Option **Prozess suchen** aus.  
   
-    Die [verarbeiten suchen (Dialogfeld)](../debugger/process-search-dialog-box.md) wird geöffnet.  
+    Das [Dialogfeld „Prozesssuche“](../debugger/process-search-dialog-box.md) wird geöffnet.  
   
-3. Geben Sie die Prozess-ID oder eine Modulzeichenfolge als Suchkriterium an.  
+3. Geben Sie die Prozess-ID oder eine Modulzeichenfolge als Suchkriterium ein.  
   
-4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
+4. Deaktivieren Sie alle Felder, für die Sie keine Werte angeben möchten.  
   
    > [!TIP]
-   > Um alle Prozesse, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Prozess** und geben Sie den Namen des Moduls in die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Prozesse, die Suche fortgesetzt werden.  
+   > Um alle Prozesse zu suchen, die sich im Besitz eines Moduls befinden, deaktivieren Sie das Feld **Prozess**, und geben Sie im Feld **Modul** den Modulnamen ein. Verwenden Sie dann **Weitersuchen**, um mit der Suche nach Prozessen fortzufahren.  
   
-5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
+5. Sie können auch **Nach oben** oder **Nach unten** als anfängliche Suchrichtung angeben.  
   
 6. Klicken Sie auf **OK**.  
   
-   Wenn ein entsprechender Prozess gefunden wird, ist die Hervorhebung der **Prozessansicht** Fenster.
+   Wenn ein übereinstimmender Prozess gefunden wird, wird er im **Prozessansichtsfenster** hervorgehoben.

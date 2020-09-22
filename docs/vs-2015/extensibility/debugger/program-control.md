@@ -1,5 +1,5 @@
 ---
-title: Die Programmsteuerung | Microsoft-Dokumentation
+title: Programmsteuerung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8102bc488d5c74f751fb93584016aa6904fbe2d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438085"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841001"
 ---
 # <a name="program-control"></a>Programmsteuerung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Treten in Visual Studio debuggen, die alle der folgenden schrittweises Durchlaufen und Fortsetzen von Routinen auf Programmebene:  
+Beim Debuggen in Visual Studio erfolgen alle folgenden Schritt-und fortsetzenden Routinen auf der Programmebene:  
   
-- Festlegen der nächsten Anweisung an, festlegen den Computer, also, auf die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden soll  
+- Festlegen der nächsten Anweisung, d. h. Festlegen des Computers auf die nächste Anweisung, die in einer bestimmten Frame Umgebung ausgeführt werden soll  
   
-- Ausgeführt, d. h. weiterhin im schrittweisen Modus beenden  
+- Ausführen von, d. h. fortsetzen des Fortschritt Modus  
   
-- Schrittweises durchlaufen für die nächste Anweisung  
+- Schritt der nächsten Anweisung  
   
-- Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen  
+- Fortfahren mit dem aktuellen Schritt Modus  
   
-- Anhalten von Threads enthalten, die von der Anwendung  
+- Anhalten der im Programm enthaltenen Threads  
   
-- Fortsetzen von Threads enthalten, die von der Anwendung  
+- Fortsetzen der im Programm enthaltenen Threads  
   
 > [!NOTE]
-> Anzeigen der Aufrufliste wird auf der Threadebene implementiert. Sie müssen zum Aufzählen der Frame-Informationen beim Anzeigen der Aufrufliste für einen Thread alle Methoden implementieren die [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Schnittstelle.  
+> Das Anzeigen der-aufrufsstapel ist auf Thread Ebene implementiert. Um die Frame Informationen beim Anzeigen der-aufrufsstapel für einen Thread aufzulisten, müssen Sie alle Methoden der [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle implementieren.  
   
 ## <a name="methods-of-program-control"></a>Methoden der Programmsteuerung  
- Die folgende Tabelle zeigt die Methoden der [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , die für eine minimale funktionale Debug-Engine (DE) und Steuerung der Ausführung implementiert werden muss.  
+ In der folgenden Tabelle sind die Methoden von [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) aufgeführt, die für eine minimal funktionale Debug-Engine (de) und die Ausführungs Steuerung implementiert werden müssen.  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Weiterhin die Ausführung aller Threads, die von einem Programm aus dem Status "beendet" enthalten. Für die Steuerung der Ausführung erforderlich.|  
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Weiterhin die Ausführung aller Threads, die von einem Programm aus dem Status "beendet" enthalten. Für die Steuerung der Ausführung erforderlich.|  
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Führt Schritt für den angegebenen Thread an. Wird weiter ausgeführt alle anderen Threads, die von der Anwendung enthalten sind. Für die Steuerung der Ausführung erforderlich.|  
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Setzt die Ausführung aller Threads in einem Programm in einem beendeten Zustand fort. Erforderlich für die Ausführungs Steuerung.|  
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Setzt die Ausführung aller Threads in einem Programm in einem beendeten Zustand fort. Erforderlich für die Ausführungs Steuerung.|  
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Führt einen Schritt für den angegebenen Thread aus. Setzt die Ausführung aller anderen im Programm enthaltenen Threads fort. Erforderlich für die Ausführungs Steuerung.|  
   
- Für Multithreadprogramme, müssen Sie auch implementieren die [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) -Methode und alle Methoden der [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) Schnittstelle.  
+ Für Multithreadprogramme müssen Sie auch die [IDebugProgram2:: enumthreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) -Methode und alle Methoden der [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) -Schnittstelle implementieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Ausführungssteuerung und Zustandsauswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

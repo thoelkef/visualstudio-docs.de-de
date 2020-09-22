@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Microsoft-Dokumentation
+title: 'IDebugCoreServer3:: getserverfriendlyname | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa81daf7ab1d592e6a2cd460268e5d66925f61e1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445269"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840915"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft einen Anzeigenamen für den Server ab.  
+Ruft einen anzeigen Amen für den Server ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,19 +40,19 @@ int GetServerFriendlyName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Gibt einen Anzeigenamen für den Server zurück.  
+ vorgenommen Gibt einen anzeigen Amen für den Server zurück.  
   
 > [!NOTE]
-> Der Aufrufer ist verantwortlich für das Freigeben der Zeichenfolge.  
+> Der Aufrufer ist für das Freigeben der Zeichenfolge verantwortlich.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Für Benutzer-gestartet-Server ist der Name, der von dieser Methode zurückgegebene den vollständigen Namen des Servers. Bei Servern automatisch gestartet werden ist der Name des Computers an den Server ausgeführt wird, auf.  
+## <a name="remarks"></a>Bemerkungen  
+ Für vom Benutzer gestartete Server ist der Name, der von dieser Methode zurückgegeben wird, der vollständige Name des Servers. Für automatisch gestartete Server ist der Name der Name des Computers, auf dem der Server ausgeführt wird.  
   
- Rufen Sie für den Namen der Computer-orientierten der [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) Methode.  
+ Wenn Sie einen Computer orientierten Namen haben, müssen Sie die [getServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) -Methode aufrufen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anfügen und Trennen eines Profilers an einen laufenden Prozess | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers an einen laufenden Prozess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443709"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841042"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen und Trennen eines Profilers an einen laufenden Prozess
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers an einen laufenden Prozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu werden oder um von ihm getrennt zu werden, damit das Sampling und Sammeln von Leistungsdaten vereinfacht wird. Sie können diese Methode zum Erstellen eines Profils verwenden, wenn Sie das Sammeln von Daten über Anwendungsladezeiten vermeiden wollen oder nachdem es einen bestimmten Zustand erreicht hat.  
@@ -40,13 +40,13 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
 - Zugriff zur Profilerstellung für alle Benutzer verweigern.  
   
-  Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Weitere Informationen finden Sie unter [Profilerstellung und Windows Vista-Sicherheit](../profiling/profiling-and-windows-vista-security.md) sowie in den Admin-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>So fügen Sie einen Profiler an einen laufenden Prozess an  
   
 1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
-     \- oder –  
+     \- oder -  
   
      Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Anfügen/Trennen**.  
   
@@ -54,13 +54,13 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
 2. Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.  
   
-3. Klicken Sie auf **Anfügen**.  
+3. Klicken Sie auf **Anfügen**aus.  
   
 ### <a name="to-detach-from-a-running-process"></a>So trennen Sie den Profiler von einem laufenden Prozess  
   
 1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
-     \- oder –  
+     \- oder -  
   
      Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Anfügen/Trennen**.  
   
@@ -70,9 +70,9 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
 3. Klicken Sie auf **Trennen**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)   
- [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)   
+ [Gewusst wie: starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

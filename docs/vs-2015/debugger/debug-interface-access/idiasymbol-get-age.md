@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_age | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_age | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806672"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841056"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Age-Wert, der eine PDB-Datei ab.  
+Ruft den Alters Wert einer PDB-Datei ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,23 +35,23 @@ HRESULT get_age ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Age-Wert, der eine PDB-Datei.  
+ vorgenommen Gibt den Alters Wert einer PDB-Datei zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der- `S_FALSE` oder-Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Das Alter entspricht nicht unbedingt alle bekannten Zeitwert; Es wird normalerweise verwendet, um festzustellen, ob eine PDB-Datei mit einer entsprechenden .exe-Datei synchron sind.  
+## <a name="remarks"></a>Bemerkungen  
+ Das Alter entspricht nicht notwendigerweise einem bekannten Uhrzeitwert. Sie wird in der Regel verwendet, um zu bestimmen, ob eine PDB-Datei mit einer entsprechenden exe-Datei nicht synchronisiert ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

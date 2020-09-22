@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726cea8b2e81c53b5f3fff963357946f26b199f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438226"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840970"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63438226"
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.  
   
 > [!NOTE]
-> In **Store** apps, die nur den Standardtext, HTML, XML und JSON-Schnellansichten werden unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
+> In **Store** -apps werden nur die standardmäßigen Text-, HTML-, XML-und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
   
 ### <a name="to-install-a-visualizer"></a>So installieren Sie eine Schnellansicht  
   
@@ -50,6 +50,6 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
   
 4. Starten Sie die Debugsitzung neu.  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von benutzerdefinierten Visualisierungen](../debugger/create-custom-visualizers-of-data.md)   
+ [How to: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)

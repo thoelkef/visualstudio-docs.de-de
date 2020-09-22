@@ -1,5 +1,5 @@
 ---
-title: Überwachen und Schnellüberwachung Windows | Microsoft-Dokumentation
+title: Fenster "Überwachung" und "schnell Überwachung" | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,16 +25,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444227"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840838"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Fenster "Überwachen" und "Schnellüberwachung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die **sehen Sie sich** (**Debuggen / Windows / überwachen / überwachen (1, 2, 3, 4)**) und **Schnellüberwachung** (mit der rechten Maustaste auf die Variable / **Debuggen / Schnellüberwachung**) Windows Variablen und Ausdrücke während einer Debugsitzung zu überwachen.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable.  
+Sie können die **Überwachungs** Fenster (**Debuggen/Windows/Überwachung/Überwachung (1, 2, 3, 4)**) und **schnell Überwachung** (mit der rechten Maustaste auf Variable/ **Debug/quickwatch**) verwenden, um Variablen und Ausdrücke während einer Debugsitzung zu beobachten.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Beobachten einer einzelnen Variable im Fenster "Schnellüberwachung"  
  Sie können das Fenster **Schnellüberwachung** verwenden, um eine einzelne Variable zu beobachten. Wenn Ihr Code beispielsweise folgendermaßen lautet:  
@@ -89,7 +89,7 @@ static void Main(string[] args)
   
 1. Legen Sie einen Haltepunkt in der Zeile `c = a + b;` fest.  
   
-2. Starten Sie das Debugging (**F5**). Die Ausführung hält am Haltepunkt an.  
+2. Starten des Debuggens (**F5**). Die Ausführung hält am Haltepunkt an.  
   
 3. Öffnen Sie das Fenster "Überwachen" (**Debuggen &gt; Fenster &gt; Überwachen &gt; Überwachen 1**oder **STRG+ALT+W, 1**).  
   
@@ -108,12 +108,12 @@ static void Main(string[] args)
   
  ![WatchExpression](../debugger/media/watchexpression.png "WatchExpression")  
   
- Im Allgemeinen entsprechen die Regeln zum Auswerten von Ausdrücken im Fenster **Überwachen** den Regeln zum Auswerten von Ausdrücken in Ihrer Codesprache. Wenn der Ausdruck einen Syntaxfehler aufweist, können Sie den gleichen Compilerfehler wie im Code-Editor erwarten. Im Folgenden ein Beispiel:  
+ Im Allgemeinen entsprechen die Regeln zum Auswerten von Ausdrücken im Fenster **Überwachen** den Regeln zum Auswerten von Ausdrücken in Ihrer Codesprache. Wenn der Ausdruck einen Syntaxfehler aufweist, können Sie den gleichen Compilerfehler wie im Code-Editor erwarten. Hier ist ein Beispiel angegeben:  
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-## <a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Werten im Fenster "Überwachen"  
- Unter bestimmten Umständen wird ein Aktualisierungssymbol (ein Kreis mit zwei Pfeilen oder ein Kreis mit zwei Wellenlinien) angezeigt, wenn ein Ausdruck im Fenster **Überwachen** ausgewertet wird.  Beispiel: Wenn Sie die Eigenschaftenauswertung deaktiviert haben (**Tools > Optionen > Debugging > Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**) und der folgende Code angezeigt wird:  
+## <a name="refreshing-watch-values-that-are-out-of-date"></a><a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Überwachungs Werten  
+ Unter bestimmten Umständen wird ein Aktualisierungssymbol (ein Kreis mit zwei Pfeilen oder ein Kreis mit zwei Wellenlinien) angezeigt, wenn ein Ausdruck im Fenster **Überwachen** ausgewertet wird.  Beispiel: Wenn Sie die Eigenschaftenauswertung deaktiviert haben (**Tools &gt; Optionen &gt; Debugging &gt; Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**) und der folgende Code angezeigt wird:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -133,9 +133,9 @@ static void Main(string[] args)
   
  Wenn Sie auf das Symbol zeigen, wird eine QuickInfo mit Informationen darüber angezeigt, weshalb der Ausdruck nicht ausgewertet wurde.  Wenn die kreisförmig verlaufenden Pfeile angezeigt werden, wurde der Ausdruck aus einem der folgenden Gründe nicht ausgewertet:  
   
-- • Ein Fehler aufgetreten ist, wie der Ausdruck wurde ausgewertet wird. So kann beispielsweise ein Timeout aufgetreten sein, oder eine Variable kann außerhalb des gültigen Bereichs liegen.  
+- • Beim Auswerten des Ausdrucks ist ein Fehler aufgetreten. So kann beispielsweise ein Timeout aufgetreten sein, oder eine Variable kann außerhalb des gültigen Bereichs liegen.  
   
-- • Der Ausdruck enthält einen Funktionsaufruf, die einen Nebeneffekt in der Anwendung auslösen könnte (finden Sie unter [Nebeneffekte und Ausdrücke](#bkmk_sideEffects)).  
+- • Der Ausdruck enthält einen Funktions Aufruf, der einen Nebeneffekt in der Anwendung auslöst (siehe [Nebeneffekte und Ausdrücke](#bkmk_sideEffects)).  
   
 - Die automatische Auswertung von Eigenschaften- und impliziten Funktionsaufrufen durch den Debugger ist deaktiviert (**Tools &gt; Optionen &gt; Debugging &gt; Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**). In diesem Fall kann der Ausdruck nicht automatisch ausgewertet werden.  
   
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Wenn Sie ein Symbol in Form eines Kreises mit zwei Wellenlinien sehen, die Threads ähneln, wurde der Ausdruck aufgrund einer möglichen threadübergreifenden Abhängigkeit nicht ausgewertet. Mit anderen Worten: Für die Auswertung des Codes müssen andere Threads in der Anwendung vorübergehend ausgeführt werden. Wenn Sie sich im Unterbrechungsmodus befinden, sind alle Threads in der Anwendung typischerweise angehalten. Wenn die vorübergehende Ausführung anderer Threads zugelassen wird, kann dies unerwartete Auswirkungen auf den Zustand des Programms nach sich ziehen, und der Debugger ignoriert Ereignisse (wie z. B. Haltepunkte und für diese Threads ausgelöste Ausnahmen).  
   
-## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="side-effects-and-expressions"></a><a name="bkmk_sideEffects"></a> Nebeneffekte und Ausdrücke  
  Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Die Auswertung des folgenden Ausdrucks ändert beispielsweise den Wert von `var1`:  
   
 ```  
@@ -156,7 +156,7 @@ var1 = var2
   
  Eine Möglichkeit, um alle Nebeneffekte zu vermeiden, besteht darin, die automatische Funktionsauswertung zu deaktivieren (**Tools &gt; Optionen &gt; Debugging &gt; Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**).  
   
- Wenn die Auswertung von Eigenschaften oder impliziten Funktionen deaktiviert ist, können Sie die Auswertung mithilfe des **ac** -Formatmodifizierers erzwingen (nur für C#). Siehe [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md).  
+ Wenn die Auswertung von Eigenschaften oder impliziten Funktionen deaktiviert ist, können Sie die Auswertung mithilfe des **ac** -Formatmodifizierers erzwingen (nur für C#). Siehe [Formatspezifizierer in c#](../debugger/format-specifiers-in-csharp.md).  
   
 ## <a name="using-object-ids-in-the-watch-window-c-and-visual-basic"></a>Verwenden von Objekt-IDs im Fenster "Überwachen" (C# und Visual Basic)  
  Es kann durchaus sein, dass Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise möchten Sie ein Objekt nachverfolgen, auf das eine lokale Variable verweist, nachdem diese Variable den Gültigkeitsbereich verlassen hat. In C# und Visual Basic können Sie Objekt-IDs für bestimmte Instanzen von Verweistypen erstellen und diese im Fenster "Überwachen" und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
@@ -206,7 +206,7 @@ public class Program
   
 2. Starten Sie das Debugging, und suchen Sie die Variable, wenn die Ausführung im Haltepunkt anhält, im Fenster **Lokale** , klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Objekt-ID erstellen**aus.  
   
-3. Sie sollten ein **$** und eine Zahl im **Lokale** . Dies ist die Objekt-ID.  
+3. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Dies ist die Objekt-ID.  
   
 4. Fügen Sie die Objekt-ID dem Fenster "Überwachen" hinzu.  
   
@@ -218,12 +218,12 @@ public class Program
 > Wenn Sie die Eigenschaften des Objekts anzeigen möchten, z. B. `Person.Name` im oben stehenden Beispiel, muss die Eigenschaftenauswertung aktiviert sein.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Verwenden von Registern im Fenster "Überwachen" (nur C++)  
- Wenn Sie nativen Code Debuggen, können Sie sowohl Registernamen als auch Variablennamen mit hinzufügen  **$ \<RegisterName >** oder  **@ \<RegisterName >**.  Weitere Informationen finden Sie unter [Pseudovariables](../debugger/pseudovariables.md).  
+ Wenn Sie systemeigenen Code Debuggen, können Sie sowohl Registernamen als auch Variablennamen mithilfe von oder hinzufügen **$\<register name>** **@\<register name>** .  Weitere Informationen finden Sie unter [Pseudovariables](../debugger/pseudovariables.md).  
   
 ## <a name="dynamicview-and-the-watch-window"></a>Dynamische Ansicht und das Fenster "Überwachen"  
  Einige Skriptsprachen (z. B. JavaScript und Python) verwenden eine dynamische Typisierung oder das [Ducktyping](https://en.wikipedia.org/wiki/Duck_typing), und .NET-Sprachen (ab Version 4.0) unterstützen Objekte, die in den normalen Debugfenstern nur schwer beobachtet werden können, da sie möglicherweise Laufzeiteigenschaften und Methoden aufweisen, die nicht angezeigt werden können.  
   
- Wenn das Fenster "überwachen" angezeigt wird ein oder ein Objekt erstellt, die von einem Typ, der implementiert die <xref:System.Dynamic.IDynamicMetaObjectProvider>, der Debugger Fügt eine spezielle **dynamische Ansicht** Knoten aus, um die **"Auto"** anzuzeigen. Der Knoten zeigt die dynamischen Member des dynamischen Objekts an, ermöglicht jedoch keine Bearbeitung der Memberwerte.  
+ Wenn die Überwachungsfenster ein oder ein Objekt anzeigt, das aus einem Typ erstellt wurde, der implementiert <xref:System.Dynamic.IDynamicMetaObjectProvider> , fügt der Debugger der Anzeige Auto einen **Autos** speziellen **dynamischen Ansichts** Knoten hinzu. Der Knoten zeigt die dynamischen Member des dynamischen Objekts an, ermöglicht jedoch keine Bearbeitung der Memberwerte.  
   
  Wenn Sie in einer **dynamischen Ansicht** mit der rechten Maustaste auf ein untergeordnetes Element klicken und **Überwachung hinzufügen**auswählen, fügt der Debugger eine neuen Überwachungsvariable ein, die ein Objekt in ein dynamisches Objekt umwandelt. Mit anderen Worten: **object Name** wird zu (**(dynamic)object).Name**.  
   
@@ -239,5 +239,5 @@ public class Program
   
   Die **dynamische Ansicht** verbessert auch die Debugvorgänge für COM-Objekte. Wenn der Debugger ein in **System.__ComObject**umschlossenes COM-Objekt findet, fügt er einen Knoten **Dynamische Ansicht** für das Objekt hinzu.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggerfenster](../debugger/debugger-windows.md)
