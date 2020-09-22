@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_objectpointertype | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_objectPointerType | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d8f5251f61b8c513c58f5165fbaecbb9d5f00f3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64814088"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841117"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Typ des Zeigers Objekt für die Methode einer Klasse ab.  
+Ruft den Typ des Objekt Zeigers für eine Klassenmethode ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,17 +35,17 @@ HRESULT get_objectPointerType ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das den Objektzeiger, für die Methode einer Klasse darstellt.  
+ vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das den Objekt Zeiger für eine Klassenmethode darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft gilt nur für Symbole mit einem [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Typ `SymTagFunctionType`.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Eigenschaft gilt nur für Symbole mit einem [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationstyp von `SymTagFunctionType` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

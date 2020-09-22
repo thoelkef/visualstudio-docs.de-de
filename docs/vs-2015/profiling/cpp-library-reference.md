@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2aa32579b7e1f3ad1129fb4be116555b8bb5d790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434316"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841022"
 ---
 # <a name="c-library-reference"></a>C++-Bibliotheksreferenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Abschnitt enthält Referenzinformationen für das Nebenläufigkeitsschnellansichts-SDK.  
+Dieser Abschnitt enthält Referenzinformationen für die Parallelitätsschnellansicht SDK.  
   
 > [!NOTE]
 > In der C++-Standardprogrammiersprache ist die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, auf Implementierungen wie Bibliotheken beschränkt. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Concurrency-Namespace (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
+ [Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433056"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841291"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
     > [!NOTE]
     > Die Installation schlägt möglicherweise fehl, wenn eine Pfad- und Dateinamenkombination 260 Zeichen überschreitet. Die maximale Länge eines Pfads in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] beträgt 221 Zeichen.  Der Name des lokalen Pfads sollte 70 Zeichen nicht überschreiten, und der Name des Netzwerkpfads sollte 39 Zeichen nicht überschreiten.
 
-     Bei der Installation treten möglicherweise auch dann Fehler auf, wenn die Ordnernamen im Pfad eingebettete Leerzeichen aufweisen (beispielsweise „\\\\*ServerName*\IDE install“ oder „\\\\*ServerName*\Visual Studio\\“).
+     Die Installation schlägt möglicherweise auch fehl, wenn die Ordnernamen im Pfad eingebettete Leerzeichen enthalten (z. b. " \\ \\ *Servername*\ide install" oder " \\ \\ *Servername*\Visual Studio" \\ ).
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Bereitstellen von Visual Studio im unbeaufsichtigten Modus
- Zum Bereitstellen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus müssen Sie die Datei „AdminDeployment.xml“ ändern. Dafür müssen Sie die Datei „AdminDeployment.xml“ erstellen, indem Sie den Befehlszeilenparameter `/CreateAdminFile` *\<<Dateispeicherort>* verwenden. Mit dieser Datei können Sie dann entweder eine Bereitstellung von Visual Studio mithilfe von Push in das Netzwerk übertragen oder die Datei mithilfe von Pull in eine Installation übertragen, wenn Sie die Datei in das Verzeichnis " *Laufwerk*:\IDEinstall\packages" einfügen. Die Datei AdminDeployment.xml ist nicht spezifisch für ein Betriebssystem, eine Architektur, eine Edition von Visual Studio oder eine Betriebssystemsprache.
+ Zum Bereitstellen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus müssen Sie die Datei „AdminDeployment.xml“ ändern. Zu diesem Zweck müssen Sie zunächst mithilfe des `/CreateAdminFile` *\<file location>* Befehlszeilen Parameters die AdminDeployment.xml Datei erstellen. Mit dieser Datei können Sie dann entweder eine Bereitstellung von Visual Studio mithilfe von Push in das Netzwerk übertragen oder die Datei mithilfe von Pull in eine Installation übertragen, wenn Sie die Datei in das Verzeichnis " *Laufwerk*:\IDEinstall\packages" einfügen. Die Datei AdminDeployment.xml ist nicht spezifisch für ein Betriebssystem, eine Architektur, eine Edition von Visual Studio oder eine Betriebssystemsprache.
 
 > [!CAUTION]
 > In manchen Fällen werden Elemente, die in der Datei "AdminDeployment.xml" als ausgewählt aufgeführt sind, nicht installiert. Um dieses Problem zu beheben, platzieren sie die mit "Selected="yes"" markierten Elemente am **Ende** der Datei "AdminDeployment.xml".
 >
 > Wenn Sie die optionalen Abhängigkeiten eines Elements nicht installieren möchten, müssen Sie zuerst das übergeordnete Element auswählen und dann die Auswahl der optionalen Abhängigkeiten nach dem übergeordneten Element aufheben, wie im folgenden Screenshot gezeigt:
 >
-> ![Installationselemente am Ende der AdminDeployment.xml-Datei ](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Installationselemente am Ende der AdminDeployment.xml-Datei](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
 > Eine weitere Möglichkeit besteht darin, die optionalen untergeordneten Elemente eines übergeordneten Elements einfach auszuschließen, d. h., keine mit "Selected="no"" markierten Elemente einzuschließen. Allerdings müssen alle Elemente mit "Selected="yes"" weiterhin am Ende der Datei "AdminDeployment.xml" platziert werden.
 
@@ -59,11 +59,11 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
  Das AdminDeployment-Dateischema enthält die folgenden Elemente:
 
-|Element|Attribut|Werte|Beschreibung|
+|Element|attribute|Werte|BESCHREIBUNG|
 |-------------|---------------|------------|-----------------|
-|BundleCustomizations|TargetDir|*Pfad*|Identisches Verhalten wie beim Überschreiben eines Pfades in der Benutzeroberfläche der Installationsanwendung. Dieses Element wird ignoriert, wenn Visual Studio bereits installiert ist.|
+|BundleCustomizations|TargetDir|*Path*|Identisches Verhalten wie beim Überschreiben eines Pfades in der Benutzeroberfläche der Installationsanwendung. Dieses Element wird ignoriert, wenn Visual Studio bereits installiert ist.|
 |BundleCustomizations|NoWeb|yes&#124;default|Wenn der Wert dieses Elements "Ja" lautet, versucht die Installationsanwendung nie, während der Setupaktion ins Internet zu wechseln.|
-|SelectableItemCustomization|Hidden|Ja&#124;Nein|Wenn der Wert dieses Elements "Ja" lautet, wird ein wählbares Element in der Anpassungsstruktur ausgeblendet.|
+|SelectableItemCustomization|Ausgeblendet|Ja&#124;Nein|Wenn der Wert dieses Elements "Ja" lautet, wird ein wählbares Element in der Anpassungsstruktur ausgeblendet.|
 |SelectableItemCustomization|Ausgewählt|Ja&#124;Nein|Wählt ein wählbares Element in der Anpassungsstruktur aus oder löscht dieses.|
 |BundleCustomizations|Feed|Pfad|Speicherort des Feeds, den der Benutzer verwenden möchte.  Dieser Feed wird für nachfolgende Änderungsvorgänge auf dem Computer verwendet (standardmäßig "Default").|
 |BundleCustomizations|SuppressRefreshPrompt|yes&#124;default|Verhindert, dass der Benutzer aufgefordert wird, das Setup zu aktualisieren, wenn eine neuere Version verfügbar ist.|
@@ -77,7 +77,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
 1. Ändern Sie in der Datei „ *Laufwerk*:\IDEinstall\AdminDeployment.xml“ den Wert des „NoWeb“-Attributs des „BundleCustomizations“-Elements von „default“ in „yes“, wie im folgenden Beispiel gezeigt:
 
-     Ändern Sie `<BundleCustomizations TargetDir="default" NoWeb="default"/>` in `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
+     Ändern Sie `<BundleCustomizations TargetDir="default" NoWeb="default"/>` in `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`.
 
 2. Ändern Sie das SelectableItemCustomizations-Attribut ggf. für optionale Komponenten, und speichern Sie die Datei.
 
@@ -131,14 +131,14 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
 2. Klicken Sie auf die Registerkarte **Details**, und notieren Sie sich dann die Eigenschaft **Produktversion**.
 
-    ![Beispiel des Dialogfelds „Eigenschaften“ in einer unbeaufsichtigten Installation von Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG " Unbeaufsichtigte Installation – Dialogfeld „Eigenschaften“")
+    ![Beispiel für das Dialogfeld "Eigenschaften" in einer unbeaufsichtigten Installation von Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Dialog Feld "unbeaufsichtigte Installation-Eigenschaften"")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Wenn die Produktversion 14.0.24720.0 oder 14.0.24720.1 ist, gehen Sie wie folgt vor:
    1. Führen Sie *Product.exe* /Layout *Drive:* \IDEinstall auf einem Computer mit Internetanschluss aus. (Führen Sie zum Beispiel `vs_enterprise.exe /Layout d:\IDEinstall` aus.)
 
    2. Nachdem das /Layout abgeschlossen ist, kopieren Sie das neue Image an einen neuen Speicherort.
 
-   3. Erstellen und Ändern Sie die Datei „AdminDeployment.xml“. Verwenden Sie hierzu den Befehlszeilenparameter `/CreateAdminFile`*\<Dateispeicherort >*. (Weitere Informationen finden Sie im Abschnitt „Bereitstellen von Visual Studio im unbeaufsichtigten Modus“ in diesem Artikel.)
+   3. Erstellen und Ändern Sie die Datei „AdminDeployment.xml“. Verwenden Sie hierzu den `/CreateAdminFile` *\<file location>* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt „Bereitstellen von Visual Studio im unbeaufsichtigten Modus“ in diesem Artikel.)
 
    4. Führen Sie auf dem Clientcomputer den folgenden Befehl aus, um die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert haben: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -148,7 +148,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
    2. Nachdem das /Layout abgeschlossen ist, kopieren Sie das neue Image an einen neuen Speicherort. (Oder Sie können stattdessen das bestehende Netzwerkimage überschreiben.)
 
-   3. Erstellen Sie die Datei „AdminDeployment.xml“ und ändern Sie sie dann. Verwenden Sie hierzu den Befehlszeilenparameter `/CreateAdminFile`*\<Dateispeicherort >*. (Weitere Informationen finden Sie im Abschnitt „Bereitstellen von Visual Studio im unbeaufsichtigten Modus“ in diesem Artikel.)
+   3. Erstellen Sie die Datei „AdminDeployment.xml“ und ändern Sie sie dann. Verwenden Sie hierzu den `/CreateAdminFile` *\<file location>* Befehlszeilenparameter. (Weitere Informationen finden Sie im Abschnitt „Bereitstellen von Visual Studio im unbeaufsichtigten Modus“ in diesem Artikel.)
 
    4. Wenn Sie das Image an einen neuen Speicherort kopieren, müssen Sie den folgenden Befehl auf dem Clientcomputer ausführen, um die Kopie von Visual Studio zu aktualisieren, die Sie zuvor installiert haben: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -166,7 +166,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="registering-the-product"></a>Registrieren des Produkts
  Nachdem die Installation abgeschlossen ist, können Sie Ihre Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]heraus registrieren.
 
-#### <a name="to-register"></a>Zum Registrieren führen Sie Folgendes aus:
+#### <a name="to-register"></a>So führen Sie die Registrierung durch
 
 1. Öffnen Sie das Menü **Hilfe** , und wählen Sie dann die Option **Produkt registrieren**aus.
 
@@ -174,5 +174,5 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 
      (Weitere Informationen finden Sie in den Themen [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) und [Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Installieren von Visual Studio](../install/install-visual-studio-2015.md)

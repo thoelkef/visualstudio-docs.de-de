@@ -1,5 +1,5 @@
 ---
-title: Verwenden die Store-Einstellungen | Microsoft-Dokumentation
+title: Verwenden des Einstellungs Speicher | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,34 +11,34 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430100"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841236"
 ---
 # <a name="using-the-settings-store"></a>Verwenden des Einstellungsspeichers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Es gibt zwei Arten von Einstellungen speichern:  
+Es gibt zwei Arten von Einstellungs speichern:  
   
-- Konfigurationseinstellungen, die nur-Lese Einstellungen für Visual Studio und das VSPackage. Visual Studio werden die Einstellungen aus allen bekannten PKGDEF-Dateien in diesem Speicher zusammengeführt.  
+- Konfigurationseinstellungen, bei denen es sich um schreibgeschützte Visual Studio-und VSPackage-Einstellungen handelt. In Visual Studio werden Einstellungen aus allen bekannten pkgdef-Dateien in diesem Speicher zusammengeführt.  
   
-- Benutzereinstellungen, die beschreibbaren Einstellungen wie die, die auf Seiten angezeigt werden, sind die **Optionen** im Dialogfeld Eigenschaftenseiten und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen können diese für die lokale Speicherung von kleine Mengen von Daten verwenden.  
+- Benutzereinstellungen, bei denen es sich um beschreibbare Einstellungen handelt, z. b. diejenigen, die auf Seiten im Dialogfeld **Optionen** , Eigenschaften Seiten und bestimmte andere Dialogfelder angezeigt werden. Diese können von Visual Studio-Erweiterungen für die lokale Speicherung von kleinen Datenmengen verwendet werden.  
   
-  Diese exemplarische Vorgehensweise veranschaulicht das Lesen von Daten aus dem Konfigurationsspeicher für die Einstellung. Finden Sie unter [Schreiben in die Benutzer Einstellungen Store](../extensibility/writing-to-the-user-settings-store.md) eine Erklärung der Vorgehensweise zum Schreiben in den Speicher für benutzereinstellungen.  
+  In dieser exemplarischen Vorgehensweise wird das Lesen von Daten aus dem Konfigurations Einstellungs Speicher erläutert. Eine Erläuterung zum Schreiben in den Benutzer Einstellungs Speicher finden Sie unter [Schreiben in den Benutzer Einstellungs Speicher](../extensibility/writing-to-the-user-settings-store.md) .  
   
-## <a name="creating-the-example-project"></a>Erstellen das Beispielprojekt  
- In diesem Abschnitt wird gezeigt, wie eine einfache Erweiterung-Projekt mit einem Menübefehl für die Demo erstellt.  
+## <a name="creating-the-example-project"></a>Erstellen des Beispielprojekts  
+ In diesem Abschnitt wird gezeigt, wie ein einfaches Erweiterungsprojekt mit einem Menübefehl für die Demonstration erstellt wird.  
   
-1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `SettingsStoreExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
+1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt mit dem Namen `SettingsStoreExtension` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** " unter **Visual c#/Erweiterbarkeit**.  
   
-2. Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **SettingsStoreCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **settingsstorecommand**hinzu. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .  
   
-## <a name="using-the-configuration-settings-store"></a>Verwenden die Konfiguration Einstellungen Store  
- Dieser Abschnitt beschreibt das Erkennen und Konfigurationseinstellungen anzeigen.  
+## <a name="using-the-configuration-settings-store"></a>Verwenden des Speicher für Konfigurationseinstellungen  
+ In diesem Abschnitt wird gezeigt, wie Konfigurationseinstellungen erkannt und angezeigt werden.  
   
-1. Fügen Sie in der Datei SettingsStorageCommand.cs die folgenden using-Anweisungen:  
+1. Fügen Sie in der Datei SettingsStorageCommand.cs die folgenden using-Anweisungen hinzu:  
   
    ```  
    using System.Collections.Generic;  
@@ -47,16 +47,16 @@ Es gibt zwei Arten von Einstellungen speichern:
    using System.Windows.Forms;  
    ```  
   
-2. In `MenuItemCallback`, entfernen Sie den Text der Methode, und fügen Sie diese Zeilen erhalten den Konfigurationsspeicher für die Einstellungen hinzu:  
+2. `MenuItemCallback`Entfernen Sie in den Text der-Methode, und fügen Sie die folgenden Zeilen hinzu, um den Konfigurations Einstellungs Speicher zu erhalten:  
   
    ```  
    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
    ```  
   
-    Die <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> ist eine verwaltete Hilfsklasse über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> Service.  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>Ist eine verwaltete <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> Hilfsklasse über den Dienst.  
   
-3. Nun herausfinden Sie, ob die Windows Phone-Tools installiert sind. Der Code sollte wie folgt aussehen:  
+3. Erfahren Sie nun, ob Windows Phone Tools installiert sind. Der Code sollte wie folgt aussehen:  
   
    ```  
    private void MenuItemCallback(object sender, EventArgs e)  
@@ -69,21 +69,21 @@ Es gibt zwei Arten von Einstellungen speichern:
    }  
    ```  
   
-4. Testen des Codes. Erstellen Sie das Projekt, und starten Sie das Debugging.  
+4. Testen des Codes Erstellen Sie das Projekt, und starten Sie das Debugging.  
   
-5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen SettingsStoreCommand**.  
+5. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **settingsstorecommand aufrufen**.  
   
-    Daraufhin sollte eine Meldung für das Feld **Microsoft Windows Phone-Entwicklertools:** gefolgt von **"true"** oder **"false"**.  
+    Es sollte ein Meldungs Feld mit der Meldung " **Microsoft Windows Phone Entwicklertools:**  gefolgt von **true** oder **false**" angezeigt werden.  
   
-   Visual Studio behält den einstellungsspeicher in der Registrierung des Systems.  
+   Visual Studio speichert den Einstellungs Speicher in der Systemregistrierung.  
   
-#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Registrierungs-Editor verwenden, um zu überprüfen, ob Konfigurationseinstellungen  
+#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>So verwenden Sie einen Registrierungs-Editor zum Überprüfen der Konfigurationseinstellungen  
   
 1. Öffnen Sie Regedit.exe.  
   
-2. Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Navigieren Sie zu HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0Exp_Config \installedproducts \\ .  
   
     > [!NOTE]
-    > Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp_Config\ und nicht \14.0_Config enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, sind Konfigurationseinstellungen in der Registrierungsstruktur "14.0Exp_Config" ein.  
+    > Stellen Sie sicher, dass Sie den Schlüssel sehen, der \ 14.0Exp_Config \ und Not \ 14 \\ . 0_Config enthält. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, befinden sich die Konfigurationseinstellungen in der Registrierungs Struktur "14.0Exp_Config".  
   
-3. Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.
+3. Erweitern Sie den Knoten \installierte Produkte \. Wenn die Meldung in den vorherigen Schritten **Microsoft Windows Phone Entwicklertools installiert ist: true**, dann sollte \installierte Produkte \ einen Microsoft Windows Phone Entwicklertools-Knoten enthalten. Wenn die Nachricht **Microsoft Windows Phone Entwicklertools installiert ist: "false**", sollte "\installierte Produkte \" keinen Knoten "Microsoft Windows Phone Entwicklertools" enthalten.

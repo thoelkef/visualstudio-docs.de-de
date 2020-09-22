@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403270"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841030"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt eine Stack-Frame-Eigenschaft, einer Dokumenteigenschaft Programm oder eine andere Eigenschaft. Die Eigenschaft ist in der Regel das Ergebnis der Auswertung eines Ausdrucks.  
+Diese Schnittstelle stellt eine Stapel Rahmen Eigenschaft, eine Programmdokument Eigenschaft oder eine andere Eigenschaft dar. Die-Eigenschaft ist normalerweise das Ergebnis einer Ausdrucks Auswertung.  
   
 > [!NOTE]
-> Diese Verwendung von "Property" dürfen nicht verwechselt werden mit, d. h. einer Membervariablen einer Klasse, obwohl ein `IDebugProperty2` können solche Entität darstellen.  
+> Diese Verwendung von "Property" sollte nicht mit der Bedeutung einer Element Variablen einer Klasse verwechselt werden, obwohl eine `IDebugProperty2` solche Entität darstellen kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,51 +34,51 @@ IDebugProperty2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle, um eine bestimmte Art von Wert darstellen. Der Wert kann z. B. einen numerischen Wert als Ergebnis der Auswertung eines Ausdrucks, einen Speicherkontext, der zum Anzeigen von Arbeitsspeicher oder eine Liste der Register und deren Werte sein.  
+ Die de implementiert diese Schnittstelle, um eine bestimmte Art von Wert darzustellen. Der Wert kann z. b. ein numerischer Wert als Ergebnis einer Ausdrucks Auswertung, ein Speicher Kontext, der zum Anzeigen von Arbeitsspeicher verwendet wird, oder eine Liste von Registern und deren Werten sein.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf diesem-Schnittstelle abzurufen, die das Ergebnis einer Auswertung darstellt. `IDebugExpression2::EvaluateAsync` Diese Schnittstelle gibt, durch Senden einer [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) Schnittstelle, das SDM, das wiederum aufruft [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) beim Abrufen einer Eigenschaft.  
+ Rufen Sie [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um diese Schnittstelle zu erhalten, die das Ergebnis einer Auswertung darstellt. `IDebugExpression2::EvaluateAsync` gibt diese Schnittstelle zurück, indem eine [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) -Schnittstelle an die SDM gesendet wird, die wiederum [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) zum Abrufen der Eigenschaft aufruft.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) gibt diese Schnittstelle, um die zugehörigen Skript-Dokument bereit.  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) gibt diese Schnittstelle zurück, um das zugehörige Skript Dokument bereitzustellen.  
   
- [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) gibt diese Schnittstelle, um den Rückgabewert einer Funktion darstellen.  
+ [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) gibt diese Schnittstelle zurück, um den Rückgabewert einer Funktion darzustellen.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) gibt diese Schnittstelle, um verschiedene Eigenschaften des Programms wie z. B. einen Namen oder einen Speicherkontext darstellen.  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) gibt diese Schnittstelle zurück, um verschiedene Eigenschaften des Programms (z. b. einen Namen oder einen Speicher Kontext) darzustellen.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) gibt diese Schnittstelle, um verschiedene Eigenschaften des Stapelrahmens wie z. B. lokale Variablen darstellen.  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) gibt diese Schnittstelle zurück, um verschiedene Eigenschaften des Stapel Rahmens (z. b. lokale Variablen) darzustellen.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugProperty2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProperty2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Füllt ein [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) -Struktur, die eine Eigenschaft beschreibt.|  
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Füllt eine [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur, die eine Eigenschaft beschreibt.|  
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Legt den Wert einer Eigenschaft aus einer Zeichenfolge fest.|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Legt den Wert der Eigenschaft aus dem Wert eines angegebenen Verweises.|  
-|[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Listet die untergeordneten Elemente einer Eigenschaft an.|  
-|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Gibt das übergeordnete Element eine Eigenschaft zurück.|  
-|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Gibt die Eigenschaft, die beschreibt, die am stärksten abgeleiteten-Eigenschaft einer Eigenschaft zurück.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Gibt zurück, die Arbeitsspeicher-Bytes, aus die den Wert einer Eigenschaft zusammensetzt.|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Gibt den Arbeitsspeicher-Kontext für einen Eigenschaftswert zurück.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.|  
-|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Gibt einen Verweis auf der Wert dieser Eigenschaft zurück.|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Gibt den erweiterten Informationen einer Eigenschaft zurück.|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Legt den Wert der-Eigenschaft aus dem Wert eines angegebenen Verweises fest.|  
+|[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Listet die untergeordneten Elemente einer Eigenschaft auf.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Gibt das übergeordnete Element einer Eigenschaft zurück.|  
+|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Gibt die Eigenschaft zurück, die die am häufigsten abgeleitete Eigenschaft einer Eigenschaft beschreibt.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Gibt die Arbeitsspeicher Bytes zurück, die den Wert einer Eigenschaft bilden.|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Gibt den Arbeitsspeicher Kontext für einen Eigenschafts Wert zurück.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Gibt die Größe des Eigenschafts Werts in Byte zurück.|  
+|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Gibt einen Verweis auf den Wert dieser Eigenschaft zurück.|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Gibt die erweiterten Informationen einer Eigenschaft zurück.|  
   
-## <a name="remarks"></a>Hinweise  
- Eine Eigenschaft, dargestellt durch ein `IDebugProperty2` Schnittstellen, kann als Wert mit einem Namen, einen Typ und eine Adresse betrachtet werden. Weitere allgemeine ausgedrückt ein `IDebugProperty2` darstellen kann, alle Elemente, die eine hierarchische Struktur, mit übergeordneten und untergeordneten Knoten besitzt.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine Eigenschaft, die durch eine `IDebugProperty2` Schnittstelle dargestellt wird, kann als Wert mit einem Namen, einem Typ und einer Adresse betrachtet werden. In allgemeineren Begriffen kann ein alle Elemente `IDebugProperty2` darstellen, die über eine hierarchische Struktur mit übergeordneten und untergeordneten Knoten verfügen.  
   
- Eine Eigenschaft ist in der Regel vorübergehend, z. B. nur so lange wie der aktuelle Stapelrahmen andauert. Andererseits, dargestellt durch einen Verweis ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Schnittstelle, so lange beibehalten, solange der Wert im Arbeitsspeicher bleibt.  
+ Eine Eigenschaft ist normalerweise Transitory und wird nur so lange wie der aktuelle Stapel Rahmen (z. b.). Auf der anderen Seite wird ein Verweis, der durch eine [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Schnittstelle dargestellt wird, so lange beibehalten, wie der Wert im Arbeitsspeicher verbleibt.  
   
- Die IDE verwenden, kann die `IDebugProperty2` Schnittstelle, um Benutzer zu suchen und Ändern von Eigenschaften zur Laufzeit.  
+ Die IDE kann die `IDebugProperty2` -Schnittstelle verwenden, um Benutzern das Durchsuchen und Ändern von Eigenschaften zur Laufzeit zu ermöglichen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

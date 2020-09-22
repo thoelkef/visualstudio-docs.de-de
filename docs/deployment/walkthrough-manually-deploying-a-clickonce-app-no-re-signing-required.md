@@ -1,5 +1,6 @@
 ---
-title: Manuelles Bereitstellen von ClickOnce-apps, die Branding
+title: Manuelles Bereitstellen einer ClickOnce-app & Branding beibehalten
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263422"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809223"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die keine erneute Signierung erfordert und Brandinginformationen beibehält
 Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellen und Sie dann einem Kunden zum Veröffentlichen und Bereitstellen zuweisen, musste der Kunde das Bereitstellungs Manifest traditionell aktualisieren und neu signieren. Obwohl dies in den meisten Fällen immer noch die bevorzugte Methode ist, können Sie mit dem .NET Framework 3,5 bereit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Stellungen erstellen, die von Kunden bereitgestellt werden können, ohne ein neues Bereitstellungs Manifest generieren zu müssen. Weitere Informationen finden Sie unter Bereitstellen [von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -129,7 +130,7 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 
 14. Wenn Sie über ein Zertifikat verfügen, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **als Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem mithilfe der Schaltfläche mit den Auslassungs Punkten (**...**) aus.
 
-     - oder -
+     - oder -
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, auf den von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option gespeichertes Zertifikat signieren**aus, und wählen Sie das Zertifikat aus der Liste aus.
 
@@ -154,7 +155,7 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 
 22. Der Kunde stellt die Anwendung für Ihre Benutzer bereit.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [Makecert](/windows/desktop/SecCrypto/makecert)

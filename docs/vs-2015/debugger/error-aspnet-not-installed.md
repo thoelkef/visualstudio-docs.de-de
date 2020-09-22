@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447308"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841209"
 ---
 # <a name="error-aspnet-not-installed"></a>Fehler: ASP.NET ist nicht installiert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     wo *Version* stellt die Versionsnummer von .NET Framework installiert, auf dem Computer, z.B. v1.0.370 dar. Sie können die Frameworkversion feststellen, anhand der `\WINDOWS\Microsoft.NET\Framework` Verzeichnis.  
+     Dabei stellt *Version* die Versionsnummer des auf dem Computer installierten .NET Framework (z. B. v1.0.370) dar. Sie können die Frameworkversion im Verzeichnis `\WINDOWS\Microsoft.NET\Framework` ermitteln.  
   
     > [!NOTE]
     > Unter Windows Server 2003 können Sie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in der Systemsteuerung über die Option **Software** installieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

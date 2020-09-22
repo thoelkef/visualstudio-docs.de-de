@@ -1,5 +1,6 @@
 ---
-title: Vorgehensweise beim Signieren von Setup Dateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation
+title: Signieren von Setupdateien mit „SignTool.exe“ (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382067"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809504"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
 Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
@@ -76,5 +77,5 @@ Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch 
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

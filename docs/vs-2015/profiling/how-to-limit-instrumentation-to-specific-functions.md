@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840901"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Vorgehensweise: Beschränkung der Instrumentierung auf bestimmte Funktionen
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Gewusst wie: Beschränken der Instrumentation auf bestimmte Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen einschränken, indem Sie die Optionen unter der Seite **Erweitert** der **Leistungssitzung** oder die Zielbinärdateieigenschaften einstellen.  
@@ -44,7 +44,7 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
+    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** * gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
    > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
@@ -63,12 +63,12 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
+    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** * gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
    > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Vorgehensweise: Limit Instrumentation auf bestimmte DLLs](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Gewusst wie: Beschränken der Instrumentierung auf bestimmte DLLs](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Gewusst wie: Angeben zusätzlicher Instrumentierungs Optionen](../profiling/how-to-specify-additional-instrumentation-options.md)

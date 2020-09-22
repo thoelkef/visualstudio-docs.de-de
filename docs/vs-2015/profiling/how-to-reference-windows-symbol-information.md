@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443455"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841205"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Vorgehensweise: Verweisen auf Windows-Symbolinformationen
+# <a name="how-to-reference-windows-symbol-information"></a>Gewusst wie: Verweisen auf Windows-Symbolinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Visual Studio-Profilerstellungstools verwenden Symboldateien (.pdb), um symbolische Namen wie Funktionsnamen in Programmbinärdateien aufzulösen. Sie können diese Schritte befolgen, um automatisch die richtigen PDB-Dateien für die Windows-Version auf dem lokalen Computer herunterzuladen und zu aktualisieren.  
@@ -47,8 +47,8 @@ Der Visual Studio-Profilerstellungstools verwenden Symboldateien (.pdb), um symb
   
      **C:\SymbolCache**  
   
-     Sie können auch die Schaltfläche mit den Auslassungszeichen (**...**) anklicken und anschließend ein Verzeichnis vom Dialogfeld **Nach Ordner suchen** auswählen.  
+     Sie können auch die Schaltfläche mit den Auslassungszeichen ( **...** ) anklicken und anschließend ein Verzeichnis vom Dialogfeld **Nach Ordner suchen** auswählen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Vorgehensweise: Serialisieren von Symbolinformationen](../profiling/how-to-serialize-symbol-information.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Gewusst wie: Serialisieren von Symbol Informationen](../profiling/how-to-serialize-symbol-information.md)
