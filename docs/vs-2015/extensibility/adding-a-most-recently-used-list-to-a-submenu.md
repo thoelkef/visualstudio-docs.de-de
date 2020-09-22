@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen einer zuletzt verwendete Liste aus, um ein Untermenü | Microsoft-Dokumentation
+title: Hinzufügen einer zuletzt verwendeten Liste zu einem Untermenü | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444876"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840959"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Hinzufügen einer Liste „Zuletzt verwendet“ zu einem Untermenü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie Sie eine dynamische Liste zu einem Untermenü hinzufügen. Liste mit der dynamische bildet die Grundlage zum Erstellen einer Liste der zuletzt verwendeten (MRU).  
+Diese exemplarische Vorgehensweise baut auf den Demos in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)auf und zeigt, wie eine dynamische Liste zu einem Untermenü hinzugefügt wird. Die dynamische Liste bildet die Grundlage für das Erstellen einer Liste mit den zuletzt verwendeten (MRU).  
   
- Eine dynamische Menüliste beginnt mit einem Platzhalter in einem Menü. Jedes Mal, wenn Sie im Menü angezeigt wird, fragt die integrierte Entwicklungsumgebung (IDE) von Visual Studio das VSPackage für alle Befehle, die auf den Platzhalter angezeigt werden soll. Eine dynamische Liste kann eine beliebige Stelle in einem Menü auftreten. Dynamische Listen sind jedoch in der Regel gespeichert und selbst angezeigt wird, Untermenüs oder auf die Spitzen des Menüs. Verwenden Sie diese Entwurfsmuster, können Sie die dynamische Liste der Befehle aus, um die Erweiterung und Verkleinerung ohne Auswirkungen auf die Position der anderen Befehle in diesem Menü aus. In dieser exemplarischen Vorgehensweise wird die dynamische MRU-Liste am unteren Rand einer vorhandenen Untermenü, das getrennt vom Rest des Untermenüs durch eine Linie angezeigt.  
+ Eine dynamische Menü Liste beginnt mit einem Platzhalter in einem Menü. Jedes Mal, wenn das Menü angezeigt wird, fordert die integrierte Entwicklungsumgebung (IDE) von Visual Studio das VSPackage nach allen Befehlen an, die im Platzhalter angezeigt werden sollen. Eine dynamische Liste kann an beliebiger Stelle in einem Menü auftreten. Dynamische Listen werden jedoch in der Regel in Untermenüs oder in den untersten Menüs gespeichert und angezeigt. Wenn Sie diese Entwurfsmuster verwenden, aktivieren Sie die dynamische Liste der Befehle, um Sie zu erweitern und zu verkleinern, ohne dass sich dies auf die Position anderer Befehle im Menü auswirkt. In dieser exemplarischen Vorgehensweise wird die dynamische MRU-Liste am unteren Rand eines vorhandenen Untermenüs angezeigt, getrennt vom Rest des Untermenüs durch eine Zeile.  
   
- Technisch gesehen kann eine dynamische Liste auch zu einer Symbolleiste angewendet werden. Allerdings raten wir, dass Verwendungsdaten ab, da eine Symbolleiste unverändert bleiben soll, wenn der Benutzer eine bestimmte Schritte ändern ausführt.  
+ Technisch gesehen kann eine dynamische Liste auch auf eine Symbolleiste angewendet werden. Diese Verwendung wird jedoch davon abgeraten, da eine Symbolleiste unverändert bleiben sollte, es sei denn, der Benutzer führt bestimmte Schritte zum Ändern aus.  
   
- In dieser exemplarischen Vorgehensweise erstellt eine MRU-Liste von vier Elementen, die die Reihenfolge zu ändern, jedes Mal, dass eine von ihnen ausgewählt ist (das ausgewählte Element wird am Anfang der Liste).  
+ In dieser exemplarischen Vorgehensweise wird eine MRU-Liste mit vier Elementen erstellt, deren Reihenfolge jedes Mal geändert wird, wenn eine von Ihnen ausgewählt ist (das ausgewählte Element wird an den Anfang der Liste verschoben).  
   
- Weitere Informationen zu Menüs und VSCT-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Weitere Informationen zu Menüs und vsct-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension"></a>Erstellen einer Erweiterung  
   
-- Führen Sie die Verfahren in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md) erstellen Sie in den folgenden Verfahren das Untermenü, das geändert wurde.  
+- Befolgen Sie die Verfahren unter [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md) , um das Untermenü zu erstellen, das in den folgenden Prozeduren geändert wird.  
   
-  Die Verfahren in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSPackage `TopLevelMenu`, dies ist der Name, der verwendet wird [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Bei den Prozeduren in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSPackage lautet `TopLevelMenu` . Dies ist der Name, der beim [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)verwendet wird.  
   
-## <a name="creating-a-dynamic-item-list-command"></a>Erstellen einen dynamischen Elementbefehl Liste  
+## <a name="creating-a-dynamic-item-list-command"></a>Erstellen eines Befehls für eine dynamische Elementliste  
   
-1. Öffnen Sie TestCommandPackage.vsct.  
+1. Öffnen Sie die Datei "testcommandpackage. vsct".  
   
-2. In der `Symbols` im Abschnitt der `GuidSymbol` Knoten mit dem Namen GuidTestCommandPackageCmdSet, fügen Sie das Symbol für die `MRUListGroup` Gruppe und die `cmdidMRUList` Befehl wie folgt.  
+2. `Symbols`Fügen Sie im-Abschnitt im `GuidSymbol` Knoten guidtestcommandpackagecmdset das Symbol für die `MRUListGroup` Gruppe und den `cmdidMRUList` Befehl wie folgt hinzu.  
   
     ```csharp  
     <IDSymbol name="MRUListGroup" value="0x1200"/>  
     <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
-3. In der `Groups` Abschnitt fügen Sie der Gruppe "deklarierten" nach die vorhandenen Gruppeneinträge hinzu.  
+3. `Groups`Fügen Sie im Abschnitt nach den vorhandenen Gruppen Einträgen die deklarierte Gruppe hinzu.  
   
     ```cpp  
     <Group guid="guidTestCommandPackageCmdSet" id="MRUListGroup"   
@@ -62,7 +62,7 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
   
     ```  
   
-4. In der `Buttons` Abschnitt, fügen Sie einen Knoten, um den neu deklarierten Befehl ein, nach der vorhandenen Schaltfläche Einträge darstellen.  
+4. `Buttons`Fügen Sie im-Abschnitt nach den vorhandenen Schaltflächen Einträgen einen Knoten hinzu, der den neu deklarierten Befehl darstellt.  
   
     ```csharp  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"  
@@ -76,34 +76,34 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
     </Button>  
     ```  
   
-     Die `DynamicItemStart` Flag mit dem Befehl dynamisch generiert werden kann.  
+     Mit dem- `DynamicItemStart` Flag kann der Befehl dynamisch generiert werden.  
   
-5. Erstellen Sie des Projekts, und starten Sie das Debuggen, um die Anzeige von den neuen Befehl zu testen.  
+5. Erstellen Sie das Projekt, und starten Sie das Debuggen, um die Anzeige des neuen Befehls zu testen.  
   
-     Auf der **TestMenu** Menü klicken Sie auf die neue Untermenü **Untermenü**, um den neuen Befehl anzuzeigen **MRU-Platzhalter**. Nachdem eine dynamische MRU-Liste der Befehle in der nächsten Prozedur implementiert wird, wird diese Bezeichnung Befehl durch die Liste jedes Mal ersetzt, die das Untermenü geöffnet wird.  
+     Klicken Sie im Menü **Testmenü** auf das neue Untermenü **unter Menü**, um den neuen Befehl **MRU-Platzhalter**anzuzeigen. Nachdem eine dynamische MRU-Liste mit Befehlen in der nächsten Prozedur implementiert wurde, wird diese Befehls Bezeichnung jedes Mal, wenn das Untermenü geöffnet wird, durch diese Liste ersetzt.  
   
-## <a name="filling-the-mru-list"></a>Ausfüllen der MRU-Liste  
+## <a name="filling-the-mru-list"></a>Auffüllen der MRU-Liste  
   
-1. Fügen Sie die folgenden Zeilen in TestCommandPackageGuids.cs, nachdem die vorhandenen Befehls-IDs in die `TestCommandPackageGuids` Definition der Klasse.  
+1. Fügen Sie in TestCommandPackageGuids.cs nach den vorhandenen Befehls-IDs in der Klassendefinition die folgenden Zeilen hinzu `TestCommandPackageGuids` .  
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
     public const uint cmdidMRUList = 0x200;  
     ```  
   
-2. TestCommand.cs fügen die folgende using-Anweisung.  
+2. Fügen Sie in TestCommand.cs die folgende using-Anweisung hinzu.  
   
     ```csharp  
     using System.Collections;  
     ```  
   
-3. Fügen Sie den folgenden Code im Konstruktor TestCommand, nach dem letzten AddCommand-Aufruf. Die `InitMRUMenu` später definiert werden  
+3. Fügen Sie den folgenden Code im TestCommand-Konstruktor nach dem letzten AddCommand-Befehl hinzu. `InitMRUMenu`Wird später definiert.  
   
     ```csharp  
     this.InitMRUMenu(commandService);  
     ```  
   
-4. Fügen Sie den folgenden Code in der TestCommand-Klasse. Dieser Code initialisiert die Liste der Zeichenfolgen, die darstellen, die Elemente auf der MRU-Liste angezeigt werden sollen.  
+4. Fügen Sie den folgenden Code in die Klasse TestCommand ein. Dieser Code initialisiert die Liste der Zeichen folgen, die die Elemente darstellen, die in der MRU-Liste angezeigt werden sollen.  
   
     ```csharp  
     private int numMRUItems = 4;  
@@ -127,7 +127,7 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
     }  
     ```  
   
-5. Nach der `InitializeMRUList` -Methode hinzufügen der `InitMRUMenu` Methode. Dadurch wird die Menübefehle der MRU-Liste initialisiert.  
+5. Fügen Sie nach der- `InitializeMRUList` Methode die- `InitMRUMenu` Methode hinzu. Hierdurch werden die Menübefehle der MRU-Liste initialisiert.  
   
     ```csharp  
     private void InitMRUMenu(OleMenuCommandService mcs)  
@@ -145,9 +145,9 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
     }  
     ```  
   
-     Sie müssen ein Menü Command-Objekt für jedes mögliche Element in der MRU-Liste erstellen. Die IDE-Aufrufe der `OnMRUQueryStatus` Methode für jedes Element in der MRU-Liste, bis keine weiteren Elemente vorhanden sind. Die einzige Möglichkeit für die IDE zu wissen, dass keine weiteren Elemente vorhanden sind werden in verwaltetem Code erstellen Sie zunächst alle mögliche Elementen zu erstellen. Wenn Sie möchten, können Sie zusätzliche Elemente als nicht sichtbar ist, am zuerst markieren, mithilfe von `mc.Visible = false;` nach der Erstellung des Menübefehls. Diese Elemente können dann sichtbar gemacht werden später mithilfe von `mc.Visible = true;` in die `OnMRUQueryStatus` Methode.  
+     Sie müssen ein Menübefehls Objekt für jedes mögliche Element in der MRU-Liste erstellen. Die IDE Ruft die- `OnMRUQueryStatus` Methode für jedes Element in der MRU-Liste auf, bis keine weiteren Elemente mehr vorhanden sind. In verwaltetem Code ist die einzige Möglichkeit für die IDE, dass keine weiteren Elemente vorhanden sind, zuerst alle möglichen Elemente zu erstellen. Wenn Sie möchten, können Sie zusätzliche Elemente als zuerst als nicht sichtbar markieren, indem Sie `mc.Visible = false;` nach dem Erstellen des Menübefehls verwenden. Diese Elemente können später mithilfe von in der-Methode sichtbar gemacht werden `mc.Visible = true;` `OnMRUQueryStatus` .  
   
-6. Nach der `InitMRUMenu` -Methode, fügen Sie die folgenden `OnMRUQueryStatus` Methode. Dies ist der Handler, der den Text für jedes Element der MRU-Menü der legt diesen fest.  
+6. Fügen Sie nach der- `InitMRUMenu` Methode die folgende `OnMRUQueryStatus` Methode hinzu. Dies ist der Handler, der den Text für jedes MRU-Element festlegt.  
   
     ```csharp  
     private void OnMRUQueryStatus(object sender, EventArgs e)  
@@ -164,7 +164,7 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
     }  
     ```  
   
-7. Nach der `OnMRUQueryStatus` -Methode, fügen Sie die folgenden `OnMRUExec` Methode. Dies ist der Handler für ein Element der MRU-Menü auswählen. Diese Methode verschiebt das ausgewählte Element an den Anfang der Liste, und klicken Sie dann das ausgewählte Element in einem Meldungsfeld angezeigt.  
+7. Fügen Sie nach der- `OnMRUQueryStatus` Methode die folgende `OnMRUExec` Methode hinzu. Dies ist der Handler für die Auswahl eines MRU-Elements. Diese Methode verschiebt das ausgewählte Element an den Anfang der Liste und zeigt dann das ausgewählte Element in einem Meldungs Feld an.  
   
     ```csharp  
     private void OnMRUExec(object sender, EventArgs e)  
@@ -192,18 +192,18 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
   
 ## <a name="testing-the-mru-list"></a>Testen der MRU-Liste  
   
-#### <a name="to-test-the-mru-menu-list"></a>So testen Sie die Liste der zuletzt verwendeten Menü  
+#### <a name="to-test-the-mru-menu-list"></a>So testen Sie die MRU-Menü Liste  
   
-1. Erstellen Sie das Projekt, und starten Sie das Debuggen  
+1. Erstellen des Projekts und Starten des Debuggens  
   
-2. Auf der **TestMenu** Menü klicken Sie auf **aufrufen TestCommand**. Dies zeigt ein Meldungsfeld an, der angibt, dass es sich bei der Auswahl des Befehls.  
+2. Klicken Sie im Menü **Testmenü** auf **TestCommand aufrufen**. Dadurch wird ein Meldungs Feld angezeigt, das angibt, dass der Befehl ausgewählt wurde.  
   
     > [!NOTE]
-    > Dieser Schritt ist erforderlich, um das VSPackage zu laden und Anzeigen von der MRU-Liste ordnungsgemäß zu erzwingen. Wenn Sie diesen Schritt überspringen, wird die MRU-Liste nicht angezeigt.  
+    > Dieser Schritt ist erforderlich, um zu erzwingen, dass das VSPackage geladen und die MRU-Liste ordnungsgemäß angezeigt wird. Wenn Sie diesen Schritt überspringen, wird die MRU-Liste nicht angezeigt.  
   
-3. Auf der **Testmenü** Menü klicken Sie auf **Untermenü**. Eine Liste mit vier Elementen wird am Ende der im Untermenü unter ein Trennzeichen angezeigt. Beim Klicken auf **Element 3**, ein Meldungsfeld angezeigt werden soll, und der Text, "Ausgewählte Element 3" angezeigt. (Wenn die Liste der vier Elemente nicht angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen im vorherigen Schritt ausgeführt haben.)  
+3. Klicken Sie im Menü **Test** auf **Untermenü**. Eine Liste mit vier Elementen wird am Ende des Untermenüs unter einem Trennzeichen angezeigt. Wenn Sie auf **Element 3**klicken, sollte ein Meldungs Feld angezeigt werden, in dem der Text "Ausgewähltes Element 3" angezeigt wird. (Wenn die Liste der vier Elemente nicht angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen im vorherigen Schritt befolgt haben.)  
   
-4. Öffnen Sie das Untermenü erneut ein. Beachten Sie, dass **Element 3** ist jetzt am oberen Rand der Liste und die anderen Elemente haben eine Position nach unten verschoben wurde. Klicken Sie auf **Element 3** erneut aus, und beachten Sie, dass zeigt das Meldungsfeld noch "Ausgewählte Element 3", der angibt, dass der Text ordnungsgemäß auf die neue Position zusammen mit der Bezeichnung Befehl verschoben wurde.  
+4. Öffnen Sie das Untermenü erneut. Beachten Sie, dass **Element 3** nun am Anfang der Liste steht und die anderen Elemente eine Position nach unten verschoben wurden. Klicken Sie erneut auf **Element 3** , und beachten Sie, dass im Meldungs Feld weiterhin "Ausgewähltes Element 3" angezeigt wird. Dies deutet darauf hin, dass der Text ordnungsgemäß an die neue Position mit der Befehls Bezeichnung verschoben wurde.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Dynamisches Hinzufügen von Menüelementen](../extensibility/dynamically-adding-menu-items.md)

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b296ae403658f4d39558c28e11a425adee7650a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431117"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841024"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referenz zu Profiler-APIs in Visual Studio (nativ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63431117"
 Visual Studio-Profiler-APIs ermöglichen Ihnen das programmgesteuerte Bestimmen der gesammelten Datenmenge und Einfügen von Zeitstempel- und Profilmarkierungen bei der Profilerstellung. Um native APIs verwenden zu können, beziehen Sie die Headerdatei „VSPerf.h“ ein und fügen „VSPerf.lib“ Ihrem Projekt hinzu.  
   
 > [!NOTE]
-> Die Headerdatei „VSPerf.h“ und die Importbibliothek „VSPerf.lib“ befinden sich standardmäßig unter \<Laufwerk>:\Programme\Microsoft Visual Studio 9\Team Tools\Performance Tools\PerfSDK-Verzeichnis.  
+> Standardmäßig befinden sich die Dateien "VSPerf. h" und "VSPerf. lib" im \<drive> Verzeichnis ": \Programme\Microsoft Visual Studio 9 \ Team Tools\Performance Tools\PerfSDK".  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
@@ -46,6 +46,6 @@ Visual Studio-Profiler-APIs ermöglichen Ihnen das programmgesteuerte Bestimmen 
   
  [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
   
-## <a name="see-also"></a>Siehe auch  
- [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Profilerstellungstools-APIs](../profiling/profiling-tools-apis.md)   
  [Exemplarische Vorgehensweise: Verwenden von Profiler-APIs](../profiling/walkthrough-using-profiler-apis.md)

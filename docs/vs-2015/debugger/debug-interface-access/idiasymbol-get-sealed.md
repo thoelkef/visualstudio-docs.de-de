@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_sealed | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a25bf67daa11e6bf9464cc29d696bb7c243b617
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799704"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840986"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Klasse oder Methode versiegelt ist.  
+Ruft ein Flag ab, das angibt, ob die Klasse oder Methode versiegelt ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,23 +35,23 @@ HRESULT get_sealed( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn die Klasse oder Methode versiegelt ist; andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn die Klasse oder Methode versiegelt ist; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode darf nicht außer Kraft gesetzt sein.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode kann nicht überschrieben werden.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

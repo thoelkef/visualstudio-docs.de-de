@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445387"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841007"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung  
+### <a name="description"></a>BESCHREIBUNG  
  Die folgende [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.  
   
 ### <a name="code"></a>Code  
@@ -186,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung  
+### <a name="description"></a>BESCHREIBUNG  
  Die folgende [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Klasse veranschaulicht eine Aufgabe, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.  
   
 ### <a name="code"></a>Code  
@@ -268,6 +268,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

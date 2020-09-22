@@ -1,6 +1,8 @@
 ---
-title: ParameterInfo in eines Legacysprachdiensts 1 | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: Parameter Informationen in einer Legacy Sprache Service1 | Microsoft-Dokumentation
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
@@ -9,72 +11,72 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 5b1707313c40e7ea720fff3b9f70546af00ea486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408653"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840856"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
-Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich in einem Sprachkonstrukt sind.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
-
+Der IntelliSense-Parameter Info QuickInfo bietet Benutzern Hinweise dazu, wo Sie sich in einem Sprachkonstrukt befinden.  
+  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
+  
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
-
-## <a name="how-parameter-info-tooltips-work"></a>Funktionsweise von QuickInfo-Tipps für Parameter
- Wenn Sie eine Anweisung im Editor eingeben, zeigt das VSPackage ein kleines QuickInfo-Fenster, das mit der Definition der-Anweisung eingegeben wird. Angenommen, Sie geben Sie eine Microsoft Foundation Classes (MFC)-Anweisung (z. B. `pMainFrame ->UpdateWindow`), und drücken Sie die öffnende Klammer ein Schlüssel, um zu beginnen, Auflisten von einem methodentipp angezeigt wird, mit der Definition der Parameter, die `UpdateWindow` Methode.
-
- Parameter-QuickInfo-Tipps werden normalerweise in Verbindung mit der Anweisungsvervollständigung verwendet werden. Sie sind besonders hilfreich für die Sprachen, die Parameter oder andere formatierte Informationen nach dem Methodennamen oder das Schlüsselwort verfügen.
-
- Die ParameterInfo-QuickInfo werden vom Sprachdienst durch Abfangen von Befehlen initiiert. Zum Abfangen von Benutzer-Zeichen, das Language-Dienstobjekt implementieren muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle ab und übergeben Sie die Ansicht für den einen Zeiger auf Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> -Methode in der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle. Der Befehlsfilter fängt Befehle, die Sie in das Codefenster eingeben. Überwachen Sie die Befehlsinformationen, um zu wissen, wann Informationen zu den Parametern, die dem Benutzer angezeigt. Sie können den gleichen Befehlsfilter für die Anweisungsvervollständigung, fehlermarker und So weiter verwenden.
-
- Wenn Sie ein Schlüsselwort eingeben, für die der Sprachdienst Hinweise bereitstellen kann, klicken Sie dann der Sprachdienst erstellt eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt und ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> -Methode in der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle zum Benachrichtigen der IDE einen Hinweis angezeigt. Erstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Objekt unter Verwendung der `VSLocalCreateInstance` und geben Sie die Co-Klasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` ist eine Funktion, die in der vsdoc.h der Header-Datei, die aufruft, definiert `QueryService` für die lokale Registrierung und ruft `CreateInstance` für dieses Objekt für die `CLSID_VsMethodTipWindow`.
-
-## <a name="providing-a-method-tip"></a>Bereitstellen einer Methodentipp
- Um eine methodentipp bereitzustellen, rufen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> -Methode in der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> -Schnittstelle, und übergeben sie die Implementierung von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle.
-
- Wenn Ihre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> -Klasse aufgerufen wird, deren Methoden aufgerufen werden, in der folgenden Reihenfolge:
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
-
-     Gibt die Position und Länge der relevanten Daten in den aktuellen Textpuffer zurück. Dies weist die IDE nicht auf diese Daten mit dem QuickInfo-Fenster verdeckt.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
-
-     Gibt die Methode-Anzahl (nullbasiert) zuerst angezeigt werden soll. Z. B. Wenn Sie 0 (null) zurückgegeben wird, wird dann die erste überladene Methode zunächst präsentiert.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
-
-     Gibt die Anzahl der überladenen Methoden, die im aktuellen Kontext anwendbar sind. Wenn Sie einen Wert größer als 1 für diese Methode zurückgegeben wird, zeigt die Textansicht nach oben oder unten Pfeile für Sie. Wenn Sie den Pfeil nach unten klicken, ruft die IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> Methode. Wenn Sie den Pfeil nach oben klicken, ruft die IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> Methode.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
-
-     Das ParameterInfo-QuickInfo erstellt wird, während mehrere Aufrufe der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> Methoden.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
-
-     Gibt die Anzahl von Parametern, die in der Methode angezeigt.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
-
-     Wenn Sie, eine Methodennummer, die mit der Überladung zurückkehren, angezeigt werden sollen, diese Methode wird aufgerufen, gefolgt von einem Aufruf der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> Methode.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
-
-     Informiert den Sprachdienst, um den Editor zu aktualisieren, wenn es sich bei einem methodentipp angezeigt wird. In der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> -Methode den folgenden Aufruf:
-
-    ```
-    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
-    ```
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
-
-     Sie erhalten einen Anruf an die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode, wenn Sie das Fenster des methodentipps schließen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
+  
+## <a name="how-parameter-info-tooltips-work"></a>Funktionsweise von Parameter Info-Quick Infos  
+ Wenn Sie eine Anweisung im Editor eingeben, zeigt das VSPackage ein kleines QuickInfo-Fenster an, das die Definition der typisierten Anweisung enthält. Wenn Sie z. b. eine Microsoft Foundation Classes (MFC)-Anweisung eingeben (z. b. `pMainFrame ->UpdateWindow` ) und die öffnende Klammer Taste drücken, um mit der Auflistung von Parametern zu beginnen, wird ein Methoden Tipp mit der Definition der `UpdateWindow` Methode angezeigt.  
+  
+ Quick Infos für die Parameter Info werden normalerweise in Verbindung mit der Anweisungs Vervollständigung verwendet. Sie sind besonders nützlich für Sprachen mit Parametern oder anderen formatierten Informationen nach dem Methodennamen oder-Schlüsselwort.  
+  
+ Die Quick Infos für die Parameter Info werden vom Sprachdienst durch die Befehls Abfang Funktion initiiert. Zum Abfangen von Benutzer Zeichen muss das Sprachdienst Objekt die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle implementieren und der Textansicht einen Zeiger auf die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung übergeben, indem die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode in der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle aufgerufen wird. Der Befehls Filter fängt die Befehle ab, die Sie in das Code Fenster eingeben. Überwachen Sie die Befehls Informationen, um zu erfahren, wann dem Benutzerparameter Informationen angezeigt werden. Sie können denselben Befehls Filter für Anweisungs Vervollständigung, Fehler Marker usw. verwenden.  
+  
+ Wenn Sie ein Schlüsselwort eingeben, für das der Sprachdienst Hinweise bereitstellen kann, erstellt der Sprachdienst ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Objekt und ruft die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> Methode in der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle auf, um die IDE zum Anzeigen eines Hinweises zu benachrichtigen. Erstellen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Sie das Objekt mit, und geben Sie `VSLocalCreateInstance` die Co-Klasse an `CLSID_VsMethodTipWindow` . `VsLocalCreateInstance` ist eine Funktion, die in der Header Datei vsdoc. h definiert ist, die `QueryService` für die lokale Registrierung aufruft und für `CreateInstance` dieses Objekt für den aufruft `CLSID_VsMethodTipWindow` .  
+  
+## <a name="providing-a-method-tip"></a>Bereitstellen eines Methoden Tipps  
+ Um einen Methoden Tipp anzugeben, müssen Sie die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> Methode in der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Schnittstelle aufzurufen und ihr die Implementierung der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle übergeben.  
+  
+ Wenn Ihre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Klasse aufgerufen wird, werden die zugehörigen Methoden in der folgenden Reihenfolge aufgerufen:  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
+  
+     Gibt die Position und Länge der relevanten Daten im aktuellen Text Puffer zurück. Dadurch wird die IDE angewiesen, diese Daten nicht mit dem QuickInfo-Fenster zu verbergen.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
+  
+     Gibt die Methoden Nummer (null basierter Index) zurück, die anfänglich angezeigt werden soll. Wenn Sie z. b. 0 (null) zurückgeben, wird zunächst die erste überladene Methode angezeigt.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
+  
+     Gibt die Anzahl der überladenen Methoden zurück, die im aktuellen Kontext anwendbar sind. Wenn Sie für diese Methode einen Wert größer als 1 zurückgeben, werden in der Textansicht für Sie die Pfeile nach oben und nach unten angezeigt. Wenn Sie auf den Pfeil nach unten klicken, ruft die IDE die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> Methode auf. Wenn Sie auf den Pfeil nach oben klicken, ruft die IDE die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> Methode auf.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
+  
+     Der Text der QuickInfo für die Parameter Info wird bei mehreren Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> -und- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> Methoden erstellt.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
+  
+     Gibt die Anzahl von Parametern zurück, die in der Methode angezeigt werden sollen.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
+  
+     Wenn Sie eine Methoden Nummer zurückgeben, die der Überladung entspricht, die Sie anzeigen möchten, wird diese Methode aufgerufen, gefolgt von einem Aufruf der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> Methode.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
+  
+     Informiert ihren Sprachdienst über das Aktualisieren des Editors, wenn ein Methoden Tipp angezeigt wird. Nennen Sie in der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> Methode Folgendes:  
+  
+    ```  
+    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
+    ```  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
+  
+     Sie erhalten einen aufzurufenden Befehl an die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode, wenn Sie das Methoden Tipp Fenster schließen.

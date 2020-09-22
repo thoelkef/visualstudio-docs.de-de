@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433170"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840938"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Erstellen und Ausführen der Leistungstest-App  
   
-1. Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). Wählen Sie **Datei > Neu > Projekt** aus. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
+1. Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). (Wählen Sie **Datei/neu**> Projekt aus. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
   
 2. > [!IMPORTANT]
     > Die in diesem Thema gezeigten Ergebnisse der Diagnose werden für Windows 8-Apps angezeigt.  
   
 3. Wählen Sie im mittleren Bereich eine leere Projektvorlage aus, zum Beispiel **Leere App**.  
   
-4. Geben Sie im Feld **Name** einen Namen wie `JS_Perf_Tester` an, und wählen Sie dann **OK** aus.  
+4. Geben Sie im Feld **Name** einen Namen wie `JS_Perf_Tester`an, und wählen Sie dann **OK**aus.  
   
-5. Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
+5. Öffnen Sie in **Projektmappen-Explorer**default.html, und fügen Sie den folgenden Code zwischen den- \<body> Tags ein:  
   
     ```html  
     <div class="wrapper">  
@@ -150,19 +150,19 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 8. Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, ob die Schaltfläche **Waiting for values** (Warten auf Werte) auf der Seite angezeigt wird.  
   
-9. Wählen Sie **Waiting for values** (Warten auf Werte) aus, und überprüfen Sie, ob Text und Farbe der Schaltfläche ungefähr einmal pro Sekunde aktualisiert werden. Dieser Fehler ist entwurfsbedingt.  
+9. Wählen Sie **Waiting for values** (Warten auf Werte) aus, und überprüfen Sie, ob Text und Farbe der Schaltfläche ungefähr einmal pro Sekunde aktualisiert werden. Dies ist beabsichtigt.  
   
 10. Wechseln Sie zu Visual Studio zurück (ALT+TAB), und drücken Sie die Tastenkombination UMSCHALT+F5, um das Debugging zu beenden.  
   
      Nachdem Sie überprüft haben, dass die App funktioniert, können Sie mit dem Profiler deren Leistung überprüfen.  
   
-### <a name="analyzing-performance-data"></a>Analysieren der Leistungsdaten  
+### <a name="analyzing-performance-data"></a>Analysieren von Leistungsdaten  
   
 1. Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** einen Windows Phone-Emulator oder den **Simulator** aus.  
   
 2. Klicken Sie im Menü **Debuggen** auf **Leistung und Diagnose**.  
   
-3. Wählen Sie unter **Verfügbare Tools** **HTML-UI-Reaktionsfähigkeit** aus, und wählen Sie dann **Starten** aus.  
+3. Wählen Sie unter **Verfügbare Tools****HTML-UI-Reaktionsfähigkeit** aus, und wählen Sie dann **Starten** aus.  
   
     In diesem Lernprogramm fügen Sie den Profiler an das Startprojekt an. Informationen zu anderen Optionen, wie dem Anfügen des Profilers an eine installierte App, finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).  
   
@@ -184,7 +184,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 7. Wählen Sie einen ein- bis zweisekündigen Teil in der Mitte des CPU-Auslastungsdiagramms aus (entweder durch Klicken und Ziehen oder mithilfe der Registerkarte und der Pfeiltasten). Die folgende Abbildung zeigt das CPU-Auslastungsdiagramm, nachdem eine Auswahl getroffen wurde. Die Auswahl ist der nicht freigegebene Bereich.  
   
-    ![CPU-Auslastungsdiagramm](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Diagramm der CPU-Auslastung](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Wählen Sie **Vergrößern** aus.  
   
@@ -194,7 +194,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
     Die Zeitachsendetails im unteren Bereich zeigen ein Beispiel mit Details für den ausgewählten Zeitraum an.  
   
-    ![Zeitachsendetails](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Zeitachsen Details](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
     Die Ereignisse in den Zeitachsedetails bestätigen sichtbare Entwicklungen im CPU-Auslastungsdiagramm: Es gibt viele Ereignisse, die innerhalb kurzer Zeiträume stattfinden. Die Zeitachsendetailansicht zeigt, dass diese Ereignisse `Timer`, `Layout`- und `Paint`-Ereignisse sind.  
   
@@ -242,5 +242,5 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 2. Führen Sie den Profiler für die HTML-UI-Reaktionsfähigkeit erneut aus, und überprüfen Sie das CPU-Auslastungsdiagramm. Sie werden feststellen, dass die überzähligen Ereignisse verschwunden sind und die CPU-Auslastung beinahe auf null gesunken ist. Problem behoben!  
   
-## <a name="see-also"></a>Siehe auch  
- [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_liveRangeStartAddressSection | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df3faba1309b5a26316b615042492f96b9401a01
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791455"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840931"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt zurück, den Teil "Abschnitt" die Startadresse des Bereichs, in dem die lokalen Symbolcache gültig ist.  
+Gibt den Abschnitts Teil der Startadresse des Bereichs zurück, in dem das lokale Symbol gültig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,25 +35,25 @@ HRESULT get_liveRangeStartAddressSection ( 
   
 #### <a name="parameters"></a>Parameter  
  `section`  
- [out] Gibt zurück, den Teil "Abschnitt" Bereich ab.  
+ vorgenommen Gibt den Abschnitts Teil des Start Adress Bereichs zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
+> Ein zurückgegebener Fehlercode bedeutet, dass das Symbol keine Informationen zum Live Bereich enthält.  
   
-## <a name="remarks"></a>Hinweise  
- Die gebildet, indem Sie den Abschnitt und den Offset-Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Die durch den Abschnitt und den Offset gebildete Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
- Verwenden Sie zum Abrufen der Zeitzonenoffset-Teils der Adresse [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
+ Um den Offset Teil der Adresse zu erhalten, verwenden Sie [idiasymmetribol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

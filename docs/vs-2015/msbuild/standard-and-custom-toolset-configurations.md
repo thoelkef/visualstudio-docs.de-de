@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444379"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841017"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 |--------------|--------------------------------------------------------------------------------------|
 |     2.0      |           *Windows-Installationspfad*\Microsoft.Net\Framework\v2.0.50727\            |
 |     3.5      |              *Windows-Installationspfad*\Microsoft.NET\Framework\v3.5\               |
-|     4.0      |           *Windows-Installationspfad*\Microsoft.NET\Framework\v4.0.30319\            |
+|     4.0      |           *Windows-Installationspfad*\Microsoft.Net\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
- Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „12.0“. Sie können dieses Attribut jedoch mit dem **/toolsversion**-Schalter an einer Eingabeaufforderung überschreiben. Weitere Informationen über dieses Attribut und andere Methoden, `ToolsVersion` anzugeben, finden Sie unter [Überschreiben von ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
+ Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „12.0“. Sie können dieses Attribut jedoch mit dem **/toolsversion**-Schalter an einer Eingabeaufforderung überschreiben. Weitere Informationen zu diesem Attribut und anderen Möglichkeiten zum Angeben von finden Sie unter Überschreiben von `ToolsVersion` [ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
 
  Wenn `ToolsVersion` nicht angegeben ist, definiert der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\\Versionsnummer\>\DefaultToolsVersion** die `ToolsVersion`, die immer 2.0 lautet.  
 
@@ -97,9 +97,9 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 
 - **$(MSBuildBinPath)** ist auf den `ToolsPath`-Wert festgelegt, der entweder in der Registrierung oder in der Konfigurationsdatei festgelegt ist, in der `ToolsVersion` definiert ist. Die `$(MSBuildToolsPath)`-Einstellung in der Registrierung oder die Konfigurationsdatei gibt den Speicherort der Kernaufgaben und Ziele an. In der Projektdatei wird dies der $(MSBuildBinPath)-Eigenschaft sowie der $(MSBuildToolsPath)-Eigenschaft zugeordnet.  
 
-- `$(MSBuildToolsPath)` ist eine reservierte Eigenschaft von der MSBuildToolsPath-Eigenschaft, die in der Konfigurationsdatei festgelegt ist. (Diese Eigenschaft ersetzt `$(MSBuildBinPath)`. `$(MSBuildBinPath)` steht aus Kompatibilitätsgründen weiterhin zur Verfügung.) Ein benutzerdefiniertes Toolset muss entweder `$(MSBuildToolsPath)` oder `$(MSBuildBinPath)` definieren, jedoch nicht beides, es sei denn, beide haben denselben Wert.  
+- `$(MSBuildToolsPath)` ist eine reservierte Eigenschaft von der MSBuildToolsPath-Eigenschaft, die in der Konfigurationsdatei festgelegt ist. (Diese Eigenschaft ersetzt `$(MSBuildBinPath)`. Wird jedoch `$(MSBuildBinPath)` aus Kompatibilitätsgründen übertragen.) Ein benutzerdefiniertes Toolset muss entweder `$(MSBuildToolsPath)` oder `$(MSBuildBinPath)` , aber nicht beides definieren, es sei denn, beide haben denselben Wert.  
 
   Sie können auch benutzerdefinierte, Toolsversion-spezifische Eigenschaften zur Konfigurationsdatei hinzufügen, indem Sie die gleiche Syntax verwenden wie zum Hinzufügen der MSBuildToolsPath-Eigenschaft. Damit diese benutzerdefinierten Eigenschaften der Projektdatei zur Verfügung stehen, müssen Sie den gleichen Namen wie der des in der Konfigurationsdatei angegebenen Werts verwenden. In der Konfigurationsdatei können Sie Toolsets, nicht jedoch Unter-Toolsets definieren.  
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

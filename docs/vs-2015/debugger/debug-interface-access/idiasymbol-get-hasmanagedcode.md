@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasmanagedcode | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasManagedCode | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49e78c062ba92bf93edfce9aa7dac215a96faeb1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807252"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841065"
 ---
-# <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
+# <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, der angibt, ob das Modul über verwalteten Code enthält.  
+Ruft ein Flag ab, das angibt, ob das Modul verwalteten Code enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,24 +35,24 @@ HRESULT get_hasManagedCode(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn das Modul mit verwalteten Code; enthält andernfalls `FALSE`, der Code ist nicht verwaltetem Code.  
+ vorgenommen Gibt zurück `TRUE` , wenn das Modul verwalteten Code enthält; andernfalls wird zurückgegeben `FALSE` , der Code ist nicht verwalteter Code.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Eigenschaft ist über den `SymTagCompilandDetails` Symboltyp verfügbar (siehe [compilanddetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

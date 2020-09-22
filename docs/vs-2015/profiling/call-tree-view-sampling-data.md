@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383399"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841053"
 ---
 # <a name="call-tree-view---sampling-data"></a>Aufrufstrukturansicht – Samplingdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +55,9 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 |**Inklusive Samplings**|Die Anzahl der Samplings, die in dieser Funktion erfasst wurden, als sie von der in der Aufrufstruktur übergeordneten Funktion aufgerufen wurde. Diese Zahl umfasst Samplings, die in von der Funktion aufgerufenen Funktionen erfasst wurden.|  
 |**Inklusive Samplings in %**|Der Prozentsatz aller Samplings während der Profilerstellung, die auf inklusive Samplings dieser Funktion entfallen, wenn diese von der übergeordneten Funktion in der Aufrufstruktur aufgerufen wurde.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-sampling-data.md)   
- [Aufrufstrukturansicht – .NET-Speichersamplingdaten im Profiler](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Aufrufstrukturansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-instrumentation-data.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Aufrufstruktur Ansicht-Profiler-Samplingdaten](../profiling/call-tree-view-sampling-data.md)   
+ [Auftast Strukturansicht-Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Ansichts Strukturansicht-Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)

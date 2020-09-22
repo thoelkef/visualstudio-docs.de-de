@@ -1,5 +1,5 @@
 ---
-title: QuickInfo in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Quick Infos in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,34 +13,34 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840854"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle, wenn der Benutzer entweder die Einfügemarke in die ID setzt und wählt **Quick Info** aus der **IntelliSense** Menü oder die Maus der Cursor über einen Bezeichner. Dadurch wird eine QuickInfo mit Informationen zu den Bezeichner angezeigt werden. Diese Informationen enthalten i. d. r. der Typ des Bezeichners. Wenn die Debug-Engine aktiv ist, kann diese Informationen den aktuellen Wert enthalten. Die Debug-Engine stellt Ausdruckswerte, während der Sprachdienst nur Bezeichner behandelt.  
+IntelliSense-QuickInfo zeigt Informationen zu einem Bezeichner in der Quelle an, wenn der Benutzer entweder die Einfügemarke im Bezeichner platziert und im **IntelliSense** -Menü die **QuickInfo** auswählt oder den Mauszeiger über dem Bezeichner hält. Dies bewirkt, dass eine QuickInfo mit Informationen zum Bezeichner angezeigt wird. Diese Informationen bestehen normalerweise aus dem Bezeichnertyp. Wenn die Debug-Engine aktiv ist, können diese Informationen den aktuellen Wert enthalten. Die Debug-Engine liefert Ausdrucks Werte, während der Sprachdienst nur Bezeichner verarbeitet.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen von Quick Infos für QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
-> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.  
   
- Die verwaltete Package Framework (MPF) Sprache Dienstklassen bieten vollständige Unterstützung zum Anzeigen der IntelliSense-QuickInfo-QuickInfo. Müssen Sie lediglich den Text angezeigt werden, und aktivieren die Funktion "QuickInfo" angeben.  
+ Die Dienst Klassen für das Managed Package Framework (MPF) bieten vollständige Unterstützung für die Anzeige der QuickInfo-QuickInfo für IntelliSense. Sie müssen lediglich den anzuzeigenden Text angeben und das QuickInfo-Feature aktivieren.  
   
- Der anzuzeigende Text abgerufen wird, durch den Aufruf der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode-Parser, mit dem Analysieren Grund Wert <xref:Microsoft.VisualStudio.Package.ParseReason>. Aus diesem Grund teilt dem Parser abgerufen, die Typinformationen (oder was auch immer in der QuickInfo anzuzeigende geeignet ist) für den Bezeichner, an dem im angegebenen Speicherort der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt. Die <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, was übergeben wurde die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode.  
+ Der anzuzeigende Text wird abgerufen, indem der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methoden Parser mit einem analysieren Reason-Wert von aufgerufen wird <xref:Microsoft.VisualStudio.Package.ParseReason> . Dieser Grund weist den Parser an, die Typinformationen (oder das, was für die QuickInfo-QuickInfo geeignet ist) für den Bezeichner an der im-Objekt angegebenen Position abzurufen <xref:Microsoft.VisualStudio.Package.ParseRequest> . Das <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt wird an die-Methode übermittelt <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> .  
   
- Der Parser muss alles, was bis zu die Position im Analysieren der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt, um die Typen von allen Bezeichnern zu ermitteln. Dann muss der Parser die Bezeichner an der Position der Analyse-Anforderung abrufen. Schließlich muss der Parser die Tool-Tip-Daten zugeordnet, Bezeichner, der übergeben der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt, damit dieses Objekt Text zurückgeben, kann die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> Methode.  
+ Der Parser muss alles bis zur Position im Objekt analysieren, um <xref:Microsoft.VisualStudio.Package.ParseRequest> die Typen aller Bezeichner zu ermitteln. Dann muss der Parser den Bezeichner am Speicherort der Analyse Anforderung erhalten. Schließlich muss der Parser die QuickInfo-Daten, die diesem Bezeichner zugeordnet sind, an das-Objekt übergeben, damit das- <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt den Text aus der-Methode zurückgeben kann <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> .  
   
-## <a name="enabling-the-quick-info-feature"></a>Aktivieren der Funktion "QuickInfo"  
- Um die Funktion "QuickInfo" zu aktivieren, müssen Sie festlegen der `CodeSense` und `QuickInfo` benannte Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Legen Sie diese Attribute die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> und <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> Eigenschaften.  
+## <a name="enabling-the-quick-info-feature"></a>Aktivieren der QuickInfo-Funktion  
+ Um das QuickInfo-Feature zu aktivieren, müssen Sie den `CodeSense` -Parameter und den `QuickInfo` benannten Parameter von festlegen <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Diese Attribute legen die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> -Eigenschaft und die-Eigenschaft fest <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> .  
   
-## <a name="implementing-the-quick-info-feature"></a>Implementieren der Funktion "QuickInfo"  
- Die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse verarbeitet, den IntelliSense-QuickInfo-Vorgang. Wenn der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse erhält die <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl, der die ruft der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason> und die Position des Textcursors zum Zeitpunkt der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl gesendet wurde. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode Parser muss und analysieren Sie anschließend die Quelle bis zu der angegebenen Position und klicken Sie dann analysieren den Bezeichner am angegebenen Speicherort, um zu bestimmen, was in der QuickInfo angezeigt.  
+## <a name="implementing-the-quick-info-feature"></a>Implementieren der Quick Info-Funktion  
+ Die- <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse verarbeitet den IntelliSense-Quick Info-Vorgang. Wenn die- <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse den- <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl empfängt, ruft die-Klasse die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode mit dem Analyse Grund und dem Speicherort der Einfügemarke <xref:Microsoft.VisualStudio.Package.ParseReason> zum Zeitpunkt der Befehls Erstellung auf <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> . Der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methoden Parser muss dann die Quelle bis zum angegebenen Speicherort analysieren und dann den Bezeichner an der angegebenen Position analysieren, um zu bestimmen, was in der QuickInfo-QuickInfo angezeigt werden soll.  
   
- Die meisten Parser führen eine erste Analyse der gesamten Quelldatei und speichert die Ergebnisse in eine Analysestruktur. Die vollständige Analyse wird ausgeführt, wenn <xref:Microsoft.VisualStudio.Package.ParseReason> übergeben wird, um <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode. Andere Arten der Analyse können dann die Analysestruktur verwenden, um die gewünschten Informationen abzurufen.  
+ Die meisten Parser führen eine anfängliche Analyse der gesamten Quelldatei durch und speichern die Ergebnisse in einer Analyse Struktur. Die vollständige Analyse wird ausgeführt, wenn <xref:Microsoft.VisualStudio.Package.ParseReason> an die- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode übergeben wird. Andere Arten der Analyse können dann die Analyse Struktur verwenden, um die gewünschten Informationen zu erhalten.  
   
- Z. B. den ursachenwert Analyse der <xref:Microsoft.VisualStudio.Package.ParseReason> Suchen des Bezeichners am Quellspeicherort können, und suchen sie in der Struktur analysieren, um die Typinformationen zu erhalten. Diese Typinformationen übergeben, die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, und wird zurückgegeben, durch die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> Methode.
+ Beispielsweise kann der Wert für die Analyse Ursache von <xref:Microsoft.VisualStudio.Package.ParseReason> den Bezeichner am Quell Speicherort finden und in der Analyse Struktur nachschlagen, um die Typinformationen zu erhalten. Diese Typinformationen werden dann an die <xref:Microsoft.VisualStudio.Package.AuthoringScope> -Klasse weitergegeben und von der- <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> Methode zurückgegeben.

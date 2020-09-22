@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432837"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840833"
 ---
-# <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
+# <a name="how-to-choose-sampling-events"></a>Gewusst wie: Auswählen von Samplingereignissen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Profilerstellungstools [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:  
@@ -61,9 +61,9 @@ Die Profilerstellungstools [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sammeln 
   
 5. Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)   
- [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Vorgehensweise: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md)   
+ [CPU-und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)   
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Microsoft-Dokumentation
+title: 'IDebugProcess2:: getattachedsessionname | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3acc40e2b906bd46b832d9fa11578de346014042
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434069"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840896"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen der Sitzung, die diesen Prozess zu Debuggen ist. Eine IDE kann diese Informationen für einen Benutzer anzeigen, die einen bestimmten Prozess auf einem bestimmten Computer Debuggen ist.  
+Ruft den Namen der Sitzung ab, die diesen Prozess debuggt. Eine IDE kann diese Informationen für einen Benutzer anzeigen, der einen bestimmten Prozess auf einem bestimmten Computer debuggt.  
   
 > [!NOTE]
-> Diese Methode ist veraltet, und die Implementierung sollte immer zurückgeben `E_NOTIMPL`.  
+> Diese Methode ist veraltet, und ihre Implementierung sollte immer zurückgeben `E_NOTIMPL` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,7 +39,7 @@ HRESULT GetAttachedSessionName(
  `pbstrSessionName`  
   
 ## <a name="return-value"></a>Rückgabewert  
- Diese Methode sollte immer zurückgeben `E_NOTIMPL`.  
+ Diese Methode sollte immer zurückgeben `E_NOTIMPL` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

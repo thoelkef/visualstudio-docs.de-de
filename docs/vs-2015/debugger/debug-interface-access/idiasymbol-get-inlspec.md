@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_inlspec | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_InlSpec | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 99a92f134390e5d3215b1609234e643b71d93d3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840942"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Diese Funktion ruft ein Flag, der angibt, ob die Funktion als Inline gekennzeichnet war (mit einer der der [Inline __inline, \__forceinline](../../misc/inline-inline-forceinline.md) Attribute).  
+Diese Funktion Ruft ein Flag ab, das angibt, ob die Funktion als Inline gekennzeichnet war (mit einem der [Inline-, __inline- \_ _forceinline](../../misc/inline-inline-forceinline.md) Attribute).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,21 +35,21 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn die Funktion als Inline gekennzeichnet wurde, andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn die Funktion als Inline gekennzeichnet war; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der- `S_FALSE` oder-Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md)

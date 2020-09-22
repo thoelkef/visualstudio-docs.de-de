@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID | Microsoft-Dokumentation
+title: 'IDebugProperty3:: kreateobjectid | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0035faad9078acd70886d597f039c0d8de5ee12f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403206"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840903"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt eine eindeutige ID für diese Eigenschaft, um sicherzustellen, dass es für alle anderen Eigenschaften eindeutig ist.  
+Erstellt eine eindeutige ID für diese Eigenschaft, um sicherzustellen, dass Sie für alle anderen Eigenschaften eindeutig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,16 +37,16 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, wenn die sitzungsbasierter Debug-Manager möchte, um sicherzustellen, dass diese Eigenschaft für alle anderen Eigenschaften eindeutig identifiziert wird. Die Debug-Engine (DE) unterstützt diese Methode auf, es sei denn, die Eigenschaften, die mit befasst sich bereits eindeutig identifiziert werden. Die DE diese Methode nicht unterstützt, gibt `E_NOTIMPL`.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird aufgerufen, wenn der Sitzungs-Debug-Manager sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird. Die Debug-Engine (de) unterstützt diese Methode, es sei denn, die Eigenschaften, mit denen Sie umgeht, sind bereits eindeutig identifiziert Wenn die de diese Methode nicht unterstützt, wird zurückgegeben `E_NOTIMPL` .  
   
- Alle eindeutigen ID erstellt, mit `CreateObjectID` wird zerstört, wenn die [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) aufgerufen; dies auch signalisiert das Ende der die Notwendigkeit, die diese Eigenschaft eindeutig identifiziert.  
+ Jede mit erstellte eindeutige ID `CreateObjectID` wird zerstört, wenn die [destroyobjectid](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) -Methode aufgerufen wird. Dies signalisiert auch das Ende der Notwendigkeit, diese Eigenschaft eindeutig zu identifizieren.  
   
 > [!NOTE]
-> Es gibt keine Methode diese eindeutige ID abrufen, damit die DE durchführen kann, was sie für die eindeutigen IDs möchte bei der `CreateObjectID` Methode wird aufgerufen.  
+> Es ist keine Methode zum Abrufen dieser eindeutigen ID vorhanden, d. h., der Dienst kann alle für eindeutige IDs benötigten, wenn die- `CreateObjectID` Methode aufgerufen wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

@@ -13,49 +13,49 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441240"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840894"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Projektmodell wird nun von einer Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zur nächsten erfordern, dass Projekte und Projektmappen aktualisiert werden, sodass sie die neuere Version ausgeführt werden können. Die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] enthält Schnittstellen, die zum Implementieren von Unterstützung in Ihren eigenen Projekten verwendet werden können.  
+Änderungen am Projekt Modell von einer Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] in die nächste Version von erfordern möglicherweise, dass Projekte und Projektmappen aktualisiert werden, damit Sie auf der neueren Version ausgeführt werden können. [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]Stellt Schnittstellen bereit, die zum Implementieren von upgradeunterstützung in ihren eigenen Projekten verwendet werden können.  
   
-## <a name="upgrade-strategies"></a>Aktualisierungsstrategien  
- Um ein Upgrade zu unterstützen, muss die Project-System-Implementierung definieren und implementieren eine Strategie für die Aktualisierung. Bei der Bestimmung Ihrer Strategie, können Sie auswählen, um Side-by-Side (SxS) Sicherung, Sicherung kopieren oder beides zu unterstützen.  
+## <a name="upgrade-strategies"></a>Upgradestrategien  
+ Um ein Upgrade zu unterstützen, muss die Implementierung des Projekt Systems eine Upgradestrategie definieren und implementieren. Zum Ermitteln ihrer Strategie können Sie eine parallele (SxS) Sicherung, Kopiesicherung oder beides unterstützen.  
   
-- Parallele Sicherung bedeutet, dass ein Projekt nur die Dateien kopiert, die ein Upgrade Direktes Hinzufügen einer geeigneten Dateinamensuffix, z. B. ".old".  
+- SxS Backup bedeutet, dass in einem Projekt nur die Dateien kopiert werden, für die ein Upgrade durchgeführt werden muss. dabei wird ein geeigneter Dateinamen Suffix hinzugefügt, z. b. ". old".  
   
-- Kopieren Sie die Sicherung bedeutet, dass ein Projekt alle Projektelemente in einen vom Benutzer bereitgestellte Sicherungsspeicherort kopiert. Die relevanten Dateien auf den Speicherort des ursprünglichen Projekts werden anschließend aktualisiert.  
+- Kopiesicherung bedeutet, dass ein Projekt alle Projekt Elemente an einen vom Benutzer bereitgestellten Sicherungs Speicherort kopiert. Die relevanten Dateien am ursprünglichen Projekt Speicherort werden dann aktualisiert.  
   
-## <a name="how-upgrade-works"></a>Funktionsweise von Upgrades  
- Wenn eine Projektmappe, die in einer früheren Version erstellten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird geöffnet, in einer neueren Version, die IDE-Überprüfungen, die die Projektmappendatei, um festzustellen, ob sie ein Upgrade erforderlich ist. Wenn ein Upgrade erforderlich ist, ist die **Aktualisierungs-Assistenten** wird automatisch gestartet, um den Benutzer über den Upgradeprozess geführt.  
+## <a name="how-upgrade-works"></a>Funktionsweise des Upgrades  
+ Wenn eine Projekt Mappe, die in einer früheren Version von erstellt wurde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , in einer neueren Version geöffnet wird, überprüft die IDE die Projektmappendatei, um zu bestimmen, ob Sie aktualisiert werden muss. Wenn ein Upgrade erforderlich ist, wird der **Upgrade-Assistent** automatisch gestartet, um den Benutzer durch den Upgradeprozess zu durchlaufen.  
   
- Wenn eine Lösung aktualisieren benötigt, wird jedes Projekt-Factory für die Upgrade-Strategie abgefragt. Die Strategie bestimmt, ob die Projektzuordnungsinstanz kopieren oder SxS-Sicherung unterstützt. Die Informationen werden gesendet, um die **Aktualisierungs-Assistenten**, die für die Sicherung erforderliche Informationen erfasst und zeigt die zutreffenden Optionen für dem Benutzer.  
+ Wenn eine Projekt Mappe aktualisiert werden muss, fragt Sie jede projektfactory nach ihrer Upgradestrategie ab. Die Strategie bestimmt, ob die projektfactory Kopiesicherung oder SxS-Sicherung unterstützt. Die Informationen werden an den **Upgrade-Assistenten**gesendet, der die für die Sicherung erforderlichen Informationen sammelt und dem Benutzer die entsprechenden Optionen präsentiert.  
   
 ### <a name="multi-project-solutions"></a>Projektmappen mit mehreren Projekten  
- Wenn eine Projektmappe mehrere Projekte enthält, und die Aktualisierungsstrategien unterscheiden, wie z. B. beim Erstellen eines C++-Projekts, das nur parallele Sicherung unterstützt und ein Webprojekt, die nur Sicherung kopieren unterstützt, die projektfactorys der Aktualisierungsstrategie aushandeln müssen.  
+ Wenn eine Projekt Mappe mehrere Projekte enthält und die Upgradestrategien unterschiedlich sind, z. b. Wenn ein C++-Projekt, das nur die SxS-Sicherung unterstützt, und ein Webprojekt, das nur die Kopiesicherung unterstützt, die Projekt-Factorys  
   
- Die Lösung Abfragen für jedes Projekt-Factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Es ruft dann <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> um festzustellen, ob die globale Projektdateien benötigen aktualisieren und die unterstützten Aktualisierungsstrategien zu ermitteln. Die **Aktualisierungs-Assistenten** wird dann aufgerufen.  
+ Die Projekt Mappe fragt jede projektfactory nach ab <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> . Anschließend wird aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> , um zu prüfen, ob globale Projektdateien aktualisiert werden müssen, und um die unterstützten Upgradestrategien zu ermitteln. Anschließend wird der **Upgrade-Assistent** aufgerufen.  
   
- Nach Abschluss des Assistenten, durch der Benutzer <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> für jedes Projekt-Factory zum Ausführen des tatsächlichen Upgrades aufgerufen wird. Um die Sicherung zu erleichtern, IVsProjectUpgradeViaFactory dienen der <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> Dienst, der die Details des Upgradeprozesses protokollieren. Dieser Dienst kann nicht zwischengespeichert werden.  
+ Nachdem der Benutzer den Assistenten abgeschlossen hat, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> wird für jede projektfactory aufgerufen, um das tatsächliche Upgrade auszuführen. Um die Sicherung zu vereinfachen, stellen ivsprojectupgradeviafactory-Methoden den <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> Dienst bereit, um die Details des Upgradevorgangs zu protokollieren. Dieser Dienst kann nicht zwischengespeichert werden.  
   
- Nach der Aktualisierung aller relevanten globale Dateien kann jedes Projekt-Factory zum Instanziieren ein Projekt auswählen. Die Projekt-Implementierung unterstützen muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Methode wird aufgerufen, um alle relevanten Projektelemente zu aktualisieren.  
+ Nachdem alle relevanten globalen Dateien aktualisiert wurden, kann jede projektfactory auswählen, ein Projekt zu instanziieren. Die Projekt Implementierung muss unterstützen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> . Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Methode wird dann aufgerufen, um alle relevanten Projekt Elemente zu aktualisieren.  
   
 > [!NOTE]
-> Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode der SVsUpgradeLogger-Dienst nicht bereitstellt. Dieser Dienst abgerufen werden kann, durch den Aufruf <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode stellt keinen SVsUpgradeLogger-Dienst bereit. Dieser Dienst kann durch Aufrufen von abgerufen werden <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> .  
   
-## <a name="best-practices"></a>Bewährte Methoden  
- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst zu überprüfen, ob Sie eine Datei vor der Bearbeitung bearbeiten können, und vor dem Speichern speichern können. Dadurch wird die Sicherung und Upgrade Implementierungen verarbeiten, Projektdateien unter quellcodeverwaltung, Dateien mit nicht genügend Berechtigungen, und So weiter.  
+## <a name="best-practices"></a>Empfehlungen  
+ Verwenden <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Sie den Dienst, um zu prüfen, ob Sie eine Datei bearbeiten können, bevor Sie Sie bearbeiten, und Sie können Sie speichern, bevor Sie gespeichert wird. Dies hilft Ihren Sicherungs-und upgradeimplementierungen bei der Behandlung von Projektdateien in der Quell Code Verwaltung, Dateien mit unzureichenden Berechtigungen usw.  
   
- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> service in allen Phasen der Sicherung und upgrade, um Informationen zu den Erfolg oder Misserfolg des Upgradevorgangs bereitzustellen.  
+ Verwenden <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> Sie den Dienst in allen Phasen der Sicherung und des Upgrades, um Informationen über den Erfolg oder Misserfolg des Upgradevorgangs bereitzustellen.  
   
- Weitere Informationen zum Sichern und Aktualisieren von Projekten finden Sie unter die Kommentare für IVsProjectUpgrade in vsshell2.idl.  
+ Weitere Informationen zum Sichern und Upgraden von Projekten finden Sie in den Kommentaren für ivsprojectupgrade in vsshell2. idl.  
   
-## <a name="see-also"></a>Siehe auch  
- [Projekte](../../extensibility/internals/projects.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kte](../../extensibility/internals/projects.md)   
  [Aktualisieren von benutzerdefinierten Projekten](../../misc/upgrading-custom-projects.md)   
  [Aktualisieren von Projektelementen](../../misc/upgrading-project-items.md)
