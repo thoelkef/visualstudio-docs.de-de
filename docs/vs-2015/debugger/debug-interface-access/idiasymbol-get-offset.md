@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offset | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_Offset | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f99a9cef4266be9a3373d20f09fca8c64e5a33b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809664"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841087"
 ---
-# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
+# <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Offset des Symbolspeicherort ab. Verwenden, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsRegRel` oder `LocIsBitField`.  
+Ruft den Offset der Symbol Position ab. Verwenden Sie, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) `LocIsRegRel` oder ist `LocIsBitField` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,24 +35,24 @@ HRESULT get_offset ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Offset in Bytes, der den Symbolspeicherort zurück.  
+ vorgenommen Gibt den Offset der Symbol Position in Bytes zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- Der Offset wird von einem bestimmten bekannten Punkt zuvor ermittelt. Z. B. den Offset für einen `LocIsBitField` Speicherorttyp ist in der Regel am Anfang der enthaltenden Klasse.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Offset ist von einem bekannten, zuvor festgelegten Zeitpunkt. Beispielsweise ist der Offset für einen `LocIsBitField` Location-Typ in der Regel vom Anfang der enthaltenden Klasse.  
   
 ## <a name="requirements"></a>Anforderungen  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

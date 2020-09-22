@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015638"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739992"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts
   In Visual Studio können Sie den Knoten **SharePoint-Verbindungen** von **Server-Explorer** verwenden, um Komponenten auf SharePoint-Sites anzuzeigen. Allerdings werden in **Server-Explorer** standardmäßig einige Komponenten nicht angezeigt. In dieser exemplarischen Vorgehensweise erweitern Sie **Server-Explorer** , sodass der Webpartkatalog auf jeder verbundenen SharePoint-Website angezeigt wird.
@@ -275,7 +275,7 @@ ms.locfileid: "86015638"
 
 1. Öffnen Sie in **Projektmappen-Explorer**im WebPartNode-Projekt die Datei " **Source. Extension. vsixmanifest** " im Manifest-Editor.
 
-     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Geben Sie im Feld **Produkt Name** den **Webpartkatalog-Knoten für Server-Explorer**ein.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015638"
 10. Geben Sie im Feld **Typ** den Text **SharePoint. Commands. v4**ein.
 
     > [!NOTE]
-    > Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio-Erweiterung einschließen möchten. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio-Erweiterung einschließen möchten. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](/previous-versions/dd393737(v=vs.110)).
 
 11. Wählen Sie in der Liste **Quelle** das Element **ein Projekt in der aktuellen Projekt Mappe aus** .
 
@@ -370,7 +370,7 @@ ms.locfileid: "86015638"
 4. Schließen Sie beide Instanzen von Visual Studio (die experimentelle Instanz und die Instanz von Visual Studio, in der die WebPartNode-Projekt Mappe geöffnet ist).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Exemplarische Vorgehensweise: Abrufen des SharePoint-Client Objektmodells in einer Server-Explorer-Erweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)
 - [Erstellen eines Symbols oder anderen Bilds &#40;Bildbearbeitung für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

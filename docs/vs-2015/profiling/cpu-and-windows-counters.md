@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434299"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841083"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
       **Hinweis** Klicken Sie auf **Abbrechen**, um zur vorherigen Samplingkonfiguration zurückzukehren.  
   
-     - oder -   
+     - oder -  
   
    - Wählen Sie **CPU-Indikatoren** und anschließend **CPU-Indikatoren auflisten** aus. Die CPU-Indikatoren werden unter **Verfügbare Indikatoren** aufgeführt.  
   
@@ -125,12 +125,12 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     Dabei ist  **\<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise  
+     dabei **\<Visual Studio Performance Tools Directory>** ist der Pfad zum Verzeichnis "Performance Tools" Ihrer Visual Studio-Installation, normalerweise  
   
      C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)   
- [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)   
- [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)
+ [Gewusst wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)   
+ [Vorgehensweise: Sammeln von CPU-Zählers](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Gewusst wie: Sammeln von Windows-Counter-Daten](../profiling/how-to-collect-windows-counter-data.md)

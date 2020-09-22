@@ -1,5 +1,5 @@
 ---
-title: Isolierte Shell-Einstiegspunktparameter (C++) | Microsoft-Dokumentation
+title: Parameter für isolierte Shell-Einstiegspunkte (C++) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,72 +12,72 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439810"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841232"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>Isolierte Shell-Einstiegspunktparameter (C++)
+# <a name="isolated-shell-entry-point-parameters-c"></a>Einstiegspunktparameter für die isolierte Shell (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie eine Visual Studio Shell-basierten Anwendung startet, ruft er den Einstiegspunkt der Start von Visual Studio Shell. Die folgenden Einstellungen können im Aufruf an den Einstiegspunkt der Start der Shell überschrieben werden. Eine Beschreibung der einzelnen Einstellungen, finden Sie unter [. PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
+Wenn eine Shell-basierte Visual Studio-Anwendung gestartet wird, ruft Sie den Start Einstiegspunkt der Visual Studio-Shell auf. Die folgenden Einstellungen können im aufrufsstartpunkt der Shell überschrieben werden. Eine Beschreibung der einzelnen Einstellungen finden Sie unter [. Pkgdef-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
-- AddinsAllowed  
+- Addinsallowed  
   
-- AllowsDroppedFilesOnMainWindow  
+- Allowsdroppedfilesonmainwindow  
   
 - AppName  
   
-- CommandLineLogo  
+- Commandlinelogo  
   
 - DefaultHomePage  
   
-- DefaultProjectsLocation  
+- Defaultprojectslocation  
   
-- DefaultSearchPage  
+- Defaultsearchpage  
   
-- DefaultUserFilesFolderRoot  
+- Defaultuserfilesfolderroot  
   
-- DisableOutputWindow  
+- Disableoutputwindow  
   
-- HideMiscellaneousFilesByDefault  
+- Hidemiscellaneousfilesbydefault  
   
-- HideSolutionConcept  
+- Hidesolutionconcept  
   
-- NewProjDlgInstalledTemplatesHdr  
+- Newprojdlginstalledtemplateshdr  
   
-- NewProjDlgSlnTreeNodeTitle  
+- Newprojdlgslntreenodecotitle  
   
-- SolutionFileCreatorIdentifier  
+- Solutionfilekreatoridentifier  
   
-- SolutionFileExt  
+- Solutionfileext  
   
-- UserFilesSubFolderName  
+- Userfilessubfoldername  
   
-- UserOptsFileExt  
+- Useropt fileext  
   
-  Die Visual Studio Shell Isolated-Vorlage erstellt eine Quelldatei *SolutionName*cpp, in denen *SolutionName* ist für die Anwendung der Namen der Projektmappe. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung, die _tWinMain-Funktion. Diese Funktion ruft den Einstiegspunkt der Start der Shell.  
+  Die isolierte Visual Studio Shell-Vorlage erstellt die Quelldatei " *SolutionName*. cpp", wobei " *SolutionName* " der Projektmappenname für die Anwendung ist. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung, die _tWinMain Funktion. Diese Funktion Ruft den Start Einstiegspunkt der Shell auf.  
   
-  Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen zu ändern, beim Starten der Anwendung.  
+  Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen ändern, wenn die Anwendung gestartet wird.  
   
 ## <a name="parameters"></a>Parameter  
- Der Einstiegspunkt der Start von Visual Studio Shell definiert fünf Parameter. Ändern Sie die ersten vier Parameter nicht. Der fünfte Parameter akzeptiert eine Liste der Einstellungen außer Kraft setzen. Der Einstiegspunkt der Start der Shell wird von der Haupteinstiegspunkt einer Anwendung aufgerufen.  
+ Der Start Einstiegspunkt der Visual Studio Shell definiert fünf Parameter. Ändern Sie die ersten vier Parameter nicht. Der fünfte Parameter nimmt eine Einstellungs Überschreibungs Liste an. Der Start Einstiegspunkt der Shell wird vom Haupteinstiegspunkt einer Anwendung aus aufgerufen.  
   
- Der Einstiegspunkt der Start der Shell weist folgende Signatur auf.  
+ Der Start Einstiegspunkt der Shell hat die folgende Signatur.  
   
 ```  
 typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);  
 ```  
   
- Überschreiben Sie Parameter als ein null-Zeiger, wenn Sie nicht möchten, sollten Sie den Wert der Einstellungen zum Überschreiben alle Anwendungseinstellungen.  
+ Wenn Sie keine Anwendungseinstellungen außer Kraft setzen möchten, belassen Sie den Wert des Parameters Einstellungen überschreiben als NULL-Zeiger.  
   
- Um eine oder mehrere Einstellungen zu überschreiben, übergeben Sie eine Unicode-Zeichenfolge mit den Einstellungen außer Kraft gesetzt werden. Die Zeichenfolge ist eine durch Semikolons getrennte Liste von Name / Wert-Paaren. Jedes Paar enthält den Namen der Einstellung, um zu überschreiben, gefolgt von einem Gleichheitszeichen (=), gefolgt vom Wert der Einstellung angewendet wird.  
+ Um eine oder mehrere Einstellungen zu überschreiben, übergeben Sie eine Unicode-Zeichenfolge, die die Einstellungen enthält, die überschrieben werden sollen. Die Zeichenfolge ist eine durch Semikolons getrennte Liste von Name-Wert-Paaren. Jedes Paar enthält den Namen der zu über schreibenden Einstellung, gefolgt von einem Gleichheitszeichen (=), gefolgt von dem Wert, der auf die Einstellung angewendet werden soll.  
   
 > [!NOTE]
-> Nehmen Sie Leerzeichen nicht in der Unicode-Zeichenfolgen aus.  
+> Fügen Sie keine Leerzeichen in die Unicode-Zeichen folgen ein.  
   
- Für boolesche Einstellungen stehen für die folgenden Zeichenfolgen den Wert True; Alle anderen Zeichenfolgen darstellen, den Wert "false". Diese Zeichenfolgen werden Groß-/Kleinschreibung.  
+ Für boolesche Einstellungen stellen die folgenden Zeichen folgen den Wert true dar. alle anderen Zeichen folgen stellen den Wert false dar. Diese Zeichen folgen Unterscheidung nach Groß-/Kleinschreibung.  
   
 - \+  
   
@@ -85,15 +85,15 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
 - -1  
   
-- an  
+- on  
   
 - true  
   
 - ja  
   
 ## <a name="example"></a>Beispiel  
- Um-add-ins deaktivieren, und Ändern des Standardspeicherorts für Projekte für Ihre Anwendung, können Sie die letzten Parameter für "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp" festlegen.  
+ Wenn Sie Add-Ins deaktivieren und den Speicherort der Standardprojekte für Ihre Anwendung ändern möchten, können Sie den letzten Parameter auf "addinsallowed = false; defaultprojectslocation =%USERPROFILE%\temp" festlegen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Anpassen der Isolated Shell](../extensibility/customizing-the-isolated-shell.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Anpassen der isolierten Shell](../extensibility/customizing-the-isolated-shell.md)   
  [PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

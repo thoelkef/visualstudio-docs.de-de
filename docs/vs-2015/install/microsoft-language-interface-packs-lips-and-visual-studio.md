@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432997"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841120"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,5 +102,5 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
 
    Sie können auch den devenv-Befehl verwenden, um die Sprache festzulegen, die für Benutzeroberfläche verwendet wird. Weitere Informationen finden Sie unter [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../ide/reference/international-settings-environment-options-dialog-box.md)

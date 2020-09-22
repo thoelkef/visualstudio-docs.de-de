@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986139"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807962"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
 
@@ -309,15 +309,15 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 | Office-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |----------------------------| - |
-| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    **Installationsprogramme pro Computer basierend auf der Windows-Version**
 
 | Windows-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |-----------------------------| - |
-| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Für ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungs Pfade erforderlich, da es Benutzern möglich ist, 32-Bit-und 64-Bit-Versionen von Office auf einem Computer auszuführen, auf dem 64-Bit-Windows ausgeführt wird.
@@ -333,7 +333,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 7. Wiederholen Sie diesen Vorgang, um die folgenden Werte zu erstellen.
 
-|Werttyp<br /><br />|Name<br /><br />|
+|Werttyp<br /><br />|name<br /><br />|
 |--------------|--------|
 |Zeichenfolgenwert<br /><br />|**FriendlyName**<br /><br />|
 |DWORD-Wert<br /><br />|**LoadBehavior**<br /><br />|
@@ -504,7 +504,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Office-Lösungs Voraussetzungen für die Bereitstellung](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office-Lösungs Voraussetzungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110))
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)
 - [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md)

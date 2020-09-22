@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580643"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740143"
 ---
-# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
 
 Erstellen Sie zum Bereitstellen einer Erweiterung für SharePoint-Tools ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX), das die Erweiterungsassembly und alle anderen Dateien enthält, die Sie mit der Erweiterung verteilen möchten. Bei einem VSIX-Paket handelt es sich um eine komprimierte Datei, die dem OPC-Standard (Open Packaging Conventions) folgt. VSIX-Pakete verfügen über die Erweiterung *. vsix* .
 
@@ -234,11 +234,11 @@ Wenn Sie das VSIX-Paket für die Erweiterung der SharePoint-Tools manuell erstel
 
     - Fügen Sie `Microsoft.VisualStudio.MefComponent` unter dem `Assets` -Element ein-Element hinzu, und legen Sie dann den Wert des neuen-Elements auf den relativen Pfad der Assembly fest, die ihre Erweiterung im VSIX-Paket implementiert. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    - Wenn die Erweiterung einen SharePoint-Befehl enthält, der das Server-Objektmodell für SharePoint aufruft, fügen Sie `Microsoft.VisualStudio.Assembly` unter dem-Element ein-Element hinzu `Assets` . Legen Sie den Wert des neuen Elements auf den relativen Pfad der Assembly fest, die den SharePoint-Befehl im VSIX-Paket implementiert. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Wenn die Erweiterung einen SharePoint-Befehl enthält, der das Server-Objektmodell für SharePoint aufruft, fügen Sie `Microsoft.VisualStudio.Assembly` unter dem-Element ein-Element hinzu `Assets` . Legen Sie den Wert des neuen Elements auf den relativen Pfad der Assembly fest, die den SharePoint-Befehl im VSIX-Paket implementiert. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](/previous-versions/dd393737(v=vs.110)).
 
     - Wenn die Erweiterung eine Projektvorlage oder Element Vorlage enthält, fügen Sie `ProjectTemplate` unter dem-Element ein-oder- `ItemTemplate` Element hinzu `Assets` . Legen Sie den Wert des neuen Elements auf den relativen Pfad des Ordners fest, der die Vorlage im VSIX-Paket enthält. Weitere Informationen finden Sie unter [ProjectTemplate-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) und [ItemTemplate-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    - Wenn die Erweiterung einen benutzerdefinierten Assistenten für eine Projektvorlage oder Element Vorlage enthält, fügen Sie `Assembly` unter dem-Element ein-Element hinzu `Assets` . Legen Sie den Wert des neuen Elements auf den relativen Pfad der Assembly im VSIX-Paket fest, und legen Sie dann das- `AssemblyName` Attribut auf den vollständigen Assemblynamen (einschließlich Version, Kultur und öffentliches Schlüssel Token) fest. Weitere Informationen finden Sie unter [Abhängigkeits Element (VSX-Schema)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Wenn die Erweiterung einen benutzerdefinierten Assistenten für eine Projektvorlage oder Element Vorlage enthält, fügen Sie `Assembly` unter dem-Element ein-Element hinzu `Assets` . Legen Sie den Wert des neuen Elements auf den relativen Pfad der Assembly im VSIX-Paket fest, und legen Sie dann das- `AssemblyName` Attribut auf den vollständigen Assemblynamen (einschließlich Version, Kultur und öffentliches Schlüssel Token) fest. Weitere Informationen finden Sie unter [Abhängigkeits Element (VSX-Schema)](/previous-versions/dd393682(v=vs.110)).
 
 ### <a name="example"></a>Beispiel
 
@@ -266,7 +266,7 @@ Das folgende Beispiel zeigt den Inhalt einer Erweiterung. vsixmanifest-Datei fü
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

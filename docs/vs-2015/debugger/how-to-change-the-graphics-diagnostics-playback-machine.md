@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Ändern Sie die Grafikdiagnose-Wiedergabecomputers | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444813"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841099"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Sie können Grafikinformationen über Ihren lokalen Computer oder einen Remoteco
   
 1. Klicken Sie im Dokumentfenster „Grafikprotokolle“ auf den Link **Wiedergabecomputer**. Das Dialogfeld **Verbindungen des Remotedebuggers** wird angezeigt.  
   
-2. Klicken Sie unter **manuelle Konfiguration**in die **Adresse** -Eigenschaft, geben Sie `localhost`.  
+2. Geben Sie unter **Manuelle Konfiguration** in der Eigenschaft **Adresse** `localhost` ein.  
   
 3. Setzen Sie die Eigenschaft **Authentifizierungsmodus** auf **Keine**.  
   
@@ -51,5 +51,5 @@ Sie können Grafikinformationen über Ihren lokalen Computer oder einen Remoteco
 > [!NOTE]
 > Im Dialogfeld **Verbindungen des Remotedebuggers** können auch Remotedebuggingziele angezeigt werden, die direkt mit Ihrem Entwicklungscomputer verbunden sind oder sich auf dem gleichen Subnetz befinden. Sie können eines dieser Remotedebuggingziele als Grafikdiagnose-Wiedergabecomputer verwenden, ohne diesen manuell zu konfigurieren. Wählen Sie im Dialogfeld **Verbindungen des Remotedebuggers** das gewünschte Ziel aus, und klicken Sie dann auf die Schaltfläche **Auswählen**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Grafikprotokolldokument](../debugger/graphics-log-document.md)

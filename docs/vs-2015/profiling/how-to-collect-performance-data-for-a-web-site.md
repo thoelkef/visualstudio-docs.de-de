@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
+title: 'Gewusst wie: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432797"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840890"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web-Anwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE geöffnet ist.  
+Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webanwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Website erstellen, die sich auf dem lokalen Computer befindet und nicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE geöffnet ist.  
   
 > [!NOTE]
 > Der **Leistungs-Assistent** ermöglicht Ihnen das Hinzufügen von Ebeneninteraktionsdaten (TIP) und/oder JScript-Leistungsdaten zu den gesammelten Profilerstellungsdaten. Die Option TIP sammelt Daten von serverseitigen Prozessen. Die JScript-Profilerstellung sammelt Daten aus Skripts, die auf einer lokalen oder Remotewebsite ausgeführt werden. In den meisten Fällen sollten Sie nur eine der Optionen auswählen.  
@@ -42,7 +42,7 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 - Einige Benutzer können den Zugriff auf Profilerstellung für alle anderen Benutzer verweigern.  
   
-  Weitere Informationen finden Sie unter [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md) und den ADMIN-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Weitere Informationen finden Sie unter [Profilerstellung und Windows Vista-Sicherheit](../profiling/profiling-and-windows-vista-security.md) sowie in den Admin-Optionen in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Profilieren eines Websiteprojekts  
   
@@ -64,7 +64,7 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 7. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
   
-8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
+8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
   
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hauptfenster.  
   
@@ -80,11 +80,11 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 5. Geben Sie im Feld **Auf welcher URL oder welchem Pfad wird die Webanwendung ausgeführt?** auf der dritten Seite des Assistenten die URL der Startseite der Anwendung ein und klicken Sie dann auf **Weiter**.  
   
-   - Geben Sie für eine serverbasierte (oder IIS-basierte) Website z.B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
+   - Geben Sie für eine serverbasierte (oder IIS-basierte) Website z. B. die URL **http://localhost/MySite/default.aspx** ein. Dies bewirkt, dass für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendung auf dem lokalen Computer beim Anwendungsstamm von MySite ein Profil erstellt wird und die Seite default.aspx dieser Site im Internet Explorer geöffnet wird, um die Sitzung zu starten.  
   
    - Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.  
   
-   - Für externe Websites möchten Sie zum Sammeln von JavaScript-Daten, geben Sie die URL, z. B. http:\//www.contoso.com.  
+   - Geben Sie für externe Websites, auf denen Sie JavaScript-Daten sammeln möchten, die URL ein, z \/ . b. http:/www.contoso.com.  
   
      Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Zielbinärdatei.  
   
@@ -102,8 +102,8 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hauptfenster.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Grundlegendes zu Instrumentations Datenwerten](../profiling/understanding-instrumentation-data-values.md)   
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)

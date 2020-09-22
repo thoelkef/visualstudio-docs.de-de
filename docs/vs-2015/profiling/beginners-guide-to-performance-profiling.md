@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433819"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842311"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Einführung in die Leistungsprofilerstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
  Von der **Samplingmethode** werden in angegebenen Intervallen Informationen zu den in der Anwendung ausgeführten Funktionen gesammelt. Nach Abschluss einer Profilerstellung zeigt die Ansicht **Zusammenfassung** der Profilerstellungsdaten die aktivste Funktionsaufrufstruktur namens **Langsamster Pfad**, in der die meisten Aufgaben in der Anwendung ausgeführt wurden. In der Ansicht sind auch die Funktionen aufgeführt, die die meiste individuelle Arbeit ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.  
   
- Wenn Sie beim **Sampling** nicht die benötigten Daten erhalten, stehen in den Profilerstellungstools weitere Sammlungsmethoden zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. Weitere Informationen zu diesen anderen Methoden finden Sie unter [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md).  
+ Wenn Sie beim **Sampling** nicht die benötigten Daten erhalten, stehen in den Profilerstellungstools weitere Sammlungsmethoden zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. Weitere Informationen zu diesen anderen Methoden finden Sie unter Gewusst [wie: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
-> Vergewissern Sie sich bei der Profilerstellung für Code, von dem Windows-Funktionen aufgerufen werden, dass Sie über die neuesten PDB-Dateien verfügen. Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows-Funktionen aufgeführt. Weitere Informationen zum Sicherstellen, dass Sie über die erforderlichen Dateien verfügen, finden Sie unter [Vorgehensweise: Referenz-Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md).  
+> Vergewissern Sie sich bei der Profilerstellung für Code, von dem Windows-Funktionen aufgerufen werden, dass Sie über die neuesten PDB-Dateien verfügen. Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows-Funktionen aufgeführt. Weitere Informationen dazu, wie Sie sicherstellen, dass Sie über die benötigten Dateien verfügen, finden Sie unter Gewusst [wie: verweisen auf Windows-Symbol Informationen](../profiling/how-to-reference-windows-symbol-information.md).  
   
-## <a name="Step1"></a> Erstellen und Ausführen einer Leistungssitzung  
+## <a name="create-and-run-a-performance-session"></a><a name="Step1"></a> Erstellen und Ausführen einer Leistungs Sitzung  
  Zum Abrufen der zu analysierenden Daten muss zunächst eine Leistungssitzung erstellt und ausgeführt werden. Diese beiden Schritte können mithilfe des **Leistungs-Assistenten** ausgeführt werden.  
   
  Wenn Sie kein Profil für eine Windows-Desktop-Anwendung oder ASP.NET-Anwendung erstellen, müssen Sie eines der anderen Profilerstellungstools verwenden. Siehe [Profilerstellungstools](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>So können Sie eine Leistungssitzung erstellen und ausführen  
   
-1. Öffnen Sie die Lösung in Visual Studio. Legen Sie die Konfiguration auf „Release“ fest. (Das Feld **Projektmappenkonfigurationen** finden Sie in der Symbolleiste. Es ist standardmäßig auf **Debuggen** festgelegt. Ändern Sie es in **Release**.)  
+1. Öffnen Sie die Projektmappe in Visual Studio. Legen Sie die Konfiguration auf „Release“ fest. (Das Feld **Projektmappenkonfigurationen** finden Sie in der Symbolleiste. Es ist standardmäßig auf **Debuggen** festgelegt. Ändern Sie es in **Release**.)  
   
     > [!IMPORTANT]
     > Wenn Sie auf dem Computer, den Sie verwenden, kein Administrator sind, sollten Sie Visual Studio während der Verwendung des Profilers als Administrator ausführen. (Klicken Sie mit der rechten Maustaste auf das Anwendungssymbol für Visual Studio, und klicken Sie dann auf **Als Administrator ausführen**.)  
@@ -62,12 +62,12 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
      Nach Beendigung der Anwendung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** mit den Profilerstellungsdaten angezeigt, und im Fenster **Leistungs-Explorer** erscheint ein Symbol für die neue Sitzung.  
   
-## <a name="Step2"></a> Schritt 2: Analysieren der Samplingdaten  
+## <a name="step-2-analyze-sampling-data"></a><a name="Step2"></a> Schritt 2: Analysieren der Stichprobendaten  
  Nach Beendigung einer Leistungssitzung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** des Profilerstellungsberichts angezeigt.  
   
  Beginnen Sie bei der Datenanalyse am besten mit dem **Langsamsten Pfad**, fahren Sie mit der Liste der Funktionen fort, von denen die meisten Aufgaben ausgeführt werden, und richten Sie Ihr Augenmerk schließlich mithilfe der **Zeitachsenübersicht** auf andere Funktionen. Sie können auch Profilerstellungsvorschläge und Warnungen im Fenster **Fehlerliste** anzeigen.  
   
- Beachten Sie, dass Sie aufgrund der Samplingmethode unter Umständen nicht die benötigten Informationen erhalten. So werden Beispieldaten beispielsweise nur gesammelt, wenn von der Anwendung Benutzermoduscode ausgeführt wird. Aus diesem Grund werden beim Sampling einige Funktionen (beispielsweise Eingabe- und Ausgabevorgänge) nicht erfasst. In den Profilerstellungstools stehen mehrere Sammlungsmethoden zur Verfügung, die es Ihnen ermöglichen, sich auf die wichtigen Daten zu konzentrieren. Weitere Informationen zu den anderen Methoden finden Sie unter [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md).  
+ Beachten Sie, dass Sie aufgrund der Samplingmethode unter Umständen nicht die benötigten Informationen erhalten. So werden Beispieldaten beispielsweise nur gesammelt, wenn von der Anwendung Benutzermoduscode ausgeführt wird. Aus diesem Grund werden beim Sampling einige Funktionen (beispielsweise Eingabe- und Ausgabevorgänge) nicht erfasst. In den Profilerstellungstools stehen mehrere Sammlungsmethoden zur Verfügung, die es Ihnen ermöglichen, sich auf die wichtigen Daten zu konzentrieren. Weitere Informationen zu den anderen Methoden finden Sie unter Gewusst [wie: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md).  
   
  Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.  
   
@@ -77,7 +77,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
 1. In der Ansicht **Zusammenfassung** finden Sie unter **Langsamster Pfad** den Branch der Anwendungsaufrufstruktur mit den höchsten inklusiven Samplings. Hierbei handelt es sich um den Ausführungspfad, der beim Sammeln der Daten am aktivsten war. Hohe inklusive Werte können darauf hindeuten, dass der Algorithmus zum Generieren der Aufrufstruktur optimiert werden kann. Suchen Sie im Code die Funktion, die im Pfad am niedrigsten ist. Beachten Sie, dass der Pfad auch Systemfunktionen oder Funktionen in externen Modulen enthalten kann.  
   
-     ![Profiler-Langsamster Pfad](../profiling/media/profiler-hotpath.png "Profiler_HotPath")  
+     ![Profiler – langsamster Pfad](../profiling/media/profiler-hotpath.png "Profiler_HotPath")  
   
     1. Mit dem Wert **Inklusive Samplings** wird das Pensum angegeben, das von der Funktion und den von der Funktion aufgerufenen Funktionen bewältigt wurde. Ein hohes Maß an inklusiven Samplings deutet auf die insgesamt aufwändigsten Funktionen hin.  
   
@@ -93,13 +93,13 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
 3. Kehren Sie zum Fortsetzen der Analyse zur Ansicht **Zusammenfassung** zurück, indem Sie in der Dropdownliste Ansicht die Option **Zusammenfassung** auswählen. Untersuchen Sie dann die Funktionen unter **Funktionen, die die meisten Einzelaufgaben durchführen**. Diese Liste enthält die Funktionen mit den höchsten exklusiven Samplings. Durch den Code im Funktionstext dieser Funktionen wurde eine Vielzahl von Aufgaben ausgeführt, und er lässt sich unter Umständen optimieren. Klicken Sie zur ausführlicheren Analyse einer bestimmten Funktion auf den Funktionsnamen, um sie in der Ansicht **Funktionsdetails** anzuzeigen.  
   
-     ![Liste von Funktionen, die die meiste Arbeit erledigen](../profiling/media/functions-mostwork.png "Functions_MostWork")  
+     ![Liste von Funktionen, die die meisten Aufgaben ausführen](../profiling/media/functions-mostwork.png "Functions_MostWork")  
   
      Wenn Sie mit der Untersuchung der Profilerstellung fortfahren möchten, können Sie mithilfe der Zeitachse in der Ansicht **Zusammenfassung** ein Segment der Profilerstellungsdaten erneut analysieren, um die Werte für **Langsamster Pfad** und **Funktionen, die die meisten Einzelaufgaben durchführen** eines ausgewählten Segments anzuzeigen. So werden bei der Untersuchung einer kleineren Spitze auf der Zeitachse unter Umständen aufwändige Aufrufstrukturen und Funktionen ersichtlich, die bei der Analyse der gesamten Profilerstellung nicht sichtbar waren.  
   
      Um ein Segment erneut zu analysieren, wählen Sie im Feld Zeitachsenübersicht ein Segment aus, und klicken Sie dann auf **Nach Auswahl filtern**.  
   
-     ![Leistungszusammenfassung - Zeitachse anzeigen](../profiling/media/performancesummary.png "PerformanceSummary")  
+     ![Leistungszusammenfassung – Zeitachse anzeigen](../profiling/media/performancesummary.png "PerformanceSummary")  
   
 4. Der Profiler schlägt zudem anhand eines Satzes von Regeln Möglichkeiten zur Verbesserung der Profilerstellungsausführung vor und erkennt Leistungsprobleme. Wenn ein Problem gefunden wurde, wird im Fenster **Fehlerliste** eine Warnung angezeigt. Klicken Sie zum Öffnen des Fensters **Fehlerliste** im Menü **Ansicht** auf **Fehlerliste**.  
   
@@ -107,7 +107,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
     - Wenn Sie ausführliche Informationen zur Warnung anzeigen möchten, klicken mit der rechten Maustaste auf den Fehler, und klicken Sie dann auf **Hilfe zu Fehlern anzeigen**.  
   
-## <a name="Step3"></a> Schritt 3: Überarbeiten des Codes und erneutes Ausführen einer Sitzung  
+## <a name="step-3-revise-code-and-rerun-a-session"></a><a name="Step3"></a> Schritt 3: Überarbeiten des Codes und erneutes Ausführen einer Sitzung  
  Nachdem Sie Funktionen mit Optimierungsbedarf gefunden und optimiert haben, können Sie die Profilerstellung wiederholen und die Daten vergleichen, um zu ermitteln, wie sich die vorgenommenen Änderungen auf die Anwendungsleistung ausgewirkt haben.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>So können Sie den Code überarbeiten und den Profiler erneut ausführen  
@@ -120,9 +120,9 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsproblem
   
 4. Nach dem erneuten Ausführen der Sitzung wird dem Ordner **Berichte** für die Sitzung im **Leistungs-Explorer** eine weitere Datendatei hinzugefügt. Wählen Sie sowohl die ursprünglichen als auch die neuen Profilerstellungsdaten aus, klicken Sie mit der rechten Maustaste auf die Auswahl, und klicken Sie anschließend auf **Leistungsberichte vergleichen**.  
   
-     Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet. Weitere Informationen zum Verwenden der Vergleichsansicht finden Sie unter [Vorgehensweise: Vergleichen von Leistungsdatendateien](../profiling/how-to-compare-performance-data-files.md).  
+     Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet. Weitere Informationen zum Verwenden der Vergleichs Ansicht finden Sie unter Vorgehens [Weise: Vergleichen von Leistungs Datendateien](../profiling/how-to-compare-performance-data-files.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
- [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Leistungs-Explorer](../profiling/performance-explorer.md)   
+ [Einstieg](../profiling/getting-started-with-performance-tools.md)   
  [Übersichten](../profiling/overviews-performance-tools.md)

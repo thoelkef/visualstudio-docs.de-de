@@ -11,53 +11,53 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432093"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841113"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. Sie leiten das Verhalten der **starten** (F5) Schlüssel und **erstellen** Befehle. Standardmäßig werden diese Befehle erstellen und die Debug-Konfiguration zu starten. Führen Sie beide Befehle im Kontext einer Projektmappenkonfiguration. Dies bedeutet, dass der Benutzer F5 erwarten kann, zu starten und zu erstellen, die beliebige die aktive Projektmappe über die Einstellungen konfiguriert ist. Die Umgebung für Lösungen anstelle von Projekten zu optimieren, wenn es darum geht, erstellen und ausführen soll.  
+Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie leiten das Verhalten des **Starts** (F5 **) und der** Buildbefehle weiter. Standardmäßig wird mit diesen Befehlen die Debugkonfiguration erstellt und gestartet. Beide Befehle werden im Kontext einer Projektmappenkonfiguration ausgeführt. Dies bedeutet, dass der Benutzer mit dem Start und der Erstellung der aktiven Projekt Mappe mit den Einstellungen beginnen kann. Die Umgebung ist so konzipiert, dass Sie bei der Erstellung und Ausführung von Lösungen optimiert wird.  
   
- Der standardmäßige Visual Studio-Symbolleiste enthält eine Schaltfläche "Start" und eine Projektmappenkonfiguration-Dropdownliste rechts neben der Schaltfläche "Start". Dieser Liste kann Benutzer wählen die Konfiguration gestartet werden soll, wenn F5 gedrückt wird, ihre eigenen Projektmappenkonfigurationen erstellen oder Bearbeiten einer vorhandenen Konfigurations.  
+ Die standardmäßige Visual Studio-Symbolleiste enthält die Start Schaltfläche und eine Projektmappenkonfiguration auf der rechten Seite der Schaltfläche Start. Diese Liste ermöglicht es Benutzern, die Konfiguration auszuwählen, die beim Drücken von F5 gestartet werden soll, eigene Projektmappenkonfigurationen zu erstellen oder eine vorhandene Konfiguration zu bearbeiten.  
   
 > [!NOTE]
-> Es gibt keine Erweiterungsschnittstellen erstellen oder bearbeiten die Projektmappenkonfiguration ein. Verwenden Sie `DTE.SolutionBuilder`. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung der Erstellung der Projektmappe. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Es sind keine Erweiterbarkeits Schnittstellen zum Erstellen oder Bearbeiten der Projektmappenkonfigurationen vorhanden. Hierzu muss `DTE.SolutionBuilder` verwendet werden. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung des Projektmappenbuilds. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
- Hier ist, wie Sie die Projektmappenkonfiguration, die vom Projekttyp unterstützt implementieren können:  
+ Im folgenden wird erläutert, wie Sie die vom Projekttyp unterstützten Projektmappenkonfigurationen implementieren können:  
   
-- Projekt  
+- Project  
   
-   Zeigt die Namen von Projekten, die in der aktuellen Projektmappe gefunden.  
+   Zeigt die Namen der in der aktuellen Projekt Mappe gefundenen Projekte an.  
   
 - Konfiguration  
   
-   Geben Sie die Liste der Konfigurationen, die vom Projekttyp unterstützt, und implementieren Sie in den Eigenschaftenseiten angezeigten <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
+   Um die Liste der Konfigurationen bereitzustellen, die vom Projekttyp unterstützt werden und auf den Eigenschaften Seiten angezeigt werden, implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> .  
   
-   Die Configuration-Spalte zeigt den Namen der Projektkonfiguration, die in dieser Projektmappenkonfiguration erstellt, und listet alle den Projektkonfigurationen, wenn Sie auf den Pfeil klicken. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> Methode zum Auffüllen dieser Liste. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Methode gibt an, dass das Projekt unterstützt neue Konfiguration zu bearbeiten, bearbeiten Auswahl werden ebenfalls unter der Überschrift "Konfiguration" angezeigt. Jede dieser Optionen starten Dialogfelder, die Methoden zum Aufrufen der `IVsCfgProvider2` Schnittstelle, um die Konfigurationen des Projekts bearbeiten.  
+   In der Spalte Konfiguration wird der Name der Projekt Konfiguration angezeigt, die in dieser Projektmappenkonfiguration erstellt werden soll, und es werden alle Projekt Konfigurationen aufgelistet, wenn Sie auf die Pfeil Schaltfläche klicken. Die Umgebung Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> Methode auf, um diese Liste auszufüllen. Wenn die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Methode angibt, dass das Projekt die Konfigurations Bearbeitung unterstützt, werden auch neue oder Bearbeitungs Optionen unter der Überschrift "Konfiguration" angezeigt. Jede dieser Optionen startet Dialogfelder, in denen Methoden der `IVsCfgProvider2` -Schnittstelle zum Bearbeiten der Projekt Konfigurationen aufgerufen werden.  
   
-   Wenn ein Projekt Konfigurationen nicht unterstützt, wird die Configuration-Spalte wird keiner angezeigt und ist deaktiviert.  
+   Wenn ein Projekt keine Konfigurationen unterstützt, wird in der Spalte Konfiguration der Wert keine angezeigt, und ist deaktiviert.  
   
 - Plattform  
   
-   Zeigt die Plattform, die die Projektkonfiguration für die ausgewählten builds für und zeigt eine Liste aller verfügbaren Plattformen für das Projekt, wenn Sie den Pfeil klicken. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> Methode zum Auffüllen dieser Liste. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Methode gibt an, dass das Projekt unterstützt neue Plattform zu bearbeiten, bearbeiten Auswahl werden ebenfalls angezeigt, unter der Überschrift "Platform". Jede dieser Optionen starten Dialogfelder, die aufgerufen werden `IVsCfgProvider2` Methoden, um die verfügbaren Plattformen des Projekts bearbeiten.  
+   Zeigt die Plattform an, für die die ausgewählte Projekt Konfiguration erstellt wird, und listet alle verfügbaren Plattformen für das Projekt auf, wenn Sie auf die Pfeil Schaltfläche klicken. Die Umgebung Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> Methode auf, um diese Liste auszufüllen. Wenn die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Methode angibt, dass das Projekt Platt Form Bearbeitung unterstützt, werden unter der Platt Form Überschrift auch neue oder Bearbeitungs Optionen angezeigt. Jede dieser Auswahl Optionen startet Dialogfelder, die `IVsCfgProvider2` Methoden aufrufen, um die verfügbaren Plattformen des Projekts zu bearbeiten.  
   
-   Wenn ein Projekt keine Plattformen unterstützt, wird die Spalte mit der Plattform für das Projekt wird keiner angezeigt und ist deaktiviert.  
+   Wenn ein Projekt Plattformen nicht unterstützt, wird in der Spalte Plattform für dieses Projekt der Wert keine angezeigt, und ist deaktiviert.  
   
 - Build  
   
-   Gibt an, und zwar unabhängig davon, ob das Projekt von der aktuellen Konfiguration der Projektmappe erstellt wird. Nicht ausgewählte Projekte werden nicht erstellt werden, wenn die Befehle zum Erstellen von Projektmappen auf Dokumentebene trotz alle Abhängigkeiten des Projekts aufgerufen werden, die sie enthalten. Projekte nicht erstellt werden sollen, sind immer noch im Debuggen, ausführen, Packen und Bereitstellen der Lösung enthalten.  
+   Gibt an, ob das Projekt von der aktuellen Projektmappenkonfiguration erstellt wird. Nicht ausgewählte Projekte werden nicht erstellt, wenn die Buildbefehle auf Projektmappenebene trotz der Projekt Abhängigkeiten aufgerufen werden, die Sie enthalten. Projekte, die nicht für die Erstellung ausgewählt wurden, sind weiterhin in Debuggen, ausführen, packen und Bereitstellen der Lösung enthalten.  
   
 - Bereitstellen  
   
-   Gibt an, und zwar unabhängig davon, ob das Projekt bereitgestellt wird, wenn die Befehle starten oder Bereitstellen mit der ausgewählten Projektmappe Buildkonfiguration verwendet werden. Das Kontrollkästchen neben diesem Feld werden verfügbar, wenn das Projekt unterstützt die Bereitstellung, die durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle, für dessen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Objekt.  
+   Gibt an, ob das Projekt bereitgestellt wird, wenn die Befehle zum Starten oder Bereitstellen mit der ausgewählten projektmappenbuildkonfiguration verwendet werden. Das Kontrollkästchen für dieses Feld ist verfügbar, wenn das Projekt die Bereitstellung unterstützt, indem die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle für sein Objekt implementiert wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> .  
   
-  Sobald eine neue Projektmappenkonfiguration hinzugefügt wurde, kann der Benutzer auswählen es aus dem Dropdown-Listenfeld Projektmappenkonfiguration auf der Standardsymbolleiste erstellen bzw. diese Konfiguration zu starten.  
+  Nach dem Hinzufügen einer neuen Projektmappenkonfiguration kann der Benutzer diese im Dropdown-Listenfeld Projektmappenkonfiguration auf der Standard Symbolleiste auswählen, um diese Konfiguration zu erstellen und/oder zu starten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)   
- [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
+ [Projekt Konfiguration zum aufbauen](../../extensibility/internals/project-configuration-for-building.md)   
  [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)

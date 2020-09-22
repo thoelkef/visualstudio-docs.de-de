@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet-Funktion | Microsoft-Dokumentation
+title: Sccbackgroundget-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 118d8458fd9581a87baea08452d0011d4d66c9a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432484"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840968"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion ruft aus der quellcodeverwaltung jeder der angegebenen Dateien ohne Benutzerinteraktion ab.  
+Diese Funktion ruft jede der angegebenen Dateien ohne Benutzerinteraktion aus der Quell Code Verwaltung ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,38 +37,38 @@ SCCRTN SccBackgroundGet(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- "pContext"  
- [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
+ pContext  
+ in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.  
   
- nFiles  
- [in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.  
+ nnoch  
+ in Anzahl der im Array angegebenen Dateien `lpFileNames` .  
   
- lpFileNames  
- [in, out] Array der Namen von Dateien abgerufen werden sollen.  
+ lpfile-Namen  
+ [in, out] Ein Array von Namen von Dateien, die abgerufen werden sollen.  
   
 > [!NOTE]
-> Die Namen müssen vollständig qualifizierten lokalen Dateinamen sein.  
+> Die Namen müssen voll qualifizierte lokale Dateinamen sein.  
   
  dwFlags  
- [in] Befehl Flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
+ in Befehlsflags ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).  
   
- dwBackgroundOperationID  
- [in] Ein eindeutiger Wert, der diesen Vorgang zugeordnet ist.  
+ dwbackgroundoperationid  
+ in Ein eindeutiger Wert, der diesem Vorgang zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_OK|Der Vorgang erfolgreich abgeschlossen wurde.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Hintergrund Abruf wird bereits ausgeführt (das Quellcodeverwaltungs-Plug-in sollte dies nur zurück, wenn es keine gleichzeitigen Batchvorgänge unterstützt).|  
-|SCC_I_OPERATIONCANCELED|Vorgang wurde abgebrochen, bevor Sie abgeschlossen wird.|  
+|SCC_OK|Operation erfolgreich abgeschlossen.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|Ein Hintergrund Abruf wird bereits ausgeführt (das Quellcodeverwaltungs-Plug-in sollte dieses Element nur zurückgeben, wenn es keine gleichzeitigen Batch Vorgänge unterstützt).|  
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen, bevor er abgeschlossen wurde.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion wird immer in einem anderen Thread aufgerufen, die das Quellcodeverwaltungs-Plug-In geladen wird. Diese Funktion wird nicht erwartet, zurückgegeben werden, bis er abgeschlossen ist; Allerdings kann es mehrere Male mit mehreren Listen von Dateien, alle gleichzeitig aufgerufen werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion wird immer in einem Thread aufgerufen, der sich von dem unterscheidet, der das Quellcodeverwaltungs-Plug-in geladen hat. Diese Funktion wird nicht erwartungsgemäß zurückgegeben, bis Sie abgeschlossen ist. Sie kann jedoch mehrmals mit mehreren Listen von Dateien aufgerufen werden, die alle gleichzeitig sind.  
   
- Die Verwendung der `dwFlags` Argument ist identisch mit der [SccGet](../extensibility/sccget-function.md).  
+ Die Verwendung des- `dwFlags` Arguments ist mit dem [sccget](../extensibility/sccget-function.md)identisch.  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

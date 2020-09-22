@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_signature | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_signature | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7b51d70fd7c30878c73ce32a467f367f28a1b85
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64815464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841132"
 ---
-# <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
+# <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Symbolwert der Signatur ab.  
+Ruft den Signatur Wert des Symbols ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_signature ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt das Symbol des Signatur-Wert zurück.  
+ vorgenommen Gibt den Signatur Wert des Symbols zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

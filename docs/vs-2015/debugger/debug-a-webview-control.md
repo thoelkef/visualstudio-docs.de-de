@@ -1,5 +1,5 @@
 ---
-title: Debuggen eines WebView-Steuerelements | Microsoft-Dokumentation
+title: Debuggen eines WebView-Steuer Elements | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422083"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841147"
 ---
 # <a name="debug-a-webview-control"></a>Debuggen eines WebView-Steuerelements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Um `WebView`-Steuerelemente in einer Windows-Runtime-App zu überprüfen und zu debuggen, können Sie Visual Studio so konfigurieren, dass es den Skriptdebugger anfügt, wenn Sie Ihre App starten. Ab Visual Studio 2013 Update 2 haben Sie zwei Möglichkeiten für die Interaktion mit den `WebView`-Steuerelementen bei Verwendung des Debuggers:  
   
@@ -40,9 +40,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 3. Wählen Sie **Debuggen** aus. Wählen Sie in der Liste **Anwendungsprozesse** die Option **Skript**.  
   
-     ![Skript-Debugger](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
+     ![Anfügen des Skriptdebuggers](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
-4. (Optional) Deaktivieren der just-in-Time (JIT) Debuggen, indem Sie die Auswahl für nicht-Express-Versionen von Visual Studio, **Tools**, **Optionen**, **Debuggen**, **Just-In-Time-**, und klicken Sie dann deaktivieren von JIT-Debuggen für Skript.  
+4. Optionale Deaktivieren Sie für nicht-Express-Versionen von Visual Studio das Just-in-time (JIT)-Debuggen, indem Sie **Tools**, **Optionen**, **Debuggen**, **Just-in-Time**und dann Deaktivierung des JIT-Debuggens für Skripts auswählen.  
   
     > [!NOTE]
     > Indem Sie das JIT-Debuggen deaktivieren, können Sie Dialogfelder für unbehandelte Ausnahmen ausblenden, die auf einigen Webseiten auftreten. In Visual Studio Express ist das JIT-Debuggen stets deaktiviert.  
@@ -59,11 +59,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 4. Öffnen Sie das DOM Explorer-Fenster für das `WebView`-Steuerelement, indem Sie **Debuggen**, **Fenster**, **DOM Explorer** und dann die URL des zu untersuchenden `WebView`-Elements auswählen.  
   
-     ![Öffnen im DOM Explorer](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
+     ![Öffnen von DOM Explorer](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
   
      Der mit dem `WebView` verknüpfte DOM Explorer erscheint als neue Registerkarte in Visual Studio.  
   
-5. Anzeigen und Ändern von live-DOM-Elemente und CSS-Formatvorlagen, siehe [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+5. Zeigen Sie Live-DOM-Elemente und CSS-Formatvorlagen an, und ändern Sie diese wie unter [Debuggen von HTML und CSS in UWP-Apps in Visual Studio](../debugger/debug-css-styles-using-dom-explorer.md) beschrieben.  
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Verwenden des JavaScript-Konsolenfensters, um ein WebView-Steuerelement zu untersuchen und zu debuggen  
   
@@ -79,12 +79,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 5. Wählen Sie im Konsolenfenster die Webseite oder einen `iFrame`, der durch das `WebView`-Steuerelement in der Liste **Ziele** angezeigt wird.  
   
-     ![Auswahl in der JavaScript-Konsolenfenster als Ziel](../debugger/media/js-console-target.png "JS_Console_Target")  
+     ![Zielauswahl im JavaScript-Konsolenfenster](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
     > Mithilfe der Konsole können Sie jeweils mit einem einzelnen `WebView`, `iFrame`, Freigabe-Vertrag oder Web-Worker interagieren. Jedes Element erfordert eine separate Instanz des Webplattform-Hosts (WWAHost.exe). Sie können jeweils mit einem Host interagieren.  
   
-6. Anzeigen und Ändern von Variablen in Ihrer app aus, oder verwenden Sie Konsolenbefehle, wie in beschrieben [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) und [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md).  
+6. Zeigen Sie Variablen in Ihrer App an, und ändern Sie diese, oder verwenden Sie Konsolenbefehle. Dies wird beschrieben unter [Debuggen von JavaScript mithilfe der Konsole in Visual Studio](../debugger/quickstart-debug-javascript-using-the-console.md) und [JavaScript-Konsolenbefehle in Visual Studio](../debugger/javascript-console-commands.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

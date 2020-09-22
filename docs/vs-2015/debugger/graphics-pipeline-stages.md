@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420156"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841222"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafikpipelinestufen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
   
  Im Folgenden finden Sie das Fenster „Pipelinestufen“:  
   
- ![Eine 3&#45;D-Objekt durchläuft die Pipelinestufen. ](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "Gfx_diag_demo_pipeline_stages_orientation")  
+ ![Ein 3&#45;D-Objekt durchläuft die Pipeline Stufen.](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Verstehen des Fensters Grafikpipelinestufen  
  Im Fenster „Pipelinestufen“ wird das Ergebnis jeder Stufe der Grafikpipeline einzeln veranschaulicht, und zwar für jeden Zeichnen-Befehl. Für gewöhnlich werden die Ergebnisse von Stufen in der Mitte der Pipeline ausgeblendet, wodurch es schwierig wird, den Ursprung des Renderingproblems zu finden. Durch die Veranschaulichung jeder einzelnen Stufe erleichtert das Fenster „Pipelinestufen“ das Auffinden des Problemursprungs. Beispielsweise können Sie problemlos nachvollziehen, wenn die Vertex-Shader-Stufe dazu führt, dass ein Objekt unerwartet neben dem Bildschirm gezeichnet wird.  
@@ -107,7 +107,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
   
  Die Stufe des Rasterizers wird im Fenster „Pipelinestufen“ nicht veranschaulicht.  
   
- **Pixel-Shader**  
+ **Pixelshader**  
  Die Pixel-Shader-Stufe verarbeitet gerasterte Primitive zusammen mit interpolierten Vertexdaten zum Genieren von Pro-Pixel-Werten wie Farbe und Tiefe.  
   
  Im Fenster „Pipelinestufen“ wird die Pixel-Shader-Ausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Wählen Sie zum genaueren Anzeigen des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Pixel-Shader** aus, um die verarbeiteten Primitive im Bild-Editor anzuzeigen.  
@@ -118,14 +118,14 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  Im Fenster „Pipelinestufen“ wird die Ausgabezusammenführungsausgabe als ein Rasterbild ganz in Farbe veranschaulicht. Wählen Sie zum genaueren Anzeigen der Ergebnisse im Fenster **Grafikpipelinestufen** die Option **Ausgabezusammenführung** aus, um den zusammengeführten Framepuffer anzuzeigen.  
   
 ### <a name="vertex-shader-preview"></a>Vertex-Shader-Vorschau  
- Bei Auswahl die Vertexshader-Stufe in der **Grafikpipelinestufen** Fenster die **Eingabepuffer** wird eingeblendet. Hier werden die Details über die Liste der Scheitelpunkte angezeigt, die dem Vertex-Shader übermittelt werden, nachdem sie durch die Eingabe-Assembler-Stufe assembliert wurden.  
+ Wenn Sie die Vertex-Shader-Stufe im Fenster **Grafik Pipeline Stufen** auswählen, wird der Bereich **Eingabepuffer** angezeigt. Hier werden die Details über die Liste der Scheitelpunkte angezeigt, die dem Vertex-Shader übermittelt werden, nachdem sie durch die Eingabe-Assembler-Stufe assembliert wurden.  
   
- ![Der Vertex-Shader-Phase Eingabepuffer Viewer](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "Gfx_diag_vertex_shader_inbuffers")  
+ ![Anzeige des Vertexshader-Phaseneingabepuffers](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
   
  Wählen Sie zum Anzeigen des Ergebnisses der Vertex-Shader-Stufe die Vertex-Shader-Stufenminiaturansicht aus, um ein gerastertes Drahtmodell in voller Größe des Gitters anzuzeigen, nachdem es durch den Vertex-Shader transformiert wurde.  
   
- ![Der Vertex-Shader-Stufe Ergebnisvorschau](../debugger/media/gfx-diag-vertex-shader-preview.png "Gfx_diag_vertex_shader_preview")  
+ ![Vorschau des Vertexshader-Phasenergebnisses](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Exemplarische Vorgehensweise: fehlende Objekte aufgrund von Vertex-Schattierung](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
