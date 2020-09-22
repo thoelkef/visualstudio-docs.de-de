@@ -12,52 +12,52 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430212"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841286"
 ---
 # <a name="launching-a-program"></a>Starten eines Programms
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Benutzer, die ein Programm debuggen möchten, können F5 zum Ausführen des Debuggers in der IDE drücken. Dies beginnt mit einer Reihe von Ereignissen, die letztlich in der IDE mit einer Debug-Engine (DE), die wiederum verbunden ist, oder angefügt, um die Anwendung wie folgt:  
+Benutzer, die ein Programm debuggen möchten, können F5 drücken, um den Debugger aus der IDE auszuführen. Dadurch beginnt eine Reihe von Ereignissen, die letztendlich dazu führen, dass die IDE eine Verbindung mit einer Debug-Engine (de) herstellt, die wiederum wie folgt mit dem Programm verbunden oder angefügt wird:  
   
-1. Die IDE ruft zuerst das Projektpaket, um Einstellungen zum Debuggen von aktiven Projekt der Projektmappe zu erhalten. Die Einstellungen umfassen das Startverzeichnis, die Umgebungsvariablen, den Port an, in dem das Programm ausgeführt wird, und die DE zu verwenden, um das Programm erstellen, wenn angegeben. Diese Einstellungen werden an das debugpaket übergeben.  
+1. Die IDE ruft zunächst das Projektpaket auf, um die aktiven Debugeinstellungen der Projekt Mappe zu erhalten. Zu den Einstellungen gehören das Start Verzeichnis, die Umgebungsvariablen, der Port, in dem das Programm ausgeführt wird, und der de, der zum Erstellen des Programms verwendet werden soll (sofern angegeben). Diese Einstellungen werden an das Debugpaket übermittelt.  
   
-2. Wenn eine bereitgestellten Kompatibilitätsrichtlinie angegeben wird, ruft die DE das Betriebssystem das Programm zu starten. Daher das Programm gestartet, wird die Laufzeitumgebung des Programms geladen. Wenn ein Programm in MSIL geschrieben ist, wird z. B. die common Language Runtime aufgerufen, um das Programm ausgeführt werden.  
+2. Wenn ein de-Wert angegeben wird, ruft der de das Betriebssystem auf, um das Programm zu starten. Die Laufzeitumgebung des Programms wird daher geladen, wenn das Programm gestartet wird. Wenn ein Programm z. b. in MSIL geschrieben ist, wird die Common Language Runtime aufgerufen, um das Programm auszuführen.  
   
-    - oder -   
+    - oder -  
   
-    Wenn eine bereitgestellten Kompatibilitätsrichtlinie nicht angegeben ist, ruft der Port des Betriebssystems, um das Programm zu starten, das wodurch das Programm die Runtime-Umgebung geladen werden.  
-  
-   > [!NOTE]
-   > Wenn ein DE zum Starten eines Programms verwendet wird, ist es wahrscheinlich, dass die gleichen DE an die Anwendung angefügt wird.  
-  
-3. Je nachdem, ob die DE oder den Port des Programms gestartet die DE oder die Laufzeitumgebung klicken Sie dann erstellt eine Beschreibung des Programms, oder klicken Sie auf Knoten und benachrichtigt den Port, den das Programm ausgeführt wird.  
+    Wenn ein "de" nicht angegeben wird, ruft der Port das Betriebssystem auf, um das Programm zu starten, was bewirkt, dass die Laufzeitumgebung des Programms geladen wird.  
   
    > [!NOTE]
-   > Es wird empfohlen, dass die Laufzeitumgebung den Programm-Knoten, zu erstellen, da der Programm-Knoten eine vereinfachte Darstellung ein Programm ist, die debuggt werden kann. Besteht keine Notwendigkeit einer gesamten DE nur zum Erstellen und registrieren einen Knoten für die Anwendung laden. Wenn die DE entworfen wurde gerade die IDE, jedoch keine IDE ausführen tatsächlich auszuführen, muss es eine Komponente, die an den Port einen Programm Knoten hinzufügen können.  
+   > Wenn eine de zum Starten eines Programms verwendet wird, ist es wahrscheinlich, dass dieselbe de an das Programm angefügt wird.  
   
-   Die neu erstellte Anwendung, zusammen mit alle anderen Programme, verknüpft oder unabhängig vom stagingstatus, gestartet oder angefügt werden, um die gleichen IDE, eine Debugsitzung zu verfassen.  
+3. Abhängig davon, ob der oder der Port das Programm gestartet hat, erstellt der de oder die Laufzeitumgebung eine Programmbeschreibung bzw. einen Knoten und benachrichtigt den Port, dass das Programm ausgeführt wird.  
   
-   Programmgesteuert, wenn der Benutzer zunächst drückt **F5**, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]des debugpaket Aufrufe das Projektpaket (die zugeordneten mit dem Typ der Anwendung gestartet wird) über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> -Methode, die wiederum füllt eine <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> Struktur mit den Debugeinstellungen für das aktive Projekt der Projektmappe. Diese Struktur wird durch einen Aufruf an das debugpaket übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> Methode. Das debugpaket instanziiert dann die sitzungsbasierter Debug-Manager (SDM), der das Programm debuggt und alle zugeordneten Debug-Engines wird gestartet.  
+   > [!NOTE]
+   > Es wird empfohlen, dass in der Laufzeitumgebung der Programmknoten erstellt wird, da es sich bei dem Programmknoten um eine vereinfachte Darstellung eines Programms handelt, das deaktiviertem Programm ausgeführt werden kann. Es ist nicht erforderlich, eine gesamte de zu laden, um einen Programmknoten zu erstellen und zu registrieren. Wenn die de für die Ausführung im Prozess der IDE konzipiert ist, aber keine IDE tatsächlich ausgeführt wird, muss eine Komponente vorhanden sein, die dem Port einen Programmknoten hinzufügen kann.  
   
-   Eines der Argumente übergeben, das SDM ist die GUID des DE verwendet werden, um das Programm zu starten.  
+   Das neu erstellte Programm zusammen mit allen anderen Programmen, verknüpften oder nicht verknüpften, von der gleichen IDE gestarteten oder angefügten Programmen, verfassen Sie eine Debugsitzung.  
   
-   Die DE-GUID ist nicht `GUID_NULL`, das SDM zusammen erstellt die DE und ruft dann die [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode, um das Programm zu starten. Angenommen, ein Programm in systemeigenem Code geschrieben ist, klicken Sie dann `IDebugEngineLaunch2::LaunchSuspended` wahrscheinlich ruft `CreateProcess` und `ResumeThread` (Win32-Funktionen), um das Programm auszuführen.  
+   Programm gesteuert, wenn der Benutzer zuerst **F5**drückt, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ruft das Debugpaket das Projektpaket (das mit dem Typ des gestarteten Programms verknüpft ist) über die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode auf, die wiederum eine <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> Struktur mit den aktiven Debugeinstellungen der Projekt Mappe ausfüllt. Diese Struktur wird mithilfe eines Aufrufens der-Methode an das Debugpaket zurückgegeben <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> . Das Debugpaket instanziiert dann den Sitzungs-Debug-Manager (SDM), der das zu debuggende Programm und alle zugehörigen Debug-engines startet.  
   
-   Daher das Programm gestartet, wird die Laufzeitumgebung des Programms geladen. Entweder die DE oder der Laufzeitumgebung erstellt dann ein [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle, um die Anwendung beschreiben und übergibt diese Schnittstelle [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) auf den Port zu benachrichtigen, dass das Programm ist ausgeführt.  
+   Eines der Argumente, das an SDM übermittelt wird, ist die GUID der de, die zum Starten des Programms verwendet wird.  
   
-   Wenn `GUID_NULL` übergeben wird, und klicken Sie dann der Port des Programms wird gestartet. Sobald das Programm ausgeführt wird, erstellt die Runtime-Umgebung eine `IDebugProgramNode2` Schnittstelle, um die Anwendung beschreiben und übergibt es an `IDebugPortNotify2::AddProgramNode`. Dadurch wird den Port, den das Programm ausgeführt wird benachrichtigt. Anschließend wird das SDM Debug-Engine an ein ausgeführtes Programm angefügt.  
+   Wenn die de-GUID nicht ist `GUID_NULL` , erstellt der SDM die de und ruft dann seine [launchangeh](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) -Methode auf, um das Programm zu starten. Wenn ein Programm z. b. in nativem Code geschrieben ist, `IDebugEngineLaunch2::LaunchSuspended` Ruft wahrscheinlich `CreateProcess` und `ResumeThread` (Win32-Funktionen) auf, um das Programm auszuführen.  
+  
+   Die Laufzeitumgebung des Programms wird daher geladen, wenn das Programm gestartet wird. Von der de oder der Laufzeitumgebung wird dann eine [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) -Schnittstelle erstellt, um das Programm zu beschreiben, und diese Schnittstelle wird an [addprogram Node](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) weitergeleitet, um den Port zu benachrichtigen, an dem das Programm ausgeführt wird.  
+  
+   Wenn erfolgreich `GUID_NULL` ist, wird das Programm vom Port gestartet. Sobald das Programm ausgeführt wird, erstellt die Laufzeitumgebung eine `IDebugProgramNode2` Schnittstelle, um das Programm zu beschreiben, und übergibt es an `IDebugPortNotify2::AddProgramNode` . Dadurch wird der Port benachrichtigt, dass das Programm ausgeführt wird. Anschließend fügt die SDM die Debug-Engine an das laufende Programm an.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Benachrichtigen des Ports](../../extensibility/debugger/notifying-the-port.md)  
- Erläutert, was passiert, nachdem ein Programm gestartet wird, und der Port wird benachrichtigt.  
+ Erläutert, was geschieht, nachdem ein Programm gestartet wurde und der Port benachrichtigt wird.  
   
  [Anfügen nach einem Start](../../extensibility/debugger/attaching-after-a-launch.md)  
- Dokumente, wenn die Debug-Sitzung bereit, die DE an die Anwendung angefügt ist.  
+ Dokumentiert, wann die Debugsitzung bereit ist, die de an das Programm anzufügen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)  
- Enthält Links zu verschiedenen Debuggen Aufgaben wie das Starten eines Programms und Auswerten von Ausdrücken.
+ Enthält Links zu verschiedenen Debuggingaufgaben, z. b. das Starten eines Programms und Auswerten von Ausdrücken.

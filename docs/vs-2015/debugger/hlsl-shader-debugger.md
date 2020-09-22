@@ -1,5 +1,5 @@
 ---
-title: HLSL-Shaderdebugger | Microsoft-Dokumentation
+title: HLSL-Debugger für Shaderprogramme | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410187"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841264"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   
  Dies ist der HLSL-Debugger:  
   
- ![Debugging von HSL mit Fenstern für Überwachung und Aufrufliste. ](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "Gfx_diag_demo_hlsl_debugger_orientation")  
+ ![HLSL-Debugging mit Fenstern für die Überwachung und Aufruflisten](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
   
 ## <a name="understanding-the-hlsl-debugger"></a>Grundlegendes zum HLSL-Debugger  
  Der HLSL-Debugger kann Ihnen helfen, Probleme zu verstehen, die im Shader-Code auftreten. Das Debuggen von HLSL-Code in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ähnelt dem Debuggen von Code, der in anderen Sprachen wie C++, C# oder Visual Basic geschrieben wird. Sie können den Inhalt von Variablen überprüfen, Haltepunkte festlegen, den Code durchlaufen und die Aufrufliste abarbeiten, so wie Sie es auch beim Debuggen anderer Sprachen können.  
@@ -43,7 +43,7 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
   Dennoch stellt der HLSL-Debugger eine bessere, CPU-ähnlichere Debugleistung zur Verfügung, als andernfalls möglich wäre.  
   
 ## <a name="hlsl-shader-edit--apply"></a>HLSL-Shader bearbeiten und anwenden  
- Der HLSL-Shader-Debugger unterstützt die Funktion zum Bearbeiten und Fortfahren nicht auf die gleiche Weise wie der CPU-Debugger, da das GPU-Ausführungsmodell keine Umkehrung des Shaderzustands ermöglicht. Stattdessen unterstützt der HLSL-Debugger das Bearbeiten und Anwenden, mit dem Sie HLSL-Quelldateien bearbeiten und dann **Anwenden** wählen können, um den Frame zu regenerieren und die Auswirkungen Ihrer Änderungen zu sehen. Ihr geänderter Shader-Code befindet sich in einer separaten Datei, die Integrität der ursprünglichen HLSL-Quelldatei des Projekts beizubehalten, aber wenn Sie mit Ihren Änderungen zufrieden sind können Sie **kopieren in...** um die Änderungen in Ihr Projekt kopieren. Mit dieser Funktion können Sie den Shader-Code, der Fehler enthält, schnell durchlaufen und kostspielige Wiederherstellungs- und Erfassungsschritte aus Ihrem Workflow HLSL debuggen beseitigen.  
+ Der HLSL-Shader-Debugger unterstützt die Funktion zum Bearbeiten und Fortfahren nicht auf die gleiche Weise wie der CPU-Debugger, da das GPU-Ausführungsmodell keine Umkehrung des Shaderzustands ermöglicht. Stattdessen unterstützt der HLSL-Debugger das Bearbeiten und Anwenden, mit dem Sie HLSL-Quelldateien bearbeiten und dann **Anwenden** wählen können, um den Frame zu regenerieren und die Auswirkungen Ihrer Änderungen zu sehen. Der geänderte Shader-Code wird in einer separaten Datei gespeichert, um die Integrität der ursprünglichen HLSL-Quelldatei Ihres Projekts beizubehalten. Wenn Sie jedoch mit Ihren Änderungen zufrieden sind, können Sie **Kopieren in..** . , um die Änderungen in das Projekt zu kopieren. Mit dieser Funktion können Sie den Shader-Code, der Fehler enthält, schnell durchlaufen und kostspielige Wiederherstellungs- und Erfassungsschritte aus Ihrem Workflow HLSL debuggen beseitigen.  
   
 ## <a name="hlsl-disassembly"></a>HLSL-Disassembly  
  Der HLSL-Shader-Debugger enthält eine Liste der HLSL-Shader-Assembly rechts neben der Auflistung des HLSL-Quellcodes.  
@@ -73,9 +73,9 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
    > [!NOTE]
    > Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  
   
-   Beispiele zur Verwendung der HLSL-Debugger zum Debuggen von Shader-Fehlern finden Sie in [Beispiele](../debugger/graphics-diagnostics-examples.md) oder die exemplarischen Vorgehensweisen im Abschnitt Siehe auch verknüpft.  
+   Beispiele dazu, wie Sie den HLSL-Debugger verwenden, um Fehler in Shaderprogrammen zu debuggen, finden Sie unter [Beispiele für die Grafikdiagnose](../debugger/graphics-diagnostics-examples.md) oder in den exemplarischen Vorgehensweisen, auf die im Abschnitt „Siehe auch“ verlinkt wird.  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Exemplarische Vorgehensweise: fehlende Objekte aufgrund von Vertex-Schattierung](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Exemplarische Vorgehensweise: Debuggen von renderingfehlern aufgrund von](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

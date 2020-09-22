@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439661"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840883"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für Windows Store-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
   
@@ -34,7 +34,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ausführen der Test-App zur JavaScript-Speicheranalyse  
   
-1. Wählen Sie in Visual Studio **Datei**, **Neu**, **Projekt**aus.  
+1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.  
   
 2. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8**und dann entweder **Universell** oder **Windows Phone-Apps**aus.  
   
@@ -45,7 +45,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 4. Geben Sie im Feld **Name** einen Namen wie `JS_Mem_Tester`an, und wählen Sie dann **OK**aus.  
   
-5. Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
+5. Öffnen Sie in **Projektmappen-Explorer**default.html, und fügen Sie den folgenden Code zwischen den- \<body> Tags ein:  
   
     ```html  
     <div class="wrapper">  
@@ -139,7 +139,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
    > [!TIP]
    > Für eine Windows Store-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2. Wählen Sie im Menü **Debuggen** die Option **leistungsprofiler...** aus.  
   
 3. Wählen Sie unter **Verfügbare Tools**die Option **JavaScript-Memory**aus, und wählen Sie dann **Starten**.  
   
@@ -211,7 +211,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 15. Öffnen Sie das HTMLDivElement-Objekt oben in der Objektstruktur wie hier gezeigt.  
   
-     ![Andere Ansicht der Objektanzahl auf dem Heap](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Vergleichsansicht der Objektanzahl auf dem Heap](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Diese Ansicht zeigt nützliche Informationen zum Speicherverlust, wie beispielsweise Folgende:  
   
@@ -219,12 +219,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
     - Dieses Objekt ist ein übrig gebliebenes Objekt von Momentaufnahme Nr. 2 und stellt einen potenziellen Speicherverlust dar.  
   
-      An diesem Punkt sind Kenntnisse der app nützlich zur Verfügung: Auswählen der **Speicherverlust** Schaltfläche sollte ein DIV-Element zu entfernen und ein Element hinzugefügt, der Code scheint also nicht richtig zu funktionieren (d. h. er weist Speicher). Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
+      An diesem Punkt sind Kenntnisse der App nützlich: Durch Auswählen der Schaltfläche **Speicherverlust** sollte ein DIV-Element entfernt sowie ein Element hinzugefügt werden. Der Code scheint also nicht richtig zu funktionieren, d. h. er weist einen Speicherverlust auf. Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
   
     > [!TIP]
     > Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
-## <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   
 1. Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`-Funktion auf.  
   
@@ -266,7 +266,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 4. Wählen Sie unter **Verfügbare Tools**die Option **JavaScript-Memory**aus, und wählen Sie dann **Starten**.  
   
-5. Befolgen Sie die gleiche Vorgehensweise wie zuvor, um drei Momentaufnahmen zu erstellen. Die erforderlichen Schritte werden hier zusammengefasst:  
+5. Befolgen Sie die gleiche Vorgehensweise wie zuvor, um drei Momentaufnahmen zu erstellen. Die erforderlichen Schritte sind hier noch einmal zusammengefasst:  
   
    1. Wählen Sie in der App viermal nacheinander die Schaltfläche **Speicherverlust** aus.  
   
@@ -286,5 +286,5 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
       ![Momentaufnahmen mit korrigiertem Arbeitsspeicherverlust](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>Siehe auch  
- [JavaScript-Memory](../profiling/javascript-memory.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [JavaScript-Speicher](../profiling/javascript-memory.md)

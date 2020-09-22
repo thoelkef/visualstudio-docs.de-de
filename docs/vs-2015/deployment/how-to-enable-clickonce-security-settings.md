@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren | Microsoft-Dokumentation'
+title: 'Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,22 +18,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b104a7a0451da7f772077d2f566b36b9f601c17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433811"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840973"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren
+# <a name="how-to-enable-clickonce-security-settings"></a>Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die Anwendung zu veröffentlichen. Dies erfolgt automatisch bei der Veröffentlichung einer Anwendung mithilfe des Veröffentlichungs-Assistenten.  
+Die Code Zugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die Anwendung zu veröffentlichen. Dies erfolgt automatisch, wenn Sie eine Anwendung mit dem Webpublishing-Assistenten veröffentlichen.  
   
- In einigen Fällen kann die Leistung, die bei der Erstellung oder Debuggen der Anwendung aktivieren auf die Codezugriffssicherheit auswirken werden; in diesen Fällen können Sie die Sicherheitseinstellungen vorübergehend deaktivieren möchten.  
+ In einigen Fällen kann das Aktivieren der Code Zugriffssicherheit beim entwickeln oder Debuggen der Anwendung die Leistung beeinträchtigen. in diesen Fällen möchten Sie möglicherweise die Sicherheitseinstellungen vorübergehend deaktivieren.  
   
- ClickOnce-Sicherheitseinstellungen können aktiviert oder deaktiviert die **Sicherheit** auf der Seite die **Projekt-Designer**.  
+ Die ClickOnce-Sicherheitseinstellungen können auf der Seite **Sicherheit** des **Projekt-Designers**aktiviert oder deaktiviert werden.  
   
-### <a name="to-enable-clickonce-security-settings"></a>ClickOnce-Sicherheitseinstellungen aktivieren  
+### <a name="to-enable-clickonce-security-settings"></a>So aktivieren Sie die ClickOnce-Sicherheitseinstellungen  
   
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
@@ -41,10 +41,10 @@ Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die An
   
 3. Aktivieren Sie das Kontrollkästchen **ClickOnce-Sicherheitseinstellungen aktivieren** .  
   
-     Sie können jetzt die Sicherheitseinstellungen für Ihre Anwendung auf der Seite "Sicherheit" anpassen.  
+     Nun können Sie die Sicherheitseinstellungen für Ihre Anwendung auf der Seite Sicherheit anpassen.  
   
     > [!NOTE]
-    > Dieses Kontrollkästchen ausgewählt ist automatisch jedes Mal, die die Anwendung veröffentlicht wird, mit der **veröffentlichen** Assistenten.  
+    > Dieses Kontrollkästchen wird automatisch ausgewählt, wenn die Anwendung mit dem **Veröffentlichungs** -Assistenten veröffentlicht wird.  
   
 ### <a name="to-disable-clickonce-security-settings"></a>So deaktivieren Sie die ClickOnce-Sicherheitseinstellungen  
   
@@ -52,14 +52,14 @@ Codezugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die An
   
 2. Klicken Sie auf die Registerkarte **Sicherheit** .  
   
-3. Deaktivieren der **Enable ClickOnce Security Settings** Kontrollkästchen.  
+3. Deaktivieren Sie das Kontrollkästchen **ClickOnce-Sicherheitseinstellungen aktivieren** .  
   
-     Die Anwendung wird mit den Sicherheitseinstellungen für volle Vertrauenswürdigkeit ausgeführt werden; Alle Einstellungen für die **Sicherheit** Seite ignoriert werden.  
+     Ihre Anwendung wird mit den Sicherheitseinstellungen für die volle Vertrauenswürdigkeit ausgeführt. Alle Einstellungen auf der Seite **Sicherheit** werden ignoriert.  
   
     > [!NOTE]
-    > Jedes Mal, wenn die Anwendung mit dem Webpublishing-Assistenten veröffentlicht wird, wird dieses Kontrollkästchen aktiviert werden; Sie müssen Sie erneut nach jeder erfolgreichen Veröffentlichung löschen.  
+    > Jedes Mal, wenn die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlicht wird, wird dieses Kontrollkästchen aktiviert. Sie müssen Sie nach jeder erfolgreichen Veröffentlichung erneut löschen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Code Zugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

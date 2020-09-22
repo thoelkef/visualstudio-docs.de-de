@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen ein benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen eines benutzerdefinierten Protokolldatei Speicher Orts für ClickOnce-Bereitstellungs Fehler | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,36 +18,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403546"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840961"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Vorgehensweise: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Gewusst wie: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwaltet die Aktivierung von Protokolldateien für alle Bereitstellungen. Diese Protokolle enthalten Fehler in Bezug auf Installieren und initialisieren eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung. In der Standardeinstellung [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] erstellt eine Protokolldatei für jede Bereitstellung-Aktivierung. Diese Protokolldateien im Ordner "temporäre Internetdateien" gespeichert. Die Protokolldatei für eine Bereitstellung wird für den Benutzer angezeigt, wenn ein Aktivierungsfehler tritt auf, und der Benutzer klickt auf **Details** im daraufhin angezeigten Fehlerdialogfeld.  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwaltet Aktivierungs Protokolldateien für alle bereit Stellungen. In diesen Protokollen werden alle Fehler im Zusammenhang mit der Installation und Initialisierung einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung dokumentiert. Standardmäßig wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] für jede Bereitstellungs Aktivierung eine Protokolldatei erstellt. Diese Protokolldateien werden im Ordner "temporäre Internet Dateien" gespeichert. Die Protokolldatei für eine Bereitstellung wird dem Benutzer angezeigt, wenn ein Aktivierungs Fehler auftritt, und der Benutzer klickt im resultierenden Fehler Dialogfeld auf **Details** .  
   
- Sie können dieses Verhalten für einen bestimmten Client ändern, indem Sie mithilfe des Registrierungs-Editor (**regedit.exe**) um einen benutzerdefinierten Protokollpfad Datei festzulegen. In diesem Fall [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Activation-Erfolge und Fehler für alle Bereitstellungen in einer einzelnen Datei protokolliert.  
+ Sie können dieses Verhalten für einen bestimmten Client ändern, indem Sie den Registrierungs-Editor (**regedit.exe**) verwenden, um einen benutzerdefinierten Pfad für die Protokolldatei festzulegen. In diesem Fall [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] protokolliert Aktivierungs Erfolge und-Fehler für alle bereit Stellungen in einer einzelnen Datei.  
   
 > [!CAUTION]
-> Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegenden Problemen führen, die Neuinstallation des Betriebssystems erforderlich machen können. Sie verwenden den Registrierungs-Editor auf eigene Gefahr.  
+> Die fehlerhafte Verwendung des Registrierungs-Editors kann zu schweren Problemen führen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Sie verwenden den Registrierungs-Editor auf eigene Gefahr.  
   
 > [!NOTE]
-> Sie benötigen zum Abschneiden oder löschen die Protokolldatei gelegentlich, um zu verhindern, dass es zu groß.  
+> Sie müssen die Protokolldatei gelegentlich abschneiden oder löschen, um zu verhindern, dass Sie zu groß wird.  
   
- Das folgende Verfahren beschreibt das Festlegen ein benutzerdefinierten Protokolldateispeicherorts für einen einzelnen Client.  
+ Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter Speicherort für die Protokolldatei für einen einzelnen Client festgelegt wird.  
   
-### <a name="to-set-a-custom-log-file-location"></a>Festlegen ein benutzerdefinierten Protokolldateispeicherorts  
+### <a name="to-set-a-custom-log-file-location"></a>So legen Sie einen benutzerdefinierten Speicherort für Protokolldateien fest  
   
-1. Open **Regedit.exe**.  
+1. Öffnen Sie **Regedit.exe**.  
   
-2. Navigieren Sie zum Knoten `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Navigieren Sie zum Knoten `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment` .  
   
-3. Legen Sie den Zeichenfolgenwert `LogFilePath` auf den vollständigen Pfad und Dateiname der Ihre bevorzugte benutzerdefinierten Protokollspeicherort.  
+3. Legen Sie den Zeichen folgen Wert `LogFilePath` auf den vollständigen Pfad und den Dateinamen Ihres bevorzugten benutzerdefinierten Protokoll Speicher Orts fest.  
   
-     Dieser Speicherort muss sich in einem Verzeichnis auf die der Benutzer Schreibzugriff hat. Beispielsweise unter Windows Vista, erstellen Sie die folgende Ordnerstruktur und die legen `LogFilePath` zu C:\Users\\< Benutzername\>\Documents\Logs\ClickOnce\installation.log.  
+     Dieser Speicherort muss sich in einem Verzeichnis befinden, auf das der Benutzer Schreibzugriff hat. Erstellen Sie z. b. unter Windows Vista die folgende Ordnerstruktur, und legen `LogFilePath` Sie auf c:\Users \\<username \> \Documents\Logs\ClickOnce\installation.logfest.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

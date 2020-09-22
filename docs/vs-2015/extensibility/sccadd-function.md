@@ -1,5 +1,5 @@
 ---
-title: SccAdd-Funktion | Microsoft-Dokumentation
+title: Sccadd-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432511"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840933"
 ---
 # <a name="sccadd-function"></a>SccAdd-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion wird vom Quellcodeverwaltungssystem neue Dateien hinzugefügt.  
+Diese Funktion fügt dem Quell Code Verwaltungssystem neue Dateien hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,61 +39,61 @@ SCCRTN SccAdd(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
  hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
+ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.  
   
- nFiles  
- [in] Anzahl der Dateien, die wie in dem aktuellen Projekt hinzugefügt werden sollen die `lpFileNames` Array.  
+ nnoch  
+ in Anzahl der ausgewählten Dateien, die dem aktuellen Projekt hinzugefügt werden sollen, wie im `lpFileNames` Array angegeben.  
   
- lpFileNames  
- [in] Array von vollständig qualifizierten lokalen Namen der Dateien hinzugefügt werden.  
+ lpfile-Namen  
+ in Array von voll qualifizierten lokalen Namen von Dateien, die hinzugefügt werden sollen.  
   
- lpComment  
- [in] Der Kommentar, der auf alle hinzugefügten Dateien angewendet werden.  
+ lpcomment  
+ in Der Kommentar, der auf alle Dateien angewendet werden soll, die hinzugefügt werden.  
   
- pfOptions  
- [in] Array von Befehlsflags auf einer Basis pro Datei bereitgestellt.  
+ pfoptions  
+ in Ein Array von Befehlsflags, die auf Datei Basis bereitgestellt werden.  
   
- pvOptions  
- [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
+ pvoptions  
+ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_OK|Der Add-Vorgang war erfolgreich.|  
-|SCC_E_FILEALREADYEXISTS|Die ausgewählte Datei ist bereits unter quellcodeverwaltung.|  
-|SCC_E_TYPENOTSUPPORTED|Der Typ der Datei (z. B. binäre) wird vom Quellcode-Verwaltungssystem nicht unterstützt.|  
-|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers; Fügen Sie nicht ausgeführt.|  
-|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor Abschluss abgebrochen.|  
-|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
-|SCC_E_FILENOTEXIST|Lokale Datei wurde nicht gefunden.|  
+|SCC_OK|Der Vorgang zum Hinzufügen war erfolgreich.|  
+|SCC_E_FILEALREADYEXISTS|Die ausgewählte Datei befindet sich bereits in der Quell Code Verwaltung.|  
+|SCC_E_TYPENOTSUPPORTED|Der Dateityp (z. b. Binary) wird vom Quell Code Verwaltungssystem nicht unterstützt.|  
+|SCC_E_OPNOTSUPPORTED|Das Quell Code Verwaltungssystem unterstützt diesen Vorgang nicht.|  
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen. Es wird empfohlen, eine Wiederholung auszuführen.|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler. Hinzufügen wurde nicht ausgeführt.|  
+|SCC_I_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
+|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss erneut geladen werden.|  
+|SCC_E_FILENOTEXIST|Die lokale Datei wurde nicht gefunden.|  
   
-## <a name="remarks"></a>Hinweise  
- Die üblichen `fOptions` werden durch ein Array, hier ersetzt `pfOptions`, mit einem `LONG` option Spezifikation pro Datei. Das liegt der Dateityp von Dateien variieren.  
+## <a name="remarks"></a>Bemerkungen  
+ Die üblichen `fOptions` werden hier durch ein Array ersetzt, `pfOptions` , durch eine `LONG` options Angabe pro Datei. Dies liegt daran, dass der Dateityp von Datei zu Datei variieren kann.  
   
 > [!NOTE]
-> Es ist ungültig. Geben Sie beide `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Optionen für die gleiche Datei, aber keines von beiden angegeben ist. Keine Einstellung entspricht der Einstellung `SCC_FILETYPE_AUTO`, in diesem Fall die Quelle-Plug-in erkennt automatisch den Dateityp zu steuern.  
+> Es ist ungültig, sowohl `SCC_FILETYPE_TEXT` die- `SCC_FILETYPE_BINARY` Option als auch die-Option für dieselbe Datei anzugeben, aber es ist zulässig, keines der beiden Optionen anzugeben. Die Einstellung keines ist identisch mit der Einstellung `SCC_FILETYPE_AUTO` . in diesem Fall erkennt das Quellcodeverwaltungs-Plug-in automatisch den Dateityp.  
   
- Im folgenden finden Sie die Liste der Flags, die der `pfOptions` Array:  
+ Im folgenden finden Sie eine Liste der im Array verwendeten Flags `pfOptions` :  
   
 |Option|Wert|Bedeutung|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0x00|Das Quellcodeverwaltungs-Plug-in sollte es sich um den Dateityp erkennen.|  
+|SCC_FILETYPE_AUTO|0x00|Das Quellcodeverwaltungs-Plug-in sollte den Dateityp erkennen.|  
 |SCC_FILETYPE_TEXT|0x01|Gibt eine ASCII-Textdatei an.|  
-|SCC_FILETYPE_BINARY|0x02|Gibt einen Dateityp als ASCII-Text an.|  
-|SCC_ADD_STORELATEST|0x04|Speichert nur die letzte Kopie der Datei keine Deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0x08|Die Datei behandelt als ANSI-Text.|  
+|SCC_FILETYPE_BINARY|0x02|Gibt einen anderen Dateityp als ASCII-Text an.|  
+|SCC_ADD_STORELATEST|0x04|Speichert nur die aktuelle Kopie der Datei, keine Delta.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Behandelt die Datei als ANSI-Text.|  
 |SCC_FILETYPE_UTF8|0x10|Behandelt die Datei als Unicode-Text im UTF8-Format.|  
-|SCC_FILETYPE_UTF16LE|0x20|Behandelt die Datei als Unicode-Text im UTF16-Little-Endian-Format.|  
-|SCC_FILETYPE_UTF16BE|0x40|Behandelt die Datei im UTF16-Format Big-Endian Unicode-Text formatieren.|  
+|SCC_FILETYPE_UTF16LE|0x20|Behandelt die Datei als Unicode-Text im UTF16 Little Endian-Format.|  
+|SCC_FILETYPE_UTF16BE|0x40|Behandelt die Datei als Unicode-Text im UTF16 Big Endian-Format.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436795"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841228"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436795"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>Batchverarbeitung einzelner Elemente nacheinander  
- Die Batchverarbeitung kann auch für bekannte Elementmetadaten durchgeführt werden, die jedem Element bei der Erstellung zugeordnet werden. Dadurch wird garantiert, dass jedes Element in einer Auflistung auch über Metadaten verfügt, die bei der Batchverarbeitung verwendet werden können. Jedes Element hat seinen eigenen `Identity`-Metadatenwert, der nützlich für die Unterteilung der in Elementlisten enthaltenen Elemente in separate Batches ist. Eine vollständige Liste bekannter Elementmetadaten finden Sie unter [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md).  
+ Die Batchverarbeitung kann auch für bekannte Elementmetadaten durchgeführt werden, die jedem Element bei der Erstellung zugeordnet werden. Dadurch wird garantiert, dass jedes Element in einer Auflistung auch über Metadaten verfügt, die bei der Batchverarbeitung verwendet werden können. Jedes Element hat seinen eigenen `Identity`-Metadatenwert, der nützlich für die Unterteilung der in Elementlisten enthaltenen Elemente in separate Batches ist. Eine umfassende Liste bekannter Element Metadaten finden Sie unter [well-known Item Metadata](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie die Elemente in einer Elementliste einzeln nacheinander in Batches unterteilen können. Da jedes Element seinen eigenen `Identity`-Metadatenwert hat, wird die Elementliste `ExampColl` in sechs Batches unterteilt, wobei jedes Batch jeweils ein Element der Elementliste enthält. Dadurch, dass `%(Identity)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte.  
   
@@ -220,10 +220,10 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Well-known Item Metadata (Bekannte Elementmetadaten)](../msbuild/msbuild-well-known-item-metadata.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Bekannte Element Metadaten](../msbuild/msbuild-well-known-item-metadata.md)   
  [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)   
  [ItemMetadata-Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+ [Batch Verarbeitung](../msbuild/msbuild-batching.md)   
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
