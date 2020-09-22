@@ -1,5 +1,5 @@
 ---
-title: SccDiff-Funktion | Microsoft-Dokumentation
+title: Sccdiff-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840827"
 ---
 # <a name="sccdiff-function"></a>SccDiff-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion wird angezeigt (oder optional für überprüft) die Unterschiede zwischen der aktuellen Datei (auf dem lokalen Datenträger) und die zuletzt eingecheckte Version in der Quelle System steuern.  
+Diese Funktion zeigt die Unterschiede zwischen der aktuellen Datei (auf dem lokalen Datenträger) und der zuletzt eingecheckten Version im Quell Code Verwaltungssystem an (oder überprüft Sie optional).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,52 +37,52 @@ SCCRTN SccDiff(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
  hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
+ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.  
   
  lpFileName  
- [in] Der Dateiname für das die Differenz angefordert wird.  
+ in Der Dateiname, für den der Unterschied angefordert wird.  
   
- Bestanden  
- [in] Befehls-Flags. Einzelheiten finden Sie unter "Hinweise".  
+ f-Optionen  
+ in Befehlsflags. Einzelheiten finden Sie in den Hinweisen.  
   
- pvOptions  
- [in] Quellcodeverwaltungs-plug-in spezifischen Optionen.  
+ pvoptions  
+ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_OK|Die funktionierende kopieren und Server-Version sind identisch.|  
-|SCC_I_FILESDIFFERS|Die Arbeitskopie unterscheidet sich von der Version in der quellcodeverwaltung.|  
-|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
-|SCC_E_FILENOTCONTROLLED|Die Datei ist nicht unter quellcodeverwaltung.|  
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
-|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers; Unterschied der Datei wurde nicht abgerufen werden.|  
+|SCC_OK|Die Arbeitskopie und die Server Version sind identisch.|  
+|SCC_I_FILESDIFFERS|Die Arbeitskopie unterscheidet sich von der Version unter Quell Code Verwaltung.|  
+|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss erneut geladen werden.|  
+|SCC_E_FILENOTCONTROLLED|Die Datei befindet sich nicht unter Quellcodeverwaltung.|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|  
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen. Es wird empfohlen, eine Wiederholung auszuführen.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler. der Datei Unterschied konnte nicht abgerufen werden.|  
 |SCC_E_FILENOTEXIST|Die lokale Datei wurde nicht gefunden.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion dient zwei verschiedene Zwecke. Standardmäßig zeigt er eine Liste der Änderungen in einer Datei an. Das Quellcodeverwaltungs-Plug-in wird ein eigenen Fenster, in dem Format, die die Unterschiede zwischen dem Benutzer die Datei auf dem Datenträger und die neueste Version der Datei unter quellcodeverwaltung Anzeige ausgewählt, geöffnet.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion dient zwei verschiedenen Zwecken. Standardmäßig wird eine Liste der Änderungen an einer Datei angezeigt. Das Quellcodeverwaltungs-Plug-in öffnet ein eigenes Fenster in jedem beliebigen Format, um die Unterschiede zwischen der Datei des Benutzers auf dem Datenträger und der aktuellen Version der Datei in der Quell Code Verwaltung anzuzeigen.  
   
- Alternativ müssen die IDE einfach zu bestimmen, ob eine Datei geändert hat. Beispielsweise müssen die IDE zu bestimmen, ob eine Datei auschecken, ohne den Benutzer darüber informiert werden kann. In diesem Fall übergibt die IDE die `SCC_DIFF_CONTENTS` Flag. Das Quellcodeverwaltungs-Plug-in muss überprüfen Sie die Datei auf dem Datenträger byteweise, für die Datei unter quellcodeverwaltung, und geben einen Wert, der angibt, ob die beiden Dateien unterschiedlich sind, ohne dass eine Anzeige für den Benutzer zurück.  
+ Alternativ muss die IDE einfach bestimmen, ob sich eine Datei geändert hat. Beispielsweise muss die IDE möglicherweise ermitteln, ob es sicher ist, eine Datei Auschecken, ohne den Benutzer zu informieren. In diesem Fall übergibt die IDE das- `SCC_DIFF_CONTENTS` Flag. Das Quellcodeverwaltungs-Plug-in muss die Datei auf dem Datenträger (Byte-für-Byte) für die Datei mit der Quell Code Verwaltung überprüfen und einen Wert zurückgeben, der angibt, ob sich die beiden Dateien unterscheiden, ohne den Benutzer anzuzeigen.  
   
- Das Quellcodeverwaltungs-Plug-In können Leistung zu optimieren, basierte auf einer Prüfsumme oder einen Zeitstempel anstelle der Byte-pro-Byte-Vergleich für aufgerufen werden, indem Sie Alternative `SCC_DIFF_CONTENTS`: Diese Formen des Vergleichs werden offensichtlich schneller, aber weniger zuverlässig. Nicht alle Quellcode-Verwaltungssysteme können diese Vergleichsmethoden alternative unterstützen, und das plug-in möglicherweise beim ausweichen auf einen Vergleich der Inhalte. Alle Quellcodeverwaltungs-Plug-ins muss mindestens einen Vergleich Inhalt unterstützen.  
+ Als Leistungsoptimierung verwendet das Quellcodeverwaltungs-Plug-in möglicherweise eine Alternative, die auf einer Prüfsumme oder einem Zeitstempel basiert, anstelle des Byte-by-Byte-Vergleichs, der von aufgerufen wird `SCC_DIFF_CONTENTS` : Diese Vergleichs Formen sind offensichtlich schneller, aber weniger zuverlässig. Nicht alle Quell Code Verwaltungssysteme unterstützen möglicherweise diese alternativen Vergleichsmethoden, und das Plug-in muss möglicherweise auf einen Inhalts Vergleich zurückgreifen. Alle Quellcodeverwaltungs-Plug-Ins müssen mindestens einen Inhalts Vergleich unterstützen.  
   
 > [!NOTE]
-> Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.  
+> Die Flags für die schnelle Differenz schließen sich gegenseitig aus. Es ist zulässig, keine Flags zu übergeben, aber es ist nicht zulässig, gleichzeitig mehr als eine zu übergeben. `SCC_DIFF_QUICK_DIFF`, eine Maske, die alle Flags kombiniert, kann zum Testen verwendet werden, sollte jedoch nie als Parameter übergeben werden.  
   
 |`fOption`|Bedeutung|  
 |---------------|-------------|  
-|SCC_DIFF_IGNORECASE|Groß-/Kleinschreibung Vergleich (kann für schnelle oder visuellen Unterschied verwendet werden).|  
-|SCC_DIFF_IGNORESPACE|Ignoriert Leerzeichen (kann für schnelle oder visuellen Unterschied verwendet werden).|  
-|SCC_DIFF_QD_CONTENTS|Im Hintergrund werden Sie die Datei byteweise verglichen.|  
-|SCC_DIFF_QD_CHECKSUM|Im Hintergrund vergleicht die Datei über eine Prüfsumme unterstützt. Wenn nicht unterstützt, fragt einen Vergleich der Inhalte.|  
-|SCC_DIFF_QD_TIME|Im Hintergrund vergleicht die Datei über die Zeitstempel des Zeitpunkts, unterstützt. Wenn nicht unterstützt, fragt einen Vergleich der Inhalte.|  
+|SCC_DIFF_IGNORECASE|Vergleich ohne Berücksichtigung der Groß-/Kleinschreibung (kann entweder für den schnellen oder visuellen Unterschied verwendet werden).|  
+|SCC_DIFF_IGNORESPACE|Ignoriert Leerraum (kann entweder für den schnellen oder den visuellen Unterschied verwendet werden).|  
+|SCC_DIFF_QD_CONTENTS|Vergleicht die Datei im Hintergrund mit Byte und Byte.|  
+|SCC_DIFF_QD_CHECKSUM|Vergleicht die Datei automatisch über eine Prüfsumme, wenn dies unterstützt wird. Wenn dies nicht unterstützt wird, wird auf einen Vergleich von Inhalten zurückgegriffen.|  
+|SCC_DIFF_QD_TIME|Vergleicht die Datei automatisch über den Zeitstempel, wenn dies unterstützt wird. Wenn dies nicht unterstützt wird, wird auf einen Vergleich von Inhalten zurückgegriffen.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
