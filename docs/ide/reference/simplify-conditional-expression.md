@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290864"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810349"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Refactoring: Vereinfachen bedingter Ausdrücke
 
@@ -22,7 +22,7 @@ Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung:** Ermöglicht das Vereinfachen eines [bedingten Ausdrucks](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+**Beschreibung:** Ermöglicht das Vereinfachen eines [bedingten Ausdrucks](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 **Hintergrund:** Sie möchten unnötigen Code entfernen, um mehr Klarheit zu schaffen.
 

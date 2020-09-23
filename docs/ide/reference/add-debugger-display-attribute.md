@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290847"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810388"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Hinzufügen des Attributs DebuggerDisplay
 
@@ -20,9 +20,9 @@ Diese Codegenerierung gilt für:
 
 - C#
 
-**Beschreibung:** Das [Attribut DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute) steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers.
+**Beschreibung:** Das [Attribut DebuggerDisplay](../../debugger/using-the-debuggerdisplay-attribute.md) steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers.
 
-**Hintergrund:** Sie möchten im Debugger [Eigenschaften programmgesteuert in Ihrem Code anheften](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips).
+**Hintergrund:** Sie möchten im Debugger [Eigenschaften programmgesteuert in Ihrem Code anheften](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips).
 
 **Vorteile**: Das Anheften von Eigenschaften ermöglicht Ihnen, Objekte schnell anhand ihrer Eigenschaften zu untersuchen, indem Sie diese Eigenschaft im Debugger an den Anfang der Eigenschaftsliste des Objekts setzen. 
 

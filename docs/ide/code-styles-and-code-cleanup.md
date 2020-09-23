@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743330"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682688"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -64,7 +64,7 @@ Sie können für jede dieser Codeformateinstellungen auf dieser Seite über die 
 
 ## <a name="enforce-code-styles-on-build"></a>Erzwingen von Codeformatregeln beim Build
 
-Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
+Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
 
 ::: moniker-end
 

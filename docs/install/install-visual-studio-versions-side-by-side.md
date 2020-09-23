@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250248"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713463"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -50,7 +50,7 @@ Bevor Sie Versionen parallel installieren, sollten Sie sich mit folgenden Beding
 
 Beim Durchführen eines Upgrades von einer Visual Studio-Nebenversion zur nächsten, aktualisiert das Visual Studio-Installationsprogramm Ihre aktuelle Installation standardmäßig auf die nächste Version dieses Kanals. Wenn Sie beispielsweise Preview 16.6.4 installieren, versucht das Installationsprogramm, Ihre aktuelle Installation von Preview 16.6.3 zu ersetzen, da beide Versionen sich im Previewkanal 16.6 befinden. Dadurch wird sichergestellt, dass ältere Versionen von Visual Studio keinen Speicherplatz auf Ihrem Computer belegen. In einigen spezifischen Fällen kann es hilfreich sein, Nebenversionen parallel zu installieren. Im genannten Beispiel bedeutet dies, dass sich die Versionen 16.6.3 und 16.6.4 auf dem gleichen Computer befinden.
 
-1. Laden Sie die [Visual Studio-Bootstrapperdatei](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) für die Nebenversion herunter, die Sie parallel mit Ihren vorhandenen Versionen von Visual Studio installieren möchten.
+1. Laden Sie die [Visual Studio-Bootstrapperdatei](/visualstudio/releases/2019/history#installing-an-earlier-release) für die Nebenversion herunter, die Sie parallel mit Ihren vorhandenen Versionen von Visual Studio installieren möchten.
 2. Öffnen Sie die Eingabeaufforderung im Administratormodus. Hierzu öffnen Sie das Windows-Startmenü, geben Sie „cmd“ ein, klicken Sie mit der rechten Maustaste auf die gefundene Eingabeaufforderung, und wählen Sie dann die Option **Als Administrator ausführen** aus. Ändern Sie in der Eingabeaufforderung das Verzeichnis in den Ordner, in dem sich Ihre Visual Studio-Bootstrapperdatei befindet.
 3. Führen Sie den folgenden Befehl aus, legen Sie einen neuen Ordnerpfad für den Installationsspeicherort fest, und ersetzen Sie den Namen der EXE-Datei durch den Namen der entsprechenden Bootstrapperdatei für die Version von Visual Studio, die Sie installieren. Der Name der EXE-Datei sollte mit einer der folgenden Dateien übereinstimmen oder ähneln:
    * „vs_community.exe“ für Visual Studio Community

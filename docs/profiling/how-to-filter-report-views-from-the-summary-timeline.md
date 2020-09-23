@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht | Microsoft-Dokumentation'
+title: Filtern von Berichtsansichten aus der Zeitachsenübersicht | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7216f723e6aa955666e3e46a8329bb12e0d2f8e8
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 661bae8166cb46fdf9419f4c49d922beb4d96f5c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329714"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851163"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht
 Sie können die Daten filtern, die in Leistungsberichten angezeigt werden, indem Sie ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht angeben. Wenn Sie Berichte filtern, wird die Profilerstellungs-Datendatei erneut analysiert, damit sie nur das von Ihnen angegebene Zeitsegment enthält.

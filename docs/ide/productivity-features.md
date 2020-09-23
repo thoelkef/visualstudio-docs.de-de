@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219763"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808141"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Produktivitätsleitfaden für Visual Studio
 
@@ -32,9 +32,9 @@ Sparen Sie Zeit beim Durchforsten von Menüs, indem Sie schnell nach allem suche
 
 - **Größere Barrierefreiheit in Visual Studio**. Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sprachausgaben und anderen Hilfstechnologien kompatibel sind. Eine vollständige Liste der verfügbaren Funktionen finden Sie unter [Tipps und Tricks zur Barrierefreiheit für Visual Studio](../ide/reference/accessibility-tips-and-tricks.md). 
 
-- **Informieren Sie sich über den Projektlebenszyklus und die Wartung in Visual Studio**. Informationen dazu, wie Sie Updates für Visual Studio, Supportoptionen für Enterprise- und Professional-Kunden, Support für ältere Versionen von Visual Studio und Komponenten erhalten, die nicht von der Visual Studio-Wartung abgedeckt werden, finden Sie unter [Produktlebenszyklus und Wartung in Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+- **Informieren Sie sich über den Projektlebenszyklus und die Wartung in Visual Studio**. Informationen dazu, wie Sie Updates für Visual Studio, Supportoptionen für Enterprise- und Professional-Kunden, Support für ältere Versionen von Visual Studio und Komponenten erhalten, die nicht von der Visual Studio-Wartung abgedeckt werden, finden Sie unter [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing). 
 
-- **Installieren und Verwalten von NuGet-Paketen in Visual Studio**. Über die Benutzeroberfläche des NuGet-Paket-Managers in Visual Studio können Sie auf einfache Weise NuGet-Pakete in Projekten und Lösungen installieren, deinstallieren und aktualisieren. Weitere Informationen finden Sie unter [Installieren und Verwalten von Paketen in Visual Studio mit dem NuGet-Paket-Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+- **Installieren und Verwalten von NuGet-Paketen in Visual Studio**. Über die Benutzeroberfläche des NuGet-Paket-Managers in Visual Studio können Sie auf einfache Weise NuGet-Pakete in Projekten und Lösungen installieren, deinstallieren und aktualisieren. Weitere Informationen finden Sie unter [Installieren und Verwalten von Paketen in Visual Studio mit dem NuGet-Paket-Manager](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Schreiben von Code
 
@@ -60,7 +60,7 @@ Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
 - **Verwenden von Beispielanwendungen**. Sie können Anwendungsentwicklung beschleunigen, indem Sie Beispielanwendungen von [Microsoft Developer Network](https://code.msdn.microsoft.com/) herunterladen und installieren. Sie können eine bestimmte Technologie oder ein Programmierkonzept auch kennenlernen, indem Sie ein Beispielpaket für diesen Bereich herunterladen und untersuchen.
 
-- **Ändern der Klammerformatierung durch Formatierung/Neue Zeilen**. Auf der Optionsseite **Formatierung** können Sie Optionen zur Formatierung von Code im Code-Editor festlegen, z. B. auch neue Zeilen. Weitere Informationen zur Verwendung dieser Einstellung in C# finden Sie im [Dialogfeld „Optionen“: Text-Editor > C# > Codeformat > Formatierung](../ide/reference/options-text-editor-csharp-formatting.md). Informationen zu C++ finden Sie unter [Festlegen der C++-Codierungseinstellungen in Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Informationen zu Python finden Sie unter [Formatieren von Python-Code](../python/formatting-python-code.md).
+- **Ändern der Klammerformatierung durch Formatierung/Neue Zeilen**. Auf der Optionsseite **Formatierung** können Sie Optionen zur Formatierung von Code im Code-Editor festlegen, z. B. auch neue Zeilen. Weitere Informationen zur Verwendung dieser Einstellung in C# finden Sie im [Dialogfeld „Optionen“: Text-Editor > C# > Codeformat > Formatierung](../ide/reference/options-text-editor-csharp-formatting.md). Informationen zu C++ finden Sie unter [Festlegen der C++-Codierungseinstellungen in Visual Studio](/cpp/ide/how-to-set-preferences). Informationen zu Python finden Sie unter [Formatieren von Python-Code](../python/formatting-python-code.md).
 
 - **Ändern des Einzugs mit Tabstoppzeichen**. Verwenden Sie benutzerdefinierte Editor-Einstellungen, die auf jede CodeBase individuell zugeschnitten sind, um einen konsistente Codierungsstil für mehrere Entwickler zu erzwingen, die an demselben Projekt mit verschiedenen Editoren und IDEs arbeiten. Stellen Sie sicher, dass Ihr gesamtes Team dieselben Sprachkonventionen, Benennungskonventionen und Formatierungsregeln befolgt. Da diese benutzerdefinierten Einstellungen portabel sind und mit Ihrem Code weitergegeben werden, können Sie Codierungsstile auch außerhalb von Visual Studio durchsetzen. Weitere Informationen finden Sie unter [Optionen, Text-Editor, Alle Sprachen, Tabstoppzeichen](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -118,7 +118,7 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 
 - **Verwenden der Visual Studio-Debuggertools**. Wenn Sie *Ihre App im Visual Studio-Kontext debuggen*, bedeutet dies in der Regel, dass Sie die Anwendung im Debugmodus ausführen. Der Debugger bietet viele Möglichkeiten zum Ermitteln der Aktionen Ihres Codes während der Ausführung. Eine Anleitung für die ersten Schritte finden Sie unter [Erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md). 
 
-- **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
+- **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](/previous-versions/hh974728(v=vs.140)), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
 
     ![Auswählen von Debuggingoptionen für den Webbrowser](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 
 - **[Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)** . Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitselemente, Code Reviews und Komponententests.
 
-- **Verwenden von Live Share, um in Echtzeit mit anderen Entwicklern zu debuggen**. Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Weitere Informationen finden Sie unter [Was ist Visual Studio Live Share?](https://docs.microsoft.com/visualstudio/liveshare/)
+- **Verwenden von Live Share, um in Echtzeit mit anderen Entwicklern zu debuggen**. Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Weitere Informationen finden Sie unter [Was ist Visual Studio Live Share?](/visualstudio/liveshare/)
 
 - **Verwenden Sie des interaktiven Fensters zum Schreiben und Testen von kleinen Codeanschnitten**. Visual Studio bietet ein interaktives REPL-Fenster (Read-Evaluate-Print-Loop), mit dem Sie beliebigen Code eingeben und unmittelbare Ergebnisse anzeigen können. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können. Weitere Informationen für Python finden Sie unter [Arbeiten mit dem interaktiven Python-Fenster](../python/python-interactive-repl-in-visual-studio.md). Die Funktion „Interaktives Fenster“ ist auch für C# verfügbar. 
 

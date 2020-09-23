@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038594"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810860"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
-Das Tool [Problem melden](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) wird von Visual Studio-Benutzern häufig genutzt, um eine Vielzahl von Problemen zu melden. Das Visual Studio-Team macht im Feedback der Benutzer Tendenzen bei Abstürzen und Verlangsamungen aus und löst Probleme, die eine breite Masse von Benutzern betreffen. Je umsetzbarer ein bestimmtes Feedbackticket ist, desto wahrscheinlicher wird es vom Produktteam analysiert und schnell bearbeitet. In diesem Dokument werden die bewährten Methoden beim Melden von Problemen bezüglich Abstürzen oder Verlangsamung beschrieben, um sie umsetzbarer zu machen.
+Das Tool [Problem melden](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019) wird von Visual Studio-Benutzern häufig genutzt, um eine Vielzahl von Problemen zu melden. Das Visual Studio-Team macht im Feedback der Benutzer Tendenzen bei Abstürzen und Verlangsamungen aus und löst Probleme, die eine breite Masse von Benutzern betreffen. Je umsetzbarer ein bestimmtes Feedbackticket ist, desto wahrscheinlicher wird es vom Produktteam analysiert und schnell bearbeitet. In diesem Dokument werden die bewährten Methoden beim Melden von Problemen bezüglich Abstürzen oder Verlangsamung beschrieben, um sie umsetzbarer zu machen.
 
 ## <a name="general-best-practices"></a>Allgemeine bewährte Methoden
 
@@ -56,7 +56,7 @@ Direkt reproduzierbare Abstürze sind Sachverhalte mit allen folgenden Merkmalen
 
 - Lassen sich in Beispielcode oder einem Projekt reproduzieren, das mit dem Feedback verknüpft oder als Teil dessen bereitgestellt werden kann (wenn die Schritte das Öffnen eines Projekts oder Dokuments vorsehen)
 
-Befolgen Sie für diese Probleme die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), und stellen Sie sicher, dass Sie Folgendes angeben:
+Befolgen Sie für diese Probleme die Schritte unter [Melden eines Problems](./how-to-report-a-problem-with-visual-studio.md), und stellen Sie sicher, dass Sie Folgendes angeben:
 
 - Die Schritte zum Reproduzieren des Problems
 
@@ -103,7 +103,7 @@ Verwenden Sie anschließend die Visual Studio-Funktion „Problem melden“. Die
 
 2. Zippen Sie die Datei (\*.zip) nach Möglichkeit, um sie zu verkleinern, bevor Sie Feedback übermitteln.
 
-3. Befolgen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), und fügen Sie die Heap-Abbilddatei an ein neues Feedbackelement an.
+3. Befolgen Sie die Schritte unter [Melden eines Problems](./how-to-report-a-problem-with-visual-studio.md), und fügen Sie die Heap-Abbilddatei an ein neues Feedbackelement an.
 
 > [!NOTE] 
 > **Das nützlichste Feedback:** Für diesen Sachverhalt ist das nützlichste Feedback die zum Zeitpunkt des Absturzes erfasste Heap-Abbilddatei.
@@ -118,7 +118,7 @@ Wie im entsprechenden Abschnitt zu Abstürzen beschrieben, sind für Probleme, d
 **Fehlende Reaktionsfähigkeit aus unbekanntem Grund**
 
 Wenn sich eine fehlende Reaktionsfähigkeit auf unvorhersehbare Weise bemerkbar macht, starten Sie beim nächsten Auftreten eine neue Instanz von Visual Studio, und melden Sie ein Problem aus dieser Instanz.
-Stellen Sie sicher, dass Sie in der [Anzeige „Aufzeichnen“](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) die Visual Studio-Sitzung auswählen, die nicht reagiert.
+Stellen Sie sicher, dass Sie in der [Anzeige „Aufzeichnen“](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro) die Visual Studio-Sitzung auswählen, die nicht reagiert.
 
 Wenn die nicht reagierende Visual Studio-Instanz im Modus „Administrator“ gestartet wurde, muss die zweite Instanz ebenfalls im Modus „Administrator“ gestartet werden.
 
@@ -145,7 +145,7 @@ Führen Sie die folgenden Schritte aus, um die Leistung optimal zu erfassen:
 
 3. Öffnen Sie in der neuen Kopie von Visual Studio das Tool **Problem melden**.
 
-4. Führen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) aus, bis Sie den Schritt zum „Bereitstellen einer Ablaufverfolgung und Heap-Abbilddatei (optional)“ erreichen.
+4. Führen Sie die Schritte unter [Melden eines Problems](./how-to-report-a-problem-with-visual-studio.md) aus, bis Sie den Schritt zum „Bereitstellen einer Ablaufverfolgung und Heap-Abbilddatei (optional)“ erreichen.
 
 5. Wählen Sie die Aufzeichnung der ersten Kopie von Visual Studio (in der ein Leistungsproblem auftritt), und starten Sie die Aufzeichnung.
 
@@ -165,7 +165,7 @@ Führen Sie die folgenden Schritte aus, um die Leistung optimal zu erfassen:
 
 Wenn während der Aufzeichnung einer Leistungsüberwachung die Verlangsamung oder hohe CPU-Auslastung, die Sie melden, endet, beenden Sie sofort die Aufzeichnung. Bei Erfassung von zu vielen Informationen werden die ältesten Informationen überschrieben. Wenn die Ablaufverfolgung nicht rechtzeitig (innerhalb weniger Sekunden) nach dem betreffenden Vorgang beendet wird, werden nützliche Ablaufverfolgungsdaten überschrieben.
 
-Fügen Sie keine Leistungsüberwachungen direkt an Feedbackelemente an, die bereits auf der Website der Entwicklercommunity vorhanden sind. Das Anfordern/Bereitstellen zusätzlicher Informationen ist ein unterstützter Workflow in dem in Visual Studio integrierten Tool „Problem melden“. Wenn eine Leistungsüberwachung erforderlich ist, um das Problem in einem vorherigen Feedbackelement zu lösen, legen wir den Status des Feedbackelements auf „Weitere Informationen erforderlich“ fest. Darauf kann genauso wie auf ein neues Problem reagiert werden. Eine ausführliche Anleitung finden Sie im Abschnitt [Weitere Informationen erforderlich](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) im Dokument zum Tool „Problem melden“.
+Fügen Sie keine Leistungsüberwachungen direkt an Feedbackelemente an, die bereits auf der Website der Entwicklercommunity vorhanden sind. Das Anfordern/Bereitstellen zusätzlicher Informationen ist ein unterstützter Workflow in dem in Visual Studio integrierten Tool „Problem melden“. Wenn eine Leistungsüberwachung erforderlich ist, um das Problem in einem vorherigen Feedbackelement zu lösen, legen wir den Status des Feedbackelements auf „Weitere Informationen erforderlich“ fest. Darauf kann genauso wie auf ein neues Problem reagiert werden. Eine ausführliche Anleitung finden Sie im Abschnitt [Weitere Informationen erforderlich](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) im Dokument zum Tool „Problem melden“.
 
 > [!NOTE] 
 > **Das nützlichste Feedback:** Bei nahezu allen Problemen aufgrund von Langsamkeit und hoher CPU-Auslastung ist das nützlichste Feedback eine allgemeine Beschreibung dessen, was Sie zu tun versucht haben, sowie die ZIP-Datei mit der Leistungsüberwachung (\*.etl.zip), in der das Verhalten während dieses Zeitraums erfasst wurde.

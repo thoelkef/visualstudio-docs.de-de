@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769997"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807884"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
 
@@ -71,7 +71,7 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 Es gibt zwei Möglichkeiten, wie Sie uns bei der Verbesserung der Dokumentation helfen können:
 
 * Nutzen Sie rechts oben auf einer beliebigen Dokumentationsseite das Antworttool **Ist diese Seite hilfreich?** .
-* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](/visualstudio/) zu geben. Wählen Sie dazu unten auf einer beliebigen Dokumentationsseite die Schaltfläche **Feedback senden über** > **Diese Seite** aus.
+* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](../index.yml) zu geben. Wählen Sie dazu unten auf einer beliebigen Dokumentationsseite die Schaltfläche **Feedback senden über** > **Diese Seite** aus.
 
 ## <a name="contact-microsoft-support"></a>Kontakt zum Microsoft Support
 

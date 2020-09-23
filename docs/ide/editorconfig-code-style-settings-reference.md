@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741766"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682653"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -48,7 +48,7 @@ Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
 ## <a name="enforce-coding-conventions-on-build"></a>Erzwingen von Codierungskonventionen beim Build
 
-Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
+Ab Visual Studio 2019 Version 16.8, wo das .NET 5.0 RC2 SDK enthalten ist, können Sie für alle .NET-Projekte die [.NET-Codierungskonventionen beim Build](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) erzwingen. Zur Erstellungszeit werden Verstöße gegen das .NET-Codeformat als Warnungen oder Fehler mit dem Präfix „IDE“ angezeigt. Dies ermöglicht Ihnen, konsistente Codeformate in Ihrer Codebasis strikt zu erzwingen.
 
 ::: moniker-end
 

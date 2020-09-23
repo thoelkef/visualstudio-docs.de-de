@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801567"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811044"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801567"
 In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable „Lesen-Auswerten-Ausgeben“-Schleife (REPL), die den üblichen „Bearbeiten-Erstellen-Debuggen“-Zyklus erheblich verkürzt. Das **interaktive** Fenster bietet alle Funktionen, die auch die REPL für die Python-Befehlszeile bietet. Es erleichtert auch das Austauschen von Code durch Quelldateien im Visual Studio-Editor, was über die Befehlszeile aufwändig wäre.
 
 > [!NOTE]
-> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Öffnen Sie das **interaktive** Fenster, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Python-Umgebung des Projekts klicken (z.B. **Python 3.6 (32-Bit)** , wie zuvor in einer Grafik gezeigt) und **Interaktives Fenster öffnen** auswählen. Alternativ können Sie im Hauptmenü von Visual Studio **Ansicht** > **Weitere Fenster** > **Interaktive Python-Fenster** auswählen.
 

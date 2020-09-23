@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87972472"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810118"
 ---
 # <a name="developer-community-guidelines"></a>Richtlinien für die Entwicklercommunity
 
@@ -57,7 +57,7 @@ Selbst bei Issues mit ausführlichen Informationen kann es vorkommen, dass wir d
 
 Das Selektieren eines Issues ist ein mehrstufiger Prozess, der innerhalb des Featureteams gemeinsam durchgeführt wird. Die Selektierung dauert in der Regel eine Woche, kann aber auch länger dauern. Das Ziel der Selektierung ist es, Ihnen deutlich zu erläutern, was mit Ihrem Issue geschieht. Nach der Selektierung wissen Sie beispielsweise, ob wir planen, Ihr Issue zu beheben, oder auf weiteres Feedback aus der Community warten.
 
-Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo sich Ihre Übermittlung in ihrem Lebenszyklus gerade befindet. Wenn sich die Visual Studio-Produktteams Ihr Feedback ansehen, wird es mit einem geeigneten Status versehen. Verfolgen Sie den Status Ihrer Problemberichte unter Bezugnahme auf den [Problemstatus und die häufig gestellten Fragen](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo sich Ihre Übermittlung in ihrem Lebenszyklus gerade befindet. Wenn sich die Visual Studio-Produktteams Ihr Feedback ansehen, wird es mit einem geeigneten Status versehen. Verfolgen Sie den Status Ihrer Problemberichte unter Bezugnahme auf den [Problemstatus und die häufig gestellten Fragen](./report-a-problem.md).
 
 Wenn bei einem Issue wichtige Informationen fehlen, weisen wir den Status _Needs More Info_ (Mehr Info nötig) zu. Wir schreiben einen Kommentar zum Issue mit den genauen erforderlichen Informationen, und Sie erhalten eine Benachrichtigung per E-Mail. Wenn wir die Informationen nicht innerhalb von sieben Tagen erhalten, schicken wir Ihnen eine Erinnerung. Nach weiteren 14 Tagen ohne Aktivität schließen wir das Ticket.
 
@@ -78,8 +78,8 @@ In einem solchen Fall schließen wir das Issue und bitten Sie, es für das ander
 
 #### <a name="additional-information"></a>Zusätzliche Informationen
 
-- [Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Behandeln von MSBuild-Problemen und Erstellen von Protokollen](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Behandeln von MSBuild-Problemen und Erstellen von Protokollen](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Verwalten von Featurevorschlägen
 
@@ -91,7 +91,7 @@ Folgendes beeinflusst unseren Entscheidungsfindungsprozess in Bezug auf Featurev
 
 - Entspricht er der allgemeinen Produktrichtung?
 - Können wir uns die Erstellung und Verwaltung leisten?
-- Passt es zu unserer Gesamt-[Roadmap](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)-Strategie?
+- Passt es zu unserer Gesamt-[Roadmap](/visualstudio/productinfo/vs-roadmap)-Strategie?
 - Findet es Unterstützung in der Community, worauf die Stimmen und Kommentare hindeuten?
 - Gefällt uns der Vorschlag richtig gut, obwohl die Unterstützung in der Community eher gering ausfällt?
 
@@ -99,7 +99,7 @@ Wenn wir keine dieser Fragen mit „Ja“ beantworten können, schließen wir di
 
 Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs*. Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
 
-Verfolgen Sie den Status Ihres Featurevorschlags unter Bezugnahme auf den [Status und die häufig gestellten Fragen](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Verfolgen Sie den Status Ihres Featurevorschlags unter Bezugnahme auf den [Status und die häufig gestellten Fragen](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Diskussionsregeln
 
@@ -111,7 +111,7 @@ Jeglicher Verstoß gegen die Diskussionsregeln kann dazu führen, dass der Komme
 
 ## <a name="data-privacy"></a>Datenschutz
 
-Kommentare und Antworten sind öffentlich sichtbar. Angefügte Dateien werden jedoch nur privat mit Microsoft geteilt. Diese Sichtbarkeit ist ein Vorteil, da die gesamte Community Einblick in die Probleme und die gefundenen Lösungen anderer Benutzer hat. Wenn Sie um den Schutz Ihrer Daten oder Ihrer Identität besorgt sind, haben wir Tipps für Sie. Weitere Informationen dazu finden Sie unter [Datenschutz in der Entwicklercommunity](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+Kommentare und Antworten sind öffentlich sichtbar. Angefügte Dateien werden jedoch nur privat mit Microsoft geteilt. Diese Sichtbarkeit ist ein Vorteil, da die gesamte Community Einblick in die Probleme und die gefundenen Lösungen anderer Benutzer hat. Wenn Sie um den Schutz Ihrer Daten oder Ihrer Identität besorgt sind, haben wir Tipps für Sie. Weitere Informationen dazu finden Sie unter [Datenschutz in der Entwicklercommunity](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

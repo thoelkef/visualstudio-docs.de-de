@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579708"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810834"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Vergleichsspiels
 
@@ -61,6 +61,6 @@ Beginnen Sie das Tutorial mit **[Schritt 1: Erstellen eines Projekts und Hinzuf
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
-* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [Weitere C#-Tutorials](../get-started/csharp/index.yml)
+* [Visual Basic-Tutorials](../get-started/visual-basic/index.yml)
 * [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

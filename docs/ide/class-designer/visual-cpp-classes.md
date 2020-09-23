@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590734"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808128"
 ---
 # <a name="c-classes-in-class-designer"></a>C++Klassen in Klassen-Designer
 
@@ -54,7 +54,7 @@ Durch einen Rechtsklick auf eine Klassenform und anschließend durch Klicken auf
 > [!NOTE]
 > Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur **Klassenansicht** wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.
 
-Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [Mehrfachvererbung](https://msdn.microsoft.com/library/6td5yws2.aspx) und [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes).
+Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [Mehrfachvererbung](/previous-versions/6td5yws2(v=vs.140)) und [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Abstrakte Klassen
 
@@ -177,6 +177,6 @@ Die folgende Tabelle zeigt einige Beispiele der kanonischen spezialisierten Klas
 - [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)
 - [Anonyme Klassentypen](/cpp/cpp/anonymous-class-types)
-- [Mehrfachvererbung](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Mehrfachvererbung](/previous-versions/6td5yws2(v=vs.140))
 - [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes)
 - [Vorlagen](/cpp/cpp/templates-cpp)

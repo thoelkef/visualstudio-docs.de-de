@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579723"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811213"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
@@ -68,6 +68,6 @@ Beginnen Sie das Tutorial mit **[Schritt 1: Erstellen eines Windows Forms-Anwen
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
-* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [Weitere C#-Tutorials](../get-started/csharp/index.yml)
+* [Visual Basic-Tutorials](../get-started/visual-basic/index.yml)
 * [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)
