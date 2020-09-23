@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Die Verbindung mit dem Computer &lt;Name&gt; konnte nicht hergestellt werden. Der Computer kann nicht im Netzwerk gefunden werden. | Microsoft-Dokumentation'
+title: Die Verbindung mit dem Computer &lt;Name&gt; konnte nicht hergestellt werden. Der Computer kann nicht im Netzwerk gefunden werden. | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: d1ab43773b4aa9d2535eb6ac157ec39333907731
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852510"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Fehler: Die Verbindung mit dem Computer &lt;Name&gt; konnte nicht hergestellt werden. Der Computer kann nicht im Netzwerk gefunden werden.
 Dieses Verhalten tritt auf, wenn eine der folgenden Bedingungen erfüllt ist:

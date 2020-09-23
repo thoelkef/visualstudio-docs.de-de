@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349561"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851410"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.

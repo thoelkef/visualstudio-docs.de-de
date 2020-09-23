@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: RPC erfordert Authentifizierung | Microsoft-Dokumentation'
+title: RPC verlangt Authentifizierung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e98daf3697c86eec7767135c9ad85d67cd6e958a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 9bb172455226ab290a74da07e97fc40deb30b6ba
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460584"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852549"
 ---
 # <a name="error-rpc-requires-authentication"></a>Fehler: RPC verlangt Authentifizierung
 Der Visual Studio-Debugger kann keine Verbindung mit dem Remotecomputer herstellen. Auf dem lokalen Computer ist eine RPC-Richtlinie aktiviert, die das Remotedebugging verhindert.

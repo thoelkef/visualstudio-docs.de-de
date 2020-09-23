@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft-Dokumentation'
+title: Anzeigen von Nachrichteneigenschaften | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f65b6f998d4ec30f82ac4eef1adf72c01c4404
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 35ca92905a100de09753b72aa8e913343c0729bf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349886"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852347"
 ---
 # <a name="how-to-display-message-properties"></a>Vorgehensweise: Anzeigen von Meldungseigenschaften
 Weitere Informationen zu Nachrichten, die in der [Nachrichtenansicht](../debugger/messages-view.md) aufgeführt sind, erhalten Sie im [Dialogfeld „Nachrichteneigenschaften“](../debugger/message-properties-dialog-box.md).

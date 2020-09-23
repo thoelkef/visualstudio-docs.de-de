@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen der OnStart-Methode | Microsoft-Dokumentation'
+title: Debuggen der OnStart-Methode | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350016"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852373"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Vorgehensweise: Debuggen der OnStart-Methode
 Sie können einen Windows-Dienst debuggen, indem Sie den Dienst starten und den Debugger an den Dienstprozess anfügen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen von Windows-Dienstanwendungen](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Zum Debuggen der <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> -Methode eines Windows-Diensts müssen Sie den Debugger allerdings aus der Methode starten.

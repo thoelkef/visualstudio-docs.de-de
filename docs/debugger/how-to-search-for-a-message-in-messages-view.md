@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen einer Meldung in der Meldungsansicht | Microsoft-Dokumentation'
+title: Suchen einer Meldung in der Meldungsansicht | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852008"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Vorgehensweise: Suchen einer Meldung in der Meldungsansicht
 Sie können in der Meldungsansicht nach einer bestimmten Meldung suchen, indem Sie das Handle, den Typ oder die Meldungs-ID als Suchkriterium verwenden. Diese sind einzeln oder kombiniert als Suchkriterium zulässig. Sie können auch die anfängliche Suchrichtung angeben. Die Felder im Dialogfeld werden vorab mit den Attributen der aktuell ausgewählten Meldung aufgefüllt.

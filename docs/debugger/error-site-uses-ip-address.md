@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Site verwendet IP-Adresse | Microsoft-Dokumentation'
+title: Site verwendet IP-Adresse | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460545"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852536"
 ---
 # <a name="error-site-uses-ip-address"></a>Fehler: Site verwendet IP-Adresse
 Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine Webanwendung anzuhängen, die eine IP-Adresse verwendet. Dies passiert, wenn Sie in IIS **Identifikation der Webseite** in **Spezielle IP-Adresse verwenden** ändern.

@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Firewall und „Keine Authentifizierung“ | Microsoft-Dokumentation'
+title: Firewall und „Keine Authentifizierung“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199e3b203ff73397a49c19a736a447f5823e5422
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: a8548880df8c69fa59d58bf4c13f7f547ad359bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460764"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852718"
 ---
 # <a name="error-firewall-no-authentication"></a>Fehler: Firewall und „Keine Authentifizierung“
 Die Internetverbindungsfirewall auf dem Remotecomputer wurde nicht für das Remotedebuggen eingerichtet. Für das Remotedebuggen mit `No Authentication` muss der Ausnahmenliste die Datei msvsmon.exe hinzugefügt werden. Es ist möglicherweise auch erforderlich, einige IPSEC-Anschlüsse zu öffnen.

@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt | Microsoft-Dokumentation'
+title: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 850698edc53e810bbb4dcd2bfd45e31eedcecb2a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5bc0fe09078493814d1ff12108ccdada36e8da1f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460663"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852627"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Fehler: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt
 Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger unterstützt das Debuggen von gemischtem systemeigenem und verwaltetem Code in Itanium-basierten Prozessen nicht.

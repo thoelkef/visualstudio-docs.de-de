@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Fenstereigenschaften | Microsoft-Dokumentation'
+title: Anzeigen von Fenstereigenschaften | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349769"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852282"
 ---
 # <a name="how-to-display-window-properties"></a>Vorgehensweise: Anzeigen von Fenstereigenschaften
 Um mehr über ein Fenster zu erfahren, das in der [Fensteransicht](../debugger/windows-view.md) aufgeführt ist, verwenden Sie das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md).
