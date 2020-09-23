@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Testen und Debuggen einer Schnellansicht | Microsoft-Dokumentation'
+title: Testen und Debuggen einer Schnellansicht | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a81a8d094999585620ab6ab412c3b0610caf517
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348898"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851865"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Vorgehensweise: Testen und Debuggen einer Schnellansicht
 Wenn Sie eine Schnellansicht erstellt haben, müssen Sie sie debuggen und testen.

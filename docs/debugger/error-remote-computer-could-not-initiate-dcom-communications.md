@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Remotecomputer konnte die DCOM-Kommunikation nicht initiieren | Microsoft-Dokumentation'
+title: Der Remotecomputer konnte die DCOM-Kommunikation nicht initiieren | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1f5216953adc1b257e432b1e4f1eb4d041b836
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 92a03c89cfd1bf0e0772d1a1728ffb9b0754d089
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460703"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852588"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Fehler: Der Remotecomputer konnte die DCOM-Kommunikation nicht initiieren
 Bei einem Versuch des Remotecomputers, mit dem lokalen Computer zu kommunizieren, ist ein DCOM-Fehler aufgetreten. Der lokale Computer ist der Computer, auf dem

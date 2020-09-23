@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Bearbeiten eines Registerwerts | Microsoft-Dokumentation'
+title: Bearbeiten eines Registerwerts | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a0ccbfbc0ede95fe93974474f4917e1b141797e6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349821"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851644"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Vorgehensweise: Bearbeiten eines Registerwerts (C#, C++, Visual Basic, F#)
 

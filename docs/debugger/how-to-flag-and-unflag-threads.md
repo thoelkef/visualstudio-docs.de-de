@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft-Dokumentation'
+title: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349626"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852060"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung (C#, Visual Basic, C++)
 

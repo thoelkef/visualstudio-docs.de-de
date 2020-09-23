@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige | Microsoft-Dokumentation'
+title: Starten und Beenden der Meldungsprotokollanzeige | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d9676d123828e0659480c532eeb48acf3012ccd4
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349041"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851917"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige
 Wenn ein Fenster [Meldungsansicht](../debugger/messages-view.md) aktiv ist, wird im Spy++-Menü **Meldungen** die Auswahl **Protokollierung starten** oder **Protokollierung beenden** angezeigt, und die entsprechende Symbolleistenschaltfläche **Protokollierung starten** oder **Protokollierung beenden** wird aktiv.

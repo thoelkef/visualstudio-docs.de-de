@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Webserver konnte die angeforderte Ressource nicht finden | Microsoft-Dokumentation'
+title: Der Webserver konnte die angeforderte Ressource nicht finden | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 3eaa6b3e0cc609c382e8f94383a6bdb6041a2288
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850955"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
 Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurückgegeben.
