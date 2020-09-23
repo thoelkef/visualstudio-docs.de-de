@@ -1,7 +1,8 @@
 ---
 title: Zeichnen von Formen und Pfaden
+description: Verwenden Sie Blend für Visual Studio, um Formen und Pfaden weitere Details hinzuzufügen.
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350822"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022506"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -26,7 +27,7 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
 Formen finden Sie im Fenster **Objekte**.
 
-![Formenkategorie im Objektfenster](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie "Formen" im Fenster "Objekte" in Blend für Visual Studio":::
 
 Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Sie die Handles an der Form verwenden, um die Form zu skalieren, zu drehen, zu verschieben oder zu neigen.
 
@@ -99,7 +100,7 @@ Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
 ![Kombinieren von Pfaden](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Aktion|
+|Nr.|Aktion|
 |-|-|
 |![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|
 |![Vereinigen](../designers/media/b1_2.png)|Vereinigen|
