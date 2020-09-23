@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649649"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005289"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 
@@ -33,7 +33,7 @@ Außerdem wurden die Optionen zum Hinzufügen einzelner Abonnenten und zum Durch
 Das Abgleichen von Abonnenten, die Microsoft-Konten verwenden, mit Ihrer Azure Active Directory-Instanz wurde vereinfacht, sodass Sie die zwei Identitäten nun mühelos verknüpfen können.  Die Verwendung von Azure AD-Identitäten sorgt für erhöhte Sicherheit und Vereinfachung der Abonnementverwaltung.  Weitere Informationen finden Sie im [Artikel zu persönlichen Anmeldungen](personal-email-sign-ins.md). 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Hinzufügen von Abonnenten mit Azure Active Directory-Gruppen
-Wenn Ihre Organisation Azure Active Directory verwendet, können Sie Abonnements nun mit Azure AD-Gruppen verwalten.  Das Zuweisen von Abonnements zu Gruppen ermöglicht Ihnen, mehreren Benutzer derselben Art schnell Abonnements zuzuweisen.  Wenn neue Benutzer zur Azure AD-Gruppe hinzugefügt werden, wird ihnen automatisch ein Abonnement zugewiesen.  Wenn ein Benutzer aus der Azure AD-Gruppe entfernt wird, wird ihm auch das Abonnement entzogen.  Dies unterstützt Ihre Organisation bei der Automatisierung der Abonnementverwaltung und spart Administratoren Zeit und Mühe.  Ausführliche Informationen finden Sie im Artikel [Hinzufügen mehrerer Benutzer](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions). 
+Wenn Ihre Organisation Azure Active Directory verwendet, können Sie Abonnements nun mit Azure AD-Gruppen verwalten.  Das Zuweisen von Abonnements zu Gruppen ermöglicht Ihnen, mehreren Benutzer derselben Art schnell Abonnements zuzuweisen.  Wenn neue Benutzer zur Azure AD-Gruppe hinzugefügt werden, wird ihnen automatisch ein Abonnement zugewiesen.  Wenn ein Benutzer aus der Azure AD-Gruppe entfernt wird, wird ihm auch das Abonnement entzogen.  Dies unterstützt Ihre Organisation bei der Automatisierung der Abonnementverwaltung und spart Administratoren Zeit und Mühe.  Ausführliche Informationen finden Sie im Artikel [Hinzufügen mehrerer Benutzer](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions). 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Wir freuen uns, eine Erweiterung der Vorteile ankündigen zu dürfen, die unser Partner CAST Highlight anbietet. 

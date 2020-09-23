@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801320"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810375"
 ---
 # <a name="add-file-header"></a>Hinzufügen von Dateiheadern
 
@@ -22,7 +22,7 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Hinzufügen von Dateiheadern zu vorhandenen Dateien, Projekten und Projektmappen mithilfe einer [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project)-Datei.
+**Beschreibung:** Hinzufügen von Dateiheadern zu vorhandenen Dateien, Projekten und Projektmappen mithilfe einer [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)-Datei.
 
 **Hintergrund:** Sie möchten Dateien, Projekten und Projektmappen problemlos einen Dateiheader hinzufügen.
 
@@ -30,7 +30,7 @@ Diese Codegenerierung gilt für:
 
 ## <a name="how-to"></a>Vorgehensweise
 
-1. Fügen Sie einem Projekt oder einer Projektmappe eine [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project)-Datei hinzu, falls Sie noch keine haben.
+1. Fügen Sie einem Projekt oder einer Projektmappe eine [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)-Datei hinzu, falls Sie noch keine haben.
 
 2. Fügen Sie Ihrer EditorConfig-Datei die folgende Regel hinzu: *file_header_template*.
 

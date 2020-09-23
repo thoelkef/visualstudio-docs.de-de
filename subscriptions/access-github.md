@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
-ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248189"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006097"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
@@ -79,13 +79,10 @@ Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein volls
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie mit GitHub noch nicht vertraut sind, sehen Sie sich das [GitHub Learning Lab](https://lab.github.com/) an, das Sie durch eine Reihe lehrreicher und praktischer Projekte führt und dabei hilfreiches Feedback an Sie weitergibt.
-
-
-

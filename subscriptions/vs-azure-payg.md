@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902898"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005072"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
@@ -45,13 +45,12 @@ Antwort: So nehmen Sie Änderungen an Ihren Azure-Abonnements vor:
 4. Sie haben nun die Möglichkeit, das Abonnement zu verwalten oder zu kündigen, es umzubenennen, das Verzeichnis zu wechseln oder den Abrechnungsbesitz zu übertragen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Viele Abonnements enthalten zusätzliche Azure-bezogene Vorteile wie Azure DevOps und Einzelguthaben für Azure DevTest.  Weitere Informationen zu diesen Vorteilen finden Sie unter:
 - [Azure DevOps](vs-azure-devops.md)
 - [Einzelguthaben für Azure DevTest](vs-azure.md)
-

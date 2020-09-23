@@ -7,12 +7,12 @@ ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Hier erfahren Sie, wie Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561428"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005806"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit dem Geschäfts-, Schul- oder Unikonto 
 
@@ -72,10 +72,10 @@ Antwort:  Viele Benutzer verfügen über mehr als ein Abonnement.  Es gibt zwei 
 Wenden Sie sich bei anhaltenden Problemen bei der Anmeldung für Unterstützung an das [Supportteam für Abonnements](https://visualstudio.microsoft.com/subscriptions/support/).  
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.  
+Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.

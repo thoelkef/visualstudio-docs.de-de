@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadministratoren.
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426888"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006136"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
 Als Administrator können Sie Abonnements für Ihre Organisation verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.
@@ -37,10 +37,10 @@ Mithilfe von Visual Studio-Abonnements können Entwickler Softwaretools installi
 | Ausnahme für Benutzer                  | Wenn ein Projekt zur Softwareentwicklung abgeschlossen wird, prüfen die Benutzer in der Regel die Anwendung und legen fest, ob sie den für das Release erforderlichen Kriterien entspricht. Dieser Prozess wird „Benutzerakzeptanztest“ genannt. Teammitglieder wie Geschäfts-, Sponsoren- oder Produktmanager können als Vertreter der Benutzer fungieren. Benutzer ohne Visual Studio-Abonnement können auf die Software im Rahmen von Benutzerakzeptanztests zugreifen, wenn die Verwendung der Software mit den Lizenzierungsbedingungen für Visual Studio kompatibel ist. Eine Person, deren Hauptaufgabe das Entwerfen, Entwickeln und Testen der Software ist, wird nur selten als „Benutzer“ berücksichtigt. |
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:

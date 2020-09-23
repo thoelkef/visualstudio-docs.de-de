@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596501"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808677"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Dialogfeld „Optionen“: Umgebung \> Webbrowser
 
@@ -52,7 +52,7 @@ Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den
 
 - **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
 
-- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.
+- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](/previous-versions/ex0hkwbx(v=vs.140)) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.
 
 - **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
 
@@ -66,4 +66,4 @@ Klicken Sie hier, um im Dialogfeld **Interneteigenschaften** Optionen für Inter
 ## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML-Designer](/previous-versions/ex0hkwbx(v=vs.140))

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87913316"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809910"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -124,7 +124,7 @@ Aus diesem Grund erstellen Entwickler oft eine *virtuelle Umgebung* für ein Pro
 
 Visual Studio stellt direkte Unterstützung für das Erstellen einer virtuellen Umgebung für ein Projekt bereit. Wenn Sie beispielsweise ein Projekt öffnen, dass eine *requirements.txt*-Datei enthält, oder ein Projekt aus einer Vorlage erstellen, die diese Datei enthält, werden Sie von Visual Studio dazu aufgefordert, eine virtuelle Umgebung automatisch zu erstellen und diese Abhängigkeiten zu installieren.
 
-In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
+In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
 
 Visual Studio enthält auch einen Befehl, um eine *requirements.txt*-Datei aus einer virtuellen Umgebung zu generieren. Dies vereinfacht das erneute Erstellen der Umgebung auf anderen Computern. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 

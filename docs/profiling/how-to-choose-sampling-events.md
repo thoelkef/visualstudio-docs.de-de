@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Auswählen von Samplingereignissen | Microsoft-Dokumentation'
+title: Auswählen von Samplingereignissen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329276"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851293"
 ---
 # <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
 Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:

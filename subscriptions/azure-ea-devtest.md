@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: In diesem Artikel erfahren Sie, wie Sie von den besonderen Azure DevTest-Preisen für Kunden mit Enterprise Agreement profitieren.
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903134"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005739"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement-DevTest-Angebot
 
@@ -42,10 +42,10 @@ Jeder Abonnent im Konto kann anhand der folgenden Schritte ein Abonnement erstel
 0. Klicken Sie auf **Kaufen**.  (Bei diesem Angebot wird nichts gekauft.)
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
@@ -54,6 +54,3 @@ In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual S
 - [Bearbeiten von Abonnements](edit-license.md)
 - [Löschen von Abonnements](delete-license.md)
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
-
-
-

@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie neu erworbene Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements hinzufügen
-ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561402"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005098"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Hinzufügen neuer Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements
 Wenn Sie unter Verwendung eines Azure-Abonnements neue Visual Studio-Monatsabonnements erwerben, müssen Sie diese gegebenenfalls zum Verwaltungsportal für Abonnements hinzufügen, um sie Benutzern zuweisen zu können.  
@@ -48,7 +48,7 @@ Nachdem Sie Abonnements hinzugefügt haben, können Sie sie Benutzern zuweisen. 
 - [Zuweisen bestimmter Abonnements zu bestimmten Benutzern](assign-guid.md)
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)

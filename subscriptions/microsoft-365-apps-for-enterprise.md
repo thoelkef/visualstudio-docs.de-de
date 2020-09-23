@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über Microsoft 365-Apps for Enterprise und die Installation.
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561251"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006123"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365-Apps for Enterprise in Visual Studio-Abonnements
 Microsoft 365-Apps for Enterprise (ehemals Office 365 Pro Plus) ist in ausgewählten Visual Studio-Abonnements verfügbar. 
@@ -78,13 +78,13 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.
+- [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](./vs-m365.md) aktivieren.

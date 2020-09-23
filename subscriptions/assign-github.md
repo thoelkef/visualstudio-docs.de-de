@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Verwalten von Abonnements im Visual Studio- und GitHub Enterprise-Angebot
-ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249839"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006175"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist die einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
@@ -75,10 +75,10 @@ Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

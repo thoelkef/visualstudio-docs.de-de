@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801879"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005276"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.
@@ -64,10 +64,10 @@ Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Servi
 Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen. Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen. Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion. 
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Weitere Informationen zum Verknüpfen von MSA- und AAD-Konten innerhalb von AAD finden Sie unter [Hinzufügen von Azure Active Directory B2B-Zusammenarbeitsbenutzern über das Azure-Portal](/azure/active-directory/b2b/add-users-administrator).

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen von Spalten in Berichtsansichten | Microsoft-Dokumentation'
+title: Anpassen von Spalten in Berichtsansichten | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329800"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851176"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Vorgehensweise: Anpassen von Spalten in Berichtsansichten
 Leistungstools in Visual Studio Team System Development Edition sind in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE), vollständig integriert, um eine reibungslose Benutzererfahrung anzubieten Die folgende Liste stellt für Ansichten dar, die durch Hinzufügen, Entfernen und Neuanordnen von Spalten angepasst werden können:

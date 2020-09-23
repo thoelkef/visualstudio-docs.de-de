@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247328"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003845"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -48,21 +48,21 @@ Wenn Ihr Visual Studio-Abonnement abläuft oder gekündigt wird, sind alle Abonn
 > [!IMPORTANT]
 > Sie müssen Ihre Ressourcen in ein anderes Azure-Abonnement übertragen, bevor Ihr aktuelles Azure-Abonnement deaktiviert wird, da Sie sonst den Zugriff auf Ihre Daten verlieren.  
 
-Es gibt mehrere Möglichkeiten, weiterhin ein monatliches Guthaben für Azure zu verwenden.  Unabhängig der Aktion, die Sie unten auswählen, müssen Sie [Ihre Ressourcen in ein anderes Azure-Abonnement übertragen](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription),um Ihre Azure-Ressourcen zu speichern. 
+Es gibt mehrere Möglichkeiten, weiterhin ein monatliches Guthaben für Azure zu verwenden.  Unabhängig der Aktion, die Sie unten auswählen, müssen Sie [Ihre Ressourcen in ein anderes Azure-Abonnement übertragen](/azure/azure-resource-manager/management/move-resource-group-and-subscription),um Ihre Azure-Ressourcen zu speichern. 
 
 - **Wenn Sie Ihr neues Visual Studio-Abonnement direkt erworben haben**, erwerben Sie ein neues Abonnement, oder verlängern Sie Ihr Abonnement über den Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Wenn jemand in Ihrer Organisation für den Erwerb von Abonnements zuständig ist**, [wenden Sie sich an Ihren Administrator für Visual Studio-Abonnements](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin), und fordern Sie ein Abonnement an, das das gewünschte monatliche Guthaben bereitstellt.  
-- **Wenn Sie über ein anderes aktives Visual Studio-Abonnement mit derselben Abonnementstufe verfügen**, das mit einem anderen Microsoft-Konto verknüpft ist, können Sie den Azure-Vorteil möglicherweise auf ein anderes aktives Visual Studio-Abonnement übertragen, indem Sie im [Visual Studio-Abonnementportal](https://my.visualstudio.com/subscriptions) [ein alternatives Konto hinzufügen](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile).  
+- **Wenn jemand in Ihrer Organisation für den Erwerb von Abonnements zuständig ist**, [wenden Sie sich an Ihren Administrator für Visual Studio-Abonnements](./contact-my-admin.md), und fordern Sie ein Abonnement an, das das gewünschte monatliche Guthaben bereitstellt.  
+- **Wenn Sie über ein anderes aktives Visual Studio-Abonnement mit derselben Abonnementstufe verfügen**, das mit einem anderen Microsoft-Konto verknüpft ist, können Sie den Azure-Vorteil möglicherweise auf ein anderes aktives Visual Studio-Abonnement übertragen, indem Sie im [Visual Studio-Abonnementportal](https://my.visualstudio.com/subscriptions) [ein alternatives Konto hinzufügen](./manage-vs-subscriptions.md#managing-my-profile).  
 
 Anhand der folgenden Tabelle „Berechtigung“ können Sie bestimmen, welche Gutschriften die einzelnen Abonnementtypen beinhalten.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Umstellung Ihres Azure-Abonnements auf nutzungsbasierte Bezahlung
 
-Wenn Sie ein Visual Studio-Abonnement oder ein Guthaben nicht mehr benötigen, aber Ihre Azure-Ressourcen weiterhin verwenden möchten, [übertragen Sie Ihre Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) an ein anderes Azure-Abonnement, oder ändern Sie Ihr Azure-Abonnement, um die nutzungsbasierte Bezahlung zu verwenden, indem Sie [das Ausgabenlimit entfernen](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
+Wenn Sie ein Visual Studio-Abonnement oder ein Guthaben nicht mehr benötigen, aber Ihre Azure-Ressourcen weiterhin verwenden möchten, [übertragen Sie Ihre Ressourcen](/azure/azure-resource-manager/management/move-resource-group-and-subscription) an ein anderes Azure-Abonnement, oder ändern Sie Ihr Azure-Abonnement, um die nutzungsbasierte Bezahlung zu verwenden, indem Sie [das Ausgabenlimit entfernen](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Wenn Sie keine dieser Aktionen durchführen, wird Ihr Azure-Abonnement deaktiviert und 30 Tage nach Empfang der E-Mail-Benachrichtigung gelöscht.  
 
@@ -117,10 +117,10 @@ Antwort:  Geistiges Eigentum, das von einem Mitarbeiter auf Grundlage der vom je
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu Microsoft-Tools und -Diensten finden Sie in der Dokumentation zu:

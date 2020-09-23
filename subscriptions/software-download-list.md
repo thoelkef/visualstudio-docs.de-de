@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Suchen Sie nach einer Liste der Softwaredownloads, die in Ihrem Visual Studio-Abonnement enthalten sind.
-ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250690"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004010"
 ---
 # <a name="what-software-is-available-for-download"></a>Welche Software ist zum Herunterladen verfügbar?
 
@@ -31,10 +31,10 @@ Um Produkte schnell zu suchen, verwenden Sie die Funktion „Suchen“ am oberen
 Sie können auch eine Excel-Tabelle herunterladen, die eine umfassende Liste von [verfügbaren Softwaretiteln](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) für jeden Abonnementtyp enthält.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Lesen Sie mehr über das [Herunterladen von Software](download-software.md) und über das Abrufen und Verwalten von [Product Keys](product-keys.md).

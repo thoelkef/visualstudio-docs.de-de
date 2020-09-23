@@ -7,12 +7,12 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über die Aufgaben eines Administrators beim Verwalten von Abonnements für große Teams und externe Vertragspartner.
-ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232321"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005560"
 ---
 # <a name="large-teams-and-external-contractors"></a>Große Teams und externe Auftragnehmer
 Administratoren für Visual Studio-Abonnements sind dafür verantwortlich, sicherzustellen, dass jeder Benutzer, der mit lizenzierter Visual Studio-Software interagiert, angemessen für sein Visual Studio-Abonnement lizenziert ist.
@@ -35,10 +35,10 @@ Externe Vertragspartner verfügen möglicherweise über Lizenzen, die mit Ihrer 
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:

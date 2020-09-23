@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit einem GitHub-Konto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233227"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005263"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit einem GitHub-Konto 
 
@@ -65,10 +65,10 @@ Antwort:  Klicken Sie auf der Registerkarte [Sicherheit](https://account.microso
 Antwort:  Wenn Sie eine Azure Active Directory E-Mail-Adresse in Ihrem GitHub-Konto gespeichert haben, verfügen Sie bereits über eine Microsoft-Identität, die auf Azure zugreifen und CI-Pipelines mit Ihrem GitHub-Code ausführen kann. Mit diesem Konto stellen Sie sicher, dass Ihre Azure-Ressourcen und Buildpipelines innerhalb Ihrer Organisationsgrenzen bleiben. Verwenden Sie für private Aufgaben eine persönliche E-Mail-Adresse in Ihrem GitHub-Konto, damit Sie immer darauf zugreifen können. Melden Sie sich erneut an, und wählen Sie **Andere E-Mail-Adresse verwenden**, wenn Sie zur Anmeldung mit Ihrem Geschäfts-, Schul- oder Unikonto aufgefordert werden. Dann können Sie ein neues Microsoft-Konto mit dieser privaten E-Mail-Adresse erstellen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und die Tools, Dienste und Angebote zu entdecken, die Ihnen zur Verfügung stehen.  
+Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und die Tools, Dienste und Angebote zu entdecken, die Ihnen zur Verfügung stehen.

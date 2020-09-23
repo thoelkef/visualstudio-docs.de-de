@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896619"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832319"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ im Visual Studio-Debugger
 Mit Formatbezeichnern können Sie das Format ändern, in dem ein Wert in den Fenstern **Überwachung**, **Auto** und **Lokal** angezeigt wird.
@@ -78,7 +78,7 @@ Die folgenden Tabellen beschreiben die Formatbezeichner, die Sie in Visual Studi
 |bb|Binäre ganze Zahl ohne Vorzeichen (ohne vorangestelltes 0b)|25|00000000000000000000000000011001|
 |e|Wissenschaftliche Schreibweise|25000000|2.500000e+07|
 |g|Kürzere Variante aus wissenschaftlicher oder Gleitkommaschreibweise|25000000|2.5e+07|
-|c|Einzelnes Zeichen|0x0065, c|101 'e'|
+|c|Einzelnes Zeichen|0x0065|101 'e'|
 |s|const char*-Zeichenfolge (mit Anführungszeichen)|\<location> "hello world"|"hello world"|
 |**sb**|const char*-Zeichenfolge (ohne Anführungszeichen)|\<location> "hello world"|hello world|
 |s8|UTF-8-Zeichenfolge|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|

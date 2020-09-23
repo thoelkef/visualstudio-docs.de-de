@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107840"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808993"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 
@@ -48,9 +48,9 @@ Erfahren Sie mehr über Technologien, die die Barrierefreiheit unterstützen. Hi
 
 ## <a name="websites"></a>Websites
 
-- [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
+- [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](/previous-versions/3has1x30(v=vs.140)) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
 
-- **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](/previous-versions//ms528445(v=vs.85)).
 
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern
 

@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386848"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809517"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -131,7 +131,7 @@ Weitere Informationen finden Sie unter [Introducing Live Unit Testing (Einführu
 
 Automatisiertes Testen ist ein wesentlicher Bestandteil aller DevOps-Pipelines. Damit können Sie konsistent und zuverlässig testen und Ihre Projektmappe in viel kürzeren Abständen freigeben. CI/CD-Flüsse (Continuous Integration und Continuous Delivery) können Prozesse effektiver gestalten.
 
-Weitere Informationen zu automatisierten Tests finden Sie im Blogbeitrag [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (CI/CD-Pipeline für automatisierte Tests in DevOps).
+Weitere Informationen zu automatisierten Tests finden Sie im Blogbeitrag [CI/CD pipeline for automated tests in DevOps](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently) (CI/CD-Pipeline für automatisierte Tests in DevOps).
 
 Weitere Informationen zu Neuigkeiten in der DevLabs-Erweiterung [Continuous Delivery-Tools for Visual Studio (Continuous Delivery-Tools für Visual Studio)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) finden Sie in dem Blogbeitrag [Committing with Confidence: Commit Time Code Quality (Commit mit Vertrauen: Commit ausführen mit Zeitcodequalität)](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/).
 

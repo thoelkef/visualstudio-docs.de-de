@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248736"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809045"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Erstellen einer Windows Forms-App in Visual Studio mit C\#
 
@@ -164,6 +164,6 @@ Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
-* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [Weitere C#-Tutorials](../get-started/csharp/index.yml)
+* [Visual Basic-Tutorials](../get-started/visual-basic/index.yml)
 * [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

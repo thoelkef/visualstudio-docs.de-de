@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Visual Studio-Abonnements im Microsoft Store erwerben und im Visual Studio-Abonnementportal aktivieren.
-ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 244d6e6a0e5ccd6bf98b0e95d2165459cbe492c4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561574"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005962"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio-Abonnements sind über den Microsoft Store verfügbar
 Visual Studio-Abonnements können über verschiedene Kanäle erworben werden. Dazu zählen u. a. die [Volumenlizenzierung](https://www.microsoft.com/licensing/default), Cloud Solution Provider, den [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) und den Microsoft Store.  In diesem Artikel wird erläutert, wie Abonnements über den [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) erworben und aktiviert werden.  
@@ -48,10 +48,10 @@ Nachdem Sie ein Visual Studio-Abonnement über den Microsoft Store erworben habe
 Wenn Sie Fragen zum Erwerb von Abonnements über den Microsoft Store haben, können Sie sich an unseren Support wenden.  Kontaktieren Sie dazu den [Microsoft Store-Support](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nach der Aktivierung Ihres Abonnements finden Sie auf der Seite [Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) eine Übersicht über alle Tools, Dienste, Weiterbildungs- und Supportleistungen, die in Ihrem Abonnement enthalten sind.  Es wird empfohlen, diese Vorteile einzurichten, um mit der Nutzung Ihres Abonnements zu beginnen:

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene | Microsoft-Dokumentation'
+title: Sammeln von Samplingdaten auf Zeilenebene | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851254"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene
 Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine prozessorintensive Funktion im Code ist, z.B. eine Funktion mit äußerst exklusiven Stichproben, die vom Prozessor die meiste Zeit beanspruchen.

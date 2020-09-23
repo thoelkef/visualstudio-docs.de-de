@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5fc25f6bb25c9471b1de1d464fa6afc4c80b3b
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 8505f98163c57fe276bcf4c76195fe843300394f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89410740"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809465"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Verlauf der Neuerungen in der Visual Studio-Dokumentation
 
@@ -31,25 +31,25 @@ Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Diese
 
 **Neue Artikel**
 
-- [CA1417: `OutAttribute` nicht bei Zeichenfolgenparametern für P/Invokes verwenden](/visualstudio/code-quality/ca1417) – Dokumentation für CA1417 hinzufügen
-- [CA1805: Keine unnötige Initialisierung.](/visualstudio/code-quality/ca1805) – Dokumente für CA1805 hinzufügen
-- [CA1836: IsEmpty gegenüber Count bevorzugen, wenn verfügbar](/visualstudio/code-quality/ca1836) – Dokumentation für CA1836 hinzufügen (IsEmpty gegenüber Count bevorzugen)
-- [CA2016: CancellationToken-Parameter an Methoden weiterleiten, die einen solchen Parameter entgegennehmen](/visualstudio/code-quality/ca2016) – Dokument CA2016 – CancellationToken-Parameter an Methoden weiterleiten, die einen solchen Parameter entgegennehmen
-- [CA2350: Sicherstellen, dass die Eingabe von DataTable.ReadXml() vertrauenswürdig ist](/visualstudio/code-quality/ca2350) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2351: Sicherstellen, dass die Eingabe von DataSet.ReadXml() vertrauenswürdig ist](/visualstudio/code-quality/ca2351) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2352: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ können anfällig für Angriffe durch Remotecodeausführung sein](/visualstudio/code-quality/ca2352) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2353: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ](/visualstudio/code-quality/ca2353) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2354: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph können anfällig für Angriffe durch Remotecodeausführung sein](/visualstudio/code-quality/ca2354) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2355: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph](/visualstudio/code-quality/ca2355) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
-- [CA2356: Unsicherer DataSet- oder DataTable-Typ in einem webdeserialisierten Objektgraph](/visualstudio/code-quality/ca2356) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA1417: `OutAttribute` nicht bei Zeichenfolgenparametern für P/Invokes verwenden](../code-quality/ca1417.md) – Dokumentation für CA1417 hinzufügen
+- [CA1805: Keine unnötige Initialisierung.](../code-quality/ca1805.md) – Dokumente für CA1805 hinzufügen
+- [CA1836: IsEmpty gegenüber Count bevorzugen, wenn verfügbar](../code-quality/ca1836.md) – Dokumentation für CA1836 hinzufügen (IsEmpty gegenüber Count bevorzugen)
+- [CA2016: CancellationToken-Parameter an Methoden weiterleiten, die einen solchen Parameter entgegennehmen](../code-quality/ca2016.md) – Dokument CA2016 – CancellationToken-Parameter an Methoden weiterleiten, die einen solchen Parameter entgegennehmen
+- [CA2350: Sicherstellen, dass die Eingabe von DataTable.ReadXml() vertrauenswürdig ist](../code-quality/ca2350.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2351: Sicherstellen, dass die Eingabe von DataSet.ReadXml() vertrauenswürdig ist](../code-quality/ca2351.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2352: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ können anfällig für Angriffe durch Remotecodeausführung sein](../code-quality/ca2352.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2353: Unsichere DataSet- oder DataTable-Elemente in einem serialisierbaren Typ](../code-quality/ca2353.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2354: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph können anfällig für Angriffe durch Remotecodeausführung sein](../code-quality/ca2354.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2355: Unsichere DataSet- oder DataTable-Elemente in einem deserialisierten Objektgraph](../code-quality/ca2355.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
+- [CA2356: Unsicherer DataSet- oder DataTable-Typ in einem webdeserialisierten Objektgraph](../code-quality/ca2356.md) – Dokumente zu Regeln zur Deserialisierung von anfänglichem DataSet/anfänglicher DataTable
 
 ### <a name="containers"></a>Container
 
 **Neue Artikel**
 
-- [Konfigurieren des lokalen Prozesses mit Kubernetes](/visualstudio/containers/configure-local-process-with-kubernetes) – Lokaler Prozess mit Kubernetes: YAML-Konfiguration
-- [Verwenden des lokalen Prozesses mit Kubernetes (Vorschau)](/visualstudio/containers/local-process-kubernetes) – Dev Spaces-Migration
-- [Funktionsweise des lokalen Prozesses mit Kubernetes](/visualstudio/containers/overview-local-process-kubernetes)
+- [Konfigurieren des lokalen Prozesses mit Kubernetes](../containers/configure-local-process-with-kubernetes.md) – Lokaler Prozess mit Kubernetes: YAML-Konfiguration
+- [Verwenden des lokalen Prozesses mit Kubernetes (Vorschau)](../containers/local-process-kubernetes.md) – Dev Spaces-Migration
+- [Funktionsweise des lokalen Prozesses mit Kubernetes](../containers/overview-local-process-kubernetes.md)
   - Lokaler Prozess für Kubernetes: Hinzufügen des Routingabschnitts
   - Dev Spaces-Migration
 
@@ -57,51 +57,51 @@ Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Diese
 
 **Aktualisierte Artikel**
 
-- [Änderungsprotokoll (Visual Studio Tools für Unity, Windows)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity) – VSTU-Änderungsprotokoll auf 4.7.1.0 aktualisieren
-- [Änderungsprotokoll (Visual Studio Tools für Unity, Mac)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac) – VSTU-Änderungsprotokoll auf 2.7.1.0 aktualisieren
+- [Änderungsprotokoll (Visual Studio Tools für Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md) – VSTU-Änderungsprotokoll auf 4.7.1.0 aktualisieren
+- [Änderungsprotokoll (Visual Studio Tools für Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md) – VSTU-Änderungsprotokoll auf 2.7.1.0 aktualisieren
 
 ### <a name="get-started"></a>Erste Schritte
 
 **Neue Artikel**
 
-- [Tutorial: Erweitern einer einfachen C#-Konsolen-App](/visualstudio/get-started/csharp/tutorial-console-part-2) – Veröffentlichen der ersten Version des Sidewalk-Tutorials zum Erweitern
+- [Tutorial: Erweitern einer einfachen C#-Konsolen-App](../get-started/csharp/tutorial-console-part-2.md) – Veröffentlichen der ersten Version des Sidewalk-Tutorials zum Erweitern
 
 ### <a name="ide"></a>IDE
 
 **Neue Artikel**
 
-- [Richtlinien für die Entwicklercommunity](/visualstudio/ide/developer-community-guidelines) – DevCom-Richtlinien wurden hinzugefügt
-- [IntelliSense-Vervollständigung für nicht importierte Typen und Erweiterungsmethoden](/visualstudio/ide/reference/intellisense-completion-unimported-types-extension-methods)
+- [Richtlinien für die Entwicklercommunity](./developer-community-guidelines.md) – DevCom-Richtlinien wurden hinzugefügt
+- [IntelliSense-Vervollständigung für nicht importierte Typen und Erweiterungsmethoden](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>Installieren
 
 **Neue Artikel**
 
-- [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](/visualstudio/install/update-minimal-layout) – Dokumentation des Features „Minimales Layout“
-- [Leitfaden zu Visual Studio Enterprise](/visualstudio/install/visual-studio-enterprise-guide) – Enterprise-Leitfaden
+- [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](../install/update-minimal-layout.md) – Dokumentation des Features „Minimales Layout“
+- [Leitfaden zu Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) – Enterprise-Leitfaden
 
 ### <a name="javascript"></a>JavaScript
 
 **Neue Artikel**
 
-- [Kompilieren von TypeScript-Code (Node.js)](/visualstudio/javascript/compile-typescript-code-npm) – TypeScript kompilieren und erstellen
-- [Kompilieren von TypeScript-Code (ASP.NET Core)](/visualstudio/javascript/compile-typescript-code-nuget) – TypeScript kompilieren und erstellen
+- [Kompilieren von TypeScript-Code (Node.js)](../javascript/compile-typescript-code-npm.md) – TypeScript kompilieren und erstellen
+- [Kompilieren von TypeScript-Code (ASP.NET Core)](../javascript/compile-typescript-code-nuget.md) – TypeScript kompilieren und erstellen
 
 ### <a name="msbuild"></a>MSBuild
 
 **Neue Artikel**
 
-- [Gemeinsame MSBuild-Elementmetadaten](/visualstudio/msbuild/common-msbuild-item-metadata) – MSBuild: Tabelle für optionale Metadaten mit Link und LinkBase hinzufügen
-- [Projektmappenfilter in MSBuild](/visualstudio/msbuild/solution-filters) – MSBuild-Projektmappenfilter
+- [Gemeinsame MSBuild-Elementmetadaten](../msbuild/common-msbuild-item-metadata.md) – MSBuild: Tabelle für optionale Metadaten mit Link und LinkBase hinzufügen
+- [Projektmappenfilter in MSBuild](../msbuild/solution-filters.md) – MSBuild-Projektmappenfilter
 
 ### <a name="test"></a>Test
 
 **Neue Artikel**
 
-- [Debuggen und Analysieren von Komponententests mit dem Test-Explorer](/visualstudio/test/debug-unit-tests-with-test-explorer) – Arbeitsweise des Test-Explorers
+- [Debuggen und Analysieren von Komponententests mit dem Test-Explorer](../test/debug-unit-tests-with-test-explorer.md) – Arbeitsweise des Test-Explorers
 
 **Aktualisierte Artikel**
 
-- [Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+- [Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
   - Aktualisieren des Konfigurierens von Komponententests mithilfe einer RUNSETTINGS-Datei
   - Die Option „Verantwortung zuweisen“ wurde geändert und ein Beispiel hinzugefügt.
