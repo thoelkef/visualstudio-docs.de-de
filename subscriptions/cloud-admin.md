@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Einrichten von Administratoren für Monatsabonnements
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434312"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006110"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Einrichten von Administratoren für Visual Studio-Monatsabonnements
 
@@ -60,10 +60,10 @@ Der neue Administrator kann sich jetzt beim [Verwaltungsportal](https://manage.v
 Weitere Informationen zu Visual Studio-Monatsabonnements finden Sie in der [Übersicht](vscloud-overview.md) unter „Erwerben von Abonnements“. Besuchen Sie den Visual Studio Marketplace unter [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription), um Visual Studio-Monatsabonnements zu erwerben.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
@@ -71,6 +71,3 @@ In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual S
 - [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
 - [Bearbeiten von Abonnements](edit-license.md)
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
-
-
-

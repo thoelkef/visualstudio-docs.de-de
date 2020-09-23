@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005687"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
 Wenn Ihr Visual Studio-Abonnement von einem Unternehmen, einer Schule oder einer Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.
@@ -36,10 +36,10 @@ Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglic
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Es wird empfohlen, die folgenden Tools zu aktivieren, um das Visual Studio-Abonnement optimal nutzen zu können:
@@ -48,4 +48,3 @@ Es wird empfohlen, die folgenden Tools zu aktivieren, um das Visual Studio-Abonn
 - [Azure DevOps](vs-azure-devops.md)
 
 Diese Tools und mehr finden Sie unter https://my.visualstudio.com/benefits.
-

@@ -1,5 +1,6 @@
 ---
-title: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung | Microsoft-Dokumentation
+title: Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 682ae4bf31f44f3dff5f6dfadf7b8c316d9d9721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331857"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810769"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung
 Bei der Instrumentationsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Profilerstellungstools wird Profilerstellungscode in eine Kopie eines Moduls eingefügt. Der Code zeichnet während der Profilerstellung jeden Funktionseinstieg, jedes Funktionsende und jeden Funktionsaufruf im Modul auf. Mithilfe der Instrumentationsmethode können ausführliche Zeitsteuerungsdaten zu einem Abschnitt des Codes erfasst werden. Zudem werden mit dieser Methode die Auswirkungen von Eingabe- und Ausgabeoperationen auf die Leistung der Anwendung besser verständlich.

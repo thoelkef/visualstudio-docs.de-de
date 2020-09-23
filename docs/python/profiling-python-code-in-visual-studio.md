@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531780"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810665"
 ---
 # <a name="profile-python-code"></a>Profilerstellung für Python-Code
 
@@ -40,4 +40,4 @@ Da IronPython kein CPython-basierter Interpreter ist, funktioniert die oben gena
 
 Verwenden Sie stattdessen den Visual Studio .NET-Profiler, indem Sie *ipy.exe* direkt als Zielanwendung starten und die entsprechenden Argumente zum Starten Ihres Startskripts verwenden. Beziehen Sie `-X:Debug` in die Befehlszeile ein, um sicherzustellen, dass für Ihren gesamten Python-Code Debugging und Profilerstellung durchgeführt werden kann. Dieses Argument generiert einen Leistungsbericht einschließlich der sowohl in der IronPython-Laufzeit als auch Ihrem Code aufgewendeten Zeit. Ihr Code wird anhand beschädigter Namen identifiziert.
 
-Alternativ verfügt IronPython über eigene integrierte Profilerstellungsmethoden, wofür es derzeit aber keine gute Schnellansicht gibt. Unter [An IronPython-Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (Ein IronPython-Profiler) (MSDN-Blogs) erfahren Sie, was verfügbar ist.
+Alternativ verfügt IronPython über eigene integrierte Profilerstellungsmethoden, wofür es derzeit aber keine gute Schnellansicht gibt. Unter [An IronPython-Profiler](/archive/blogs/curth/an-ironpython-profiler) (Ein IronPython-Profiler) (MSDN-Blogs) erfahren Sie, was verfügbar ist.

@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: Erfahren Sie, wie Sie die Visual Studio-Abonnements Ihrer Organisation mit dem Verwaltungsportal für Abonnements verwalten.
-ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426875"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005224"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Übersicht über das Verwaltungsportal für Visual Studio-Abonnements
 
@@ -60,10 +60,10 @@ Klicken Sie für weitere Informationen zu der Vereinbarung, die Ihnen gerade ang
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:
@@ -72,4 +72,3 @@ Weitere Informationen zu den Aufgaben von Administratoren:
 - [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 - [Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen](assignments-orders.md)
 - Verwenden des Berichts [Maximum Usage](maximum-usage.md) (Maximale Auslastung) zum Nachverfolgen von Kaufverpflichtungen
-

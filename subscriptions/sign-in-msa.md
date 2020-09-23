@@ -7,12 +7,12 @@ ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Hier erfahren Sie, wie Sie sich mit einem Microsoft-Konto (verwaltetes Dienstkonto) bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561441"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005936"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Anmeldung bei Ihrem/Ihren Visual Studio-Abonnements mit Ihrem Microsoft-Konto (verwaltetes Dienstkonto)
 
@@ -43,10 +43,10 @@ Antwort:  Viele Benutzer verfügen über mehr als ein Abonnement.  Es gibt zwei 
 Wenden Sie sich bei anhaltenden Problemen bei der Anmeldung für Unterstützung an das [Supportteam für Abonnements](https://visualstudio.microsoft.com/subscriptions/support/).  
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.  
+Nach erfolgreicher Anmeldung beim Abonnementportal empfiehlt es sich, über https://my.visualstudio.com/benefits die Seite „Vorteile“ zu besuchen und sich einen Überblick über die Tools, Dienste und Angebote zu verschaffen, die Ihnen zur Verfügung stehen.

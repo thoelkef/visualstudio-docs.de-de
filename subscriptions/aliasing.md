@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234639"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006214"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
@@ -86,16 +86,16 @@ Beide Option werden im Administratorportal konfiguriert, indem die folgenden Sch
 
 0. Wenn Sie Änderungen für einen einzelnen Benutzer vornehmen möchten, wählen Sie diesen Benutzer in der Tabelle aus, und klicken Sie für das Bearbeiten mit der rechten Maustaste auf ihn. Dadurch wird ein Panel geöffnet, in dem Sie die E-Mail-Adresse für die Anmeldung ändern können. Nehmen Sie im Feld für die E-Mail-Adresse für die Anmeldung die erforderlichen Änderungen vor. Klicken Sie auf „Speichern“, und die Änderungen werden umgesetzt.  
 
-0. Wenn Sie Änderungen an mehreren Benutzern gleichzeitig vornehmen möchten, können Sie das Feature für die Massenbearbeitung verwenden. Weitere Informationen erhalten Sie im Artikel [Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit).
+0. Wenn Sie Änderungen an mehreren Benutzern gleichzeitig vornehmen möchten, können Sie das Feature für die Massenbearbeitung verwenden. Weitere Informationen erhalten Sie im Artikel [Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung](./edit-license.md#edit-multiple-subscribers-using-bulk-edit).
 
 > [!NOTE]
 > Sowohl bei Einzel- als auch bei Massenänderungen werden die Abonnenten per E-Mail darüber informiert, dass sich ihre Anmelde-E-Mail-Adresse geändert hat und sie sich mit der aktualisierten E-Mail-Adresse anmelden müssen. Beachten Sie außerdem Folgendes: Hat der Abonnent zuvor Vorteile mit der anderen Anmeldeadresse aktiviert, muss er zum Zugriff auf diese weiterhin die andere Anmeldeadresse verwenden.  
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -104,5 +104,3 @@ In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual S
 - [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
 - [Bearbeiten von Abonnements](edit-license.md)
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
-
-

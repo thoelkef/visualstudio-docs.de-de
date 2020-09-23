@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005949"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.
@@ -102,10 +102,10 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.

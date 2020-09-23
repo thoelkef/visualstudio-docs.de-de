@@ -1,18 +1,18 @@
 ---
 title: Verwalten von Visual Studio-Abonnements
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005897"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -114,10 +114,10 @@ Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gesp
 > - Wenn Sie über aktive Abonnements verfügen, werden Ihre personenbezogenen Daten nicht vollständig entfernt.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Verwalten Sie Abonnements für Ihre Organisation?  In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements:

@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier finden Sie Informationen zu den Abonnements, die über das Microsoft für Startups-Programm angeboten werden.
-ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 8e46924d0980eed4eca27eef7766e12c8733d851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561454"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005819"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio-Abonnements, die für Startups angeboten werden
 Qualifizierte Startups, die dem Microsoft für Startups-Programm beitreten, können fünf [monatliche Cloud-Abonnements](https://visualstudio.microsoft.com/vs/pricing/) für Visual Studio Enterprise erwerben. 
@@ -41,10 +41,10 @@ Bei monatlichen Cloudabonnements wird die Kündigung zum ersten Tag des nächste
 Bei jährlichen Cloudabonnements wird die Kündigung am ersten Tag des Monats wirksam, der 12 Monate nach dem ursprünglichen Kauf liegt, oder 12 Monate nach der letzten jährlichen Verlängerungsgebühr. Wenn Sie beispielsweise ein jährliches Visual Studio Professional-Cloudabonnement am 3. Januar 2018 gekauft haben, bleibt dieses bis zum 1. Februar 2019 aktiv. Dann wird es automatisch für ein weiteres Jahr verlängert. Wenn Sie irgendwann zwischen diesem Zeitpunkt und dem 1. Februar 2020 kündigen, läuft das Abonnement am 1. Februar 2020 ab. Es gibt keine Rückzahlung bei jährlichen Cloudabonnements, wenn Sie das Abonnement im laufenden Jahr kündigen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Weitere Informationen zu Microsoft für Startups](https://startups.microsoft.com)

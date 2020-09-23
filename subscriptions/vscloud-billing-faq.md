@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641437"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006003"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -97,10 +97,10 @@ Antwort:  Ja, das ist möglich, wenn Ihr Händler am Cloud Solution Provider-Pro
 - [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Erwerben Sie jetzt Cloudabonnements

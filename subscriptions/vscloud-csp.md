@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
-ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273867"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006227"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen.
@@ -107,10 +107,10 @@ Antwort:  Nein, bei den Preisen für Visual Studio-Abonnements handelt es sich u
 Antwort: Derzeit nicht. Ihre Kunden können die [Azure Dev/Test-Preise](https://azure.microsoft.com/pricing/dev-test/) nutzen, es gibt jedoch keine speziellen Angebote für CSPs.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Antworten auf häufig gestellte Fragen zur Abrechnung finden Sie in den [Häufig gestellten Fragen zur Cloudabrechnung](vscloud-billing-faq.md).  
+Antworten auf häufig gestellte Fragen zur Abrechnung finden Sie in den [Häufig gestellten Fragen zur Cloudabrechnung](vscloud-billing-faq.md).

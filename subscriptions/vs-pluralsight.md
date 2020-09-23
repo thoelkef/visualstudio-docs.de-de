@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509756"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005341"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -111,12 +111,12 @@ Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein 
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](https://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.
 
-Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Einzelguthaben für Azure DevTest](vs-azure.md) aktivieren. 
+Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Einzelguthaben für Azure DevTest](vs-azure.md) aktivieren.

@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902869"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005198"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Verwenden des Abonnentenportals – „my.visualstudio.com“
 
 Das Visual Studio-Abonnementportal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ist Ihre All-in-One-Ressource, um das gesamte Spektrum der Vorteile zu nutzen, die Ihr Visual Studio-Abonnement bietet.
 
-Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement zugeordnet ist.  Dies kann Ihr Microsoft Konto (Managed Service Account, MSA, verwaltetes Dienstkonto) oder eine E-Mail-Adresse sein, die Sie von einer Organisation wie z. B. Ihrem Arbeitgeber oder Ihrer Schule erhalten haben.  Hier erfahren Sie mehr über das [Anmelden](signing-in.md).
+Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement zugeordnet ist.  Dies kann Ihr Microsoft Konto (Managed Service Account, MSA, verwaltetes Dienstkonto) oder eine E-Mail-Adresse sein, die Sie von einer Organisation wie z. B. Ihrem Arbeitgeber oder Ihrer Schule erhalten haben.  Hier erfahren Sie mehr über das [Anmelden](./index.yml).
 
 Das Portal ist in sechs Seiten unterteilt.  Jede Seite bietet Ihnen Zugriff auf andere Produkte oder Dienste, die in Ihrem Abonnement enthalten sind.  Die sechs Seiten heißen „Vorteile“, „Downloads“, „Product Keys“, „Abonnements“, „Support“ und „Marketplace“.
 
@@ -54,10 +54,10 @@ Zusätzlich zu den einzelnen Vorteilen, die in der Kategorie „Support“ auf d
 Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps, Azure DevOps Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Melden Sie sich über [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) beim Portal an, und erfahren Sie mehr über Ihre Vorteile.  Außerdem erhalten Sie Informationen zum Anmelden beim Portal mit Ihrem [Microsoft-Konto](sign-in-msa.md) (MSA), Ihrem [Geschäfts-, Schul- oder Unikonto](sign-in-work.md) oder Ihrem [GitHub-Konto](sign-in-github.md). 
+Melden Sie sich über [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) beim Portal an, und erfahren Sie mehr über Ihre Vorteile.  Außerdem erhalten Sie Informationen zum Anmelden beim Portal mit Ihrem [Microsoft-Konto](sign-in-msa.md) (MSA), Ihrem [Geschäfts-, Schul- oder Unikonto](sign-in-work.md) oder Ihrem [GitHub-Konto](sign-in-github.md).

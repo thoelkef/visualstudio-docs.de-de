@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508937"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004545"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
@@ -137,10 +137,10 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
