@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ea1803e702ba7f133f9194b993464eabfcc24aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796799"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91146162"
 ---
-# <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
+# <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Zeitzonenoffset-Teil der Startadresse des Bereichs, in dem die lokalen Symbolcache gültig ist.  
+Gibt den Offset Teil der Startadresse des Bereichs zurück, in dem das lokale Symbol gültig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,25 +35,25 @@ HRESULT get_liveRangeStartAddressOffset ( 
   
 #### <a name="parameters"></a>Parameter  
  `offset`  
- [out] Gibt den Zeitzonenoffset-Teil des Adressbereichs ab.  
+ vorgenommen Gibt den Offset Teil des Start Adress Bereichs zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
+> Ein zurückgegebener Fehlercode bedeutet, dass das Symbol keine Informationen zum Live Bereich enthält.  
   
-## <a name="remarks"></a>Hinweise  
- Die gebildet, indem Sie den Abschnitt und den Offset-Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Die durch den Abschnitt und den Offset gebildete Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
- Verwenden Sie zum Abrufen des Teils "Abschnitt" die Adresse [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
+ Um den Abschnitts Teil der Adresse zu erhalten, verwenden Sie [idiasymmetribol:: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
