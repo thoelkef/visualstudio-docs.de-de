@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_typeids | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_typeIds | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798160"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146902"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Array von Compiler-spezifischer Typ-ID-Werten für dieses Symbol ab.  
+Ruft ein Array von compilerspezifischen typbezeichnerwerten für dieses Symbol ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,19 +37,19 @@ HRESULT get_typeIds ( 
   
 #### <a name="parameters"></a>Parameter  
  `cTypeIds`  
- [in] Die Größe des Puffers zum Speichern der Daten.  
+ in Größe des Puffers, der die Daten enthalten soll.  
   
  `pcTypeIds`  
- [out] Gibt die Anzahl der `typeIds` geschrieben, oder wenn `typeIds` ist `NULL`, klicken Sie dann die Gesamtzahl der Typ-IDs zur Verfügung.  
+ vorgenommen Gibt die Anzahl der `typeIds` geschriebenen zurück, oder, wenn `typeIds` ist `NULL` , und dann die Gesamtzahl der verfügbaren Typenbezeichner.  
   
  `typeIds[]`  
- [out] Ein Array, das sich mit dem Typ-IDs gefüllt werden soll.  
+ vorgenommen Ein Array, das mit den typbezeichgern ausgefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442079"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147229"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeins
   
 3. Wählen Sie im Dropdownfeld **Menüleiste:** das Menü **Debuggen** aus, dass den wiederhergestellten Befehl enthalten soll.  
   
-4. Klicken Sie auf die **Befehl hinzufügen...** Schaltfläche.  
+4. Klicken Sie auf den **Befehl hinzufügen...** Schaltfläche.  
   
 5. Wählen Sie im Feld **Befehl hinzufügen** den Befehl aus, den Sie hinzufügen möchten, und klicken Sie auf **OK**.  
   
@@ -78,6 +78,6 @@ Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeins
   
 9. Klicken Sie auf **Schließen**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
