@@ -27,7 +27,7 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
 Formen finden Sie im Fenster **Objekte**.
 
-:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie "Formen" im Fenster "Objekte" in Blend für Visual Studio":::
+:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie Formen im Fenster Objekte in Blend für Visual Studio":::
 
 Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Sie die Handles an der Form verwenden, um die Form zu skalieren, zu drehen, zu verschieben oder zu neigen.
 
