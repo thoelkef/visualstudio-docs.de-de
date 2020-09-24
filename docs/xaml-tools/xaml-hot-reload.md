@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40da28cce9d2189b2f30ff6ea958926f3041836
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815889"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135078"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von ausgeführtem XAML-Code mit XAML Hot Reload in Visual Studio
 
@@ -55,7 +55,7 @@ Im folgenden finden Sie bekannte Einschränkungen für das heiße Laden von XAML
 |Verwalten von nuget-Paketen (hinzufügen/entfernen/aktualisieren von Paketen)|Nicht unterstützt|Nicht unterstützt|Keine|
 |Ändern der Datenbindung, die die {x:Bind}-Markup Erweiterung verwendet|–|Unterstützt ab Visual Studio 2019|Hierfür ist Windows 10 Version 1809 (Build 10.0.17763) erforderlich. Wird in Visual Studio 2017 oder früheren Versionen nicht unterstützt.|
 |Das Ändern von x:UID-Direktiven wird nicht unterstützt|NICHT ZUTREFFEND|Nicht unterstützt|Keine|
-|Mehrere Prozesse | Nicht unterstützt | Nicht unterstützt | Hot-Neuladen können nur für jeweils 1 Prozess verwendet werden. |
+|Mehrere Prozesse | Unterstützt | Unterstützt | In Visual Studio 2019 [Version 16,6](/visualstudio/releases/2019/release-notes-v16.6) und höher unterstützt |
 
 ## <a name="error-messages"></a>Fehlermeldungen
 
