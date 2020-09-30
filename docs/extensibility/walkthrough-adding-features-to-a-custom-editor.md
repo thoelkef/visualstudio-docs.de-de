@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012086"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583592"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
 Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm weitere Funktionen hinzufügen.
@@ -34,11 +34,11 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
 3. Implementieren Sie eine Editorfactory durch Einrichten der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle.
 
-     Weitere Informationen finden Sie unter [Editor factories](../vs-2015/extensibility/editor-factories.md?view=vs-2015)editorfactorys.
+     Weitere Informationen finden Sie unter [Editor factories](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true)editorfactorys.
 
 4. Entscheiden Sie, ob Sie möchten, dass der Editor die direkte Aktivierung oder die vereinfachte Einbettung verwendet, um das Dokument Ansichts Objekt Fenster zu verwalten.
 
-     Ein vereinfachtes Fenster zum Einbetten eines Editors hostet eine Standarddokument Ansicht, während ein direktes Aktivierungs-Editor-Fenster ein ActiveX-Steuerelement oder ein anderes aktives Objekt als Dokument Ansicht hostet. Weitere Informationen finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md) und direkte [Aktivierung](../vs-2015/misc/in-place-activation.md?view=vs-2015).
+     Ein vereinfachtes Fenster zum Einbetten eines Editors hostet eine Standarddokument Ansicht, während ein direktes Aktivierungs-Editor-Fenster ein ActiveX-Steuerelement oder ein anderes aktives Objekt als Dokument Ansicht hostet. Weitere Informationen finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md) und direkte [Aktivierung](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
 
 5. Implementieren Sie die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle zum Verarbeiten von Befehlen.
 
@@ -51,7 +51,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
         > [!NOTE]
         > Ruft `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> , um einen Zeiger auf zu erhalten `IVsFileChangeEx` .
 
-7. Koordinieren Sie Dokument Bearbeitungs Ereignisse mit der Quell Code Verwaltung. Folgen Sie diesen Schritten:
+7. Koordinieren Sie Dokument Bearbeitungs Ereignisse mit der Quell Code Verwaltung. Führen Sie die folgenden Schritte aus:
 
     1. Rufen Sie einen Zeiger auf auf, `IVsQueryEditQuerySave2` indem Sie `QueryService` für aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
          Diese Methode fordert den Benutzer auf, die Datei zu speichern, wenn Sie nicht gespeichert wurde, oder wenn Sie sich seit der letzten Speicherung geändert hat.
 
-8. Aktivieren Sie das Fenster **Eigenschaften** , um Eigenschaften für Text anzuzeigen, der im Editor ausgewählt ist. Folgen Sie diesen Schritten:
+8. Aktivieren Sie das Fenster **Eigenschaften** , um Eigenschaften für Text anzuzeigen, der im Editor ausgewählt ist. Führen Sie die folgenden Schritte aus:
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>Jedes Mal, wenn die Textauswahl geändert wird, wird die Implementierung von übergeben <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> den Dienst auf, um einen Zeiger auf zu erhalten <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Ermöglicht Benutzern das ziehen und Ablegen von Elementen zwischen dem Editor und der **Toolbox**oder zwischen externen Editoren (z. b. Microsoft Word) und der **Toolbox**. Folgen Sie diesen Schritten:
+9. Ermöglicht Benutzern das ziehen und Ablegen von Elementen zwischen dem Editor und der **Toolbox**oder zwischen externen Editoren (z. b. Microsoft Word) und der **Toolbox**. Führen Sie die folgenden Schritte aus:
 
     1. Implementieren Sie `IDropTarget` im Editor, um die IDE zu warnen, dass der Editor ein Ablage Ziel ist.
 
@@ -115,7 +115,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
 12. Implementieren der kontextbezogenen Hilfe Unterstützung.
 
-     Dieser Schritt ermöglicht es Ihnen, F1-Hilfe und dynamische Hilfefenster Unterstützung für Elemente in Ihrem Editor bereitzustellen. Weitere Informationen finden Sie unter Gewusst [wie: Bereitstellen von Kontext für Editoren](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
+     Dieser Schritt ermöglicht es Ihnen, F1-Hilfe und dynamische Hilfefenster Unterstützung für Elemente in Ihrem Editor bereitzustellen. Weitere Informationen finden Sie unter Gewusst [wie: Bereitstellen von Kontext für Editoren](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
 
 13. Machen Sie durch Implementieren der-Schnittstelle ein Automatisierungs Objektmodell aus dem Editor verfügbar `IDispatch` .
 
@@ -152,6 +152,6 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
   - `Window.Object`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zum Automatisierungs Modell beitragen](../extensibility/internals/contributing-to-the-automation-model.md)
