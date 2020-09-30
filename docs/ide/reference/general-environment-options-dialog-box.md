@@ -20,16 +20,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569438"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135091"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
-Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierweiterungszuordnungen sowie weitere Optionen für die integrierte Entwicklungsumgebung (IDE) zu ändern. Sie können das Dialogfeld **Optionen** öffnen, indem Sie im Menü **Extras** auf **Optionen** klicken und dann im Ordner **Umgebung** die Seite **Allgemein** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
+Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierweiterungszuordnungen sowie weitere Optionen für die integrierte Entwicklungsumgebung (IDE) zu ändern. Sie können das Dialogfeld **Optionen** öffnen, indem Sie im Menü **Extras** auf **Optionen** klicken und dann im Ordner **Umgebung** die Seite **Allgemein** auswählen.
 
 ## <a name="visual-experience"></a>Visuelle Darstellung
 
@@ -66,7 +66,7 @@ Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch fe
 
 ::: moniker-end
 
-**Enable rich client experience** (Umfassende visuelle Clientdarstellung aktivieren)
+**Umfassende visuelle Clientdarstellung aktivieren**
 
 Aktiviert die vollständige visuelle Darstellung von Visual Studio, u. a. mit Farbverläufen und Animationen. Deaktiviert diese Option bei Verwendung von Remotedesktopverbindungen oder älteren Grafikkarten, da diese Funktionen in solchen Fällen zu einer schlechteren Leistung führen können. Diese Option ist nur verfügbar, wenn Sie die Option **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen** deaktivieren.
 
@@ -74,7 +74,7 @@ Aktiviert die vollständige visuelle Darstellung von Visual Studio, u. a. mit Fa
 
 Verwendet Hardwaregrafikbeschleunigung, sofern verfügbar, anstelle von Softwarebeschleunigung.
 
-## <a name="other"></a>Andere
+## <a name="other"></a>Sonstige
 
 **Anzuzeigende Elemente im Windows-Menü**
 
@@ -88,11 +88,11 @@ Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü *
 
 Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
 
-**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster**
+**Schaltfläche „Schließen“ gilt nur für aktives Toolfenster**
 
 Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
 
-**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster**
+**Schaltfläche „Automatisch ausblenden“ gilt nur für aktives Toolfenster**
 
 Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
 

@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485384"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211049"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Übersicht über Visual Studio Tools für KI
 
@@ -23,7 +23,7 @@ Visual Studio Tools für KI ist eine integrierte Entwicklungsumgebung für das E
 
 Informationen zum Herunterladen und Installieren der Erweiterung finden Sie unter [Installieren von Visual Studio Tools für KI](installation.md).
 
-## <a name="5-minute-quickstart"></a>Fünfminütiger Schnellstart 
+## <a name="5-minute-quickstart"></a>Fünfminütiger Schnellstart
 
 Erfahren Sie mehr über das Ausführen von Deep-Learning-Lösungen mit [TensorFlow und Python](tensorflow-local.md).
 
@@ -40,4 +40,4 @@ Im [Repository für Beispiele](https://github.com/Microsoft/samples-for-ai) und 
 Weitere Informationen über Visual Studio Tools für KI, einschließlich der Systemanforderungen und Supportoptionen, finden Sie unter [Visual Studio Tools für KI](about-ai-tools.md).
 
 ## <a name="see-also"></a>Siehe auch
-[Visual Studio-Erweiterbarkeit](../extensibility/index.yml?view=vs-2017)
+[Visual Studio-Erweiterbarkeit](../extensibility/index.yml?view=vs-2017&preserve-view=true)

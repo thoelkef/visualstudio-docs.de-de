@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810873"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211174"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
@@ -51,11 +51,11 @@ Sie können ein Problem aus Visual Studio oder aus dem Installationsprogramm mel
 
     Sie können den Screenshot sogar direkt im Browser zuschneiden, um alle sensiblen oder nicht relevanten Elemente zu entfernen.
 
-4. Eine der besten Möglichkeiten, dem Visual Studio-Engineeringteam bei der Lösung des Problems zu helfen, ist die Bereitstellung von Stapelüberwachungs- und Heap-Abbilddateien, die das Team untersuchen kann. Dies lässt sich problemlos erreichen, indem die Schritte aufgezeichnet werden, die zu dem Fehler geführt haben. 
+4. Eine der besten Möglichkeiten, dem Visual Studio-Engineeringteam bei der Lösung des Problems zu helfen, ist die Bereitstellung von Stapelüberwachungs- und Heap-Abbilddateien, die das Team untersuchen kann. Dies lässt sich problemlos erreichen, indem die Schritte aufgezeichnet werden, die zu dem Fehler geführt haben.
 
     ![Aufzeichnen Ihrer Aktionen](../ide/media/feedback-recording.png) *Nur Microsoft-Techniker können die Aufzeichnung sehen*
 
-5. Überprüfen Sie die angefügten Dateien, und laden Sie zusätzliche Dateien hoch, wenn Sie glauben, dass dies bei der Diagnose des Problems helfen könnte.   
+5. Überprüfen Sie die angefügten Dateien, und laden Sie zusätzliche Dateien hoch, wenn Sie glauben, dass dies bei der Diagnose des Problems helfen könnte.
 
     ![Angefügte Dateien](../ide/media/feedback-attachments.png) *Nur Microsoft-Technikern können die angefügten Dateien sehen*
 

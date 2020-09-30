@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350640"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211114"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debuggen eines WebView-Steuerelements in einer UWP-App
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350640"
 
 - Öffnen Sie [DOM Explorer](../debugger/quickstart-debug-html-and-css.md) für eine `WebView`-Instanz, und prüfen Sie DOM-Elemente, untersuchen Sie CSS-Formatvorlagenprobleme und testen Sie dynamisch gerenderte Änderungen an Formatvorlagen.
 
-- Wählen Sie die Webseite oder den `iFrame`, die in der `WebView`-Instanz angezeigt werden, als Ziel im [JavaScript-Konsolenfenster](../debugger/javascript-console-commands.md?view=vs-2017), und interagieren Sie dann über Konsolenbefehle mit der Webseite. Die Konsole bietet Zugriff auf den aktuellen Skriptausführungskontext.
+- Wählen Sie die Webseite oder den `iFrame`, die in der `WebView`-Instanz angezeigt werden, als Ziel im [JavaScript-Konsolenfenster](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true), und interagieren Sie dann über Konsolenbefehle mit der Webseite. Die Konsole bietet Zugriff auf den aktuellen Skriptausführungskontext.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Anfügen des Debuggers (C#, Visual Basic, C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350640"
     > [!NOTE]
     > Mithilfe der Konsole können Sie jeweils mit einem einzelnen `WebView`, `iFrame`, Freigabe-Vertrag oder Web-Worker interagieren. Jedes Element erfordert eine separate Instanz des Webplattform-Hosts (WWAHost.exe). Sie können jeweils mit einem Host interagieren.
 
-6. Zeigen Sie Variablen in Ihrer App an, und ändern Sie diese, oder verwenden Sie Konsolenbefehle. Dies wird beschrieben unter [Debuggen von JavaScript mithilfe der Konsole in Visual Studio](../debugger/quickstart-debug-javascript-using-the-console.md) und [JavaScript-Konsolenbefehle in Visual Studio](../debugger/javascript-console-commands.md?view=vs-2017).
+6. Zeigen Sie Variablen in Ihrer App an, und ändern Sie diese, oder verwenden Sie Konsolenbefehle. Dies wird beschrieben unter [Debuggen von JavaScript mithilfe der Konsole in Visual Studio](../debugger/quickstart-debug-javascript-using-the-console.md) und [JavaScript-Konsolenbefehle in Visual Studio](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 ## <a name="see-also"></a>Siehe auch
 

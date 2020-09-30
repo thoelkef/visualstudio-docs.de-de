@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851410"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211364"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
@@ -32,7 +32,7 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Installieren einer Schnellansicht für Visual Studio 2019
-  
+
 1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
    In der Regel ist es am besten, wenn sowohl für die debuggerseitige DLL als auch für die zu debuggende DLL **Beliebige CPU** als Zielplattform angegeben ist. Für die debuggerseitige DLL muss entweder **Beliebige CPU** oder **32-Bit** ausgewählt sein. Die Zielplattform für die zu debuggende DLL sollte dem Prozess für zu debuggende Komponenten entsprechen.
@@ -42,7 +42,7 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Kopieren Sie die [zu debuggende](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) DLL an einen der folgenden Speicherorte:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
@@ -61,7 +61,7 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 4. Starten Sie die Debugsitzung neu.
 
 > [!NOTE]
-> Das Verfahren unterscheidet sich in Visual Studio 2017 und älteren Versionen. Lesen Sie die [vorherige Version](how-to-install-a-visualizer.md?view=vs-2017) dieses Artikels.
+> Das Verfahren unterscheidet sich in Visual Studio 2017 und älteren Versionen. Lesen Sie die [vorherige Version](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) dieses Artikels.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

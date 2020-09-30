@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809910"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352348"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -124,7 +124,7 @@ Aus diesem Grund erstellen Entwickler oft eine *virtuelle Umgebung* für ein Pro
 
 Visual Studio stellt direkte Unterstützung für das Erstellen einer virtuellen Umgebung für ein Projekt bereit. Wenn Sie beispielsweise ein Projekt öffnen, dass eine *requirements.txt*-Datei enthält, oder ein Projekt aus einer Vorlage erstellen, die diese Datei enthält, werden Sie von Visual Studio dazu aufgefordert, eine virtuelle Umgebung automatisch zu erstellen und diese Abhängigkeiten zu installieren.
 
-In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Visual Studio enthält auch einen Befehl, um eine *requirements.txt*-Datei aus einer virtuellen Umgebung zu generieren. Dies vereinfacht das erneute Erstellen der Umgebung auf anderen Computern. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -239,7 +239,7 @@ Führen Sie die folgenden Schritte aus, um eine Umgebung zu identifizieren, die 
 
     ![Option für vorhandene Umgebung im Dialogfeld „Umgebung hinzufügen“](media/environments/environments-custom-2-2019.png)
 
-1. Geben Sie im Dialogfeld in den Feldern unter **Präfixpfad** den Pfad zum Interpreter ein, oder navigieren Sie mithilfe von **...** zu diesem Pfad. Dadurch wird der Großteil der anderen Felder aufgefüllt. Wählen Sie **Hinzufügen** aus, wenn Sie die Werte überprüft und ggf. angepasst haben. 
+1. Geben Sie im Dialogfeld in den Feldern unter **Präfixpfad** den Pfad zum Interpreter ein, oder navigieren Sie mithilfe von **...** zu diesem Pfad. Dadurch wird der Großteil der anderen Felder aufgefüllt. Wählen Sie **Hinzufügen** aus, wenn Sie die Werte überprüft und ggf. angepasst haben.
 
     ![Felder zum Angeben von Details für eine benutzerdefinierte Umgebung im Dialogfeld „Umgebung hinzufügen“](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption ver
     - Wenn die Umgebung weiterhin auf dem Computer vorhanden ist, ändern Sie den Wert von **ExecutablePath** in den richtigen Speicherort. Korrigieren Sie wenn nötig auch die Werte **(Standard)** und **WindowedExecutablePath**.
     - Wenn die Umgebung nicht mehr auf Ihrem Computer vorhanden ist und Sie sie aus dem Fenster **Python-Umgebungen** entfernen möchten, löschen Sie den übergeordneten Knoten von **InstallPath**, z.B. **3.6** in der Abbildung oben.
     - Ungültige Einstellungen in **HKEY_CURRENT_USER\SOFTWARE\Python** überschreiben die Einstellungen in **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
-    
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Python-Interpretern](installing-python-interpreters.md)

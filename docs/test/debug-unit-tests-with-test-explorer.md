@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86393539"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211286"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Debuggen und Analysieren von Komponententests mit dem Test-Explorer
 
@@ -38,11 +38,11 @@ Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrit
 ## <a name="diagnose-test-method-performance-issues"></a>Diagnose von Leistungsproblemen bei Testmethoden
 
 ::: moniker range="vs-2017"
-Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil für ausgewählten Test erstellen** klicken. Weitere Informationen finden Sie unter [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil für ausgewählten Test erstellen** klicken. Weitere Informationen finden Sie unter [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil** klicken. Weitere Informationen finden Sie unter [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil** klicken. Weitere Informationen finden Sie unter [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 > [!NOTE]
