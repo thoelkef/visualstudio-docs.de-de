@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315134"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211127"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -51,7 +51,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | **Benachrichtigungsleiste zum Erstellen von Umgebungen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* oder *environment.yml* enthält, zeigt Visual Studio eine Informationsleiste mit Vorschlägen für die Erstellung einer virtuellen Umgebung bzw. einer Conda-Umgebung an, anstatt die globale Standardumgebung zu verwenden. |
 | **Benachrichtigungsleiste zum Erstellen von Paketen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* enthält (und nicht die globale Standardumgebung verwendet wird), gleicht Visual Studio diese Anforderungen mit Paketen ab, die in der aktuellen Umgebung installiert sind. Sollten Pakete fehlen, fordert Visual Studio zur Installation dieser Abhängigkeiten auf. |
 | **Paket-Manager immer als Administrator ausführen** | Aus | Führt dazu, dass `pip install` und ähnliche Paket-Manager-Vorgänge für alle Umgebungen immer mit erhöhten Rechten ausgeführt werden. Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereich des Dateisystems wie z.B. *c:\Programme* befindet. In dieser Aufforderung können Sie auswählen, dass der Installationsbefehl für diese eine Umgebung immer mit erhöhten Rechten ausgeführt werden soll. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
-| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Registerkarte „IntelliSense“](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
+| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Registerkarte „IntelliSense“](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab). |
 | **Systemweite PYTHONPATH-Variablen ignorieren** | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Suchpfade](search-paths.md). |
 | **Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren** | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](search-paths.md) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
 | **Warnen, wenn das importierte Modul nicht gefunden wird** | Ein | Deaktivieren Sie diese Option, um Warnungen zu unterdrücken, wenn Sie wissen, dass ein importiertes Modul aktuell nicht verfügbar ist, den Codevorgang aber ansonsten nicht beeinträchtigt. |

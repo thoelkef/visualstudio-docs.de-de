@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731498"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211338"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Tastenkombinationen (HTML und JavaScript)
 
@@ -59,6 +59,6 @@ Tastenkombinationen in Visual Studio für das Debuggen von UWP-Apps mit HTML und
 |Verringern des ausgewählten CSS-Werts um 1|NACH-UNTEN|
 
 ## <a name="see-also"></a>Siehe auch
-- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
-- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)
+- [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)

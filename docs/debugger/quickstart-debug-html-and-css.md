@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600191"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211088"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-Apps in Visual Studio
 
@@ -237,7 +237,7 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 
 - Mit der Schaltfläche **Element auswählen** (STRG+B)
 
-- Mit der Schaltfläche `select` -Befehl, der zu den [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+- Mit der Schaltfläche `select` -Befehl, der zu den [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
   Wenn Sie das DOM Explorer-Fenster zur Auswahl von Elementen verwenden und mit dem Mauszeiger auf ein Element zeigen, wird das entsprechende Element in der ausgeführten App hervorgehoben. Elemente werden im DOM Explorer durch Anklicken ausgewählt oder mit den Pfeiltasten markiert und ausgewählt. Sie können Elemente im DOM Explorer auch auswählen, indem Sie die Schaltfläche **Element auswählen** verwenden. Die folgende Abbildung zeigt die Schaltfläche **Element auswählen** .
 
@@ -259,7 +259,7 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 - [Debuggen von Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)
-- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Produktsupport und Barrierefreiheit](/previous-versions/tzbxw1af(v=vs.120))

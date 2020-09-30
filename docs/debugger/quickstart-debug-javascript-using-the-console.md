@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348105"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211075"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debuggen von JavaScript mithilfe der Konsole in Visual Studio
 
-Sie können das JavaScript-Konsolenfenster zur Interaktion mit und zum Debuggen von UWP-Apps verwenden, die mit JavaScript erstellt wurden. Diese Features werden für UWP-Apps und mithilfe von Visual Studio-Tools für Apache Cordova erstellte Apps unterstützt. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+Sie können das JavaScript-Konsolenfenster zur Interaktion mit und zum Debuggen von UWP-Apps verwenden, die mit JavaScript erstellt wurden. Diese Features werden für UWP-Apps und mithilfe von Visual Studio-Tools für Apache Cordova erstellte Apps unterstützt. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 Im JavaScript-Konsolenfenster können Sie:
 
@@ -39,7 +39,7 @@ Im JavaScript-Konsolenfenster können Sie:
 
 - JavaScript-Fehler und Ausnahmen, Document Objekt Model- (DOM) und Windows-Runtime-Ausnahmen anzeigen.
 
-- Durchführen weiterer Aufgaben, wie z. B. das Löschen des Fensters. Unter [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) finden Sie eine vollständige Liste der Befehle.
+- Durchführen weiterer Aufgaben, wie z. B. das Löschen des Fensters. Unter [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) finden Sie eine vollständige Liste der Befehle.
 
 > [!TIP]
 > Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**> **Windows** > **JavaScript-Konsole** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.
@@ -251,9 +251,9 @@ Sie können den Ausführungskontext auch mithilfe des Befehls `cd` wechseln, daz
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)
 - [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)
