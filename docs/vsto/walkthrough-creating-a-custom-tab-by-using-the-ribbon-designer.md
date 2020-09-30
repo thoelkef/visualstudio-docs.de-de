@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255524"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585014"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer
   Mit dem Menüband-Designer können Steuerelemente auf der benutzerdefinierten Registerkarte hinzugefügt und positioniert werden.
@@ -161,7 +162,7 @@ ms.locfileid: "71255524"
 ## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Vorgehensweise: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)

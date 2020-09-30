@@ -1,5 +1,6 @@
 ---
 title: '&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541881"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584359"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `vstoRuntime` -Element des `vstav3` -Namespace enthält eine unterstützte Version der Visual Studio Tools for Office-Laufzeit für eine bestimmte Office-Projektmappe.
@@ -56,7 +57,7 @@ ms.locfileid: "85541881"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)

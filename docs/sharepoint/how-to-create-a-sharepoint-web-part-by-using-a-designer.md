@@ -1,5 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines SharePoint-Webparts mithilfe eines Designers | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0830cec748d68f010397c42334a5ed83365ee6b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016484"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584112"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Vorgehensweise: Erstellen eines SharePoint-Webparts mithilfe eines Designers
   Sie können ein Webpart erstellen, indem Sie einem SharePoint-Projekt ein Element für ein **visuelles Webpart** hinzufügen. Dadurch wird der Visual Web Developer-Designer in Visual Studio geöffnet, in dem Sie Steuerelemente und Code zum Webpart hinzufügen können. Visuelle Webparts funktionieren genauso wie Webparts. Der einzige Unterschied ist, dass Sie visuelle Webparts im Visual Web Developer-Designer entwerfen.
@@ -52,6 +53,6 @@ ms.locfileid: "86016484"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+- [How to: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

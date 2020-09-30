@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012359"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583657"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue Funktionen in Visual Studio integrieren. Sie können Ihre Erweiterungen sowohl an andere Benutzer als auch an den Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:
@@ -73,11 +73,11 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
 
 - [Erweitern von Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
+- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
 - [Verwalten mehrerer Threads in verwaltetem Code](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Hinzufügen von Befehlen zu Symbolleisten](../extensibility/adding-commands-to-toolbars.md)

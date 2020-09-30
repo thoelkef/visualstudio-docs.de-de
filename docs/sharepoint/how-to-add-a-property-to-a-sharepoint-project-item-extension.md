@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015992"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584255"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung
   Sie können eine Projekt Element Erweiterung verwenden, um einem SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, eine Eigenschaft hinzuzufügen. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn das Projekt Element in **Projektmappen-Explorer**ausgewählt wird.

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012151"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583683"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
 In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von Menü Elementen, Symbolleisten und anderen Elementen der Benutzeroberfläche zur integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen. Gehen Sie folgendermaßen vor, wenn Sie einem Visual Studio-Paket (VSPackage), das noch keine *vsct* -Datei enthält, Benutzeroberflächen Elemente hinzufügen.
@@ -108,7 +108,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
        > [!NOTE]
        > Symbolleisten-Schaltflächen müssen Symbole aufweisen.
 
-   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
 4. Wenn für einen ihrer Befehle Symbole erforderlich sind, fügen Sie dem-Element ein [Bitmaps](../../extensibility/bitmaps-element.md) -Element hinzu `Commands` . Fügen Sie dann für jedes Symbol dem-Element ein [Bitmap](../../extensibility/bitmap-element.md) -Element hinzu `Bitmaps` . Hier geben Sie den Speicherort der Bitmap-Ressource an. Weitere Informationen finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
    - Menü Controller: ein Menü Controller ist eine Schaltfläche, die einen Pfeil daneben enthält. Wenn Sie auf den Pfeil klicken, wird eine Liste geöffnet. Um der Benutzeroberfläche einen Menü Controller hinzuzufügen, erstellen Sie ein-Element, und legen Sie das zugehörige- `Menu` `type` Attribut `MenuController` `MenuControllerLatched` abhängig vom gewünschten Verhalten auf oder fest. Um einen Menü Controller aufzufüllen, legen Sie ihn als übergeordnetes Element eines- `Group` Elements fest. Im Menü Controller werden alle untergeordneten Elemente dieser Gruppe in der Dropdown Liste angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md)

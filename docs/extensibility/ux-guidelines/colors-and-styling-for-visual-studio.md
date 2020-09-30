@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012099"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584268"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -307,7 +307,7 @@ Beispiele für die Editor-Oberfläche im Design "Blue":
 
 Viele allgemeine Benutzeroberflächen Elemente haben bereits hoher Kontrast Farben definiert. Sie können auf diese Verwendungs Muster verweisen, wenn Sie Ihre eigenen System Farbnamen auswählen, damit die Elemente der Benutzeroberfläche mit ähnlichen Komponenten konsistent sind.
 
-| System Farbe | Verwendung |
+| System Farbe | Verbrauch |
 | --- | --- |
 | ActiveCaption | -Aktive IDE und Fenster Schaltflächen Symbole auf dem Mauszeiger und drücken<br />-Titelleisten Hintergrund für IDE und unregelmäßige Fenster<br />-Standardstatus leisten-Hintergrund |
 | ActiveCaptionText | -Aktive IDE und gezogene Fenster für den Vordergrund der Titelleiste (Text und Symbole)<br />-Hintergrund und Rahmen der aktiven Fenster Schaltflächen bei Hover und drücken |
@@ -340,7 +340,7 @@ Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberflä
 
 Ein VSPackage kann die Schriftarten und Farben mithilfe von benutzerdefinierten Kategorien steuern und Elemente auf der Eigenschaften Seite Schriftarten und Farben anzeigen. Bei Verwendung dieses Mechanismus müssen VSPackages die [ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) -Schnittstelle und die zugehörigen Schnittstellen implementieren.
 
-Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015).
+Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
 
 Ein VSPackage muss Folgendes durchführen, um benutzerdefinierte Kategorien oder Elemente anzuzeigen:
 
@@ -423,7 +423,7 @@ Zu diesem Zweck muss ein VSPackage folgende Aktionen ausführen:
 
   **OR**
 
-- **Abfragen der IDE auf Änderungen**. Dies kann über die vom System implementierte [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle durchgeführt werden. Obwohl die [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) -Methode in erster Linie zur Unterstützung der Persistenz dient, kann Sie Schriftart-und Farbinformationen für Anzeigeelemente abrufen. Weitere Informationen zu Schriftart-und Farbeinstellungen finden Sie im MSDN-Artikel [zugreifen auf gespeicherte Schriftart-und Farbeinstellungen](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015).
+- **Abfragen der IDE auf Änderungen**. Dies kann über die vom System implementierte [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle durchgeführt werden. Obwohl die [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) -Methode in erster Linie zur Unterstützung der Persistenz dient, kann Sie Schriftart-und Farbinformationen für Anzeigeelemente abrufen. Weitere Informationen zu Schriftart-und Farbeinstellungen finden Sie im MSDN-Artikel [zugreifen auf gespeicherte Schriftart-und Farbeinstellungen](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
 
 > [!NOTE]
 > Um sicherzustellen, dass die Abruf Ergebnisse richtig sind, verwenden Sie die [ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) -Schnittstelle, um zu bestimmen, ob eine Cache Leerung und ein Update erforderlich sind, bevor die Abruf Methoden der [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle aufgerufen werden.

@@ -1,5 +1,6 @@
 ---
 title: Anpassen des SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016884"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585809"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
   Mithilfe von MSBuild-Zielen an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien (*. wsp*) erstellt. Beispielsweise können Sie die MSBuild-Eigenschaften anpassen, um das Verpackungs zwischen Verzeichnis und die MSBuild-Elementgruppen zu ändern, die die aufgelisteten Dateien angeben.

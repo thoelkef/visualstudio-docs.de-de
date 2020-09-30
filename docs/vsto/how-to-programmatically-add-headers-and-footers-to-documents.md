@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Kopf-und Fußzeilen zu Dokumenten'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6a60f58a116cd01c59145de0fcd29a2f55a787e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519924"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585417"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Kopf-und Fußzeilen zu Dokumenten
   Sie können Kopf- und Fußzeilen in Ihrem Dokument Text hinzufügen, indem Sie die Eigenschaft <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> und die Eigenschaft <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> von der<xref:Microsoft.Office.Interop.Word.Section> verwenden. Jeder Abschnitt eines Dokuments enthält drei Kopf- und Fußzeilen:

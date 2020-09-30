@@ -1,5 +1,6 @@
 ---
 title: Inkrementelles ändern von Daten Bereichen automatisch ausfüllen
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547471"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585313"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Gewusst wie: Programm gesteuertes automatisches Auffüllen von Bereichen mit inkrementellen Änderungs Daten
   Mit der- <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode des- <xref:Microsoft.Office.Interop.Excel.Range> Objekts können Sie einen Bereich in einem Arbeitsblatt mit Werten automatisch auffüllen. In den meisten Fällen <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> wird die-Methode verwendet, um inkrementelle steigende oder abnehmende Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der- <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration bereitstellen.

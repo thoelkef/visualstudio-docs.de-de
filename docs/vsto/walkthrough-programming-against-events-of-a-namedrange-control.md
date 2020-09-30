@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841227"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584936"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement mithilfe von Office-Entwicklungs Tools in Visual Studio zu einem Microsoft Office Excel-Arbeitsblatt hinzugefügt und für seine Ereignisse verwendet wird.
@@ -46,7 +47,7 @@ ms.locfileid: "90841227"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt mithilfe von Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt

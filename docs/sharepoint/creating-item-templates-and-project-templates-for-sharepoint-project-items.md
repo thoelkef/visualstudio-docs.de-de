@@ -1,5 +1,6 @@
 ---
 title: Element Vorlagen/Projektvorlagen für SharePoint-Projekt Elemente
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65bbd58bf9b3e0b399603a083615daccc382a98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec97eb2dfab7ab92c1e324c89fd044c1a50c2173
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981165"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585614"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente
 
@@ -37,7 +38,7 @@ Element Vorlagen und Projektvorlagen sind *ZIP* -Dateien, die Dateien enthalten,
 
  In der folgenden Tabelle werden die erforderlichen Dateien zum Erstellen einer Element Vorlage für ein SharePoint-Projekt Element aufgelistet.
 
-|Erforderliche Datei|BESCHREIBUNG|
+|Erforderliche Datei|Beschreibung|
 |-------------------|-----------------|
 |Eine *spdata* -Datei|Diese XML-Datei gibt den Inhalt und das Standardverhalten des Projekt Elements an. Diese Datei muss in der Element Vorlage enthalten sein. Weitere Informationen zum Inhalt von *spdata* -Dateien finden Sie unter [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md).|
 |Eine *VSTEMPLATE* -Datei.|Diese Datei bietet Visual Studio die Informationen, die erforderlich sind, um die Vorlage im Dialogfeld **Neues Element hinzufügen** anzuzeigen und ein Projekt Element aus der Vorlage zu erstellen. Diese Datei muss in der Element Vorlage enthalten sein. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
@@ -45,7 +46,7 @@ Element Vorlagen und Projektvorlagen sind *ZIP* -Dateien, die Dateien enthalten,
 
  In der folgenden Tabelle sind einige der gängigsten optionalen Dateien aufgelistet, die in der-Element Vorlage enthalten sein können. Einige Typen von Projekt Elementen erfordern möglicherweise andere Dateien, die hier nicht aufgeführt sind.
 
-| Optionale Datei | BESCHREIBUNG |
+| Optionale Datei | Beschreibung |
 |----------------------| - |
 | *Elements.xml* | Eine *featureelementdatei* . Diese Datei definiert die Benutzeroberfläche und das Verhalten der vom Projekt Element erstellten Anpassung. Jeder Anpassungstyp, z. b. Listen Instanzen, Inhaltstypen oder benutzerdefinierte Aktionen, verfügt über ein anderes Schema, das den Inhalt dieser Datei definiert. Weitere Informationen finden Sie unter [Baustein: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) und [Funktions Schemas](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14)). |
 | *Schema.xml* | Die Schema Datei für Listen Definitionen. Weitere Informationen finden Sie unter [Baustein: Listen und Dokument Bibliotheken](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) und [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14)). |
@@ -61,7 +62,7 @@ Element Vorlagen und Projektvorlagen sind *ZIP* -Dateien, die Dateien enthalten,
 
  In der folgenden Tabelle werden die Dateien aufgelistet, die in einer SharePoint-Projektvorlage enthalten sein müssen.
 
-|Erforderliche Datei|BESCHREIBUNG|
+|Erforderliche Datei|Beschreibung|
 |-------------------|-----------------|
 |Eine *VSTEMPLATE* -Datei|Diese Datei bietet Visual Studio die Informationen, die erforderlich sind, um die Vorlage im Dialogfeld **Neues Projekt** anzuzeigen und ein Projekt aus der Vorlage zu erstellen. Weitere Informationen finden Sie unter [Visual Studio-Vorlagen-Metadatendateien](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Eine *csproj* -oder *vbproj* -Datei|Dies ist die Projektdatei. Der Inhalt und die Konfigurationseinstellungen des Projekts werden definiert.|
@@ -70,7 +71,7 @@ Element Vorlagen und Projektvorlagen sind *ZIP* -Dateien, die Dateien enthalten,
 
  In der folgenden Tabelle sind die optionalen Dateien aufgeführt, die in der Projektvorlage enthalten sein können.
 
-|Optionale Datei|BESCHREIBUNG|
+|Optionale Datei|Beschreibung|
 |-------------------|-----------------|
 |SharePoint-Projektelemente|Sie können eine oder mehrere spdata-Dateien einschließen, die SharePoint-Projekt Elementtypen definieren. Jede *spdata* -Datei muss über eine übereinstimmende <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Implementierung in einer Erweiterungsassembly verfügen, die im VSIX-Paket mit der Projektvorlage enthalten ist. Weitere Informationen finden Sie unter [Erstellen von Element Vorlagen](#create-item-templates).<br /><br /> In der Regel enthalten SharePoint-Projekte mindestens ein SharePoint-Projekt Element. Dies ist jedoch nicht erforderlich.|
 |*\<featureName>. Feature*|Diese Datei definiert ein SharePoint-Feature, das zum Gruppieren mehrerer Projekt Elemente für die Bereitstellung verwendet wird. Wenn Sie den Funktions-Designer verwenden, um eine Funktion in Ihrem Projekt anzupassen, speichert Visual Studio Daten über das Feature in dieser Datei. Wenn Sie die Projekt Elemente in verschiedene Funktionen gruppieren möchten, können Sie mehrere Featuredateien *einschließen.*<br /><br /> Wenn Sie eine benutzerdefinierte SharePoint-Projektvorlage erstellen, wird empfohlen, dass Sie nur den mindestens erforderlichen Inhalt *in jede* Featuredatei einschließen und Features konfigurieren, indem Sie die APIs im- <xref:Microsoft.VisualStudio.SharePoint.Features> Namespace in einer Erweiterung verwenden, die mit der Projektvorlage verknüpft ist. Wenn Sie dies tun, ist die Projektvorlage vor zukünftigen Änderungen an der Struktur der *Funktions* Datei geschützt. Ein Beispiel, das veranschaulicht, *wie eine* Featuredatei mit nur den mindestens erforderlichen Inhalten erstellt wird, finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Wenn *Sie eine* Featuredatei direkt ändern möchten, können Sie den Inhalt mit dem Schema unter *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ xml\schemas\featuremodelschema.xsd*überprüfen.|

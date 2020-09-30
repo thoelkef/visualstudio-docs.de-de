@@ -1,5 +1,6 @@
 ---
 title: Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985143"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585731"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Funktionen in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie Sie diese miteinander kombinieren können, um Erweiterungen für die SharePoint-Tools zu erstellen.
@@ -61,12 +62,12 @@ ms.locfileid: "72985143"
 
 |Namespace|BESCHREIBUNG|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint>|Enthält Typen, mit denen Sie das SharePoint-Projektsystem erweitern und automatisieren können. Sie können z. B. die integrierten SharePoint-Projekte und -Projektelemente erweitern, oder Sie können eigene Projektelemente erstellen. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md).|
+|<xref:Microsoft.VisualStudio.SharePoint>|Enthält Typen, mit denen Sie das SharePoint-Projektsystem erweitern und automatisieren können. Sie können z. B. die integrierten SharePoint-Projekte und -Projektelemente erweitern, oder Sie können eigene Projektelemente erstellen. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Enthält Typen, mit denen Sie den Bereitstellungsprozess für SharePoint-Projekte erweitern können, beispielsweise durch Erstellen eigener Bereitstellungsschritte und Bereitstellungskonfigurationen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Enthält Typen, die Sie verwenden, um Knoten unter dem Knoten **SharePoint-Verbindungen** im Fenster **Server-Explorer** zu erweitern oder um neue Knoten Typen zu definieren. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Enthält Typen, die Sie verwenden, um Knoten unter dem Knoten **SharePoint-Verbindungen** im Fenster **Server-Explorer** zu erweitern oder um neue Knoten Typen zu definieren. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|Enthält Typen, mit denen Sie in einem SharePoint-Projekt auf die Definition von Funktionen zugreifen können.|
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|Enthält Typen, mit denen Sie auf die Paketdefinition in einer SharePoint-Lösung zugreifen können.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Enthält Typen, mit denen Sie das Funktions- und Paketvalidierungsverhalten für SharePoint-Projekte anpassen können. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Enthält Typen, mit denen Sie das Funktions- und Paketvalidierungsverhalten für SharePoint-Projekte anpassen können. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von benutzerdefinierten Feature- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -78,7 +79,7 @@ ms.locfileid: "72985143"
 
 |Namespace|BESCHREIBUNG|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Enthält Typen, die Sie verwenden können, um Informationen über integrierte **Server-Explorer** Knoten zu erhalten, die einzelne Komponenten auf einer SharePoint-Website darstellen, z. b. einen Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Enthält Typen, die Sie verwenden können, um Informationen über integrierte **Server-Explorer** Knoten zu erhalten, die einzelne Komponenten auf einer SharePoint-Website darstellen, z. b. einen Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio-Automatisierungs Objektmodell
  Das Automatisierungsobjektmodell von Visual Studio stellt APIs bereit, mit denen Sie Visual Studio-Projekte und die IDE automatisieren können. Führen Sie projektbezogene Aufgaben, die nicht spezifisch für SharePoint-Projekte sind, oder andere allgemeine Automatisierungsaufgaben in Visual Studio mit diesem Visual Studio-Objektmodell aus. Dieses Objektmodell wird in der Regel häufig in Visual Studio-Add-Ins und -Makros verwendet, Sie können es aber auch in SharePoint-Tools-Erweiterungen verwenden.
@@ -106,7 +107,7 @@ ms.locfileid: "72985143"
 |Serverobjektmodell|Das Serverobjektmodell bietet Zugriff auf alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen. Dieses Objektmodell wurde für SharePoint-Lösungen entworfen, die auf dem SharePoint-Server ausgeführt werden. Der Großteil dieses Objektmodells wird in der *Microsoft.SharePoint.dll* -Assembly definiert. Weitere Informationen zum Server Objektmodell finden [Sie unter Verwenden des serverseitigen SharePoint Foundation-Objektmodells](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Clientobjektmodell|Das Clientobjektmodell ist eine Teilmenge des Serverobjektmodells und kann verwendet werden, um die SharePoint-Daten auf einem Remoteclient oder einem Server zu verarbeiten. Beim Entwurf wurde darauf geachtet, die Anzahl der Roundtrips zu minimieren, die zum Ausführen häufiger Aufgaben notwendig ist. Der Großteil des Client Objektmodells wird in den *Microsoft.SharePoint.Client.dll* -und *Microsoft.SharePoint.Client.Runtime.dll* Assemblys definiert. Weitere Informationen zum Client Objektmodell finden Sie unter [verwaltetes Client Objektmodell](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>Siehe auch
-- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)

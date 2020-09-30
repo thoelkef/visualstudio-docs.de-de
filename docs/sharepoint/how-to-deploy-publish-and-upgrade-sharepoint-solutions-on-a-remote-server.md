@@ -1,5 +1,6 @@
 ---
 title: Remote Bereitstellung, Veröffentlichung & Upgrade von SharePoint-Lösungen
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016799"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585783"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remote Server
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen auf dem lokalen System können Sie Sandbox-SharePoint-Lösungen an Remote Standorten oder auf lokalen SharePoint-Websites veröffentlichen. Beim Remote Publishing Vorgang wird die *wsp* -Datei auf den SharePoint-Server kopiert, die Projekt Mappe installiert und dann die Aktivierung der Lösung ermöglicht. Sie können auch eine Remote Installation einer SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen wurden.

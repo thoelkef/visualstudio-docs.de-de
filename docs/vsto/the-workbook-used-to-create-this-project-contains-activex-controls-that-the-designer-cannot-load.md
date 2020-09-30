@@ -1,5 +1,6 @@
 ---
-title: Die zum Erstellen des Projekts verwendete Arbeitsmappe enthält ActiveX-Steuerelemente, die vom Designer nicht geladen werden können.
+title: Die Arbeitsmappe enthält ActiveX-Steuerelemente, die nicht geladen werden können.
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537344"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584450"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Die zum Erstellen des Projekts verwendete Arbeitsmappe enthält ActiveX-Steuerelemente, die vom Designer nicht geladen werden können.
-  Dieser Fehler wird angezeigt, wenn Sie ein Steuerelement einem Word-Dokument oder einem Excel-Arbeitsblatt programmgesteuert hinzufügen, das Dokument oder die Arbeitsmappe speichern, und dann eine neue Lösung auf Dokumentebene basierend auf dem Dokument oder der Arbeitsmappe erstellen.
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>Die Arbeitsmappe enthält ActiveX-Steuerelemente, die nicht geladen werden können.
+
+  Der Fehler "die zum Erstellen dieses Projekts verwendete Arbeitsmappe enthält ActiveX-Steuerelemente, die vom Designer nicht geladen werden können" wird angezeigt, wenn Sie ein Steuerelement einem Word-Dokument oder einem Excel-Arbeitsblatt Programm gesteuert hinzufügen, das Dokument oder die Arbeitsmappe speichern und dann eine neue Lösung auf Dokument Ebene basierend auf dem Dokument oder der Arbeitsmappe erstellen.
 
  Informationen über den verwalteten Typ des Steuerelements wird nicht zusammen mit dem Dokument oder der Arbeitsmappe gespeichert. Wenn Sie eine neue Lösung basierend auf diesem Dokument oder dieser Arbeitsmappe erstellen, hat Visual Studio nicht genügend Informationen, um das Steuerelement im Hostelement-Designer zu laden.
 

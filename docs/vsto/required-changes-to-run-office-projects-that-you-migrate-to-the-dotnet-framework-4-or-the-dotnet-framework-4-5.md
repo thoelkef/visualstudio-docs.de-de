@@ -1,5 +1,6 @@
 ---
-title: Erforderliche Änderungen für Office-Projekte, die zu .NET Framework 4, 4,5
+title: Erforderliche Änderungen für Office-Projekte, die zu .NET 4,5 migriert wurden
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810966"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584463"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Erforderliche Änderungen zum Ausführen von Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren.
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Erforderliche Änderungen für Office-Projekte, die zu .NET 4,5 migriert wurden
+
   Wenn das Ziel Framework eines Office-Projekts [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] von einer früheren Version des .NET Framework in oder höher geändert wird, müssen Sie die folgenden Aufgaben ausführen, um sicherzustellen, dass die Lösung auf dem Entwicklungs Computer und auf den Computern der Endbenutzer ausgeführt werden kann:
 
 - Entfernen Sie das <xref:System.Security.SecurityTransparentAttribute> aus dem Projekt, wenn Sie ein Upgrade aus Visual Studio 2008 ausgeführt haben.
@@ -69,5 +71,5 @@ ms.locfileid: "90810966"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Neuinstallieren von Lösungen auf Endbenutzer Computern
  Wenn Sie mithilfe von ClickOnce eine Office-Projektmappe bereitstellen, die als Zielframework .NET Framework 3.5 verwendet, und dann das Projekt auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher umstellen, müssen Endbenutzer die Projektmappe deinstallieren und dann erneut installieren, nachdem Sie sie veröffentlicht haben. Wenn Sie die neu ausgerichtete Lösung erneut veröffentlichen und die Lösung auf Endbenutzer Computern aktualisiert wird, erhalten Endbenutzer eine, <xref:System.Runtime.InteropServices.COMException> Wenn Sie die aktualisierte Lösung ausführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

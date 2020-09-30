@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538112"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583787"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten
   Die Comments-Eigenschaft der Document-Klasse fügt einen Kommentar zu einem Textbereich in einem Microsoft Office Word-Dokument hinzu.

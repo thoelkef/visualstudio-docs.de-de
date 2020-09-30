@@ -1,5 +1,6 @@
 ---
 title: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016406"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585457"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -58,7 +59,7 @@ ms.locfileid: "86016406"
 ## <a name="understand-the-wizard-components"></a>Grundlegendes zu den Assistenten Komponenten
  Der Assistent, der in dieser exemplarischen Vorgehensweise veranschaulicht wird, enthält mehrere Komponenten. In der folgenden Tabelle werden diese Komponenten beschrieben.
 
-|Komponente|BESCHREIBUNG|
+|Komponente|Beschreibung|
 |---------------|-----------------|
 |Implementieren des Assistenten|Mit der `SiteColumnProjectWizard`-Klasse wird die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle implementiert. Diese Schnittstelle definiert die Methoden, die von Visual Studio aufgerufen werden, wenn der Assistent gestartet wird, wenn der Assistent beendet wird und gelegentlich, während der Assistent ausgeführt wird.|
 |Benutzeroberfläche des Assistenten|Dies ist ein WPF-basiertes Fenster mit dem Namen `WizardWindow`. Dieses Fenster enthält zwei Benutzersteuerelemente: `Page1` und `Page2`. Diese Benutzersteuerelemente stellen die beiden Seiten des Assistenten dar.<br /><br /> In dieser exemplarischen Vorgehensweise wird die Benutzeroberfläche des Assistenten von der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>-Methode der diesbezüglichen Implementierung dargestellt.|
@@ -410,7 +411,7 @@ ms.locfileid: "86016406"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Hinzufügen von austauschbaren Parametern zur Elements.xml Datei in der Projektvorlage
  Fügen Sie der *Elements.xml* Datei im sitecolumnprojecttemplate-Projekt mehrere ersetzbare Parameter hinzu. Diese Parameter werden in der `RunStarted`-Methode in der zuvor definierten `SiteColumnProjectWizard`-Klasse initialisiert. Wenn ein Benutzer ein Website Spalten Projekt erstellt, ersetzt Visual Studio diese Parameter automatisch in der *Elements.xml* -Datei im neuen Projekt durch die Werte, die Sie im Assistenten angegeben haben.
 
- Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zu den selbst definierten ersetzbaren Parametern können Sie auch integrierte Parameter verwenden, die vom SharePoint-Projektsystem definiert und initialisiert werden. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
+ Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zu den selbst definierten ersetzbaren Parametern können Sie auch integrierte Parameter verwenden, die vom SharePoint-Projektsystem definiert und initialisiert werden. Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>So fügen Sie der Datei Elements.xml ersetzbare Parameter hinzu
 

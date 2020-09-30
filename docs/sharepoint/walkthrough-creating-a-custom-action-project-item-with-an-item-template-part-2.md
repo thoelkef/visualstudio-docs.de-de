@@ -1,5 +1,6 @@
 ---
 title: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit Element Vorlage, Teil 2
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016102"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585470"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projekt Element definiert und einer Element Vorlage in Visual Studio zugeordnet haben, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitstellen. Sie können den Assistenten verwenden, um Informationen von Benutzern zu sammeln, wenn Sie die Vorlage verwenden, um einem Projekt eine neue Instanz des Projekt Elements hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -213,7 +214,7 @@ ms.locfileid: "86016102"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Hinzufügen von austauschbaren Parametern zur *Elements.xml* Datei in der Element Vorlage
  Fügen Sie der *Elements.xml* -Datei im Projekt "ItemTemplate" mehrere austauschbare Parameter hinzu. Diese Parameter werden in der `PopulateReplacementDictionary`-Methode in der zuvor definierten `CustomActionWizard`-Klasse initialisiert. Wenn ein Benutzer ein benutzerdefiniertes Aktionsprojekt Element einem Projekt hinzufügt, ersetzt Visual Studio diese Parameter automatisch in der *Elements.xml* -Datei im neuen Projekt Element durch die Werte, die Sie im Assistenten angegeben haben.
 
- Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zum Definieren der eigenen ersetzbaren Parameter können Sie integrierte Parameter verwenden, die vom SharePoint-Projekt System definiert und initialisiert werden. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
+ Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zum Definieren der eigenen ersetzbaren Parameter können Sie integrierte Parameter verwenden, die vom SharePoint-Projekt System definiert und initialisiert werden. Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>So fügen Sie dem *Elements.xml* Dateiaustausch Bare Parameter hinzu
 

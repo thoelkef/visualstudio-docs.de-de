@@ -1,5 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017057"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584884"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer
-  Sie können benutzerdefinierte Knoten unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer**hinzufügen. Dies ist hilfreich, wenn Sie zusätzliche SharePoint-Komponenten anzeigen möchten, die nicht standardmäßig in **Server-Explorer** angezeigt werden. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Sie können benutzerdefinierte Knoten unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer**hinzufügen. Dies ist hilfreich, wenn Sie zusätzliche SharePoint-Komponenten anzeigen möchten, die nicht standardmäßig in **Server-Explorer** angezeigt werden. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Um einen benutzerdefinierten Knoten hinzuzufügen, erstellen Sie zuerst eine Klasse, die den neuen Knoten definiert. Erstellen Sie dann eine Erweiterung, mit der der Knoten einem vorhandenen Knoten als untergeordnetes Element hinzugefügt wird.
 
@@ -96,6 +97,6 @@ ms.locfileid: "86017057"
  Erstellen Sie zum Bereitstellen der **Server-Explorer** Erweiterung ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX) für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Vorgehensweise: Erweitern eines SharePoint-Knotens in Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

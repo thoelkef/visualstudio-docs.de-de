@@ -1,5 +1,6 @@
 ---
 title: Entwerfen von Änderungen an Office-Projekten, die auf .NET Framework abzielen
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 334344a2ffec5e084cb2e199a128b4583266af9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810509"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583826"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Änderungen am Entwurf von Office-Projekten, die auf die .NET Framework 4 oder das .NET Framework 4,5 abzielen
   Mit [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]wurden in Visual Studio einige Änderungen am Entwurf von Office-Projekten eingeführt, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielen. Wenn Sie mit Office-Projekten in früheren Versionen von Visual Studio vertraut sind, sollten Sie diese Änderungen beachten, bevor Sie Office-Projekte entwickeln, die für diese Versionen von .NET Framework 4.0 oder höher bestimmt sind. Standardmäßig zielen alle Projekte, die Sie mit Visual Studio 2013 oder höher erstellen, auf .NET Framework 4.0 oder höher ab.
@@ -56,7 +57,7 @@ ms.locfileid: "90810509"
 |Die `OLEObject`-Klasse und die `OLEControl`-Klasse wurden umbenannt.|Sie müssen Code ändern, in dem Instanzen dieser Klassen verwendet werden, um stattdessen das <xref:Microsoft.Office.Tools.Excel.ControlSite> -Objekt oder <xref:Microsoft.Office.Tools.Word.ControlSite> -Objekt zu verwenden. Weitere Informationen finden Sie unter [Aktualisieren von Excel-und Word-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Host Element Klassen, wie z `ThisWorkbook` . b., `Sheet` *n*, `ThisDocument` und `ThisAddIn` , stellen keine `Dispose` Methode mehr bereit, die Sie überschreiben können.|Sie müssen den Code in der `Dispose`-Methodenüberschreibung in den `Shutdown`-Ereignishandler in der Hostelementklasse, z. B. `ThisAddIn_Shutdown`, verschieben und die `Dispose`-Methodenüberschreibung aus der Hostelementklasse entfernen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Neuerungen bei der Office-Entwicklung](/previous-versions/86bkz018(v=vs.110))
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)

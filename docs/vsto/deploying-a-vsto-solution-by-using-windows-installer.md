@@ -1,5 +1,6 @@
 ---
-title: Bereitstellen einer Visual Studio-Tools für Office-Projekt Mappe mithilfe Windows Installer
+title: Bereitstellen einer VSTO-Lösung mithilfe von Windows Installer
+titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444905"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585692"
 ---
-# <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Bereitstellen einer Visual Studio-Tools für Office-Projekt Mappe mithilfe Windows Installer
+# <a name="deploying-a-vsto-solution-using-windows-installer"></a>Bereitstellen einer VSTO-Lösung mithilfe von Windows Installer
 
 ## <a name="summary"></a>Zusammenfassung
 
@@ -580,11 +581,11 @@ s
 
 [Vorgehensweise: Installieren des Visual Studio-Tools für die Office-Laufzeit](how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 
-[Primäre Interopassemblys in Office](office-primary-interop-assemblies.md)
+[Primäre Interop-Assemblys in Office](office-primary-interop-assemblies.md)
 
 [Registrierungseinträge für VSTO-Add-ins](registry-entries-for-vsto-add-ins.md)
 
-[Übersicht über benutzerdefinierte Dokumenteigenschaften](custom-document-properties-overview.md)
+[Custom Document Properties Overview](custom-document-properties-overview.md)
 
 [Angeben von Formular Bereichen in der Windows-Registrierung](/office/vba/outlook/concepts/creating-form-regions/specifying-form-regions-in-the-windows-registry)
 

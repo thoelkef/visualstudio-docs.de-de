@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011917"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583670"
 ---
 # <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen neuer Projekttypen
 Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:
@@ -33,7 +33,7 @@ Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen.
 
     - Projektfactory, um das Erstellen neuer Projekte und das Öffnen vorhandener Projekte zu verwalten. Weitere Informationen finden Sie unter [Erstellen von Projekt Instanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Projekt Hierarchie und Befehls Verarbeitung. Weitere Informationen finden Sie unter [Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100)), [Elemente eines Projekt Modells](../../extensibility/internals/elements-of-a-project-model.md), [Projekt Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)und [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+    - Projekt Hierarchie und Befehls Verarbeitung. Weitere Informationen finden Sie unter [Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100)), [Elemente eines Projekt Modells](../../extensibility/internals/elements-of-a-project-model.md), [Projekt Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)und [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
     - Verwaltung von Projekt Elementen, einschließlich Hinzufügen des Projekts zum Dialogfeld " **Neues Projekt** ". Weitere Informationen finden Sie unter [Hinzufügen von Projekt-und Projekt Element Vorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md) und [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -57,7 +57,7 @@ Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen.
 
 8. Erstellen Sie die Microsoft Installer-Datei (*MSI*-Datei) zum Installieren der VSPackages. Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [Registrieren eines Projekt Typs](../../extensibility/internals/registering-a-project-type.md)und [VSPackages](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Wann Projekttypen erstellt werden sollen](../../extensibility/internals/when-to-create-project-types.md)
 - [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)

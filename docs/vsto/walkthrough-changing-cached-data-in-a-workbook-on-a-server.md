@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985517"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584333"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein DataSet, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, geändert wird, ohne Excel mit der-Klasse zu starten <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .

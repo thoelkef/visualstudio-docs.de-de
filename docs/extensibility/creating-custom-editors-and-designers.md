@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012268"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584728"
 ---
 # <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 
@@ -59,7 +59,7 @@ Weitere Informationen zum Visual Studio-Kern-Editor finden Sie unter [Erweitern 
 
 - Muss der Editor ActiveX-Steuerelemente hosten?
 
-   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](../vs-2015/misc/in-place-activation.md?view=vs-2015)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard Editor an.
+   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard Editor an.
 
 - Unterstützt der Editor mehrere Ansichten? Sie müssen mehrere Sichten unterstützen, wenn Sie möchten, dass Ansichten des Editors zur gleichen Zeit wie der Standard-Editor sichtbar sind.
 
@@ -93,7 +93,7 @@ Erläutert, wie Dokument Daten und Dokument Sichten in benutzerdefinierten Edito
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Legacy Schnittstellen im Editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[Legacy Schnittstellen im Editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 Erläutert, wie Sie mithilfe der Legacy-API auf den Kern-Editor zugreifen können.
 
 [Entwickeln eines Legacy sprach Dienstanbieter](../extensibility/internals/developing-a-legacy-language-service.md)\
@@ -102,6 +102,6 @@ Erläutert, wie ein Sprachdienst implementiert wird.
 [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Erläutert das Erstellen von UI-Elementen, die dem Rest von entsprechen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

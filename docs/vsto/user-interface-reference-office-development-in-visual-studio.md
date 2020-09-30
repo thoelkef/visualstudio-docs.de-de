@@ -1,5 +1,6 @@
 ---
 title: Referenz zur Benutzeroberfläche (Office-Entwicklung in Visual Studio)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabbe05d31a9c95dcf8e5eb5d03caf60e923c65c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17366c4901c6fa28036d089f74402768721e1a8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982402"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584385"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Referenz zur Benutzeroberfläche (Office-Entwicklung in Visual Studio)
   Die folgenden Benutzeroberflächenelemente sind Teil der Office-Projekte in Visual Studio.

@@ -1,5 +1,6 @@
 ---
 title: Bereitstellen & veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016817"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585796"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Vorgehensweise: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
   Sie können SharePoint-Lösungen auf einem lokalen SharePoint-Server auf dem Entwicklungs Computer bereitstellen oder veröffentlichen. Beim Bereitstellungs Prozess wird die *wsp* -Datei auf den SharePoint-Server kopiert, die Projekt Mappe installiert und anschließend die Funktionen aktiviert. Beim Veröffentlichungsprozess wird die *wsp* -Datei nur auf den SharePoint-Server kopiert und installiert. Sie müssen Sie manuell aktivieren, um Sie in SharePoint zu aktivieren.

@@ -1,5 +1,6 @@
 ---
 title: Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81a7da585f49b2a2d1f7df4df11d0c78b7a35d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251914"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583735"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
 
@@ -182,7 +183,7 @@ Die folgenden Steuerelemente und Komponenten sind nicht in der **Toolbox**verfü
 
 Wenn Sie ein Office-Projekt auf Dokument Ebene erstellen, das ein vorhandenes Word-Dokument oder eine Excel-Arbeitsmappe verwendet, die ActiveX-Steuerelemente enthält, gehen die Funktionen der ActiveX-Steuerelemente nicht verloren. Es gibt jedoch keine Unterstützung für das Hinzufügen von neuen ActiveX-Steuerelementen zu Ihren Dokumenten aus Visual Studio. Wenn das Word-Dokument z. b. eine Schaltfläche aus der **Steuer** Element-Toolbox enthält, die ein Visual Basic for Applications-Makro (VBA) ausführt, wird das Makro weiter ausgeführt, nachdem das Dokument in einem Office-Projekt verwendet wurde. Es wird jedoch empfohlen, ActiveX-Steuerelemente und VBA-Makros zu entfernen und Sie durch Windows Forms Steuerelemente und verwalteten Code zu ersetzen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Übersicht über Windows Forms Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)

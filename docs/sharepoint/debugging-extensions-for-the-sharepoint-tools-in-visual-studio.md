@@ -1,5 +1,6 @@
 ---
 title: Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio | Microsoft-Dokumentation
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584632"
 ---
-# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio
   Sie können SharePoint-Tools-Erweiterungen in der experimentellen Instanz oder in der regulären Instanz von Visual Studio debuggen. Wenn Sie Fehler im Verhalten einer Erweiterung beheben müssen, können Sie auch Registrierungswerte ändern, um weitere Fehlerinformationen anzuzeigen und die Ausführung von SharePoint-Befehlen durch Visual Studio zu konfigurieren.
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Debuggen von Erweiterungen in der experimentellen Instanz von Visual Studio
@@ -113,13 +114,13 @@ ms.locfileid: "64785346"
 
  Um die Problembehandlung für Erweiterungen der SharePoint-Tools zu erleichtern, können Sie den Wert von EnableDiagnostics erstellen und festlegen. Dieser Wert wird der folgenden Tabelle beschrieben.
 
-|value|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |EnableDiagnostics|REG_DWORD, der angibt, ob Diagnosemeldungen im **Ausgabe** Fenster angezeigt werden.<br /><br /> Legen Sie diesen Wert auf "1" fest, wenn Diagnosemeldungen angezeigt werden sollen. Wenn keine Meldungen mehr angezeigt werden sollen, legen Sie diesen Wert auf 0 (null) fest, oder löschen Sie den Wert.<br /><br /> Um Nachrichten aus einer SharePoint-Tools-Erweiterung in das **Ausgabe** Fenster zu schreiben, verwenden Sie den SharePoint-Projekt Dienst. Weitere Informationen finden Sie unter [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md).|
 
  Wenn die Erweiterung einen SharePoint-Befehl einschließt, können Sie weitere Werte erstellen und festlegen, um die Problembehandlung des Befehls zu erleichtern. In der folgenden Tabelle werden diese Werte beschrieben.
 
-|value|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD, der angibt, ob ein Dialogfeld angezeigt werden soll, in dem Sie den Debugger an *vssphost4.exe* anfügen können, sobald er gestartet wird. Dies ist hilfreich, wenn der Befehl, für den das Debugging ausgeführt werden soll, direkt nach dem Start von vssphost.exe ausgeführt wird und die Zeit nicht ausreicht, um den Debugger vor dem Ausführen des Befehls manuell anzufügen. Um das Dialogfeld anzuzeigen, ruft *vssphost4.exe* die-Methode auf, <xref:System.Diagnostics.Debugger.Break%2A> Wenn Sie gestartet wird.<br /><br /> Legen Sie diesen Wert auf 1 fest, um dieses Verhalten zu aktivieren. Legen Sie diesen Wert auf 0 (null) fest, oder löschen Sie den Wert, um dieses Verhalten zu deaktivieren.<br /><br /> Wenn Sie diesen Wert auf 1 festlegen, sollten Sie den hostprocessstartuptimeout-Wert auch erhöhen, um sich genug Zeit zum Anfügen des Debuggers zu verschaffen, bevor Visual Studio erwartet, dass *vssphost4.exe* signalisiert, dass er erfolgreich gestartet wurde.|
 |ChannelOperationTimeout|REG_DWORD-Wert (in Sekunden), der angibt, wie lange von Visual Studio auf die Ausführung eines SharePoint-Befehls gewartet wird. Wird der Befehl nicht innerhalb des Zeitlimits ausgeführt, wird eine <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> ausgelöst.<br /><br /> Der Standardwert ist 120 Sekunden.|
@@ -129,5 +130,5 @@ ms.locfileid: "64785346"
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
