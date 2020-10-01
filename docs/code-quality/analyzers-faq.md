@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037249"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604599"
 ---
 # <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
@@ -34,7 +34,7 @@ Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Comp
 
 Editor config-Dateien bieten jedoch weitere Möglichkeiten zum Konfigurieren von Regeln:
 
-- Mit Editor config-Dateien können Sie für die .NET-Code Qualitätsanalysen [definieren, welche Arten von Code analysiert](fxcop-analyzer-options.md)werden.
+- Mit Editor config-Dateien können Sie für die .NET-Code Qualitätsanalysen [definieren, welche Arten von Code analysiert](/dotnet/fundamentals/code-analysis/code-quality-rule-options)werden.
 - Bei den in Visual Studio integrierten .net-codeformatierungsanalyzern können Sie mit Editor config-Dateien [die bevorzugten Code Stile für eine Codebasis definieren](../ide/editorconfig-code-style-settings-reference.md) .
 
 Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen durch die Verwendung von Textdateien konfiguriert, die als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für die c#-und VB-Compiler gekennzeichnet sind.
