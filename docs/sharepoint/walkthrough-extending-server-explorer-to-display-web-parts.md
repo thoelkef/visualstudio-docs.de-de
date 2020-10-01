@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum anzeigen Webparts | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739992"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583852"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts
   In Visual Studio können Sie den Knoten **SharePoint-Verbindungen** von **Server-Explorer** verwenden, um Komponenten auf SharePoint-Sites anzuzeigen. Allerdings werden in **Server-Explorer** standardmäßig einige Komponenten nicht angezeigt. In dieser exemplarischen Vorgehensweise erweitern Sie **Server-Explorer** , sodass der Webpartkatalog auf jeder verbundenen SharePoint-Website angezeigt wird.

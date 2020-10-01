@@ -1,5 +1,6 @@
 ---
-title: Aktualisieren von Excel-oder Word-Projekten zu .NET Framework 4/4,5
+title: Aktualisieren von Excel-oder Word-Projekten zu .NET Framework 4,5 migriert
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253718"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584411"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren Sie Excel-und Word-Projekte, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren.
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Aktualisieren von Excel-und Word-Projekten, die Sie zum .NET Framework 4,5 migrieren
   Wenn Sie über ein Excel- oder Word-Projekt verfügen, das eine der folgenden Funktionen verwendet, müssen Sie den Code ändern, wenn das Zielframework in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird:
 
 - [GetVstoObject-Methode und HasVstoObject-Methode](#GetVstoObject)
@@ -231,7 +232,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Inhalts Steuerelemente](../vsto/content-controls.md)
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)

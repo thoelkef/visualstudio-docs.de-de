@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Verwenden integrierter Dialogfelder in Word'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537617"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585653"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Gewusst wie: Programm gesteuertes Verwenden integrierter Dialogfelder in Word
   Wenn Sie mit Microsoft Office Word arbeiten, gibt es Zeiten, in denen Sie Dialogfelder für Benutzereingaben anzeigen müssen. Obwohl Sie eigene erstellen können, sollten Sie auch die integrierten Dialogfelder in Word verwenden, die in der-Auflistung des-Objekts verfügbar gemacht werden <xref:Microsoft.Office.Interop.Word.Dialogs> <xref:Microsoft.Office.Interop.Word.Application> . Dies ermöglicht Ihnen den Zugriff auf über 200 der integrierten Dialogfelder, die als Enumerationen dargestellt werden.

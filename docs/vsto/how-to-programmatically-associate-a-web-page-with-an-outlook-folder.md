@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Programm gesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner'
+title: Zuordnen einer Webseite zu einem Outlook-Ordner
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546145"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585339"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Gewusst wie: Programm gesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>Zuordnen einer Webseite zu einem Outlook-Ordner
+
   In diesem Beispiel wird in Microsoft Office Outlook nach einem Ordner mit dem Namen gesucht `HtmlView` . Wenn der Ordner nicht vorhanden ist, erstellt der Code den Ordner und weist ihm eine Webseite zu. Wenn der Ordner vorhanden ist, zeigt der Code die Ordnerinhalte an.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

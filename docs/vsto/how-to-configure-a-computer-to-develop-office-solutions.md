@@ -1,5 +1,6 @@
 ---
 title: 'Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546171"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585496"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
   Um einen Entwicklungscomputer so zu konfigurieren, dass Sie die Microsoft Office Developer Tools in Visual Studio verwenden können, befolgen Sie die Anweisungen in diesem Thema. Sie müssen Administratorrechte auf dem Entwicklungscomputer besitzen, um diese Schritte auszuführen.
@@ -33,7 +34,7 @@ ms.locfileid: "85546171"
 
 3. Wenn Sie über eine englische Version von Visual Studio verfügen, aber nicht englische Einstellungen für Windows verwenden, können Sie das [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Meldungen in derselben Sprache wie Windows anzuzeigen. Bei nicht englischen Versionen von Visual Studio wird automatisch das Sprachpaket installiert. Das Language Pack ist im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54246)verfügbar.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

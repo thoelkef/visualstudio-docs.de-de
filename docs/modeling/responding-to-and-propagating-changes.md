@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809988"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583891"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Reagieren auf und Weitergeben von Änderungen
 
@@ -32,7 +32,7 @@ Beachten Sie als Richtlinie diese Verfahren in der folgenden Reihenfolge:
 |Regeln|Sie können Regeln definieren, die unmittelbar vor dem Ende einer Transaktion, in der eine Änderung vorgenommen wurde, zur Ausführung in die Warteschlange eingereiht werden. Sie werden bei Rückgängigmachen oder wiederholen nicht ausgeführt. Verwenden Sie diese, um einen Teil des Stores synchron mit einem anderen zu verwenden.|[Regeln propagieren Änderungen im Modell](../modeling/rules-propagate-changes-within-the-model.md)|
 |Speichern von Ereignissen|Der Modellierungs Speicher bietet Benachrichtigungen zu Ereignissen, z. b. zum Hinzufügen oder Löschen eines Elements oder Links oder zum Ändern des Werts einer Eigenschaft. Das Ereignis wird auch bei Rückgängigmachen und wiederholen ausgeführt. Verwenden Sie Store-Ereignisse, um Werte zu aktualisieren, die sich nicht im Speicher befinden.|[Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |.Net-Ereignisse|Formen verfügen über Ereignishandler, die auf Mausklicks und andere Gesten reagieren. Sie müssen für jedes Objekt eine Registrierung für diese Ereignisse durchsuchen. Die Registrierung erfolgt in der Regel in einer außer Kraft Setzung von initializeingestanceresources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion auf.|[Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Begrenzungs Regeln|Eine Begrenzungs Regel wird speziell verwendet, um die Grenzen einer Form einzuschränken.|[BoundsRules schränken Position und Größe von Formen ein](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
+|Begrenzungs Regeln|Eine Begrenzungs Regel wird speziell verwendet, um die Grenzen einer Form einzuschränken.|[BoundsRules schränken Position und Größe von Formen ein](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
 |Auswahlregeln|Auswahlregeln beschränken speziell das, was der Benutzer auswählen kann.|[Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |Onassoalisiedpropertychanged|Geben Sie die Zustände der Modellelemente mithilfe von Merkmalen von Formen und Connectors wie Schatten, Pfeilspitzen, Farbe, Linienbreite und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -52,7 +52,7 @@ Verwenden Sie Store-Ereignisse, um das Modell mit Objekten außerhalb des Stores
 
 - **Übergeben von Ereignis Argumenten an Regeln und Ereignisse** An Ereignisse und Regeln wird ein `EventArgs` Parameter übergeben, der Informationen über die Änderung des Modells enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

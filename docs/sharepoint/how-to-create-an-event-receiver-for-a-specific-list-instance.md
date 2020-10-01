@@ -1,5 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Ereignis Empfängers für eine bestimmte Listen Instanz | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016967"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585835"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Gewusst wie: Erstellen eines Ereignis Empfängers für eine bestimmte Listen Instanz
   Ein List instance-Ereignis Empfänger antwortet auf Ereignisse, die in einer beliebigen Instanz einer Listen Definition auftreten. Obwohl die Ereignis Empfänger Vorlage nicht das Ziel einer bestimmten Listen Instanz ermöglicht, können Sie einen Ereignis Empfänger ändern, der auf eine Listen Definition festgelegt ist, um auf Ereignisse in einer bestimmten Listen Instanz zu reagieren.

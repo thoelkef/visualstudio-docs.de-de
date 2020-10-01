@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Anzeigen von Dokumenten in der Seitenansicht'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17671ab5d544341cbd3a02713a8b29b55863f5ac
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545911"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585209"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Gewusst wie: Programm gesteuertes Anzeigen von Dokumenten in der Seitenansicht
   Wenn Ihre Projektmappe einen Bericht generiert, können Sie dem Benutzer den Bericht im Seitenansichtsmodus anzeigen.

@@ -1,5 +1,6 @@
 ---
 title: 'Konvertieren: SharePoint-Projekt Systemtypen in/aus anderen Typen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836000"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584645"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen
   In einigen Fällen verfügen Sie möglicherweise über ein Objekt im SharePoint-Projekt System, und Sie möchten die Features eines entsprechenden Objekts im Visual Studio-Automatisierungs Objektmodell oder im Integrations Objektmodell verwenden oder umgekehrt. In diesen Fällen können Sie die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Methode des SharePoint-Projekt diendiensdienstanbieter verwenden, um das Objekt in ein anderes Objektmodell zu konvertieren.
@@ -42,7 +43,7 @@ ms.locfileid: "66836000"
 
  Für dieses Beispiel benötigen Sie Folgendes:
 
-- Eine Erweiterung des SharePoint-Projekt Systems, das einen Verweis auf die *EnvDTE.dll* Assembly enthält. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md).
+- Eine Erweiterung des SharePoint-Projekt Systems, das einen Verweis auf die *EnvDTE.dll* Assembly enthält. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md).
 
 - Code, der die `projectService_ProjectAdded` Methode zum Behandeln des- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignisses eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekts registriert. Ein Beispiel finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 

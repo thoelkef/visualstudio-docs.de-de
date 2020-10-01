@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: komplexe Datenbindung in einem VSTO-Add-in-Projekt'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985496"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585040"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: komplexe Datenbindung in einem VSTO-Add-in-Projekt
   Sie können in VSTO-Add-In-Projekten Daten an Hoststeuerelemente und Windows Forms-Steuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Microsoft Office Excel-Arbeitsblatt zur Laufzeit Steuerelemente hinzugefügt und diese Steuerelemente an Daten gebunden werden.
@@ -47,7 +48,7 @@ ms.locfileid: "72985496"
 
   - Informationen zum Anfügen einer Datenbank über die Befehlszeile finden Sie unter Gewusst [wie: Anfügen einer Datenbankdatei an SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
  Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Excel.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
@@ -141,7 +142,7 @@ ms.locfileid: "72985496"
 - [Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokument Ebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Verwenden lokaler Datenbankdateien in der Übersicht über Office-Lösungen](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
+- [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Verwenden lokaler Datenbankdateien in der Übersicht über Office-Lösungen](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview)

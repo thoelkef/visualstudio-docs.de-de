@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253886"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585053"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht die Datenbindung an Steuerelemente in einem Aktionsbereich in Microsoft Office Excel. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
@@ -53,7 +54,7 @@ ms.locfileid: "71253886"
 
 - Lese-und Schreibberechtigungen für die SQL Server Datenbank.
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Zunächst müssen Sie ein Excel-Arbeitsmappenprojekt erstellen.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt

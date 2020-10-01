@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842275"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584962"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Aktionsbereich in einem Microsoft Office Word-Dokument erstellt wird. Der Aktionsbereich enthält zwei Steuerelemente, die Eingaben erfassen und dann den Text an das Dokument senden.
@@ -43,7 +44,7 @@ ms.locfileid: "90842275"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Im ersten Schritt wird ein Word-Dokumentprojekt erstellt.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
@@ -121,8 +122,8 @@ ms.locfileid: "90842275"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**getAddress**|
-    |**Akzeptiert die Rückgabe**|**True**|
-    |**Mehrzeilig**|**True**|
+    |**Akzeptiert die Rückgabe**|**Wahr**|
+    |**Mehrzeilig**|**Wahr**|
     |**Größe**|**130, 40**|
 
 7. Fügen Sie dem Aktionsbereich-Steuerelement ein **Schalt** Flächen-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.

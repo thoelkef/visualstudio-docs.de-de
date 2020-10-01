@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255588"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585027"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word-Vorlage verwendet.
@@ -76,7 +77,7 @@ ms.locfileid: "71255588"
    |**Employee Name**|
    |**Hire Date**|
    |**Titel**|
-   |**Weltbild**|
+   |**Picture**|
 
 4. Klicken Sie in die erste Zelle in der zweiten Spalte (neben **Employee Name**).
 
@@ -236,7 +237,7 @@ ms.locfileid: "71255588"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Inhalts Steuerelemente](../vsto/content-controls.md)
 - [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

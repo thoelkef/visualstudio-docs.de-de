@@ -1,5 +1,6 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547133"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585248"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Vorgehensweise: Programm gesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen
   Sie können jedes beliebige Arbeitsblatt in einer Arbeitsmappe löschen. Verwenden Sie zum Löschen eines Arbeitsblatts das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.

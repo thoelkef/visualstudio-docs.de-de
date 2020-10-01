@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30daa81c33070db3f9418b45b84b4acc6e243dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547094"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584780"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen
   Wenn Sie Text in einem Dokument suchen und ersetzen, sollten Sie nach Abschluss der Suche die ursprüngliche Auswahl des Benutzers wiederherstellen.

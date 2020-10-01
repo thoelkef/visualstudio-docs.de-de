@@ -1,5 +1,6 @@
 ---
 title: Anzeigen benutzerdefinierter Aufgabenbereiche mit e-Mail-Nachrichten in Outlook
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985456"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584281"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs mit jeder erstellten oder geöffneten e-Mail angezeigt wird. Benutzer können den benutzerdefinierten Aufgabenbereich über eine Schaltfläche auf dem Menüband jeder E-Mail anzeigen oder ausblenden.
@@ -57,7 +58,7 @@ ms.locfileid: "72985456"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder Microsoft Outlook 2010.
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Benutzerdefinierte Aufgabenbereiche werden in VSTO-Add-Ins implementiert. Erstellen Sie zunächst ein VSTO-Add-in-Projekt für Outlook.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt

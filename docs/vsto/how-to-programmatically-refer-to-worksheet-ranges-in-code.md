@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes verweisen auf Arbeitsblatt Bereiche im Code'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547393"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584832"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Gewusst wie: Programm gesteuertes verweisen auf Arbeitsblatt Bereiche im Code
   Sie verwenden einen ähnlichen Prozess, um auf den Inhalt eines <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuer Elements oder eines systemeigenen Excel-Bereichs Objekts zu verweisen.
@@ -47,7 +48,7 @@ ms.locfileid: "85547393"
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
 - [Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

@@ -1,5 +1,6 @@
 ---
 title: Hinzufügen von Steuerelementen zum Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253893"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584346"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt
   Sie können einem beliebigen geöffneten Arbeitblatt Steuerelemente mithilfe eines Excel-VSTO-Add-In hinzufügen. Diese exemplarische Vorgehensweise veranschaulicht, wie Benutzer einem Arbeitsblatt mithilfe des Menübands ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können. Weitere Informationen finden [Sie unter Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).

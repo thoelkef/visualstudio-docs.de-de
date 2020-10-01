@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692341"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584320"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der komplexen Datenbindung in einem Projekt auf Dokument Ebene veranschaulicht. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server Datenbank binden.
@@ -48,7 +49,7 @@ ms.locfileid: "67692341"
 
 - Lese-und Schreibberechtigungen für die SQL Server Datenbank.
 
-## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
  Der erste Schritt besteht darin, ein Excel-Arbeitsmappenprojekt zu erstellen.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt

@@ -13,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856a685cbf962f8b26f77932c738c758edcf1f91
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012190"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583618"
 ---
 # <a name="vstextbuffer-object"></a>Vstextbuffer-Objekt
 Das Text Puffer Objekt stellt einen Stream von Unicode-Text dar, der in der Regel mit einer Datei verknüpft ist. Ein- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt kann außerhalb des Kontexts des Kern Editors verwendet werden, wie in, einem Assistenten.
 
  In der folgenden Tabelle werden die Schnittstellen von angezeigt `VSTextBuffer` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Standard-OLE-Schnittstelle. Wird für die rückgängig-/Wiederholungs-Behandlung im Puffer verwendet.|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Standard-OLE-Schnittstelle.|
@@ -41,9 +41,9 @@ Das Text Puffer Objekt stellt einen Stream von Unicode-Text dar, der in der Rege
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Unterstützt Verbindungspunkte für Ereignisse.|
 
 ## <a name="remarks"></a>Bemerkungen
- Der `VSTextBuffer` wird normalerweise durch einen- `QueryInterface` Aufrufwert gefunden `IVsTextBuffer` . Weitere Informationen finden Sie unter [Text Puffer](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015).
+ Der `VSTextBuffer` wird normalerweise durch einen- `QueryInterface` Aufrufwert gefunden `IVsTextBuffer` . Weitere Informationen finden Sie unter [Text Puffer](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [Abbildungen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)

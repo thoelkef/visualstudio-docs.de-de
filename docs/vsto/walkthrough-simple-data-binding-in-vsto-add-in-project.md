@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-Add-in-Projekt'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985402"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584910"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-Add-in-Projekt
 
@@ -51,7 +52,7 @@ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
   - Informationen zum Anfügen einer Datenbank über die Befehlszeile finden Sie unter Gewusst [wie: Anfügen einer Datenbankdatei an SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
 Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Word.
 
@@ -163,7 +164,7 @@ Wenn Sie Word öffnen, werden im Inhaltssteuerelement Daten aus dem `AdventureWo
 - [Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokument Ebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Verwenden lokaler Datenbankdateien in der Übersicht über Office-Lösungen](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
+- [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

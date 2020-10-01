@@ -1,5 +1,6 @@
 ---
-title: '&lt;postActions- &gt; Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;postActions- &gt; Element (Office-Entwicklung)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544416"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583709"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions- &gt; Element (Office-Entwicklung in Visual Studio)
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions- &gt; Element (Office-Entwicklung)
   Das `postActions` -Element des `vstav3` -Namespace enthält alle `postAction` -Elemente, die Aktionen nach der Bereitstellung beschreiben, die ausgeführt werden, nachdem Office-Projektmappen installiert sind.
 
 ## <a name="syntax"></a>Syntax
@@ -49,7 +50,7 @@ ms.locfileid: "85544416"
 
 ## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Das folgende Codebeispiel veranschaulicht das `postActions` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code

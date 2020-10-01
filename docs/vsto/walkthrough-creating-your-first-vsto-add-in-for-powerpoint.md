@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871956"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584307"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office PowerPoint erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Präsentationen geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +47,7 @@ ms.locfileid: "68871956"
 
 - PowerPoint
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011956"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584541"
 ---
 # <a name="image-service-and-catalog"></a>Image-Dienst und-Katalog
 Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung von Visual Studio Image Service und Image Catalog, die in Visual Studio 2015 eingeführt wurden.
@@ -179,7 +179,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Attribut**|**Definition**|
 |-|-|
-|Typ|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
+|Type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
 |ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
@@ -712,11 +712,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aktualisieren Sie Ihren Code, um den Image-Dienst zum Anfordern von Monikern über die aktualisierte Zuordnung zu verwenden. (Dies kann bedeuten, dass Sie für verwalteten Code auf " **crispimages** " aktualisieren, HBITMAPs oder hicons aus dem Image-Dienst anfordern und Sie für nativen Code übergeben.)
 
 ## <a name="testing-your-images"></a>Testen von Images
- Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](./internals/vssdk-utilities.md?view=vs-2015).
+ Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](./internals/vssdk-utilities.md?view=vs-2015&preserve-view=true).
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="samples"></a>Beispiele
+### <a name="samples"></a>Proben
  Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zu veranschaulichen, wie Sie den Image Service als Teil verschiedener Visual Studio-Erweiterbarkeits Punkte verwenden können.
 
  [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)Suchen Sie nach den neuesten Beispielen.

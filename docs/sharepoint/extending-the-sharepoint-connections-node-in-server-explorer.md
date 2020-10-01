@@ -1,5 +1,6 @@
 ---
 title: Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer | Microsoft-Dokumentation
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967356"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584606"
 ---
-# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer
   In Visual Studio können Sie eine Verbindung mit lokalen SharePoint-Sites auf dem Entwicklungs Computer herstellen, indem Sie im **Server-Explorer** Fenster den Knoten **SharePoint-Verbindungen** verwenden. Dieser Knoten zeigt viele der Komponenten von lokalen SharePoint-Sites in einer hierarchischen Strukturansicht an. Beispielsweise können Sie die Listen, Dokument Bibliotheken und Inhaltstypen auf lokalen Websites anzeigen. Weitere Informationen zum Verwenden von **Server-Explorer** zum Herstellen einer Verbindung mit lokalen SharePoint-Websites finden Sie unter [Durchsuchen von SharePoint-Verbindungen mithilfe Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
 
  Sie können den Knoten **SharePoint-Verbindungen** erweitern, indem Sie Erweiterungen für vorhandene Knoten erstellen, oder indem Sie einen benutzerdefinierten Knotentyp erstellen und ihn der Knoten Hierarchie hinzufügen.
@@ -56,7 +57,7 @@ ms.locfileid: "62967356"
 |---------------|----------------------|
 |SharePoint-Website Knoten|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |Inhaltstyp|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|Funktion|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|Feature|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |Feld|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |List|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |Listen Vorlage|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
@@ -72,5 +73,5 @@ ms.locfileid: "62967356"
 - [Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 - [Gewusst wie: erhalten von Daten für einen integrierten SharePoint-Knoten in Server-Explorer](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)
 - [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
-- [Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
-title: 'SharePoint-Lösungen: Erstellen eines benutzerdefinierten Features, Paket Validierungsregeln'
+title: Erstellen von Funktions-und Paket Überprüfungen für SharePoint-Lösungen
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016904"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585822"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Vorgehensweise: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Erstellen von Funktions-und Paket Überprüfungen für SharePoint-Lösungen
+
   Sie können benutzerdefinierte Validierungsregeln erstellen, um das von Visual Studio generierte Lösungspaket zu überprüfen. Sie können eine vollständige Validierung für ein gesamtes Feature oder Paket durchführen, indem Sie im Kontextmenü eines Pakets oder einer Funktion in **PackagingExplorer**über **prüfen auswählen.** Die partielle Validierung wird ausgeführt, wenn Sie dem Projekt neue SharePoint-Projekt Elemente oder-Funktionen hinzufügen, um zu bestimmen, ob sich das Paket oder die Funktion in einem gültigen Zustand befinden würde.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>So erstellen Sie eine benutzerdefinierte Paket Validierungs Regel

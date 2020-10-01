@@ -1,5 +1,6 @@
 ---
 title: Visual Studio-Tools für Installationsszenarien für Office-Runtime
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810927"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584372"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio-Tools für Installationsszenarien für Office-Runtime
   Sie können die Visual Studio 2010-Tools für Office-Laufzeit auf drei Arten installieren:
@@ -66,6 +67,6 @@ ms.locfileid: "90810927"
 
  Weitere Informationen zum Einschließen von Voraussetzungen in eine ClickOnce-Lösung finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office](/previous-versions/bb608608(v=vs.110))-Projektmappen. Weitere Informationen zum manuellen Installieren der Laufzeit aus dem verteilbaren Paket finden Sie unter Gewusst [wie: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Assemblys in der Visual Studio-Tools für Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

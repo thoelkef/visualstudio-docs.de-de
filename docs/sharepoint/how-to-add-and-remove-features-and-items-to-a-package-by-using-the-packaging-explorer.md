@@ -1,5 +1,6 @@
 ---
 title: 'Paket-Explorer: Hinzufügen & Features & Elementen zum Paket entfernen'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014552"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585588"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Explorer
   Zum Konfigurieren eines Pakets für die Bereitstellung von SharePoint-Elementen und-Features können Sie den Paket-Explorer verwenden. Sie können die SharePoint-Projekt Elemente und-Funktionen in der wsp-Datei anpassen.

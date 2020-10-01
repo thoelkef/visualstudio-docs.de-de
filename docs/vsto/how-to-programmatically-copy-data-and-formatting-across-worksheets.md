@@ -1,5 +1,6 @@
 ---
 title: Programm gesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546106"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585261"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Gewusst wie: Programm gesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern
   Mithilfe der-Methode können Sie Daten aus einem Bereich auf einem Blatt in alle anderen Blätter in einer-Arbeitsmappe kopieren <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> . Geben Sie einen Bereich an, und geben Sie an, ob Sie Daten, Formatierung oder beides kopieren möchten.

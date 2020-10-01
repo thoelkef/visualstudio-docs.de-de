@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen von zwischengespeicherten Daten aus einer Arbeitsmappe auf einem Server'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985418"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584949"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Abrufen von zwischengespeicherten Daten aus einer Arbeitsmappe auf einem Server
   Diese exemplarische Vorgehensweise veranschaulicht, wie Daten aus einem DataSet, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, abgerufen werden, ohne Excel mit der-Klasse zu starten <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .
