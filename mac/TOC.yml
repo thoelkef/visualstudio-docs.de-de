@@ -185,7 +185,7 @@
         - name: Änderungsprotokoll
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Mobile Apps mit Xamarin
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: Zugriff
   items:
     - name: Übersicht
