@@ -1,18 +1,18 @@
 ---
 title: Verwenden von Product Keys | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183924"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005845"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -52,12 +52,12 @@ Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
 > [!div class="mx-imgBorder"]
-> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
+> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png "Klicken Sie auf „Schlüssel abrufen“, um einen Schlüssel für das Produkt zu erhalten, das Sie herunterladen.")
 
 Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Auf dieser Seite finden Sie statische Schlüssel, die für alle Benutzer eines Produkts verwendet werden können. Zudem können Sie benutzerdefinierte Schlüssel für Ihre Situation abrufen, den Status Ihrer Anspruchsbeschränkungen für Product Keys anzeigen und alle Product Keys exportieren. 
 
 > [!div class="mx-imgBorder"]
-> ![Seite „Product Keys“](_img/product-keys/product-keys-page.png)
+> ![Seite „Product Keys“](_img/product-keys/product-keys-page.png "Auf der Seite „Product Keys“ finden Sie umfassende Product Key-Informationen für Ihr spezifisches Abonnement.")
 
 Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
@@ -80,10 +80,10 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alternativ können Sie auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) nach dem erforderlichen Schlüssel suchen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Rufen Sie https://my.visualstudio.com/productkeys auf, um Schlüssel zu beanspruchen.  

@@ -1,5 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline | Microsoft-Dokumentation'
+title: Fehlende Objekte durch falsch konfigurierte Pipeline
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388576"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809171"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.
@@ -33,7 +34,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
  In diesem Szenario wird beim Ausführen der App zu Testzwecken der Hintergrund erwartungsgemäß gerendert, eins der Objekte wird jedoch nicht dargestellt. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:
 
- ![Das Objekt nicht angezeigt werden](media/gfx_diag_demo_misconfigured_pipeline_problem.png "Gfx_diag_demo_misconfigured_pipeline_problem")
+ ![Das Objekt ist nicht sichtbar.](media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx_diag_demo_misconfigured_pipeline_problem")
 
 ## <a name="investigation"></a>Untersuchung
  Mithilfe der Grafikdiagnosetools können Sie das Grafikprotokolldokument laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.
@@ -44,7 +45,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
 
-    ![Das grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
+    ![Das Grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
 
    Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste**verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist – z. B. zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen – z. B. Draw-, Dispatch-, Copy- oder Clear-Befehle – sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Draw-Befehle sind besonders interessant, da sich jeder auf von der App gerenderte Geometrie bezieht.
 
@@ -65,7 +66,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** an, dass die Geometrie an die GPU ausgegeben (worauf das Vorhandensein der Stufe **Eingabeassembler** hinweist) und transformiert wurde (worauf die Stufe **Vertexshader** hinweist), aber nicht im Renderziel erscheint, da anscheinend kein aktiver Pixelshader vorhanden ist (worauf das Fehlen der Stufe **Pixelshader** hinweist). In diesem Szenario können Sie sogar die Silhouette des fehlenden Objekts in der Stufe **Ausgabezusammenführung** sehen:
 
-    ![Ein DrawIndexed-Ereignis und deren Auswirkung auf die Pipeline](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")
+    ![Ein DrawIndexed-Ereignis und seine Auswirkungen auf die Pipeline](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")
 
    Nachdem sich bestätigt hat, dass die App einen Befehl für die Geometrie des fehlenden Objekts ausgegeben hat, und deutlich wurde, dass die Pixelshaderstufe inaktiv war, können Sie den Zustand des Geräts überprüfen, um Ihre Erkenntnisse zu bestätigen. Sie können die **Grafikobjekttabelle** verwenden, um den Gerätekontext und weitere Direct3D-Objektdaten zu untersuchen.
 
@@ -75,7 +76,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 2. Untersuchen Sie den Gerätezustand, der auf der Registerkarte **d3d11-Gerätekontext** angezeigt wird, um zu bestätigen, dass während des Zeichnen-Befehls kein Pixelshader aktiv war. In diesem Szenario zeigen die **Allgemeinen Informationen für Shader**– die unter **Pixelshaderzustand**angezeigt werden – an, dass der Shader den Wert **NULL**hat:
 
-    ![Der D3D 11-Gerätekontext zeigt den Status des Pixelshaders](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")
+    ![Der D3D 11-Gerätekontext zeigt den Status des Pixelshaders an.](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")
 
    Nachdem Sie bestätigt haben, dass der Pixelshader von Ihrer App auf NULL festgelegt wurde, besteht der nächste Schritt darin, den Ort im Quellcode Ihrer App zu finden, an dem der Shader festgelegt wird. Sie können die **Grafikereignisliste** zusammen mit der **Aufrufliste des Grafikereignisses** verwenden, um diese Position zu ermitteln.
 
@@ -90,15 +91,15 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 3. Verwenden Sie die Aufrufliste, um den `PSSetShader` -Aufruf im Quellcode Ihrer App zu finden. Wählen Sie im Fenster **Aufrufliste des Grafikereignisses** den obersten Aufruf aus, und untersuchen Sie den Wert, auf den der Pixelshader festgelegt wird. Möglicherweise wird der Pixelshader unmittelbar auf NULL festgelegt, oder der NULL-Wert tritt aufgrund eines Arguments, das der Funktion übergeben wurde, oder eines anderen Umstands auf. Wenn der Wert nicht direkt festgelegt wird, können Sie die Quelle des NULL-Werts möglicherweise weiter oben in der Aufrufliste finden. In diesem Szenario finden Sie heraus, dass der Pixelshader in der obersten Funktion mit dem Namen `nullptr` nullptr `CubeRenderer::Render`hat:
 
-    ![Der Code, der den PixelShader nicht initialisiert](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
+    ![Der Code, der den Pixelshader nicht initialisiert](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
    > Wenn Sie die Quelle des NULL-Werts durch einfaches Untersuchen der Aufrufliste nicht finden können, empfiehlt es sich, für den `PSSetShader` -Aufruf einen bedingten Haltepunkt festzulegen, damit der Programmablauf unterbrochen wird, wenn der Pixelshader auf NULL festgelegt wird. Starten Sie anschließend die App im Debugmodus erneut, und verwenden Sie herkömmliche Debugtechniken, um die Quelle des NULL-Werts zu ermitteln.
 
    Um das Problem zu beheben, weisen Sie den richtigen Pixelshader zu, indem Sie den ersten Parameter des `ID3D11DeviceContext::PSSetShader` -API-Aufrufs verwenden.
 
-   ![Der korrigierte C++&#43; &#43; Quellcode](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
+   ![Der korrigierte Quellcode in C&#43;&#43;](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
 
    Nachdem Sie den Code repariert haben, können Sie die App erneut erstellen und ausführen, um zu überprüfen, ob das Renderingproblem behoben wurde:
 
-   ![Das Objekt wird jetzt angezeigt.](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "Gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![Das Objekt wird jetzt angezeigt.](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

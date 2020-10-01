@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348703"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808167"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Anzeigen von Disassemblierungscode im Visual Studio-Debugger (C#, C++, Visual Basic, F#)
 
@@ -58,7 +58,7 @@ Verwenden Sie zum Anzeigen von Anweisungen in Maschinencode in unformatierter nu
 
 ## <a name="use-the-disassembly-window"></a>Verwenden des Disassembierungsfensters
 
-Aktivieren Sie das Fenster **Disassemblierung**, indem Sie unter **Tools** > **Optionen** (bzw.**Extras** > **Optionen**) > **Debuggen** die Option **Debuggen auf Adressebene aktivieren** aktivieren.
+Klicken Sie unter **Extras** > **Optionen** > **Debuggen** auf **Debugging auf Adressebene aktivieren**, um das Fenster **Disassemblierung** zu aktivieren.
 
 Um das Fenster **Disassemblierung** während des Debuggens zu öffnen, wählen Sie **Fenster** > **Disassemblierung** aus, oder drücken Sie **ALT**+**8**.
 

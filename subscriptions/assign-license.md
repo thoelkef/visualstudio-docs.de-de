@@ -1,18 +1,18 @@
 ---
 title: Zuweisen von Lizenzen für Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249467"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022195"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
 Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
@@ -20,11 +20,11 @@ Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsport
 Für Benutzergruppen haben Sie die Wahl, wie Sie Abonnements zuweisen.  
 - Sie können Abonnements entweder einzeln zuweisen, oder
 - Sie laden mithilfe der Funktion [Massenhinzufügen](assign-license-bulk.md) Listen von Abonnenten und den zugehörigen Abonnementinformationen schnell und einfach hoch.
-- Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie [Azure AD-Gruppen verwenden](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions), um Benutzergruppen Abonnements zuzuweisen.  
+- Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie [Azure AD-Gruppen verwenden](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions), um Benutzergruppen Abonnements zuzuweisen.  
 
 
 ## <a name="add-a-single-subscriber"></a>Einzelnen Abonnenten hinzufügen
-Im Folgenden wird erläutert, wie Sie einem neuen Benutzer ein Visual Studio-Abonnement zuweisen, damit dieser Zugriff auf die Abonnementvorteile hat.
+Sehen Sie sich das Video an, oder lesen Sie den Artikel, um zu erfahren, wie Sie einem neuen Benutzer ein Visual Studio-Abonnement zuweisen, damit dieser Zugriff auf die Abonnementvorteile hat.
 
 <br>
 
@@ -59,14 +59,12 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer ein Visual Studio-Abo
 Nachdem Sie einen Abonnenten hinzugefügt haben, wird automatisch eine Zuweisungs-E-Mail mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die Zuweisungs-E-Mail jederzeit erneut senden, indem Sie den Abonnenten und dann im oberen Menü die Schaltfläche **Erneut senden** auswählen.  Um E-Mails an mehrere Benutzer erneut zu senden, halten Sie die Taste **STRG** gedrückt, während Sie die Abonnenten auswählen.  Wenn Sie die Schaltfläche **Erneut senden** auswählen, wird ein Dialogfeld angezeigt, in dem Sie bestätigen können, dass Sie die E-Mail an diese Abonnenten erneut senden möchten.  
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Müssen Sie viele Benutzer hinzufügen?  Erfahren Sie, wie Sie [mehreren Abonnenten](assign-license-bulk.md) Abonnements zuweisen.
 - Benötigen Sie Hilfe?  Wenden Sie sich an den [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

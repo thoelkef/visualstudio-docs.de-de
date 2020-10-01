@@ -1,5 +1,6 @@
 ---
-title: 'Profilerbefehlszeile: Abrufen von Arbeitsspeicherdaten von .NET Framework-Diensten'
+title: 'Profilerbefehlszeile: Abrufen von Speicherdaten aus .NET-Diensten'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67ad8341dc47b5e9275a02950c5335264e619541
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: f07cb03979baf62d436b4bdb319620364a88ddad
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331692"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809400"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen .NET Framework-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.

@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Zielprozess, der mit dem Code &apos;Code&apos; beendet wurde, während er die Funktion &apos;Funktion&apos; ausgeführt hat | Microsoft-Dokumentation'
+title: Der Zielprozess wurde mit dem Code &apos;Code&apos; beim Auswerten der Funktion &apos;Funktion&apos; beendet | Microsoft-Dokumentation
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711637"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852731"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde mit dem Code &#39;Code&#39; beim Auswerten der Funktion &#39;function&#39; beendet
 

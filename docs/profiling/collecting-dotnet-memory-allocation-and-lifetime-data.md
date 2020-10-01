@@ -1,5 +1,6 @@
 ---
-title: Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer | Microsoft-Dokumentation
+title: Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331718"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809426"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET Framework-Speicherbelegung und -lebensdauer
 
-Von den Visual Studio-Profilerstellungstools wird das Sammeln von Daten zur .NET-Speicherbelegung und zur Objektlebensdauer unterstützt, damit Leistungsprobleme im Zusammenhang mit dem Arbeitsspeicher in der Anwendung erkannt werden können.
+Von den Visual Studio-Profilerstellungstools wird das Sammeln von Daten zur .NET Framework-Speicherbelegung und zur Objektlebensdauer unterstützt, damit Leistungsprobleme im Zusammenhang mit dem Arbeitsspeicher in der Anwendung erkannt werden können.
 
 - Daten zur .NET-Speicherbelegung enthalten die Größe und die Anzahl von .NET Framework-Arbeitsspeicherobjekten, die zugeordnet wurden.
 

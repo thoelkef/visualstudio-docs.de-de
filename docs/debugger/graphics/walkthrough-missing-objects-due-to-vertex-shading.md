@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexshading | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388600"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843430"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.
@@ -33,7 +33,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
  In diesem Szenario wird beim Ausführen der App zu Testzwecken der Hintergrund erwartungsgemäß gerendert, eins der Objekte wird jedoch nicht dargestellt. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:
 
- ![Das Objekt ist nicht sichtbar. ](media/gfx_diag_demo_missing_object_shader_problem.png "Gfx_diag_demo_missing_object_shader_problem")
+ ![Das Objekt ist nicht sichtbar.](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
 ## <a name="investigation"></a>Untersuchung
  Mithilfe der Grafikdiagnosetools können Sie die Grafikprotokolldatei laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.
@@ -44,7 +44,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
 
-    ![Das grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
+    ![Das Grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
 
    Nachdem Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste**verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist, z. B. API-Aufrufe zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Dies gilt z. B. für Draw-, Dispatch-, Copy- oder Clear-Aufrufe. Draw-Aufrufe sind besonders interessant, da jeder Aufruf Geometrie darstellt, die von der App gerendert wird (auch Dispatch-Aufrufe können Geometrie rendern).
 
@@ -65,7 +65,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** , dass die Geometrie zwar an die GPU übergeben wurde (gekennzeichnet durch die Eingabeassembler-Miniaturansicht), jedoch nicht im Renderziel angezeigt wird, weil auf der Vertexshader-Stufe ein Problem aufgetreten ist (gekennzeichnet durch die Vertexshader-Miniaturansicht):
 
-    ![Ein DrawIndexed-Ereignis und deren Auswirkung auf die Pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
+    ![Ein DrawIndexed-Ereignis und seine Auswirkungen auf die Pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
 
    Nachdem Sie sich davon überzeugt haben, dass die App einen Draw-Aufruf für die Geometrie des fehlenden Objekts ausgeführt hat und dass das Problem auf der Vertexshader-Stufe aufgetreten ist, können Sie den HLSL-Debugger dazu verwenden, den Vertexshader zu überprüfen und festzustellen, was mit der Objektgeometrie geschehen ist. Mit dem HLSL-Debugger können Sie den Zustand von HLSL-Variablen während der Ausführung feststellen, den HLSL-Code schrittweise durchlaufen sowie Haltepunkte festlegen, um sich die Problemdiagnose zu erleichtern.
 
@@ -77,19 +77,19 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 3. Bei der ersten Änderung von `output` werden Werte in den Member `worldPos` geschrieben.
 
-    ![Der Wert von „output.worldPos“ erscheint angemessen](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
+    ![Der Wert von „output.worldPos“ erscheint angemessen.](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
 
     Da diese Werte sinnvoll aussehen, durchlaufen Sie den Code weiter bis zur nächsten Zeile, in der `output`geändert wird.
 
 4. Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.
 
-    ![Der Wert von „output.pos“ wurde gelöscht.](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
+    ![Der Wert von „output.pos“ wurde eliminiert.](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
 
     Die Werte des `pos` -Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.
 
 5. Sie stellen fest, dass `output.pos` seine Werte aus einer Variablen namens `temp`erhält. Der vorhergehenden Zeile entnehmen Sie, dass der Wert von `temp` das Ergebnis der Multiplikation seines vorherigen Werts mit der Konstante `projection`ist. Sie vermuten, dass der verdächtige Wert von `temp`das Ergebnis dieser Multiplikation ist. Wenn Sie den Mauszeiger auf `projection`setzen, sehen Sie, dass auch der Wert dieser Konstanten nur aus Nullen besteht.
 
-    ![Die Projektionsmatrix enthält eine ungültige Transformation](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6")
+    ![Die Projektionsmatrix enthält eine ungültige Transformation.](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6")
 
     In diesem Fall ergibt die Prüfung, dass der verdächtige Wert von `temp`höchstwahrscheinlich aus der Multiplikation mit `projection`resultiert, denn `projection` ist eine Konstante, die eine Projektionsmatrix darstellen soll, weshalb Sie wissen, dass die Konstante nicht nur Nullen enthalten darf.
 
@@ -116,12 +116,12 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
    Nachdem Sie die Zeile gefunden haben, in der `m_marbleConstantBufferData.projection` festgelegt wird, können Sie den umgebenden Quellcode überprüfen, um den Ursprung des falschen Werts zu bestimmen. In diesem Fall ermitteln Sie, dass der Wert von `m_marbleConstantBufferData.projection` auf eine lokale Variable namens `projection` festgelegt wird, bevor diese mit einem Wert initialisiert wurde, der durch den Code `m_camera->GetProjection(&projection);` in der nächsten Zeile angegeben ist.
 
-   ![Die marmorprojektion wird vor der Initialisierung festgelegt](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
+   ![Die Marmorprojektion wird vor der Initialisierung festgelegt.](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
 
    Um das Problem zu beheben, verschieben Sie die Codezeile, in der der Wert von `m_marbleConstantBufferData.projection` festgelegt wird, hinter die Zeile, in der der Wert der lokalen Variablen `projection`initialisiert wird.
 
-   ![Der korrigierte C++&#43; &#43; Quellcode](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
+   ![Der korrigierte Quellcode in C&#43;&#43;](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
 
    Nachdem Sie den Code korrigiert haben, können Sie die App erneut erstellen und ausführen, um nun festzustellen, dass das Renderproblem behoben wurde:
 
-   ![Das Objekt wird jetzt angezeigt. ](media/gfx_diag_demo_missing_object_shader_resolution.png "Gfx_diag_demo_missing_object_shader_resolution")
+   ![Das Objekt wird jetzt angezeigt.](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")

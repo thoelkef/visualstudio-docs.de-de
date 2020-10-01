@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284801"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739966"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -68,6 +68,8 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 - Service Hub-Protokolle und MEF-Fehlerprotokolle, sofern vorhanden
 
 - Python-Protokolle, sofern vorhanden
+
+- Razor-LSP-Editor-Protokolle, sofern vorhanden
 
 - Windows Forms-Protokolle, sofern vorhanden
 
