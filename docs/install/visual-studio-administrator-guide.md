@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425406"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352269"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -52,9 +52,9 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
   Für Computer, die nicht mit dem Internet verbunden sind, ist das Erstellen eines minimalen Layouts die einfachste und schnellste Möglichkeit, Ihre Offlineinstanzen in Visual Studio zu aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](update-minimal-layout.md).
 
-* Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019) Ihr Unternehmen benötigt
+* Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019&preserve-view=true) Ihr Unternehmen benötigt
 
-* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht)
+* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht)
 
 * Entscheiden, ob Sie die Gruppenrichtlinie aktivieren und Visual Studio konfigurieren möchten, um Kundenfeedback auf einzelnen Computern zu deaktivieren
 
@@ -78,9 +78,9 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
   Für Computer, die nicht mit dem Internet verbunden sind, ist das Erstellen eines minimalen Layouts die einfachste und schnellste Möglichkeit, Ihre Offlineinstanzen in Visual Studio zu aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](update-minimal-layout.md).
 
-* Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2017) Ihr Unternehmen benötigt
+* Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2017&preserve-view=true) Ihr Unternehmen benötigt
 
-* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2017) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht)
+* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht)
 
 * Entscheiden, ob Sie die Gruppenrichtlinie aktivieren und Visual Studio konfigurieren möchten, um Kundenfeedback auf einzelnen Computern zu deaktivieren
 
@@ -90,22 +90,22 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Schritt 1: Herunterladen von Visual Studio-Produktdateien
 
-* [Wählen Sie die Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019) aus, die Sie installieren möchten.
+* [Wählen Sie die Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019&preserve-view=true) aus, die Sie installieren möchten.
 
-* [Erstellen Sie eine Netzwerkfreigabe für die Visual Studio-Produktdateien](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+* [Erstellen Sie eine Netzwerkfreigabe für die Visual Studio-Produktdateien](create-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Schritt 2: Erstellen eines Installationsskripts
 
-* Erstellen Sie ein Installationsskript, das [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) zum Steuern der Installation verwendet.
+* Erstellen Sie ein Installationsskript, das [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) zum Steuern der Installation verwendet.
 
   >[!NOTE]
-  > Sie können Skripts vereinfachen, indem Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019) verwenden. Erstellen Sie eine Antwortdatei, die Ihre Standardinstallationsoption enthält.
+  > Sie können Skripts vereinfachen, indem Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) verwenden. Erstellen Sie eine Antwortdatei, die Ihre Standardinstallationsoption enthält.
 
-* (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
+* (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019&preserve-view=true) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
 
-* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2019&preserve-view=true).
 
-* (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2019) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019).
+* (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2019&preserve-view=true) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true).
 
 * (Optional) Legen Sie die Gruppenrichtlinie fest. Sie können auch [Visual Studio konfigurieren, um Kundenfeedback auf einzelnen Computern zu deaktivieren](../ide/visual-studio-experience-improvement-program.md).
 
@@ -115,13 +115,13 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 ## <a name="step-4---deploy-updates"></a>Schritt 4: Bereitstellen von Updates
 
-* [Aktualisieren Sie den Netzwerkspeicherort mit den neuesten Updates](update-a-network-installation-of-visual-studio.md?view=vs-2019) für Visual Studio durch regelmäßiges Ausführen des Befehls, den Sie in Schritt 1 verwendet haben, um aktualisierte Komponenten hinzuzufügen.
+* [Aktualisieren Sie den Netzwerkspeicherort mit den neuesten Updates](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true) für Visual Studio durch regelmäßiges Ausführen des Befehls, den Sie in Schritt 1 verwendet haben, um aktualisierte Komponenten hinzuzufügen.
 
-  Sie können Visual Studio mit einem Updateskript aktualisieren. Verwenden Sie hierzu den Befehlszeilenparameter „[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)“.
+  Sie können Visual Studio mit einem Updateskript aktualisieren. Verwenden Sie hierzu den Befehlszeilenparameter „[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true)“.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Schritt 5: (Optional) Verwenden von Visual Studio-Tools
 
-Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2019) können:
+Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true) können:
 
 ## <a name="advanced-configuration"></a>Erweiterte Konfiguration
 
@@ -129,7 +129,7 @@ Standardmäßig ist bei der Installation von Visual Studio die Einbeziehung von 
 
 **„PutCustomTypeInBingSearch“ DWORD 0**
 
-Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
@@ -137,22 +137,22 @@ Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verz
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Schritt 1: Herunterladen von Visual Studio-Produktdateien
 
-* [Wählen Sie die Workloads und Komponenten](workload-and-component-ids.md?view=vs-2017) aus, die Sie installieren möchten.
+* [Wählen Sie die Workloads und Komponenten](workload-and-component-ids.md?view=vs-2017&preserve-view=true) aus, die Sie installieren möchten.
 
-* [Erstellen Sie eine Netzwerkfreigabe für die Visual Studio-Produktdateien](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+* [Erstellen Sie eine Netzwerkfreigabe für die Visual Studio-Produktdateien](create-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Schritt 2: Erstellen eines Installationsskripts
 
-* Erstellen Sie ein Installationsskript, das [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) zum Steuern der Installation verwendet.
+* Erstellen Sie ein Installationsskript, das [Befehlszeilenparameter](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) zum Steuern der Installation verwendet.
 
   >[!NOTE]
-  > Sie können Skripts vereinfachen, indem Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2017) verwenden. Erstellen Sie eine Antwortdatei, die Ihre Standardinstallationsoption enthält.
+  > Sie können Skripts vereinfachen, indem Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true) verwenden. Erstellen Sie eine Antwortdatei, die Ihre Standardinstallationsoption enthält.
 
-* (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
+* (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017&preserve-view=true) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
 
-* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2017&preserve-view=true).
 
-* (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2017) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019).
+* (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true).
 
 * (Optional) Legen Sie die Gruppenrichtlinie fest. Sie können auch [Visual Studio konfigurieren, um Kundenfeedback auf einzelnen Computern zu deaktivieren](../ide/visual-studio-experience-improvement-program.md).
 
@@ -162,13 +162,13 @@ Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verz
 
 ## <a name="step-4---deploy-updates"></a>Schritt 4: Bereitstellen von Updates
 
-* [Aktualisieren Sie den Netzwerkspeicherort mit den neuesten Updates](update-a-network-installation-of-visual-studio.md?view=vs-2017) für Visual Studio durch regelmäßiges Ausführen des Befehls, den Sie in Schritt 1 verwendet haben, um aktualisierte Komponenten hinzuzufügen.
+* [Aktualisieren Sie den Netzwerkspeicherort mit den neuesten Updates](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true) für Visual Studio durch regelmäßiges Ausführen des Befehls, den Sie in Schritt 1 verwendet haben, um aktualisierte Komponenten hinzuzufügen.
 
-  Sie können Visual Studio mit einem Updateskript aktualisieren. Verwenden Sie hierzu den Befehlszeilenparameter „[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)“.
+  Sie können Visual Studio mit einem Updateskript aktualisieren. Verwenden Sie hierzu den Befehlszeilenparameter „[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true)“.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Schritt 5: (Optional) Verwenden von Visual Studio-Tools
 
-Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2017) können:
+Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true) können:
 
 ## <a name="advanced-configuration"></a>Erweiterte Konfiguration
 
@@ -176,7 +176,7 @@ Standardmäßig ist bei der Installation von Visual Studio die Einbeziehung von 
 
 **„PutCustomTypeInBingSearch“ DWORD 0**
 
-Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
+Die Registrierung befindet sich in Ihrer privaten Registrierungsstruktur im Verzeichnis *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\*. Anweisungen zum Öffnen der Registrierungsstruktur finden Sie unter [Bearbeiten der Registrierung einer Visual Studio-Instanz](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
