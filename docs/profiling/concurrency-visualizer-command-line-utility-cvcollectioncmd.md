@@ -1,5 +1,6 @@
 ---
-title: Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd) | Microsoft-Dokumentation
+title: Befehlszeilenprogramm für die Parallelitätsschnellansicht
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911207"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808902"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 Sie können das Befehlszeilenprogramm für die Parallelitätsschnellansicht (*CVCollectionCmd.exe*) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in der Parallelitätsschnellansicht für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.

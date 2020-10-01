@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649628"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739888"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -116,7 +116,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>Verbesserte IntelliSense-Funktion
 
-JavaScript IntelliSense zeigt nun in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] deutlich mehr Informationen zu Parametern und Memberlisten an. Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen. Weitere Informationen zu Neuerungen und zur Funktionsweise von IntelliSense finden Sie [hier](/visualstudio/ide/javascript-intellisense/).
+JavaScript IntelliSense zeigt nun in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] deutlich mehr Informationen zu Parametern und Memberlisten an. Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen. Weitere Informationen zu Neuerungen und zur Funktionsweise von IntelliSense finden Sie [hier](../ide/javascript-intellisense.md).
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> Support für JSX-Syntax
 
@@ -241,7 +241,7 @@ Zu den wichtigsten Änderungen zählen das Ersetzen von VSDoc mit JSDoc, das Ent
 
 Bisher war es schwierig nachzuvollziehen, welche Dateien zu einem bestimmten Zeitpunkt im IntelliSense-Bereich waren. In einigen Fällen war es wünschenswert, dass sich alle Dateien im Bereich befinden; in anderen Fällen hingegen nicht. Hierdurch waren komplexe Konfigurationen wie die manuelle Verweisverwaltung erforderlich. In der neuen Version von Visual Studio müssen Sie sich keine Gedanken mehr um die Verweisverwaltung machen. Sie benötigen nun nicht mehr Kommentare mit drei Schrägstrichen oder `_references.js`-Dateien.
 
-Auf der Seite [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) finden Sie weitere Informationen zur Funktionsweise von IntelliSense.
+Auf der Seite [JavaScript IntelliSense](../ide/javascript-intellisense.md) finden Sie weitere Informationen zur Funktionsweise von IntelliSense.
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +250,7 @@ VSDoc wird nun nicht mehr unterstützt. Stattdessen kommt die Auszeichnungssprac
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js`-Erweiterungen
 
-Bisher konnten Sie [IntelliSense-Erweiterungen](https://msdn.microsoft.com/library/hh874692.aspx) erstellen, mit denen Sie benutzerdefinierte Vervollständigungsergebnisse für Bibliotheken von Drittanbietern hinzufügen konnten.
+Bisher konnten Sie [IntelliSense-Erweiterungen](../vs-2015/ide/extending-javascript-intellisense.md) erstellen, mit denen Sie benutzerdefinierte Vervollständigungsergebnisse für Bibliotheken von Drittanbietern hinzufügen konnten.
 Die Entwicklung dieser Erweiterungen war aber eher umständlich. Außerdem war die Installation und die Erstellung von Verweisen mühsam, weswegen der neue Sprachdienst diese Dateien nicht mehr unterstützt.
 Eine einfachere Alternative ist die Erstellung einer TypeScript-Definitionsdatei, mit der Sie von den gleichen Vorteilen von IntelliSense profitieren, die Sie von den vorherigen `.intellisense.js`-Erweiterungen kennen.
 Weitere Informationen zur Erstellung von `.d.ts`-Deklarationsdateien [ finden Sie hier](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

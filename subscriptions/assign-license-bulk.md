@@ -1,23 +1,23 @@
 ---
 title: Zuweisen von Lizenzen zu Benutzergruppen für Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249620"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022415"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
 
-Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinzufügen verwenden. Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie hierzu alternativ Azure AD-Gruppen verwenden. In diesem Artikel wird das Vorgehen für beide Optionen beschrieben. 
+Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinzufügen verwenden. Wenn Ihre Organisation Microsoft Azure Active Directory (Azure AD) verwendet, können Sie hierzu alternativ Azure AD-Gruppen verwenden. In diesem Artikel wird das Vorgehen für beide Optionen beschrieben.  Sehen Sie sich dieses Video an, oder lesen Sie weiter, um mehr über das Feature zum Hinzufügen im Massenvorgang zu erfahren. 
 
 <br>
 
@@ -64,7 +64,8 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 
    Befolgen Sie diese Schritte, wenn ein Fehler auftritt:
    1. Öffnen Sie die erstellte Excel-Datei, beheben Sie die Probleme, und speichern Sie die Datei.
-   0. Kehren Sie zum Verwaltungsportal zurück, und klicken Sie auf **Hinzufügen**.
+   0. Kehren Sie zum Verwaltungsportal zurück, und schließen Sie die Fehlermeldung.
+   0. Wählen Sie **Hinzufügen** aus.
    0. Klicken Sie auf **Massenhinzufügen**.
    0. Da Sie die Excel-Datei bereits gespeichert haben, müssen Sie die Vorlage nicht herunterladen.  Wählen Sie **Durchsuchen** aus, suchen Sie nach der gerade gespeicherten Datei, und wählen Sie dann **Öffnen** aus.
    0. Klicken Sie auf **OK**.
@@ -81,7 +82,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > [!IMPORTANT]
 >
 > Für die Verwendung von Azure AD-Gruppen zum Hinzufügen von Abonnements gelten die folgenden Einschränkungen:
-> - Der Administrator muss Mitglied des AAD-Mandanten sein, wenn dem Verwaltungsportal zunächst eine Gruppe hinzugefügt wird.  Nachdem die Gruppe hinzugefügt wurde, ist für Änderungen an der Mitgliedschaft der Gruppen kein Administratoreingriff erforderlich. 
+> - Der Administrator muss Mitglied des AAD-Mandanten sein, wenn dem Verwaltungsportal zum ersten Mal eine Gruppe hinzugefügt wird.  Nachdem die Gruppe hinzugefügt wurde, ist für Änderungen an der Mitgliedschaft der Gruppen kein Administratoreingriff erforderlich. 
 > - Gruppen müssen mindestens ein Mitglied enthalten.  Leere Gruppen werden nicht unterstützt.
 > - Gruppen müssen weniger als 1.000 Benutzer enthalten. 
 > - Alle Benutzer müssen auf oberster Ebene der Gruppe enthalten sein.  Geschachtelte Gruppen werden nicht unterstützt.
@@ -89,6 +90,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > - Alle Mitglieder der Gruppe müssen über eine E-Mail-Adresse verfügen, die mit ihrem Azure AD-Konto verknüpft ist.
 > - Separate E-Mail-Adressen für Benachrichtigungen werden für Abonnements nicht unterstützt, die über Azure AD-Gruppen hinzugefügt wurden.  
 
+Sehen Sie sich dieses Video an, oder lesen Sie weiter, um mehr über das Hinzufügen von Abonnenten mithilfe des Azure Active Directory-Gruppenfeatures zu erfahren. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
@@ -130,10 +132,10 @@ Antwort: Nein. Wenn Sie die Informationen zu einem einzelnen Abonnenten ändern 
 Antwort: Abhängig von der Azure AD-Konfiguration Ihrer Organisation kann es bis zu 24 Stunden dauern, bis der Benutzer hinzugefügt wird. Falls seit dem Hinzufügen mehr als 24 Stunden vergangen sind, [wenden Sie sich an den Support](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
-- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentation zu Visual Studio](/visualstudio/)
+- [Dokumentation zu Azure DevOps](/azure/devops/)
+- [Azure-Dokumentation](/azure/)
+- [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Müssen Sie nur ein oder zwei Abonnenten hinzufügen?  Informationen dazu finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).

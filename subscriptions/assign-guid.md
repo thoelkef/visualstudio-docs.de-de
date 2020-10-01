@@ -1,21 +1,23 @@
 ---
 title: Zuweisen spezifischer GUIDs zu Visual Studio-Abonnenten | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Abonnenten spezifische Abonnement-GUIDs zuweisen können.
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235185"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022479"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen spezifischer Abonnements im Portal für die Verwaltung von Visual Studio-Abonnements
 
 Administratoren können über das Verwaltungsportal für Visual Studio-Abonnements ab sofort einzelnen Abonnenten spezifische Abonnements zuweisen.  Dies kann in Situationen sinnvoll sein, in denen Organisationen über temporäre Mitarbeiter oder Lieferanten verfügen, die für einen kurzen Zeitraum auf ein Abonnement zugreifen müssen.  Administratoren können ein Abonnement zuweisen, das bereits teilweise verwendet wurde, sodass sich die Nutzungsdauer neuer Abonnements nicht verringert.  
+
+Sehen Sie sich das Video an, oder lesen Sie den Artikel, um zu erfahren, wie Sie Benutzern bestimmte Abonnement-GUIDs zuweisen. 
 
 <br>
 
@@ -57,7 +59,7 @@ Im letzten Schritt laden Sie die Vorlage zum **Massenhinzufügen** herunter, tra
 > - Die GUID wurde noch keinem anderen Benutzer in der exportieren Liste zugewiesen. 
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Frage: Wie kann ich ändern, welches Abonnement einem einzelnen Benutzer aktuell zugewiesen ist?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Frage: Wie kann ich ändern, welches Abonnement einem einzelnen Benutzer aktuell zugewiesen ist?
 Antwort: Wenn Sie die GUID ändern möchten, die einem Benutzer zugewiesen ist, müssen Sie zunächst das Abonnement für diesen Benutzer löschen.  Weitere Informationen finden Sie unter [Löschen von Abonnements](delete-license.md).  Nachdem das Abonnement für den Benutzer gelöscht wurde, führen Sie die oben beschriebenen Schritte zum Exportieren der Liste und Hochladen der neuen Abonnementinformationen aus.  
 
 ## <a name="see-also"></a>Siehe auch

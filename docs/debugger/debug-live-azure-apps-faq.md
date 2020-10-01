@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911405"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851098"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Häufig gestellte Fragen zum Debuggen von Momentaufnahmen in Visual Studio
 
@@ -103,7 +103,7 @@ Entfernen Sie für virtuelle Computer bzw. VM-Skalierungsgruppen wie folgt die E
 
 2. Entfernen von Zertifikaten und Azure Key Vault
 
-   Beim Installieren der Erweiterung „Remotedebugger“ für virtuelle Computer oder VM-Skalierungsgruppen werden sowohl Client- als auch Serverzertifikate erstellt, um den VS-Client für die Ressourcen der Azure-VM bzw. der VM-Skalierungsgruppe authentifizieren zu können.
+   Beim Installieren der Erweiterung „Remotedebugger“ für virtuelle Computer oder VM-Skalierungsgruppen werden sowohl Client- als auch Serverzertifikate erstellt, um den Visual Studio-Client für die Ressourcen der Azure-VM bzw. der VM-Skalierungsgruppe authentifizieren zu können.
 
    - Clientzertifikat
 
@@ -124,7 +124,7 @@ Entfernen Sie für virtuelle Computer bzw. VM-Skalierungsgruppen wie folgt die E
       ```
 
    - Serverzertifikat
-      - Der entsprechende Fingerabdruck des Serverzertifikats wird als Geheimnis in Azure Key Vault bereitgestellt. VS versucht, einen Schlüsseltresor mit dem Präfix „MSVSAZ*“ in der Region zu finden oder zu erstellen, in der sich die Ressource des virtuellen Computers oder der VM-Skalierungsgruppe befindet. Für alle Ressourcen des virtuellen Computers oder der VM-Skalierungsgruppe, die in dieser Region bereitgestellt wurden, wird daher derselbe Schlüsseltresor genutzt.
+      - Der entsprechende Fingerabdruck des Serverzertifikats wird als Geheimnis in Azure Key Vault bereitgestellt. Visual Studio versucht, einen Schlüsseltresor mit dem Präfix MSVSAZ* in der Region zu finden oder zu erstellen, in der sich die Ressource des virtuellen Computers oder der VM-Skalierungsgruppe befindet. Für alle Ressourcen des virtuellen Computers oder der VM-Skalierungsgruppe, die in dieser Region bereitgestellt wurden, wird daher derselbe Schlüsseltresor genutzt.
       - Navigieren Sie zum Löschen des Geheimnisses für den Serverzertifikat-Fingerabdruck zum Azure-Portal, und suchen Sie nach dem Schlüsseltresor mit „MSVSAZ*“ in derselben Region, in der Ihre Ressource gehostet wird. Löschen Sie das Geheimnis (es sollte die Bezeichnung `remotedebugcert<<ResourceName>>` haben).
       - Sie müssen auch das Servergeheimnis per PowerShell aus Ihrer Ressource löschen.
 
