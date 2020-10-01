@@ -524,15 +524,7 @@
             - name: C++-Formatierungskonventionen für EditorConfig
               href: ide/cpp-editorconfig-properties.md
             - name: .NET-Codekonventionen
-              items:
-                - name: Übersicht
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Sprachkonventionen
-                  href: ide/editorconfig-language-conventions.md
-                - name: Formatierungskonventionen
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Namenskonventionen
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Anpassen der Scrollleiste
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Festlegen von Textmarken im Code
