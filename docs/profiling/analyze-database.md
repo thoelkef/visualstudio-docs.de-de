@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037529"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352315"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analysieren der Datenbankleistung mit dem Tool „Datenbank“
 
@@ -50,7 +50,7 @@ Wenn Sie eine Abfrage gefunden haben, die Sie untersuchen möchten, klicken Sie 
 
 ![Ausgewählte Option „Zur Quelldatei wechseln“](./media/db-gotosource.png "Ausgewählte Option „Zur Quelldatei wechseln“")
 
-Wenn Sie in einem Diagramm einen Zeitbereich auswählen, zeigt die Abfragetabelle nur Abfragen an, die in diesem Zeitbereich erfolgt sind. Dieses Verhalten ist besonders nützlich, wenn Sie auch das [Tool „CPU-Auslastung“](./cpu-usage.md?view=vs-2019) ausführen.
+Wenn Sie in einem Diagramm einen Zeitbereich auswählen, zeigt die Abfragetabelle nur Abfragen an, die in diesem Zeitbereich erfolgt sind. Dieses Verhalten ist besonders nützlich, wenn Sie auch das [Tool „CPU-Auslastung“](./cpu-usage.md?view=vs-2019&preserve-view=true) ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 
