@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506466"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659204"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppieren von Code Analyse Regeln
 
@@ -24,7 +24,7 @@ Wenn Sie die Code Analyse in Visual Studio konfigurieren, können Sie aus einer 
 
 Sie können einen Regelsatz anpassen, indem Sie Regeln hinzufügen oder löschen oder Regel Schweregrade ändern, damit Sie im **Fehlerliste**als Warnungen oder Fehler angezeigt werden. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, stellt der Regelsatz-Editor Such-und Filter Tools bereit, die Sie bei diesem Prozess unterstützen.
 
-Regelsätze sind für die [Analyse von verwaltetem Code](analyzer-rule-sets.md), die [Legacy Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md)und die [C++-Code Analyse](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)verfügbar.
+Regelsätze sind für die [Analyse von verwaltetem Code](/dotnet/fundamentals/code-analysis/code-quality-rule-options), die [Legacy Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md)und die [C++-Code Analyse](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)verfügbar.
 
 ## <a name="rule-set-format"></a>Regelsatz Format
 

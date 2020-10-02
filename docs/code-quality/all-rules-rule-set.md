@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d791ec2d75ff070672714626698e162a6c57f355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c8004c57b949c7df9d7250567222dbc1352b2d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506369"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659152"
 ---
 # <a name="all-rules-rule-set"></a>Regelsatz für alle Regeln
 
@@ -20,4 +20,4 @@ Der Regelsatz alle Regeln enthält alle Regeln für nativen und verwalteten Code
 
 - [Code Analyse für C/C++-Warnungen](/cpp/code-quality/code-analysis-for-c-cpp-warnings)
 
-- [Warnungen bei der Analyse von verwaltetem Code](../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Warnungen bei der Analyse von verwaltetem Code](/dotnet/fundamentals/code-analysis/quality-rules/index)

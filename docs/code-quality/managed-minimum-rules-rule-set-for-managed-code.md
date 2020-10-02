@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b464172d541277de5fbac6d8ab035578b6154
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587354"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658502"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete Mindestregeln für verwalteten Code
 
@@ -21,7 +21,7 @@ Die verwalteten minimal Regeln konzentrieren sich auf die kritischsten Probleme 
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
-|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
-|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231.md)|Gleichheits Operator beim Überschreiben `ValueType.Equals`|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Leere Finalizer entfernen.|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Verwerfbare Felder verwerfen.|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Gleichheits Operator beim Überschreiben `ValueType.Equals`|

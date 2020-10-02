@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 0c3b899ec8e19160d9ee4a307a86c576d217004c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509860"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658541"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Regelsatz für Globalisierungsregeln für verwalteten Code
 
@@ -21,11 +21,11 @@ Verwenden Sie den Regelsatz Microsoft-Globalisierungsregeln, um sich auf Problem
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1303](../code-quality/ca1303.md)|Literale nicht als lokalisierte Parameter übergeben.|
-|[CA1304](../code-quality/ca1304.md)|CultureInfo angeben.|
-|[CA1305](../code-quality/ca1305.md)|IFormatProvider angeben.|
-|[CA1307](../code-quality/ca1307.md)|StringComparison zur Übersichtlichkeit angeben|
-|[CA1308](../code-quality/ca1308.md)|Zeichenfolgen in Großbuchstaben normalisieren.|
-|[CA1309](../code-quality/ca1309.md)|Ordinal-StringComparison verwenden.|
-|[CA1310](../code-quality/ca1310.md)|StringComparison für Richtigkeit angeben|
-|[CA2101](../code-quality/ca2101.md)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|
+|[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303)|Literale nicht als lokalisierte Parameter übergeben.|
+|[CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304)|CultureInfo angeben.|
+|[CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305)|IFormatProvider angeben.|
+|[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307)|StringComparison zur Übersichtlichkeit angeben|
+|[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308)|Zeichenfolgen in Großbuchstaben normalisieren.|
+|[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309)|Ordinal-StringComparison verwenden.|
+|[CA1310](/dotnet/fundamentals/code-analysis/quality-rules/ca1310)|StringComparison für Richtigkeit angeben|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|
