@@ -10,13 +10,43 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
+  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "89599607"
+  ms.lasthandoff: 09/30/2020
+  ms.locfileid: "91604611"
 landingContent:
+- title: .NET-Codeanalyse
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analysieren von .NET-Code
+      url: roslyn-analyzers-overview.md
+    - text: Analyse der .NET-Codequalität
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: Analyse des .NET-Codeformats
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
+  - linkListType: concept
+    links:
+    - text: Häufig gestellte Fragen
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurieren der Codeanalyse
+      url: use-roslyn-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Regeln für .NET-Codequalität
+      url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
+    - text: Codeformatregeln für .NET
+      url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
+- title: Messen der Komplexität von Code
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Codemetrik
+      url: code-metrics-values.md
 - title: Analysieren von C- und C++-Code
   linkLists:
   - linkListType: overview
@@ -27,35 +57,3 @@ landingContent:
     links:
     - text: C++-Codeanalysewarnungen
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
-- title: Analyse der .NET-Codequalität
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Quellanalyse
-      url: roslyn-analyzers-overview.md
-    - text: Legacyanalyse
-      url: static-code-analysis-for-managed-code-overview.md
-  - linkListType: concept
-    links:
-    - text: FAQ
-      url: analyzers-faq.md
-  - linkListType: how-to-guide
-    links:
-    - text: Konfigurieren der Codequalitätsanalyse
-      url: install-fxcop-analyzers.md
-  - linkListType: reference
-    links:
-    - text: Regeln für .NET-Codequalität
-      url: code-analysis-for-managed-code-warnings.md
-- title: Analyse des .NET-Codeformats
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Konfigurieren der Codeformatanalyse
-      url: ../ide/create-portable-custom-editor-options.md
-- title: Messen der Komplexität von Code
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Codemetrik
-      url: code-metrics-values.md
