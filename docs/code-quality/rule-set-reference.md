@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587237"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658424"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 
 Wenn Sie die Legacy-Analyse für Projekte mit verwaltetem Code in Visual Studio konfigurieren, können Sie aus einer Liste integrierter *Regelsätze*auswählen. Einige Regeln sind in mehr als einem der integrierten Regelsätze enthalten, z. b. enthält der Regelsatz "grundlegende Regeln für Richtigkeit" Regeln, die im Regelsatz für verwaltete Empfohlene Regeln enthalten sind.
 
 > [!NOTE]
-> Die Regelsätze in diesem Abschnitt beziehen sich auf die Legacy-Analyse. Weitere Informationen zu Regelsätzen, die für Code Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Code Analyse](analyzer-rule-sets.md)Modulen.
+> Die Regelsätze in diesem Abschnitt beziehen sich auf die Legacy-Analyse. Weitere Informationen zu Regelsätzen, die für Code Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Code Analyse](/dotnet/fundamentals/code-analysis/code-quality-rule-options)Modulen.
 
 Sie können entweder einen dieser integrierten Regelsätze verwenden, oder Sie können [einen Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre Projektanforderungen anpassen. Wenn Sie mehrere Regelsätze einschließen, die dieselbe Regel in einem benutzerdefinierten Regelsatz enthalten, wird diese Regel nur einmal im benutzerdefinierten Regelsatz angezeigt.
 

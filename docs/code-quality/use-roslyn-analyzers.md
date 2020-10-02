@@ -11,14 +11,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560748"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659217"
 ---
-# <a name="overview"></a>Überblick
+# <a name="overview"></a>Übersicht
 
 Jede Roslyn Analyzer- *Diagnose* oder Regel weist einen Standard Schweregrad und Unterdrückungs Zustand auf, der überschrieben und für Ihr Projekt angepasst werden kann. In diesem Artikel werden das Festlegen von Schweregraden und das Unterdrücken von Analyzer-Verstößen behandelt
 
@@ -38,18 +38,18 @@ Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose*konfigurieren
 
 In der folgenden Tabelle werden die verschiedenen Optionen für den Schweregrad angezeigt:
 
-| Schweregrad (Projektmappen-Explorer) | Schweregrad (Editor config-Datei) | Build-Zeitverhalten | Editor-Verhalten |
+| Schweregrad (Projektmappen-Explorer) | Schweregrad (EditorConfig-Datei) | Verhalten zur Buildzeit | Editor-Verhalten |
 |-|-|-|
-| Fehler | `error` | Verstöße werden im Fehlerliste und in der Befehlszeilen-Buildausgabe als *Fehler* angezeigt und bewirken, dass Builds fehlschlagen.| Das verletzen von Code wird mit einer roten Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines rotes Feld markiert. |
-| Warnung | `warning` | Verstöße werden im Fehlerliste und in der Befehlszeilen-Buildausgabe als *Warnungen* angezeigt, bewirken jedoch nicht, dass Builds fehlschlagen. | Das verletzen von Code wird mit einer grünen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines grünes Feld markiert. |
-| Info | `suggestion` | Verstöße werden im Fehlerliste als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt. | Das verletzen von Code wird mit einer grauen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert. |
+| Fehler | `error` | Verstöße werden als *Fehler* in der Fehlerliste und in der Befehlszeilen-Buildausgabe angezeigt und bewirken, dass Builds fehlschlagen.| Der betreffende Code wird mit einer roten Wellenlinie unterstrichen und in der Scrollleiste durch ein kleines rotes Feld markiert. |
+| Warnung | `warning` | Verstöße werden als *Warnungen* in der Fehlerliste und in der Befehlszeilen-Buildausgabe angezeigt, bewirken aber nicht, dass Builds fehlschlagen. | Der betreffende Code wird mit einer grünen Wellenlinie unterstrichen und in der Scrollleiste durch ein kleines grünes Feld markiert. |
+| Info | `suggestion` | Verstöße werden als *Meldungen* in der Fehlerliste angezeigt, in der Befehlszeilen-Buildausgabe hingegen gar nicht. | Der betreffende Code wird mit einer grauen Wellenlinie unterstrichen und in der Scrollleiste durch ein kleines graues Feld markiert. |
 | Ausgeblendet | `silent` | Für den Benutzer nicht sichtbar. | Für den Benutzer nicht sichtbar. Die Diagnose wird jedoch der IDE-Diagnose-Engine gemeldet. |
 | Keine | `none` | Vollständig unterdrückt. | Vollständig unterdrückt. |
-| Standard | `default` | Entspricht dem Standard Schweregrad der Regel. Um den Standardwert für eine Regel zu ermitteln, suchen Sie in der Eigenschaftenfenster. | Entspricht dem Standard Schweregrad der Regel. |
+| Standard | `default` | Entspricht dem Standardschweregrad der Regel. Um den Standardwert für eine Regel zu ermitteln, ziehen Sie in der Eigenschaftenfenster zu Rate. | Entspricht dem Standardschweregrad der Regel. |
 
 Wenn ein Analysetool Regelverstöße findet, werden sie im Code-Editor (als *Wellenlinie* unter dem fehlerhaften Code) und im Fenster „Fehlerliste“ angezeigt.
 
-Die in der Fehlerliste gemeldeten Analyzer-Verstöße stimmen mit der Einstellung für den [Schweregrad](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) der Regel ab. Analyse Verstöße werden auch im Code-Editor als Wellenlinien unter dem fehlerhaften Code angezeigt. In der folgenden Abbildung werden drei Verstöße mit &mdash; einem Fehler (rote Wellenlinie), eine Warnung (grüne Wellenlinie) und ein Vorschlag (drei graue Punkte) angezeigt:
+Die in der Fehlerliste gemeldeten vom Analysetool gefundenen Verstöße stimmen mit der [Einstellung für den Schweregrad der Regel](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) überein. Außerdem werden vom Analysetool gemeldete Verstöße auch im Code-Editor als Wellenlinie unter dem fehlerhaften Code angezeigt. In der folgenden Abbildung werden drei Verstöße angezeigt &mdash; ein Fehler (rote Wellenlinie), eine Warnung (grüne Wellenlinie) und ein Vorschlag (drei graue Punkte):
 
 ![Wellenlinien im Code-Editor in Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -57,7 +57,7 @@ Der folgende Screenshot zeigt dieselben drei Verstöße, wie Sie im Fehlerliste 
 
 ![Fehler-, Warn-und Informations Verstoß in Fehlerliste](media/diagnostics-severities-in-error-list.png)
 
-Viele Analyzer-Regeln oder *Diagnosen*verfügen über eine oder mehrere zugeordnete *Code Korrekturen* , die Sie anwenden können, um die Regelverletzung zu korrigieren. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
+Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Codefix*, den Sie zur Korrektur von Regelverstößen anwenden können. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
 
 ![Verstoß im Analysetool und Codefix mithilfe einer schnellen Aktion](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -102,7 +102,7 @@ Wenn Sie über mehrere Einträge verfügen, die auf eine bestimmte Regel-ID anwe
 - Der Schweregrad Eintrag für eine einzelne Regel nach ID hat Vorrang vor dem Schweregrad für eine Kategorie.
 - Der Schweregrad Eintrag für eine Kategorie hat Vorrang vor dem Schweregrad für alle Analyse Regeln.
 
-Sehen Sie sich das folgende Editor config-Beispiel an, wobei [CA1822](./ca1822.md) die Kategorie "Performance" hat:
+Sehen Sie sich das folgende Editor config-Beispiel an, wobei [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) die Kategorie "Performance" hat:
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwen
 
 1. Wenn Sie nicht bereits über eine Editor config-Datei für Ihr Projekt verfügen, [fügen Sie eine hinzu](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Fügen Sie unter der entsprechenden Dateierweiterung einen Eintrag für jede Regel hinzu, die Sie konfigurieren möchten. Um z. b. den Schweregrad für [CA1822](ca1822.md) auf `error` für c#-Dateien festzulegen, sieht der Eintrag wie folgt aus:
+2. Fügen Sie unter der entsprechenden Dateierweiterung einen Eintrag für jede Regel hinzu, die Sie konfigurieren möchten. Um z. b. den Schweregrad für [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) auf `error` für c#-Dateien festzulegen, sieht der Eintrag wie folgt aus:
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwen
    ```
 
 > [!NOTE]
-> Bei IDE-Code Analysetools können Sie Sie auch in einer editorconfig-Datei mit einer anderen Syntax konfigurieren, z `dotnet_style_qualification_for_field = false:suggestion` . b.. Wenn Sie jedoch einen Schweregrad mithilfe der `dotnet_diagnostic` Syntax festlegen, hat dies Vorrang. Weitere Informationen finden Sie unter [sprach Konventionen für Editor config](../ide/editorconfig-language-conventions.md).
+> Bei IDE-Code Analysetools können Sie Sie auch in einer editorconfig-Datei mit einer anderen Syntax konfigurieren, z `dotnet_style_qualification_for_field = false:suggestion` . b.. Wenn Sie jedoch einen Schweregrad mithilfe der `dotnet_diagnostic` Syntax festlegen, hat dies Vorrang. Weitere Informationen finden Sie unter [sprach Konventionen für Editor config](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Festlegen des schwere Grads der Regel im Glühbirnen Menü
 

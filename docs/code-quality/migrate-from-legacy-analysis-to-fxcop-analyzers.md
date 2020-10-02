@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810206"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658476"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migration von der Legacy Analyse (FxCop) zur Quell Analyse (FxCop-Analyzers)
 
@@ -36,6 +36,6 @@ Weitere Informationen zu den Unterschieden zwischen der Legacy-und der Quell Ana
 
 Weitere Informationen zum Konfigurieren der FxCop-Analyzers finden Sie unter:
 
-- Informationen zum Konfigurieren von FxCop-Analyzern finden Sie unter [Konfigurieren von FxCop-Analysen](../code-quality/configure-fxcop-analyzers.md).
+- Informationen zum Konfigurieren von FxCop-Analyzern finden Sie unter [Konfigurieren von FxCop-Analysen](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
-- Weitere Informationen zum Konfigurieren von Analysemodulen mithilfe von vordefinierten Regeln mit Editor config oder einer Regel Satz Datei finden Sie unter [Aktivieren einer Kategorie von Regeln](../code-quality/analyzer-rule-sets.md).
+- Weitere Informationen zum Konfigurieren von Analysemodulen mithilfe von vordefinierten Regeln mit Editor config oder einer Regel Satz Datei finden Sie unter [Aktivieren einer Kategorie von Regeln](/dotnet/fundamentals/code-analysis/code-quality-rule-options).

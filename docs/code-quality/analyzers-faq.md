@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604599"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659165"
 ---
 # <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
@@ -24,7 +24,7 @@ Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Comp
 
 **F**: sollte ich die Code Analyse oder editorconfig zum Überprüfen des Code Formats verwenden?
 
-**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](../ide/editorconfig-code-style-settings-reference.md) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können verwendet werden, um Analyzer-Regeln zu aktivieren oder zu deaktivieren sowie um nuget Analyzer-Pakete zu konfigurieren.
+**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können verwendet werden, um Analyzer-Regeln zu aktivieren oder zu deaktivieren sowie um nuget Analyzer-Pakete zu konfigurieren.
 
 ## <a name="editorconfig-versus-rule-sets"></a>Editor config im Vergleich zu Regelsätzen
 
@@ -35,7 +35,7 @@ Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Comp
 Editor config-Dateien bieten jedoch weitere Möglichkeiten zum Konfigurieren von Regeln:
 
 - Mit Editor config-Dateien können Sie für die .NET-Code Qualitätsanalysen [definieren, welche Arten von Code analysiert](/dotnet/fundamentals/code-analysis/code-quality-rule-options)werden.
-- Bei den in Visual Studio integrierten .net-codeformatierungsanalyzern können Sie mit Editor config-Dateien [die bevorzugten Code Stile für eine Codebasis definieren](../ide/editorconfig-code-style-settings-reference.md) .
+- Bei den in Visual Studio integrierten .net-codeformatierungsanalyzern können Sie mit Editor config-Dateien [die bevorzugten Code Stile für eine Codebasis definieren](/dotnet/fundamentals/code-analysis/code-style-rule-options) .
 
 Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen durch die Verwendung von Textdateien konfiguriert, die als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für die c#-und VB-Compiler gekennzeichnet sind.
 
@@ -97,4 +97,4 @@ Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über Analyzers](roslyn-analyzers-overview.md)
-- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

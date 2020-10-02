@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893267"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658554"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -51,7 +51,7 @@ Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integriert
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
 > [!NOTE]
-> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da keine **Code Analyse** -Eigenschaften Registerkarte vorhanden ist. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](analyzer-rule-sets.md). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer**öffnen.
+> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da keine **Code Analyse** -Eigenschaften Registerkarte vorhanden ist. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer**öffnen.
 
 ## <a name="create-a-new-rule-set"></a>Erstellen eines neuen Regelsatzes
 
@@ -61,7 +61,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz**aus.
 
-3. Wählen Sie **Open**(Öffnen).
+3. Klicken Sie auf **Öffnen**.
 
    Die neue *RuleSet* -Datei wird im Regelsatz-Editor geöffnet.
 
@@ -145,7 +145,7 @@ Nachdem Sie nun über einen Regelsatz verfügen, besteht der nächste Schritt in
 > [!div class="nextstepaction"]
 > [Ändern von Regeln im Regelsatz-Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)

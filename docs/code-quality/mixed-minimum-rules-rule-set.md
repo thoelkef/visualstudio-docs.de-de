@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599580"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658463"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 
@@ -153,7 +153,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28305](/cpp/code-quality/c28305)|Fehler beim Analysieren eines Token.|
 |[C28350](/cpp/code-quality/c28350)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|
 |[C28351](/cpp/code-quality/c28351)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
-|[CA1001](../code-quality/ca1001.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
-|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
-|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Leere Finalizer entfernen.|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Verwerfbare Felder verwerfen.|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|

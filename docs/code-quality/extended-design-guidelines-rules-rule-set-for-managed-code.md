@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aad09901de2017ae14b65ec6e79f3153557c4d81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8062ef99d3c1ad43b633e896617e95851a40930a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587640"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658593"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 
@@ -25,29 +25,29 @@ In der folgenden Tabelle werden alle Regeln im Regelsatz Regeln für erweiterte 
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
 |[CA1009](../code-quality/ca1009.md)|Ereignishandler korrekt deklarieren.|
-|[CA1016](../code-quality/ca1016.md)|Assemblys mit AssemblyVersionAttribute markieren.|
-|[CA1033](../code-quality/ca1033.md)|Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Assemblys mit AssemblyVersionAttribute markieren.|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.|
 |[CA1049](../code-quality/ca1049.md)|Typen, die native Ressourcen besitzen, müssen gelöscht werden können.|
-|[CA1060](../code-quality/ca1060.md)|P/Invokes in NativeMethods-Klasse verschieben.|
-|[CA1061](../code-quality/ca1061.md)|Basisklassenmethoden nicht ausblenden.|
-|[CA1063](../code-quality/ca1063.md)|IDisposable korrekt implementieren.|
-|[CA1065](../code-quality/ca1065.md)|Keine Ausnahmen an unerwarteten Speicherorten auslösen.|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|P/Invokes in NativeMethods-Klasse verschieben.|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|Basisklassenmethoden nicht ausblenden.|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|IDisposable korrekt implementieren.|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|Keine Ausnahmen an unerwarteten Speicherorten auslösen.|
 |[CA1301](../code-quality/ca1301.md)|Doppelte Zugriffstasten vermeiden.|
 |[CA1400](../code-quality/ca1400.md)|Für P/Invoke müssen Einstiegspunkte vorhanden sein.|
-|[CA1401](../code-quality/ca1401.md)|P/Invokes dürfen nicht sichtbar sein.|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|P/Invokes dürfen nicht sichtbar sein.|
 |[CA1403](../code-quality/ca1403.md)|Typen mit automatischem Layout sollten nicht für COM sichtbar sein.|
 |[CA1404](../code-quality/ca1404.md)|GetLastError unmittelbar nach P/Invoke aufrufen.|
 |[CA1405](../code-quality/ca1405.md)|Für COM sichtbare Basistypen sollten für COM sichtbar sein.|
 |[CA1410](../code-quality/ca1410.md)|Die COM-Registrierungsmethoden müssen übereinstimmen.|
 |[CA1415](../code-quality/ca1415.md)|P/Invokes korrekt deklarieren.|
-|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Leere Finalizer entfernen.|
 |[CA1900](../code-quality/ca1900.md)|Werttypfelder sollten portabel sein.|
 |[CA1901](../code-quality/ca1901.md)|Deklarationen von P/Invoke müssen portabel sein.|
-|[CA2002](../code-quality/ca2002.md)|Auf Objekten mit schwacher Identität nicht sperren.|
-|[CA2100](../code-quality/ca2100.md)|SQL-Abfragen auf Sicherheitsrisiken überprüfen.|
-|[CA2101](../code-quality/ca2101.md)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|Auf Objekten mit schwacher Identität nicht sperren.|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|SQL-Abfragen auf Sicherheitsrisiken überprüfen.|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|
 |[CA2108](../code-quality/ca2108.md)|Deklarative Sicherheit auf Werttypen überprüfen.|
 |[CA2111](../code-quality/ca2111.md)|Zeiger sollten nicht sichtbar sein.|
 |[CA2112](../code-quality/ca2112.md)|Gesicherte Typen sollten keine Felder verfügbar machen.|
@@ -69,132 +69,132 @@ In der folgenden Tabelle werden alle Regeln im Regelsatz Regeln für erweiterte 
 |[CA2146](../code-quality/ca2146.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|
-|[CA2200](../code-quality/ca2200.md)|Erneut ausführen, um Stapeldetails beizubehalten.|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Erneut ausführen, um Stapeldetails beizubehalten.|
 |[CA2202](../code-quality/ca2202.md)|Objekte nicht mehrmals verwerfen.|
-|[CA2207](../code-quality/ca2207.md)|Statische Felder für Werttyp inline initialisieren.|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Statische Felder für Werttyp inline initialisieren.|
 |[CA2212](../code-quality/ca2212.md)|ServicedComponents nicht mit WebMethod markieren.|
-|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
-|[CA2214](../code-quality/ca2214.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
-|[CA2216](../code-quality/ca2216.md)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Verwerfbare Felder verwerfen.|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
 |[CA2220](../code-quality/ca2220.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
-|[CA2229](../code-quality/ca2229.md)|Serialisierungskonstruktoren implementieren.|
-|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Serialisierungskonstruktoren implementieren.|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
 |[CA2232](../code-quality/ca2232.md)|Windows Forms-Einstiegspunkte mit STAThread markieren.|
-|[CA2235](../code-quality/ca2235.md)|Alle nicht serialisierbaren Felder markieren.|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Alle nicht serialisierbaren Felder markieren.|
 |[CA2236](../code-quality/ca2236.md)|Basisklassenmethoden auf ISerializable-Typen aufrufen.|
-|[CA2237](../code-quality/ca2237.md)|ISerializable-Typen mit SerializableAttribute markieren.|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|ISerializable-Typen mit SerializableAttribute markieren.|
 |[CA2238](../code-quality/ca2238.md)|Serialisierungsmethoden korrekt implementieren.|
 |[CA2240](../code-quality/ca2240.md)|ISerializable ordnungsgemäß implementieren.|
-|[CA2241](../code-quality/ca2241.md)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
-|[CA2242](../code-quality/ca2242.md)|Ordnungsgemäß auf NaN testen.|
-|[CA1000](../code-quality/ca1000.md)|Statische Member nicht in generischen Typen deklarieren.|
-|[CA1002](../code-quality/ca1002.md)|Generische Listen nicht verfügbar machen.|
-|[CA1003](../code-quality/ca1003.md)|Generische Ereignishandlerinstanzen verwenden.|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Ordnungsgemäß auf NaN testen.|
+|[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000)|Statische Member nicht in generischen Typen deklarieren.|
+|[CA1002](/dotnet/fundamentals/code-analysis/quality-rules/ca1002)|Generische Listen nicht verfügbar machen.|
+|[CA1003](/dotnet/fundamentals/code-analysis/quality-rules/ca1003)|Generische Ereignishandlerinstanzen verwenden.|
 |[CA1004](../code-quality/ca1004.md)|Generische Methoden müssen den Typparameter angeben.|
-|[CA1005](../code-quality/ca1005.md)|Übermäßige Anzahl von Parametern in generischen Typen vermeiden.|
+|[CA1005](/dotnet/fundamentals/code-analysis/quality-rules/ca1005)|Übermäßige Anzahl von Parametern in generischen Typen vermeiden.|
 |[CA1006](../code-quality/ca1006.md)|Generische Typen in Membersignaturen nicht schachteln.|
 |[CA1007](../code-quality/ca1007.md)|Nach Möglichkeit Generics verwenden.|
-|[CA1008](../code-quality/ca1008.md)|Enumerationen müssen einen Wert von 0 (null) aufweisen.|
-|[CA1010](../code-quality/ca1010.md)|Sammlungen müssen eine generische Schnittstelle implementieren.|
+|[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008)|Enumerationen müssen einen Wert von 0 (null) aufweisen.|
+|[CA1010](/dotnet/fundamentals/code-analysis/quality-rules/ca1010)|Sammlungen müssen eine generische Schnittstelle implementieren.|
 |[CA1011](../code-quality/ca1011.md)|Basistypen als Parameter übergeben.|
-|[CA1012](../code-quality/ca1012.md)|Abstrakte Typen dürfen keine Konstruktoren aufweisen.|
+|[CA1012](/dotnet/fundamentals/code-analysis/quality-rules/ca1012)|Abstrakte Typen dürfen keine Konstruktoren aufweisen.|
 |[CA1013](../code-quality/ca1013.md)|Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen.|
-|[CA1014](../code-quality/ca1014.md)|Assemblys mit CLSCompliantAttribute markieren.|
-|[CA1017](../code-quality/ca1017.md)|Assemblys mit ComVisibleAttribute markieren.|
-|[CA1018](../code-quality/ca1018.md)|Attribute mit AttributeUsageAttribute markieren.|
-|[CA1019](../code-quality/ca1019.md)|Accessoren für Attributargumente definieren.|
+|[CA1014](/dotnet/fundamentals/code-analysis/quality-rules/ca1014)|Assemblys mit CLSCompliantAttribute markieren.|
+|[CA1017](/dotnet/fundamentals/code-analysis/quality-rules/ca1017)|Assemblys mit ComVisibleAttribute markieren.|
+|[CA1018](/dotnet/fundamentals/code-analysis/quality-rules/ca1018)|Attribute mit AttributeUsageAttribute markieren.|
+|[CA1019](/dotnet/fundamentals/code-analysis/quality-rules/ca1019)|Accessoren für Attributargumente definieren.|
 |[CA1023](../code-quality/ca1023.md)|Indexer sollten nicht mehrdimensional sein.|
-|[CA1024](../code-quality/ca1024.md)|Nach Möglichkeit Eigenschaften verwenden.|
+|[CA1024](/dotnet/fundamentals/code-analysis/quality-rules/ca1024)|Nach Möglichkeit Eigenschaften verwenden.|
 |[CA1025](../code-quality/ca1025.md)|Sich wiederholende Argumente durch ein Parameterarray ersetzen.|
 |[CA1026](../code-quality/ca1026.md)|Standardparameter sollten nicht verwendet werden.|
-|[CA1027](../code-quality/ca1027.md)|Enumerationen mit FlagsAttribute markieren.|
-|[CA1028](../code-quality/ca1028.md)|Der Enumerationsspeicher sollte Int32 sein.|
-|[CA1030](../code-quality/ca1030.md)|Nach Möglichkeit Ereignisse verwenden.|
-|[CA1031](../code-quality/ca1031.md)|Allgemeine Ausnahmetypen nicht auffangen.|
-|[CA1032](../code-quality/ca1032.md)|Standardausnahmekonstruktoren implementieren.|
-|[CA1034](../code-quality/ca1034.md)|Geschachtelte Typen sollten nicht sichtbar sein.|
+|[CA1027](/dotnet/fundamentals/code-analysis/quality-rules/ca1027)|Enumerationen mit FlagsAttribute markieren.|
+|[CA1028](/dotnet/fundamentals/code-analysis/quality-rules/ca1028)|Der Enumerationsspeicher sollte Int32 sein.|
+|[CA1030](/dotnet/fundamentals/code-analysis/quality-rules/ca1030)|Nach Möglichkeit Ereignisse verwenden.|
+|[CA1031](/dotnet/fundamentals/code-analysis/quality-rules/ca1031)|Allgemeine Ausnahmetypen nicht auffangen.|
+|[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)|Standardausnahmekonstruktoren implementieren.|
+|[CA1034](/dotnet/fundamentals/code-analysis/quality-rules/ca1034)|Geschachtelte Typen sollten nicht sichtbar sein.|
 |[CA1035](../code-quality/ca1035.md)|ICollection-Implementierungen weisen Member mit starker Typisierung auf.|
-|[CA1036](../code-quality/ca1036.md)|Methoden bei vergleichbaren Typen überschreiben.|
+|[CA1036](/dotnet/fundamentals/code-analysis/quality-rules/ca1036)|Methoden bei vergleichbaren Typen überschreiben.|
 |[CA1038](../code-quality/ca1038.md)|Enumeratoren sollten eine starke Typisierung aufweisen.|
 |[CA1039](../code-quality/ca1039.md)|Listen weisen eine starke Typisierung auf.|
-|[CA1041](../code-quality/ca1041.md)|ObsoleteAttribute-Meldung bereitstellen.|
-|[CA1043](../code-quality/ca1043.md)|Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden.|
-|[CA1044](../code-quality/ca1044.md)|Eigenschaften sollten nicht lesegeschützt sein.|
-|[CA1046](../code-quality/ca1046.md)|Gleichheitsoperator für Referenztypen nicht überladen.|
-|[CA1047](../code-quality/ca1047.md)|Geschützte Member in versiegelten Typen nicht deklarieren.|
+|[CA1041](/dotnet/fundamentals/code-analysis/quality-rules/ca1041)|ObsoleteAttribute-Meldung bereitstellen.|
+|[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043)|Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden.|
+|[CA1044](/dotnet/fundamentals/code-analysis/quality-rules/ca1044)|Eigenschaften sollten nicht lesegeschützt sein.|
+|[CA1046](/dotnet/fundamentals/code-analysis/quality-rules/ca1046)|Gleichheitsoperator für Referenztypen nicht überladen.|
+|[CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047)|Geschützte Member in versiegelten Typen nicht deklarieren.|
 |[CA1048](../code-quality/ca1048.md)|Virtuelle Member in versiegelten Typen nicht deklarieren.|
-|[CA1050](../code-quality/ca1050.md)|Typen in Namespaces deklarieren.|
-|[CA1051](../code-quality/ca1051.md)|Sichtbare Instanzfelder nicht deklarieren.|
-|[CA1052](../code-quality/ca1052.md)|Statische Haltertypen sollten versiegelt sein.|
-|[CA1053](../code-quality/ca1053.md)|Statische Haltertypen sollten keine Konstruktoren aufweisen.|
-|[CA1054](../code-quality/ca1054.md)|URI-Parameter dürfen keine Zeichenfolgen sein.|
-|[CA1055](../code-quality/ca1055.md)|URI-Rückgabewerte dürfen keine Zeichenfolgen sein.|
-|[CA1056](../code-quality/ca1056.md)|URI-Eigenschaften dürfen keine Zeichenfolgen sein.|
+|[CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050)|Typen in Namespaces deklarieren.|
+|[CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051)|Sichtbare Instanzfelder nicht deklarieren.|
+|[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052)|Statische Haltertypen sollten versiegelt sein.|
+|[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053)|Statische Haltertypen sollten keine Konstruktoren aufweisen.|
+|[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054)|URI-Parameter dürfen keine Zeichenfolgen sein.|
+|[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055)|URI-Rückgabewerte dürfen keine Zeichenfolgen sein.|
+|[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056)|URI-Eigenschaften dürfen keine Zeichenfolgen sein.|
 |[CA1057](../code-quality/ca1057.md)|URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf.|
-|[CA1058](../code-quality/ca1058.md)|Typen sollten bestimmte Basistypen nicht erweitern.|
+|[CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058)|Typen sollten bestimmte Basistypen nicht erweitern.|
 |[CA1059](../code-quality/ca1059.md)|Member sollten bestimmte konkrete Typen nicht verfügbar machen.|
-|[CA1064](../code-quality/ca1064.md)|Ausnahmen sollten öffentlich sein.|
+|[CA1064](/dotnet/fundamentals/code-analysis/quality-rules/ca1064)|Ausnahmen sollten öffentlich sein.|
 |[CA1500](../code-quality/ca1500.md)|Variablennamen sollten nicht mit Feldnamen übereinstimmen.|
-|[CA1502](../code-quality/ca1502.md)|Übermäßige Komplexität vermeiden.|
-|[CA1708](../code-quality/ca1708.md)|Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.|
-|[CA1716](../code-quality/ca1716.md)|Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.|
-|[CA1801](../code-quality/ca1801.md)|Nicht verwendete Parameter überprüfen.|
+|[CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)|Übermäßige Komplexität vermeiden.|
+|[CA1708](/dotnet/fundamentals/code-analysis/quality-rules/ca1708)|Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.|
+|[CA1716](/dotnet/fundamentals/code-analysis/quality-rules/ca1716)|Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.|
+|[CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801)|Nicht verwendete Parameter überprüfen.|
 |[CA1804](../code-quality/ca1804.md)|Nicht verwendete lokale Variablen entfernen.|
 |[CA1809](../code-quality/ca1809.md)|Übermäßige lokale Variablen vermeiden.|
-|[CA1810](../code-quality/ca1810.md)|Statische Felder von Referenztypen inline initialisieren.|
+|[CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810)|Statische Felder von Referenztypen inline initialisieren.|
 |[CA1811](../code-quality/ca1811.md)|Nicht aufgerufenen privaten Code vermeiden.|
-|[CA1812](../code-quality/ca1812.md)|Nicht instanziierte interne Klassen vermeiden.|
-|[CA1813](../code-quality/ca1813.md)|Nicht versiegelte Attribute vermeiden.|
-|[CA1814](../code-quality/ca1814.md)|Jagged Arrays mehrdimensionalen Arrays vorziehen.|
-|[CA1815](../code-quality/ca1815.md)|Equals und Gleichheitsoperator für Werttypen überschreiben.|
-|[CA1819](../code-quality/ca1819.md)|Eigenschaften sollten keine Arrays zurückgeben.|
-|[CA1820](../code-quality/ca1820.md)|Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.|
-|[CA1822](../code-quality/ca1822.md)|Member als statisch markieren.|
-|[CA1823](../code-quality/ca1823.md)|Nicht verwendete private Felder vermeiden.|
-|[CA2201](../code-quality/ca2201.md)|Keine reservierten Ausnahmetypen auslösen.|
+|[CA1812](/dotnet/fundamentals/code-analysis/quality-rules/ca1812)|Nicht instanziierte interne Klassen vermeiden.|
+|[CA1813](/dotnet/fundamentals/code-analysis/quality-rules/ca1813)|Nicht versiegelte Attribute vermeiden.|
+|[CA1814](/dotnet/fundamentals/code-analysis/quality-rules/ca1814)|Jagged Arrays mehrdimensionalen Arrays vorziehen.|
+|[CA1815](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)|Equals und Gleichheitsoperator für Werttypen überschreiben.|
+|[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819)|Eigenschaften sollten keine Arrays zurückgeben.|
+|[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820)|Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.|
+|[CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822)|Member als statisch markieren.|
+|[CA1823](/dotnet/fundamentals/code-analysis/quality-rules/ca1823)|Nicht verwendete private Felder vermeiden.|
+|[CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201)|Keine reservierten Ausnahmetypen auslösen.|
 |[CA2205](../code-quality/ca2205.md)|Verwaltete Entsprechungen der Win32 API verwenden.|
-|[CA2208](../code-quality/ca2208.md)|Argumentausnahmen korrekt instanziieren.|
-|[CA2211](../code-quality/ca2211.md)|Nicht konstante Felder sollten nicht sichtbar sein.|
-|[CA2217](../code-quality/ca2217.md)|Enumerationen nicht mit FlagsAttribute markieren.|
-|[CA2219](../code-quality/ca2219.md)|Keine Ausnahmen in Ausnahmeklauseln auslösen.|
+|[CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208)|Argumentausnahmen korrekt instanziieren.|
+|[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211)|Nicht konstante Felder sollten nicht sichtbar sein.|
+|[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217)|Enumerationen nicht mit FlagsAttribute markieren.|
+|[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219)|Keine Ausnahmen in Ausnahmeklauseln auslösen.|
 |[CA2221](../code-quality/ca2221.md)|Finalizer sollten geschützt sein.|
 |[CA2222](../code-quality/ca2222.md)|Sichtbarkeit für geerbte Member nicht verringern.|
 |[CA2223](../code-quality/ca2223.md)|Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.|
 |[CA2224](../code-quality/ca2224.md)|Equals beim Überladen von Gleichheitsoperatoren überschreiben.|
-|[CA2225](../code-quality/ca2225.md)|Operatorüberladungen weisen benannte Alternativen auf.|
-|[CA2226](../code-quality/ca2226.md)|Operatoren sollten symmetrische Überladungen aufweisen.|
-|[CA2227](../code-quality/ca2227.md)|Sammlungseigenschaften sollten schreibgeschützt sein.|
+|[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225)|Operatorüberladungen weisen benannte Alternativen auf.|
+|[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226)|Operatoren sollten symmetrische Überladungen aufweisen.|
+|[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227)|Sammlungseigenschaften sollten schreibgeschützt sein.|
 |[CA2230](../code-quality/ca2230.md)|params für Variablenargumente verwenden.|
-|[CA2234](../code-quality/ca2234.md)|Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.|
+|[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234)|Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.|
 |[CA2239](../code-quality/ca2239.md)|Deserialisierungsmethoden für optionale Felder angeben.|
 |[CA1020](../code-quality/ca1020.md)|Namespaces mit wenigen Typen vermeiden.|
-|[CA1021](../code-quality/ca1021.md)|out-Parameter vermeiden.|
-|[CA1040](../code-quality/ca1040.md)|Leere Schnittstellen vermeiden.|
-|[CA1045](../code-quality/ca1045.md)|Typen nicht als Verweis übergeben.|
-|[CA1062](../code-quality/ca1062.md)|Argumente von öffentlichen Methoden validieren.|
-|[CA1501](../code-quality/ca1501.md)|Übermäßige Vererbung vermeiden.|
+|[CA1021](/dotnet/fundamentals/code-analysis/quality-rules/ca1021)|out-Parameter vermeiden.|
+|[CA1040](/dotnet/fundamentals/code-analysis/quality-rules/ca1040)|Leere Schnittstellen vermeiden.|
+|[CA1045](/dotnet/fundamentals/code-analysis/quality-rules/ca1045)|Typen nicht als Verweis übergeben.|
+|[CA1062](/dotnet/fundamentals/code-analysis/quality-rules/ca1062)|Argumente von öffentlichen Methoden validieren.|
+|[CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)|Übermäßige Vererbung vermeiden.|
 |[CA1504](../code-quality/ca1504.md)|Irreführende Feldnamen überprüfen.|
-|[CA1505](../code-quality/ca1505.md)|Nicht wartbaren Code vermeiden.|
-|[CA1506](../code-quality/ca1506.md)|Übermäßige Klassenkopplungen vermeiden.|
-|[CA1700](../code-quality/ca1700.md)|Enumerationswerte nicht mit "Reserviert" benennen.|
+|[CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)|Nicht wartbaren Code vermeiden.|
+|[CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)|Übermäßige Klassenkopplungen vermeiden.|
+|[CA1700](/dotnet/fundamentals/code-analysis/quality-rules/ca1700)|Enumerationswerte nicht mit "Reserviert" benennen.|
 |[CA1701](../code-quality/ca1701.md)|Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.|
 |[CA1702](../code-quality/ca1702.md)|Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.|
 |[CA1703](../code-quality/ca1703.md)|Ressourcenzeichenfolgen sollten korrekt geschrieben werden.|
 |[CA1704](../code-quality/ca1704.md)|Bezeichner sollten korrekt geschrieben werden.|
-|[CA1707](../code-quality/ca1707.md)|Bezeichner sollten keine Unterstriche enthalten.|
+|[CA1707](/dotnet/fundamentals/code-analysis/quality-rules/ca1707)|Bezeichner sollten keine Unterstriche enthalten.|
 |[CA1709](../code-quality/ca1709.md)|Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.|
-|[CA1710](../code-quality/ca1710.md)|Bezeichner sollten ein richtiges Suffix aufweisen.|
-|[CA1711](../code-quality/ca1711.md)|Bezeichner sollten kein falsches Suffix aufweisen.|
-|[CA1712](../code-quality/ca1712.md)|Keine Typnamen als Präfixe für Enumerationswerte verwenden.|
-|[CA1713](../code-quality/ca1713.md)|Ereignisse sollten kein Before- oder After-Präfix aufweisen.|
-|[CA1714](../code-quality/ca1714.md)|Flags-Enumerationen sollten Pluralnamen aufweisen.|
-|[CA1715](../code-quality/ca1715.md)|Bezeichner sollten ein korrektes Präfix aufweisen.|
-|[CA1717](../code-quality/ca1717.md)|Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.|
+|[CA1710](/dotnet/fundamentals/code-analysis/quality-rules/ca1710)|Bezeichner sollten ein richtiges Suffix aufweisen.|
+|[CA1711](/dotnet/fundamentals/code-analysis/quality-rules/ca1711)|Bezeichner sollten kein falsches Suffix aufweisen.|
+|[CA1712](/dotnet/fundamentals/code-analysis/quality-rules/ca1712)|Keine Typnamen als Präfixe für Enumerationswerte verwenden.|
+|[CA1713](/dotnet/fundamentals/code-analysis/quality-rules/ca1713)|Ereignisse sollten kein Before- oder After-Präfix aufweisen.|
+|[CA1714](/dotnet/fundamentals/code-analysis/quality-rules/ca1714)|Flags-Enumerationen sollten Pluralnamen aufweisen.|
+|[CA1715](/dotnet/fundamentals/code-analysis/quality-rules/ca1715)|Bezeichner sollten ein korrektes Präfix aufweisen.|
+|[CA1717](/dotnet/fundamentals/code-analysis/quality-rules/ca1717)|Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.|
 |[CA1719](../code-quality/ca1719.md)|Parameternamen sollten nicht mit Membernamen übereinstimmen.|
-|[CA1720](../code-quality/ca1720.md)|Bezeichner dürfen keine Typnamen enthalten.|
-|[CA1721](../code-quality/ca1721.md)|Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.|
+|[CA1720](/dotnet/fundamentals/code-analysis/quality-rules/ca1720)|Bezeichner dürfen keine Typnamen enthalten.|
+|[CA1721](/dotnet/fundamentals/code-analysis/quality-rules/ca1721)|Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.|
 |[CA1722](../code-quality/ca1722.md)|Bezeichner sollten kein falsches Präfix aufweisen.|
-|[CA1724](../code-quality/ca1724.md)|Typnamen sollten nicht mit Namespaces übereinstimmen.|
-|[CA1725](../code-quality/ca1725.md)|Parameternamen sollten mit der Basisdeklaration übereinstimmen.|
+|[CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724)|Typnamen sollten nicht mit Namespaces übereinstimmen.|
+|[CA1725](/dotnet/fundamentals/code-analysis/quality-rules/ca1725)|Parameternamen sollten mit der Basisdeklaration übereinstimmen.|
 |[CA1726](../code-quality/ca1726.md)|Bevorzugte Begriffe verwenden.|
 |[CA2204](../code-quality/ca2204.md)|Literale sollten eine korrekte Rechtschreibung aufweisen.|
