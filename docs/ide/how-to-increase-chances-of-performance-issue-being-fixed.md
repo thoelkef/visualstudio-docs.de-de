@@ -4,18 +4,19 @@ description: Zusätzliche Informationen und bewährte Methoden für das Übermit
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
+manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810860"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211187"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
-Das Tool [Problem melden](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019) wird von Visual Studio-Benutzern häufig genutzt, um eine Vielzahl von Problemen zu melden. Das Visual Studio-Team macht im Feedback der Benutzer Tendenzen bei Abstürzen und Verlangsamungen aus und löst Probleme, die eine breite Masse von Benutzern betreffen. Je umsetzbarer ein bestimmtes Feedbackticket ist, desto wahrscheinlicher wird es vom Produktteam analysiert und schnell bearbeitet. In diesem Dokument werden die bewährten Methoden beim Melden von Problemen bezüglich Abstürzen oder Verlangsamung beschrieben, um sie umsetzbarer zu machen.
+Das Tool [Problem melden](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true) wird von Visual Studio-Benutzern häufig genutzt, um eine Vielzahl von Problemen zu melden. Das Visual Studio-Team macht im Feedback der Benutzer Tendenzen bei Abstürzen und Verlangsamungen aus und löst Probleme, die eine breite Masse von Benutzern betreffen. Je umsetzbarer ein bestimmtes Feedbackticket ist, desto wahrscheinlicher wird es vom Produktteam analysiert und schnell bearbeitet. In diesem Dokument werden die bewährten Methoden beim Melden von Problemen bezüglich Abstürzen oder Verlangsamung beschrieben, um sie umsetzbarer zu machen.
 
 ## <a name="general-best-practices"></a>Allgemeine bewährte Methoden
 
@@ -92,7 +93,7 @@ Passen Sie Anzahl und Ordner für Speicherabbilder entsprechend an. Weitere Info
 > [!NOTE]
 > Mit dem Task-Manager erfasste Speicherabbilder haben wahrscheinlich die falsche Bitanzahl, wodurch sie weniger nützlich sind. Das oben beschriebene Verfahren ist die bevorzugte Methode zum Erfassen einer Heap-Abbilddatei. Wenn Sie den Task-Manager verwenden möchten, schließen Sie den aktuell aktiven Task-Manager. Starten Sie den 32-Bit-Task-Manager (%windir%\\syswow64\\taskmgr.exe), und erfassen Sie in diesem eine Heap-Abbilddatei.
 
-> [!NOTE] 
+> [!NOTE]
 > Jede Speicherabbilddatei, die von dieser Methode erstellt wird, kann bis zu 4 GB groß sein. Stellen Sie sicher, dass Sie DumpFolder auf einen Speicherort mit ausreichendem Speicherplatz auf dem Laufwerk festlegen oder DumpCount entsprechend anpassen.
 
 Bei jedem Absturz von Visual Studio wird am konfigurierten Speicherort eine Speicherabbilddatei **devenv.exe.[Nummer].dmp** erstellt.
@@ -105,7 +106,7 @@ Verwenden Sie anschließend die Visual Studio-Funktion „Problem melden“. Die
 
 3. Befolgen Sie die Schritte unter [Melden eines Problems](./how-to-report-a-problem-with-visual-studio.md), und fügen Sie die Heap-Abbilddatei an ein neues Feedbackelement an.
 
-> [!NOTE] 
+> [!NOTE]
 > **Das nützlichste Feedback:** Für diesen Sachverhalt ist das nützlichste Feedback die zum Zeitpunkt des Absturzes erfasste Heap-Abbilddatei.
 
 ## <a name="unresponsiveness"></a>Fehlende Reaktionsfähigkeit
@@ -118,18 +119,18 @@ Wie im entsprechenden Abschnitt zu Abstürzen beschrieben, sind für Probleme, d
 **Fehlende Reaktionsfähigkeit aus unbekanntem Grund**
 
 Wenn sich eine fehlende Reaktionsfähigkeit auf unvorhersehbare Weise bemerkbar macht, starten Sie beim nächsten Auftreten eine neue Instanz von Visual Studio, und melden Sie ein Problem aus dieser Instanz.
-Stellen Sie sicher, dass Sie in der [Anzeige „Aufzeichnen“](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro) die Visual Studio-Sitzung auswählen, die nicht reagiert.
+Stellen Sie sicher, dass Sie in der Anzeige „Aufzeichnen“ die Visual Studio-Sitzung auswählen, die nicht reagiert. (Weitere Informationen zum Aufzeichnen von Aktionen, die wir ausführen können, um das Problem zu reproduzieren, finden Sie in Schritt 8 der Seite [Vorgehensweise: Melden eines Problems](./how-to-report-a-problem-with-visual-studio.md).)
 
 Wenn die nicht reagierende Visual Studio-Instanz im Modus „Administrator“ gestartet wurde, muss die zweite Instanz ebenfalls im Modus „Administrator“ gestartet werden.
 
->[!NOTE] 
+>[!NOTE]
 > **Das nützlichste Feedback:** Für diesen Sachverhalt ist das nützlichste Feedback die zum Zeitpunkt der fehlenden Reaktionsfähigkeit erfasste Heap-Abbilddatei.
 
 ## <a name="slowness-and-high-cpu-issues"></a>Probleme aufgrund von Verlangsamung und hoher CPU-Auslastung
 
 Was die Lösung eines Problem aufgrund von Verlangsamung oder hoher CPU-Auslastung am besten ermöglicht, ist eine Leistungsüberwachung, die während des verlangsamten Betriebs oder eines Ereignisses mit hoher CPU-Auslastung erfasst wird.
 
->[!NOTE] 
+>[!NOTE]
 > Isolieren Sie nach Möglichkeit jedes Szenario in einem separaten, spezifischen Feedbackbericht.
 Wenn beispielsweise Eingabe und Navigation langsam erfolgen, führen Sie die folgenden Schritte einmal pro Problem aus. Dies hilft dem Produktteam, die Ursache bestimmter Probleme zu ergründen.
 
@@ -165,9 +166,9 @@ Führen Sie die folgenden Schritte aus, um die Leistung optimal zu erfassen:
 
 Wenn während der Aufzeichnung einer Leistungsüberwachung die Verlangsamung oder hohe CPU-Auslastung, die Sie melden, endet, beenden Sie sofort die Aufzeichnung. Bei Erfassung von zu vielen Informationen werden die ältesten Informationen überschrieben. Wenn die Ablaufverfolgung nicht rechtzeitig (innerhalb weniger Sekunden) nach dem betreffenden Vorgang beendet wird, werden nützliche Ablaufverfolgungsdaten überschrieben.
 
-Fügen Sie keine Leistungsüberwachungen direkt an Feedbackelemente an, die bereits auf der Website der Entwicklercommunity vorhanden sind. Das Anfordern/Bereitstellen zusätzlicher Informationen ist ein unterstützter Workflow in dem in Visual Studio integrierten Tool „Problem melden“. Wenn eine Leistungsüberwachung erforderlich ist, um das Problem in einem vorherigen Feedbackelement zu lösen, legen wir den Status des Feedbackelements auf „Weitere Informationen erforderlich“ fest. Darauf kann genauso wie auf ein neues Problem reagiert werden. Eine ausführliche Anleitung finden Sie im Abschnitt [Weitere Informationen erforderlich](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) im Dokument zum Tool „Problem melden“.
+Fügen Sie keine Leistungsüberwachungen direkt an Feedbackelemente an, die bereits auf der Website der Entwicklercommunity vorhanden sind. Das Anfordern/Bereitstellen zusätzlicher Informationen ist ein unterstützter Workflow in dem in Visual Studio integrierten Tool „Problem melden“. Wenn eine Leistungsüberwachung erforderlich ist, um das Problem in einem vorherigen Feedbackelement zu lösen, legen wir den Status des Feedbackelements auf „Weitere Informationen erforderlich“ fest. Darauf kann genauso wie auf ein neues Problem reagiert werden. Eine ausführliche Anleitung finden Sie im Abschnitt [Weitere Informationen erforderlich](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) im Dokument zum Tool „Problem melden“.
 
-> [!NOTE] 
+> [!NOTE]
 > **Das nützlichste Feedback:** Bei nahezu allen Problemen aufgrund von Langsamkeit und hoher CPU-Auslastung ist das nützlichste Feedback eine allgemeine Beschreibung dessen, was Sie zu tun versucht haben, sowie die ZIP-Datei mit der Leistungsüberwachung (\*.etl.zip), in der das Verhalten während dieses Zeitraums erfasst wurde.
 
 **Erweiterte Leistungsüberwachung**
@@ -177,7 +178,8 @@ Die Funktionen zum Erfassen einer Ablaufverfolgung im Tool „Problem melden“ 
 ## <a name="out-of-process-issues"></a>Out-of-Process-Probleme
 
 > [!NOTE]
-> Ab Visual Studio 2019 Version 16.3 werden Out-of-Process-Protokolle automatisch an das Feedback angehängt, das mit dem Tool „Problem melden“ übermittelt wird. Wenn das Problem jedoch direkt reproduzierbar ist, könnte das Befolgen der folgenden Schritte dennoch helfen, zusätzliche Informationen hinzuzufügen, um das Problem besser diagnostizieren zu können.
+> Ab Visual Studio 2019 Version 16.3 werden Out-of-Process-Protokolle automatisch an das Feedback angehängt, das mit dem Tool „Problem melden“ übermittelt wird.
+Wenn das Problem jedoch direkt reproduzierbar ist, könnte das Befolgen der folgenden Schritte dennoch helfen, zusätzliche Informationen hinzuzufügen, um das Problem besser diagnostizieren zu können.
 
 Es gibt eine Reihe von Satellitenprozessen, die parallel zu Visual Studio ausgeführt werden und verschiedene Features von außerhalb des Hauptprozesses von Visual Studio bereitstellen. Wenn ein Fehler in einem dieser Satellitenprozesse auftritt, wird er normalerweise auf der Visual Studio Seite als „StreamJsonRpc.RemoteInvocationException“ oder „StreamJsonRpc.ConnectionLostException“ angezeigt.
 
