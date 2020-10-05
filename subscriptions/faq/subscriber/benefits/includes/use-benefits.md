@@ -5,14 +5,14 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: f7c4382fd5862752e3e4968fa1230686d9f0e8d6
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386049"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91641697"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Wie nutze ich meine Vorteile?
 
@@ -21,3 +21,19 @@ Ebenso wie die Typen von Vorteilen unterschiedlich sind, variieren die Methoden,
 Für jeden im Abonnentenportal verfügbaren Vorteil haben wir Artikel bereitgestellt, die Informationen enthalten, wie z. B. in welche Abonnements sie enthalten sind sowie die Schritte zur Aktivieren der Vorteile.
 
 [Weitere Informationen](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) erhalten Sie in unserer Dokumentation (Klicken Sie im linken Navigationsbereich auf „Abonnements“, und wählen Sie „Vorteile“ aus).
+
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Wie funktioniert der Einrichtungsvorgang für Visual Studio mit GitHub Enterprise? 
+
+Visual Studio- und GitHub Enterprise-Abonnements werden in zwei Teilen verwaltet:  
+- Das Visual Studio-Abonnement (Enterprise oder Professional)  
+- GitHub Enterprise  
+
+Wenn Ihnen ein Visual Studio- und GitHub-Abonnement zugewiesen werden, erhalten Sie eine E-Mail, in der Ihnen mitgeteilt wird, dass Ihr Visual Studio-Abonnementadministrator Ihnen ein Abonnement zugewiesen hat. An diesem Punkt können Sie die verfügbaren Abonnementvorteile unter <https://my.visualstudio.com/benefits> anzeigen. Darin ist auch der GitHub Enterprise-Vorteil enthalten. 
+
+GitHub Enterprise wird von einem GitHub-Administrator getrennt von den Visual Studio-Abonnements verwaltet. Wenn Ihr Unternehmen ein GitHub Enterprise-Konto eingerichtet hat, erhalten Sie eine E-Mail von GitHub, in der Sie benachrichtigt werden, dass Ihr Visual Studio-Abonnement verknüpft wurde und die Kachel „Vorteil“ aktualisiert wird. Die Einrichtung dieses Kontos kann einige Zeit in Anspruch nehmen und ist von Ihrem Unternehmen abhängig, das den Einrichtungsvorgang abschließt. Sobald Sie die E-Mail erhalten haben, können Sie sich an den Administrator der entsprechenden GitHub-Organisation wenden, um eine Einladung für ihre Organisation und/oder das Repository anzufordern. 
+
+Wenn der Administrator Ihrer GitHub-Organisation die Einladung versendet, empfangen Sie eine E-Mail von GitHub, und die Kachel „Vorteil“ wird nochmals aktualisiert. 
+
+Nachdem Sie die Einladung der GitHub-Organisation akzeptiert haben, wird die Darstellung der Kachel „Vorteil“ unter <https://my.visualstudio.com/benefits> von „Ausstehend“ in „Aktiviert“ geändert, und Sie können nun mit der Verwendung von GitHub Enterprise beginnen. 
+
+[Lesen Sie mehr zu den Details](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) zum Einrichtungsvorgang für GitHub Enterprise. 
