@@ -2,6 +2,8 @@
   href: visual-studio-graphics-diagnostics.md
 - name: Übersicht über Visual Studio-Grafikdiagnose
   href: overview-of-visual-studio-graphics-diagnostics.md
+- name: DirectX12-Unterstützung in Visual Studio
+  href: visual-studio-graphics-diagnostics-directx-12.md
 - name: Erste Schritte mit Visual Studio-Grafikdiagnose
   href: getting-started-with-visual-studio-graphics-diagnostics.md
 - name: Aufzeichnen von Grafikinformationen
