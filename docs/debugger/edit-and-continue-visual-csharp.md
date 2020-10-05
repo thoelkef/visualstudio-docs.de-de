@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188189"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421640"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C#)
  Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen. Im Ausführmodus ist der Quellcode-Editor schreibgeschützt.
@@ -32,7 +32,7 @@ ms.locfileid: "73188189"
  „Bearbeiten und Fortfahren“ wird in UWP in Windows 10 sowie für x86- und x64-Apps unterstützt, die für .NET Framework 4.6 oder höhere Versionen vorgesehen sind (.NET Framework ist nur als Desktopversion verfügbar).
 
  > [!NOTE]
- > Nicht unterstützte Apps und Plattformen sind u. a. ASP.NET 5, Silverlight 5 und Windows 8.1.
+ > Nicht unterstützte Apps und Plattformen sind u. a. Silverlight 5 und Windows 8.1.
 
  Wenn „Bearbeiten und Fortfahren“ aktiviert ist, werden unterstützte Änderungen automatisch übernommen, wenn Sie einen Ausführungsbefehl des Debuggers verwenden (z.B. **Weiter**, **Schritt**, **Nächste Anweisung festlegen**) oder eine Funktionsauswertung im Debuggerfenster durchführen.
 
