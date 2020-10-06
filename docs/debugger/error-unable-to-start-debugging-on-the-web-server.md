@@ -54,7 +54,7 @@ Die Meldung `Unable to start debugging on the Web server` ist generisch. In der 
 - [In der Hilfe sind häufige Konfigurationsfehler erläutert. Möglicherweise erhalten Sie weitere Informationen, wenn Sie die Webseite außerhalb des Debuggers ausführen.](#see_help)
 - [Vorgang wird nicht unterstützt. Unbekannter Fehler: *Fehlernummer*](#operation_not_supported)
 
-## <a name="iis-does-not-list-a-website-that-matches-the-launch-url"></a><a name="IISlist">Die IIS führen eine Website nicht auf, die der Start-URL entspricht</a>
+## <a name="iis-does-not-list-a-website-that-matches-the-launch-url"></a><a name="IISlist"></a>Die IIS führen eine Website nicht auf, die der Start-URL entspricht
 
 - Starten Sie Visual Studio neu als Administrator, und versuchen Sie, das Debuggen zu wiederholen. (Für manche ASP.NET-Debugszenarios sind erhöhte Rechte erforderlich.)
 
