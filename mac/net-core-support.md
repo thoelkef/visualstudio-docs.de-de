@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: b9892a322c0264a1bdb68d672c7fe6c6e9b08d4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183599"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583930"
 ---
 # <a name="net-core-support"></a>.NET Core-Unterstützung
 
@@ -37,4 +37,4 @@ Die folgende Tabelle beschreibt die Versionen von .NET Core, die von den Stabil-
 * .NET Core Version 2.1.701 (Version 2.1.700 für 8.1) wird standardmäßig mit dem Installer installiert.
 * Um eine andere Version von .NET Core herunterzuladen, besuchen Sie die [dotnet-Seite](https://dotnet.microsoft.com/download/dotnet-core).
 * Bei Verwendung von .NET Core 3.0 wird standardmäßig C# Version 8 verwendet. C# 7.3 ist Standard bei der Verwendung von .NET Core 2.x. Weitere Informationen finden Sie unter [Verwaltung der C#-Sprachversion](/dotnet/csharp/language-reference/configure-language-version).
-* Informationen zum Installieren einer Vorschauversion von Visual Studio für Mac finden Sie im Handbuch [Installieren einer Vorschauversion](/visualstudio/mac/install-preview).
+* Informationen zum Installieren einer Vorschauversion von Visual Studio für Mac finden Sie im Handbuch [Installieren einer Vorschauversion](./install-preview.md).

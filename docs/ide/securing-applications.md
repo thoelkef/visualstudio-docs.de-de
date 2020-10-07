@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595448"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781016"
 ---
 # <a name="secure-applications"></a>Sichern von Anwendungen
 
@@ -43,6 +43,6 @@ Die Sicherheit ist im Buildprozess auch ein wichtiger Aspekt. Einige zusätzlich
 - [Sicherheit in .NET](/dotnet/standard/security/index)
 - [Azure-Sicherheit](/azure/security/)
 - [Windows 10 Mobile security guide (Sicherheitshandbuch für Windows 10 Mobile)](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova platform security features (Sicherheitsfeatures für die Apache Cordova-Plattform)](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [ASP.NET Core-Sicherheit](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Apache Cordova platform security features (Sicherheitsfeatures für die Apache Cordova-Plattform)](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [ASP.NET Core-Sicherheit](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Sicherheit in Windows Forms](/dotnet/framework/winforms/windows-forms-security)

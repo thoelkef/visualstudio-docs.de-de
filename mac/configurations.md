@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128400"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584021"
 ---
 # <a name="understanding-build-configurations"></a>Grundlagen der Buildkonfiguration
 
 Sie können verschiedene Konfigurationen der Projektmappen- und Projekteigenschaften speichern, die während des Entwicklungsprozesses in unterschiedlichen Arten von Builds verwendet werden können. Projekte, die mithilfe einer Vorlage in Visual Studio für Mac erstellt werden, enthalten in der Regel Debug-und Releasekonfigurationen, die das Debuggen einer App beziehungsweise die Bereitstellung einer App unterstützen. 
 
-Wenn Sie benutzerdefinierte Konfigurationen erstellen möchten, finden Sie weitere Informationen unter [Erstellen und Bearbeiten von Buildkonfigurationen](/visualstudio/mac/create-and-edit-configurations).
+Wenn Sie benutzerdefinierte Konfigurationen erstellen möchten, finden Sie weitere Informationen unter [Erstellen und Bearbeiten von Buildkonfigurationen](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Dieses Thema gilt für Visual Studio für Mac. Informationen zu Visual Studio unter Windows finden Sie unter [Grundlagen der Buildkonfiguration](/visualstudio/ide/understanding-build-configurations).

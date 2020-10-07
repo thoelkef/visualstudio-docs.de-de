@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453699"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781057"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Erstellen einer ASP.NET Core-App mit TypeScript in Visual Studio
 
-In diesem Tutorial für die Visual Studio-Entwicklung mit ASP.NET Core und TypeScript erstellen Sie eine einfache Webanwendung, fügen etwas TypeScript-Code hinzu und führen dann die App aus. 
+In diesem Tutorial für die Visual Studio-Entwicklung mit ASP.NET Core und TypeScript erstellen Sie eine einfache Webanwendung, fügen etwas TypeScript-Code hinzu und führen dann die App aus.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
 1. Führen Sie die Anweisungen in der [npm-Paketverwaltung](../javascript/npm-package-management.md#aspnet-core-projects) aus, um eine `package.json`-Datei zu Ihrem Projekt hinzuzufügen. Dadurch wird die npm-Unterstützung zu Ihrem Projekt hinzugefügt.
 
    >[!NOTE]
-   > Für ASP.NET Core-Projekte können Sie auf den [Bibliotheks-Manager](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) oder YARN anstelle von npm verwenden, um clientseitige JavaScript- und CSS-Dateien zu installieren.
+   > Für ASP.NET Core-Projekte können Sie auf den [Bibliotheks-Manager](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) oder YARN anstelle von npm verwenden, um clientseitige JavaScript- und CSS-Dateien zu installieren.
 
 1. In diesem Beispiel fügen Sie eine TypeScript-Definitionsdatei für jQuery zu Ihrem Projekt hinzu. Fügen Sie Folgendes in Ihre Datei *package.json* ein.
 

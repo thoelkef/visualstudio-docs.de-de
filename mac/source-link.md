@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75439085"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583917"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>Debuggen in NuGet-Paketen mithilfe von SourceLink
 
@@ -38,4 +38,4 @@ Standardmäßig ist **Fragen** aktiviert. Sie erhalten die folgende Eingabeauffo
 ## <a name="see-also"></a>Siehe auch
 
 - [SourceLink GitHub-Repository](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- Weitere Informationen zum Hinzufügen der SourceLink-Unterstützung zu Paketen finden Sie in der [.NET-Dokumentation](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink).
+- Weitere Informationen zum Hinzufügen der SourceLink-Unterstützung zu Paketen finden Sie in der [.NET-Dokumentation](/dotnet/standard/library-guidance/sourcelink).

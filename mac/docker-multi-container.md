@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038672"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583995"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -84,7 +84,7 @@ Wir haben nun zwei ASP.NET-Projekte in unserer Projektmappe, die beide mit Docke
    ```
    
     > [!NOTE]
-    > Im Produktionscode sollte `HttpClient` nicht nach jeder Anforderung verworfen werden. Best Practices finden Sie unter [Verwenden von HttpClientFactory zur Implementierung robuster HTTP-Anforderungen](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > Im Produktionscode sollte `HttpClient` nicht nach jeder Anforderung verworfen werden. Best Practices finden Sie unter [Verwenden von HttpClientFactory zur Implementierung robuster HTTP-Anforderungen](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. Fügen Sie der Datei *Index.cshtml* eine Zeile hinzu, um `ViewData["Message"]` so anzuzeigen, dass die Datei wie der folgende Code aussieht:
 
@@ -102,7 +102,7 @@ Wir haben nun zwei ASP.NET-Projekte in unserer Projektmappe, die beide mit Docke
       </div>
       ```
   
-1. Kommentieren Sie sowohl im Front-End- als auch im Web-API-Projekt den Aufruf von [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) in der `Configure`-Methode in *Startup.cs* aus, weil dieser Beispielcode für den Aufruf der Web-API HTTP verwendet, nicht HTTPS.
+1. Kommentieren Sie sowohl im Front-End- als auch im Web-API-Projekt den Aufruf von [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) in der `Configure`-Methode in *Startup.cs* aus, weil dieser Beispielcode für den Aufruf der Web-API HTTP verwendet, nicht HTTPS.
 
       ```csharp
                   //app.UseHttpsRedirection();

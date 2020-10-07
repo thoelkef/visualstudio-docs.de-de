@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950486"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583943"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen in einem Ordner mit Visual Studio für Mac
 
@@ -23,7 +23,7 @@ Sie können das Tool zum Veröffentlichen verwenden, um .NET Core-Konsolenanwend
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem .NET Core.
-- Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](./create-new-projects.md?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>In Ordner veröffentlichen
 

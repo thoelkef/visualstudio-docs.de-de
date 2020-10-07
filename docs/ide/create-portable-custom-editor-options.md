@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402256"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659250"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -68,7 +68,7 @@ Der Editor in Visual Studio unterstützt die gebräuchlichsten [EditorConfig-Eig
 - insert\_final_newline
 - root
 
-Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Codeformate](../ide/editorconfig-code-style-settings-reference.md) wie z.B. Konventionen für [Sprache](../ide/editorconfig-language-conventions.md), [Formatierung](../ide/editorconfig-formatting-conventions.md) und [Benennung](../ide/editorconfig-naming-conventions.md) für C# und Visual Basic.
+Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Codeformate](/dotnet/fundamentals/code-analysis/code-style-rule-options) wie z.B. Konventionen für [Sprache](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [Formatierung](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules) und [Benennung](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) für C# und Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Hinzufügen und Entfernen von EditorConfig-Dateien
 
@@ -90,7 +90,7 @@ Wenn Sie eine EditorConfig-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
    ![Elementvorlagen für EditorConfig-Datei in Visual Studio](media/editorconfig-item-templates.png)
 
-1. Wählen Sie die Vorlage **editorconfig-Datei (Standard)** aus, um eine EditorConfig-Datei hinzuzufügen, die vorab mit zwei grundlegenden EditorConfig-Optionen für Einzugsformat und Größe aufgefüllt ist. Alternativ dazu können Sie auch die Vorlage **editorconfig-Datei (.NET)** auswählen, um eine EditorConfig-Datei hinzuzufügen, die vorab mit standardmäßigen [Konventionen für .NET-Codeformat, Formatierung und Benennung](../ide/editorconfig-code-style-settings-reference.md) aufgefüllt ist.
+1. Wählen Sie die Vorlage **editorconfig-Datei (Standard)** aus, um eine EditorConfig-Datei hinzuzufügen, die vorab mit zwei grundlegenden EditorConfig-Optionen für Einzugsformat und Größe aufgefüllt ist. Alternativ dazu können Sie auch die Vorlage **editorconfig-Datei (.NET)** auswählen, um eine EditorConfig-Datei hinzuzufügen, die vorab mit standardmäßigen [Konventionen für .NET-Codeformat, Formatierung und Benennung](/dotnet/fundamentals/code-analysis/code-style-rule-options) aufgefüllt ist.
 
    Anschließend wird eine *EDITORCONFIG*-Datei in Projektmappen-Explorer angezeigt und im Editor geöffnet.
 
@@ -180,7 +180,7 @@ Sie können den Bereich Ihrer EDITORCONFIG-Konventionen steuern, indem Sie die `
 
 ## <a name="see-also"></a>Siehe auch
 
-- [.NET-Codeformatkonventionen](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET-Codeformatkonventionen](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Supporting EditorConfig for a language service (Unterstützen von EditorConfig für einen Sprachdienst)](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Features des Code-Editors](writing-code-in-the-code-and-text-editor.md)
