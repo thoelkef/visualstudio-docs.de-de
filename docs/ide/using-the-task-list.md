@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768614"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781003"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
@@ -65,7 +65,7 @@ Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vor
 Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO`-Aufgabe in der Liste angezeigt.
 
 > [!NOTE]
-> Standardtoken sind nur für die Sprachen C/C++, C# und VB verfügbar. Informationen zu anderen Sprachen finden Sie im Abschnitt **Benutzerdefinierte Token**.
+> Standardtoken sind nur für die Sprachen C/C++, C# und VB verfügbar.
 
 ### <a name="custom-tokens"></a>Benutzerdefinierte Token
 
@@ -73,7 +73,7 @@ Standardmäßig enthält Visual Studio die folgenden Token: `HACK`, `TODO`, `UND
 
 So erstellen Sie ein benutzerdefiniertes Token:
 
-1. Wählen Sie **Optionen** im Menü **Extras**.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
 2. Öffnen Sie den Ordner **Umgebung** , und wählen Sie dann **Aufgabenliste**aus.
 
@@ -94,7 +94,7 @@ So erstellen Sie ein benutzerdefiniertes Token:
 
 Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt.
 
-Wechseln Sie zum Deaktivieren der C++-TODO-Kommentare im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++**  > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf **FALSE** fest.
+Wechseln Sie zum Deaktivieren der C++-TODO-Kommentare im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++** > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf **FALSE** fest.
 
 ## <a name="shortcuts"></a>Verknüpfungen
 
@@ -108,7 +108,7 @@ Fügen Sie den Zeiger in den Code ein, in dem Sie eine Verknüpfung platzieren m
 
 Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Aufgabenkommentare (Visual Studio für Mac)](/visualstudio/mac/task-comments)
