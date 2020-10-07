@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247979"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780878"
 ---
 # <a name="container-tools-launch-settings"></a>Starteinstellungen für Containertools
 
-Im Ordner *Eigenschaften* in einem ASP.NET Core-Projekt finden Sie die Datei „launchSettings.json“. Sie enthält Einstellungen, mit denen gesteuert wird, wie Ihre Web-App auf dem Entwicklungscomputer gestartet wird. Ausführliche Informationen dazu, wie diese Datei in der ASP.NET-Entwicklung verwendet wird, finden Sie unter [Verwenden von mehreren Umgebungen in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). In *launchSettings.json* beziehen sich die Einstellungen im Abschnitt **Docker** darauf, wie Visual Studio containerisierte Apps behandelt.
+Im Ordner *Eigenschaften* in einem ASP.NET Core-Projekt finden Sie die Datei „launchSettings.json“. Sie enthält Einstellungen, mit denen gesteuert wird, wie Ihre Web-App auf dem Entwicklungscomputer gestartet wird. Ausführliche Informationen dazu, wie diese Datei in der ASP.NET-Entwicklung verwendet wird, finden Sie unter [Verwenden von mehreren Umgebungen in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). In *launchSettings.json* beziehen sich die Einstellungen im Abschnitt **Docker** darauf, wie Visual Studio containerisierte Apps behandelt.
 
 ::: moniker range="vs-2017"
 

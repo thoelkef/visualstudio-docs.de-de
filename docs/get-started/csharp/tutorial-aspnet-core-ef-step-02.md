@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580084"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780988"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Schritt 2: Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -100,7 +100,7 @@ Führen Sie die Anwendung erneut aus. Die Seite sollte nun die aktuelle Uhrzeit 
 
 Fügen Sie einen Breakpoint zur `OnGet`-Methode hinzu, in der Sie einen Wert zu `Time` zuweisen, und debuggen Sie nun die Anwendung.
 
-Die Ausführung stoppt beim Breakpoint, und Sie können sehen, dass `DateTime.Today` das Datum enthält, aber die Uhrzeit immer Mitternacht ist, weil keine Uhrzeitdaten enthalten sind. 
+Die Ausführung stoppt beim Breakpoint, und Sie können sehen, dass `DateTime.Today` das Datum enthält, aber die Uhrzeit immer Mitternacht ist, weil keine Uhrzeitdaten enthalten sind.
 
 ![ASP.NET Core-Projekt in Visual Studio 2019 im Browser](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ Im nächsten Video erfahren Sie, wie Sie Ihrer App Unterstützung für Daten hin
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Tutorial: Erstellen einer Razor Pages-Web-App mit ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: Erstellen einer Razor Pages-Web-App mit ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

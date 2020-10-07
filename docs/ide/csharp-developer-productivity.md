@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509938"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658411"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
 
@@ -101,7 +101,7 @@ Sie können eine EditorConfig-Datei zum Codieren von Codierungskonventionen verw
 
    ![Konfigurieren Sie den Schweregrad einer Codestilregel direkt im Editor.](../ide/media/configure-severity-level.png)
 
-Lesen Sie die Dokumentation zu den [Einstellungen für die .NET-Codierungskonventionen](editorconfig-code-style-settings-reference.md), die auch ein Beispiel einer vollständigen EditorConfig-Datei enthält.
+Lesen Sie die Dokumentation zu den [Einstellungen für die .NET-Codierungskonventionen](/dotnet/fundamentals/code-analysis/code-style-rule-options), die auch ein Beispiel einer vollständigen EditorConfig-Datei enthält.
 
 ::: moniker range=">=vs-2019"
 

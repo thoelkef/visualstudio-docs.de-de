@@ -2,20 +2,20 @@
 title: Codeformatoptionen und Codebereinigung
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682688"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658385"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -26,7 +26,7 @@ Codeformateinstellungen können projektweise mithilfe einer [EditorConfig-Datei]
 
 ## <a name="code-styles-in-editorconfig-files"></a>Codeformate in EditorConfig-Dateien
 
-[Codeformateinstellungen](create-portable-custom-editor-options.md) für .NET können durch Hinzufügen einer [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei zu Ihrem Projekt angegeben werden. Diese .editorconfig-Dateien sind nicht mit einem Visual Studio-Personalisierungskonto, sondern mit einer Codebasis verknüpft. Die Einstellungen in der Editorconfig-Datei haben Vorrang gegenüber den im Dialogfeld **Optionen** angegebenen Codeformaten. Verwenden Sie eine EditorConfig-Datei, wenn Sie Codierungsstile für alle Mitwirkenden an Ihrem Repository oder Projekt erzwingen möchten.
+[Codeformateinstellungen](create-portable-custom-editor-options.md) für .NET können durch Hinzufügen einer [EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)-Datei zu Ihrem Projekt angegeben werden. Diese .editorconfig-Dateien sind nicht mit einem Visual Studio-Personalisierungskonto, sondern mit einer Codebasis verknüpft. Die Einstellungen in der Editorconfig-Datei haben Vorrang gegenüber den im Dialogfeld **Optionen** angegebenen Codeformaten. Verwenden Sie eine EditorConfig-Datei, wenn Sie Codierungsstile für alle Mitwirkenden an Ihrem Repository oder Projekt erzwingen möchten.
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ Wenn Ihre Codeformateinstellungen bei jedem Speichern einer Datei angewendet wer
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Schnelle Aktionen](../ide/quick-actions.md)
-- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Editorverhalten (Visual Studio für Mac)](/visualstudio/mac/editor-behavior)

@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402520"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584034"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Erstellen von Blazor-Web-Apps
 
 Dieser Leitfaden bietet eine Einführung in die Erstellung Ihrer ersten Blazor-Web-App. Weitere ausführliche Anweisungen finden Sie unter [Einführung in ASP.NET Core für Blazor](/aspnet/core/blazor/index).
 
-ASP.NET Core für Blazor unterstützt zwei verschiedene Hostingoptionen: Blazor WebAssembly (WASM) oder Blazor Server. Visual Studio für Mac unterstützt beide Hostingmodelle. Visual Studio für Mac 8.4 und höher unterstützt Blazor Server, Visual Studio für Mac 8.6 oder höher unterstützt beide Optionen. Weitere Informationen zu den Blazor-Hostingmodellen finden Sie unter [ASP.NET Core-Hostingmodelle für Blazor](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Unterstützung für das Debuggen von Blazor WebAssembly-Projekten in Visual Studio für Mac ist in der Vorschauversion von v8.8 verfügbar (über den Updatekanal für Vorschauen im Menü **Visual Studio > Nach Updates suchen...** ).
+ASP.NET Core für Blazor unterstützt zwei verschiedene Hostingoptionen: Blazor WebAssembly (WASM) oder Blazor Server. Visual Studio für Mac unterstützt beide Hostingmodelle. Visual Studio für Mac 8.4 und höher unterstützt Blazor Server, Visual Studio für Mac 8.6 oder höher unterstützt beide Optionen. Weitere Informationen zu den Blazor-Hostingmodellen finden Sie unter [ASP.NET Core-Hostingmodelle für Blazor](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Unterstützung für das Debuggen von Blazor WebAssembly-Projekten in Visual Studio für Mac ist in der Vorschauversion von v8.8 verfügbar (über den Updatekanal für Vorschauen im Menü **Visual Studio > Nach Updates suchen...** ).
 
 Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clientseitigen Webbenutzeroberflächen mit .NET, das den Webentwicklern folgende Vorteile bietet:
 

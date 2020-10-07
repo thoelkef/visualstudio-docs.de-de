@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739901"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781024"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Verwalten von NPM-Paketen in Visual Studio
 
@@ -126,7 +126,7 @@ Für Projekte wie ASP.NET Core-Projekte können Sie npm-Unterstützung in Ihr Pr
 * [Installieren von Paketen mit „package.json“](#npmInstallPackage)
 
 >[!NOTE]
-> Für ASP.NET Core-Projekte können Sie auf den [Bibliotheks-Manager](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) oder YARN anstelle von npm verwenden, um clientseitige JavaScript- und CSS-Dateien zu installieren.
+> Für ASP.NET Core-Projekte können Sie auf den [Bibliotheks-Manager](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) oder YARN anstelle von npm verwenden, um clientseitige JavaScript- und CSS-Dateien zu installieren.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Hinzufügen der npm-Unterstützung zu einem Projekt (ASP.NET Core)
 

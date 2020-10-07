@@ -12,22 +12,22 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560735"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658437"
 ---
 # <a name="overview-of-source-code-analysis"></a>Übersicht über Quellcode-Analyse
 
-Analysetools der .NET Compiler Platform (Roslyn) analysieren Ihren C#- oder Visual Basic-Code auf Stil, Qualität, Verwaltbarkeit, Design und unter weiteren Aspekten. Diese Prüfung oder Analyse wird während der Entwurfszeit in allen geöffneten Dateien durchgeführt. 
+Analysetools der .NET Compiler Platform (Roslyn) analysieren Ihren C#- oder Visual Basic-Code auf Stil, Qualität, Verwaltbarkeit, Design und unter weiteren Aspekten. Diese Prüfung oder Analyse wird während der Entwurfszeit in allen geöffneten Dateien durchgeführt.
 
 Analysetools können in folgende Gruppen unterteilt werden:
 
-- [Codeformat](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories)-Analysetools sind in Visual Studio integriert. Die Diagnose-ID oder der Code für diese Analysetools ist vom Format IDExxxx, z. B. IDE0067. Sie können Einstellungen auf der [Text-Editor-Optionenseite](../ide/code-styles-and-code-cleanup.md) oder in einer [EditorConfig-Datei](../ide/editorconfig-code-style-settings-reference.md) konfigurieren. Ab .NET 5.0 sind Codeformat-Analysetools im .NET SDK enthalten und können als Buildwarnungen oder -Fehler strikt erzwungen werden. Weitere Informationen finden Sie [hier](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- [Codeformat](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)-Analysetools sind in Visual Studio integriert. Die Diagnose-ID oder der Code für diese Analysetools ist vom Format IDExxxx, z. B. IDE0067. Sie können Einstellungen auf der [Text-Editor-Optionenseite](../ide/code-styles-and-code-cleanup.md) oder in einer [EditorConfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) konfigurieren. Ab .NET 5.0 sind Codeformat-Analysetools im .NET SDK enthalten und können als Buildwarnungen oder -Fehler strikt erzwungen werden. Weitere Informationen finden Sie [hier](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Tools zur Analyse der [Codequalität](code-analysis-warnings-for-managed-code-by-checkid.md) sind jetzt im .NET 5 SDK enthalten und standardmäßig aktiviert. Die Diagnose-ID oder der Code für diese Analysetools hat das Format CAxxxx, z. B. CA1822. Weitere Informationen finden Sie unter [Analyse der .NET-Codequalität](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
+- Tools zur Analyse der [Codequalität](/dotnet/fundamentals/code-analysis/quality-rules/index) sind jetzt im .NET 5 SDK enthalten und standardmäßig aktiviert. Die Diagnose-ID oder der Code für diese Analysetools hat das Format CAxxxx, z. B. CA1822. Weitere Informationen finden Sie unter [Analyse der .NET-Codequalität](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Sie können Analysetools von Drittanbietern als Visual Studio-Erweiterung oder NuGet-Paket installieren. Analysetools von Drittanbietern wie [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) und [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -58,7 +58,7 @@ Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Code
 
 ## <a name="configure-analyzer-severity-levels"></a>Konfigurieren von Analysetool-Schweregraden
 
-Sie können den Schweregrad von Analysetoolregeln oder -*diagnosen* in einer [EditorConfig-Datei](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) oder im [Glühbirnenmenü](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) konfigurieren. 
+Sie können den Schweregrad von Analysetoolregeln oder -*diagnosen* in einer [EditorConfig-Datei](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) oder im [Glühbirnenmenü](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) konfigurieren.
 
 Analysetools können auch so konfiguriert werden, dass sie den Code zur Erstellungszeit überprüfen und während Ihrer Eingabe aktiv sind. Sie können den Bereich der Livecodeanalyse konfigurieren, um die Ausführung nur auf das aktuelle Dokument, alle geöffneten Dokumente oder die gesamte Projektmappe zu beschränken. Weitere Informationen finden Sie unter [How to: Configure the scope of live code analysis (Vorgehensweise: Konfigurieren des Bereichs der Livecodeanalyse)](./configure-live-code-analysis-scope-managed-code.md).
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88201785"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580960"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Testtools in Visual Studio für Mac
 
@@ -24,7 +24,7 @@ Um mit dem Testen zu beginnen, können Sie ein neues Testprojekt in Ihrer Projek
 ![Dialogfeld „Neues Projekt“ mit ausgewähltem Abschnitt „Web und Konsole > Tests“ und angezeigten xUnit-, MSTest- und NUnit-Projekten](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Weitere Informationen zu Komponententests Ihrer .NET Core-Anwendungen und zur Auswahl von Komponententestframeworks finden Sie in der Dokumentation [Komponententests in .NET Core und .NET Standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit).
+> Weitere Informationen zu Komponententests Ihrer .NET Core-Anwendungen und zur Auswahl von Komponententestframeworks finden Sie in der Dokumentation [Komponententests in .NET Core und .NET Standard](/dotnet/core/testing/?pivots=xunit).
 
 ## <a name="running-tests"></a>Ausführen von Tests
 Das Fenster **Komponententests** wird zum Ausführen von Komponententests verwendet und über das Menü **Ansicht > Bereiche > Komponententests** geöffnet. Komponententests in der Projektmappe werden automatisch erkannt und in diesem Fenster angezeigt, in dem Sie alle Tests oder eine Teilmenge von Tests ausführen können, die Sie ausgewählt haben.
