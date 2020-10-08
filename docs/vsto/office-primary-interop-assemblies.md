@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985716"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830765"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
@@ -100,15 +100,15 @@ In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die
 |-------------------------------------|-----------------------------------|
 |Microsoft Access 14.0-Objektbibliothek<br /><br /> Microsoft Access 15,0-Objektbibliothek|Microsoft.Office.Interop.Access.dll|
 |Objektbibliothek der Microsoft Office 14.0 Access-Datenbank-Engine<br /><br /> Objektbibliothek der Microsoft Office 15.0 Access-Datenbank-Engine|Microsoft.Office.Interop.Access.Dao.dll|
-|Microsoft Excel 14.0-Objektbibliothek<br /><br /> Microsoft Excel 15,0-Objektbibliothek|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Microsoft Excel 14.0-Objektbibliothek<br /><br /> Microsoft Excel 15,0-Objektbibliothek|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Microsoft Graph 14.0-Objektbibliothek(wird von PowerPoint, Access und Word für Diagramme verwendet)<br /><br /> Microsoft Graph 15.0-Objektbibliothek|Microsoft.Office.Interop.Graph.dll|
-|Microsoft InfoPath 2.0-Typbibliothek (nur für InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Microsoft InfoPath 2.0-Typbibliothek (nur für InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Microsoft InfoPath-XML-Interop-Assembly (nur für InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Microsoft Office 14.0-Objektbibliothek (gemeinsam genutzte Office-Funktionen)<br /><br /> Microsoft Office 15,0-Objektbibliothek (gemeinsam genutzte Office-Funktionen)|office.dll|
 |Microsoft Office Outlook-Ansichtssteuerelement (kann auf Webseiten und in Anwendungen für den Zugriff auf den Posteingang verwendet werden)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Microsoft Outlook 14.0-Objektbibliothek<br /><br /> Microsoft Outlook 15,0-Objektbibliothek|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Microsoft Outlook 14.0-Objektbibliothek<br /><br /> Microsoft Outlook 15,0-Objektbibliothek|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Microsoft PowerPoint 14.0-Objektbibliothek<br /><br /> Microsoft PowerPoint 15,0-Objektbibliothek|Microsoft.Office.Interop.PowerPoint.dll|
-|Microsoft Project 14.0-Objektbibliothek<br /><br /> Microsoft Project 15,0-Objektbibliothek|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Microsoft Project 14.0-Objektbibliothek<br /><br /> Microsoft Project 15,0-Objektbibliothek|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Microsoft Publisher 14.0-Objektbibliothek<br /><br /> Microsoft Publisher 15,0-Objektbibliothek|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0-Webobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0-Seitenobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ In der folgenden Tabelle werden die primären Interop-Assemblys aufgelistet, die
 |Microsoft Visio 14.0-Typbibliothek<br /><br /> Microsoft Visio 15,0-Typbibliothek|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0-Typbibliothek für "Speichern als Web"<br /><br /> Microsoft Visio 15,0-Typbibliothek für "Speichern als Web"|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0-Typbibliothek für Zeichnungssteuerelemente<br /><br /> Microsoft Visio 15,0-Typbibliothek für Zeichnungssteuerelemente|Microsoft.Office.Interop.VisOcx.dll|
-|Microsoft Word 14.0-Objektbibliothek<br /><br /> Microsoft Word 15,0-Objektbibliothek|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Microsoft Word 14.0-Objektbibliothek<br /><br /> Microsoft Word 15,0-Objektbibliothek|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Microsoft Visual Basic for Applications Erweiterung 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Bindungsassemblys

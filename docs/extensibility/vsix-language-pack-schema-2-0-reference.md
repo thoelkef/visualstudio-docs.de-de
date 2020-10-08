@@ -8,15 +8,15 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: zorio
-author: zoeyr
+author: acangialosi
+ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169338"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830706"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX-Sprachpaket Schema 2,0 Referenz
 
@@ -30,7 +30,7 @@ Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>` mi
 
 Innerhalb des- `<PackageLanguagePackManifest>` Elements muss das folgende-Element vorhanden sein:
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |`<Metadata>`| Das enthaltende Element für alle lokalisierten Paket Metadaten.
 
@@ -38,7 +38,7 @@ Innerhalb des- `<PackageLanguagePackManifest>` Elements muss das folgende-Elemen
 
 Innerhalb des- `<Metadata>` Elements können Sie über die folgenden Elemente verfügen:
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |`<DisplayName>`|Der lokalisierte Name der zu installierenden Erweiterung.|
 |`<Description>`|Die lokalisierte Beschreibung der zu installierenden Erweiterung.|
@@ -65,7 +65,7 @@ Innerhalb des- `<Metadata>` Elements können Sie über die folgenden Elemente ve
 
 ## <a name="see-also"></a>Siehe auch
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Zeigt, wie Sie eine lokalisierte Installationsunterstützung für ein VSIX-Paket bereitstellen.|
 |[VSIX-Erweiterungs Schema 2,0-Referenz](../extensibility/vsix-extension-schema-2-0-reference.md)|Ein VSIX-Manifest beschreibt den Inhalt einer *VSIX* -Bereitstellungs Datei. Mithilfe der Bereitstellungs Datei können Sie eine Visual Studio-Erweiterung im Dialogfeld **Erweiterungen und Updates** installieren.|

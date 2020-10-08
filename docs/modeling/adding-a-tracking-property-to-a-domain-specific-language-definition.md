@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bfa6c63d9f43c465e5632d40281c1f48fb9d0f0b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810821"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830725"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -49,7 +49,7 @@ Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunäc
 | Komponente | Link |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
 ## <a name="create-the-project"></a>Erstellen des Projekts
@@ -754,7 +754,7 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
 Wenn Sie planen, mehr als eine nach Verfolgungs Eigenschaft zu verwenden oder nach Verfolgungs Eigenschaften in mehr als einer DSL zu implementieren, können Sie eine Textvorlage erstellen, um den allgemeinen Code für die Unterstützung der einzelnen Überwachungs Eigenschaften zu generieren. Weitere Informationen zu Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
