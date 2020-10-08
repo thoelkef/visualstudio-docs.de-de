@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a0a5664b4c22aa8a31ab4f0f620c14b4aeadc50
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442516"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838462"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Datenansichten der Profiler-Samplingmethode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63442516"
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Samplingmethode generiert werden.  
   
 > [!NOTE]
-> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Informationen hierzu finden Sie unter [Performance Tools on Windows 8 and Windows Server 2012 applications (Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen)](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Zusammenfassungsansicht](../profiling/summary-view-sampling-data.md)  
@@ -37,7 +37,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Modulansicht](../profiling/modules-view-sampling-data.md)  
  Organisiert Profilerstellungsdaten nach Modul, und führt die Funktionen, Quellcodezeilen und Anweisungen auf, die bei der Sammlung von Samplings ausgeführt wurden.  
   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)  
+ [Aufrufer-/aufgerufeneransicht-Samplings](../profiling/caller-callee-view-sampling-data.md)  
  Zeigt Profilerstellungsdaten für eine ausgewählte Funktion und die Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)  
@@ -49,22 +49,22 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Führt die Quellcodezeilen auf, die bei der Sammlung von Samplings ausgeführt wurden.  
   
-## <a name="reference"></a>Referenz  
+## <a name="reference"></a>Verweis  
  [Prozessansicht](../profiling/process-view.md)  
  Führt Start- und Endzeiten von Prozessen und Threads auf.  
   
- [Marks View (Markierungsansicht)](../profiling/marks-view.md)  
+ [Markierungsansicht](../profiling/marks-view.md)  
  Führt in eine Profilerstellungs-Datendatei eingefügte ETW- und Samplingereignisse auf.  
   
  [Funktionsdetailansicht](../profiling/function-details-view.md)  
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentierungs Methoden-Datenansichten](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.  
   
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
+ [.NET-Arbeitsspeicher Datenansichten](../profiling/dotnet-memory-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die .NET-Speicherdaten enthalten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Grundlegendes zu Stichprobendaten Werten](../profiling/understanding-sampling-data-values.md)
