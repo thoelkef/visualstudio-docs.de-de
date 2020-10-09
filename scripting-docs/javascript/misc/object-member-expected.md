@@ -14,12 +14,12 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791395d1fff89708e96a6dbe61fd73d954faac3b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815590"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862069"
 ---
 # <a name="object-member-expected"></a>Objektmember erwartet
 Sie haben versucht, einen Vorgang für das Datenmember eines Objekts auszuführen, der Member ist jedoch nicht vorhanden.  
@@ -29,5 +29,5 @@ Sie haben versucht, einen Vorgang für das Datenmember eines Objekts auszuführe
 - Stellen Sie sicher, dass Sie den Namen des Datenelements ordnungsgemäß eingegeben haben.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Object-Objekt](../../javascript/reference/object-object-javascript.md)   
- [Objekte und Arrays](../../javascript/objects-and-arrays-javascript.md)
+ [Object-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objekte und Arrays](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

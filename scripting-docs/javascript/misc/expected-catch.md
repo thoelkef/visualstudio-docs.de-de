@@ -14,12 +14,12 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47411a6376cd843b3a12cf74ed1800775b98cd83
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816683"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861959"
 ---
 # <a name="expected-catch"></a>"catch" erwartet
 Sie haben den **try** -Block für die Ausnahmebehandlung verwendet, aber die zugehörige **catch** -Anweisung nicht geschrieben. Der Mechanismus für die Ausnahmebehandlung erfordert, dass der Code, der möglicherweise fehlschlägt, zusammen mit dem Code, der nicht ausgeführt werden soll, wenn eine Ausnahme auftritt, in einem **try** -Block umschließt. Ausnahmen werden im **try** -Block mithilfe der **throw** -Anweisung ausgelöst und außerhalb des **try** -Blocks mit einer oder mehreren **catch** -Anweisungen abgefangen.  
@@ -31,5 +31,5 @@ Sie haben den **try** -Block für die Ausnahmebehandlung verwendet, aber die zug
 - Versuchen Sie, anstelle eines **catch** -Blocks einen **abschließend** -Block zu verwenden.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Try... catch... Abschließend-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Error-Objekt](../../javascript/reference/error-object-javascript.md)
+ [Try... catch... Abschließend-Anweisung](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)   
+ [Error-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)

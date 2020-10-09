@@ -14,12 +14,12 @@ ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09a49fb0cbff746f11606e4cef7417a5c9a68d0b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816435"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862510"
 ---
 # <a name="number-expected"></a>Zahl erwartet
 Sie haben versucht, die **Number. Prototype. ToString** -oder **Number. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als " **Number**" aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ " **Number**" sein.  
@@ -29,5 +29,5 @@ Sie haben versucht, die **Number. Prototype. ToString** -oder **Number. Prototyp
 - Rufen Sie nur die **Number. Prototype. ToString** -oder **Number. Prototype. valueOf** -Methode für Objekte vom Typ **Number**auf.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Number-Objekt](../../javascript/reference/number-object-javascript.md)   
- [number-Eigenschaft (Fehler)](../../javascript/reference/number-property-error-javascript.md)
+ [Number-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)   
+ [number-Eigenschaft (Fehler)](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Error.number)

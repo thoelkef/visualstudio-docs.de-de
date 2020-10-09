@@ -14,12 +14,12 @@ ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9dc3436412fc75fc2879ad855a369f8207e0ae49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 686a891816b7e339e58a71aa8fcb2bffa8517c8b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816955"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862150"
 ---
 # <a name="illegal-assignment-javascript"></a>Ungültige Zuweisung (JavaScript)
 Sie haben versucht, einem schreibgeschützten Bezeichner einen Wert zuzuweisen. Einem schreibgeschützten Bezeichner kann kein Wert zugewiesen werden. Beispielsweise Host definierte Objekte und externe COM-Objekte.  
@@ -29,4 +29,4 @@ Sie haben versucht, einem schreibgeschützten Bezeichner einen Wert zuzuweisen. 
 - Weisen Sie schreibgeschützten bezeichlern keine Werte zu.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Zuweisungsoperator (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)
+ [Zuweisungsoperator (=)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment)

@@ -14,12 +14,12 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3de7f224b6ff40f1606f9593704f799cd64d32da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fb3fe5bc4bdd39863409d963904ead3df3bcf0
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816058"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862155"
 ---
 # <a name="undefined-identifier"></a>Nicht definierter Bezeichner
 Sie haben versucht, einen Bezeichner zu verwenden, der vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkannt wird. Der nicht definierte Wert wird zurückgegeben, wenn Sie verwenden:  
@@ -35,5 +35,5 @@ Sie haben versucht, einen Bezeichner zu verwenden, der vom [!INCLUDE[javascript]
 - Deklarieren Sie die Variable mit einer **var** -Anweisung (wie in `var` x;).  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Instan](../../javascript/variables-javascript.md)   
- [Variablenbereich](../../javascript/advanced/variable-scope-javascript.md)
+ [Instan](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Variablenbereich](https://developer.mozilla.org/docs/Web/JavaScript/Closures)

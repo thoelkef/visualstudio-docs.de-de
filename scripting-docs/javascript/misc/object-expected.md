@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a3b8510c92e15a5b1bf5e15bb774ba031f7181f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816227"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862110"
 ---
 # <a name="object-expected"></a>Objekt erwartet
 Sie haben versucht, eine Methode oder Eigenschaft für ein Objekt aufzurufen, dessen Typ nicht `Object` lautete, oder Sie haben ein Argument übergeben, dessen Typ nicht `Object` lautete, als `Object` erforderlich war.  
@@ -47,5 +47,5 @@ Sie haben versucht, eine Methode oder Eigenschaft für ein Objekt aufzurufen, de
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Object-Objekt](../../javascript/reference/object-object-javascript.md)   
- [Objekte und Arrays](../../javascript/objects-and-arrays-javascript.md)
+ [Object-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objekte und Arrays](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)
