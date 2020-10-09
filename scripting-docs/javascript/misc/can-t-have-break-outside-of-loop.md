@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817657"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862800"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>"break" ist außerhalb der Schleife unzulässig
 Sie haben versucht, das **break** -Schlüsselwort außerhalb einer-Schleife zu verwenden. Das **break** -Schlüsselwort wird zum Beenden einer-Schleife oder- `switch` Anweisung verwendet. Er muss in den Text einer-Schleife oder-Anweisung eingebettet werden `switch` . Allerdings kann eine **Bezeichnung** dem break-Schlüsselwort folgen.  
@@ -35,6 +35,6 @@ break labelname;
 - Stellen Sie sicher, dass das **break** -Schlüsselwort in einer einschließenden Schleife oder Switch-Anweisung erscheint.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
- [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Break-Anweisung](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Steuern des Programmablaufs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Problembehandlung bei Skripts](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

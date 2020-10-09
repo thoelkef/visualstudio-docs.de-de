@@ -14,12 +14,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815317"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862710"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript)
 Sie haben die Zeichen folgen Konstante nicht mit einem schließenden Anführungszeichen beendet. Zeichen folgen Konstanten müssen in ein paar von Anführungszeichen eingeschlossen werden.  
@@ -32,5 +32,5 @@ Sie haben die Zeichen folgen Konstante nicht mit einem schließenden Anführungs
 - Fügen Sie das schließende Anführungszeichen am Ende der Zeichenfolge hinzu.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [String-Objekt](../../javascript/reference/string-object-javascript.md)   
- [toString-Methode (Objekt)](../../javascript/reference/tostring-method-object-javascript.md)
+ [String-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
+ [toString-Methode (Objekt)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

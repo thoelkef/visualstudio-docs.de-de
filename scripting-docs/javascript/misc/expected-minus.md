@@ -14,14 +14,14 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1800fa9b07c71c885fcba03f233a147efad14ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bb965a4807a31df106102318cf6618680a97adb
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814498"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862608"
 ---
-# <a name="expected--"></a>"-" Erwartet
+# <a name="expected--"></a>„-“ erwartet
 Sie haben versucht, einen regulären Ausdruck zu erstellen, aber keinen der Schrägstriche (/). Ebenso wie Zeichen folgen Literale als Zeichen innerhalb von Anführungszeichen geschrieben werden, werden die Literale regulärer Ausdrücke als Zeichen innerhalb eines Paares von Schrägstrichen (/) ausgedrückt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
@@ -29,5 +29,5 @@ Sie haben versucht, einen regulären Ausdruck zu erstellen, aber keinen der Schr
 - Fügen Sie einen abschließenden Schrägstrich ein, um das Ende des regulären Ausdrucks zu markieren.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Reguläres Ausdrucks Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Reguläres Ausdrucks Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Syntax für reguläre Ausdrücke (JavaScript)](/previous-versions/1400241x(v=vs.100))

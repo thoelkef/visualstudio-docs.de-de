@@ -14,12 +14,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816942"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862613"
 ---
 # <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
 Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfasst, das vom Compiler nicht als gültig erkannt wurde [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] . Gültige Zeichen verwenden die folgenden Regeln:  
@@ -35,6 +35,6 @@ Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfass
 - Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition sind.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Instan](../../javascript/variables-javascript.md)   
- [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   
- [Datentypen](../../javascript/data-types-javascript.md)
+ [Instan](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Sonderzeichen](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types)   
+ [Datentypen](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
