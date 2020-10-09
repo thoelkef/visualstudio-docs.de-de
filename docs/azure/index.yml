@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509743"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860526"
 landingContent:
 - title: Bereitstellen in Azure App Service
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Containertools in Visual Studio
       url: ../containers/overview.md
     - text: Kubernetes-Tools
-      url: ../containers/tutorial-kubernetes-tools.md
+      url: ../containers/bridge-to-kubernetes.md
 - title: Debugging und Leistungsanalyse bei Azure-Diensten
   linkLists:
   - linkListType: tutorial
@@ -77,11 +77,11 @@ landingContent:
       url: azure-cache-for-redis-add-connected-service.md
     - text: Azure CosmosDB
       url: azure-cosmosdb-add-connected-service.md
-    - text: Azure Key Vault
+    - text: Azure-Schlüsseltresor
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure SignalR
       url: azure-signalr-add-connected-service.md
-    - text: Azure SQL-Datenbank
+    - text: Azure SQL-Datenbank
       url: azure-sql-database-add-connected-service.md
     - text: Azure Storage
       url: vs-azure-tools-connected-services-storage.md

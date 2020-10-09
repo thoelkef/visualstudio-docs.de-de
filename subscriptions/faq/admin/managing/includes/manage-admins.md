@@ -8,12 +8,12 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 496c8ecc16c67997de3999a48850afdcc7c1f58b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200499"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838298"
 ---
 ## <a name="how-do-i-manage-administrators"></a>Wie verwalte ich Administratoren?
 
@@ -39,4 +39,4 @@ So weisen Sie weitere Administratoren zu
 8. Klicken Sie oben im Bereich auf die Dropdownliste „Rolle“, scrollen Sie nach unten, und wählen Sie „Benutzerzugriffsadministrator“ aus.
 9. Klicken Sie auf „Speichern“.
 
-[Weitere Informationen](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin) zur Verwaltung von Cloudabonnements.
+[Weitere Informationen](../../../../cloud-admin.md) zur Verwaltung von Cloudabonnements.
