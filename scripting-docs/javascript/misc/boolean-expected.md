@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817670"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862661"
 ---
 # <a name="boolean-expected"></a>Boolescher Wert erwartet
 Sie haben versucht, die **Boolean. Prototype. ToString** -Methode oder die **Boolean. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als aufzurufen `Boolean` . Das Objekt dieses Aufruf Typs muss vom Typ sein `Boolean` . Beispiel:
@@ -36,7 +36,7 @@ o.f();
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Boolean-Objekt](../../javascript/reference/boolean-object-javascript.md)
-- [Datentypen](../../javascript/data-types-javascript.md)
-- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)
-- [Kopieren, Übergeben und Vergleichen von Daten](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Boolean-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [Datentypen](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [Steuern des Programmablaufs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [Kopieren, Übergeben und Vergleichen von Daten](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

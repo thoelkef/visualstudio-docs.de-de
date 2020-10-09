@@ -14,12 +14,12 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28531c1ac1dc73ca2bf309d412b08d23dd17bfb8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817605"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862647"
 ---
 # <a name="date-object-expected"></a>Date-Objekt erwartet
 Sie haben versucht, die **Date. Prototype. ToString** -oder **Date. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als aufzurufen `Date` . Das Objekt dieses Aufruf Typs muss vom Typ sein `Date` . Beispiel:  
@@ -35,6 +35,6 @@ o.f();
 - Rufen Sie nur die **Date. Prototype. ToString** -oder **Date. Prototype. valueOf** -Methode für Objekte vom Typ auf `Date` .  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Date-Objekt](../../javascript/reference/date-object-javascript.md)   
- [getDate-Methode (Datum)](../../javascript/reference/getdate-method-date-javascript.md)   
- [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md)
+ [Date-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date)   
+ [getDate-Methode (Datum)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getdate)   
+ [Systeminterne Objekte](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

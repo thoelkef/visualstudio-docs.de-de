@@ -14,12 +14,12 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff61894ce808cd33876e876c596e791a3347ab72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e63ee2970c90ffcfff5c02a384d3346b3ea6229
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817592"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862625"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator-Objekt erwartet
 Sie haben versucht, die **Enumerator. Prototype. atEnd-, Enumerator. Prototype. Item-, Enumerator. Prototype. muvefirst** -Methode oder **Enumerator. Prototype. mavenext** -Methode für ein Objekt eines anderen Typs als aufzurufen `Enumerator` . Das Objekt dieses Aufruf Typs muss vom Typ sein `Enumerator` . Im folgenden finden Sie ein Beispiel für Code, der diese Regel unterbricht:  
@@ -39,4 +39,4 @@ o.f();
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Enumeratorobjekt](../../javascript/reference/enumerator-object-javascript.md)
+ [Enumeratorobjekt](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Enumerator)
