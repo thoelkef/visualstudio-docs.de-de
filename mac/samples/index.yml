@@ -16,11 +16,11 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+          - href: /samples/xamarin/xamarin-forms-samples/todo/
             html: 'In diesem Beispiel wird eine To-Do-Listen-Anwendung veranschaulicht, bei der eine mit Xamarin.Forms erstellte lokale SQLite-Datenbank verwendet wird, um die Daten zu speichern und auf sie zuzugreifen.'
             image:
               src: ../media/samples/todo.png
-              href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+              href: /samples/xamarin/xamarin-forms-samples/todo/
             title: Todo
           - href: 'https://github.com/xamarinhq/app-myshoppe'
             html: 'Eine Demo-App, die es Vertriebsmitarbeitern ermöglicht, ihre Vertriebsleistung nachzuverfolgen, Leads zu verwalten, ihre Kontaktpersonen anzuzeigen, Aufträge zu verwalten und den Produktkatalog zu durchsuchen.'
@@ -40,23 +40,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+          - href: /samples/xamarin/monodroid-samples/android50-googleio2014master/
             html: Dieses Beispiel veranschaulicht die neuen Material Design-APIs in Android Lollipop.
             image:
               src: ../media/samples/material-design.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+              href: /samples/xamarin/monodroid-samples/android50-googleio2014master/
             title: Material Design
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+          - href: /samples/xamarin/monodroid-samples/googleplayservices/
             html: 'Diese Lösung verwendet Xamarin Google Play Services NuGet, um einige Anwendungsbereiche der Karten-API zu veranschaulichen.'
             image:
               src: ../media/samples/gps.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+              href: /samples/xamarin/monodroid-samples/googleplayservices/
             title: Google Play Services
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+          - href: /samples/xamarin/monodroid-samples/userinterface-flashcardpager/
             html: 'Dieses Beispiel veranschaulicht, wie ViewPager und PagerTabStrip zusammen verwendet werden, um eine App zu implementieren, mit der eine Reihe von Mathematikaufgaben auf Speicherkarten dargestellt wird.'
             image:
               src: ../media/samples/flash.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+              href: /samples/xamarin/monodroid-samples/userinterface-flashcardpager/
             title: FlashCardPager
   - title: Xamarin.iOS
     items:
@@ -64,23 +64,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+          - href: /samples/xamarin/ios-samples/ios11-arkitplacingobjects/
             html: ARKit Augmented Reality-Demo zum Platzieren von Objekten auf erkannten Oberflächen.
             image:
               src: ../media/samples/arkit.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+              href: /samples/xamarin/ios-samples/ios11-arkitplacingobjects/
             title: ARKit (iOS 11)
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+          - href: /samples/xamarin/ios-samples/ios11-mapkitsample/
             html: 'Neue iOS 11-Features in MapKit: Gruppierungs- und Teilungsmarker, die auf Zoomgrad basieren.'
             image:
               src: ../media/samples/mapkit.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+              href: /samples/xamarin/ios-samples/ios11-mapkitsample/
             title: MapKit (iOS 11)
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+          - href: /samples/xamarin/ios-samples/ios11-coremlazuremodel/
             html: 'iOS 11 Vision Framework und CoreML, die ein Modell verwenden, das vom Custom Vision Service von Azure trainiert wurde.'
             image:
               src: ../media/samples/coremlazure.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+              href: /samples/xamarin/ios-samples/ios11-coremlazuremodel/
             title: CoreML & Azure (iOS 11)
   - title: Xamarin.Mac
     items:
@@ -88,23 +88,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+          - href: /samples/xamarin/mac-samples/hello-mac/
             html: Hello World-Anwendung zum Einstieg in die Mac-Entwicklung.
             image:
               src: ../media/samples/hellomac.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+              href: /samples/xamarin/mac-samples/hello-mac/
             title: 'Hello, Mac (Hallo Mac)'
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+          - href: /samples/xamarin/mac-samples/maccontrols/
             html: UI-Steuerelement-Beispiele für Mac-Apps.
             image:
               src: ../media/samples/controls.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+              href: /samples/xamarin/mac-samples/maccontrols/
             title: MacControls
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+          - href: /samples/xamarin/mac-samples/macimages/
             html: UI-Steuerelement-Beispiele für Mac-Apps.
             image:
               src: ../media/samples/images.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+              href: /samples/xamarin/mac-samples/macimages/
             title: MacImages
   - title: Alle Beispiele
     items:
@@ -112,21 +112,21 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+          - href: /samples/browse/?products=xamarin
             html: Alle Xamarin-Beispiel-Apps und -Codedemos.
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+              href: /samples/browse/?products=xamarin
             title: Alle Xamarin-Beispiele
-          - href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+          - href: /samples/browse/?products=aspnet-core
             html: Alle ASP.NET Core-Beispiel-Apps und -Codedemos.
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+              href: /samples/browse/?products=aspnet-core
             title: Alle ASP.NET Core-Beispiele
-          - href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+          - href: /samples/browse/?products=dotnet-core
             html: 'Alle .NET Core-Beispiel-Apps und -Codedemos. Beachten Sie, dass einige dieser Beispiele über Windows-spezifische Anforderungen verfügen und daher nicht auf Visual Studio für Mac ausgeführt werden können.'
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+              href: /samples/browse/?products=dotnet-core
             title: Alle .NET Core-Beispiele

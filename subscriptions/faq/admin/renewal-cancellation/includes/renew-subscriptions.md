@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386139"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838252"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>Wie verlängere ich meine Abonnements?
 
@@ -22,6 +22,6 @@ Einzelhandel: Für über den Microsoft Store erworbene Abonnements, rufen Sie de
 
 Cloudabonnements: Wenn Sie Cloudabonnements verwenden, müssen Sie diese nicht erneuern. Sie werden automatisch erneuert, bis Sie sie kündigen.
 
-Erfahren Sie mehr über das [Erwerben von Cloudabonnements](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+Erfahren Sie mehr über das [Erwerben von Cloudabonnements](../../../../vscloud-overview.md).
 
 Volumenlizenzierung: Wenden Sie sich zum Erneuern von Abonnements, die Sie über Volumenlizenzierung erhalten haben, an den jeweiligen Handelspartner. [Hier finden Sie einen Handelspartner](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) in Ihrer Umgebung.

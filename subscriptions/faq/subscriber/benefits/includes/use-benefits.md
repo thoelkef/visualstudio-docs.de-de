@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91641697"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838388"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Wie nutze ich meine Vorteile?
 
@@ -20,7 +20,7 @@ Ebenso wie die Typen von Vorteilen unterschiedlich sind, variieren die Methoden,
 
 Für jeden im Abonnentenportal verfügbaren Vorteil haben wir Artikel bereitgestellt, die Informationen enthalten, wie z. B. in welche Abonnements sie enthalten sind sowie die Schritte zur Aktivieren der Vorteile.
 
-[Weitere Informationen](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) erhalten Sie in unserer Dokumentation (Klicken Sie im linken Navigationsbereich auf „Abonnements“, und wählen Sie „Vorteile“ aus).
+[Weitere Informationen](../../../../whats-new-in-subscriptions.md) erhalten Sie in unserer Dokumentation (Klicken Sie im linken Navigationsbereich auf „Abonnements“, und wählen Sie „Vorteile“ aus).
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Wie funktioniert der Einrichtungsvorgang für Visual Studio mit GitHub Enterprise? 
 
@@ -36,4 +36,4 @@ Wenn der Administrator Ihrer GitHub-Organisation die Einladung versendet, empfan
 
 Nachdem Sie die Einladung der GitHub-Organisation akzeptiert haben, wird die Darstellung der Kachel „Vorteil“ unter <https://my.visualstudio.com/benefits> von „Ausstehend“ in „Aktiviert“ geändert, und Sie können nun mit der Verwendung von GitHub Enterprise beginnen. 
 
-[Lesen Sie mehr zu den Details](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) zum Einrichtungsvorgang für GitHub Enterprise. 
+[Lesen Sie mehr zu den Details](../../../../access-github.md) zum Einrichtungsvorgang für GitHub Enterprise. 
