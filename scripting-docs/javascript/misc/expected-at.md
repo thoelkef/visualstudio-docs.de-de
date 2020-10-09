@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98a35421054e4d2236fe509224ed146063b61a79
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814823"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862310"
 ---
-# <a name="expected-"></a>" \@ " Erwartet
+# <a name="expected-"></a>„\@“ erwartet
 Sie haben versucht, eine Variable zu erstellen, die mit der-Anweisung mit bedingten Kompilierungs Anweisungen verwendet wird `@set` , aber kein am Zeichen " **@** " vor dem Variablennamen platziert hat.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
@@ -33,6 +33,6 @@ Sie haben versucht, eine Variable zu erstellen, die mit der-Anweisung mit beding
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [@set An](../../javascript/reference/at-set-statement-javascript.md)   
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [@set An](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)   
+ [Bedingte Kompilierung](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variablen für die bedingte Kompilierung](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

@@ -14,12 +14,12 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b70f42775d627e7e3683aa2cbc771f091b58e761
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816526"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861916"
 ---
 # <a name="expected-identifier-javascript"></a>Bezeichner erwartet (JavaScript)
 Sie haben etwas anderes als einen Bezeichner in einem Kontext verwendet, in dem eine solche benötigt wurde. Ein Bezeichner kann Folgendes sein:  
@@ -37,4 +37,4 @@ Sie haben etwas anderes als einen Bezeichner in einem Kontext verwendet, in dem 
 - Ändern Sie den Ausdruck so, dass auf der linken Seite des Gleichheitszeichens ein Bezeichner angezeigt wird.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)
+ [Verwenden von Arrays](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

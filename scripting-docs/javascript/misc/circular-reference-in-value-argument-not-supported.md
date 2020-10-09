@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817618"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862325"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
 Es wurde versucht, mit einem ungültigen Wert aufzurufen `JSON.stringify` . Das `value` Argument, ein Array oder ein Objekt, enthält einen Zirkel Verweis.  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [JSON-Objekt](../../javascript/reference/json-object-javascript.md)   
- [JSON. Analyse-Funktion](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript-Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)
+ [JSON-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. Analyse-Funktion](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript-Laufzeitfehler](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

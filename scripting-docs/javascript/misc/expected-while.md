@@ -14,12 +14,12 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9381f990c8a43e848370e1251e163dad81a10e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f2dfdaecc0e41e1c4d267a466f47ff26b76a720
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817345"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862189"
 ---
 # <a name="expected-while"></a>"while" erwartet
 Sie haben die `while` Bedingung in einer Schleife nicht eingeschlossen `do...while` . Eine **DO** -Anweisung muss `while` am Ende des Code Blocks über einen entsprechenden Test verfügen.  
@@ -29,5 +29,5 @@ Sie haben die `while` Bedingung in einer Schleife nicht eingeschlossen `do...whi
 - Fügen Sie die `while` Test Anweisung nach der schließenden geschweiften Klammer ein.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [While-Anweisung](../../javascript/reference/while-statement-javascript.md)   
- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)
+ [While-Anweisung](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/while)   
+ [Steuern des Programmablaufs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

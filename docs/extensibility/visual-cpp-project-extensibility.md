@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825570"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862461"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Projekt System-Erweiterbarkeit und toolsetintegration
 
@@ -435,7 +435,7 @@ Zum automatischen Generieren von cpp-oder h-Dateien aus XAML-Dateien definieren 
 </Target>
 ```
 
-Um mit `Task.HostObject` den nicht gespeicherten Inhalt von Quelldateien zu erhalten, sollten die Ziele und die Aufgabe als [msbuildhostobjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) für die angegebenen Projekte in einem pkgdef registriert werden:
+Um mit `Task.HostObject` den nicht gespeicherten Inhalt von Quelldateien zu erhalten, sollten die Ziele und die Aufgabe als [msbuildhostobjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017&preserve-view=true) für die angegebenen Projekte in einem pkgdef registriert werden:
 
 ```reg
 \[$RootKey$\\Projects\\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\\MSBuildHostObjects\]
@@ -493,7 +493,7 @@ Das Regel Format ist unkompliziert. Daher werden in diesem Abschnitt nur die Att
 
 Das- `PageTemplate` Attribut definiert, wie die Regel im Dialogfeld " **Eigenschaften Seiten** " angezeigt wird. Das Attribut kann einen der folgenden Werte aufweisen:
 
-| attribute | Beschreibung |
+| attribute | BESCHREIBUNG |
 |------------| - |
 | `generic` | Alle Eigenschaften werden auf einer Seite unter Kategorieüberschriften angezeigt.<br/>Die Regel kann für `Project` -und- `PropertySheet` Kontexte sichtbar sein, jedoch nicht `File` .<br/><br/> Beispiel: `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | Kategorien werden als Unterseiten angezeigt.<br/>Die Regel kann in allen Kontexten sichtbar sein: `Project` , `PropertySheet` und `File` .<br/>Die Regel ist nur in den Projekteigenschaften sichtbar, wenn das Projekt über Elemente verfügt `ItemType` , die in definiert `Rule.DataSource` sind, es sei denn, der Regelname ist in der `ProjectTools` Element Gruppe enthalten.<br/><br/>Beispiel: `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |

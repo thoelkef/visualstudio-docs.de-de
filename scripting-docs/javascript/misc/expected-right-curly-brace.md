@@ -14,12 +14,12 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55f91202184561aff5d0865b326415b3910b99b6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817072"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862130"
 ---
 # <a name="expected-"></a>"}" erwartet
 Sie haben nicht die Rechte geschweifter Klammer eingeschlossen, die das Ende des Funktions Texts, der Schleife, des Code Blocks oder des Objektinitialisierers markiert. Ein Beispiel für diesen Fehler wäre eine **for** -Schleife, bei der nur die linke geschweifter Klammer den Text der Schleife markiert.  
@@ -29,5 +29,5 @@ Sie haben nicht die Rechte geschweifter Klammer eingeschlossen, die das Ende des
 - Fügen Sie die Rechte geschweifter Klammer hinzu, die das Beenden der Funktion, der Schleife, des Blocks oder des Objektinitialisierers markiert.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Function-Objekt](../../javascript/reference/function-object-javascript.md)   
- [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)
+ [Function-Objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Steuern des Programmablaufs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

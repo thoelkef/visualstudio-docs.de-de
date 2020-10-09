@@ -14,12 +14,12 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c0e1ee1cdb2c135d3a76316d56e279de963b156
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06ad8497bfc561a5222eef6975a7336f4599c59d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814576"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861904"
 ---
 # <a name="expected-identifier-string-or-number"></a>Es wurde ein Bezeichner, eine Zeichenfolge oder eine Zahl erwartet
 Sie haben falsche Literalsyntax zum Deklarieren eines Objektliterals verwendet. Die Eigenschaften eines Objektliterals müssen ein Bezeichner, eine Zeichenfolge oder eine Zahl sein. Ein Objektliteral (auch als "Objektinitialisierer" bezeichnet) besteht aus einer durch Trennzeichen getrennten Liste von Eigenschaft-Wert-Paaren, die alle in eckige Klammern eingeschlossen sind. Beispiel:  
@@ -33,4 +33,4 @@ var point = {x:1.2, y:-3.4};
 - Stellen Sie sicher, dass Sie die richtige Literalsyntax verwenden  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Komma Operator (,)](../../javascript/reference/comma-operator-decrement-javascript.md)
+ [Komma Operator (,)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)

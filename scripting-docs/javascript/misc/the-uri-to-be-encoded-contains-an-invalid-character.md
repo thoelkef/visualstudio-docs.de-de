@@ -14,12 +14,12 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6091968dcbdd98240b1705e0fa7dc855dad3bda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310db785041de0beb0ebbba0cdd9b7c356397bc4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816071"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862390"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Der zu codierende URI enthält ein ungültiges Zeichen.
 Sie haben versucht, eine Zeichenfolge als URI (Uniform Resource Identifier) zu codieren, enthielt jedoch ungültige Zeichen. Obwohl die meisten Zeichen in Zeichen folgen gültig sind, die in URIs konvertiert werden, sind einige Unicode-Zeichen folgen unzulässig.  
@@ -33,5 +33,5 @@ Sie haben versucht, eine Zeichenfolge als URI (Uniform Resource Identifier) zu c
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Encode URI-Funktion](../../javascript/reference/encodeuri-function-javascript.md)   
- [encodeURIComponent-Funktion](../../javascript/reference/encodeuricomponent-function-javascript.md)
+ [Encode URI-Funktion](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeuri)   
+ [encodeURIComponent-Funktion](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeuricomponent)
