@@ -1,5 +1,6 @@
 ---
 title: Tastenkombinationen (Help Viewer)
+description: Weitere Informationen finden Sie in der Liste der Tastenkombinationen in Microsoft Help Viewer. Verwenden Sie Tastenkombinationen für Navigation, Fensterverwaltung und Inhalts Verwaltung.
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533731"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878955"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tastenkombinationen (Help Viewer)
 
@@ -27,34 +28,34 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Allgemeine Anwendung|**BRaum**|Überall außer in den Bearbeitungsfeldern anstelle von **EINGABE** verwenden|
 |Allgemeine Anwendung|**F1**|Öffnet die **Hilfe** zum aktuellen UI-Element|
 |Allgemeine Anwendung|**F11**|Wechselt zwischen der Vollbild- und der normalen Ansicht|
-|Symbolleiste|**RÜCKTASTE**<br /><br /> ODER<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
+|Symbolleiste|**RÜCKTASTE**<br /><br /> -ODER-<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
 |Symbolleiste|**Alt** + **Pfeil nach rechts**|Nächste Seite anzeigen|
 |Symbolleiste|**Alt** + **Startseite**|Startseite von **Help Reviewer** anzeigen|
 |Symbolleiste|**STRG** + **S**|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“**)|
-|Symbolleiste|**STRG** + **D**|Fügt das aktuelle Thema den **Favoriten** hinzu.|
-|Symbolleiste|**STRG** + **F**|Zeigt die **Suchleiste** im Themenbereich an, sodass Sie das aktuelle Thema nach Text durchsuchen können.|
+|Symbolleiste|**STRG**+**D**|Fügt das aktuelle Thema den **Favoriten** hinzu.|
+|Symbolleiste|**STRG**+**F**|Zeigt die **Suchleiste** im Themenbereich an, sodass Sie das aktuelle Thema nach Text durchsuchen können.|
 |Symbolleiste|**STRG** + **P**|Druckt die aktuelle Seite|
 |Symbolleiste|**STRG** + **F2**|Zeigt eine Druckvorschau der aktuellen Seite an|
 |Symbolleiste|**STRG** + **O**|Öffnet das Dialogfeld **Viewer-Optionen**|
 |Symbolleiste|**STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
-|Navigation|**Alt** + **C**<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **C**|Öffnet die Registerkarte **Inhalt**.|
-|Navigation|**Alt** + **I**<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **I**|Öffnet die Registerkarte **Index**|
-|Navigation|**Alt** + **F**<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **F**|Öffnet die Registerkarte **Favoriten**|
-|Navigation|**Alt** + **S**<br /><br /> ODER<br /><br /> **STRG**+E<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **S**|Öffnet die Registerkarte **Suche**.|
-|Navigation|**Alt** + **M**<br /><br /> ODER<br /><br /> **STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
+|Navigation|**Alt** + **C**<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **C**|Öffnet die Registerkarte **Inhalt**.|
+|Navigation|**Alt** + **I**<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **I**|Öffnet die Registerkarte **Index**|
+|Navigation|**Alt** + **F**<br /><br /> -ODER-<br /><br /> **STRG**+**UMSCHALT**+**F**|Öffnet die Registerkarte **Favoriten**|
+|Navigation|**Alt** + **S**<br /><br /> -ODER-<br /><br /> **STRG**+E<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **S**|Öffnet die Registerkarte **Suche**.|
+|Navigation|**Alt** + **M**<br /><br /> -ODER-<br /><br /> **STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
 |Thema|**MENÜTASTE**<br /><br /> oder<br /><br /> **UMSCHALT** + **F10**|Öffnet das Kontextmenü für das aktuelle UI-Element|
 |Thema|**NACH-OBEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|**NACH-UNTEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|**Bild-auf**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
 |Thema|**Bild-ab**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
-|Thema|**Home**|Springt zum Anfang des Dokuments|
+|Thema|**Startseite**|Springt zum Anfang des Dokuments|
 |Thema|**ENDE**|Springt zum Ende des Dokuments|
-|Thema|**STRG** + **F**|Finden von Suchtext auf dieser Seite|
+|Thema|**STRG**+**F**|Finden von Suchtext auf dieser Seite|
 |Thema|**F5**|Aktualisiert die aktuelle Seite|
 |Thema|**STRG** + **P**|Druckt die aktuelle Seite|
 |Thema|**STRG** + **F2**|Zeigt eine Druckvorschau der aktuellen Seite an|
 |Thema|**F4**|Zeigt das Dialogfeld **Eigenschaften** für die aktuelle Seite an|
-|Thema|**STRG** + **T**|Öffnet eine andere Registerkarte „Inhalt“ im Vordergrund|
+|Thema|**STRG**+**T**|Öffnet eine andere Registerkarte „Inhalt“ im Vordergrund|
 |Thema|**STRG** + **Klicken Sie auf**|Öffnet einen Link in einer neuen Registerkarte im Vordergrund|
 |Thema|**STRG**+**TAB**|Wechselt von links nach rechts zwischen Registerkarten|
 |Thema|**STRG** + **UMSCHALT** + **Registerkarte**|Wechselt von rechts nach links zwischen Registerkarten|
@@ -70,18 +71,18 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Favoriten|**ENTF**|Löscht das angegebene Elementname|
 |Favoriten|**STRG** + **N**|Erstellt einen Ordner in den **Favoriten**.|
 |Favoriten|**F2**|Benennt den angegebenen Favoriten oder Ordner um|
-|Inhalt & Index & Suche|**STRG** + **D**|Fügt das angegebene Thema den **Favoriten** hinzu.|
+|Inhalt & Index & Suche|**STRG**+**D**|Fügt das angegebene Thema den **Favoriten** hinzu.|
 |Inhalt & Index & Suche & Favoriten|**STRG** + **P**|Druckt das angegebene Thema|
 |Inhalt & Index & Suche & Favoriten|**STRG** + **F2**|Zeigt eine Druckvorschau des angegebenen Themas an|
 |Inhalt & Index & Suche & Favoriten|**STRG** + **Klicken Sie auf**|Öffnet das Thema in einer neuen Registerkarte|
-|Suchen|**ESC**|Löscht den Inhalt des Suchtextfelds|
+|Suchen,|**ESC**|Löscht den Inhalt des Suchtextfelds|
 |Viewer-Optionen|**Alt** + **T**|Ändert den Fokus auf die Liste **Textgröße**|
 |Viewer-Optionen|**Alt** + **S**|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
 |Viewer-Optionen|**Alt** + **H**|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
 |Viewer-Optionen|**Alt** + **E**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**, wenn es aktiviert ist.|
 |Viewer-Optionen|**Alt** + **O**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|
 |Suchen|**EINGABETASTE**|Ändert den Fokus auf das nächste Element|
-|Suchen|**UMSCHALT** + **Geben Sie**|Ändert den Fokus auf das vorherige Element|
+|Suchen|**SHIFT**+**EINGABETASTE**|Ändert den Fokus auf das vorherige Element|
 |Suchen|**ESC**|Verbirgt das Textfeld **Suchen**.|
 |Statusleiste|**Alt** + **E**|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|
 |Statusleiste|**Alt** + **U**|Lädt Inhalt herunter, wenn die Statusleiste anzeigt, das Updates verfügbar sind|

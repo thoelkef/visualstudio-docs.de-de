@@ -16,9 +16,9 @@
             - name: Codequalität
               items:
                 - name: Optionen für Codequalität
-                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
                 - name: Verwenden von EditorConfig-Dateien für Codequalität
-                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: Codeformat
               items:
                 - name: Codeformateinstellungen
@@ -27,7 +27,7 @@
                   displayName: Configure code style analyzers
                   href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
                 - name: Regeloptionen
-                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: Konfigurieren der Livecodeanalyse
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Manuelles Ausführen der Codeanalyse

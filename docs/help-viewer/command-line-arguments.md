@@ -1,5 +1,6 @@
 ---
 title: Befehlszeilenargumente für den Hilfeinhalts-Manager
+description: Verwenden Sie Befehlszeilenargumente für den Hilfe Inhalts-Manager (HlpCtntMgr.exe), um anzugeben, wie lokale Hilfe Inhalte bereitgestellt und verwaltet werden sollen.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631976"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879046"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
 
@@ -90,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Help Viewer-Administrator Handbuch](../help-viewer/administrator-guide.md)
 - [Über schreibungen durch den Hilfe Inhalts-Manager](../help-viewer/behavior-overrides.md)

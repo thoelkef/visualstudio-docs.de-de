@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238373"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927990"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Legacy-Analyse für verwalteten Code in Visual Studio
 
@@ -84,9 +84,9 @@ Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrich
 
 ## <a name="team-build-integration"></a>Team Build-Integration
 
-Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über .NET Compiler Platform-basierte Analysetools](../code-quality/roslyn-analyzers-overview.md)
 - [Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
