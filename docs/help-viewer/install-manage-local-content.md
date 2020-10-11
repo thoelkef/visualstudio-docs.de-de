@@ -1,5 +1,6 @@
 ---
 title: Installieren der lokalen Hilfedokumentation
+description: Installieren und verwalten Sie die lokale Hilfe Dokumentation mithilfe der Microsoft Help Viewer. Hinzufügen, entfernen, aktualisieren und Verschieben von Hilfe Inhalten, die auf Ihrem Computer installiert sind.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284905"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879098"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 
@@ -129,6 +130,6 @@ Sie können Speicherplatz sparen, indem Sie installierten Inhalt vom lokalen Com
 
 3. Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

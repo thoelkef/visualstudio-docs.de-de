@@ -1,5 +1,6 @@
 ---
 title: Logische Operatoren in Such Ausdrücken (Help Viewer)
+description: Erfahren Sie, wie Sie logische Operatoren und erweiterte Such Operatoren verwenden, um Such Ausdrücke in Microsoft Help Viewer zu verfeinern.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038633"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878929"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 
@@ -29,7 +30,7 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 
 |Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
-|Beide Begriffe im gleichen Artikel|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
+|Beide Begriffe im gleichen Artikel|AND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
 |Einer der Begriffe in einem Artikel|oder|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
 |Erster Begriff ohne den zweiten Begriff im gleichen Artikel|NICHT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
 |Beide Begriffe nah beieinander in einem Artikel|NEAR|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
@@ -67,7 +68,7 @@ Mit dem Operator `code:` können Sie nach Inhalt von einer der Programmiersprach
 > [!NOTE]
 > Der Operator `code:` findet nur Inhalt, der mit einem Programmiersprachenbezeichner markiert ist, und keinen Inhalt, der generisch als Code markiert ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

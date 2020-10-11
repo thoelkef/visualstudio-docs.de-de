@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587081"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927977"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden des Fensters "Code Metrikergebnisse"
 
@@ -82,9 +82,9 @@ Sie können eine ausgewählte Zeile mit Codemetrikdaten auswählen und als Text 
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>Erstellen eines Arbeits Elements basierend auf Code metrikergebnissen
 
-Sie können ein [Azure Boards](/azure/devops/boards/index?view=vsts) Arbeits Element erstellen, das auf Ergebnissen im Fenster " **Code Metrikergebnisse** " basiert. Wenn das Arbeits Element erstellt wird, gibt Visual Studio automatisch einen Titel in das **Titelfeld** ein und codiert Metrikdaten auf der Registerkarte **Verlauf** .
+Sie können ein [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) Arbeits Element erstellen, das auf Ergebnissen im Fenster " **Code Metrikergebnisse** " basiert. Wenn das Arbeits Element erstellt wird, gibt Visual Studio automatisch einen Titel in das **Titelfeld** ein und codiert Metrikdaten auf der Registerkarte **Verlauf** .
 
-Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitselemente](/azure/devops/boards/work-items/index?view=vsts).
+Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitselemente](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>So erstellen Sie ein Arbeits Element basierend auf einem Ergebnis
 
@@ -106,7 +106,7 @@ Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitse
 
 4. Klicken Sie im Menü **Datei** auf **Alle speichern** , um das Arbeits Element zu speichern.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
 - [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

@@ -1,5 +1,6 @@
 ---
 title: Dokumentation für Offlinehilfe
+description: Installieren und Anzeigen der Offline Hilfe Dokumentation für verschiedene Produkte und Technologien, wie z. b. Visual Studio und .net, mithilfe von Microsoft Help Viewer.
 ms.date: 11/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824880"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878968"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -91,7 +92,7 @@ Die Symbolleiste im **Help Viewer-Fenster** enthält die folgenden Schaltfläche
 
 - Das kleine Dreieck auf der rechten Seite öffnet eine Liste von Registerkarten, einschließlich Themen Registerkarten und der Registerkarte **Inhalt verwalten** . Sie können einen Registerkarten Namen auswählen, um ihn als aktive Registerkarte zu erstellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Help Viewer Installation](../help-viewer/installation.md)
 - [Help Viewer-Administrator Handbuch](../help-viewer/administrator-guide.md)

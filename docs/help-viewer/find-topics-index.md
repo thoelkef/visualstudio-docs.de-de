@@ -1,5 +1,6 @@
 ---
 title: Verwenden des Help-Viewer-Indexes
+description: Suchen Sie nach Themen, indem Sie den Microsoft Help Viewer Index verwenden, der eine Liste von Schlüsselwörtern enthält, die Themen in den installierten Inhalten zugeordnet sind.
 ms.date: 11/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284957"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879020"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Suchen Sie Themen mithilfe des Help Viewer-Indexes
 
@@ -77,7 +78,7 @@ Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, ver
 
     Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../help-viewer/find-topics-toc.md)
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)

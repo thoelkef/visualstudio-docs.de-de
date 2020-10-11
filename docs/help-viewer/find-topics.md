@@ -1,5 +1,6 @@
 ---
 title: Suchen von Themen (Help Viewer)
+description: Erfahren Sie, wie Sie in der Microsoft Help Viewer nach Themen suchen. Anpassen von Such Vorgängen mithilfe von Platzhalter Ausdrücken, logischen Operatoren und erweiterten Such Operatoren.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284918"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878994"
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 
@@ -76,7 +77,7 @@ Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedri
 
 Häufig auftretende Wörter oder Ziffern, die manchmal als Stoppwörter bezeichnet werden, werden bei der Volltextsuche automatisch ignoriert. Wenn Sie beispielsweise nach dem Ausdruck „übergeben durch“ suchen, zeigen die Suchergebnisse Themen an, die das Wort „übergeben“ enthalten, ignorieren aber das Wort „durch“.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Logische Operatoren in Suchausdrücken](../help-viewer/logical-operators-search-expressions.md)
 - [Gewusst wie: Suchen von Themen im Index](../help-viewer/find-topics-index.md)

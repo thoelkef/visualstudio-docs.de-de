@@ -1,5 +1,6 @@
 ---
 title: Verwenden des Inhaltsverzeichnisses von Microsoft Help Viewer
+description: Verwenden Sie Microsoft Help Viewer, um nach Themen im Inhaltsverzeichnis (Inhaltsverzeichnis) zu suchen. Das Inhaltsverzeichnis ist eine erweiterbare Liste, die alle Themen in den installierten Büchern enthält.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284931"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879007"
 ---
 # Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
 
@@ -50,7 +51,7 @@ Wenn Sie ein Thema mithilfe der Index- oder Volltextsuchfunktionen geöffnet hab
 
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.
 
-## Weitere Informationen
+## Siehe auch
 
 - [Gewusst wie: Suchen von Themen im Index](../help-viewer/find-topics-index.md)
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)
