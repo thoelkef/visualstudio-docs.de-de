@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862411"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749504"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Unterstützte Visual Studio-Features (Vorschau)
 
@@ -42,15 +42,15 @@ Bei der Bearbeitung von Quellcode in einem Codespace sollten Sie kaum Unterschie
 * Syntaxhervorhebung
 * QuickInfo*
 * HTML-, CSS- und Razor-Editoren*: teilweise unterstützt
-* JavaScript-Editor*: teilweise unterstützt
+* JavaScript- und TypeScript-Editor*: teilweise unterstützt
 
 Noch nicht verfügbar:
 
 * IntelliSense*: Einige der Filter für die automatische Vervollständigung/Memberliste sind nicht verfügbar. Vervollständigung für nicht importierte Typen und IntelliSense im Überwachungsfenster sind noch nicht verfügbar.
-* Codenavigation*: Die meisten Befehle werden unterstützt. Insbesondere „Zu Basis wechseln“ und „Suchen“ in Dateien mit Pfadspezifikation werden noch nicht unterstützt.
+* Codenavigation*: Die meisten Befehle werden unterstützt. „Zu Basis wechseln“ und „In Dateien suchen“ mit Pfadspezifikation werden noch nicht unterstützt.
 * QuickInfo*: Farbgebung in der QuickInfo wird nicht unterstützt.
 * HTML-, CSS- und Razor-Editoren*: Diagnose, IntelliSense-Vervollständigung, QuickInfo, intelligenter Einzug; semantische Farbgebung, Navigationsbefehle etc. derzeit nicht unterstützt
-* JavaScript-Editor*: Skriptblöcke (z. B. JavaScript-Inhalte in HTML- und CSHTML-Dateien) sowie semantische Hervorhebung werden noch nicht unterstützt. Es liegen bekannte Probleme mit Glühbirnenfeatures und dem Linten vor.
+* JavaScript- und TypeScript-Editor*: Skriptblöcke (z. B. JavaScript-Inhalte in HTML- und CSHTML-Dateien) sowie semantische Hervorhebung werden noch nicht unterstützt. Es liegen bekannte Probleme mit Glühbirnenfeatures und dem Linten vor.
 * CMake-Zielansicht
 * Editor für CMake-Projekteinstellungen
 * STRG+F7 (Datei kompilieren)
@@ -72,7 +72,7 @@ Die meisten Anwendungstypen und Projektkonfigurationen werden unterstützt. Sie 
 
 Noch nicht verfügbar:
 
-* Benutzeroberflächen-Designer: WinForms- und WPF-Designer
+* Benutzeroberflächen-Designer: WinForms-, WPF-, und Ressourcen-Designer
 * Visual Basic- und F#-Projekte
 * Projekte für das .NET Framework
 * Docker Compose-Projekte

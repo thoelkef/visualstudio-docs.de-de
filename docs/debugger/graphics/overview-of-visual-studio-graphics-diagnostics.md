@@ -1,5 +1,6 @@
 ---
 title: Übersicht über die Grafikdiagnose | Microsoft-Dokumentation
+description: Eine allgemeine Übersicht über die Grafikdiagnose in Visual Studio
 ms.custom: seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187918"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671405"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-Apps. Die Grafikdiagnose kann in Apps verwendet werden, die lokal auf Ihrem Windows-PC oder auf einem Remotecomputer oder -gerät ausgeführt werden.
@@ -27,6 +28,10 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
  Die Grafikdiagnose unterstützt Apps, die Direct3D 10 oder höher verwenden, und bietet eingeschränkte Unterstützung für Apps, die Direct2D verwenden. Sie unterstützt keine Apps, die frühere Versionen von Direct3D und DirectDraw verwenden oder andere Grafik-APIs.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 und Direct3D 12
+> [!NOTE]
+> Visual Studio empfiehlt PIX on Windows für DirectX 12-Spiele. [PIX on Windows](https://aka.ms/PIXonWindows) ist ein Tool zum Optimieren der Leistung und Debuggen mit vollständiger DirectX 12-Unterstützung. [Informieren Sie sich](visual-studio-graphics-diagnostics-directx-12.md), oder [laden Sie das Tool hier herunter](https://aka.ms/downloadPIX).
+
+
  Mit Windows 10 wurde *Direct3D 12* eingeführt. Diese Version unterscheidet sich deutlich von Direct3D 10 und Direct3D 11. Diese Unterschiede bringen DirectX wieder in Einklang mit moderner Grafikhardware und ermöglichen die Nutzung des gesamten Potenzials der Software. Sie bringen jedoch auch umfangreiche API-Änderungen mit sich und übertragen mehr Verantwortung auf den Programmierer, wenn es um die Verwaltung der Lebensdauer von Ressourcen sowie die Behandlung von Konflikten geht. Trotz aller Unterschiede weist die Grafikdiagnose für Direct3D 12 die gleichen Features wie die Grafikdiagnose für Direct3D 11.2 auf.
 
  Windows 10 bietet außerdem weiterhin Unterstützung für ältere Versionen von Direct3D sowie für die Spiele und Anwendungen, die davon abhängig sind. Die Grafikdiagnose in Visual Studio unterstützt weiterhin Direct3D 10 und Direct3D 11 unter Windows 10.
