@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250793"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780960"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Schritt 3: Arbeiten mit Daten mithilfe von Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 Wir können nun die Seiten erstellen, mit denen wir unsere Spielebibliothek verwalten werden. Dies hört sich vielleicht schwierig an, ist aber tatsächlich erstaunlich einfach. Zunächst müssen wir entscheiden, wo sich diese Funktionalität in unserer App befinden soll. Öffnen Sie den Ordner „Pages“ im Webprojekt, und fügen Sie dort einen neuen Ordner hinzu. Nennen Sie ihn *Games*.
 
-Klicken Sie jetzt mit der rechten Maustaste auf „Games“, und wählen Sie **Hinzufügen** > **Neues Gerüstelement** aus. Wählen Sie die Razor Pages mithilfe der Option **Entity Framework (CRUD)** aus. CRUD steht für „Create, Read, Update, Delete“ (Erstellen, Lesen, Aktualisieren, Löschen), und mit dieser Vorlage werden Seiten für jeden dieser Vorgänge erstellt (einschließlich einer Seite „Alle auflisten“ und einer Seite "Details zu einem Element anzeigen").
+Klicken Sie jetzt mit der rechten Maustaste auf „Games“, und klicken Sie dann auf **Hinzufügen** > **Neues Gerüstelement**. Wählen Sie die Razor Pages mithilfe der Option **Entity Framework (CRUD)** aus. CRUD steht für „Create, Read, Update, Delete“ (Erstellen, Lesen, Aktualisieren, Löschen), und mit dieser Vorlage werden Seiten für jeden dieser Vorgänge erstellt (einschließlich einer Seite „Alle auflisten“ und einer Seite "Details zu einem Element anzeigen").
 
 ![Visual Studio 2019 ASP.NET Core – Seite „Gerüst hinzufügen“](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 Sie sehen auch, dass die `AppDbContext`-Verbindungszeichenfolge der *appsettings.json*-Datei des Projekts hinzugefügt wurde.
 
-Wenn Sie die App nun ausführen, kann ein Fehler auftreten, weil noch keine Datenbank erstellt wurde. Sie können durch [Hinzufügen von ein wenig Code zu Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main) konfigurieren, dass die App die Datenbank bei Bedarf automatisch erstellt:
+Wenn Sie die App nun ausführen, kann ein Fehler auftreten, weil noch keine Datenbank erstellt wurde. Sie können durch [Hinzufügen von ein wenig Code zu Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main) konfigurieren, dass die App die Datenbank bei Bedarf automatisch erstellt:
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ Im nächsten Video erfahren Sie, wie Sie Ihrer App Web-API-Unterstützung hinzuf
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Razor Pages mit Entity Framework Core in ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core-Razor Pages mit EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages mit Entity Framework Core in ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core-Razor Pages mit EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

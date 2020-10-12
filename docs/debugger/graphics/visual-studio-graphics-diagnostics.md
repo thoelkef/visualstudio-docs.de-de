@@ -1,5 +1,6 @@
 ---
 title: Grafikdiagnose | Microsoft-Dokumentation
+description: Eine Einführung zur Grafikdiagnose in Visual Studio
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187738"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671378"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
+>[!NOTE]
+> Visual Studio empfiehlt PIX on Windows für DirectX 12-Spiele. [PIX on Windows](https://aka.ms/PIXonWindows) ist ein Tool zum Optimieren der Leistung und Debuggen mit vollständiger DirectX 12-Unterstützung. [Informieren Sie sich](visual-studio-graphics-diagnostics-directx-12.md), oder [laden Sie das Tool hier herunter](https://aka.ms/downloadPIX).
+
 Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-Apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.
 
  Der Grafikdiagnose-Workflow beginnt mit der Erfassung eines Datensatzes zur Verwendung von Direct3D durch Ihre App – live, während der Ausführung –, damit das Verhalten sofort analysiert, freigegeben oder für die spätere Nutzung gespeichert werden kann. Erfassungssitzungen können manuell über Visual Studio oder mit dem Befehlszeilenerfassungstool **dxcap.exe** initiiert und gesteuert werden. Erfassungssitzungen können auch programmgesteuert mit Grafikdiagnose-Erfassungs-APIs initiiert und gesteuert werden.
@@ -68,3 +72,4 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
 | - | - |
 | [Debugger – Featuretour](../debugger-feature-tour.md) | Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vor. |
 | [DirectX-Grafiken und -Spiele](/windows/win32/directx) | Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden. |
+| [DirectX 12-Unterstützung in Visual Studio](visual-studio-graphics-diagnostics-directx-12.md) | Informieren Sie sich über DirectX 12-Unterstützung in Visual Studio. |
