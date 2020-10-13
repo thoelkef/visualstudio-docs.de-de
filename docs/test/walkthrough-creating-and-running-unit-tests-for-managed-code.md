@@ -163,7 +163,7 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 2. Wählen Sie die C#-Projektvorlage **MSTest Test Project (.NET Core)** aus, und klicken Sie dann auf **Weiter**.
 
-3. Geben Sie dem Projekt den Namen **ToDoApi**.
+3. Geben Sie dem Projekt den Namen **BankTests**.
 
 4. Klicken Sie auf **Erstellen**.
 
